@@ -1,0 +1,5001 @@
+/* 
+  English.strings
+  MapRoulette
+
+  Created by 上別縄祐也 on 2025/08/08.
+  
+*/
+
+"tourism.spot" = "대표적인 관광명소";
+"tourism.info" = "관광정보";
+
+/* Prefecture names in Korean */
+"prefecture.hokkaido" = "홋카이도";
+"prefecture.aomori" = "아오모리현";
+"prefecture.iwate" = "이와테현";
+"prefecture.akita" = "아키타현";
+"prefecture.miyagi" = "미야기현";
+"prefecture.yamagata" = "야마가타현";
+"prefecture.fukushima" = "후쿠시마현";
+"prefecture.ibaraki" = "이바라키현";
+"prefecture.chiba" = "치바현";
+"prefecture.tochigi" = "도치기현";
+"prefecture.gunma" = "군마현";
+"prefecture.saitama" = "사이타마현";
+"prefecture.tokyo" = "도쿄도";
+"prefecture.kanagawa" = "가나가와현";
+"prefecture.niigata" = "니가타현";
+"prefecture.nagano" = "나가노현";
+"prefecture.yamanashi" = "야마나시현";
+"prefecture.shizuoka" = "시즈오카현";
+"prefecture.aichi" = "아이치현";
+"prefecture.mie" = "미에현";
+"prefecture.gifu" = "기후현";
+"prefecture.fukui" = "후쿠이현";
+"prefecture.ishikawa" = "이시카와현";
+"prefecture.toyama" = "도야마현";
+"prefecture.shiga" = "시가현";
+"prefecture.kyoto" = "교토부";
+"prefecture.hyogo" = "효고현";
+"prefecture.nara" = "나라현";
+"prefecture.wakayama" = "와카야마현";
+"prefecture.osaka" = "오사카부";
+"prefecture.tottori" = "돗토리현";
+"prefecture.okayama" = "오카야마현";
+"prefecture.hiroshima" = "히로시마현";
+"prefecture.yamaguchi" = "야마구치현";
+"prefecture.shimane" = "시마네현";
+"prefecture.kagawa" = "가가와현";
+"prefecture.tokushima" = "도쿠시마현";
+"prefecture.kochi" = "고치현";
+"prefecture.ehime" = "에히메현";
+"prefecture.fukuoka" = "후쿠오카현";
+"prefecture.oita" = "오이타현";
+"prefecture.miyazaki" = "미야자키현";
+"prefecture.kagoshima" = "가고시마현";
+"prefecture.kumamoto" = "구마모토현";
+"prefecture.saga" = "사가현";
+"prefecture.nagasaki" = "나가사키현";
+"prefecture.okinawa" = "오키나와현";
+
+/* Region names in Korean */
+"region.hokkaido" = "홋카이도";
+"region.tohoku" = "도호쿠";
+"region.kanto" = "간토";
+"region.koshinetsu" = "고신에쓰";
+"region.tokai" = "도카이";
+"region.hokuriku" = "호쿠리쿠";
+"region.kinki" = "긴키";
+"region.chugoku" = "주고쿠";
+"region.shikoku" = "시코쿠";
+"region.kyushu" = "규슈";
+"region.okinawa" = "오키나와";
+
+/* Display Mode in Korean */
+"display_mode.tourism" = "관광지 모드";
+"display_mode.tourism.description" = "전 도도부현에서 선택";
+"display_mode.onsen" = "온천지 모드";
+"display_mode.onsen.description" = "온천이 있는 도도부현만";
+
+/* Settings UI in Korean */
+"display_mode" = "표시 모드";
+"roulette_settings" = "설정";
+"select_all" = "전체 선택";
+"deselect_all" = "전체 해제";
+"done" = "완료";
+"weight_settings" = "가중치 설정";
+"weight_settings_description" = "도도부현별 선택 확률 조정";
+"weight_settings_explanation" = "각 도도부현의 선택될 확률을 조정할 수 있습니다. 수치가 클수록 선택되기 쉽습니다.";
+"reset" = "재설정";
+"disabled" = "비활성화";
+"weight_format" = "가중치: %.1f";
+"onsen_count_format" = "온천지: %d곳";
+"onsen_locations_count" = "%d개의 온천지";
+"onsen_region_count" = "(%d온천지)";
+"detail_info" = "상세정보";
+"no_onsen" = "온천 없음";
+"back" = "뒤로";
+"japan" = "일본";
+"target_prefecture_count" = "대상: %d도도부현";
+
+/* Onsen Types in Korean */
+"hot_spring_features" = "온천의 특징";
+"hot_spring_area_map" = "온천지 지도";
+"open_in_external_map" = "외부 지도 앱에서 열기";
+"hot_spring_info" = "온천정보";
+"onsen_type.scenic" = "경관온천";
+"onsen_type.historical" = "역사온천";
+"onsen_type.therapeutic" = "요양온천";
+"onsen_type.resort" = "리조트";
+"onsen_type.mountain" = "산간온천";
+"onsen_type.seaside" = "해변온천";
+"onsen_type.ski" = "스키온천";
+
+/* Onsen Names in Korean */
+"onsen.noboribetsu" = "노보리베쓰온천";
+"onsen.toyako" = "도야코온천";
+"onsen.jozankei" = "조잔케이온천";
+"onsen.yunokawa" = "하코다테 유노카와";
+"onsen.nyuto" = "뉴토온천향";
+"onsen.ginzan" = "긴잔온천";
+"onsen.zao" = "자오온천";
+"onsen.hanamaki" = "하나마키온천";
+"onsen.naruko" = "나루코온천";
+"onsen.iizaka" = "이이자카온천";
+"onsen.hakone" = "하코네온천";
+"onsen.kusatsu" = "구사쓰온천";
+"onsen.ikaho" = "이카호온천";
+"onsen.atami" = "아타미온천";
+"onsen.shuzenji" = "슈젠지온천";
+"onsen.atagawa" = "아타가와온천";
+"onsen.isawa" = "이사와온천";
+"onsen.nozawa" = "노자와온천";
+"onsen.kamisuwa" = "가미스와온천";
+"onsen.gero" = "게로온천";
+"onsen.yamanaka" = "야마나카온천";
+"onsen.wakura" = "와쿠라온천";
+"onsen.yamashiro" = "야마시로온천";
+"onsen.katayamazu" = "가타야마즈온천";
+"onsen.unazuki" = "우나즈키온천";
+"onsen.arima" = "아리마온천";
+"onsen.kinosaki" = "기노사키온천";
+"onsen.yumura" = "유무라온천";
+"onsen.shirahama" = "시라하마온천";
+"onsen.katsuura" = "가쓰우라온천";
+"onsen.misasa" = "미사사온천";
+"onsen.tamatsukuri" = "다마쓰쿠리온천";
+"onsen.dogo" = "도고온천";
+"onsen.beppu" = "벳푸온천";
+"onsen.yufuin" = "유후인온천";
+"onsen.ibusuki" = "이부스키온천";
+"onsen.kurokawa" = "구로카와온천";
+"onsen.unzen" = "운젠온천";
+"onsen.ureshino" = "우레시노온천";
+"onsen.takeo" = "다케오온천";
+
+/* Onsen Descriptions in Korean */
+"onsen.noboribetsu.desc" = "지옥계곡으로 유명한 유황온천의 명소";
+"onsen.toyako.desc" = "아름다운 호반의 온천 리조트";
+"onsen.jozankei.desc" = "삿포로의 안쪽 별장으로 사랑받는 곳";
+"onsen.yunokawa.desc" = "하코다테 관광의 거점이 되는 온천지";
+"onsen.nyuto.desc" = "비경 분위기 가득한 산간의 온천향";
+"onsen.ginzan.desc" = "다이쇼 로맨이 넘치는 노스탤지어한 온천가";
+"onsen.zao.desc" = "스키로도 유명한 고원온천";
+"onsen.hanamaki.desc" = "미야자와 겐지와 인연이 깊은 땅";
+"onsen.naruko.desc" = "단풍명소로도 유명한 곳";
+"onsen.iizaka.desc" = "마쓰오 바쇼도 방문한 역사 있는 온천";
+"onsen.hakone.desc" = "도심에서 접근성이 좋고, 아시노코와 후지산 경치도 즐길 수 있다";
+"onsen.kusatsu.desc" = "연애병 외에는 무엇이든 낫는다고 하는 강산성 온천으로 유명";
+"onsen.ikaho.desc" = "돌계단 거리로 유명한 정취 있는 온천가";
+"onsen.atami.desc" = "수도권에서 가까운 해변 리조트 온천";
+"onsen.shuzenji.desc" = "이즈반도 산간에 있는 문학의 고장";
+"onsen.atagawa.desc" = "이즈 동해안의 바다를 바라보는 온천";
+"onsen.isawa.desc" = "포도따기와 온천을 즐길 수 있는 곳";
+"onsen.nozawa.desc" = "스키와 외탕 순례로 유명";
+"onsen.kamisuwa.desc" = "스와호 호반의 온천지";
+"onsen.gero.desc" = "일본 3대 명천 중 하나로 알려진 미인탕";
+"onsen.yamanaka.desc" = "가가온천향 중 하나로, 마쓰오 바쇼도 사랑한 온천지";
+"onsen.wakura.desc" = "노토반도의 해변 온천";
+"onsen.yamashiro.desc" = "가가온천향의 중심적 존재";
+"onsen.katayamazu.desc" = "시바야마가타를 바라보는 호반의 온천";
+"onsen.unazuki.desc" = "구로베 협곡의 관문";
+"onsen.arima.desc" = "일본 최고(最古)의 온천 중 하나로, 긴센·긴센으로 유명";
+"onsen.kinosaki.desc" = "7개의 외탕 순례로 유명";
+"onsen.yumura.desc" = "산인의 작은 교토라고 불린다";
+"onsen.shirahama.desc" = "바닷가의 온천지로, 팬더로 유명한 어드벤처 월드도 가깝다";
+"onsen.katsuura.desc" = "동굴목욕탕으로 유명한 해변의 온천";
+"onsen.misasa.desc" = "라돈온천으로 유명";
+"onsen.tamatsukuri.desc" = "미인탕으로 여성에게 인기";
+"onsen.dogo.desc" = "일본 최고급 온천으로 나쓰메 소세키의 『도련님』의 무대";
+"onsen.beppu.desc" = "원천 수 일본 1위를 자랑하는 온천왕국";
+"onsen.yufuin.desc" = "유후다케를 바라보는 차분한 분위기의 고원 리조트";
+"onsen.ibusuki.desc" = "모래찜질로 유명한 남국의 온천지";
+"onsen.kurokawa.desc" = "자연에 녹아든 노천온천이 인기";
+"onsen.unzen.desc" = "운젠다케 중턱에 있는 고원온천";
+"onsen.ureshino.desc" = "미용효과가 높은 미끈한 온천";
+"onsen.takeo.desc" = "용궁성을 연상시키는 누문으로 유명";
+
+/* Main Settings */
+"onsen_settings_title" = "";
+"display_settings" = "표시설정";
+"onsen_selection" = "온천지 선택";
+"select_all" = "전체 선택";
+"deselect_all" = "전체 해제";
+"done" = "완료";
+
+/* Grouping Mode */
+"grouping_by_region" = "지방별";
+"grouping_by_type" = "타입별";
+
+/* Weight Settings */
+"weight_settings" = "가중치 설정";
+"weight_settings_description" = "온천지별 선택 확률 조정";
+"weight_adjustment" = "가중치 조정";
+"weight_settings_explanation" = "각 온천지의 선택될 확률을 조정할 수 있습니다. 수치가 클수록 선택되기 쉽습니다.";
+"reset" = "재설정";
+"weight_format" = "가중치: %.1f";
+"probability_format" = "%.1f%%";
+
+/* Region Headers */
+"region_count_format" = "(%d온천지)";
+"locations_count_format" = "%d곳";
+
+/* OnsenDetailView */
+"onsen_features" = "온천의 특징";
+"onsen_map" = "온천지 지도";
+"open_external_map" = "외부 지도 앱에서 열기";
+"start" = "시작";
+"stop" = "정지";
+
+"tourism_detail_back" = "뒤로";
+"tourism_detail_map" = "관광지 지도";
+"tourism_detail_photo" = "관광지 사진";
+"tourism_detail_photo_loading" = "사진을 로딩 중...";
+
+"tab.prefecture" = "도도부현";
+"tab.onsen" = "온천지";
+"tab.nature" = "자연";
+"tab.festival" = "축제·이벤트";
+
+/* Korean Localizable.strings */
+
+// Hokkaido
+"attraction_sapporo_snow_festival" = "삿포로 눈축제";
+"attraction_sapporo_snow_festival_desc" = "겨울 삿포로를 수놓는 눈과 얼음의 축제";
+"attraction_hakodate_mountain" = "하코다테야마";
+"attraction_hakodate_mountain_desc" = "아름다운 야경으로 유명한 하코다테의 상징";
+"attraction_asahiyama_zoo" = "아사히야마 동물원";
+"attraction_asahiyama_zoo_desc" = "행동전시로 화제가 된 동물원";
+"attraction_furano_lavender" = "후라노 라벤더밭";
+"attraction_furano_lavender_desc" = "여름의 보라색으로 물든 절경";
+"attraction_shiretoko_lakes" = "시레토코 5호";
+"attraction_shiretoko_lakes_desc" = "세계자연유산의 원시림";
+"attraction_otaru_canal" = "오타루 운하";
+"attraction_otaru_canal_desc" = "가스등과 벽돌창고가 만들어내는 로맨틱한 운하";
+"attraction_lake_toya" = "도야호";
+"attraction_lake_toya_desc" = "온천과 불꽃놀이로 유명한 칼데라 호수";
+
+"food_genghis_khan" = "징기스칸";
+"food_seafood_bowl" = "해산물덮밥";
+"food_soup_curry" = "수프 카레";
+"food_yubari_melon" = "유바리 멜론";
+"food_shiroi_koibito" = "하얀 연인";
+
+// Aomori
+"attraction_hirosaki_castle" = "히로사키성";
+"attraction_hirosaki_castle_desc" = "벚꽃 명소로 유명한 아름다운 성";
+"attraction_oirase_stream" = "오이라세 계류";
+"attraction_oirase_stream_desc" = "단풍의 아름다움으로 유명한 계류";
+"attraction_lake_towada" = "도와다호";
+"attraction_lake_towada_desc" = "칼데라 호수의 신비로운 아름다움";
+"attraction_shirakami_mountains" = "시라카미 산지";
+"attraction_shirakami_mountains_desc" = "세계 최대급의 너도밤나무 원생림";
+"attraction_nebuta_museum" = "네부타 축제 회관";
+"attraction_nebuta_museum_desc" = "아오모리의 여름축제 매력을 체험";
+"attraction_hakkoda_mountains" = "핫코다산";
+"attraction_hakkoda_mountains_desc" = "수빙과 절경을 즐길 수 있는 산악 리조트";
+
+"food_apple" = "사과";
+"food_oma_tuna" = "오마 참치";
+"food_senbei_soup" = "센베이국";
+"food_tsugaru_soba" = "쓰가루 소바";
+"food_ichigo_ni" = "이치고니";
+
+// Iwate
+"attraction_chusonji" = "주손지";
+"attraction_chusonji_desc" = "히라이즈미 세계유산의 중심";
+"attraction_hiraizumi" = "히라이즈미";
+"attraction_hiraizumi_desc" = "오슈 후지와라씨의 영화를 추억하는 곳";
+"attraction_ryusendo_cave" = "류센도";
+"attraction_ryusendo_cave_desc" = "지하호수의 푸른 아름다움";
+"attraction_hachimantai" = "하치만타이";
+"attraction_hachimantai_desc" = "고원의 자연과 온천";
+"attraction_hanamaki_onsen" = "하나마키온천";
+"attraction_hanamaki_onsen_desc" = "미야자와 겐지와 인연 깊은 온천지";
+"attraction_jodogahama" = "정토가하마";
+"attraction_jodogahama_desc" = "흰 바위와 푸른 바다의 대조가 아름다운 해안";
+
+"food_wanko_soba" = "완코 소바";
+"food_morioka_cold_noodles" = "모리오카 냉면";
+"food_maezawa_beef" = "마에자와규";
+"food_nanbu_senbei" = "난부 센베이";
+"food_gangetsu" = "간게쓰";
+
+// Akita
+"attraction_kakunodate_samurai_houses" = "가쿠노다테 무가저택";
+"attraction_kakunodate_samurai_houses_desc" = "미치노쿠의 작은 교토";
+"attraction_lake_tazawa" = "다자와호";
+"attraction_lake_tazawa_desc" = "일본에서 가장 깊은 호수";
+"attraction_namahage_museum" = "나마하게관";
+"attraction_namahage_museum_desc" = "아키타의 전통문화를 체험";
+"attraction_akita_kanto_festival" = "아키타 간토축제";
+"attraction_akita_kanto_festival_desc" = "여름밤을 수놓는 간토";
+"attraction_shirakami_mountains_akita" = "시라카미 산지";
+"attraction_shirakami_mountains_akita_desc" = "세계유산의 너도밤나무 원생림";
+"attraction_nyuto_onsen" = "뉴토온천향";
+"attraction_nyuto_onsen_desc" = "비경 분위기 떠도는 온천향";
+
+"food_kiritanpo" = "기리탄포";
+"food_hinai_chicken" = "히나이도리";
+"food_inaniwa_udon" = "이나니와 우동";
+"food_akita_komachi" = "아키타 고마치";
+"food_babahera_ice" = "바바헤라 아이스";
+
+// Miyagi
+"attraction_matsushima" = "마쓰시마";
+"attraction_matsushima_desc" = "일본 3경 중 하나";
+"attraction_sendai_castle" = "센다이성터";
+"attraction_sendai_castle_desc" = "다테 마사무네의 거성터";
+"attraction_zao" = "자오";
+"attraction_zao_desc" = "수빙과 스키로 유명";
+"attraction_naruko_onsen" = "나루코온천";
+"attraction_naruko_onsen_desc" = "역사 있는 온천향";
+"attraction_zuiganji" = "즈이간지";
+"attraction_zuiganji_desc" = "마쓰시마의 명찰";
+"attraction_akiu_onsen" = "아키우온천";
+"attraction_akiu_onsen_desc" = "오슈 3대 명탕 중 하나로 미인탕으로 인기";
+
+"food_beef_tongue" = "우설";
+"food_sasukamaboko" = "사사가마보코";
+"food_zunda_mochi" = "준다모치";
+"food_seri_nabe" = "세리나베";
+"food_shiroishi_somen" = "시로이시 소면";
+
+// Yamagata
+"attraction_yamadera" = "야마데라";
+"attraction_yamadera_desc" = "마쓰오 바쇼도 방문한 명찰";
+"attraction_zao_onsen" = "자오온천";
+"attraction_zao_onsen_desc" = "수빙으로 유명한 온천지";
+"attraction_ginzan_onsen" = "긴잔온천";
+"attraction_ginzan_onsen_desc" = "다이쇼 로맨 떠도는 온천가";
+"attraction_mount_gassan" = "갓산";
+"attraction_mount_gassan_desc" = "데와 삼산 중 하나";
+"attraction_mount_haguro" = "하구로산";
+"attraction_mount_haguro_desc" = "데와 삼산신사의 본사";
+"attraction_mogami_river_cruise" = "모가미강 뱃놀이";
+"attraction_mogami_river_cruise_desc" = "풍광명미한 강 하류 체험";
+
+"food_cherry" = "체리";
+"food_yonezawa_beef" = "요네자와규";
+"food_imoni" = "이모니";
+"food_tama_konnyaku" = "타마 곤냐쿠";
+"food_cold_ramen" = "차가운 라멘";
+
+// Fukushima
+"attraction_aizu_wakamatsu_castle" = "아이즈와카마쓰성";
+"attraction_aizu_wakamatsu_castle_desc" = "백호대로 유명한 명성";
+"attraction_goshikinuma" = "고시키누마";
+"attraction_goshikinuma_desc" = "신비로운 색의 늪 무리";
+"attraction_spa_resort_hawaiians" = "스파리조트 하와이안즈";
+"attraction_spa_resort_hawaiians_desc" = "상춘의 리조트 시설";
+"attraction_ouchi_juku" = "오우치주쿠";
+"attraction_ouchi_juku_desc" = "에도시대의 숙장마을";
+"attraction_lake_inawashiro" = "이나와시로호";
+"attraction_lake_inawashiro_desc" = "천경호라고 불리는 아름다운 호수";
+"attraction_abukuma_cave" = "아부쿠마동";
+"attraction_abukuma_cave_desc" = "신비로운 종유동의 지하세계";
+
+"food_kitakata_ramen" = "기타카타 라멘";
+"food_aizu_chicken" = "아이즈 지도리";
+"food_mamadooru" = "마마도루";
+"food_peach" = "복숭아";
+"food_shirakawa_ramen" = "시라카와 라멘";
+
+// Ibaraki
+"attraction_kairakuen" = "가이라쿠엔";
+"attraction_kairakuen_desc" = "일본 3대 명원 중 하나";
+"attraction_fukuroda_falls" = "후쿠로다 폭포";
+"attraction_fukuroda_falls_desc" = "일본 3대 명폭 중 하나";
+"attraction_hitachi_seaside_park" = "국영 히타치 해변공원";
+"attraction_hitachi_seaside_park_desc" = "네모필라로 유명한 공원";
+"attraction_mount_tsukuba" = "쓰쿠바산";
+"attraction_mount_tsukuba_desc" = "서쪽의 후지, 동쪽의 쓰쿠바";
+"attraction_oarai_coast" = "오아라이 해안";
+"attraction_oarai_coast_desc" = "아름다운 해안선";
+"attraction_ryujin_bridge" = "류진 대교";
+"attraction_ryujin_bridge_desc" = "혼슈 최장급의 보행자 전용 현수교로 번지점프도 즐길 수 있다";
+
+"food_natto" = "낫토";
+"food_anko_nabe" = "안코나베";
+"food_hitachi_beef" = "히타치규";
+"food_melon" = "멜론";
+"food_dried_sweet_potato" = "건 고구마";
+
+// Chiba
+"attraction_tokyo_disneyland" = "도쿄 디즈니랜드";
+"attraction_tokyo_disneyland_desc" = "꿈과 마법의 왕국";
+"attraction_naritasan_shinshoji" = "나리타산 신쇼지";
+"attraction_naritasan_shinshoji_desc" = "간토 3대 부동 중 하나";
+"attraction_kamogawa_seaworld" = "가모가와 시월드";
+"attraction_kamogawa_seaworld_desc" = "바다 생물과의 만남";
+"attraction_choshi" = "조시";
+"attraction_choshi_desc" = "혼슈 최동단의 도시";
+"attraction_mother_farm" = "마더 목장";
+"attraction_mother_farm_desc" = "자연과 동물의 만남";
+"attraction_tokyo_disneysea" = "도쿄 디즈니시";
+"attraction_tokyo_disneysea_desc" = "바다를 테마로 한 모험과 상상의 세계";
+
+"food_peanuts" = "땅콩";
+"food_loquat" = "비파";
+"food_namerou" = "나메로";
+"food_katsuura_tantanmen" = "가쓰우라 탄탄멘";
+"food_boso_seafood" = "보소의 바다의 맛";
+
+// Tochigi
+"attraction_nikko_toshogu" = "닛코 도쇼구";
+"attraction_nikko_toshogu_desc" = "도쿠가와 이에야스가 잠든 화려한 영묘";
+"attraction_kegon_falls" = "게곤 폭포";
+"attraction_kegon_falls_desc" = "닛코의 명폭";
+"attraction_lake_chuzenji" = "주젠지호";
+"attraction_lake_chuzenji_desc" = "고원의 아름다운 호수";
+"attraction_nasu_highlands" = "나스 고원";
+"attraction_nasu_highlands_desc" = "리조트지로 인기";
+"attraction_ashikaga_flower_park" = "아시카가 플라워파크";
+"attraction_ashikaga_flower_park_desc" = "등꽃으로 유명";
+"attraction_oya_museum" = "오야 자료관";
+"attraction_oya_museum_desc" = "신비로운 지하공간이 펼쳐지는 오야석 채굴장 터";
+
+"food_utsunomiya_gyoza" = "우쓰노미야 교자";
+"food_yuba" = "유바";
+"food_tochiotome" = "도치오토메";
+"food_shimotsukare" = "시모쓰카레";
+"food_lemon_milk" = "레몬 우유";
+
+// Gunma
+"attraction_kusatsu_onsen" = "구사쓰온천";
+"attraction_kusatsu_onsen_desc" = "일본 3대 명천 중 하나";
+"attraction_ikaho_onsen" = "이카호온천";
+"attraction_ikaho_onsen_desc" = "돌계단 거리로 유명한 온천";
+"attraction_oze" = "오제";
+"attraction_oze_desc" = "물파초가 피는 습원";
+"attraction_tomioka_silk_mill" = "도미오카 제사장";
+"attraction_tomioka_silk_mill_desc" = "세계유산의 견 산업 유적";
+"attraction_lake_haruna" = "하루나호";
+"attraction_lake_haruna_desc" = "하루나산의 칼데라 호수";
+"attraction_mount_tanigawa" = "다니가와다케";
+"attraction_mount_tanigawa_desc" = "로프웨이로 즐기는 절경과 트레킹";
+
+"food_yaki_manju" = "야키 만주";
+"food_shimonita_negi" = "시모니타 파";
+"food_konnyaku" = "곤냐쿠";
+"food_mizusawa_udon" = "미즈사와 우동";
+"food_daruma_bento" = "다루마 도시락";
+
+// Saitama
+"attraction_kawagoe" = "가와고에";
+"attraction_kawagoe_desc" = "고에도라고 불리는 창고의 거리";
+"attraction_chichibu" = "치치부";
+"attraction_chichibu_desc" = "자연 풍부한 산간의 도시";
+"attraction_nagatoro" = "나가토로";
+"attraction_nagatoro_desc" = "바위다다미로 유명한 경승지";
+"attraction_railway_museum" = "철도박물관";
+"attraction_railway_museum_desc" = "철도의 역사를 배울 수 있는 곳";
+"attraction_ranzan_valley" = "란잔 계곡";
+"attraction_ranzan_valley_desc" = "단풍이 아름다운 계곡";
+"attraction_musashi_ichinomiya_hikawa_shrine" = "무사시 이치노미야 히카와신사";
+"attraction_musashi_ichinomiya_hikawa_shrine_desc" = "무사시국 이치노미야로 격식 높은 신사";
+
+"food_kawagoe_sweet_potato" = "가와고에 고구마";
+"food_chichibu_soba" = "치치부 소바";
+"food_soka_senbei" = "소카 센베이";
+"food_gokaho" = "고카호";
+"food_iga_manju" = "이가 만주";
+
+// Tokyo
+"attraction_tokyo_skytree" = "도쿄 스카이트리";
+"attraction_tokyo_skytree_desc" = "높이 634m의 도쿄의 새로운 상징";
+"attraction_sensoji" = "센소지";
+"attraction_sensoji_desc" = "도쿄에서 가장 오래된 사원";
+"attraction_imperial_palace" = "고쿄";
+"attraction_imperial_palace_desc" = "천황폐하의 거주지";
+"attraction_shibuya_crossing" = "시부야 스크램블 교차점";
+"attraction_shibuya_crossing_desc" = "세계에서 가장 유명한 교차점";
+"attraction_tokyo_tower" = "도쿄 타워";
+"attraction_tokyo_tower_desc" = "빨강과 하양의 아름다운 전파탑";
+"attraction_meiji_shrine" = "메이지신궁";
+"attraction_meiji_shrine_desc" = "도심의 신성한 숲에 자리한 신사";
+"attraction_odaiba" = "오다이바";
+"attraction_odaiba_desc" = "레인보우 브릿지와 야경이 아름다운 미래적 지역";
+"attraction_ueno_zoo" = "우에노 동물원";
+"attraction_ueno_zoo_desc" = "일본 최고의 동물원, 팬더로 유명";
+
+"food_edomae_sushi" = "에도마에 스시";
+"food_monjayaki" = "몬자야키";
+"food_fukagawa_don" = "후카가와동";
+"food_imagawayaki" = "이마가와야키";
+"food_tsukudani" = "쓰쿠다니";
+
+// Kanagawa
+"attraction_kamakura_daibutsu" = "가마쿠라 대불";
+"attraction_kamakura_daibutsu_desc" = "고토쿠인의 청동제 대불";
+"attraction_enoshima" = "에노시마";
+"attraction_enoshima_desc" = "쇼난의 인기 관광지";
+"attraction_hakone" = "하코네";
+"attraction_hakone_desc" = "온천과 예술의 거리";
+"attraction_yokohama_chinatown" = "요코하마 중화가";
+"attraction_yokohama_chinatown_desc" = "일본 최대의 중화가";
+"attraction_minato_mirai" = "미나토미라이";
+"attraction_minato_mirai_desc" = "요코하마의 미래도시";
+"attraction_owakudani" = "오와쿠다니";
+"attraction_owakudani_desc" = "하코네의 화산활동이 만들어낸 박력 있는 경관";
+"attraction_hokokuji" = "호코쿠지";
+"attraction_hokokuji_desc" = "아름다운 대나무숲으로 유명한 가마쿠라의 선사";
+
+"food_shumai" = "슈마이";
+"food_kamakura_vegetables" = "가마쿠라 야채";
+"food_shonan_shirasu" = "쇼난 시라스";
+"food_iekei_ramen" = "이에케이 라멘";
+"food_yokohama_chinatown_gourmet" = "요코하마 중화가 구르메";
+
+// Niigata
+"attraction_sado_island" = "사도섬";
+"attraction_sado_island_desc" = "금광과 자연의 섬";
+"attraction_naeba_ski_resort" = "나에바 스키장";
+"attraction_naeba_ski_resort_desc" = "겨울의 스포츠 리조트";
+"attraction_yahiko_shrine" = "야히코신사";
+"attraction_yahiko_shrine_desc" = "에치고 이치노미야의 고사";
+"attraction_joetsu_kokusai_ski_resort" = "조에쓰국제 스키장";
+"attraction_joetsu_kokusai_ski_resort_desc" = "광대한 스키 에리어";
+"attraction_myoko_kogen" = "묘코 고원";
+"attraction_myoko_kogen_desc" = "사계절의 자연";
+"attraction_kiyotsu_gorge" = "기요쓰 협곡";
+"attraction_kiyotsu_gorge_desc" = "일본 3대 협곡 중 하나, 아트작품도 즐길 수 있다";
+
+"food_niigata_rice" = "니가타쌀";
+"food_noppe" = "놋페";
+"food_hegi_soba" = "헤기 소바";
+"food_salmon" = "연어";
+"food_sake" = "일본술";
+
+// Nagano
+"attraction_zenkoji" = "젠코지";
+"attraction_zenkoji_desc" = "무종파의 고찰";
+"attraction_karuizawa" = "가루이자와";
+"attraction_karuizawa_desc" = "피서지로 인기";
+"attraction_kamikochi" = "가미코치";
+"attraction_kamikochi_desc" = "일본 굴지의 산악 경승지";
+"attraction_hakuba" = "하쿠바";
+"attraction_hakuba_desc" = "기타 알프스의 리조트";
+"attraction_matsumoto_castle" = "마쓰모토성";
+"attraction_matsumoto_castle_desc" = "현존 천수의 국보";
+"attraction_lake_suwa" = "스와호";
+"attraction_lake_suwa_desc" = "불꽃놀이로 유명한 아름다운 호수";
+"attraction_togakushi" = "도가쿠시";
+"attraction_togakushi_desc" = "닌자의 마을로 유명, 소바의 명산지";
+
+"food_shinshu_soba" = "신슈 소바";
+"food_oyaki" = "오야키";
+"food_nozawana" = "노자와나";
+"food_apple_nagano" = "사과";
+"food_shinshu_miso" = "신슈 된장";
+
+// Yamanashi
+"attraction_mount_fuji" = "후지산";
+"attraction_mount_fuji_desc" = "일본 최고봉의 영봉";
+"attraction_lake_kawaguchi" = "가와구치호";
+"attraction_lake_kawaguchi_desc" = "후지 5호 중 하나";
+"attraction_shosenkyo" = "쇼센쿄";
+"attraction_shosenkyo_desc" = "화강암의 아름다운 계곡";
+"attraction_lake_yamanaka" = "야마나카호";
+"attraction_lake_yamanaka_desc" = "후지 5호 중 가장 큰 호수";
+"attraction_oshino_hakkai" = "오시노 핫카이";
+"attraction_oshino_hakkai_desc" = "후지의 용천수군";
+"attraction_takeda_shrine" = "다케다신사";
+"attraction_takeda_shrine_desc" = "다케다 신겐공을 모시는 승운의 신사";
+
+"food_hoto" = "호토";
+"food_shingen_mochi" = "신겐모치";
+"food_grape" = "포도";
+"food_peach_yamanashi" = "복숭아";
+"food_koshu_wine" = "고슈 와인";
+
+// Shizuoka
+"attraction_mount_fuji_shizuoka" = "후지산";
+"attraction_mount_fuji_shizuoka_desc" = "일본의 상징";
+"attraction_izu_peninsula" = "이즈반도";
+"attraction_izu_peninsula_desc" = "온천과 리조트의 반도";
+"attraction_atami_onsen" = "아타미온천";
+"attraction_atami_onsen_desc" = "옛부터의 온천지";
+"attraction_lake_hamana" = "하마나호";
+"attraction_lake_hamana_desc" = "장어로 유명한 호수";
+"attraction_kunozan_toshogu" = "구노산 도쇼구";
+"attraction_kunozan_toshogu_desc" = "도쿠가와 이에야스 최초의 매장지";
+"attraction_shiraito_falls" = "시라이토 폭포";
+"attraction_shiraito_falls_desc" = "후지산 기슭의 비단실 같은 아름다운 폭포";
+"attraction_miho_matsubara" = "미호 마쓰바라";
+"attraction_miho_matsubara_desc" = "후지산과 솔숲의 절경으로 세계유산의 구성자산";
+
+"food_shizuoka_tea" = "시즈오카 차";
+"food_unagi" = "장어";
+"food_wasabi" = "와사비";
+"food_sakura_ebi" = "벚새우";
+"food_kuro_hanpen" = "검은 어묵";
+
+// Aichi
+"attraction_nagoya_castle" = "나고야성";
+"attraction_nagoya_castle_desc" = "금의 샤치호코로 유명";
+"attraction_atsuta_shrine" = "아쓰타신궁";
+"attraction_atsuta_shrine_desc" = "삼종의 신기 중 하나를 모시는 곳";
+"attraction_inuyama_castle" = "이누야마성";
+"attraction_inuyama_castle_desc" = "현존 천수의 국보";
+"attraction_chita_peninsula" = "치타반도";
+"attraction_chita_peninsula_desc" = "바다의 맛과 온천";
+"attraction_korankei" = "고란케이";
+"attraction_korankei_desc" = "단풍 명소";
+"attraction_linear_railway_museum" = "리니어·철도관";
+"attraction_linear_railway_museum_desc" = "최신 철도기술을 체험할 수 있는 박물관";
+
+"food_miso_katsu" = "된장 돈가스";
+"food_hitsumabushi" = "히쓰마부시";
+"food_tebasaki" = "닭날개";
+"food_kishimen" = "기시멘";
+"food_taiwan_ramen" = "대만 라멘";
+
+// Mie
+"attraction_ise_shrine" = "이세신궁";
+"attraction_ise_shrine_desc" = "일본인의 마음의 고향";
+"attraction_toba_aquarium" = "도바 수족관";
+"attraction_toba_aquarium_desc" = "바다 생물의 보고";
+"attraction_kumano_kodo" = "구마노 고도";
+"attraction_kumano_kodo_desc" = "세계유산의 순례길";
+"attraction_nabana_no_sato" = "나바나노사토";
+"attraction_nabana_no_sato_desc" = "일루미네이션으로 유명";
+"attraction_iga_ueno_castle" = "이가우에노성";
+"attraction_iga_ueno_castle_desc" = "닌자의 마을의 성";
+"attraction_shima_spain_village" = "시마 스페인촌";
+"attraction_shima_spain_village_desc" = "스페인의 문화와 분위기를 즐길 수 있는 테마파크";
+
+"food_ise_ebi" = "이세 랍스터";
+"food_matsusaka_beef" = "마쓰사카규";
+"food_akafuku" = "아카후쿠";
+"food_tekone_sushi" = "데코네 스시";
+"food_iga_beef" = "이가규";
+
+// Gifu
+"attraction_shirakawago" = "시라카와고";
+"attraction_shirakawago_desc" = "갓쇼즈쿠리의 세계유산";
+"attraction_hida_takayama" = "히다 다카야마";
+"attraction_hida_takayama_desc" = "오래된 거리가 아름다운 곳";
+"attraction_gero_onsen" = "게로온천";
+"attraction_gero_onsen_desc" = "일본 3대 명천 중 하나";
+"attraction_kinkazan" = "긴카잔";
+"attraction_kinkazan_desc" = "기후성에서의 조망";
+"attraction_magome_juku" = "마고메주쿠";
+"attraction_magome_juku_desc" = "나카센도의 숙장마을";
+"attraction_okuhida_onsen" = "오쿠히다온천향";
+"attraction_okuhida_onsen_desc" = "기타 알프스 기슭에 점재하는 비경군";
+
+"food_hida_beef" = "히다규";
+"food_hoba_miso" = "호바 된장";
+"food_gohei_mochi" = "고헤이모치";
+"food_ayu_shioyaki" = "은어 소금구이";
+"food_kuri_kinton" = "밤 금단";
+
+// Fukui
+"attraction_tojinbo" = "도진보";
+"attraction_tojinbo_desc" = "단애절벽의 경승지";
+"attraction_eiheiji" = "에이헤이지";
+"attraction_eiheiji_desc" = "조동종의 대본산";
+"attraction_dinosaur_museum" = "공룡박물관";
+"attraction_dinosaur_museum_desc" = "공룡화석의 보고";
+"attraction_ichijodani_asakura_ruins" = "이치조다니 아사쿠라씨 유적";
+"attraction_ichijodani_asakura_ruins_desc" = "전국시대의 성하마을 터";
+"attraction_wakasa_bay" = "와카사만";
+"attraction_wakasa_bay_desc" = "리아스식 해안의 아름다움";
+"attraction_mikata_goko" = "미카타 5호";
+"attraction_mikata_goko_desc" = "각각 다른 색을 가진 신비로운 다섯 개의 호수";
+
+"food_echizen_crab" = "에치젠 게";
+"food_echizen_soba" = "에치젠 소바";
+"food_sauce_katsu_don" = "소스 돈가스덮밥";
+"food_habutae_mochi" = "하부타에모치";
+"food_wakasa_beef" = "와카사규";
+
+// Ishikawa
+"attraction_kenrokuen" = "겐로쿠엔";
+"attraction_kenrokuen_desc" = "일본 3대 명원 중 하나";
+"attraction_kanazawa_castle" = "가나자와성";
+"attraction_kanazawa_castle_desc" = "가가 백만석의 거성";
+"attraction_wakura_onsen" = "와쿠라온천";
+"attraction_wakura_onsen_desc" = "노토반도의 명탕";
+"attraction_chirihama_nagisa_driveway" = "치리하마 나기사 드라이브웨이";
+"attraction_chirihama_nagisa_driveway_desc" = "모래사장을 차로 달릴 수 있다";
+"attraction_wajima_morning_market" = "와지마 아침시장";
+"attraction_wajima_morning_market_desc" = "천 년 계속된 아침시장";
+"attraction_higashi_chaya_district" = "히가시 다야가이";
+"attraction_higashi_chaya_district_desc" = "가나자와의 역사 있는 다야가이에서 게이샤 문화를 체험";
+
+"food_kaga_cuisine" = "가가요리";
+"food_kanazawa_curry" = "가나자와 카레";
+"food_noto_beef" = "노토규";
+"food_jibuni" = "지부니";
+"food_nodoguro" = "노도구로";
+
+// Toyama
+"attraction_tateyama_kurobe_alpine_route" = "다테야마 구로베 알핀 루트";
+"attraction_tateyama_kurobe_alpine_route_desc" = "운상의 절경 루트";
+"attraction_kurobe_dam" = "구로베 댐";
+"attraction_kurobe_dam_desc" = "일본 최대급의 아치식 댐";
+"attraction_gokayama" = "고카야마";
+"attraction_gokayama_desc" = "갓쇼즈쿠리의 집락";
+"attraction_toyama_bay" = "도야마만";
+"attraction_toyama_bay_desc" = "바다의 맛의 보고";
+"attraction_shomyo_falls" = "쇼묘 폭포";
+"attraction_shomyo_falls_desc" = "일본 최대 낙차의 폭포";
+"attraction_unazuki_onsen" = "우나즈키온천";
+"attraction_unazuki_onsen_desc" = "구로베 협곡 트로코 전차의 기점이 되는 온천지";
+
+"food_shiro_ebi" = "흰새우";
+"food_hotaru_ika" = "반딧불 오징어";
+"food_masu_sushi" = "송어 스시";
+"food_toyama_black_ramen" = "도야마 블랙 라멘";
+"food_himi_beef" = "히미규";
+
+// Shiga
+"attraction_lake_biwa" = "비와호";
+"attraction_lake_biwa_desc" = "일본 최대의 호수";
+"attraction_hikone_castle" = "히코네성";
+"attraction_hikone_castle_desc" = "히코냥으로 유명한 국보";
+"attraction_hieizan_enryakuji" = "히에이잔 엔랴쿠지";
+"attraction_hieizan_enryakuji_desc" = "천태종의 총본산";
+"attraction_azuchi_castle_ruins" = "아즈치성터";
+"attraction_azuchi_castle_ruins_desc" = "오다 노부나가의 거성터";
+"attraction_omihachiman" = "오미하치만";
+"attraction_omihachiman_desc" = "수향과 상인의 마을";
+"attraction_metasequoia_avenue" = "메타세쿼이아 가로수길";
+"attraction_metasequoia_avenue_desc" = "약 500그루의 메타세쿼이아가 만드는 절경의 가로수길";
+
+"food_omi_beef" = "오미규";
+"food_funa_sushi" = "붕어 스시";
+"food_aka_konnyaku" = "빨간 곤냐쿠";
+"food_shigaraki_pottery" = "시가라키야키";
+"food_lake_fish_cuisine" = "호어요리";
+
+// Kyoto
+"attraction_kiyomizu_dera" = "기요미즈데라";
+"attraction_kiyomizu_dera_desc" = "교토를 대표하는 세계유산";
+"attraction_kinkakuji" = "긴카쿠지";
+"attraction_kinkakuji_desc" = "금색으로 빛나는 아름다운 사원";
+"attraction_fushimi_inari_taisha" = "후시미이나리 대사";
+"attraction_fushimi_inari_taisha_desc" = "센본도리이로 유명한 이나리 신사";
+"attraction_arashiyama" = "아라시야마";
+"attraction_arashiyama_desc" = "대나무숲 오솔길과 벚꽃·단풍 명소";
+"attraction_philosophers_path" = "철학의 길";
+"attraction_philosophers_path_desc" = "벚꽃 가로수가 아름다운 산책로";
+"attraction_amanohashidate" = "아마노하시다테";
+"attraction_amanohashidate_desc" = "일본 3경 중 하나, 고간보기로 유명";
+"attraction_byodoin" = "뵤도인";
+"attraction_byodoin_desc" = "10엔 동전에도 그려진 아름다운 사원";
+
+"food_yudofu" = "유도후";
+"food_kyoto_kaiseki" = "교토 가이세키";
+"food_matcha_sweets" = "말차 디저트";
+"food_obanzai" = "오반자이";
+"food_kyoto_pickles" = "교토 절임";
+
+// Hyogo
+"attraction_himeji_castle" = "히메지성";
+"attraction_himeji_castle_desc" = "백로성이라고 불리는 세계유산";
+"attraction_arima_onsen" = "아리마온천";
+"attraction_arima_onsen_desc" = "일본 3고탕 중 하나";
+"attraction_kobe_port_tower" = "고베 포트타워";
+"attraction_kobe_port_tower_desc" = "고베항의 상징";
+"attraction_takeda_castle_ruins" = "다케다성터";
+"attraction_takeda_castle_ruins_desc" = "천공의 성";
+"attraction_awaji_island" = "아와지섬";
+"attraction_awaji_island_desc" = "꽃과 초록의 섬";
+"attraction_mount_rokko" = "롯코산";
+"attraction_mount_rokko_desc" = "고베의 야경을 한눈에 볼 수 있는 인기 스팟";
+"attraction_takarazuka_grand_theater" = "다카라즈카 대극장";
+"attraction_takarazuka_grand_theater_desc" = "다카라즈카 가극의 성지";
+
+"food_kobe_beef" = "고베규";
+"food_akashiyaki" = "아카시야키";
+"food_ikanago" = "이카나고";
+"food_banshu_ramen" = "반슈 라멘";
+"food_awaji_onion" = "아와지섬 양파";
+
+// Nara
+"attraction_todaiji" = "도다이지";
+"attraction_todaiji_desc" = "나라의 대불로 유명";
+"attraction_nara_park" = "나라공원";
+"attraction_nara_park_desc" = "사슴과 교감할 수 있는 공원";
+"attraction_kasuga_taisha" = "가스가 대사";
+"attraction_kasuga_taisha_desc" = "천 개의 석등롱";
+"attraction_horyuji" = "호류지";
+"attraction_horyuji_desc" = "세계에서 가장 오래된 목조건축";
+"attraction_yoshinoyama" = "요시노야마";
+"attraction_yoshinoyama_desc" = "벚꽃 명소";
+"attraction_kofukuji" = "고후쿠지";
+"attraction_kofukuji_desc" = "아름다운 5층탑으로 유명한 고찰";
+
+"food_kakinoha_sushi" = "감잎 스시";
+"food_miwa_somen" = "미와 소면";
+"food_narazuke" = "나라즈케";
+"food_yamato_beef" = "야마토규";
+"food_kuzukiri" = "구즈키리";
+
+// Wakayama
+"attraction_kumano_kodo_wakayama" = "구마노 고도";
+"attraction_kumano_kodo_wakayama_desc" = "세계유산의 순례길";
+"attraction_koyasan" = "고야산";
+"attraction_koyasan_desc" = "진언종의 성지";
+"attraction_shirahama_onsen" = "시라하마온천";
+"attraction_shirahama_onsen_desc" = "하얀 모래사장의 온천지";
+"attraction_nachi_falls" = "나치 폭포";
+"attraction_nachi_falls_desc" = "일본 3대 명폭 중 하나";
+"attraction_adventure_world" = "어드벤처 월드";
+"attraction_adventure_world_desc" = "팬더로 유명한 동물원";
+"attraction_wakayama_castle" = "와카야마성";
+"attraction_wakayama_castle_desc" = "도쿠가와 고산케 기슈번의 거성";
+
+"food_umeboshi" = "매실장아찌";
+"food_wakayama_ramen" = "와카야마 라멘";
+"food_tuna" = "참치";
+"food_persimmon" = "감";
+"food_kishu_kinzanji_miso" = "기슈 긴잔지 된장";
+
+// Osaka
+"attraction_osaka_castle" = "오사카성";
+"attraction_osaka_castle_desc" = "도요토미 히데요시가 축성한 명성";
+"attraction_dotonbori" = "도톤보리";
+"attraction_dotonbori_desc" = "오사카의 번화가와 구르메의 중심지";
+"attraction_universal_studios" = "유니버설 스튜디오";
+"attraction_universal_studios_desc" = "영화의 세계를 체험할 수 있는 테마파크";
+"attraction_sumiyoshi_taisha" = "스미요시 대사";
+"attraction_sumiyoshi_taisha_desc" = "전국 약 2300사의 스미요시신사의 총본사";
+"attraction_shinsekai" = "신세카이";
+"attraction_shinsekai_desc" = "츠텐카쿠와 꼬치튀김의 거리";
+"attraction_shitennoji" = "시텐노지";
+"attraction_shitennoji_desc" = "쇼토쿠 태자 건립의 일본 최고의 관사";
+
+"food_takoyaki" = "타코야키";
+"food_okonomiyaki" = "오코노미야키";
+"food_kushikatsu" = "꼬치튀김";
+"food_ikayaki" = "오징어구이";
+"food_butaman" = "돼지고기찐빵";
+
+// Tottori
+"attraction_tottori_sand_dunes" = "돗토리 사구";
+"attraction_tottori_sand_dunes_desc" = "일본 최대의 사구";
+"attraction_mount_daisen" = "다이센";
+"attraction_mount_daisen_desc" = "주고쿠지방 최고봉";
+"attraction_mizuki_shigeru_road" = "미즈키 시게루 로드";
+"attraction_mizuki_shigeru_road_desc" = "요괴의 거리";
+"attraction_uradome_coast" = "우라도메 해안";
+"attraction_uradome_coast_desc" = "산인 해안 지오파크";
+"attraction_misasa_onsen" = "미사사온천";
+"attraction_misasa_onsen_desc" = "라듐온천으로 유명";
+"attraction_hakuto_coast" = "하쿠토 해안";
+"attraction_hakuto_coast_desc" = "이나바의 흰토끼 전설의 무대가 된 아름다운 해안";
+
+"food_matsuba_crab" = "마쓰바 게";
+"food_nijisseiki_pear" = "20세기 배";
+"food_sakaiminato_seafood" = "사카이미나토의 해산물";
+"food_tofu_chikuwa" = "두부 치쿠와";
+"food_gyu_kotsu_ramen" = "우골 라멘";
+
+// Okayama
+"attraction_okayama_castle" = "오카야마성";
+"attraction_okayama_castle_desc" = "까마귀성이라고 불리는 검은 성";
+"attraction_korakuen" = "고라쿠엔";
+"attraction_korakuen_desc" = "일본 3대 명원 중 하나";
+"attraction_kurashiki_bikan" = "구라시키 미관지구";
+"attraction_kurashiki_bikan_desc" = "하얀 벽의 창고저택이 아름다운 곳";
+"attraction_kibitsu_shrine" = "기비쓰신사";
+"attraction_kibitsu_shrine_desc" = "모모타로 전설의 신사";
+"attraction_hiruzen_kogen" = "히루젠 고원";
+"attraction_hiruzen_kogen_desc" = "서쪽의 가루이자와";
+"attraction_seto_ohashi" = "세토대교";
+"attraction_seto_ohashi_desc" = "혼슈와 시코쿠를 연결하는 웅대한 다리";
+
+"food_white_peach" = "백도";
+"food_muscat" = "머스캣";
+"food_kibidango" = "기비당고";
+"food_mamakari" = "마마카리";
+"food_demi_katsu_don" = "데미 돈가스덮밥";
+
+// Hiroshima
+"attraction_itsukushima_shrine" = "이쓰쿠시마신사";
+"attraction_itsukushima_shrine_desc" = "바다에 떠 있는 도리이로 유명";
+"attraction_atomic_bomb_dome" = "원폭돔";
+"attraction_atomic_bomb_dome_desc" = "평화의 상징";
+"attraction_miyajima" = "미야지마";
+"attraction_miyajima_desc" = "일본 3경 중 하나";
+"attraction_onomichi" = "오노미치";
+"attraction_onomichi_desc" = "언덕의 거리와 고양이의 거리";
+"attraction_takehara" = "다케하라";
+"attraction_takehara_desc" = "아키의 작은 교토";
+"attraction_tomonoura" = "도모노우라";
+"attraction_tomonoura_desc" = "에도시대 항구마을의 자취가 남은 아름다운 항구마을";
+
+"food_okonomiyaki_hiroshima" = "오코노미야키";
+"food_oyster" = "굴";
+"food_momiji_manju" = "단풍잎 만주";
+"food_hiroshima_tsukemen" = "히로시마풍 찍어먹는 면";
+"food_anago_meshi" = "아나고밥";
+
+// Yamaguchi
+"attraction_akiyoshidai" = "아키요시다이";
+"attraction_akiyoshidai_desc" = "일본 최대의 카르스트 대지";
+"attraction_hagi" = "하기";
+"attraction_hagi_desc" = "메이지유신의 무대";
+"attraction_kintaikyo" = "긴타이쿄";
+"attraction_kintaikyo_desc" = "일본 3대 명교 중 하나";
+"attraction_shimonoseki" = "시모노세키";
+"attraction_shimonoseki_desc" = "혼슈 최서단의 도시";
+"attraction_rurikoji" = "루리코지";
+"attraction_rurikoji_desc" = "5층탑으로 유명";
+"attraction_tsunoshima_bridge" = "쓰노시마 대교";
+"attraction_tsunoshima_bridge_desc" = "에메랄드 그린 바다에 걸린 절경의 다리";
+
+"food_fugu" = "복어";
+"food_kawara_soba" = "기와 소바";
+"food_iwakuni_lotus_root" = "이와쿠니 연근";
+"food_shimonoseki_whale" = "시모노세키의 고래";
+"food_natsumikan" = "여름귤";
+
+// Shimane
+"attraction_izumo_taisha" = "이즈모 대사";
+"attraction_izumo_taisha_desc" = "인연의 신";
+"attraction_matsue_castle" = "마쓰에성";
+"attraction_matsue_castle_desc" = "현존 천수의 국보";
+"attraction_iwami_ginzan" = "이와미 은광";
+"attraction_iwami_ginzan_desc" = "세계유산의 은광터";
+"attraction_oki_islands" = "오키섬";
+"attraction_oki_islands_desc" = "동해의 아름다운 섬";
+"attraction_adachi_museum" = "아다치 미술관";
+"attraction_adachi_museum_desc" = "일본정원으로 유명";
+"attraction_lake_shinji" = "신지호";
+"attraction_lake_shinji_desc" = "석양의 아름다움으로 유명한 호수";
+
+"food_izumo_soba" = "이즈모 소바";
+"food_shinjiko_shijimi" = "신지호 재첩";
+"food_nodoguro_shimane" = "노도구로";
+"food_matsue_wagashi" = "마쓰에 화과자";
+"food_wariko_soba" = "와리코 소바";
+
+// Kagawa
+"attraction_kotohira_shrine" = "고토히라궁";
+"attraction_kotohira_shrine_desc" = "곤피라상으로 친숙한 곳";
+"attraction_ritsurin_garden" = "리쓰린공원";
+"attraction_ritsurin_garden_desc" = "특별명승의 일본정원";
+"attraction_shodoshima" = "쇼도시마";
+"attraction_shodoshima_desc" = "올리브의 섬";
+"attraction_yashima" = "야시마";
+"attraction_yashima_desc" = "겐페이 전투의 무대";
+"attraction_naoshima" = "나오시마";
+"attraction_naoshima_desc" = "아트의 섬";
+"attraction_seto_ohashi_memorial_park" = "세토대교 기념공원";
+"attraction_seto_ohashi_memorial_park_desc" = "세토대교를 가까이서 볼 수 있는 절경 스팟";
+
+"food_sanuki_udon" = "사누키 우동";
+"food_olive" = "올리브";
+"food_honetsuki_dori" = "뼈째 닭";
+"food_wasanbon" = "와산본";
+"food_shodoshima_somen" = "쇼도시마 소면";
+
+// Tokushima
+"attraction_naruto_whirlpools" = "나루토의 소용돌이";
+"attraction_naruto_whirlpools_desc" = "세계 최대급의 소용돌이";
+"attraction_awa_odori" = "아와 오도리";
+"attraction_awa_odori_desc" = "도쿠시마의 여름축제";
+"attraction_iya_kazura_bridge" = "이야의 칡넝쿨다리";
+"attraction_iya_kazura_bridge_desc" = "스릴 만점의 현수교";
+"attraction_otsuka_museum" = "오쓰카 국제미술관";
+"attraction_otsuka_museum_desc" = "도판 명화의 미술관";
+"attraction_mount_tsurugi" = "쓰루기산";
+"attraction_mount_tsurugi_desc" = "시코쿠 제2의 고봉";
+"attraction_bizan" = "비잔";
+"attraction_bizan_desc" = "도쿠시마시의 상징, 로프웨이로 야경도 즐길 수 있다";
+
+"food_awa_odori_chicken" = "아와오도리 닭";
+"food_tarai_udon" = "타라이 우동";
+"food_sudachi" = "스다치";
+"food_naruto_kintoki" = "나루토 긴토키";
+"food_handa_somen" = "한다 소면";
+
+// Kochi
+"attraction_kochi_castle" = "고치성";
+"attraction_kochi_castle_desc" = "현존 천수의 명성";
+"attraction_katsurahama" = "가쓰라하마";
+"attraction_katsurahama_desc" = "사카모토 료마 동상으로 유명";
+"attraction_shimanto_river" = "시만토강";
+"attraction_shimanto_river_desc" = "일본 마지막 청류";
+"attraction_muroto_cape" = "무로토곶";
+"attraction_muroto_cape_desc" = "태평양의 절경";
+"attraction_ashizuri_cape" = "아시즈리곶";
+"attraction_ashizuri_cape_desc" = "시코쿠 최남단의 곶";
+"attraction_ryugado_cave" = "류가도";
+"attraction_ryugado_cave_desc" = "일본 3대 종유동 중 하나, 신비로운 지하세계";
+
+"food_katsuo_tataki" = "가다랑어 다타키";
+"food_sawachi_cuisine" = "사와치 요리";
+"food_tosa_sake" = "토사 술";
+"food_yuzu" = "유자";
+"food_tosa_buntan" = "토사 분탄";
+
+// Ehime
+"attraction_matsuyama_castle" = "마쓰야마성";
+"attraction_matsuyama_castle_desc" = "현존 천수의 명성";
+"attraction_dogo_onsen" = "도고온천";
+"attraction_dogo_onsen_desc" = "일본 최고급 온천 중 하나";
+"attraction_shimanami_kaido" = "시마나미 가이도";
+"attraction_shimanami_kaido_desc" = "세토내해의 아름다운 다리";
+"attraction_uchiko_town" = "우치코마치";
+"attraction_uchiko_town_desc" = "에도시대의 거리";
+"attraction_mount_ishizuchi" = "이시즈치산";
+"attraction_mount_ishizuchi_desc" = "시코쿠 최고봉";
+"attraction_imabari_castle" = "이마바리성";
+"attraction_imabari_castle_desc" = "바닷물을 해자에 이용한 진귀한 바다성";
+
+"food_mikan" = "귤";
+"food_jakoten" = "자코덴";
+"food_tai_meshi" = "도미밥";
+"food_iyokan" = "이요칸";
+"food_botchan_dango" = "도련님 단고";
+
+// Fukuoka
+"attraction_dazaifu_tenmangu" = "다자이후 덴만구";
+"attraction_dazaifu_tenmangu_desc" = "학문의 신";
+"attraction_fukuoka_castle" = "후쿠오카성";
+"attraction_fukuoka_castle_desc" = "구로다 간베에의 거성";
+"attraction_hakata_za" = "하카타자";
+"attraction_hakata_za_desc" = "규슈의 연극의 전당";
+"attraction_canal_city" = "캐널시티";
+"attraction_canal_city_desc" = "운하가 있는 쇼핑몰";
+"attraction_yanagawa_kudari" = "야나가와 뱃놀이";
+"attraction_yanagawa_kudari_desc" = "돈코부네로 하는 강 하류";
+"attraction_mojiko_retro" = "모지코 레트로";
+"attraction_mojiko_retro_desc" = "다이쇼 로맨 떠도는 항구마을의 거리";
+
+"food_hakata_ramen" = "하카타 라멘";
+"food_motsu_nabe" = "곱창전골";
+"food_karashi_mentaiko" = "매운 명란젓";
+"food_mizutaki" = "미즈타키";
+"food_hakata_torimon" = "하카타 도리몬";
+
+// Oita
+"attraction_beppu_onsen" = "벳푸온천";
+"attraction_beppu_onsen_desc" = "온천의 거리";
+"attraction_yufuin" = "유후인";
+"attraction_yufuin_desc" = "유후다케 기슭의 온천지";
+"attraction_usuki_stone_buddhas" = "우스키 석불";
+"attraction_usuki_stone_buddhas_desc" = "국보의 석불군";
+"attraction_kuju_mountains" = "구주 연산";
+"attraction_kuju_mountains_desc" = "규슈의 지붕";
+"attraction_nakatsu_castle" = "나카쓰성";
+"attraction_nakatsu_castle_desc" = "구로다 간베에의 거성";
+"attraction_jigoku_meguri" = "지옥순례";
+"attraction_jigoku_meguri_desc" = "벳푸의 명물, 색색깔의 온천군을 견학";
+
+"food_seki_saba_aji" = "세키 고등어·세키 전갱이";
+"food_toriten" = "도리덴";
+"food_dango_soup" = "단고국";
+"food_bungo_beef" = "분고규";
+"food_kabosu" = "가보스";
+
+// Miyazaki
+"attraction_takachiho_gorge" = "다카치호 협곡";
+"attraction_takachiho_gorge_desc" = "신화의 고장의 절경";
+"attraction_nichinan_coast" = "니치난 해안";
+"attraction_nichinan_coast_desc" = "아름다운 리아스식 해안";
+"attraction_aoshima" = "아오시마";
+"attraction_aoshima_desc" = "도깨비 빨래판으로 유명";
+"attraction_udo_shrine" = "우도신궁";
+"attraction_udo_shrine_desc" = "동굴 안의 신사";
+"attraction_sun_messe_nichinan" = "선메세 니치난";
+"attraction_sun_messe_nichinan_desc" = "모아이상이 있는 공원";
+"attraction_saito_ancient_burial_mounds" = "사이토바루 고분군";
+"attraction_saito_ancient_burial_mounds_desc" = "고대 로맨이 넘치는 일본 최대 규모의 고분군";
+
+"food_miyazaki_beef" = "미야자키규";
+"food_chicken_nanban" = "치킨 남반";
+"food_hiyajiru" = "히야지루";
+"food_mango" = "망고";
+"food_shochu" = "소주";
+
+// Kagoshima
+"attraction_sakurajima" = "사쿠라지마";
+"attraction_sakurajima_desc" = "활화산의 웅대한 모습";
+"attraction_yakushima" = "야쿠시마";
+"attraction_yakushima_desc" = "세계자연유산의 숲";
+"attraction_kirishima_onsen" = "기리시마온천";
+"attraction_kirishima_onsen_desc" = "기리시마 연산의 온천향";
+"attraction_ibusuki_onsen" = "이부스키온천";
+"attraction_ibusuki_onsen_desc" = "모래찜질온천으로 유명";
+"attraction_amami_oshima" = "아마미오시마";
+"attraction_amami_oshima_desc" = "아열대의 자연";
+"attraction_chiran_peace_museum" = "치란 특공평화회관";
+"attraction_chiran_peace_museum_desc" = "전쟁의 기억을 전하는 평화학습의 장";
+
+"food_kurobuta" = "흑돼지";
+"food_satsuma_imo" = "사쓰마 고구마";
+"food_shochu_kagoshima" = "소주";
+"food_kibinago" = "기비나고";
+"food_shirokuma" = "시로쿠마";
+
+// Kumamoto
+"attraction_kumamoto_castle" = "구마모토성";
+"attraction_kumamoto_castle_desc" = "일본 3대 명성 중 하나";
+"attraction_mount_aso" = "아소산";
+"attraction_mount_aso_desc" = "세계 최대급의 칼데라";
+"attraction_kurokawa_onsen" = "구로카와온천";
+"attraction_kurokawa_onsen_desc" = "정취 있는 온천가";
+"attraction_amakusa" = "아마쿠사";
+"attraction_amakusa_desc" = "아마쿠사 시로의 고향";
+"attraction_kikuchi_valley" = "기쿠치 계곡";
+"attraction_kikuchi_valley_desc" = "청류가 아름다운 계곡";
+"attraction_tsujun_bridge" = "쓰준교";
+"attraction_tsujun_bridge_desc" = "에도시대 기술의 정수를 모은 석조 아치교";
+
+"food_basashi" = "말고기 회";
+"food_dago_soup" = "다고국";
+"food_taipien" = "타이피엔";
+"food_karashi_renkon" = "매운 연근";
+"food_ikinari_dango" = "이키나리 단고";
+
+// Saga
+"attraction_yoshinogari_ruins" = "요시노가리 유적";
+"attraction_yoshinogari_ruins_desc" = "야요이시대의 대규모 환호집락";
+"attraction_arita_porcelain" = "아리타야키";
+"attraction_arita_porcelain_desc" = "도자기의 고장";
+"attraction_yobuko" = "요부코";
+"attraction_yobuko_desc" = "오징어로 유명한 항구마을";
+"attraction_takeo_onsen" = "다케오온천";
+"attraction_takeo_onsen_desc" = "미용온천으로 유명";
+"attraction_karatsu_castle" = "가라쓰성";
+"attraction_karatsu_castle_desc" = "겐카이나다를 바라보는 성";
+"attraction_ureshino_onsen" = "우레시노온천";
+"attraction_ureshino_onsen_desc" = "미용효과로 인기인 온천과 차의 산지";
+
+"food_saga_beef" = "사가규";
+"food_yobuko_ika" = "요부코의 오징어";
+"food_gabai_manju" = "가바이 만주";
+"food_marubolo" = "마루보로";
+"food_onsen_yudofu" = "온천 유도후";
+
+// Nagasaki
+"attraction_huis_ten_bosch" = "하우스텐보스";
+"attraction_huis_ten_bosch_desc" = "네덜란드 거리를 재현";
+"attraction_glover_garden" = "글로버 가든";
+"attraction_glover_garden_desc" = "메이지의 양관군";
+"attraction_peace_park" = "평화공원";
+"attraction_peace_park_desc" = "평화를 향한 기도를 담아서";
+"attraction_gunkanjima" = "군함섬";
+"attraction_gunkanjima_desc" = "세계유산의 폐허섬";
+"attraction_unzen_onsen" = "운젠온천";
+"attraction_unzen_onsen_desc" = "지옥순례로 유명";
+"attraction_shimabara_castle" = "시마바라성";
+"attraction_shimabara_castle_desc" = "시마바라의 난의 무대가 된 역사 있는 성";
+
+"food_champon" = "짬뽕";
+"food_sara_udon" = "사라우동";
+"food_castella" = "카스텔라";
+"food_sasebo_burger" = "사세보 버거";
+"food_kakuni_manju" = "가쿠니 만주";
+
+// Okinawa
+"attraction_shuri_castle" = "슈리성";
+"attraction_shuri_castle_desc" = "류큐왕조의 역사를 말해주는 성";
+"attraction_churaumi_aquarium" = "추라우미 수족관";
+"attraction_churaumi_aquarium_desc" = "세계 최대급의 수조가 있는 수족관";
+"attraction_taketomi_island" = "다케토미섬";
+"attraction_taketomi_island_desc" = "오키나와의 원풍경이 남은 아름다운 섬";
+"attraction_ishigaki_island" = "이시가키섬";
+"attraction_ishigaki_island_desc" = "야에야마 제도의 중심이 되는 섬";
+"attraction_zamami_island" = "자마미섬";
+"attraction_zamami_island_desc" = "케라마 블루의 바다가 아름다운 섬";
+"attraction_manzamo" = "만자모";
+"attraction_manzamo_desc" = "코끼리 코 같은 절벽과 푸른 바다의 절경";
+"attraction_himeyuri_no_to" = "히메유리 탑";
+"attraction_himeyuri_no_to_desc" = "전쟁의 비극을 전하는 위령탑";
+
+"food_goya_chanpuru" = "고야 참푸루";
+"food_soki_soba" = "소키 소바";
+"food_sata_andagi" = "사타 안다기";
+"food_umi_budo" = "바다포도";
+"food_awamori" = "아와모리";
+
+
+/* Korean GourmetItem Localizable.strings */
+
+// Shizuoka Gourmet
+"gourmet_shizuoka_tea" = "시즈오카차";
+"gourmet_shizuoka_tea_desc" = "전국 생산량 1위. 향기로운 녹차";
+"gourmet_unagi" = "장어";
+"gourmet_unagi_desc" = "하마나코 호수의 장어. 부드러운 살과 달콤한 양념";
+"gourmet_wasabi" = "와사비";
+"gourmet_wasabi_desc" = "이즈의 맑은 물에서 자란 진짜 와사비. 코끝까지 찌르는 매운맛";
+"gourmet_sakura_ebi" = "벚꽃새우";
+"gourmet_sakura_ebi_desc" = "스루가만의 보석. 봄과 가을 한정의 아름다운 핑크색";
+"gourmet_kuro_hanpen" = "검은 어묵";
+"gourmet_kuro_hanpen_desc" = "시즈오카 오뎅의 정석. 정어리를 사용한 검은 어묵";
+
+// Aichi Gourmet
+"gourmet_miso_katsu" = "미소카츠";
+"gourmet_miso_katsu_desc" = "나고야 명물. 진한 빨간 된장 소스를 얹은 돈카츠";
+"gourmet_hitsumabushi" = "히츠마부시";
+"gourmet_hitsumabushi_desc" = "나고야의 장어요리. 3가지 먹는 방법으로 즐기는";
+"gourmet_tebasaki" = "닭날개";
+"gourmet_tebasaki_desc" = "나고야의 이자카야 명물. 달콤매콤한 양념이 일품";
+"gourmet_kishimen" = "키시멘";
+"gourmet_kishimen_desc" = "나고야의 납작한 우동. 쫄깃한 식감";
+"gourmet_taiwan_ramen" = "타이완라멘";
+"gourmet_taiwan_ramen_desc" = "나고야 발상의 매운 라멘. 타이완과는 관계없음";
+
+// Mie Gourmet
+"gourmet_ise_ebi" = "이세새우";
+"gourmet_ise_ebi_desc" = "미에현의 고급 식재료. 쫄깃한 식감과 단맛";
+"gourmet_matsusaka_beef" = "마츠사카소";
+"gourmet_matsusaka_beef_desc" = "세계 최고급 와규. 입에서 녹는 듯한 마블링";
+"gourmet_akafuku" = "아카후쿠";
+"gourmet_akafuku_desc" = "이세신궁의 명물. 팥으로 감싼 떡과자";
+"gourmet_tekone_sushi" = "테코네스시";
+"gourmet_tekone_sushi_desc" = "시마 지방의 향토요리. 가다랑어 절임을 섞은 초밥";
+"gourmet_iga_beef" = "이가소";
+"gourmet_iga_beef_desc" = "미에현 이가 지방의 브랜드 소. 상급 육질";
+
+// Gifu Gourmet
+"gourmet_hida_beef" = "히다소";
+"gourmet_hida_beef_desc" = "기후현 히다 지방의 브랜드 소. A5등급의 최고급";
+"gourmet_hoba_miso" = "호바미소";
+"gourmet_hoba_miso_desc" = "목련잎에 된장을 올려 구운 히다의 향토요리";
+"gourmet_gohei_mochi" = "고헤이모치";
+"gourmet_gohei_mochi_desc" = "중부 지방의 향토요리. 달콤한 양념이 고소한";
+"gourmet_ayu_shioyaki" = "은어 소금구이";
+"gourmet_ayu_shioyaki_desc" = "맑은 강에서 자란 은어. 여름의 풍물시";
+"gourmet_kuri_kinton" = "밤금단";
+"gourmet_kuri_kinton_desc" = "나카츠가와의 명물. 밤의 단맛을 살린 화과자";
+
+// Fukui Gourmet
+"gourmet_echizen_crab" = "에치젠게";
+"gourmet_echizen_crab_desc" = "후쿠이의 겨울 미각의 왕. 달콤하고 살이 꽉 찬";
+"gourmet_echizen_soba" = "에치젠소바";
+"gourmet_echizen_soba_desc" = "후쿠이의 명물 메밀국수. 무즙과 함께 먹는";
+"gourmet_sauce_katsu_don" = "소스카츠동";
+"gourmet_sauce_katsu_don_desc" = "후쿠이 발상. 소스를 얹은 카츠동";
+"gourmet_habutae_mochi" = "하부타에모치";
+"gourmet_habutae_mochi_desc" = "후쿠이의 명과. 부드럽고 상품한 단맛";
+"gourmet_wakasa_beef" = "와카사소";
+"gourmet_wakasa_beef_desc" = "후쿠이현 와카사 지방의 브랜드 소";
+
+// Ishikawa Gourmet
+"gourmet_kaga_cuisine" = "가가요리";
+"gourmet_kaga_cuisine_desc" = "가나자와의 고급요리. 바다와 산의 진미 경연";
+"gourmet_kanazawa_curry" = "가나자와카레";
+"gourmet_kanazawa_curry_desc" = "가나자와의 B급 구르메. 진한 루와 양배추가 특징";
+"gourmet_noto_beef" = "노토소";
+"gourmet_noto_beef_desc" = "이시카와현 노토 지방의 브랜드 소";
+"gourmet_jibuni" = "지부니";
+"gourmet_jibuni_desc" = "가나자와의 향토요리. 오리고기와 채소의 조림";
+"gourmet_nodoguro" = "노도구로";
+"gourmet_nodoguro_desc" = "동해의 고급어. 상품한 단맛이 일품";
+
+// Toyama Gourmet
+"gourmet_shiro_ebi" = "흰새우";
+"gourmet_shiro_ebi_desc" = "토야마만의 보석. 투명하고 아름다운 달콤한 새우";
+"gourmet_hotaru_ika" = "반딧불오징어";
+"gourmet_hotaru_ika_desc" = "토야마만의 봄 풍물시. 푸르게 빛나는 작은 오징어";
+"gourmet_masu_sushi" = "송어초밥";
+"gourmet_masu_sushi_desc" = "토야마의 역도시락으로 유명. 댓잎으로 감싼 누름초밥";
+"gourmet_toyama_black_ramen" = "토야마블랙라멘";
+"gourmet_toyama_black_ramen_desc" = "토야마의 지역 라멘. 새까만 국물";
+"gourmet_himi_beef" = "히미소";
+"gourmet_himi_beef_desc" = "토야마현 히미시의 브랜드 소";
+
+// Shiga Gourmet
+"gourmet_omi_beef" = "오미소";
+"gourmet_omi_beef_desc" = "일본 3대 와규 중 하나. 400년 역사를 가진 브랜드 소";
+"gourmet_funa_sushi" = "붕어초밥";
+"gourmet_funa_sushi_desc" = "비와호의 붕어로 만든 발효초밥. 시가의 전통음식";
+"gourmet_aka_konnyaku" = "빨간곤약";
+"gourmet_aka_konnyaku_desc" = "시가현의 명물. 철분으로 빨갛게 염색한 곤약";
+"gourmet_shigaraki_pottery" = "시가라키도자기";
+"gourmet_shigaraki_pottery_desc" = "시가현 시가라키마치의 도자기. 너구리 장식품으로 유명";
+"gourmet_lake_fish_cuisine" = "호수어요리";
+"gourmet_lake_fish_cuisine_desc" = "비와호의 물고기를 사용한 향토요리";
+
+// Kyoto Gourmet
+"gourmet_yudofu" = "유도후";
+"gourmet_yudofu_desc" = "교토의 정진요리. 상품한 육수로 데운 두부";
+"gourmet_kyoto_kaiseki" = "교토가이세키";
+"gourmet_kyoto_kaiseki_desc" = "교토의 고급요리. 계절감을 중시한 아름다운 요리";
+"gourmet_matcha_sweets" = "말차스위트";
+"gourmet_matcha_sweets_desc" = "우지 말차를 사용한 화과자";
+"gourmet_obanzai" = "오반자이";
+"gourmet_obanzai_desc" = "교토의 가정요리. 채소 중심의 부드러운 맛";
+"gourmet_kyoto_pickles" = "교토절임";
+"gourmet_kyoto_pickles_desc" = "교토의 전통적인 절임. 상품한 맛";
+
+// Hyogo Gourmet
+"gourmet_kobe_beef" = "고베소";
+"gourmet_kobe_beef_desc" = "세계 최고급 브랜드 소. 입에서 녹는 듯한 식감";
+"gourmet_akashiyaki" = "아카시야키";
+"gourmet_akashiyaki_desc" = "아카시의 명물. 타코야키보다 부드러운 식감";
+"gourmet_ikanago" = "이카나고";
+"gourmet_ikanago_desc" = "세토나이카이의 봄 미각. 조림으로 만들어 먹는";
+"gourmet_banshu_ramen" = "반슈라멘";
+"gourmet_banshu_ramen_desc" = "효고현 반슈 지방의 지역 라멘";
+"gourmet_awaji_onion" = "아와지섬 양파";
+"gourmet_awaji_onion_desc" = "달콤하고 부드러운 아와지섬의 특산품";
+
+// Nara Gourmet
+"gourmet_kakinoha_sushi" = "감잎초밥";
+"gourmet_kakinoha_sushi_desc" = "나라의 향토요리. 감잎으로 감싼 누름초밥";
+"gourmet_miwa_somen" = "미와소멘";
+"gourmet_miwa_somen_desc" = "나라현 미와 지방의 손뽑기 소면";
+"gourmet_narazuke" = "나라즈케";
+"gourmet_narazuke_desc" = "술지게미에 절인 나라의 특산품";
+"gourmet_yamato_beef" = "야마토소";
+"gourmet_yamato_beef_desc" = "나라현의 브랜드 소. 부드럽고 상급";
+"gourmet_kuzukiri" = "칡냉면";
+"gourmet_kuzukiri_desc" = "칡가루로 만든 투명한 면. 상품한 단맛";
+
+// Wakayama Gourmet
+"gourmet_umeboshi" = "매실장아찌";
+"gourmet_umeboshi_desc" = "와카야마현은 매실 생산량 일본 1위. 난코매가 유명";
+"gourmet_wakayama_ramen" = "와카야마라멘";
+"gourmet_wakayama_ramen_desc" = "진한 돼지뼈 간장라멘. 중화소바라고도 불림";
+"gourmet_tuna" = "참치";
+"gourmet_tuna_desc" = "기슈 가츠우라의 참치. 신선하고 기름진";
+"gourmet_persimmon" = "와카야마 감";
+"gourmet_persimmon_desc" = "달콤하고 맛있는 와카야마현산 감";
+"gourmet_kishu_kinzanji_miso" = "기슈킨잔지미소";
+"gourmet_kishu_kinzanji_miso_desc" = "채소가 들어간 달콤한 된장. 와카야마의 특산품";
+
+// Tottori Gourmet
+"gourmet_matsuba_crab" = "송잎게";
+"gourmet_matsuba_crab_desc" = "돗토리의 겨울 미각. 달콤하고 살이 꽉 찬 고급게";
+"gourmet_nijisseiki_pear" = "20세기배";
+"gourmet_nijisseiki_pear_desc" = "돗토리의 특산품. 수분이 많고 아삭한 식감";
+"gourmet_sakaiminato_seafood" = "사카이미나토의 해산물";
+"gourmet_sakaiminato_seafood_desc" = "동해의 신선한 바다의 진미. 게, 어류가 풍부";
+"gourmet_tofu_chikuwa" = "두부치쿠와";
+"gourmet_tofu_chikuwa_desc" = "돗토리의 명물. 두부를 섞은 흰 치쿠와";
+"gourmet_gyu_kotsu_ramen" = "소뼈라멘";
+"gourmet_gyu_kotsu_ramen_desc" = "돗토리의 지역 라멘. 소뼈 육수가 특징";
+
+// Okayama Gourmet
+"gourmet_white_peach" = "백도";
+"gourmet_white_peach_desc" = "오카야마의 특산품. 달콤하고 과즙이 많은 고급 복숭아";
+"gourmet_muscat" = "머스캣";
+"gourmet_muscat_desc" = "오카야마현산 머스캣 오브 알렉산드리아";
+"gourmet_kibidango" = "키비단고";
+"gourmet_kibidango_desc" = "오카야마의 명물과자. 모모타로 전설로 유명";
+"gourmet_mamakari" = "마마카리";
+"gourmet_mamakari_desc" = "오카야마의 향토요리. 작은 생선의 식초절임";
+"gourmet_demi_katsu_don" = "데미카츠동";
+"gourmet_demi_katsu_don_desc" = "오카야마의 B급 구르메. 데미글라스 소스의 카츠동";
+
+// Hiroshima Gourmet
+"gourmet_okonomiyaki_hiroshima" = "히로시마풍 오코노미야키";
+"gourmet_okonomiyaki_hiroshima_desc" = "면이 들어간 오코노미야키. 히로시마의 소울푸드";
+"gourmet_oyster" = "굴";
+"gourmet_oyster_desc" = "히로시마만의 굴. 진하고 크리미한 맛";
+"gourmet_momiji_manju" = "단풍빵";
+"gourmet_momiji_manju_desc" = "히로시마의 명과. 단풍 모양의 카스테라 만주";
+"gourmet_hiroshima_tsukemen" = "히로시마풍 츠케멘";
+"gourmet_hiroshima_tsukemen_desc" = "매운 된장 양념에 찍어 먹는 히로시마의 라멘";
+"gourmet_anago_meshi" = "아나고밥";
+"gourmet_anago_meshi_desc" = "미야지마의 명물. 붕장어 구이를 올린 밥";
+
+// Yamaguchi Gourmet
+"gourmet_fugu" = "복어";
+"gourmet_fugu_desc" = "시모노세키의 복어. 고급식재료의 대표격";
+"gourmet_kawara_soba" = "기와소바";
+"gourmet_kawara_soba_desc" = "야마구치현의 명물. 뜨거운 기와 위에서 구운 차소바";
+"gourmet_iwakuni_lotus_root" = "이와쿠니 연근";
+"gourmet_iwakuni_lotus_root_desc" = "이와쿠니의 특산품. 구멍이 많고 식감이 좋은";
+"gourmet_shimonoseki_whale" = "시모노세키의 고래";
+"gourmet_shimonoseki_whale_desc" = "시모노세키의 전통적인 식재료. 고래고기 요리";
+"gourmet_natsumikan" = "하귤";
+"gourmet_natsumikan_desc" = "야마구치현의 특산품. 상쾌한 신맛이 특징";
+
+// Shimane Gourmet
+"gourmet_izumo_soba" = "이즈모소바";
+"gourmet_izumo_soba_desc" = "시마네의 명물 메밀국수. 3단 그릇으로 먹는";
+"gourmet_shinjiko_shijimi" = "신지코 재첩";
+"gourmet_shinjiko_shijimi_desc" = "신지코의 큰 재첩. 된장국이 일품";
+"gourmet_nodoguro_shimane" = "노도구로";
+"gourmet_nodoguro_shimane_desc" = "동해의 고급어. 상품한 기름과 단맛";
+"gourmet_matsue_wagashi" = "마츠에 화과자";
+"gourmet_matsue_wagashi_desc" = "마츠에의 차문화를 받치는 상생과자";
+"gourmet_wariko_soba" = "와리코소바";
+"gourmet_wariko_soba_desc" = "이즈모소바의 전통적인 먹는 방법";
+
+// Kagawa Gourmet
+"gourmet_sanuki_udon" = "사누키우동";
+"gourmet_sanuki_udon_desc" = "카가와현의 명물. 쫄깃한 수제우동";
+"gourmet_olive" = "올리브";
+"gourmet_olive_desc" = "쇼도시마의 특산품. 일본 올리브 발상지";
+"gourmet_honetsuki_dori" = "뼈있는 닭";
+"gourmet_honetsuki_dori_desc" = "카가와의 B급 구르메. 매콤한 닭다리살";
+"gourmet_wasanbon" = "와산본";
+"gourmet_wasanbon_desc" = "카가와의 고급설탕. 상품한 단맛의 화과자";
+"gourmet_shodoshima_somen" = "쇼도시마 소면";
+"gourmet_shodoshima_somen_desc" = "쇼도시마의 손뽑기 소면. 400년의 역사";
+
+// Tokushima Gourmet
+"gourmet_awa_odori_chicken" = "아와오도리 닭";
+"gourmet_awa_odori_chicken_desc" = "도쿠시마현의 브랜드 닭. 탄력 있는 식감";
+"gourmet_tarai_udon" = "타라이우동";
+"gourmet_tarai_udon_desc" = "도쿠시마의 향토요리. 큰 대야에서 먹는 우동";
+"gourmet_sudachi" = "스다치";
+"gourmet_sudachi_desc" = "도쿠시마의 특산품. 상쾌한 신맛의 감귤류";
+"gourmet_naruto_kintoki" = "나루토 금시";
+"gourmet_naruto_kintoki_desc" = "도쿠시마현 나루토시의 특산 고구마. 포슬포슬하고 달콤";
+"gourmet_handa_somen" = "한다소면";
+"gourmet_handa_somen_desc" = "도쿠시마현 츠루기마치의 손뽑기 소면";
+
+// Kochi Gourmet
+"gourmet_katsuo_tataki" = "가다랑어 다타키";
+"gourmet_katsuo_tataki_desc" = "고치의 명물. 짚으로 그을린 고소한 가다랑어";
+"gourmet_sawachi_cuisine" = "사와치요리";
+"gourmet_sawachi_cuisine_desc" = "고치의 향토요리. 큰 접시에 담긴 호화로운 요리";
+"gourmet_tosa_sake" = "토사술";
+"gourmet_tosa_sake_desc" = "고치의 일본술. 드라이하고 깔끔한 맛";
+"gourmet_yuzu" = "유자";
+"gourmet_yuzu_desc" = "고치현은 유자 생산량 일본 1위. 향기 풍부";
+"gourmet_tosa_buntan" = "토사문단";
+"gourmet_tosa_buntan_desc" = "고치의 특산 감귤. 크고 새콤달콤한";
+
+// Ehime Gourmet
+"gourmet_mikan" = "에히메 귤";
+"gourmet_mikan_desc" = "에히메현은 감귤의 왕국. 달콤하고 과즙이 많은";
+"gourmet_jakoten" = "자코텐";
+"gourmet_jakoten_desc" = "에히메의 명물. 작은 생선 어묵을 튀긴 연제품";
+"gourmet_tai_meshi" = "도미밥";
+"gourmet_tai_meshi_desc" = "에히메의 향토요리. 신선한 도미를 사용한 솥밥";
+"gourmet_iyokan" = "이요칸";
+"gourmet_iyokan_desc" = "에히메의 대표적 감귤. 상쾌한 새콤달콤함";
+"gourmet_botchan_dango" = "봇찬 단고";
+"gourmet_botchan_dango_desc" = "마츠야마의 명물. 3색의 아름다운 단자";
+
+// Oita Gourmet
+"gourmet_seki_saba_aji" = "세키 고등어·전갱이";
+"gourmet_seki_saba_aji_desc" = "오이타현의 고급어. 분고수도에서 자란 절품 생선";
+"gourmet_toriten" = "토리텐";
+"gourmet_toriten_desc" = "오이타 발상의 닭튀김. 바삭하고 부드러운";
+"gourmet_dango_soup" = "단고국";
+"gourmet_dango_soup_desc" = "오이타의 향토요리. 밀가루 단자가 들어간 된장국";
+"gourmet_bungo_beef" = "분고소";
+"gourmet_bungo_beef_desc" = "오이타현의 브랜드 소. 부드럽고 감칠맛이 진한";
+"gourmet_kabosu" = "카보스";
+"gourmet_kabosu_desc" = "오이타의 특산 감귤. 상큼한 신맛";
+
+// Miyazaki Gourmet
+"gourmet_miyazaki_beef" = "미야자키소";
+"gourmet_miyazaki_beef_desc" = "미야자키현의 브랜드 소. 마블링이 아름다운 최고급 쇠고기";
+"gourmet_chicken_nanban" = "치킨난반";
+"gourmet_chicken_nanban_desc" = "미야자키 발상의 닭요리. 달콤한 식초와 타르타르 소스가 일품";
+"gourmet_hiyajiru" = "히야지루";
+"gourmet_hiyajiru_desc" = "미야자키의 향토요리. 차가운 된장국을 밥에 말아 먹는";
+"gourmet_miyazaki_mango" = "미야자키 망고";
+"gourmet_miyazaki_mango_desc" = "미야자키현산 완숙 망고. 달콤하고 입에서 녹는 식감";
+"gourmet_miyazaki_shochu" = "미야자키 소주";
+"gourmet_miyazaki_shochu_desc" = "미야자키현의 고구마 소주. 부드럽고 마시기 쉬운";
+
+// Kagoshima Gourmet
+"gourmet_kurobuta" = "가고시마 흑돼지";
+"gourmet_kurobuta_desc" = "가고시마의 명물 돼지고기. 단맛이 있고 육즙이 풍부";
+"gourmet_satsuma_imo" = "사츠마이모";
+"gourmet_satsuma_imo_desc" = "가고시마의 특산품. 달콤하고 포슬포슬한 고구마";
+"gourmet_kagoshima_shochu" = "고구마 소주";
+"gourmet_kagoshima_shochu_desc" = "가고시마의 대표적인 소주. 고구마의 단맛과 향";
+"gourmet_kibinago" = "키비나고";
+"gourmet_kibinago_desc" = "가고시마의 작은 생선. 회나 튀김으로 먹는";
+"gourmet_shirokuma" = "시로쿠마";
+"gourmet_shirokuma_desc" = "가고시마의 빙수. 연유와 과일이 듬뿍";
+
+// Kumamoto Gourmet
+"gourmet_basashi" = "말고기 회";
+"gourmet_basashi_desc" = "구마모토의 명물. 신선한 말고기 생회";
+"gourmet_dago_soup" = "다고국";
+"gourmet_dago_soup_desc" = "구마모토의 향토요리. 밀가루 단자가 들어간 된장국";
+"gourmet_taipien" = "타이피엔";
+"gourmet_taipien_desc" = "구마모토의 지역 중화요리. 당면이 들어간 부드러운 국물";
+"gourmet_karashi_renkon" = "겨자 연근";
+"gourmet_karashi_renkon_desc" = "구마모토의 향토요리. 연근에 겨자 된장을 넣고 튀긴";
+"gourmet_ikinari_dango" = "이키나리 단고";
+"gourmet_ikinari_dango_desc" = "구마모토의 향토과자. 고구마와 팥이 들어간 단자";
+
+// Saga Gourmet
+"gourmet_saga_beef" = "사가소";
+"gourmet_saga_beef_desc" = "사가현의 브랜드 소. 세밀한 마블링이 아름다운";
+"gourmet_yobuko_ika" = "요부코의 오징어";
+"gourmet_yobuko_ika_desc" = "사가현 요부코마치의 투명한 오징어. 활어회로 먹는";
+"gourmet_gabai_manju" = "가바이만주";
+"gourmet_gabai_manju_desc" = "사가의 명과. 소박하고 부드러운 단맛의 만두";
+"gourmet_marubolo" = "마루보로";
+"gourmet_marubolo_desc" = "사가의 전통과자. 카스테라 같은 달콤한 과자";
+"gourmet_onsen_yudofu" = "온천 유도후";
+"gourmet_onsen_yudofu_desc" = "우레시노온천의 명물. 온천수로 만든 녹는 두부";
+
+// Nagasaki Gourmet
+"gourmet_champon" = "짬뽕";
+"gourmet_champon_desc" = "나가사키의 명물 면요리. 채소와 해산물이 듬뿍";
+"gourmet_sara_udon_desc" = "나가사키의 향토요리. 바삭한 면에 걸쭉한 앙";
+"gourmet_castella" = "카스테라";
+"gourmet_castella_desc" = "나가사키의 대표적 명과. 촉촉한 달콤한 스펀지";
+"gourmet_sasebo_burger" = "사세보 버거";
+"gourmet_sasebo_burger_desc" = "사세보의 지역 버거. 수제 큰 햄버거";
+"gourmet_kakuni_manju" = "가쿠니만주";
+"gourmet_kakuni_manju_desc" = "나가사키의 명물. 부드러운 돼지 각니를 감싼 만두";
+
+// Hokkaido Gourmet
+"gourmet_genghis_khan" = "징기스칸";
+"gourmet_genghis_khan_desc" = "홋카이도 명물의 양고기 요리. 특제 양념으로 구운 부드러운 양고기";
+"gourmet_seafood_bowl" = "해산물덮밥";
+"gourmet_seafood_bowl_desc" = "신선한 바다의 진미가 듬뿍. 성게, 연어알, 게 등 호화로운 덮밥";
+"gourmet_soup_curry" = "수프카레";
+"gourmet_soup_curry_desc" = "삿포로 발상의 묽은 국물 카레. 채소 듬뿍";
+"gourmet_yubari_melon" = "유바리 멜론";
+"gourmet_yubari_melon_desc" = "달콤하고 향기로운 고급 멜론. 홋카이도의 대표적 과일";
+"gourmet_shiroi_koibito" = "하얀 연인";
+"gourmet_shiroi_koibito_desc" = "홋카이도 선물의 정석. 랑그드샤와 화이트초콜릿의 절묘한 조합";
+
+// Aomori Gourmet
+"gourmet_aomori_apple" = "아오모리 사과";
+"gourmet_aomori_apple_desc" = "일본 1위 생산량을 자랑하는 달콤하고 과즙이 많은 사과";
+"gourmet_oma_tuna" = "오마 참치";
+"gourmet_oma_tuna_desc" = "혼슈 최북단 오마에서 잡히는 극상의 검은 참치";
+"gourmet_senbei_soup" = "센베이국";
+"gourmet_senbei_soup_desc" = "난부센베이를 부숴 넣는 아오모리의 향토요리";
+"gourmet_tsugaru_soba" = "츠가루소바";
+"gourmet_tsugaru_soba_desc" = "츠가루 지방의 수제 메밀국수. 풍미 좋은 시골 메밀국수";
+"gourmet_ichigo_ni" = "딸기끓임";
+"gourmet_ichigo_ni_desc" = "성게와 전복의 맑은 국물. 고급 바다의 진미 경연";
+
+// Iwate Gourmet
+"gourmet_wanko_soba" = "완코소바";
+"gourmet_wanko_soba_desc" = "작은 그릇으로 몇 그릇이든. 이와테의 명물 메밀국수";
+"gourmet_morioka_cold_noodles" = "모리오카 냉면";
+"gourmet_morioka_cold_noodles_desc" = "쫄깃한 면과 신맛 나는 국물이 특징";
+"gourmet_maezawa_beef" = "마에자와소";
+"gourmet_maezawa_beef_desc" = "이와테가 자랑하는 브랜드 소. 마블링이 아름다운 최고급 쇠고기";
+"gourmet_nanbu_senbei" = "난부센베이";
+"gourmet_nanbu_senbei_desc" = "참깨나 땅콩이 들어간 고소한 센베이";
+"gourmet_gangetsu" = "간게츠";
+"gourmet_gangetsu_desc" = "노른자 앙을 감싼 이와테의 명과";
+
+// Akita Gourmet
+"gourmet_kiritanpo" = "키리탄포";
+"gourmet_kiritanpo_desc" = "아키타의 향토요리. 으깬 밥을 막대에 감아 구운 명물";
+"gourmet_hinai_chicken" = "히나이 지닭";
+"gourmet_hinai_chicken_desc" = "아키타의 지닭. 감칠맛이 진하고, 키리탄포 나베에는 빠질 수 없는";
+"gourmet_inaniwa_udon" = "이나니와우동";
+"gourmet_inaniwa_udon_desc" = "손뽑기 제법의 가늘고 쫄깃한 상품한 우동";
+"gourmet_akita_komachi" = "아키타 고마치";
+"gourmet_akita_komachi_desc" = "아키타현산의 맛있는 쌀. 부드럽고 쫄깃한";
+"gourmet_babahera_ice" = "바바헤라 아이스";
+"gourmet_babahera_ice_desc" = "할머니가 직접 파는 알록달록한 아이스크림";
+
+// Miyagi Gourmet
+"gourmet_beef_tongue" = "소혀";
+"gourmet_beef_tongue_desc" = "센다이 명물의 두꺼운 소혀. 숯불구이로 고소하게";
+"gourmet_sasukamaboko" = "사사 어묵";
+"gourmet_sasukamaboko_desc" = "미야기의 명산품. 상급 생선 어묵으로 만든 어묵";
+"gourmet_zunda_mochi" = "즌다모치";
+"gourmet_zunda_mochi_desc" = "완두콩을 으깬 녹색 앙이 특징적";
+"gourmet_seri_nabe" = "미나리 나베";
+"gourmet_seri_nabe_desc" = "미야기현 나토리시의 특산 미나리를 사용한 나베요리";
+"gourmet_shiroishi_somen" = "시로이시 온면";
+"gourmet_shiroishi_somen_desc" = "기름을 사용하지 않은 소면보다 짧은 면. 위에 부드러운";
+
+// Yamagata Gourmet
+"gourmet_cherry" = "체리";
+"gourmet_cherry_desc" = "야마가타가 자랑하는 일본 1위 생산량. 사토니시키가 유명";
+"gourmet_yonezawa_beef" = "요네자와소";
+"gourmet_yonezawa_beef_desc" = "야마가타의 최고급 브랜드 소. 입에서 녹는 듯한 마블링";
+"gourmet_imoni" = "토란조림";
+"gourmet_imoni_desc" = "가을의 풍물시. 토란과 쇠고기 조림을 강변에서 즐기는";
+"gourmet_tama_konnyaku" = "둥근곤약";
+"gourmet_tama_konnyaku_desc" = "간장 양념으로 조린 둥근 곤약. 야마가타의 정석";
+"gourmet_cold_ramen" = "차가운 라멘";
+"gourmet_cold_ramen_desc" = "야마가타 발상의 여름 차가운 라멘";
+
+// Fukushima Gourmet
+"gourmet_kitakata_ramen" = "키타카타라멘";
+"gourmet_kitakata_ramen_desc" = "간장 베이스의 맑은 국물과 납작한 곱슬면";
+"gourmet_aizu_chicken" = "아이즈 지닭";
+"gourmet_aizu_chicken_desc" = "후쿠시마현 아이즈 지방의 지닭. 깊은 맛";
+"gourmet_mamadooru" = "마마도루";
+"gourmet_mamadooru_desc" = "후쿠시마의 명과. 우유맛의 부드러운 양과자";
+"gourmet_fukushima_peach" = "후쿠시마의 복숭아";
+"gourmet_fukushima_peach_desc" = "달콤하고 과즙이 많은 후쿠시마현산 복숭아";
+"gourmet_shirakawa_ramen" = "시라카와라멘";
+"gourmet_shirakawa_ramen_desc" = "수제 곱슬면과 간장국물의 시라카와계 라멘";
+
+// Ibaraki Gourmet
+"gourmet_natto" = "낫토";
+"gourmet_natto_desc" = "이바라키현은 낫토 생산량 일본 1위. 끈적끈적 실 뽑는";
+"gourmet_anko_nabe" = "아귀 나베";
+"gourmet_anko_nabe_desc" = "겨울 미각의 왕. 콜라겐 듬뿍 나베요리";
+"gourmet_hitachi_beef" = "히타치소";
+"gourmet_hitachi_beef_desc" = "이바라키의 브랜드 소. 부드럽고 감칠맛 가득";
+"gourmet_ibaraki_melon" = "멜론";
+"gourmet_ibaraki_melon_desc" = "이바라키현은 멜론 생산량 일본 1위. 달콤하고 향기로운";
+"gourmet_dried_sweet_potato" = "군고구마";
+"gourmet_dried_sweet_potato_desc" = "이바라키의 특산품. 자연스러운 단맛의 옛날 간식";
+
+// Chiba Gourmet
+"gourmet_peanuts" = "땅콩";
+"gourmet_peanuts_desc" = "치바현산의 신선한 땅콩. 단맛과 향이 일품";
+"gourmet_loquat" = "비파";
+"gourmet_loquat_desc" = "보소반도의 온화한 기후에서 자란 달콤한 비파";
+"gourmet_namerou" = "나메로";
+"gourmet_namerou_desc" = "보소의 어부요리. 전갱이 등을 다져서 된장과 버무린";
+"gourmet_katsuura_tantanmen" = "카츠우라 탄탄멘";
+"gourmet_katsuura_tantanmen_desc" = "카츠우라의 어부가 몸을 따뜻하게 하기 위해 만든 매운 라멘";
+"gourmet_boso_seafood" = "보소의 바다의 진미";
+"gourmet_boso_seafood_desc" = "신선한 해산물. 이세새우, 전복 등 풍부";
+
+// Tochigi Gourmet
+"gourmet_utsunomiya_gyoza" = "우츠노미야 교자";
+"gourmet_utsunomiya_gyoza_desc" = "우츠노미야시는 교자의 도시. 군교자가 유명";
+"gourmet_yuba" = "유바";
+"gourmet_yuba_desc" = "닛코의 명물. 두유 표면에 생기는 얇은 막";
+"gourmet_tochiotome" = "토치오토메";
+"gourmet_tochiotome_desc" = "토치기현산의 브랜드 딸기. 달콤하고 큰 알";
+"gourmet_shimotsukare" = "시모츠카레";
+"gourmet_shimotsukare_desc" = "토치기의 향토요리. 무즙과 연어 머리를 끓인";
+"gourmet_lemon_milk" = "레몬우유";
+"gourmet_lemon_milk_desc" = "토치기현민의 소울드링크. 레몬향의 달콤한 우유";
+
+// Gunma Gourmet
+"gourmet_yaki_manju" = "구운만주";
+"gourmet_yaki_manju_desc" = "군마의 명물. 달콤한 된장 양념을 발라 구운 만두";
+"gourmet_shimonita_negi" = "시모니타 대파";
+"gourmet_shimonita_negi_desc" = "군마의 특산품. 굵고 단맛이 강한 대파";
+"gourmet_konnyaku" = "곤약";
+"gourmet_konnyaku_desc" = "군마현은 곤약감자 생산량 일본 1위";
+"gourmet_mizusawa_udon" = "미즈사와우동";
+"gourmet_mizusawa_udon_desc" = "군마의 명물 우동. 쫄깃하고 목넘김 좋은";
+"gourmet_daruma_bento" = "다루마 도시락";
+"gourmet_daruma_bento_desc" = "타카사키역의 명물 역도시락. 다루마 용기가 특징적";
+
+// Saitama Gourmet
+"gourmet_kawagoe_sweet_potato" = "카와고에 고구마";
+"gourmet_kawagoe_sweet_potato_desc" = "카와고에의 특산품. 부드럽고 달콤한 고구마";
+"gourmet_chichibu_soba" = "치치부소바";
+"gourmet_chichibu_soba_desc" = "치치부 지방의 수제 메밀국수. 향기로운 시골 메밀국수";
+"gourmet_soka_senbei" = "소카센베이";
+"gourmet_soka_senbei_desc" = "소카시의 명물. 바삭하고 고소한 간장센베이";
+"gourmet_gokaho" = "고카호";
+"gourmet_gokaho_desc" = "쿠마가야의 명과. 콩가루를 묻힌 옛날 화과자";
+"gourmet_iga_manju" = "이가만주";
+"gourmet_iga_manju_desc" = "교다의 명물. 팥밥을 묻힌 찐 만두";
+
+// Tokyo Gourmet
+"gourmet_edomae_sushi" = "에도마에 초밥";
+"gourmet_edomae_sushi_desc" = "도쿄만에서 잡힌 생선을 사용한 전통적인 초밥";
+"gourmet_monjayaki" = "몬자야키";
+"gourmet_monjayaki_desc" = "시타마치의 명물. 육수가 들어간 묽은 반죽을 철판에 구운";
+"gourmet_fukagawa_don" = "후카가와동";
+"gourmet_fukagawa_don_desc" = "에도시대부터 이어진 서민의 맛. 조개 된장국을 밥에 말아 먹는";
+"gourmet_imagawayaki" = "이마가와야키";
+"gourmet_imagawayaki_desc" = "도쿄 발상의 화과자. 팥이 들어간 둥근 구운 과자";
+"gourmet_tsukudani" = "츠쿠다니";
+"gourmet_tsukudani_desc" = "에도시대부터 이어진 보존식품. 작은 생선이나 다시마를 달콤짭짤하게 조린";
+
+// Kanagawa Gourmet
+"gourmet_shumai" = "슈마이";
+"gourmet_shumai_desc" = "요코하마 명물의 돼지고기 슈마이. 사키요켄이 유명";
+"gourmet_kamakura_vegetables" = "가마쿠라 채소";
+"gourmet_kamakura_vegetables_desc" = "가마쿠라에서 만든 신선하고 맛있는 채소";
+"gourmet_shonan_shirasu" = "쇼난 멸치";
+"gourmet_shonan_shirasu_desc" = "사가미만에서 잡힌 신선한 멸치. 생것과 삶은 것으로 즐길 수 있는";
+"gourmet_iekei_ramen" = "이에계 라멘";
+"gourmet_iekei_ramen_desc" = "요코하마 발상의 돼지뼈 간장라멘. 진한 국물이 특징";
+"gourmet_yokohama_chinatown_gourmet" = "요코하마 차이나타운 구르메";
+"gourmet_yokohama_chinatown_gourmet_desc" = "본격적인 중화요리를 즐길 수 있는 일본 최대의 차이나타운";
+
+// Niigata Gourmet
+"gourmet_niigata_rice" = "니가타 쌀";
+"gourmet_niigata_rice_desc" = "일본 유수의 쌀 산지. 고시히카리가 특히 유명";
+"gourmet_noppe" = "놋페";
+"gourmet_noppe_desc" = "니가타의 향토요리. 토란이나 당근을 끓인 부드러운 맛";
+"gourmet_hegi_soba" = "헤기소바";
+"gourmet_hegi_soba_desc" = "이어재료로 해조를 사용한 니가타의 명물 메밀국수";
+"gourmet_niigata_salmon" = "니가타의 연어";
+"gourmet_niigata_salmon_desc" = "시나노강에서 잡힌 연어. 니가타의 가을 미각";
+"gourmet_sake" = "일본술";
+"gourmet_sake_desc" = "전국 유수의 술 산지. 맑은 물로 만든 미주";
+
+// Nagano Gourmet
+"gourmet_shinshu_soba" = "신슈소바";
+"gourmet_shinshu_soba_desc" = "나가노현의 명물. 향기로운 메밀을 사용한 수제 메밀국수";
+"gourmet_oyaki" = "오야키";
+"gourmet_oyaki_desc" = "채소나 산나물을 밀가루 껍질로 감싸 구운 향토요리";
+"gourmet_nozawana" = "노자와나";
+"gourmet_nozawana_desc" = "나가노의 특산 채소. 절임으로 먹는 것이 정석";
+"gourmet_shinshu_apple" = "신슈 사과";
+"gourmet_shinshu_apple_desc" = "달콤하고 과즙이 많은 나가노현산 사과";
+"gourmet_shinshu_miso" = "신슈 된장";
+"gourmet_shinshu_miso_desc" = "나가노현산 된장. 단맛이 나고 향기로운 적된장";
+
+// Yamanashi Gourmet
+"gourmet_hoto" = "호토";
+"gourmet_hoto_desc" = "야마나시의 명물요리. 납작한 면과 채소를 된장으로 끓인";
+"gourmet_shingen_mochi" = "신겐모치";
+"gourmet_shingen_mochi_desc" = "야마나시의 대표적인 명과. 콩가루와 흑설탕을 뿌려 먹는";
+"gourmet_yamanashi_grape" = "야마나시의 포도";
+"gourmet_yamanashi_grape_desc" = "고후 분지에서 자란 달콤한 포도. 거봉이나 샤인머스캣";
+"gourmet_yamanashi_peach" = "야마나시의 복숭아";
+"gourmet_yamanashi_peach_desc" = "달콤하고 과즙이 많은 야마나시현산 복숭아";
+"gourmet_koshu_wine" = "고슈 와인";
+"gourmet_koshu_wine_desc" = "야마나시현산 포도로 만든 일본 와인";
+
+// Osaka Gourmet
+"gourmet_takoyaki" = "타코야키";
+"gourmet_takoyaki_desc" = "오사카의 소울푸드. 겉은 바삭 속은 부드럽게";
+"gourmet_okonomiyaki" = "오코노미야키";
+"gourmet_okonomiyaki_desc" = "간사이풍 오코노미야키. 양배추 듬뿍에 부드럽게";
+"gourmet_kushikatsu" = "쿠시카츠";
+"gourmet_kushikatsu_desc" = "신세카이 명물. 두 번 찍기 금지 소스로";
+"gourmet_ikayaki" = "오징어구이";
+"gourmet_ikayaki_desc" = "오사카의 가루요리 문화. 프레스로 구운 고소한 오징어";
+"gourmet_butaman" = "돼지만";
+"gourmet_butaman_desc" = "간사이에서는 고기만이 아니라 돼지만";
+
+// Fukuoka Gourmet
+"gourmet_hakata_ramen" = "하카타라멘";
+"gourmet_hakata_ramen_desc" = "돼지뼈라멘의 본고장. 진하고 크리미한 국물";
+"gourmet_motsu_nabe" = "모츠나베";
+"gourmet_motsu_nabe_desc" = "후쿠오카의 명물 나베. 소곱창과 채소의 감칠맛이 일품";
+"gourmet_karashi_mentaiko" = "겨자 명란젓";
+"gourmet_karashi_mentaiko_desc" = "후쿠오카의 명산품. 알싸하고 감칠맛 가득";
+"gourmet_mizutaki" = "물닭";
+"gourmet_mizutaki_desc" = "하카타의 향토요리. 닭의 감칠맛이 응축된 나베";
+"gourmet_hakata_torimon" = "하카타 토리몬";
+"gourmet_hakata_torimon_desc" = "후쿠오카의 명과. 우유만두의 상품한 단맛";
+
+// Okinawa Gourmet
+"gourmet_goya_chanpuru" = "고야 챤푸루";
+"gourmet_goya_chanpuru_desc" = "오키나와의 대표적 향토요리. 고야와 두부의 볶음";
+"gourmet_soki_soba" = "소키소바";
+"gourmet_soki_soba_desc" = "오키나와 소바. 돼지갈비가 토핑";
+"gourmet_sata_andagi" = "사타안다기";
+"gourmet_sata_andagi_desc" = "오키나와의 튀김과자. 겉은 바삭 속은 부드럽게";
+"gourmet_umi_budo" = "바다포도";
+"gourmet_umi_budo_desc" = "오키나와의 해조류. 톡톡한 식감이 즐거운";
+"gourmet_awamori" = "아와모리";
+"gourmet_awamori_desc" = "오키나와의 전통적인 증류주. 쌀을 원료로 한 독특한 풍미";
+
+"famous_gourmet_title" = "명물 구르메";
+"taste_prefecture_format" = "%@의 맛을 만끽";
+"load_more_groumet" = "더 보기";
+"groumet_clear" = "지우기";
+
+"food_category_all" = "전체";
+"food_category_ramen" = "라멘";
+"food_category_seafood" = "해산물";
+"food_category_meat" = "고기요리";
+"food_category_sweets" = "스위트";
+"food_category_local" = "향토요리";
+"food_category_drinks" = "음료";
+"food_category_vegetables" = "채소・과일";
+
+// 라멘의 Tips
+"ramen_tip_1" = "지역의 노포에서 정통 맛을 즐기기";
+"ramen_tip_2" = "뜨거울 때 먹는 것이 추천";
+"ramen_tip_3" = "지역 사람들에게 인기 있는 가게를 찾아보기";
+
+// 해산물의 Tips
+"seafood_tip_1" = "제철에 신선한 것을 맛보기";
+"seafood_tip_2" = "지역의 어항이나 시장에서 구입하기";
+"seafood_tip_3" = "회나 구이 등 다양한 조리법으로 즐기기";
+
+// 고기요리의 Tips
+"meat_tip_1" = "전문점에서 최고 품질의 것을 맛보기";
+"meat_tip_2" = "지역의 조리법이나 양념으로 즐기기";
+"meat_tip_3" = "축제나 포장마차에서 캐주얼하게 즐기기";
+
+// 스위트의 Tips
+"sweets_tip_1" = "선물로 가져가기";
+"sweets_tip_2" = "차와 함께 천천히 맛보기";
+"sweets_tip_3" = "노포 화과자점에서 갓 만든 것을 즐기기";
+
+// 향토요리의 Tips
+"local_tip_1" = "지역의 가정요리점에서 본고장 맛을 체험";
+"local_tip_2" = "향토요리의 역사나 문화도 함께 배우기";
+"local_tip_3" = "지역 식재료에도 신경 쓴 가게 선택";
+
+// 음료의 Tips
+"drinks_tip_1" = "양조장 견학과 시음을 즐기기";
+"drinks_tip_2" = "지역 요리와 함께 맛보기";
+"drinks_tip_3" = "선물로 가져가기";
+
+// 채소・과일의 Tips
+"vegetables_tip_1" = "농원이나 직매장에서 신선한 것을 구입";
+"vegetables_tip_2" = "제철에 현지에서 맛보기";
+"vegetables_tip_3" = "가공품이나 스위트로도 즐기기";
+
+"recommended_enjoyment" = "추천 즐기는 방법";
+"price_range" = "가격대";
+"best_season" = "베스트 시즌";
+"category" = "카테고리";
+"popularity_rank" = "인기 순위";
+"basic_info" = "기본 정보";
+"detailed_info" = "상세 정보";
+"prefecture_specialties_format" = "%@의 명물";
+
+// Seasons
+"season_all_year" = "연중";
+"season_spring" = "봄";
+"season_summer" = "여름";
+"season_autumn" = "가을";
+"season_winter" = "겨울";
+"season_spring_summer" = "봄여름";
+"season_autumn_winter" = "가을겨울";
+"season_winter_spring" = "겨울봄";
+"season_summer_autumn" = "여름가을";
+
+"souvenir.title" = "명물 선물";
+"souvenir.memory" = "%@의 추억을 가져가기";
+"souvenir.about" = "상품 정보";
+"souvenir.bestSeason" = "추천 시기";
+"souvenir.category" = "카테고리";
+"souvenir.popularity" = "인기도";
+"souvenir.detailTitle" = "선물 상세정보";
+
+"souvenirCategory.sweets" = "과자";
+"souvenirCategory.food" = "식품";
+"souvenirCategory.crafts" = "공예품";
+"souvenirCategory.drinks" = "음료";
+"souvenirCategory.textiles" = "직물·의류";
+"souvenirCategory.ceramics" = "도자기";
+"souvenirCategory.regional" = "지역한정품";
+
+// =====================================================
+// 북해도（Hokkaido）
+// =====================================================
+"hokkaido.shiroi_koibito.name" = "시로이 고이비토";
+"hokkaido.shiroi_koibito.description" = "홋카이도 선물의 정번. 랑그드샤와 화이트 초콜릿의 절묘한 조합";
+"hokkaido.shiroi_koibito.price" = "500-2,000엔";
+
+"hokkaido.marsei_butter_sand.name" = "마루세이 버터샌드";
+"hokkaido.marsei_butter_sand.description" = "롯카테이의 대표 명과. 버터크림과 건포도가 절품";
+"hokkaido.marsei_butter_sand.price" = "1,200-2,000엔";
+
+"hokkaido.jaga_pokkuru.name" = "자가 포쿠루";
+"hokkaido.jaga_pokkuru.description" = "홋카이도산 감자를 사용한 바삭한 스낵";
+"hokkaido.jaga_pokkuru.price" = "1,000-1,500엔";
+
+"hokkaido.royce_nama_chocolate.name" = "로이스 생초콜릿";
+"hokkaido.royce_nama_chocolate.description" = "입에서 녹는 부드러운 생초콜릿";
+"hokkaido.royce_nama_chocolate.price" = "800-2,500엔";
+
+"hokkaido.yubari_melon_jelly.name" = "유바리 멜론 퓨어젤리";
+"hokkaido.yubari_melon_jelly.description" = "유바리 멜론 과즙이 가득한 젤리";
+"hokkaido.yubari_melon_jelly.price" = "2,000-4,000엔";
+
+// =====================================================
+// 아오모리현（Aomori）
+// =====================================================
+"aomori.kininaruringo.name" = "키니나루 링고";
+"aomori.kininaruringo.description" = "아오모리 사과를 사용한 애플파이풍 과자";
+"aomori.kininaruringo.price" = "1,000-2,000엔";
+
+"aomori.asa_no_hakkoda.name" = "아사노 하코다";
+"aomori.asa_no_hakkoda.description" = "아오모리의 대표적인 명과";
+"aomori.asa_no_hakkoda.price" = "1,500-3,000엔";
+
+"aomori.ringo_stick.name" = "링고 스틱";
+"aomori.ringo_stick.description" = "아오모리산 사과를 사용한 막대모양 과자";
+"aomori.ringo_stick.price" = "800-1,500엔";
+
+"aomori.tsugaru_vidro.name" = "츠가루 비드로";
+"aomori.tsugaru_vidro.description" = "아오모리현의 전통공예품 유리제품";
+"aomori.tsugaru_vidro.price" = "2,000-10,000엔";
+
+"aomori.nebuta_goods.name" = "네부타 관련 굿즈";
+"aomori.nebuta_goods.description" = "아오모리 네부타 축제를 모티브로 한 민예품";
+"aomori.nebuta_goods.price" = "500-3,000엔";
+
+// =====================================================
+// 이와테현（Iwate）
+// =====================================================
+"iwate.kamome_no_tamago.name" = "카모메노 타마고";
+"iwate.kamome_no_tamago.description" = "이와테현 오후나토시의 대표적 명과";
+"iwate.kamome_no_tamago.price" = "1,000-2,500엔";
+
+"iwate.nanbu_senbei.name" = "난부 센베이";
+"iwate.nanbu_senbei.description" = "이와테현의 전통적인 센베이";
+"iwate.nanbu_senbei.price" = "500-1,500엔";
+
+"iwate.nanbu_tekki.name" = "난부 철기";
+"iwate.nanbu_tekki.description" = "이와테현의 전통공예품. 철제 주전자나 냄비";
+"iwate.nanbu_tekki.price" = "3,000-30,000엔";
+
+"iwate.gangetsu.name" = "간게츠";
+"iwate.gangetsu.description" = "노른자 앙을 싼 이와테의 명과";
+"iwate.gangetsu.price" = "1,500-3,000엔";
+
+"iwate.fukuda_pan.name" = "후쿠다 빵";
+"iwate.fukuda_pan.description" = "모리오카 시민에게 사랑받는 코페빵";
+"iwate.fukuda_pan.price" = "200-500엔";
+
+// =====================================================
+// 미야기현（Miyagi）
+// =====================================================
+"miyagi.hagi_no_tsuki.name" = "하기노 츠키";
+"miyagi.hagi_no_tsuki.description" = "센다이 명과. 커스터드크림 입 스펀지케이크";
+"miyagi.hagi_no_tsuki.price" = "1,500-3,000엔";
+
+"miyagi.sasa_kamaboko.name" = "사사 가마보코";
+"miyagi.sasa_kamaboko.description" = "미야기현의 명산품. 상급 어육으로 만든 어묵";
+"miyagi.sasa_kamaboko.price" = "1,000-3,000엔";
+
+"miyagi.zunda_saryo.name" = "즌다 사료";
+"miyagi.zunda_saryo.description" = "완두콩을 사용한 스위츠 브랜드의 상품";
+"miyagi.zunda_saryo.price" = "800-2,500엔";
+
+"miyagi.hakumatsuga_monaka.name" = "하쿠마츠가 모나카";
+"miyagi.hakumatsuga_monaka.description" = "센다이의 노포 화과자점의 모나카";
+"miyagi.hakumatsuga_monaka.price" = "1,000-2,000엔";
+
+"miyagi.kokeshi.name" = "코케시";
+"miyagi.kokeshi.description" = "미야기현의 전통공예품";
+"miyagi.kokeshi.price" = "1,000-10,000엔";
+
+// =====================================================
+// 아키타현（Akita）
+// =====================================================
+"akita.kinman.name" = "킨만";
+"akita.kinman.description" = "아키타의 대표적 명과. 흰앙 넣은 카스테라 만주";
+"akita.kinman.price" = "1,000-2,500엔";
+
+"akita.butter_mochi.name" = "버터 모치";
+"akita.butter_mochi.description" = "아키타현의 향토과자. 버터와 설탕을 넣어 반죽한 떡";
+"akita.butter_mochi.price" = "800-1,500엔";
+
+"akita.namahage_goods.name" = "나마하게 관련 굿즈";
+"akita.namahage_goods.description" = "아키타의 전통행사 나마하게 선물";
+"akita.namahage_goods.price" = "500-3,000엔";
+
+"akita.morokoshi.name" = "모로코시";
+"akita.morokoshi.description" = "아키타의 전통과자. 낙간의 일종";
+"akita.morokoshi.price" = "1,000-2,000엔";
+
+"akita.inaniwa_udon.name" = "이나니와 우동";
+"akita.inaniwa_udon.description" = "아키타현의 손연신 우동";
+"akita.inaniwa_udon.price" = "1,500-3,000엔";
+
+// =====================================================
+// 야마가타현（Yamagata）
+// =====================================================
+"yamagata.oshidori_milk_cake.name" = "오시도리 밀크케이크";
+"yamagata.oshidori_milk_cake.description" = "야마가타현의 대표적 명과";
+"yamagata.oshidori_milk_cake.price" = "800-1,500엔";
+
+"yamagata.noshi_ume.name" = "노시 우메";
+"yamagata.noshi_ume.description" = "야마가타현의 매실을 사용한 명과";
+"yamagata.noshi_ume.price" = "1,000-2,500엔";
+
+"yamagata.sakuranbo_kirara.name" = "사쿠란보 키라라";
+"yamagata.sakuranbo_kirara.description" = "야마가타현산 체리를 사용한 젤리";
+"yamagata.sakuranbo_kirara.price" = "1,500-3,000엔";
+
+"yamagata.shogi_koma.name" = "장기말";
+"yamagata.shogi_koma.description" = "야마가타현 텐도시의 전통공예품";
+"yamagata.shogi_koma.price" = "2,000-50,000엔";
+
+"yamagata.dadacha_mame.name" = "다다차 마메";
+"yamagata.dadacha_mame.description" = "야마가타현 츠루오카시의 특산 완두콩";
+"yamagata.dadacha_mame.price" = "1,000-2,000엔";
+
+// =====================================================
+// 후쿠시마현（Fukushima）
+// =====================================================
+"fukushima.mamadoru.name" = "마마도루";
+"fukushima.mamadoru.description" = "후쿠시마의 명과. 밀크맛의 부드러운 양과자";
+"fukushima.mamadoru.price" = "1,000-2,500엔";
+
+"fukushima.usukawa_manju.name" = "우스카와 만주";
+"fukushima.usukawa_manju.description" = "후쿠시마현 고리야마시의 대표적 명과";
+"fukushima.usukawa_manju.price" = "1,000-2,000엔";
+
+"fukushima.exson_pie.name" = "엑손 파이";
+"fukushima.exson_pie.description" = "후쿠시마현의 파이과자";
+"fukushima.exson_pie.price" = "1,200-2,000엔";
+
+"fukushima.aizu_nuri.name" = "아이즈 칠기";
+"fukushima.aizu_nuri.description" = "후쿠시마현 아이즈지방의 전통공예품";
+"fukushima.aizu_nuri.price" = "3,000-30,000엔";
+
+"fukushima.kitakata_ramen.name" = "키타카타 라멘";
+"fukushima.kitakata_ramen.description" = "후쿠시마현 키타카타시의 고장 라멘(선물용)";
+"fukushima.kitakata_ramen.price" = "1,000-2,500엔";
+
+// =====================================================
+// 이바라키현（Ibaraki）
+// =====================================================
+"ibaraki.yoshiwara_denchu.name" = "요시와라 덴추";
+"ibaraki.yoshiwara_denchu.description" = "이바라키현 미토시의 대표적 명과";
+"ibaraki.yoshiwara_denchu.price" = "1,000-2,000엔";
+
+"ibaraki.noshi_ume.name" = "노시 우메";
+"ibaraki.noshi_ume.description" = "이바라키현의 매실을 사용한 명과";
+"ibaraki.noshi_ume.price" = "800-1,500엔";
+
+"ibaraki.natto.name" = "낫토";
+"ibaraki.natto.description" = "이바라키현의 특산품. 다양한 종류의 낫토";
+"ibaraki.natto.price" = "300-1,000엔";
+
+"ibaraki.hoshi_imo.name" = "호시 이모";
+"ibaraki.hoshi_imo.description" = "이바라키현의 특산품. 자연스러운 단맛의 고구마";
+"ibaraki.hoshi_imo.price" = "800-2,000엔";
+
+"ibaraki.hitachi_fudoki.name" = "히타치 후도키노오카";
+"ibaraki.hitachi_fudoki.description" = "이바라키현의 명과";
+"ibaraki.hitachi_fudoki.price" = "1,200-2,500엔";
+
+// =====================================================
+// 토치기현（Tochigi）
+// =====================================================
+"tochigi.goyotei_no_tsuki.name" = "고요테이노 츠키";
+"tochigi.goyotei_no_tsuki.description" = "토치기현의 대표적 명과";
+"tochigi.goyotei_no_tsuki.price" = "1,500-3,000엔";
+
+"tochigi.lemon_milk_cookie.name" = "레몬 우유 쿠키";
+"tochigi.lemon_milk_cookie.description" = "토치기현민의 소울드링크를 쿠키로";
+"tochigi.lemon_milk_cookie.price" = "800-1,500엔";
+
+"tochigi.yuba_senbei.name" = "유바 센베이";
+"tochigi.yuba_senbei.description" = "닛코 명물 유바를 사용한 센베이";
+"tochigi.yuba_senbei.price" = "1,000-2,000엔";
+
+"tochigi.mashiko_yaki.name" = "마시코야키";
+"tochigi.mashiko_yaki.description" = "토치기현 마시코마치의 전통공예품";
+"tochigi.mashiko_yaki.price" = "2,000-20,000엔";
+
+"tochigi.tochiotome_goods.name" = "토치오토메 관련상품";
+"tochigi.tochiotome_goods.description" = "토치기현산 딸기를 사용한 과자";
+"tochigi.tochiotome_goods.price" = "800-2,000엔";
+
+// =====================================================
+// 군마현（Gunma）
+// =====================================================
+"gunma.tabi_garasu.name" = "타비 가라스";
+"gunma.tabi_garasu.description" = "군마현의 대표적 명과";
+"gunma.tabi_garasu.price" = "1,000-2,500엔";
+
+"gunma.isobe_senbei.name" = "이소베 센베이";
+"gunma.isobe_senbei.description" = "군마현 안나카시 이소베온천의 명물 센베이";
+"gunma.isobe_senbei.price" = "800-1,500엔";
+
+"gunma.konnyaku_park.name" = "곤약파크 상품";
+"gunma.konnyaku_park.description" = "군마현의 곤약을 사용한 다양한 상품";
+"gunma.konnyaku_park.price" = "500-2,000엔";
+
+"gunma.daruma_bento.name" = "다루마 도시락";
+"gunma.daruma_bento.description" = "타카사키역의 명물 역도시락. 다루마 용기가 특징적";
+"gunma.daruma_bento.price" = "1,200-1,500엔";
+
+"gunma.yaki_manju.name" = "야키 만주";
+"gunma.yaki_manju.description" = "군마의 명물. 단 된장 소스를 발라서 구운 만주";
+"gunma.yaki_manju.price" = "200-500엔";
+
+// =====================================================
+// 사이타마현（Saitama）
+// =====================================================
+"saitama.jumangoku_manju.name" = "주만고쿠 만주";
+"saitama.jumangoku_manju.description" = "사이타마현의 대표적 명과. 팥앙 넣은 얇은껍질 만주";
+"saitama.jumangoku_manju.price" = "1,000-2,000엔";
+
+"saitama.gokaho.name" = "고카보";
+"saitama.gokaho.description" = "쿠마가야의 명과. 콩가루를 뿌린 옛날식 화과자";
+"saitama.gokaho.price" = "800-1,500엔";
+
+"saitama.soka_senbei.name" = "소카 센베이";
+"saitama.soka_senbei.description" = "소카시의 명물. 바삭하고 고소한 간장 센베이";
+"saitama.soka_senbei.price" = "1,000-2,500엔";
+
+"saitama.kawagoe_imo_cookie.name" = "카와고에 이모 쿠키";
+"saitama.kawagoe_imo_cookie.description" = "카와고에의 특산 고구마를 사용한 쿠키";
+"saitama.kawagoe_imo_cookie.price" = "800-1,500엔";
+
+"saitama.sayama_cha.name" = "사야마차";
+"saitama.sayama_cha.description" = "사이타마현 사야마시의 특산품";
+"saitama.sayama_cha.price" = "1,000-3,000엔";
+
+// =====================================================
+// 지바현（Chiba）
+// =====================================================
+"chiba.peanut_monaka.name" = "피넛 모나카";
+"chiba.peanut_monaka.description" = "지바현의 땅콩을 사용한 모나카";
+"chiba.peanut_monaka.price" = "1,200-2,500엔";
+
+"chiba.boso_biwa_jelly.name" = "보소 비와젤리";
+"chiba.boso_biwa_jelly.description" = "지바현산 비파를 사용한 젤리";
+"chiba.boso_biwa_jelly.price" = "1,000-2,000엔";
+
+"chiba.nagomi_komeya.name" = "나고미노 코메야";
+"chiba.nagomi_komeya.description" = "지바현 나리타시의 노포 화과자점 상품";
+"chiba.nagomi_komeya.price" = "800-2,000엔";
+
+"chiba.oranda_sable.name" = "오란다가의 사브레";
+"chiba.oranda_sable.description" = "지바현의 사브레 전문점 상품";
+"chiba.oranda_sable.price" = "1,000-2,500엔";
+
+"chiba.rakkasei.name" = "라카세이";
+"chiba.rakkasei.description" = "지바현산의 신선한 땅콩";
+"chiba.rakkasei.price" = "800-2,000엔";
+
+// =====================================================
+// 도쿄도（Tokyo）
+// =====================================================
+"tokyo.hiyoko.name" = "히요코";
+"tokyo.hiyoko.description" = "도쿄 선물의 정번. 병아리 모양의 귀여운 만주";
+"tokyo.hiyoko.price" = "1,000-3,000엔";
+
+"tokyo.tokyo_banana.name" = "도쿄 바나나";
+"tokyo.tokyo_banana.description" = "도쿄 선물의 대표격. 바나나 풍미의 스펀지케이크";
+"tokyo.tokyo_banana.price" = "1,200-2,500엔";
+
+"tokyo.funawa_imo_yokan.name" = "후나와의 이모요칸";
+"tokyo.funawa_imo_yokan.description" = "아사쿠사의 노포 화과자점의 명물";
+"tokyo.funawa_imo_yokan.price" = "1,000-2,000엔";
+
+"tokyo.kaminari_okoshi.name" = "카미나리 오코시";
+"tokyo.kaminari_okoshi.description" = "아사쿠사 카미나리몬의 명물과자";
+"tokyo.kaminari_okoshi.price" = "500-1,500엔";
+
+"tokyo.ningyo_yaki.name" = "닌교야키";
+"tokyo.ningyo_yaki.description" = "도쿄의 전통적인 화과자";
+"tokyo.ningyo_yaki.price" = "800-1,500엔";
+
+"tokyo.edo_kiriko.name" = "에도 키리코";
+"tokyo.edo_kiriko.description" = "도쿄의 전통공예품 유리제품";
+"tokyo.edo_kiriko.price" = "5,000-50,000엔";
+
+// =====================================================
+// 가나가와현（Kanagawa）
+// =====================================================
+"kanagawa.hato_sable.name" = "하토 사브레";
+"kanagawa.hato_sable.description" = "가마쿠라의 명물. 비둘기 모양의 사브레";
+"kanagawa.hato_sable.price" = "1,000-2,500엔";
+
+"kanagawa.yokohama_renga.name" = "요코하마 렌가";
+"kanagawa.yokohama_renga.description" = "요코하마의 대표적 양과자";
+"kanagawa.yokohama_renga.price" = "1,500-3,000엔";
+
+"kanagawa.ariake_harbor.name" = "아리아케의 하버";
+"kanagawa.ariake_harbor.description" = "요코하마의 노포 양과자점의 대표상품";
+"kanagawa.ariake_harbor.price" = "1,200-2,500엔";
+
+"kanagawa.kiyoken_hyochan.name" = "키요켄의 효찬 사브레";
+"kanagawa.kiyoken_hyochan.description" = "키요켄의 마스코트 캐릭터 사브레";
+"kanagawa.kiyoken_hyochan.price" = "800-1,500엔";
+
+"kanagawa.hakone_yosegi.name" = "하코네 요세기자이쿠";
+"kanagawa.hakone_yosegi.description" = "하코네의 전통공예품";
+"kanagawa.hakone_yosegi.price" = "2,000-20,000엔";
+
+// =====================================================
+// 니가타현（Niigata）
+// =====================================================
+"niigata.sasa_dango.name" = "사사 단고";
+"niigata.sasa_dango.description" = "니가타의 대표적 화과자. 대나무 잎으로 싼 쑥단고";
+"niigata.sasa_dango.price" = "800-1,500엔";
+
+"niigata.kasen_kaki_no_tane.name" = "카센증기의 카키노타네";
+"niigata.kasen_kaki_no_tane.description" = "니가타의 원조 카키노타네";
+"niigata.kasen_kaki_no_tane.price" = "500-1,500엔";
+
+"niigata.yukiguni_arare.name" = "유키구니 아라레";
+"niigata.yukiguni_arare.description" = "니가타의 쌀과자";
+"niigata.yukiguni_arare.price" = "800-2,000엔";
+
+"niigata.echigo_hime_sandwich.name" = "에치고히메 딸기샌드";
+"niigata.echigo_hime_sandwich.description" = "니가타현산 딸기를 사용한 샌드쿠키";
+"niigata.echigo_hime_sandwich.price" = "1,200-2,000엔";
+
+"niigata.nihonshu.name" = "니가타의 일본술";
+"niigata.nihonshu.description" = "니가타현의 지역술";
+"niigata.nihonshu.price" = "2,000-10,000엔";
+
+// =====================================================
+// 토야마현（Toyama）
+// =====================================================
+"toyama.masu_sushi.name" = "마스 스시";
+"toyama.masu_sushi.description" = "토야마현의 역도시락으로 유명. 대나무 잎으로 싼 오시스시";
+"toyama.masu_sushi.price" = "1,500-3,000엔";
+
+"toyama.shiro_ebi_kiko.name" = "시로에비 기코";
+"toyama.shiro_ebi_kiko.description" = "토야마만의 흰새우를 사용한 센베이";
+"toyama.shiro_ebi_kiko.price" = "1,000-2,000엔";
+
+"toyama.getsusekai.name" = "게츠세카이";
+"toyama.getsusekai.description" = "토야마현의 대표적 명과";
+"toyama.getsusekai.price" = "1,000-2,500엔";
+
+"toyama.kankintan.name" = "칸킨탄";
+"toyama.kankintan.description" = "토야마현의 전통적인 약선과자";
+"toyama.kankintan.price" = "1,500-3,000엔";
+
+"toyama.kombu.name" = "토야마의 다시마";
+"toyama.kombu.description" = "토야마현의 특산품";
+"toyama.kombu.price" = "1,000-3,000엔";
+
+// =====================================================
+// 토쿠시마현（Tokushima）
+// =====================================================
+"tokushima.kincho_manju.name" = "킨초 만주";
+"tokushima.kincho_manju.description" = "토쿠시마현의 대표적 명과";
+"tokushima.kincho_manju.price" = "1,000-2,000엔";
+
+"tokushima.potelet.name" = "포텔렛";
+"tokushima.potelet.description" = "토쿠시마현의 나루토킨토키를 사용한 과자";
+"tokushima.potelet.price" = "800-1,500엔";
+
+"tokushima.wasanbon.name" = "와산본토";
+"tokushima.wasanbon.description" = "토쿠시마현의 고급설탕을 사용한 과자";
+"tokushima.wasanbon.price" = "1,500-3,000엔";
+
+"tokushima.ai_no_sato.name" = "아이노사토";
+"tokushima.ai_no_sato.description" = "토쿠시마현의 쪽염색을 사용한 상품";
+"tokushima.ai_no_sato.price" = "2,000-10,000엔";
+
+"tokushima.awa_odori_goods.name" = "아와오도리 관련 굿즈";
+"tokushima.awa_odori_goods.description" = "토쿠시마현의 아와오도리를 모티브로 한 상품";
+"tokushima.awa_odori_goods.price" = "800-3,000엔";
+
+// =====================================================
+// 가가와현（Kagawa）
+// =====================================================
+"kagawa.meibutsu_kamado.name" = "메이부츠 가마도";
+"kagawa.meibutsu_kamado.description" = "가가와현의 대표적 명과";
+"kagawa.meibutsu_kamado.price" = "1,200-2,500엔";
+
+"kagawa.oiri.name" = "오이리";
+"kagawa.oiri.description" = "가가와현의 전통적인 아라레과자";
+"kagawa.oiri.price" = "500-1,200엔";
+
+"kagawa.kyu_man.name" = "큐만";
+"kagawa.kyu_man.description" = "가가와현의 온천만주";
+"kagawa.kyu_man.price" = "800-1,500엔";
+
+"kagawa.honetsuki_tori_senbei.name" = "호네츠키토리 센베이";
+"kagawa.honetsuki_tori_senbei.description" = "가가와현의 호네츠키토리를 모티브로 한 센베이";
+"kagawa.honetsuki_tori_senbei.price" = "800-1,500엔";
+
+"kagawa.olive_goods.name" = "올리브 관련상품";
+"kagawa.olive_goods.description" = "쇼도시마의 올리브를 사용한 상품";
+"kagawa.olive_goods.price" = "1,000-3,000엔";
+
+// =====================================================
+// 에히메현（Ehime）
+// =====================================================
+"ehime.botchan_dango.name" = "봇찬 단고";
+"ehime.botchan_dango.description" = "마츠야마의 명물. 3색의 아름다운 단고";
+"ehime.botchan_dango.price" = "500-1,200엔";
+
+"ehime.tart.name" = "타르트";
+"ehime.tart.description" = "에히메현의 대표적 양과자";
+"ehime.tart.price" = "1,200-2,500엔";
+
+"ehime.botemu.name" = "보테무";
+"ehime.botemu.description" = "에히메현의 명과";
+"ehime.botemu.price" = "1,000-2,000엔";
+
+"ehime.imabari_towel.name" = "이마바리 타올";
+"ehime.imabari_towel.description" = "에히메현 이마바리시의 고급타올";
+"ehime.imabari_towel.price" = "2,000-10,000엔";
+
+"ehime.tobe_yaki.name" = "토베야키";
+"ehime.tobe_yaki.description" = "에히메현 토베쵸의 전통공예품";
+"ehime.tobe_yaki.price" = "2,000-20,000엔";
+
+// =====================================================
+// 고치현（Kochi）
+// =====================================================
+"kochi.mille_biscuit.name" = "밀레 비스킷";
+"kochi.mille_biscuit.description" = "고치현의 대표적 과자";
+"kochi.mille_biscuit.price" = "500-1,200엔";
+
+"kochi.imo_kenpi.name" = "이모 켄피";
+"kochi.imo_kenpi.description" = "고치현의 특산과자";
+"kochi.imo_kenpi.price" = "800-1,500엔";
+
+"kochi.tosa_nikki.name" = "토사 닛키";
+"kochi.tosa_nikki.description" = "고치현의 명과";
+"kochi.tosa_nikki.price" = "1,000-2,000엔";
+
+"kochi.kanzashi.name" = "간자시";
+"kochi.kanzashi.description" = "고치현의 전통공예품";
+"kochi.kanzashi.price" = "3,000-15,000엔";
+
+"kochi.tosa_washi.name" = "토사 와시";
+"kochi.tosa_washi.description" = "고치현의 전통공예품";
+"kochi.tosa_washi.price" = "1,000-8,000엔";
+
+// =====================================================
+// 후쿠오카현（Fukuoka）
+// =====================================================
+"fukuoka.hakata_torimon.name" = "하카타 토리몬";
+"fukuoka.hakata_torimon.description" = "후쿠오카의 명과. 밀크만주의 상품 단맛";
+"fukuoka.hakata_torimon.price" = "1,200-2,500엔";
+
+"fukuoka.hiyoko.name" = "히요코";
+"fukuoka.hiyoko.description" = "하카타 명물의 병아리 모양 만주";
+"fukuoka.hiyoko.price" = "1,000-2,500엔";
+
+"fukuoka.tirolian.name" = "치롤리안";
+"fukuoka.tirolian.description" = "후쿠오카현의 대표적 과자";
+"fukuoka.tirolian.price" = "800-1,500엔";
+
+"fukuoka.hakata_no_onna.name" = "하카타노 온나";
+"fukuoka.hakata_no_onna.description" = "후쿠오카현의 명과";
+"fukuoka.hakata_no_onna.price" = "1,000-2,000엔";
+
+"fukuoka.mentaiko.name" = "멘타이코";
+"fukuoka.mentaiko.description" = "후쿠오카현의 특산품";
+"fukuoka.mentaiko.price" = "1,500-5,000엔";
+
+"fukuoka.hakata_ori.name" = "하카타오리";
+"fukuoka.hakata_ori.description" = "후쿠오카현의 전통공예품";
+"fukuoka.hakata_ori.price" = "5,000-50,000엔";
+
+// =====================================================
+// 사가현（Saga）
+// =====================================================
+"saga.maru_boro.name" = "마루 보로";
+"saga.maru_boro.description" = "사가의 전통과자. 카스테라 같은 단 과자";
+"saga.maru_boro.price" = "800-2,000엔";
+
+"saga.ikkoko.name" = "잇코코";
+"saga.ikkoko.description" = "사가현의 명과";
+"saga.ikkoko.price" = "1,000-2,000엔";
+
+"saga.shoro_manju.name" = "쇼로 만주";
+"saga.shoro_manju.description" = "사가현의 대표적 명과";
+"saga.shoro_manju.price" = "1,200-2,500엔";
+
+"saga.ogi_yokan.name" = "오기 요칸";
+"saga.ogi_yokan.description" = "사가현 오기시의 전통적 양갱";
+"saga.ogi_yokan.price" = "1,500-3,000엔";
+
+"saga.arita_yaki.name" = "아리타야키";
+"saga.arita_yaki.description" = "사가현 아리타쵸의 전통공예품";
+"saga.arita_yaki.price" = "3,000-100,000엔";
+
+// =====================================================
+// 나가사키현（Nagasaki）
+// =====================================================
+"nagasaki.fukusaya_castella.name" = "후쿠사야의 카스테라";
+"nagasaki.fukusaya_castella.description" = "나가사키의 대표적 명과. 촉촉하고 단 스펀지";
+"nagasaki.fukusaya_castella.price" = "2,000-5,000엔";
+
+"nagasaki.kurusu.name" = "쿠루스";
+"nagasaki.kurusu.description" = "나가사키현의 양과자";
+"nagasaki.kurusu.price" = "1,200-2,500엔";
+
+"nagasaki.yoriyori.name" = "요리요리";
+"nagasaki.yoriyori.description" = "나가사키현의 중화과자";
+"nagasaki.yoriyori.price" = "800-1,500엔";
+
+"nagasaki.momo_castella.name" = "모모 카스테라";
+"nagasaki.momo_castella.description" = "나가사키현의 히나마츠리용 카스테라";
+"nagasaki.momo_castella.price" = "2,000-4,000엔";
+
+"nagasaki.kakuni_manju.name" = "카쿠니 만주";
+"nagasaki.kakuni_manju.description" = "나가사키의 명물. 말랑말랑한 돼지각니를 싼 만주";
+"nagasaki.kakuni_manju.price" = "500-1,200엔";
+
+// =====================================================
+// 쿠마모토현（Kumamoto）
+// =====================================================
+"kumamoto.homare_no_jindaiko.name" = "호마레노 진다이코";
+"kumamoto.homare_no_jindaiko.description" = "쿠마모토현의 대표적 명과";
+"kumamoto.homare_no_jindaiko.price" = "1,200-2,500엔";
+
+"kumamoto.ikinari_dango.name" = "이키나리 단고";
+"kumamoto.ikinari_dango.description" = "쿠마모토현의 향토과자. 고구마와 앙코의 단고";
+"kumamoto.ikinari_dango.price" = "500-1,000엔";
+
+"kumamoto.musha_gaeshi.name" = "무샤 가에시";
+"kumamoto.musha_gaeshi.description" = "쿠마모토현의 명과";
+"kumamoto.musha_gaeshi.price" = "1,000-2,000엔";
+
+"kumamoto.chosen_ame.name" = "조센 아메";
+"kumamoto.chosen_ame.description" = "쿠마모토현의 전통적인 사탕과자";
+"kumamoto.chosen_ame.price" = "800-1,500엔";
+
+"kumamoto.kumamon_goods.name" = "쿠마몬 관련 굿즈";
+"kumamoto.kumamon_goods.description" = "쿠마모토현의 마스코트 캐릭터 상품";
+"kumamoto.kumamon_goods.price" = "500-3,000엔";
+
+// =====================================================
+// 오이타현（Oita）
+// =====================================================
+"oita.zabieru.name" = "자비에루";
+"oita.zabieru.description" = "오이타현의 대표적 명과";
+"oita.zabieru.price" = "1,200-2,500엔";
+
+"oita.kojono_tsuki.name" = "코조노 츠키";
+"oita.kojono_tsuki.description" = "오이타현의 명과";
+"oita.kojono_tsuki.price" = "1,000-2,000엔";
+
+"oita.yaseuma.name" = "야세우마";
+"oita.yaseuma.description" = "오이타현의 향토과자";
+"oita.yaseuma.price" = "800-1,500엔";
+
+"oita.gomadashi_udon.name" = "고마다시 우동";
+"oita.gomadashi_udon.description" = "오이타현의 특산품";
+"oita.gomadashi_udon.price" = "1,000-2,000엔";
+
+"oita.onsen_goods.name" = "온천 관련 굿즈";
+"oita.onsen_goods.description" = "온센켄 오이타의 온천굿즈";
+"oita.onsen_goods.price" = "800-3,000엔";
+
+// =====================================================
+// 미야자키현（Miyazaki）
+// =====================================================
+"miyazaki.nanjako_daifuku.name" = "난자코 다이후쿠";
+"miyazaki.nanjako_daifuku.description" = "미야자키현의 인기 다이후쿠";
+"miyazaki.nanjako_daifuku.price" = "1,000-2,000엔";
+
+"miyazaki.cheese_manju.name" = "치즈 만주";
+"miyazaki.cheese_manju.description" = "미야자키현의 대표적 명과";
+"miyazaki.cheese_manju.price" = "1,200-2,500엔";
+
+"miyazaki.aoshima_senbei.name" = "아오시마 센베이";
+"miyazaki.aoshima_senbei.description" = "미야자키현 아오시마의 명물 센베이";
+"miyazaki.aoshima_senbei.price" = "800-1,500엔";
+
+"miyazaki.hyuganatsu_sable.name" = "휴가나츠 사브레";
+"miyazaki.hyuganatsu_sable.description" = "미야자키현 특산 휴가나츠를 사용한 사브레";
+"miyazaki.hyuganatsu_sable.price" = "1,000-2,000엔";
+
+"miyazaki.mango_goods.name" = "망고 관련상품";
+"miyazaki.mango_goods.description" = "미야자키현산 망고를 사용한 상품";
+"miyazaki.mango_goods.price" = "1,500-5,000엔";
+
+// =====================================================
+// 가고시마현（Kagoshima）
+// =====================================================
+"kagoshima.karukan.name" = "카루칸";
+"kagoshima.karukan.description" = "가고시마현의 대표적 명과";
+"kagoshima.karukan.price" = "1,000-2,500엔";
+
+"kagoshima.satsuma_imo_tart.name" = "사츠마이모 타르트";
+"kagoshima.satsuma_imo_tart.description" = "가고시마현의 사츠마이모를 사용한 타르트";
+"kagoshima.satsuma_imo_tart.price" = "1,200-2,500엔";
+
+"kagoshima.karukan_manju.name" = "카루칸 만주";
+"kagoshima.karukan_manju.description" = "가고시마현의 전통적 만주";
+"kagoshima.karukan_manju.price" = "1,000-2,000엔";
+
+"kagoshima.satsuma_kiriko.name" = "사츠마 키리코";
+"kagoshima.satsuma_kiriko.description" = "가고시마현의 전통공예품";
+"kagoshima.satsuma_kiriko.price" = "10,000-100,000엔";
+
+"kagoshima.imo_shochu.name" = "이모 소주";
+"kagoshima.imo_shochu.description" = "가고시마현의 대표적인 소주";
+"kagoshima.imo_shochu.price" = "1,500-10,000엔";
+
+// =====================================================
+// 오키나와현（Okinawa）
+// =====================================================
+"okinawa.chinsuko.name" = "친수코";
+"okinawa.chinsuko.description" = "오키나와의 대표적 명과";
+"okinawa.chinsuko.price" = "800-2,000엔";
+
+"okinawa.beni_imo_tart.name" = "베니이모 타르트";
+"okinawa.beni_imo_tart.description" = "오키나와현의 자색고구마를 사용한 타르트";
+"okinawa.beni_imo_tart.price" = "1,200-2,500엔";
+
+"okinawa.yukishio_chinsuko.name" = "유키시오 친수코";
+"okinawa.yukishio_chinsuko.description" = "미야코지마의 유키시오를 사용한 친수코";
+"okinawa.yukishio_chinsuko.price" = "1,000-2,000엔";
+
+"okinawa.sata_andagi.name" = "사타 안다기";
+"okinawa.sata_andagi.description" = "오키나와의 튀김과자";
+"okinawa.sata_andagi.price" = "500-1,200엔";
+
+"okinawa.awamori_cookie.name" = "류큐 아와모리 쿠키";
+"okinawa.awamori_cookie.description" = "오키나와의 아와모리를 사용한 쿠키";
+"okinawa.awamori_cookie.price" = "800-1,500엔";
+
+"okinawa.ryukyu_glass.name" = "류큐 글라스";
+"okinawa.ryukyu_glass.description" = "오키나와현의 전통공예품";
+"okinawa.ryukyu_glass.price" = "2,000-20,000엔";
+
+"okinawa.shisa.name" = "시사";
+"okinawa.shisa.description" = "오키나와의 수호신 장식품";
+"okinawa.shisa.price" = "1,000-10,000엔";
+
+// =====================================================
+// 이시카와현（Ishikawa）
+// =====================================================
+"ishikawa.ukokukei_castella.name" = "우코쿠케이 카스테라";
+"ishikawa.ukokukei_castella.description" = "카나자와의 고급 카스테라";
+"ishikawa.ukokukei_castella.price" = "2,000-5,000엔";
+
+"ishikawa.kinpaku_castella.name" = "킨파쿠 카스테라";
+"ishikawa.kinpaku_castella.description" = "카나자와 명물의 금박을 장식한 카스테라";
+"ishikawa.kinpaku_castella.price" = "2,500-5,000엔";
+
+"ishikawa.jiroame.name" = "지로아메";
+"ishikawa.jiroame.description" = "카나자와의 전통적인 물엿";
+"ishikawa.jiroame.price" = "800-1,500엔";
+
+"ishikawa.kutani_yaki.name" = "쿠타니야키";
+"ishikawa.kutani_yaki.description" = "이시카와현의 전통공예품";
+"ishikawa.kutani_yaki.price" = "3,000-50,000엔";
+
+"ishikawa.wajima_nuri.name" = "와지마 누리";
+"ishikawa.wajima_nuri.description" = "이시카와현 와지마시의 전통공예품";
+"ishikawa.wajima_nuri.price" = "10,000-100,000엔";
+
+// =====================================================
+// 후쿠이현（Fukui）
+// =====================================================
+"fukui.habutae_mochi.name" = "하부타에 모치";
+"fukui.habutae_mochi.description" = "후쿠이현의 명과. 부드럽고 상품 단맛";
+"fukui.habutae_mochi.price" = "1,000-2,500엔";
+
+"fukui.satsukigase_senbei.name" = "사츠키가세 센베이";
+"fukui.satsukigase_senbei.description" = "후쿠이현의 노포 센베이";
+"fukui.satsukigase_senbei.price" = "1,000-2,000엔";
+
+"fukui.gyuhi_kombu.name" = "규히 다시마";
+"fukui.gyuhi_kombu.description" = "후쿠이현의 다시마를 사용한 화과자";
+"fukui.gyuhi_kombu.price" = "800-1,500엔";
+
+"fukui.mizu_yokan.name" = "미즈 요칸";
+"fukui.mizu_yokan.description" = "후쿠이현의 여름 명물과자";
+"fukui.mizu_yokan.price" = "500-1,200엔";
+
+"fukui.echizen_washi.name" = "에치젠 와시";
+"fukui.echizen_washi.description" = "후쿠이현의 전통공예품";
+"fukui.echizen_washi.price" = "1,000-10,000엔";
+
+// =====================================================
+// 야마나시현（Yamanashi）
+// =====================================================
+"yamanashi.kikyo_shingen_mochi.name" = "키쿄 신겐 모치";
+"yamanashi.kikyo_shingen_mochi.description" = "야마나시현의 대표적 명과. 콩가루와 흑설탕을 뿌려서 먹는";
+"yamanashi.kikyo_shingen_mochi.price" = "1,000-2,500엔";
+
+"yamanashi.kikyo_shingen_soft.name" = "키쿄 신겐 소프트";
+"yamanashi.kikyo_shingen_soft.description" = "신겐모치맛의 소프트크림풍 과자";
+"yamanashi.kikyo_shingen_soft.price" = "300-600엔";
+
+"yamanashi.budo_no_sato.name" = "부도노 사토";
+"yamanashi.budo_no_sato.description" = "야마나시현산 포도를 사용한 과자";
+"yamanashi.budo_no_sato.price" = "1,200-2,500엔";
+
+"yamanashi.fuji_no_shirayuki.name" = "후지노 시라유키";
+"yamanashi.fuji_no_shirayuki.description" = "후지산을 모티브로 한 과자";
+"yamanashi.fuji_no_shirayuki.price" = "1,000-2,000엔";
+
+"yamanashi.koshu_wine.name" = "고슈 와인";
+"yamanashi.koshu_wine.description" = "야마나시현산 포도로 만든 일본와인";
+"yamanashi.koshu_wine.price" = "2,000-10,000엔";
+
+// =====================================================
+// 나가노현（Nagano）
+// =====================================================
+"nagano.raicho_no_sato.name" = "라이초노 사토";
+"nagano.raicho_no_sato.description" = "나가노현의 대표적 명과";
+"nagano.raicho_no_sato.price" = "1,200-2,500엔";
+
+"nagano.misuzu_ame.name" = "미스즈 아메";
+"nagano.misuzu_ame.description" = "나가노현의 노포가 만드는 과실젤리";
+"nagano.misuzu_ame.price" = "800-2,000엔";
+
+"nagano.yawataya_isogoro_shichimi.name" = "야와타야 이소고로 시치미";
+"nagano.yawataya_isogoro_shichimi.description" = "젠코지 문앞의 노포의 칠미고추";
+"nagano.yawataya_isogoro_shichimi.price" = "500-1,500엔";
+
+"nagano.kuri_kanoko.name" = "쿠리 카노코";
+"nagano.kuri_kanoko.description" = "나가노현 오부세마치의 밤과자";
+"nagano.kuri_kanoko.price" = "1,500-3,000엔";
+
+"nagano.nozawana.name" = "노자와나";
+"nagano.nozawana.description" = "나가노현의 특산야채 절임";
+"nagano.nozawana.price" = "500-1,500엔";
+
+// =====================================================
+// 기후현（Gifu）
+// =====================================================
+"gifu.hida_no_sato.name" = "히다노 사토";
+"gifu.hida_no_sato.description" = "기후현 히다지방의 명과";
+"gifu.hida_no_sato.price" = "1,200-2,500엔";
+
+"gifu.kuri_kinton.name" = "쿠리 킨톤";
+"gifu.kuri_kinton.description" = "나카츠가와의 명물. 밤의 단맛을 살린 화과자";
+"gifu.kuri_kinton.price" = "1,500-3,000엔";
+
+"gifu.ayu_gashi.name" = "아유 가시";
+"gifu.ayu_gashi.description" = "기후현의 은어를 모티브로 한 과자";
+"gifu.ayu_gashi.price" = "1,000-2,000엔";
+
+"gifu.hoba_miso_senbei.name" = "호바 된장 센베이";
+"gifu.hoba_miso_senbei.description" = "히다의 향토요리를 모티브로 한 센베이";
+"gifu.hoba_miso_senbei.price" = "800-1,500엔";
+
+"gifu.mino_washi.name" = "미노 와시";
+"gifu.mino_washi.description" = "기후현의 전통공예품";
+"gifu.mino_washi.price" = "1,000-10,000엔";
+
+// =====================================================
+// 시즈오카현（Shizuoka）
+// =====================================================
+"shizuoka.unagi_pie.name" = "우나기 파이";
+"shizuoka.unagi_pie.description" = "하마마츠의 명물. 바삭한 파이과자";
+"shizuoka.unagi_pie.price" = "1,000-2,500엔";
+
+"shizuoka.kokko.name" = "콧코";
+"shizuoka.kokko.description" = "시즈오카현의 대표적 명과";
+"shizuoka.kokko.price" = "1,200-2,000엔";
+
+"shizuoka.jiichiro_baumkuchen.name" = "지이치로의 바움쿠헨";
+"shizuoka.jiichiro_baumkuchen.description" = "시즈오카현 발상의 고급 바움쿠헨";
+"shizuoka.jiichiro_baumkuchen.price" = "1,500-3,000엔";
+
+"shizuoka.fujisan_cho.name" = "후지산초";
+"shizuoka.fujisan_cho.description" = "후지산을 모티브로 한 과자";
+"shizuoka.fujisan_cho.price" = "1,000-2,000엔";
+
+"shizuoka.shizuoka_cha.name" = "시즈오카차";
+"shizuoka.shizuoka_cha.description" = "시즈오카현의 특산품";
+"shizuoka.shizuoka_cha.price" = "1,000-5,000엔";
+
+// =====================================================
+// 아이치현（Aichi）
+// =====================================================
+"aichi.uiro.name" = "우이로";
+"aichi.uiro.description" = "나고야의 대표적 화과자";
+"aichi.uiro.price" = "800-2,000엔";
+
+"aichi.yukari.name" = "유카리";
+"aichi.yukari.description" = "나고야의 노포가 만드는 새우센베이";
+"aichi.yukari.price" = "1,000-2,500엔";
+
+"aichi.sakakaku_ebi_senbei.name" = "사카카쿠 총본포의 새우센베이";
+"aichi.sakakaku_ebi_senbei.description" = "아이치현의 고급 새우센베이";
+"aichi.sakakaku_ebi_senbei.price" = "1,500-5,000엔";
+
+"aichi.nagoyan.name" = "나고얀";
+"aichi.nagoyan.description" = "나고야의 명과";
+"aichi.nagoyan.price" = "1,000-2,000엔";
+
+"aichi.arimatsu_shibori.name" = "아리마츠 시보리";
+"aichi.arimatsu_shibori.description" = "아이치현의 전통공예품";
+"aichi.arimatsu_shibori.price" = "3,000-20,000엔";
+
+// =====================================================
+// 미에현（Mie）
+// =====================================================
+"mie.akafuku.name" = "아카후쿠";
+"mie.akafuku.description" = "이세신궁의 명물. 앙코로 싼 떡과자";
+"mie.akafuku.price" = "1,000-3,000엔";
+
+"mie.henba_mochi.name" = "헨바 모치";
+"mie.henba_mochi.description" = "미에현의 전통적인 떡과자";
+"mie.henba_mochi.price" = "800-1,500엔";
+
+"mie.yasunaga_mochi.name" = "야스나가 모치";
+"mie.yasunaga_mochi.description" = "미에현의 명물 떡과자";
+"mie.yasunaga_mochi.price" = "800-1,500엔";
+
+"mie.toraya_uiro.name" = "토라야 우이로";
+"mie.toraya_uiro.description" = "미에현 이세시의 우이로";
+"mie.toraya_uiro.price" = "1,000-2,000엔";
+
+"mie.shinju.name" = "진주";
+"mie.shinju.description" = "미에현의 특산품";
+"mie.shinju.price" = "5,000-100,000엔";
+
+// =====================================================
+// 시가현（Shiga）
+// =====================================================
+"shiga.kisho_juian_kinogumo.name" = "키쇼 주안의 키노구모";
+"shiga.kisho_juian_kinogumo.description" = "시가현의 고급 화과자";
+"shiga.kisho_juian_kinogumo.price" = "2,000-5,000엔";
+
+"shiga.itokiri_mochi.name" = "이토키리 모치";
+"shiga.itokiri_mochi.description" = "시가현의 전통적인 떡과자";
+"shiga.itokiri_mochi.price" = "800-1,500엔";
+
+"shiga.chojifu.name" = "초지후";
+"shiga.chojifu.description" = "시가현의 특산품";
+"shiga.chojifu.price" = "500-1,200엔";
+
+"shiga.shigaraki_yaki.name" = "시가라키야키";
+"shiga.shigaraki_yaki.description" = "시가현 시가라키쵸의 도기";
+"shiga.shigaraki_yaki.price" = "2,000-20,000엔";
+
+"shiga.biwa_ko_goods.name" = "비와코 관련 굿즈";
+"shiga.biwa_ko_goods.description" = "비와코를 모티브로 한 선물";
+"shiga.biwa_ko_goods.price" = "500-3,000엔";
+
+// =====================================================
+// 교토부（Kyoto）
+// =====================================================
+"kyoto.yatsuhashi.name" = "야츠하시";
+"kyoto.yatsuhashi.description" = "교토의 대표적 명과. 나마야츠하시와 야키야츠하시";
+"kyoto.yatsuhashi.price" = "800-2,500엔";
+
+"kyoto.ajari_mochi.name" = "아자리 모치";
+"kyoto.ajari_mochi.description" = "교토의 노포 화과자점의 명물";
+"kyoto.ajari_mochi.price" = "1,500-3,000엔";
+
+"kyoto.cha_no_ka.name" = "차노카";
+"kyoto.cha_no_ka.description" = "교토의 말차를 사용한 양과자";
+"kyoto.cha_no_ka.price" = "1,200-2,500엔";
+
+"kyoto.marl_bransh_okoicha.name" = "마르브랑슈의 오코이차 랑그드샤";
+"kyoto.marl_bransh_okoicha.description" = "교토의 말차 랑그드샤";
+"kyoto.marl_bransh_okoicha.price" = "1,500-3,000엔";
+
+"kyoto.yojiya_aburatorigami.name" = "요지야 기름흡지";
+"kyoto.yojiya_aburatorigami.description" = "교토의 노포 화장품점의 상품";
+"kyoto.yojiya_aburatorigami.price" = "500-2,000엔";
+
+"kyoto.kiyomizu_yaki.name" = "키요미즈야키";
+"kyoto.kiyomizu_yaki.description" = "교토의 전통공예품";
+"kyoto.kiyomizu_yaki.price" = "3,000-50,000엔";
+
+// =====================================================
+// 오사카부（Osaka）
+// =====================================================
+"osaka.butaman_551.name" = "551호라이의 돼지만두";
+"osaka.butaman_551.description" = "오사카 명물의 돼지만두";
+"osaka.butaman_551.price" = "1,000-3,000엔";
+
+"osaka.rikuro_cheesecake.name" = "리쿠로 아저씨 가게의 치즈케이크";
+"osaka.rikuro_cheesecake.description" = "오사카의 인기 치즈케이크";
+"osaka.rikuro_cheesecake.price" = "800-1,500엔";
+
+"osaka.omoshiroi_koibito.name" = "재미있는 연인";
+"osaka.omoshiroi_koibito.description" = "오사카의 패러디 선물과자";
+"osaka.omoshiroi_koibito.price" = "1,000-2,000엔";
+
+"osaka.mitarashi_dango.name" = "미타라시 단고";
+"osaka.mitarashi_dango.description" = "오사카의 노포 단고점 상품";
+"osaka.mitarashi_dango.price" = "500-1,200엔";
+
+"osaka.takoyaki_goods.name" = "타코야키 관련 굿즈";
+"osaka.takoyaki_goods.description" = "오사카의 소울푸드를 모티브로 한 상품";
+"osaka.takoyaki_goods.price" = "500-2,500엔";
+
+// =====================================================
+// 효고현（Hyogo）
+// =====================================================
+"hyogo.kobe_fugetsudo_gofer.name" = "고베 후게츠도의 고프르";
+"hyogo.kobe_fugetsudo_gofer.description" = "고베의 노포 양과자점의 대표상품";
+"hyogo.kobe_fugetsudo_gofer.price" = "1,000-3,000엔";
+
+"hyogo.mon_loire_chocolate.name" = "몽로와르의 초콜릿";
+"hyogo.mon_loire_chocolate.description" = "고베의 고급 초콜릿";
+"hyogo.mon_loire_chocolate.price" = "1,500-5,000엔";
+
+"hyogo.kannonya_denmark_cheesecake.name" = "간논야의 덴마크 치즈케이크";
+"hyogo.kannonya_denmark_cheesecake.description" = "고베의 노포 치즈케이크";
+"hyogo.kannonya_denmark_cheesecake.price" = "1,200-2,500엔";
+
+"hyogo.kobe_beef_goods.name" = "고베규 관련상품";
+"hyogo.kobe_beef_goods.description" = "고베규를 사용한 가공품";
+"hyogo.kobe_beef_goods.price" = "2,000-10,000엔";
+
+"hyogo.arima_onsen_goods.name" = "아리마온천 관련 굿즈";
+"hyogo.arima_onsen_goods.description" = "아리마온천의 선물";
+"hyogo.arima_onsen_goods.price" = "800-3,000엔";
+
+// =====================================================
+// 나라현（Nara）
+// =====================================================
+"nara.shika_sable.name" = "사슴 사브레";
+"nara.shika_sable.description" = "나라의 사슴을 모티브로 한 사브레";
+"nara.shika_sable.price" = "800-1,500엔";
+
+"nara.mikasa.name" = "미카사";
+"nara.mikasa.description" = "나라의 대표적 명과";
+"nara.mikasa.price" = "1,000-2,000엔";
+
+"nara.kaki_senmon_ishii.name" = "감 전문 이시이";
+"nara.kaki_senmon_ishii.description" = "나라현의 감을 사용한 과자";
+"nara.kaki_senmon_ishii.price" = "1,200-2,500엔";
+
+"nara.nakagawa_masashichi_goods.name" = "나카가와 마사시치 상점의 잡화";
+"nara.nakagawa_masashichi_goods.description" = "나라의 노포 잡화점 상품";
+"nara.nakagawa_masashichi_goods.price" = "1,000-10,000엔";
+
+"nara.shika_goods.name" = "사슴 관련 굿즈";
+"nara.shika_goods.description" = "나라의 사슴을 모티브로 한 다양한 상품";
+"nara.shika_goods.price" = "500-3,000엔";
+
+// =====================================================
+// 와카야마현（Wakayama）
+// =====================================================
+"wakayama.kagero.name" = "카게로";
+"wakayama.kagero.description" = "와카야마현의 대표적 명과";
+"wakayama.kagero.price" = "1,000-2,500엔";
+
+"wakayama.nachi_guro.name" = "나치 구로";
+"wakayama.nachi_guro.description" = "와카야마현의 흑설탕과자";
+"wakayama.nachi_guro.price" = "500-1,200엔";
+
+"wakayama.kinokawa_kaki.name" = "키노카와 감";
+"wakayama.kinokawa_kaki.description" = "와카야마현의 감을 사용한 과자";
+"wakayama.kinokawa_kaki.price" = "1,000-2,000엔";
+
+"wakayama.arita_mikan_daifuku.name" = "아리타 귤 다이후쿠";
+"wakayama.arita_mikan_daifuku.description" = "와카야마현 아리타 귤을 사용한 다이후쿠";
+"wakayama.arita_mikan_daifuku.price" = "1,200-2,000엔";
+
+"wakayama.umeboshi.name" = "매실장아찌";
+"wakayama.umeboshi.description" = "와카야마현산 난코매의 매실장아찌";
+"wakayama.umeboshi.price" = "1,500-5,000엔";
+
+// =====================================================
+// 돗토리현（Tottori）
+// =====================================================
+"tottori.inaba_no_shiro_usagi.name" = "이나바의 흰토끼";
+"tottori.inaba_no_shiro_usagi.description" = "돗토리현의 대표적 명과";
+"tottori.inaba_no_shiro_usagi.price" = "1,200-2,500엔";
+
+"tottori.ofuroboshi.name" = "오후로보시";
+"tottori.ofuroboshi.description" = "돗토리현의 명과";
+"tottori.ofuroboshi.price" = "1,000-2,000엔";
+
+"tottori.nijusseiki_nashi_jelly.name" = "20세기 배젤리";
+"tottori.nijusseiki_nashi_jelly.description" = "돗토리현산 배를 사용한 젤리";
+"tottori.nijusseiki_nashi_jelly.price" = "1,500-3,000엔";
+
+"tottori.hakubaranyu_goods.name" = "하쿠바라 우유 관련상품";
+"tottori.hakubaranyu_goods.description" = "돗토리현의 우유브랜드 상품";
+"tottori.hakubaranyu_goods.price" = "500-1,500엔";
+
+"tottori.sakyu_goods.name" = "돗토리 사구 관련 굿즈";
+"tottori.sakyu_goods.description" = "돗토리 사구를 모티브로 한 상품";
+"tottori.sakyu_goods.price" = "500-2,500엔";
+
+// =====================================================
+// 시마네현（Shimane）
+// =====================================================
+"shimane.dojo_sukui_manju.name" = "도조 스쿠이 만주";
+"shimane.dojo_sukui_manju.description" = "시마네현의 명물만주";
+"shimane.dojo_sukui_manju.price" = "1,000-2,000엔";
+
+"shimane.genji_maki.name" = "겐지 마키";
+"shimane.genji_maki.description" = "시마네현의 대표적 명과";
+"shimane.genji_maki.price" = "1,200-2,500엔";
+
+"shimane.wakakusa.name" = "와카쿠사";
+"shimane.wakakusa.description" = "시마네현의 화과자";
+"shimane.wakakusa.price" = "1,000-2,000엔";
+
+"shimane.shimane_wine.name" = "시마네 와인";
+"shimane.shimane_wine.description" = "시마네현산 포도의 와인";
+"shimane.shimane_wine.price" = "2,000-8,000엔";
+
+"shimane.iwami_ginzan_goods.name" = "이와미 은광 관련 굿즈";
+"shimane.iwami_ginzan_goods.description" = "세계유산 이와미 은광의 선물";
+"shimane.iwami_ginzan_goods.price" = "800-3,000엔";
+
+// =====================================================
+// 오카야마현（Okayama）
+// =====================================================
+"okayama.ote_manju.name" = "오테 만주";
+"okayama.ote_manju.description" = "오카야마현의 대표적 명과";
+"okayama.ote_manju.price" = "1,000-2,500엔";
+
+"okayama.kibi_dango.name" = "키비 단고";
+"okayama.kibi_dango.description" = "오카야마의 명물과자. 모모타로 전설로 유명";
+"okayama.kibi_dango.price" = "800-2,000엔";
+
+"okayama.chofu.name" = "초후";
+"okayama.chofu.description" = "오카야마현의 명과";
+"okayama.chofu.price" = "1,200-2,000엔";
+
+"okayama.hakujuji_waffle.name" = "하쿠주지의 와플";
+"okayama.hakujuji_waffle.description" = "오카야마현의 양과자";
+"okayama.hakujuji_waffle.price" = "1,000-2,500엔";
+
+"okayama.bizen_yaki.name" = "비젠야키";
+"okayama.bizen_yaki.description" = "오카야마현의 전통공예품";
+"okayama.bizen_yaki.price" = "3,000-50,000엔";
+
+// =====================================================
+// 히로시마현（Hiroshima）
+// =====================================================
+"hiroshima.momiji_manju.name" = "모미지 만주";
+"hiroshima.momiji_manju.description" = "히로시마의 명과. 단풍 모양의 카스테라 만주";
+"hiroshima.momiji_manju.price" = "1,000-2,500엔";
+
+"hiroshima.nama_momiji.name" = "나마 모미지";
+"hiroshima.nama_momiji.description" = "모미지 만주의 생타입";
+"hiroshima.nama_momiji.price" = "1,200-2,500엔";
+
+"hiroshima.nishikido_momiji.name" = "니시키도의 모미지 만주";
+"hiroshima.nishikido_momiji.description" = "히로시마의 노포 모미지 만주점";
+"hiroshima.nishikido_momiji.price" = "1,000-2,500엔";
+
+"hiroshima.kawadori_mochi.name" = "카와도리 모치";
+"hiroshima.kawadori_mochi.description" = "히로시마현의 전통적인 떡과자";
+"hiroshima.kawadori_mochi.price" = "800-1,500엔";
+
+"hiroshima.hiroshima_na.name" = "히로시마나";
+"hiroshima.hiroshima_na.description" = "히로시마현의 특산야채 절임";
+"hiroshima.hiroshima_na.price" = "500-1,500엔";
+
+// =====================================================
+// 야마구치현（Yamaguchi）
+// =====================================================
+"yamaguchi.mameshiro.name" = "마메시로";
+"yamaguchi.mameshiro.description" = "야마구치현의 대표적 명과";
+"yamaguchi.mameshiro.price" = "1,000-2,500엔";
+
+"yamaguchi.uiro.name" = "가이로";
+"yamaguchi.uiro.description" = "야마구치현의 전통적인 화과자";
+"yamaguchi.uiro.price" = "800-2,000엔";
+
+"yamaguchi.tsuki_de_hirotta_tamago.name" = "달에서 주운 달걀";
+"yamaguchi.tsuki_de_hirotta_tamago.description" = "야마구치현의 명과";
+"yamaguchi.tsuki_de_hirotta_tamago.price" = "1,200-2,000엔";
+
+"yamaguchi.hagi_yaki.name" = "하기야키";
+"yamaguchi.hagi_yaki.description" = "야마구치현 하기시의 전통공예품";
+"yamaguchi.hagi_yaki.price" = "3,000-30,000엔";
+
+"yamaguchi.natsu_mikan_goods.name" = "여름귤 관련상품";
+"yamaguchi.natsu_mikan_goods.description" = "야마구치현 특산 여름귤을 사용한 상품";
+"yamaguchi.natsu_mikan_goods.price" = "800-2,000엔";
+
+// =====================================================
+// 공통항목
+// =====================================================
+"common.year_round" = "연중";
+"common.summer" = "여름";
+"common.winter" = "겨울";
+"common.spring" = "봄";
+"common.autumn" = "가을";
+"common.winter_spring" = "겨울봄";
+"common.autumn_winter" = "가을겨울";
+"common.spring_summer" = "봄여름";
+
+
+// MARK: - 오카야마현 (Okayama)
+"okayama_momotaro_festival_name" = "오카야마 모모타로 축제";
+"okayama_momotaro_festival_description" = "모모타로 전설로 유명한 오카야마의 여름축제. 우라자 춤과 납량불꽃축제가 오카야마의 밤을 흥겹게 합니다.";
+"okayama_momotaro_festival_location" = "오카야마시 중심가";
+"okayama_momotaro_festival_feature1" = "모모타로 전설";
+"okayama_momotaro_festival_feature2" = "우라자 춤";
+"okayama_momotaro_festival_feature3" = "납량불꽃";
+
+"kurashiki_tenryo_festival_name" = "구라시키 덴료 여름축제";
+"kurashiki_tenryo_festival_description" = "미관지구로 알려진 구라시키의 여름축제. 덴료 북과 불꽃축제가 하얀 벽의 거리를 장식합니다.";
+"kurashiki_tenryo_festival_location" = "구라시키시";
+"kurashiki_tenryo_festival_feature1" = "미관지구";
+"kurashiki_tenryo_festival_feature2" = "덴료 북";
+"kurashiki_tenryo_festival_feature3" = "하얀 벽의 거리";
+
+// MARK: - 히로시마현 (Hiroshima)
+"miyajima_suichu_fireworks_name" = "미야지마 수중불꽃축제";
+"miyajima_suichu_fireworks_description" = "세계유산 이츠쿠시마신사의 대도리이를 배경으로 한 불꽃축제. 수중불꽃이 세토나이카이를 아름답게 장식합니다.";
+"miyajima_suichu_fireworks_location" = "핫카이치시・미야지마";
+"miyajima_suichu_fireworks_feature1" = "세계유산 배경";
+"miyajima_suichu_fireworks_feature2" = "수중불꽃";
+"miyajima_suichu_fireworks_feature3" = "대도리이";
+
+"kure_kaijo_fireworks_name" = "구레 해상불꽃축제";
+"kure_kaijo_fireworks_description" = "항구도시 구레에서 개최되는 해상불꽃축제. 약 1만 발의 불꽃이 구레항의 밤하늘을 아름답게 장식합니다.";
+"kure_kaijo_fireworks_location" = "구레시・구레항";
+"kure_kaijo_fireworks_feature1" = "항구도시 불꽃";
+"kure_kaijo_fireworks_feature2" = "1만 발";
+"kure_kaijo_fireworks_feature3" = "구레항";
+
+"hiroshima_minato_fireworks_name" = "히로시마 미나토 꿈불꽃축제";
+"hiroshima_minato_fireworks_description" = "히로시마항에서 개최되는 불꽃축제. 약 1만 발의 불꽃이 히로시마의 여름밤을 장식합니다.";
+"hiroshima_minato_fireworks_location" = "히로시마시・히로시마항";
+"hiroshima_minato_fireworks_feature1" = "1만 발";
+"hiroshima_minato_fireworks_feature2" = "히로시마항";
+"hiroshima_minato_fireworks_feature3" = "여름밤 불꽃";
+
+// MARK: - 야마구치현 (Yamaguchi)
+"kanmon_kaikyo_fireworks_name" = "간몬해협 불꽃축제";
+"kanmon_kaikyo_fireworks_description" = "혼슈와 규슈를 사이에 둔 간몬해협에서 개최되는 불꽃축제. 양안에서 약 1만 3천 발의 불꽃이 올라갑니다.";
+"kanmon_kaikyo_fireworks_location" = "시모노세키시・간몬해협";
+"kanmon_kaikyo_fireworks_feature1" = "양안 불꽃";
+"kanmon_kaikyo_fireworks_feature2" = "1만 3천 발";
+"kanmon_kaikyo_fireworks_feature3" = "혼슈 규슈";
+
+"shimonoseki_kaikyo_kan_fireworks_name" = "시모노세키 가이쿄칸 불꽃축제";
+"shimonoseki_kaikyo_kan_fireworks_description" = "시모노세키의 여름을 장식하는 불꽃축제. 가이쿄칸 앞 해상에서 올라가는 불꽃이 간몬해협을 비춥니다.";
+"shimonoseki_kaikyo_kan_fireworks_location" = "시모노세키시・가이쿄칸";
+"shimonoseki_kaikyo_kan_fireworks_feature1" = "가이쿄칸";
+"shimonoseki_kaikyo_kan_fireworks_feature2" = "해상불꽃";
+"shimonoseki_kaikyo_kan_fireworks_feature3" = "간몬해협";
+
+"yamaguchi_tanabata_chochin_festival_name" = "야마구치 칠석 초롱축제";
+"yamaguchi_tanabata_chochin_festival_description" = "약 10만 개의 빨간 제등이 거리를 장식하는 야마구치의 여름축제. 환상적인 제등의 빛이 밤의 야마구치를 아름답게 비춥니다.";
+"yamaguchi_tanabata_chochin_festival_location" = "야마구치시 중심가";
+"yamaguchi_tanabata_chochin_festival_feature1" = "10만 개 제등";
+"yamaguchi_tanabata_chochin_festival_feature2" = "빨간 제등";
+"yamaguchi_tanabata_chochin_festival_feature3" = "환상적";
+
+// MARK: - 도쿠시마현 (Tokushima)
+"awa_odori_name" = "아와춤";
+"awa_odori_description" = "일본 3대 봉춤 중 하나. '추는 바보와 보는 바보, 같은 바보라면 추지 않으면 손해'로 유명한 도쿠시마의 여름축제입니다.";
+"awa_odori_location" = "도쿠시마시 중심가";
+"awa_odori_feature1" = "일본 3대 봉춤";
+"awa_odori_feature2" = "추는 바보";
+"awa_odori_feature3" = "100만 명 내장";
+
+"tokushima_awa_odori_name" = "도쿠시마시 아와춤";
+"tokushima_awa_odori_description" = "본고장 도쿠시마에서 개최되는 아와춤. 렌이라 불리는 춤 그룹의 화려한 춤이 볼거리입니다.";
+"tokushima_awa_odori_location" = "도쿠시마시";
+"tokushima_awa_odori_feature1" = "본고장 아와춤";
+"tokushima_awa_odori_feature2" = "렌의 춤";
+"tokushima_awa_odori_feature3" = "화려한 연무";
+
+// MARK: - 가가와현 (Kagawa)
+"sanuki_takamatsu_festival_name" = "사누키 다카마츠 축제";
+"sanuki_takamatsu_festival_description" = "다카마츠시의 여름축제. 총춤과 불꽃축제가 사누키의 여름을 흥겹게 합니다.";
+"sanuki_takamatsu_festival_location" = "다카마츠시 중심가";
+"sanuki_takamatsu_festival_feature1" = "총춤";
+"sanuki_takamatsu_festival_feature2" = "불꽃축제";
+"sanuki_takamatsu_festival_feature3" = "사누키의 여름";
+
+"marugame_oshiro_festival_name" = "마루가메 성축제";
+"marugame_oshiro_festival_description" = "마루가메성을 무대로 한 봄축제. 성을 배경으로 한 다양한 이벤트가 개최됩니다.";
+"marugame_oshiro_festival_location" = "마루가메시・마루가메성";
+"marugame_oshiro_festival_feature1" = "마루가메성";
+"marugame_oshiro_festival_feature2" = "성축제";
+"marugame_oshiro_festival_feature3" = "봄 이벤트";
+
+// MARK: - 에히메현 (Ehime)
+"matsuyama_festival_name" = "마츠야마 축제";
+"matsuyama_festival_description" = "마츠야마시의 여름축제. 야구권춤과 불꽃축제가 도고온천의 거리를 활기차게 합니다.";
+"matsuyama_festival_location" = "마츠야마시 중심가";
+"matsuyama_festival_feature1" = "야구권춤";
+"matsuyama_festival_feature2" = "불꽃축제";
+"matsuyama_festival_feature3" = "도고온천";
+
+"niihama_taiko_festival_name" = "니이하마 북축제";
+"niihama_taiko_festival_description" = "시코쿠 3대 축제 중 하나. 무게 약 3톤의 북대가 행진하는 용장한 가을축제입니다.";
+"niihama_taiko_festival_location" = "니이하마시";
+"niihama_taiko_festival_feature1" = "시코쿠 3대 축제";
+"niihama_taiko_festival_feature2" = "3톤 북대";
+"niihama_taiko_festival_feature3" = "용장한 축제";
+
+"uwajima_ushioni_festival_name" = "우와지마 우시오니 축제";
+"uwajima_ushioni_festival_description" = "우시오니라는 환상적인 연물이 거리를 행진하는 우와지마의 여름축제. 가이야 카니발로도 유명합니다.";
+"uwajima_ushioni_festival_location" = "우와지마시";
+"uwajima_ushioni_festival_feature1" = "우시오니 연물";
+"uwajima_ushioni_festival_feature2" = "가이야 카니발";
+"uwajima_ushioni_festival_feature3" = "환상적";
+
+// MARK: - 고치현 (Kochi)
+"yosakoi_festival_name" = "요사코이 축제";
+"yosakoi_festival_description" = "고치 발상의 요사코이춤 축제. 나루코를 들고 추는 화려한 축제로 전국에 확산되었습니다.";
+"yosakoi_festival_location" = "고치시 중심가";
+"yosakoi_festival_feature1" = "요사코이 발상";
+"yosakoi_festival_feature2" = "나루코춤";
+"yosakoi_festival_feature3" = "전국에 확대";
+
+"tosa_festival_name" = "도사 축제";
+"tosa_festival_description" = "고치의 여름을 대표하는 축제. 불꽃축제와 요사코이춤이 도사의 밤을 흥겹게 합니다.";
+"tosa_festival_location" = "고치시";
+"tosa_festival_feature1" = "도사의 여름";
+"tosa_festival_feature2" = "불꽃축제";
+"tosa_festival_feature3" = "요사코이";
+
+// MARK: - 후쿠오카현 (Fukuoka)
+"hakata_gion_yamakasa_name" = "하카타 기온 야마카사";
+"hakata_gion_yamakasa_description" = "하카타의 여름을 대표하는 용장한 축제. 장식 야마카사와 메는 야마카사로 알려져 오이야마가 최대 볼거리입니다.";
+"hakata_gion_yamakasa_location" = "하카타구";
+"hakata_gion_yamakasa_feature1" = "장식 야마카사";
+"hakata_gion_yamakasa_feature2" = "메는 야마카사";
+"hakata_gion_yamakasa_feature3" = "오이야마";
+
+"kokura_gion_taiko_name" = "고쿠라 기온 북";
+"kokura_gion_taiko_description" = "고쿠라성을 중심으로 펼쳐지는 북의 축제. 용장한 북소리가 고쿠라의 여름을 장식합니다.";
+"kokura_gion_taiko_location" = "기타큐슈시 고쿠라키타구";
+"kokura_gion_taiko_feature1" = "고쿠라성";
+"kokura_gion_taiko_feature2" = "용장 북";
+"kokura_gion_taiko_feature3" = "여름의 울림";
+
+"tobata_gion_oyamakasa_name" = "도바타 기온 대야마카사";
+"tobata_gion_oyamakasa_description" = "유네스코 무형문화유산에 등록된 도바타의 축제. 제등 야마카사가 환상적으로 밤을 장식합니다.";
+"tobata_gion_oyamakasa_location" = "기타큐슈시 도바타구";
+"tobata_gion_oyamakasa_feature1" = "유네스코 유산";
+"tobata_gion_oyamakasa_feature2" = "제등 야마카사";
+"tobata_gion_oyamakasa_feature3" = "환상적 야경";
+
+"chikugogawa_fireworks_name" = "치쿠고강 불꽃축제";
+"chikugogawa_fireworks_description" = "규슈 최대급의 불꽃축제. 치쿠고강 하천부지에서 약 1만 8천 발의 불꽃이 올라갑니다.";
+"chikugogawa_fireworks_location" = "구루메시・치쿠고강";
+"chikugogawa_fireworks_feature1" = "규슈 최대급";
+"chikugogawa_fireworks_feature2" = "1만 8천 발";
+"chikugogawa_fireworks_feature3" = "치쿠고강";
+
+// MARK: - 사가현 (Saga)
+"saga_balloon_festa_name" = "사가 인터내셔널 벌룬 페스타";
+"saga_balloon_festa_description" = "아시아 최대급의 열기구 대회. 형형색색의 열기구가 사가평야의 하늘을 장식하는 가을의 풍물시입니다.";
+"saga_balloon_festa_location" = "사가시・가세강 하천부지";
+"saga_balloon_festa_feature1" = "아시아 최대급";
+"saga_balloon_festa_feature2" = "열기구";
+"saga_balloon_festa_feature3" = "100기 이상";
+
+"karatsu_kunchi_name" = "가라쓰 군치";
+"karatsu_kunchi_description" = "유네스코 무형문화유산의 가라쓰 가을축제. 14대의 예인제가 가라쓰신사의 제례로서 거리를 행진합니다.";
+"karatsu_kunchi_location" = "가라쓰시";
+"karatsu_kunchi_feature1" = "유네스코 유산";
+"karatsu_kunchi_feature2" = "14대 예인제";
+"karatsu_kunchi_feature3" = "400년의 역사";
+
+// MARK: - 나가사키현 (Nagasaki)
+"nagasaki_shoryonagashi_name" = "나가사키 정령 띄우기";
+"nagasaki_shoryonagashi_description" = "오봉의 전통행사로 알려진 나가사키의 여름축제. 고인의 영을 보내는 정령선이 거리를 행진합니다.";
+"nagasaki_shoryonagashi_location" = "나가사키시 중심가";
+"nagasaki_shoryonagashi_feature1" = "오봉 행사";
+"nagasaki_shoryonagashi_feature2" = "정령선";
+"nagasaki_shoryonagashi_feature3" = "폭죽 소리";
+
+"nagasaki_kunchi_name" = "나가사키 군치";
+"nagasaki_kunchi_description" = "나가사키의 가을을 대표하는 축제. 이국정취 풍부한 춤과 출연물이 스와신사의 제례로서 봉납됩니다.";
+"nagasaki_kunchi_location" = "나가사키시";
+"nagasaki_kunchi_feature1" = "이국정취";
+"nagasaki_kunchi_feature2" = "스와신사";
+"nagasaki_kunchi_feature3" = "380년의 역사";
+
+"sasebo_seaside_festival_name" = "사세보 시사이드 페스티벌";
+"sasebo_seaside_festival_description" = "사세보항에서 개최되는 여름축제. 항구도시 특유의 해상 이벤트와 불꽃축제를 즐길 수 있습니다.";
+"sasebo_seaside_festival_location" = "사세보시・사세보항";
+"sasebo_seaside_festival_feature1" = "항구도시 축제";
+"sasebo_seaside_festival_feature2" = "해상 이벤트";
+"sasebo_seaside_festival_feature3" = "불꽃축제";
+
+// MARK: - 구마모토현 (Kumamoto)
+"kumamoto_hinokuni_festival_name" = "구마모토 불의 나라 축제";
+"kumamoto_hinokuni_festival_description" = "구마모토의 여름을 대표하는 축제. 불의 나라 춤과 불꽃축제가 구마모토 성하를 흥겁게 합니다.";
+"kumamoto_hinokuni_festival_location" = "구마모토시 중심가";
+"kumamoto_hinokuni_festival_feature1" = "불의 나라 춤";
+"kumamoto_hinokuni_festival_feature2" = "불꽃축제";
+"kumamoto_hinokuni_festival_feature3" = "구마모토 성하";
+
+"yamaga_toro_festival_name" = "야마가 등롱축제";
+"yamaga_toro_festival_description" = "화지와 풀만으로 만든 등롱을 머리에 이고 추는 환상적인 축제. 천인등롱춤이 압권입니다.";
+"yamaga_toro_festival_location" = "야마가시";
+"yamaga_toro_festival_feature1" = "화지 등롱";
+"yamaga_toro_festival_feature2" = "천인춤";
+"yamaga_toro_festival_feature3" = "환상적";
+
+"hitoyoshi_fireworks_name" = "히토요시 불꽃축제";
+"hitoyoshi_fireworks_description" = "구마강에서 개최되는 불꽃축제. 약 5000발의 불꽃이 히토요시의 밤하늘을 아름답게 장식합니다.";
+"hitoyoshi_fireworks_location" = "히토요시시・구마강";
+"hitoyoshi_fireworks_feature1" = "5000발";
+"hitoyoshi_fireworks_feature2" = "구마강";
+"hitoyoshi_fireworks_feature3" = "청류 불꽃";
+
+// MARK: - 오이타현 (Oita)
+"oita_tanabata_festival_name" = "오이타 칠석축제";
+"oita_tanabata_festival_description" = "오이타시의 여름축제. 중심가가 칠석 장식으로 장식되며 다양한 이벤트가 개최됩니다.";
+"oita_tanabata_festival_location" = "오이타시 중심가";
+"oita_tanabata_festival_feature1" = "칠석 장식";
+"oita_tanabata_festival_feature2" = "중심가";
+"oita_tanabata_festival_feature3" = "여름 이벤트";
+
+"hita_gion_festival_name" = "히타 기온제";
+"hita_gion_festival_description" = "수향 히타의 여름축제. 호화찬란한 야마보코가 미쿠마강변을 행진하는 규슈 유수의 기온제입니다.";
+"hita_gion_festival_location" = "히타시";
+"hita_gion_festival_feature1" = "수향 축제";
+"hita_gion_festival_feature2" = "호화 야마보코";
+"hita_gion_festival_feature3" = "규슈 유수";
+
+"beppu_hinoumi_festival_name" = "벳푸 불바다 축제";
+"beppu_hinoumi_festival_description" = "벳푸온천가에서 개최되는 여름축제. 온천축제와 불꽃축제가 벳푸의 밤을 장식합니다.";
+"beppu_hinoumi_festival_location" = "벳푸시";
+"beppu_hinoumi_festival_feature1" = "온천가";
+"beppu_hinoumi_festival_feature2" = "온천축제";
+"beppu_hinoumi_festival_feature3" = "불꽃축제";
+
+// MARK: - 미야자키현 (Miyazaki)
+"hyuga_hyottoko_festival_name" = "휴가 효토코 여름축제";
+"hyuga_hyottoko_festival_description" = "효토코춤으로 유명한 휴가시의 여름축제. 유머러스한 효토코 탈을 쓰고 추는 즐거운 축제입니다.";
+"hyuga_hyottoko_festival_location" = "휴가시";
+"hyuga_hyottoko_festival_feature1" = "효토코춤";
+"hyuga_hyottoko_festival_feature2" = "유머러스";
+"hyuga_hyottoko_festival_feature3" = "탈춤";
+
+"miyazaki_jingu_taisai_name" = "미야자키 신궁 대제";
+"miyazaki_jingu_taisai_description" = "미야자키 신궁의 가을축제. 진무천황과 인연이 있는 미야자키 신궁에서 개최되는 역사 있는 축제입니다.";
+"miyazaki_jingu_taisai_location" = "미야자키시・미야자키 신궁";
+"miyazaki_jingu_taisai_feature1" = "진무천황";
+"miyazaki_jingu_taisai_feature2" = "미야자키 신궁";
+"miyazaki_jingu_taisai_feature3" = "역사 있는 축제";
+
+// MARK: - 가고시마현 (Kagoshima)
+"kagoshima_ohara_festival_name" = "가고시마 오하라 축제";
+"kagoshima_ohara_festival_description" = "가고시마 시민 총춤의 축제. 오하라부시에 맞춰 추는 시민 퍼레이드가 가고시마의 가을을 장식합니다.";
+"kagoshima_ohara_festival_location" = "가고시마시 중심가";
+"kagoshima_ohara_festival_feature1" = "시민 총춤";
+"kagoshima_ohara_festival_feature2" = "오하라부시";
+"kagoshima_ohara_festival_feature3" = "2만 명 참가";
+
+"sendaigawa_fireworks_name" = "센다이강 불꽃축제";
+"sendaigawa_fireworks_description" = "센다이강에서 개최되는 불꽃축제. 약 8000발의 불꽃이 사쓰마센다이시의 밤하늘을 장식합니다.";
+"sendaigawa_fireworks_location" = "사쓰마센다이시・센다이강";
+"sendaigawa_fireworks_feature1" = "8000발";
+"sendaigawa_fireworks_feature2" = "센다이강";
+"sendaigawa_fireworks_feature3" = "사쓰마의 밤";
+
+// MARK: - 오키나와현 (Okinawa)
+"okinawa_zento_eisa_festival_name" = "오키나와 전도 에이사 축제";
+"okinawa_zento_eisa_festival_description" = "오키나와의 여름을 대표하는 축제. 현내 각지의 에이사 단체가 집결해 용장한 에이사를 선보입니다.";
+"okinawa_zento_eisa_festival_location" = "오키나와시";
+"okinawa_zento_eisa_festival_feature1" = "전도 에이사";
+"okinawa_zento_eisa_festival_feature2" = "용장한 춤";
+"okinawa_zento_eisa_festival_feature3" = "오키나와의 여름";
+
+"naha_festival_name" = "나하 축제";
+"naha_festival_description" = "나하시 최대의 축제. 국제거리에서의 퍼레이드와 불꽃축제가 오키나와의 가을을 흥겁게 합니다.";
+"naha_festival_location" = "나하시";
+"naha_festival_feature1" = "국제거리";
+"naha_festival_feature2" = "퍼레이드";
+"naha_festival_feature3" = "나하 최대";
+
+"ginowan_hagoromo_festival_name" = "기노완 하고로모 축제";
+"ginowan_hagoromo_festival_description" = "기노완시의 여름축제. 하고로모 민요와 불꽃축제가 기노완의 밤을 아름답게 장식합니다.";
+"ginowan_hagoromo_festival_location" = "기노완시";
+"ginowan_hagoromo_festival_feature1" = "하고로모 민요";
+"ginowan_hagoromo_festival_feature2" = "불꽃축제";
+"ginowan_hagoromo_festival_feature3" = "기노완의 밤";
+// MARK: - 야마나시현 (Yamanashi)
+"fujigoko_fireworks_name" = "후지오호 불꽃축제";
+"fujigoko_fireworks_description" = "후지산을 배경으로 올라가는 불꽃축제. 호수면에 비치는 불꽃과 후지산의 아름다운 콜라보레이션이 볼거리입니다.";
+"fujigoko_fireworks_location" = "후지오호 주변";
+"fujigoko_fireworks_feature1" = "후지산 배경";
+"fujigoko_fireworks_feature2" = "호수면 불꽃";
+"fujigoko_fireworks_feature3" = "절경 콜라보";
+
+"kofu_summer_festival_name" = "고후 여름축제";
+"kofu_summer_festival_description" = "고후의 여름을 대표하는 축제. 다케다 신겐공 축제의 여름판으로 다채로운 이벤트가 개최됩니다.";
+"kofu_summer_festival_location" = "고후시 중심가";
+"kofu_summer_festival_feature1" = "다케다 신겐";
+"kofu_summer_festival_feature2" = "여름 이벤트";
+"kofu_summer_festival_feature3" = "고후의 여름";
+
+"yoshida_himatsuri_name" = "요시다의 불축제";
+"yoshida_himatsuri_description" = "후지산의 산지마이를 알리는 축제. 거대한 횃불과 후지산의 불축제로 알려진 용장한 축제입니다.";
+"yoshida_himatsuri_location" = "후지요시다시";
+"yoshida_himatsuri_feature1" = "후지산 축제";
+"yoshida_himatsuri_feature2" = "거대 횃불";
+"yoshida_himatsuri_feature3" = "산지마이";
+
+// MARK: - 나가노현 (Nagano)
+"suwako_fireworks_name" = "스와호제 호상불꽃축제";
+"suwako_fireworks_description" = "전국 굴지의 불꽃축제. 스와호 위에서 올라가는 4만 발 초과의 불꽃이 호수면을 아름답게 장식합니다.";
+"suwako_fireworks_location" = "스와시・스와호";
+"suwako_fireworks_feature1" = "4만 발 초과";
+"suwako_fireworks_feature2" = "호상불꽃";
+"suwako_fireworks_feature3" = "전국 굴지";
+
+"matsumoto_bonbon_name" = "마츠모토 봉봉";
+"matsumoto_bonbon_description" = "마츠모토 시민 총참가의 여름축제. '봉봉'의 구호로 추는 시민춤이 마츠모토의 밤을 흥겹게 합니다.";
+"matsumoto_bonbon_location" = "마츠모토시 중심가";
+"matsumoto_bonbon_feature1" = "시민 총참가";
+"matsumoto_bonbon_feature2" = "봉봉춤";
+"matsumoto_bonbon_feature3" = "마츠모토의 밤";
+
+"iida_ringon_name" = "이다 링곤";
+"iida_ringon_description" = "이다시의 여름축제. 사과나무길에서 펼쳐지는 춤 퍼레이드가 볼거리입니다.";
+"iida_ringon_location" = "이다시 중심가";
+"iida_ringon_feature1" = "사과나무길";
+"iida_ringon_feature2" = "춤 퍼레이드";
+"iida_ringon_feature3" = "이다의 여름";
+
+// MARK: - 기후현 (Gifu)
+"gujo_odori_name" = "구조 춤";
+"gujo_odori_description" = "일본 3대 봉춤 중 하나. 7월부터 9월까지 계속되는 춤의 축제로 밤샘춤으로도 유명합니다.";
+"gujo_odori_location" = "구조하치만";
+"gujo_odori_feature1" = "일본 3대 봉춤";
+"gujo_odori_feature2" = "밤샘춤";
+"gujo_odori_feature3" = "2개월간 개최";
+
+"gero_onsen_festival_name" = "게로온천 축제";
+"gero_onsen_festival_description" = "게로온천가에서 개최되는 여름축제. 온천 신가마와 불꽃축제가 온천가를 활기차게 합니다.";
+"gero_onsen_festival_location" = "게로시";
+"gero_onsen_festival_feature1" = "온천 신가마";
+"gero_onsen_festival_feature2" = "불꽃축제";
+"gero_onsen_festival_feature3" = "온천가 축제";
+
+"hida_takayama_summer_festival_name" = "히다 다카야마 여름축제";
+"hida_takayama_summer_festival_description" = "옛 거리로 알려진 다카야마의 여름축제. 전통적인 포장마차와 히다 문화를 즐길 수 있습니다.";
+"hida_takayama_summer_festival_location" = "다카야마시";
+"hida_takayama_summer_festival_feature1" = "옛 거리";
+"hida_takayama_summer_festival_feature2" = "전통 포장마차";
+"hida_takayama_summer_festival_feature3" = "히다 문화";
+
+// MARK: - 시즈오카현 (Shizuoka)
+"atami_kaijo_fireworks_name" = "아타미 해상불꽃축제";
+"atami_kaijo_fireworks_description" = "연중 개최되는 불꽃축제. 아타미만을 무대로 한 해상불꽃이 온천가를 장식합니다.";
+"atami_kaijo_fireworks_location" = "아타미시・아타미만";
+"atami_kaijo_fireworks_feature1" = "연간 개최";
+"atami_kaijo_fireworks_feature2" = "해상불꽃";
+"atami_kaijo_fireworks_feature3" = "온천가";
+
+"shimizu_port_festival_name" = "시미즈항 축제";
+"shimizu_port_festival_description" = "시미즈항에서 개최되는 여름축제. 항구축제 특유의 배 퍼레이드와 불꽃축제가 볼거리입니다.";
+"shimizu_port_festival_location" = "시즈오카시 시미즈구";
+"shimizu_port_festival_feature1" = "배 퍼레이드";
+"shimizu_port_festival_feature2" = "항구축제 불꽃";
+"shimizu_port_festival_feature3" = "시미즈항";
+
+"hamamatsu_festival_name" = "하마마츠 축제";
+"hamamatsu_festival_description" = "엔슈지방 최대 축제. 대연날리기와 고덴야타이 끌기로 알려진 용장한 봄축제입니다.";
+"hamamatsu_festival_location" = "하마마츠시";
+"hamamatsu_festival_feature1" = "대연날리기";
+"hamamatsu_festival_feature2" = "고덴야타이";
+"hamamatsu_festival_feature3" = "엔슈 최대";
+
+// MARK: - 아이치현 (Aichi)
+"anjo_tanabata_festival_name" = "안조 칠석축제";
+"anjo_tanabata_festival_description" = "일본 3대 칠석축제 중 하나. 안조시 중심가가 형형색색의 칠석 장식으로 아름답게 장식됩니다.";
+"anjo_tanabata_festival_location" = "안조시 중심가";
+"anjo_tanabata_festival_feature1" = "일본 3대 칠석";
+"anjo_tanabata_festival_feature2" = "칠석 장식";
+"anjo_tanabata_festival_feature3" = "100만 명 내장";
+
+"toyohashi_gion_festival_name" = "도요하시 기온제";
+"toyohashi_gion_festival_description" = "도카이지방 유수의 기온제. 데츠쓰 불꽃과 오츠쓰 불꽃의 박력 있는 봉납이 볼거리입니다.";
+"toyohashi_gion_festival_location" = "도요하시시";
+"toyohashi_gion_festival_feature1" = "도카이 유수 기온";
+"toyohashi_gion_festival_feature2" = "데츠쓰 불꽃";
+"toyohashi_gion_festival_feature3" = "오츠쓰 불꽃";
+
+"nagoya_festival_name" = "나고야 축제";
+"nagoya_festival_description" = "나고야의 가을을 대표하는 축제. 향토 3영걸 퍼레이드와 다양한 이벤트가 나고야를 흥겹게 합니다.";
+"nagoya_festival_location" = "나고야시 중심가";
+"nagoya_festival_feature1" = "3영걸 퍼레이드";
+"nagoya_festival_feature2" = "나고야의 가을";
+"nagoya_festival_feature3" = "대규모 이벤트";
+
+"okazaki_ieyasu_summer_festival_name" = "오카자키 성하 이에야스공 여름축제";
+"okazaki_ieyasu_summer_festival_description" = "도쿠가와 이에야스 탄생지 오카자키의 여름축제. 불꽃축제와 성하마을 이벤트를 즐길 수 있습니다.";
+"okazaki_ieyasu_summer_festival_location" = "오카자키시";
+"okazaki_ieyasu_summer_festival_feature1" = "이에야스공 탄생지";
+"okazaki_ieyasu_summer_festival_feature2" = "성하마을";
+"okazaki_ieyasu_summer_festival_feature3" = "불꽃축제";
+
+// MARK: - 미에현 (Mie)
+"tsu_festival_name" = "쓰 축제";
+"tsu_festival_description" = "쓰시 최대의 축제. 가라비토 춤과 안노쓰 요사코이가 쓰의 가을을 흥겹게 합니다.";
+"tsu_festival_location" = "쓰시 중심가";
+"tsu_festival_feature1" = "가라비토 춤";
+"tsu_festival_feature2" = "안노쓰 요사코이";
+"tsu_festival_feature3" = "쓰 최대";
+
+"suzuka_genki_fireworks_name" = "스즈카 겐키 불꽃축제";
+"suzuka_genki_fireworks_description" = "스즈카 서킷에서 개최되는 불꽃축제. 모터스포츠의 성지에서 즐기는 약 8000발의 불꽃입니다.";
+"suzuka_genki_fireworks_location" = "스즈카시";
+"suzuka_genki_fireworks_feature1" = "스즈카 서킷";
+"suzuka_genki_fireworks_feature2" = "8000발";
+"suzuka_genki_fireworks_feature3" = "모터스포츠";
+
+"ise_jingu_fireworks_name" = "이세신궁 봉납 전국불꽃축제";
+"ise_jingu_fireworks_description" = "이세신궁에 대한 봉납불꽃축제. 전국에서 선발된 불꽃장인에 의한 경기대회로 개최됩니다.";
+"ise_jingu_fireworks_location" = "이세시・미야가와 강변";
+"ise_jingu_fireworks_feature1" = "이세신궁 봉납";
+"ise_jingu_fireworks_feature2" = "전국경기대회";
+"ise_jingu_fireworks_feature3" = "불꽃장인 경연";
+
+// MARK: - 시가현 (Shiga)
+"biwako_dai_fireworks_name" = "비와호 대불꽃축제";
+"biwako_dai_fireworks_description" = "비와호를 무대로 한 간사이 굴지의 불꽃축제. 호수면에 비치는 약 1만 발의 불꽃이 환상적인 아름다움을 연출합니다.";
+"biwako_dai_fireworks_location" = "오쓰시・비와호";
+"biwako_dai_fireworks_feature1" = "간사이 굴지";
+"biwako_dai_fireworks_feature2" = "1만 발";
+"biwako_dai_fireworks_feature3" = "호수면 불꽃";
+
+"otsu_festival_name" = "오쓰 축제";
+"otsu_festival_description" = "고코쿠 3대 축제 중 하나. 가라쿠리 인형을 탄 예인제 13기가 오쓰 거리를 행진하는 역사 있는 축제입니다.";
+"otsu_festival_location" = "오쓰시";
+"otsu_festival_feature1" = "고코쿠 3대 축제";
+"otsu_festival_feature2" = "가라쿠리 인형";
+"otsu_festival_feature3" = "예인제 13기";
+
+"nagahama_hikiyama_festival_name" = "나가하마 예인제 축제";
+"nagahama_hikiyama_festival_description" = "유네스코 무형문화유산의 축제. 어린이 가부키를 상연하는 예인제가 나가하마의 봄을 장식합니다.";
+"nagahama_hikiyama_festival_location" = "나가하마시";
+"nagahama_hikiyama_festival_feature1" = "유네스코 유산";
+"nagahama_hikiyama_festival_feature2" = "어린이 가부키";
+"nagahama_hikiyama_festival_feature3" = "예인제 축제";
+
+// MARK: - 교토부 (Kyoto)
+"gion_festival_name" = "기온제";
+"gion_festival_description" = "일본 3대 축제 중 하나. 1개월간 계속되는 교토 최대의 축제로 야마보코 순행이 특히 유명합니다.";
+"gion_festival_location" = "교토시 중심가";
+"gion_festival_feature1" = "일본 3대 축제";
+"gion_festival_feature2" = "야마보코 순행";
+"gion_festival_feature3" = "1개월 개최";
+
+"gozan_okuribi_name" = "오산 보내기불";
+"gozan_okuribi_description" = "오봉의 정령을 보내는 교토의 여름 풍물시. 대문자를 비롯한 5개의 보내기불이 밤하늘을 장식합니다.";
+"gozan_okuribi_location" = "교토시・히가시야마";
+"gozan_okuribi_feature1" = "대문자";
+"gozan_okuribi_feature2" = "정령 보내기";
+"gozan_okuribi_feature3" = "여름의 풍물시";
+
+"jidai_festival_name" = "시대축제";
+"jidai_festival_description" = "교토 3대 축제 중 하나. 헤이안시대부터 메이지유신까지의 시대복장에 의한 행렬이 교토의 역사를 재현합니다.";
+"jidai_festival_location" = "교토고쇼~헤이안신궁";
+"jidai_festival_feature1" = "교토 3대 축제";
+"jidai_festival_feature2" = "시대복장";
+"jidai_festival_feature3" = "역사 재현";
+
+// MARK: - 오사카부 (Osaka)
+"tenjin_festival_name" = "덴진제";
+"tenjin_festival_description" = "일본 3대 축제 중 하나. 배 도어와 봉납불꽃이 유명하며 1000년 이상의 역사를 가진 오사카 여름의 풍물시입니다.";
+"tenjin_festival_location" = "오사카 덴만구・오가와";
+"tenjin_festival_feature1" = "일본 3대 축제";
+"tenjin_festival_feature2" = "배 도어";
+"tenjin_festival_feature3" = "봉납불꽃";
+
+"yodogawa_fireworks_name" = "요도가와 불꽃축제";
+"yodogawa_fireworks_description" = "간사이 최대급의 불꽃축제. 약 5만 발의 불꽃이 요도가와의 밤하늘을 아름답게 장식합니다.";
+"yodogawa_fireworks_location" = "오사카시・요도가와 하천부지";
+"yodogawa_fireworks_feature1" = "간사이 최대급";
+"yodogawa_fireworks_feature2" = "5만 발";
+"yodogawa_fireworks_feature3" = "요도가와 하천부지";
+
+"pl_fireworks_name" = "PL 불꽃예술";
+"pl_fireworks_description" = "간사이 최대급의 불꽃축제. 약 2만 발의 불꽃이 밤하늘을 장식하며 예술성 높은 불꽃연출로 알려져 있습니다.";
+"pl_fireworks_location" = "도다바야시시 PL교단";
+"pl_fireworks_feature1" = "2만 발의 불꽃";
+"pl_fireworks_feature2" = "예술적 연출";
+"pl_fireworks_feature3" = "간사이 최대급";
+
+"naniwa_yodogawa_fireworks_name" = "나니와 요도가와 불꽃축제";
+"naniwa_yodogawa_fireworks_description" = "요도가와에서 개최되는 시민 수제 불꽃축제. 약 1만 발의 불꽃과 시민 자원봉사자의 따뜻함이 매력입니다.";
+"naniwa_yodogawa_fireworks_location" = "오사카시・요도가와";
+"naniwa_yodogawa_fireworks_feature1" = "시민 수제";
+"naniwa_yodogawa_fireworks_feature2" = "1만 발";
+"naniwa_yodogawa_fireworks_feature3" = "자원봉사";
+
+// MARK: - 효고현 (Hyogo)
+"minato_kobe_fireworks_name" = "미나토 고베 해상불꽃축제";
+"minato_kobe_fireworks_description" = "고베항에서 개최되는 해상불꽃축제. 약 1만 발의 불꽃이 고베의 야경과 함께 아름다운 광경을 만들어냅니다.";
+"minato_kobe_fireworks_location" = "고베항";
+"minato_kobe_fireworks_feature1" = "해상불꽃";
+"minato_kobe_fireworks_feature2" = "1만 발";
+"minato_kobe_fireworks_feature3" = "고베 야경";
+
+"inagawa_fireworks_name" = "이나가와 불꽃축제";
+"inagawa_fireworks_description" = "오사카부 이케다시와의 공동 개최 불꽃축제. 약 4000발의 불꽃이 이나가와의 밤하늘을 장식합니다.";
+"inagawa_fireworks_location" = "가와니시시・이나가와";
+"inagawa_fireworks_feature1" = "공동 개최";
+"inagawa_fireworks_feature2" = "4000발";
+"inagawa_fireworks_feature3" = "이나가와";
+
+"himeji_yukata_festival_name" = "히메지 유카타 축제";
+"himeji_yukata_festival_description" = "히메지성 성하에서 개최되는 유카타 축제. 유카타 차림의 참가자가 상점가를 행진하는 초여름의 풍물시입니다.";
+"himeji_yukata_festival_location" = "히메지시 중심가";
+"himeji_yukata_festival_feature1" = "유카타 축제";
+"himeji_yukata_festival_feature2" = "히메지성 성하";
+"himeji_yukata_festival_feature3" = "초여름의 풍물시";
+
+// MARK: - 나라현 (Nara)
+"nara_tokae_name" = "나라 등불회";
+"nara_tokae_description" = "나라공원 일대를 약 2만 개의 양초로 장식하는 환상적인 여름 이벤트. 고도 나라의 밤이 아름답게 비춰집니다.";
+"nara_tokae_location" = "나라공원 일대";
+"nara_tokae_feature1" = "2만 개 양초";
+"nara_tokae_feature2" = "환상적 야경";
+"nara_tokae_feature3" = "고도의 여름";
+
+"kasuga_taisha_mantoro_name" = "가스가대사 만등롱";
+"kasuga_taisha_mantoro_description" = "가스가대사에서 연 2회 개최되는 등롱축제. 약 3000기의 등롱이 일제히 켜지는 신비적인 축제입니다.";
+"kasuga_taisha_mantoro_location" = "가스가대사";
+"kasuga_taisha_mantoro_feature1" = "3000기 등롱";
+"kasuga_taisha_mantoro_feature2" = "신비적";
+"kasuga_taisha_mantoro_feature3" = "연 2회 개최";
+
+"heijokyo_tenpyo_festival_name" = "헤이조쿄 덴표제";
+"heijokyo_tenpyo_festival_description" = "헤이조궁터에서 개최되는 고대 로맨이 넘치는 축제. 덴표시대의 문화를 재현한 이벤트를 즐길 수 있습니다.";
+"heijokyo_tenpyo_festival_location" = "헤이조궁터";
+"heijokyo_tenpyo_festival_feature1" = "덴표시대 재현";
+"heijokyo_tenpyo_festival_feature2" = "고대 로맨";
+"heijokyo_tenpyo_festival_feature3" = "헤이조궁터";
+
+// MARK: - 와카야마현 (Wakayama)
+"kinokawa_momoyama_festival_name" = "기노가와시 모모야마 축제";
+"kinokawa_momoyama_festival_description" = "복숭아 고장 기노가와시에서 개최되는 여름축제. 복숭아를 테마로 한 축제와 불꽃축제를 즐길 수 있습니다.";
+"kinokawa_momoyama_festival_location" = "기노가와시";
+"kinokawa_momoyama_festival_feature1" = "복숭아 고장";
+"kinokawa_momoyama_festival_feature2" = "복숭아 테마";
+"kinokawa_momoyama_festival_feature3" = "불꽃축제";
+
+"tanabe_benkei_festival_name" = "다나베 벤케이 축제";
+"tanabe_benkei_festival_description" = "벤케이 탄생지 다나베에서 개최되는 가을축제. 벤케이춤과 무사시보 벤케이의 퍼레이드가 볼거리입니다.";
+"tanabe_benkei_festival_location" = "다나베시";
+"tanabe_benkei_festival_feature1" = "벤케이 탄생지";
+"tanabe_benkei_festival_feature2" = "벤케이춤";
+"tanabe_benkei_festival_feature3" = "무사시보 퍼레이드";
+
+"kushimoto_festival_name" = "구시모토 축제";
+"kushimoto_festival_description" = "혼슈 최남단 구시모토마치에서 개최되는 여름축제. 바다의 은혜에 감사하는 항구도시 특유의 축제입니다.";
+"kushimoto_festival_location" = "구시모토마치";
+"kushimoto_festival_feature1" = "혼슈 최남단";
+"kushimoto_festival_feature2" = "바다의 은혜";
+"kushimoto_festival_feature3" = "항구도시 축제";
+
+// MARK: - 돗토리현 (Tottori)
+"tottori_shanshan_festival_name" = "돗토리 샨샨 축제";
+"tottori_shanshan_festival_description" = "돗토리시민 총참가의 여름축제. 샨샨 우산춤으로 알려져 기네스 기록도 가진 대규모 춤 축제입니다.";
+"tottori_shanshan_festival_location" = "돗토리시 중심가";
+"tottori_shanshan_festival_feature1" = "샨샨 우산춤";
+"tottori_shanshan_festival_feature2" = "기네스 기록";
+"tottori_shanshan_festival_feature3" = "시민 총참가";
+
+"yonago_gaina_festival_name" = "요나고 가이나 축제";
+"yonago_gaina_festival_description" = "요나고시의 여름축제. 가이나 만등과 불꽃축제가 산인의 밤하늘을 아름답게 장식합니다.";
+"yonago_gaina_festival_location" = "요나고시";
+"yonago_gaina_festival_feature1" = "가이나 만등";
+"yonago_gaina_festival_feature2" = "불꽃축제";
+"yonago_gaina_festival_feature3" = "산인의 밤";
+
+// MARK: - 시마네현 (Shimane)
+"matsue_suigo_festival_name" = "마츠에 수향축제";
+"matsue_suigo_festival_description" = "신지호에서 개최되는 마츠에의 여름축제. 호상불꽃축제와 배행렬이 물의 도시 마츠에를 장식합니다.";
+"matsue_suigo_festival_location" = "마츠에시・신지호";
+"matsue_suigo_festival_feature1" = "호상불꽃";
+"matsue_suigo_festival_feature2" = "배행렬";
+"matsue_suigo_festival_feature3" = "물의 도시";
+
+"izumo_shinwa_festival_name" = "이즈모 신화축제";
+"izumo_shinwa_festival_description" = "신화의 나라 이즈모에서 개최되는 여름축제. 신화를 테마로 한 다양한 이벤트를 즐길 수 있습니다.";
+"izumo_shinwa_festival_location" = "이즈모시";
+"izumo_shinwa_festival_feature1" = "신화의 나라";
+"izumo_shinwa_festival_feature2" = "신화 테마";
+"izumo_shinwa_festival_feature3" = "문화 이벤트";// MARK: - 홋카이도 (Hokkaido)
+"sapporo_summer_festival_name" = "삿포로 여름축제";
+"sapporo_summer_festival_description" = "삿포로 중심가에서 개최되는 여름의 대형 이벤트. 맥주원과 미식 포장마차가 늘어서고, 다채로운 무대 이벤트를 즐길 수 있습니다.";
+"sapporo_summer_festival_location" = "오도리공원・스스키노";
+"sapporo_summer_festival_feature1" = "맥주원";
+"sapporo_summer_festival_feature2" = "미식 포장마차";
+"sapporo_summer_festival_feature3" = "무대 이벤트";
+
+"noboribetsu_hell_festival_name" = "노보리베츠 지옥축제";
+"noboribetsu_hell_festival_description" = "지옥계곡의 귀신들이 거리에 나타나는 박력 넘치는 축제. 빨간 귀신・파란 귀신의 용장한 춤과 불꽃놀이가 명물입니다.";
+"noboribetsu_hell_festival_location" = "노보리베츠 온천가";
+"noboribetsu_hell_festival_feature1" = "귀신춤";
+"noboribetsu_hell_festival_feature2" = "지옥 북";
+"noboribetsu_hell_festival_feature3" = "불꽃축제";
+
+"otaru_ushio_festival_name" = "오타루 우시오 축제";
+"otaru_ushio_festival_description" = "오타루항의 바다 은혜에 감사하는 여름축제. 우시오 민요춤 퍼레이드와 해상 불꽃놀이가 아름다운 항구도시를 장식합니다.";
+"otaru_ushio_festival_location" = "오타루항 주변";
+"otaru_ushio_festival_feature1" = "우시오 민요";
+"otaru_ushio_festival_feature2" = "춤 퍼레이드";
+"otaru_ushio_festival_feature3" = "해상 불꽃놀이";
+
+"hakodate_port_festival_name" = "하코다테항 축제";
+"hakodate_port_festival_description" = "하코다테의 여름을 대표하는 축제. 오징어춤 퍼레이드와 하코다테항 불꽃축제로 항구도시가 일 년 중 가장 활기를 띱니다.";
+"hakodate_port_festival_location" = "하코다테항 주변";
+"hakodate_port_festival_feature1" = "오징어춤";
+"hakodate_port_festival_feature2" = "항구축제 퍼레이드";
+"hakodate_port_festival_feature3" = "불꽃축제";
+
+"doshin_uhb_fireworks_name" = "도신・UHB 불꽃축제";
+"doshin_uhb_fireworks_description" = "삿포로의 여름 밤하늘을 장식하는 대형 불꽃축제. 도요히라강 하천부지에서 올라가는 약 4000발의 불꽃이 볼거리입니다.";
+"doshin_uhb_fireworks_location" = "도요히라강 하천부지";
+"doshin_uhb_fireworks_feature1" = "4000발의 불꽃";
+"doshin_uhb_fireworks_feature2" = "음악과 불꽃의 콜라보";
+"doshin_uhb_fireworks_feature3" = "여름의 풍물시";
+
+"toyako_longrun_fireworks_name" = "도야호 롱런 불꽃축제";
+"toyako_longrun_fireworks_description" = "4월부터 10월까지 매일 개최되는 특이한 불꽃축제. 호수면에 비치는 불꽃의 아름다움은 각별합니다.";
+"toyako_longrun_fireworks_location" = "도야호 호반";
+"toyako_longrun_fireworks_feature1" = "매일 개최";
+"toyako_longrun_fireworks_feature2" = "호수면 불꽃";
+"toyako_longrun_fireworks_feature3" = "온천과 불꽃";
+
+// MARK: - 아오모리현 (Aomori)
+"aomori_nebuta_festival_name" = "아오모리 네부타 축제";
+"aomori_nebuta_festival_description" = "일본 3대 축제 중 하나. 거대한 무사 인형 등롱 '네부타'가 행진하는 아오모리의 여름을 대표하는 축제입니다.";
+"aomori_nebuta_festival_location" = "아오모리시 중심가";
+"aomori_nebuta_festival_feature1" = "일본 3대 축제";
+"aomori_nebuta_festival_feature2" = "거대 네부타";
+"aomori_nebuta_festival_feature3" = "하네토 춤";
+
+"hirosaki_neputa_festival_name" = "히로사키 네푸타 축제";
+"hirosaki_neputa_festival_description" = "부채형의 아름다운 등롱 '네푸타'가 적막 속을 행진하는 정취 넘치는 쓰가루의 여름축제입니다.";
+"hirosaki_neputa_festival_location" = "히로사키시 중심가";
+"hirosaki_neputa_festival_feature1" = "부채형 네푸타";
+"hirosaki_neputa_festival_feature2" = "쓰가루 정취";
+"hirosaki_neputa_festival_feature3" = "적막의 아름다움";
+
+"goshogawara_tachineputa_name" = "고쇼가와라 다치네부타";
+"goshogawara_tachineputa_description" = "높이 23m의 거대한 다치네부타가 압권인 축제. 그 박력과 아름다움으로 관객을 매혹시킵니다.";
+"goshogawara_tachineputa_location" = "고쇼가와라 시가지";
+"goshogawara_tachineputa_feature1" = "높이 23m";
+"goshogawara_tachineputa_feature2" = "거대 다치네부타";
+"goshogawara_tachineputa_feature3" = "압도적 박력";
+
+"hachinohe_sansha_festival_name" = "하치노헤 삼사대제";
+"hachinohe_sansha_festival_description" = "호화찬란한 수레가 행진하는 하치노헤 최대 축제. 정교한 인형과 아름다운 장식이 볼거리입니다.";
+"hachinohe_sansha_festival_location" = "하치노헤시 중심가";
+"hachinohe_sansha_festival_feature1" = "호화 수레";
+"hachinohe_sansha_festival_feature2" = "정교 인형";
+"hachinohe_sansha_festival_feature3" = "하치노헤 최대";
+
+// MARK: - 이와테현 (Iwate)
+"morioka_sansa_festival_name" = "모리오카 산사춤";
+"morioka_sansa_festival_description" = "북소리에 맞춰 추는 이와테의 대표적인 축제. '삿코라초이와얏세'의 구호가 울립니다.";
+"morioka_sansa_festival_location" = "모리오카시 중심가";
+"morioka_sansa_festival_feature1" = "북과 춤";
+"morioka_sansa_festival_feature2" = "전통 구호";
+"morioka_sansa_festival_feature3" = "참가형 축제";
+
+"hanamaki_festival_name" = "하나마키 축제";
+"hanamaki_festival_description" = "호화찬란한 수레와 신가마가 행진하는 하나마키의 가을축제. 400년 이상의 역사를 가진 전통 있는 축제입니다.";
+"hanamaki_festival_location" = "하나마키 시가지";
+"hanamaki_festival_feature1" = "400년의 역사";
+"hanamaki_festival_feature2" = "호화 수레";
+"hanamaki_festival_feature3" = "가을의 풍물시";
+
+"kitakami_michinoku_festival_name" = "기타카미 미치노쿠 예능축제";
+"kitakami_michinoku_festival_description" = "도호쿠 각지의 민속예능이 한자리에 모이는 축제. 오니켄바이를 비롯한 전통예능의 경연이 볼거리입니다.";
+"kitakami_michinoku_festival_location" = "기타카미시";
+"kitakami_michinoku_festival_feature1" = "민속예능";
+"kitakami_michinoku_festival_feature2" = "오니켄바이";
+"kitakami_michinoku_festival_feature3" = "전통예능 경연";
+
+// MARK: - 미야기현 (Miyagi)
+"sendai_tanabata_festival_name" = "센다이 칠석축제";
+"sendai_tanabata_festival_description" = "도호쿠 3대 축제 중 하나. 형형색색의 칠석 장식이 센다이 거리를 장식하는 아름다운 여름축제입니다.";
+"sendai_tanabata_festival_location" = "센다이시 중심가";
+"sendai_tanabata_festival_feature1" = "도호쿠 3대 축제";
+"sendai_tanabata_festival_feature2" = "칠석 장식";
+"sendai_tanabata_festival_feature3" = "상점가 장식";
+
+"sendai_aoba_festival_name" = "센다이 아오바 축제";
+"sendai_aoba_festival_description" = "다테 마사무네 공을 추모하는 센다이의 봄축제. 화려한 시대행렬과 아오바신사의 신가마 도어가 볼거리입니다.";
+"sendai_aoba_festival_location" = "센다이시 중심가";
+"sendai_aoba_festival_feature1" = "다테 마사무네";
+"sendai_aoba_festival_feature2" = "시대행렬";
+"sendai_aoba_festival_feature3" = "무사행렬";
+
+"ishinomaki_kawabiraki_festival_name" = "이시노마키 강개방 축제";
+"ishinomaki_kawabiraki_festival_description" = "기타카미강의 은혜에 감사하는 이시노마키의 여름축제. 강면을 장식하는 불꽃축제와 공양제가 인상적입니다.";
+"ishinomaki_kawabiraki_festival_location" = "이시노마키시・기타카미강";
+"ishinomaki_kawabiraki_festival_feature1" = "강개방 불꽃";
+"ishinomaki_kawabiraki_festival_feature2" = "공양제";
+"ishinomaki_kawabiraki_festival_feature3" = "강의 은혜";
+
+// MARK: - 아키타현 (Akita)
+"akita_kanto_festival_name" = "아키타 간토 축제";
+"akita_kanto_festival_description" = "도호쿠 3대 축제 중 하나. 간토를 손바닥이나 이마, 어깨로 지탱하는 묘기가 볼거리인 전통적인 축제입니다.";
+"akita_kanto_festival_location" = "아키타시 중심가";
+"akita_kanto_festival_feature1" = "도호쿠 3대 축제";
+"akita_kanto_festival_feature2" = "간토 묘기";
+"akita_kanto_festival_feature3" = "280개의 간토";
+
+"omagari_fireworks_name" = "오마가리 불꽃축제";
+"omagari_fireworks_description" = "전국불꽃경기대회로 알려진 일본 최고 수준의 불꽃축제. 불꽃장인들의 기술의 극치를 모은 대회입니다.";
+"omagari_fireworks_location" = "다이센시・오모노강 하천부지";
+"omagari_fireworks_feature1" = "전국경기대회";
+"omagari_fireworks_feature2" = "최고수준 기술";
+"omagari_fireworks_feature3" = "2만발 초과";
+
+"kakunodate_festival_name" = "가쿠노다테 축제의 야마 행사";
+"kakunodate_festival_description" = "유네스코 무형문화유산에 등록된 가쿠노다테의 가을축제. 호화로운 수레의 충돌이 압권입니다.";
+"kakunodate_festival_location" = "가쿠노다테마을";
+"kakunodate_festival_feature1" = "유네스코 유산";
+"kakunodate_festival_feature2" = "수레 충돌";
+"kakunodate_festival_feature3" = "400년의 역사";
+
+// MARK: - 야마가타현 (Yamagata)
+"yamagata_hanagasa_festival_name" = "야마가타 하나가사 축제";
+"yamagata_hanagasa_festival_description" = "'얏쇼, 마카쇼'의 구호로 추는 야마가타의 대표적인 축제. 화려한 하나가사춤이 거리를 행진합니다.";
+"yamagata_hanagasa_festival_location" = "야마가타시 중심가";
+"yamagata_hanagasa_festival_feature1" = "하나가사춤";
+"yamagata_hanagasa_festival_feature2" = "얏쇼마카쇼";
+"yamagata_hanagasa_festival_feature3" = "1만 명의 춤꾼";
+
+"shinjo_festival_name" = "신조 축제";
+"shinjo_festival_description" = "호화찬란한 수레가 행진하는 신조의 여름축제. 가부키나 역사상의 명장면을 재현한 수레가 볼거리입니다.";
+"shinjo_festival_location" = "신조시 중심가";
+"shinjo_festival_feature1" = "호화 수레";
+"shinjo_festival_feature2" = "가부키 재현";
+"shinjo_festival_feature3" = "260년의 역사";
+
+"sakata_festival_name" = "사카타 축제";
+"sakata_festival_description" = "사카타의 봄을 장식하는 전통적인 축제. 화려한 수레행렬과 사자춤이 항구도시 사카타를 행진합니다.";
+"sakata_festival_location" = "사카타시 중심가";
+"sakata_festival_feature1" = "항구도시 축제";
+"sakata_festival_feature2" = "수레행렬";
+"sakata_festival_feature3" = "사자춤";
+
+// MARK: - 후쿠시마현 (Fukushima)
+"fukushima_waraji_festival_name" = "후쿠시마 와라지 축제";
+"fukushima_waraji_festival_description" = "일본에서 가장 큰 와라지를 메고 행진하는 후쿠시마의 여름축제. 길이 12m의 거대 와라지가 압권입니다.";
+"fukushima_waraji_festival_location" = "후쿠시마시 중심가";
+"fukushima_waraji_festival_feature1" = "일본 최대 와라지";
+"fukushima_waraji_festival_feature2" = "길이 12m";
+"fukushima_waraji_festival_feature3" = "건각 기원";
+
+"soma_nomaoi_name" = "소마 노마오이";
+"soma_nomaoi_description" = "1000년 이상 이어진 소마지방의 전통행사. 갑옷을 입은 기마무사들의 용장한 축제입니다.";
+"soma_nomaoi_location" = "소마시・미나미소마시";
+"soma_nomaoi_feature1" = "1000년의 역사";
+"soma_nomaoi_feature2" = "기마무사";
+"soma_nomaoi_feature3" = "갑옷행렬";
+
+"aizu_festival_name" = "아이즈 축제";
+"aizu_festival_description" = "아이즈번의 역사를 재현하는 가을축제. 아이즈번공 행렬과 쓰루가성에서의 무사행렬이 볼거리입니다.";
+"aizu_festival_location" = "아이즈와카마츠시";
+"aizu_festival_feature1" = "아이즈번 재현";
+"aizu_festival_feature2" = "무사행렬";
+"aizu_festival_feature3" = "쓰루가성";
+
+// MARK: - 이바라키현 (Ibaraki)
+"mito_komon_festival_name" = "미토 고몬 축제";
+"mito_komon_festival_description" = "미토번주 도쿠가와 미츠쿠니 공을 추모하는 미토의 여름축제. 고몬님 퍼레이드와 불꽃축제가 볼거리입니다.";
+"mito_komon_festival_location" = "미토시 중심가";
+"mito_komon_festival_feature1" = "고몬님 퍼레이드";
+"mito_komon_festival_feature2" = "불꽃축제";
+"mito_komon_festival_feature3" = "미토의 여름";
+
+"tsuchiura_fireworks_name" = "쓰치우라 전국불꽃경기대회";
+"tsuchiura_fireworks_description" = "일본 3대 불꽃축제 중 하나. 전국의 불꽃장인이 기술을 겨루는 경기대회로 유명합니다.";
+"tsuchiura_fireworks_location" = "쓰치우라시・사쿠라강변";
+"tsuchiura_fireworks_feature1" = "일본 3대 불꽃";
+"tsuchiura_fireworks_feature2" = "전국경기대회";
+"tsuchiura_fireworks_feature3" = "가을의 불꽃";
+
+"koga_fireworks_name" = "고가 불꽃축제";
+"koga_fireworks_description" = "간토 최대급의 불꽃축제. 와타라세강 하천부지에서 올라가는 2만 5천 발의 불꽃이 밤하늘을 장식합니다.";
+"koga_fireworks_location" = "고가시・와타라세강";
+"koga_fireworks_feature1" = "간토 최대급";
+"koga_fireworks_feature2" = "2만 5천 발";
+"koga_fireworks_feature3" = "하천부지 불꽃";
+
+// MARK: - 도치기현 (Tochigi)
+"utsunomiya_fireworks_name" = "우츠노미야 불꽃축제";
+"utsunomiya_fireworks_description" = "간토 최대급의 불꽃축제 중 하나. 약 3만 발의 불꽃이 우츠노미야의 밤하늘을 아름답게 장식합니다.";
+"utsunomiya_fireworks_location" = "우츠노미야시・기누강 하천부지";
+"utsunomiya_fireworks_feature1" = "3만 발의 불꽃";
+"utsunomiya_fireworks_feature2" = "간토 최대급";
+"utsunomiya_fireworks_feature3" = "기누강 하천부지";
+
+"ashikaga_fireworks_name" = "아시카가 불꽃축제";
+"ashikaga_fireworks_description" = "와타라세강 하천부지에서 개최되는 불꽃축제. 척옥과 대형 스타마인이 밤하늘을 장식합니다.";
+"ashikaga_fireworks_location" = "아시카가시・와타라세강";
+"ashikaga_fireworks_feature1" = "척옥";
+"ashikaga_fireworks_feature2" = "대형 스타마인";
+"ashikaga_fireworks_feature3" = "와타라세강";
+
+"nasu_makigari_festival_name" = "나스노 마키가리 축제";
+"nasu_makigari_festival_description" = "미나모토노 요리토모의 나스노 마키가리를 재현한 역사축제. 무사행렬과 활쏘기 의식이 볼거리입니다.";
+"nasu_makigari_festival_location" = "나스마치";
+"nasu_makigari_festival_feature1" = "미나모토노 요리토모 재현";
+"nasu_makigari_festival_feature2" = "무사행렬";
+"nasu_makigari_festival_feature3" = "활쏘기 의식";
+
+// MARK: - 군마현 (Gunma)
+"maebashi_tanabata_festival_name" = "마에바시 칠석축제";
+"maebashi_tanabata_festival_description" = "간토 유수의 칠석축제. 마에바시 중심가가 형형색색의 칠석 장식으로 아름답게 장식됩니다.";
+"maebashi_tanabata_festival_location" = "마에바시시 중심가";
+"maebashi_tanabata_festival_feature1" = "간토 유수";
+"maebashi_tanabata_festival_feature2" = "칠석 장식";
+"maebashi_tanabata_festival_feature3" = "중심가 장식";
+
+"kiryu_yagibushi_festival_name" = "기류 야기부시 축제";
+"kiryu_yagibushi_festival_description" = "야기부시 발상지 기류에서 개최되는 여름축제. 야기부시춤과 포장마차가 여름밤을 흥겹게 합니다.";
+"kiryu_yagibushi_festival_location" = "기류시 중심가";
+"kiryu_yagibushi_festival_feature1" = "야기부시 발상";
+"kiryu_yagibushi_festival_feature2" = "춤 퍼레이드";
+"kiryu_yagibushi_festival_feature3" = "포장마차 미식";
+
+"isesaki_fireworks_name" = "이세사키 불꽃축제";
+"isesaki_fireworks_description" = "군마현 내 최대급의 불꽃축제. 약 1만 발의 불꽃이 이세사키의 밤하늘을 화려하게 장식합니다.";
+"isesaki_fireworks_location" = "이세사키시・도네강 하천부지";
+"isesaki_fireworks_feature1" = "현 내 최대급";
+"isesaki_fireworks_feature2" = "1만 발";
+"isesaki_fireworks_feature3" = "도네강 하천부지";
+
+// MARK: - 사이타마현 (Saitama)
+"kumagaya_uchiwa_festival_name" = "구마가야 우치와 축제";
+"kumagaya_uchiwa_festival_description" = "간토 최고의 기온제로 알려진 구마가야의 여름축제. 호화찬란한 수레와 포장마차가 볼거리입니다.";
+"kumagaya_uchiwa_festival_location" = "구마가야시 중심가";
+"kumagaya_uchiwa_festival_feature1" = "간토 최고의 기온";
+"kumagaya_uchiwa_festival_feature2" = "호화 수레";
+"kumagaya_uchiwa_festival_feature3" = "12대의 포장마차";
+
+"kawagoe_festival_name" = "가와고에 축제";
+"kawagoe_festival_description" = "유네스코 무형문화유산인 가와고에 히카와제. 정교한 수레가 고에도 가와고에의 거리를 행진합니다.";
+"kawagoe_festival_location" = "가와고에시 중심가";
+"kawagoe_festival_feature1" = "유네스코 유산";
+"kawagoe_festival_feature2" = "고에도";
+"kawagoe_festival_feature3" = "정교 수레";
+
+"chichibu_yomatsuri_name" = "치치부 야마츠리";
+"chichibu_yomatsuri_description" = "일본 3대 예인제 중 하나. 호화찬란한 포장마차와 갓보코가 치치부의 겨울밤을 장식하는 장대한 축제입니다.";
+"chichibu_yomatsuri_location" = "치치부시";
+"chichibu_yomatsuri_feature1" = "일본 3대 예인";
+"chichibu_yomatsuri_feature2" = "겨울 축제";
+"chichibu_yomatsuri_feature3" = "포장마차와 갓보코";
+
+"todabashi_fireworks_name" = "도다바시 불꽃축제";
+"todabashi_fireworks_description" = "아라카와 하천부지에서 개최되는 불꽃축제. 도쿄도 이타바시구와의 공동 개최로 약 1만 2천 발이 올라갑니다.";
+"todabashi_fireworks_location" = "도다시・아라카와 하천부지";
+"todabashi_fireworks_feature1" = "공동 개최";
+"todabashi_fireworks_feature2" = "1만 2천 발";
+"todabashi_fireworks_feature3" = "아라카와 하천부지";
+
+// MARK: - 치바현 (Chiba)
+"sakura_fireworks_name" = "사쿠라 불꽃 페스타";
+"sakura_fireworks_description" = "인바누마 호반에서 개최되는 불꽃축제. 약 1만 8천 발의 불꽃과 호수면의 반사가 아름다운 대회입니다.";
+"sakura_fireworks_location" = "사쿠라시・인바누마";
+"sakura_fireworks_feature1" = "1만 8천 발";
+"sakura_fireworks_feature2" = "호수면 반사";
+"sakura_fireworks_feature3" = "인바누마";
+
+"kashiwa_festival_name" = "가시와 축제";
+"kashiwa_festival_description" = "가시와역 주변에서 개최되는 여름축제. 네부타 퍼레이드와 다채로운 무대 이벤트를 즐길 수 있습니다.";
+"kashiwa_festival_location" = "가시와역 주변";
+"kashiwa_festival_feature1" = "네부타 퍼레이드";
+"kashiwa_festival_feature2" = "무대 이벤트";
+"kashiwa_festival_feature3" = "역앞 축제";
+
+"narita_gion_festival_name" = "나리타 기온제";
+"narita_gion_festival_description" = "나리타산 신쇼지의 제례. 총가야나무로 만든 수레 10대가 나리타 거리를 행진하는 300년 역사의 축제입니다.";
+"narita_gion_festival_location" = "나리타시・나리타산 주변";
+"narita_gion_festival_feature1" = "300년의 역사";
+"narita_gion_festival_feature2" = "총가야나무 수레";
+"narita_gion_festival_feature3" = "나리타산 제례";
+
+"kisarazu_port_festival_name" = "기사라즈항 축제";
+"kisarazu_port_festival_description" = "기사라즈항에서 개최되는 여름축제. 얏사이못사이 춤과 항구축제 불꽃축제가 볼거리입니다.";
+"kisarazu_port_festival_location" = "기사라즈항 주변";
+"kisarazu_port_festival_feature1" = "얏사이못사이";
+"kisarazu_port_festival_feature2" = "항구축제 불꽃";
+"kisarazu_port_festival_feature3" = "항구도시 축제";
+
+// MARK: - 도쿄도 (Tokyo)
+"sumidagawa_fireworks_name" = "스미다강 불꽃축제";
+"sumidagawa_fireworks_description" = "도쿄의 대표적인 불꽃축제. 약 2만 발의 불꽃이 여름 밤하늘을 장식하며, 100만 명 이상의 관객이 찾는 역사 있는 대회입니다.";
+"sumidagawa_fireworks_location" = "스미다강 하천부지";
+"sumidagawa_fireworks_feature1" = "2만 발의 불꽃";
+"sumidagawa_fireworks_feature2" = "100만 명의 관객";
+"sumidagawa_fireworks_feature3" = "에도시대부터 이어진 전통";
+
+"jingu_gaien_fireworks_name" = "진구가이엔 불꽃축제";
+"jingu_gaien_fireworks_description" = "메이지 진구가이엔에서 개최되는 도내 굴지의 불꽃축제. 약 1만 2천 발의 불꽃과 아티스트 라이브를 즐길 수 있습니다.";
+"jingu_gaien_fireworks_location" = "메이지 진구가이엔";
+"jingu_gaien_fireworks_feature1" = "1만 2천 발";
+"jingu_gaien_fireworks_feature2" = "아티스트 라이브";
+"jingu_gaien_fireworks_feature3" = "도심의 불꽃";
+
+"edogawaku_fireworks_name" = "에도가와구 불꽃축제";
+"edogawaku_fireworks_description" = "에도가와 하천부지에서 개최되는 불꽃축제. 약 1만 4천 발의 불꽃이 에도가와구의 밤하늘을 아름답게 장식합니다.";
+"edogawaku_fireworks_location" = "에도가와 하천부지";
+"edogawaku_fireworks_feature1" = "1만 4천 발";
+"edogawaku_fireworks_feature2" = "에도가와 하천부지";
+"edogawaku_fireworks_feature3" = "여름의 풍물시";
+
+"adachi_fireworks_name" = "아다치의 불꽃";
+"adachi_fireworks_description" = "아라카와 하천부지에서 개최되는 불꽃축제. 약 1만 3천 발의 불꽃이 아다치구의 여름을 장식합니다.";
+"adachi_fireworks_location" = "아라카와 하천부지";
+"adachi_fireworks_feature1" = "1만 3천 발";
+"adachi_fireworks_feature2" = "아라카와 하천부지";
+"adachi_fireworks_feature3" = "아다치의 여름";
+
+"itabashi_fireworks_name" = "이타바시 불꽃축제";
+"itabashi_fireworks_description" = "아라카와 하천부지에서 개최되는 불꽃축제. 사이타마현 도다시와의 공동 개최로 약 1만 2천 발의 불꽃이 올라갑니다.";
+"itabashi_fireworks_location" = "아라카와 하천부지";
+"itabashi_fireworks_feature1" = "공동 개최";
+"itabashi_fireworks_feature2" = "1만 2천 발";
+"itabashi_fireworks_feature3" = "아라카와 하천부지";
+
+"fukagawa_hachiman_festival_name" = "후카가와 하치만 축제";
+"fukagawa_hachiman_festival_description" = "'물뿌리기 축제'로 친숙한 에도 3대 축제 중 하나. 메는 사람에게 정화의 물을 뿌리는 독특한 풍습으로 유명합니다.";
+"fukagawa_hachiman_festival_location" = "도미오카 하치만구 주변";
+"fukagawa_hachiman_festival_feature1" = "물뿌리기 축제";
+"fukagawa_hachiman_festival_feature2" = "에도 3대 축제";
+"fukagawa_hachiman_festival_feature3" = "용장한 신가마 메기";
+
+"kanda_festival_name" = "간다 축제";
+"kanda_festival_description" = "에도 3대 축제 중 하나. 화려한 신가마 도어와 수레 순행으로 알려져 '에도의 꽃'이라 불리는 전통적인 축제입니다.";
+"kanda_festival_location" = "간다 묘진 주변";
+"kanda_festival_feature1" = "에도 3대 축제";
+"kanda_festival_feature2" = "신가마 도어";
+"kanda_festival_feature3" = "수레 순행";
+
+// MARK: - 가나가와현 (Kanagawa)
+"shonan_hiratsuka_tanabata_name" = "쇼난 히라츠카 칠석축제";
+"shonan_hiratsuka_tanabata_description" = "간토 3대 칠석축제 중 하나. 히라츠카시 중심가가 호화찬란한 칠석 장식으로 장식되는 여름의 풍물시입니다.";
+"shonan_hiratsuka_tanabata_location" = "히라츠카시 중심가";
+"shonan_hiratsuka_tanabata_feature1" = "간토 3대 칠석";
+"shonan_hiratsuka_tanabata_feature2" = "호화 칠석 장식";
+"shonan_hiratsuka_tanabata_feature3" = "400만 명 내장";
+
+"yokohama_kaikosai_name" = "요코하마 개항제";
+"yokohama_kaikosai_description" = "요코하마항의 개항을 기념하는 축제. 미나토미라이에서의 이벤트와 불꽃축제가 요코하마의 초여름을 장식합니다.";
+"yokohama_kaikosai_location" = "미나토미라이21";
+"yokohama_kaikosai_feature1" = "개항 기념";
+"yokohama_kaikosai_feature2" = "미나토미라이";
+"yokohama_kaikosai_feature3" = "항구의 불꽃";
+
+"kamakura_festival_name" = "가마쿠라 축제";
+"kamakura_festival_description" = "고도 가마쿠라의 봄을 장식하는 축제. 시즈카고젠의 춤과 야부사메 등 가마쿠라 시대의 우아한 문화를 재현합니다.";
+"kamakura_festival_location" = "쓰루가오카 하치만구";
+"kamakura_festival_feature1" = "고도의 봄축제";
+"kamakura_festival_feature2" = "시즈카고젠의 춤";
+"kamakura_festival_feature3" = "야부사메";
+
+"atsugi_ayu_festival_name" = "아츠기 은어축제";
+"atsugi_ayu_festival_description" = "사가미강의 은어를 테마로 한 여름축제. 은어 소금구이와 불꽃축제가 아츠기의 여름을 흥겹게 합니다.";
+"atsugi_ayu_festival_location" = "사가미강 하천부지";
+"atsugi_ayu_festival_feature1" = "은어 소금구이";
+"atsugi_ayu_festival_feature2" = "사가미강 불꽃";
+"atsugi_ayu_festival_feature3" = "강의 은혜";
+
+// MARK: - 니가타현 (Niigata)
+"nagaoka_hanabi_name" = "나가오카 축제 대불꽃축제";
+"nagaoka_hanabi_description" = "일본 3대 불꽃축제 중 하나. 부흥에 대한 소원을 담은 정3척옥과 2km에 걸친 피닉스가 압권입니다.";
+"nagaoka_hanabi_location" = "나가오카시・시나노강 하천부지";
+"nagaoka_hanabi_feature1" = "일본 3대 불꽃";
+"nagaoka_hanabi_feature2" = "정3척옥";
+"nagaoka_hanabi_feature3" = "피닉스";
+
+"katakai_festival_name" = "가타카이 축제";
+"katakai_festival_description" = "세계 최대의 4척옥이 올라가는 불꽃축제. 봉납연화로서 400년의 역사를 가진 전통 있는 축제입니다.";
+"katakai_festival_location" = "고치야시 가타카이마치";
+"katakai_festival_feature1" = "세계 최대 4척옥";
+"katakai_festival_feature2" = "봉납연화";
+"katakai_festival_feature3" = "400년의 역사";
+
+"kashiwazaki_umi_hanabi_name" = "가시와자키 바다 대불꽃축제";
+"kashiwazaki_umi_hanabi_description" = "동해를 배경으로 올라가는 불꽃축제. 해상불꽃과 척옥 300연발이 볼거리입니다.";
+"kashiwazaki_umi_hanabi_location" = "가시와자키시・중앙해안";
+"kashiwazaki_umi_hanabi_feature1" = "해상불꽃";
+"kashiwazaki_umi_hanabi_feature2" = "척옥 300연발";
+"kashiwazaki_umi_hanabi_feature3" = "동해 배경";
+
+"echigo_festival_name" = "에치고 축제";
+"echigo_festival_description" = "니가타의 여름을 대표하는 축제. 민요 행렬과 대불꽃축제로 니가타시가 일 년 중 가장 활기를 띱니다.";
+"echigo_festival_location" = "니가타시 중심가";
+"echigo_festival_feature1" = "민요 행렬";
+"echigo_festival_feature2" = "대불꽃축제";
+"echigo_festival_feature3" = "니가타의 여름";
+
+// MARK: - 도야마현 (Toyama)
+"takaoka_tanabata_name" = "다카오카 칠석축제";
+"takaoka_tanabata_description" = "다카오카시 중심가에서 개최되는 칠석축제. 상점가가 아름다운 칠석 장식으로 장식됩니다.";
+"takaoka_tanabata_location" = "다카오카시 중심가";
+"takaoka_tanabata_feature1" = "상점가 장식";
+"takaoka_tanabata_feature2" = "칠석 장식";
+"takaoka_tanabata_feature3" = "1주일 개최";
+
+"owara_kazenobon_name" = "오와라 바람의 봉";
+"owara_kazenobon_description" = "에치추 야츠오에 전해지는 우아한 춤의 축제. 애수를 띤 호궁 음색에 맞춰 추는 환상적인 축제입니다.";
+"owara_kazenobon_location" = "도야마시 야츠오마치";
+"owara_kazenobon_feature1" = "우아한 춤";
+"owara_kazenobon_feature2" = "호궁 음색";
+"owara_kazenobon_feature3" = "환상적 분위기";
+
+"toyama_festival_name" = "도야마 축제";
+"toyama_festival_description" = "도야마의 여름을 대표하는 축제. 민요춤 퍼레이드와 불꽃축제가 도야마시를 활기차게 합니다.";
+"toyama_festival_location" = "도야마시 중심가";
+"toyama_festival_feature1" = "민요춤";
+"toyama_festival_feature2" = "퍼레이드";
+"toyama_festival_feature3" = "불꽃축제";
+
+// MARK: - 이시카와현 (Ishikawa)
+"kanazawa_hyakumangoku_festival_name" = "가나자와 백만석 축제";
+"kanazawa_hyakumangoku_festival_description" = "마에다 토시이에의 가나자와 입성을 재현하는 가나자와 최대 축제. 호화찬란한 백만석 행렬이 볼거리입니다.";
+"kanazawa_hyakumangoku_festival_location" = "가나자와시 중심가";
+"kanazawa_hyakumangoku_festival_feature1" = "백만석 행렬";
+"kanazawa_hyakumangoku_festival_feature2" = "마에다 토시이에 재현";
+"kanazawa_hyakumangoku_festival_feature3" = "가나자와 최대";
+
+"wajima_taisai_name" = "와지마 대제";
+"wajima_taisai_description" = "와지마누리로 유명한 와지마의 여름축제. 용장한 신가마와 북이 노토반도의 여름을 흥겹게 합니다.";
+"wajima_taisai_location" = "와지마시";
+"wajima_taisai_feature1" = "와지마누리 마을";
+"wajima_taisai_feature2" = "용장 신가마";
+"wajima_taisai_feature3" = "노토의 여름";
+
+"komatsu_otabi_festival_name" = "고마츠 오타비 축제";
+"komatsu_otabi_festival_description" = "호화찬란한 예인제가 행진하는 고마츠의 봄축제. 어린이 가부키 상연으로도 유명합니다.";
+"komatsu_otabi_festival_location" = "고마츠시";
+"komatsu_otabi_festival_feature1" = "호화 예인제";
+"komatsu_otabi_festival_feature2" = "어린이 가부키";
+"komatsu_otabi_festival_feature3" = "봄의 축제";
+
+// MARK: - 후쿠이현 (Fukui)
+"mikuni_fireworks_name" = "미쿠니 불꽃축제";
+"mikuni_fireworks_description" = "호쿠리쿠 최대급의 불꽃축제. 동해를 배경으로 약 1만 발의 불꽃이 올라갑니다.";
+"mikuni_fireworks_location" = "사카이시 미쿠니마치";
+"mikuni_fireworks_feature1" = "호쿠리쿠 최대급";
+"mikuni_fireworks_feature2" = "1만 발";
+"mikuni_fireworks_feature3" = "동해 배경";
+
+"tsuruga_festival_name" = "쓰루가 축제";
+"tsuruga_festival_description" = "쓰루가의 가을을 장식하는 전통적인 축제. 수레 순행과 쓰루가항에서의 배축제가 볼거리입니다.";
+"tsuruga_festival_location" = "쓰루가시";
+"tsuruga_festival_feature1" = "수레 순행";
+"tsuruga_festival_feature2" = "배축제";
+"tsuruga_festival_feature3" = "항구도시 축제";
+
+"wakasa_obama_festival_name" = "와카사 오바마 축제";
+"wakasa_obama_festival_description" = "오바마시의 여름축제. 와카사만의 해산물과 전통예능을 즐길 수 있는 해변 축제입니다.";
+"wakasa_obama_festival_location" = "오바마시";
+"wakasa_obama_festival_feature1" = "와카사만";
+"wakasa_obama_festival_feature2" = "해산물";
+"wakasa_obama_festival_feature3" = "전통예능";
+
+
+// MARK: - 월 표시용 문자열
+"month_january" = "1월";
+"month_february" = "2월";
+"month_march" = "3월";
+"month_april" = "4월";
+"month_may" = "5월";
+"month_june" = "6월";
+"month_july" = "7월";
+"month_august" = "8월";
+"month_september" = "9월";
+"month_october" = "10월";
+"month_november" = "11월";
+"month_december" = "12월";
+
+"month_range_july_august" = "7-8월";
+"month_range_july_september" = "7-9월";
+"month_range_april_october" = "4-10월";
+"month_range_january_february" = "1-2월";
+"month_range_january_march" = "1-3월";
+"month_range_february_march" = "2-3월";
+"month_range_february_april" = "2-4월";
+"month_range_march_may" = "3-5월";
+"month_range_april_may" = "4-5월";
+"month_range_october_may" = "10-5월";
+"month_range_november_february" = "11-2월";
+"month_range_november_may" = "11-5월";
+"month_range_december_march" = "12-3월";
+
+// MARK: - 기간 표시용 문자열
+"duration_1_day" = "1일";
+"duration_2_days" = "2일간";
+"duration_3_days" = "3일간";
+"duration_4_days" = "4일간";
+"duration_5_days" = "5일간";
+"duration_7_days" = "7일간";
+"duration_10_days" = "10일간";
+"duration_15_days" = "15일간";
+"duration_1_week" = "1주간";
+"duration_1_month" = "1개월간";
+"duration_2_months" = "약 2개월";
+"duration_daily" = "매일 개최";
+"duration_multiple_times_year" = "연간 여러 차례";
+"duration_12_days" = "12일간";
+"duration_2_weeks" = "2주간";
+"duration_3_weeks" = "3주간";
+"duration_1_month_duration" = "1개월";
+"duration_2_months_duration" = "2개월";
+"duration_3_months" = "3개월간";
+"duration_4_months" = "4개월";
+"duration_6_months" = "6개월";
+"duration_8_months" = "8개월";
+"duration_few_days" = "며칠간";
+
+// MARK: - 카테고리 표시용 문자열
+"category_traditional" = "전통축제";
+"category_summer" = "여름축제";
+"category_fireworks" = "불꽃축제";
+"category_dance" = "춤축제";
+"category_food" = "먹거리축제";
+"category_religious" = "종교행사";
+"category_seasonal" = "계절행사";
+
+// MARK: - 규모 표시용 문자열
+"scale_1" = "지역 규모";
+"scale_2" = "시군 규모";
+"scale_3" = "도내 유수";
+"scale_4" = "전국 규모";
+"scale_5" = "일본 최대급";
+
+// MARK: - 공통 문구
+"festival_suffix" = "축제";
+"fireworks_suffix" = "불꽃축제";
+"matsuri_suffix" = "마츠리";
+"festival_description_suffix" = "가 볼거리입니다.";
+"location_center" = "중심부";
+"location_riverbed" = "하천부지";
+"location_port" = "항구 주변";
+"location_hot_spring" = "온천가";
+
+"festival.summer" = "여름축제";
+"festival.fireworks" = "불꽃축제";
+"festival.traditional" = "전통축제";
+"festival.dance" = "춤축제";
+"festival.food" = "음식축제";
+"festival.seasonal" = "계절축제";
+"festival.religious" = "종교축제";
+
+"festival.summer_fireworks" = "여름축제·불꽃축제";
+"festival.experience" = "%@의 축제를 체험";
+"festival.of_prefecture" = "%@의 축제";
+"festival.event_info" = "개최 정보";
+
+"festival.period" = "개최 시기";
+"festival.duration" = "기간";
+"festival.location" = "개최지";
+"festival.scale" = "규모";
+"festival.highlights" = "볼거리·특징";
+"festival.tips" = "즐기는 방법 힌트";
+
+// 여름축제 힌트
+"tips.summer.1" = "유카타를 입고 분위기를 즐기기";
+"tips.summer.2" = "포장마차 음식을 맛보기";
+"tips.summer.3" = "일찍 자리 잡기를 추천";
+
+// 불꽃축제 힌트
+"tips.fireworks.1" = "돗자리를 가져가기";
+"tips.fireworks.2" = "발사 장소의 바람 방향 확인";
+"tips.fireworks.3" = "대중교통 이용을 권장";
+
+// 전통축제 힌트
+"tips.traditional.1" = "역사와 유래를 미리 알아보기";
+"tips.traditional.2" = "현지인과의 교류를 즐기기";
+"tips.traditional.3" = "전통 의상 착용 고려";
+
+// 춤축제 힌트
+"tips.dance.1" = "춤을 연습해서 참가하기";
+"tips.dance.2" = "움직이기 편한 복장으로 참가";
+"tips.dance.3" = "현지 춤꾼에게서 배우기";
+
+// 음식축제 힌트
+"tips.food.1" = "배고픈 상태로 참가해서 마음껏 즐기기";
+"tips.food.2" = "현지 특산품을 기념품으로";
+"tips.food.3" = "요리 만드는 법 물어보기";
+
+// 계절축제 힌트
+"tips.seasonal.1" = "계절에 맞는 차림으로 참가하기";
+"tips.seasonal.2" = "자연의 아름다움도 함께 즐기기";
+"tips.seasonal.3" = "사진 촬영 포인트 찾기";
+
+// 종교축제 힌트
+"tips.religious.1" = "참배 예절을 미리 확인";
+"tips.religious.2" = "조용한 분위기를 소중히 하기";
+"tips.religious.3" = "부적이나 고슈인 받기";
+
+// 봄
+"tips.spring.1" = "따뜻한 복장으로 봄의 기분을 즐기기";
+"tips.spring.2" = "꽃과 함께 기념사진 촬영";
+"tips.spring.3" = "현지의 봄 별미를 만끽";
+
+// 가을
+"tips.autumn.1" = "단풍의 절정 시기를 미리 확인";
+"tips.autumn.2" = "따뜻한 음료 준비";
+"tips.autumn.3" = "낙엽을 밟으며 산책";
+
+// 겨울
+"tips.winter.1" = "방한 대책을 철저히";
+"tips.winter.2" = "따뜻한 장소에서의 휴식을 계획";
+"tips.winter.3" = "설경 사진 촬영 즐기기";
+
+// 벚꽃
+"tips.sakura.1" = "벚꽃 개화 상황을 미리 체크";
+"tips.sakura.2" = "꽃구경 도시락 준비";
+"tips.sakura.3" = "야간 벚꽃 라이트업도 즐기기";
+
+// 일루미네이션
+"tips.illumination.1" = "어두워진 후 시간대를 노리기";
+"tips.illumination.2" = "카메라 설정을 미리 확인";
+"tips.illumination.3" = "추위 대책을 잊지 말기";
+
+// 눈
+"tips.snow.1" = "미끄러지지 않는 신발 착용";
+"tips.snow.2" = "눈놀이 도구 준비";
+"tips.snow.3" = "따뜻한 음료로 몸을 따뜻하게";
+
+// 전통
+"tips.traditional.1" = "전통과 역사를 미리 학습";
+"tips.traditional.2" = "정장이나 한복 착용 고려";
+"tips.traditional.3" = "현지인과의 교류를 소중히";
+
+"festival.seasons" = "봄·가을·겨울 축제";
+"festival.experience_seasons" = "%@의 사계를 체험";
+
+"otherFestival.spring" = "봄축제";
+"otherFestival.autumn" = "가을축제";
+"otherFestival.winter" = "겨울축제";
+"otherFestival.sakura" = "벚꽃축제";
+"otherFestival.illumination" = "일루미네이션";
+"otherFestival.snow" = "눈축제";
+"otherFestival.traditional" = "전통행사";
+
+"search.placeholder" = "축제명, 설명, 도도부현으로 검색";
+
+"category.summer_festival" = "여름축제계";
+"category.seasonal_festival" = "계절축제계";
+"filter.star_scale" = "%d개 별 이상";
+"filter.no_results" = "해당하는 축제를 찾을 수 없습니다";
+"filter.change_filter" = "필터를 변경해 보세요";
+
+/* **MARK: - 홋카이도** */
+"hokkaido.sapporo_snow_festival.name" = "삿포로 눈축제";
+"hokkaido.sapporo_snow_festival.description" = "세계적으로 유명한 눈과 얼음의 축전. 오도리공원과 스스키노에 거대한 눈조각과 얼음조각이 줄지어 서서 삿포로의 겨울을 장식합니다.";
+"hokkaido.sapporo_snow_festival.location" = "오도리공원·스스키노";
+"hokkaido.sapporo_snow_festival.feature1" = "세계적 이벤트";
+"hokkaido.sapporo_snow_festival.feature2" = "거대 눈조각";
+"hokkaido.sapporo_snow_festival.feature3" = "얼음조각 전시";
+
+"hokkaido.hakodate_goryokaku_festival.name" = "하코다테 고료카쿠 축제";
+"hokkaido.hakodate_goryokaku_festival.description" = "하코다테 전쟁을 재현하는 역사축제. 히지카타 토시조 콘테스트와 유신 행렬 퍼레이드로 막말의 역사를 체감할 수 있습니다.";
+"hokkaido.hakodate_goryokaku_festival.location" = "고료카쿠 공원";
+"hokkaido.hakodate_goryokaku_festival.feature1" = "역사 재현";
+"hokkaido.hakodate_goryokaku_festival.feature2" = "히지카타 토시조";
+"hokkaido.hakodate_goryokaku_festival.feature3" = "유신 행렬";
+
+/* **MARK: - 아오모리** */
+"aomori.hirosaki_cherry_festival.name" = "히로사키 벚꽃축제";
+"aomori.hirosaki_cherry_festival.description" = "일본 3대 벚꽃 명소 중 하나. 히로사키성과 약 2600그루의 벚꽃이 자아내는 절경은 일본에서 가장 아름다운 벚꽃축제로 알려져 있습니다.";
+"aomori.hirosaki_cherry_festival.location" = "히로사키 공원";
+"aomori.hirosaki_cherry_festival.feature1" = "일본 3대 벚꽃";
+"aomori.hirosaki_cherry_festival.feature2" = "2600그루의 벚꽃";
+"aomori.hirosaki_cherry_festival.feature3" = "히로사키성";
+
+"aomori.hachinohe_enburi.name" = "하치노헤 엔부리";
+"aomori.hachinohe_enburi.description" = "풍작을 기원하는 아오모리현 남부지방의 민속예능. 에보시를 쓴 다유가 추는 환상적인 겨울 축제입니다.";
+"aomori.hachinohe_enburi.location" = "하치노헤시 중심부";
+"aomori.hachinohe_enburi.feature1" = "민속예능";
+"aomori.hachinohe_enburi.feature2" = "풍작 기원";
+"aomori.hachinohe_enburi.feature3" = "다유의 춤";
+
+/* **MARK: - 이시카와** */
+"ishikawa.kenrokuen_cherry_festival.name" = "겐로쿠엔 벚꽃축제";
+"ishikawa.kenrokuen_cherry_festival.description" = "일본 3대 명원 중 하나인 겐로쿠엔에서 개최되는 벚꽃축제. 약 420그루의 벚꽃이 일본정원의 아름다움을 돋보이게 합니다.";
+"ishikawa.kenrokuen_cherry_festival.location" = "겐로쿠엔";
+"ishikawa.kenrokuen_cherry_festival.feature1" = "일본 3대 명원";
+"ishikawa.kenrokuen_cherry_festival.feature2" = "420그루의 벚꽃";
+"ishikawa.kenrokuen_cherry_festival.feature3" = "일본정원";
+
+/* **MARK: - 야마나시** */
+"yamanashi.fuji_shibazakura_festival.name" = "후지 시바자쿠라축제";
+"yamanashi.fuji_shibazakura_festival.description" = "후지산을 배경으로 80만 그루의 시바자쿠라가 만발하는 절경 이벤트. 분홍색 융단과 후지산의 콜라보레이션은 압권입니다.";
+"yamanashi.fuji_shibazakura_festival.location" = "후지모토스코 리조트";
+"yamanashi.fuji_shibazakura_festival.feature1" = "80만 그루";
+"yamanashi.fuji_shibazakura_festival.feature2" = "후지산 배경";
+"yamanashi.fuji_shibazakura_festival.feature3" = "분홍색 융단";
+
+/* **MARK: - 나가노** */
+"nagano.takato_castle_cherry_festival.name" = "다카토성지공원 벚꽃축제";
+"nagano.takato_castle_cherry_festival.description" = "'천하제일의 벚꽃'이라 불리는 다카토의 벚꽃축제. 약 1500그루의 다카토오코히간자쿠라가 연분홍색으로 물듭니다.";
+"nagano.takato_castle_cherry_festival.location" = "다카토성지공원";
+"nagano.takato_castle_cherry_festival.feature1" = "천하제일";
+"nagano.takato_castle_cherry_festival.feature2" = "1500그루";
+"nagano.takato_castle_cherry_festival.feature3" = "다카토오코히간자쿠라";
+
+/* **MARK: - 기후** */
+"gifu.shirakawago_illumination.name" = "시라카와고 라이트업";
+"gifu.shirakawago_illumination.description" = "세계유산 시라카와고의 갓쇼즈쿠리 마을이 라이트업되는 겨울의 절경 이벤트. 설경과 따뜻한 빛이 환상적인 아름다움을 연출합니다.";
+"gifu.shirakawago_illumination.location" = "시라카와고 갓쇼즈쿠리 마을";
+"gifu.shirakawago_illumination.feature1" = "세계유산";
+"gifu.shirakawago_illumination.feature2" = "갓쇼즈쿠리";
+"gifu.shirakawago_illumination.feature3" = "설경 라이트업";
+
+/* **MARK: - 시즈오카** */
+"shizuoka.kawazu_cherry_festival.name" = "가와즈 벚꽃축제";
+"shizuoka.kawazu_cherry_festival.description" = "혼슈에서 가장 일찍 피는 가와즈 벚꽃 축제. 약 8000그루의 조생 벚꽃이 2월부터 3월에 걸쳐 이즈를 장식합니다.";
+"shizuoka.kawazu_cherry_festival.location" = "가와즈마치";
+"shizuoka.kawazu_cherry_festival.feature1" = "가장 조생";
+"shizuoka.kawazu_cherry_festival.feature2" = "8000그루";
+"shizuoka.kawazu_cherry_festival.feature3" = "이른 봄 벚꽃";
+
+"shizuoka.atami_plum_festival.name" = "아타미매원 매화축제";
+"shizuoka.atami_plum_festival.description" = "일본에서 가장 조생하는 매원. 약 470그루의 매화가 1월부터 3월에 걸쳐 피어 온천가에 봄의 방문을 알립니다.";
+"shizuoka.atami_plum_festival.location" = "아타미매원";
+"shizuoka.atami_plum_festival.feature1" = "가장 조생";
+"shizuoka.atami_plum_festival.feature2" = "470그루의 매화";
+"shizuoka.atami_plum_festival.feature3" = "온천가";
+
+/* **MARK: - 아이치** */
+"aichi.korankei_maple_festival.name" = "고란케이 단풍축제";
+"aichi.korankei_maple_festival.description" = "도카이지방 최고의 단풍 명소. 약 4000그루의 단풍나무가 자아내는 단풍 터널은 숨막히는 아름다움입니다.";
+"aichi.korankei_maple_festival.location" = "도요타시 고란케이";
+"aichi.korankei_maple_festival.feature1" = "도카이 최고";
+"aichi.korankei_maple_festival.feature2" = "4000그루 단풍나무";
+"aichi.korankei_maple_festival.feature3" = "단풍 터널";
+
+/* **MARK: - 미에** */
+"mie.nabana_no_sato_illumination.name" = "나바나노사토 일루미네이션";
+"mie.nabana_no_sato_illumination.description" = "국내 최대급의 일루미네이션. 약 800만 개의 LED가 자아내는 빛의 절경은 겨울의 풍물시로 많은 사람을 매혹시킵니다.";
+"mie.nabana_no_sato_illumination.location" = "나바나노사토";
+"mie.nabana_no_sato_illumination.feature1" = "국내 최대급";
+"mie.nabana_no_sato_illumination.feature2" = "800만 개 LED";
+"mie.nabana_no_sato_illumination.feature3" = "8개월 개최";
+
+/* **MARK: - 교토** */
+"kyoto.aoi_matsuri.name" = "아오이 마츠리";
+"kyoto.aoi_matsuri.description" = "교토 3대 축제 중 하나. 헤이안시대의 우아한 의상을 입은 행렬이 교토고쇼에서 시모가모신사, 가미가모신사로 향합니다.";
+"kyoto.aoi_matsuri.location" = "교토고쇼~가미가모신사";
+"kyoto.aoi_matsuri.feature1" = "교토 3대 축제";
+"kyoto.aoi_matsuri.feature2" = "헤이안 의상";
+"kyoto.aoi_matsuri.feature3" = "우아한 행렬";
+
+"kyoto.kyoto_hanatoro.name" = "교토 하나토로";
+"kyoto.kyoto_hanatoro.description" = "교토의 거리를 약 2500개의 행등으로 라이트업하는 겨울의 풍물시. 사찰의 특별 참배도 즐길 수 있습니다.";
+"kyoto.kyoto_hanatoro.location" = "아라시야마·히가시야마";
+"kyoto.kyoto_hanatoro.feature1" = "2500개 행등";
+"kyoto.kyoto_hanatoro.feature2" = "사찰 라이트업";
+"kyoto.kyoto_hanatoro.feature3" = "특별 참배";
+
+/* **MARK: - 오사카** */
+"osaka.mint_cherry_blossom.name" = "조폐국 벚꽃 통과";
+"osaka.mint_cherry_blossom.description" = "오사카의 봄 풍물시. 조폐국 구내의 벚꽃길을 일반 개방하는 1주일 한정 이벤트. 약 350그루의 겹벚꽃을 즐길 수 있습니다.";
+"osaka.mint_cherry_blossom.location" = "조폐국";
+"osaka.mint_cherry_blossom.feature1" = "1주일 한정";
+"osaka.mint_cherry_blossom.feature2" = "350그루 겹벚꽃";
+"osaka.mint_cherry_blossom.feature3" = "봄의 풍물시";
+
+/* **MARK: - 효고** */
+"hyogo.kobe_luminarie.name" = "고베 루미나리에";
+"hyogo.kobe_luminarie.description" = "한신·아와지 대지진의 진혼과 부흥을 기원하며 시작된 일루미네이션. 약 30만 개의 전구가 고베의 밤을 환상적으로 장식합니다.";
+"hyogo.kobe_luminarie.location" = "고베시 중심부";
+"hyogo.kobe_luminarie.feature1" = "지진 부흥 기원";
+"hyogo.kobe_luminarie.feature2" = "30만 개 전구";
+"hyogo.kobe_luminarie.feature3" = "환상적";
+
+/* **MARK: - 나라** */
+"nara.yoshinoyama_cherry_festival.name" = "요시노야마 벚꽃축제";
+"nara.yoshinoyama_cherry_festival.description" = "일본 최고의 벚꽃 명소. 약 3만 그루의 벚꽃이 산 전체를 뒤덮고, 시모센본부터 오쿠센본까지 순차적으로 개화하는 장대한 벚꽃축제입니다.";
+"nara.yoshinoyama_cherry_festival.location" = "요시노야마";
+"nara.yoshinoyama_cherry_festival.feature1" = "일본 최고";
+"nara.yoshinoyama_cherry_festival.feature2" = "3만 그루의 벚꽃";
+"nara.yoshinoyama_cherry_festival.feature3" = "센본자쿠라";
+
+"nara.wakakusayama_yamayaki.name" = "와카쿠사야마 산태우기";
+"nara.wakakusayama_yamayaki.description" = "나라의 겨울 풍물시. 와카쿠사야마 전체를 태우는 용장한 불축제로, 고도 나라의 밤하늘을 붉게 물들입니다.";
+"nara.wakakusayama_yamayaki.location" = "와카쿠사야마";
+"nara.wakakusayama_yamayaki.feature1" = "산 전체를 연소";
+"nara.wakakusayama_yamayaki.feature2" = "겨울의 풍물시";
+"nara.wakakusayama_yamayaki.feature3" = "고도의 밤하늘";
+
+/* **MARK: - 와카야마** */
+"wakayama.nanbu_plum_grove.name" = "난부매림";
+"wakayama.nanbu_plum_grove.description" = "'일목백만, 향기십리'라 불리는 매화 명소. 약 10만 그루의 매화가 난부마치의 산들을 하얗게 물들이는 절경입니다.";
+"wakayama.nanbu_plum_grove.location" = "미나베마치";
+"wakayama.nanbu_plum_grove.feature1" = "일목백만";
+"wakayama.nanbu_plum_grove.feature2" = "10만 그루의 매화";
+"wakayama.nanbu_plum_grove.feature3" = "산들을 하얗게 물들임";
+
+/* **MARK: - 시마네** */
+"shimane.matsue_castle_cherry_festival.name" = "마츠에성 벚꽃축제";
+"shimane.matsue_castle_cherry_festival.description" = "현존 천수를 가진 마츠에성의 벚꽃축제. 약 200그루의 벚꽃이 국보인 성을 아름답게 장식하며, 야벚꽃도 즐길 수 있습니다.";
+"shimane.matsue_castle_cherry_festival.location" = "마츠에성";
+"shimane.matsue_castle_cherry_festival.feature1" = "현존 천수";
+"shimane.matsue_castle_cherry_festival.feature2" = "국보인 성";
+"shimane.matsue_castle_cherry_festival.feature3" = "200그루의 벚꽃";
+
+/* **MARK: - 오카야마** */
+"okayama.korakuen_cherry_festival.name" = "오카야마 고라쿠엔 벚꽃축제";
+"okayama.korakuen_cherry_festival.description" = "일본 3대 명원 중 하나인 고라쿠엔의 벚꽃축제. 정원미와 벚꽃의 조화가 자아내는 아름다운 경치를 즐길 수 있습니다.";
+"okayama.korakuen_cherry_festival.location" = "오카야마 고라쿠엔";
+"okayama.korakuen_cherry_festival.feature1" = "일본 3대 명원";
+"okayama.korakuen_cherry_festival.feature2" = "정원미";
+"okayama.korakuen_cherry_festival.feature3" = "벚꽃과의 조화";
+
+/* **MARK: - 히로시마** */
+"hiroshima.miyajima_cherry_festival.name" = "미야지마 벚꽃축제";
+"hiroshima.miyajima_cherry_festival.description" = "세계유산 이츠쿠시마신사와 벚꽃의 콜라보레이션. 오토리이를 배경으로 한 벚꽃은 일본의 아름다움을 상징하는 절경입니다.";
+"hiroshima.miyajima_cherry_festival.location" = "미야지마";
+"hiroshima.miyajima_cherry_festival.feature1" = "세계유산";
+"hiroshima.miyajima_cherry_festival.feature2" = "오토리이 배경";
+"hiroshima.miyajima_cherry_festival.feature3" = "일본의 미";
+
+"hiroshima.miyajima_autumn_festival.name" = "미야지마 단풍축제";
+"hiroshima.miyajima_autumn_festival.description" = "이츠쿠시마신사의 단풍 라이트업. 주칠한 사전과 단풍이 자아내는 환상적인 가을의 절경을 즐길 수 있습니다.";
+"hiroshima.miyajima_autumn_festival.location" = "미야지마";
+"hiroshima.miyajima_autumn_festival.feature1" = "단풍 라이트업";
+"hiroshima.miyajima_autumn_festival.feature2" = "주칠 사전";
+"hiroshima.miyajima_autumn_festival.feature3" = "환상적";
+
+/* **MARK: - 야마구치** */
+"yamaguchi.kintaikyo_cherry_festival.name" = "긴타이쿄 벚꽃축제";
+"yamaguchi.kintaikyo_cherry_festival.description" = "일본 3대 명교 중 하나인 긴타이쿄와 벚꽃의 아름다운 콜라보레이션. 약 3000그루의 벚꽃이 아치형 다리와 조화하는 절경입니다.";
+"yamaguchi.kintaikyo_cherry_festival.location" = "이와쿠니시 긴타이쿄";
+"yamaguchi.kintaikyo_cherry_festival.feature1" = "일본 3대 명교";
+"yamaguchi.kintaikyo_cherry_festival.feature2" = "3000그루의 벚꽃";
+"yamaguchi.kintaikyo_cherry_festival.feature3" = "아치형 다리와의 조화";
+
+/* **MARK: - 도쿠시마** */
+"tokushima.katsuura_big_hina_festival.name" = "가츠우라마치 빅 히나축제";
+"tokushima.katsuura_big_hina_festival.description" = "약 3만 개의 히나인형이 마을을 장식하는 일본 최대급의 히나축제. 피라미드형 히나단은 압권의 광경입니다.";
+"tokushima.katsuura_big_hina_festival.location" = "가츠우라마치";
+"tokushima.katsuura_big_hina_festival.feature1" = "3만 개 히나인형";
+"tokushima.katsuura_big_hina_festival.feature2" = "일본 최대급";
+"tokushima.katsuura_big_hina_festival.feature3" = "피라미드형";
+
+/* **MARK: - 가가와** */
+"kagawa.ritsurin_cherry_festival.name" = "리츠린공원 벚꽃축제";
+"kagawa.ritsurin_cherry_festival.description" = "국가 특별명승 리츠린공원의 벚꽃축제. 약 300그루의 벚꽃과 사누키후지를 배경으로 한 정원미를 즐길 수 있습니다.";
+"kagawa.ritsurin_cherry_festival.location" = "리츠린공원";
+"kagawa.ritsurin_cherry_festival.feature1" = "특별명승";
+"kagawa.ritsurin_cherry_festival.feature2" = "300그루의 벚꽃";
+"kagawa.ritsurin_cherry_festival.feature3" = "사누키후지";
+
+/* **MARK: - 에히메** */
+"ehime.matsuyama_castle_cherry_festival.name" = "마츠야마성 벚꽃축제";
+"ehime.matsuyama_castle_cherry_festival.description" = "현존 12천수 중 하나인 마츠야마성의 벚꽃축제. 약 200그루의 벚꽃이 성산을 장식하며, 도고온천과 함께 즐길 수 있습니다.";
+"ehime.matsuyama_castle_cherry_festival.location" = "마츠야마성";
+"ehime.matsuyama_castle_cherry_festival.feature1" = "현존 12천수";
+"ehime.matsuyama_castle_cherry_festival.feature2" = "200그루의 벚꽃";
+"ehime.matsuyama_castle_cherry_festival.feature3" = "도고온천";
+
+/* **MARK: - 고치** */
+"kochi.kochi_castle_cherry_festival.name" = "고치성 벚꽃축제";
+"kochi.kochi_castle_cherry_festival.description" = "현존 천수를 가진 고치성의 벚꽃축제. 약 220그루의 벚꽃이 토사의 성을 아름답게 장식합니다.";
+"kochi.kochi_castle_cherry_festival.location" = "고치성";
+"kochi.kochi_castle_cherry_festival.feature1" = "현존 천수";
+"kochi.kochi_castle_cherry_festival.feature2" = "220그루의 벚꽃";
+"kochi.kochi_castle_cherry_festival.feature3" = "토사의 성";
+
+/* **MARK: - 후쿠오카** */
+"fukuoka.fukuoka_castle_cherry_festival.name" = "후쿠오카성 벚꽃축제";
+"fukuoka.fukuoka_castle_cherry_festival.description" = "마이즈루공원에서 개최되는 후쿠오카의 벚꽃축제. 약 1000그루의 벚꽃이 후쿠오카성터를 아름답게 장식하며, 포장마차도 많이 출점합니다.";
+"fukuoka.fukuoka_castle_cherry_festival.location" = "마이즈루공원";
+"fukuoka.fukuoka_castle_cherry_festival.feature1" = "1000그루의 벚꽃";
+"fukuoka.fukuoka_castle_cherry_festival.feature2" = "후쿠오카성터";
+"fukuoka.fukuoka_castle_cherry_festival.feature3" = "포장마차 출점";
+
+/* **MARK: - 사가** */
+"saga.arita_pottery_fair.name" = "아리타 도자기시장";
+"saga.arita_pottery_fair.description" = "400년의 역사를 가진 도자기시장. 약 400개의 점포가 늘어서며, 일본 최대급의 도자기시장으로 매년 100만 명이 찾아옵니다.";
+"saga.arita_pottery_fair.location" = "아리타마치";
+"saga.arita_pottery_fair.feature1" = "400년의 역사";
+"saga.arita_pottery_fair.feature2" = "400개의 점포";
+"saga.arita_pottery_fair.feature3" = "100만 명 방문";
+
+/* **MARK: - 나가사키** */
+"nagasaki.huis_ten_bosch_flower_festival.name" = "하우스텐보스 꽃축제";
+"nagasaki.huis_ten_bosch_flower_festival.description" = "100만 그루의 튤립이 만발하는 유럽풍 테마파크의 봄축제. 풍차와 튤립의 절경을 즐길 수 있습니다.";
+"nagasaki.huis_ten_bosch_flower_festival.location" = "하우스텐보스";
+"nagasaki.huis_ten_bosch_flower_festival.feature1" = "100만 그루";
+"nagasaki.huis_ten_bosch_flower_festival.feature2" = "유럽풍";
+"nagasaki.huis_ten_bosch_flower_festival.feature3" = "풍차와 튤립";
+
+"nagasaki.huis_ten_bosch_kingdom_of_light.name" = "하우스텐보스 빛의 왕국";
+"nagasaki.huis_ten_bosch_kingdom_of_light.description" = "세계 최대급 1300만 개의 일루미네이션. 빛의 폭포와 빛의 천공카페 등, 압도적인 스케일의 빛의 세계가 펼쳐집니다.";
+"nagasaki.huis_ten_bosch_kingdom_of_light.location" = "하우스텐보스";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature1" = "세계 최대급";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature2" = "1300만 개";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature3" = "6개월 개최";
+
+/* **MARK: - 구마모토** */
+"kumamoto.kumamoto_castle_cherry_festival.name" = "구마모토성 벚꽃축제";
+"kumamoto.kumamoto_castle_cherry_festival.description" = "일본 3대 명성 중 하나인 구마모토성의 벚꽃축제. 약 800그루의 벚꽃이 복구 중인 성을 아름답게 장식하며, 희망의 상징이 되고 있습니다.";
+"kumamoto.kumamoto_castle_cherry_festival.location" = "구마모토성";
+"kumamoto.kumamoto_castle_cherry_festival.feature1" = "일본 3대 명성";
+"kumamoto.kumamoto_castle_cherry_festival.feature2" = "800그루의 벚꽃";
+"kumamoto.kumamoto_castle_cherry_festival.feature3" = "부흥의 상징";
+
+/* **MARK: - 미야자키** */
+"miyazaki.takachiho_yokagura.name" = "다카치호 야가구라";
+"miyazaki.takachiho_yokagura.description" = "미야자키현의 전통예능. 11월부터 2월에 걸쳐 33번의 가구라가 봉납되어, 신화의 고장의 신비로운 밤을 연출합니다.";
+"miyazaki.takachiho_yokagura.location" = "다카치호마치";
+"miyazaki.takachiho_yokagura.feature1" = "33번의 가구라";
+"miyazaki.takachiho_yokagura.feature2" = "신화의 고장";
+"miyazaki.takachiho_yokagura.feature3" = "4개월 개최";
+
+/* **MARK: - 오키나와** */
+"okinawa.ryukyu_kaiensai.name" = "류큐 해염제";
+"okinawa.ryukyu_kaiensai.description" = "오키나와 최대급의 불꽃축제. 약 1만 발의 불꽃과 음악이 자아내는 엔터테인먼트 쇼를 즐길 수 있습니다.";
+"okinawa.ryukyu_kaiensai.location" = "기노완 해변공원";
+"okinawa.ryukyu_kaiensai.feature1" = "오키나와 최대급";
+"okinawa.ryukyu_kaiensai.feature2" = "1만 발";
+"okinawa.ryukyu_kaiensai.feature3" = "음악 쇼";
+
+"okinawa.professional_baseball_camp.name" = "프로야구 캠프";
+"okinawa.professional_baseball_camp.description" = "오키나와의 겨울부터 봄의 풍물시. 프로야구 12구단의 캠프지로서, 팬과의 거리가 가까운 관전을 즐길 수 있습니다.";
+"okinawa.professional_baseball_camp.location" = "오키나와현 내 각지";
+"okinawa.professional_baseball_camp.feature1" = "12구단";
+"okinawa.professional_baseball_camp.feature2" = "팬 근거리";
+"okinawa.professional_baseball_camp.feature3" = "겨울봄 풍물시";
+
+"iwate.kitakami_cherry_festival.name" = "기타카미 덴쇼치 벚꽃축제";
+"iwate.kitakami_cherry_festival.description" = "도호쿠 유수의 벚꽃 명소. 기타카미강 따라 약 2km에 걸쳐 벚꽃나무가 이어지는 장대한 벚꽃축제입니다.";
+"iwate.kitakami_cherry_festival.location" = "기타카미 덴쇼치";
+"iwate.kitakami_cherry_festival.feature1" = "도호쿠 유수";
+"iwate.kitakami_cherry_festival.feature2" = "2km 벚꽃길";
+"iwate.kitakami_cherry_festival.feature3" = "기타카미강변";
+
+
+/* **MARK: - 미야기** */
+"miyagi.hitome_senbon_cherry_festival.name" = "히토메센본 벚꽃축제";
+"miyagi.hitome_senbon_cherry_festival.description" = "시로이시강 제방의 벚꽃길과 잔설의 자오연봉의 절경 콜라보레이션. 약 1200그루의 벚꽃이 8km에 걸쳐 만발합니다.";
+"miyagi.hitome_senbon_cherry_festival.location" = "오가와라마치·시바타마치";
+"miyagi.hitome_senbon_cherry_festival.feature1" = "자오연봉";
+"miyagi.hitome_senbon_cherry_festival.feature2" = "1200그루의 벚꽃";
+"miyagi.hitome_senbon_cherry_festival.feature3" = "8km 벚꽃길";
+
+/* **MARK: - 아키타** */
+"akita.namahage_sedo_festival.name" = "나마하게 시바토 축제";
+"akita.namahage_sedo_festival.description" = "오가반도의 전통행사 '나마하게'를 재현한 겨울축제. 설산에서의 나마하게 북과 횃불의 불꽃이 환상적인 분위기를 연출합니다.";
+"akita.namahage_sedo_festival.location" = "오가시 신잔신사";
+"akita.namahage_sedo_festival.feature1" = "나마하게";
+"akita.namahage_sedo_festival.feature2" = "횃불의 불꽃";
+"akita.namahage_sedo_festival.feature3" = "오가반도";
+
+/* **MARK: - 야마가타** */
+"yamagata.zao_frost_festival.name" = "자오 수빙축제";
+"yamagata.zao_frost_festival.description" = "세계적으로 드문 수빙 현상을 즐기는 겨울축제. 아이스 몬스터라고 불리는 수빙군의 라이트업이 신비롭습니다.";
+"yamagata.zao_frost_festival.location" = "자오온천 스키장";
+"yamagata.zao_frost_festival.feature1" = "세계적 수빙";
+"yamagata.zao_frost_festival.feature2" = "아이스 몬스터";
+"yamagata.zao_frost_festival.feature3" = "라이트업";
+
+/* **MARK: - 후쿠시마** */
+"fukushima.ouchi_juku_snow_festival.name" = "오우치주쿠 눈축제";
+"fukushima.ouchi_juku_snow_festival.description" = "에도시대 숙박마을의 설경을 즐기는 겨울축제. 초가지붕에 쌓인 눈과 화로의 따뜻함이 향수를 자아냅니다.";
+"fukushima.ouchi_juku_snow_festival.location" = "시모고마치 오우치주쿠";
+"fukushima.ouchi_juku_snow_festival.feature1" = "에도 숙박마을";
+"fukushima.ouchi_juku_snow_festival.feature2" = "초가지붕";
+"fukushima.ouchi_juku_snow_festival.feature3" = "화로";
+
+/* **MARK: - 이바라키** */
+"ibaraki.nemophila_festival.name" = "히타치 해변공원 네모필라축제";
+"ibaraki.nemophila_festival.description" = "약 530만 그루의 네모필라가 언덕 전체를 파랗게 물들이는 절경 이벤트. '파란 융단'이라 불리는 아름다운 광경으로 유명합니다.";
+"ibaraki.nemophila_festival.location" = "히타치나카 해변공원";
+"ibaraki.nemophila_festival.feature1" = "530만 그루";
+"ibaraki.nemophila_festival.feature2" = "파란 융단";
+"ibaraki.nemophila_festival.feature3" = "절경";
+
+"ibaraki.kairakuen_plum_festival.name" = "가이라쿠엔 매화축제";
+"ibaraki.kairakuen_plum_festival.description" = "일본 3대 명원 중 하나인 가이라쿠엔에서 개최되는 매화축제. 약 100품종 3000그루의 매화가 이른 봄의 이바라키를 장식합니다.";
+"ibaraki.kairakuen_plum_festival.location" = "미토시 가이라쿠엔";
+"ibaraki.kairakuen_plum_festival.feature1" = "일본 3대 명원";
+"ibaraki.kairakuen_plum_festival.feature2" = "100품종";
+"ibaraki.kairakuen_plum_festival.feature3" = "3000그루의 매화";
+
+/* **MARK: - 도치기** */
+"tochigi.ashikaga_wisteria_festival.name" = "아시카가 플라워파크 등나무축제";
+"tochigi.ashikaga_wisteria_festival.description" = "세계 최대급의 등나무 선반을 자랑하는 등나무 명소. 수령 150년의 큰 등나무를 비롯해 보라, 흰색, 분홍색 등나무가 만발합니다.";
+"tochigi.ashikaga_wisteria_festival.location" = "아시카가 플라워파크";
+"tochigi.ashikaga_wisteria_festival.feature1" = "세계 최대급";
+"tochigi.ashikaga_wisteria_festival.feature2" = "수령 150년";
+"tochigi.ashikaga_wisteria_festival.feature3" = "큰 등나무 선반";
+
+/* **MARK: - 군마** */
+"gunma.kusatsu_onsen_festival.name" = "구사츠온천 감사제";
+"gunma.kusatsu_onsen_festival.description" = "구사츠온천의 온천 은혜에 감사하는 겨울축제. 유모미 춤과 온천가의 라이트업이 온천 정취를 연출합니다.";
+"gunma.kusatsu_onsen_festival.location" = "구사츠온천가";
+"gunma.kusatsu_onsen_festival.feature1" = "유모미 춤";
+"gunma.kusatsu_onsen_festival.feature2" = "온천가";
+"gunma.kusatsu_onsen_festival.feature3" = "라이트업";
+
+/* **MARK: - 사이타마** */
+"saitama.chichibu_night_festival.name" = "치치부 야축제";
+"saitama.chichibu_night_festival.description" = "일본 3대 히키야마 축제 중 하나. 호화찬란한 포장마차와 가사보코가 치치부의 겨울밤을 장식하는 장대한 축제입니다.";
+"saitama.chichibu_night_festival.location" = "치치부시";
+"saitama.chichibu_night_festival.feature1" = "일본 3대 히키야마";
+"saitama.chichibu_night_festival.feature2" = "겨울 축제";
+"saitama.chichibu_night_festival.feature3" = "포장마차와 가사보코";
+
+/* **MARK: - 치바** */
+"chiba.sakura_tulip_festa.name" = "사쿠라 튤립 페스타";
+"chiba.sakura_tulip_festa.description" = "간토 최대급의 튤립밭. 약 100품종 67만 그루의 튤립이 풍차를 배경으로 만발하는 봄의 절경입니다.";
+"chiba.sakura_tulip_festa.location" = "사쿠라 고향광장";
+"chiba.sakura_tulip_festa.feature1" = "간토 최대급";
+"chiba.sakura_tulip_festa.feature2" = "67만 그루";
+"chiba.sakura_tulip_festa.feature3" = "네덜란드 풍차";
+
+/* **MARK: - 도쿄** */
+"tokyo.ueno_cherry_festival.name" = "우에노 벚꽃축제";
+"tokyo.ueno_cherry_festival.description" = "에도시대부터 이어진 도쿄의 벚꽃 명소. 약 800그루의 벚꽃이 우에노공원을 장식하며, 많은 꽃구경객으로 북적입니다.";
+"tokyo.ueno_cherry_festival.location" = "우에노온시공원";
+"tokyo.ueno_cherry_festival.feature1" = "에도시대부터";
+"tokyo.ueno_cherry_festival.feature2" = "800그루의 벚꽃";
+"tokyo.ueno_cherry_festival.feature3" = "도내 굴지";
+
+"tokyo.meiji_jingu_ginkgo_festival.name" = "메이지진구외원 은행나무축제";
+"tokyo.meiji_jingu_ginkgo_festival.description" = "황금빛으로 빛나는 은행나무길로 유명한 가을축제. 146그루의 은행나무가 만드는 황금 터널은 압권의 아름다움입니다.";
+"tokyo.meiji_jingu_ginkgo_festival.location" = "메이지진구외원";
+"tokyo.meiji_jingu_ginkgo_festival.feature1" = "황금 터널";
+"tokyo.meiji_jingu_ginkgo_festival.feature2" = "146그루 은행나무";
+"tokyo.meiji_jingu_ginkgo_festival.feature3" = "도내 굴지";
+
+"tokyo.meiji_jingu_hatsumode.name" = "메이지진구 신년 첫 참배";
+"tokyo.meiji_jingu_hatsumode.description" = "일본에서 가장 많은 참배객이 찾는 신년 첫 참배 장소. 매년 약 300만 명이 새해 기원을 위해 찾아옵니다.";
+"tokyo.meiji_jingu_hatsumode.location" = "메이지진구";
+"tokyo.meiji_jingu_hatsumode.feature1" = "300만 명";
+"tokyo.meiji_jingu_hatsumode.feature2" = "일본 최다";
+"tokyo.meiji_jingu_hatsumode.feature3" = "새해 기원";
+
+/* **MARK: - 가나가와** */
+"kanagawa.odawara_plum_festival.name" = "오다와라 매화축제";
+"kanagawa.odawara_plum_festival.description" = "약 450그루의 매화가 피는 오다와라성지공원의 매화축제. 성을 배경으로 한 매화꽃이 봄의 방문을 알립니다.";
+"kanagawa.odawara_plum_festival.location" = "오다와라성지공원";
+"kanagawa.odawara_plum_festival.feature1" = "450그루의 매화";
+"kanagawa.odawara_plum_festival.feature2" = "오다와라성";
+"kanagawa.odawara_plum_festival.feature3" = "봄의 방문";
+
+"kanagawa.hakone_ekiden.name" = "하코네 역전";
+"kanagawa.hakone_ekiden.description" = "정월의 풍물시로 친숙한 대학 역전의 최고봉. 도쿄~하코네 간 왕복 217.1km를 2일간 달려 나갑니다.";
+"kanagawa.hakone_ekiden.location" = "도쿄~하코네";
+"kanagawa.hakone_ekiden.feature1" = "정월 풍물시";
+"kanagawa.hakone_ekiden.feature2" = "대학 역전";
+"kanagawa.hakone_ekiden.feature3" = "217.1km";
+
+/* **MARK: - 니가타** */
+"niigata.takada_castle_cherry_festival.name" = "다카다성 백만인 관벚회";
+"niigata.takada_castle_cherry_festival.description" = "일본 3대 야벚꽃 중 하나. 약 4000그루의 벚꽃과 3000개의 봉봉이가 자아내는 야벚꽃의 아름다움은 각별합니다.";
+"niigata.takada_castle_cherry_festival.location" = "다카다공원";
+"niigata.takada_castle_cherry_festival.feature1" = "일본 3대 야벚꽃";
+"niigata.takada_castle_cherry_festival.feature2" = "4000그루의 벚꽃";
+"niigata.takada_castle_cherry_festival.feature3" = "3000개 봉봉";
+
+/* **MARK: - 도야마** */
+"toyama.tonami_tulip_fair.name" = "도나미 튤립 페어";
+"toyama.tonami_tulip_fair.description" = "300만 그루의 튤립이 만발하는 일본 최대급의 튤립축제. 다테야마연봉을 배경으로 한 절경을 즐길 수 있습니다.";
+"toyama.tonami_tulip_fair.location" = "도나미 튤립공원";
+"toyama.tonami_tulip_fair.feature1" = "300만 그루";
+"toyama.tonami_tulip_fair.feature2" = "일본 최대급";
+"toyama.tonami_tulip_fair.feature3" = "다테야마연봉";
+
+// 자연관광명소타입
+"nature_type.night_view" = "야경";
+"nature_type.starry_sky" = "별하늘";
+"nature_type.sea" = "바다";
+"nature_type.camping" = "캠핑";
+
+// 설정화면
+"nature_settings" = "설정";
+"nature_settings_title" = "자연관광명소 설정";
+"display_icon_settings" = "표시 아이콘 설정";
+"select_display_icons" = "지도에 표시할 아이콘을 선택해주세요";
+"spots_count_format" = "%d곳";
+"spot_count_format" = "%d곳";
+
+// 상세화면
+"spot_features" = "스팟 특징";
+"spot_map" = "스팟 지도";
+
+
+
+// MARK: - Night View Spots
+"nightview_hakodate_name" = "하코다테산";
+"nightview_hakodate_description" = "100만 달러의 야경으로 유명한 홋카이도의 대표적인 야경 명소";
+
+"nightview_maya_name" = "마야산 국성대";
+"nightview_maya_description" = "고베 시가지와 오사카만을 한눈에 볼 수 있는 간사이 최고의 야경 명소";
+
+"nightview_inasa_name" = "이나사산";
+"nightview_inasa_description" = "세계 신 3대 야경으로 선정된 나가사키의 아름다운 야경";
+
+"nightview_tokyo_towers_name" = "도쿄 스카이트리·도쿄타워";
+"nightview_tokyo_towers_description" = "도쿄를 대표하는 두 타워에서의 절경 야경";
+
+"nightview_shonan_name" = "쇼난다이라";
+"nightview_shonan_description" = "쇼난 해안을 한눈에 볼 수 있는 가나가와현의 야경 명소";
+
+"nightview_rokko_name" = "롯코산";
+"nightview_rokko_description" = "1000만 달러의 야경이라 불리는 간사이 최고의 야경 명소";
+
+"nightview_sarakura_name" = "사라쿠라산";
+"nightview_sarakura_description" = "신일본 3대 야경 중 하나, 기타큐슈시의 야경을 한눈에";
+
+"nightview_minatomirai_name" = "미나토미라이21";
+"nightview_minatomirai_description" = "요코하마의 대표적인 야경 지역, 관람차와 빌딩군의 미경";
+
+"nightview_tempozan_name" = "텐포잔";
+"nightview_tempozan_description" = "오사카항의 야경을 즐길 수 있는 베이 에리어 명소";
+
+"nightview_wakakusa_name" = "와카쿠사산";
+"nightview_wakakusa_description" = "나라 분지의 야경을 한눈에 볼 수 있는 고도의 야경 명소";
+
+"nightview_shiroyama_name" = "시로야마 공원";
+"nightview_shiroyama_description" = "사쿠라지마와 가고시마 시가지를 바라보는 남큐슈의 야경 명소";
+
+"nightview_moiwa_name" = "모이와산";
+"nightview_moiwa_description" = "삿포로 시가지의 야경을 한눈에 볼 수 있는 홋카이도의 야경 명소";
+
+// MARK: - Starry Sky Spots
+"starry_achi_name" = "아치촌";
+"starry_achi_description" = "일본 제일의 별하늘 마을로 인정받은 나가노현의 별 관측지";
+
+"starry_ishigaki_name" = "이시가키섬";
+"starry_ishigaki_description" = "남십자성도 볼 수 있는 오키나와현의 별 관측 명소";
+
+"starry_nobeyama_name" = "노베야마 고원";
+"starry_nobeyama_description" = "해발 1300m 고원에서의 아름다운 별 관측지";
+
+"starry_utsukushigahara_name" = "우츠쿠시가하라 고원";
+"starry_utsukushigahara_description" = "야츠가타케 연봉을 바라보는 최고의 별 관측지";
+
+"starry_odaigahara_name" = "오다이가하라";
+"starry_odaigahara_description" = "긴키 지방 최고의 별 관측지로 알려진 나라현의 고원";
+
+"starry_yatsugatake_name" = "야츠가타케";
+"starry_yatsugatake_description" = "나가노현·야마나시현에 걸친 별 관측 명소";
+
+"starry_iriomote_name" = "이리오모테섬";
+"starry_iriomote_description" = "때묻지 않은 자연에 둘러싸인 오키나와현의 별하늘 명소";
+
+"starry_kuju_name" = "쿠주 고원";
+"starry_kuju_description" = "큐슈 오이타현에 있는 고원에서의 별 관측지";
+
+"starry_kirigamine_name" = "키리가미네 고원";
+"starry_kirigamine_description" = "나가노현 고원 지대에서의 아름다운 별하늘 명소";
+
+"starry_akagi_name" = "아카기산";
+"starry_akagi_description" = "군마현 산정에서의 별 관측지";
+
+"starry_zao_name" = "자오";
+"starry_zao_description" = "야마가타현·미야기현 경계에 있는 별 관측 명소";
+
+"starry_daisetsu_name" = "다이세츠산";
+"starry_daisetsu_description" = "홋카이도 최고봉에서의 웅대한 별하늘 체험";
+
+"starry_tsubetsu_name" = "츠베츠 고개";
+"starry_tsubetsu_description" = "홋카이도 굴지의 별 관측지";
+
+"starry_erimo_name" = "에리모곶";
+"starry_erimo_description" = "홋카이도 최남단에서의 아름다운 별 관측 명소";
+
+// MARK: - Camping Spots
+// 홋카이도
+"camping_toya_name" = "도야호 캠핑장";
+"camping_toya_description" = "홋카이도의 온천호에서의 캠핑";
+"camping_shikotsu_name" = "시코츠호 캠핑장";
+"camping_shikotsu_description" = "홋카이도의 투명도가 높은 호수에서의 캠핑";
+"camping_mashu_name" = "마슈호 캠핑장";
+"camping_mashu_description" = "홋카이도의 아름다운 호수에서의 캠핑";
+"camping_furano_biei_name" = "후라노·비에이 지역 캠핑장";
+"camping_furano_biei_description" = "홋카이도의 꽃밭과 구릉지대에서의 캠핑";
+"camping_niseko_name" = "니세코 주변 캠핑장";
+"camping_niseko_description" = "홋카이도의 리조트 지역에서의 캠핑";
+// 도호쿠
+"camping_towada_name" = "도와다호 캠핑장";
+"camping_towada_description" = "아오모리현·아키타현의 아름다운 호반에서의 캠핑";
+"camping_bandai_name" = "반다이 고원 캠핑장";
+"camping_bandai_description" = "후쿠시마현의 고원에서의 캠핑";
+"camping_goshikinuma_name" = "우라반다이 고시키누마 캠핑장";
+"camping_goshikinuma_description" = "후쿠시마현의 신비로운 늪들에서의 캠핑";
+"camping_zao_name" = "자오 보다이라 캠핑장";
+"camping_zao_description" = "야마가타현·미야기현의 산악지대에서의 캠핑";
+// 간토
+"camping_okutama_name" = "오쿠타마 캠핑장군";
+"camping_okutama_description" = "도쿄도의 자연이 풍부한 캠핑장";
+"camping_tanzawa_name" = "단자와호 캠핑장";
+"camping_tanzawa_description" = "가나가와현의 산간부와 호수에서의 캠핑";
+"camping_nasu_name" = "나스 고원 캠핑장";
+"camping_nasu_description" = "토치기현의 고원 리조트에서의 캠핑";
+"camping_okunikko_name" = "오쿠닛코 캠핑장";
+"camping_okunikko_description" = "토치기현의 추젠지 호수 주변에서의 캠핑";
+"camping_hakone_name" = "하코네 캠핑장";
+"camping_hakone_description" = "가나가와현의 온천 리조트에서의 캠핑";
+// 주부
+"camping_fujigoko_name" = "후지고코 캠핑장군";
+"camping_fujigoko_description" = "후지산을 바라보는 절호의 캠핑 지역";
+"camping_kamikochi_name" = "가미코치 캠핑장";
+"camping_kamikochi_description" = "기타알프스의 관문에서의 캠핑";
+"camping_hakuba_name" = "하쿠바 이와타케 캠핑장";
+"camping_hakuba_description" = "나가노현의 기타알프스에서의 캠핑";
+"camping_karuizawa_name" = "가루이자와 캠핑장";
+"camping_karuizawa_description" = "나가노현의 피서지에서의 캠핑";
+"camping_kiyosato_name" = "기요사토 고원 캠핑장";
+"camping_kiyosato_description" = "야마나시현의 야츠가타케 남록에서의 캠핑";
+"camping_shiga_name" = "시가 고원 캠핑장";
+"camping_shiga_description" = "나가노현의 고원 리조트에서의 캠핑";
+// 간사이·주고쿠·시코쿠
+"camping_biwa_name" = "비와호 캠핑장";
+"camping_biwa_description" = "시가현의 일본 최대 호수에서의 캠핑";
+"camping_hiruzen_name" = "히루젠 고원 캠핑장";
+"camping_hiruzen_description" = "오카야마현의 고원에서의 캠핑 체험";
+"camping_odaigahara_name" = "오다이가하라 캠핑장";
+"camping_odaigahara_description" = "나라현·미에현의 산악지대에서의 캠핑";
+"camping_tsurugi_name" = "츠루기산 캠핑장";
+"camping_tsurugi_description" = "도쿠시마현의 시코쿠 제2고봉에서의 캠핑";
+"camping_shimanto_name" = "시만토강 캠핑장";
+"camping_shimanto_description" = "고치현의 맑은 시만토강에서의 캠핑";
+// 규슈·오키나와
+"camping_aso_name" = "아소 쿠사센리 캠핑장";
+"camping_aso_description" = "구마모토현의 웅대한 칼데라에서의 캠핑";
+"camping_kuju_name" = "구주 고원 캠핑장";
+"camping_kuju_description" = "오이타현의 구중연산에서의 캠핑";
+"camping_kirishima_name" = "기리시마 고원 캠핑장";
+"camping_kirishima_description" = "가고시마현·미야자키현의 화산군에서의 캠핑";
+"camping_yakushima_name" = "야쿠시마 캠핑장";
+"camping_yakushima_description" = "가고시마현의 세계유산 섬에서의 캠핑";
+"camping_yanbaru_name" = "얀바루 캠핑장 (오키나와)";
+"camping_yanbaru_description" = "오키나와현 북부의 아열대 숲에서의 캠핑";
+
+// MARK: - Sea Spots
+"sea_miyako_irabu_name" = "미야코섬·이라부대교";
+"sea_miyako_irabu_description" = "투명도 발군의 푸른 바다와 절경의 다리";
+
+"sea_ishigaki_kabira_name" = "이시가키섬·가비라만";
+"sea_ishigaki_kabira_description" = "에메랄드 그린의 아름다운 만";
+
+"sea_shirahama_name" = "시라하마";
+"sea_shirahama_description" = "와카야마현의 백사가 아름다운 해변";
+
+"sea_tsunoshima_name" = "츠노시마 대교";
+"sea_tsunoshima_description" = "에메랄드 그린 바다에 걸린 절경의 다리";
+
+"sea_takeno_name" = "다케노 해안";
+"sea_takeno_description" = "효고현의 아름다운 해안선";
+
+"sea_kujukurihama_name" = "구주쿠리하마";
+"sea_kujukurihama_description" = "치바현의 장대한 모래사장 해안";
+
+"sea_shonan_name" = "쇼난 해안";
+"sea_shonan_description" = "가나가와현의 대표적인 해안 리조트";
+
+"sea_izu_shirahama_name" = "이즈·시라하마 해안";
+"sea_izu_shirahama_description" = "시즈오카현의 아름다운 백사 해변";
+
+"sea_chirihama_name" = "노토반도·치리하마 나기사 드라이브웨이";
+"sea_chirihama_description" = "차로 달릴 수 있는 일본 유일의 모래사장";
+
+"sea_tottori_name" = "돗토리 사구";
+"sea_tottori_description" = "일본 최대급 사구와 동해의 절경";
+
+"sea_katsurahama_name" = "가츠라하마";
+"sea_katsurahama_description" = "고치현의 달 명소로 알려진 아름다운 해안";
+
+"sea_blue_cave_name" = "푸른 동굴·마에다곶";
+"sea_blue_cave_description" = "환상적인 푸른 빛에 감싸인 동굴";
+
+"sea_zanpa_name" = "잔파곶";
+"sea_zanpa_description" = "오키나와 본섬의 절경 곶";
+
+"sea_manzamo_name" = "만자모";
+"sea_manzamo_description" = "오키나와 본섬의 코끼리 코 모양을 한 절경 곶";
+
+"sea_hedo_name" = "헤도곶";
+"sea_hedo_description" = "오키나와 본섬 최북단의 곶";
+
+"sea_erimo_cape_name" = "에리모곶";
+"sea_erimo_cape_description" = "홋카이도 최남단에서의 웅대한 바다 경치";
+
+"sea_shakotan_name" = "샤코탄반도·가무이곶";
+"sea_shakotan_description" = "홋카이도의 아름다운 해안선과 절경 곶";
+
+"sea_shiretoko_name" = "시레토코반도";
+"sea_shiretoko_description" = "세계자연유산의 웅대한 해안선";
+
+"sea_sanriku_name" = "산리쿠 해안";
+"sea_sanriku_description" = "이와테현·미야기현의 아름다운 리아스식 해안";
+
+"sea_matsushima_name" = "마츠시마";
+"sea_matsushima_description" = "미야기현의 일본 3경 중 하나";
+
+"sea_tanesashi_name" = "다네사시 해안";
+"sea_tanesashi_description" = "아오모리현의 아름다운 해안선";
+
+"sea_jogashima_name" = "조가시마";
+"sea_jogashima_description" = "가나가와현 미우라반도의 경승지";
+
+"sea_enoshima_name" = "에노시마";
+"sea_enoshima_description" = "쇼난을 대표하는 바다 리조트";
+
+"sea_atami_name" = "아타미 해안";
+"sea_atami_description" = "시즈오카현의 온천 리조트 해안";
+
+"sea_iseshima_name" = "이세시마";
+"sea_iseshima_description" = "미에현의 아름다운 해안과 리아스식 지형";
+
+"sea_amanohashidate_name" = "아마노하시다테";
+"sea_amanohashidate_description" = "교토부의 일본 3경 중 하나";
+
+"sea_naruto_name" = "나루토 해협";
+"sea_naruto_description" = "도쿠시마현의 소용돌이로 유명한 해협";
+
+"sea_muroto_name" = "무로토곶";
+"sea_muroto_description" = "고치현의 태평양에 돌출한 곶";
+
+"sea_ashizuri_name" = "아시즈리곶";
+"sea_ashizuri_description" = "고치현 최남단의 절경 곶";
+
+"sea_munakata_name" = "무나카타·오키노시마";
+"sea_munakata_description" = "후쿠오카현의 세계유산 섬";
+
+"sea_iki_tsushima_name" = "이키·쓰시마";
+"sea_iki_tsushima_description" = "나가사키현의 역사 있는 이도";
+
+"sea_amakusa_name" = "아마쿠사";
+"sea_amakusa_description" = "구마모토현의 아름다운 섬들";
+
+"sea_nichinan_name" = "니치난 해안";
+"sea_nichinan_description" = "미야자키현의 아름다운 해안선";
+
+// 야경 스팟 (Night View Spots)
+"hakodate_mount" = "하코다테산";
+"maya_mount_observatory" = "마야산 국성대";
+"inasa_mount" = "이나사산";
+"tokyo_skytree_tower" = "도쿄 스카이트리・도쿄타워";
+"shonan_daira" = "쇼난다이라";
+"rokko_mount" = "롯코산";
+"sarakura_mount" = "사라쿠라산";
+"minato_mirai_21" = "미나토미라이 21";
+"tempozan" = "덴포잔";
+"wakakusa_mount" = "와카쿠사산";
+"shiroyama_park" = "시로야마 공원";
+"moiwa_mount" = "모이와산";
+
+// 별하늘 스팟 (Stargazing Spots)
+"achi_village" = "아치촌";
+"ishigaki_island" = "이시가키섬";
+"nobeyama_plateau" = "노베야마 고원";
+"utsukushigahara_plateau" = "우츠쿠시가하라 고원";
+"odaigahara" = "오다이가하라";
+"yatsugatake" = "야츠가타케";
+"iriomote_island" = "이리오모테섬";
+"kuju_plateau" = "구주 고원";
+"kirigamine_plateau" = "키리가미네 고원";
+"akagi_mount" = "아카기산";
+"zao" = "자오";
+"daisetsuzan" = "다이세츠잔";
+"tsubetsu_pass" = "츠베츠 고개";
+"erimo_cape" = "에리모 곶";
+
+// 캠핑지 (Camping Sites)
+"fuji_five_lakes" = "후지 5호 주변";
+"okutama" = "오쿠타마";
+"hiruzen_plateau" = "히루젠 고원";
+"shiga_plateau" = "시가 고원";
+"towada_lake" = "도와다호반";
+"kamikochi" = "카미코치";
+"oze" = "오제";
+"hakuba" = "하쿠바";
+"nasu_plateau" = "나스 고원";
+"karuizawa" = "카루이자와";
+"kita_karuizawa" = "기타카루이자와";
+"kiyosato_plateau" = "키요사토 고원";
+"hakone" = "하코네";
+"izu_peninsula" = "이즈 반도";
+"boso_peninsula" = "보소 반도";
+"tanzawa" = "단자와";
+"oku_nikko" = "오쿠닛코";
+"bandai_plateau" = "반다이 고원";
+"appi_plateau" = "앗피 고원";
+"mashu_lake" = "마슈호";
+"toya_lake" = "도야호";
+"shikotsu_lake" = "시코츠호";
+
+// 바다 스팟 (Beach/Ocean Spots)
+"miyako_irabu_bridge" = "미야코섬・이라부 대교";
+"ishigaki_kabira_bay" = "이시가키섬・카비라만";
+"shirahama_beach" = "시라하마";
+"tsunoshima_bridge" = "츠노시마 대교";
+"takeno_coast" = "타케노 해안";
+"kujukuri_beach" = "구십구리해변";
+"shonan_coast" = "쇼난 해안";
+"izu_shirahama_coast" = "이즈・시라하마 해안";
+"noto_chirihama_driveway" = "노토 반도・치리하마 나기사 드라이브웨이";
+"tottori_sand_dunes" = "돗토리 사구";
+"katsurahama" = "카츠라하마";
+"blue_cave_maeda_cape" = "푸른 동굴・마에다 곶";
+"zanpa_cape" = "잔파 곶";
+"manza_cape" = "만자모";
+"hedo_cape" = "헤도 곶";
+"shakotan_kamui_cape" = "샤코탄 반도・카무이 곶";
+"shiretoko_peninsula" = "시레토코 반도";
+"sanriku_coast" = "산리쿠 해안";
+"matsushima" = "마츠시마";
+"tanesashi_coast" = "타네사시 해안";
+"jogashima" = "조가시마";
+"enoshima" = "에노시마";
+"atami_coast" = "아타미 해안";
+"ise_shima" = "이세시마";
+"amanohashidate" = "아마노하시다테";
+"naruto_strait" = "나루토 해협";
+"muroto_cape" = "무로토 곶";
+"ashizuri_cape" = "아시즈리 곶";
+"munakata_okinoshima" = "무나카타・오키노시마";
+"iki_tsushima" = "이키・쓰시마";
+"amakusa" = "아마쿠사";
+"nichinan_coast" = "니치난 해안";

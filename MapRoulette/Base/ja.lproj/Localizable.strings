@@ -1,0 +1,5055 @@
+/* 
+  English.strings
+  MapRoulette
+
+  Created by 上別縄祐也 on 2025/08/08.
+  
+*/
+
+"tourism.spot" = "代表的な観光スポット";
+"tourism.info" = "観光情報";
+
+/* Prefecture names in Japanese */
+"prefecture.hokkaido" = "北海道";
+"prefecture.aomori" = "青森県";
+"prefecture.iwate" = "岩手県";
+"prefecture.akita" = "秋田県";
+"prefecture.miyagi" = "宮城県";
+"prefecture.yamagata" = "山形県";
+"prefecture.fukushima" = "福島県";
+"prefecture.ibaraki" = "茨城県";
+"prefecture.chiba" = "千葉県";
+"prefecture.tochigi" = "栃木県";
+"prefecture.gunma" = "群馬県";
+"prefecture.saitama" = "埼玉県";
+"prefecture.tokyo" = "東京都";
+"prefecture.kanagawa" = "神奈川県";
+"prefecture.niigata" = "新潟県";
+"prefecture.nagano" = "長野県";
+"prefecture.yamanashi" = "山梨県";
+"prefecture.shizuoka" = "静岡県";
+"prefecture.aichi" = "愛知県";
+"prefecture.mie" = "三重県";
+"prefecture.gifu" = "岐阜県";
+"prefecture.fukui" = "福井県";
+"prefecture.ishikawa" = "石川県";
+"prefecture.toyama" = "富山県";
+"prefecture.shiga" = "滋賀県";
+"prefecture.kyoto" = "京都府";
+"prefecture.hyogo" = "兵庫県";
+"prefecture.nara" = "奈良県";
+"prefecture.wakayama" = "和歌山県";
+"prefecture.osaka" = "大阪府";
+"prefecture.tottori" = "鳥取県";
+"prefecture.okayama" = "岡山県";
+"prefecture.hiroshima" = "広島県";
+"prefecture.yamaguchi" = "山口県";
+"prefecture.shimane" = "島根県";
+"prefecture.kagawa" = "香川県";
+"prefecture.tokushima" = "徳島県";
+"prefecture.kochi" = "高知県";
+"prefecture.ehime" = "愛媛県";
+"prefecture.fukuoka" = "福岡県";
+"prefecture.oita" = "大分県";
+"prefecture.miyazaki" = "宮崎県";
+"prefecture.kagoshima" = "鹿児島県";
+"prefecture.kumamoto" = "熊本県";
+"prefecture.saga" = "佐賀県";
+"prefecture.nagasaki" = "長崎県";
+"prefecture.okinawa" = "沖縄県";
+
+/* Region names in Japanese */
+"region.hokkaido" = "北海道";
+"region.tohoku" = "東北";
+"region.kanto" = "関東";
+"region.koshinetsu" = "甲信越";
+"region.tokai" = "東海";
+"region.hokuriku" = "北陸";
+"region.kinki" = "近畿";
+"region.chugoku" = "中国";
+"region.shikoku" = "四国";
+"region.kyushu" = "九州";
+"region.okinawa" = "沖縄";
+
+/* Display Mode in Japanese */
+"display_mode.tourism" = "観光地モード";
+"display_mode.tourism.description" = "全都道府県から選択";
+"display_mode.onsen" = "温泉地モード";
+"display_mode.onsen.description" = "温泉がある都道府県のみ";
+
+/* Settings UI in Japanese */
+"display_mode" = "表示モード";
+"roulette_settings" = "設定";
+"select_all" = "全選択";
+"deselect_all" = "全解除";
+"done" = "完了";
+"weight_settings" = "重み付け設定";
+"weight_settings_description" = "都道府県ごとの選択確率を調整";
+"weight_settings_explanation" = "各都道府県の選択される確率を調整できます。数値が大きいほど選ばれやすくなります。";
+"reset" = "リセット";
+"disabled" = "無効";
+"weight_format" = "重み: %.1f";
+"onsen_count_format" = "温泉地: %d箇所";
+"onsen_locations_count" = "%dつの温泉地";
+"onsen_region_count" = "(%d温泉地)";
+"detail_info" = "詳細情報";
+"no_onsen" = "温泉なし";
+"back" = "戻る";
+"japan" = "日本";
+"target_prefecture_count" = "対象: %d都道府県";
+
+
+/* Onsen Types in Japanese */
+"hot_spring_features" = "温泉の特徴";
+"hot_spring_area_map" = "温泉地マップ";
+"open_in_external_map" = "外部の地図アプリで開く";
+"hot_spring_info" = "温泉情報";
+"onsen_type.scenic" = "景観温泉";
+"onsen_type.historical" = "歴史温泉";
+"onsen_type.therapeutic" = "療養温泉";
+"onsen_type.resort" = "リゾート";
+"onsen_type.mountain" = "山間温泉";
+"onsen_type.seaside" = "海辺温泉";
+"onsen_type.ski" = "スキー温泉";
+
+/* Onsen Names in Japanese */
+"onsen.noboribetsu" = "登別温泉";
+"onsen.toyako" = "洞爺湖温泉";
+"onsen.jozankei" = "定山渓温泉";
+"onsen.yunokawa" = "函館湯の川";
+"onsen.nyuto" = "乳頭温泉郷";
+"onsen.ginzan" = "銀山温泉";
+"onsen.zao" = "蔵王温泉";
+"onsen.hanamaki" = "花巻温泉";
+"onsen.naruko" = "鳴子温泉";
+"onsen.iizaka" = "飯坂温泉";
+"onsen.hakone" = "箱根温泉";
+"onsen.kusatsu" = "草津温泉";
+"onsen.ikaho" = "伊香保温泉";
+"onsen.atami" = "熱海温泉";
+"onsen.shuzenji" = "修善寺温泉";
+"onsen.atagawa" = "熱川温泉";
+"onsen.isawa" = "石和温泉";
+"onsen.nozawa" = "野沢温泉";
+"onsen.kamisuwa" = "上諏訪温泉";
+"onsen.gero" = "下呂温泉";
+"onsen.yamanaka" = "山中温泉";
+"onsen.wakura" = "和倉温泉";
+"onsen.yamashiro" = "山代温泉";
+"onsen.katayamazu" = "片山津温泉";
+"onsen.unazuki" = "宇奈月温泉";
+"onsen.arima" = "有馬温泉";
+"onsen.kinosaki" = "城崎温泉";
+"onsen.yumura" = "湯村温泉";
+"onsen.shirahama" = "白浜温泉";
+"onsen.katsuura" = "勝浦温泉";
+"onsen.misasa" = "三朝温泉";
+"onsen.tamatsukuri" = "玉造温泉";
+"onsen.dogo" = "道後温泉";
+"onsen.beppu" = "別府温泉";
+"onsen.yufuin" = "湯布院温泉";
+"onsen.ibusuki" = "指宿温泉";
+"onsen.kurokawa" = "黒川温泉";
+"onsen.unzen" = "雲仙温泉";
+"onsen.ureshino" = "嬉野温泉";
+"onsen.takeo" = "武雄温泉";
+
+/* Onsen Descriptions in Japanese */
+"onsen.noboribetsu.desc" = "地獄谷で有名な硫黄泉の名湯";
+"onsen.toyako.desc" = "美しい湖畔の温泉リゾート";
+"onsen.jozankei.desc" = "札幌の奥座敷として親しまれる";
+"onsen.yunokawa.desc" = "函館観光の拠点にもなる温泉地";
+"onsen.nyuto.desc" = "秘湯ムード満点の山間の温泉郷";
+"onsen.ginzan.desc" = "大正ロマンあふれるノスタルジックな温泉街";
+"onsen.zao.desc" = "スキーでも有名な高原温泉";
+"onsen.hanamaki.desc" = "宮沢賢治ゆかりの地";
+"onsen.naruko.desc" = "紅葉の名所としても知られる";
+"onsen.iizaka.desc" = "松尾芭蕉も訪れた歴史ある温泉";
+"onsen.hakone.desc" = "都心からのアクセスが良く、芦ノ湖や富士山の景色も楽しめる";
+"onsen.kusatsu.desc" = "「恋の病以外何でも治る」と言われる強酸性の湯で有名";
+"onsen.ikaho.desc" = "石段街で知られる情緒ある温泉街";
+"onsen.atami.desc" = "首都圏から近い海辺のリゾート温泉";
+"onsen.shuzenji.desc" = "伊豆半島の山間にある文学の里";
+"onsen.atagawa.desc" = "伊豆東海岸の海を望む温泉";
+"onsen.isawa.desc" = "ぶどう狩りと温泉が楽しめる";
+"onsen.nozawa.desc" = "スキーと外湯めぐりで有名";
+"onsen.kamisuwa.desc" = "諏訪湖畔の温泉地";
+"onsen.gero.desc" = "日本三名泉の一つとして知られる美肌の湯";
+"onsen.yamanaka.desc" = "加賀温泉郷の一つで、松尾芭蕉も愛した温泉地";
+"onsen.wakura.desc" = "能登半島の海辺の温泉";
+"onsen.yamashiro.desc" = "加賀温泉郷の中心的存在";
+"onsen.katayamazu.desc" = "柴山潟を望む湖畔の温泉";
+"onsen.unazuki.desc" = "黒部峡谷の玄関口";
+"onsen.arima.desc" = "日本最古の温泉の一つで、金泉・銀泉で有名";
+"onsen.kinosaki.desc" = "7つの外湯めぐりで有名";
+"onsen.yumura.desc" = "山陰の小京都と呼ばれる";
+"onsen.shirahama.desc" = "海沿いの温泉地で、パンダで有名なアドベンチャーワールドも近い";
+"onsen.katsuura.desc" = "洞窟風呂で知られる海辺の温泉";
+"onsen.misasa.desc" = "ラドン温泉で有名";
+"onsen.tamatsukuri.desc" = "美肌の湯として女性に人気";
+"onsen.dogo.desc" = "日本最古級の温泉で夏目漱石の『坊っちゃん』の舞台";
+"onsen.beppu.desc" = "源泉数日本一を誇る温泉王国";
+"onsen.yufuin.desc" = "由布岳を望む落ち着いた雰囲気の高原リゾート";
+"onsen.ibusuki.desc" = "砂蒸し風呂で有名な南国の温泉地";
+"onsen.kurokawa.desc" = "自然に溶け込んだ露天風呂が人気";
+"onsen.unzen.desc" = "雲仙岳の中腹にある高原温泉";
+"onsen.ureshino.desc" = "美肌効果の高いぬめりのある湯";
+"onsen.takeo.desc" = "竜宮城を思わせる楼門で有名";
+
+
+
+/* Main Settings */
+"onsen_settings_title" = "";
+"display_settings" = "表示設定";
+"onsen_selection" = "温泉地選択";
+
+/* Grouping Mode */
+"grouping_by_region" = "地方別";
+"grouping_by_type" = "タイプ別";
+
+/* Weight Settings */
+"weight_adjustment" = "重み付け調整";
+"probability_format" = "%.1f%%";
+
+/* Region Headers */
+"region_count_format" = "(%d温泉地)";
+"locations_count_format" = "%d箇所";
+
+
+/* OnsenDetailView */
+"onsen_features" = "温泉の特徴";
+"onsen_map" = "温泉地マップ";
+"open_external_map" = "外部の地図アプリで開く";
+"start" = "スタート";
+"stop" = "ストップ";
+
+"tourism_detail_back" = "戻る";
+"tourism_detail_map" = "観光地マップ";
+"tourism_detail_photo" = "観光地写真";
+"tourism_detail_photo_loading" = "写真を読み込み中...";
+
+"tab.prefecture" = "都道府県";
+"tab.onsen" = "温泉地";
+"tab.nature" = "自然";
+"tab.festival" = "祭・イベント";
+
+
+
+/* Japanese Localizable.strings */
+
+// Hokkaido
+"attraction_sapporo_snow_festival" = "札幌雪まつり";
+"attraction_sapporo_snow_festival_desc" = "冬の札幌を彩る雪と氷の祭典";
+"attraction_hakodate_mountain" = "函館山";
+"attraction_hakodate_mountain_desc" = "美しい夜景で有名な函館のシンボル";
+"attraction_asahiyama_zoo" = "旭山動物園";
+"attraction_asahiyama_zoo_desc" = "行動展示で話題の動物園";
+"attraction_furano_lavender" = "富良野ラベンダー畑";
+"attraction_furano_lavender_desc" = "夏の紫色に染まる絶景";
+"attraction_shiretoko_lakes" = "知床五湖";
+"attraction_shiretoko_lakes_desc" = "世界自然遺産の原始の森";
+"attraction_otaru_canal" = "小樽運河";
+"attraction_otaru_canal_desc" = "ガス灯とレンガ倉庫が織りなすロマンチックな運河";
+"attraction_lake_toya" = "洞爺湖";
+"attraction_lake_toya_desc" = "温泉と花火で有名なカルデラ湖";
+
+"food_genghis_khan" = "ジンギスカン";
+"food_seafood_bowl" = "海鮮丼";
+"food_soup_curry" = "スープカレー";
+"food_yubari_melon" = "夕張メロン";
+"food_shiroi_koibito" = "白い恋人";
+
+// Aomori
+"attraction_hirosaki_castle" = "弘前城";
+"attraction_hirosaki_castle_desc" = "桜の名所として有名な美しい城";
+"attraction_oirase_stream" = "奥入瀬渓流";
+"attraction_oirase_stream_desc" = "紅葉の美しさで知られる渓流";
+"attraction_lake_towada" = "十和田湖";
+"attraction_lake_towada_desc" = "カルデラ湖の神秘的な美しさ";
+"attraction_shirakami_mountains" = "白神山地";
+"attraction_shirakami_mountains_desc" = "世界最大級のブナ原生林";
+"attraction_nebuta_museum" = "ねぶた祭り会館";
+"attraction_nebuta_museum_desc" = "青森の夏祭りの魅力を体験";
+"attraction_hakkoda_mountains" = "八甲田山";
+"attraction_hakkoda_mountains_desc" = "樹氷と絶景が楽しめる山岳リゾート";
+
+"food_apple" = "りんご";
+"food_oma_tuna" = "大間まぐろ";
+"food_senbei_soup" = "せんべい汁";
+"food_tsugaru_soba" = "津軽そば";
+"food_ichigo_ni" = "いちご煮";
+
+// Iwate
+"attraction_chusonji" = "中尊寺";
+"attraction_chusonji_desc" = "平泉の世界遺産の中心";
+"attraction_hiraizumi" = "平泉";
+"attraction_hiraizumi_desc" = "奥州藤原氏の栄華を偲ぶ";
+"attraction_ryusendo_cave" = "龍泉洞";
+"attraction_ryusendo_cave_desc" = "地底湖の青い美しさ";
+"attraction_hachimantai" = "八幡平";
+"attraction_hachimantai_desc" = "高原の自然と温泉";
+"attraction_hanamaki_onsen" = "花巻温泉";
+"attraction_hanamaki_onsen_desc" = "宮沢賢治ゆかりの温泉地";
+"attraction_jodogahama" = "浄土ヶ浜";
+"attraction_jodogahama_desc" = "白い岩と青い海のコントラストが美しい海岸";
+
+"food_wanko_soba" = "わんこそば";
+"food_morioka_cold_noodles" = "盛岡冷麺";
+"food_maezawa_beef" = "前沢牛";
+"food_nanbu_senbei" = "南部煎餅";
+"food_gangetsu" = "雁月";
+
+// Akita
+"attraction_kakunodate_samurai_houses" = "角館武家屋敷";
+"attraction_kakunodate_samurai_houses_desc" = "みちのくの小京都";
+"attraction_lake_tazawa" = "田沢湖";
+"attraction_lake_tazawa_desc" = "日本一深い湖";
+"attraction_namahage_museum" = "なまはげ館";
+"attraction_namahage_museum_desc" = "秋田の伝統文化を体験";
+"attraction_akita_kanto_festival" = "秋田竿燈まつり";
+"attraction_akita_kanto_festival_desc" = "夏の夜を彩る竿燈";
+"attraction_shirakami_mountains_akita" = "白神山地";
+"attraction_shirakami_mountains_akita_desc" = "世界遺産のブナ原生林";
+"attraction_nyuto_onsen" = "乳頭温泉郷";
+"attraction_nyuto_onsen_desc" = "秘湯の雰囲気漂う温泉郷";
+
+"food_kiritanpo" = "きりたんぽ";
+"food_hinai_chicken" = "比内地鶏";
+"food_inaniwa_udon" = "稲庭うどん";
+"food_akita_komachi" = "秋田こまち";
+"food_babahera_ice" = "ババヘラアイス";
+
+// Miyagi
+"attraction_matsushima" = "松島";
+"attraction_matsushima_desc" = "日本三景の一つ";
+"attraction_sendai_castle" = "仙台城跡";
+"attraction_sendai_castle_desc" = "伊達政宗の居城跡";
+"attraction_zao" = "蔵王";
+"attraction_zao_desc" = "樹氷とスキーで有名";
+"attraction_naruko_onsen" = "鳴子温泉";
+"attraction_naruko_onsen_desc" = "歴史ある温泉郷";
+"attraction_zuiganji" = "瑞巌寺";
+"attraction_zuiganji_desc" = "松島の名刹";
+"attraction_akiu_onsen" = "秋保温泉";
+"attraction_akiu_onsen_desc" = "奥州三名湯の一つで美肌の湯として人気";
+
+"food_beef_tongue" = "牛タン";
+"food_sasukamaboko" = "笹かまぼこ";
+"food_zunda_mochi" = "ずんだ餅";
+"food_seri_nabe" = "せり鍋";
+"food_shiroishi_somen" = "白石温麺";
+
+// Yamagata
+"attraction_yamadera" = "山寺";
+"attraction_yamadera_desc" = "松尾芭蕉も訪れた名刹";
+"attraction_zao_onsen" = "蔵王温泉";
+"attraction_zao_onsen_desc" = "樹氷で有名な温泉地";
+"attraction_ginzan_onsen" = "銀山温泉";
+"attraction_ginzan_onsen_desc" = "大正ロマン漂う温泉街";
+"attraction_mount_gassan" = "月山";
+"attraction_mount_gassan_desc" = "出羽三山の一つ";
+"attraction_mount_haguro" = "羽黒山";
+"attraction_mount_haguro_desc" = "出羽三山神社の本社";
+"attraction_mogami_river_cruise" = "最上川舟下り";
+"attraction_mogami_river_cruise_desc" = "風光明媚な川下り体験";
+
+"food_cherry" = "さくらんぼ";
+"food_yonezawa_beef" = "米沢牛";
+"food_imoni" = "芋煮";
+"food_tama_konnyaku" = "玉こんにゃく";
+"food_cold_ramen" = "冷やしラーメン";
+
+// Fukushima
+"attraction_aizu_wakamatsu_castle" = "会津若松城";
+"attraction_aizu_wakamatsu_castle_desc" = "白虎隊で有名な名城";
+"attraction_goshikinuma" = "五色沼";
+"attraction_goshikinuma_desc" = "神秘的な色の沼群";
+"attraction_spa_resort_hawaiians" = "スパリゾートハワイアンズ";
+"attraction_spa_resort_hawaiians_desc" = "常夏のリゾート施設";
+"attraction_ouchi_juku" = "大内宿";
+"attraction_ouchi_juku_desc" = "江戸時代の宿場町";
+"attraction_lake_inawashiro" = "猪苗代湖";
+"attraction_lake_inawashiro_desc" = "天鏡湖と呼ばれる美しい湖";
+"attraction_abukuma_cave" = "あぶくま洞";
+"attraction_abukuma_cave_desc" = "神秘的な鍾乳洞の地下世界";
+
+"food_kitakata_ramen" = "喜多方ラーメン";
+"food_aizu_chicken" = "会津地鶏";
+"food_mamadooru" = "ままどおる";
+"food_peach" = "桃";
+"food_shirakawa_ramen" = "白河ラーメン";
+
+// Ibaraki
+"attraction_kairakuen" = "偕楽園";
+"attraction_kairakuen_desc" = "日本三名園の一つ";
+"attraction_fukuroda_falls" = "袋田の滝";
+"attraction_fukuroda_falls_desc" = "日本三大名瀑の一つ";
+"attraction_hitachi_seaside_park" = "国営ひたち海浜公園";
+"attraction_hitachi_seaside_park_desc" = "ネモフィラで有名な公園";
+"attraction_mount_tsukuba" = "筑波山";
+"attraction_mount_tsukuba_desc" = "西の富士、東の筑波";
+"attraction_oarai_coast" = "大洗海岸";
+"attraction_oarai_coast_desc" = "美しい海岸線";
+"attraction_ryujin_bridge" = "竜神大吊橋";
+"attraction_ryujin_bridge_desc" = "本州最長級の歩行者専用吊橋でバンジージャンプも楽しめる";
+
+"food_natto" = "納豆";
+"food_anko_nabe" = "あんこう鍋";
+"food_hitachi_beef" = "常陸牛";
+"food_melon" = "メロン";
+"food_dried_sweet_potato" = "干し芋";
+
+// Chiba
+"attraction_tokyo_disneyland" = "東京ディズニーランド";
+"attraction_tokyo_disneyland_desc" = "夢と魔法の王国";
+"attraction_naritasan_shinshoji" = "成田山新勝寺";
+"attraction_naritasan_shinshoji_desc" = "関東三大不動の一つ";
+"attraction_kamogawa_seaworld" = "鴨川シーワールド";
+"attraction_kamogawa_seaworld_desc" = "海の生き物との出会い";
+"attraction_choshi" = "銚子";
+"attraction_choshi_desc" = "本州最東端の街";
+"attraction_mother_farm" = "マザー牧場";
+"attraction_mother_farm_desc" = "自然と動物のふれあい";
+"attraction_tokyo_disneysea" = "東京ディズニーシー";
+"attraction_tokyo_disneysea_desc" = "海をテーマにした冒険とイマジネーションの世界";
+
+"food_peanuts" = "落花生";
+"food_loquat" = "びわ";
+"food_namerou" = "なめろう";
+"food_katsuura_tantanmen" = "勝浦タンタンメン";
+"food_boso_seafood" = "房総の海の幸";
+
+// Tochigi
+"attraction_nikko_toshogu" = "日光東照宮";
+"attraction_nikko_toshogu_desc" = "徳川家康が眠る華麗な霊廟";
+"attraction_kegon_falls" = "華厳の滝";
+"attraction_kegon_falls_desc" = "日光の名瀑";
+"attraction_lake_chuzenji" = "中禅寺湖";
+"attraction_lake_chuzenji_desc" = "高原の美しい湖";
+"attraction_nasu_highlands" = "那須高原";
+"attraction_nasu_highlands_desc" = "リゾート地として人気";
+"attraction_ashikaga_flower_park" = "足利フラワーパーク";
+"attraction_ashikaga_flower_park_desc" = "藤の花で有名";
+"attraction_oya_museum" = "大谷資料館";
+"attraction_oya_museum_desc" = "神秘的な地下空間が広がる大谷石の採掘場跡";
+
+"food_utsunomiya_gyoza" = "宇都宮餃子";
+"food_yuba" = "湯波";
+"food_tochiotome" = "とちおとめ";
+"food_shimotsukare" = "しもつかれ";
+"food_lemon_milk" = "レモン牛乳";
+
+// Gunma
+"attraction_kusatsu_onsen" = "草津温泉";
+"attraction_kusatsu_onsen_desc" = "日本三名泉の一つ";
+"attraction_ikaho_onsen" = "伊香保温泉";
+"attraction_ikaho_onsen_desc" = "石段街で有名な温泉";
+"attraction_oze" = "尾瀬";
+"attraction_oze_desc" = "水芭蕉の咲く湿原";
+"attraction_tomioka_silk_mill" = "富岡製糸場";
+"attraction_tomioka_silk_mill_desc" = "世界遺産の絹産業遺跡";
+"attraction_lake_haruna" = "榛名湖";
+"attraction_lake_haruna_desc" = "榛名山のカルデラ湖";
+"attraction_mount_tanigawa" = "谷川岳";
+"attraction_mount_tanigawa_desc" = "ロープウェイで楽しむ絶景とトレッキング";
+
+"food_yaki_manju" = "焼きまんじゅう";
+"food_shimonita_negi" = "下仁田ねぎ";
+"food_konnyaku" = "こんにゃく";
+"food_mizusawa_udon" = "水沢うどん";
+"food_daruma_bento" = "だるま弁当";
+
+// Saitama
+"attraction_kawagoe" = "川越";
+"attraction_kawagoe_desc" = "小江戸と呼ばれる蔵の街";
+"attraction_chichibu" = "秩父";
+"attraction_chichibu_desc" = "自然豊かな山間の街";
+"attraction_nagatoro" = "長瀞";
+"attraction_nagatoro_desc" = "岩畳で有名な景勝地";
+"attraction_railway_museum" = "鉄道博物館";
+"attraction_railway_museum_desc" = "鉄道の歴史を学べる";
+"attraction_ranzan_valley" = "嵐山渓谷";
+"attraction_ranzan_valley_desc" = "紅葉の美しい渓谷";
+"attraction_musashi_ichinomiya_hikawa_shrine" = "武蔵一宮氷川神社";
+"attraction_musashi_ichinomiya_hikawa_shrine_desc" = "武蔵国一宮として格式高い神社";
+
+"food_kawagoe_sweet_potato" = "川越芋";
+"food_chichibu_soba" = "秩父そば";
+"food_soka_senbei" = "草加せんべい";
+"food_gokaho" = "五家宝";
+"food_iga_manju" = "いがまんじゅう";
+
+// Tokyo
+"attraction_tokyo_skytree" = "東京スカイツリー";
+"attraction_tokyo_skytree_desc" = "高さ634mの東京の新シンボル";
+"attraction_sensoji" = "浅草寺";
+"attraction_sensoji_desc" = "東京最古の寺院";
+"attraction_imperial_palace" = "皇居";
+"attraction_imperial_palace_desc" = "天皇陛下のお住まい";
+"attraction_shibuya_crossing" = "渋谷スクランブル交差点";
+"attraction_shibuya_crossing_desc" = "世界一有名な交差点";
+"attraction_tokyo_tower" = "東京タワー";
+"attraction_tokyo_tower_desc" = "赤白の美しい電波塔";
+"attraction_meiji_shrine" = "明治神宮";
+"attraction_meiji_shrine_desc" = "都心の神聖な森に佇む神社";
+"attraction_odaiba" = "お台場";
+"attraction_odaiba_desc" = "レインボーブリッジと夜景が美しい未来的エリア";
+"attraction_ueno_zoo" = "上野動物園";
+"attraction_ueno_zoo_desc" = "日本最古の動物園、パンダで有名";
+
+"food_edomae_sushi" = "江戸前寿司";
+"food_monjayaki" = "もんじゃ焼き";
+"food_fukagawa_don" = "深川丼";
+"food_imagawayaki" = "今川焼き";
+"food_tsukudani" = "佃煮";
+
+// Kanagawa
+"attraction_kamakura_daibutsu" = "鎌倉大仏";
+"attraction_kamakura_daibutsu_desc" = "高徳院の青銅製大仏";
+"attraction_enoshima" = "江の島";
+"attraction_enoshima_desc" = "湘南の人気観光地";
+"attraction_hakone" = "箱根";
+"attraction_hakone_desc" = "温泉と芸術の街";
+"attraction_yokohama_chinatown" = "横浜中華街";
+"attraction_yokohama_chinatown_desc" = "日本最大の中華街";
+"attraction_minato_mirai" = "みなとみらい";
+"attraction_minato_mirai_desc" = "横浜の未来都市";
+"attraction_owakudani" = "大涌谷";
+"attraction_owakudani_desc" = "箱根の火山活動が作り出した迫力ある景観";
+"attraction_hokokuji" = "報国寺";
+"attraction_hokokuji_desc" = "美しい竹林で有名な鎌倉の禅寺";
+
+"food_shumai" = "シウマイ";
+"food_kamakura_vegetables" = "鎌倉野菜";
+"food_shonan_shirasu" = "湘南しらす";
+"food_iekei_ramen" = "家系ラーメン";
+"food_yokohama_chinatown_gourmet" = "横浜中華街グルメ";
+
+// Niigata
+"attraction_sado_island" = "佐渡島";
+"attraction_sado_island_desc" = "金山と自然の島";
+"attraction_naeba_ski_resort" = "苗場スキー場";
+"attraction_naeba_ski_resort_desc" = "冬のスポーツリゾート";
+"attraction_yahiko_shrine" = "弥彦神社";
+"attraction_yahiko_shrine_desc" = "越後一宮の古社";
+"attraction_joetsu_kokusai_ski_resort" = "上越国際スキー場";
+"attraction_joetsu_kokusai_ski_resort_desc" = "広大なスキーエリア";
+"attraction_myoko_kogen" = "妙高高原";
+"attraction_myoko_kogen_desc" = "四季折々の自然";
+"attraction_kiyotsu_gorge" = "清津峡";
+"attraction_kiyotsu_gorge_desc" = "日本三大峡谷の一つ、アート作品も楽しめる";
+
+"food_niigata_rice" = "新潟米";
+"food_noppe" = "のっぺ";
+"food_hegi_soba" = "へぎそば";
+"food_salmon" = "鮭";
+"food_sake" = "日本酒";
+
+// Nagano
+"attraction_zenkoji" = "善光寺";
+"attraction_zenkoji_desc" = "無宗派の古刹";
+"attraction_karuizawa" = "軽井沢";
+"attraction_karuizawa_desc" = "避暑地として人気";
+"attraction_kamikochi" = "上高地";
+"attraction_kamikochi_desc" = "日本屈指の山岳景勝地";
+"attraction_hakuba" = "白馬";
+"attraction_hakuba_desc" = "北アルプスのリゾート";
+"attraction_matsumoto_castle" = "松本城";
+"attraction_matsumoto_castle_desc" = "現存天守の国宝";
+"attraction_lake_suwa" = "諏訪湖";
+"attraction_lake_suwa_desc" = "花火大会で有名な美しい湖";
+"attraction_togakushi" = "戸隠";
+"attraction_togakushi_desc" = "忍者の里として有名、蕎麦の名産地";
+
+"food_shinshu_soba" = "信州そば";
+"food_oyaki" = "おやき";
+"food_nozawana" = "野沢菜";
+"food_apple_nagano" = "りんご";
+"food_shinshu_miso" = "信州味噌";
+
+// Yamanashi
+"attraction_mount_fuji" = "富士山";
+"attraction_mount_fuji_desc" = "日本最高峰の霊峰";
+"attraction_lake_kawaguchi" = "河口湖";
+"attraction_lake_kawaguchi_desc" = "富士五湖の一つ";
+"attraction_shosenkyo" = "昇仙峡";
+"attraction_shosenkyo_desc" = "花崗岩の美しい渓谷";
+"attraction_lake_yamanaka" = "山中湖";
+"attraction_lake_yamanaka_desc" = "富士五湖で最大の湖";
+"attraction_oshino_hakkai" = "忍野八海";
+"attraction_oshino_hakkai_desc" = "富士の湧水群";
+"attraction_takeda_shrine" = "武田神社";
+"attraction_takeda_shrine_desc" = "武田信玄公を祀る勝運の神社";
+
+"food_hoto" = "ほうとう";
+"food_shingen_mochi" = "信玄餅";
+"food_grape" = "ぶどう";
+"food_peach_yamanashi" = "桃";
+"food_koshu_wine" = "甲州ワイン";
+
+// Shizuoka
+"attraction_mount_fuji_shizuoka" = "富士山";
+"attraction_mount_fuji_shizuoka_desc" = "日本のシンボル";
+"attraction_izu_peninsula" = "伊豆半島";
+"attraction_izu_peninsula_desc" = "温泉とリゾートの半島";
+"attraction_atami_onsen" = "熱海温泉";
+"attraction_atami_onsen_desc" = "古くからの温泉地";
+"attraction_lake_hamana" = "浜名湖";
+"attraction_lake_hamana_desc" = "うなぎで有名な湖";
+"attraction_kunozan_toshogu" = "久能山東照宮";
+"attraction_kunozan_toshogu_desc" = "徳川家康最初の埋葬地";
+"attraction_shiraito_falls" = "白糸の滝";
+"attraction_shiraito_falls_desc" = "富士山麓の絹糸のような美しい滝";
+"attraction_miho_matsubara" = "三保松原";
+"attraction_miho_matsubara_desc" = "富士山と松原の絶景で世界遺産の構成資産";
+
+"food_shizuoka_tea" = "静岡茶";
+"food_unagi" = "うなぎ";
+"food_wasabi" = "わさび";
+"food_sakura_ebi" = "桜えび";
+"food_kuro_hanpen" = "黒はんぺん";
+
+// Aichi
+"attraction_nagoya_castle" = "名古屋城";
+"attraction_nagoya_castle_desc" = "金のしゃちほこで有名";
+"attraction_atsuta_shrine" = "熱田神宮";
+"attraction_atsuta_shrine_desc" = "三種の神器の一つを祀る";
+"attraction_inuyama_castle" = "犬山城";
+"attraction_inuyama_castle_desc" = "現存天守の国宝";
+"attraction_chita_peninsula" = "知多半島";
+"attraction_chita_peninsula_desc" = "海の幸と温泉";
+"attraction_korankei" = "香嵐渓";
+"attraction_korankei_desc" = "紅葉の名所";
+"attraction_linear_railway_museum" = "リニア・鉄道館";
+"attraction_linear_railway_museum_desc" = "最新鉄道技術を体験できる博物館";
+
+"food_miso_katsu" = "味噌カツ";
+"food_hitsumabushi" = "ひつまぶし";
+"food_tebasaki" = "手羽先";
+"food_kishimen" = "きしめん";
+"food_taiwan_ramen" = "台湾ラーメン";
+
+// Mie
+"attraction_ise_shrine" = "伊勢神宮";
+"attraction_ise_shrine_desc" = "日本人の心のふるさと";
+"attraction_toba_aquarium" = "鳥羽水族館";
+"attraction_toba_aquarium_desc" = "海の生き物の宝庫";
+"attraction_kumano_kodo" = "熊野古道";
+"attraction_kumano_kodo_desc" = "世界遺産の巡礼路";
+"attraction_nabana_no_sato" = "なばなの里";
+"attraction_nabana_no_sato_desc" = "イルミネーションで有名";
+"attraction_iga_ueno_castle" = "伊賀上野城";
+"attraction_iga_ueno_castle_desc" = "忍者の里の城";
+"attraction_shima_spain_village" = "志摩スペイン村";
+"attraction_shima_spain_village_desc" = "スペインの文化と雰囲気を楽しめるテーマパーク";
+
+"food_ise_ebi" = "伊勢えび";
+"food_matsusaka_beef" = "松阪牛";
+"food_akafuku" = "赤福";
+"food_tekone_sushi" = "てこね寿司";
+"food_iga_beef" = "伊賀牛";
+
+// Gifu
+"attraction_shirakawago" = "白川郷";
+"attraction_shirakawago_desc" = "合掌造りの世界遺産";
+"attraction_hida_takayama" = "飛騨高山";
+"attraction_hida_takayama_desc" = "古い町並みが美しい";
+"attraction_gero_onsen" = "下呂温泉";
+"attraction_gero_onsen_desc" = "日本三名泉の一つ";
+"attraction_kinkazan" = "金華山";
+"attraction_kinkazan_desc" = "岐阜城からの眺望";
+"attraction_magome_juku" = "馬籠宿";
+"attraction_magome_juku_desc" = "中山道の宿場町";
+"attraction_okuhida_onsen" = "奥飛騨温泉郷";
+"attraction_okuhida_onsen_desc" = "北アルプスの麓に点在する秘湯群";
+
+"food_hida_beef" = "飛騨牛";
+"food_hoba_miso" = "朴葉味噌";
+"food_gohei_mochi" = "五平餅";
+"food_ayu_shioyaki" = "鮎の塩焼き";
+"food_kuri_kinton" = "栗きんとん";
+
+// Fukui
+"attraction_tojinbo" = "東尋坊";
+"attraction_tojinbo_desc" = "断崖絶壁の景勝地";
+"attraction_eiheiji" = "永平寺";
+"attraction_eiheiji_desc" = "曹洞宗の大本山";
+"attraction_dinosaur_museum" = "恐竜博物館";
+"attraction_dinosaur_museum_desc" = "恐竜化石の宝庫";
+"attraction_ichijodani_asakura_ruins" = "一乗谷朝倉氏遺跡";
+"attraction_ichijodani_asakura_ruins_desc" = "戦国時代の城下町跡";
+"attraction_wakasa_bay" = "若狭湾";
+"attraction_wakasa_bay_desc" = "リアス式海岸の美";
+"attraction_mikata_goko" = "三方五湖";
+"attraction_mikata_goko_desc" = "それぞれ異なる色を持つ神秘的な五つの湖";
+
+"food_echizen_crab" = "越前ガニ";
+"food_echizen_soba" = "越前そば";
+"food_sauce_katsu_don" = "ソースカツ丼";
+"food_habutae_mochi" = "羽二重餅";
+"food_wakasa_beef" = "若狭牛";
+
+// Ishikawa
+"attraction_kenrokuen" = "兼六園";
+"attraction_kenrokuen_desc" = "日本三名園の一つ";
+"attraction_kanazawa_castle" = "金沢城";
+"attraction_kanazawa_castle_desc" = "加賀百万石の居城";
+"attraction_wakura_onsen" = "和倉温泉";
+"attraction_wakura_onsen_desc" = "能登半島の名湯";
+"attraction_chirihama_nagisa_driveway" = "千里浜なぎさドライブウェイ";
+"attraction_chirihama_nagisa_driveway_desc" = "砂浜を車で走れる";
+"attraction_wajima_morning_market" = "輪島朝市";
+"attraction_wajima_morning_market_desc" = "千年続く朝市";
+"attraction_higashi_chaya_district" = "ひがし茶屋街";
+"attraction_higashi_chaya_district_desc" = "金沢の歴史ある茶屋街で芸妓文化を体験";
+
+"food_kaga_cuisine" = "加賀料理";
+"food_kanazawa_curry" = "金沢カレー";
+"food_noto_beef" = "能登牛";
+"food_jibuni" = "治部煮";
+"food_nodoguro" = "のどぐろ";
+
+// Toyama
+"attraction_tateyama_kurobe_alpine_route" = "立山黒部アルペンルート";
+"attraction_tateyama_kurobe_alpine_route_desc" = "雲上の絶景ルート";
+"attraction_kurobe_dam" = "黒部ダム";
+"attraction_kurobe_dam_desc" = "日本最大級のアーチ式ダム";
+"attraction_gokayama" = "五箇山";
+"attraction_gokayama_desc" = "合掌造りの集落";
+"attraction_toyama_bay" = "富山湾";
+"attraction_toyama_bay_desc" = "海の幸の宝庫";
+"attraction_shomyo_falls" = "称名滝";
+"attraction_shomyo_falls_desc" = "日本最大落差の滝";
+"attraction_unazuki_onsen" = "宇奈月温泉";
+"attraction_unazuki_onsen_desc" = "黒部峡谷トロッコ電車の起点となる温泉地";
+
+"food_shiro_ebi" = "白えび";
+"food_hotaru_ika" = "ホタルイカ";
+"food_masu_sushi" = "ますの寿司";
+"food_toyama_black_ramen" = "富山ブラックラーメン";
+"food_himi_beef" = "氷見牛";
+
+// Shiga
+"attraction_lake_biwa" = "琵琶湖";
+"attraction_lake_biwa_desc" = "日本最大の湖";
+"attraction_hikone_castle" = "彦根城";
+"attraction_hikone_castle_desc" = "ひこにゃんで有名な国宝";
+"attraction_hieizan_enryakuji" = "比叡山延暦寺";
+"attraction_hieizan_enryakuji_desc" = "天台宗の総本山";
+"attraction_azuchi_castle_ruins" = "安土城跡";
+"attraction_azuchi_castle_ruins_desc" = "織田信長の居城跡";
+"attraction_omihachiman" = "近江八幡";
+"attraction_omihachiman_desc" = "水郷と商人の町";
+"attraction_metasequoia_avenue" = "メタセコイア並木";
+"attraction_metasequoia_avenue_desc" = "約500本のメタセコイアが作る絶景の並木道";
+
+"food_omi_beef" = "近江牛";
+"food_funa_sushi" = "鮒寿司";
+"food_aka_konnyaku" = "赤こんにゃく";
+"food_shigaraki_pottery" = "信楽焼";
+"food_lake_fish_cuisine" = "湖魚料理";
+
+// Kyoto
+"attraction_kiyomizu_dera" = "清水寺";
+"attraction_kiyomizu_dera_desc" = "京都を代表する世界遺産";
+"attraction_kinkakuji" = "金閣寺";
+"attraction_kinkakuji_desc" = "金色に輝く美しい寺院";
+"attraction_fushimi_inari_taisha" = "伏見稲荷大社";
+"attraction_fushimi_inari_taisha_desc" = "千本鳥居で有名な稲荷神社";
+"attraction_arashiyama" = "嵐山";
+"attraction_arashiyama_desc" = "竹林の小径と桜・紅葉の名所";
+"attraction_philosophers_path" = "哲学の道";
+"attraction_philosophers_path_desc" = "桜並木の美しい散策路";
+"attraction_amanohashidate" = "天橋立";
+"attraction_amanohashidate_desc" = "日本三景の一つ、股のぞきで有名";
+"attraction_byodoin" = "平等院";
+"attraction_byodoin_desc" = "10円硬貨にも描かれた美しい寺院";
+
+"food_yudofu" = "湯豆腐";
+"food_kyoto_kaiseki" = "京懐石";
+"food_matcha_sweets" = "抹茶スイーツ";
+"food_obanzai" = "おばんざい";
+"food_kyoto_pickles" = "京漬物";
+
+// Hyogo
+"attraction_himeji_castle" = "姫路城";
+"attraction_himeji_castle_desc" = "白鷺城と呼ばれる世界遺産";
+"attraction_arima_onsen" = "有馬温泉";
+"attraction_arima_onsen_desc" = "日本三古湯の一つ";
+"attraction_kobe_port_tower" = "神戸ポートタワー";
+"attraction_kobe_port_tower_desc" = "神戸港のシンボル";
+"attraction_takeda_castle_ruins" = "竹田城跡";
+"attraction_takeda_castle_ruins_desc" = "天空の城";
+"attraction_awaji_island" = "淡路島";
+"attraction_awaji_island_desc" = "花と緑の島";
+"attraction_mount_rokko" = "六甲山";
+"attraction_mount_rokko_desc" = "神戸の夜景を一望できる人気スポット";
+"attraction_takarazuka_grand_theater" = "宝塚大劇場";
+"attraction_takarazuka_grand_theater_desc" = "宝塚歌劇の聖地";
+
+"food_kobe_beef" = "神戸牛";
+"food_akashiyaki" = "明石焼き";
+"food_ikanago" = "いかなご";
+"food_banshu_ramen" = "播州ラーメン";
+"food_awaji_onion" = "淡路島玉ねぎ";
+
+// Nara
+"attraction_todaiji" = "東大寺";
+"attraction_todaiji_desc" = "奈良の大仏で有名";
+"attraction_nara_park" = "奈良公園";
+"attraction_nara_park_desc" = "鹿と触れ合える公園";
+"attraction_kasuga_taisha" = "春日大社";
+"attraction_kasuga_taisha_desc" = "千体の石灯籠";
+"attraction_horyuji" = "法隆寺";
+"attraction_horyuji_desc" = "世界最古の木造建築";
+"attraction_yoshinoyama" = "吉野山";
+"attraction_yoshinoyama_desc" = "桜の名所";
+"attraction_kofukuji" = "興福寺";
+"attraction_kofukuji_desc" = "美しい五重塔で有名な古刹";
+
+"food_kakinoha_sushi" = "柿の葉寿司";
+"food_miwa_somen" = "三輪そうめん";
+"food_narazuke" = "奈良漬";
+"food_yamato_beef" = "大和牛";
+"food_kuzukiri" = "くずきり";
+
+// Wakayama
+"attraction_kumano_kodo_wakayama" = "熊野古道";
+"attraction_kumano_kodo_wakayama_desc" = "世界遺産の巡礼路";
+"attraction_koyasan" = "高野山";
+"attraction_koyasan_desc" = "真言宗の聖地";
+"attraction_shirahama_onsen" = "白浜温泉";
+"attraction_shirahama_onsen_desc" = "白い砂浜の温泉地";
+"attraction_nachi_falls" = "那智の滝";
+"attraction_nachi_falls_desc" = "日本三大名瀑の一つ";
+"attraction_adventure_world" = "アドベンチャーワールド";
+"attraction_adventure_world_desc" = "パンダで有名な動物園";
+"attraction_wakayama_castle" = "和歌山城";
+"attraction_wakayama_castle_desc" = "徳川御三家紀州藩の居城";
+
+"food_umeboshi" = "梅干し";
+"food_wakayama_ramen" = "和歌山ラーメン";
+"food_tuna" = "マグロ";
+"food_persimmon" = "柿";
+"food_kishu_kinzanji_miso" = "紀州金山寺味噌";
+
+// Osaka
+"attraction_osaka_castle" = "大阪城";
+"attraction_osaka_castle_desc" = "豊臣秀吉が築いた名城";
+"attraction_dotonbori" = "道頓堀";
+"attraction_dotonbori_desc" = "大阪の繁華街とグルメの中心地";
+"attraction_universal_studios" = "ユニバーサル・スタジオ";
+"attraction_universal_studios_desc" = "映画の世界を体験できるテーマパーク";
+"attraction_sumiyoshi_taisha" = "住吉大社";
+"attraction_sumiyoshi_taisha_desc" = "全国約2300社の住吉神社の総本社";
+"attraction_shinsekai" = "新世界";
+"attraction_shinsekai_desc" = "通天閣と串カツの街";
+"attraction_shitennoji" = "四天王寺";
+"attraction_shitennoji_desc" = "聖徳太子建立の日本最古の官寺";
+
+"food_takoyaki" = "たこ焼き";
+"food_okonomiyaki" = "お好み焼き";
+"food_kushikatsu" = "串カツ";
+"food_ikayaki" = "イカ焼き";
+"food_butaman" = "豚まん";
+
+// Remaining prefectures continue with the same pattern...
+// Tottori through Okinawa with all attractions and foods
+
+// Tottori
+"attraction_tottori_sand_dunes" = "鳥取砂丘";
+"attraction_tottori_sand_dunes_desc" = "日本最大の砂丘";
+"attraction_mount_daisen" = "大山";
+"attraction_mount_daisen_desc" = "中国地方最高峰";
+"attraction_mizuki_shigeru_road" = "水木しげるロード";
+"attraction_mizuki_shigeru_road_desc" = "妖怪の街";
+"attraction_uradome_coast" = "浦富海岸";
+"attraction_uradome_coast_desc" = "山陰海岸ジオパーク";
+"attraction_misasa_onsen" = "三朝温泉";
+"attraction_misasa_onsen_desc" = "ラジウム温泉で有名";
+"attraction_hakuto_coast" = "白兎海岸";
+"attraction_hakuto_coast_desc" = "因幡の白兎伝説の舞台となった美しい海岸";
+
+"food_matsuba_crab" = "松葉ガニ";
+"food_nijisseiki_pear" = "二十世紀梨";
+"food_sakaiminato_seafood" = "境港の海鮮";
+"food_tofu_chikuwa" = "とうふちくわ";
+"food_gyu_kotsu_ramen" = "牛骨ラーメン";
+
+// Okayama
+"attraction_okayama_castle" = "岡山城";
+"attraction_okayama_castle_desc" = "烏城と呼ばれる黒い城";
+"attraction_korakuen" = "後楽園";
+"attraction_korakuen_desc" = "日本三名園の一つ";
+"attraction_kurashiki_bikan" = "倉敷美観地区";
+"attraction_kurashiki_bikan_desc" = "白壁の蔵屋敷が美しい";
+"attraction_kibitsu_shrine" = "吉備津神社";
+"attraction_kibitsu_shrine_desc" = "桃太郎伝説の神社";
+"attraction_hiruzen_kogen" = "蒜山高原";
+"attraction_hiruzen_kogen_desc" = "西の軽井沢";
+"attraction_seto_ohashi" = "瀬戸大橋";
+"attraction_seto_ohashi_desc" = "本州と四国を結ぶ壮大な橋";
+
+"food_white_peach" = "白桃";
+"food_muscat" = "マスカット";
+"food_kibidango" = "きびだんご";
+"food_mamakari" = "ままかり";
+"food_demi_katsu_don" = "デミカツ丼";
+
+// Hiroshima
+"attraction_itsukushima_shrine" = "厳島神社";
+"attraction_itsukushima_shrine_desc" = "海に浮かぶ鳥居で有名";
+"attraction_atomic_bomb_dome" = "原爆ドーム";
+"attraction_atomic_bomb_dome_desc" = "平和の象徴";
+"attraction_miyajima" = "宮島";
+"attraction_miyajima_desc" = "日本三景の一つ";
+"attraction_onomichi" = "尾道";
+"attraction_onomichi_desc" = "坂の街と猫の街";
+"attraction_takehara" = "竹原";
+"attraction_takehara_desc" = "安芸の小京都";
+"attraction_tomonoura" = "鞆の浦";
+"attraction_tomonoura_desc" = "江戸時代の港町の面影が残る美しい港町";
+
+"food_okonomiyaki_hiroshima" = "お好み焼き";
+"food_oyster" = "牡蠣";
+"food_momiji_manju" = "もみじ饅頭";
+"food_hiroshima_tsukemen" = "広島風つけ麺";
+"food_anago_meshi" = "あなご飯";
+
+// Yamaguchi
+"attraction_akiyoshidai" = "秋吉台";
+"attraction_akiyoshidai_desc" = "日本最大のカルスト台地";
+"attraction_hagi" = "萩";
+"attraction_hagi_desc" = "明治維新の舞台";
+"attraction_kintaikyo" = "錦帯橋";
+"attraction_kintaikyo_desc" = "日本三名橋の一つ";
+"attraction_shimonoseki" = "下関";
+"attraction_shimonoseki_desc" = "本州最西端の街";
+"attraction_rurikoji" = "瑠璃光寺";
+"attraction_rurikoji_desc" = "五重塔で有名";
+"attraction_tsunoshima_bridge" = "角島大橋";
+"attraction_tsunoshima_bridge_desc" = "エメラルドグリーンの海にかかる絶景の橋";
+
+"food_fugu" = "ふぐ";
+"food_kawara_soba" = "瓦そば";
+"food_iwakuni_lotus_root" = "岩国れんこん";
+"food_shimonoseki_whale" = "下関のクジラ";
+"food_natsumikan" = "夏みかん";
+
+// Shimane
+"attraction_izumo_taisha" = "出雲大社";
+"attraction_izumo_taisha_desc" = "縁結びの神様";
+"attraction_matsue_castle" = "松江城";
+"attraction_matsue_castle_desc" = "現存天守の国宝";
+"attraction_iwami_ginzan" = "石見銀山";
+"attraction_iwami_ginzan_desc" = "世界遺産の銀山跡";
+"attraction_oki_islands" = "隠岐島";
+"attraction_oki_islands_desc" = "日本海の美しい島";
+"attraction_adachi_museum" = "足立美術館";
+"attraction_adachi_museum_desc" = "日本庭園で有名";
+"attraction_lake_shinji" = "宍道湖";
+"attraction_lake_shinji_desc" = "夕日の美しさで有名な湖";
+
+"food_izumo_soba" = "出雲そば";
+"food_shinjiko_shijimi" = "宍道湖しじみ";
+"food_nodoguro_shimane" = "のどぐろ";
+"food_matsue_wagashi" = "松江和菓子";
+"food_wariko_soba" = "割子そば";
+
+// Kagawa
+"attraction_kotohira_shrine" = "金刀比羅宮";
+"attraction_kotohira_shrine_desc" = "こんぴらさんで親しまれる";
+"attraction_ritsurin_garden" = "栗林公園";
+"attraction_ritsurin_garden_desc" = "特別名勝の日本庭園";
+"attraction_shodoshima" = "小豆島";
+"attraction_shodoshima_desc" = "オリーブの島";
+"attraction_yashima" = "屋島";
+"attraction_yashima_desc" = "源平合戦の舞台";
+"attraction_naoshima" = "直島";
+"attraction_naoshima_desc" = "アートの島";
+"attraction_seto_ohashi_memorial_park" = "瀬戸大橋記念公園";
+"attraction_seto_ohashi_memorial_park_desc" = "瀬戸大橋を間近で見られる絶景スポット";
+
+"food_sanuki_udon" = "讃岐うどん";
+"food_olive" = "オリーブ";
+"food_honetsuki_dori" = "骨付鳥";
+"food_wasanbon" = "和三盆";
+"food_shodoshima_somen" = "小豆島そうめん";
+
+// Tokushima
+"attraction_naruto_whirlpools" = "鳴門の渦潮";
+"attraction_naruto_whirlpools_desc" = "世界最大級の渦潮";
+"attraction_awa_odori" = "阿波踊り";
+"attraction_awa_odori_desc" = "徳島の夏祭り";
+"attraction_iya_kazura_bridge" = "祖谷のかずら橋";
+"attraction_iya_kazura_bridge_desc" = "スリル満点の吊り橋";
+"attraction_otsuka_museum" = "大塚国際美術館";
+"attraction_otsuka_museum_desc" = "陶板名画の美術館";
+"attraction_mount_tsurugi" = "剣山";
+"attraction_mount_tsurugi_desc" = "四国第二の高峰";
+"attraction_bizan" = "眉山";
+"attraction_bizan_desc" = "徳島市のシンボル、ロープウェイで夜景も楽しめる";
+
+"food_awa_odori_chicken" = "阿波尾鶏";
+"food_tarai_udon" = "たらいうどん";
+"food_sudachi" = "すだち";
+"food_naruto_kintoki" = "鳴門金時";
+"food_handa_somen" = "半田そうめん";
+
+// Kochi
+"attraction_kochi_castle" = "高知城";
+"attraction_kochi_castle_desc" = "現存天守の名城";
+"attraction_katsurahama" = "桂浜";
+"attraction_katsurahama_desc" = "坂本龍馬像で有名";
+"attraction_shimanto_river" = "四万十川";
+"attraction_shimanto_river_desc" = "日本最後の清流";
+"attraction_muroto_cape" = "室戸岬";
+"attraction_muroto_cape_desc" = "太平洋の絶景";
+"attraction_ashizuri_cape" = "足摺岬";
+"attraction_ashizuri_cape_desc" = "四国最南端の岬";
+"attraction_ryugado_cave" = "龍河洞";
+"attraction_ryugado_cave_desc" = "日本三大鍾乳洞の一つ、神秘的な地下世界";
+
+"food_katsuo_tataki" = "カツオのたたき";
+"food_sawachi_cuisine" = "皿鉢料理";
+"food_tosa_sake" = "土佐酒";
+"food_yuzu" = "ゆず";
+"food_tosa_buntan" = "土佐文旦";
+
+// Ehime
+"attraction_matsuyama_castle" = "松山城";
+"attraction_matsuyama_castle_desc" = "現存天守の名城";
+"attraction_dogo_onsen" = "道後温泉";
+"attraction_dogo_onsen_desc" = "日本最古の温泉の一つ";
+"attraction_shimanami_kaido" = "しまなみ海道";
+"attraction_shimanami_kaido_desc" = "瀬戸内海の美しい橋";
+"attraction_uchiko_town" = "内子町";
+"attraction_uchiko_town_desc" = "江戸時代の町並み";
+"attraction_mount_ishizuchi" = "石鎚山";
+"attraction_mount_ishizuchi_desc" = "四国最高峰";
+"attraction_imabari_castle" = "今治城";
+"attraction_imabari_castle_desc" = "海水を堀に利用した珍しい海城";
+
+"food_mikan" = "みかん";
+"food_jakoten" = "じゃこ天";
+"food_tai_meshi" = "鯛めし";
+"food_iyokan" = "いよかん";
+"attraction_botchan_dango" = "坊っちゃん団子";
+
+// Fukuoka
+"attraction_dazaifu_tenmangu" = "太宰府天満宮";
+"attraction_dazaifu_tenmangu_desc" = "学問の神様";
+"attraction_fukuoka_castle" = "福岡城";
+"attraction_fukuoka_castle_desc" = "黒田官兵衛の居城";
+"attraction_hakata_za" = "博多座";
+"attraction_hakata_za_desc" = "九州の演劇の殿堂";
+"attraction_canal_city" = "キャナルシティ";
+"attraction_canal_city_desc" = "運河のあるショッピングモール";
+"attraction_yanagawa_kudari" = "柳川下り";
+"attraction_yanagawa_kudari_desc" = "どんこ舟での川下り";
+"attraction_mojiko_retro" = "門司港レトロ";
+"attraction_mojiko_retro_desc" = "大正ロマン漂う港町の街並み";
+
+"food_hakata_ramen" = "博多ラーメン";
+"food_motsu_nabe" = "もつ鍋";
+"food_karashi_mentaiko" = "辛子明太子";
+"food_mizutaki" = "水炊き";
+"food_hakata_torimon" = "博多通りもん";
+
+// Oita
+"attraction_beppu_onsen" = "別府温泉";
+"attraction_beppu_onsen_desc" = "温泉の街";
+"attraction_yufuin" = "湯布院";
+"attraction_yufuin_desc" = "由布岳の麓の温泉地";
+"attraction_usuki_stone_buddhas" = "臼杵石仏";
+"attraction_usuki_stone_buddhas_desc" = "国宝の石仏群";
+"attraction_kuju_mountains" = "九重連山";
+"attraction_kuju_mountains_desc" = "九州の屋根";
+"attraction_nakatsu_castle" = "中津城";
+"attraction_nakatsu_castle_desc" = "黒田官兵衛の居城";
+"attraction_jigoku_meguri" = "地獄めぐり";
+"attraction_jigoku_meguri_desc" = "別府の名物、色とりどりの温泉群を見学";
+
+"food_seki_saba_aji" = "関さば・関あじ";
+"food_toriten" = "とり天";
+"food_dango_soup" = "だんご汁";
+"food_bungo_beef" = "豊後牛";
+"food_kabosu" = "かぼす";
+
+// Miyazaki
+"attraction_takachiho_gorge" = "高千穂峡";
+"attraction_takachiho_gorge_desc" = "神話の里の絶景";
+"attraction_nichinan_coast" = "日南海岸";
+"attraction_nichinan_coast_desc" = "美しいリアス式海岸";
+"attraction_aoshima" = "青島";
+"attraction_aoshima_desc" = "鬼の洗濯板で有名";
+"attraction_udo_shrine" = "鵜戸神宮";
+"attraction_udo_shrine_desc" = "洞窟の中の神社";
+"attraction_sun_messe_nichinan" = "サンメッセ日南";
+"attraction_sun_messe_nichinan_desc" = "モアイ像のある公園";
+"attraction_saito_ancient_burial_mounds" = "西都原古墳群";
+"attraction_saito_ancient_burial_mounds_desc" = "古代ロマン溢れる日本最大規模の古墳群";
+
+"food_miyazaki_beef" = "宮崎牛";
+"food_chicken_nanban" = "チキン南蛮";
+"food_hiyajiru" = "冷や汁";
+"food_mango" = "マンゴー";
+"food_shochu" = "焼酎";
+
+// Kagoshima
+"attraction_sakurajima" = "桜島";
+"attraction_sakurajima_desc" = "活火山の雄大な姿";
+"attraction_yakushima" = "屋久島";
+"attraction_yakushima_desc" = "世界自然遺産の森";
+"attraction_kirishima_onsen" = "霧島温泉";
+"attraction_kirishima_onsen_desc" = "霧島連山の温泉郷";
+"attraction_ibusuki_onsen" = "指宿温泉";
+"attraction_ibusuki_onsen_desc" = "砂むし温泉で有名";
+"attraction_amami_oshima" = "奄美大島";
+"attraction_amami_oshima_desc" = "亜熱帯の自然";
+"attraction_chiran_peace_museum" = "知覧特攻平和会館";
+"attraction_chiran_peace_museum_desc" = "戦争の記憶を伝える平和学習の場";
+
+"food_kurobuta" = "黒豚";
+"food_satsuma_imo" = "薩摩芋";
+"food_shochu_kagoshima" = "焼酎";
+"food_kibinago" = "きびなご";
+"food_shirokuma" = "白熊";
+
+// Kumamoto
+"attraction_kumamoto_castle" = "熊本城";
+"attraction_kumamoto_castle_desc" = "日本三名城の一つ";
+"attraction_mount_aso" = "阿蘇山";
+"attraction_mount_aso_desc" = "世界最大級のカルデラ";
+"attraction_kurokawa_onsen" = "黒川温泉";
+"attraction_kurokawa_onsen_desc" = "情緒ある温泉街";
+"attraction_amakusa" = "天草";
+"attraction_amakusa_desc" = "天草四郎の故郷";
+"attraction_kikuchi_valley" = "菊池渓谷";
+"attraction_kikuchi_valley_desc" = "清流の美しい渓谷";
+"attraction_tsujun_bridge" = "通潤橋";
+"attraction_tsujun_bridge_desc" = "江戸時代の技術の粋を集めた石造アーチ橋";
+
+"food_basashi" = "馬刺し";
+"food_dago_soup" = "だご汁";
+"food_taipien" = "太平燕";
+"food_karashi_renkon" = "辛子蓮根";
+"food_ikinari_dango" = "いきなり団子";
+
+// Saga
+"attraction_yoshinogari_ruins" = "吉野ヶ里遺跡";
+"attraction_yoshinogari_ruins_desc" = "弥生時代の大規模環濠集落";
+"attraction_arita_porcelain" = "有田焼";
+"attraction_arita_porcelain_desc" = "陶磁器の里";
+"attraction_yobuko" = "呼子";
+"attraction_yobuko_desc" = "イカで有名な港町";
+"attraction_takeo_onsen" = "武雄温泉";
+"attraction_takeo_onsen_desc" = "美肌の湯として有名";
+"attraction_karatsu_castle" = "唐津城";
+"attraction_karatsu_castle_desc" = "玄界灘を望む城";
+"attraction_ureshino_onsen" = "嬉野温泉";
+"attraction_ureshino_onsen_desc" = "美肌効果で人気の温泉とお茶の産地";
+
+"food_saga_beef" = "佐賀牛";
+"food_yobuko_ika" = "呼子のイカ";
+"food_gabai_manju" = "がばい饅頭";
+"food_marubolo" = "丸ぼうろ";
+"food_onsen_yudofu" = "温泉湯豆腐";
+
+// Nagasaki
+"attraction_huis_ten_bosch" = "ハウステンボス";
+"attraction_huis_ten_bosch_desc" = "オランダの街並みを再現";
+"attraction_glover_garden" = "グラバー園";
+"attraction_glover_garden_desc" = "明治の洋館群";
+"attraction_peace_park" = "平和公園";
+"attraction_peace_park_desc" = "平和への祈りを込めて";
+"attraction_gunkanjima" = "軍艦島";
+"attraction_gunkanjima_desc" = "世界遺産の廃墟島";
+"attraction_unzen_onsen" = "雲仙温泉";
+"attraction_unzen_onsen_desc" = "地獄めぐりで有名";
+"attraction_shimabara_castle" = "島原城";
+"attraction_shimabara_castle_desc" = "島原の乱の舞台となった歴史ある城";
+
+"food_champon" = "ちゃんぽん";
+"food_sara_udon" = "皿うどん";
+"food_castella" = "カステラ";
+"food_sasebo_burger" = "佐世保バーガー";
+"food_kakuni_manju" = "角煮まんじゅう";
+
+// Okinawa
+"attraction_shuri_castle" = "首里城";
+"attraction_shuri_castle_desc" = "琉球王朝の歴史を物語る城";
+"attraction_churaumi_aquarium" = "美ら海水族館";
+"attraction_churaumi_aquarium_desc" = "世界最大級の水槽がある水族館";
+"attraction_taketomi_island" = "竹富島";
+"attraction_taketomi_island_desc" = "沖縄の原風景が残る美しい島";
+"attraction_ishigaki_island" = "石垣島";
+"attraction_ishigaki_island_desc" = "八重山諸島の中心となる島";
+"attraction_zamami_island" = "座間味島";
+"attraction_zamami_island_desc" = "ケラマブルーの海が美しい島";
+"attraction_manzamo" = "万座毛";
+"attraction_manzamo_desc" = "象の鼻のような絶壁と青い海の絶景";
+"attraction_himeyuri_no_to" = "ひめゆりの塔";
+"attraction_himeyuri_no_to_desc" = "戦争の悲劇を伝える慰霊塔";
+
+"food_goya_chanpuru" = "ゴーヤチャンプルー";
+"food_soki_soba" = "ソーキそば";
+"food_sata_andagi" = "サーターアンダギー";
+"food_umi_budo" = "海ぶどう";
+"food_awamori" = "泡盛";
+
+
+
+// Continue with remaining prefectures...
+
+// Shizuoka Gourmet
+"gourmet_shizuoka_tea" = "静岡茶";
+"gourmet_shizuoka_tea_desc" = "全国生産量第一位。香り高い緑茶";
+"gourmet_unagi" = "うなぎ";
+"gourmet_unagi_desc" = "浜名湖のうなぎ。ふっくらとした身と甘いタレ";
+"gourmet_wasabi" = "わさび";
+"gourmet_wasabi_desc" = "伊豆の清流で育った本わさび。鼻に抜ける辛さ";
+"gourmet_sakura_ebi" = "桜えび";
+"gourmet_sakura_ebi_desc" = "駿河湾の宝石。春と秋限定の美しいピンク色";
+"gourmet_kuro_hanpen" = "黒はんぺん";
+"gourmet_kuro_hanpen_desc" = "静岡おでんの定番。イワシを使った黒いはんぺん";
+
+// Aichi Gourmet
+"gourmet_miso_katsu" = "味噌カツ";
+"gourmet_miso_katsu_desc" = "名古屋名物。濃厚な赤味噌だれをかけたとんかつ";
+"gourmet_hitsumabushi" = "ひつまぶし";
+"gourmet_hitsumabushi_desc" = "名古屋の鰻料理。3つの食べ方で楽しむ";
+"gourmet_tebasaki" = "手羽先";
+"gourmet_tebasaki_desc" = "名古屋の居酒屋名物。甘辛いタレが絶品";
+"gourmet_kishimen" = "きしめん";
+"gourmet_kishimen_desc" = "名古屋の平打ちうどん。つるつるとした食感";
+"gourmet_taiwan_ramen" = "台湾ラーメン";
+"gourmet_taiwan_ramen_desc" = "名古屋発祥の辛いラーメン。台湾とは関係なし";
+
+// Mie Gourmet
+"gourmet_ise_ebi" = "伊勢えび";
+"gourmet_ise_ebi_desc" = "三重県の高級食材。プリプリの食感と甘み";
+"gourmet_matsusaka_beef" = "松阪牛";
+"gourmet_matsusaka_beef_desc" = "世界最高級の和牛。とろけるような霜降り";
+"gourmet_akafuku" = "赤福";
+"gourmet_akafuku_desc" = "伊勢神宮の名物。あんこで包んだ餅菓子";
+"gourmet_tekone_sushi" = "てこね寿司";
+"gourmet_tekone_sushi_desc" = "志摩地方の郷土料理。カツオの漬けを混ぜ込んだ寿司";
+"gourmet_iga_beef" = "伊賀牛";
+"gourmet_iga_beef_desc" = "三重県伊賀地方のブランド牛。上質な肉質";
+
+// Gifu Gourmet
+"gourmet_hida_beef" = "飛騨牛";
+"gourmet_hida_beef_desc" = "岐阜県飛騨地方のブランド牛。A5ランクの最高級";
+"gourmet_hoba_miso" = "朴葉味噌";
+"gourmet_hoba_miso_desc" = "朴の葉に味噌を乗せて焼く飛騨の郷土料理";
+"gourmet_gohei_mochi" = "五平餅";
+"gourmet_gohei_mochi_desc" = "中部地方の郷土料理。甘辛いタレが香ばしい";
+"gourmet_ayu_shioyaki" = "鮎の塩焼き";
+"gourmet_ayu_shioyaki_desc" = "清流で育った鮎。夏の風物詩";
+"gourmet_kuri_kinton" = "栗きんとん";
+"gourmet_kuri_kinton_desc" = "中津川の名物。栗の甘みを生かした和菓子";
+
+// Fukui Gourmet
+"gourmet_echizen_crab" = "越前ガニ";
+"gourmet_echizen_crab_desc" = "福井の冬の味覚の王様。甘くて身がぎっしり";
+"gourmet_echizen_soba" = "越前そば";
+"gourmet_echizen_soba_desc" = "福井の名物そば。大根おろしでいただく";
+"gourmet_sauce_katsu_don" = "ソースカツ丼";
+"gourmet_sauce_katsu_don_desc" = "福井発祥。ソースをかけたカツ丼";
+"gourmet_habutae_mochi" = "羽二重餅";
+"gourmet_habutae_mochi_desc" = "福井の銘菓。やわらかくて上品な甘さ";
+"gourmet_wakasa_beef" = "若狭牛";
+"gourmet_wakasa_beef_desc" = "福井県若狭地方のブランド牛";
+
+// Ishikawa Gourmet
+"gourmet_kaga_cuisine" = "加賀料理";
+"gourmet_kaga_cuisine_desc" = "金沢の高級料理。海の幸と山の幸の競演";
+"gourmet_kanazawa_curry" = "金沢カレー";
+"gourmet_kanazawa_curry_desc" = "金沢のB級グルメ。濃厚なルーとキャベツが特徴";
+"gourmet_noto_beef" = "能登牛";
+"gourmet_noto_beef_desc" = "石川県能登地方のブランド牛";
+"gourmet_jibuni" = "治部煮";
+"gourmet_jibuni_desc" = "金沢の郷土料理。鴨肉と野菜の煮物";
+"gourmet_nodoguro" = "のどぐろ";
+"gourmet_nodoguro_desc" = "日本海の高級魚。上品な甘みが絶品";
+
+// Toyama Gourmet
+"gourmet_shiro_ebi" = "白えび";
+"gourmet_shiro_ebi_desc" = "富山湾の宝石。透明で美しい甘いえび";
+"gourmet_hotaru_ika" = "ホタルイカ";
+"gourmet_hotaru_ika_desc" = "富山湾の春の風物詩。青く光る小さなイカ";
+"gourmet_masu_sushi" = "ますの寿司";
+"gourmet_masu_sushi_desc" = "富山の駅弁として有名。笹の葉で包んだ押し寿司";
+"gourmet_toyama_black_ramen" = "富山ブラックラーメン";
+"gourmet_toyama_black_ramen_desc" = "富山のご当地ラーメン。真っ黒なスープ";
+"gourmet_himi_beef" = "氷見牛";
+"gourmet_himi_beef_desc" = "富山県氷見市のブランド牛";
+
+// Shiga Gourmet
+"gourmet_omi_beef" = "近江牛";
+"gourmet_omi_beef_desc" = "日本三大和牛の一つ。400年の歴史を持つブランド牛";
+"gourmet_funa_sushi" = "鮒寿司";
+"gourmet_funa_sushi_desc" = "琵琶湖の鮒を使った発酵寿司。滋賀の伝統食";
+"gourmet_aka_konnyaku" = "赤こんにゃく";
+"gourmet_aka_konnyaku_desc" = "滋賀県の名物。鉄分で赤く染めたこんにゃく";
+"gourmet_shigaraki_pottery" = "信楽焼";
+"gourmet_shigaraki_pottery_desc" = "滋賀県信楽町の陶器。たぬきの置物で有名";
+"gourmet_lake_fish_cuisine" = "湖魚料理";
+"gourmet_lake_fish_cuisine_desc" = "琵琶湖の魚を使った郷土料理";
+
+// Kyoto Gourmet
+"gourmet_yudofu" = "湯豆腐";
+"gourmet_yudofu_desc" = "京都の精進料理。上品な出汁で温めた豆腐";
+"gourmet_kyoto_kaiseki" = "京懐石";
+"gourmet_kyoto_kaiseki_desc" = "京都の高級料理。季節感を大切にした美しい料理";
+"gourmet_matcha_sweets" = "抹茶スイーツ";
+"gourmet_matcha_sweets_desc" = "宇治抹茶を使った和スイーツ";
+"gourmet_obanzai" = "おばんざい";
+"gourmet_obanzai_desc" = "京都の家庭料理。野菜中心の優しい味";
+"gourmet_kyoto_pickles" = "京漬物";
+"gourmet_kyoto_pickles_desc" = "京都の伝統的な漬物。上品な味わい";
+
+// Hyogo Gourmet
+"gourmet_kobe_beef" = "神戸牛";
+"gourmet_kobe_beef_desc" = "世界最高級のブランド牛。とろけるような食感";
+"gourmet_akashiyaki" = "明石焼き";
+"gourmet_akashiyaki_desc" = "明石の名物。たこ焼きよりふわふわの食感";
+"gourmet_ikanago" = "いかなご";
+"gourmet_ikanago_desc" = "瀬戸内海の春の味覚。佃煮にして食べる";
+"gourmet_banshu_ramen" = "播州ラーメン";
+"gourmet_banshu_ramen_desc" = "兵庫県播州地方のご当地ラーメン";
+"gourmet_awaji_onion" = "淡路島玉ねぎ";
+"gourmet_awaji_onion_desc" = "甘くてやわらかい淡路島の特産品";
+
+// Nara Gourmet
+"gourmet_kakinoha_sushi" = "柿の葉寿司";
+"gourmet_kakinoha_sushi_desc" = "奈良の郷土料理。柿の葉で包んだ押し寿司";
+"gourmet_miwa_somen" = "三輪そうめん";
+"gourmet_miwa_somen_desc" = "奈良県三輪地方の手延べそうめん";
+"gourmet_narazuke" = "奈良漬";
+"gourmet_narazuke_desc" = "酒粕に漬けた奈良の特産品";
+"gourmet_yamato_beef" = "大和牛";
+"gourmet_yamato_beef_desc" = "奈良県のブランド牛。やわらかくて上質";
+"gourmet_kuzukiri" = "くずきり";
+"gourmet_kuzukiri_desc" = "葛粉で作った透明な麺。上品な甘さ";
+
+// Wakayama Gourmet
+"gourmet_umeboshi" = "梅干し";
+"gourmet_umeboshi_desc" = "和歌山県は梅の生産量日本一。南高梅が有名";
+"gourmet_wakayama_ramen" = "和歌山ラーメン";
+"gourmet_wakayama_ramen_desc" = "濃厚な豚骨醤油ラーメン。中華そばとも呼ばれる";
+"gourmet_tuna" = "マグロ";
+"gourmet_tuna_desc" = "紀州勝浦のマグロ。新鮮で脂がのっている";
+"gourmet_persimmon" = "和歌山の柿";
+"gourmet_persimmon_desc" = "甘くて美味しい和歌山県産の柿";
+"gourmet_kishu_kinzanji_miso" = "紀州金山寺味噌";
+"gourmet_kishu_kinzanji_miso_desc" = "野菜入りの甘い味噌。和歌山の特産品";
+
+// Tottori Gourmet
+"gourmet_matsuba_crab" = "松葉ガニ";
+"gourmet_matsuba_crab_desc" = "鳥取の冬の味覚。甘くて身がぎっしり詰まった高級ガニ";
+"gourmet_nijisseiki_pear" = "二十世紀梨";
+"gourmet_nijisseiki_pear_desc" = "鳥取の特産品。みずみずしくてシャリシャリ食感";
+"gourmet_sakaiminato_seafood" = "境港の海鮮";
+"gourmet_sakaiminato_seafood_desc" = "日本海の新鮮な海の幸。カニ、魚類が豊富";
+"gourmet_tofu_chikuwa" = "とうふちくわ";
+"gourmet_tofu_chikuwa_desc" = "鳥取の名物。豆腐を混ぜた白いちくわ";
+"gourmet_gyu_kotsu_ramen" = "牛骨ラーメン";
+"gourmet_gyu_kotsu_ramen_desc" = "鳥取のご当地ラーメン。牛骨の出汁が特徴";
+
+// Okayama Gourmet
+"gourmet_white_peach" = "白桃";
+"gourmet_white_peach_desc" = "岡山の特産品。甘くてジューシーな高級桃";
+"gourmet_muscat" = "マスカット";
+"gourmet_muscat_desc" = "岡山県産のマスカット・オブ・アレキサンドリア";
+"gourmet_kibidango" = "きびだんご";
+"gourmet_kibidango_desc" = "岡山の名物菓子。桃太郎伝説で有名";
+"gourmet_mamakari" = "ままかり";
+"gourmet_mamakari_desc" = "岡山の郷土料理。小魚の酢漬け";
+"gourmet_demi_katsu_don" = "デミカツ丼";
+"gourmet_demi_katsu_don_desc" = "岡山のB級グルメ。デミグラスソースのカツ丼";
+
+// Hiroshima Gourmet
+"gourmet_okonomiyaki_hiroshima" = "広島風お好み焼き";
+"gourmet_okonomiyaki_hiroshima_desc" = "麺入りのお好み焼き。広島のソウルフード";
+"gourmet_oyster" = "牡蠣";
+"gourmet_oyster_desc" = "広島湾の牡蠣。濃厚でクリーミーな味わい";
+"gourmet_momiji_manju" = "もみじ饅頭";
+"gourmet_momiji_manju_desc" = "広島の銘菓。もみじの形をしたカステラ饅頭";
+"gourmet_hiroshima_tsukemen" = "広島風つけ麺";
+"gourmet_hiroshima_tsukemen_desc" = "辛い味噌ダレにつけて食べる広島のラーメン";
+"gourmet_anago_meshi" = "あなご飯";
+"gourmet_anago_meshi_desc" = "宮島の名物。穴子の蒲焼きをのせたご飯";
+
+// Yamaguchi Gourmet
+"gourmet_fugu" = "ふぐ";
+"gourmet_fugu_desc" = "下関のふぐ。高級食材の代表格";
+"gourmet_kawara_soba" = "瓦そば";
+"gourmet_kawara_soba_desc" = "山口県の名物。熱した瓦の上で焼いた茶そば";
+"gourmet_iwakuni_lotus_root" = "岩国れんこん";
+"gourmet_iwakuni_lotus_root_desc" = "岩国の特産品。穴が多くて食感が良い";
+"gourmet_shimonoseki_whale" = "下関のクジラ";
+"gourmet_shimonoseki_whale_desc" = "下関の伝統的な食材。クジラ肉料理";
+"gourmet_natsumikan" = "夏みかん";
+"gourmet_natsumikan_desc" = "山口県の特産品。爽やかな酸味が特徴";
+
+// Shimane Gourmet
+"gourmet_izumo_soba" = "出雲そば";
+"gourmet_izumo_soba_desc" = "島根の名物そば。三段の割子で食べる";
+"gourmet_shinjiko_shijimi" = "宍道湖しじみ";
+"gourmet_shinjiko_shijimi_desc" = "宍道湖の大粒しじみ。味噌汁が絶品";
+"gourmet_nodoguro_shimane" = "のどぐろ";
+"gourmet_nodoguro_shimane_desc" = "日本海の高級魚。上品な脂と甘み";
+"gourmet_matsue_wagashi" = "松江和菓子";
+"gourmet_matsue_wagashi_desc" = "松江の茶文化を支える上生菓子";
+"gourmet_wariko_soba" = "割子そば";
+"gourmet_wariko_soba_desc" = "出雲そばの伝統的な食べ方";
+
+// Kagawa Gourmet
+"gourmet_sanuki_udon" = "讃岐うどん";
+"gourmet_sanuki_udon_desc" = "香川県の名物。コシの強い手打ちうどん";
+"gourmet_olive" = "オリーブ";
+"gourmet_olive_desc" = "小豆島の特産品。日本のオリーブ発祥の地";
+"gourmet_honetsuki_dori" = "骨付鳥";
+"gourmet_honetsuki_dori_desc" = "香川のB級グルメ。スパイシーな鶏もも肉";
+"gourmet_wasanbon" = "和三盆";
+"gourmet_wasanbon_desc" = "香川の高級砂糖。上品な甘さの和菓子";
+"gourmet_shodoshima_somen" = "小豆島そうめん";
+"gourmet_shodoshima_somen_desc" = "小豆島の手延べそうめん。400年の歴史";
+
+// Tokushima Gourmet
+"gourmet_awa_odori_chicken" = "阿波尾鶏";
+"gourmet_awa_odori_chicken_desc" = "徳島県のブランド鶏。弾力のある食感";
+"gourmet_tarai_udon" = "たらいうどん";
+"gourmet_tarai_udon_desc" = "徳島の郷土料理。大きなたらいで食べるうどん";
+"gourmet_sudachi" = "すだち";
+"gourmet_sudachi_desc" = "徳島の特産品。爽やかな酸味の柑橘類";
+"gourmet_naruto_kintoki" = "鳴門金時";
+"gourmet_naruto_kintoki_desc" = "徳島県鳴門市の特産さつまいも。ホクホクで甘い";
+"gourmet_handa_somen" = "半田そうめん";
+"gourmet_handa_somen_desc" = "徳島県つるぎ町の手延べそうめん";
+
+// Kochi Gourmet
+"gourmet_katsuo_tataki" = "カツオのたたき";
+"gourmet_katsuo_tataki_desc" = "高知の名物。藁で炙った香ばしいカツオ";
+"gourmet_sawachi_cuisine" = "皿鉢料理";
+"gourmet_sawachi_cuisine_desc" = "高知の郷土料理。大皿に盛られた豪華な料理";
+"gourmet_tosa_sake" = "土佐酒";
+"gourmet_tosa_sake_desc" = "高知の日本酒。辛口でキレのある味";
+"gourmet_yuzu" = "ゆず";
+"gourmet_yuzu_desc" = "高知県は柚子の生産量日本一。香り豊か";
+"gourmet_tosa_buntan" = "土佐文旦";
+"gourmet_tosa_buntan_desc" = "高知の特産柑橘。大きくて甘酸っぱい";
+
+// Ehime Gourmet
+"gourmet_mikan" = "愛媛みかん";
+"gourmet_mikan_desc" = "愛媛県は柑橘の王国。甘くてジューシー";
+"gourmet_jakoten" = "じゃこ天";
+"gourmet_jakoten_desc" = "愛媛の名物。小魚のすり身を揚げた練り物";
+"gourmet_tai_meshi" = "鯛めし";
+"gourmet_tai_meshi_desc" = "愛媛の郷土料理。新鮮な鯛を使った炊き込みご飯";
+"gourmet_iyokan" = "いよかん";
+"gourmet_iyokan_desc" = "愛媛の代表的柑橘。爽やかな甘酸っぱさ";
+"gourmet_botchan_dango" = "坊っちゃん団子";
+"gourmet_botchan_dango_desc" = "松山の名物。3色の美しい団子";
+
+// Oita Gourmet
+"gourmet_seki_saba_aji" = "関さば・関あじ";
+"gourmet_seki_saba_aji_desc" = "大分県の高級魚。豊後水道で育った絶品魚";
+"gourmet_toriten" = "とり天";
+"gourmet_toriten_desc" = "大分発祥の鶏の天ぷら。サクサクでジューシー";
+"gourmet_dango_soup" = "だんご汁";
+"gourmet_dango_soup_desc" = "大分の郷土料理。小麦粉の団子入り味噌汁";
+"gourmet_bungo_beef" = "豊後牛";
+"gourmet_bungo_beef_desc" = "大分県のブランド牛。やわらかくて旨味が濃い";
+"gourmet_kabosu" = "かぼす";
+"gourmet_kabosu_desc" = "大分の特産柑橘。さっぱりとした酸味";
+
+// Miyazaki Gourmet
+"gourmet_miyazaki_beef" = "宮崎牛";
+"gourmet_miyazaki_beef_desc" = "宮崎県のブランド牛。霜降りが美しい最高級牛肉";
+"gourmet_chicken_nanban" = "チキン南蛮";
+"gourmet_chicken_nanban_desc" = "宮崎発祥の鶏料理。甘酢とタルタルソースが絶品";
+"gourmet_hiyajiru" = "冷や汁";
+"gourmet_hiyajiru_desc" = "宮崎の郷土料理。冷たい味噌汁をご飯にかける";
+"gourmet_miyazaki_mango" = "宮崎マンゴー";
+"gourmet_miyazaki_mango_desc" = "宮崎県産の完熟マンゴー。甘くてとろける食感";
+"gourmet_miyazaki_shochu" = "宮崎焼酎";
+"gourmet_miyazaki_shochu_desc" = "宮崎県の芋焼酎。まろやかで飲みやすい";
+
+// Kagoshima Gourmet
+"gourmet_kurobuta" = "鹿児島黒豚";
+"gourmet_kurobuta_desc" = "鹿児島の名物豚肉。甘みがあってジューシー";
+"gourmet_satsuma_imo" = "薩摩芋";
+"gourmet_satsuma_imo_desc" = "鹿児島の特産品。甘くてホクホクのさつまいも";
+"gourmet_kagoshima_shochu" = "芋焼酎";
+"gourmet_kagoshima_shochu_desc" = "鹿児島の代表的な焼酎。芋の甘みと香り";
+"gourmet_kibinago" = "きびなご";
+"gourmet_kibinago_desc" = "鹿児島の小魚。刺身や唐揚げで食べる";
+"gourmet_shirokuma" = "白熊";
+"gourmet_shirokuma_desc" = "鹿児島のかき氷。練乳とフルーツがたっぷり";
+
+// Kumamoto Gourmet
+"gourmet_basashi" = "馬刺し";
+"gourmet_basashi_desc" = "熊本の名物。新鮮な馬肉の刺身";
+"gourmet_dago_soup" = "だご汁";
+"gourmet_dago_soup_desc" = "熊本の郷土料理。小麦粉の団子入り味噌汁";
+"gourmet_taipien" = "太平燕";
+"gourmet_taipien_desc" = "熊本のご当地中華。春雨入りの優しいスープ";
+"gourmet_karashi_renkon" = "辛子蓮根";
+"gourmet_karashi_renkon_desc" = "熊本の郷土料理。蓮根に辛子味噌を詰めて揚げる";
+"gourmet_ikinari_dango" = "いきなり団子";
+"gourmet_ikinari_dango_desc" = "熊本の郷土菓子。さつまいもとあんこの団子";
+
+// Saga Gourmet
+"gourmet_saga_beef" = "佐賀牛";
+"gourmet_saga_beef_desc" = "佐賀県のブランド牛。きめ細かい霜降りが美しい";
+"gourmet_yobuko_ika" = "呼子のイカ";
+"gourmet_yobuko_ika_desc" = "佐賀県呼子町の透明なイカ。活け造りで食べる";
+"gourmet_gabai_manju" = "がばい饅頭";
+"gourmet_gabai_manju_desc" = "佐賀の銘菓。素朴で優しい甘さの饅頭";
+"gourmet_marubolo" = "丸ぼうろ";
+"gourmet_marubolo_desc" = "佐賀の伝統菓子。カステラのような甘いお菓子";
+"gourmet_onsen_yudofu" = "温泉湯豆腐";
+"gourmet_onsen_yudofu_desc" = "嬉野温泉の名物。温泉水で作るとろける豆腐";
+
+// Nagasaki Gourmet
+"gourmet_champon" = "ちゃんぽん";
+"gourmet_champon_desc" = "長崎の名物麺料理。野菜と海鮮がたっぷり";
+"gourmet_sara_udon_desc" = "長崎の郷土料理。パリパリ麺にとろみのあるあん";
+"gourmet_castella" = "カステラ";
+"gourmet_castella_desc" = "長崎の代表的銘菓。しっとりとした甘いスポンジ";
+"gourmet_sasebo_burger" = "佐世保バーガー";
+"gourmet_sasebo_burger_desc" = "佐世保のご当地バーガー。手作りの大きなハンバーガー";
+"gourmet_kakuni_manju" = "角煮まんじゅう";
+"gourmet_kakuni_manju_desc" = "長崎の名物。とろとろの豚角煮を包んだ饅頭";/* Japanese GourmetItem Localizable.strings */
+
+// Hokkaido Gourmet
+"gourmet_genghis_khan" = "ジンギスカン";
+"gourmet_genghis_khan_desc" = "北海道名物の羊肉料理。特製たれで焼いた柔らかい羊肉";
+"gourmet_seafood_bowl" = "海鮮丼";
+"gourmet_seafood_bowl_desc" = "新鮮な海の幸がたっぷり。ウニ、イクラ、カニなど豪華な丼";
+"gourmet_soup_curry" = "スープカレー";
+"gourmet_soup_curry_desc" = "札幌発祥のサラサラスープのカレー。野菜たっぷり";
+"gourmet_yubari_melon" = "夕張メロン";
+"gourmet_yubari_melon_desc" = "甘くて香り高い高級メロン。北海道の代表的フルーツ";
+"gourmet_shiroi_koibito" = "白い恋人";
+"gourmet_shiroi_koibito_desc" = "北海道土産の定番。ラングドシャとホワイトチョコの絶妙な組み合わせ";
+
+// Aomori Gourmet
+"gourmet_aomori_apple" = "青森りんご";
+"gourmet_aomori_apple_desc" = "日本一の生産量を誇る甘くてジューシーなりんご";
+"gourmet_oma_tuna" = "大間まぐろ";
+"gourmet_oma_tuna_desc" = "本州最北端大間で獲れる極上のクロマグロ";
+"gourmet_senbei_soup" = "せんべい汁";
+"gourmet_senbei_soup_desc" = "南部せんべいを割って入れる青森の郷土料理";
+"gourmet_tsugaru_soba" = "津軽そば";
+"gourmet_tsugaru_soba_desc" = "津軽地方の手打ちそば。風味豊かな田舎そば";
+"gourmet_ichigo_ni" = "いちご煮";
+"gourmet_ichigo_ni_desc" = "ウニとアワビの潮汁。高級海の幸の競演";
+
+// Iwate Gourmet
+"gourmet_wanko_soba" = "わんこそば";
+"gourmet_wanko_soba_desc" = "小さなお椀で何杯でも。岩手の名物そば";
+"gourmet_morioka_cold_noodles" = "盛岡冷麺";
+"gourmet_morioka_cold_noodles_desc" = "コシの強い麺と酸味のあるスープが特徴";
+"gourmet_maezawa_beef" = "前沢牛";
+"gourmet_maezawa_beef_desc" = "岩手が誇るブランド牛。霜降りが美しい最高級牛肉";
+"gourmet_nanbu_senbei" = "南部煎餅";
+"gourmet_nanbu_senbei_desc" = "胡麻やピーナッツ入りの香ばしいせんべい";
+"gourmet_gangetsu" = "雁月";
+"gourmet_gangetsu_desc" = "黄身あんを包んだ岩手の銘菓";
+
+// Akita Gourmet
+"gourmet_kiritanpo" = "きりたんぽ";
+"gourmet_kiritanpo_desc" = "秋田の郷土料理。つぶしたご飯を棒に巻いて焼いた名物";
+"gourmet_hinai_chicken" = "比内地鶏";
+"gourmet_hinai_chicken_desc" = "秋田の地鶏。旨味が濃く、きりたんぽ鍋には欠かせない";
+"gourmet_inaniwa_udon" = "稲庭うどん";
+"gourmet_inaniwa_udon_desc" = "手延べ製法の細くてコシのある上品なうどん";
+"gourmet_akita_komachi" = "秋田こまち";
+"gourmet_akita_komachi_desc" = "秋田県産の美味しいお米。ふっくらもちもち";
+"gourmet_babahera_ice" = "ババヘラアイス";
+"gourmet_babahera_ice_desc" = "おばあちゃんが手売りするカラフルなアイス";
+
+// Miyagi Gourmet
+"gourmet_beef_tongue" = "牛タン";
+"gourmet_beef_tongue_desc" = "仙台名物の厚切り牛タン。炭火焼きで香ばしく";
+"gourmet_sasukamaboko" = "笹かまぼこ";
+"gourmet_sasukamaboko_desc" = "宮城の名産品。上質な魚のすり身で作った蒲鉾";
+"gourmet_zunda_mochi" = "ずんだ餅";
+"gourmet_zunda_mochi_desc" = "枝豆をすりつぶした緑色の餡が特徴的";
+"gourmet_seri_nabe" = "せり鍋";
+"gourmet_seri_nabe_desc" = "宮城県名取市の特産せりを使った鍋料理";
+"gourmet_shiroishi_somen" = "白石温麺";
+"gourmet_shiroishi_somen_desc" = "油を使わない素麺より短い麺。胃にやさしい";
+
+// Yamagata Gourmet
+"gourmet_cherry" = "さくらんぼ";
+"gourmet_cherry_desc" = "山形が誇る日本一の生産量。佐藤錦が有名";
+"gourmet_yonezawa_beef" = "米沢牛";
+"gourmet_yonezawa_beef_desc" = "山形の最高級ブランド牛。とろけるような霜降り";
+"gourmet_imoni" = "芋煮";
+"gourmet_imoni_desc" = "秋の風物詩。里芋と牛肉の煮物で河原で楽しむ";
+"gourmet_tama_konnyaku" = "玉こんにゃく";
+"gourmet_tama_konnyaku_desc" = "醤油ダレで煮込んだ丸いこんにゃく。山形の定番";
+"gourmet_cold_ramen" = "冷やしラーメン";
+"gourmet_cold_ramen_desc" = "山形発祥の夏の冷たいラーメン";
+
+// Fukushima Gourmet
+"gourmet_kitakata_ramen" = "喜多方ラーメン";
+"gourmet_kitakata_ramen_desc" = "醤油ベースの澄んだスープと平打ち縮れ麺";
+"gourmet_aizu_chicken" = "会津地鶏";
+"gourmet_aizu_chicken_desc" = "福島県会津地方の地鶏。コクのある味わい";
+"gourmet_mamadooru" = "ままどおる";
+"gourmet_mamadooru_desc" = "福島の銘菓。ミルク味の優しい洋菓子";
+"gourmet_fukushima_peach" = "福島の桃";
+"gourmet_fukushima_peach_desc" = "甘くてジューシーな福島県産の桃";
+"gourmet_shirakawa_ramen" = "白河ラーメン";
+"gourmet_shirakawa_ramen_desc" = "手打ち縮れ麺と醤油スープの白河系ラーメン";
+
+// Ibaraki Gourmet
+"gourmet_natto" = "納豆";
+"gourmet_natto_desc" = "茨城県は納豆の生産量日本一。ねば〜っと糸引く";
+"gourmet_anko_nabe" = "あんこう鍋";
+"gourmet_anko_nabe_desc" = "冬の味覚の王様。コラーゲンたっぷりの鍋料理";
+"gourmet_hitachi_beef" = "常陸牛";
+"gourmet_hitachi_beef_desc" = "茨城のブランド牛。やわらかくて旨味たっぷり";
+"gourmet_ibaraki_melon" = "メロン";
+"gourmet_ibaraki_melon_desc" = "茨城県はメロン生産量日本一。甘くて香り高い";
+"gourmet_dried_sweet_potato" = "干し芋";
+"gourmet_dried_sweet_potato_desc" = "茨城の特産品。自然な甘さの昔ながらのおやつ";
+
+// Chiba Gourmet
+"gourmet_peanuts" = "落花生";
+"gourmet_peanuts_desc" = "千葉県産の新鮮な落花生。甘みと香りが絶品";
+"gourmet_loquat" = "びわ";
+"gourmet_loquat_desc" = "房総半島の温暖な気候で育った甘いびわ";
+"gourmet_namerou" = "なめろう";
+"gourmet_namerou_desc" = "房総の漁師料理。アジなどを叩いて味噌と和える";
+"gourmet_katsuura_tantanmen" = "勝浦タンタンメン";
+"gourmet_katsuura_tantanmen_desc" = "勝浦の漁師が体を温めるために作った辛いラーメン";
+"gourmet_boso_seafood" = "房総の海の幸";
+"gourmet_boso_seafood_desc" = "新鮮な海産物。伊勢エビ、アワビなど豊富";
+
+// Tochigi Gourmet
+"gourmet_utsunomiya_gyoza" = "宇都宮餃子";
+"gourmet_utsunomiya_gyoza_desc" = "宇都宮市は餃子の街。焼き餃子が有名";
+"gourmet_yuba" = "湯波";
+"gourmet_yuba_desc" = "日光の名物。豆乳の表面にできる薄い膜";
+"gourmet_tochiotome" = "とちおとめ";
+"gourmet_tochiotome_desc" = "栃木県産のブランドいちご。甘くて大粒";
+"gourmet_shimotsukare" = "しもつかれ";
+"gourmet_shimotsukare_desc" = "栃木の郷土料理。大根おろしと鮭の頭を煮込む";
+"gourmet_lemon_milk" = "レモン牛乳";
+"gourmet_lemon_milk_desc" = "栃木県民のソウルドリンク。レモン風味の甘い牛乳";
+
+// Gunma Gourmet
+"gourmet_yaki_manju" = "焼きまんじゅう";
+"gourmet_yaki_manju_desc" = "群馬の名物。甘い味噌だれを塗って焼いた饅頭";
+"gourmet_shimonita_negi" = "下仁田ねぎ";
+"gourmet_shimonita_negi_desc" = "群馬の特産品。太くて甘みが強いねぎ";
+"gourmet_konnyaku" = "こんにゃく";
+"gourmet_konnyaku_desc" = "群馬県はこんにゃく芋の生産量日本一";
+"gourmet_mizusawa_udon" = "水沢うどん";
+"gourmet_mizusawa_udon_desc" = "群馬の名物うどん。コシが強くてのど越し抜群";
+"gourmet_daruma_bento" = "だるま弁当";
+"gourmet_daruma_bento_desc" = "高崎駅の名物駅弁。だるまの容器が特徴的";
+
+// Saitama Gourmet
+"gourmet_kawagoe_sweet_potato" = "川越芋";
+"gourmet_kawagoe_sweet_potato_desc" = "川越の特産品。ねっとりとした甘いさつまいも";
+"gourmet_chichibu_soba" = "秩父そば";
+"gourmet_chichibu_soba_desc" = "秩父地方の手打ちそば。香り高い田舎そば";
+"gourmet_soka_senbei" = "草加せんべい";
+"gourmet_soka_senbei_desc" = "草加市の名物。パリッと香ばしい醤油せんべい";
+"gourmet_gokaho" = "五家宝";
+"gourmet_gokaho_desc" = "熊谷の銘菓。きな粉をまぶした昔ながらの和菓子";
+"gourmet_iga_manju" = "いがまんじゅう";
+"gourmet_iga_manju_desc" = "行田の名物。赤飯をまぶした蒸し饅頭";
+
+// Tokyo Gourmet
+"gourmet_edomae_sushi" = "江戸前寿司";
+"gourmet_edomae_sushi_desc" = "東京湾で獲れた魚介を使った伝統的な寿司";
+"gourmet_monjayaki" = "もんじゃ焼き";
+"gourmet_monjayaki_desc" = "下町の名物。だしの効いたゆるい生地を鉄板で焼く";
+"gourmet_fukagawa_don" = "深川丼";
+"gourmet_fukagawa_don_desc" = "江戸時代から続く庶民の味。あさりの味噌汁をご飯にかける";
+"gourmet_imagawayaki" = "今川焼き";
+"gourmet_imagawayaki_desc" = "東京発祥の和菓子。あんこ入りの丸い焼き菓子";
+"gourmet_tsukudani" = "佃煮";
+"gourmet_tsukudani_desc" = "江戸時代から続く保存食。小魚や昆布を甘辛く煮たもの";
+
+// Continue with all other prefectures...
+// Kanagawa through Okinawa with the same pattern
+
+// Kanagawa Gourmet
+"gourmet_shumai" = "シウマイ";
+"gourmet_shumai_desc" = "横浜名物の豚肉シューマイ。崎陽軒が有名";
+"gourmet_kamakura_vegetables" = "鎌倉野菜";
+"gourmet_kamakura_vegetables_desc" = "鎌倉で作られる新鮮で美味しい野菜";
+"gourmet_shonan_shirasu" = "湘南しらす";
+"gourmet_shonan_shirasu_desc" = "相模湾で獲れる新鮮なしらす。生と釜揚げで楽しめる";
+"gourmet_iekei_ramen" = "家系ラーメン";
+"gourmet_iekei_ramen_desc" = "横浜発祥の豚骨醤油ラーメン。濃厚なスープが特徴";
+"gourmet_yokohama_chinatown_gourmet" = "横浜中華街グルメ";
+"gourmet_yokohama_chinatown_gourmet_desc" = "本格的な中華料理が楽しめる日本最大の中華街";
+
+// Niigata Gourmet
+"gourmet_niigata_rice" = "新潟米";
+"gourmet_niigata_rice_desc" = "日本有数の米どころ。コシヒカリが特に有名";
+"gourmet_noppe" = "のっぺ";
+"gourmet_noppe_desc" = "新潟の郷土料理。里芋や人参を煮込んだ優しい味";
+"gourmet_hegi_soba" = "へぎそば";
+"gourmet_hegi_soba_desc" = "つなぎに布海苔を使った新潟の名物そば";
+"gourmet_niigata_salmon" = "新潟の鮭";
+"gourmet_niigata_salmon_desc" = "信濃川で獲れる鮭。新潟の秋の味覚";
+"gourmet_sake" = "日本酒";
+"gourmet_sake_desc" = "全国有数の酒どころ。清冽な水で作られた美酒";
+
+// Nagano Gourmet
+"gourmet_shinshu_soba" = "信州そば";
+"gourmet_shinshu_soba_desc" = "長野県の名物。香り高い蕎麦の実を使った手打ちそば";
+"gourmet_oyaki" = "おやき";
+"gourmet_oyaki_desc" = "野菜や山菜を小麦粉の皮で包んで焼いた郷土料理";
+"gourmet_nozawana" = "野沢菜";
+"gourmet_nozawana_desc" = "長野の特産野菜。漬物にして食べるのが定番";
+"gourmet_shinshu_apple" = "信州りんご";
+"gourmet_shinshu_apple_desc" = "甘くてジューシーな長野県産のりんご";
+"gourmet_shinshu_miso" = "信州味噌";
+"gourmet_shinshu_miso_desc" = "長野県産の味噌。甘口で香り豊かな赤味噌";
+
+// Yamanashi Gourmet
+"gourmet_hoto" = "ほうとう";
+"gourmet_hoto_desc" = "山梨の名物料理。平たい麺と野菜を味噌で煮込む";
+"gourmet_shingen_mochi" = "信玄餅";
+"gourmet_shingen_mochi_desc" = "山梨の代表的な銘菓。きな粉と黒蜜をかけて食べる";
+"gourmet_yamanashi_grape" = "山梨のぶどう";
+"gourmet_yamanashi_grape_desc" = "甲府盆地で育った甘いぶどう。巨峰やシャインマスカット";
+"gourmet_yamanashi_peach" = "山梨の桃";
+"gourmet_yamanashi_peach_desc" = "甘くてジューシーな山梨県産の桃";
+"gourmet_koshu_wine" = "甲州ワイン";
+"gourmet_koshu_wine_desc" = "山梨県産ぶどうで作られた日本ワイン";
+
+// Continue with remaining prefectures...
+// I'll continue with the most important ones for brevity
+
+// Osaka Gourmet
+"gourmet_takoyaki" = "たこ焼き";
+"gourmet_takoyaki_desc" = "大阪のソウルフード。外はカリッと中はトロッと";
+"gourmet_okonomiyaki" = "お好み焼き";
+"gourmet_okonomiyaki_desc" = "関西風お好み焼き。キャベツたっぷりでふんわり";
+"gourmet_kushikatsu" = "串カツ";
+"gourmet_kushikatsu_desc" = "新世界名物。二度づけ禁止のソースで";
+"gourmet_ikayaki" = "イカ焼き";
+"gourmet_ikayaki_desc" = "大阪の粉もん文化。プレスで焼いた香ばしいイカ";
+"gourmet_butaman" = "豚まん";
+"gourmet_butaman_desc" = "関西では肉まんではなく豚まん";
+
+// Fukuoka Gourmet
+"gourmet_hakata_ramen" = "博多ラーメン";
+"gourmet_hakata_ramen_desc" = "豚骨ラーメンの本場。濃厚でクリーミーなスープ";
+"gourmet_motsu_nabe" = "もつ鍋";
+"gourmet_motsu_nabe_desc" = "福岡の名物鍋。牛もつと野菜の旨味が絶品";
+"gourmet_karashi_mentaiko" = "辛子明太子";
+"gourmet_karashi_mentaiko_desc" = "福岡の名産品。ピリ辛で旨味たっぷり";
+"gourmet_mizutaki" = "水炊き";
+"gourmet_mizutaki_desc" = "博多の郷土料理。鶏の旨味が凝縮された鍋";
+"gourmet_hakata_torimon" = "博多通りもん";
+"gourmet_hakata_torimon_desc" = "福岡の銘菓。ミルク饅頭の上品な甘さ";
+
+// Okinawa Gourmet
+"gourmet_goya_chanpuru" = "ゴーヤチャンプルー";
+"gourmet_goya_chanpuru_desc" = "沖縄の代表的郷土料理。ゴーヤと豆腐の炒め物";
+"gourmet_soki_soba" = "ソーキそば";
+"gourmet_soki_soba_desc" = "沖縄そば。豚のあばら肉がトッピング";
+"gourmet_sata_andagi" = "サーターアンダギー";
+"gourmet_sata_andagi_desc" = "沖縄の揚げ菓子。外はカリッと中はふんわり";
+"gourmet_umi_budo" = "海ぶどう";
+"gourmet_umi_budo_desc" = "沖縄の海藻。プチプチした食感が楽しい";
+"gourmet_awamori" = "泡盛";
+"gourmet_awamori_desc" = "沖縄の伝統的な蒸留酒。米を原料とした独特の風味";
+
+"famous_gourmet_title" = "名物グルメ";
+"taste_prefecture_format" = "%@の味を堪能";
+"load_more_groumet" = "もっと見る";
+"groumet_clear" = "クリア";
+
+"food_category_all" = "すべて";
+"food_category_ramen" = "ラーメン";
+"food_category_seafood" = "海鮮";
+"food_category_meat" = "肉料理";
+"food_category_sweets" = "スイーツ";
+"food_category_local" = "郷土料理";
+"food_category_drinks" = "飲み物";
+"food_category_vegetables" = "野菜・果物";
+
+// ラーメンのTips
+"ramen_tip_1" = "地元の老舗店で本格的な味を楽しむ";
+"ramen_tip_2" = "温かいうちに食べるのがおすすめ";
+"ramen_tip_3" = "地元の人に人気の店を探してみて";
+
+// 海鮮のTips
+"seafood_tip_1" = "旬の時期に新鮮なものを味わう";
+"seafood_tip_2" = "地元の漁港や市場で購入する";
+"seafood_tip_3" = "刺身や焼きなど様々な調理法で楽しむ";
+
+// 肉料理のTips
+"meat_tip_1" = "専門店で最高品質のものを味わう";
+"meat_tip_2" = "地元の調理法やタレで楽しむ";
+"meat_tip_3" = "お祭りや屋台でカジュアルに楽しむ";
+
+// スイーツのTips
+"sweets_tip_1" = "お土産として持ち帰る";
+"sweets_tip_2" = "お茶と一緒にゆっくり味わう";
+"sweets_tip_3" = "老舗和菓子店で作りたてを楽しむ";
+
+// 郷土料理のTips
+"local_tip_1" = "地元の家庭料理店で本場の味を体験";
+"local_tip_2" = "郷土料理の歴史や文化も一緒に学ぶ";
+"local_tip_3" = "地元の食材にもこだわったお店選び";
+
+// 飲み物のTips
+"drinks_tip_1" = "酒蔵見学と試飲を楽しむ";
+"drinks_tip_2" = "地元の料理と合わせて味わう";
+"drinks_tip_3" = "お土産として持ち帰る";
+
+// 野菜・果物のTips
+"vegetables_tip_1" = "農園や直売所で新鮮なものを購入";
+"vegetables_tip_2" = "旬の時期に現地で味わう";
+"vegetables_tip_3" = "加工品やスイーツでも楽しむ";
+
+"recommended_enjoyment" = "おすすめの楽しみ方";
+"price_range" = "価格帯";
+"best_season" = "ベストシーズン";
+"category" = "カテゴリ";
+"popularity_rank" = "人気ランク";
+"basic_info" = "基本情報";
+"detailed_info" = "詳細情報";
+"prefecture_specialties_format" = "%@の名物";
+
+// Seasons
+"season_all_year" = "通年";
+"season_spring" = "春";
+"season_summer" = "夏";
+"season_autumn" = "秋";
+"season_winter" = "冬";
+"season_spring_summer" = "春夏";
+"season_autumn_winter" = "秋冬";
+"season_winter_spring" = "冬春";
+"season_summer_autumn" = "夏秋";
+
+"souvenir.title" = "名物お土産";
+"souvenir.memory" = "%@の思い出を持ち帰る";
+"souvenir.about" = "商品について";
+"souvenir.bestSeason" = "おすすめ時期";
+"souvenir.category" = "カテゴリ";
+"souvenir.popularity" = "人気度";
+"souvenir.detailTitle" = "お土産詳細";
+
+
+"souvenirCategory.sweets" = "お菓子";
+"souvenirCategory.food" = "食品";
+"souvenirCategory.crafts" = "工芸品";
+"souvenirCategory.drinks" = "飲み物";
+"souvenirCategory.textiles" = "織物・衣類";
+"souvenirCategory.ceramics" = "陶磁器";
+"souvenirCategory.regional" = "地域限定品";
+
+// =====================================================
+// 北海道（Hokkaido）
+// =====================================================
+"hokkaido.shiroi_koibito.name" = "白い恋人";
+"hokkaido.shiroi_koibito.description" = "北海道土産の定番。ラングドシャとホワイトチョコの絶妙な組み合わせ";
+"hokkaido.shiroi_koibito.price" = "500-2,000円";
+
+"hokkaido.marsei_butter_sand.name" = "マルセイバターサンド";
+"hokkaido.marsei_butter_sand.description" = "六花亭の代表銘菓。バタークリームとレーズンが絶品";
+"hokkaido.marsei_butter_sand.price" = "1,200-2,000円";
+
+"hokkaido.jaga_pokkuru.name" = "じゃがポックル";
+"hokkaido.jaga_pokkuru.description" = "北海道産じゃがいもを使用したサクサクスナック";
+"hokkaido.jaga_pokkuru.price" = "1,000-1,500円";
+
+"hokkaido.royce_nama_chocolate.name" = "ロイズ生チョコレート";
+"hokkaido.royce_nama_chocolate.description" = "口どけなめらかな生チョコレート";
+"hokkaido.royce_nama_chocolate.price" = "800-2,500円";
+
+"hokkaido.yubari_melon_jelly.name" = "夕張メロンピュアゼリー";
+"hokkaido.yubari_melon_jelly.description" = "夕張メロンの果汁たっぷりのゼリー";
+"hokkaido.yubari_melon_jelly.price" = "2,000-4,000円";
+
+// =====================================================
+// 青森県（Aomori）
+// =====================================================
+"aomori.kininaruringo.name" = "気になるリンゴ";
+"aomori.kininaruringo.description" = "青森りんごを使用したアップルパイ風のお菓子";
+"aomori.kininaruringo.price" = "1,000-2,000円";
+
+"aomori.asa_no_hakkoda.name" = "朝の八甲田";
+"aomori.asa_no_hakkoda.description" = "青森の代表的な銘菓";
+"aomori.asa_no_hakkoda.price" = "1,500-3,000円";
+
+"aomori.ringo_stick.name" = "りんごスティック";
+"aomori.ringo_stick.description" = "青森産りんごを使った棒状のお菓子";
+"aomori.ringo_stick.price" = "800-1,500円";
+
+"aomori.tsugaru_vidro.name" = "津軽びいどろ";
+"aomori.tsugaru_vidro.description" = "青森県の伝統工芸品のガラス製品";
+"aomori.tsugaru_vidro.price" = "2,000-10,000円";
+
+"aomori.nebuta_goods.name" = "ねぶた関連グッズ";
+"aomori.nebuta_goods.description" = "青森ねぶた祭りをモチーフにした民芸品";
+"aomori.nebuta_goods.price" = "500-3,000円";
+
+// =====================================================
+// 岩手県（Iwate）
+// =====================================================
+"iwate.kamome_no_tamago.name" = "かもめの玉子";
+"iwate.kamome_no_tamago.description" = "岩手県大船渡市の代表的銘菓";
+"iwate.kamome_no_tamago.price" = "1,000-2,500円";
+
+"iwate.nanbu_senbei.name" = "南部せんべい";
+"iwate.nanbu_senbei.description" = "岩手県の伝統的なせんべい";
+"iwate.nanbu_senbei.price" = "500-1,500円";
+
+"iwate.nanbu_tekki.name" = "南部鉄器";
+"iwate.nanbu_tekki.description" = "岩手県の伝統工芸品。鉄製の急須や鍋";
+"iwate.nanbu_tekki.price" = "3,000-30,000円";
+
+"iwate.gangetsu.name" = "雁月";
+"iwate.gangetsu.description" = "黄身あんを包んだ岩手の銘菓";
+"iwate.gangetsu.price" = "1,500-3,000円";
+
+"iwate.fukuda_pan.name" = "福田パン";
+"iwate.fukuda_pan.description" = "盛岡市民に愛されるコッペパン";
+"iwate.fukuda_pan.price" = "200-500円";
+
+// =====================================================
+// 宮城県（Miyagi）
+// =====================================================
+"miyagi.hagi_no_tsuki.name" = "萩の月";
+"miyagi.hagi_no_tsuki.description" = "仙台銘菓。カスタードクリーム入りのスポンジケーキ";
+"miyagi.hagi_no_tsuki.price" = "1,500-3,000円";
+
+"miyagi.sasa_kamaboko.name" = "笹かまぼこ";
+"miyagi.sasa_kamaboko.description" = "宮城県の名産品。上質な魚のすり身で作った蒲鉾";
+"miyagi.sasa_kamaboko.price" = "1,000-3,000円";
+
+"miyagi.zunda_saryo.name" = "ずんだ茶寮";
+"miyagi.zunda_saryo.description" = "枝豆を使ったスイーツブランドの商品";
+"miyagi.zunda_saryo.price" = "800-2,500円";
+
+"miyagi.hakumatsuga_monaka.name" = "白松がモナカ";
+"miyagi.hakumatsuga_monaka.description" = "仙台の老舗和菓子店の最中";
+"miyagi.hakumatsuga_monaka.price" = "1,000-2,000円";
+
+"miyagi.kokeshi.name" = "こけし";
+"miyagi.kokeshi.description" = "宮城県の伝統工芸品";
+"miyagi.kokeshi.price" = "1,000-10,000円";
+
+// =====================================================
+// 秋田県（Akita）
+// =====================================================
+"akita.kinman.name" = "金萬";
+"akita.kinman.description" = "秋田の代表的銘菓。白あん入りのカステラ饅頭";
+"akita.kinman.price" = "1,000-2,500円";
+
+"akita.butter_mochi.name" = "バター餅";
+"akita.butter_mochi.description" = "秋田県の郷土菓子。バターと砂糖を練り込んだ餅";
+"akita.butter_mochi.price" = "800-1,500円";
+
+"akita.namahage_goods.name" = "なまはげ関連グッズ";
+"akita.namahage_goods.description" = "秋田の伝統行事なまはげのお土産";
+"akita.namahage_goods.price" = "500-3,000円";
+
+"akita.morokoshi.name" = "もろこし";
+"akita.morokoshi.description" = "秋田の伝統菓子。落雁の一種";
+"akita.morokoshi.price" = "1,000-2,000円";
+
+"akita.inaniwa_udon.name" = "稲庭うどん";
+"akita.inaniwa_udon.description" = "秋田県の手延べうどん";
+"akita.inaniwa_udon.price" = "1,500-3,000円";
+
+// =====================================================
+// 山形県（Yamagata）
+// =====================================================
+"yamagata.oshidori_milk_cake.name" = "おしどりミルクケーキ";
+"yamagata.oshidori_milk_cake.description" = "山形県の代表的銘菓";
+"yamagata.oshidori_milk_cake.price" = "800-1,500円";
+
+"yamagata.noshi_ume.name" = "乃し梅";
+"yamagata.noshi_ume.description" = "山形県の梅を使った銘菓";
+"yamagata.noshi_ume.price" = "1,000-2,500円";
+
+"yamagata.sakuranbo_kirara.name" = "さくらんぼきらら";
+"yamagata.sakuranbo_kirara.description" = "山形県産さくらんぼを使ったゼリー";
+"yamagata.sakuranbo_kirara.price" = "1,500-3,000円";
+
+"yamagata.shogi_koma.name" = "将棋駒";
+"yamagata.shogi_koma.description" = "山形県天童市の伝統工芸品";
+"yamagata.shogi_koma.price" = "2,000-50,000円";
+
+"yamagata.dadacha_mame.name" = "だだちゃ豆";
+"yamagata.dadacha_mame.description" = "山形県鶴岡市の特産枝豆";
+"yamagata.dadacha_mame.price" = "1,000-2,000円";
+
+// =====================================================
+// 福島県（Fukushima）
+// =====================================================
+"fukushima.mamadoru.name" = "ままどおる";
+"fukushima.mamadoru.description" = "福島の銘菓。ミルク味の優しい洋菓子";
+"fukushima.mamadoru.price" = "1,000-2,500円";
+
+"fukushima.usukawa_manju.name" = "薄皮饅頭";
+"fukushima.usukawa_manju.description" = "福島県郡山市の代表的銘菓";
+"fukushima.usukawa_manju.price" = "1,000-2,000円";
+
+"fukushima.exson_pie.name" = "エキソンパイ";
+"fukushima.exson_pie.description" = "福島県のパイ菓子";
+"fukushima.exson_pie.price" = "1,200-2,000円";
+
+"fukushima.aizu_nuri.name" = "会津塗り";
+"fukushima.aizu_nuri.description" = "福島県会津地方の伝統工芸品";
+"fukushima.aizu_nuri.price" = "3,000-30,000円";
+
+"fukushima.kitakata_ramen.name" = "喜多方ラーメン";
+"fukushima.kitakata_ramen.description" = "福島県喜多方市のご当地ラーメン（お土産用）";
+"fukushima.kitakata_ramen.price" = "1,000-2,500円";
+
+// =====================================================
+// 茨城県（Ibaraki）
+// =====================================================
+"ibaraki.yoshiwara_denchu.name" = "吉原殿中";
+"ibaraki.yoshiwara_denchu.description" = "茨城県水戸市の代表的銘菓";
+"ibaraki.yoshiwara_denchu.price" = "1,000-2,000円";
+
+"ibaraki.noshi_ume.name" = "のし梅";
+"ibaraki.noshi_ume.description" = "茨城県の梅を使った銘菓";
+"ibaraki.noshi_ume.price" = "800-1,500円";
+
+"ibaraki.natto.name" = "納豆";
+"ibaraki.natto.description" = "茨城県の特産品。様々な種類の納豆";
+"ibaraki.natto.price" = "300-1,000円";
+
+"ibaraki.hoshi_imo.name" = "干し芋";
+"ibaraki.hoshi_imo.description" = "茨城県の特産品。自然な甘さのさつまいも";
+"ibaraki.hoshi_imo.price" = "800-2,000円";
+
+"ibaraki.hitachi_fudoki.name" = "常陸風土記の丘";
+"ibaraki.hitachi_fudoki.description" = "茨城県の銘菓";
+"ibaraki.hitachi_fudoki.price" = "1,200-2,500円";
+
+// =====================================================
+// 栃木県（Tochigi）
+// =====================================================
+"tochigi.goyotei_no_tsuki.name" = "御用邸の月";
+"tochigi.goyotei_no_tsuki.description" = "栃木県の代表的銘菓";
+"tochigi.goyotei_no_tsuki.price" = "1,500-3,000円";
+
+"tochigi.lemon_milk_cookie.name" = "レモン牛乳クッキー";
+"tochigi.lemon_milk_cookie.description" = "栃木県民のソウルドリンクをクッキーに";
+"tochigi.lemon_milk_cookie.price" = "800-1,500円";
+
+"tochigi.yuba_senbei.name" = "湯波せんべい";
+"tochigi.yuba_senbei.description" = "日光名物の湯波を使ったせんべい";
+"tochigi.yuba_senbei.price" = "1,000-2,000円";
+
+"tochigi.mashiko_yaki.name" = "益子焼";
+"tochigi.mashiko_yaki.description" = "栃木県益子町の伝統工芸品";
+"tochigi.mashiko_yaki.price" = "2,000-20,000円";
+
+"tochigi.tochiotome_goods.name" = "とちおとめ関連商品";
+"tochigi.tochiotome_goods.description" = "栃木県産いちごを使ったお菓子";
+"tochigi.tochiotome_goods.price" = "800-2,000円";
+
+// =====================================================
+// 群馬県（Gunma）
+// =====================================================
+"gunma.tabi_garasu.name" = "旅がらす";
+"gunma.tabi_garasu.description" = "群馬県の代表的銘菓";
+"gunma.tabi_garasu.price" = "1,000-2,500円";
+
+"gunma.isobe_senbei.name" = "磯部煎餅";
+"gunma.isobe_senbei.description" = "群馬県安中市磯部温泉の名物せんべい";
+"gunma.isobe_senbei.price" = "800-1,500円";
+
+"gunma.konnyaku_park.name" = "こんにゃくパーク商品";
+"gunma.konnyaku_park.description" = "群馬県のこんにゃくを使った様々な商品";
+"gunma.konnyaku_park.price" = "500-2,000円";
+
+"gunma.daruma_bento.name" = "だるま弁当";
+"gunma.daruma_bento.description" = "高崎駅の名物駅弁。だるまの容器が特徴的";
+"gunma.daruma_bento.price" = "1,200-1,500円";
+
+"gunma.yaki_manju.name" = "焼きまんじゅう";
+"gunma.yaki_manju.description" = "群馬の名物。甘い味噌だれを塗って焼いた饅頭";
+"gunma.yaki_manju.price" = "200-500円";
+
+// =====================================================
+// 埼玉県（Saitama）
+// =====================================================
+"saitama.jumangoku_manju.name" = "十万石まんじゅう";
+"saitama.jumangoku_manju.description" = "埼玉県の代表的銘菓。つぶあん入りの薄皮饅頭";
+"saitama.jumangoku_manju.price" = "1,000-2,000円";
+
+"saitama.gokaho.name" = "五家宝";
+"saitama.gokaho.description" = "熊谷の銘菓。きな粉をまぶした昔ながらの和菓子";
+"saitama.gokaho.price" = "800-1,500円";
+
+"saitama.soka_senbei.name" = "草加せんべい";
+"saitama.soka_senbei.description" = "草加市の名物。パリッと香ばしい醤油せんべい";
+"saitama.soka_senbei.price" = "1,000-2,500円";
+
+"saitama.kawagoe_imo_cookie.name" = "川越いもクッキー";
+"saitama.kawagoe_imo_cookie.description" = "川越の特産さつまいもを使ったクッキー";
+"saitama.kawagoe_imo_cookie.price" = "800-1,500円";
+
+"saitama.sayama_cha.name" = "狭山茶";
+"saitama.sayama_cha.description" = "埼玉県狭山市の特産品";
+"saitama.sayama_cha.price" = "1,000-3,000円";
+
+// =====================================================
+// 千葉県（Chiba）
+// =====================================================
+"chiba.peanut_monaka.name" = "ぴーなっ最中";
+"chiba.peanut_monaka.description" = "千葉県の落花生を使った最中";
+"chiba.peanut_monaka.price" = "1,200-2,500円";
+
+"chiba.boso_biwa_jelly.name" = "房総びわゼリー";
+"chiba.boso_biwa_jelly.description" = "千葉県産びわを使ったゼリー";
+"chiba.boso_biwa_jelly.price" = "1,000-2,000円";
+
+"chiba.nagomi_komeya.name" = "なごみの米屋";
+"chiba.nagomi_komeya.description" = "千葉県成田市の老舗和菓子店の商品";
+"chiba.nagomi_komeya.price" = "800-2,000円";
+
+"chiba.oranda_sable.name" = "オランダ家のサブレ";
+"chiba.oranda_sable.description" = "千葉県のサブレ専門店の商品";
+"chiba.oranda_sable.price" = "1,000-2,500円";
+
+"chiba.rakkasei.name" = "落花生";
+"chiba.rakkasei.description" = "千葉県産の新鮮な落花生";
+"chiba.rakkasei.price" = "800-2,000円";
+
+// =====================================================
+// 東京都（Tokyo）
+// =====================================================
+"tokyo.hiyoko.name" = "ひよ子";
+"tokyo.hiyoko.description" = "東京土産の定番。ひよこの形をした可愛い饅頭";
+"tokyo.hiyoko.price" = "1,000-3,000円";
+
+"tokyo.tokyo_banana.name" = "東京ばな奈";
+"tokyo.tokyo_banana.description" = "東京土産の代表格。バナナ風味のスポンジケーキ";
+"tokyo.tokyo_banana.price" = "1,200-2,500円";
+
+"tokyo.funawa_imo_yokan.name" = "舟和の芋ようかん";
+"tokyo.funawa_imo_yokan.description" = "浅草の老舗和菓子店の名物";
+"tokyo.funawa_imo_yokan.price" = "1,000-2,000円";
+
+"tokyo.kaminari_okoshi.name" = "雷おこし";
+"tokyo.kaminari_okoshi.description" = "浅草雷門の名物菓子";
+"tokyo.kaminari_okoshi.price" = "500-1,500円";
+
+"tokyo.ningyo_yaki.name" = "人形焼";
+"tokyo.ningyo_yaki.description" = "東京の伝統的な和菓子";
+"tokyo.ningyo_yaki.price" = "800-1,500円";
+
+"tokyo.edo_kiriko.name" = "江戸切子";
+"tokyo.edo_kiriko.description" = "東京の伝統工芸品のガラス製品";
+"tokyo.edo_kiriko.price" = "5,000-50,000円";
+
+// =====================================================
+// 神奈川県（Kanagawa）
+// =====================================================
+"kanagawa.hato_sable.name" = "鳩サブレー";
+"kanagawa.hato_sable.description" = "鎌倉の名物。鳩の形をしたサブレ";
+"kanagawa.hato_sable.price" = "1,000-2,500円";
+
+"kanagawa.yokohama_renga.name" = "横濱煉瓦";
+"kanagawa.yokohama_renga.description" = "横浜の代表的洋菓子";
+"kanagawa.yokohama_renga.price" = "1,500-3,000円";
+
+"kanagawa.ariake_harbor.name" = "ありあけのハーバー";
+"kanagawa.ariake_harbor.description" = "横浜の老舗洋菓子店の代表商品";
+"kanagawa.ariake_harbor.price" = "1,200-2,500円";
+
+"kanagawa.kiyoken_hyochan.name" = "崎陽軒のひょうちゃんサブレ";
+"kanagawa.kiyoken_hyochan.description" = "崎陽軒のマスコットキャラクターのサブレ";
+"kanagawa.kiyoken_hyochan.price" = "800-1,500円";
+
+"kanagawa.hakone_yosegi.name" = "箱根寄木細工";
+"kanagawa.hakone_yosegi.description" = "箱根の伝統工芸品";
+"kanagawa.hakone_yosegi.price" = "2,000-20,000円";
+
+// =====================================================
+// 新潟県（Niigata）
+// =====================================================
+"niigata.sasa_dango.name" = "笹だんご";
+"niigata.sasa_dango.description" = "新潟の代表的和菓子。笹の葉で包んだよもぎ団子";
+"niigata.sasa_dango.price" = "800-1,500円";
+
+"niigata.kasen_kaki_no_tane.name" = "河川蒸気の柿の種";
+"niigata.kasen_kaki_no_tane.description" = "新潟の元祖柿の種";
+"niigata.kasen_kaki_no_tane.price" = "500-1,500円";
+
+"niigata.yukiguni_arare.name" = "雪国あられ";
+"niigata.yukiguni_arare.description" = "新潟の米菓子";
+"niigata.yukiguni_arare.price" = "800-2,000円";
+
+"niigata.echigo_hime_sandwich.name" = "越後姫いちごサンド";
+"niigata.echigo_hime_sandwich.description" = "新潟県産いちごを使ったサンドクッキー";
+"niigata.echigo_hime_sandwich.price" = "1,200-2,000円";
+
+"niigata.nihonshu.name" = "新潟の日本酒";
+"niigata.nihonshu.description" = "新潟県の地酒";
+"niigata.nihonshu.price" = "2,000-10,000円";
+
+// =====================================================
+// 富山県（Toyama）
+// =====================================================
+"toyama.masu_sushi.name" = "ます寿司";
+"toyama.masu_sushi.description" = "富山県の駅弁として有名。笹で包んだ押し寿司";
+"toyama.masu_sushi.price" = "1,500-3,000円";
+
+"toyama.shiro_ebi_kiko.name" = "白えび紀行";
+"toyama.shiro_ebi_kiko.description" = "富山湾の白えびを使ったせんべい";
+"toyama.shiro_ebi_kiko.price" = "1,000-2,000円";
+
+"toyama.getsusekai.name" = "月世界";
+"toyama.getsusekai.description" = "富山県の代表的銘菓";
+"toyama.getsusekai.price" = "1,000-2,500円";
+
+"toyama.kankintan.name" = "甘金丹";
+"toyama.kankintan.description" = "富山県の伝統的な薬膳菓子";
+"toyama.kankintan.price" = "1,500-3,000円";
+
+"toyama.kombu.name" = "富山の昆布";
+"toyama.kombu.description" = "富山県の特産品";
+"toyama.kombu.price" = "1,000-3,000円";
+
+
+// =====================================================
+// 徳島県（Tokushima）
+// =====================================================
+"tokushima.kincho_manju.name" = "金長まんじゅう";
+"tokushima.kincho_manju.description" = "徳島県の代表的銘菓";
+"tokushima.kincho_manju.price" = "1,000-2,000円";
+
+"tokushima.potelet.name" = "ポテレット";
+"tokushima.potelet.description" = "徳島県の鳴門金時を使った菓子";
+"tokushima.potelet.price" = "800-1,500円";
+
+"tokushima.wasanbon.name" = "和三盆糖";
+"tokushima.wasanbon.description" = "徳島県の高級砂糖を使った菓子";
+"tokushima.wasanbon.price" = "1,500-3,000円";
+
+"tokushima.ai_no_sato.name" = "藍の里";
+"tokushima.ai_no_sato.description" = "徳島県の藍染めを使った商品";
+"tokushima.ai_no_sato.price" = "2,000-10,000円";
+
+"tokushima.awa_odori_goods.name" = "阿波踊り関連グッズ";
+"tokushima.awa_odori_goods.description" = "徳島県の阿波踊りをモチーフにした商品";
+"tokushima.awa_odori_goods.price" = "800-3,000円";
+
+// =====================================================
+// 香川県（Kagawa）
+// =====================================================
+"kagawa.meibutsu_kamado.name" = "名物かまど";
+"kagawa.meibutsu_kamado.description" = "香川県の代表的銘菓";
+"kagawa.meibutsu_kamado.price" = "1,200-2,500円";
+
+"kagawa.oiri.name" = "おいり";
+"kagawa.oiri.description" = "香川県の伝統的なあられ菓子";
+"kagawa.oiri.price" = "500-1,200円";
+
+"kagawa.kyu_man.name" = "灸まん";
+"kagawa.kyu_man.description" = "香川県の温泉まんじゅう";
+"kagawa.kyu_man.price" = "800-1,500円";
+
+"kagawa.honetsuki_tori_senbei.name" = "骨付鳥せんべい";
+"kagawa.honetsuki_tori_senbei.description" = "香川県の骨付鳥をモチーフにしたせんべい";
+"kagawa.honetsuki_tori_senbei.price" = "800-1,500円";
+
+"kagawa.olive_goods.name" = "オリーブ関連商品";
+"kagawa.olive_goods.description" = "小豆島のオリーブを使った商品";
+"kagawa.olive_goods.price" = "1,000-3,000円";
+
+// =====================================================
+// 愛媛県（Ehime）
+// =====================================================
+"ehime.botchan_dango.name" = "坊っちゃん団子";
+"ehime.botchan_dango.description" = "松山の名物。3色の美しい団子";
+"ehime.botchan_dango.price" = "500-1,200円";
+
+"ehime.tart.name" = "タルト";
+"ehime.tart.description" = "愛媛県の代表的洋菓子";
+"ehime.tart.price" = "1,200-2,500円";
+
+"ehime.botemu.name" = "母恵夢";
+"ehime.botemu.description" = "愛媛県の銘菓";
+"ehime.botemu.price" = "1,000-2,000円";
+
+"ehime.imabari_towel.name" = "今治タオル";
+"ehime.imabari_towel.description" = "愛媛県今治市の高級タオル";
+"ehime.imabari_towel.price" = "2,000-10,000円";
+
+"ehime.tobe_yaki.name" = "砥部焼";
+"ehime.tobe_yaki.description" = "愛媛県砥部町の伝統工芸品";
+"ehime.tobe_yaki.price" = "2,000-20,000円";
+
+// =====================================================
+// 高知県（Kochi）
+// =====================================================
+"kochi.mille_biscuit.name" = "ミレービスケット";
+"kochi.mille_biscuit.description" = "高知県の代表的菓子";
+"kochi.mille_biscuit.price" = "500-1,200円";
+
+"kochi.imo_kenpi.name" = "芋けんぴ";
+"kochi.imo_kenpi.description" = "高知県の特産菓子";
+"kochi.imo_kenpi.price" = "800-1,500円";
+
+"kochi.tosa_nikki.name" = "土佐日記";
+"kochi.tosa_nikki.description" = "高知県の銘菓";
+"kochi.tosa_nikki.price" = "1,000-2,000円";
+
+"kochi.kanzashi.name" = "かんざし";
+"kochi.kanzashi.description" = "高知県の伝統工芸品";
+"kochi.kanzashi.price" = "3,000-15,000円";
+
+"kochi.tosa_washi.name" = "土佐和紙";
+"kochi.tosa_washi.description" = "高知県の伝統工芸品";
+"kochi.tosa_washi.price" = "1,000-8,000円";
+
+// =====================================================
+// 福岡県（Fukuoka）
+// =====================================================
+"fukuoka.hakata_torimon.name" = "博多通りもん";
+"fukuoka.hakata_torimon.description" = "福岡の銘菓。ミルク饅頭の上品な甘さ";
+"fukuoka.hakata_torimon.price" = "1,200-2,500円";
+
+"fukuoka.hiyoko.name" = "ひよ子";
+"fukuoka.hiyoko.description" = "博多名物のひよこの形をした饅頭";
+"fukuoka.hiyoko.price" = "1,000-2,500円";
+
+"fukuoka.tirolian.name" = "チロリアン";
+"fukuoka.tirolian.description" = "福岡県の代表的菓子";
+"fukuoka.tirolian.price" = "800-1,500円";
+
+"fukuoka.hakata_no_onna.name" = "博多の女";
+"fukuoka.hakata_no_onna.description" = "福岡県の銘菓";
+"fukuoka.hakata_no_onna.price" = "1,000-2,000円";
+
+"fukuoka.mentaiko.name" = "明太子";
+"fukuoka.mentaiko.description" = "福岡県の特産品";
+"fukuoka.mentaiko.price" = "1,500-5,000円";
+
+"fukuoka.hakata_ori.name" = "博多織";
+"fukuoka.hakata_ori.description" = "福岡県の伝統工芸品";
+"fukuoka.hakata_ori.price" = "5,000-50,000円";
+
+// =====================================================
+// 佐賀県（Saga）
+// =====================================================
+"saga.maru_boro.name" = "丸ぼうろ";
+"saga.maru_boro.description" = "佐賀の伝統菓子。カステラのような甘いお菓子";
+"saga.maru_boro.price" = "800-2,000円";
+
+"saga.ikkoko.name" = "逸口香";
+"saga.ikkoko.description" = "佐賀県の銘菓";
+"saga.ikkoko.price" = "1,000-2,000円";
+
+"saga.shoro_manju.name" = "松露饅頭";
+"saga.shoro_manju.description" = "佐賀県の代表的銘菓";
+"saga.shoro_manju.price" = "1,200-2,500円";
+
+"saga.ogi_yokan.name" = "小城羊羹";
+"saga.ogi_yokan.description" = "佐賀県小城市の伝統的羊羹";
+"saga.ogi_yokan.price" = "1,500-3,000円";
+
+"saga.arita_yaki.name" = "有田焼";
+"saga.arita_yaki.description" = "佐賀県有田町の伝統工芸品";
+"saga.arita_yaki.price" = "3,000-100,000円";
+
+// =====================================================
+// 長崎県（Nagasaki）
+// =====================================================
+"nagasaki.fukusaya_castella.name" = "福砂屋のカステラ";
+"nagasaki.fukusaya_castella.description" = "長崎の代表的銘菓。しっとりとした甘いスポンジ";
+"nagasaki.fukusaya_castella.price" = "2,000-5,000円";
+
+"nagasaki.kurusu.name" = "クルス";
+"nagasaki.kurusu.description" = "長崎県の洋菓子";
+"nagasaki.kurusu.price" = "1,200-2,500円";
+
+"nagasaki.yoriyori.name" = "よりより";
+"nagasaki.yoriyori.description" = "長崎県の中華菓子";
+"nagasaki.yoriyori.price" = "800-1,500円";
+
+"nagasaki.momo_castella.name" = "桃カステラ";
+"nagasaki.momo_castella.description" = "長崎県のひな祭り用カステラ";
+"nagasaki.momo_castella.price" = "2,000-4,000円";
+
+"nagasaki.kakuni_manju.name" = "角煮まんじゅう";
+"nagasaki.kakuni_manju.description" = "長崎の名物。とろとろの豚角煮を包んだ饅頭";
+"nagasaki.kakuni_manju.price" = "500-1,200円";
+
+// =====================================================
+// 熊本県（Kumamoto）
+// =====================================================
+"kumamoto.homare_no_jindaiko.name" = "誉の陣太鼓";
+"kumamoto.homare_no_jindaiko.description" = "熊本県の代表的銘菓";
+"kumamoto.homare_no_jindaiko.price" = "1,200-2,500円";
+
+"kumamoto.ikinari_dango.name" = "いきなり団子";
+"kumamoto.ikinari_dango.description" = "熊本県の郷土菓子。さつまいもとあんこの団子";
+"kumamoto.ikinari_dango.price" = "500-1,000円";
+
+"kumamoto.musha_gaeshi.name" = "武者がえし";
+"kumamoto.musha_gaeshi.description" = "熊本県の銘菓";
+"kumamoto.musha_gaeshi.price" = "1,000-2,000円";
+
+"kumamoto.chosen_ame.name" = "朝鮮飴";
+"kumamoto.chosen_ame.description" = "熊本県の伝統的な飴菓子";
+"kumamoto.chosen_ame.price" = "800-1,500円";
+
+"kumamoto.kumamon_goods.name" = "くまモン関連グッズ";
+"kumamoto.kumamon_goods.description" = "熊本県のマスコットキャラクター商品";
+"kumamoto.kumamon_goods.price" = "500-3,000円";
+
+// =====================================================
+// 大分県（Oita）
+// =====================================================
+"oita.zabieru.name" = "ざびえる";
+"oita.zabieru.description" = "大分県の代表的銘菓";
+"oita.zabieru.price" = "1,200-2,500円";
+
+"oita.kojono_tsuki.name" = "荒城の月";
+"oita.kojono_tsuki.description" = "大分県の銘菓";
+"oita.kojono_tsuki.price" = "1,000-2,000円";
+
+"oita.yaseuma.name" = "やせうま";
+"oita.yaseuma.description" = "大分県の郷土菓子";
+"oita.yaseuma.price" = "800-1,500円";
+
+"oita.gomadashi_udon.name" = "胡麻だしうどん";
+"oita.gomadashi_udon.description" = "大分県の特産品";
+"oita.gomadashi_udon.price" = "1,000-2,000円";
+
+"oita.onsen_goods.name" = "温泉関連グッズ";
+"oita.onsen_goods.description" = "おんせん県大分の温泉グッズ";
+"oita.onsen_goods.price" = "800-3,000円";
+
+// =====================================================
+// 宮崎県（Miyazaki）
+// =====================================================
+"miyazaki.nanjako_daifuku.name" = "なんじゃこら大福";
+"miyazaki.nanjako_daifuku.description" = "宮崎県の人気大福";
+"miyazaki.nanjako_daifuku.price" = "1,000-2,000円";
+
+"miyazaki.cheese_manju.name" = "チーズ饅頭";
+"miyazaki.cheese_manju.description" = "宮崎県の代表的銘菓";
+"miyazaki.cheese_manju.price" = "1,200-2,500円";
+
+"miyazaki.aoshima_senbei.name" = "青島せんべい";
+"miyazaki.aoshima_senbei.description" = "宮崎県青島の名物せんべい";
+"miyazaki.aoshima_senbei.price" = "800-1,500円";
+
+"miyazaki.hyuganatsu_sable.name" = "日向夏サブレ";
+"miyazaki.hyuganatsu_sable.description" = "宮崎県特産の日向夏を使ったサブレ";
+"miyazaki.hyuganatsu_sable.price" = "1,000-2,000円";
+
+"miyazaki.mango_goods.name" = "マンゴー関連商品";
+"miyazaki.mango_goods.description" = "宮崎県産マンゴーを使った商品";
+"miyazaki.mango_goods.price" = "1,500-5,000円";
+
+// =====================================================
+// 鹿児島県（Kagoshima）
+// =====================================================
+"kagoshima.karukan.name" = "かるかん";
+"kagoshima.karukan.description" = "鹿児島県の代表的銘菓";
+"kagoshima.karukan.price" = "1,000-2,500円";
+
+"kagoshima.satsuma_imo_tart.name" = "薩摩いもタルト";
+"kagoshima.satsuma_imo_tart.description" = "鹿児島県の薩摩芋を使ったタルト";
+"kagoshima.satsuma_imo_tart.price" = "1,200-2,500円";
+
+"kagoshima.karukan_manju.name" = "軽羹饅頭";
+"kagoshima.karukan_manju.description" = "鹿児島県の伝統的饅頭";
+"kagoshima.karukan_manju.price" = "1,000-2,000円";
+
+"kagoshima.satsuma_kiriko.name" = "薩摩切子";
+"kagoshima.satsuma_kiriko.description" = "鹿児島県の伝統工芸品";
+"kagoshima.satsuma_kiriko.price" = "10,000-100,000円";
+
+"kagoshima.imo_shochu.name" = "芋焼酎";
+"kagoshima.imo_shochu.description" = "鹿児島県の代表的な焼酎";
+"kagoshima.imo_shochu.price" = "1,500-10,000円";
+
+// =====================================================
+// 沖縄県（Okinawa）
+// =====================================================
+"okinawa.chinsuko.name" = "ちんすこう";
+"okinawa.chinsuko.description" = "沖縄の代表的銘菓";
+"okinawa.chinsuko.price" = "800-2,000円";
+
+"okinawa.beni_imo_tart.name" = "紅いもタルト";
+"okinawa.beni_imo_tart.description" = "沖縄県の紅芋を使ったタルト";
+"okinawa.beni_imo_tart.price" = "1,200-2,500円";
+
+"okinawa.yukishio_chinsuko.name" = "雪塩ちんすこう";
+"okinawa.yukishio_chinsuko.description" = "宮古島の雪塩を使ったちんすこう";
+"okinawa.yukishio_chinsuko.price" = "1,000-2,000円";
+
+"okinawa.sata_andagi.name" = "サーターアンダギー";
+"okinawa.sata_andagi.description" = "沖縄の揚げ菓子";
+"okinawa.sata_andagi.price" = "500-1,200円";
+
+"okinawa.awamori_cookie.name" = "琉球泡盛クッキー";
+"okinawa.awamori_cookie.description" = "沖縄の泡盛を使ったクッキー";
+"okinawa.awamori_cookie.price" = "800-1,500円";
+
+"okinawa.ryukyu_glass.name" = "琉球ガラス";
+"okinawa.ryukyu_glass.description" = "沖縄県の伝統工芸品";
+"okinawa.ryukyu_glass.price" = "2,000-20,000円";
+
+"okinawa.shisa.name" = "シーサー";
+"okinawa.shisa.description" = "沖縄の守り神の置物";
+"okinawa.shisa.price" = "1,000-10,000円"; "1,000-2,000円";
+
+// =====================================================
+// 石川県（Ishikawa）
+// =====================================================
+"ishikawa.ukokukei_castella.name" = "烏骨鶏かすていら";
+"ishikawa.ukokukei_castella.description" = "金沢の高級カステラ";
+"ishikawa.ukokukei_castella.price" = "2,000-5,000円";
+
+"ishikawa.kinpaku_castella.name" = "金箔入りカステラ";
+"ishikawa.kinpaku_castella.description" = "金沢名物の金箔をあしらったカステラ";
+"ishikawa.kinpaku_castella.price" = "2,500-5,000円";
+
+"ishikawa.jiroame.name" = "じろあめ";
+"ishikawa.jiroame.description" = "金沢の伝統的な水飴";
+"ishikawa.jiroame.price" = "800-1,500円";
+
+"ishikawa.kutani_yaki.name" = "九谷焼";
+"ishikawa.kutani_yaki.description" = "石川県の伝統工芸品";
+"ishikawa.kutani_yaki.price" = "3,000-50,000円";
+
+"ishikawa.wajima_nuri.name" = "輪島塗";
+"ishikawa.wajima_nuri.description" = "石川県輪島市の伝統工芸品";
+"ishikawa.wajima_nuri.price" = "10,000-100,000円";
+
+// =====================================================
+// 福井県（Fukui）
+// =====================================================
+"fukui.habutae_mochi.name" = "羽二重餅";
+"fukui.habutae_mochi.description" = "福井県の銘菓。やわらかくて上品な甘さ";
+"fukui.habutae_mochi.price" = "1,000-2,500円";
+
+"fukui.satsukigase_senbei.name" = "五月ヶ瀬煎餅";
+"fukui.satsukigase_senbei.description" = "福井県の老舗せんべい";
+"fukui.satsukigase_senbei.price" = "1,000-2,000円";
+
+"fukui.gyuhi_kombu.name" = "求肥昆布";
+"fukui.gyuhi_kombu.description" = "福井県の昆布を使った和菓子";
+"fukui.gyuhi_kombu.price" = "800-1,500円";
+
+"fukui.mizu_yokan.name" = "水ようかん";
+"fukui.mizu_yokan.description" = "福井県の夏の名物菓子";
+"fukui.mizu_yokan.price" = "500-1,200円";
+
+"fukui.echizen_washi.name" = "越前和紙";
+"fukui.echizen_washi.description" = "福井県の伝統工芸品";
+"fukui.echizen_washi.price" = "1,000-10,000円";
+
+// =====================================================
+// 山梨県（Yamanashi）
+// =====================================================
+"yamanashi.kikyo_shingen_mochi.name" = "桔梗信玄餅";
+"yamanashi.kikyo_shingen_mochi.description" = "山梨県の代表的銘菓。きな粉と黒蜜をかけて食べる";
+"yamanashi.kikyo_shingen_mochi.price" = "1,000-2,500円";
+
+"yamanashi.kikyo_shingen_soft.name" = "桔梗信玄ソフト";
+"yamanashi.kikyo_shingen_soft.description" = "信玄餅味のソフトクリーム風菓子";
+"yamanashi.kikyo_shingen_soft.price" = "300-600円";
+
+"yamanashi.budo_no_sato.name" = "ぶどうの里";
+"yamanashi.budo_no_sato.description" = "山梨県産ぶどうを使った菓子";
+"yamanashi.budo_no_sato.price" = "1,200-2,500円";
+
+"yamanashi.fuji_no_shirayuki.name" = "富士の白雪";
+"yamanashi.fuji_no_shirayuki.description" = "富士山をモチーフにした菓子";
+"yamanashi.fuji_no_shirayuki.price" = "1,000-2,000円";
+
+"yamanashi.koshu_wine.name" = "甲州ワイン";
+"yamanashi.koshu_wine.description" = "山梨県産ぶどうで作られた日本ワイン";
+"yamanashi.koshu_wine.price" = "2,000-10,000円";
+
+// =====================================================
+// 長野県（Nagano）
+// =====================================================
+"nagano.raicho_no_sato.name" = "雷鳥の里";
+"nagano.raicho_no_sato.description" = "長野県の代表的銘菓";
+"nagano.raicho_no_sato.price" = "1,200-2,500円";
+
+"nagano.misuzu_ame.name" = "みすゞ飴";
+"nagano.misuzu_ame.description" = "長野県の老舗が作る果実ゼリー";
+"nagano.misuzu_ame.price" = "800-2,000円";
+
+"nagano.yawataya_isogoro_shichimi.name" = "八幡屋礒五郎七味";
+"nagano.yawataya_isogoro_shichimi.description" = "善光寺門前の老舗の七味唐辛子";
+"nagano.yawataya_isogoro_shichimi.price" = "500-1,500円";
+
+"nagano.kuri_kanoko.name" = "栗鹿の子";
+"nagano.kuri_kanoko.description" = "長野県小布施町の栗菓子";
+"nagano.kuri_kanoko.price" = "1,500-3,000円";
+
+"nagano.nozawana.name" = "野沢菜";
+"nagano.nozawana.description" = "長野県の特産野菜の漬物";
+"nagano.nozawana.price" = "500-1,500円";
+
+// =====================================================
+// 岐阜県（Gifu）
+// =====================================================
+"gifu.hida_no_sato.name" = "飛騨の里";
+"gifu.hida_no_sato.description" = "岐阜県飛騨地方の銘菓";
+"gifu.hida_no_sato.price" = "1,200-2,500円";
+
+"gifu.kuri_kinton.name" = "栗きんとん";
+"gifu.kuri_kinton.description" = "中津川の名物。栗の甘みを生かした和菓子";
+"gifu.kuri_kinton.price" = "1,500-3,000円";
+
+"gifu.ayu_gashi.name" = "鮎菓子";
+"gifu.ayu_gashi.description" = "岐阜県の鮎をモチーフにした菓子";
+"gifu.ayu_gashi.price" = "1,000-2,000円";
+
+"gifu.hoba_miso_senbei.name" = "朴葉味噌せんべい";
+"gifu.hoba_miso_senbei.description" = "飛騨の郷土料理をモチーフにしたせんべい";
+"gifu.hoba_miso_senbei.price" = "800-1,500円";
+
+"gifu.mino_washi.name" = "美濃和紙";
+"gifu.mino_washi.description" = "岐阜県の伝統工芸品";
+"gifu.mino_washi.price" = "1,000-10,000円";
+
+// =====================================================
+// 静岡県（Shizuoka）
+// =====================================================
+"shizuoka.unagi_pie.name" = "うなぎパイ";
+"shizuoka.unagi_pie.description" = "浜松の名物。サクサクのパイ菓子";
+"shizuoka.unagi_pie.price" = "1,000-2,500円";
+
+"shizuoka.kokko.name" = "こっこ";
+"shizuoka.kokko.description" = "静岡県の代表的銘菓";
+"shizuoka.kokko.price" = "1,200-2,000円";
+
+"shizuoka.jiichiro_baumkuchen.name" = "治一郎のバウムクーヘン";
+"shizuoka.jiichiro_baumkuchen.description" = "静岡県発祥の高級バウムクーヘン";
+"shizuoka.jiichiro_baumkuchen.price" = "1,500-3,000円";
+
+"shizuoka.fujisan_cho.name" = "富士山頂";
+"shizuoka.fujisan_cho.description" = "富士山をモチーフにした菓子";
+"shizuoka.fujisan_cho.price" = "1,000-2,000円";
+
+"shizuoka.shizuoka_cha.name" = "静岡茶";
+"shizuoka.shizuoka_cha.description" = "静岡県の特産品";
+"shizuoka.shizuoka_cha.price" = "1,000-5,000円";
+
+// =====================================================
+// 愛知県（Aichi）
+// =====================================================
+"aichi.uiro.name" = "ういろう";
+"aichi.uiro.description" = "名古屋の代表的和菓子";
+"aichi.uiro.price" = "800-2,000円";
+
+"aichi.yukari.name" = "ゆかり";
+"aichi.yukari.description" = "名古屋の老舗が作るえびせんべい";
+"aichi.yukari.price" = "1,000-2,500円";
+
+"aichi.sakakaku_ebi_senbei.name" = "坂角総本舖のえびせんべい";
+"aichi.sakakaku_ebi_senbei.description" = "愛知県の高級えびせんべい";
+"aichi.sakakaku_ebi_senbei.price" = "1,500-5,000円";
+
+"aichi.nagoyan.name" = "なごやん";
+"aichi.nagoyan.description" = "名古屋の銘菓";
+"aichi.nagoyan.price" = "1,000-2,000円";
+
+"aichi.arimatsu_shibori.name" = "有松絞り";
+"aichi.arimatsu_shibori.description" = "愛知県の伝統工芸品";
+"aichi.arimatsu_shibori.price" = "3,000-20,000円";
+
+// =====================================================
+// 三重県（Mie）
+// =====================================================
+"mie.akafuku.name" = "赤福";
+"mie.akafuku.description" = "伊勢神宮の名物。あんこで包んだ餅菓子";
+"mie.akafuku.price" = "1,000-3,000円";
+
+"mie.henba_mochi.name" = "へんば餅";
+"mie.henba_mochi.description" = "三重県の伝統的な餅菓子";
+"mie.henba_mochi.price" = "800-1,500円";
+
+"mie.yasunaga_mochi.name" = "安永餅";
+"mie.yasunaga_mochi.description" = "三重県の名物餅菓子";
+"mie.yasunaga_mochi.price" = "800-1,500円";
+
+"mie.toraya_uiro.name" = "虎屋ういろ";
+"mie.toraya_uiro.description" = "三重県伊勢市のういろう";
+"mie.toraya_uiro.price" = "1,000-2,000円";
+
+"mie.shinju.name" = "真珠";
+"mie.shinju.description" = "三重県の特産品";
+"mie.shinju.price" = "5,000-100,000円";
+
+// =====================================================
+// 滋賀県（Shiga）
+// =====================================================
+"shiga.kisho_juian_kinogumo.name" = "叶匠壽庵の季の雲";
+"shiga.kisho_juian_kinogumo.description" = "滋賀県の高級和菓子";
+"shiga.kisho_juian_kinogumo.price" = "2,000-5,000円";
+
+"shiga.itokiri_mochi.name" = "糸切餅";
+"shiga.itokiri_mochi.description" = "滋賀県の伝統的な餅菓子";
+"shiga.itokiri_mochi.price" = "800-1,500円";
+
+"shiga.chojifu.name" = "丁字麩";
+"shiga.chojifu.description" = "滋賀県の特産品";
+"shiga.chojifu.price" = "500-1,200円";
+
+"shiga.shigaraki_yaki.name" = "信楽焼";
+"shiga.shigaraki_yaki.description" = "滋賀県信楽町の陶器";
+"shiga.shigaraki_yaki.price" = "2,000-20,000円";
+
+"shiga.biwa_ko_goods.name" = "琵琶湖関連グッズ";
+"shiga.biwa_ko_goods.description" = "琵琶湖をモチーフにしたお土産";
+"shiga.biwa_ko_goods.price" = "500-3,000円";
+
+// =====================================================
+// 京都府（Kyoto）
+// =====================================================
+"kyoto.yatsuhashi.name" = "八ツ橋";
+"kyoto.yatsuhashi.description" = "京都の代表的銘菓。生八つ橋と焼き八つ橋";
+"kyoto.yatsuhashi.price" = "800-2,500円";
+
+"kyoto.ajari_mochi.name" = "阿闍梨餅";
+"kyoto.ajari_mochi.description" = "京都の老舗和菓子店の名物";
+"kyoto.ajari_mochi.price" = "1,500-3,000円";
+
+"kyoto.cha_no_ka.name" = "茶の菓";
+"kyoto.cha_no_ka.description" = "京都の抹茶を使った洋菓子";
+"kyoto.cha_no_ka.price" = "1,200-2,500円";
+
+"kyoto.marl_bransh_okoicha.name" = "マールブランシュのお濃茶ラングドシャ";
+"kyoto.marl_bransh_okoicha.description" = "京都の抹茶ラングドシャ";
+"kyoto.marl_bransh_okoicha.price" = "1,500-3,000円";
+
+"kyoto.yojiya_aburatorigami.name" = "よーじやあぶらとり紙";
+"kyoto.yojiya_aburatorigami.description" = "京都の老舗化粧品店の商品";
+"kyoto.yojiya_aburatorigami.price" = "500-2,000円";
+
+"kyoto.kiyomizu_yaki.name" = "清水焼";
+"kyoto.kiyomizu_yaki.description" = "京都の伝統工芸品";
+"kyoto.kiyomizu_yaki.price" = "3,000-50,000円";
+
+// =====================================================
+// 大阪府（Osaka）
+// =====================================================
+"osaka.butaman_551.name" = "551蓬莱の豚まん";
+"osaka.butaman_551.description" = "大阪名物の豚まん";
+"osaka.butaman_551.price" = "1,000-3,000円";
+
+"osaka.rikuro_cheesecake.name" = "りくろーおじさんの店のチーズケーキ";
+"osaka.rikuro_cheesecake.description" = "大阪の人気チーズケーキ";
+"osaka.rikuro_cheesecake.price" = "800-1,500円";
+
+"osaka.omoshiroi_koibito.name" = "面白い恋人";
+"osaka.omoshiroi_koibito.description" = "大阪のパロディ土産菓子";
+"osaka.omoshiroi_koibito.price" = "1,000-2,000円";
+
+"osaka.mitarashi_dango.name" = "みたらしだんご";
+"osaka.mitarashi_dango.description" = "大阪の老舗だんご店の商品";
+"osaka.mitarashi_dango.price" = "500-1,200円";
+
+"osaka.takoyaki_goods.name" = "たこ焼き関連グッズ";
+"osaka.takoyaki_goods.description" = "大阪のソウルフードをモチーフにした商品";
+"osaka.takoyaki_goods.price" = "500-2,500円";
+
+// =====================================================
+// 兵庫県（Hyogo）
+// =====================================================
+"hyogo.kobe_fugetsudo_gofer.name" = "神戸風月堂のゴーフル";
+"hyogo.kobe_fugetsudo_gofer.description" = "神戸の老舗洋菓子店の代表商品";
+"hyogo.kobe_fugetsudo_gofer.price" = "1,000-3,000円";
+
+"hyogo.mon_loire_chocolate.name" = "モンロワールのチョコレート";
+"hyogo.mon_loire_chocolate.description" = "神戸の高級チョコレート";
+"hyogo.mon_loire_chocolate.price" = "1,500-5,000円";
+
+"hyogo.kannonya_denmark_cheesecake.name" = "観音屋のデンマークチーズケーキ";
+"hyogo.kannonya_denmark_cheesecake.description" = "神戸の老舗チーズケーキ";
+"hyogo.kannonya_denmark_cheesecake.price" = "1,200-2,500円";
+
+"hyogo.kobe_beef_goods.name" = "神戸牛関連商品";
+"hyogo.kobe_beef_goods.description" = "神戸牛を使った加工品";
+"hyogo.kobe_beef_goods.price" = "2,000-10,000円";
+
+"hyogo.arima_onsen_goods.name" = "有馬温泉関連グッズ";
+"hyogo.arima_onsen_goods.description" = "有馬温泉のお土産";
+"hyogo.arima_onsen_goods.price" = "800-3,000円";
+
+// =====================================================
+// 奈良県（Nara）
+// =====================================================
+"nara.shika_sable.name" = "鹿サブレ";
+"nara.shika_sable.description" = "奈良の鹿をモチーフにしたサブレ";
+"nara.shika_sable.price" = "800-1,500円";
+
+"nara.mikasa.name" = "三笠";
+"nara.mikasa.description" = "奈良の代表的銘菓";
+"nara.mikasa.price" = "1,000-2,000円";
+
+"nara.kaki_senmon_ishii.name" = "柿の専門いしい";
+"nara.kaki_senmon_ishii.description" = "奈良県の柿を使った菓子";
+"nara.kaki_senmon_ishii.price" = "1,200-2,500円";
+
+"nara.nakagawa_masashichi_goods.name" = "中川政七商店の雑貨";
+"nara.nakagawa_masashichi_goods.description" = "奈良の老舗雑貨店の商品";
+"nara.nakagawa_masashichi_goods.price" = "1,000-10,000円";
+
+"nara.shika_goods.name" = "鹿関連グッズ";
+"nara.shika_goods.description" = "奈良の鹿をモチーフにした様々な商品";
+"nara.shika_goods.price" = "500-3,000円";
+
+// =====================================================
+// 和歌山県（Wakayama）
+// =====================================================
+"wakayama.kagero.name" = "かげろう";
+"wakayama.kagero.description" = "和歌山県の代表的銘菓";
+"wakayama.kagero.price" = "1,000-2,500円";
+
+"wakayama.nachi_guro.name" = "那智黒";
+"wakayama.nachi_guro.description" = "和歌山県の黒糖菓子";
+"wakayama.nachi_guro.price" = "500-1,200円";
+
+"wakayama.kinokawa_kaki.name" = "紀の川柿";
+"wakayama.kinokawa_kaki.description" = "和歌山県の柿を使った菓子";
+"wakayama.kinokawa_kaki.price" = "1,000-2,000円";
+
+"wakayama.arita_mikan_daifuku.name" = "有田みかん大福";
+"wakayama.arita_mikan_daifuku.description" = "和歌山県有田みかんを使った大福";
+"wakayama.arita_mikan_daifuku.price" = "1,200-2,000円";
+
+"wakayama.umeboshi.name" = "梅干し";
+"wakayama.umeboshi.description" = "和歌山県産南高梅の梅干し";
+"wakayama.umeboshi.price" = "1,500-5,000円";
+
+// =====================================================
+// 鳥取県（Tottori）
+// =====================================================
+"tottori.inaba_no_shiro_usagi.name" = "因幡の白うさぎ";
+"tottori.inaba_no_shiro_usagi.description" = "鳥取県の代表的銘菓";
+"tottori.inaba_no_shiro_usagi.price" = "1,200-2,500円";
+
+"tottori.ofuroboshi.name" = "大風呂敷";
+"tottori.ofuroboshi.description" = "鳥取県の銘菓";
+"tottori.ofuroboshi.price" = "1,000-2,000円";
+
+"tottori.nijusseiki_nashi_jelly.name" = "二十世紀梨ゼリー";
+"tottori.nijusseiki_nashi_jelly.description" = "鳥取県産梨を使ったゼリー";
+"tottori.nijusseiki_nashi_jelly.price" = "1,500-3,000円";
+
+"tottori.hakubaranyu_goods.name" = "白バラ牛乳関連商品";
+"tottori.hakubaranyu_goods.description" = "鳥取県の牛乳ブランドの商品";
+"tottori.hakubaranyu_goods.price" = "500-1,500円";
+
+"tottori.sakyu_goods.name" = "鳥取砂丘関連グッズ";
+"tottori.sakyu_goods.description" = "鳥取砂丘をモチーフにした商品";
+"tottori.sakyu_goods.price" = "500-2,500円";
+
+// =====================================================
+// 島根県（Shimane）
+// =====================================================
+"shimane.dojo_sukui_manju.name" = "どじょう掬いまんじゅう";
+"shimane.dojo_sukui_manju.description" = "島根県の名物饅頭";
+"shimane.dojo_sukui_manju.price" = "1,000-2,000円";
+
+"shimane.genji_maki.name" = "源氏巻";
+"shimane.genji_maki.description" = "島根県の代表的銘菓";
+"shimane.genji_maki.price" = "1,200-2,500円";
+
+"shimane.wakakusa.name" = "若草";
+"shimane.wakakusa.description" = "島根県の和菓子";
+"shimane.wakakusa.price" = "1,000-2,000円";
+
+"shimane.shimane_wine.name" = "島根ワイン";
+"shimane.shimane_wine.description" = "島根県産ぶどうのワイン";
+"shimane.shimane_wine.price" = "2,000-8,000円";
+
+"shimane.iwami_ginzan_goods.name" = "石見銀山関連グッズ";
+"shimane.iwami_ginzan_goods.description" = "世界遺産石見銀山のお土産";
+"shimane.iwami_ginzan_goods.price" = "800-3,000円";
+
+// =====================================================
+// 岡山県（Okayama）
+// =====================================================
+"okayama.ote_manju.name" = "大手まんじゅう";
+"okayama.ote_manju.description" = "岡山県の代表的銘菓";
+"okayama.ote_manju.price" = "1,000-2,500円";
+
+"okayama.kibi_dango.name" = "きびだんご";
+"okayama.kibi_dango.description" = "岡山の名物菓子。桃太郎伝説で有名";
+"okayama.kibi_dango.price" = "800-2,000円";
+
+"okayama.chofu.name" = "調布";
+"okayama.chofu.description" = "岡山県の銘菓";
+"okayama.chofu.price" = "1,200-2,000円";
+
+"okayama.hakujuji_waffle.name" = "白十字のワッフル";
+"okayama.hakujuji_waffle.description" = "岡山県の洋菓子";
+"okayama.hakujuji_waffle.price" = "1,000-2,500円";
+
+"okayama.bizen_yaki.name" = "備前焼";
+"okayama.bizen_yaki.description" = "岡山県の伝統工芸品";
+"okayama.bizen_yaki.price" = "3,000-50,000円";
+
+// =====================================================
+// 広島県（Hiroshima）
+// =====================================================
+"hiroshima.momiji_manju.name" = "もみじ饅頭";
+"hiroshima.momiji_manju.description" = "広島の銘菓。もみじの形をしたカステラ饅頭";
+"hiroshima.momiji_manju.price" = "1,000-2,500円";
+
+"hiroshima.nama_momiji.name" = "生もみじ";
+"hiroshima.nama_momiji.description" = "もみじ饅頭の生タイプ";
+"hiroshima.nama_momiji.price" = "1,200-2,500円";
+
+"hiroshima.nishikido_momiji.name" = "にしき堂のもみじ饅頭";
+"hiroshima.nishikido_momiji.description" = "広島の老舗もみじ饅頭店";
+"hiroshima.nishikido_momiji.price" = "1,000-2,500円";
+
+"hiroshima.kawadori_mochi.name" = "川通り餅";
+"hiroshima.kawadori_mochi.description" = "広島県の伝統的な餅菓子";
+"hiroshima.kawadori_mochi.price" = "800-1,500円";
+
+"hiroshima.hiroshima_na.name" = "広島菜";
+"hiroshima.hiroshima_na.description" = "広島県の特産野菜の漬物";
+"hiroshima.hiroshima_na.price" = "500-1,500円";
+
+// =====================================================
+// 山口県（Yamaguchi）
+// =====================================================
+"yamaguchi.mameshiro.name" = "豆子郎";
+"yamaguchi.mameshiro.description" = "山口県の代表的銘菓";
+"yamaguchi.mameshiro.price" = "1,000-2,500円";
+
+"yamaguchi.uiro.name" = "外郎";
+"yamaguchi.uiro.description" = "山口県の伝統的な和菓子";
+"yamaguchi.uiro.price" = "800-2,000円";
+
+"yamaguchi.tsuki_de_hirotta_tamago.name" = "月でひろった卵";
+"yamaguchi.tsuki_de_hirotta_tamago.description" = "山口県の銘菓";
+"yamaguchi.tsuki_de_hirotta_tamago.price" = "1,200-2,000円";
+
+"yamaguchi.hagi_yaki.name" = "萩焼";
+"yamaguchi.hagi_yaki.description" = "山口県萩市の伝統工芸品";
+"yamaguchi.hagi_yaki.price" = "3,000-30,000円";
+
+"yamaguchi.natsu_mikan_goods.name" = "夏みかん関連商品";
+"yamaguchi.natsu_mikan_goods.description" = "山口県特産の夏みかんを使った商品";
+"yamaguchi.natsu_mikan_goods.price" = "800-2,000円";
+
+
+// =====================================================
+// 共通項目
+// =====================================================
+"common.year_round" = "通年";
+"common.summer" = "夏";
+"common.winter" = "冬";
+"common.spring" = "春";
+"common.autumn" = "秋";
+"common.winter_spring" = "冬春";
+"common.autumn_winter" = "秋冬";
+"common.spring_summer" = "春夏";
+
+
+
+
+
+
+
+// MARK: - 北海道 (Hokkaido)
+"sapporo_summer_festival_name" = "さっぽろ夏まつり";
+"sapporo_summer_festival_description" = "札幌の中心部で開催される夏の一大イベント。ビール園やグルメ屋台が並び、多彩なステージイベントが楽しめます。";
+"sapporo_summer_festival_location" = "大通公園・すすきの";
+"sapporo_summer_festival_feature1" = "ビール園";
+"sapporo_summer_festival_feature2" = "グルメ屋台";
+"sapporo_summer_festival_feature3" = "ステージイベント";
+
+"noboribetsu_hell_festival_name" = "登別地獄まつり";
+"noboribetsu_hell_festival_description" = "地獄谷の鬼たちが街に現れる迫力満点の祭り。赤鬼・青鬼による勇壮な踊りと花火が名物です。";
+"noboribetsu_hell_festival_location" = "登別温泉街";
+"noboribetsu_hell_festival_feature1" = "鬼踊り";
+"noboribetsu_hell_festival_feature2" = "地獄太鼓";
+"noboribetsu_hell_festival_feature3" = "花火大会";
+
+"otaru_ushio_festival_name" = "おたる潮まつり";
+"otaru_ushio_festival_description" = "小樽港の海の恵みに感謝する夏祭り。潮音頭の踊りパレードと海上花火が美しい港町を彩ります。";
+"otaru_ushio_festival_location" = "小樽港周辺";
+"otaru_ushio_festival_feature1" = "潮音頭";
+"otaru_ushio_festival_feature2" = "踊りパレード";
+"otaru_ushio_festival_feature3" = "海上花火";
+
+"hakodate_port_festival_name" = "函館港まつり";
+"hakodate_port_festival_description" = "函館の夏を代表する祭り。いか踊りパレードと函館港花火大会で港町が一年で最も賑わいます。";
+"hakodate_port_festival_location" = "函館港周辺";
+"hakodate_port_festival_feature1" = "いか踊り";
+"hakodate_port_festival_feature2" = "港まつりパレード";
+"hakodate_port_festival_feature3" = "花火大会";
+
+"doshin_uhb_fireworks_name" = "道新・UHB花火大会";
+"doshin_uhb_fireworks_description" = "札幌の夏の夜空を彩る大花火大会。豊平川河川敷から打ち上がる約4000発の花火が見どころです。";
+"doshin_uhb_fireworks_location" = "豊平川河川敷";
+"doshin_uhb_fireworks_feature1" = "4000発の花火";
+"doshin_uhb_fireworks_feature2" = "音楽と花火のコラボ";
+"doshin_uhb_fireworks_feature3" = "夏の風物詩";
+
+"toyako_longrun_fireworks_name" = "洞爺湖ロングラン花火大会";
+"toyako_longrun_fireworks_description" = "4月から10月まで毎日開催される珍しい花火大会。湖面に映る花火の美しさは格別です。";
+"toyako_longrun_fireworks_location" = "洞爺湖畔";
+"toyako_longrun_fireworks_feature1" = "毎日開催";
+"toyako_longrun_fireworks_feature2" = "湖面花火";
+"toyako_longrun_fireworks_feature3" = "温泉と花火";
+
+// MARK: - 青森県 (Aomori)
+"aomori_nebuta_festival_name" = "青森ねぶた祭";
+"aomori_nebuta_festival_description" = "日本三大祭りの一つ。巨大な武者人形の灯籠「ねぶた」が練り歩く、青森の夏を代表する祭りです。";
+"aomori_nebuta_festival_location" = "青森市中心部";
+"aomori_nebuta_festival_feature1" = "日本三大祭り";
+"aomori_nebuta_festival_feature2" = "巨大ねぶた";
+"aomori_nebuta_festival_feature3" = "ハネト踊り";
+
+"hirosaki_neputa_festival_name" = "弘前ねぷたまつり";
+"hirosaki_neputa_festival_description" = "扇形の美しい灯籠「ねぷた」が静寂の中を練り歩く、情緒あふれる津軽の夏祭りです。";
+"hirosaki_neputa_festival_location" = "弘前市中心部";
+"hirosaki_neputa_festival_feature1" = "扇形ねぷた";
+"hirosaki_neputa_festival_feature2" = "津軽情緒";
+"hirosaki_neputa_festival_feature3" = "静寂の美";
+
+"goshogawara_tachineputa_name" = "五所川原立佞武多";
+"goshogawara_tachineputa_description" = "高さ23mの巨大な立佞武多が圧巻の祭り。その迫力と美しさで観客を魅了します。";
+"goshogawara_tachineputa_location" = "五所川原市街地";
+"goshogawara_tachineputa_feature1" = "高さ23m";
+"goshogawara_tachineputa_feature2" = "巨大立佞武多";
+"goshogawara_tachineputa_feature3" = "圧倒的迫力";
+
+"hachinohe_sansha_festival_name" = "八戸三社大祭";
+"hachinohe_sansha_festival_description" = "豪華絢爛な山車が練り歩く八戸最大の祭り。精巧な人形と美しい装飾が見どころです。";
+"hachinohe_sansha_festival_location" = "八戸市中心部";
+"hachinohe_sansha_festival_feature1" = "豪華山車";
+"hachinohe_sansha_festival_feature2" = "精巧人形";
+"hachinohe_sansha_festival_feature3" = "八戸最大";
+
+// MARK: - 岩手県 (Iwate)
+"morioka_sansa_festival_name" = "盛岡さんさ踊り";
+"morioka_sansa_festival_description" = "太鼓の音色に合わせて踊る岩手の代表的な祭り。「サッコラーチョイワヤッセー」の掛け声が響きます。";
+"morioka_sansa_festival_location" = "盛岡市中心部";
+"morioka_sansa_festival_feature1" = "太鼓と踊り";
+"morioka_sansa_festival_feature2" = "伝統の掛け声";
+"morioka_sansa_festival_feature3" = "参加型祭り";
+
+"hanamaki_festival_name" = "花巻まつり";
+"hanamaki_festival_description" = "豪華絢爛な山車と神輿が練り歩く花巻の秋祭り。400年以上の歴史を持つ伝統ある祭りです。";
+"hanamaki_festival_location" = "花巻市街地";
+"hanamaki_festival_feature1" = "400年の歴史";
+"hanamaki_festival_feature2" = "豪華山車";
+"hanamaki_festival_feature3" = "秋の風物詩";
+
+"kitakami_michinoku_festival_name" = "北上みちのく芸能まつり";
+"kitakami_michinoku_festival_description" = "東北各地の民俗芸能が一堂に会する祭り。鬼剣舞をはじめとした伝統芸能の競演が見どころです。";
+"kitakami_michinoku_festival_location" = "北上市";
+"kitakami_michinoku_festival_feature1" = "民俗芸能";
+"kitakami_michinoku_festival_feature2" = "鬼剣舞";
+"kitakami_michinoku_festival_feature3" = "伝統芸能競演";
+
+// MARK: - 宮城県 (Miyagi)
+"sendai_tanabata_festival_name" = "仙台七夕まつり";
+"sendai_tanabata_festival_description" = "東北三大祭りの一つ。色とりどりの七夕飾りが仙台の街を彩る美しい夏祭りです。";
+"sendai_tanabata_festival_location" = "仙台市中心部";
+"sendai_tanabata_festival_feature1" = "東北三大祭り";
+"sendai_tanabata_festival_feature2" = "七夕飾り";
+"sendai_tanabata_festival_feature3" = "商店街装飾";
+
+"sendai_aoba_festival_name" = "仙台青葉まつり";
+"sendai_aoba_festival_description" = "伊達政宗公を偲ぶ仙台の春祭り。華やかな時代行列と青葉神社の神輿渡御が見どころです。";
+"sendai_aoba_festival_location" = "仙台市中心部";
+"sendai_aoba_festival_feature1" = "伊達政宗";
+"sendai_aoba_festival_feature2" = "時代行列";
+"sendai_aoba_festival_feature3" = "武者行列";
+
+"ishinomaki_kawabiraki_festival_name" = "石巻川開き祭り";
+"ishinomaki_kawabiraki_festival_description" = "北上川の恵みに感謝する石巻の夏祭り。川面を彩る花火大会と供養祭が印象的です。";
+"ishinomaki_kawabiraki_festival_location" = "石巻市・北上川";
+"ishinomaki_kawabiraki_festival_feature1" = "川開き花火";
+"ishinomaki_kawabiraki_festival_feature2" = "供養祭";
+"ishinomaki_kawabiraki_festival_feature3" = "川の恵み";
+
+// MARK: - 秋田県 (Akita)
+"akita_kanto_festival_name" = "秋田竿燈まつり";
+"akita_kanto_festival_description" = "東北三大祭りの一つ。竿燈を手のひらや額、肩で支える妙技が見どころの伝統的な祭りです。";
+"akita_kanto_festival_location" = "秋田市中心部";
+"akita_kanto_festival_feature1" = "東北三大祭り";
+"akita_kanto_festival_feature2" = "竿燈妙技";
+"akita_kanto_festival_feature3" = "280本の竿燈";
+
+"omagari_fireworks_name" = "大曲の花火";
+"omagari_fireworks_description" = "全国花火競技大会として知られる日本最高峰の花火大会。花火師たちの技術の粋を集めた大会です。";
+"omagari_fireworks_location" = "大仙市・雄物川河川敷";
+"omagari_fireworks_feature1" = "全国競技大会";
+"omagari_fireworks_feature2" = "最高峰技術";
+"omagari_fireworks_feature3" = "2万発超";
+
+"kakunodate_festival_name" = "角館祭りのやま行事";
+"kakunodate_festival_description" = "ユネスコ無形文化遺産に登録された角館の秋祭り。豪華な山車のぶつかり合いが圧巻です。";
+"kakunodate_festival_location" = "角館町";
+"kakunodate_festival_feature1" = "ユネスコ遺産";
+"kakunodate_festival_feature2" = "山車ぶつかり";
+"kakunodate_festival_feature3" = "400年の歴史";
+
+// MARK: - 山形県 (Yamagata)
+"yamagata_hanagasa_festival_name" = "山形花笠まつり";
+"yamagata_hanagasa_festival_description" = "「ヤッショー、マカショー」の掛け声で踊る山形の代表的な祭り。華やかな花笠踊りが街を練り歩きます。";
+"yamagata_hanagasa_festival_location" = "山形市中心部";
+"yamagata_hanagasa_festival_feature1" = "花笠踊り";
+"yamagata_hanagasa_festival_feature2" = "ヤッショマカショ";
+"yamagata_hanagasa_festival_feature3" = "1万人の踊り手";
+
+"shinjo_festival_name" = "新庄まつり";
+"shinjo_festival_description" = "豪華絢爛な山車が練り歩く新庄の夏祭り。歌舞伎や歴史上の名場面を再現した山車が見どころです。";
+"shinjo_festival_location" = "新庄市中心部";
+"shinjo_festival_feature1" = "豪華山車";
+"shinjo_festival_feature2" = "歌舞伎再現";
+"shinjo_festival_feature3" = "260年の歴史";
+
+"sakata_festival_name" = "酒田まつり";
+"sakata_festival_description" = "酒田の春を彩る伝統的な祭り。華やかな山車行列と獅子舞が港町酒田を練り歩きます。";
+"sakata_festival_location" = "酒田市中心部";
+"sakata_festival_feature1" = "港町祭り";
+"sakata_festival_feature2" = "山車行列";
+"sakata_festival_feature3" = "獅子舞";
+
+// MARK: - 福島県 (Fukushima)
+"fukushima_waraji_festival_name" = "福島わらじまつり";
+"fukushima_waraji_festival_description" = "日本一大きなわらじを担いで練り歩く福島の夏祭り。長さ12mの巨大わらじが圧巻です。";
+"fukushima_waraji_festival_location" = "福島市中心部";
+"fukushima_waraji_festival_feature1" = "日本一大わらじ";
+"fukushima_waraji_festival_feature2" = "長さ12m";
+"fukushima_waraji_festival_feature3" = "健脚祈願";
+
+"soma_nomaoi_name" = "相馬野馬追";
+"soma_nomaoi_description" = "1000年以上続く相馬地方の伝統行事。甲冑に身を包んだ騎馬武者による勇壮な祭りです。";
+"soma_nomaoi_location" = "相馬市・南相馬市";
+"soma_nomaoi_feature1" = "1000年の歴史";
+"soma_nomaoi_feature2" = "騎馬武者";
+"soma_nomaoi_feature3" = "甲冑行列";
+
+"aizu_festival_name" = "会津まつり";
+"aizu_festival_description" = "会津藩の歴史を再現する秋祭り。会津藩公行列と鶴ヶ城での武者行列が見どころです。";
+"aizu_festival_location" = "会津若松市";
+"aizu_festival_feature1" = "会津藩再現";
+"aizu_festival_feature2" = "武者行列";
+"aizu_festival_feature3" = "鶴ヶ城";
+
+// MARK: - 茨城県 (Ibaraki)
+"mito_komon_festival_name" = "水戸黄門まつり";
+"mito_komon_festival_description" = "水戸藩主徳川光圀公を偲ぶ水戸の夏祭り。黄門様パレードと花火大会が見どころです。";
+"mito_komon_festival_location" = "水戸市中心部";
+"mito_komon_festival_feature1" = "黄門様パレード";
+"mito_komon_festival_feature2" = "花火大会";
+"mito_komon_festival_feature3" = "水戸の夏";
+
+"tsuchiura_fireworks_name" = "土浦全国花火競技大会";
+"tsuchiura_fireworks_description" = "日本三大花火大会の一つ。全国の花火師が技術を競う競技大会として有名です。";
+"tsuchiura_fireworks_location" = "土浦市・桜川畔";
+"tsuchiura_fireworks_feature1" = "日本三大花火";
+"tsuchiura_fireworks_feature2" = "全国競技大会";
+"tsuchiura_fireworks_feature3" = "秋の花火";
+
+"koga_fireworks_name" = "古河花火大会";
+"koga_fireworks_description" = "関東最大級の花火大会。渡良瀬川の河川敷から打ち上がる2万5千発の花火が夜空を彩ります。";
+"koga_fireworks_location" = "古河市・渡良瀬川";
+"koga_fireworks_feature1" = "関東最大級";
+"koga_fireworks_feature2" = "2万5千発";
+"koga_fireworks_feature3" = "河川敷花火";
+
+// MARK: - 栃木県 (Tochigi)
+"utsunomiya_fireworks_name" = "宇都宮花火大会";
+"utsunomiya_fireworks_description" = "関東最大級の花火大会の一つ。約3万発の花火が宇都宮の夜空を美しく彩ります。";
+"utsunomiya_fireworks_location" = "宇都宮市・鬼怒川河川敷";
+"utsunomiya_fireworks_feature1" = "3万発の花火";
+"utsunomiya_fireworks_feature2" = "関東最大級";
+"utsunomiya_fireworks_feature3" = "鬼怒川河川敷";
+
+"ashikaga_fireworks_name" = "足利花火大会";
+"ashikaga_fireworks_description" = "渡良瀬川の河川敷で開催される花火大会。尺玉や大スターマインが夜空を彩ります。";
+"ashikaga_fireworks_location" = "足利市・渡良瀬川";
+"ashikaga_fireworks_feature1" = "尺玉";
+"ashikaga_fireworks_feature2" = "大スターマイン";
+"ashikaga_fireworks_feature3" = "渡良瀬川";
+
+"nasu_makigari_festival_name" = "那須野巻狩まつり";
+"nasu_makigari_festival_description" = "源頼朝の那須野巻狩を再現した歴史祭り。武者行列と弓射の儀式が見どころです。";
+"nasu_makigari_festival_location" = "那須町";
+"nasu_makigari_festival_feature1" = "源頼朝再現";
+"nasu_makigari_festival_feature2" = "武者行列";
+"nasu_makigari_festival_feature3" = "弓射の儀";
+
+// MARK: - 群馬県 (Gunma)
+"maebashi_tanabata_festival_name" = "前橋七夕まつり";
+"maebashi_tanabata_festival_description" = "関東有数の七夕まつり。前橋中心街が色とりどりの七夕飾りで美しく彩られます。";
+"maebashi_tanabata_festival_location" = "前橋市中心部";
+"maebashi_tanabata_festival_feature1" = "関東有数";
+"maebashi_tanabata_festival_feature2" = "七夕飾り";
+"maebashi_tanabata_festival_feature3" = "中心街装飾";
+
+"kiryu_yagibushi_festival_name" = "桐生八木節まつり";
+"kiryu_yagibushi_festival_description" = "八木節発祥の地桐生で開催される夏祭り。八木節踊りと屋台が夏の夜を盛り上げます。";
+"kiryu_yagibushi_festival_location" = "桐生市中心部";
+"kiryu_yagibushi_festival_feature1" = "八木節発祥";
+"kiryu_yagibushi_festival_feature2" = "踊りパレード";
+"kiryu_yagibushi_festival_feature3" = "屋台グルメ";
+
+"isesaki_fireworks_name" = "伊勢崎花火大会";
+"isesaki_fireworks_description" = "群馬県内最大級の花火大会。約1万発の花火が伊勢崎の夜空を華やかに彩ります。";
+"isesaki_fireworks_location" = "伊勢崎市・利根川河川敷";
+"isesaki_fireworks_feature1" = "県内最大級";
+"isesaki_fireworks_feature2" = "1万発";
+"isesaki_fireworks_feature3" = "利根川河川敷";
+
+// MARK: - 埼玉県 (Saitama)
+"kumagaya_uchiwa_festival_name" = "熊谷うちわ祭";
+"kumagaya_uchiwa_festival_description" = "関東一の祇園祭として知られる熊谷の夏祭り。豪華絢爛な山車と屋台が見どころです。";
+"kumagaya_uchiwa_festival_location" = "熊谷市中心部";
+"kumagaya_uchiwa_festival_feature1" = "関東一の祇園";
+"kumagaya_uchiwa_festival_feature2" = "豪華山車";
+"kumagaya_uchiwa_festival_feature3" = "12台の屋台";
+
+"kawagoe_festival_name" = "川越まつり";
+"kawagoe_festival_description" = "ユネスコ無形文化遺産の川越氷川祭。精巧な山車が小江戸川越の街を練り歩きます。";
+"kawagoe_festival_location" = "川越市中心部";
+"kawagoe_festival_feature1" = "ユネスコ遺産";
+"kawagoe_festival_feature2" = "小江戸";
+"kawagoe_festival_feature3" = "精巧山車";
+
+"chichibu_yomatsuri_name" = "秩父夜祭";
+"chichibu_yomatsuri_description" = "日本三大曳山祭の一つ。豪華絢爛な屋台と笠鉾が秩父の冬夜を彩る壮大な祭りです。";
+"chichibu_yomatsuri_location" = "秩父市";
+"chichibu_yomatsuri_feature1" = "日本三大曳山";
+"chichibu_yomatsuri_feature2" = "冬の祭り";
+"chichibu_yomatsuri_feature3" = "屋台と笠鉾";
+
+"todabashi_fireworks_name" = "戸田橋花火大会";
+"todabashi_fireworks_description" = "荒川河川敷で開催される花火大会。東京都板橋区との合同開催で約1万2千発が打ち上がります。";
+"todabashi_fireworks_location" = "戸田市・荒川河川敷";
+"todabashi_fireworks_feature1" = "合同開催";
+"todabashi_fireworks_feature2" = "1万2千発";
+"todabashi_fireworks_feature3" = "荒川河川敷";
+
+// MARK: - 千葉県 (Chiba)
+"sakura_fireworks_name" = "佐倉花火フェスタ";
+"sakura_fireworks_description" = "印旛沼湖畔で開催される花火大会。約1万8千発の花火と湖面のリフレクションが美しい大会です。";
+"sakura_fireworks_location" = "佐倉市・印旛沼";
+"sakura_fireworks_feature1" = "1万8千発";
+"sakura_fireworks_feature2" = "湖面リフレクション";
+"sakura_fireworks_feature3" = "印旛沼";
+
+"kashiwa_festival_name" = "柏まつり";
+"kashiwa_festival_description" = "柏駅周辺で開催される夏祭り。ねぶたパレードと多彩なステージイベントが楽しめます。";
+"kashiwa_festival_location" = "柏駅周辺";
+"kashiwa_festival_feature1" = "ねぶたパレード";
+"kashiwa_festival_feature2" = "ステージイベント";
+"kashiwa_festival_feature3" = "駅前祭り";
+
+"narita_gion_festival_name" = "成田祇園祭";
+"narita_gion_festival_description" = "成田山新勝寺の祭礼。総欅造りの山車10台が成田の街を練り歩く300年の歴史ある祭りです。";
+"narita_gion_festival_location" = "成田市・成田山周辺";
+"narita_gion_festival_feature1" = "300年の歴史";
+"narita_gion_festival_feature2" = "総欅造り山車";
+"narita_gion_festival_feature3" = "成田山祭礼";
+
+"kisarazu_port_festival_name" = "木更津港まつり";
+"kisarazu_port_festival_description" = "木更津港で開催される夏祭り。やっさいもっさい踊りと港祭り花火大会が見どころです。";
+"kisarazu_port_festival_location" = "木更津港周辺";
+"kisarazu_port_festival_feature1" = "やっさいもっさい";
+"kisarazu_port_festival_feature2" = "港祭り花火";
+"kisarazu_port_festival_feature3" = "港町の祭り";
+
+// MARK: - 東京都 (Tokyo)
+"sumidagawa_fireworks_name" = "隅田川花火大会";
+"sumidagawa_fireworks_description" = "東京の代表的な花火大会。約2万発の花火が夏の夜空を彩り、100万人以上の観客が訪れる歴史ある大会です。";
+"sumidagawa_fireworks_location" = "隅田川河川敷";
+"sumidagawa_fireworks_feature1" = "2万発の花火";
+"sumidagawa_fireworks_feature2" = "100万人の観客";
+"sumidagawa_fireworks_feature3" = "江戸時代から続く伝統";
+
+"jingu_gaien_fireworks_name" = "神宮外苑花火大会";
+"jingu_gaien_fireworks_description" = "明治神宮外苑で開催される都内屈指の花火大会。約1万2千発の花火とアーティストライブが楽しめます。";
+"jingu_gaien_fireworks_location" = "明治神宮外苑";
+"jingu_gaien_fireworks_feature1" = "1万2千発";
+"jingu_gaien_fireworks_feature2" = "アーティストライブ";
+"jingu_gaien_fireworks_feature3" = "都心の花火";
+
+"edogawaku_fireworks_name" = "江戸川区花火大会";
+"edogawaku_fireworks_description" = "江戸川河川敷で開催される花火大会。約1万4千発の花火が江戸川区の夜空を美しく彩ります。";
+"edogawaku_fireworks_location" = "江戸川河川敷";
+"edogawaku_fireworks_feature1" = "1万4千発";
+"edogawaku_fireworks_feature2" = "江戸川河川敷";
+"edogawaku_fireworks_feature3" = "夏の風物詩";
+
+"adachi_fireworks_name" = "足立の花火";
+"adachi_fireworks_description" = "荒川河川敷で開催される花火大会。約1万3千発の花火が足立区の夏を彩ります。";
+"adachi_fireworks_location" = "荒川河川敷";
+"adachi_fireworks_feature1" = "1万3千発";
+"adachi_fireworks_feature2" = "荒川河川敷";
+"adachi_fireworks_feature3" = "足立の夏";
+
+"itabashi_fireworks_name" = "板橋花火大会";
+"itabashi_fireworks_description" = "荒川河川敷で開催される花火大会。埼玉県戸田市との合同開催で約1万2千発の花火が打ち上がります。";
+"itabashi_fireworks_location" = "荒川河川敷";
+"itabashi_fireworks_feature1" = "合同開催";
+"itabashi_fireworks_feature2" = "1万2千発";
+"itabashi_fireworks_feature3" = "荒川河川敷";
+
+"fukagawa_hachiman_festival_name" = "深川八幡祭り";
+"fukagawa_hachiman_festival_description" = "「水かけ祭り」として親しまれる江戸三大祭りの一つ。担ぎ手に清めの水をかける独特の風習が有名です。";
+"fukagawa_hachiman_festival_location" = "富岡八幡宮周辺";
+"fukagawa_hachiman_festival_feature1" = "水かけ祭り";
+"fukagawa_hachiman_festival_feature2" = "江戸三大祭り";
+"fukagawa_hachiman_festival_feature3" = "勇壮な神輿担ぎ";
+
+"kanda_festival_name" = "神田祭";
+"kanda_festival_description" = "江戸三大祭りの一つ。華やかな神輿渡御と山車巡行で知られ、「江戸の華」と称される伝統的な祭りです。";
+"kanda_festival_location" = "神田明神周辺";
+"kanda_festival_feature1" = "江戸三大祭り";
+"kanda_festival_feature2" = "神輿渡御";
+"kanda_festival_feature3" = "山車巡行";
+
+// MARK: - 神奈川県 (Kanagawa)
+"shonan_hiratsuka_tanabata_name" = "湘南ひらつか七夕まつり";
+"shonan_hiratsuka_tanabata_description" = "関東三大七夕祭りの一つ。平塚市中心街が豪華絢爛な七夕飾りで彩られる夏の風物詩です。";
+"shonan_hiratsuka_tanabata_location" = "平塚市中心部";
+"shonan_hiratsuka_tanabata_feature1" = "関東三大七夕";
+"shonan_hiratsuka_tanabata_feature2" = "豪華七夕飾り";
+"shonan_hiratsuka_tanabata_feature3" = "400万人来場";
+
+"yokohama_kaikosai_name" = "横浜開港祭";
+"yokohama_kaikosai_description" = "横浜港の開港を記念する祭り。みなとみらいでのイベントと花火大会が横浜の初夏を彩ります。";
+"yokohama_kaikosai_location" = "みなとみらい21";
+"yokohama_kaikosai_feature1" = "開港記念";
+"yokohama_kaikosai_feature2" = "みなとみらい";
+"yokohama_kaikosai_feature3" = "港の花火";
+
+"kamakura_festival_name" = "鎌倉まつり";
+"kamakura_festival_description" = "古都鎌倉の春を彩る祭り。静御前の舞や流鏑馬など、鎌倉時代の雅な文化を再現します。";
+"kamakura_festival_location" = "鶴岡八幡宮";
+"kamakura_festival_feature1" = "古都の春祭り";
+"kamakura_festival_feature2" = "静御前の舞";
+"kamakura_festival_feature3" = "流鏑馬";
+
+"atsugi_ayu_festival_name" = "厚木鮎まつり";
+"atsugi_ayu_festival_description" = "相模川の鮎をテーマにした夏祭り。鮎の塩焼きと花火大会が厚木の夏を盛り上げます。";
+"atsugi_ayu_festival_location" = "相模川河川敷";
+"atsugi_ayu_festival_feature1" = "鮎の塩焼き";
+"atsugi_ayu_festival_feature2" = "相模川花火";
+"atsugi_ayu_festival_feature3" = "川の恵み";
+
+// MARK: - 新潟県 (Niigata)
+"nagaoka_hanabi_name" = "長岡まつり大花火大会";
+"nagaoka_hanabi_description" = "日本三大花火大会の一つ。復興への願いを込めた正三尺玉と2kmに及ぶフェニックスが圧巻です。";
+"nagaoka_hanabi_location" = "長岡市・信濃川河川敷";
+"nagaoka_hanabi_feature1" = "日本三大花火";
+"nagaoka_hanabi_feature2" = "正三尺玉";
+"nagaoka_hanabi_feature3" = "フェニックス";
+
+"katakai_festival_name" = "片貝まつり";
+"katakai_festival_description" = "世界最大の四尺玉が打ち上がる花火大会。奉納煙火として400年の歴史を持つ伝統ある祭りです。";
+"katakai_festival_location" = "小千谷市片貝町";
+"katakai_festival_feature1" = "世界最大四尺玉";
+"katakai_festival_feature2" = "奉納煙火";
+"katakai_festival_feature3" = "400年の歴史";
+
+"kashiwazaki_umi_hanabi_name" = "柏崎海の大花火大会";
+"kashiwazaki_umi_hanabi_description" = "日本海をバックに打ち上がる花火大会。海上花火と尺玉300連発が見どころです。";
+"kashiwazaki_umi_hanabi_location" = "柏崎市・中央海岸";
+"kashiwazaki_umi_hanabi_feature1" = "海上花火";
+"kashiwazaki_umi_hanabi_feature2" = "尺玉300連発";
+"kashiwazaki_umi_hanabi_feature3" = "日本海背景";
+
+"echigo_festival_name" = "越後まつり";
+"echigo_festival_description" = "新潟の夏を代表する祭り。民謡流しと大花火大会で新潟市が一年で最も賑わいます。";
+"echigo_festival_location" = "新潟市中心部";
+"echigo_festival_feature1" = "民謡流し";
+"echigo_festival_feature2" = "大花火大会";
+"echigo_festival_feature3" = "新潟の夏";
+
+// MARK: - 富山県 (Toyama)
+"takaoka_tanabata_name" = "高岡七夕まつり";
+"takaoka_tanabata_description" = "高岡市中心街で開催される七夕まつり。商店街が美しい七夕飾りで彩られます。";
+"takaoka_tanabata_location" = "高岡市中心部";
+"takaoka_tanabata_feature1" = "商店街装飾";
+"takaoka_tanabata_feature2" = "七夕飾り";
+"takaoka_tanabata_feature3" = "1週間開催";
+
+"owara_kazenobon_name" = "おわら風の盆";
+"owara_kazenobon_description" = "越中八尾に伝わる優雅な踊りの祭り。哀愁を帯びた胡弓の音色に合わせて踊る幻想的な祭りです。";
+"owara_kazenobon_location" = "富山市八尾町";
+"owara_kazenobon_feature1" = "優雅な踊り";
+"owara_kazenobon_feature2" = "胡弓の音色";
+"owara_kazenobon_feature3" = "幻想的雰囲気";
+
+"toyama_festival_name" = "富山まつり";
+"toyama_festival_description" = "富山の夏を代表する祭り。民謡踊りパレードと花火大会が富山市を賑わせます。";
+"toyama_festival_location" = "富山市中心部";
+"toyama_festival_feature1" = "民謡踊り";
+"toyama_festival_feature2" = "パレード";
+"toyama_festival_feature3" = "花火大会";
+
+// MARK: - 石川県 (Ishikawa)
+"kanazawa_hyakumangoku_festival_name" = "金沢百万石まつり";
+"kanazawa_hyakumangoku_festival_description" = "前田利家の金沢入城を再現する金沢最大の祭り。豪華絢爛な百万石行列が見どころです。";
+"kanazawa_hyakumangoku_festival_location" = "金沢市中心部";
+"kanazawa_hyakumangoku_festival_feature1" = "百万石行列";
+"kanazawa_hyakumangoku_festival_feature2" = "前田利家再現";
+"kanazawa_hyakumangoku_festival_feature3" = "金沢最大";
+
+"wajima_taisai_name" = "輪島大祭";
+"wajima_taisai_description" = "輪島塗で有名な輪島の夏祭り。勇壮な神輿と太鼓が能登半島の夏を盛り上げます。";
+"wajima_taisai_location" = "輪島市";
+"wajima_taisai_feature1" = "輪島塗の町";
+"wajima_taisai_feature2" = "勇壮神輿";
+"wajima_taisai_feature3" = "能登の夏";
+
+"komatsu_otabi_festival_name" = "小松お旅まつり";
+"komatsu_otabi_festival_description" = "豪華絢爛な曳山が練り歩く小松の春祭り。子供歌舞伎の上演でも有名です。";
+"komatsu_otabi_festival_location" = "小松市";
+"komatsu_otabi_festival_feature1" = "豪華曳山";
+"komatsu_otabi_festival_feature2" = "子供歌舞伎";
+"komatsu_otabi_festival_feature3" = "春の祭り";
+
+// MARK: - 福井県 (Fukui)
+"mikuni_fireworks_name" = "三国花火大会";
+"mikuni_fireworks_description" = "北陸最大級の花火大会。日本海をバックに約1万発の花火が打ち上がります。";
+"mikuni_fireworks_location" = "坂井市三国町";
+"mikuni_fireworks_feature1" = "北陸最大級";
+"mikuni_fireworks_feature2" = "1万発";
+"mikuni_fireworks_feature3" = "日本海背景";
+
+"tsuruga_festival_name" = "敦賀まつり";
+"tsuruga_festival_description" = "敦賀の秋を彩る伝統的な祭り。山車巡行と敦賀港での船祭りが見どころです。";
+"tsuruga_festival_location" = "敦賀市";
+"tsuruga_festival_feature1" = "山車巡行";
+"tsuruga_festival_feature2" = "船祭り";
+"tsuruga_festival_feature3" = "港町の祭り";
+
+"wakasa_obama_festival_name" = "若狭おばま祭";
+"wakasa_obama_festival_description" = "小浜市の夏祭り。若狭湾の海の幸と伝統芸能が楽しめる海辺の祭りです。";
+"wakasa_obama_festival_location" = "小浜市";
+"wakasa_obama_festival_feature1" = "若狭湾";
+"wakasa_obama_festival_feature2" = "海の幸";
+"wakasa_obama_festival_feature3" = "伝統芸能";
+
+// MARK: - 山梨県 (Yamanashi)
+"fujigoko_fireworks_name" = "富士五湖花火大会";
+"fujigoko_fireworks_description" = "富士山を背景に打ち上がる花火大会。湖面に映る花火と富士山の美しいコラボレーションが見どころです。";
+"fujigoko_fireworks_location" = "富士五湖周辺";
+"fujigoko_fireworks_feature1" = "富士山背景";
+"fujigoko_fireworks_feature2" = "湖面花火";
+"fujigoko_fireworks_feature3" = "絶景コラボ";
+
+"kofu_summer_festival_name" = "甲府夏祭り";
+"kofu_summer_festival_description" = "甲府の夏を代表する祭り。武田信玄公祭りの夏版として多彩なイベントが開催されます。";
+"kofu_summer_festival_location" = "甲府市中心部";
+"kofu_summer_festival_feature1" = "武田信玄";
+"kofu_summer_festival_feature2" = "夏のイベント";
+"kofu_summer_festival_feature3" = "甲府の夏";
+
+"yoshida_himatsuri_name" = "吉田の火祭り";
+"yoshida_himatsuri_description" = "富士山の山じまいを告げる祭り。巨大な松明と富士山の火祭りで知られる勇壮な祭りです。";
+"yoshida_himatsuri_location" = "富士吉田市";
+"yoshida_himatsuri_feature1" = "富士山祭り";
+"yoshida_himatsuri_feature2" = "巨大松明";
+"yoshida_himatsuri_feature3" = "山じまい";
+
+// MARK: - 長野県 (Nagano)
+"suwako_fireworks_name" = "諏訪湖祭湖上花火大会";
+"suwako_fireworks_description" = "全国屈指の花火大会。諏訪湖上から打ち上がる4万発超の花火が湖面を美しく彩ります。";
+"suwako_fireworks_location" = "諏訪市・諏訪湖";
+"suwako_fireworks_feature1" = "4万発超";
+"suwako_fireworks_feature2" = "湖上花火";
+"suwako_fireworks_feature3" = "全国屈指";
+
+"matsumoto_bonbon_name" = "松本ぼんぼん";
+"matsumoto_bonbon_description" = "松本市民総参加の夏祭り。「ぼんぼん」の掛け声で踊る市民踊りが松本の夜を盛り上げます。";
+"matsumoto_bonbon_location" = "松本市中心部";
+"matsumoto_bonbon_feature1" = "市民総参加";
+"matsumoto_bonbon_feature2" = "ぼんぼん踊り";
+"matsumoto_bonbon_feature3" = "松本の夜";
+
+"iida_ringon_name" = "飯田りんごん";
+"iida_ringon_description" = "飯田市の夏祭り。りんご並木通りで繰り広げられる踊りパレードが見どころです。";
+"iida_ringon_location" = "飯田市中心部";
+"iida_ringon_feature1" = "りんご並木";
+"iida_ringon_feature2" = "踊りパレード";
+"iida_ringon_feature3" = "飯田の夏";
+
+// MARK: - 岐阜県 (Gifu)
+"gujo_odori_name" = "郡上おどり";
+"gujo_odori_description" = "日本三大盆踊りの一つ。7月から9月まで続く踊りの祭りで、徹夜踊りでも有名です。";
+"gujo_odori_location" = "郡上八幡";
+"gujo_odori_feature1" = "日本三大盆踊り";
+"gujo_odori_feature2" = "徹夜踊り";
+"gujo_odori_feature3" = "2ヶ月間開催";
+
+"gero_onsen_festival_name" = "下呂温泉まつり";
+"gero_onsen_festival_description" = "下呂温泉街で開催される夏祭り。温泉神輿と花火大会が温泉街を賑わせます。";
+"gero_onsen_festival_location" = "下呂市";
+"gero_onsen_festival_feature1" = "温泉神輿";
+"gero_onsen_festival_feature2" = "花火大会";
+"gero_onsen_festival_feature3" = "温泉街祭り";
+
+"hida_takayama_summer_festival_name" = "飛騨高山夏まつり";
+"hida_takayama_summer_festival_description" = "古い町並みで知られる高山の夏祭り。伝統的な屋台と飛騨の文化が楽しめます。";
+"hida_takayama_summer_festival_location" = "高山市";
+"hida_takayama_summer_festival_feature1" = "古い町並み";
+"hida_takayama_summer_festival_feature2" = "伝統屋台";
+"hida_takayama_summer_festival_feature3" = "飛騨文化";
+
+// MARK: - 静岡県 (Shizuoka)
+"atami_kaijo_fireworks_name" = "熱海海上花火大会";
+"atami_kaijo_fireworks_description" = "年間を通じて開催される花火大会。熱海湾を舞台にした海上花火が温泉街を彩ります。";
+"atami_kaijo_fireworks_location" = "熱海市・熱海湾";
+"atami_kaijo_fireworks_feature1" = "年間開催";
+"atami_kaijo_fireworks_feature2" = "海上花火";
+"atami_kaijo_fireworks_feature3" = "温泉街";
+
+"shimizu_port_festival_name" = "清水港まつり";
+"shimizu_port_festival_description" = "清水港で開催される夏祭り。港祭りならではの船パレードと花火大会が見どころです。";
+"shimizu_port_festival_location" = "静岡市清水区";
+"shimizu_port_festival_feature1" = "船パレード";
+"shimizu_port_festival_feature2" = "港祭り花火";
+"shimizu_port_festival_feature3" = "清水港";
+
+"hamamatsu_festival_name" = "浜松まつり";
+"hamamatsu_festival_description" = "遠州地方最大の祭り。大凧揚げと御殿屋台の引き回しで知られる勇壮な春祭りです。";
+"hamamatsu_festival_location" = "浜松市";
+"hamamatsu_festival_feature1" = "大凧揚げ";
+"hamamatsu_festival_feature2" = "御殿屋台";
+"hamamatsu_festival_feature3" = "遠州最大";
+
+// MARK: - 愛知県 (Aichi)
+"anjo_tanabata_festival_name" = "安城七夕まつり";
+"anjo_tanabata_festival_description" = "日本三大七夕祭りの一つ。安城市中心部が色とりどりの七夕飾りで美しく彩られます。";
+"anjo_tanabata_festival_location" = "安城市中心部";
+"anjo_tanabata_festival_feature1" = "日本三大七夕";
+"anjo_tanabata_festival_feature2" = "七夕飾り";
+"anjo_tanabata_festival_feature3" = "100万人来場";
+
+"toyohashi_gion_festival_name" = "豊橋祇園祭";
+"toyohashi_gion_festival_description" = "東海地方有数の祇園祭。手筒花火と大筒花火の迫力ある奉納が見どころです。";
+"toyohashi_gion_festival_location" = "豊橋市";
+"toyohashi_gion_festival_feature1" = "東海有数祇園";
+"toyohashi_gion_festival_feature2" = "手筒花火";
+"toyohashi_gion_festival_feature3" = "大筒花火";
+
+"nagoya_festival_name" = "名古屋まつり";
+"nagoya_festival_description" = "名古屋の秋を代表する祭り。郷土三英傑パレードと様々なイベントが名古屋を盛り上げます。";
+"nagoya_festival_location" = "名古屋市中心部";
+"nagoya_festival_feature1" = "三英傑パレード";
+"nagoya_festival_feature2" = "名古屋の秋";
+"nagoya_festival_feature3" = "大規模イベント";
+
+"okazaki_ieyasu_summer_festival_name" = "岡崎城下家康公夏まつり";
+"okazaki_ieyasu_summer_festival_description" = "徳川家康生誕の地岡崎の夏祭り。花火大会と城下町イベントが楽しめます。";
+"okazaki_ieyasu_summer_festival_location" = "岡崎市";
+"okazaki_ieyasu_summer_festival_feature1" = "家康公生誕地";
+"okazaki_ieyasu_summer_festival_feature2" = "城下町";
+"okazaki_ieyasu_summer_festival_feature3" = "花火大会";
+
+// MARK: - 三重県 (Mie)
+"tsu_festival_name" = "津まつり";
+"tsu_festival_description" = "津市最大の祭り。唐人踊りと安濃津よさこいが津の秋を盛り上げます。";
+"tsu_festival_location" = "津市中心部";
+"tsu_festival_feature1" = "唐人踊り";
+"tsu_festival_feature2" = "安濃津よさこい";
+"tsu_festival_feature3" = "津最大";
+
+"suzuka_genki_fireworks_name" = "鈴鹿げんき花火大会";
+"suzuka_genki_fireworks_description" = "鈴鹿サーキットで開催される花火大会。モータースポーツの聖地で楽しむ約8000発の花火です。";
+"suzuka_genki_fireworks_location" = "鈴鹿市";
+"suzuka_genki_fireworks_feature1" = "鈴鹿サーキット";
+"suzuka_genki_fireworks_feature2" = "8000発";
+"suzuka_genki_fireworks_feature3" = "モータースポーツ";
+
+"ise_jingu_fireworks_name" = "伊勢神宮奉納全国花火大会";
+"ise_jingu_fireworks_description" = "伊勢神宮への奉納花火大会。全国から選ばれた花火師による競技大会として開催されます。";
+"ise_jingu_fireworks_location" = "伊勢市・宮川河畔";
+"ise_jingu_fireworks_feature1" = "伊勢神宮奉納";
+"ise_jingu_fireworks_feature2" = "全国競技大会";
+"ise_jingu_fireworks_feature3" = "花火師競演";
+
+// MARK: - 滋賀県 (Shiga)
+"biwako_dai_fireworks_name" = "びわ湖大花火大会";
+"biwako_dai_fireworks_description" = "琵琶湖を舞台にした関西屈指の花火大会。湖面に映る約1万発の花火が幻想的な美しさを演出します。";
+"biwako_dai_fireworks_location" = "大津市・琵琶湖";
+"biwako_dai_fireworks_feature1" = "関西屈指";
+"biwako_dai_fireworks_feature2" = "1万発";
+"biwako_dai_fireworks_feature3" = "湖面花火";
+
+"otsu_festival_name" = "大津祭";
+"otsu_festival_description" = "湖国三大祭の一つ。からくり人形を乗せた曳山13基が大津の街を練り歩く歴史ある祭りです。";
+"otsu_festival_location" = "大津市";
+"otsu_festival_feature1" = "湖国三大祭";
+"otsu_festival_feature2" = "からくり人形";
+"otsu_festival_feature3" = "曳山13基";
+
+"nagahama_hikiyama_festival_name" = "長浜曳山まつり";
+"nagahama_hikiyama_festival_description" = "ユネスコ無形文化遺産の祭り。子供歌舞伎を上演する曳山が長浜の春を彩ります。";
+"nagahama_hikiyama_festival_location" = "長浜市";
+"nagahama_hikiyama_festival_feature1" = "ユネスコ遺産";
+"nagahama_hikiyama_festival_feature2" = "子供歌舞伎";
+"nagahama_hikiyama_festival_feature3" = "曳山祭り";
+
+// MARK: - 京都府 (Kyoto)
+"gion_festival_name" = "祇園祭";
+"gion_festival_description" = "日本三大祭りの一つ。1ヶ月間続く京都最大の祭りで、山鉾巡行が特に有名です。";
+"gion_festival_location" = "京都市中心部";
+"gion_festival_feature1" = "日本三大祭り";
+"gion_festival_feature2" = "山鉾巡行";
+"gion_festival_feature3" = "1ヶ月開催";
+
+"gozan_okuribi_name" = "五山送り火";
+"gozan_okuribi_description" = "お盆の精霊を送る京都の夏の風物詩。大文字をはじめとする5つの送り火が夜空を彩ります。";
+"gozan_okuribi_location" = "京都市・東山";
+"gozan_okuribi_feature1" = "大文字";
+"gozan_okuribi_feature2" = "精霊送り";
+"gozan_okuribi_feature3" = "夏の風物詩";
+
+"jidai_festival_name" = "時代祭";
+"jidai_festival_description" = "京都三大祭りの一つ。平安時代から明治維新までの時代装束による行列が京都の歴史を再現します。";
+"jidai_festival_location" = "京都御所〜平安神宮";
+"jidai_festival_feature1" = "京都三大祭り";
+"jidai_festival_feature2" = "時代装束";
+"jidai_festival_feature3" = "歴史再現";
+
+// MARK: - 大阪府 (Osaka)
+"tenjin_festival_name" = "天神祭";
+"tenjin_festival_description" = "日本三大祭りの一つ。船渡御と奉納花火が有名で、1000年以上の歴史を持つ大阪の夏の風物詩です。";
+"tenjin_festival_location" = "大阪天満宮・大川";
+"tenjin_festival_feature1" = "日本三大祭り";
+"tenjin_festival_feature2" = "船渡御";
+"tenjin_festival_feature3" = "奉納花火";
+
+"yodogawa_fireworks_name" = "淀川花火大会";
+"yodogawa_fireworks_description" = "関西最大級の花火大会。約5万発の花火が淀川の夜空を美しく彩ります。";
+"yodogawa_fireworks_location" = "大阪市・淀川河川敷";
+"yodogawa_fireworks_feature1" = "関西最大級";
+"yodogawa_fireworks_feature2" = "5万発";
+"yodogawa_fireworks_feature3" = "淀川河川敷";
+
+"pl_fireworks_name" = "PL花火芸術";
+"pl_fireworks_description" = "関西最大級の花火大会。約2万発の花火が夜空を彩り、芸術性の高い花火演出で知られています。";
+"pl_fireworks_location" = "富田林市PL教団";
+"pl_fireworks_feature1" = "2万発の花火";
+"pl_fireworks_feature2" = "芸術的演出";
+"pl_fireworks_feature3" = "関西最大級";
+
+"naniwa_yodogawa_fireworks_name" = "なにわ淀川花火大会";
+"naniwa_yodogawa_fireworks_description" = "淀川で開催される市民手作りの花火大会。約1万発の花火と市民ボランティアの温かさが魅力です。";
+"naniwa_yodogawa_fireworks_location" = "大阪市・淀川";
+"naniwa_yodogawa_fireworks_feature1" = "市民手作り";
+"naniwa_yodogawa_fireworks_feature2" = "1万発";
+"naniwa_yodogawa_fireworks_feature3" = "ボランティア";
+
+// MARK: - 兵庫県 (Hyogo)
+"minato_kobe_fireworks_name" = "みなとこうべ海上花火大会";
+"minato_kobe_fireworks_description" = "神戸港で開催される海上花火大会。約1万発の花火が神戸の夜景と共に美しい光景を作り出します。";
+"minato_kobe_fireworks_location" = "神戸港";
+"minato_kobe_fireworks_feature1" = "海上花火";
+"minato_kobe_fireworks_feature2" = "1万発";
+"minato_kobe_fireworks_feature3" = "神戸夜景";
+
+"inagawa_fireworks_name" = "猪名川花火大会";
+"inagawa_fireworks_description" = "大阪府池田市との合同開催の花火大会。約4000発の花火が猪名川の夜空を彩ります。";
+"inagawa_fireworks_location" = "川西市・猪名川";
+"inagawa_fireworks_feature1" = "合同開催";
+"inagawa_fireworks_feature2" = "4000発";
+"inagawa_fireworks_feature3" = "猪名川";
+
+"himeji_yukata_festival_name" = "姫路ゆかたまつり";
+"himeji_yukata_festival_description" = "姫路城下で開催される浴衣の祭り。浴衣姿での参加者が商店街を練り歩く初夏の風物詩です。";
+"himeji_yukata_festival_location" = "姫路市中心部";
+"himeji_yukata_festival_feature1" = "浴衣祭り";
+"himeji_yukata_festival_feature2" = "姫路城下";
+"himeji_yukata_festival_feature3" = "初夏の風物詩";
+
+// MARK: - 奈良県 (Nara)
+"nara_tokae_name" = "奈良燈花会";
+"nara_tokae_description" = "奈良公園一帯を約2万個のろうそくで彩る幻想的な夏のイベント。古都奈良の夜が美しく照らされます。";
+"nara_tokae_location" = "奈良公園一帯";
+"nara_tokae_feature1" = "2万個ろうそく";
+"nara_tokae_feature2" = "幻想的夜景";
+"nara_tokae_feature3" = "古都の夏";
+
+"kasuga_taisha_mantoro_name" = "春日大社万燈籠";
+"kasuga_taisha_mantoro_description" = "春日大社で年2回開催される燈籠祭り。約3000基の燈籠が一斉に灯される神秘的な祭りです。";
+"kasuga_taisha_mantoro_location" = "春日大社";
+"kasuga_taisha_mantoro_feature1" = "3000基燈籠";
+"kasuga_taisha_mantoro_feature2" = "神秘的";
+"kasuga_taisha_mantoro_feature3" = "年2回開催";
+
+"heijokyo_tenpyo_festival_name" = "平城京天平祭";
+"heijokyo_tenpyo_festival_description" = "平城宮跡で開催される古代ロマンあふれる祭り。天平時代の文化を再現したイベントが楽しめます。";
+"heijokyo_tenpyo_festival_location" = "平城宮跡";
+"heijokyo_tenpyo_festival_feature1" = "天平時代再現";
+"heijokyo_tenpyo_festival_feature2" = "古代ロマン";
+"heijokyo_tenpyo_festival_feature3" = "平城宮跡";
+
+// MARK: - 和歌山県 (Wakayama)
+"kinokawa_momoyama_festival_name" = "紀の川市桃山まつり";
+"kinokawa_momoyama_festival_description" = "桃の里紀の川市で開催される夏祭り。桃をテーマにした祭りと花火大会が楽しめます。";
+"kinokawa_momoyama_festival_location" = "紀の川市";
+"kinokawa_momoyama_festival_feature1" = "桃の里";
+"kinokawa_momoyama_festival_feature2" = "桃テーマ";
+"kinokawa_momoyama_festival_feature3" = "花火大会";
+
+"tanabe_benkei_festival_name" = "田辺弁慶まつり";
+"tanabe_benkei_festival_description" = "弁慶生誕の地田辺で開催される秋祭り。弁慶踊りと武蔵坊弁慶のパレードが見どころです。";
+"tanabe_benkei_festival_location" = "田辺市";
+"tanabe_benkei_festival_feature1" = "弁慶生誕地";
+"tanabe_benkei_festival_feature2" = "弁慶踊り";
+"tanabe_benkei_festival_feature3" = "武蔵坊パレード";
+
+"kushimoto_festival_name" = "串本まつり";
+"kushimoto_festival_description" = "本州最南端串本町で開催される夏祭り。海の恵みに感謝する港町ならではの祭りです。";
+"kushimoto_festival_location" = "串本町";
+"kushimoto_festival_feature1" = "本州最南端";
+"kushimoto_festival_feature2" = "海の恵み";
+"kushimoto_festival_feature3" = "港町祭り";
+
+// MARK: - 鳥取県 (Tottori)
+"tottori_shanshan_festival_name" = "鳥取しゃんしゃん祭";
+"tottori_shanshan_festival_description" = "鳥取市民総参加の夏祭り。しゃんしゃん傘踊りで知られ、ギネス記録も持つ大規模な踊りの祭りです。";
+"tottori_shanshan_festival_location" = "鳥取市中心部";
+"tottori_shanshan_festival_feature1" = "しゃんしゃん傘踊り";
+"tottori_shanshan_festival_feature2" = "ギネス記録";
+"tottori_shanshan_festival_feature3" = "市民総参加";
+
+"yonago_gaina_festival_name" = "米子がいな祭";
+"yonago_gaina_festival_description" = "米子市の夏祭り。がいな万灯と花火大会が山陰の夜空を美しく彩ります。";
+"yonago_gaina_festival_location" = "米子市";
+"yonago_gaina_festival_feature1" = "がいな万灯";
+"yonago_gaina_festival_feature2" = "花火大会";
+"yonago_gaina_festival_feature3" = "山陰の夜";
+
+// MARK: - 島根県 (Shimane)
+"matsue_suigo_festival_name" = "松江水郷祭";
+"matsue_suigo_festival_description" = "宍道湖で開催される松江の夏祭り。湖上花火大会と船行列が水の都松江を彩ります。";
+"matsue_suigo_festival_location" = "松江市・宍道湖";
+"matsue_suigo_festival_feature1" = "湖上花火";
+"matsue_suigo_festival_feature2" = "船行列";
+"matsue_suigo_festival_feature3" = "水の都";
+
+"izumo_shinwa_festival_name" = "出雲神話まつり";
+"izumo_shinwa_festival_description" = "神話の国出雲で開催される夏祭り。神話をテーマにした様々なイベントが楽しめます。";
+"izumo_shinwa_festival_location" = "出雲市";
+"izumo_shinwa_festival_feature1" = "神話の国";
+"izumo_shinwa_festival_feature2" = "神話テーマ";
+"izumo_shinwa_festival_feature3" = "文化イベント";
+
+// MARK: - 岡山県 (Okayama)
+"okayama_momotaro_festival_name" = "おかやま桃太郎まつり";
+"okayama_momotaro_festival_description" = "桃太郎伝説で有名な岡山の夏祭り。うらじゃ踊りと納涼花火大会が岡山の夜を盛り上げます。";
+"okayama_momotaro_festival_location" = "岡山市中心部";
+"okayama_momotaro_festival_feature1" = "桃太郎伝説";
+"okayama_momotaro_festival_feature2" = "うらじゃ踊り";
+"okayama_momotaro_festival_feature3" = "納涼花火";
+
+"kurashiki_tenryo_festival_name" = "倉敷天領夏祭り";
+"kurashiki_tenryo_festival_description" = "美観地区で知られる倉敷の夏祭り。天領太鼓と花火大会が白壁の街を彩ります。";
+"kurashiki_tenryo_festival_location" = "倉敷市";
+"kurashiki_tenryo_festival_feature1" = "美観地区";
+"kurashiki_tenryo_festival_feature2" = "天領太鼓";
+"kurashiki_tenryo_festival_feature3" = "白壁の街";
+
+// MARK: - 広島県 (Hiroshima)
+"miyajima_suichu_fireworks_name" = "宮島水中花火大会";
+"miyajima_suichu_fireworks_description" = "世界遺産厳島神社の大鳥居を背景にした花火大会。水中花火が瀬戸内海を美しく彩ります。";
+"miyajima_suichu_fireworks_location" = "廿日市市・宮島";
+"miyajima_suichu_fireworks_feature1" = "世界遺産背景";
+"miyajima_suichu_fireworks_feature2" = "水中花火";
+"miyajima_suichu_fireworks_feature3" = "大鳥居";
+
+"kure_kaijo_fireworks_name" = "呉海上花火大会";
+"kure_kaijo_fireworks_description" = "港町呉で開催される海上花火大会。約1万発の花火が呉港の夜空を美しく彩ります。";
+"kure_kaijo_fireworks_location" = "呉市・呉港";
+"kure_kaijo_fireworks_feature1" = "港町花火";
+"kure_kaijo_fireworks_feature2" = "1万発";
+"kure_kaijo_fireworks_feature3" = "呉港";
+
+"hiroshima_minato_fireworks_name" = "広島みなと夢花火大会";
+"hiroshima_minato_fireworks_description" = "広島港で開催される花火大会。約1万発の花火が広島の夏夜を彩ります。";
+"hiroshima_minato_fireworks_location" = "広島市・広島港";
+"hiroshima_minato_fireworks_feature1" = "1万発";
+"hiroshima_minato_fireworks_feature2" = "広島港";
+"hiroshima_minato_fireworks_feature3" = "夏夜花火";
+
+// MARK: - 山口県 (Yamaguchi)
+"kanmon_kaikyo_fireworks_name" = "関門海峡花火大会";
+"kanmon_kaikyo_fireworks_description" = "本州と九州を隔てる関門海峡で開催される花火大会。両岸から約1万3千発の花火が打ち上がります。";
+"kanmon_kaikyo_fireworks_location" = "下関市・関門海峡";
+"kanmon_kaikyo_fireworks_feature1" = "両岸花火";
+"kanmon_kaikyo_fireworks_feature2" = "1万3千発";
+"kanmon_kaikyo_fireworks_feature3" = "本州九州";
+
+"shimonoseki_kaikyo_kan_fireworks_name" = "下関海響館花火大会";
+"shimonoseki_kaikyo_kan_fireworks_description" = "下関の夏を彩る花火大会。海響館前の海上から打ち上がる花火が関門海峡を照らします。";
+"shimonoseki_kaikyo_kan_fireworks_location" = "下関市・海響館";
+"shimonoseki_kaikyo_kan_fireworks_feature1" = "海響館";
+"shimonoseki_kaikyo_kan_fireworks_feature2" = "海上花火";
+"shimonoseki_kaikyo_kan_fireworks_feature3" = "関門海峡";
+
+"yamaguchi_tanabata_chochin_festival_name" = "山口七夕ちょうちんまつり";
+"yamaguchi_tanabata_chochin_festival_description" = "約10万個の紅提灯が街を彩る山口の夏祭り。幻想的な提灯の灯りが夜の山口を美しく照らします。";
+"yamaguchi_tanabata_chochin_festival_location" = "山口市中心部";
+"yamaguchi_tanabata_chochin_festival_feature1" = "10万個提灯";
+"yamaguchi_tanabata_chochin_festival_feature2" = "紅提灯";
+"yamaguchi_tanabata_chochin_festival_feature3" = "幻想的";
+
+// MARK: - 徳島県 (Tokushima)
+"awa_odori_name" = "阿波おどり";
+"awa_odori_description" = "日本三大盆踊りの一つ。「踊る阿呆に見る阿呆、同じ阿呆なら踊らな損々」で有名な徳島の夏祭りです。";
+"awa_odori_location" = "徳島市中心部";
+"awa_odori_feature1" = "日本三大盆踊り";
+"awa_odori_feature2" = "踊る阿呆";
+"awa_odori_feature3" = "100万人来場";
+
+"tokushima_awa_odori_name" = "徳島市阿波おどり";
+"tokushima_awa_odori_description" = "本場徳島で開催される阿波おどり。連と呼ばれる踊りグループによる華やかな踊りが見どころです。";
+"tokushima_awa_odori_location" = "徳島市";
+"tokushima_awa_odori_feature1" = "本場阿波おどり";
+"tokushima_awa_odori_feature2" = "連の踊り";
+"tokushima_awa_odori_feature3" = "華やかな演舞";
+
+// MARK: - 香川県 (Kagawa)
+"sanuki_takamatsu_festival_name" = "さぬき高松まつり";
+"sanuki_takamatsu_festival_description" = "高松市の夏祭り。総踊りと花火大会が讃岐の夏を盛り上げます。";
+"sanuki_takamatsu_festival_location" = "高松市中心部";
+"sanuki_takamatsu_festival_feature1" = "総踊り";
+"sanuki_takamatsu_festival_feature2" = "花火大会";
+"sanuki_takamatsu_festival_feature3" = "讃岐の夏";
+
+"marugame_oshiro_festival_name" = "丸亀お城まつり";
+"marugame_oshiro_festival_description" = "丸亀城を舞台にした春祭り。城を背景にした様々なイベントが開催されます。";
+"marugame_oshiro_festival_location" = "丸亀市・丸亀城";
+"marugame_oshiro_festival_feature1" = "丸亀城";
+"marugame_oshiro_festival_feature2" = "城祭り";
+"marugame_oshiro_festival_feature3" = "春イベント";
+
+// MARK: - 愛媛県 (Ehime)
+"matsuyama_festival_name" = "松山まつり";
+"matsuyama_festival_description" = "松山市の夏祭り。野球拳踊りと花火大会が道後温泉の街を賑わせます。";
+"matsuyama_festival_location" = "松山市中心部";
+"matsuyama_festival_feature1" = "野球拳踊り";
+"matsuyama_festival_feature2" = "花火大会";
+"matsuyama_festival_feature3" = "道後温泉";
+
+"niihama_taiko_festival_name" = "新居浜太鼓祭り";
+"niihama_taiko_festival_description" = "四国三大祭りの一つ。重さ約3トンの太鼓台が練り歩く勇壮な秋祭りです。";
+"niihama_taiko_festival_location" = "新居浜市";
+"niihama_taiko_festival_feature1" = "四国三大祭り";
+"niihama_taiko_festival_feature2" = "3トン太鼓台";
+"niihama_taiko_festival_feature3" = "勇壮な祭り";
+
+"uwajima_ushioni_festival_name" = "宇和島牛鬼まつり";
+"uwajima_ushioni_festival_description" = "牛鬼という幻想的な練り物が街を練り歩く宇和島の夏祭り。ガイヤカーニバルでも有名です。";
+"uwajima_ushioni_festival_location" = "宇和島市";
+"uwajima_ushioni_festival_feature1" = "牛鬼練り物";
+"uwajima_ushioni_festival_feature2" = "ガイヤカーニバル";
+"uwajima_ushioni_festival_feature3" = "幻想的";
+
+// MARK: - 高知県 (Kochi)
+"yosakoi_festival_name" = "よさこい祭り";
+"yosakoi_festival_description" = "高知発祥のよさこい踊りの祭り。鳴子を持って踊る華やかな祭りで全国に広がりました。";
+"yosakoi_festival_location" = "高知市中心部";
+"yosakoi_festival_feature1" = "よさこい発祥";
+"yosakoi_festival_feature2" = "鳴子踊り";
+"yosakoi_festival_feature3" = "全国に拡大";
+
+"tosa_festival_name" = "土佐まつり";
+"tosa_festival_description" = "高知の夏を代表する祭り。花火大会とよさこい踊りが土佐の夜を盛り上げます。";
+"tosa_festival_location" = "高知市";
+"tosa_festival_feature1" = "土佐の夏";
+"tosa_festival_feature2" = "花火大会";
+"tosa_festival_feature3" = "よさこい";
+
+// MARK: - 福岡県 (Fukuoka)
+"hakata_gion_yamakasa_name" = "博多祇園山笠";
+"hakata_gion_yamakasa_description" = "博多の夏を代表する勇壮な祭り。飾り山笠と舁き山笠で知られ、追い山が最大の見どころです。";
+"hakata_gion_yamakasa_location" = "博多区";
+"hakata_gion_yamakasa_feature1" = "飾り山笠";
+"hakata_gion_yamakasa_feature2" = "舁き山笠";
+"hakata_gion_yamakasa_feature3" = "追い山";
+
+"kokura_gion_taiko_name" = "小倉祇園太鼓";
+"kokura_gion_taiko_description" = "小倉城を中心に繰り広げられる太鼓の祭り。勇壮な太鼓の音が小倉の夏を彩ります。";
+"kokura_gion_taiko_location" = "北九州市小倉北区";
+"kokura_gion_taiko_feature1" = "小倉城";
+"kokura_gion_taiko_feature2" = "勇壮太鼓";
+"kokura_gion_taiko_feature3" = "夏の響き";
+
+"tobata_gion_oyamakasa_name" = "戸畑祇園大山笠";
+"tobata_gion_oyamakasa_description" = "ユネスコ無形文化遺産に登録された戸畑の祭り。提灯山笠が幻想的に夜を彩ります。";
+"tobata_gion_oyamakasa_location" = "北九州市戸畑区";
+"tobata_gion_oyamakasa_feature1" = "ユネスコ遺産";
+"tobata_gion_oyamakasa_feature2" = "提灯山笠";
+"tobata_gion_oyamakasa_feature3" = "幻想的夜景";
+
+"chikugogawa_fireworks_name" = "筑後川花火大会";
+"chikugogawa_fireworks_description" = "九州最大級の花火大会。筑後川河川敷から約1万8千発の花火が打ち上がります。";
+"chikugogawa_fireworks_location" = "久留米市・筑後川";
+"chikugogawa_fireworks_feature1" = "九州最大級";
+"chikugogawa_fireworks_feature2" = "1万8千発";
+"chikugogawa_fireworks_feature3" = "筑後川";
+
+// MARK: - 佐賀県 (Saga)
+"saga_balloon_festa_name" = "佐賀インターナショナルバルーンフェスタ";
+"saga_balloon_festa_description" = "アジア最大級の熱気球大会。色とりどりの熱気球が佐賀平野の空を彩る秋の風物詩です。";
+"saga_balloon_festa_location" = "佐賀市・嘉瀬川河川敷";
+"saga_balloon_festa_feature1" = "アジア最大級";
+"saga_balloon_festa_feature2" = "熱気球";
+"saga_balloon_festa_feature3" = "100機以上";
+
+"karatsu_kunchi_name" = "唐津くんち";
+"karatsu_kunchi_description" = "ユネスコ無形文化遺産の唐津の秋祭り。14台の曳山が唐津神社の祭礼として街を練り歩きます。";
+"karatsu_kunchi_location" = "唐津市";
+"karatsu_kunchi_feature1" = "ユネスコ遺産";
+"karatsu_kunchi_feature2" = "14台曳山";
+"karatsu_kunchi_feature3" = "400年の歴史";
+
+// MARK: - 長崎県 (Nagasaki)
+"nagasaki_shoryonagashi_name" = "長崎精霊流し";
+"nagasaki_shoryonagashi_description" = "お盆の伝統行事として知られる長崎の夏祭り。故人の霊を送る精霊船が街を練り歩きます。";
+"nagasaki_shoryonagashi_location" = "長崎市中心部";
+"nagasaki_shoryonagashi_feature1" = "お盆行事";
+"nagasaki_shoryonagashi_feature2" = "精霊船";
+"nagasaki_shoryonagashi_feature3" = "爆竹の音";
+
+"nagasaki_kunchi_name" = "長崎くんち";
+"nagasaki_kunchi_description" = "長崎の秋を代表する祭り。異国情緒豊かな踊りと出し物が諏訪神社の祭礼として奉納されます。";
+"nagasaki_kunchi_location" = "長崎市";
+"nagasaki_kunchi_feature1" = "異国情緒";
+"nagasaki_kunchi_feature2" = "諏訪神社";
+"nagasaki_kunchi_feature3" = "380年の歴史";
+
+"sasebo_seaside_festival_name" = "佐世保シーサイドフェスティバル";
+"sasebo_seaside_festival_description" = "佐世保港で開催される夏祭り。港町ならではの海上イベントと花火大会が楽しめます。";
+"sasebo_seaside_festival_location" = "佐世保市・佐世保港";
+"sasebo_seaside_festival_feature1" = "港町祭り";
+"sasebo_seaside_festival_feature2" = "海上イベント";
+"sasebo_seaside_festival_feature3" = "花火大会";
+
+// MARK: - 熊本県 (Kumamoto)
+"kumamoto_hinokuni_festival_name" = "熊本火の国まつり";
+"kumamoto_hinokuni_festival_description" = "熊本の夏を代表する祭り。火の国おどりと花火大会が熊本城下を盛り上げます。";
+"kumamoto_hinokuni_festival_location" = "熊本市中心部";
+"kumamoto_hinokuni_festival_feature1" = "火の国おどり";
+"kumamoto_hinokuni_festival_feature2" = "花火大会";
+"kumamoto_hinokuni_festival_feature3" = "熊本城下";
+
+"yamaga_toro_festival_name" = "山鹿灯籠まつり";
+"yamaga_toro_festival_description" = "和紙と糊だけで作られた灯籠を頭に載せて踊る幻想的な祭り。千人灯籠踊りが圧巻です。";
+"yamaga_toro_festival_location" = "山鹿市";
+"yamaga_toro_festival_feature1" = "和紙灯籠";
+"yamaga_toro_festival_feature2" = "千人踊り";
+"yamaga_toro_festival_feature3" = "幻想的";
+
+"hitoyoshi_fireworks_name" = "人吉花火大会";
+"hitoyoshi_fireworks_description" = "球磨川で開催される花火大会。約5000発の花火が人吉の夜空を美しく彩ります。";
+"hitoyoshi_fireworks_location" = "人吉市・球磨川";
+"hitoyoshi_fireworks_feature1" = "5000発";
+"hitoyoshi_fireworks_feature2" = "球磨川";
+"hitoyoshi_fireworks_feature3" = "清流花火";
+
+// MARK: - 大分県 (Oita)
+"oita_tanabata_festival_name" = "大分七夕まつり";
+"oita_tanabata_festival_description" = "大分市の夏祭り。中心街が七夕飾りで彩られ、様々なイベントが開催されます。";
+"oita_tanabata_festival_location" = "大分市中心部";
+"oita_tanabata_festival_feature1" = "七夕飾り";
+"oita_tanabata_festival_feature2" = "中心街";
+"oita_tanabata_festival_feature3" = "夏イベント";
+
+"hita_gion_festival_name" = "日田祇園祭";
+"hita_gion_festival_description" = "水郷日田の夏祭り。豪華絢爛な山鉾が三隈川沿いを練り歩く九州有数の祇園祭です。";
+"hita_gion_festival_location" = "日田市";
+"hita_gion_festival_feature1" = "水郷祭り";
+"hita_gion_festival_feature2" = "豪華山鉾";
+"hita_gion_festival_feature3" = "九州有数";
+
+"beppu_hinoumi_festival_name" = "別府火の海まつり";
+"beppu_hinoumi_festival_description" = "別府温泉街で開催される夏祭り。温泉まつりと花火大会が別府の夜を彩ります。";
+"beppu_hinoumi_festival_location" = "別府市";
+"beppu_hinoumi_festival_feature1" = "温泉街";
+"beppu_hinoumi_festival_feature2" = "温泉まつり";
+"beppu_hinoumi_festival_feature3" = "花火大会";
+
+// MARK: - 宮崎県 (Miyazaki)
+"hyuga_hyottoko_festival_name" = "日向ひょっとこ夏祭り";
+"hyuga_hyottoko_festival_description" = "ひょっとこ踊りで有名な日向市の夏祭り。ユーモラスなひょっとこの面をつけて踊る楽しい祭りです。";
+"hyuga_hyottoko_festival_location" = "日向市";
+"hyuga_hyottoko_festival_feature1" = "ひょっとこ踊り";
+"hyuga_hyottoko_festival_feature2" = "ユーモラス";
+"hyuga_hyottoko_festival_feature3" = "面踊り";
+
+"miyazaki_jingu_taisai_name" = "宮崎神宮大祭";
+"miyazaki_jingu_taisai_description" = "宮崎神宮の秋祭り。神武天皇ゆかりの宮崎神宮で開催される歴史ある祭りです。";
+"miyazaki_jingu_taisai_location" = "宮崎市・宮崎神宮";
+"miyazaki_jingu_taisai_feature1" = "神武天皇";
+"miyazaki_jingu_taisai_feature2" = "宮崎神宮";
+"miyazaki_jingu_taisai_feature3" = "歴史ある祭り";
+
+// MARK: - 鹿児島県 (Kagoshima)
+"kagoshima_ohara_festival_name" = "鹿児島おはら祭";
+"kagoshima_ohara_festival_description" = "鹿児島市民総踊りの祭り。おはら節に合わせて踊る市民パレードが鹿児島の秋を彩ります。";
+"kagoshima_ohara_festival_location" = "鹿児島市中心部";
+"kagoshima_ohara_festival_feature1" = "市民総踊り";
+"kagoshima_ohara_festival_feature2" = "おはら節";
+"kagoshima_ohara_festival_feature3" = "2万人参加";
+
+"sendaigawa_fireworks_name" = "川内川花火大会";
+"sendaigawa_fireworks_description" = "川内川で開催される花火大会。約8000発の花火が薩摩川内市の夜空を彩ります。";
+"sendaigawa_fireworks_location" = "薩摩川内市・川内川";
+"sendaigawa_fireworks_feature1" = "8000発";
+"sendaigawa_fireworks_feature2" = "川内川";
+"sendaigawa_fireworks_feature3" = "薩摩の夜";
+
+// MARK: - 沖縄県 (Okinawa)
+"okinawa_zento_eisa_festival_name" = "沖縄全島エイサーまつり";
+"okinawa_zento_eisa_festival_description" = "沖縄の夏を代表する祭り。県内各地のエイサー団体が集結し、勇壮なエイサーを披露します。";
+"okinawa_zento_eisa_festival_location" = "沖縄市";
+"okinawa_zento_eisa_festival_feature1" = "全島エイサー";
+"okinawa_zento_eisa_festival_feature2" = "勇壮な踊り";
+"okinawa_zento_eisa_festival_feature3" = "沖縄の夏";
+
+"naha_festival_name" = "那覇まつり";
+"naha_festival_description" = "那覇市最大の祭り。国際通りでのパレードと花火大会が沖縄の秋を盛り上げます。";
+"naha_festival_location" = "那覇市";
+"naha_festival_feature1" = "国際通り";
+"naha_festival_feature2" = "パレード";
+"naha_festival_feature3" = "那覇最大";
+
+"ginowan_hagoromo_festival_name" = "宜野湾はごろも祭り";
+"ginowan_hagoromo_festival_description" = "宜野湾市の夏祭り。はごろも音頭と花火大会が宜野湾の夜を美しく彩ります。";
+"ginowan_hagoromo_festival_location" = "宜野湾市";
+"ginowan_hagoromo_festival_feature1" = "はごろも音頭";
+"ginowan_hagoromo_festival_feature2" = "花火大会";
+"ginowan_hagoromo_festival_feature3" = "宜野湾の夜";
+
+// MARK: - 月表示用文字列
+"month_january" = "1月";
+"month_february" = "2月";
+"month_march" = "3月";
+"month_april" = "4月";
+"month_may" = "5月";
+"month_june" = "6月";
+"month_july" = "7月";
+"month_august" = "8月";
+"month_september" = "9月";
+"month_october" = "10月";
+"month_november" = "11月";
+"month_december" = "12月";
+
+"month_range_july_august" = "7-8月";
+"month_range_july_september" = "7-9月";
+"month_range_april_october" = "4-10月";
+"month_range_january_february" = "1-2月";
+"month_range_january_march" = "1-3月";
+"month_range_february_march" = "2-3月";
+"month_range_february_april" = "2-4月";
+"month_range_march_may" = "3-5月";
+"month_range_april_may" = "4-5月";
+"month_range_october_may" = "10-5月";
+"month_range_november_february" = "11-2月";
+"month_range_november_may" = "11-5月";
+"month_range_december_march" = "12-3月";
+
+// MARK: - 期間表示用文字列
+"duration_1_day" = "1日";
+"duration_2_days" = "2日間";
+"duration_3_days" = "3日間";
+"duration_4_days" = "4日間";
+"duration_5_days" = "5日間";
+"duration_7_days" = "7日間";
+"duration_10_days" = "10日間";
+"duration_15_days" = "15日間";
+"duration_1_week" = "1週間";
+"duration_1_month" = "1ヶ月間";
+"duration_2_months" = "約2ヶ月";
+"duration_daily" = "毎日開催";
+"duration_multiple_times_year" = "年間複数回";
+"duration_12_days" = "12日間";
+"duration_2_weeks" = "2週間";
+"duration_3_weeks" = "3週間";
+"duration_1_month_duration" = "1ヶ月";
+"duration_2_months_duration" = "2ヶ月";
+"duration_3_months" = "3ヶ月間";
+"duration_4_months" = "4ヶ月";
+"duration_6_months" = "6ヶ月";
+"duration_8_months" = "8ヶ月";
+"duration_few_days" = "数日間";
+
+// MARK: - カテゴリー表示用文字列
+"category_traditional" = "伝統祭り";
+"category_summer" = "夏祭り";
+"category_fireworks" = "花火大会";
+"category_dance" = "踊り祭り";
+"category_food" = "グルメ祭り";
+"category_religious" = "宗教行事";
+"category_seasonal" = "季節行事";
+
+// MARK: - 規模表示用文字列
+"scale_1" = "地域規模";
+"scale_2" = "市町村規模";
+"scale_3" = "県内有数";
+"scale_4" = "全国規模";
+"scale_5" = "日本最大級";
+
+// MARK: - 共通フレーズ
+"festival_suffix" = "祭り";
+"fireworks_suffix" = "花火大会";
+"matsuri_suffix" = "まつり";
+"festival_description_suffix" = "が見どころです。";
+"location_center" = "中心部";
+"location_riverbed" = "河川敷";
+"location_port" = "港周辺";
+"location_hot_spring" = "温泉街";
+
+
+"festival.summer" = "夏祭り";
+"festival.fireworks" = "花火大会";
+"festival.traditional" = "伝統祭り";
+"festival.dance" = "踊り祭り";
+"festival.food" = "食の祭り";
+"festival.seasonal" = "季節祭り";
+"festival.religious" = "宗教祭り";
+
+
+"festival.summer_fireworks" = "夏祭り・花火大会";
+"festival.experience" = "%@の祭りを体験";
+"festival.of_prefecture" = "%@の祭り";
+"festival.event_info" = "開催情報";
+
+"festival.period" = "開催時期";
+"festival.duration" = "期間";
+"festival.location" = "開催地";
+"festival.scale" = "規模";
+"festival.highlights" = "見どころ・特徴";
+"festival.tips" = "楽しみ方のヒント";
+
+// 夏祭りのヒント
+"tips.summer.1" = "浴衣を着て雰囲気を楽しむ";
+"tips.summer.2" = "屋台グルメを味わう";
+"tips.summer.3" = "早めの場所取りがおすすめ";
+
+// 花火大会のヒント
+"tips.fireworks.1" = "レジャーシートを持参する";
+"tips.fireworks.2" = "打ち上げ場所の風向きを確認";
+"tips.fireworks.3" = "公共交通機関での来場を推奨";
+
+// 伝統祭りのヒント
+"tips.traditional.1" = "歴史や由来を事前に調べる";
+"tips.traditional.2" = "地元の人との交流を楽しむ";
+"tips.traditional.3" = "伝統衣装での参加を検討";
+
+// 踊り祭りのヒント
+"tips.dance.1" = "踊りの練習をして参加する";
+"tips.dance.2" = "動きやすい服装で参加";
+"tips.dance.3" = "地元の踊り手から学ぶ";
+
+// 食の祭りのヒント
+"tips.food.1" = "空腹で参加して思い切り楽しむ";
+"tips.food.2" = "地元の特産品をお土産に";
+"tips.food.3" = "料理の作り方を聞いてみる";
+
+// 季節祭りのヒント
+"tips.seasonal.1" = "季節の装いで参加する";
+"tips.seasonal.2" = "自然の美しさも一緒に楽しむ";
+"tips.seasonal.3" = "写真撮影スポットを探す";
+
+// 宗教祭りのヒント
+"tips.religious.1" = "参拝マナーを事前に確認";
+"tips.religious.2" = "静寂な雰囲気を大切にする";
+"tips.religious.3" = "お守りや御朱印をいただく";
+
+
+// 春
+"tips.spring.1" = "暖かい服装で春の陽気を楽しむ";
+"tips.spring.2" = "花と一緒に記念撮影";
+"tips.spring.3" = "地元の春の味覚を堪能";
+
+// 秋
+"tips.autumn.1" = "紅葉の見頃時期を事前に確認";
+"tips.autumn.2" = "温かい飲み物を持参";
+"tips.autumn.3" = "落ち葉を踏みしめて散策";
+
+// 冬
+"tips.winter.1" = "防寒対策をしっかりと";
+"tips.winter.2" = "温かい場所での休憩を計画";
+"tips.winter.3" = "雪景色の写真撮影を楽しむ";
+
+// 桜
+"tips.sakura.1" = "桜の開花状況を事前にチェック";
+"tips.sakura.2" = "お花見弁当を準備";
+"tips.sakura.3" = "夜桜ライトアップも楽しむ";
+
+// イルミネーション
+"tips.illumination.1" = "暗くなってからの時間帯を狙う";
+"tips.illumination.2" = "カメラの設定を事前に確認";
+"tips.illumination.3" = "寒さ対策を忘れずに";
+
+// 雪
+"tips.snow.1" = "滑りにくい靴を着用";
+"tips.snow.2" = "雪遊びの道具を持参";
+"tips.snow.3" = "暖かい飲み物で体を温める";
+
+// 伝統
+"tips.traditional.1" = "伝統や歴史を事前に学習";
+"tips.traditional.2" = "正装や和装での参加を検討";
+"tips.traditional.3" = "地元の方との交流を大切に";
+
+"festival.seasons" = "春・秋・冬の祭り";
+"festival.experience_seasons" = "%@の四季を体験";
+
+"otherFestival.spring" = "春祭り";
+"otherFestival.autumn" = "秋祭り";
+"otherFestival.winter" = "冬祭り";
+"otherFestival.sakura" = "桜まつり";
+"otherFestival.illumination" = "イルミネーション";
+"otherFestival.snow" = "雪まつり";
+"otherFestival.traditional" = "伝統行事";
+
+"search.placeholder" = "祭り名、説明、都道府県で検索";
+
+"category.summer_festival" = "夏祭り系";
+"category.seasonal_festival" = "季節祭り系";
+"filter.star_scale" = "%dつ星以上";
+"filter.no_results" = "該当する祭りが見つかりません";
+"filter.change_filter" = "フィルターを変更してみてください";
+
+
+/* **MARK: - 北海道** */
+"hokkaido.sapporo_snow_festival.name" = "さっぽろ雪まつり";
+"hokkaido.sapporo_snow_festival.description" = "世界的に有名な雪と氷の祭典。大通公園やすすきのに巨大な雪像や氷像が立ち並び、札幌の冬を彩ります。";
+"hokkaido.sapporo_snow_festival.location" = "大通公園・すすきの";
+"hokkaido.sapporo_snow_festival.feature1" = "世界的イベント";
+"hokkaido.sapporo_snow_festival.feature2" = "巨大雪像";
+"hokkaido.sapporo_snow_festival.feature3" = "氷像展示";
+
+"hokkaido.hakodate_goryokaku_festival.name" = "函館五稜郭祭";
+"hokkaido.hakodate_goryokaku_festival.description" = "箱館戦争を再現する歴史祭り。土方歳三コンテストや維新行列パレードで幕末の歴史を体感できます。";
+"hokkaido.hakodate_goryokaku_festival.location" = "五稜郭公園";
+"hokkaido.hakodate_goryokaku_festival.feature1" = "歴史再現";
+"hokkaido.hakodate_goryokaku_festival.feature2" = "土方歳三";
+"hokkaido.hakodate_goryokaku_festival.feature3" = "維新行列";
+
+/* **MARK: - 青森** */
+"aomori.hirosaki_cherry_festival.name" = "弘前さくらまつり";
+"aomori.hirosaki_cherry_festival.description" = "日本三大桜名所の一つ。弘前城と約2600本の桜が織りなす絶景は、日本で最も美しい桜祭りとして知られています。";
+"aomori.hirosaki_cherry_festival.location" = "弘前公園";
+"aomori.hirosaki_cherry_festival.feature1" = "日本三大桜";
+"aomori.hirosaki_cherry_festival.feature2" = "2600本の桜";
+"aomori.hirosaki_cherry_festival.feature3" = "弘前城";
+
+"aomori.hachinohe_enburi.name" = "八戸えんぶり";
+"aomori.hachinohe_enburi.description" = "豊作を祈願する青森県南部地方の民俗芸能。烏帽子をかぶった太夫が舞う幻想的な冬の祭りです。";
+"aomori.hachinohe_enburi.location" = "八戸市中心部";
+"aomori.hachinohe_enburi.feature1" = "民俗芸能";
+"aomori.hachinohe_enburi.feature2" = "豊作祈願";
+"aomori.hachinohe_enburi.feature3" = "太夫の舞";
+
+/* **MARK: - 岩手** */
+"iwate.kitakami_cherry_festival.name" = "北上展勝地さくらまつり";
+"iwate.kitakami_cherry_festival.description" = "東北有数の桜名所。北上川沿いに約2kmにわたって桜並木が続く壮大な桜祭りです。";
+"iwate.kitakami_cherry_festival.location" = "北上展勝地";
+"iwate.kitakami_cherry_festival.feature1" = "東北有数";
+"iwate.kitakami_cherry_festival.feature2" = "2km桜並木";
+"iwate.kitakami_cherry_festival.feature3" = "北上川沿い";
+
+/* **MARK: - 宮城** */
+"miyagi.hitome_senbon_cherry_festival.name" = "一目千本桜まつり";
+"miyagi.hitome_senbon_cherry_festival.description" = "白石川堤の桜並木と残雪の蔵王連峰の絶景コラボレーション。約1200本の桜が8kmにわたって咲き誇ります。";
+"miyagi.hitome_senbon_cherry_festival.location" = "大河原町・柴田町";
+"miyagi.hitome_senbon_cherry_festival.feature1" = "蔵王連峰";
+"miyagi.hitome_senbon_cherry_festival.feature2" = "1200本の桜";
+"miyagi.hitome_senbon_cherry_festival.feature3" = "8km桜並木";
+
+/* **MARK: - 秋田** */
+"akita.namahage_sedo_festival.name" = "なまはげ柴灯まつり";
+"akita.namahage_sedo_festival.description" = "男鹿半島の伝統行事「なまはげ」を再現した冬祭り。雪山でのなまはげ太鼓と松明の炎が幻想的な雰囲気を演出します。";
+"akita.namahage_sedo_festival.location" = "男鹿市真山神社";
+"akita.namahage_sedo_festival.feature1" = "なまはげ";
+"akita.namahage_sedo_festival.feature2" = "松明の炎";
+"akita.namahage_sedo_festival.feature3" = "男鹿半島";
+
+/* **MARK: - 山形** */
+"yamagata.zao_frost_festival.name" = "蔵王樹氷まつり";
+"yamagata.zao_frost_festival.description" = "世界的に珍しい樹氷現象を楽しむ冬祭り。アイスモンスターと呼ばれる樹氷群のライトアップが神秘的です。";
+"yamagata.zao_frost_festival.location" = "蔵王温泉スキー場";
+"yamagata.zao_frost_festival.feature1" = "世界的樹氷";
+"yamagata.zao_frost_festival.feature2" = "アイスモンスター";
+"yamagata.zao_frost_festival.feature3" = "ライトアップ";
+
+/* **MARK: - 福島** */
+"fukushima.ouchi_juku_snow_festival.name" = "大内宿雪まつり";
+"fukushima.ouchi_juku_snow_festival.description" = "江戸時代の宿場町の雪景色を楽しむ冬祭り。茅葺き屋根に積もった雪と囲炉裏の温かさが郷愁を誘います。";
+"fukushima.ouchi_juku_snow_festival.location" = "下郷町大内宿";
+"fukushima.ouchi_juku_snow_festival.feature1" = "江戸宿場町";
+"fukushima.ouchi_juku_snow_festival.feature2" = "茅葺き屋根";
+"fukushima.ouchi_juku_snow_festival.feature3" = "囲炉裏";
+
+/* **MARK: - 茨城** */
+"ibaraki.nemophila_festival.name" = "ひたち海浜公園ネモフィラまつり";
+"ibaraki.nemophila_festival.description" = "約530万本のネモフィラが丘一面を青く染める絶景イベント。「青の絨毯」と称される美しい光景で有名です。";
+"ibaraki.nemophila_festival.location" = "ひたちなか海浜公園";
+"ibaraki.nemophila_festival.feature1" = "530万本";
+"ibaraki.nemophila_festival.feature2" = "青の絨毯";
+"ibaraki.nemophila_festival.feature3" = "絶景";
+
+"ibaraki.kairakuen_plum_festival.name" = "偕楽園梅まつり";
+"ibaraki.kairakuen_plum_festival.description" = "日本三名園の一つ偕楽園で開催される梅祭り。約100品種3000本の梅が早春の茨城を彩ります。";
+"ibaraki.kairakuen_plum_festival.location" = "水戸市偕楽園";
+"ibaraki.kairakuen_plum_festival.feature1" = "日本三名園";
+"ibaraki.kairakuen_plum_festival.feature2" = "100品種";
+"ibaraki.kairakuen_plum_festival.feature3" = "3000本の梅";
+
+/* **MARK: - 栃木** */
+"tochigi.ashikaga_wisteria_festival.name" = "足利フラワーパーク藤まつり";
+"tochigi.ashikaga_wisteria_festival.description" = "世界最大級の藤棚を誇る藤の名所。樹齢150年の大藤をはじめ、紫・白・ピンクの藤が咲き誇ります。";
+"tochigi.ashikaga_wisteria_festival.location" = "足利フラワーパーク";
+"tochigi.ashikaga_wisteria_festival.feature1" = "世界最大級";
+"tochigi.ashikaga_wisteria_festival.feature2" = "樹齢150年";
+"tochigi.ashikaga_wisteria_festival.feature3" = "大藤棚";
+
+/* **MARK: - 群馬** */
+"gunma.kusatsu_onsen_festival.name" = "草津温泉感謝祭";
+"gunma.kusatsu_onsen_festival.description" = "草津温泉の湯の恵みに感謝する冬祭り。湯もみ踊りと温泉街のライトアップが温泉情緒を演出します。";
+"gunma.kusatsu_onsen_festival.location" = "草津温泉街";
+"gunma.kusatsu_onsen_festival.feature1" = "湯もみ踊り";
+"gunma.kusatsu_onsen_festival.feature2" = "温泉街";
+"gunma.kusatsu_onsen_festival.feature3" = "ライトアップ";
+
+/* **MARK: - 埼玉** */
+"saitama.chichibu_night_festival.name" = "秩父夜祭";
+"saitama.chichibu_night_festival.description" = "日本三大曳山祭の一つ。豪華絢爛な屋台と笠鉾が秩父の冬夜を彩る壮大な祭りです。";
+"saitama.chichibu_night_festival.location" = "秩父市";
+"saitama.chichibu_night_festival.feature1" = "日本三大曳山";
+"saitama.chichibu_night_festival.feature2" = "冬の祭り";
+"saitama.chichibu_night_festival.feature3" = "屋台と笠鉾";
+
+/* **MARK: - 千葉** */
+"chiba.sakura_tulip_festa.name" = "佐倉チューリップフェスタ";
+"chiba.sakura_tulip_festa.description" = "関東最大級のチューリップ畑。約100品種67万本のチューリップが風車を背景に咲き誇る春の絶景です。";
+"chiba.sakura_tulip_festa.location" = "佐倉ふるさと広場";
+"chiba.sakura_tulip_festa.feature1" = "関東最大級";
+"chiba.sakura_tulip_festa.feature2" = "67万本";
+"chiba.sakura_tulip_festa.feature3" = "オランダ風車";
+
+/* **MARK: - 東京** */
+"tokyo.ueno_cherry_festival.name" = "上野桜まつり";
+"tokyo.ueno_cherry_festival.description" = "江戸時代から続く東京の桜名所。約800本の桜が上野公園を彩り、多くの花見客で賑わいます。";
+"tokyo.ueno_cherry_festival.location" = "上野恩賜公園";
+"tokyo.ueno_cherry_festival.feature1" = "江戸時代から";
+"tokyo.ueno_cherry_festival.feature2" = "800本の桜";
+"tokyo.ueno_cherry_festival.feature3" = "都内屈指";
+
+"tokyo.meiji_jingu_ginkgo_festival.name" = "明治神宮外苑いちょう祭り";
+"tokyo.meiji_jingu_ginkgo_festival.description" = "黄金に輝くいちょう並木で有名な秋祭り。146本のいちょうが作る黄金のトンネルは圧巻の美しさです。";
+"tokyo.meiji_jingu_ginkgo_festival.location" = "明治神宮外苑";
+"tokyo.meiji_jingu_ginkgo_festival.feature1" = "黄金トンネル";
+"tokyo.meiji_jingu_ginkgo_festival.feature2" = "146本いちょう";
+"tokyo.meiji_jingu_ginkgo_festival.feature3" = "都内屈指";
+
+"tokyo.meiji_jingu_hatsumode.name" = "明治神宮初詣";
+"tokyo.meiji_jingu_hatsumode.description" = "日本で最も多くの参拝者が訪れる初詣スポット。毎年約300万人が新年の祈願に訪れます。";
+"tokyo.meiji_jingu_hatsumode.location" = "明治神宮";
+"tokyo.meiji_jingu_hatsumode.feature1" = "300万人";
+"tokyo.meiji_jingu_hatsumode.feature2" = "日本最多";
+"tokyo.meiji_jingu_hatsumode.feature3" = "新年祈願";
+
+/* **MARK: - 神奈川** */
+"kanagawa.odawara_plum_festival.name" = "小田原梅まつり";
+"kanagawa.odawara_plum_festival.description" = "約450本の梅が咲く小田原城址公園の梅祭り。城を背景にした梅の花が春の訪れを告げます。";
+"kanagawa.odawara_plum_festival.location" = "小田原城址公園";
+"kanagawa.odawara_plum_festival.feature1" = "450本の梅";
+"kanagawa.odawara_plum_festival.feature2" = "小田原城";
+"kanagawa.odawara_plum_festival.feature3" = "春の訪れ";
+
+"kanagawa.hakone_ekiden.name" = "箱根駅伝";
+"kanagawa.hakone_ekiden.description" = "正月の風物詩として親しまれる大学駅伝の最高峰。東京〜箱根間往復217.1kmを2日間で駆け抜けます。";
+"kanagawa.hakone_ekiden.location" = "東京〜箱根";
+"kanagawa.hakone_ekiden.feature1" = "正月風物詩";
+"kanagawa.hakone_ekiden.feature2" = "大学駅伝";
+"kanagawa.hakone_ekiden.feature3" = "217.1km";
+
+/* **MARK: - 新潟** */
+"niigata.takada_castle_cherry_festival.name" = "高田城百万人観桜会";
+"niigata.takada_castle_cherry_festival.description" = "日本三大夜桜の一つ。約4000本の桜と3000個のぼんぼりが織りなす夜桜の美しさは格別です。";
+"niigata.takada_castle_cherry_festival.location" = "高田公園";
+"niigata.takada_castle_cherry_festival.feature1" = "日本三大夜桜";
+"niigata.takada_castle_cherry_festival.feature2" = "4000本の桜";
+"niigata.takada_castle_cherry_festival.feature3" = "3000個ぼんぼり";
+
+/* **MARK: - 富山** */
+"toyama.tonami_tulip_fair.name" = "となみチューリップフェア";
+"toyama.tonami_tulip_fair.description" = "300万本のチューリップが咲き誇る日本最大級のチューリップ祭り。立山連峰を背景にした絶景が楽しめます。";
+"toyama.tonami_tulip_fair.location" = "砺波チューリップ公園";
+"toyama.tonami_tulip_fair.feature1" = "300万本";
+"toyama.tonami_tulip_fair.feature2" = "日本最大級";
+"toyama.tonami_tulip_fair.feature3" = "立山連峰";
+
+/* **MARK: - 石川** */
+"ishikawa.kenrokuen_cherry_festival.name" = "兼六園桜まつり";
+"ishikawa.kenrokuen_cherry_festival.description" = "日本三名園の一つ兼六園で開催される桜祭り。約420本の桜が日本庭園の美を引き立てます。";
+"ishikawa.kenrokuen_cherry_festival.location" = "兼六園";
+"ishikawa.kenrokuen_cherry_festival.feature1" = "日本三名園";
+"ishikawa.kenrokuen_cherry_festival.feature2" = "420本の桜";
+"ishikawa.kenrokuen_cherry_festival.feature3" = "日本庭園";
+
+/* **MARK: - 山梨** */
+"yamanashi.fuji_shibazakura_festival.name" = "富士芝桜まつり";
+"yamanashi.fuji_shibazakura_festival.description" = "富士山を背景に80万株の芝桜が咲き誇る絶景イベント。ピンクの絨毯と富士山のコラボレーションは圧巻です。";
+"yamanashi.fuji_shibazakura_festival.location" = "富士本栖湖リゾート";
+"yamanashi.fuji_shibazakura_festival.feature1" = "80万株";
+"yamanashi.fuji_shibazakura_festival.feature2" = "富士山背景";
+"yamanashi.fuji_shibazakura_festival.feature3" = "ピンクの絨毯";
+
+/* **MARK: - 長野** */
+"nagano.takato_castle_cherry_festival.name" = "高遠城址公園桜まつり";
+"nagano.takato_castle_cherry_festival.description" = "「天下第一の桜」と称される高遠の桜祭り。約1500本のタカトオコヒガンザクラが薄紅色に染まります。";
+"nagano.takato_castle_cherry_festival.location" = "高遠城址公園";
+"nagano.takato_castle_cherry_festival.feature1" = "天下第一";
+"nagano.takato_castle_cherry_festival.feature2" = "1500本";
+"nagano.takato_castle_cherry_festival.feature3" = "タカトオコヒガンザクラ";
+
+/* **MARK: - 岐阜** */
+"gifu.shirakawago_illumination.name" = "白川郷ライトアップ";
+"gifu.shirakawago_illumination.description" = "世界遺産白川郷の合掌造り集落がライトアップされる冬の絶景イベント。雪景色と温かな光が幻想的な美しさを演出します。";
+"gifu.shirakawago_illumination.location" = "白川郷合掌造り集落";
+"gifu.shirakawago_illumination.feature1" = "世界遺産";
+"gifu.shirakawago_illumination.feature2" = "合掌造り";
+"gifu.shirakawago_illumination.feature3" = "雪景色ライトアップ";
+
+/* **MARK: - 静岡** */
+"shizuoka.kawazu_cherry_festival.name" = "河津桜まつり";
+"shizuoka.kawazu_cherry_festival.description" = "本州で最も早く咲く河津桜の祭り。約8000本の早咲き桜が2月から3月にかけて伊豆を彩ります。";
+"shizuoka.kawazu_cherry_festival.location" = "河津町";
+"shizuoka.kawazu_cherry_festival.feature1" = "最も早咲き";
+"shizuoka.kawazu_cherry_festival.feature2" = "8000本";
+"shizuoka.kawazu_cherry_festival.feature3" = "早春の桜";
+
+"shizuoka.atami_plum_festival.name" = "熱海梅園梅まつり";
+"shizuoka.atami_plum_festival.description" = "日本で最も早咲きの梅園。約470本の梅が1月から3月にかけて咲き、温泉街に春の訪れを告げます。";
+"shizuoka.atami_plum_festival.location" = "熱海梅園";
+"shizuoka.atami_plum_festival.feature1" = "最も早咲き";
+"shizuoka.atami_plum_festival.feature2" = "470本の梅";
+"shizuoka.atami_plum_festival.feature3" = "温泉街";
+
+/* **MARK: - 愛知** */
+"aichi.korankei_maple_festival.name" = "香嵐渓もみじまつり";
+"aichi.korankei_maple_festival.description" = "東海地方随一の紅葉名所。約4000本のもみじが織りなす紅葉のトンネルは息をのむ美しさです。";
+"aichi.korankei_maple_festival.location" = "豊田市香嵐渓";
+"aichi.korankei_maple_festival.feature1" = "東海随一";
+"aichi.korankei_maple_festival.feature2" = "4000本もみじ";
+"aichi.korankei_maple_festival.feature3" = "紅葉トンネル";
+
+/* **MARK: - 三重** */
+"mie.nabana_no_sato_illumination.name" = "なばなの里イルミネーション";
+"mie.nabana_no_sato_illumination.description" = "国内最大級のイルミネーション。約800万球のLEDが織りなす光の絶景は、冬の風物詩として多くの人を魅了します。";
+"mie.nabana_no_sato_illumination.location" = "なばなの里";
+"mie.nabana_no_sato_illumination.feature1" = "国内最大級";
+"mie.nabana_no_sato_illumination.feature2" = "800万球LED";
+"mie.nabana_no_sato_illumination.feature3" = "8ヶ月開催";
+
+/* **MARK: - 京都** */
+"kyoto.aoi_matsuri.name" = "葵祭";
+"kyoto.aoi_matsuri.description" = "京都三大祭りの一つ。平安時代の優雅な装束に身を包んだ行列が京都御所から下鴨神社、上賀茂神社へと向かいます。";
+"kyoto.aoi_matsuri.location" = "京都御所〜上賀茂神社";
+"kyoto.aoi_matsuri.feature1" = "京都三大祭り";
+"kyoto.aoi_matsuri.feature2" = "平安装束";
+"kyoto.aoi_matsuri.feature3" = "優雅な行列";
+
+"kyoto.kyoto_hanatoro.name" = "京都花灯路";
+"kyoto.kyoto_hanatoro.description" = "京都の街並みを約2500基の行灯でライトアップする冬の風物詩。寺社仏閣の特別拝観も楽しめます。";
+"kyoto.kyoto_hanatoro.location" = "嵐山・東山";
+"kyoto.kyoto_hanatoro.feature1" = "2500基行灯";
+"kyoto.kyoto_hanatoro.feature2" = "寺社ライトアップ";
+"kyoto.kyoto_hanatoro.feature3" = "特別拝観";
+
+/* **MARK: - 大阪** */
+"osaka.mint_cherry_blossom.name" = "造幣局桜の通り抜け";
+"osaka.mint_cherry_blossom.description" = "大阪の春の風物詩。造幣局構内の桜並木を一般開放する1週間限定のイベント。約350本の八重桜が楽しめます。";
+"osaka.mint_cherry_blossom.location" = "造幣局";
+"osaka.mint_cherry_blossom.feature1" = "1週間限定";
+"osaka.mint_cherry_blossom.feature2" = "350本八重桜";
+"osaka.mint_cherry_blossom.feature3" = "春の風物詩";
+
+/* **MARK: - 兵庫** */
+"hyogo.kobe_luminarie.name" = "神戸ルミナリエ";
+"hyogo.kobe_luminarie.description" = "阪神・淡路大震災の鎮魂と復興を願って始まったイルミネーション。約30万個の電球が神戸の夜を幻想的に彩ります。";
+"hyogo.kobe_luminarie.location" = "神戸市中心部";
+"hyogo.kobe_luminarie.feature1" = "震災復興祈願";
+"hyogo.kobe_luminarie.feature2" = "30万個電球";
+"hyogo.kobe_luminarie.feature3" = "幻想的";
+
+/* **MARK: - 奈良** */
+"nara.yoshinoyama_cherry_festival.name" = "吉野山桜まつり";
+"nara.yoshinoyama_cherry_festival.description" = "日本一の桜の名所。約3万本の桜が山全体を覆い、下千本から奥千本まで順次開花する壮大な桜祭りです。";
+"nara.yoshinoyama_cherry_festival.location" = "吉野山";
+"nara.yoshinoyama_cherry_festival.feature1" = "日本一";
+"nara.yoshinoyama_cherry_festival.feature2" = "3万本の桜";
+"nara.yoshinoyama_cherry_festival.feature3" = "千本桜";
+
+"nara.wakakusayama_yamayaki.name" = "若草山山焼き";
+"nara.wakakusayama_yamayaki.description" = "奈良の冬の風物詩。若草山全体を燃やす勇壮な火祭りで、古都奈良の夜空を赤く染めます。";
+"nara.wakakusayama_yamayaki.location" = "若草山";
+"nara.wakakusayama_yamayaki.feature1" = "山全体を燃焼";
+"nara.wakakusayama_yamayaki.feature2" = "冬の風物詩";
+"nara.wakakusayama_yamayaki.feature3" = "古都の夜空";
+
+/* **MARK: - 和歌山** */
+"wakayama.nanbu_plum_grove.name" = "南部梅林";
+"wakayama.nanbu_plum_grove.description" = "「一目百万、香り十里」と称される梅の名所。約10万本の梅が南部町の山々を白く染める絶景です。";
+"wakayama.nanbu_plum_grove.location" = "みなべ町";
+"wakayama.nanbu_plum_grove.feature1" = "一目百万";
+"wakayama.nanbu_plum_grove.feature2" = "10万本の梅";
+"wakayama.nanbu_plum_grove.feature3" = "山々を白く染める";
+
+/* **MARK: - 島根** */
+"shimane.matsue_castle_cherry_festival.name" = "松江城桜まつり";
+"shimane.matsue_castle_cherry_festival.description" = "現存天守を持つ松江城の桜祭り。約200本の桜が国宝の城を美しく彩り、夜桜も楽しめます。";
+"shimane.matsue_castle_cherry_festival.location" = "松江城";
+"shimane.matsue_castle_cherry_festival.feature1" = "現存天守";
+"shimane.matsue_castle_cherry_festival.feature2" = "国宝の城";
+"shimane.matsue_castle_cherry_festival.feature3" = "200本の桜";
+
+/* **MARK: - 岡山** */
+"okayama.korakuen_cherry_festival.name" = "岡山後楽園桜まつり";
+"okayama.korakuen_cherry_festival.description" = "日本三名園の一つ後楽園の桜祭り。庭園美と桜の調和が織りなす美しい景色が楽しめます。";
+"okayama.korakuen_cherry_festival.location" = "岡山後楽園";
+"okayama.korakuen_cherry_festival.feature1" = "日本三名園";
+"okayama.korakuen_cherry_festival.feature2" = "庭園美";
+"okayama.korakuen_cherry_festival.feature3" = "桜との調和";
+
+/* **MARK: - 広島** */
+"hiroshima.miyajima_cherry_festival.name" = "宮島桜まつり";
+"hiroshima.miyajima_cherry_festival.description" = "世界遺産厳島神社と桜のコラボレーション。大鳥居を背景にした桜は日本の美を象徴する絶景です。";
+"hiroshima.miyajima_cherry_festival.location" = "宮島";
+"hiroshima.miyajima_cherry_festival.feature1" = "世界遺産";
+"hiroshima.miyajima_cherry_festival.feature2" = "大鳥居背景";
+"hiroshima.miyajima_cherry_festival.feature3" = "日本の美";
+
+"hiroshima.miyajima_autumn_festival.name" = "宮島紅葉まつり";
+"hiroshima.miyajima_autumn_festival.description" = "厳島神社の紅葉ライトアップ。朱塗りの社殿と紅葉が織りなす幻想的な秋の絶景が楽しめます。";
+"hiroshima.miyajima_autumn_festival.location" = "宮島";
+"hiroshima.miyajima_autumn_festival.feature1" = "紅葉ライトアップ";
+"hiroshima.miyajima_autumn_festival.feature2" = "朱塗り社殿";
+"hiroshima.miyajima_autumn_festival.feature3" = "幻想的";
+
+/* **MARK: - 山口** */
+"yamaguchi.kintaikyo_cherry_festival.name" = "錦帯橋桜まつり";
+"yamaguchi.kintaikyo_cherry_festival.description" = "日本三名橋の一つ錦帯橋と桜の美しいコラボレーション。約3000本の桜が架橋と調和する絶景です。";
+"yamaguchi.kintaikyo_cherry_festival.location" = "岩国市錦帯橋";
+"yamaguchi.kintaikyo_cherry_festival.feature1" = "日本三名橋";
+"yamaguchi.kintaikyo_cherry_festival.feature2" = "3000本の桜";
+"yamaguchi.kintaikyo_cherry_festival.feature3" = "架橋との調和";
+
+/* **MARK: - 徳島** */
+"tokushima.katsuura_big_hina_festival.name" = "勝浦町ビッグひな祭り";
+"tokushima.katsuura_big_hina_festival.description" = "約3万体のひな人形が町を彩る日本最大級のひな祭り。ピラミッド型ひな壇は圧巻の光景です。";
+"tokushima.katsuura_big_hina_festival.location" = "勝浦町";
+"tokushima.katsuura_big_hina_festival.feature1" = "3万体ひな人形";
+"tokushima.katsuura_big_hina_festival.feature2" = "日本最大級";
+"tokushima.katsuura_big_hina_festival.feature3" = "ピラミッド型";
+
+/* **MARK: - 香川** */
+"kagawa.ritsurin_cherry_festival.name" = "栗林公園桜まつり";
+"kagawa.ritsurin_cherry_festival.description" = "国の特別名勝栗林公園の桜祭り。約300本の桜と讃岐富士を背景にした庭園美が楽しめます。";
+"kagawa.ritsurin_cherry_festival.location" = "栗林公園";
+"kagawa.ritsurin_cherry_festival.feature1" = "特別名勝";
+"kagawa.ritsurin_cherry_festival.feature2" = "300本の桜";
+"kagawa.ritsurin_cherry_festival.feature3" = "讃岐富士";
+
+/* **MARK: - 愛媛** */
+"ehime.matsuyama_castle_cherry_festival.name" = "松山城桜まつり";
+"ehime.matsuyama_castle_cherry_festival.description" = "現存12天守の一つ松山城の桜祭り。約200本の桜が城山を彩り、道後温泉と合わせて楽しめます。";
+"ehime.matsuyama_castle_cherry_festival.location" = "松山城";
+"ehime.matsuyama_castle_cherry_festival.feature1" = "現存12天守";
+"ehime.matsuyama_castle_cherry_festival.feature2" = "200本の桜";
+"ehime.matsuyama_castle_cherry_festival.feature3" = "道後温泉";
+
+/* **MARK: - 高知** */
+"kochi.kochi_castle_cherry_festival.name" = "高知城桜まつり";
+"kochi.kochi_castle_cherry_festival.description" = "現存天守を持つ高知城の桜祭り。約220本の桜が土佐の城を美しく彩ります。";
+"kochi.kochi_castle_cherry_festival.location" = "高知城";
+"kochi.kochi_castle_cherry_festival.feature1" = "現存天守";
+"kochi.kochi_castle_cherry_festival.feature2" = "220本の桜";
+"kochi.kochi_castle_cherry_festival.feature3" = "土佐の城";
+
+/* **MARK: - 福岡** */
+"fukuoka.fukuoka_castle_cherry_festival.name" = "福岡城桜まつり";
+"fukuoka.fukuoka_castle_cherry_festival.description" = "舞鶴公園で開催される福岡の桜祭り。約1000本の桜が福岡城跡を美しく彩り、屋台も多数出店します。";
+"fukuoka.fukuoka_castle_cherry_festival.location" = "舞鶴公園";
+"fukuoka.fukuoka_castle_cherry_festival.feature1" = "1000本の桜";
+"fukuoka.fukuoka_castle_cherry_festival.feature2" = "福岡城跡";
+"fukuoka.fukuoka_castle_cherry_festival.feature3" = "屋台出店";
+
+/* **MARK: - 佐賀** */
+"saga.arita_pottery_fair.name" = "有田陶器市";
+"saga.arita_pottery_fair.description" = "400年の歴史を持つ陶器市。約400軒の店舗が軒を連ね、日本最大級の陶器市として毎年100万人が訪れます。";
+"saga.arita_pottery_fair.location" = "有田町";
+"saga.arita_pottery_fair.feature1" = "400年の歴史";
+"saga.arita_pottery_fair.feature2" = "400軒の店舗";
+"saga.arita_pottery_fair.feature3" = "100万人来場";
+
+/* **MARK: - 長崎** */
+"nagasaki.huis_ten_bosch_flower_festival.name" = "ハウステンボス花まつり";
+"nagasaki.huis_ten_bosch_flower_festival.description" = "100万本のチューリップが咲き誇るヨーロッパ風テーマパークの春祭り。風車とチューリップの絶景が楽しめます。";
+"nagasaki.huis_ten_bosch_flower_festival.location" = "ハウステンボス";
+"nagasaki.huis_ten_bosch_flower_festival.feature1" = "100万本";
+"nagasaki.huis_ten_bosch_flower_festival.feature2" = "ヨーロッパ風";
+"nagasaki.huis_ten_bosch_flower_festival.feature3" = "風車とチューリップ";
+
+"nagasaki.huis_ten_bosch_kingdom_of_light.name" = "ハウステンボス光の王国";
+"nagasaki.huis_ten_bosch_kingdom_of_light.description" = "世界最大級1300万球のイルミネーション。光の滝や光の天空カフェなど、圧倒的なスケールの光の世界が広がります。";
+"nagasaki.huis_ten_bosch_kingdom_of_light.location" = "ハウステンボス";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature1" = "世界最大級";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature2" = "1300万球";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature3" = "6ヶ月開催";
+
+/* **MARK: - 熊本** */
+"kumamoto.kumamoto_castle_cherry_festival.name" = "熊本城桜まつり";
+"kumamoto.kumamoto_castle_cherry_festival.description" = "日本三名城の一つ熊本城の桜祭り。約800本の桜が復興中の城を美しく彩り、希望の象徴となっています。";
+"kumamoto.kumamoto_castle_cherry_festival.location" = "熊本城";
+"kumamoto.kumamoto_castle_cherry_festival.feature1" = "日本三名城";
+"kumamoto.kumamoto_castle_cherry_festival.feature2" = "800本の桜";
+"kumamoto.kumamoto_castle_cherry_festival.feature3" = "復興の象徴";
+
+/* **MARK: - 宮崎** */
+"miyazaki.takachiho_yokagura.name" = "高千穂夜神楽";
+"miyazaki.takachiho_yokagura.description" = "宮崎県の伝統芸能。11月から2月にかけて33番の神楽が奉納され、神話の里の神秘的な夜を演出します。";
+"miyazaki.takachiho_yokagura.location" = "高千穂町";
+"miyazaki.takachiho_yokagura.feature1" = "33番の神楽";
+"miyazaki.takachiho_yokagura.feature2" = "神話の里";
+"miyazaki.takachiho_yokagura.feature3" = "4ヶ月開催";
+
+/* **MARK: - 沖縄** */
+"okinawa.ryukyu_kaiensai.name" = "琉球海炎祭";
+"okinawa.ryukyu_kaiensai.description" = "沖縄最大級の花火大会。約1万発の花火と音楽が織りなすエンターテインメントショーが楽しめます。";
+"okinawa.ryukyu_kaiensai.location" = "宜野湾海浜公園";
+"okinawa.ryukyu_kaiensai.feature1" = "沖縄最大級";
+"okinawa.ryukyu_kaiensai.feature2" = "1万発";
+"okinawa.ryukyu_kaiensai.feature3" = "音楽ショー";
+
+"okinawa.professional_baseball_camp.name" = "プロ野球キャンプ";
+"okinawa.professional_baseball_camp.description" = "沖縄の冬から春の風物詩。プロ野球12球団のキャンプ地として、ファンとの距離が近い観戦が楽しめます。";
+"okinawa.professional_baseball_camp.location" = "沖縄県内各地";
+"okinawa.professional_baseball_camp.feature1" = "12球団";
+"okinawa.professional_baseball_camp.feature2" = "ファン近距離";
+"okinawa.professional_baseball_camp.feature3" = "冬春風物詩";
+
+
+
+
+
+
+
+// 自然観光名所タイプ
+"nature_type.night_view" = "夜景";
+"nature_type.starry_sky" = "星空";
+"nature_type.sea" = "海";
+"nature_type.camping" = "キャンプ";
+
+// 設定画面
+"nature_settings" = "設定";
+"nature_settings_title" = "自然観光名所設定";
+"display_icon_settings" = "表示設定";
+"select_display_icons" = "地図上に表示するアイコンを選択してください";
+"spots_count_format" = "%d箇所";
+"spot_count_format" = "%d箇所";
+
+// 詳細画面
+"spot_features" = "スポットの特徴";
+"spot_map" = "スポットマップ";
+
+// MARK: - Night View Spots
+"nightview_hakodate_name" = "函館山";
+"nightview_hakodate_description" = "100万ドルの夜景で有名な北海道の代表的な夜景スポット";
+
+"nightview_maya_name" = "摩耶山掬星台";
+"nightview_maya_description" = "神戸の街並みと大阪湾を一望できる関西屈指の夜景スポット";
+
+"nightview_inasa_name" = "稲佐山";
+"nightview_inasa_description" = "世界新三大夜景に選ばれた長崎の美しい夜景";
+
+"nightview_tokyo_towers_name" = "東京スカイツリー・東京タワー";
+"nightview_tokyo_towers_description" = "東京を代表する2つのタワーからの絶景夜景";
+
+"nightview_shonan_name" = "湘南平";
+"nightview_shonan_description" = "湘南海岸を一望できる神奈川県の夜景スポット";
+
+"nightview_rokko_name" = "六甲山";
+"nightview_rokko_description" = "1000万ドルの夜景と称される関西随一の夜景スポット";
+
+"nightview_sarakura_name" = "皿倉山";
+"nightview_sarakura_description" = "新日本三大夜景のひとつ、北九州市の夜景を一望";
+
+"nightview_minatomirai_name" = "みなとみらい21";
+"nightview_minatomirai_description" = "横浜の代表的な夜景エリア、観覧車とビル群の美景";
+
+"nightview_tempozan_name" = "天保山";
+"nightview_tempozan_description" = "大阪港の夜景を楽しめるベイエリアスポット";
+
+"nightview_wakakusa_name" = "若草山";
+"nightview_wakakusa_description" = "奈良盆地の夜景を一望できる古都の夜景スポット";
+
+"nightview_shiroyama_name" = "城山公園";
+"nightview_shiroyama_description" = "桜島と鹿児島市街を望む南九州の夜景名所";
+
+"nightview_moiwa_name" = "藻岩山";
+"nightview_moiwa_description" = "札幌市街の夜景を一望できる北海道の夜景スポット";
+
+// MARK: - Starry Sky Spots
+"starry_achi_name" = "阿智村";
+"starry_achi_description" = "日本一の星空の村として認定された長野県の星空観測地";
+
+"starry_ishigaki_name" = "石垣島";
+"starry_ishigaki_description" = "南十字星も見える沖縄県の星空観測スポット";
+
+"starry_nobeyama_name" = "野辺山高原";
+"starry_nobeyama_description" = "標高1300mの高原での美しい星空観測地";
+
+"starry_utsukushigahara_name" = "美ヶ原高原";
+"starry_utsukushigahara_description" = "八ヶ岳連峰を望む絶好の星空観測地";
+
+"starry_odaigahara_name" = "大台ヶ原";
+"starry_odaigahara_description" = "近畿地方最高の星空観測地として知られる奈良県の高原";
+
+"starry_yatsugatake_name" = "八ヶ岳";
+"starry_yatsugatake_description" = "長野県・山梨県にまたがる星空観測の名所";
+
+"starry_iriomote_name" = "西表島";
+"starry_iriomote_description" = "手つかずの自然に囲まれた沖縄県の星空スポット";
+
+"starry_kuju_name" = "久住高原";
+"starry_kuju_description" = "九州の大分県にある高原での星空観測地";
+
+"starry_kirigamine_name" = "霧ヶ峰高原";
+"starry_kirigamine_description" = "長野県の高原地帯での美しい星空スポット";
+
+"starry_akagi_name" = "赤城山";
+"starry_akagi_description" = "群馬県の山頂での星空観測地";
+
+"starry_zao_name" = "蔵王";
+"starry_zao_description" = "山形県・宮城県の境界にある星空観測スポット";
+
+"starry_daisetsu_name" = "大雪山";
+"starry_daisetsu_description" = "北海道の最高峰での雄大な星空体験";
+
+"starry_tsubetsu_name" = "津別峠";
+"starry_tsubetsu_description" = "北海道屈指の星空観測地";
+
+"starry_erimo_name" = "襟裳岬";
+"starry_erimo_description" = "北海道の最南端での美しい星空観測スポット";
+
+// 北海道
+"camping_toya_name" = "洞爺湖畔キャンプ場";
+"camping_toya_description" = "北海道の温泉湖でのキャンプ";
+
+"camping_shikotsu_name" = "支笏湖畔キャンプ場";
+"camping_shikotsu_description" = "北海道の透明度の高い湖でのキャンプ";
+
+"camping_mashu_name" = "摩周湖畔キャンプ場";
+"camping_mashu_description" = "北海道の美しい湖でのキャンプ";
+
+"camping_furano_biei_name" = "富良野・美瑛エリアキャンプ場";
+"camping_furano_biei_description" = "北海道の花畑と丘陵地帯でのキャンプ";
+
+"camping_niseko_name" = "ニセコ周辺キャンプ場";
+"camping_niseko_description" = "北海道のリゾート地でのキャンプ";
+
+// 東北
+"camping_towada_name" = "十和田湖畔キャンプ場";
+"camping_towada_description" = "青森県・秋田県の美しい湖畔でのキャンプ";
+
+"camping_bandai_name" = "磐梯高原キャンプ場";
+"camping_bandai_description" = "福島県の高原でのキャンプ";
+
+"camping_goshikinuma_name" = "裏磐梯五色沼キャンプ場";
+"camping_goshikinuma_description" = "福島県の神秘的な沼群でのキャンプ";
+
+"camping_zao_name" = "蔵王坊平キャンプ場";
+"camping_zao_description" = "山形県・宮城県の山岳地帯でのキャンプ";
+
+// 関東
+"camping_okutama_name" = "奥多摩キャンプ場群";
+"camping_okutama_description" = "東京都の自然豊かなキャンプ地";
+
+"camping_tanzawa_name" = "丹沢湖キャンプ場";
+"camping_tanzawa_description" = "神奈川県の山間部と湖でのキャンプ";
+
+"camping_nasu_name" = "那須高原キャンプ場";
+"camping_nasu_description" = "栃木県の高原リゾートでのキャンプ";
+
+"camping_okunikko_name" = "奥日光キャンプ場";
+"camping_okunikko_description" = "栃木県の中禅寺湖周辺でのキャンプ";
+
+"camping_hakone_name" = "箱根キャンプ場";
+"camping_hakone_description" = "神奈川県の温泉リゾートでのキャンプ";
+
+// 中部
+"camping_fujigoko_name" = "富士五湖キャンプ場群";
+"camping_fujigoko_description" = "富士山を望む絶好のキャンプエリア";
+
+"camping_kamikochi_name" = "上高地キャンプ場";
+"camping_kamikochi_description" = "北アルプスの玄関口でのキャンプ";
+
+"camping_hakuba_name" = "白馬岩岳キャンプ場";
+"camping_hakuba_description" = "長野県の北アルプスでのキャンプ";
+
+"camping_karuizawa_name" = "軽井沢キャンプ場";
+"camping_karuizawa_description" = "長野県の避暑地でのキャンプ";
+
+"camping_kiyosato_name" = "清里高原キャンプ場";
+"camping_kiyosato_description" = "山梨県の八ヶ岳南麓でのキャンプ";
+
+"camping_shiga_name" = "志賀高原キャンプ場";
+"camping_shiga_description" = "長野県の高原リゾートでのキャンプ";
+
+// 関西・中国・四国
+"camping_biwa_name" = "琵琶湖畔キャンプ場";
+"camping_biwa_description" = "滋賀県の日本最大の湖でのキャンプ";
+
+"camping_hiruzen_name" = "蒜山高原キャンプ場";
+"camping_hiruzen_description" = "岡山県の高原でのキャンプ体験";
+
+"camping_odaigahara_name" = "大台ヶ原キャンプ場";
+"camping_odaigahara_description" = "奈良県・三重県の山岳地帯でのキャンプ";
+
+"camping_tsurugi_name" = "剣山キャンプ場";
+"camping_tsurugi_description" = "徳島県の四国第二の高峰でのキャンプ";
+
+"camping_shimanto_name" = "四万十川キャンプ場";
+"camping_shimanto_description" = "高知県の清流四万十川でのキャンプ";
+
+// 九州・沖縄
+"camping_aso_name" = "阿蘇草千里キャンプ場";
+"camping_aso_description" = "熊本県の雄大なカルデラでのキャンプ";
+
+"camping_kuju_name" = "くじゅう高原キャンプ場";
+"camping_kuju_description" = "大分県の九重連山でのキャンプ";
+
+"camping_kirishima_name" = "霧島高原キャンプ場";
+"camping_kirishima_description" = "鹿児島県・宮崎県の火山群でのキャンプ";
+
+"camping_yakushima_name" = "屋久島キャンプ場";
+"camping_yakushima_description" = "鹿児島県の世界遺産の島でのキャンプ";
+
+"camping_yanbaru_name" = "やんばるキャンプ場（沖縄）";
+"camping_yanbaru_description" = "沖縄県北部の亜熱帯の森でのキャンプ";
+// MARK: - Sea Spots
+"sea_miyako_irabu_name" = "宮古島・伊良部大橋";
+"sea_miyako_irabu_description" = "透明度抜群の青い海と絶景の橋";
+
+"sea_ishigaki_kabira_name" = "石垣島・川平湾";
+"sea_ishigaki_kabira_description" = "エメラルドグリーンの美しい湾";
+
+"sea_shirahama_name" = "白良浜";
+"sea_shirahama_description" = "和歌山県の白砂の美しいビーチ";
+
+"sea_tsunoshima_name" = "角島大橋";
+"sea_tsunoshima_description" = "エメラルドグリーンの海に架かる絶景の橋";
+
+"sea_takeno_name" = "竹野海岸";
+"sea_takeno_description" = "兵庫県の美しい海岸線";
+
+"sea_kujukurihama_name" = "九十九里浜";
+"sea_kujukurihama_description" = "千葉県の長大な砂浜海岸";
+
+"sea_shonan_name" = "湘南海岸";
+"sea_shonan_description" = "神奈川県の代表的な海岸リゾート";
+
+"sea_izu_shirahama_name" = "伊豆・白浜海岸";
+"sea_izu_shirahama_description" = "静岡県の美しい白砂のビーチ";
+
+"sea_chirihama_name" = "能登半島・千里浜なぎさドライブウェイ";
+"sea_chirihama_description" = "車で走れる日本唯一の砂浜";
+
+"sea_tottori_name" = "鳥取砂丘";
+"sea_tottori_description" = "日本最大級の砂丘と日本海の絶景";
+
+"sea_katsurahama_name" = "桂浜";
+"sea_katsurahama_description" = "高知県の月の名所として知られる美しい海岸";
+
+"sea_blue_cave_name" = "青の洞窟・真栄田岬";
+"sea_blue_cave_description" = "幻想的な青い光に包まれる洞窟";
+
+"sea_zanpa_name" = "残波岬";
+"sea_zanpa_description" = "沖縄本島の絶景岬";
+
+"sea_manzamo_name" = "万座毛";
+"sea_manzamo_description" = "沖縄本島の象の鼻の形をした絶景岬";
+
+"sea_hedo_name" = "辺戸岬";
+"sea_hedo_description" = "沖縄本島最北端の岬";
+
+"sea_erimo_cape_name" = "襟裳岬";
+"sea_erimo_cape_description" = "北海道の最南端での雄大な海景";
+
+"sea_shakotan_name" = "積丹半島・神威岬";
+"sea_shakotan_description" = "北海道の美しい海岸線と絶景岬";
+
+"sea_shiretoko_name" = "知床半島";
+"sea_shiretoko_description" = "世界自然遺産の雄大な海岸線";
+
+"sea_sanriku_name" = "三陸海岸";
+"sea_sanriku_description" = "岩手県・宮城県の美しいリアス式海岸";
+
+"sea_matsushima_name" = "松島";
+"sea_matsushima_description" = "宮城県の日本三景の一つ";
+
+"sea_tanesashi_name" = "種差海岸";
+"sea_tanesashi_description" = "青森県の美しい海岸線";
+
+"sea_jogashima_name" = "城ヶ島";
+"sea_jogashima_description" = "神奈川県三浦半島の景勝地";
+
+"sea_enoshima_name" = "江の島";
+"sea_enoshima_description" = "湘南を代表する海のリゾート";
+
+"sea_atami_name" = "熱海海岸";
+"sea_atami_description" = "静岡県の温泉リゾート海岸";
+
+"sea_iseshima_name" = "伊勢志摩";
+"sea_iseshima_description" = "三重県の美しい海岸とリアス式地形";
+
+"sea_amanohashidate_name" = "天橋立";
+"sea_amanohashidate_description" = "京都府の日本三景の一つ";
+
+"sea_naruto_name" = "鳴門海峡";
+"sea_naruto_description" = "徳島県の渦潮で有名な海峡";
+
+"sea_muroto_name" = "室戸岬";
+"sea_muroto_description" = "高知県の太平洋に突き出した岬";
+
+"sea_ashizuri_name" = "足摺岬";
+"sea_ashizuri_description" = "高知県最南端の絶景岬";
+
+"sea_munakata_name" = "宗像・沖ノ島";
+"sea_munakata_description" = "福岡県の世界遺産の島";
+
+"sea_iki_tsushima_name" = "壱岐・対馬";
+"sea_iki_tsushima_description" = "長崎県の歴史ある離島";
+
+"sea_amakusa_name" = "天草";
+"sea_amakusa_description" = "熊本県の美しい島々";
+
+"sea_nichinan_name" = "日南海岸";
+"sea_nichinan_description" = "宮崎県の美しい海岸線";
+
+
+// 夜景スポット (Night View Spots)
+"hakodate_mount" = "函館山";
+"maya_mount_observatory" = "摩耶山掬星台";
+"inasa_mount" = "稲佐山";
+"tokyo_skytree_tower" = "東京スカイツリー・東京タワー";
+"shonan_daira" = "湘南平";
+"rokko_mount" = "六甲山";
+"sarakura_mount" = "皿倉山";
+"minato_mirai_21" = "みなとみらい21";
+"tempozan" = "天保山";
+"wakakusa_mount" = "若草山";
+"shiroyama_park" = "城山公園";
+"moiwa_mount" = "藻岩山";
+
+// 星空スポット (Stargazing Spots)
+"achi_village" = "阿智村";
+"ishigaki_island" = "石垣島";
+"nobeyama_plateau" = "野辺山高原";
+"utsukushigahara_plateau" = "美ヶ原高原";
+"odaigahara" = "大台ヶ原";
+"yatsugatake" = "八ヶ岳";
+"iriomote_island" = "西表島";
+"kuju_plateau" = "久住高原";
+"kirigamine_plateau" = "霧ヶ峰高原";
+"akagi_mount" = "赤城山";
+"zao" = "蔵王";
+"daisetsuzan" = "大雪山";
+"tsubetsu_pass" = "津別峠";
+"erimo_cape" = "襟裳岬";
+
+// キャンプ地 (Camping Sites)
+"fuji_five_lakes" = "富士五湖周辺";
+"okutama" = "奥多摩";
+"hiruzen_plateau" = "蒜山高原";
+"shiga_plateau" = "志賀高原";
+"towada_lake" = "十和田湖畔";
+"kamikochi" = "上高地";
+"oze" = "尾瀬";
+"hakuba" = "白馬";
+"nasu_plateau" = "那須高原";
+"karuizawa" = "軽井沢";
+"kita_karuizawa" = "北軽井沢";
+"kiyosato_plateau" = "清里高原";
+"hakone" = "箱根";
+"izu_peninsula" = "伊豆半島";
+"boso_peninsula" = "房総半島";
+"tanzawa" = "丹沢";
+"oku_nikko" = "奥日光";
+"bandai_plateau" = "磐梯高原";
+"appi_plateau" = "安比高原";
+"mashu_lake" = "摩周湖";
+"toya_lake" = "洞爺湖";
+"shikotsu_lake" = "支笏湖";
+
+// 海スポット (Beach/Ocean Spots)
+"miyako_irabu_bridge" = "宮古島・伊良部大橋";
+"ishigaki_kabira_bay" = "石垣島・川平湾";
+"shirahama_beach" = "白良浜";
+"tsunoshima_bridge" = "角島大橋";
+"takeno_coast" = "竹野海岸";
+"kujukuri_beach" = "九十九里浜";
+"shonan_coast" = "湘南海岸";
+"izu_shirahama_coast" = "伊豆・白浜海岸";
+"noto_chirihama_driveway" = "能登半島・千里浜なぎさドライブウェイ";
+"tottori_sand_dunes" = "鳥取砂丘";
+"katsurahama" = "桂浜";
+"blue_cave_maeda_cape" = "青の洞窟・真栄田岬";
+"zanpa_cape" = "残波岬";
+"manza_cape" = "万座毛";
+"hedo_cape" = "辺戸岬";
+"shakotan_kamui_cape" = "積丹半島・神威岬";
+"shiretoko_peninsula" = "知床半島";
+"sanriku_coast" = "三陸海岸";
+"matsushima" = "松島";
+"tanesashi_coast" = "種差海岸";
+"jogashima" = "城ヶ島";
+"enoshima" = "江の島";
+"atami_coast" = "熱海海岸";
+"ise_shima" = "伊勢志摩";
+"amanohashidate" = "天橋立";
+"naruto_strait" = "鳴門海峡";
+"muroto_cape" = "室戸岬";
+"ashizuri_cape" = "足摺岬";
+"munakata_okinoshima" = "宗像・沖ノ島";
+"iki_tsushima" = "壱岐・対馬";
+"amakusa" = "天草";
+"nichinan_coast" = "日南海岸";
