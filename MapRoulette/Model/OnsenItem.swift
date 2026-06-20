@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import CoreLocation
 
 // MARK: - OnsenType
 enum OnsenType: String, CaseIterable {
@@ -59,10 +60,80 @@ struct OnsenItem: Identifiable {
     var name: String {
         NSLocalizedString(nameKey, comment: "")
     }
-    
+
     var description: String {
         NSLocalizedString(descriptionKey, comment: "")
     }
+
+    /// 温泉地の位置情報。nameKey を元に OnsenCoordinates から解決する。
+    var coordinate: CLLocationCoordinate2D? {
+        OnsenCoordinates.byNameKey[nameKey]
+    }
+}
+
+// MARK: - Onsen Coordinates (Model層の単一の真実の源)
+// 温泉地の座標データ。旅行プラン機能・地図表示の双方がここを参照する。
+enum OnsenCoordinates {
+    /// nameKey（例: "onsen.noboribetsu"）→ 座標
+    static let byNameKey: [String: CLLocationCoordinate2D] = [
+        // 北海道
+        "onsen.noboribetsu": CLLocationCoordinate2D(latitude: 42.4919, longitude: 141.1539),
+        "onsen.toyako": CLLocationCoordinate2D(latitude: 42.5968, longitude: 140.7524),
+        "onsen.jozankei": CLLocationCoordinate2D(latitude: 42.9621, longitude: 141.1621),
+        "onsen.yunokawa": CLLocationCoordinate2D(latitude: 41.7774, longitude: 140.7886),
+
+        // 東北
+        "onsen.nyuto": CLLocationCoordinate2D(latitude: 39.7372, longitude: 140.7372),
+        "onsen.ginzan": CLLocationCoordinate2D(latitude: 38.5398, longitude: 140.5098),
+        "onsen.zao": CLLocationCoordinate2D(latitude: 38.1495, longitude: 140.4495),
+        "onsen.hanamaki": CLLocationCoordinate2D(latitude: 39.3778, longitude: 141.1048),
+        "onsen.naruko": CLLocationCoordinate2D(latitude: 38.7299, longitude: 140.7299),
+        "onsen.iizaka": CLLocationCoordinate2D(latitude: 37.8267, longitude: 140.4267),
+
+        // 関東
+        "onsen.hakone": CLLocationCoordinate2D(latitude: 35.2043, longitude: 139.0235),
+        "onsen.kusatsu": CLLocationCoordinate2D(latitude: 36.6228, longitude: 138.5989),
+        "onsen.ikaho": CLLocationCoordinate2D(latitude: 36.4895, longitude: 138.9095),
+        "onsen.atami": CLLocationCoordinate2D(latitude: 35.1042, longitude: 139.0731),
+        "onsen.shuzenji": CLLocationCoordinate2D(latitude: 34.9679, longitude: 138.9279),
+        "onsen.atagawa": CLLocationCoordinate2D(latitude: 34.8164, longitude: 139.0764),
+        "onsen.isawa": CLLocationCoordinate2D(latitude: 35.6536, longitude: 138.6336),
+
+        // 中部
+        "onsen.nozawa": CLLocationCoordinate2D(latitude: 36.9144, longitude: 138.4444),
+        "onsen.kamisuwa": CLLocationCoordinate2D(latitude: 36.0461, longitude: 138.1161),
+        "onsen.gero": CLLocationCoordinate2D(latitude: 35.8080, longitude: 137.2480),
+        "onsen.unazuki": CLLocationCoordinate2D(latitude: 36.8033, longitude: 137.5833),
+
+        // 北陸
+        "onsen.yamanaka": CLLocationCoordinate2D(latitude: 36.2889, longitude: 136.3689),
+        "onsen.wakura": CLLocationCoordinate2D(latitude: 37.1169, longitude: 136.9269),
+        "onsen.yamashiro": CLLocationCoordinate2D(latitude: 36.2981, longitude: 136.3681),
+        "onsen.katayamazu": CLLocationCoordinate2D(latitude: 36.3200, longitude: 136.3500),
+
+        // 関西
+        "onsen.arima": CLLocationCoordinate2D(latitude: 34.7974, longitude: 135.2574),
+        "onsen.kinosaki": CLLocationCoordinate2D(latitude: 35.6076, longitude: 134.8076),
+        "onsen.yumura": CLLocationCoordinate2D(latitude: 35.4883, longitude: 134.6183),
+        "onsen.shirahama": CLLocationCoordinate2D(latitude: 33.6886, longitude: 135.3386),
+        "onsen.katsuura": CLLocationCoordinate2D(latitude: 33.6767, longitude: 135.8867),
+
+        // 中国
+        "onsen.misasa": CLLocationCoordinate2D(latitude: 35.4036, longitude: 133.8936),
+        "onsen.tamatsukuri": CLLocationCoordinate2D(latitude: 35.4230, longitude: 132.8730),
+
+        // 四国
+        "onsen.dogo": CLLocationCoordinate2D(latitude: 33.8518, longitude: 132.7818),
+
+        // 九州
+        "onsen.beppu": CLLocationCoordinate2D(latitude: 33.2695, longitude: 131.4895),
+        "onsen.yufuin": CLLocationCoordinate2D(latitude: 33.2667, longitude: 131.3567),
+        "onsen.ibusuki": CLLocationCoordinate2D(latitude: 31.2513, longitude: 130.6413),
+        "onsen.kurokawa": CLLocationCoordinate2D(latitude: 33.0600, longitude: 131.1000),
+        "onsen.unzen": CLLocationCoordinate2D(latitude: 32.7600, longitude: 130.2900),
+        "onsen.ureshino": CLLocationCoordinate2D(latitude: 33.1056, longitude: 129.9956),
+        "onsen.takeo": CLLocationCoordinate2D(latitude: 33.1936, longitude: 129.9936)
+    ]
 }
 
 // MARK: - Prefecture Extension

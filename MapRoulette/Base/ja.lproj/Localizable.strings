@@ -5053,3 +5053,56 @@
 "iki_tsushima" = "壱岐・対馬";
 "amakusa" = "天草";
 "nichinan_coast" = "日南海岸";
+
+/* MARK: - 旅行プラン機能 */
+"tab.plan" = "マイプラン";
+"common.add" = "追加";
+"common.cancel" = "キャンセル";
+"common.close" = "閉じる";
+"common.create" = "作成";
+"common.save" = "保存";
+"plan.myplans.title" = "マイプラン";
+"plan.empty.title" = "プランがまだありません";
+"plan.empty.message" = "気になった観光地・グルメ・温泉・お祭りを集めて、自分だけの旅行プランを作りましょう。";
+"plan.create" = "プランを作成";
+"plan.create.andadd" = "新しいプランを作って追加";
+"plan.untitled" = "無題のプラン";
+"plan.title.label" = "プラン名";
+"plan.title.placeholder" = "例：夏の北海道旅";
+"plan.addto.title" = "プランに追加";
+"plan.add.button" = "プランに追加";
+"plan.select.existing" = "既存のプランに追加";
+"plan.itemcount.format" = "%d件の項目";
+"plan.notfound" = "プランが見つかりません";
+"plan.detail.empty" = "まだ項目がありません。各情報の詳細画面から「プランに追加」で項目を追加できます。";
+"plan.detail.items.header" = "プランの項目";
+"plan.memo.label" = "メモ";
+"plan.editmemo" = "メモを編集";
+"plan.showmap" = "地図で見る";
+"plan.reorder" = "並び替え";
+"plan.category.attraction" = "観光スポット";
+"plan.category.gourmet" = "グルメ";
+"plan.category.onsen" = "温泉";
+"plan.category.festival" = "祭・イベント";
+"plan.category.nature" = "自然";
+
+/* MARK: - プラン 表示モード・日程 */
+"plan.grouping.label" = "表示";
+"plan.grouping.prefecture" = "都道府県";
+"plan.grouping.day" = "日程";
+"plan.daycount.format" = "日数：%d日";
+"plan.day.format" = "%d日目";
+"plan.day.short.format" = "%d日目";
+"plan.day.unassigned" = "未割当";
+"plan.day.unassigned.short" = "日を選ぶ";
+"plan.day.unassign" = "未割当に戻す";
+"plan.day.empty" = "この日にはまだ項目がありません";
+"attraction.open_in_maps" = "マップで開く";
+"plan.category.souvenir" = "お土産";
+"plan.grouping.day.toggle" = "日程ごとに分ける";
+"plan.grouping.flat" = "まとめて表示";
+"common.delete" = "削除";
+"plan.card.empty" = "まだ項目がありません";
+"plan.daycount.short" = "%d日間";
+"plan.dragdrop.hint" = "カードを長押ししてドラッグし、各日に割り当てられます。";
+"plan.item.notfound" = "この項目の詳細は見つかりませんでした。";

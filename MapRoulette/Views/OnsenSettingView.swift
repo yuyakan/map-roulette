@@ -75,72 +75,12 @@ class OnsenDataRepository {
     }
     
     private func loadFixedOnsenData() {
-        // 温泉地の座標データを定義
-        let onsenCoordinates: [String: CLLocationCoordinate2D] = [
-            // 北海道
-            NSLocalizedString("onsen.noboribetsu", comment: ""): CLLocationCoordinate2D(latitude: 42.4919, longitude: 141.1539),
-            NSLocalizedString("onsen.toyako", comment: ""): CLLocationCoordinate2D(latitude: 42.5968, longitude: 140.7524),
-            NSLocalizedString("onsen.jozankei", comment: ""): CLLocationCoordinate2D(latitude: 42.9621, longitude: 141.1621),
-            NSLocalizedString("onsen.hakodateyunokawa", comment: ""): CLLocationCoordinate2D(latitude: 41.7774, longitude: 140.7886),
-            
-            // 東北
-            NSLocalizedString("onsen.nyuto", comment: ""): CLLocationCoordinate2D(latitude: 39.7372, longitude: 140.7372),
-            NSLocalizedString("onsen.ginzan", comment: ""): CLLocationCoordinate2D(latitude: 38.5398, longitude: 140.5098),
-            NSLocalizedString("onsen.zao", comment: ""): CLLocationCoordinate2D(latitude: 38.1495, longitude: 140.4495),
-            NSLocalizedString("onsen.hanamaki", comment: ""): CLLocationCoordinate2D(latitude: 39.3778, longitude: 141.1048),
-            NSLocalizedString("onsen.naruko", comment: ""): CLLocationCoordinate2D(latitude: 38.7299, longitude: 140.7299),
-            NSLocalizedString("onsen.iizaka", comment: ""): CLLocationCoordinate2D(latitude: 37.8267, longitude: 140.4267),
-            
-            // 関東
-            NSLocalizedString("onsen.hakone", comment: ""): CLLocationCoordinate2D(latitude: 35.2043, longitude: 139.0235),
-            NSLocalizedString("onsen.kusatsu", comment: ""): CLLocationCoordinate2D(latitude: 36.6228, longitude: 138.5989),
-            NSLocalizedString("onsen.ikaho", comment: ""): CLLocationCoordinate2D(latitude: 36.4895, longitude: 138.9095),
-            NSLocalizedString("onsen.atami", comment: ""): CLLocationCoordinate2D(latitude: 35.1042, longitude: 139.0731),
-            NSLocalizedString("onsen.shuzenji", comment: ""): CLLocationCoordinate2D(latitude: 34.9679, longitude: 138.9279),
-            NSLocalizedString("onsen.atagawa", comment: ""): CLLocationCoordinate2D(latitude: 34.8164, longitude: 139.0764),
-            NSLocalizedString("onsen.isawa", comment: ""): CLLocationCoordinate2D(latitude: 35.6536, longitude: 138.6336),
-            
-            // 中部
-            NSLocalizedString("onsen.nozawa", comment: ""): CLLocationCoordinate2D(latitude: 36.9144, longitude: 138.4444),
-            NSLocalizedString("onsen.kamisuwa", comment: ""): CLLocationCoordinate2D(latitude: 36.0461, longitude: 138.1161),
-            NSLocalizedString("onsen.gero", comment: ""): CLLocationCoordinate2D(latitude: 35.8080, longitude: 137.2480),
-            NSLocalizedString("onsen.unazuki", comment: ""): CLLocationCoordinate2D(latitude: 36.8033, longitude: 137.5833),
-            
-            // 北陸
-            NSLocalizedString("onsen.yamanaka", comment: ""): CLLocationCoordinate2D(latitude: 36.2889, longitude: 136.3689),
-            NSLocalizedString("onsen.wakura", comment: ""): CLLocationCoordinate2D(latitude: 37.1169, longitude: 136.9269),
-            NSLocalizedString("onsen.yamashiro", comment: ""): CLLocationCoordinate2D(latitude: 36.2981, longitude: 136.3681),
-            NSLocalizedString("onsen.katayamazu", comment: ""): CLLocationCoordinate2D(latitude: 36.3200, longitude: 136.3500),
-            
-            // 関西
-            NSLocalizedString("onsen.arima", comment: ""): CLLocationCoordinate2D(latitude: 34.7974, longitude: 135.2574),
-            NSLocalizedString("onsen.kinosaki", comment: ""): CLLocationCoordinate2D(latitude: 35.6076, longitude: 134.8076),
-            NSLocalizedString("onsen.yumura", comment: ""): CLLocationCoordinate2D(latitude: 35.4883, longitude: 134.6183),
-            NSLocalizedString("onsen.shirahama", comment: ""): CLLocationCoordinate2D(latitude: 33.6886, longitude: 135.3386),
-            NSLocalizedString("onsen.katsuura", comment: ""): CLLocationCoordinate2D(latitude: 33.6767, longitude: 135.8867),
-            
-            // 中国
-            NSLocalizedString("onsen.misasa", comment: ""): CLLocationCoordinate2D(latitude: 35.4036, longitude: 133.8936),
-            NSLocalizedString("onsen.tamatsukuri", comment: ""): CLLocationCoordinate2D(latitude: 35.4230, longitude: 132.8730),
-            
-            // 四国
-            NSLocalizedString("onsen.dogo", comment: ""): CLLocationCoordinate2D(latitude: 33.8518, longitude: 132.7818),
-            
-            // 九州
-            NSLocalizedString("onsen.beppu", comment: ""): CLLocationCoordinate2D(latitude: 33.2695, longitude: 131.4895),
-            NSLocalizedString("onsen.yufuin", comment: ""): CLLocationCoordinate2D(latitude: 33.2667, longitude: 131.3567),
-            NSLocalizedString("onsen.ibusuki", comment: ""): CLLocationCoordinate2D(latitude: 31.2513, longitude: 130.6413),
-            NSLocalizedString("onsen.kurokawa", comment: ""): CLLocationCoordinate2D(latitude: 33.0600, longitude: 131.1000),
-            NSLocalizedString("onsen.unzen", comment: ""): CLLocationCoordinate2D(latitude: 32.7600, longitude: 130.2900),
-            NSLocalizedString("onsen.ureshino", comment: ""): CLLocationCoordinate2D(latitude: 33.1056, longitude: 129.9956),
-            NSLocalizedString("onsen.takeo", comment: ""): CLLocationCoordinate2D(latitude: 33.1936, longitude: 129.9936)
-        ]
-        
+        // 座標は Model層の OnsenCoordinates（OnsenItem.swift）を単一の真実の源として参照する。
         // 全ての温泉地データを一度だけロードして固定する
         let allOriginalOnsens = Prefecture.prefecturesWithOnsen.flatMap { $0.onsenItems }
-        
+
         for originalOnsen in allOriginalOnsens {
-            let coordinate = onsenCoordinates[originalOnsen.name] ?? CLLocationCoordinate2D(latitude: 35.6762, longitude: 139.6503) // デフォルトは東京
+            let coordinate = originalOnsen.coordinate ?? CLLocationCoordinate2D(latitude: 35.6762, longitude: 139.6503) // デフォルトは東京
             let fixedOnsen = FixedOnsenItem(from: originalOnsen, coordinate: coordinate)
             _cachedOnsens.append(fixedOnsen)
             _onsensByName[fixedOnsen.id] = fixedOnsen

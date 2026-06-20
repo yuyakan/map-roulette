@@ -5055,3 +5055,56 @@
 "iki_tsushima" = "Iki - Tsushima";
 "amakusa" = "Amakusa";
 "nichinan_coast" = "Nichinan Coast";
+
+/* MARK: - Travel Plan feature */
+"tab.plan" = "My Plans";
+"common.add" = "Add";
+"common.cancel" = "Cancel";
+"common.close" = "Close";
+"common.create" = "Create";
+"common.save" = "Save";
+"plan.myplans.title" = "My Plans";
+"plan.empty.title" = "No plans yet";
+"plan.empty.message" = "Collect the spots, food, hot springs and festivals you like, and build your own travel plan.";
+"plan.create" = "Create Plan";
+"plan.create.andadd" = "Create new plan and add";
+"plan.untitled" = "Untitled Plan";
+"plan.title.label" = "Plan name";
+"plan.title.placeholder" = "e.g. Summer in Hokkaido";
+"plan.addto.title" = "Add to Plan";
+"plan.add.button" = "Add to Plan";
+"plan.select.existing" = "Add to an existing plan";
+"plan.itemcount.format" = "%d items";
+"plan.notfound" = "Plan not found";
+"plan.detail.empty" = "No items yet. Use \"Add to Plan\" from any detail screen to add items.";
+"plan.detail.items.header" = "Plan items";
+"plan.memo.label" = "Memo";
+"plan.editmemo" = "Edit memo";
+"plan.showmap" = "Show on map";
+"plan.reorder" = "Reorder";
+"plan.category.attraction" = "Attraction";
+"plan.category.gourmet" = "Gourmet";
+"plan.category.onsen" = "Hot Spring";
+"plan.category.festival" = "Festival";
+"plan.category.nature" = "Nature";
+
+/* MARK: - Plan grouping / days */
+"plan.grouping.label" = "View";
+"plan.grouping.prefecture" = "Prefecture";
+"plan.grouping.day" = "By day";
+"plan.daycount.format" = "Days: %d";
+"plan.day.format" = "Day %d";
+"plan.day.short.format" = "Day %d";
+"plan.day.unassigned" = "Unassigned";
+"plan.day.unassigned.short" = "Pick day";
+"plan.day.unassign" = "Move to unassigned";
+"plan.day.empty" = "No items for this day yet";
+"attraction.open_in_maps" = "Open in Maps";
+"plan.category.souvenir" = "Souvenir";
+"plan.grouping.day.toggle" = "Split by day";
+"plan.grouping.flat" = "All together";
+"common.delete" = "Delete";
+"plan.card.empty" = "No items yet";
+"plan.daycount.short" = "%d days";
+"plan.dragdrop.hint" = "Long-press and drag a card to assign it to a day.";
+"plan.item.notfound" = "Details for this item could not be found.";

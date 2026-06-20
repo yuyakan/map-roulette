@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 // MARK: - 統合祭りカテゴリー（既存のFestivalCategoryとOtherFestivalCategoryを統合）
 enum IntegratedFestivalCategory: String, CaseIterable {
@@ -110,7 +111,8 @@ struct IntegratedFestivalItem: Identifiable, Hashable {
     let location: String
     let features: [String]
     let festivalType: FestivalType
-    
+    let coordinate: CLLocationCoordinate2D? // 旅行プラン用の位置情報（変換元から引き継ぐ）
+
     enum FestivalType {
         case festival
         case other
@@ -135,7 +137,7 @@ struct IntegratedFestivalWithPrefecture: Identifiable {
 
 // MARK: - メインビュー（全祭り比較表示・統合版）
 struct AllFestivalsComparisonView: View {
-    @State private var selectedFestival: IntegratedFestivalItem?
+    @State private var selectedFestival: IntegratedFestivalWithPrefecture?
     @State private var selectedCategory: IntegratedFestivalCategory? = nil
     @State private var selectedMonth: String? = nil
     @State private var selectedScale: Int? = nil
@@ -168,7 +170,8 @@ struct AllFestivalsComparisonView: View {
             imageSymbol: item.imageSymbol,
             location: item.location,
             features: item.features,
-            festivalType: .festival
+            festivalType: .festival,
+            coordinate: item.coordinate
         )
     }
     
@@ -195,7 +198,8 @@ struct AllFestivalsComparisonView: View {
             imageSymbol: item.imageSymbol,
             location: item.location,
             features: item.features,
-            festivalType: .other
+            festivalType: .other,
+            coordinate: item.coordinate
         )
     }
     
@@ -408,7 +412,7 @@ struct AllFestivalsComparisonView: View {
                             IntegratedFestivalCard(
                                 festivalWithPrefecture: festivalWithPrefecture,
                                 onTap: {
-                                    selectedFestival = festivalWithPrefecture.festival
+                                    selectedFestival = festivalWithPrefecture
                                 }
                             )
                         }
@@ -436,8 +440,8 @@ struct AllFestivalsComparisonView: View {
                 }
             }
             .navigationBarHidden(true)
-            .sheet(item: $selectedFestival) { festival in
-                IntegratedFestivalDetailView(item: festival, prefecture: getPrefectureForFestival(festival), interstitial: interstitial) {
+            .sheet(item: $selectedFestival) { selected in
+                IntegratedFestivalDetailView(item: selected.festival, prefecture: selected.prefecture, interstitial: interstitial) {
                     modalDismissed = true
                 }
             }
@@ -457,9 +461,6 @@ struct AllFestivalsComparisonView: View {
         .navigationViewStyle(StackNavigationViewStyle()) 
     }
     
-    private func getPrefectureForFestival(_ festival: IntegratedFestivalItem) -> Prefecture {
-        return allFestivals.first { $0.festival.id == festival.id }?.prefecture ?? .tokyo
-    }
 }
 
 // MARK: - 統合祭りカード
@@ -653,8 +654,17 @@ struct IntegratedFestivalDetailView: View {
                                 }
                             }
                             .padding(.top, 8)
+
+                            AddToPlanButton {
+                                PlanItem(
+                                    category: .festival,
+                                    prefecture: prefecture,
+                                    name: item.name
+                                )
+                            }
+                            .padding(.top, 4)
                         }
-                        
+
                         // カテゴリータグ
                         Label(item.category.localizedName, systemImage: item.category.icon)
                             .font(.headline)

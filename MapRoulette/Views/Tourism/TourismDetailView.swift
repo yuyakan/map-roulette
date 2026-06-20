@@ -15,6 +15,7 @@ struct TourismDetailView: View {
     @State private var showFullScreenPhoto = false
     @State private var region: MKCoordinateRegion
     @State private var isPressed = false
+    @State private var selectedAttraction: LocalizedAttractionLocation? = nil
     @Environment(\.dismiss) private var dismiss
     
     init(prefecture: Prefecture) {
@@ -105,7 +106,7 @@ struct TourismDetailView: View {
                                                 .foregroundColor(.primary)
                                                 .lineLimit(2)
                                                 .multilineTextAlignment(.leading)
-                                            
+
                                             Spacer()
                                         }
                                         
@@ -146,7 +147,7 @@ struct TourismDetailView: View {
                                     .padding(.vertical, 8)
                                     .padding(.horizontal, 6)
                                     .onTapGesture {
-                                        openInMapsByName(attraction: attraction.name)
+                                        selectedAttraction = attraction
                                     }
                                 }
                             }
@@ -252,6 +253,9 @@ struct TourismDetailView: View {
                     )
                 }
             }
+            .sheet(item: $selectedAttraction) { attraction in
+                AttractionDetailView(attraction: attraction, prefecture: prefecture)
+            }
 
             VStack() {
                 HStack {
@@ -286,28 +290,5 @@ struct TourismDetailView: View {
         }
     }
 
-    private func openInMapsByName(attraction: String) {
-        // 検索クエリを作成（観光地名 + 都道府県名で精度向上）
-        let searchQuery = attraction
-        let encodedQuery = searchQuery.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
-        
-        // Apple Maps検索URL
-        let appleMapsSearchURL = "http://maps.apple.com/?q=\(encodedQuery)"
-        
-        // Google Maps検索URL
-        let googleMapsSearchURL = "https://maps.google.com/maps?q=\(encodedQuery)"
-        
-        if let url = URL(string: appleMapsSearchURL), UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url)
-        } else if let url = URL(string: googleMapsSearchURL), UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url)
-        } else {
-            // フォールバック: ブラウザでGoogle Maps
-            let webURL = "https://www.google.com/maps/search/\(encodedQuery)"
-            if let url = URL(string: webURL) {
-                UIApplication.shared.open(url)
-            }
-        }
-    }
 }
 

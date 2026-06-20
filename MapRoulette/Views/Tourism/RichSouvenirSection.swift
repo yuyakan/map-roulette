@@ -296,14 +296,23 @@ struct SouvenirDetailView: View {
                                 Text(item.name)
                                     .font(.title)
                                     .fontWeight(.bold)
-                                
+
                                 Text(prefecture.prefectureName)
                                     .font(.subheadline)
                                     .foregroundColor(.secondary)
                             }
                         }
                     }
-                    
+
+                    AddToPlanButton {
+                        PlanItem(
+                            category: .souvenir,
+                            prefecture: prefecture,
+                            name: item.name
+                        )
+                    }
+                    .frame(maxWidth: .infinity)
+
                     // 詳細情報
                     VStack(alignment: .leading, spacing: 16) {
                         Text(String(localized: "souvenir.about"))

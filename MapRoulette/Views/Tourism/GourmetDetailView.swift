@@ -65,8 +65,17 @@ struct GourmetDetailView: View {
                                 }
                             }
                             .padding(.top, 8)
+
+                            AddToPlanButton {
+                                PlanItem(
+                                    category: .gourmet,
+                                    prefecture: prefecture,
+                                    name: item.name
+                                )
+                            }
+                            .padding(.top, 4)
                         }
-                        
+
                         // カテゴリータグ
                         Label(item.category.rawValue.localized, systemImage: item.category.icon)
                             .font(.headline)

@@ -62,7 +62,12 @@ class FixedNatureSpotItem: Identifiable, ObservableObject {
     var description: String {
         return descriptionKey.localized
     }
-    
+
+    /// このスポットが属する都道府県（nameKey から確定的に解決）。
+    var prefecture: Prefecture? {
+        NatureSpotPrefecture.byNameKey[nameKey]
+    }
+
     init(nameKey: String, descriptionKey: String, imageSymbol: String, spotType: NatureSpotType, popularity: Int, coordinate: CLLocationCoordinate2D) {
         self.nameKey = nameKey
         self.descriptionKey = descriptionKey
@@ -1278,10 +1283,18 @@ struct NatureSpotDetailView: View {
                                 .foregroundColor(.secondary)
                                 .font(.caption)
                         }
+
+                        AddToPlanButton {
+                            PlanItem(
+                                category: .nature,
+                                prefecture: spot.prefecture ?? Prefecture.nearest(to: spot.coordinate),
+                                name: spot.name
+                            )
+                        }
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.top)
-                    
+
                     Divider()
                     
                     // 説明

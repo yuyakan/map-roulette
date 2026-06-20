@@ -24,6 +24,8 @@ struct ContentView: View {
                     NatureSpotMapView()
                 case 3:
                     AllFestivalsComparisonView()
+                case 4:
+                    MyPlansView()
                 default:
                     JapanMapView()
                 }
@@ -77,6 +79,15 @@ struct CustomTabBar: View {
                 isSelected: selectedTab == 3
             ) {
                 selectedTab = 3
+            }
+
+            // マイプランタブ
+            TabBarItem(
+                icon: "suitcase.rolling",
+                title: NSLocalizedString("tab.plan", comment: ""),
+                isSelected: selectedTab == 4
+            ) {
+                selectedTab = 4
             }
         }
         .padding(.vertical, 8)

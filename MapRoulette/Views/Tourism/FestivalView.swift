@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 // お祭りカテゴリの定義
 enum FestivalCategory: String, CaseIterable {
@@ -73,11 +74,38 @@ struct FestivalItem: Identifiable, Hashable {
     let imageSymbol: String
     let location: String
     let features: [String]
-    
+    let coordinate: CLLocationCoordinate2D? // 旅行プラン用の位置情報（順次入力）
+
+    // coordinate はデフォルト nil。既存の生成箇所は coordinate を省略でき、
+    // 座標を入れたものから順に coordinate: を渡していける。
+    init(
+        name: String,
+        description: String,
+        category: FestivalCategory,
+        month: String,
+        duration: String,
+        scale: Int,
+        imageSymbol: String,
+        location: String,
+        features: [String],
+        coordinate: CLLocationCoordinate2D? = nil
+    ) {
+        self.name = name
+        self.description = description
+        self.category = category
+        self.month = month
+        self.duration = duration
+        self.scale = scale
+        self.imageSymbol = imageSymbol
+        self.location = location
+        self.features = features
+        self.coordinate = coordinate
+    }
+
     static func == (lhs: FestivalItem, rhs: FestivalItem) -> Bool {
         lhs.id == rhs.id
     }
-    
+
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
@@ -102,7 +130,8 @@ extension Prefecture {
                         NSLocalizedString("gujo_odori_feature1", comment: ""),
                         NSLocalizedString("gujo_odori_feature2", comment: ""),
                         NSLocalizedString("gujo_odori_feature3", comment: "")
-                    ]
+                    ],
+                    coordinate: CLLocationCoordinate2D(latitude: 35.7479, longitude: 136.9646) // 郡上八幡
                 ),
                 FestivalItem(
                     name: NSLocalizedString("gero_onsen_festival_name", comment: ""),
@@ -117,7 +146,8 @@ extension Prefecture {
                         NSLocalizedString("gero_onsen_festival_feature1", comment: ""),
                         NSLocalizedString("gero_onsen_festival_feature2", comment: ""),
                         NSLocalizedString("gero_onsen_festival_feature3", comment: "")
-                    ]
+                    ],
+                    coordinate: CLLocationCoordinate2D(latitude: 35.8074, longitude: 137.2436) // 下呂温泉
                 ),
                 FestivalItem(
                     name: NSLocalizedString("hida_takayama_summer_festival_name", comment: ""),
@@ -132,7 +162,8 @@ extension Prefecture {
                         NSLocalizedString("hida_takayama_summer_festival_feature1", comment: ""),
                         NSLocalizedString("hida_takayama_summer_festival_feature2", comment: ""),
                         NSLocalizedString("hida_takayama_summer_festival_feature3", comment: "")
-                    ]
+                    ],
+                    coordinate: CLLocationCoordinate2D(latitude: 36.1408, longitude: 137.2531) // 高山市（高山陣屋周辺）
                 )
             ]
 
@@ -152,7 +183,8 @@ extension Prefecture {
                         NSLocalizedString("okayama_momotaro_festival_feature1", comment: ""),
                         NSLocalizedString("okayama_momotaro_festival_feature2", comment: ""),
                         NSLocalizedString("okayama_momotaro_festival_feature3", comment: "")
-                    ]
+                    ],
+                    coordinate: CLLocationCoordinate2D(latitude: 34.6657, longitude: 133.9183) // 岡山市中心部(桃太郎大通り)
                 ),
                 FestivalItem(
                     name: NSLocalizedString("kurashiki_tenryo_festival_name", comment: ""),
@@ -167,7 +199,8 @@ extension Prefecture {
                         NSLocalizedString("kurashiki_tenryo_festival_feature1", comment: ""),
                         NSLocalizedString("kurashiki_tenryo_festival_feature2", comment: ""),
                         NSLocalizedString("kurashiki_tenryo_festival_feature3", comment: "")
-                    ]
+                    ],
+                    coordinate: CLLocationCoordinate2D(latitude: 34.595, longitude: 133.7717) // 倉敷美観地区
                 )
             ]
         case .kumamoto:
@@ -185,7 +218,8 @@ extension Prefecture {
                             NSLocalizedString("kumamoto_hinokuni_festival_feature1", comment: ""),
                             NSLocalizedString("kumamoto_hinokuni_festival_feature2", comment: ""),
                             NSLocalizedString("kumamoto_hinokuni_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 32.8032, longitude: 130.7079) // 熊本市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("yamaga_toro_festival_name", comment: ""),
@@ -200,7 +234,8 @@ extension Prefecture {
                             NSLocalizedString("yamaga_toro_festival_feature1", comment: ""),
                             NSLocalizedString("yamaga_toro_festival_feature2", comment: ""),
                             NSLocalizedString("yamaga_toro_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.0156, longitude: 130.6889) // 山鹿市(山鹿温泉)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("hitoyoshi_fireworks_name", comment: ""),
@@ -215,7 +250,8 @@ extension Prefecture {
                             NSLocalizedString("hitoyoshi_fireworks_feature1", comment: ""),
                             NSLocalizedString("hitoyoshi_fireworks_feature2", comment: ""),
                             NSLocalizedString("hitoyoshi_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 32.2107, longitude: 130.7625) // 人吉市・球磨川
                     )
                 ]
             case .oita:
@@ -233,7 +269,8 @@ extension Prefecture {
                             NSLocalizedString("oita_tanabata_festival_feature1", comment: ""),
                             NSLocalizedString("oita_tanabata_festival_feature2", comment: ""),
                             NSLocalizedString("oita_tanabata_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.2382, longitude: 131.6126) // 大分市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("hita_gion_festival_name", comment: ""),
@@ -248,7 +285,8 @@ extension Prefecture {
                             NSLocalizedString("hita_gion_festival_feature1", comment: ""),
                             NSLocalizedString("hita_gion_festival_feature2", comment: ""),
                             NSLocalizedString("hita_gion_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.3214, longitude: 130.941) // 日田市
                     ),
                     FestivalItem(
                         name: NSLocalizedString("beppu_hinoumi_festival_name", comment: ""),
@@ -263,7 +301,8 @@ extension Prefecture {
                             NSLocalizedString("beppu_hinoumi_festival_feature1", comment: ""),
                             NSLocalizedString("beppu_hinoumi_festival_feature2", comment: ""),
                             NSLocalizedString("beppu_hinoumi_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.2846, longitude: 131.4911) // 別府市
                     )
                 ]
             case .miyazaki:
@@ -281,7 +320,8 @@ extension Prefecture {
                             NSLocalizedString("hyuga_hyottoko_festival_feature1", comment: ""),
                             NSLocalizedString("hyuga_hyottoko_festival_feature2", comment: ""),
                             NSLocalizedString("hyuga_hyottoko_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 32.4222, longitude: 131.6238) // 日向市
                     ),
                     FestivalItem(
                         name: NSLocalizedString("miyazaki_jingu_taisai_name", comment: ""),
@@ -296,7 +336,8 @@ extension Prefecture {
                             NSLocalizedString("miyazaki_jingu_taisai_feature1", comment: ""),
                             NSLocalizedString("miyazaki_jingu_taisai_feature2", comment: ""),
                             NSLocalizedString("miyazaki_jingu_taisai_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 31.9388, longitude: 131.4242) // 宮崎神宮
                     )
                 ]
             case .kagoshima:
@@ -314,7 +355,8 @@ extension Prefecture {
                             NSLocalizedString("kagoshima_ohara_festival_feature1", comment: ""),
                             NSLocalizedString("kagoshima_ohara_festival_feature2", comment: ""),
                             NSLocalizedString("kagoshima_ohara_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 31.5904, longitude: 130.5571) // 鹿児島市中心部(天文館)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("sendaigawa_fireworks_name", comment: ""),
@@ -329,7 +371,8 @@ extension Prefecture {
                             NSLocalizedString("sendaigawa_fireworks_feature1", comment: ""),
                             NSLocalizedString("sendaigawa_fireworks_feature2", comment: ""),
                             NSLocalizedString("sendaigawa_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 31.8133, longitude: 130.3037) // 薩摩川内市・川内川
                     )
                 ]
             case .okinawa:
@@ -347,7 +390,8 @@ extension Prefecture {
                             NSLocalizedString("okinawa_zento_eisa_festival_feature1", comment: ""),
                             NSLocalizedString("okinawa_zento_eisa_festival_feature2", comment: ""),
                             NSLocalizedString("okinawa_zento_eisa_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 26.3344, longitude: 127.8056) // 沖縄市(コザ運動公園)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("naha_festival_name", comment: ""),
@@ -362,7 +406,8 @@ extension Prefecture {
                             NSLocalizedString("naha_festival_feature1", comment: ""),
                             NSLocalizedString("naha_festival_feature2", comment: ""),
                             NSLocalizedString("naha_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 26.2124, longitude: 127.6792) // 那覇市(国際通り)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("ginowan_hagoromo_festival_name", comment: ""),
@@ -377,7 +422,8 @@ extension Prefecture {
                             NSLocalizedString("ginowan_hagoromo_festival_feature1", comment: ""),
                             NSLocalizedString("ginowan_hagoromo_festival_feature2", comment: ""),
                             NSLocalizedString("ginowan_hagoromo_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 26.2816, longitude: 127.7785) // 宜野湾市
                     )
                 ]
             case .hyogo:
@@ -395,7 +441,8 @@ extension Prefecture {
                             NSLocalizedString("okayama_momotaro_festival_feature1", comment: ""),
                             NSLocalizedString("okayama_momotaro_festival_feature2", comment: ""),
                             NSLocalizedString("okayama_momotaro_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.6657, longitude: 133.9183) // 岡山市中心部(桃太郎大通り)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kurashiki_tenryo_festival_name", comment: ""),
@@ -410,7 +457,8 @@ extension Prefecture {
                             NSLocalizedString("kurashiki_tenryo_festival_feature1", comment: ""),
                             NSLocalizedString("kurashiki_tenryo_festival_feature2", comment: ""),
                             NSLocalizedString("kurashiki_tenryo_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.595, longitude: 133.7717) // 倉敷美観地区
                     )
                 ]
             case .hiroshima:
@@ -428,7 +476,8 @@ extension Prefecture {
                             NSLocalizedString("miyajima_suichu_fireworks_feature1", comment: ""),
                             NSLocalizedString("miyajima_suichu_fireworks_feature2", comment: ""),
                             NSLocalizedString("miyajima_suichu_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.296, longitude: 132.3197) // 廿日市市・宮島(厳島神社沖)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kure_kaijo_fireworks_name", comment: ""),
@@ -443,7 +492,8 @@ extension Prefecture {
                             NSLocalizedString("kure_kaijo_fireworks_feature1", comment: ""),
                             NSLocalizedString("kure_kaijo_fireworks_feature2", comment: ""),
                             NSLocalizedString("kure_kaijo_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.2336, longitude: 132.5557) // 呉港
                     ),
                     FestivalItem(
                         name: NSLocalizedString("hiroshima_minato_fireworks_name", comment: ""),
@@ -458,7 +508,8 @@ extension Prefecture {
                             NSLocalizedString("hiroshima_minato_fireworks_feature1", comment: ""),
                             NSLocalizedString("hiroshima_minato_fireworks_feature2", comment: ""),
                             NSLocalizedString("hiroshima_minato_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.3489, longitude: 132.4595) // 広島港(宇品)
                     )
                 ]
             case .yamaguchi:
@@ -476,7 +527,8 @@ extension Prefecture {
                             NSLocalizedString("kanmon_kaikyo_fireworks_feature1", comment: ""),
                             NSLocalizedString("kanmon_kaikyo_fireworks_feature2", comment: ""),
                             NSLocalizedString("kanmon_kaikyo_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.956, longitude: 130.9419) // 下関市・関門海峡
                     ),
                     FestivalItem(
                         name: NSLocalizedString("shimonoseki_kaikyo_kan_fireworks_name", comment: ""),
@@ -491,7 +543,8 @@ extension Prefecture {
                             NSLocalizedString("shimonoseki_kaikyo_kan_fireworks_feature1", comment: ""),
                             NSLocalizedString("shimonoseki_kaikyo_kan_fireworks_feature2", comment: ""),
                             NSLocalizedString("shimonoseki_kaikyo_kan_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.956, longitude: 130.9419) // 下関市・海響館
                     ),
                     FestivalItem(
                         name: NSLocalizedString("yamaguchi_tanabata_chochin_festival_name", comment: ""),
@@ -506,7 +559,8 @@ extension Prefecture {
                             NSLocalizedString("yamaguchi_tanabata_chochin_festival_feature1", comment: ""),
                             NSLocalizedString("yamaguchi_tanabata_chochin_festival_feature2", comment: ""),
                             NSLocalizedString("yamaguchi_tanabata_chochin_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.1785, longitude: 131.4737) // 山口市中心部
                     )
                 ]
             case .tokushima:
@@ -524,7 +578,8 @@ extension Prefecture {
                             NSLocalizedString("awa_odori_feature1", comment: ""),
                             NSLocalizedString("awa_odori_feature2", comment: ""),
                             NSLocalizedString("awa_odori_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.0703, longitude: 134.5549) // 徳島市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("tokushima_awa_odori_name", comment: ""),
@@ -539,7 +594,8 @@ extension Prefecture {
                             NSLocalizedString("tokushima_awa_odori_feature1", comment: ""),
                             NSLocalizedString("tokushima_awa_odori_feature2", comment: ""),
                             NSLocalizedString("tokushima_awa_odori_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.0703, longitude: 134.5549) // 徳島市
                     )
                 ]
             case .kagawa:
@@ -557,7 +613,8 @@ extension Prefecture {
                             NSLocalizedString("sanuki_takamatsu_festival_feature1", comment: ""),
                             NSLocalizedString("sanuki_takamatsu_festival_feature2", comment: ""),
                             NSLocalizedString("sanuki_takamatsu_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.3501, longitude: 134.0466) // 高松市中心部(中央通り)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("marugame_oshiro_festival_name", comment: ""),
@@ -572,7 +629,8 @@ extension Prefecture {
                             NSLocalizedString("marugame_oshiro_festival_feature1", comment: ""),
                             NSLocalizedString("marugame_oshiro_festival_feature2", comment: ""),
                             NSLocalizedString("marugame_oshiro_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.2864, longitude: 133.8003) // 丸亀城
                     )
                 ]
             case .ehime:
@@ -590,7 +648,8 @@ extension Prefecture {
                             NSLocalizedString("matsuyama_festival_feature1", comment: ""),
                             NSLocalizedString("matsuyama_festival_feature2", comment: ""),
                             NSLocalizedString("matsuyama_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.8392, longitude: 132.7657) // 松山市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("niihama_taiko_festival_name", comment: ""),
@@ -605,7 +664,8 @@ extension Prefecture {
                             NSLocalizedString("niihama_taiko_festival_feature1", comment: ""),
                             NSLocalizedString("niihama_taiko_festival_feature2", comment: ""),
                             NSLocalizedString("niihama_taiko_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.9603, longitude: 133.2833) // 新居浜市
                     ),
                     FestivalItem(
                         name: NSLocalizedString("uwajima_ushioni_festival_name", comment: ""),
@@ -620,7 +680,8 @@ extension Prefecture {
                             NSLocalizedString("uwajima_ushioni_festival_feature1", comment: ""),
                             NSLocalizedString("uwajima_ushioni_festival_feature2", comment: ""),
                             NSLocalizedString("uwajima_ushioni_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.2233, longitude: 132.5605) // 宇和島市
                     )
                 ]
             case .kochi:
@@ -638,7 +699,8 @@ extension Prefecture {
                             NSLocalizedString("yosakoi_festival_feature1", comment: ""),
                             NSLocalizedString("yosakoi_festival_feature2", comment: ""),
                             NSLocalizedString("yosakoi_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.5597, longitude: 133.5311) // 高知市中心部(追手筋)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("tosa_festival_name", comment: ""),
@@ -653,7 +715,8 @@ extension Prefecture {
                             NSLocalizedString("tosa_festival_feature1", comment: ""),
                             NSLocalizedString("tosa_festival_feature2", comment: ""),
                             NSLocalizedString("tosa_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.5587, longitude: 133.5311) // 高知市
                     )
                 ]
             case .fukuoka:
@@ -671,7 +734,8 @@ extension Prefecture {
                             NSLocalizedString("hakata_gion_yamakasa_feature1", comment: ""),
                             NSLocalizedString("hakata_gion_yamakasa_feature2", comment: ""),
                             NSLocalizedString("hakata_gion_yamakasa_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.5926, longitude: 130.4106) // 博多区(櫛田神社)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kokura_gion_taiko_name", comment: ""),
@@ -686,7 +750,8 @@ extension Prefecture {
                             NSLocalizedString("kokura_gion_taiko_feature1", comment: ""),
                             NSLocalizedString("kokura_gion_taiko_feature2", comment: ""),
                             NSLocalizedString("kokura_gion_taiko_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.8853, longitude: 130.8752) // 北九州市小倉北区(小倉城)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("tobata_gion_oyamakasa_name", comment: ""),
@@ -701,7 +766,8 @@ extension Prefecture {
                             NSLocalizedString("tobata_gion_oyamakasa_feature1", comment: ""),
                             NSLocalizedString("tobata_gion_oyamakasa_feature2", comment: ""),
                             NSLocalizedString("tobata_gion_oyamakasa_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.8975, longitude: 130.8307) // 北九州市戸畑区
                     ),
                     FestivalItem(
                         name: NSLocalizedString("chikugogawa_fireworks_name", comment: ""),
@@ -716,7 +782,8 @@ extension Prefecture {
                             NSLocalizedString("chikugogawa_fireworks_feature1", comment: ""),
                             NSLocalizedString("chikugogawa_fireworks_feature2", comment: ""),
                             NSLocalizedString("chikugogawa_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.3192, longitude: 130.5085) // 久留米市・筑後川
                     )
                 ]
             case .saga:
@@ -734,7 +801,8 @@ extension Prefecture {
                             NSLocalizedString("saga_balloon_festa_feature1", comment: ""),
                             NSLocalizedString("saga_balloon_festa_feature2", comment: ""),
                             NSLocalizedString("saga_balloon_festa_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.2456, longitude: 130.3055) // 佐賀市・嘉瀬川河川敷
                     ),
                     FestivalItem(
                         name: NSLocalizedString("karatsu_kunchi_name", comment: ""),
@@ -749,7 +817,8 @@ extension Prefecture {
                             NSLocalizedString("karatsu_kunchi_feature1", comment: ""),
                             NSLocalizedString("karatsu_kunchi_feature2", comment: ""),
                             NSLocalizedString("karatsu_kunchi_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.4502, longitude: 129.9686) // 唐津市(唐津神社)
                     )
                 ]
             case .nagasaki:
@@ -767,7 +836,8 @@ extension Prefecture {
                             NSLocalizedString("nagasaki_shoryonagashi_feature1", comment: ""),
                             NSLocalizedString("nagasaki_shoryonagashi_feature2", comment: ""),
                             NSLocalizedString("nagasaki_shoryonagashi_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 32.7448, longitude: 129.8737) // 長崎市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("nagasaki_kunchi_name", comment: ""),
@@ -782,7 +852,8 @@ extension Prefecture {
                             NSLocalizedString("nagasaki_kunchi_feature1", comment: ""),
                             NSLocalizedString("nagasaki_kunchi_feature2", comment: ""),
                             NSLocalizedString("nagasaki_kunchi_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 32.7475, longitude: 129.8739) // 長崎市(諏訪神社)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("sasebo_seaside_festival_name", comment: ""),
@@ -797,7 +868,8 @@ extension Prefecture {
                             NSLocalizedString("sasebo_seaside_festival_feature1", comment: ""),
                             NSLocalizedString("sasebo_seaside_festival_feature2", comment: ""),
                             NSLocalizedString("sasebo_seaside_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.1597, longitude: 129.715) // 佐世保港
                     )
                 ]
             case .nara:
@@ -815,7 +887,8 @@ extension Prefecture {
                             NSLocalizedString("nara_tokae_feature1", comment: ""),
                             NSLocalizedString("nara_tokae_feature2", comment: ""),
                             NSLocalizedString("nara_tokae_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.6851, longitude: 135.843) // 奈良公園一帯
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kasuga_taisha_mantoro_name", comment: ""),
@@ -830,7 +903,8 @@ extension Prefecture {
                             NSLocalizedString("kasuga_taisha_mantoro_feature1", comment: ""),
                             NSLocalizedString("kasuga_taisha_mantoro_feature2", comment: ""),
                             NSLocalizedString("kasuga_taisha_mantoro_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.6815, longitude: 135.8484) // 春日大社
                     ),
                     FestivalItem(
                         name: NSLocalizedString("heijokyo_tenpyo_festival_name", comment: ""),
@@ -845,7 +919,8 @@ extension Prefecture {
                             NSLocalizedString("heijokyo_tenpyo_festival_feature1", comment: ""),
                             NSLocalizedString("heijokyo_tenpyo_festival_feature2", comment: ""),
                             NSLocalizedString("heijokyo_tenpyo_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.6911, longitude: 135.7949) // 平城宮跡
                     )
                 ]
             case .wakayama:
@@ -863,7 +938,8 @@ extension Prefecture {
                             NSLocalizedString("kinokawa_momoyama_festival_feature1", comment: ""),
                             NSLocalizedString("kinokawa_momoyama_festival_feature2", comment: ""),
                             NSLocalizedString("kinokawa_momoyama_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.267, longitude: 135.3461) // 紀の川市
                     ),
                     FestivalItem(
                         name: NSLocalizedString("tanabe_benkei_festival_name", comment: ""),
@@ -878,7 +954,8 @@ extension Prefecture {
                             NSLocalizedString("tanabe_benkei_festival_feature1", comment: ""),
                             NSLocalizedString("tanabe_benkei_festival_feature2", comment: ""),
                             NSLocalizedString("tanabe_benkei_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.7269, longitude: 135.3779) // 田辺市
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kushimoto_festival_name", comment: ""),
@@ -893,7 +970,8 @@ extension Prefecture {
                             NSLocalizedString("kushimoto_festival_feature1", comment: ""),
                             NSLocalizedString("kushimoto_festival_feature2", comment: ""),
                             NSLocalizedString("kushimoto_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 33.472, longitude: 135.7838) // 串本町
                     )
                 ]
             case .tottori:
@@ -911,7 +989,8 @@ extension Prefecture {
                             NSLocalizedString("tottori_shanshan_festival_feature1", comment: ""),
                             NSLocalizedString("tottori_shanshan_festival_feature2", comment: ""),
                             NSLocalizedString("tottori_shanshan_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.4938, longitude: 134.237) // 鳥取市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("yonago_gaina_festival_name", comment: ""),
@@ -926,7 +1005,8 @@ extension Prefecture {
                             NSLocalizedString("yonago_gaina_festival_feature1", comment: ""),
                             NSLocalizedString("yonago_gaina_festival_feature2", comment: ""),
                             NSLocalizedString("yonago_gaina_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.4281, longitude: 133.3311) // 米子市
                     )
                 ]
             case .shimane:
@@ -944,7 +1024,8 @@ extension Prefecture {
                             NSLocalizedString("matsue_suigo_festival_feature1", comment: ""),
                             NSLocalizedString("matsue_suigo_festival_feature2", comment: ""),
                             NSLocalizedString("matsue_suigo_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.4533, longitude: 133.0606) // 松江市・宍道湖
                     ),
                     FestivalItem(
                         name: NSLocalizedString("izumo_shinwa_festival_name", comment: ""),
@@ -959,7 +1040,8 @@ extension Prefecture {
                             NSLocalizedString("izumo_shinwa_festival_feature1", comment: ""),
                             NSLocalizedString("izumo_shinwa_festival_feature2", comment: ""),
                             NSLocalizedString("izumo_shinwa_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.3669, longitude: 132.7544) // 出雲市
                     )
                 ]
             case .fukui:
@@ -1025,7 +1107,8 @@ extension Prefecture {
                             NSLocalizedString("atami_kaijo_fireworks_feature1", comment: ""),
                             NSLocalizedString("atami_kaijo_fireworks_feature2", comment: ""),
                             NSLocalizedString("atami_kaijo_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.096, longitude: 139.076) // 熱海湾
                     ),
                     FestivalItem(
                         name: NSLocalizedString("shimizu_port_festival_name", comment: ""),
@@ -1040,7 +1123,8 @@ extension Prefecture {
                             NSLocalizedString("shimizu_port_festival_feature1", comment: ""),
                             NSLocalizedString("shimizu_port_festival_feature2", comment: ""),
                             NSLocalizedString("shimizu_port_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.0167, longitude: 138.51) // 静岡市清水区(清水港)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("hamamatsu_festival_name", comment: ""),
@@ -1055,7 +1139,8 @@ extension Prefecture {
                             NSLocalizedString("hamamatsu_festival_feature1", comment: ""),
                             NSLocalizedString("hamamatsu_festival_feature2", comment: ""),
                             NSLocalizedString("hamamatsu_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.6792, longitude: 137.6035) // 浜松市
                     )
                 ]
             case .aichi:
@@ -1073,7 +1158,8 @@ extension Prefecture {
                             NSLocalizedString("anjo_tanabata_festival_feature1", comment: ""),
                             NSLocalizedString("anjo_tanabata_festival_feature2", comment: ""),
                             NSLocalizedString("anjo_tanabata_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.9583, longitude: 137.0805) // 安城市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("toyohashi_gion_festival_name", comment: ""),
@@ -1088,7 +1174,8 @@ extension Prefecture {
                             NSLocalizedString("toyohashi_gion_festival_feature1", comment: ""),
                             NSLocalizedString("toyohashi_gion_festival_feature2", comment: ""),
                             NSLocalizedString("toyohashi_gion_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.7639, longitude: 137.3914) // 豊橋市(吉田神社)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("nagoya_festival_name", comment: ""),
@@ -1103,7 +1190,8 @@ extension Prefecture {
                             NSLocalizedString("nagoya_festival_feature1", comment: ""),
                             NSLocalizedString("nagoya_festival_feature2", comment: ""),
                             NSLocalizedString("nagoya_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.1709, longitude: 136.8815) // 名古屋市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("okazaki_ieyasu_summer_festival_name", comment: ""),
@@ -1118,7 +1206,8 @@ extension Prefecture {
                             NSLocalizedString("okazaki_ieyasu_summer_festival_feature1", comment: ""),
                             NSLocalizedString("okazaki_ieyasu_summer_festival_feature2", comment: ""),
                             NSLocalizedString("okazaki_ieyasu_summer_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.9576, longitude: 137.1592) // 岡崎市(岡崎城)
                     )
                 ]
             case .mie:
@@ -1136,7 +1225,8 @@ extension Prefecture {
                             NSLocalizedString("tsu_festival_feature1", comment: ""),
                             NSLocalizedString("tsu_festival_feature2", comment: ""),
                             NSLocalizedString("tsu_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.7186, longitude: 136.5056) // 津市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("suzuka_genki_fireworks_name", comment: ""),
@@ -1151,7 +1241,8 @@ extension Prefecture {
                             NSLocalizedString("suzuka_genki_fireworks_feature1", comment: ""),
                             NSLocalizedString("suzuka_genki_fireworks_feature2", comment: ""),
                             NSLocalizedString("suzuka_genki_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.8823, longitude: 136.5844) // 鈴鹿市
                     ),
                     FestivalItem(
                         name: NSLocalizedString("ise_jingu_fireworks_name", comment: ""),
@@ -1166,7 +1257,8 @@ extension Prefecture {
                             NSLocalizedString("ise_jingu_fireworks_feature1", comment: ""),
                             NSLocalizedString("ise_jingu_fireworks_feature2", comment: ""),
                             NSLocalizedString("ise_jingu_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.49, longitude: 136.709) // 伊勢市・宮川河畔
                     )
                 ]
             case .shiga:
@@ -1184,7 +1276,8 @@ extension Prefecture {
                             NSLocalizedString("biwako_dai_fireworks_feature1", comment: ""),
                             NSLocalizedString("biwako_dai_fireworks_feature2", comment: ""),
                             NSLocalizedString("biwako_dai_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.0036, longitude: 135.8767) // 大津市・琵琶湖(大津港)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("otsu_festival_name", comment: ""),
@@ -1199,7 +1292,8 @@ extension Prefecture {
                             NSLocalizedString("otsu_festival_feature1", comment: ""),
                             NSLocalizedString("otsu_festival_feature2", comment: ""),
                             NSLocalizedString("otsu_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.0036, longitude: 135.859) // 大津市(天孫神社)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("nagahama_hikiyama_festival_name", comment: ""),
@@ -1214,7 +1308,8 @@ extension Prefecture {
                             NSLocalizedString("nagahama_hikiyama_festival_feature1", comment: ""),
                             NSLocalizedString("nagahama_hikiyama_festival_feature2", comment: ""),
                             NSLocalizedString("nagahama_hikiyama_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.3826, longitude: 136.2719) // 長浜市(長浜八幡宮)
                     )
                 ]
             case .kyoto:
@@ -1232,7 +1327,8 @@ extension Prefecture {
                             NSLocalizedString("gion_festival_feature1", comment: ""),
                             NSLocalizedString("gion_festival_feature2", comment: ""),
                             NSLocalizedString("gion_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.0036, longitude: 135.7783) // 京都市中心部(八坂神社)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("gozan_okuribi_name", comment: ""),
@@ -1247,7 +1343,8 @@ extension Prefecture {
                             NSLocalizedString("gozan_okuribi_feature1", comment: ""),
                             NSLocalizedString("gozan_okuribi_feature2", comment: ""),
                             NSLocalizedString("gozan_okuribi_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.0264, longitude: 135.7826) // 京都市・東山(大文字山)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("jidai_festival_name", comment: ""),
@@ -1262,7 +1359,8 @@ extension Prefecture {
                             NSLocalizedString("jidai_festival_feature1", comment: ""),
                             NSLocalizedString("jidai_festival_feature2", comment: ""),
                             NSLocalizedString("jidai_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.0167, longitude: 135.782) // 京都御所〜平安神宮
                     )
                 ]
             case .osaka:
@@ -1280,7 +1378,8 @@ extension Prefecture {
                             NSLocalizedString("tenjin_festival_feature1", comment: ""),
                             NSLocalizedString("tenjin_festival_feature2", comment: ""),
                             NSLocalizedString("tenjin_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.696, longitude: 135.513) // 大阪天満宮・大川
                     ),
                     FestivalItem(
                         name: NSLocalizedString("yodogawa_fireworks_name", comment: ""),
@@ -1295,7 +1394,8 @@ extension Prefecture {
                             NSLocalizedString("yodogawa_fireworks_feature1", comment: ""),
                             NSLocalizedString("yodogawa_fireworks_feature2", comment: ""),
                             NSLocalizedString("yodogawa_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.728, longitude: 135.479) // 大阪市・淀川河川敷
                     ),
                     FestivalItem(
                         name: NSLocalizedString("pl_fireworks_name", comment: ""),
@@ -1310,7 +1410,8 @@ extension Prefecture {
                             NSLocalizedString("pl_fireworks_feature1", comment: ""),
                             NSLocalizedString("pl_fireworks_feature2", comment: ""),
                             NSLocalizedString("pl_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.5009, longitude: 135.6019) // 富田林市PL教団
                     ),
                     FestivalItem(
                         name: NSLocalizedString("naniwa_yodogawa_fireworks_name", comment: ""),
@@ -1325,7 +1426,8 @@ extension Prefecture {
                             NSLocalizedString("naniwa_yodogawa_fireworks_feature1", comment: ""),
                             NSLocalizedString("naniwa_yodogawa_fireworks_feature2", comment: ""),
                             NSLocalizedString("naniwa_yodogawa_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 34.728, longitude: 135.479) // 大阪市・淀川
                     )
                 ]
             case .yamanashi:
@@ -1343,7 +1445,8 @@ extension Prefecture {
                             NSLocalizedString("fujigoko_fireworks_feature1", comment: ""),
                             NSLocalizedString("fujigoko_fireworks_feature2", comment: ""),
                             NSLocalizedString("fujigoko_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.5043, longitude: 138.7689) // 富士五湖周辺(河口湖)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kofu_summer_festival_name", comment: ""),
@@ -1358,7 +1461,8 @@ extension Prefecture {
                             NSLocalizedString("kofu_summer_festival_feature1", comment: ""),
                             NSLocalizedString("kofu_summer_festival_feature2", comment: ""),
                             NSLocalizedString("kofu_summer_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.6642, longitude: 138.5685) // 甲府市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("yoshida_himatsuri_name", comment: ""),
@@ -1373,7 +1477,8 @@ extension Prefecture {
                             NSLocalizedString("yoshida_himatsuri_feature1", comment: ""),
                             NSLocalizedString("yoshida_himatsuri_feature2", comment: ""),
                             NSLocalizedString("yoshida_himatsuri_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.4796, longitude: 138.7942) // 富士吉田市(北口本宮冨士浅間神社)
                     )
                 ]
             case .nagano:
@@ -1391,7 +1496,8 @@ extension Prefecture {
                             NSLocalizedString("suwako_fireworks_feature1", comment: ""),
                             NSLocalizedString("suwako_fireworks_feature2", comment: ""),
                             NSLocalizedString("suwako_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.0494, longitude: 138.1133) // 諏訪市・諏訪湖
                     ),
                     FestivalItem(
                         name: NSLocalizedString("matsumoto_bonbon_name", comment: ""),
@@ -1406,7 +1512,8 @@ extension Prefecture {
                             NSLocalizedString("matsumoto_bonbon_feature1", comment: ""),
                             NSLocalizedString("matsumoto_bonbon_feature2", comment: ""),
                             NSLocalizedString("matsumoto_bonbon_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.2381, longitude: 137.972) // 松本市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("iida_ringon_name", comment: ""),
@@ -1421,7 +1528,8 @@ extension Prefecture {
                             NSLocalizedString("iida_ringon_feature1", comment: ""),
                             NSLocalizedString("iida_ringon_feature2", comment: ""),
                             NSLocalizedString("iida_ringon_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.5147, longitude: 137.8217) // 飯田市中心部
                     )
                 ]
         case .hokkaido:
@@ -1439,7 +1547,8 @@ extension Prefecture {
                             NSLocalizedString("sapporo_summer_festival_feature1", comment: ""),
                             NSLocalizedString("sapporo_summer_festival_feature2", comment: ""),
                             NSLocalizedString("sapporo_summer_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 43.0608, longitude: 141.3469) // 札幌市・大通公園
                     ),
                     FestivalItem(
                         name: NSLocalizedString("noboribetsu_hell_festival_name", comment: ""),
@@ -1454,7 +1563,8 @@ extension Prefecture {
                             NSLocalizedString("noboribetsu_hell_festival_feature1", comment: ""),
                             NSLocalizedString("noboribetsu_hell_festival_feature2", comment: ""),
                             NSLocalizedString("noboribetsu_hell_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 42.4922, longitude: 141.1469) // 登別温泉街
                     ),
                     FestivalItem(
                         name: NSLocalizedString("otaru_ushio_festival_name", comment: ""),
@@ -1469,7 +1579,8 @@ extension Prefecture {
                             NSLocalizedString("otaru_ushio_festival_feature1", comment: ""),
                             NSLocalizedString("otaru_ushio_festival_feature2", comment: ""),
                             NSLocalizedString("otaru_ushio_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 43.1979, longitude: 141.0086) // 小樽港周辺
                     ),
                     FestivalItem(
                         name: NSLocalizedString("hakodate_port_festival_name", comment: ""),
@@ -1484,7 +1595,8 @@ extension Prefecture {
                             NSLocalizedString("hakodate_port_festival_feature1", comment: ""),
                             NSLocalizedString("hakodate_port_festival_feature2", comment: ""),
                             NSLocalizedString("hakodate_port_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 41.7791, longitude: 140.7264) // 函館港周辺
                     ),
                     FestivalItem(
                         name: NSLocalizedString("doshin_uhb_fireworks_name", comment: ""),
@@ -1499,7 +1611,8 @@ extension Prefecture {
                             NSLocalizedString("doshin_uhb_fireworks_feature1", comment: ""),
                             NSLocalizedString("doshin_uhb_fireworks_feature2", comment: ""),
                             NSLocalizedString("doshin_uhb_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 43.0405, longitude: 141.321) // 豊平川河川敷(札幌)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("toyako_longrun_fireworks_name", comment: ""),
@@ -1514,7 +1627,8 @@ extension Prefecture {
                             NSLocalizedString("toyako_longrun_fireworks_feature1", comment: ""),
                             NSLocalizedString("toyako_longrun_fireworks_feature2", comment: ""),
                             NSLocalizedString("toyako_longrun_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 42.5683, longitude: 140.7536) // 洞爺湖畔
                     )
                 ]
             case .aomori:
@@ -1532,7 +1646,8 @@ extension Prefecture {
                             NSLocalizedString("aomori_nebuta_festival_feature1", comment: ""),
                             NSLocalizedString("aomori_nebuta_festival_feature2", comment: ""),
                             NSLocalizedString("aomori_nebuta_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 40.8278, longitude: 140.734) // 青森市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("hirosaki_neputa_festival_name", comment: ""),
@@ -1547,7 +1662,8 @@ extension Prefecture {
                             NSLocalizedString("hirosaki_neputa_festival_feature1", comment: ""),
                             NSLocalizedString("hirosaki_neputa_festival_feature2", comment: ""),
                             NSLocalizedString("hirosaki_neputa_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 40.6031, longitude: 140.4639) // 弘前市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("goshogawara_tachineputa_name", comment: ""),
@@ -1562,7 +1678,8 @@ extension Prefecture {
                             NSLocalizedString("goshogawara_tachineputa_feature1", comment: ""),
                             NSLocalizedString("goshogawara_tachineputa_feature2", comment: ""),
                             NSLocalizedString("goshogawara_tachineputa_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 40.8082, longitude: 140.4406) // 五所川原市街地
                     ),
                     FestivalItem(
                         name: NSLocalizedString("hachinohe_sansha_festival_name", comment: ""),
@@ -1577,7 +1694,8 @@ extension Prefecture {
                             NSLocalizedString("hachinohe_sansha_festival_feature1", comment: ""),
                             NSLocalizedString("hachinohe_sansha_festival_feature2", comment: ""),
                             NSLocalizedString("hachinohe_sansha_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 40.5123, longitude: 141.4883) // 八戸市中心部
                     )
                 ]
             case .iwate:
@@ -1595,7 +1713,8 @@ extension Prefecture {
                             NSLocalizedString("morioka_sansa_festival_feature1", comment: ""),
                             NSLocalizedString("morioka_sansa_festival_feature2", comment: ""),
                             NSLocalizedString("morioka_sansa_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 39.7036, longitude: 141.1525) // 盛岡市中心部(中央通り)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("hanamaki_festival_name", comment: ""),
@@ -1610,7 +1729,8 @@ extension Prefecture {
                             NSLocalizedString("hanamaki_festival_feature1", comment: ""),
                             NSLocalizedString("hanamaki_festival_feature2", comment: ""),
                             NSLocalizedString("hanamaki_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 39.3886, longitude: 141.1169) // 花巻市街地
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kitakami_michinoku_festival_name", comment: ""),
@@ -1625,7 +1745,8 @@ extension Prefecture {
                             NSLocalizedString("kitakami_michinoku_festival_feature1", comment: ""),
                             NSLocalizedString("kitakami_michinoku_festival_feature2", comment: ""),
                             NSLocalizedString("kitakami_michinoku_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 39.2867, longitude: 141.113) // 北上市
                     )
                 ]
             case .miyagi:
@@ -1643,7 +1764,8 @@ extension Prefecture {
                             NSLocalizedString("sendai_tanabata_festival_feature1", comment: ""),
                             NSLocalizedString("sendai_tanabata_festival_feature2", comment: ""),
                             NSLocalizedString("sendai_tanabata_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 38.2602, longitude: 140.8821) // 仙台市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("sendai_aoba_festival_name", comment: ""),
@@ -1658,7 +1780,8 @@ extension Prefecture {
                             NSLocalizedString("sendai_aoba_festival_feature1", comment: ""),
                             NSLocalizedString("sendai_aoba_festival_feature2", comment: ""),
                             NSLocalizedString("sendai_aoba_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 38.2682, longitude: 140.8694) // 仙台市中心部(青葉城)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("ishinomaki_kawabiraki_festival_name", comment: ""),
@@ -1673,7 +1796,8 @@ extension Prefecture {
                             NSLocalizedString("ishinomaki_kawabiraki_festival_feature1", comment: ""),
                             NSLocalizedString("ishinomaki_kawabiraki_festival_feature2", comment: ""),
                             NSLocalizedString("ishinomaki_kawabiraki_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 38.4346, longitude: 141.3022) // 石巻市・北上川
                     )
                 ]
             case .akita:
@@ -1691,7 +1815,8 @@ extension Prefecture {
                             NSLocalizedString("akita_kanto_festival_feature1", comment: ""),
                             NSLocalizedString("akita_kanto_festival_feature2", comment: ""),
                             NSLocalizedString("akita_kanto_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 39.7196, longitude: 140.1066) // 秋田市中心部(竿燈大通り)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("omagari_fireworks_name", comment: ""),
@@ -1706,7 +1831,8 @@ extension Prefecture {
                             NSLocalizedString("omagari_fireworks_feature1", comment: ""),
                             NSLocalizedString("omagari_fireworks_feature2", comment: ""),
                             NSLocalizedString("omagari_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 39.4506, longitude: 140.4736) // 大仙市・雄物川河川敷
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kakunodate_festival_name", comment: ""),
@@ -1721,7 +1847,8 @@ extension Prefecture {
                             NSLocalizedString("kakunodate_festival_feature1", comment: ""),
                             NSLocalizedString("kakunodate_festival_feature2", comment: ""),
                             NSLocalizedString("kakunodate_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 39.5969, longitude: 140.5614) // 角館町
                     )
                 ]
             case .yamagata:
@@ -1739,7 +1866,8 @@ extension Prefecture {
                             NSLocalizedString("yamagata_hanagasa_festival_feature1", comment: ""),
                             NSLocalizedString("yamagata_hanagasa_festival_feature2", comment: ""),
                             NSLocalizedString("yamagata_hanagasa_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 38.2554, longitude: 140.3396) // 山形市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("shinjo_festival_name", comment: ""),
@@ -1754,7 +1882,8 @@ extension Prefecture {
                             NSLocalizedString("shinjo_festival_feature1", comment: ""),
                             NSLocalizedString("shinjo_festival_feature2", comment: ""),
                             NSLocalizedString("shinjo_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 38.7656, longitude: 140.301) // 新庄市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("sakata_festival_name", comment: ""),
@@ -1769,7 +1898,8 @@ extension Prefecture {
                             NSLocalizedString("sakata_festival_feature1", comment: ""),
                             NSLocalizedString("sakata_festival_feature2", comment: ""),
                             NSLocalizedString("sakata_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 38.9145, longitude: 139.8366) // 酒田市中心部
                     )
                 ]
             case .fukushima:
@@ -1787,7 +1917,8 @@ extension Prefecture {
                             NSLocalizedString("fukushima_waraji_festival_feature1", comment: ""),
                             NSLocalizedString("fukushima_waraji_festival_feature2", comment: ""),
                             NSLocalizedString("fukushima_waraji_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 37.7503, longitude: 140.4676) // 福島市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("soma_nomaoi_name", comment: ""),
@@ -1802,7 +1933,8 @@ extension Prefecture {
                             NSLocalizedString("soma_nomaoi_feature1", comment: ""),
                             NSLocalizedString("soma_nomaoi_feature2", comment: ""),
                             NSLocalizedString("soma_nomaoi_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 37.796, longitude: 140.919) // 相馬市・南相馬市(雲雀ヶ原)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("aizu_festival_name", comment: ""),
@@ -1817,7 +1949,8 @@ extension Prefecture {
                             NSLocalizedString("aizu_festival_feature1", comment: ""),
                             NSLocalizedString("aizu_festival_feature2", comment: ""),
                             NSLocalizedString("aizu_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 37.4881, longitude: 139.9296) // 会津若松市(鶴ヶ城)
                     )
                 ]
             case .ibaraki:
@@ -1835,7 +1968,8 @@ extension Prefecture {
                             NSLocalizedString("mito_komon_festival_feature1", comment: ""),
                             NSLocalizedString("mito_komon_festival_feature2", comment: ""),
                             NSLocalizedString("mito_komon_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.3658, longitude: 140.471) // 水戸市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("tsuchiura_fireworks_name", comment: ""),
@@ -1850,7 +1984,8 @@ extension Prefecture {
                             NSLocalizedString("tsuchiura_fireworks_feature1", comment: ""),
                             NSLocalizedString("tsuchiura_fireworks_feature2", comment: ""),
                             NSLocalizedString("tsuchiura_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.0712, longitude: 140.196) // 土浦市・桜川畔
                     ),
                     FestivalItem(
                         name: NSLocalizedString("koga_fireworks_name", comment: ""),
@@ -1865,7 +2000,8 @@ extension Prefecture {
                             NSLocalizedString("koga_fireworks_feature1", comment: ""),
                             NSLocalizedString("koga_fireworks_feature2", comment: ""),
                             NSLocalizedString("koga_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.1783, longitude: 139.7556) // 古河市・渡良瀬川
                     )
                 ]
             case .tochigi:
@@ -1883,7 +2019,8 @@ extension Prefecture {
                             NSLocalizedString("utsunomiya_fireworks_feature1", comment: ""),
                             NSLocalizedString("utsunomiya_fireworks_feature2", comment: ""),
                             NSLocalizedString("utsunomiya_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.5293, longitude: 139.9333) // 宇都宮市・鬼怒川河川敷
                     ),
                     FestivalItem(
                         name: NSLocalizedString("ashikaga_fireworks_name", comment: ""),
@@ -1898,7 +2035,8 @@ extension Prefecture {
                             NSLocalizedString("ashikaga_fireworks_feature1", comment: ""),
                             NSLocalizedString("ashikaga_fireworks_feature2", comment: ""),
                             NSLocalizedString("ashikaga_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.33, longitude: 139.4502) // 足利市・渡良瀬川
                     ),
                     FestivalItem(
                         name: NSLocalizedString("nasu_makigari_festival_name", comment: ""),
@@ -1913,7 +2051,8 @@ extension Prefecture {
                             NSLocalizedString("nasu_makigari_festival_feature1", comment: ""),
                             NSLocalizedString("nasu_makigari_festival_feature2", comment: ""),
                             NSLocalizedString("nasu_makigari_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 37.0021, longitude: 140.0192) // 那須町
                     )
                 ]
             case .gunma:
@@ -1931,7 +2070,8 @@ extension Prefecture {
                             NSLocalizedString("maebashi_tanabata_festival_feature1", comment: ""),
                             NSLocalizedString("maebashi_tanabata_festival_feature2", comment: ""),
                             NSLocalizedString("maebashi_tanabata_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.3895, longitude: 139.0634) // 前橋市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kiryu_yagibushi_festival_name", comment: ""),
@@ -1946,7 +2086,8 @@ extension Prefecture {
                             NSLocalizedString("kiryu_yagibushi_festival_feature1", comment: ""),
                             NSLocalizedString("kiryu_yagibushi_festival_feature2", comment: ""),
                             NSLocalizedString("kiryu_yagibushi_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.4106, longitude: 139.3308) // 桐生市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("isesaki_fireworks_name", comment: ""),
@@ -1961,7 +2102,8 @@ extension Prefecture {
                             NSLocalizedString("isesaki_fireworks_feature1", comment: ""),
                             NSLocalizedString("isesaki_fireworks_feature2", comment: ""),
                             NSLocalizedString("isesaki_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.322, longitude: 139.209) // 伊勢崎市・利根川河川敷
                     )
                 ]
             case .saitama:
@@ -1979,7 +2121,8 @@ extension Prefecture {
                             NSLocalizedString("kumagaya_uchiwa_festival_feature1", comment: ""),
                             NSLocalizedString("kumagaya_uchiwa_festival_feature2", comment: ""),
                             NSLocalizedString("kumagaya_uchiwa_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.139, longitude: 139.3886) // 熊谷市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kawagoe_festival_name", comment: ""),
@@ -1994,7 +2137,8 @@ extension Prefecture {
                             NSLocalizedString("kawagoe_festival_feature1", comment: ""),
                             NSLocalizedString("kawagoe_festival_feature2", comment: ""),
                             NSLocalizedString("kawagoe_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.9251, longitude: 139.4858) // 川越市中心部(蔵造りの町並み)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("chichibu_yomatsuri_name", comment: ""),
@@ -2009,7 +2153,8 @@ extension Prefecture {
                             NSLocalizedString("chichibu_yomatsuri_feature1", comment: ""),
                             NSLocalizedString("chichibu_yomatsuri_feature2", comment: ""),
                             NSLocalizedString("chichibu_yomatsuri_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.9925, longitude: 139.0856) // 秩父市(秩父神社)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("todabashi_fireworks_name", comment: ""),
@@ -2024,7 +2169,8 @@ extension Prefecture {
                             NSLocalizedString("todabashi_fireworks_feature1", comment: ""),
                             NSLocalizedString("todabashi_fireworks_feature2", comment: ""),
                             NSLocalizedString("todabashi_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.7958, longitude: 139.684) // 戸田市・荒川河川敷
                     )
                 ]
             case .chiba:
@@ -2042,7 +2188,8 @@ extension Prefecture {
                             NSLocalizedString("sakura_fireworks_feature1", comment: ""),
                             NSLocalizedString("sakura_fireworks_feature2", comment: ""),
                             NSLocalizedString("sakura_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.7239, longitude: 140.233) // 佐倉市・印旛沼
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kashiwa_festival_name", comment: ""),
@@ -2057,7 +2204,8 @@ extension Prefecture {
                             NSLocalizedString("kashiwa_festival_feature1", comment: ""),
                             NSLocalizedString("kashiwa_festival_feature2", comment: ""),
                             NSLocalizedString("kashiwa_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.8623, longitude: 139.9709) // 柏駅周辺
                     ),
                     FestivalItem(
                         name: NSLocalizedString("narita_gion_festival_name", comment: ""),
@@ -2072,7 +2220,8 @@ extension Prefecture {
                             NSLocalizedString("narita_gion_festival_feature1", comment: ""),
                             NSLocalizedString("narita_gion_festival_feature2", comment: ""),
                             NSLocalizedString("narita_gion_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.7864, longitude: 140.3187) // 成田市・成田山周辺
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kisarazu_port_festival_name", comment: ""),
@@ -2087,7 +2236,8 @@ extension Prefecture {
                             NSLocalizedString("kisarazu_port_festival_feature1", comment: ""),
                             NSLocalizedString("kisarazu_port_festival_feature2", comment: ""),
                             NSLocalizedString("kisarazu_port_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.3818, longitude: 139.9163) // 木更津港周辺
                     )
                 ]
             case .tokyo:
@@ -2105,7 +2255,8 @@ extension Prefecture {
                             NSLocalizedString("sumidagawa_fireworks_feature1", comment: ""),
                             NSLocalizedString("sumidagawa_fireworks_feature2", comment: ""),
                             NSLocalizedString("sumidagawa_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.7148, longitude: 139.803) // 隅田川河川敷
                     ),
                     FestivalItem(
                         name: NSLocalizedString("jingu_gaien_fireworks_name", comment: ""),
@@ -2120,7 +2271,8 @@ extension Prefecture {
                             NSLocalizedString("jingu_gaien_fireworks_feature1", comment: ""),
                             NSLocalizedString("jingu_gaien_fireworks_feature2", comment: ""),
                             NSLocalizedString("jingu_gaien_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.6745, longitude: 139.717) // 明治神宮外苑
                     ),
                     FestivalItem(
                         name: NSLocalizedString("edogawaku_fireworks_name", comment: ""),
@@ -2135,7 +2287,8 @@ extension Prefecture {
                             NSLocalizedString("edogawaku_fireworks_feature1", comment: ""),
                             NSLocalizedString("edogawaku_fireworks_feature2", comment: ""),
                             NSLocalizedString("edogawaku_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.705, longitude: 139.9) // 江戸川河川敷
                     ),
                     FestivalItem(
                         name: NSLocalizedString("adachi_fireworks_name", comment: ""),
@@ -2150,7 +2303,8 @@ extension Prefecture {
                             NSLocalizedString("adachi_fireworks_feature1", comment: ""),
                             NSLocalizedString("adachi_fireworks_feature2", comment: ""),
                             NSLocalizedString("adachi_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.77, longitude: 139.799) // 荒川河川敷(足立)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("itabashi_fireworks_name", comment: ""),
@@ -2165,7 +2319,8 @@ extension Prefecture {
                             NSLocalizedString("itabashi_fireworks_feature1", comment: ""),
                             NSLocalizedString("itabashi_fireworks_feature2", comment: ""),
                             NSLocalizedString("itabashi_fireworks_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.79, longitude: 139.665) // 荒川河川敷(板橋)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("fukagawa_hachiman_festival_name", comment: ""),
@@ -2180,7 +2335,8 @@ extension Prefecture {
                             NSLocalizedString("fukagawa_hachiman_festival_feature1", comment: ""),
                             NSLocalizedString("fukagawa_hachiman_festival_feature2", comment: ""),
                             NSLocalizedString("fukagawa_hachiman_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.6722, longitude: 139.7977) // 富岡八幡宮周辺
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kanda_festival_name", comment: ""),
@@ -2195,7 +2351,8 @@ extension Prefecture {
                             NSLocalizedString("kanda_festival_feature1", comment: ""),
                             NSLocalizedString("kanda_festival_feature2", comment: ""),
                             NSLocalizedString("kanda_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.7019, longitude: 139.7679) // 神田明神周辺
                     )
                 ]
             case .kanagawa:
@@ -2213,7 +2370,8 @@ extension Prefecture {
                             NSLocalizedString("shonan_hiratsuka_tanabata_feature1", comment: ""),
                             NSLocalizedString("shonan_hiratsuka_tanabata_feature2", comment: ""),
                             NSLocalizedString("shonan_hiratsuka_tanabata_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.3356, longitude: 139.349) // 平塚市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("yokohama_kaikosai_name", comment: ""),
@@ -2228,7 +2386,8 @@ extension Prefecture {
                             NSLocalizedString("yokohama_kaikosai_feature1", comment: ""),
                             NSLocalizedString("yokohama_kaikosai_feature2", comment: ""),
                             NSLocalizedString("yokohama_kaikosai_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.4564, longitude: 139.6317) // みなとみらい21
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kamakura_festival_name", comment: ""),
@@ -2243,7 +2402,8 @@ extension Prefecture {
                             NSLocalizedString("kamakura_festival_feature1", comment: ""),
                             NSLocalizedString("kamakura_festival_feature2", comment: ""),
                             NSLocalizedString("kamakura_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.3263, longitude: 139.556) // 鶴岡八幡宮
                     ),
                     FestivalItem(
                         name: NSLocalizedString("atsugi_ayu_festival_name", comment: ""),
@@ -2258,7 +2418,8 @@ extension Prefecture {
                             NSLocalizedString("atsugi_ayu_festival_feature1", comment: ""),
                             NSLocalizedString("atsugi_ayu_festival_feature2", comment: ""),
                             NSLocalizedString("atsugi_ayu_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 35.4333, longitude: 139.365) // 相模川河川敷(厚木)
                     )
                 ]
             case .niigata:
@@ -2276,7 +2437,8 @@ extension Prefecture {
                             NSLocalizedString("nagaoka_hanabi_feature1", comment: ""),
                             NSLocalizedString("nagaoka_hanabi_feature2", comment: ""),
                             NSLocalizedString("nagaoka_hanabi_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 37.4413, longitude: 138.8517) // 長岡市・信濃川河川敷
                     ),
                     FestivalItem(
                         name: NSLocalizedString("katakai_festival_name", comment: ""),
@@ -2291,7 +2453,8 @@ extension Prefecture {
                             NSLocalizedString("katakai_festival_feature1", comment: ""),
                             NSLocalizedString("katakai_festival_feature2", comment: ""),
                             NSLocalizedString("katakai_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 37.3289, longitude: 138.805) // 小千谷市片貝町
                     ),
                     FestivalItem(
                         name: NSLocalizedString("kashiwazaki_umi_hanabi_name", comment: ""),
@@ -2306,7 +2469,8 @@ extension Prefecture {
                             NSLocalizedString("kashiwazaki_umi_hanabi_feature1", comment: ""),
                             NSLocalizedString("kashiwazaki_umi_hanabi_feature2", comment: ""),
                             NSLocalizedString("kashiwazaki_umi_hanabi_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 37.358, longitude: 138.538) // 柏崎市・中央海岸
                     ),
                     FestivalItem(
                         name: NSLocalizedString("echigo_festival_name", comment: ""),
@@ -2321,7 +2485,8 @@ extension Prefecture {
                             NSLocalizedString("echigo_festival_feature1", comment: ""),
                             NSLocalizedString("echigo_festival_feature2", comment: ""),
                             NSLocalizedString("echigo_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 37.9161, longitude: 139.0364) // 新潟市中心部
                     )
                 ]
             case .toyama:
@@ -2339,7 +2504,8 @@ extension Prefecture {
                             NSLocalizedString("takaoka_tanabata_feature1", comment: ""),
                             NSLocalizedString("takaoka_tanabata_feature2", comment: ""),
                             NSLocalizedString("takaoka_tanabata_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.7541, longitude: 137.0256) // 高岡市中心部
                     ),
                     FestivalItem(
                         name: NSLocalizedString("owara_kazenobon_name", comment: ""),
@@ -2354,7 +2520,8 @@ extension Prefecture {
                             NSLocalizedString("owara_kazenobon_feature1", comment: ""),
                             NSLocalizedString("owara_kazenobon_feature2", comment: ""),
                             NSLocalizedString("owara_kazenobon_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.5651, longitude: 137.1376) // 富山市八尾町
                     ),
                     FestivalItem(
                         name: NSLocalizedString("toyama_festival_name", comment: ""),
@@ -2369,7 +2536,8 @@ extension Prefecture {
                             NSLocalizedString("toyama_festival_feature1", comment: ""),
                             NSLocalizedString("toyama_festival_feature2", comment: ""),
                             NSLocalizedString("toyama_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.6953, longitude: 137.2113) // 富山市中心部
                     )
                 ]
             case .ishikawa:
@@ -2387,7 +2555,8 @@ extension Prefecture {
                             NSLocalizedString("kanazawa_hyakumangoku_festival_feature1", comment: ""),
                             NSLocalizedString("kanazawa_hyakumangoku_festival_feature2", comment: ""),
                             NSLocalizedString("kanazawa_hyakumangoku_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.5613, longitude: 136.6562) // 金沢市中心部(金沢城)
                     ),
                     FestivalItem(
                         name: NSLocalizedString("wajima_taisai_name", comment: ""),
@@ -2402,7 +2571,8 @@ extension Prefecture {
                             NSLocalizedString("wajima_taisai_feature1", comment: ""),
                             NSLocalizedString("wajima_taisai_feature2", comment: ""),
                             NSLocalizedString("wajima_taisai_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 37.3906, longitude: 136.899) // 輪島市
                     ),
                     FestivalItem(
                         name: NSLocalizedString("komatsu_otabi_festival_name", comment: ""),
@@ -2417,7 +2587,8 @@ extension Prefecture {
                             NSLocalizedString("komatsu_otabi_festival_feature1", comment: ""),
                             NSLocalizedString("komatsu_otabi_festival_feature2", comment: ""),
                             NSLocalizedString("komatsu_otabi_festival_feature3", comment: "")
-                        ]
+                        ],
+                        coordinate: CLLocationCoordinate2D(latitude: 36.4023, longitude: 136.4453) // 小松市
                     )
                 ]
         }
@@ -2517,7 +2688,7 @@ struct RichFestivalSection: View {
                     }
                 }
             }
-            
+
             // もっと見るボタン
             if !showAllItems && prefecture.festivalItems.count > 4 && selectedCategory == nil {
                 Button(action: {
@@ -2743,8 +2914,17 @@ struct FestivalDetailView: View {
                                 }
                             }
                             .padding(.top, 8)
+
+                            AddToPlanButton {
+                                PlanItem(
+                                    category: .festival,
+                                    prefecture: prefecture,
+                                    name: item.name
+                                )
+                            }
+                            .padding(.top, 4)
                         }
-                        
+
                         // カテゴリータグ
                         Label(item.category.localizedName, systemImage: item.category.icon)
                             .font(.headline)

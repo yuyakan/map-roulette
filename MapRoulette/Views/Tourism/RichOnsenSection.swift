@@ -215,12 +215,20 @@ struct OnsenDetailView2: View {
                                 .foregroundColor(.secondary)
                                 .font(.caption)
                         }
+
+                        AddToPlanButton {
+                            PlanItem(
+                                category: .onsen,
+                                prefecture: Prefecture.containingOnsen(named: onsen.name) ?? Prefecture.nearest(to: onsen.coordinate),
+                                name: onsen.name
+                            )
+                        }
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.top)
-                    
+
                     Divider()
-                    
+
                     // 説明
                     VStack(alignment: .leading, spacing: 12) {
                         Text("hot_spring_features".localized)
