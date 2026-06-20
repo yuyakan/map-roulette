@@ -121,29 +121,8 @@ struct WeightSliderRow: View {
                 Text(String(format: NSLocalizedString("weight_format", comment: "Weight format"), currentWeight))
                     .font(.caption2)
                     .foregroundColor(.secondary)
-                
+
                 Spacer()
-                
-                // クイック調整ボタン
-                HStack(spacing: 4) {
-                    Button("-") {
-                        weightManager.weights[prefecture] = max(0.1, currentWeight - 0.5)
-                    }
-                    .font(.caption)
-                    .frame(width: 20, height: 20)
-                    .background(Color.red.opacity(0.1))
-                    .foregroundColor(.red)
-                    .cornerRadius(10)
-                    
-                    Button("+") {
-                        weightManager.weights[prefecture] = min(10.0, currentWeight + 0.5)
-                    }
-                    .font(.caption)
-                    .frame(width: 20, height: 20)
-                    .background(Color.green.opacity(0.1))
-                    .foregroundColor(.green)
-                    .cornerRadius(10)
-                }
             }
             
             // スライダー
