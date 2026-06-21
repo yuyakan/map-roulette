@@ -16,6 +16,7 @@ struct PlanDetailView: View {
     @ObservedObject private var store = TravelPlanStore.shared
     @State private var showingMapSheet = false
     @State private var showingMemoEditor = false
+    @State private var showingCustomEditor = false
     @State private var memoDraft = ""
 
     private var plan: TravelPlan? {
@@ -39,8 +40,31 @@ struct PlanDetailView: View {
                     Text(plan.title).font(.headline)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    menu(for: plan)
+                    Button {
+                        memoDraft = plan.memo
+                        showingMemoEditor = true
+                    } label: {
+                        Image(systemName: "square.and.pencil")
+                            .foregroundColor(PlanTheme.primary)
+                    }
                 }
+            }
+        }
+        .overlay(alignment: .bottomTrailing) {
+            if let plan, !plan.mappableItems.isEmpty {
+                Button {
+                    showingMapSheet = true
+                } label: {
+                    Image(systemName: "map.fill")
+                        .font(.system(size: 22, weight: .semibold))
+                        .foregroundColor(.white)
+                        .frame(width: 56, height: 56)
+                        .background(Circle().fill(PlanTheme.brandGradient))
+                        .shadow(color: PlanTheme.primary.opacity(0.4), radius: 10, x: 0, y: 4)
+                }
+                .accessibilityLabel(NSLocalizedString("plan.showmap", comment: ""))
+                .padding(.trailing, 20)
+                .padding(.bottom, 20)
             }
         }
         .sheet(isPresented: $showingMapSheet) {
@@ -48,6 +72,9 @@ struct PlanDetailView: View {
         }
         .sheet(isPresented: $showingMemoEditor) {
             if let plan { memoEditor(for: plan) }
+        }
+        .sheet(isPresented: $showingCustomEditor) {
+            CustomPlanItemEditor(planID: planID)
         }
         .tint(PlanTheme.primary)
     }
@@ -96,10 +123,6 @@ struct PlanDetailView: View {
                     Stepper("", value: dayCountBinding(for: plan), in: 1...30)
                         .labelsHidden()
                 }
-                Text(NSLocalizedString("plan.dragdrop.hint", comment: ""))
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
-                    .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
         .planCard()
@@ -132,6 +155,22 @@ struct PlanDetailView: View {
             ForEach(plan.items) { item in
                 PlanItemCard(item: item, store: store, planID: planID, draggable: false)
             }
+
+            // ホテル・移動などのカスタム項目を追加
+            Button {
+                showingCustomEditor = true
+            } label: {
+                Label(NSLocalizedString("plan.day.addcustom", comment: ""), systemImage: "plus")
+                    .font(.subheadline.bold())
+                    .foregroundColor(PlanTheme.primary)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 12)
+                    .background(
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .strokeBorder(PlanTheme.primary.opacity(0.4), style: StrokeStyle(lineWidth: 1, dash: [4]))
+                    )
+            }
+            .buttonStyle(.plain)
         }
     }
 
@@ -147,29 +186,6 @@ struct PlanDetailView: View {
                     planID: planID
                 )
             }
-        }
-    }
-
-    // MARK: - メニュー
-
-    private func menu(for plan: TravelPlan) -> some View {
-        Menu {
-            if !plan.mappableItems.isEmpty {
-                Button {
-                    showingMapSheet = true
-                } label: {
-                    Label(NSLocalizedString("plan.showmap", comment: ""), systemImage: "map")
-                }
-            }
-            Button {
-                memoDraft = plan.memo
-                showingMemoEditor = true
-            } label: {
-                Label(NSLocalizedString("plan.editmemo", comment: ""), systemImage: "square.and.pencil")
-            }
-        } label: {
-            Image(systemName: "ellipsis.circle")
-                .foregroundColor(PlanTheme.primary)
         }
     }
 
@@ -234,6 +250,7 @@ private struct DayDropSection: View {
     let store: TravelPlanStore
     let planID: UUID
     @State private var isTargeted = false
+    @State private var showingCustomEditor = false
 
     private var title: String {
         if let day {
@@ -250,9 +267,17 @@ private struct DayDropSection: View {
                     .font(.headline)
                     .foregroundColor(day == nil ? .secondary : PlanTheme.primary)
                 Spacer()
-                Text("\(items.count)")
-                    .font(.caption.bold())
-                    .foregroundColor(.secondary)
+                // この日にカスタム項目（ホテル・移動など）を追加。「未割当」には出さない。
+                if day != nil {
+                    Button {
+                        showingCustomEditor = true
+                    } label: {
+                        Label(NSLocalizedString("plan.day.addcustom", comment: ""), systemImage: "plus")
+                            .font(.caption.bold())
+                            .foregroundColor(PlanTheme.primary)
+                    }
+                    .buttonStyle(.plain)
+                }
             }
 
             if items.isEmpty {
@@ -286,6 +311,9 @@ private struct DayDropSection: View {
         } isTargeted: { targeted in
             withAnimation(.easeOut(duration: 0.15)) { isTargeted = targeted }
         }
+        .sheet(isPresented: $showingCustomEditor) {
+            CustomPlanItemEditor(planID: planID, initialDay: day)
+        }
     }
 }
 
@@ -311,15 +339,25 @@ private struct PlanItemCard: View {
                     .font(.subheadline.bold())
                     .foregroundColor(.primary)
                     .lineLimit(1)
-                HStack(spacing: 6) {
-                    Text(item.category.localizedName)
-                    if let pref = item.prefecture {
-                        Text("·")
-                        Text(pref.prefectureName)
+                if item.category.isCustom {
+                    // カスタム項目はメモを 1 行で表示（カテゴリ名は出さない）
+                    if let memo = item.customDetail?.trimmingCharacters(in: .whitespacesAndNewlines), !memo.isEmpty {
+                        Text(memo)
+                            .font(.caption2)
+                            .foregroundColor(.secondary)
+                            .lineLimit(1)
                     }
+                } else {
+                    HStack(spacing: 6) {
+                        Text(item.category.localizedName)
+                        if let pref = item.prefecture {
+                            Text("·")
+                            Text(pref.prefectureName)
+                        }
+                    }
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
                 }
-                .font(.caption2)
-                .foregroundColor(.secondary)
             }
 
             Spacer()
@@ -383,69 +421,4 @@ private struct PlanItemInteraction: ViewModifier {
     }
 }
 
-// MARK: - PlanMapView
-
-private struct PlanMapView: View {
-    let plan: TravelPlan
-    @Environment(\.dismiss) private var dismiss
-    @State private var region: MKCoordinateRegion
-
-    init(plan: TravelPlan) {
-        self.plan = plan
-        _region = State(initialValue: PlanMapView.regionFitting(plan.mappableItems))
-    }
-
-    var body: some View {
-        NavigationStack {
-            Map(coordinateRegion: $region, annotationItems: plan.mappableItems) { item in
-                MapAnnotation(coordinate: item.coordinate ?? region.center) {
-                    VStack(spacing: 2) {
-                        Image(systemName: item.category.icon)
-                            .font(.caption)
-                            .foregroundColor(.white)
-                            .padding(6)
-                            .background(Circle().fill(PlanTheme.color(for: item.category)))
-                        Text(item.name)
-                            .font(.caption2)
-                            .padding(.horizontal, 4)
-                            .background(Color(.systemBackground).opacity(0.85))
-                            .cornerRadius(4)
-                    }
-                }
-            }
-            .ignoresSafeArea(edges: .bottom)
-            .navigationTitle(plan.title)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button(NSLocalizedString("common.close", comment: "")) { dismiss() }
-                }
-            }
-        }
-    }
-
-    private static func regionFitting(_ items: [PlanItem]) -> MKCoordinateRegion {
-        let coords = items.compactMap { $0.coordinate }
-        guard let first = coords.first else {
-            return MKCoordinateRegion(
-                center: CLLocationCoordinate2D(latitude: 36.2048, longitude: 138.2529),
-                span: MKCoordinateSpan(latitudeDelta: 18, longitudeDelta: 18)
-            )
-        }
-        var minLat = first.latitude, maxLat = first.latitude
-        var minLon = first.longitude, maxLon = first.longitude
-        for c in coords {
-            minLat = min(minLat, c.latitude); maxLat = max(maxLat, c.latitude)
-            minLon = min(minLon, c.longitude); maxLon = max(maxLon, c.longitude)
-        }
-        let center = CLLocationCoordinate2D(
-            latitude: (minLat + maxLat) / 2,
-            longitude: (minLon + maxLon) / 2
-        )
-        let span = MKCoordinateSpan(
-            latitudeDelta: max((maxLat - minLat) * 1.4, 0.05),
-            longitudeDelta: max((maxLon - minLon) * 1.4, 0.05)
-        )
-        return MKCoordinateRegion(center: center, span: span)
-    }
-}
+// PlanMapView は PlanMapView.swift に移動（日程色分け・ルート線・日フィルタ対応）

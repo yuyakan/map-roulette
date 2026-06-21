@@ -87,16 +87,29 @@ final class TravelPlanStore: ObservableObject {
 
     // MARK: - 項目操作
 
-    /// 指定プランに項目を追加する。同一プラン内の重複（同名・同種別）は追加しない。
+    /// 指定プランに項目を追加する。
+    /// アプリ項目は同一プラン内の重複（同名・同種別）を防ぐが、
+    /// カスタム項目（ホテル等）は同名でも別物として常に追加する。
     func addItem(_ item: PlanItem, to planID: UUID) {
         guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
-        let alreadyExists = plans[index].items.contains {
-            $0.name == item.name && $0.category == item.category
+        if !item.category.isCustom {
+            let alreadyExists = plans[index].items.contains {
+                $0.name == item.name && $0.category == item.category
+            }
+            guard !alreadyExists else { return }
         }
-        guard !alreadyExists else { return }
         plans[index].items.append(item)
         plans[index].updatedAt = Date()
         plans.sort { $0.updatedAt > $1.updatedAt }
+        persist()
+    }
+
+    /// 既存の項目を内容ごと更新する（カスタム項目の編集に使う）。
+    func updateItem(_ item: PlanItem, in planID: UUID) {
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        guard let itemIndex = plans[index].items.firstIndex(where: { $0.id == item.id }) else { return }
+        plans[index].items[itemIndex] = item
+        plans[index].updatedAt = Date()
         persist()
     }
 

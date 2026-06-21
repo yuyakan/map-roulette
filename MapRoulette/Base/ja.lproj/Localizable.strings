@@ -5106,3 +5106,29 @@
 "plan.daycount.short" = "%d日間";
 "plan.dragdrop.hint" = "カードを長押ししてドラッグし、各日に割り当てられます。";
 "plan.item.notfound" = "この項目の詳細は見つかりませんでした。";
+
+/* MARK: - カスタム旅程項目 */
+"plan.category.hotel" = "宿泊";
+"plan.category.transport" = "駅・空港";
+"plan.category.other" = "その他";
+"plan.custom.edit" = "項目を編集";
+"plan.custom.type" = "種類";
+"plan.custom.title.label" = "タイトル";
+"plan.custom.title.placeholder" = "例：○○ホテル / 14:00 新幹線";
+"plan.custom.detail.label" = "メモ";
+"plan.custom.location.add" = "位置を追加（任意）";
+"plan.custom.location.set" = "位置を変更";
+"plan.custom.location.pick" = "位置を選ぶ";
+"plan.custom.location.clear" = "位置を削除";
+"common.edit" = "編集";
+"plan.day.additem" = "この日に項目を追加";
+"plan.day.addcustom" = "ホテル・駅などを追加";
+"plan.custom.add" = "ホテル・駅などを追加";
+"plan.custom.location.search" = "地名・施設名で検索";
+"plan.custom.location.hint" = "地図を動かして中央のピンを合わせてください";
+"plan.map.alldays" = "すべて";
+"plan.map.showdetail" = "詳細を見る";
+"plan.map.directions" = "経路案内";
+"plan.map.route.day" = "%d日目を経路案内";
+"plan.locatable.add" = "お店の位置を追加";
+"plan.locatable.change" = "お店の位置を変更";

@@ -43,6 +43,10 @@ enum PlanItemCategory: String, Codable, CaseIterable {
     case festival     // 祭・イベント
     case nature       // 自然スポット
     case souvenir     // お土産（買うものリスト）
+    // 以下はユーザーが自由に追加するカスタム項目
+    case hotel        // 宿泊
+    case transport    // 駅・空港など（乗り場の地点。rawValue は互換のため transport を維持）
+    case other        // その他メモ
 
     var localizedName: String {
         NSLocalizedString("plan.category.\(rawValue)", comment: "")
@@ -57,8 +61,22 @@ enum PlanItemCategory: String, Codable, CaseIterable {
         case .festival:   return "sparkles"
         case .nature:     return "leaf.fill"
         case .souvenir:   return "gift.fill"
+        case .hotel:      return "bed.double.fill"
+        case .transport:  return "tram.fill"
+        case .other:      return "note.text"
         }
     }
+
+    /// ユーザーが手動で追加するカスタム項目か（元データ参照を持たない）。
+    var isCustom: Bool {
+        switch self {
+        case .hotel, .transport, .other: return true
+        default: return false
+        }
+    }
+
+    /// プランに手動追加できるカスタム種別の一覧。
+    static var customCases: [PlanItemCategory] { [.hotel, .transport, .other] }
 }
 
 // MARK: - PlanItem
@@ -67,11 +85,16 @@ enum PlanItemCategory: String, Codable, CaseIterable {
 struct PlanItem: Identifiable, Codable, Hashable {
     let id: UUID
     var category: PlanItemCategory
-    var prefectureRawValue: String   // Prefecture.rawValue（Codable のため文字列で保持）
-    var name: String                 // 元データを引くためのキー（県内で一意な表示名）
-    // 日程グループ表示で「何日目か」。nil は未割当。ユーザーが手動で設定する。
-    var dayNumber: Int?
+    var prefectureRawValue: String   // Prefecture.rawValue。カスタム項目では空文字可。
+    var name: String                 // アプリ項目: 元データを引くキー / カスタム項目: ユーザー入力のタイトル
+    var dayNumber: Int?              // 日程グループ表示で「何日目か」。nil は未割当。
 
+    // --- カスタム項目（hotel/transport/other）専用。アプリ項目では nil ---
+    var customDetail: String?        // ユーザー入力のメモ
+    var customLatitude: Double?      // 任意の位置（地図ピン）
+    var customLongitude: Double?
+
+    /// アプリ項目（既存データ参照）用のイニシャライザ
     init(
         id: UUID = UUID(),
         category: PlanItemCategory,
@@ -86,9 +109,29 @@ struct PlanItem: Identifiable, Codable, Hashable {
         self.dayNumber = dayNumber
     }
 
-    // 旧フォーマット（detail / latitude / longitude を含む）との後方互換のためのデコード
+    /// カスタム項目（ユーザー入力）用のイニシャライザ
+    init(
+        id: UUID = UUID(),
+        customCategory: PlanItemCategory,
+        title: String,
+        detail: String = "",
+        coordinate: CLLocationCoordinate2D? = nil,
+        dayNumber: Int? = nil
+    ) {
+        self.id = id
+        self.category = customCategory
+        self.prefectureRawValue = ""
+        self.name = title
+        self.customDetail = detail
+        self.customLatitude = coordinate?.latitude
+        self.customLongitude = coordinate?.longitude
+        self.dayNumber = dayNumber
+    }
+
+    // 旧フォーマットとの後方互換（カスタム用フィールドは任意デコード）
     enum CodingKeys: String, CodingKey {
         case id, category, prefectureRawValue, name, dayNumber
+        case customDetail, customLatitude, customLongitude
     }
 
     init(from decoder: Decoder) throws {
@@ -98,14 +141,33 @@ struct PlanItem: Identifiable, Codable, Hashable {
         prefectureRawValue = try c.decode(String.self, forKey: .prefectureRawValue)
         name = try c.decode(String.self, forKey: .name)
         dayNumber = try c.decodeIfPresent(Int.self, forKey: .dayNumber)
+        customDetail = try c.decodeIfPresent(String.self, forKey: .customDetail)
+        customLatitude = try c.decodeIfPresent(Double.self, forKey: .customLatitude)
+        customLongitude = try c.decodeIfPresent(Double.self, forKey: .customLongitude)
     }
 
     var prefecture: Prefecture? {
         Prefecture(rawValue: prefectureRawValue)
     }
 
-    /// 座標は元データから引く（保存せず、カテゴリ・県・name で参照）。
+    /// 説明文。カスタム項目は保存値、アプリ項目は元データから引く。
+    var detail: String? {
+        if category.isCustom { return customDetail }
+        guard let prefecture else { return nil }
+        return PlanItemResolver.detail(category: category, prefecture: prefecture, name: name)
+    }
+
+    /// ユーザーが手動で追加した座標（カスタム項目、またはグルメ・お土産への位置追加）。
+    var customCoordinate: CLLocationCoordinate2D? {
+        guard let lat = customLatitude, let lng = customLongitude else { return nil }
+        return CLLocationCoordinate2D(latitude: lat, longitude: lng)
+    }
+
+    /// 座標。手動追加した座標を最優先し、無ければ元データから引く。
+    /// これによりグルメ・お土産でもユーザーが位置を足せば地図に乗る。
     var coordinate: CLLocationCoordinate2D? {
+        if let custom = customCoordinate { return custom }
+        if category.isCustom { return nil }
         guard let prefecture else { return nil }
         return PlanItemResolver.coordinate(category: category, prefecture: prefecture, name: name)
     }

@@ -31,6 +31,9 @@ enum PlanItemResolver {
         case .gourmet, .souvenir:
             // グルメ・お土産は座標を持たない
             return nil
+        case .hotel, .transport, .other:
+            // カスタム項目は PlanItem 側で座標を保持するためここでは扱わない
+            return nil
         }
     }
 
@@ -51,6 +54,8 @@ enum PlanItemResolver {
             return NatureSpotDataRepository.shared.allFixedSpots.first { $0.name == name }?.description
         case .souvenir:
             return prefecture.souvenirItems.first { $0.name == name }?.description
+        case .hotel, .transport, .other:
+            return nil
         }
     }
 }
@@ -62,7 +67,10 @@ struct PlanItemDetailRouter: View {
     let item: PlanItem
 
     var body: some View {
-        if let prefecture = item.prefecture {
+        if item.category.isCustom {
+            // カスタム項目は元データを持たないため、保存値を表示する専用画面へ
+            CustomPlanItemView(item: item)
+        } else if let prefecture = item.prefecture {
             switch item.category {
             case .attraction:
                 if let attraction = prefecture.tourismInfo.attractions.first(where: { $0.name == item.name }) {
@@ -71,7 +79,9 @@ struct PlanItemDetailRouter: View {
 
             case .gourmet:
                 if let g = prefecture.gourmetItems.first(where: { $0.name == item.name }) {
-                    GourmetDetailView(item: g, prefecture: prefecture)
+                    PlanLocatableDetailView(item: item) {
+                        GourmetDetailView(item: g, prefecture: prefecture)
+                    }
                 } else { fallback }
 
             case .onsen:
@@ -94,8 +104,13 @@ struct PlanItemDetailRouter: View {
 
             case .souvenir:
                 if let s = prefecture.souvenirItems.first(where: { $0.name == item.name }) {
-                    SouvenirDetailView(item: s, prefecture: prefecture)
+                    PlanLocatableDetailView(item: item) {
+                        SouvenirDetailView(item: s, prefecture: prefecture)
+                    }
                 } else { fallback }
+
+            case .hotel, .transport, .other:
+                CustomPlanItemView(item: item)
             }
         } else {
             fallback
@@ -114,5 +129,60 @@ struct PlanItemDetailRouter: View {
                 .foregroundColor(.secondary)
         }
         .padding()
+    }
+}
+
+// MARK: - 位置を足せる詳細ラッパー（グルメ・お土産用）
+/// 元の詳細画面（座標を持たないグルメ・お土産）を表示しつつ、
+/// 下部に「位置を追加/変更」バーを重ねる。追加した座標は customCoordinate として保存され、
+/// 地図・ルートに乗るようになる。
+private struct PlanLocatableDetailView<Content: View>: View {
+    let item: PlanItem
+    @ViewBuilder let content: () -> Content
+
+    @ObservedObject private var store = TravelPlanStore.shared
+    @State private var showingPicker = false
+    @State private var pickedCoordinate: CLLocationCoordinate2D?
+
+    /// store から最新の項目を取得（保存後の座標反映のため）
+    private var currentItem: PlanItem? {
+        for plan in store.plans {
+            if let found = plan.items.first(where: { $0.id == item.id }) { return found }
+        }
+        return item
+    }
+
+    private var planID: UUID? {
+        store.plans.first { $0.items.contains(where: { $0.id == item.id }) }?.id
+    }
+
+    var body: some View {
+        content()
+            .overlay(alignment: .bottom) {
+                let hasLocation = currentItem?.customCoordinate != nil
+                Button {
+                    pickedCoordinate = currentItem?.customCoordinate
+                    showingPicker = true
+                } label: {
+                    Label(
+                        NSLocalizedString(hasLocation ? "plan.locatable.change" : "plan.locatable.add", comment: ""),
+                        systemImage: hasLocation ? "mappin.circle.fill" : "mappin.and.ellipse"
+                    )
+                }
+                .buttonStyle(PlanPrimaryButtonStyle())
+                .padding(.horizontal)
+                .padding(.bottom, 12)
+            }
+            .sheet(isPresented: $showingPicker) {
+                LocationPickerView(coordinate: $pickedCoordinate)
+                    .onDisappear { saveLocation() }
+            }
+    }
+
+    private func saveLocation() {
+        guard let planID, var updated = currentItem else { return }
+        updated.customLatitude = pickedCoordinate?.latitude
+        updated.customLongitude = pickedCoordinate?.longitude
+        store.updateItem(updated, in: planID)
     }
 }

@@ -46,6 +46,9 @@ enum PlanTheme {
         case .festival:   return Color(red: 0.70, green: 0.40, blue: 0.95)
         case .nature:     return Color(red: 0.25, green: 0.70, blue: 0.45)
         case .souvenir:   return Color(red: 0.90, green: 0.55, blue: 0.20)
+        case .hotel:      return Color(red: 0.45, green: 0.50, blue: 0.85)
+        case .transport:  return Color(red: 0.30, green: 0.65, blue: 0.70)
+        case .other:      return Color(red: 0.55, green: 0.55, blue: 0.60)
         }
     }
 }
