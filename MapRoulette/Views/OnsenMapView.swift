@@ -1040,6 +1040,10 @@ struct OnsenDetailView: View {
                                 .stroke(onsen.onsenType.color, lineWidth: 1.5)
                         )
                     }
+
+                    // YouTube / Instagram で検索
+                    SocialSearchButtons(query: onsen.name)
+
                     Spacer()
                 }
                 .padding()

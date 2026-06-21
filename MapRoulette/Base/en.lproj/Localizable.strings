@@ -5143,3 +5143,6 @@
 "plan.item.addmemo" = "Add memo";
 "plan.item.editmemo" = "Edit memo";
 "plan.item.memo" = "Memo";
+
+"social.search_youtube" = "Search on YouTube";
+"social.search_instagram" = "Search on Instagram";

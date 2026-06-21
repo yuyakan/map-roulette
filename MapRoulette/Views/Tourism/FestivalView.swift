@@ -3082,6 +3082,9 @@ struct FestivalDetailView: View {
                                     .stroke(item.category.color.opacity(0.3), lineWidth: 1)
                             )
                         }
+
+                        // YouTube / Instagram で検索
+                        SocialSearchButtons(query: item.name)
                     }
                     .padding(.horizontal)
 

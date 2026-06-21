@@ -5141,3 +5141,6 @@
 "plan.item.addmemo" = "メモを追加";
 "plan.item.editmemo" = "メモを編集";
 "plan.item.memo" = "メモ";
+
+"social.search_youtube" = "YouTubeで検索";
+"social.search_instagram" = "Instagramで検索";

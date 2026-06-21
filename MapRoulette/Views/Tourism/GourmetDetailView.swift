@@ -165,6 +165,9 @@ struct GourmetDetailView: View {
                             )
                         }
 
+                        // YouTube / Instagram で検索
+                        SocialSearchButtons(query: item.name)
+
                     }
                     .padding(.horizontal)
                 }

@@ -7,6 +7,7 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>comgooglemaps</string>
+		<string>youtube</string>
 	</array>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3155724310732667~8192172945</string>

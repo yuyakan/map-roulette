@@ -94,6 +94,9 @@ struct AttractionDetailView: View {
                             .cornerRadius(12)
                     }
 
+                    // YouTube / Instagram で検索
+                    SocialSearchButtons(query: attraction.name)
+
                     // プランから開いたときの下部フローティングボタンを避ける余白
                     Color.clear.frame(height: 40)
                 }
