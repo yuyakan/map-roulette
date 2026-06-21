@@ -1114,15 +1114,11 @@ extension Prefecture {
 // リッチなその他祭りセクションのView
 struct RichOtherFestivalSection: View {
     let prefecture: Prefecture
-    @State private var selectedCategory: OtherFestivalCategory? = nil
     @State private var showAllItems = false
     @State private var selectedItem: OtherFestivalItem? = nil
-    
+
     var filteredItems: [OtherFestivalItem] {
         let items = prefecture.otherFestivalItems
-        if let category = selectedCategory {
-            return items.filter { $0.category == category }
-        }
         return showAllItems ? items : Array(items.prefix(4))
     }
     
@@ -1153,14 +1149,6 @@ struct RichOtherFestivalSection: View {
                 Spacer()
             }
 
-            // カテゴリフィルター（横スクロールのブランドカラーのチップ）
-            FestivalCategoryFilterBar(
-                categories: OtherFestivalCategory.allCases,
-                name: { $0.localizedName },
-                icon: { $0.icon },
-                selected: $selectedCategory
-            )
-
             // その他祭りアイテムのグリッド
             LazyVGrid(columns: [
                 GridItem(.flexible(), spacing: 12),
@@ -1174,7 +1162,7 @@ struct RichOtherFestivalSection: View {
             }
 
             // もっと見るボタン
-            if !showAllItems && prefecture.otherFestivalItems.count > 4 && selectedCategory == nil {
+            if !showAllItems && prefecture.otherFestivalItems.count > 4 {
                 Button(action: {
                     withAnimation(.easeInOut(duration: 0.3)) {
                         showAllItems = true

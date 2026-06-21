@@ -2598,15 +2598,11 @@ extension Prefecture {
 // リッチなお祭りセクションのView
 struct RichFestivalSection: View {
     let prefecture: Prefecture
-    @State private var selectedCategory: FestivalCategory? = nil
     @State private var showAllItems = false
     @State private var selectedItem: FestivalItem? = nil
-    
+
     var filteredItems: [FestivalItem] {
         let items = prefecture.festivalItems
-        if let category = selectedCategory {
-            return items.filter { $0.category == category }
-        }
         return showAllItems ? items : Array(items.prefix(4))
     }
     
@@ -2637,14 +2633,6 @@ struct RichFestivalSection: View {
                 Spacer()
             }
 
-            // カテゴリフィルター（横スクロールのブランドカラーのチップ）
-            FestivalCategoryFilterBar(
-                categories: FestivalCategory.allCases,
-                name: { $0.localizedName },
-                icon: { $0.icon },
-                selected: $selectedCategory
-            )
-
             // お祭りアイテムのグリッド
             LazyVGrid(columns: [
                 GridItem(.flexible(), spacing: 12),
@@ -2658,7 +2646,7 @@ struct RichFestivalSection: View {
             }
 
             // もっと見るボタン
-            if !showAllItems && prefecture.festivalItems.count > 4 && selectedCategory == nil {
+            if !showAllItems && prefecture.festivalItems.count > 4 {
                 Button(action: {
                     withAnimation(.easeInOut(duration: 0.3)) {
                         showAllItems = true
@@ -2686,73 +2674,6 @@ struct RichFestivalSection: View {
         .sheet(item: $selectedItem) { item in
             FestivalDetailView(item: item, prefecture: prefecture)
         }
-    }
-}
-
-// MARK: - カテゴリフィルターバー（ブランドカラーの横スクロールチップ）
-/// iOS 標準の Menu ドロップダウンの代わりに、全カテゴリを横並びのピルで提示する。
-/// 選択中はブランドのグラデーション、未選択はやわらかいアウトラインで表現する。
-/// FestivalCategory / OtherFestivalCategory の両方で使えるようジェネリックにしている。
-struct FestivalCategoryFilterBar<Category: Hashable>: View {
-    let categories: [Category]
-    let name: (Category) -> String
-    let icon: (Category) -> String
-    @Binding var selected: Category?
-
-    var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 8) {
-                // 「すべて」チップ
-                chip(
-                    title: "food_category_all".localized,
-                    systemImage: "square.grid.2x2",
-                    isSelected: selected == nil
-                ) {
-                    withAnimation(.easeInOut(duration: 0.2)) { selected = nil }
-                }
-
-                ForEach(categories, id: \.self) { category in
-                    chip(
-                        title: name(category),
-                        systemImage: icon(category),
-                        isSelected: selected == category
-                    ) {
-                        withAnimation(.easeInOut(duration: 0.2)) {
-                            // 選択中をもう一度タップで解除
-                            selected = (selected == category) ? nil : category
-                        }
-                    }
-                }
-            }
-            .padding(.horizontal, 2)
-            .padding(.vertical, 2)
-        }
-    }
-
-    @ViewBuilder
-    private func chip(title: String, systemImage: String, isSelected: Bool, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            HStack(spacing: 6) {
-                Image(systemName: systemImage)
-                    .font(.system(size: 12, weight: .semibold))
-                Text(title)
-                    .font(.system(size: 13, weight: .semibold))
-            }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 8)
-            .foregroundColor(isSelected ? .white : PlanTheme.primary)
-            .background {
-                if isSelected {
-                    Capsule().fill(PlanTheme.brandGradient)
-                } else {
-                    Capsule()
-                        .fill(PlanTheme.primary.opacity(0.08))
-                        .overlay(Capsule().strokeBorder(PlanTheme.primary.opacity(0.25), lineWidth: 1))
-                }
-            }
-            .shadow(color: isSelected ? PlanTheme.primary.opacity(0.3) : .clear, radius: 5, x: 0, y: 2)
-        }
-        .buttonStyle(.plain)
     }
 }
 
