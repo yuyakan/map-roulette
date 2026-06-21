@@ -1565,6 +1565,9 @@ struct OtherFestivalDetailView: View {
                         }
                     }
                     .padding(.horizontal)
+
+                    // プランから開いたときの下部フローティングボタンを避ける余白
+                    Color.clear.frame(height: 40)
                 }
             }
             .navigationBarHidden(true)

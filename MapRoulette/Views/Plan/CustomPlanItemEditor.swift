@@ -8,6 +8,7 @@
 
 import SwiftUI
 import MapKit
+import UIKit
 
 // MARK: - 編集フォーム（追加・編集兼用）
 
@@ -25,12 +26,16 @@ struct CustomPlanItemEditor: View {
     @State private var title: String
     @State private var detail: String
     @State private var coordinate: CLLocationCoordinate2D?
+    @State private var placeName: String?
+    @State private var address: String?
     @State private var showingLocationPicker = false
 
     init(planID: UUID, editing: PlanItem? = nil, initialDay: Int? = nil) {
         self.planID = planID
         self.editing = editing
         self.initialDay = initialDay
+        _placeName = State(initialValue: editing?.customPlaceName)
+        _address = State(initialValue: editing?.customAddress)
         _category = State(initialValue: editing?.category ?? .hotel)
         _title = State(initialValue: editing?.name ?? "")
         _detail = State(initialValue: editing?.customDetail ?? "")
@@ -71,7 +76,7 @@ struct CustomPlanItemEditor: View {
                 }
             }
             .sheet(isPresented: $showingLocationPicker) {
-                LocationPickerView(coordinate: $coordinate)
+                LocationPickerView(coordinate: $coordinate, placeName: $placeName, address: $address)
             }
         }
         .tint(PlanTheme.primary)
@@ -148,10 +153,9 @@ struct CustomPlanItemEditor: View {
             HStack {
                 Image(systemName: coordinate == nil ? "mappin.slash" : "mappin.circle.fill")
                     .foregroundColor(coordinate == nil ? .secondary : PlanTheme.primary)
-                Text(coordinate == nil
-                     ? NSLocalizedString("plan.custom.location.add", comment: "")
-                     : NSLocalizedString("plan.custom.location.set", comment: ""))
+                Text(locationCardLabel)
                     .foregroundColor(.primary)
+                    .lineLimit(1)
                 Spacer()
                 if coordinate != nil {
                     Image(systemName: "checkmark.circle.fill").foregroundColor(.green)
@@ -161,6 +165,17 @@ struct CustomPlanItemEditor: View {
         }
         .buttonStyle(.plain)
         .planCard()
+    }
+
+    /// 位置カードのラベル。施設名があればそれを、無ければ追加/変更の汎用文言を出す。
+    private var locationCardLabel: String {
+        if coordinate == nil {
+            return NSLocalizedString("plan.custom.location.add", comment: "")
+        }
+        if let name = placeName, !name.isEmpty {
+            return name
+        }
+        return NSLocalizedString("plan.custom.location.set", comment: "")
     }
 
     private func save() {
@@ -173,15 +188,19 @@ struct CustomPlanItemEditor: View {
             updated.customDetail = detail
             updated.customLatitude = coordinate?.latitude
             updated.customLongitude = coordinate?.longitude
+            updated.customPlaceName = coordinate == nil ? nil : placeName
+            updated.customAddress = coordinate == nil ? nil : address
             store.updateItem(updated, in: planID)
         } else {
-            let item = PlanItem(
+            var item = PlanItem(
                 customCategory: category,
                 title: trimmed,
                 detail: detail,
                 coordinate: coordinate,
                 dayNumber: initialDay
             )
+            item.customPlaceName = coordinate == nil ? nil : placeName
+            item.customAddress = coordinate == nil ? nil : address
             store.addItem(item, to: planID)
         }
         dismiss()
@@ -192,6 +211,10 @@ struct CustomPlanItemEditor: View {
 
 struct LocationPickerView: View {
     @Binding var coordinate: CLLocationCoordinate2D?
+    /// 検索で選んだ地点名。ピンを動かすと nil になる。経路案内で座標の代わりに使う。
+    var placeName: Binding<String?>? = nil
+    /// 住所（表示用）。検索選択時は placemark.title、手動移動時は保存時に逆ジオで補完する。
+    var address: Binding<String?>? = nil
     @Environment(\.dismiss) private var dismiss
 
     private let initialCenter: CLLocationCoordinate2D
@@ -201,12 +224,24 @@ struct LocationPickerView: View {
     @State private var searchText = ""
     @State private var results: [MKMapItem] = []
     @State private var isSearching = false
+    /// 検索で選んだ地点名（保持中）。地図を手で動かすとクリアされる。
+    @State private var selectedName: String?
+    /// 検索で選んだ住所（保持中）。地図を手で動かすとクリアされ、保存時に逆ジオで取り直す。
+    @State private var selectedAddress: String?
+    /// 検索選択直後の地図移動による onMapCameraChange を無視するためのフラグ
+    @State private var ignoreNextCameraChange = false
+    /// 保存時の逆ジオコーディング中フラグ（ボタン二度押し防止）
+    @State private var isResolvingAddress = false
 
-    init(coordinate: Binding<CLLocationCoordinate2D?>) {
+    init(coordinate: Binding<CLLocationCoordinate2D?>, placeName: Binding<String?>? = nil, address: Binding<String?>? = nil) {
         _coordinate = coordinate
+        self.placeName = placeName
+        self.address = address
         let center = coordinate.wrappedValue ?? CLLocationCoordinate2D(latitude: 35.6812, longitude: 139.7671)
         self.initialCenter = center
         _currentCenter = State(initialValue: center)
+        _selectedName = State(initialValue: placeName?.wrappedValue)
+        _selectedAddress = State(initialValue: address?.wrappedValue)
         _cameraPosition = State(initialValue: .region(MKCoordinateRegion(
             center: center,
             span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
@@ -219,8 +254,18 @@ struct LocationPickerView: View {
                 Map(position: $cameraPosition)
                     .ignoresSafeArea(edges: .bottom)
                     .onMapCameraChange(frequency: .continuous) { context in
-                        // ドラッグ・ズームで動いた地図の中心を常に追従
-                        currentCenter = context.region.center
+                        let newCenter = context.region.center
+                        // 地点名を持っている状態で、中心が実際に動いたら（ユーザー操作）名前をクリア。
+                        // 初回表示や検索移動（ignoreNextCameraChange）では消さない。
+                        if ignoreNextCameraChange {
+                            ignoreNextCameraChange = false
+                        } else if (selectedName != nil || selectedAddress != nil),
+                                  Self.movedSignificantly(from: currentCenter, to: newCenter) {
+                            // 手で動かしたら検索由来の名前・住所は破棄（保存時に逆ジオで取り直す）
+                            selectedName = nil
+                            selectedAddress = nil
+                        }
+                        currentCenter = newCenter
                     }
 
                 // 画面中央に固定されたピン（地図を動かして位置を合わせる）
@@ -229,7 +274,6 @@ struct LocationPickerView: View {
                         .font(.system(size: 40))
                         .foregroundStyle(.white, PlanTheme.primary)
                         .shadow(color: .black.opacity(0.3), radius: 4, y: 2)
-                    // ピンの先端が中心を指すよう、下に三角の足を出して上方向にオフセット
                     Image(systemName: "arrowtriangle.down.fill")
                         .font(.system(size: 14))
                         .foregroundColor(PlanTheme.primary)
@@ -238,10 +282,11 @@ struct LocationPickerView: View {
                 .offset(y: -20)
                 .allowsHitTesting(false)
 
-                // 検索（最前面・上部）
+                // 検索（上部）と保存ボタン（下部・状態表示付き）
                 VStack(spacing: 0) {
                     searchOverlay
                     Spacer()
+                    saveButton
                 }
             }
             .navigationTitle(NSLocalizedString("plan.custom.location.pick", comment: ""))
@@ -250,14 +295,75 @@ struct LocationPickerView: View {
                 ToolbarItem(placement: .cancellationAction) {
                     Button(NSLocalizedString("common.cancel", comment: "")) { dismiss() }
                 }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button(NSLocalizedString("common.save", comment: "")) {
-                        coordinate = currentCenter
-                        dismiss()
-                    }
-                }
             }
         }
+    }
+
+    /// 保存ボタン。検索地点名があれば「○○として保存」、無ければ「この地点を保存」。
+    private var saveButton: some View {
+        Button {
+            commitSelection()
+        } label: {
+            if isResolvingAddress {
+                ProgressView().tint(.white)
+            } else if let name = selectedName {
+                Label(String(format: NSLocalizedString("plan.location.saveas", comment: ""), name),
+                      systemImage: "mappin.circle.fill")
+                    .lineLimit(1)
+            } else {
+                Label(NSLocalizedString("plan.location.savepoint", comment: ""), systemImage: "mappin")
+            }
+        }
+        .buttonStyle(PlanPrimaryButtonStyle())
+        .disabled(isResolvingAddress)
+        .padding(.horizontal)
+        .padding(.bottom, 12)
+    }
+
+    /// 保存確定。住所が未取得（ピン手動移動）なら逆ジオコーディングで補完してから閉じる。
+    private func commitSelection() {
+        // 検索選択済みで住所がある場合はそのまま確定
+        if let addr = selectedAddress {
+            finishSaving(address: addr)
+            return
+        }
+        guard address != nil else {   // 住所バインディングが無い呼び出し元では従来通り即確定
+            finishSaving(address: nil)
+            return
+        }
+        isResolvingAddress = true
+        let target = currentCenter
+        CLGeocoder().reverseGeocodeLocation(
+            CLLocation(latitude: target.latitude, longitude: target.longitude)
+        ) { placemarks, _ in
+            isResolvingAddress = false
+            finishSaving(address: Self.formattedAddress(from: placemarks?.first))
+        }
+    }
+
+    private func finishSaving(address resolved: String?) {
+        coordinate = currentCenter
+        placeName?.wrappedValue = selectedName
+        address?.wrappedValue = resolved
+        dismiss()
+    }
+
+    /// CLPlacemark を 1 行の住所文字列に整形（国・郵便番号は省く）。
+    private static func formattedAddress(from placemark: CLPlacemark?) -> String? {
+        guard let p = placemark else { return nil }
+        // 日本式に都道府県→市区町村→番地の順で結合。nil/空は除外。
+        let parts = [p.administrativeArea, p.locality, p.subLocality, p.thoroughfare, p.subThoroughfare]
+            .compactMap { $0 }
+            .filter { !$0.isEmpty }
+        let joined = parts.joined()
+        return joined.isEmpty ? nil : joined
+    }
+
+    /// 2 点が「ユーザーが動かした」と言える程度に離れているか（微小な揺れは無視）。
+    private static func movedSignificantly(from a: CLLocationCoordinate2D, to b: CLLocationCoordinate2D) -> Bool {
+        let dLat = abs(a.latitude - b.latitude)
+        let dLng = abs(a.longitude - b.longitude)
+        return dLat > 0.0002 || dLng > 0.0002   // おおよそ 20m 以上
     }
 
     // MARK: - 検索 UI（地図上部にオーバーレイ）
@@ -341,6 +447,10 @@ struct LocationPickerView: View {
     private func select(_ item: MKMapItem) {
         let coord = item.placemark.coordinate
         currentCenter = coord
+        // 検索選択による地図移動では地点名をクリアしない
+        ignoreNextCameraChange = true
+        selectedName = item.name
+        selectedAddress = item.placemark.title
         withAnimation {
             cameraPosition = .region(MKCoordinateRegion(
                 center: coord,
@@ -358,6 +468,8 @@ struct CustomPlanItemView: View {
     let item: PlanItem
     @Environment(\.dismiss) private var dismiss
     @State private var showingEditor = false
+    /// 住所コピー直後に「コピーしました」を一時表示するためのフラグ
+    @State private var addressCopied = false
 
     /// この項目が属するプランID（編集に必要）。store から逆引き。
     private var planID: UUID? {
@@ -375,7 +487,7 @@ struct CustomPlanItemView: View {
                             detailCard(detail)
                         }
                         if let coord = item.coordinate {
-                            mapCard(coord)
+                            placeCard(coordinate: coord)
                         }
                     }
                     .padding()
@@ -429,15 +541,54 @@ struct CustomPlanItemView: View {
         .planCard()
     }
 
-    private func mapCard(_ coord: CLLocationCoordinate2D) -> some View {
-        Map(initialPosition: .region(MKCoordinateRegion(
-            center: coord,
-            span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
-        ))) {
-            Marker(item.name, coordinate: coord)
-                .tint(PlanTheme.primary)
+    @ViewBuilder
+    private func placeCard(coordinate coord: CLLocationCoordinate2D) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            // 検索で施設名・地名を保存している場合のみ、その名前を表示
+            if let placeName = item.customPlaceName, !placeName.isEmpty {
+                Label(placeName, systemImage: "mappin.circle.fill")
+                    .font(.subheadline.bold())
+                    .foregroundColor(PlanTheme.primary)
+                    .lineLimit(2)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+
+            // 住所があれば施設名の下に表示（検索選択・ピン手動移動の両方で保存される）
+            if let address = item.effectiveAddress {
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                    Text(address)
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .lineLimit(2)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                    // タップで住所をクリップボードへコピー。直後は完了アイコンに切り替える。
+                    Button {
+                        UIPasteboard.general.string = address
+                        withAnimation { addressCopied = true }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                            withAnimation { addressCopied = false }
+                        }
+                    } label: {
+                        Image(systemName: addressCopied ? "checkmark.circle.fill" : "doc.on.doc")
+                            .font(.caption)
+                            .foregroundColor(addressCopied ? .green : PlanTheme.primary)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(NSLocalizedString("plan.address.copy", comment: ""))
+                }
+            }
+
+            // 地図はカード装飾で囲まず、全幅・大きめに表示する
+            Map(initialPosition: .region(MKCoordinateRegion(
+                center: coord,
+                span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+            ))) {
+                Marker(item.customPlaceName ?? item.name, coordinate: coord)
+                    .tint(PlanTheme.primary)
+            }
+            .frame(height: 220)
+            .clipShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
         }
-        .frame(height: 200)
-        .clipShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
     }
 }

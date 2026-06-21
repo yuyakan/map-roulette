@@ -37,9 +37,9 @@ final class TravelPlanStore: ObservableObject {
         }
         do {
             let data = try Data(contentsOf: fileURL)
-            let decoded = try JSONDecoder().decode([TravelPlan].self, from: data)
-            // 更新日時の新しい順で保持
-            plans = decoded.sorted { $0.updatedAt > $1.updatedAt }
+            // 保存された配列の順序＝ユーザーが並べた表示順。ここでは並べ替えない。
+            // （旧データは更新日時降順で保存されているので、それがそのまま初期順になる）
+            plans = try JSONDecoder().decode([TravelPlan].self, from: data)
         } catch {
             print("TravelPlanStore load error: \(error)")
             plans = []
@@ -70,8 +70,7 @@ final class TravelPlanStore: ObservableObject {
         var updated = plan
         updated.updatedAt = Date()
         plans[index] = updated
-        // 更新したものを先頭へ
-        plans.sort { $0.updatedAt > $1.updatedAt }
+        // 表示順はユーザーの手動並びを維持する（更新で先頭へ繰り上げない）
         persist()
     }
 
@@ -82,6 +81,12 @@ final class TravelPlanStore: ObservableObject {
 
     func deletePlans(at offsets: IndexSet) {
         plans.remove(atOffsets: offsets)
+        persist()
+    }
+
+    /// プラン一覧をユーザー操作で並び替える。並べた順序がそのまま保存される。
+    func movePlans(from source: IndexSet, to destination: Int) {
+        plans.move(fromOffsets: source, toOffset: destination)
         persist()
     }
 
@@ -100,7 +105,7 @@ final class TravelPlanStore: ObservableObject {
         }
         plans[index].items.append(item)
         plans[index].updatedAt = Date()
-        plans.sort { $0.updatedAt > $1.updatedAt }
+        // 表示順はユーザーの手動並びを維持する
         persist()
     }
 
@@ -159,6 +164,40 @@ final class TravelPlanStore: ObservableObject {
         plans[index].items[itemIndex].dayNumber = day
         plans[index].updatedAt = Date()
         persist()
+    }
+
+    /// 項目を指定の日へ移動し、その日の中の指定位置（targetID の直前）へ挿入する。
+    /// targetID が nil の場合はその日の末尾へ。日またぎ移動と日内並び替えを 1 操作で行う。
+    /// itemsByDay の順序は items 配列の順序に依存するため、グローバル配列上で再配置する。
+    func moveItem(_ itemID: UUID, toDay day: Int?, before targetID: UUID?, in planID: UUID) {
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        guard itemID != targetID else { return }
+        var items = plans[index].items
+        guard let movingIndex = items.firstIndex(where: { $0.id == itemID }) else { return }
+
+        var moving = items.remove(at: movingIndex)
+        moving.dayNumber = day
+
+        // 挿入位置を決める。targetID 指定があればその直前、無ければその日の最後の項目の直後。
+        let insertAt: Int
+        if let targetID, let t = items.firstIndex(where: { $0.id == targetID }) {
+            insertAt = t
+        } else if let lastInDay = items.lastIndex(where: { effectiveDay($0, dayCount: plans[index].dayCount) == day }) {
+            insertAt = lastInDay + 1
+        } else {
+            insertAt = items.count
+        }
+        items.insert(moving, at: insertAt)
+
+        plans[index].items = items
+        plans[index].updatedAt = Date()
+        persist()
+    }
+
+    /// itemsByDay と同じ判定で、項目が実際に属する日（範囲外は未割当 nil）を返す。
+    private func effectiveDay(_ item: PlanItem, dayCount: Int) -> Int? {
+        guard let day = item.dayNumber, day >= 1, day <= dayCount else { return nil }
+        return day
     }
 
     /// 指定した項目が、いずれかのプランに含まれているか（追加ボタンの状態表示用）

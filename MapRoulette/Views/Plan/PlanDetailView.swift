@@ -17,6 +17,7 @@ struct PlanDetailView: View {
     @State private var showingMapSheet = false
     @State private var showingMemoEditor = false
     @State private var showingCustomEditor = false
+    @State private var titleDraft = ""
     @State private var memoDraft = ""
 
     private var plan: TravelPlan? {
@@ -41,8 +42,7 @@ struct PlanDetailView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        memoDraft = plan.memo
-                        showingMemoEditor = true
+                        startEditing(plan)
                     } label: {
                         Image(systemName: "square.and.pencil")
                             .foregroundColor(PlanTheme.primary)
@@ -205,22 +205,48 @@ struct PlanDetailView: View {
         )
     }
 
-    // MARK: - メモ編集
+    // MARK: - タイトル・メモ編集
+
+    private func startEditing(_ plan: TravelPlan) {
+        titleDraft = plan.title
+        memoDraft = plan.memo
+        showingMemoEditor = true
+    }
 
     private func memoEditor(for plan: TravelPlan) -> some View {
         NavigationStack {
             ZStack {
                 PlanTheme.backgroundGradient.ignoresSafeArea()
-                VStack {
-                    TextEditor(text: $memoDraft)
-                        .frame(minHeight: 200)
-                        .scrollContentBackground(.hidden)
-                        .planCard()
+                VStack(spacing: 16) {
+                    // タイトル
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(NSLocalizedString("plan.title.label", comment: ""))
+                            .font(.caption.bold())
+                            .foregroundColor(PlanTheme.primary)
+                        TextField(NSLocalizedString("plan.title.placeholder", comment: ""), text: $titleDraft)
+                            .textFieldStyle(.plain)
+                            .font(.title3)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .planCard()
+
+                    // メモ
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(NSLocalizedString("plan.memo.label", comment: ""))
+                            .font(.caption.bold())
+                            .foregroundColor(PlanTheme.primary)
+                        TextEditor(text: $memoDraft)
+                            .frame(minHeight: 160)
+                            .scrollContentBackground(.hidden)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .planCard()
+
                     Spacer()
                 }
                 .padding()
             }
-            .navigationTitle(NSLocalizedString("plan.editmemo", comment: ""))
+            .navigationTitle(NSLocalizedString("plan.edit", comment: ""))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -231,6 +257,8 @@ struct PlanDetailView: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button(NSLocalizedString("common.save", comment: "")) {
                         var updated = plan
+                        let trimmed = titleDraft.trimmingCharacters(in: .whitespacesAndNewlines)
+                        if !trimmed.isEmpty { updated.title = trimmed }
                         updated.memo = memoDraft
                         store.updatePlan(updated)
                         showingMemoEditor = false
@@ -286,8 +314,18 @@ private struct DayDropSection: View {
                     .foregroundColor(.secondary)
                     .frame(maxWidth: .infinity, minHeight: 44)
             } else {
+                // カード間に挿入用のドロップ受け口を挟む。
+                // 各カードへドロップ＝そのカードの直前へ挿入（同じ日なら並び替え、別の日なら移動）。
                 ForEach(items) { item in
-                    PlanItemCard(item: item, store: store, planID: planID, draggable: true)
+                    PlanItemCard(
+                        item: item,
+                        store: store,
+                        planID: planID,
+                        draggable: true,
+                        onDrop: { droppedID in
+                            store.moveItem(droppedID, toDay: day, before: item.id, in: planID)
+                        }
+                    )
                 }
             }
         }
@@ -304,9 +342,11 @@ private struct DayDropSection: View {
                 )
         )
         .shadow(color: PlanTheme.cardShadow, radius: 8, x: 0, y: 3)
+        // セクション全体へのドロップは「その日の末尾へ移動」。カードへの個別ドロップが
+        // 優先されるため、ここに来るのはカードの隙間や空き領域に落とした場合のみ。
         .dropDestination(for: String.self) { droppedIDs, _ in
             guard let idString = droppedIDs.first, let uuid = UUID(uuidString: idString) else { return false }
-            store.assignDay(day, to: uuid, in: planID)
+            store.moveItem(uuid, toDay: day, before: nil, in: planID)
             return true
         } isTargeted: { targeted in
             withAnimation(.easeOut(duration: 0.15)) { isTargeted = targeted }
@@ -324,7 +364,10 @@ private struct PlanItemCard: View {
     let store: TravelPlanStore
     let planID: UUID
     let draggable: Bool
+    /// このカードへドロップされたときの処理（ドロップ元の項目 ID を渡す）。日程モードのみ。
+    var onDrop: ((UUID) -> Void)? = nil
     @State private var showingDetail = false
+    @State private var isDropTargeted = false
 
     var body: some View {
         HStack(spacing: 12) {
@@ -339,15 +382,13 @@ private struct PlanItemCard: View {
                     .font(.subheadline.bold())
                     .foregroundColor(.primary)
                     .lineLimit(1)
-                if item.category.isCustom {
-                    // カスタム項目はメモを 1 行で表示（カテゴリ名は出さない）
-                    if let memo = item.customDetail?.trimmingCharacters(in: .whitespacesAndNewlines), !memo.isEmpty {
-                        Text(memo)
-                            .font(.caption2)
-                            .foregroundColor(.secondary)
-                            .lineLimit(1)
-                    }
-                } else {
+                if let memo = item.customDetail?.trimmingCharacters(in: .whitespacesAndNewlines), !memo.isEmpty {
+                    // メモがあれば 1 行で表示（カスタム・アプリ項目とも共通）
+                    Label(memo, systemImage: "note.text")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                        .lineLimit(1)
+                } else if !item.category.isCustom {
                     HStack(spacing: 6) {
                         Text(item.category.localizedName)
                         if let pref = item.prefecture {
@@ -387,6 +428,16 @@ private struct PlanItemCard: View {
             RoundedRectangle(cornerRadius: 14, style: .continuous)
                 .fill(draggable ? Color(.tertiarySystemGroupedBackground) : Color(.secondarySystemGroupedBackground))
         )
+        // ドロップ先がこのカードのとき、直前に挿入されることを示す青い線を上端に表示。
+        .overlay(alignment: .top) {
+            if isDropTargeted {
+                Capsule()
+                    .fill(PlanTheme.primary)
+                    .frame(height: 3)
+                    .padding(.horizontal, 4)
+                    .offset(y: -6)
+            }
+        }
         .contentShape(Rectangle())
         .onTapGesture {
             showingDetail = true
@@ -394,8 +445,34 @@ private struct PlanItemCard: View {
         .modifier(PlanItemInteraction(draggable: draggable, payload: item.id.uuidString) {
             store.removeItem(item, from: planID)
         })
+        // 日程モードでは各カードがドロップ先になり、ここへ落とすと「この項目の直前」へ挿入される。
+        .modifier(PlanItemDropTarget(enabled: draggable && onDrop != nil, isTargeted: $isDropTargeted) { droppedID in
+            onDrop?(droppedID)
+        })
         .sheet(isPresented: $showingDetail) {
             PlanItemDetailRouter(item: item)
+        }
+    }
+}
+
+/// 日程モードでカードを個別のドロップ先にする修飾子。
+/// onDrop が無いフラット表示などでは何もしない。
+private struct PlanItemDropTarget: ViewModifier {
+    let enabled: Bool
+    @Binding var isTargeted: Bool
+    let onDrop: (UUID) -> Void
+
+    func body(content: Content) -> some View {
+        if enabled {
+            content.dropDestination(for: String.self) { droppedIDs, _ in
+                guard let idString = droppedIDs.first, let uuid = UUID(uuidString: idString) else { return false }
+                onDrop(uuid)
+                return true
+            } isTargeted: { targeted in
+                withAnimation(.easeOut(duration: 0.12)) { isTargeted = targeted }
+            }
+        } else {
+            content
         }
     }
 }

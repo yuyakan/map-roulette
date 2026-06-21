@@ -13,6 +13,7 @@ struct MyPlansView: View {
     @ObservedObject private var store = TravelPlanStore.shared
     @State private var showingNewPlanSheet = false
     @State private var newPlanTitle = ""
+    @State private var editMode: EditMode = .inactive
 
     var body: some View {
         NavigationStack {
@@ -27,6 +28,22 @@ struct MyPlansView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                // 並び替え用の編集トグル（2 件以上あるときだけ表示）
+                if store.plans.count > 1 {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button {
+                            withAnimation {
+                                editMode = editMode.isEditing ? .inactive : .active
+                            }
+                        } label: {
+                            Text(editMode.isEditing
+                                 ? NSLocalizedString("common.done", comment: "")
+                                 : NSLocalizedString("common.edit", comment: ""))
+                                .font(.headline)
+                                .foregroundColor(PlanTheme.primary)
+                        }
+                    }
+                }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         newPlanTitle = ""
@@ -84,29 +101,42 @@ struct MyPlansView: View {
     // MARK: - 一覧
 
     private var planList: some View {
-        ScrollView {
-            LazyVStack(spacing: 16) {
-                ForEach(store.plans) { plan in
-                    NavigationLink {
-                        PlanDetailView(planID: plan.id)
-                    } label: {
-                        PlanCardView(plan: plan)
-                            .contentShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
+        // 並び替え（.onMove）対応のため List を使い、見た目はカード UI を維持する
+        // （区切り線・行背景・標準余白を消し、各行をカードとして描画）。
+        List {
+            ForEach(store.plans) { plan in
+                ZStack {
+                    // 編集モード中は遷移を無効化（並び替え操作に集中させる）
+                    if !editMode.isEditing {
+                        NavigationLink {
+                            PlanDetailView(planID: plan.id)
+                        } label: { EmptyView() }
+                        .opacity(0)
                     }
-                    .buttonStyle(.plain)
-                    .contextMenu {
-                        Button(role: .destructive) {
-                            store.deletePlan(plan)
-                        } label: {
-                            Label(NSLocalizedString("common.delete", comment: ""), systemImage: "trash")
-                        }
+                    PlanCardView(plan: plan)
+                        .contentShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
+                }
+                .listRowSeparator(.hidden)
+                .listRowBackground(Color.clear)
+                .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+                .contextMenu {
+                    Button(role: .destructive) {
+                        store.deletePlan(plan)
+                    } label: {
+                        Label(NSLocalizedString("common.delete", comment: ""), systemImage: "trash")
                     }
                 }
             }
-            .padding(.horizontal)
-            .padding(.top, 8)
-            .padding(.bottom, 24)
+            .onMove { source, destination in
+                store.movePlans(from: source, to: destination)
+            }
+            .onDelete { offsets in
+                store.deletePlans(at: offsets)
+            }
         }
+        .listStyle(.plain)
+        .scrollContentBackground(.hidden)
+        .environment(\.editMode, $editMode)
     }
 
     // MARK: - 新規作成シート

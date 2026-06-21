@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDisplayName</key>
 	<string>旅さきChoice</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>comgooglemaps</string>
+	</array>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3155724310732667~8192172945</string>
 	<key>SKAdNetworkItems</key>

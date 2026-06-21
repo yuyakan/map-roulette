@@ -77,6 +77,17 @@ enum PlanItemCategory: String, Codable, CaseIterable {
 
     /// プランに手動追加できるカスタム種別の一覧。
     static var customCases: [PlanItemCategory] { [.hotel, .transport, .other] }
+
+    /// ユーザーが手動で位置（customCoordinate）を持てるカテゴリか。
+    /// - カスタム項目（ホテル・駅など）: 地図ピンで位置を指定する
+    /// - グルメ・お土産: 元データに座標が無いので任意で店の位置を足せる
+    /// - 観光・温泉・祭・自然: 元データに正確な座標があるため手動位置は持たせない
+    var allowsUserCoordinate: Bool {
+        switch self {
+        case .hotel, .transport, .other, .gourmet, .souvenir: return true
+        case .attraction, .onsen, .festival, .nature: return false
+        }
+    }
 }
 
 // MARK: - PlanItem
@@ -93,6 +104,10 @@ struct PlanItem: Identifiable, Codable, Hashable {
     var customDetail: String?        // ユーザー入力のメモ
     var customLatitude: Double?      // 任意の位置（地図ピン）
     var customLongitude: Double?
+    // 検索で選んだ地点名。設定時は経路案内で座標でなくこの名前を使う（ピンを動かすと nil）。
+    var customPlaceName: String?
+    // 住所（検索選択時は placemark.title、ピン手動移動時は逆ジオコーディング結果）。表示用。
+    var customAddress: String?
 
     /// アプリ項目（既存データ参照）用のイニシャライザ
     init(
@@ -131,7 +146,7 @@ struct PlanItem: Identifiable, Codable, Hashable {
     // 旧フォーマットとの後方互換（カスタム用フィールドは任意デコード）
     enum CodingKeys: String, CodingKey {
         case id, category, prefectureRawValue, name, dayNumber
-        case customDetail, customLatitude, customLongitude
+        case customDetail, customLatitude, customLongitude, customPlaceName, customAddress
     }
 
     init(from decoder: Decoder) throws {
@@ -144,6 +159,14 @@ struct PlanItem: Identifiable, Codable, Hashable {
         customDetail = try c.decodeIfPresent(String.self, forKey: .customDetail)
         customLatitude = try c.decodeIfPresent(Double.self, forKey: .customLatitude)
         customLongitude = try c.decodeIfPresent(Double.self, forKey: .customLongitude)
+        customPlaceName = try c.decodeIfPresent(String.self, forKey: .customPlaceName)
+        customAddress = try c.decodeIfPresent(String.self, forKey: .customAddress)
+    }
+
+    /// 表示用の住所。手動座標が有効なときのみ意味を持つ（customCoordinate と同じ条件）。
+    var effectiveAddress: String? {
+        guard customCoordinate != nil, let a = customAddress?.trimmingCharacters(in: .whitespacesAndNewlines), !a.isEmpty else { return nil }
+        return a
     }
 
     var prefecture: Prefecture? {
@@ -157,19 +180,27 @@ struct PlanItem: Identifiable, Codable, Hashable {
         return PlanItemResolver.detail(category: category, prefecture: prefecture, name: name)
     }
 
-    /// ユーザーが手動で追加した座標（カスタム項目、またはグルメ・お土産への位置追加）。
+    /// ユーザーが手動で追加した座標。位置を持てるカテゴリ以外では無視する
+    /// （観光・温泉等は元データの正確な座標を常に優先するため、過去データが残っていても無効化）。
     var customCoordinate: CLLocationCoordinate2D? {
-        guard let lat = customLatitude, let lng = customLongitude else { return nil }
+        guard category.allowsUserCoordinate,
+              let lat = customLatitude, let lng = customLongitude else { return nil }
         return CLLocationCoordinate2D(latitude: lat, longitude: lng)
     }
 
-    /// 座標。手動追加した座標を最優先し、無ければ元データから引く。
-    /// これによりグルメ・お土産でもユーザーが位置を足せば地図に乗る。
+    /// 座標。手動追加した座標（許可カテゴリのみ）を優先し、無ければ元データから引く。
     var coordinate: CLLocationCoordinate2D? {
         if let custom = customCoordinate { return custom }
         if category.isCustom { return nil }
         guard let prefecture else { return nil }
         return PlanItemResolver.coordinate(category: category, prefecture: prefecture, name: name)
+    }
+
+    /// 経路案内で使う、検索選択された地点名。手動座標が有効なときのみ意味を持つ
+    /// （customCoordinate と同じく、許可カテゴリ以外では無視）。
+    var effectivePlaceName: String? {
+        guard customCoordinate != nil, let n = customPlaceName, !n.isEmpty else { return nil }
+        return n
     }
 }
 

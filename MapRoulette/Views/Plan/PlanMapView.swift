@@ -58,7 +58,7 @@ struct PlanMapView: View {
                 }
                 // 特定の日を選択中で、その日に2地点以上あれば「経路案内」ボタンを下部に表示
                 if let day = selectedDay, dayItems(for: day).count >= 2 {
-                    VStack {
+                    VStack(spacing: 6) {
                         Spacer()
                         Button {
                             openDayRoute(day: day)
@@ -69,9 +69,18 @@ struct PlanMapView: View {
                             )
                         }
                         .buttonStyle(PlanPrimaryButtonStyle())
-                        .padding(.horizontal)
-                        .padding(.bottom, 16)
+                        // Google Maps アプリが無く Web で開く場合のみ、経由地が多いと全ては反映されない旨を注記
+                        if dayItems(for: day).count > 3, !isGoogleMapsAppAvailable {
+                            Text(NSLocalizedString("plan.map.route.weblimit", comment: ""))
+                                .font(.caption2)
+                                .foregroundColor(.secondary)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, 12).padding(.vertical, 4)
+                                .background(Capsule().fill(.ultraThinMaterial))
+                        }
                     }
+                    .padding(.horizontal)
+                    .padding(.bottom, 16)
                 }
             }
             .navigationTitle(plan.title)
@@ -95,12 +104,21 @@ struct PlanMapView: View {
     }
 
     /// Google Maps に渡す地点表現。
-    /// - カスタム項目（ホテル・駅など）: ユーザーが置いた正確な座標を渡す（自由入力名は解決に失敗しやすいため）
+    /// - 検索で選んだ地点名（customPlaceName）があれば最優先（座標でなく名前で表示される）
+    /// - カスタム項目で名前が無い（ピンを動かして決めた）場合は正確な座標を渡す
     /// - アプリ項目（観光・温泉など）: 「地点名 県名」で渡し、同名地の誤解決を減らす
     private func placeQuery(for item: PlanItem) -> String {
+        // 検索で選んだ地点名（有効なときのみ）を最優先
+        if let placeName = item.effectivePlaceName {
+            return placeName
+        }
         if item.category.isCustom {
             if let c = item.coordinate { return "\(c.latitude),\(c.longitude)" }
             return item.name
+        }
+        // グルメ・お土産で位置だけ手で追加した場合は座標で（店名は名所解決できないため）
+        if item.customCoordinate != nil, let c = item.coordinate {
+            return "\(c.latitude),\(c.longitude)"
         }
         if let pref = item.prefecture {
             return "\(item.name) \(pref.prefectureName)"
@@ -108,16 +126,52 @@ struct PlanMapView: View {
         return item.name
     }
 
+    /// Google Maps アプリがインストールされているか。
+    private var isGoogleMapsAppAvailable: Bool {
+        guard let url = URL(string: "comgooglemaps://") else { return false }
+        return UIApplication.shared.canOpenURL(url)
+    }
+
     /// その日の全スポットを経由地として Google Maps の経路を開く。
-    /// 先頭を出発地、末尾を目的地、間を waypoints（最大 9）にする。
+    /// Google Maps アプリがあればアプリ（comgooglemaps://）で開き、無ければ Web にフォールバック。
     private func openDayRoute(day: Int) {
         let items = dayItems(for: day)
         guard items.count >= 2 else { return }
+        let queries = items.map { placeQuery(for: $0) }
 
-        let origin = placeQuery(for: items.first!)
-        let destination = placeQuery(for: items.last!)
-        // 中間地点（Google Maps の上限に合わせ最大 9）
-        let middle = Array(items.dropFirst().dropLast()).prefix(9)
+        // 1) Google Maps アプリ優先
+        if let appURL = googleMapsAppURL(queries: queries),
+           UIApplication.shared.canOpenURL(appURL) {
+            UIApplication.shared.open(appURL)
+            return
+        }
+        // 2) Web フォールバック
+        if let webURL = googleMapsWebURL(queries: queries) {
+            UIApplication.shared.open(webURL)
+        }
+    }
+
+    /// Google Maps アプリ用 URL。daddr に経由地を「+to:」でつなぐ。
+    private func googleMapsAppURL(queries: [String]) -> URL? {
+        guard queries.count >= 2 else { return nil }
+        let saddr = queries.first!
+        // 目的地＋経由地を順に +to: で連結（先頭=出発地を除く全て）
+        let daddr = queries.dropFirst().joined(separator: "+to:")
+        var components = URLComponents(string: "comgooglemaps://")!
+        components.queryItems = [
+            URLQueryItem(name: "saddr", value: saddr),
+            URLQueryItem(name: "daddr", value: daddr),
+            URLQueryItem(name: "directionsmode", value: "driving")
+        ]
+        return components.url
+    }
+
+    /// Web 版 Google Maps 用 URL（経由地が多いと一部しか反映されない場合がある）。
+    private func googleMapsWebURL(queries: [String]) -> URL? {
+        guard queries.count >= 2 else { return nil }
+        let origin = queries.first!
+        let destination = queries.last!
+        let middle = Array(queries.dropFirst().dropLast())
         var components = URLComponents(string: "https://www.google.com/maps/dir/")!
         var query = [
             URLQueryItem(name: "api", value: "1"),
@@ -126,11 +180,10 @@ struct PlanMapView: View {
             URLQueryItem(name: "travelmode", value: "driving")
         ]
         if !middle.isEmpty {
-            query.append(URLQueryItem(name: "waypoints", value: middle.map(placeQuery).joined(separator: "|")))
+            query.append(URLQueryItem(name: "waypoints", value: middle.joined(separator: "|")))
         }
         components.queryItems = query
-        guard let url = components.url else { return }
-        UIApplication.shared.open(url)
+        return components.url
     }
 
     // MARK: - 地図

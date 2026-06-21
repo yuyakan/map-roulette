@@ -93,6 +93,9 @@ struct AttractionDetailView: View {
                             .foregroundColor(.orange)
                             .cornerRadius(12)
                     }
+
+                    // プランから開いたときの下部フローティングボタンを避ける余白
+                    Color.clear.frame(height: 40)
                 }
                 .padding()
             }

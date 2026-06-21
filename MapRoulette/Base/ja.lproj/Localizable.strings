@@ -5121,6 +5121,8 @@
 "plan.custom.location.pick" = "位置を選ぶ";
 "plan.custom.location.clear" = "位置を削除";
 "common.edit" = "編集";
+"common.done" = "完了";
+"plan.address.copy" = "住所をコピー";
 "plan.day.additem" = "この日に項目を追加";
 "plan.day.addcustom" = "ホテル・駅などを追加";
 "plan.custom.add" = "ホテル・駅などを追加";
@@ -5132,3 +5134,10 @@
 "plan.map.route.day" = "%d日目を経路案内";
 "plan.locatable.add" = "お店の位置を追加";
 "plan.locatable.change" = "お店の位置を変更";
+"plan.location.saveas" = "%@ として保存";
+"plan.location.savepoint" = "この地点を保存";
+"plan.map.route.weblimit" = "ブラウザで開いた場合、すべての経由地が反映されないことがあります";
+"plan.edit" = "プランを編集";
+"plan.item.addmemo" = "メモを追加";
+"plan.item.editmemo" = "メモを編集";
+"plan.item.memo" = "メモ";

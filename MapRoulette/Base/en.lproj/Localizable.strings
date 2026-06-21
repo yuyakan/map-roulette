@@ -5123,6 +5123,8 @@
 "plan.custom.location.pick" = "Pick location";
 "plan.custom.location.clear" = "Remove location";
 "common.edit" = "Edit";
+"common.done" = "Done";
+"plan.address.copy" = "Copy address";
 "plan.day.additem" = "Add item to this day";
 "plan.day.addcustom" = "Add hotel, station, etc.";
 "plan.custom.add" = "Add hotel, station, etc.";
@@ -5134,3 +5136,10 @@
 "plan.map.route.day" = "Route for Day %d";
 "plan.locatable.add" = "Add shop location";
 "plan.locatable.change" = "Change shop location";
+"plan.location.saveas" = "Save as %@";
+"plan.location.savepoint" = "Save this point";
+"plan.map.route.weblimit" = "In a browser, some stops may not be included in the route";
+"plan.edit" = "Edit plan";
+"plan.item.addmemo" = "Add memo";
+"plan.item.editmemo" = "Edit memo";
+"plan.item.memo" = "Memo";

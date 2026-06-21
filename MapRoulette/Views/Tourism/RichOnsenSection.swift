@@ -311,12 +311,11 @@ struct OnsenDetailView2: View {
                         }
                     }
                     
-                    Spacer()
                 }
                 .padding()
             }
             .navigationBarHidden(true)
-            
+
             VStack() {
                 HStack {
                     HStack {
