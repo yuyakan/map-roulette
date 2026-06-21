@@ -1373,6 +1373,10 @@ struct NatureSpotDetailView: View {
                                 .stroke(spot.spotType.color, lineWidth: 1.5)
                         )
                     }
+
+                    // YouTube / Instagram で検索
+                    SocialSearchButtons(query: spot.name)
+
                     Spacer()
                 }
                 .padding()

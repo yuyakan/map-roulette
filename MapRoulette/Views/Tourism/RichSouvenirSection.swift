@@ -332,7 +332,10 @@ struct SouvenirDetailView: View {
                             SInfoCard(title: "souvenir.popularity".localized, value: "\(item.popularity)/5", icon: "star.fill", color: .yellow)
                         }
                     }
-                    
+
+                    // YouTube / Instagram で検索
+                    SocialSearchButtons(query: item.name)
+
                     Spacer(minLength: 100)
                 }
                 .padding()

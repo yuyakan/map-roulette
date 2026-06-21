@@ -310,7 +310,9 @@ struct OnsenDetailView2: View {
                             )
                         }
                     }
-                    
+
+                    // YouTube / Instagram で検索
+                    SocialSearchButtons(query: onsen.name)
                 }
                 .padding()
             }
