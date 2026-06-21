@@ -1144,55 +1144,23 @@ struct RichOtherFestivalSection: View {
                     Text(NSLocalizedString("festival.seasons", comment: "春・秋・冬の祭り"))
                         .font(.title2)
                         .fontWeight(.bold)
-                    
+
                     Text(String(format: NSLocalizedString("festival.experience_seasons", comment: "%@の四季を体験"), prefecture.prefectureName))
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
-                
+
                 Spacer()
-                
-                // カテゴリフィルターボタン
-                Menu {
-                    Button("food_category_all".localized) {
-                        selectedCategory = nil
-                    }
-                    
-                    ForEach(OtherFestivalCategory.allCases, id: \.self) { category in
-                        Button(action: {
-                            selectedCategory = category
-                        }) {
-                            Label(category.localizedName, systemImage: category.icon)
-                        }
-                    }
-                } label: {
-                    Image(systemName: "line.3.horizontal.decrease.circle.fill")
-                        .font(.title3)
-                        .foregroundColor(.blue)
-                }
             }
-            
-            // カテゴリタグ（選択中の場合）
-            if let category = selectedCategory {
-                HStack {
-                    Label(category.localizedName, systemImage: category.icon)
-                        .font(.caption)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 6)
-                        .background(category.color.opacity(0.2))
-                        .foregroundColor(category.color)
-                        .clipShape(Capsule())
-                    
-                    Button("groumet_clear".localized) {
-                        selectedCategory = nil
-                    }
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    
-                    Spacer()
-                }
-            }
-            
+
+            // カテゴリフィルター（横スクロールのブランドカラーのチップ）
+            FestivalCategoryFilterBar(
+                categories: OtherFestivalCategory.allCases,
+                name: { $0.localizedName },
+                icon: { $0.icon },
+                selected: $selectedCategory
+            )
+
             // その他祭りアイテムのグリッド
             LazyVGrid(columns: [
                 GridItem(.flexible(), spacing: 12),
@@ -1218,13 +1186,13 @@ struct RichOtherFestivalSection: View {
                         Image(systemName: "chevron.down")
                             .font(.caption)
                     }
-                    .foregroundColor(.blue)
+                    .foregroundColor(PlanTheme.primary)
                     .padding(.vertical, 12)
                     .frame(maxWidth: .infinity)
                     .background(
                         RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color.blue.opacity(0.3), lineWidth: 1)
-                            .background(Color.blue.opacity(0.05))
+                            .stroke(PlanTheme.primary.opacity(0.3), lineWidth: 1)
+                            .background(PlanTheme.primary.opacity(0.05))
                     )
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 12))

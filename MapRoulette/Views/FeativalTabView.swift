@@ -295,18 +295,42 @@ struct AllFestivalsComparisonView: View {
 //                        StatBadge(title: "カテゴリ", value: "\(IntegratedFestivalCategory.allCases.count)", color: .purple)
 //                    }
                     
-                    // 検索バー
-                    HStack {
+                    // 検索バー（ブランドカラーの土台に乗せた白いカプセル型）
+                    HStack(spacing: 10) {
                         Image(systemName: "magnifyingglass")
-                            .foregroundColor(.gray)
-                        
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundColor(PlanTheme.primary)
+
                         TextField(NSLocalizedString("search.placeholder", comment: "検索プレースホルダー"), text: $searchText)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .font(.system(size: 16))
+                            .submitLabel(.search)
+                            .autocorrectionDisabled()
+
+                        if !searchText.isEmpty {
+                            Button {
+                                searchText = ""
+                            } label: {
+                                Image(systemName: "xmark.circle.fill")
+                                    .font(.system(size: 16))
+                                    .foregroundColor(.secondary.opacity(0.6))
+                            }
+                            .buttonStyle(.plain)
+                            .transition(.opacity.combined(with: .scale))
+                        }
                     }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 12)
+                    .background(
+                        Capsule()
+                            .fill(Color(.systemBackground))
+                            .shadow(color: .black.opacity(0.12), radius: 6, x: 0, y: 3)
+                    )
+                    .animation(.easeInOut(duration: 0.2), value: searchText.isEmpty)
                     .padding(.horizontal)
                 }
-                .padding(.vertical, 16)
-                .background(Color(.systemGray6))
+                .padding(.vertical, 18)
+                // 土台にしっかりブランドのグラデーション（オレンジ→コーラル）を敷く
+                .background(PlanTheme.brandGradient)
                 
                 // フィルターバー
                 ScrollView(.horizontal, showsIndicators: false) {
