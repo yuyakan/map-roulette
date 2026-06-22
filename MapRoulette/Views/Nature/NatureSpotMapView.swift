@@ -34,13 +34,12 @@ enum NatureSpotType: String, CaseIterable {
         }
     }
     
-    /// スポット種別の色。白文字を載せても読めるよう明度・彩度を手調整した値に統一。
     var color: Color {
         switch self {
-        case .nightView: return Color(red: 0.82, green: 0.58, blue: 0.13) // アンバー（夜景）
-        case .starry:    return Color(red: 0.40, green: 0.40, blue: 0.78) // インディゴ（星空）
-        case .sea:       return Color(red: 0.13, green: 0.58, blue: 0.66) // ティール（海）
-        case .camping:   return Color(red: 0.24, green: 0.62, blue: 0.40) // グリーン（キャンプ）
+        case .nightView: return .yellow
+        case .starry: return .indigo
+        case .sea: return .sea
+        case .camping: return .green
         }
     }
 }
