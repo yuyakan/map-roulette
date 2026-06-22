@@ -126,7 +126,7 @@ struct RichSouvenirSection: View {
             }
         }
         .padding(.horizontal)
-        .sheet(item: $selectedItem) { item in
+        .fullScreenCover(item: $selectedItem) { item in
             SouvenirDetailView(item: item, prefecture: prefecture)
         }
     }
@@ -261,94 +261,137 @@ struct SouvenirDetailView: View {
     let item: SouvenirItem
     let prefecture: Prefecture
     @Environment(\.dismiss) private var dismiss
-    
+
+    private var accent: Color { item.category.color }
+
     var body: some View {
-        NavigationView {
+        ZStack(alignment: .topTrailing) {
+            accent.ignoresSafeArea()
+
             ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
-                    // ヘッダー画像風エリア
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(
-                                LinearGradient(
-                                    gradient: Gradient(colors: [
-                                        item.category.color.opacity(0.3),
-                                        item.category.color.opacity(0.1)
-                                    ]),
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
-                            .frame(height: 200)
-                        
-                        VStack(spacing: 16) {
-                            ZStack {
-                                Circle()
-                                    .fill(item.category.color)
-                                    .frame(width: 80, height: 80)
-                                
-                                Image(systemName: item.imageSymbol)
-                                    .font(.largeTitle)
-                                    .foregroundColor(.white)
-                            }
-                            
-                            VStack(spacing: 4) {
-                                Text(item.name)
-                                    .font(.title)
-                                    .fontWeight(.bold)
-
-                                Text(prefecture.prefectureName)
-                                    .font(.subheadline)
-                                    .foregroundColor(.secondary)
-                            }
-                        }
+                VStack(alignment: .leading, spacing: 18) {
+                    header
+                    VStack(alignment: .leading, spacing: 18) {
+                        actionCard
+                        descriptionCard
+                        infoCard
                     }
-
-                    AddToPlanButton {
-                        PlanItem(
-                            category: .souvenir,
-                            prefecture: prefecture,
-                            name: item.name
-                        )
-                    }
-                    .frame(maxWidth: .infinity)
-
-                    // 詳細情報
-                    VStack(alignment: .leading, spacing: 16) {
-                        Text(String(localized: "souvenir.about"))
-                            .font(.headline)
-                        
-                        Text(item.description)
-                            .font(.body)
-                            .lineSpacing(4)
-                        
-                        // 詳細情報カード
-                        LazyVGrid(columns: [
-                            GridItem(.flexible()),
-                            GridItem(.flexible())
-                        ], spacing: 12) {
-                            SInfoCard(title: "souvenir.bestSeason".localized, value: item.bestSeason, icon: "calendar.circle.fill", color: .blue)
-                            SInfoCard(title: "souvenir.category".localized, value: item.category.rawValue.localized, icon: item.category.icon, color: item.category.color)
-                            SInfoCard(title: "souvenir.popularity".localized, value: "\(item.popularity)/5", icon: "star.fill", color: .yellow)
-                        }
-                    }
-
-                    // YouTube / Instagram で検索
-                    SocialSearchButtons(query: item.name)
-
-                    Spacer(minLength: 100)
+                    .padding(.horizontal, 18)
                 }
-                .padding()
+                .padding(.bottom, 32)
             }
-            .navigationTitle(String(localized: "souvenir.detailTitle"))
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("back".localized) {
-                        dismiss()
+            .background(PlanTheme.backgroundGradient.ignoresSafeArea())
+            .ignoresSafeArea(edges: .top)
+
+            closeButton
+        }
+        .navigationBarHidden(true)
+    }
+
+    private var closeButton: some View {
+        Button { dismiss() } label: {
+            Image(systemName: "xmark")
+                .font(.system(size: 15, weight: .bold))
+                .foregroundColor(accent)
+                .frame(width: 36, height: 36)
+                .background(.ultraThinMaterial, in: Circle())
+                .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
+                .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
+        }
+        .padding(.top, 56)
+        .padding(.trailing, 18)
+    }
+
+    private var header: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            ZStack {
+                Circle().fill(.white.opacity(0.22)).frame(width: 76, height: 76)
+                Image(systemName: item.imageSymbol)
+                    .font(.system(size: 32, weight: .semibold))
+                    .foregroundColor(.white)
+            }
+            .padding(.top, 60)
+
+            VStack(alignment: .leading, spacing: 6) {
+                Text(item.name)
+                    .font(.system(size: 28, weight: .heavy, design: .rounded))
+                    .foregroundColor(.white)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text(prefecture.prefectureName)
+                    .font(.subheadline.weight(.medium))
+                    .foregroundColor(.white.opacity(0.9))
+            }
+
+            HStack(spacing: 10) {
+                Label(item.category.rawValue.localized, systemImage: item.category.icon)
+                    .font(.caption.weight(.bold))
+                    .padding(.horizontal, 12).padding(.vertical, 6)
+                    .foregroundColor(.white)
+                    .background(.white.opacity(0.22), in: Capsule())
+                HStack(spacing: 2) {
+                    ForEach(1...5, id: \.self) { star in
+                        Image(systemName: star <= item.popularity ? "star.fill" : "star")
+                            .font(.caption2)
+                            .foregroundColor(star <= item.popularity ? .white : .white.opacity(0.4))
                     }
                 }
+                Spacer(minLength: 0)
             }
+        }
+        .padding(.horizontal, 22).padding(.bottom, 24)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            accent
+                .clipShape(UnevenRoundedRectangle(bottomLeadingRadius: 28, bottomTrailingRadius: 28, style: .continuous))
+                .ignoresSafeArea(edges: .top)
+        )
+    }
+
+    private var actionCard: some View {
+        VStack(spacing: 14) {
+            AddToPlanButton {
+                PlanItem(category: .souvenir, prefecture: prefecture, name: item.name)
+            }
+            HStack(spacing: 6) {
+                Text("gourmet.explore_more".localized)
+                    .font(.caption.weight(.bold)).foregroundColor(.secondary)
+                Spacer()
+            }
+            SocialSearchButtons(query: item.name)
+        }
+        .planCard()
+    }
+
+    private var descriptionCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            sectionHeader(icon: "text.quote", title: String(localized: "souvenir.about"))
+            Text(item.description).font(.body).lineSpacing(6)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .planCard()
+    }
+
+    private var infoCard: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            sectionHeader(icon: "info.circle", title: "basic_info".localized)
+                .padding(.bottom, 14)
+            InfoRow(icon: "yensign.circle.fill", title: "price_range".localized, value: item.price, color: accent)
+            Divider().padding(.leading, 52)
+            InfoRow(icon: "calendar.circle.fill", title: "souvenir.bestSeason".localized, value: item.bestSeason, color: accent)
+            Divider().padding(.leading, 52)
+            InfoRow(icon: item.category.icon, title: "souvenir.category".localized, value: item.category.rawValue.localized, color: accent)
+            Divider().padding(.leading, 52)
+            InfoRow(icon: "trophy.fill", title: "souvenir.popularity".localized, value: "\(item.popularity)/5", color: accent)
+        }
+        .planCard()
+    }
+
+    private func sectionHeader(icon: String, title: String) -> some View {
+        HStack(spacing: 10) {
+            RoundedRectangle(cornerRadius: 2, style: .continuous).fill(accent).frame(width: 4, height: 18)
+            Image(systemName: icon).font(.subheadline.weight(.semibold)).foregroundColor(accent)
+            Text(title).font(.system(.headline, design: .rounded)).fontWeight(.bold)
         }
     }
 }

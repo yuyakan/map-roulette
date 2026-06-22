@@ -27,15 +27,16 @@ enum SouvenirCategory: String, CaseIterable {
     case ceramics = "souvenirCategory.ceramics"
     case regional = "souvenirCategory.regional"
     
+    /// カテゴリ色。白文字を載せても読めるよう明度・彩度を手調整した値に統一。
     var color: Color {
         switch self {
-        case .sweets: return .pink
-        case .food: return .orange
-        case .crafts: return .brown
-        case .drinks: return .purple
-        case .textiles: return .blue
-        case .ceramics: return .gray
-        case .regional: return .green
+        case .sweets:   return Color(red: 0.86, green: 0.35, blue: 0.58) // ピンク
+        case .food:     return Color(red: 0.93, green: 0.45, blue: 0.13) // オレンジ
+        case .crafts:   return Color(red: 0.60, green: 0.42, blue: 0.28) // ブラウン
+        case .drinks:   return Color(red: 0.55, green: 0.38, blue: 0.78) // パープル
+        case .textiles: return Color(red: 0.16, green: 0.50, blue: 0.85) // ブルー
+        case .ceramics: return Color(red: 0.45, green: 0.45, blue: 0.50) // グレー
+        case .regional: return Color(red: 0.24, green: 0.62, blue: 0.40) // グリーン
         }
     }
     
