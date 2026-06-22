@@ -49,15 +49,16 @@ enum OtherFestivalCategory: String, CaseIterable {
         }
     }
     
+    /// カテゴリ色。白文字を載せても読めるよう明度・彩度を手調整した値に統一。
     var color: Color {
         switch self {
-        case .spring: return .green
-        case .autumn: return .orange
-        case .winter: return .blue
-        case .sakura: return .pink
-        case .illumination: return .yellow
-        case .snow: return .cyan
-        case .traditional: return .purple
+        case .spring:       return Color(red: 0.24, green: 0.62, blue: 0.40) // グリーン
+        case .autumn:       return Color(red: 0.85, green: 0.45, blue: 0.20) // オレンジ
+        case .winter:       return Color(red: 0.16, green: 0.50, blue: 0.85) // ブルー
+        case .sakura:       return Color(red: 0.86, green: 0.35, blue: 0.58) // ピンク
+        case .illumination: return Color(red: 0.82, green: 0.58, blue: 0.13) // アンバー
+        case .snow:         return Color(red: 0.13, green: 0.58, blue: 0.66) // ティール
+        case .traditional:  return Color(red: 0.55, green: 0.38, blue: 0.78) // パープル
         }
     }
 }
@@ -1187,7 +1188,7 @@ struct RichOtherFestivalSection: View {
             }
         }
         .padding(.horizontal)
-        .sheet(item: $selectedItem) { item in
+        .fullScreenCover(item: $selectedItem) { item in
             OtherFestivalDetailView(item: item, prefecture: prefecture)
         }
     }
@@ -1332,226 +1333,175 @@ struct OtherFestivalDetailView: View {
     let item: OtherFestivalItem
     let prefecture: Prefecture
     @Environment(\.dismiss) private var dismiss
-    
+
+    private var accent: Color { item.category.color }
+
     var body: some View {
-        NavigationView {
+        ZStack(alignment: .topTrailing) {
+            accent.ignoresSafeArea()
+
             ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
-                    // ヘッダーセクション
-                    VStack(spacing: 20) {
-                        // 大きなアイコンヘッダー
-                        ZStack {
-                            Circle()
-                                .fill(
-                                    LinearGradient(
-                                        gradient: Gradient(colors: [
-                                            item.category.color.opacity(0.8),
-                                            item.category.color
-                                        ]),
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    )
-                                )
-                                .frame(width: 120, height: 120)
-                            
-                            Image(systemName: item.imageSymbol)
-                                .font(.system(size: 50))
-                                .foregroundColor(.white)
-                        }
-                        .padding(.top, 40)
-                        
-                        // タイトル情報
-                        VStack(spacing: 8) {
-                            Text(item.name)
-                                .font(.system(size: 32, weight: .bold, design: .rounded))
-                                .foregroundStyle(
-                                    LinearGradient(
-                                        gradient: Gradient(colors: [item.category.color, item.category.color.opacity(0.7)]),
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
-                                .multilineTextAlignment(.center)
-                            
-                            Text(String(format: "festival.of_prefecture".localized, prefecture.prefectureName))
-                                .font(.title3)
-                                .foregroundColor(.secondary)
-                            
-                            // 規模表示
-                            HStack(spacing: 4) {
-                                ForEach(1...5, id: \.self) { star in
-                                    Image(systemName: star <= item.scale ? "star.fill" : "star")
-                                        .font(.title3)
-                                        .foregroundColor(star <= item.scale ? .orange : .gray.opacity(0.3))
-                                }
-                            }
-                            .padding(.top, 8)
-
-                            AddToPlanButton {
-                                PlanItem(
-                                    category: .festival,
-                                    prefecture: prefecture,
-                                    name: item.name
-                                )
-                            }
-                            .padding(.top, 4)
-                        }
-
-                        // カテゴリータグ
-                        Label(item.category.localizedName, systemImage: item.category.icon)
-                            .font(.headline)
-                            .padding(.horizontal, 20)
-                            .padding(.vertical, 10)
-                            .background(item.category.color.opacity(0.2))
-                            .foregroundColor(item.category.color)
-                            .clipShape(Capsule())
+                VStack(alignment: .leading, spacing: 18) {
+                    header
+                    VStack(alignment: .leading, spacing: 18) {
+                        actionCard
+                        descriptionCard
+                        infoCard
+                        if !item.features.isEmpty { highlightsCard }
+                        if item.coordinate != nil { mapCard }
                     }
-                    .frame(maxWidth: .infinity)
-                    .padding(.horizontal)
-                    
-                    VStack(alignment: .leading, spacing: 20) {
-                        // 説明文
-                        VStack(alignment: .leading, spacing: 12) {
-                            HStack {
-                                Image(systemName: "text.quote")
-                                    .foregroundColor(.blue)
-                                Text("detailed_info".localized)
-                                    .font(.headline)
-                                    .fontWeight(.semibold)
-                            }
-                            
-                            Text(item.description)
-                                .font(.body)
-                                .lineSpacing(6)
-                                .padding()
-                                .background(
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .fill(Color(.systemGray6))
-                                        .stroke(item.category.color.opacity(0.3), lineWidth: 1)
-                                )
-                        }
-                        
-                        // 詳細情報カード
-                        VStack(alignment: .leading, spacing: 12) {
-                            HStack {
-                                Image(systemName: "info.circle")
-                                    .foregroundColor(.green)
-                                Text("festival.event_info", comment: "開催情報")
-                                    .font(.headline)
-                                    .fontWeight(.semibold)
-                            }
-                            
-                            LazyVGrid(columns: [
-                                GridItem(.flexible()),
-                                GridItem(.flexible())
-                            ], spacing: 16) {
-                                OtherFestivalInfoCard(icon: "calendar.circle.fill", title: NSLocalizedString("festival.period", comment: "開催時期"), value: item.month, color: .blue)
-                                OtherFestivalInfoCard(icon: "clock.circle.fill", title: NSLocalizedString("festival.duration", comment: "期間"), value: item.duration, color: .green)
-                                OtherFestivalInfoCard(icon: "location.circle.fill", title: NSLocalizedString("festival.location", comment: "開催地"), value: item.location, color: .red)
-                                OtherFestivalInfoCard(icon: "trophy.fill", title: NSLocalizedString("festival.scale", comment: "規模"), value: getScaleText(item.scale), color: .orange)
-                            }
-                        }
-                        
-                        // 特徴・見どころ
-                        VStack(alignment: .leading, spacing: 12) {
-                            HStack {
-                                Image(systemName: "star.fill")
-                                    .foregroundColor(.yellow)
-                                Text(NSLocalizedString("festival.highlights", comment: "見どころ・特徴"))
-                                    .font(.headline)
-                                    .fontWeight(.semibold)
-                            }
-                            
-                            VStack(alignment: .leading, spacing: 8) {
-                                ForEach(item.features, id: \.self) { feature in
-                                    HStack(alignment: .top, spacing: 12) {
-                                        Image(systemName: "checkmark.circle.fill")
-                                            .foregroundColor(.green)
-                                            .font(.caption)
-                                            .padding(.top, 2)
-                                        
-                                        Text(feature)
-                                            .font(.subheadline)
-                                            .fixedSize(horizontal: false, vertical: true)
-                                        
-                                        Spacer()
-                                    }
-                                }
-                            }
-                            .padding()
-                            .background(
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill(Color(.systemBackground))
-                                    .stroke(Color(.systemGray4), lineWidth: 1)
-                            )
-                        }
+                    .padding(.horizontal, 18)
+                }
+                .padding(.bottom, 32)
+            }
+            .background(PlanTheme.backgroundGradient.ignoresSafeArea())
+            .ignoresSafeArea(edges: .top)
 
-                        // 楽しみ方の提案
-                        VStack(alignment: .leading, spacing: 12) {
-                            HStack {
-                                Image(systemName: "lightbulb.fill")
-                                    .foregroundColor(.yellow)
-                                Text(NSLocalizedString("festival.tips", comment: "楽しみ方のヒント"))
-                                    .font(.headline)
-                                    .fontWeight(.semibold)
-                            }
-                            
-                            VStack(alignment: .leading, spacing: 8) {
-                                ForEach(getOtherRecommendations(for: item), id: \.self) { recommendation in
-                                    HStack(alignment: .top, spacing: 12) {
-                                        Image(systemName: "heart.circle.fill")
-                                            .foregroundColor(.pink)
-                                            .font(.caption)
-                                            .padding(.top, 2)
-                                        
-                                        Text(recommendation)
-                                            .font(.subheadline)
-                                            .fixedSize(horizontal: false, vertical: true)
-                                        
-                                        Spacer()
-                                    }
-                                }
-                            }
-                            .padding()
-                            .background(
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill(Color(.systemGray6))
-                                    .stroke(item.category.color.opacity(0.3), lineWidth: 1)
-                            )
-                        }
+            closeButton
+        }
+        .navigationBarHidden(true)
+    }
 
-                        // YouTube / Instagram で検索
-                        SocialSearchButtons(query: item.name)
+    private var closeButton: some View {
+        Button { dismiss() } label: {
+            Image(systemName: "xmark")
+                .font(.system(size: 15, weight: .bold))
+                .foregroundColor(accent)
+                .frame(width: 36, height: 36)
+                .background(.ultraThinMaterial, in: Circle())
+                .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
+                .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
+        }
+        .padding(.top, 56)
+        .padding(.trailing, 18)
+    }
+
+    private var header: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            ZStack {
+                Circle().fill(.white.opacity(0.22)).frame(width: 76, height: 76)
+                Image(systemName: item.imageSymbol)
+                    .font(.system(size: 32, weight: .semibold))
+                    .foregroundColor(.white)
+            }
+            .padding(.top, 60)
+
+            VStack(alignment: .leading, spacing: 6) {
+                Text(item.name)
+                    .font(.system(size: 28, weight: .heavy, design: .rounded))
+                    .foregroundColor(.white)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text(String(format: "festival.of_prefecture".localized, prefecture.prefectureName))
+                    .font(.subheadline.weight(.medium))
+                    .foregroundColor(.white.opacity(0.9))
+            }
+
+            HStack(spacing: 10) {
+                Label(item.category.localizedName, systemImage: item.category.icon)
+                    .font(.caption.weight(.bold))
+                    .padding(.horizontal, 12).padding(.vertical, 6)
+                    .foregroundColor(.white)
+                    .background(.white.opacity(0.22), in: Capsule())
+                HStack(spacing: 2) {
+                    ForEach(1...5, id: \.self) { star in
+                        Image(systemName: star <= item.scale ? "star.fill" : "star")
+                            .font(.caption2)
+                            .foregroundColor(star <= item.scale ? .white : .white.opacity(0.4))
                     }
-                    .padding(.horizontal)
+                }
+                Spacer(minLength: 0)
+            }
+        }
+        .padding(.horizontal, 22).padding(.bottom, 24)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            accent
+                .clipShape(UnevenRoundedRectangle(bottomLeadingRadius: 28, bottomTrailingRadius: 28, style: .continuous))
+                .ignoresSafeArea(edges: .top)
+        )
+    }
 
-                    // プランから開いたときの下部フローティングボタンを避ける余白
-                    Color.clear.frame(height: 40)
+    private var actionCard: some View {
+        VStack(spacing: 14) {
+            AddToPlanButton {
+                PlanItem(category: .festival, prefecture: prefecture, name: item.name)
+            }
+            HStack(spacing: 6) {
+                Text("gourmet.explore_more".localized)
+                    .font(.caption.weight(.bold)).foregroundColor(.secondary)
+                Spacer()
+            }
+            SocialSearchButtons(query: item.name)
+        }
+        .planCard()
+    }
+
+    private var descriptionCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            sectionHeader(icon: "text.quote", title: "detailed_info".localized)
+            Text(item.description).font(.body).lineSpacing(6)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .planCard()
+    }
+
+    private var infoCard: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            sectionHeader(icon: "info.circle", title: NSLocalizedString("festival.event_info", comment: "開催情報"))
+                .padding(.bottom, 14)
+            FestivalInfoRow(icon: "calendar.circle.fill", title: NSLocalizedString("festival.period", comment: ""), value: item.month, color: accent)
+            Divider().padding(.leading, 52)
+            FestivalInfoRow(icon: "clock.circle.fill", title: NSLocalizedString("festival.duration", comment: ""), value: item.duration, color: accent)
+            Divider().padding(.leading, 52)
+            FestivalInfoRow(icon: "location.circle.fill", title: NSLocalizedString("festival.location", comment: ""), value: item.location, color: accent)
+            Divider().padding(.leading, 52)
+            FestivalInfoRow(icon: "trophy.fill", title: NSLocalizedString("festival.scale", comment: ""), value: getScaleText(item.scale), color: accent)
+        }
+        .planCard()
+    }
+
+    private var highlightsCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            sectionHeader(icon: "star.fill", title: NSLocalizedString("festival.highlights", comment: ""))
+            VStack(alignment: .leading, spacing: 10) {
+                ForEach(item.features, id: \.self) { feature in
+                    HStack(alignment: .top, spacing: 10) {
+                        Image(systemName: "checkmark.circle.fill")
+                            .foregroundColor(accent).font(.caption).padding(.top, 2)
+                        Text(feature).font(.subheadline)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Spacer(minLength: 0)
+                    }
                 }
             }
-            .navigationBarHidden(true)
-            .overlay(
-                // 閉じるボタン
-                VStack {
-                    HStack {
-                        Spacer()
-                        Button(action: {
-                            dismiss()
-                        }) {
-                            Image(systemName: "xmark.circle.fill")
-                                .font(.title)
-                                .foregroundColor(.gray)
-                                .background(Color.white)
-                                .clipShape(Circle())
-                        }
-                        .padding()
-                    }
-                    Spacer()
-                }
-            )
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .planCard()
+    }
+
+    @ViewBuilder
+    private var mapCard: some View {
+        if let coordinate = item.coordinate {
+            VStack(alignment: .leading, spacing: 12) {
+                sectionHeader(icon: "map", title: NSLocalizedString("festival.location", comment: ""))
+                FestivalMapView(coordinate: coordinate, name: item.name, accent: accent)
+                    .frame(height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .planCard()
         }
     }
-    
+
+    private func sectionHeader(icon: String, title: String) -> some View {
+        HStack(spacing: 10) {
+            RoundedRectangle(cornerRadius: 2, style: .continuous).fill(accent).frame(width: 4, height: 18)
+            Image(systemName: icon).font(.subheadline.weight(.semibold)).foregroundColor(accent)
+            Text(title).font(.system(.headline, design: .rounded)).fontWeight(.bold)
+        }
+    }
+
     private func getScaleText(_ scale: Int) -> String {
         switch scale {
         case 5: return "★★★★★"
