@@ -142,19 +142,7 @@ struct GourmetDetailView: View {
         .padding(.horizontal, 22)
         .padding(.bottom, 24)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            // 最背面レイヤーと同じ単色にして、上端で境目が出ないようにする。
-            // 下端のみ角丸にして本文と分離する。
-            item.category.color
-                .clipShape(
-                    UnevenRoundedRectangle(
-                        bottomLeadingRadius: 28,
-                        bottomTrailingRadius: 28,
-                        style: .continuous
-                    )
-                )
-                .ignoresSafeArea(edges: .top)
-        )
+        // ヘッダー自身は背景を持たず、最背面の category.color をそのまま透かす（段差を出さない）。
     }
 
     // MARK: - 説明

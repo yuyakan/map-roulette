@@ -104,18 +104,7 @@ struct AttractionDetailView: View {
         .padding(.horizontal, 22)
         .padding(.bottom, 24)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            // グルメと同じく単色（最背面と同色で境目を出さない）。下端のみ角丸。
-            accent
-                .clipShape(
-                    UnevenRoundedRectangle(
-                        bottomLeadingRadius: 28,
-                        bottomTrailingRadius: 28,
-                        style: .continuous
-                    )
-                )
-                .ignoresSafeArea(edges: .top)
-        )
+        // ヘッダー自身は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
     }
 
     // MARK: - アクション白カード

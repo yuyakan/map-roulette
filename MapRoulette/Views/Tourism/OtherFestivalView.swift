@@ -1414,11 +1414,7 @@ struct OtherFestivalDetailView: View {
         }
         .padding(.horizontal, 22).padding(.bottom, 24)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            accent
-                .clipShape(UnevenRoundedRectangle(bottomLeadingRadius: 28, bottomTrailingRadius: 28, style: .continuous))
-                .ignoresSafeArea(edges: .top)
-        )
+        // ヘッダー自身は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
     }
 
     private var actionCard: some View {

@@ -1285,7 +1285,7 @@ struct NatureSpotDetailView: View {
         } label: {
             Image(systemName: "xmark")
                 .font(.system(size: 15, weight: .bold))
-                .foregroundColor(accent)
+                .foregroundColor(.white)
                 .frame(width: 36, height: 36)
                 .background(.ultraThinMaterial, in: Circle())
                 .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
@@ -1332,11 +1332,7 @@ struct NatureSpotDetailView: View {
         }
         .padding(.horizontal, 22).padding(.bottom, 24)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            accent
-                .clipShape(UnevenRoundedRectangle(bottomLeadingRadius: 28, bottomTrailingRadius: 28, style: .continuous))
-                .ignoresSafeArea(edges: .top)
-        )
+        // ヘッダー自身は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
     }
 
     // MARK: - アクション白カード
