@@ -34,12 +34,13 @@ enum NatureSpotType: String, CaseIterable {
         }
     }
     
+    /// スポット種別の色。白文字を載せても読めるよう明度・彩度を手調整した値に統一。
     var color: Color {
         switch self {
-        case .nightView: return .yellow
-        case .starry: return .indigo
-        case .sea: return .sea
-        case .camping: return .green
+        case .nightView: return Color(red: 0.82, green: 0.58, blue: 0.13) // アンバー（夜景）
+        case .starry:    return Color(red: 0.40, green: 0.40, blue: 0.78) // インディゴ（星空）
+        case .sea:       return Color(red: 0.13, green: 0.58, blue: 0.66) // ティール（海）
+        case .camping:   return Color(red: 0.24, green: 0.62, blue: 0.40) // グリーン（キャンプ）
         }
     }
 }
@@ -1249,173 +1250,186 @@ struct NatureSpotDetailView: View {
         ))
     }
     
+    /// スポット種別の基調色。
+    private var accent: Color { spot.spotType.color }
+
     var body: some View {
-        ZStack {
+        ZStack(alignment: .topTrailing) {
+            accent.ignoresSafeArea()
+
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
-                    // ヘッダー
-                    VStack(spacing: 16) {
-                        Image(systemName: spot.imageSymbol)
-                            .font(.system(size: 60))
-                            .foregroundColor(spot.spotType.color)
-                        
-                        Text(spot.name)
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                        
-                        HStack {
-                            Image(systemName: spot.spotType.icon)
-                                .foregroundColor(spot.spotType.color)
-                            Text(spot.spotType.localizedName)
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                                .foregroundColor(spot.spotType.color)
-                        }
-                        
-                        // 人気度
-                        HStack(spacing: 4) {
-                            ForEach(0..<5) { index in
-                                Image(systemName: index < spot.popularity ? "star.fill" : "star")
-                                    .foregroundColor(.orange)
-                            }
-                            Text("(\(spot.popularity)/5)")
-                                .foregroundColor(.secondary)
-                                .font(.caption)
-                        }
-
-                        AddToPlanButton {
-                            PlanItem(
-                                category: .nature,
-                                prefecture: spot.prefecture ?? Prefecture.nearest(to: spot.coordinate),
-                                name: spot.name
-                            )
-                        }
+                VStack(alignment: .leading, spacing: 18) {
+                    header
+                    VStack(alignment: .leading, spacing: 18) {
+                        actionCard
+                        descriptionCard
+                        mapCard
                     }
-                    .frame(maxWidth: .infinity)
-                    .padding(.top)
-
-                    Divider()
-                    
-                    // 説明
-                    VStack(alignment: .leading, spacing: 12) {
-                        Text("spot_features".localized)
-                            .font(.headline)
-                            .fontWeight(.semibold)
-                        
-                        Text(spot.description)
-                            .font(.body)
-                            .lineSpacing(4)
-                    }
-                    
-                    Divider()
-                    
-                    // マップセクション
-                    VStack(alignment: .leading, spacing: 16) {
-                        HStack {
-                            Image(systemName: "map")
-                                .foregroundColor(.orange)
-                            Text("spot_map".localized)
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                        }
-                        
-                        Map(coordinateRegion: $region, annotationItems: [spot]) { spotItem in
-                            MapAnnotation(coordinate: spotItem.coordinate) {
-                                VStack(spacing: 4) {
-                                    Image(systemName: spotItem.spotType.icon)
-                                        .font(.title2)
-                                        .foregroundColor(spotItem.spotType.color)
-                                        .background(
-                                            Circle()
-                                                .fill(Color.white)
-                                                .frame(width: 32, height: 32)
-                                        )
-                                        .shadow(radius: 3)
-                                    
-                                    Text(spotItem.name)
-                                        .font(.caption2)
-                                        .fontWeight(.semibold)
-                                        .padding(.horizontal, 6)
-                                        .padding(.vertical, 2)
-                                        .background(Color.white.opacity(0.9))
-                                        .cornerRadius(4)
-                                        .shadow(radius: 2)
-                                }
-                            }
-                        }
-                        .frame(height: 300)
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                        .onAppear {
-                            region.center = spot.coordinate
-                        }
-                    }
-                    
-                    // 外部地図アプリを開くボタン
-                    Button(action: {
-                        openInExternalMaps()
-                    }) {
-                        HStack {
-                            Image(systemName: "map.fill")
-                                .foregroundColor(spot.spotType.color)
-                            Text("open_external_map".localized)
-                                .foregroundColor(spot.spotType.color)
-                                .fontWeight(.semibold)
-                            Spacer()
-                            Image(systemName: "arrow.up.right")
-                                .foregroundColor(spot.spotType.color)
-                        }
-                        .padding()
-                        .background(Color.clear)
-                        .cornerRadius(12)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .stroke(spot.spotType.color, lineWidth: 1.5)
-                        )
-                    }
-
-                    // YouTube / Instagram で検索
-                    SocialSearchButtons(query: spot.name)
-
-                    Spacer()
+                    .padding(.horizontal, 18)
                 }
-                .padding()
+                .padding(.bottom, 32)
             }
-            .navigationBarHidden(true)
-            
-            VStack() {
-                HStack {
-                    HStack {
-                        Button(action: {
-                            InterstitialViewModel.count += 2
-                            dismiss()
-                       }) {
-                           HStack(spacing: 8) {
-                               Image(systemName: "chevron.left")
-                                   .resizable()
-                                   .frame(width: 10, height: 14)
-                               Text("back".localized)
-                                   .font(.system(size: 16))
-                                   .fontWeight(.medium)
-                           }
-                       }
+            .background(PlanTheme.backgroundGradient.ignoresSafeArea())
+            .ignoresSafeArea(edges: .top)
+
+            closeButton
+        }
+        .navigationBarHidden(true)
+    }
+
+    // MARK: - 閉じるボタン
+
+    private var closeButton: some View {
+        Button {
+            InterstitialViewModel.count += 2
+            dismiss()
+        } label: {
+            Image(systemName: "xmark")
+                .font(.system(size: 15, weight: .bold))
+                .foregroundColor(accent)
+                .frame(width: 36, height: 36)
+                .background(.ultraThinMaterial, in: Circle())
+                .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
+                .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
+        }
+        .padding(.top, 56)
+        .padding(.trailing, 18)
+    }
+
+    // MARK: - ヒーローヘッダー
+
+    private var header: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            ZStack {
+                Circle().fill(.white.opacity(0.22)).frame(width: 76, height: 76)
+                Image(systemName: spot.imageSymbol)
+                    .font(.system(size: 32, weight: .semibold))
+                    .foregroundColor(.white)
+            }
+            .padding(.top, 60)
+
+            VStack(alignment: .leading, spacing: 6) {
+                Text(spot.name)
+                    .font(.system(size: 28, weight: .heavy, design: .rounded))
+                    .foregroundColor(.white)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+
+            HStack(spacing: 10) {
+                Label(spot.spotType.localizedName, systemImage: spot.spotType.icon)
+                    .font(.caption.weight(.bold))
+                    .padding(.horizontal, 12).padding(.vertical, 6)
+                    .foregroundColor(.white)
+                    .background(.white.opacity(0.22), in: Capsule())
+                HStack(spacing: 2) {
+                    ForEach(0..<5) { index in
+                        Image(systemName: index < spot.popularity ? "star.fill" : "star")
+                            .font(.caption2)
+                            .foregroundColor(index < spot.popularity ? .white : .white.opacity(0.4))
                     }
-                    .foregroundColor(.black)
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .background(.white)
-                    .cornerRadius(20)
-                    .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
-                    Spacer()
                 }
-                .padding(.horizontal)
-                .padding(.top, 10)
-                
-                Spacer()
+                Spacer(minLength: 0)
             }
         }
+        .padding(.horizontal, 22).padding(.bottom, 24)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            accent
+                .clipShape(UnevenRoundedRectangle(bottomLeadingRadius: 28, bottomTrailingRadius: 28, style: .continuous))
+                .ignoresSafeArea(edges: .top)
+        )
     }
-    
+
+    // MARK: - アクション白カード
+
+    private var actionCard: some View {
+        VStack(spacing: 14) {
+            AddToPlanButton {
+                PlanItem(
+                    category: .nature,
+                    prefecture: spot.prefecture ?? Prefecture.nearest(to: spot.coordinate),
+                    name: spot.name
+                )
+            }
+            HStack(spacing: 6) {
+                Text("gourmet.explore_more".localized)
+                    .font(.caption.weight(.bold)).foregroundColor(.secondary)
+                Spacer()
+            }
+            SocialSearchButtons(query: spot.name)
+        }
+        .planCard()
+    }
+
+    // MARK: - 説明
+
+    private var descriptionCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            sectionHeader(icon: "text.quote", title: "spot_features".localized)
+            Text(spot.description).font(.body).lineSpacing(6)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .planCard()
+    }
+
+    // MARK: - 地図カード
+
+    private var mapCard: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            sectionHeader(icon: "map", title: "spot_map".localized)
+
+            Map(coordinateRegion: $region, annotationItems: [spot]) { spotItem in
+                MapAnnotation(coordinate: spotItem.coordinate) {
+                    Image(systemName: spotItem.spotType.icon)
+                        .font(.title3)
+                        .foregroundColor(accent)
+                        .frame(width: 34, height: 34)
+                        .background(Circle().fill(Color.white))
+                        .shadow(radius: 3)
+                }
+            }
+            .frame(height: 220)
+            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+            .onAppear { region.center = spot.coordinate }
+
+            Button(action: { openInExternalMaps() }) {
+                HStack(spacing: 12) {
+                    Image(systemName: "map.fill")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundColor(accent)
+                        .frame(width: 32, height: 32)
+                        .background(.white, in: Circle())
+                    Text("open_external_map".localized)
+                        .font(.system(size: 16, weight: .bold, design: .rounded))
+                        .foregroundColor(.white)
+                    Spacer(minLength: 0)
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 13, weight: .bold))
+                        .foregroundColor(.white.opacity(0.85))
+                }
+                .padding(.horizontal, 14)
+                .padding(.vertical, 12)
+                .frame(maxWidth: .infinity)
+                .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(accent))
+                .shadow(color: accent.opacity(0.3), radius: 6, y: 3)
+            }
+            .buttonStyle(.plain)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .planCard()
+    }
+
+    // MARK: - 共通
+
+    private func sectionHeader(icon: String, title: String) -> some View {
+        HStack(spacing: 10) {
+            RoundedRectangle(cornerRadius: 2, style: .continuous).fill(accent).frame(width: 4, height: 18)
+            Image(systemName: icon).font(.subheadline.weight(.semibold)).foregroundColor(accent)
+            Text(title).font(.system(.headline, design: .rounded)).fontWeight(.bold)
+        }
+    }
+
     private func openInExternalMaps() {
         let searchQuery = spot.name
         let encodedQuery = searchQuery.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
