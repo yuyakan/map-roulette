@@ -11,190 +11,238 @@ struct GourmetDetailView: View {
     let item: GourmetItem
     let prefecture: Prefecture
     @Environment(\.dismiss) private var dismiss
-    
+
+    /// 一覧カードと色を揃えるためのカテゴリ色グラデーション。
+    private var categoryGradient: LinearGradient {
+        LinearGradient(
+            colors: [item.category.color.opacity(0.85), item.category.color],
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing
+        )
+    }
+
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
-                    // ヘッダーセクション（画像なし）
-                    VStack(spacing: 20) {
-                        // 大きなアイコンヘッダー
-                        ZStack {
-                            Circle()
-                                .fill(
-                                    LinearGradient(
-                                        gradient: Gradient(colors: [
-                                            item.category.color.opacity(0.8),
-                                            item.category.color
-                                        ]),
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
+            ZStack(alignment: .topTrailing) {
+                // 上方向にバウンスしてもヘッダー背後に白が出ないよう、
+                // 画面全体の最背面にヘッダーと同じカテゴリ色を敷く（同色なので境目が出ない）。
+                item.category.color
+                    .ignoresSafeArea()
+
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 18) {
+                        header
+                        VStack(alignment: .leading, spacing: 18) {
+                            // アクションをまとめた白カード（カラー背景から浮かせる）
+                            VStack(spacing: 14) {
+                                // 主アクション：プランに追加（ブランド色で主従を明確に）
+                                AddToPlanButton {
+                                    PlanItem(
+                                        category: .gourmet,
+                                        prefecture: prefecture,
+                                        name: item.name
                                     )
-                                )
-                                .frame(width: 120, height: 120)
-                            
-                            Image(systemName: item.imageSymbol)
-                                .font(.system(size: 50))
-                                .foregroundColor(.white)
-                        }
-                        .padding(.top, 40)
-                        
-                        // タイトル情報
-                        VStack(spacing: 8) {
-                            Text(item.name)
-                                .font(.system(size: 32, weight: .bold, design: .rounded))
-                                .foregroundStyle(
-                                    LinearGradient(
-                                        gradient: Gradient(colors: [item.category.color, item.category.color.opacity(0.7)]),
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
-                                .multilineTextAlignment(.center)
-                            
-                            Text(String(format: "prefecture_specialties_format".localized, prefecture.prefectureName))
-                                .font(.title3)
-                                .foregroundColor(.secondary)
-                            
-                            // 人気度表示
-                            HStack(spacing: 4) {
-                                ForEach(1...5, id: \.self) { star in
-                                    Image(systemName: star <= item.popularity ? "star.fill" : "star")
-                                        .font(.title3)
-                                        .foregroundColor(star <= item.popularity ? .yellow : .gray.opacity(0.3))
                                 }
-                            }
-                            .padding(.top, 8)
 
-                            AddToPlanButton {
-                                PlanItem(
-                                    category: .gourmet,
-                                    prefecture: prefecture,
-                                    name: item.name
-                                )
-                            }
-                            .padding(.top, 4)
-                        }
-
-                        // カテゴリータグ
-                        Label(item.category.rawValue.localized, systemImage: item.category.icon)
-                            .font(.headline)
-                            .padding(.horizontal, 20)
-                            .padding(.vertical, 10)
-                            .background(item.category.color.opacity(0.2))
-                            .foregroundColor(item.category.color)
-                            .clipShape(Capsule())
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding(.horizontal)
-                    
-                    VStack(alignment: .leading, spacing: 20) {
-                        // 説明文
-                        VStack(alignment: .leading, spacing: 12) {
-                            HStack {
-                                Image(systemName: "text.quote")
-                                    .foregroundColor(.blue)
-                                Text("detailed_info".localized)
-                                    .font(.headline)
-                                    .fontWeight(.semibold)
-                            }
-                            
-                            Text(item.description)
-                                .font(.body)
-                                .lineSpacing(6)
-                                .padding()
-                                .background(
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .fill(Color(.systemGray6))
-                                        .stroke(item.category.color.opacity(0.3), lineWidth: 1)
-                                )
-                        }
-                        
-                        // 詳細情報カード
-                        VStack(alignment: .leading, spacing: 12) {
-                            HStack {
-                                Image(systemName: "info.circle")
-                                    .foregroundColor(.green)
-                                Text("basic_info".localized)
-                                    .font(.headline)
-                                    .fontWeight(.semibold)
-                            }
-                            
-                            LazyVGrid(columns: [
-                                GridItem(.flexible()),
-                                GridItem(.flexible())
-                            ], spacing: 16) {
-                                InfoCard(icon: "yensign.circle.fill", title: "price_range".localized, value: item.price, color: .green)
-                                InfoCard(icon: "calendar.circle.fill", title: "best_season".localized, value: item.bestSeason, color: .orange)
-                                InfoCard(icon: item.category.icon, title: item.category.rawValue.localized, value: item.category.rawValue.localized, color: item.category.color)
-                                InfoCard(icon: "trophy.fill", title: "popularity_rank".localized, value: getPopularityText(item.popularity), color: .purple)
-                            }
-                        }
-                        
-                        // おすすめの楽しみ方
-                        VStack(alignment: .leading, spacing: 12) {
-                            HStack {
-                                Image(systemName: "lightbulb.fill")
-                                    .foregroundColor(.yellow)
-                                Text("recommended_enjoyment".localized)
-                                    .font(.headline)
-                                    .fontWeight(.semibold)
-                            }
-                            
-                            VStack(alignment: .leading, spacing: 8) {
-                                ForEach(getRecommendations(for: item), id: \.self) { recommendation in
-                                    HStack(alignment: .top, spacing: 12) {
-                                        Image(systemName: "checkmark.circle.fill")
-                                            .foregroundColor(.green)
-                                            .font(.caption)
-                                            .padding(.top, 2)
-                                        
-                                        Text(recommendation)
-                                            .font(.subheadline)
-                                            .fixedSize(horizontal: false, vertical: true)
-                                        
-                                        Spacer()
-                                    }
+                                // 外部リンク見出し
+                                HStack(spacing: 6) {
+                                    Text("gourmet.explore_more".localized)
+                                        .font(.caption.weight(.bold))
+                                        .foregroundColor(.secondary)
+                                    Spacer()
                                 }
+
+                                SocialSearchButtons(
+                                    query: item.name,
+                                    tabelog: TabelogSearch(areaSlug: prefecture.rawValue, keyword: item.name)
+                                )
                             }
-                            .padding()
-                            .background(
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill(Color(.systemBackground))
-                                    .stroke(Color(.systemGray4), lineWidth: 1)
-                            )
+                            .planCard()
+
+                            descriptionCard
+                            infoGrid
+                            recommendationsCard
                         }
-
-                        // YouTube / Instagram で検索
-                        SocialSearchButtons(query: item.name)
-
+                        .padding(.horizontal, 18)
                     }
-                    .padding(.horizontal)
+                    .padding(.bottom, 32)
                 }
+                .background(PlanTheme.backgroundGradient.ignoresSafeArea())
+                .ignoresSafeArea(edges: .top)
+
+                closeButton
             }
             .navigationBarHidden(true)
-            .overlay(
-                // 閉じるボタン
-                VStack {
-                    HStack {
-                        Spacer()
-                        Button(action: {
-                            dismiss()
-                        }) {
-                            Image(systemName: "xmark.circle.fill")
-                                .font(.title)
-                                .foregroundColor(.gray)
-                                .background(Color.white)
-                                .clipShape(Circle())
-                        }
-                        .padding()
-                    }
-                    Spacer()
-                }
-            )
         }
     }
-    
+
+    // MARK: - 閉じるボタン（ブランドの白丸フローティング）
+
+    private var closeButton: some View {
+        Button {
+            dismiss()
+        } label: {
+            Image(systemName: "xmark")
+                .font(.system(size: 15, weight: .bold))
+                .foregroundColor(item.category.color)
+                .frame(width: 36, height: 36)
+                .background(.ultraThinMaterial, in: Circle())
+                .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
+                .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
+        }
+        .padding(.top, 56)
+        .padding(.trailing, 18)
+    }
+
+    // MARK: - ヒーローヘッダー（ブランドグラデーション）
+
+    private var header: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            // 上部の余白（セーフエリア分）＋カテゴリアイコン
+            ZStack {
+                Circle()
+                    .fill(.white.opacity(0.22))
+                    .frame(width: 76, height: 76)
+                Image(systemName: item.imageSymbol)
+                    .font(.system(size: 34, weight: .semibold))
+                    .foregroundColor(.white)
+            }
+            .padding(.top, 60)
+
+            VStack(alignment: .leading, spacing: 6) {
+                Text(item.name)
+                    .font(.system(size: 28, weight: .heavy, design: .rounded))
+                    .foregroundColor(.white)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Text(String(format: "prefecture_specialties_format".localized, prefecture.prefectureName))
+                    .font(.subheadline.weight(.medium))
+                    .foregroundColor(.white.opacity(0.9))
+            }
+
+            // カテゴリ・評価（白系のガラス調チップ）
+            HStack(spacing: 10) {
+                Label(item.category.rawValue.localized, systemImage: item.category.icon)
+                    .font(.caption.weight(.bold))
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .foregroundColor(.white)
+                    .background(.white.opacity(0.22), in: Capsule())
+
+                HStack(spacing: 2) {
+                    ForEach(1...5, id: \.self) { star in
+                        Image(systemName: star <= item.popularity ? "star.fill" : "star")
+                            .font(.caption2)
+                            .foregroundColor(star <= item.popularity ? .white : .white.opacity(0.4))
+                    }
+                }
+                Spacer(minLength: 0)
+            }
+        }
+        .padding(.horizontal, 22)
+        .padding(.bottom, 24)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            // 最背面レイヤーと同じ単色にして、上端で境目が出ないようにする。
+            // 下端のみ角丸にして本文と分離する。
+            item.category.color
+                .clipShape(
+                    UnevenRoundedRectangle(
+                        bottomLeadingRadius: 28,
+                        bottomTrailingRadius: 28,
+                        style: .continuous
+                    )
+                )
+                .ignoresSafeArea(edges: .top)
+        )
+    }
+
+    // MARK: - 説明
+
+    private var descriptionCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            sectionHeader(icon: "text.quote", title: "detailed_info".localized)
+            Text(item.description)
+                .font(.body)
+                .lineSpacing(6)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .planCard()
+    }
+
+    // MARK: - 基本情報（行リスト形式で密度を上げる）
+
+    private var infoGrid: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            sectionHeader(icon: "info.circle", title: "basic_info".localized)
+                .padding(.bottom, 14)
+
+            InfoRow(icon: "yensign.circle.fill",
+                    title: "price_range".localized,
+                    value: item.price,
+                    color: item.category.color)
+            Divider().padding(.leading, 52)
+            InfoRow(icon: "calendar.circle.fill",
+                    title: "best_season".localized,
+                    value: item.bestSeason,
+                    color: item.category.color)
+            Divider().padding(.leading, 52)
+            InfoRow(icon: item.category.icon,
+                    title: "category".localized,
+                    value: item.category.rawValue.localized,
+                    color: item.category.color)
+            Divider().padding(.leading, 52)
+            InfoRow(icon: "trophy.fill",
+                    title: "popularity_rank".localized,
+                    value: getPopularityText(item.popularity),
+                    color: item.category.color)
+        }
+        .planCard()
+    }
+
+    // MARK: - おすすめの楽しみ方
+
+    private var recommendationsCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            sectionHeader(icon: "lightbulb.fill", title: "recommended_enjoyment".localized)
+            VStack(alignment: .leading, spacing: 10) {
+                ForEach(getRecommendations(for: item), id: \.self) { recommendation in
+                    HStack(alignment: .top, spacing: 10) {
+                        Image(systemName: "checkmark.circle.fill")
+                            .foregroundColor(item.category.color)
+                            .font(.caption)
+                            .padding(.top, 2)
+                        Text(recommendation)
+                            .font(.subheadline)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Spacer(minLength: 0)
+                    }
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .planCard()
+    }
+
+    // MARK: - 共通
+
+    private func sectionHeader(icon: String, title: String) -> some View {
+        HStack(spacing: 10) {
+            // カテゴリ色のアクセントバー＋アイコン
+            RoundedRectangle(cornerRadius: 2, style: .continuous)
+                .fill(categoryGradient)
+                .frame(width: 4, height: 18)
+            Image(systemName: icon)
+                .font(.subheadline.weight(.semibold))
+                .foregroundColor(item.category.color)
+            Text(title)
+                .font(.system(.headline, design: .rounded))
+                .fontWeight(.bold)
+        }
+    }
+
+
     private func getPopularityText(_ popularity: Int) -> String {
         switch popularity {
         case 5: return "★★★★★"
@@ -254,34 +302,32 @@ struct GourmetDetailView: View {
     }
 }
 
-// 情報カードコンポーネント
-struct InfoCard: View {
+// 情報行コンポーネント（アイコンチップ＋ラベル＋値で横幅を活かす）
+struct InfoRow: View {
     let icon: String
     let title: String
     let value: String
     let color: Color
-    
+
     var body: some View {
-        VStack(spacing: 8) {
+        HStack(spacing: 14) {
             Image(systemName: icon)
-                .font(.title2)
+                .font(.system(size: 17, weight: .semibold))
                 .foregroundColor(color)
-            
+                .frame(width: 38, height: 38)
+                .background(color.opacity(0.12), in: RoundedRectangle(cornerRadius: 11, style: .continuous))
+
             Text(title)
-                .font(.caption)
+                .font(.subheadline)
                 .foregroundColor(.secondary)
-            
+
+            Spacer(minLength: 12)
+
             Text(value)
-                .font(.system(size: 14, weight: .semibold))
-                .multilineTextAlignment(.center)
-                .lineLimit(2)
+                .font(.system(size: 15, weight: .bold, design: .rounded))
+                .foregroundColor(.primary)
+                .multilineTextAlignment(.trailing)
         }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 16)
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(color.opacity(0.1))
-                .stroke(color.opacity(0.3), lineWidth: 1)
-        )
+        .padding(.vertical, 10)
     }
 }

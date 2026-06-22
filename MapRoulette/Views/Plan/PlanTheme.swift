@@ -71,6 +71,10 @@ extension View {
 // MARK: - ブランドボタンスタイル
 
 struct PlanPrimaryButtonStyle: ButtonStyle {
+    /// 塗りの色。nil のときはブランドグラデーション（既定）。
+    /// 画面のカテゴリ色に合わせたいときだけ指定する。
+    var tint: Color? = nil
+
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.headline)
@@ -80,11 +84,19 @@ struct PlanPrimaryButtonStyle: ButtonStyle {
             .frame(maxWidth: .infinity)
             .background(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(PlanTheme.brandGradient)
+                    .fill(fill)
             )
-            .shadow(color: PlanTheme.primary.opacity(0.3), radius: 8, x: 0, y: 4)
+            .shadow(color: (tint ?? PlanTheme.primary).opacity(0.3), radius: 8, x: 0, y: 4)
             .opacity(configuration.isPressed ? 0.85 : 1.0)
             .scaleEffect(configuration.isPressed ? 0.98 : 1.0)
             .animation(.easeOut(duration: 0.15), value: configuration.isPressed)
+    }
+
+    private var fill: AnyShapeStyle {
+        if let tint {
+            return AnyShapeStyle(tint)
+        } else {
+            return AnyShapeStyle(PlanTheme.brandGradient)
+        }
     }
 }

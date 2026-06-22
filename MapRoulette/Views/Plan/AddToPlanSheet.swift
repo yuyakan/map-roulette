@@ -181,6 +181,9 @@ struct AddToPlanSheet: View {
 /// compact = true のときはアイコンのみの小型表示（カード内などの省スペース用）。
 struct AddToPlanButton: View {
     var compact: Bool = false
+    /// 通常ボタンの塗り色。nil のときはブランドグラデーション（既定）。
+    /// 画面のカテゴリ色に揃えたいときだけ指定する。
+    var tint: Color? = nil
     let makeItem: () -> PlanItem
     @State private var showingSheet = false
 
@@ -191,26 +194,27 @@ struct AddToPlanButton: View {
             if compact {
                 Image(systemName: "plus.circle.fill")
                     .font(.system(size: 22))
-                    .foregroundStyle(.white, PlanTheme.primary)
+                    .foregroundStyle(.white, tint ?? PlanTheme.primary)
             } else {
                 Label(NSLocalizedString("plan.add.button", comment: ""), systemImage: "plus.circle.fill")
             }
         }
-        .modifier(AddButtonStyle(compact: compact))
+        .modifier(AddButtonStyle(compact: compact, tint: tint))
         .sheet(isPresented: $showingSheet) {
             AddToPlanSheet(item: makeItem())
         }
     }
 }
 
-/// compact のときはプレーン、通常時はブランドのグラデーションボタンに。
+/// compact のときはプレーン、通常時はブランド（または指定色）のボタンに。
 private struct AddButtonStyle: ViewModifier {
     let compact: Bool
+    var tint: Color? = nil
     func body(content: Content) -> some View {
         if compact {
             content.buttonStyle(.plain)
         } else {
-            content.buttonStyle(PlanPrimaryButtonStyle())
+            content.buttonStyle(PlanPrimaryButtonStyle(tint: tint))
         }
     }
 }

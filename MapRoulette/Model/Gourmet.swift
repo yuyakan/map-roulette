@@ -28,15 +28,17 @@ enum FoodCategory: String, CaseIterable {
     case drinks = "food_category_drinks"
     case vegetables = "food_category_vegetables"
     
+    /// カテゴリ色。白文字を載せても読めるよう、明度・彩度を手調整した値に統一している。
+    /// （システム色の .yellow / .orange などは明るすぎて白文字が破綻するため使わない）
     var color: Color {
         switch self {
-        case .ramen: return .orange
-        case .seafood: return .blue
-        case .meat: return .red
-        case .sweets: return .pink
-        case .local: return .green
-        case .drinks: return .purple
-        case .vegetables: return .yellow
+        case .ramen:      return Color(red: 0.93, green: 0.45, blue: 0.13) // オレンジ
+        case .seafood:    return Color(red: 0.16, green: 0.50, blue: 0.85) // ブルー
+        case .meat:       return Color(red: 0.84, green: 0.27, blue: 0.30) // レッド
+        case .sweets:     return Color(red: 0.86, green: 0.35, blue: 0.58) // ピンク
+        case .local:      return Color(red: 0.24, green: 0.62, blue: 0.40) // グリーン
+        case .drinks:     return Color(red: 0.55, green: 0.38, blue: 0.78) // パープル
+        case .vegetables: return Color(red: 0.82, green: 0.58, blue: 0.13) // 黄系→読めるアンバー
         }
     }
     
