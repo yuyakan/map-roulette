@@ -127,7 +127,7 @@ struct RichGourmetSection: View {
             }
         }
         .padding(.horizontal)
-        .sheet(item: $selectedItem) { item in
+        .fullScreenCover(item: $selectedItem) { item in
             GourmetDetailView(item: item, prefecture: prefecture)
         }
     }

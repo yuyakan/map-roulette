@@ -23,15 +23,17 @@ enum OnsenType: String, CaseIterable {
         NSLocalizedString("onsen_type.\(self.rawValue)", comment: "")
     }
     
+    /// 温泉タイプ色。白文字を載せても読めるよう明度・彩度を手調整した値に統一。
+    /// （システム色の .cyan / .mint / .orange などは明るすぎて白文字が破綻するため使わない）
     var color: Color {
         switch self {
-        case .scenic: return .blue
-        case .historical: return .brown
-        case .therapeutic: return .green
-        case .resort: return .purple
-        case .mountain: return .orange
-        case .seaside: return .cyan
-        case .ski: return .mint
+        case .scenic:      return Color(red: 0.16, green: 0.50, blue: 0.85) // ブルー
+        case .historical:  return Color(red: 0.60, green: 0.42, blue: 0.28) // ブラウン
+        case .therapeutic: return Color(red: 0.24, green: 0.62, blue: 0.40) // グリーン
+        case .resort:      return Color(red: 0.55, green: 0.38, blue: 0.78) // パープル
+        case .mountain:    return Color(red: 0.85, green: 0.45, blue: 0.20) // オレンジ
+        case .seaside:     return Color(red: 0.13, green: 0.58, blue: 0.66) // ティール
+        case .ski:         return Color(red: 0.22, green: 0.64, blue: 0.58) // ミント系
         }
     }
     

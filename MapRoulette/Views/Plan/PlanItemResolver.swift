@@ -92,7 +92,7 @@ struct PlanItemDetailRouter: View {
                 if let original = prefecture.onsenItems.first(where: { $0.name == item.name }),
                    let fixed = OnsenDataRepository.shared.getFixedOnsen(name: original.name, type: original.onsenType) {
                     PlanLocatableDetailView(item: item) {
-                        OnsenDetailView2(onsen: fixed)
+                        OnsenDetailView(onsen: fixed)
                     }
                 } else { fallback }
 

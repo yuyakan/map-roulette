@@ -4,6 +4,8 @@
 //
 //  観光スポットの詳細画面。
 //  地図表示・外部マップ起動・「プランに追加」を行う。
+//  デザインはグルメ詳細と統一（ヒーローヘッダー／アクション白カード／カード群）。
+//  観光にはカテゴリ色がないため、ブランドカラー（PlanTheme）を基調にする。
 //
 
 import SwiftUI
@@ -14,6 +16,9 @@ struct AttractionDetailView: View {
     let prefecture: Prefecture
     @Environment(\.dismiss) private var dismiss
     @State private var region: MKCoordinateRegion
+
+    /// 観光の基調色（ブランドのオレンジ）。
+    private var accent: Color { PlanTheme.primary }
 
     init(attraction: LocalizedAttractionLocation, prefecture: Prefecture) {
         self.attraction = attraction
@@ -26,89 +31,185 @@ struct AttractionDetailView: View {
 
     var body: some View {
         NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
-                    // ヘッダー
-                    VStack(spacing: 16) {
-                        ZStack {
-                            Circle()
-                                .fill(
-                                    LinearGradient(
-                                        gradient: Gradient(colors: [.blue.opacity(0.8), .purple.opacity(0.6)]),
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    )
-                                )
-                                .frame(width: 100, height: 100)
-                            Image(systemName: "location.circle.fill")
-                                .font(.system(size: 44))
-                                .foregroundColor(.white)
+            ZStack(alignment: .topTrailing) {
+                // 上方向バウンス時にヘッダー背後へ白が出ないよう最背面に基調色を敷く。
+                accent.ignoresSafeArea()
+
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 18) {
+                        header
+                        VStack(alignment: .leading, spacing: 18) {
+                            actionCard
+                            if !attraction.description.isEmpty {
+                                descriptionCard
+                            }
+                            mapCard
                         }
-                        .padding(.top, 24)
-
-                        Text(attraction.name)
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-
-                        Text(prefecture.prefectureName)
-                            .font(.title3)
-                            .foregroundColor(.secondary)
-
-                        AddToPlanButton {
-                            PlanItem(
-                                category: .attraction,
-                                prefecture: prefecture,
-                                name: attraction.name
-                            )
-                        }
+                        .padding(.horizontal, 18)
                     }
-                    .frame(maxWidth: .infinity)
-
-                    Divider()
-
-                    // 説明
-                    if !attraction.description.isEmpty {
-                        Text(attraction.description)
-                            .font(.body)
-                            .lineSpacing(4)
-                    }
-
-                    // 地図
-                    Map(coordinateRegion: $region, annotationItems: [attraction]) { spot in
-                        MapMarker(coordinate: spot.coordinate, tint: .orange)
-                    }
-                    .frame(height: 220)
-                    .cornerRadius(16)
-
-                    // 外部マップで開く
-                    Button {
-                        openInMaps()
-                    } label: {
-                        Label(NSLocalizedString("attraction.open_in_maps", comment: ""), systemImage: "map.fill")
-                            .font(.headline)
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(Color.orange.opacity(0.15))
-                            .foregroundColor(.orange)
-                            .cornerRadius(12)
-                    }
-
-                    // YouTube / Instagram で検索
-                    SocialSearchButtons(query: attraction.name)
-
-                    // プランから開いたときの下部フローティングボタンを避ける余白
-                    Color.clear.frame(height: 40)
+                    .padding(.bottom, 32)
                 }
-                .padding()
+                .background(PlanTheme.backgroundGradient.ignoresSafeArea())
+                .ignoresSafeArea(edges: .top)
+
+                closeButton
             }
-            .navigationTitle(attraction.name)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button(NSLocalizedString("common.close", comment: "")) { dismiss() }
+            .navigationBarHidden(true)
+        }
+    }
+
+    // MARK: - 閉じるボタン
+
+    private var closeButton: some View {
+        Button {
+            dismiss()
+        } label: {
+            Image(systemName: "xmark")
+                .font(.system(size: 15, weight: .bold))
+                .foregroundColor(accent)
+                .frame(width: 36, height: 36)
+                .background(.ultraThinMaterial, in: Circle())
+                .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
+                .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
+        }
+        .padding(.top, 56)
+        .padding(.trailing, 18)
+    }
+
+    // MARK: - ヒーローヘッダー
+
+    private var header: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            ZStack {
+                Circle()
+                    .fill(.white.opacity(0.22))
+                    .frame(width: 76, height: 76)
+                Image(systemName: "mappin.and.ellipse")
+                    .font(.system(size: 32, weight: .semibold))
+                    .foregroundColor(.white)
+            }
+            .padding(.top, 60)
+
+            VStack(alignment: .leading, spacing: 6) {
+                Text(attraction.name)
+                    .font(.system(size: 28, weight: .heavy, design: .rounded))
+                    .foregroundColor(.white)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Label(prefecture.prefectureName, systemImage: "location.fill")
+                    .font(.subheadline.weight(.medium))
+                    .foregroundColor(.white.opacity(0.9))
+            }
+        }
+        .padding(.horizontal, 22)
+        .padding(.bottom, 24)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            // グルメと同じく単色（最背面と同色で境目を出さない）。下端のみ角丸。
+            accent
+                .clipShape(
+                    UnevenRoundedRectangle(
+                        bottomLeadingRadius: 28,
+                        bottomTrailingRadius: 28,
+                        style: .continuous
+                    )
+                )
+                .ignoresSafeArea(edges: .top)
+        )
+    }
+
+    // MARK: - アクション白カード
+
+    private var actionCard: some View {
+        VStack(spacing: 14) {
+            AddToPlanButton {
+                PlanItem(
+                    category: .attraction,
+                    prefecture: prefecture,
+                    name: attraction.name
+                )
+            }
+
+            HStack(spacing: 6) {
+                Text("gourmet.explore_more".localized)
+                    .font(.caption.weight(.bold))
+                    .foregroundColor(.secondary)
+                Spacer()
+            }
+
+            SocialSearchButtons(query: attraction.name)
+        }
+        .planCard()
+    }
+
+    // MARK: - 説明
+
+    private var descriptionCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            sectionHeader(icon: "text.quote", title: "detailed_info".localized)
+            Text(attraction.description)
+                .font(.body)
+                .lineSpacing(6)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .planCard()
+    }
+
+    // MARK: - 地図カード
+
+    private var mapCard: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            sectionHeader(icon: "map", title: "attraction.open_in_maps".localized)
+
+            Map(coordinateRegion: $region, annotationItems: [attraction]) { spot in
+                MapMarker(coordinate: spot.coordinate, tint: accent)
+            }
+            .frame(height: 200)
+            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+
+            Button {
+                openInMaps()
+            } label: {
+                HStack(spacing: 12) {
+                    Image(systemName: "map.fill")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundColor(accent)
+                        .frame(width: 32, height: 32)
+                        .background(.white, in: Circle())
+                    Text("attraction.open_in_maps".localized)
+                        .font(.system(size: 16, weight: .bold, design: .rounded))
+                        .foregroundColor(.white)
+                    Spacer(minLength: 0)
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 13, weight: .bold))
+                        .foregroundColor(.white.opacity(0.85))
                 }
+                .padding(.horizontal, 14)
+                .padding(.vertical, 12)
+                .frame(maxWidth: .infinity)
+                .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(accent))
+                .shadow(color: accent.opacity(0.3), radius: 6, y: 3)
             }
+            .buttonStyle(.plain)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .planCard()
+    }
+
+    // MARK: - 共通
+
+    private func sectionHeader(icon: String, title: String) -> some View {
+        HStack(spacing: 10) {
+            RoundedRectangle(cornerRadius: 2, style: .continuous)
+                .fill(accent)
+                .frame(width: 4, height: 18)
+            Image(systemName: icon)
+                .font(.subheadline.weight(.semibold))
+                .foregroundColor(accent)
+            Text(title)
+                .font(.system(.headline, design: .rounded))
+                .fontWeight(.bold)
         }
     }
 

@@ -253,7 +253,7 @@ struct TourismDetailView: View {
                     )
                 }
             }
-            .sheet(item: $selectedAttraction) { attraction in
+            .fullScreenCover(item: $selectedAttraction) { attraction in
                 AttractionDetailView(attraction: attraction, prefecture: prefecture)
             }
 
