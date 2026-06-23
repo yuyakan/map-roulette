@@ -5146,3 +5146,42 @@
 "social.search_instagram" = "Instagramで検索";
 "social.search_tabelog" = "食べログでお店を探す";
 "gourmet.explore_more" = "もっと知る・探す";
+
+/* --- カード上のタグ表示用の短縮名（日本語は元々短いため通常名称を流用） --- */
+"onsen_type_tag.scenic" = "景観温泉";
+"onsen_type_tag.historical" = "歴史温泉";
+"onsen_type_tag.therapeutic" = "療養温泉";
+"onsen_type_tag.resort" = "リゾート";
+"onsen_type_tag.mountain" = "山間温泉";
+"onsen_type_tag.seaside" = "海辺温泉";
+"onsen_type_tag.ski" = "スキー温泉";
+"food_category_ramen_tag" = "ラーメン";
+"food_category_seafood_tag" = "海鮮";
+"food_category_meat_tag" = "肉料理";
+"food_category_sweets_tag" = "スイーツ";
+"food_category_local_tag" = "郷土料理";
+"food_category_drinks_tag" = "飲み物";
+"food_category_vegetables_tag" = "野菜・果物";
+"souvenirCategory.sweets_tag" = "お菓子";
+"souvenirCategory.food_tag" = "食品";
+"souvenirCategory.crafts_tag" = "工芸品";
+"souvenirCategory.drinks_tag" = "飲み物";
+"souvenirCategory.textiles_tag" = "織物・衣類";
+"souvenirCategory.ceramics_tag" = "陶磁器";
+"souvenirCategory.regional_tag" = "地域限定品";
+
+/* --- 祭りカード上のタグ表示用の短縮名（日本語は元々短いため通常名称を流用） --- */
+"festival.summer_tag" = "夏祭り";
+"festival.fireworks_tag" = "花火大会";
+"festival.traditional_tag" = "伝統祭り";
+"festival.dance_tag" = "踊り祭り";
+"festival.food_tag" = "食の祭り";
+"festival.seasonal_tag" = "季節祭り";
+"festival.religious_tag" = "宗教祭り";
+"otherFestival.spring_tag" = "春祭り";
+"otherFestival.autumn_tag" = "秋祭り";
+"otherFestival.winter_tag" = "冬祭り";
+"otherFestival.sakura_tag" = "桜まつり";
+"otherFestival.illumination_tag" = "イルミネーション";
+"otherFestival.snow_tag" = "雪まつり";
+"otherFestival.traditional_tag" = "伝統行事";

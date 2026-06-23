@@ -53,8 +53,8 @@ struct OnsenCard: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            // ヘッダー部分
-            HStack(alignment: .top, spacing: 8) {
+            // ヘッダー部分（アイコンを上段に置き、タイトルはカード全幅を使えるようにする）
+            HStack {
                 ZStack {
                     Circle()
                         .fill(
@@ -68,42 +68,15 @@ struct OnsenCard: View {
                             )
                         )
                         .frame(width: 32, height: 32)
-                    
+
                     Image(systemName: onsen.imageSymbol)
                         .font(.system(size: 16))
                         .foregroundColor(.white)
                 }
-                
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(onsen.name)
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(.primary)
-                        .lineLimit(2)
-                    
-                    // カテゴリータグ
-                    Label(onsen.onsenType.localizedName, systemImage: onsen.onsenType.icon)
-                        .font(.caption2)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 3)
-                        .background(onsen.onsenType.color.opacity(0.2))
-                        .foregroundColor(onsen.onsenType.color)
-                        .clipShape(Capsule())
-                }
-                
+
                 Spacer()
-            }
-            
-            // 説明文
-            Text(onsen.description)
-                .font(.caption)
-                .foregroundColor(.secondary)
-                .lineLimit(3)
-                .multilineTextAlignment(.leading)
-            
-            // 人気度のみ表示
-            HStack {
-                Spacer()
-                
+
+                // 人気度スター
                 HStack(spacing: 2) {
                     ForEach(1...5, id: \.self) { star in
                         Image(systemName: star <= onsen.popularity ? "star.fill" : "star")
@@ -112,9 +85,38 @@ struct OnsenCard: View {
                     }
                 }
             }
+
+            // タイトル＋カテゴリタグ（カード全幅を使える独立行）
+            VStack(alignment: .leading, spacing: 6) {
+                Text(onsen.name)
+                    .font(.system(size: 16, weight: .semibold))
+                    .foregroundColor(.primary)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.85)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                // カテゴリータグ
+                Label(onsen.onsenType.tagName, systemImage: onsen.onsenType.icon)
+                    .font(.caption2)
+                    .lineLimit(1)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 3)
+                    .background(onsen.onsenType.color.opacity(0.2))
+                    .foregroundColor(onsen.onsenType.color)
+                    .clipShape(Capsule())
+            }
+
+            // 説明文
+            Text(onsen.description)
+                .font(.caption)
+                .foregroundColor(.secondary)
+                .lineLimit(2)
+                .multilineTextAlignment(.leading)
+
+            Spacer(minLength: 0)
         }
         .padding(16)
-        .frame(height: 150, alignment: .top)
+        .frame(height: 180, alignment: .top)
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .fill(Color(.systemBackground))

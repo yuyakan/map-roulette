@@ -5148,3 +5148,42 @@
 "social.search_instagram" = "Search on Instagram";
 "social.search_tabelog" = "Find restaurants on Tabelog";
 "gourmet.explore_more" = "Explore more";
+
+/* --- カード上のタグ表示用の短縮名（英語は長いため短縮） --- */
+"onsen_type_tag.scenic" = "Scenic";
+"onsen_type_tag.historical" = "Historic";
+"onsen_type_tag.therapeutic" = "Therapeutic";
+"onsen_type_tag.resort" = "Resort";
+"onsen_type_tag.mountain" = "Mountain";
+"onsen_type_tag.seaside" = "Seaside";
+"onsen_type_tag.ski" = "Ski";
+"food_category_ramen_tag" = "Ramen";
+"food_category_seafood_tag" = "Seafood";
+"food_category_meat_tag" = "Meat";
+"food_category_sweets_tag" = "Sweets";
+"food_category_local_tag" = "Local";
+"food_category_drinks_tag" = "Drinks";
+"food_category_vegetables_tag" = "Veg & Fruit";
+"souvenirCategory.sweets_tag" = "Sweets";
+"souvenirCategory.food_tag" = "Food";
+"souvenirCategory.crafts_tag" = "Crafts";
+"souvenirCategory.drinks_tag" = "Drinks";
+"souvenirCategory.textiles_tag" = "Textiles";
+"souvenirCategory.ceramics_tag" = "Ceramics";
+"souvenirCategory.regional_tag" = "Regional";
+
+/* --- 祭りカード上のタグ表示用の短縮名（英語は長いため "Festival" を省く） --- */
+"festival.summer_tag" = "Summer";
+"festival.fireworks_tag" = "Fireworks";
+"festival.traditional_tag" = "Traditional";
+"festival.dance_tag" = "Dance";
+"festival.food_tag" = "Food";
+"festival.seasonal_tag" = "Seasonal";
+"festival.religious_tag" = "Religious";
+"otherFestival.spring_tag" = "Spring";
+"otherFestival.autumn_tag" = "Autumn";
+"otherFestival.winter_tag" = "Winter";
+"otherFestival.sakura_tag" = "Cherry";
+"otherFestival.illumination_tag" = "Illumination";
+"otherFestival.snow_tag" = "Snow";
+"otherFestival.traditional_tag" = "Traditional";

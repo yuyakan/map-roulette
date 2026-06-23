@@ -5004,3 +5004,42 @@
 "social.search_instagram" = "Instagram에서 검색";
 "social.search_tabelog" = "Tabelog에서 맛집 찾기";
 "gourmet.explore_more" = "더 알아보기";
+
+/* --- 카드 태그 표시용 짧은 이름(한국어는 원래 짧으므로 일반 명칭 사용) --- */
+"onsen_type_tag.scenic" = "경관온천";
+"onsen_type_tag.historical" = "역사온천";
+"onsen_type_tag.therapeutic" = "요양온천";
+"onsen_type_tag.resort" = "리조트";
+"onsen_type_tag.mountain" = "산간온천";
+"onsen_type_tag.seaside" = "해변온천";
+"onsen_type_tag.ski" = "스키온천";
+"food_category_ramen_tag" = "라멘";
+"food_category_seafood_tag" = "해산물";
+"food_category_meat_tag" = "고기요리";
+"food_category_sweets_tag" = "스위트";
+"food_category_local_tag" = "향토요리";
+"food_category_drinks_tag" = "음료";
+"food_category_vegetables_tag" = "채소・과일";
+"souvenirCategory.sweets_tag" = "과자";
+"souvenirCategory.food_tag" = "식품";
+"souvenirCategory.crafts_tag" = "공예품";
+"souvenirCategory.drinks_tag" = "음료";
+"souvenirCategory.textiles_tag" = "직물·의류";
+"souvenirCategory.ceramics_tag" = "도자기";
+"souvenirCategory.regional_tag" = "지역한정품";
+
+/* --- 축제 카드 태그 표시용 짧은 이름(한국어는 원래 짧으므로 일반 명칭 사용) --- */
+"festival.summer_tag" = "여름축제";
+"festival.fireworks_tag" = "불꽃축제";
+"festival.traditional_tag" = "전통축제";
+"festival.dance_tag" = "춤축제";
+"festival.food_tag" = "음식축제";
+"festival.seasonal_tag" = "계절축제";
+"festival.religious_tag" = "종교축제";
+"otherFestival.spring_tag" = "봄축제";
+"otherFestival.autumn_tag" = "가을축제";
+"otherFestival.winter_tag" = "겨울축제";
+"otherFestival.sakura_tag" = "벚꽃축제";
+"otherFestival.illumination_tag" = "일루미네이션";
+"otherFestival.snow_tag" = "눈축제";
+"otherFestival.traditional_tag" = "전통행사";

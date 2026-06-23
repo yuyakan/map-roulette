@@ -48,6 +48,21 @@ enum FestivalCategory: String, CaseIterable {
         case .religious: return "building.fill"
         }
     }
+
+    /// カード上のタグ表示用の短縮名。英語で "Traditional Festival" のような長い名称が
+    /// 半分幅のカードで省略されるのを避けるため、タグでは "Festival" を省いた短い名称にする。
+    /// （詳細画面では localizedName をそのまま使う）
+    var tagName: String {
+        switch self {
+        case .summer:      return NSLocalizedString("festival.summer_tag", comment: "")
+        case .fireworks:   return NSLocalizedString("festival.fireworks_tag", comment: "")
+        case .traditional: return NSLocalizedString("festival.traditional_tag", comment: "")
+        case .dance:       return NSLocalizedString("festival.dance_tag", comment: "")
+        case .food:        return NSLocalizedString("festival.food_tag", comment: "")
+        case .seasonal:    return NSLocalizedString("festival.seasonal_tag", comment: "")
+        case .religious:   return NSLocalizedString("festival.religious_tag", comment: "")
+        }
+    }
     
     /// カテゴリ色。白文字を載せても読めるよう明度・彩度を手調整した値に統一。
     var color: Color {
@@ -2690,17 +2705,19 @@ struct FestivalItemCard: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text(item.name)
                     .font(.system(size: 16, weight: .bold))
-                    .lineLimit(1)
-                
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.7)
+                    .fixedSize(horizontal: false, vertical: true)
+
                 Text(item.description)
                     .font(.system(size: 12))
                     .foregroundColor(.secondary)
-                    .lineLimit(3)
+                    .lineLimit(2)
                     .multilineTextAlignment(.leading)
             }
-            
+
             Spacer()
-            
+
             // ボトム情報
             VStack(alignment: .leading, spacing: 4) {
                 HStack {
@@ -2711,8 +2728,9 @@ struct FestivalItemCard: View {
                         .font(.caption)
                         .fontWeight(.medium)
                         .foregroundColor(.primary)
+                        .lineLimit(1)
                 }
-                
+
                 HStack {
                     Image(systemName: "clock.circle.fill")
                         .font(.caption2)
@@ -2720,12 +2738,14 @@ struct FestivalItemCard: View {
                     Text(item.duration)
                         .font(.caption)
                         .foregroundColor(.secondary)
-                    
+                        .lineLimit(1)
+
                     Spacer()
-                    
+
                     // カテゴリータグ
-                    Text(item.category.localizedName)
+                    Text(item.category.tagName)
                         .font(.caption2)
+                        .lineLimit(1)
                         .padding(.horizontal, 6)
                         .padding(.vertical, 2)
                         .background(item.category.color.opacity(0.2))

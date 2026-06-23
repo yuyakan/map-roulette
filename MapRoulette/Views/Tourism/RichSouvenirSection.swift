@@ -140,12 +140,14 @@ struct SouvenirItemCard: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text(item.name)
                     .font(.system(size: 16, weight: .bold))
-                    .lineLimit(1)
-                
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.85)
+                    .fixedSize(horizontal: false, vertical: true)
+
                 Text(item.description)
                     .font(.system(size: 12))
                     .foregroundColor(.secondary)
-                    .lineLimit(3)
+                    .lineLimit(2)
                     .multilineTextAlignment(.leading)
             }
             
@@ -153,19 +155,21 @@ struct SouvenirItemCard: View {
             
             // ボトム情報
             VStack(alignment: .leading, spacing: 4) {
-                HStack {
+                HStack(spacing: 4) {
                     Image(systemName: "calendar.circle.fill")
                         .font(.caption2)
                         .foregroundColor(.blue)
                     Text(item.bestSeason)
                         .font(.caption)
                         .foregroundColor(.secondary)
-                    
+                        .lineLimit(1)
+
                     Spacer()
-                    
+
                     // カテゴリータグ
-                    Text(item.category.rawValue.localized)
+                    Text(item.category.tagName)
                         .font(.caption2)
+                        .lineLimit(1)
                         .padding(.horizontal, 6)
                         .padding(.vertical, 2)
                         .background(item.category.color.opacity(0.2))

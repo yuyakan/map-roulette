@@ -22,7 +22,14 @@ enum OnsenType: String, CaseIterable {
     var localizedName: String {
         NSLocalizedString("onsen_type.\(self.rawValue)", comment: "")
     }
-    
+
+    /// カード上のタグ表示用の短縮名。英語で "Scenic Hot Spring" のような長い名称が
+    /// 半分幅のカードで省略されるのを避けるため、温泉セクション内では "Scenic" のように短くする。
+    /// （フィルター・詳細・地図・設定では localizedName をそのまま使う）
+    var tagName: String {
+        NSLocalizedString("onsen_type_tag.\(self.rawValue)", comment: "")
+    }
+
     /// 温泉タイプ色。白文字を載せても読めるよう明度・彩度を手調整した値に統一。
     /// （システム色の .cyan / .mint / .orange などは明るすぎて白文字が破綻するため使わない）
     var color: Color {

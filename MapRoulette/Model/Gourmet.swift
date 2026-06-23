@@ -53,6 +53,13 @@ enum FoodCategory: String, CaseIterable {
         case .vegetables: return "leaf.fill"
         }
     }
+
+    /// カード上のタグ表示用の短縮名。英語で "Vegetables & Fruits" のような長い名称が
+    /// 半分幅のカードで省略されるのを避けるため、タグでは短くする。
+    /// （フィルター・詳細画面では rawValue.localized をそのまま使う）
+    var tagName: String {
+        NSLocalizedString("\(rawValue)_tag", comment: "")
+    }
 }
 
 extension Prefecture {
