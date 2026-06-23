@@ -22,51 +22,32 @@ struct RichGourmetSection: View {
         return showAllItems ? items : Array(items.prefix(4))
     }
     
+    /// グルメセクションの基調色。
+    private let accent = Color(red: 0.93, green: 0.45, blue: 0.13)
+
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            // ヘッダー
-            HStack {
-                Image(systemName: "fork.knife.circle.fill")
-                    .font(.title2)
-                    .foregroundStyle(
-                        LinearGradient(
-                            gradient: Gradient(colors: [.orange, .red]),
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-                
-                VStack(alignment: .leading, spacing: 2) {
-                    Text("famous_gourmet_title".localized)
-                        .font(.title2)
-                        .fontWeight(.bold)
-                    
-                    Text(String(format: NSLocalizedString("taste_prefecture_format", comment: "Prefecture taste format"), prefecture.prefectureName))
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
-                
-                Spacer()
-                
-                // カテゴリフィルターボタン
-                Menu {
-                    Button("food_category_all".localized) {
-                        selectedCategory = nil
-                    }
-                    
-                    ForEach(FoodCategory.allCases, id: \.self) { category in
-                        Button(action: {
-                            selectedCategory = category
-                        }) {
-                            Label(category.rawValue.localized, systemImage: category.icon)
+            // ヘッダー（統一スタイル＋フィルターメニュー）
+            RichSectionHeader(
+                icon: "fork.knife",
+                title: "famous_gourmet_title".localized,
+                subtitle: String(format: NSLocalizedString("taste_prefecture_format", comment: "Prefecture taste format"), prefecture.prefectureName),
+                accent: accent,
+                trailing: AnyView(
+                    Menu {
+                        Button("food_category_all".localized) { selectedCategory = nil }
+                        ForEach(FoodCategory.allCases, id: \.self) { category in
+                            Button(action: { selectedCategory = category }) {
+                                Label(category.rawValue.localized, systemImage: category.icon)
+                            }
                         }
+                    } label: {
+                        Image(systemName: "line.3.horizontal.decrease.circle.fill")
+                            .font(.title3)
+                            .foregroundColor(accent)
                     }
-                } label: {
-                    Image(systemName: "line.3.horizontal.decrease.circle.fill")
-                        .font(.title3)
-                        .foregroundColor(.blue)
-                }
-            }
+                )
+            )
             
             // カテゴリタグ（選択中の場合）
             if let category = selectedCategory {
@@ -103,27 +84,9 @@ struct RichGourmetSection: View {
             
             // もっと見るボタン
             if !showAllItems && prefecture.gourmetItems.count > 4 && selectedCategory == nil {
-                Button(action: {
-                    withAnimation(.easeInOut(duration: 0.3)) {
-                        showAllItems = true
-                    }
-                }) {
-                    HStack {
-                        Text("load_more_groumet".localized)
-                            .font(.system(size: 14, weight: .medium))
-                        Image(systemName: "chevron.down")
-                            .font(.caption)
-                    }
-                    .foregroundColor(.blue)
-                    .padding(.vertical, 12)
-                    .frame(maxWidth: .infinity)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color.blue.opacity(0.3), lineWidth: 1)
-                            .background(Color.blue.opacity(0.05))
-                    )
+                LoadMoreButton(title: "load_more_groumet".localized, accent: accent) {
+                    withAnimation(.easeInOut(duration: 0.3)) { showAllItems = true }
                 }
-                .clipShape(RoundedRectangle(cornerRadius: 12))
             }
         }
         .padding(.horizontal)

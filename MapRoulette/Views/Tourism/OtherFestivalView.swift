@@ -1123,32 +1123,17 @@ struct RichOtherFestivalSection: View {
         return showAllItems ? items : Array(items.prefix(4))
     }
     
+    /// その他祭り（四季）セクションの基調色。
+    private let accent = Color(red: 0.16, green: 0.50, blue: 0.85)
+
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            // ヘッダー
-            HStack {
-                Image(systemName: "snowflake")
-                    .font(.title2)
-                    .foregroundStyle(
-                        LinearGradient(
-                            gradient: Gradient(colors: [.blue, .cyan]),
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-                
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(NSLocalizedString("festival.seasons", comment: "春・秋・冬の祭り"))
-                        .font(.title2)
-                        .fontWeight(.bold)
-
-                    Text(String(format: NSLocalizedString("festival.experience_seasons", comment: "%@の四季を体験"), prefecture.prefectureName))
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
-
-                Spacer()
-            }
+            RichSectionHeader(
+                icon: "snowflake",
+                title: NSLocalizedString("festival.seasons", comment: "春・秋・冬の祭り"),
+                subtitle: String(format: NSLocalizedString("festival.experience_seasons", comment: "%@の四季を体験"), prefecture.prefectureName),
+                accent: accent
+            )
 
             // その他祭りアイテムのグリッド
             LazyVGrid(columns: [
@@ -1164,27 +1149,9 @@ struct RichOtherFestivalSection: View {
 
             // もっと見るボタン
             if !showAllItems && prefecture.otherFestivalItems.count > 4 {
-                Button(action: {
-                    withAnimation(.easeInOut(duration: 0.3)) {
-                        showAllItems = true
-                    }
-                }) {
-                    HStack {
-                        Text("load_more_groumet".localized)
-                            .font(.system(size: 14, weight: .medium))
-                        Image(systemName: "chevron.down")
-                            .font(.caption)
-                    }
-                    .foregroundColor(PlanTheme.primary)
-                    .padding(.vertical, 12)
-                    .frame(maxWidth: .infinity)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12)
-                            .stroke(PlanTheme.primary.opacity(0.3), lineWidth: 1)
-                            .background(PlanTheme.primary.opacity(0.05))
-                    )
+                LoadMoreButton(title: "load_more_groumet".localized, accent: accent) {
+                    withAnimation(.easeInOut(duration: 0.3)) { showAllItems = true }
                 }
-                .clipShape(RoundedRectangle(cornerRadius: 12))
             }
         }
         .padding(.horizontal)

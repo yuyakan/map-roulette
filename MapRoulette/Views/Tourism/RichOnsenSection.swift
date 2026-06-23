@@ -10,20 +10,21 @@ import MapKit
 
 struct RichOnsenSection: View {
     let prefecture: Prefecture
-    
+
+    /// 温泉セクションの基調色。
+    private let accent = Color(red: 0.13, green: 0.58, blue: 0.66)
+
     var body: some View {
         let onsens = prefecture.onsenItems
-        
+
         if !onsens.isEmpty {
             VStack(alignment: .leading, spacing: 16) {
-                HStack {
-                    Image(systemName: "thermometer.sun.fill")
-                        .foregroundColor(.red)
-                    Text("hot_spring_info".localized)
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                }
-                
+                RichSectionHeader(
+                    icon: "thermometer.sun.fill",
+                    title: "hot_spring_info".localized,
+                    accent: accent
+                )
+
                 LazyVGrid(columns: [
                     GridItem(.flexible()),
                     GridItem(.flexible())

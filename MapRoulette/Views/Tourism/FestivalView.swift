@@ -2607,32 +2607,17 @@ struct RichFestivalSection: View {
         return showAllItems ? items : Array(items.prefix(4))
     }
     
+    /// 祭りセクションの基調色。
+    private let accent = Color(red: 0.55, green: 0.38, blue: 0.78)
+
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            // ヘッダー
-            HStack {
-                Image(systemName: "party.popper.fill")
-                    .font(.title2)
-                    .foregroundStyle(
-                        LinearGradient(
-                            gradient: Gradient(colors: [.purple, .pink]),
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-                
-                VStack(alignment: .leading, spacing: 2) {
-                    Text("festival.summer_fireworks", comment: "夏祭り・花火大会")
-                        .font(.title2)
-                        .fontWeight(.bold)
-
-                    Text(String(format: "festival.experience".localized, prefecture.prefectureName))
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
-
-                Spacer()
-            }
+            RichSectionHeader(
+                icon: "party.popper.fill",
+                title: NSLocalizedString("festival.summer_fireworks", comment: "夏祭り・花火大会"),
+                subtitle: String(format: "festival.experience".localized, prefecture.prefectureName),
+                accent: accent
+            )
 
             // お祭りアイテムのグリッド
             LazyVGrid(columns: [
@@ -2648,27 +2633,9 @@ struct RichFestivalSection: View {
 
             // もっと見るボタン
             if !showAllItems && prefecture.festivalItems.count > 4 {
-                Button(action: {
-                    withAnimation(.easeInOut(duration: 0.3)) {
-                        showAllItems = true
-                    }
-                }) {
-                    HStack {
-                        Text("load_more_groumet".localized)
-                            .font(.system(size: 14, weight: .medium))
-                        Image(systemName: "chevron.down")
-                            .font(.caption)
-                    }
-                    .foregroundColor(PlanTheme.primary)
-                    .padding(.vertical, 12)
-                    .frame(maxWidth: .infinity)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12)
-                            .stroke(PlanTheme.primary.opacity(0.3), lineWidth: 1)
-                            .background(PlanTheme.primary.opacity(0.05))
-                    )
+                LoadMoreButton(title: "load_more_groumet".localized, accent: accent) {
+                    withAnimation(.easeInOut(duration: 0.3)) { showAllItems = true }
                 }
-                .clipShape(RoundedRectangle(cornerRadius: 12))
             }
         }
         .padding(.horizontal)

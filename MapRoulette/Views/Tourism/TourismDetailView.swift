@@ -48,14 +48,12 @@ struct TourismDetailView: View {
                     
                     // 観光地マップ
                     VStack(alignment: .leading, spacing: 16) {
-                        HStack {
-                            Image(systemName: "map")
-                                .foregroundColor(.green)
-                            Text("tourism_detail_map".localized)
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                        }
-                        
+                        RichSectionHeader(
+                            icon: "map.fill",
+                            title: "tourism_detail_map".localized,
+                            accent: PlanTheme.primary
+                        )
+
                         Map(coordinateRegion: $region, annotationItems: prefecture.tourismInfo.attractions) { attraction in
                             MapAnnotation(coordinate: attraction.coordinate) {
                                 VStack(spacing: 4) {
@@ -189,15 +187,13 @@ struct TourismDetailView: View {
 
 
                     // 写真ギャラリー
-                    VStack(alignment: .leading, spacing: 0) {
-                        HStack {
-                            Image(systemName: "photo.on.rectangle.angled")
-                                .foregroundColor(.blue)
-                            Text("tourism_detail_photo".localized)
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                        }
-                        
+                    VStack(alignment: .leading, spacing: 16) {
+                        RichSectionHeader(
+                            icon: "photo.on.rectangle.angled",
+                            title: "tourism_detail_photo".localized,
+                            accent: PlanTheme.primary
+                        )
+
                         if photoManager.isLoading {
                             HStack {
                                 Spacer()
