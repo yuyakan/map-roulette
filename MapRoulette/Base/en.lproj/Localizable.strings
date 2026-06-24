@@ -4125,9 +4125,9 @@
 "duration_15_days" = "15 days";
 "duration_1_week" = "1 week";
 "duration_1_month" = "1 month";
-"duration_2_months" = "About 2 months";
-"duration_daily" = "Held daily";
-"duration_multiple_times_year" = "Several times a year";
+"duration_2_months" = "~2 months";
+"duration_daily" = "Daily";
+"duration_multiple_times_year" = "Several/year";
 "duration_12_days" = "12 days";
 "duration_2_weeks" = "2 weeks";
 "duration_3_weeks" = "3 weeks";
@@ -4137,7 +4137,7 @@
 "duration_4_months" = "4 months";
 "duration_6_months" = "6 months";
 "duration_8_months" = "8 months";
-"duration_few_days" = "Several days";
+"duration_few_days" = "A few days";
 
 // MARK: - Category Strings
 "category_traditional" = "Traditional Festival";

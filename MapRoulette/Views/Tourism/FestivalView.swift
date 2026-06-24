@@ -2718,9 +2718,10 @@ struct FestivalItemCard: View {
 
             Spacer()
 
-            // ボトム情報
+            // ボトム情報（month / duration / タグ をそれぞれ独立した行にして、
+            // 英語で長い文言（"July-September"・"About 2 months" 等）が省略されないようにする）
             VStack(alignment: .leading, spacing: 4) {
-                HStack {
+                HStack(spacing: 4) {
                     Image(systemName: "calendar.circle.fill")
                         .font(.caption2)
                         .foregroundColor(.blue)
@@ -2729,9 +2730,11 @@ struct FestivalItemCard: View {
                         .fontWeight(.medium)
                         .foregroundColor(.primary)
                         .lineLimit(1)
+                        .minimumScaleFactor(0.85)
+                    Spacer(minLength: 0)
                 }
 
-                HStack {
+                HStack(spacing: 4) {
                     Image(systemName: "clock.circle.fill")
                         .font(.caption2)
                         .foregroundColor(.green)
@@ -2739,13 +2742,16 @@ struct FestivalItemCard: View {
                         .font(.caption)
                         .foregroundColor(.secondary)
                         .lineLimit(1)
+                        .minimumScaleFactor(0.85)
 
-                    Spacer()
+                    Spacer(minLength: 6)
 
-                    // カテゴリータグ
+                    // カテゴリータグ（duration 行の右端に置く。両方が同時に長くなる
+                    // ケースはほぼ無く、duration は縮小許容しているため競合しても破綻しない）
                     Text(item.category.tagName)
                         .font(.caption2)
                         .lineLimit(1)
+                        .fixedSize()
                         .padding(.horizontal, 6)
                         .padding(.vertical, 2)
                         .background(item.category.color.opacity(0.2))
@@ -2755,7 +2761,7 @@ struct FestivalItemCard: View {
             }
         }
         .padding(16)
-        .frame(height: 200)
+        .frame(height: 224)
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .fill(Color(.systemBackground))

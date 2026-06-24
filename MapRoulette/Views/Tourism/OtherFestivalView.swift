@@ -1234,9 +1234,10 @@ struct OtherFestivalItemCard: View {
 
             Spacer()
 
-            // ボトム情報
+            // ボトム情報（month / duration を独立した行にして、英語で長い文言が
+            // 省略されないようにする。タグは duration 行の右端に固定サイズで置く）
             VStack(alignment: .leading, spacing: 4) {
-                HStack {
+                HStack(spacing: 4) {
                     Image(systemName: "calendar.circle.fill")
                         .font(.caption2)
                         .foregroundColor(.blue)
@@ -1245,9 +1246,11 @@ struct OtherFestivalItemCard: View {
                         .fontWeight(.medium)
                         .foregroundColor(.primary)
                         .lineLimit(1)
+                        .minimumScaleFactor(0.85)
+                    Spacer(minLength: 0)
                 }
 
-                HStack {
+                HStack(spacing: 4) {
                     Image(systemName: "clock.circle.fill")
                         .font(.caption2)
                         .foregroundColor(.green)
@@ -1255,13 +1258,15 @@ struct OtherFestivalItemCard: View {
                         .font(.caption)
                         .foregroundColor(.secondary)
                         .lineLimit(1)
+                        .minimumScaleFactor(0.85)
 
-                    Spacer()
+                    Spacer(minLength: 6)
 
-                    // カテゴリータグ
+                    // カテゴリータグ（duration 行の右端。常に完全表示し、duration 側が縮む）
                     Text(item.category.tagName)
                         .font(.caption2)
                         .lineLimit(1)
+                        .fixedSize()
                         .padding(.horizontal, 6)
                         .padding(.vertical, 2)
                         .background(item.category.color.opacity(0.2))
@@ -1271,7 +1276,7 @@ struct OtherFestivalItemCard: View {
             }
         }
         .padding(16)
-        .frame(height: 200)
+        .frame(height: 224)
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .fill(Color(.systemBackground))
