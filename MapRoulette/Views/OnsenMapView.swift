@@ -1137,11 +1137,18 @@ struct OnsenDetailView: View {
 struct OnsenCardView: View {
     let onsen: FixedOnsenItem
     let selectedOnsen: FixedOnsenItem?
-    
+
     private var isSelected: Bool {
         selectedOnsen?.id == onsen.id
     }
-    
+
+    /// 現在の表示言語が英語かどうか。英語は種別名が長く、狭いセルで星と横並びにすると
+    /// 省略されるため種別タグと星を縦並びにする。CJK は短いので従来どおり横並びにして
+    /// カードが縦長になりすぎないようにする。
+    private var isEnglish: Bool {
+        (Bundle.main.preferredLocalizations.first ?? "en").hasPrefix("en")
+    }
+
     var body: some View {
         VStack(spacing: 8) {
             // 温泉アイコン
@@ -1189,6 +1196,8 @@ struct OnsenCardView: View {
                     .foregroundColor(isSelected ? .orange : .primary)
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
+                    .minimumScaleFactor(0.7)
+                    .frame(maxWidth: .infinity)
                     .frame(height: 28)
                 
                 // 都道府県情報
@@ -1198,29 +1207,25 @@ struct OnsenCardView: View {
                     .padding(.horizontal, 6)
                     .padding(.vertical, 2)
                 
-                // 温泉タイプと人気度を横並びに
-                HStack(spacing: 6) {
-                    // 温泉タイプ
-                    Text(onsen.onsenType.localizedName)
-                        .font(.system(size: 9))
-                        .foregroundColor(.secondary)
-                        .padding(.horizontal, 4)
-                        .padding(.vertical, 1)
-                        .background(onsen.onsenType.color.opacity(0.1))
-                        .cornerRadius(3)
-                    
-                    // 人気度
-                    HStack(spacing: 1) {
-                        ForEach(0..<5) { index in
-                            Image(systemName: index < onsen.popularity ? "star.fill" : "star")
-                                .foregroundColor(.orange)
-                                .font(.system(size: 7))
-                        }
+                // 温泉タイプと人気度。英語は種別名が長く横並びだと省略されるため縦並び、
+                // CJK は短いので横並びにしてカードが縦長になりすぎないようにする。
+                if isEnglish {
+                    VStack(spacing: 3) {
+                        typeTag
+                        popularityStars
+                    }
+                } else {
+                    HStack(spacing: 6) {
+                        typeTag
+                            .layoutPriority(1)
+                        popularityStars
+                            .fixedSize()
                     }
                 }
             }
         }
         .padding(10)
+        .frame(maxWidth: .infinity)
         .frame(height: 140)
         .background(
             RoundedRectangle(cornerRadius: 12)
@@ -1250,7 +1255,31 @@ struct OnsenCardView: View {
         )
         .frame(height: 150)
     }
-    
+
+    // 温泉タイプのタグ（タグ用の短縮名を使用）
+    private var typeTag: some View {
+        Text(onsen.onsenType.tagName)
+            .font(.system(size: 9))
+            .foregroundColor(.secondary)
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+            .padding(.horizontal, 4)
+            .padding(.vertical, 1)
+            .background(onsen.onsenType.color.opacity(0.1))
+            .cornerRadius(3)
+    }
+
+    // 人気度スター
+    private var popularityStars: some View {
+        HStack(spacing: 1) {
+            ForEach(0..<5) { index in
+                Image(systemName: index < onsen.popularity ? "star.fill" : "star")
+                    .foregroundColor(.orange)
+                    .font(.system(size: 7))
+            }
+        }
+    }
+
     // 温泉地から都道府県名を取得（ローカライズ対応）
     func getPrefectureName(for onsen: FixedOnsenItem) -> String {
         // Prefecture enumの中から該当する温泉地を含む都道府県を探す
