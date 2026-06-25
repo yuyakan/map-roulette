@@ -27,14 +27,12 @@ struct PhotoDetailView: View {
                             ProgressView()
                         }
                         
-                        VStack(spacing: 4) {
+                        VStack(spacing: 6) {
                             Text(photo.alt_description ?? "美しい風景")
                                 .font(.headline)
-                                .foregroundColor(.primary)
-                            
-                            Text("撮影: \(photo.user.name)")
-                                .font(.caption)
-                                .foregroundColor(.secondary)
+                                .foregroundColor(.white)
+
+                            UnsplashCreditView(photo: photo, onDark: true)
                         }
                         .padding()
                     }

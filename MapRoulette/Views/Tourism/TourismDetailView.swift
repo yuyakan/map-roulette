@@ -228,6 +228,14 @@ struct TourismDetailView: View {
                                         }
                                         .frame(height: 200)
                                         .clipShape(RoundedRectangle(cornerRadius: 12))
+                                        // Unsplash API ガイドライン: 表示する各写真に撮影者・Unsplash クレジットを付与。
+                                        .overlay(alignment: .bottomLeading) {
+                                            UnsplashCreditView(photo: photo, onDark: true)
+                                                .padding(.horizontal, 8)
+                                                .padding(.vertical, 4)
+                                                .background(.black.opacity(0.35), in: Capsule())
+                                                .padding(8)
+                                        }
                                         .onTapGesture {
                                             showFullScreenPhoto = true
                                         }
