@@ -17,17 +17,17 @@ enum PlanItemResolver {
     static func coordinate(category: PlanItemCategory, prefecture: Prefecture, name: String) -> CLLocationCoordinate2D? {
         switch category {
         case .attraction:
-            return prefecture.tourismInfo.attractions.first { $0.name == name }?.coordinate
+            return prefecture.tourismInfo.attractions.first { matches(name, $0.name) }?.coordinate
         case .onsen:
-            return prefecture.onsenItems.first { $0.name == name }?.coordinate
+            return prefecture.onsenItems.first { matches(name, $0.name) }?.coordinate
         case .festival:
             // 祭・その他祭の両方を探す
-            if let f = prefecture.festivalItems.first(where: { $0.name == name }) {
+            if let f = prefecture.festivalItems.first(where: { matches(name, $0.name) }) {
                 return f.coordinate
             }
-            return prefecture.otherFestivalItems.first { $0.name == name }?.coordinate
+            return prefecture.otherFestivalItems.first { matches(name, $0.name) }?.coordinate
         case .nature:
-            return NatureSpotDataRepository.shared.allFixedSpots.first { $0.name == name }?.coordinate
+            return NatureSpotDataRepository.shared.allFixedSpots.first { matches(name, $0.name) }?.coordinate
         case .gourmet, .souvenir:
             // グルメ・お土産は座標を持たない
             return nil
@@ -42,21 +42,27 @@ enum PlanItemResolver {
     static func detail(category: PlanItemCategory, prefecture: Prefecture, name: String) -> String? {
         switch category {
         case .attraction:
-            return prefecture.tourismInfo.attractions.first { $0.name == name }?.description
+            return prefecture.tourismInfo.attractions.first { matches(name, $0.name) }?.description
         case .gourmet:
-            return prefecture.gourmetItems.first { $0.name == name }?.description
+            return prefecture.gourmetItems.first { matches(name, $0.name) }?.description
         case .onsen:
-            return prefecture.onsenItems.first { $0.name == name }?.description
+            return prefecture.onsenItems.first { matches(name, $0.name) }?.description
         case .festival:
-            if let f = prefecture.festivalItems.first(where: { $0.name == name }) { return f.description }
-            return prefecture.otherFestivalItems.first { $0.name == name }?.description
+            if let f = prefecture.festivalItems.first(where: { matches(name, $0.name) }) { return f.description }
+            return prefecture.otherFestivalItems.first { matches(name, $0.name) }?.description
         case .nature:
-            return NatureSpotDataRepository.shared.allFixedSpots.first { $0.name == name }?.description
+            return NatureSpotDataRepository.shared.allFixedSpots.first { matches(name, $0.name) }?.description
         case .souvenir:
-            return prefecture.souvenirItems.first { $0.name == name }?.description
+            return prefecture.souvenirItems.first { matches(name, $0.name) }?.description
         case .hotel, .transport, .other:
             return nil
         }
+    }
+
+    /// 保存名（保存時の言語）と候補の現在表示名が同一項目かを判定するショートハンド。
+    /// 言語切り替え後も元データを引き当てられるよう、ローカライズキー単位で照合する。
+    static func matches(_ savedName: String, _ candidateName: String) -> Bool {
+        LocalizationMatcher.isSameLocalizedItem(saved: savedName, current: candidateName)
     }
 }
 
@@ -75,21 +81,21 @@ struct PlanItemDetailRouter: View {
             // メモ・位置の追加バーを共通で付与する。
             switch item.category {
             case .attraction:
-                if let attraction = prefecture.tourismInfo.attractions.first(where: { $0.name == item.name }) {
+                if let attraction = prefecture.tourismInfo.attractions.first(where: { PlanItemResolver.matches(item.name, $0.name) }) {
                     PlanLocatableDetailView(item: item) {
                         AttractionDetailView(attraction: attraction, prefecture: prefecture)
                     }
                 } else { fallback }
 
             case .gourmet:
-                if let g = prefecture.gourmetItems.first(where: { $0.name == item.name }) {
+                if let g = prefecture.gourmetItems.first(where: { PlanItemResolver.matches(item.name, $0.name) }) {
                     PlanLocatableDetailView(item: item) {
                         GourmetDetailView(item: g, prefecture: prefecture)
                     }
                 } else { fallback }
 
             case .onsen:
-                if let original = prefecture.onsenItems.first(where: { $0.name == item.name }),
+                if let original = prefecture.onsenItems.first(where: { PlanItemResolver.matches(item.name, $0.name) }),
                    let fixed = OnsenDataRepository.shared.getFixedOnsen(name: original.name, type: original.onsenType) {
                     PlanLocatableDetailView(item: item) {
                         OnsenDetailView(onsen: fixed)
@@ -97,25 +103,25 @@ struct PlanItemDetailRouter: View {
                 } else { fallback }
 
             case .festival:
-                if let f = prefecture.festivalItems.first(where: { $0.name == item.name }) {
+                if let f = prefecture.festivalItems.first(where: { PlanItemResolver.matches(item.name, $0.name) }) {
                     PlanLocatableDetailView(item: item) {
                         FestivalDetailView(item: f, prefecture: prefecture)
                     }
-                } else if let o = prefecture.otherFestivalItems.first(where: { $0.name == item.name }) {
+                } else if let o = prefecture.otherFestivalItems.first(where: { PlanItemResolver.matches(item.name, $0.name) }) {
                     PlanLocatableDetailView(item: item) {
                         OtherFestivalDetailView(item: o, prefecture: prefecture)
                     }
                 } else { fallback }
 
             case .nature:
-                if let spot = NatureSpotDataRepository.shared.allFixedSpots.first(where: { $0.name == item.name }) {
+                if let spot = NatureSpotDataRepository.shared.allFixedSpots.first(where: { PlanItemResolver.matches(item.name, $0.name) }) {
                     PlanLocatableDetailView(item: item) {
                         NatureSpotDetailView(spot: spot)
                     }
                 } else { fallback }
 
             case .souvenir:
-                if let s = prefecture.souvenirItems.first(where: { $0.name == item.name }) {
+                if let s = prefecture.souvenirItems.first(where: { PlanItemResolver.matches(item.name, $0.name) }) {
                     PlanLocatableDetailView(item: item) {
                         SouvenirDetailView(item: s, prefecture: prefecture)
                     }
