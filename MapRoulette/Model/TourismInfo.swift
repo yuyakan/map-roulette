@@ -125,7 +125,9 @@ extension Prefecture {
                     LocalizedAttractionLocation(nameKey: "attraction_zao", descriptionKey: "attraction_zao_desc", coordinate: CLLocationCoordinate2D(latitude: 38.1167, longitude: 140.4333)),
                     LocalizedAttractionLocation(nameKey: "attraction_naruko_onsen", descriptionKey: "attraction_naruko_onsen_desc", coordinate: CLLocationCoordinate2D(latitude: 38.7333, longitude: 140.7333)),
                     LocalizedAttractionLocation(nameKey: "attraction_zuiganji", descriptionKey: "attraction_zuiganji_desc", coordinate: CLLocationCoordinate2D(latitude: 38.3722, longitude: 141.0667)),
-                    LocalizedAttractionLocation(nameKey: "attraction_akiu_onsen", descriptionKey: "attraction_akiu_onsen_desc", coordinate: CLLocationCoordinate2D(latitude: 38.2333, longitude: 140.7167))
+                    LocalizedAttractionLocation(nameKey: "attraction_akiu_onsen", descriptionKey: "attraction_akiu_onsen_desc", coordinate: CLLocationCoordinate2D(latitude: 38.2333, longitude: 140.7167)),
+                    LocalizedAttractionLocation(nameKey: "attraction_zuihoden", descriptionKey: "attraction_zuihoden_desc", coordinate: CLLocationCoordinate2D(latitude: 38.2507, longitude: 140.8664)),
+                    LocalizedAttractionLocation(nameKey: "attraction_zao_fox_village", descriptionKey: "attraction_zao_fox_village_desc", coordinate: CLLocationCoordinate2D(latitude: 38.0409, longitude: 140.5304))
                 ],
                 foodKeys: ["food_beef_tongue", "food_sasukamaboko", "food_zunda_mochi", "food_seri_nabe", "food_shiroishi_somen"],
                 searchKeyword: "Miyagi Japan",
@@ -181,7 +183,9 @@ extension Prefecture {
                     LocalizedAttractionLocation(nameKey: "attraction_kamogawa_seaworld", descriptionKey: "attraction_kamogawa_seaworld_desc", coordinate: CLLocationCoordinate2D(latitude: 35.1167, longitude: 140.1167)),
                     LocalizedAttractionLocation(nameKey: "attraction_choshi", descriptionKey: "attraction_choshi_desc", coordinate: CLLocationCoordinate2D(latitude: 35.7342, longitude: 140.8317)),
                     LocalizedAttractionLocation(nameKey: "attraction_mother_farm", descriptionKey: "attraction_mother_farm_desc", coordinate: CLLocationCoordinate2D(latitude: 35.2167, longitude: 139.9167)),
-                    LocalizedAttractionLocation(nameKey: "attraction_tokyo_disneysea", descriptionKey: "attraction_tokyo_disneysea_desc", coordinate: CLLocationCoordinate2D(latitude: 35.6265, longitude: 139.8846))
+                    LocalizedAttractionLocation(nameKey: "attraction_tokyo_disneysea", descriptionKey: "attraction_tokyo_disneysea_desc", coordinate: CLLocationCoordinate2D(latitude: 35.6265, longitude: 139.8846)),
+                    LocalizedAttractionLocation(nameKey: "attraction_inubosaki_lighthouse", descriptionKey: "attraction_inubosaki_lighthouse_desc", coordinate: CLLocationCoordinate2D(latitude: 35.7078, longitude: 140.8694)),
+                    LocalizedAttractionLocation(nameKey: "attraction_nokogiriyama", descriptionKey: "attraction_nokogiriyama_desc", coordinate: CLLocationCoordinate2D(latitude: 35.1604, longitude: 139.8409))
                 ],
                 foodKeys: ["food_peanuts", "food_loquat", "food_namerou", "food_katsuura_tantanmen", "food_boso_seafood"],
                 searchKeyword: "Chiba Japan",
@@ -289,7 +293,9 @@ extension Prefecture {
                     LocalizedAttractionLocation(nameKey: "attraction_hakuba", descriptionKey: "attraction_hakuba_desc", coordinate: CLLocationCoordinate2D(latitude: 36.7000, longitude: 137.8667)),
                     LocalizedAttractionLocation(nameKey: "attraction_matsumoto_castle", descriptionKey: "attraction_matsumoto_castle_desc", coordinate: CLLocationCoordinate2D(latitude: 36.2389, longitude: 137.9692)),
                     LocalizedAttractionLocation(nameKey: "attraction_lake_suwa", descriptionKey: "attraction_lake_suwa_desc", coordinate: CLLocationCoordinate2D(latitude: 36.0500, longitude: 138.0833)),
-                    LocalizedAttractionLocation(nameKey: "attraction_togakushi", descriptionKey: "attraction_togakushi_desc", coordinate: CLLocationCoordinate2D(latitude: 36.7167, longitude: 138.1000))
+                    LocalizedAttractionLocation(nameKey: "attraction_togakushi", descriptionKey: "attraction_togakushi_desc", coordinate: CLLocationCoordinate2D(latitude: 36.7167, longitude: 138.1000)),
+                    LocalizedAttractionLocation(nameKey: "attraction_jigokudani_monkey", descriptionKey: "attraction_jigokudani_monkey_desc", coordinate: CLLocationCoordinate2D(latitude: 36.7327, longitude: 138.4621)),
+                    LocalizedAttractionLocation(nameKey: "attraction_suwa_taisha", descriptionKey: "attraction_suwa_taisha_desc", coordinate: CLLocationCoordinate2D(latitude: 35.9981, longitude: 138.1194))
                 ],
                 foodKeys: ["food_shinshu_soba", "food_oyaki", "food_nozawana", "food_apple_nagano", "food_shinshu_miso"],
                 searchKeyword: "Nagano Japan",
@@ -318,7 +324,9 @@ extension Prefecture {
                     LocalizedAttractionLocation(nameKey: "attraction_lake_hamana", descriptionKey: "attraction_lake_hamana_desc", coordinate: CLLocationCoordinate2D(latitude: 34.7167, longitude: 137.6167)),
                     LocalizedAttractionLocation(nameKey: "attraction_kunozan_toshogu", descriptionKey: "attraction_kunozan_toshogu_desc", coordinate: CLLocationCoordinate2D(latitude: 34.9833, longitude: 138.3833)),
                     LocalizedAttractionLocation(nameKey: "attraction_shiraito_falls", descriptionKey: "attraction_shiraito_falls_desc", coordinate: CLLocationCoordinate2D(latitude: 35.3167, longitude: 138.5833)),
-                    LocalizedAttractionLocation(nameKey: "attraction_miho_matsubara", descriptionKey: "attraction_miho_matsubara_desc", coordinate: CLLocationCoordinate2D(latitude: 35.0167, longitude: 138.5167))
+                    LocalizedAttractionLocation(nameKey: "attraction_miho_matsubara", descriptionKey: "attraction_miho_matsubara_desc", coordinate: CLLocationCoordinate2D(latitude: 35.0167, longitude: 138.5167)),
+                    LocalizedAttractionLocation(nameKey: "attraction_sunpu_castle", descriptionKey: "attraction_sunpu_castle_desc", coordinate: CLLocationCoordinate2D(latitude: 34.9786, longitude: 138.3830)),
+                    LocalizedAttractionLocation(nameKey: "attraction_omuroyama", descriptionKey: "attraction_omuroyama_desc", coordinate: CLLocationCoordinate2D(latitude: 34.9031, longitude: 139.0947))
                 ],
                 foodKeys: ["food_shizuoka_tea", "food_unagi", "food_wasabi", "food_sakura_ebi", "food_kuro_hanpen"],
                 searchKeyword: "Shizuoka Japan",
@@ -389,7 +397,9 @@ extension Prefecture {
                     LocalizedAttractionLocation(nameKey: "attraction_wakura_onsen", descriptionKey: "attraction_wakura_onsen_desc", coordinate: CLLocationCoordinate2D(latitude: 37.1167, longitude: 136.9167)),
                     LocalizedAttractionLocation(nameKey: "attraction_chirihama_nagisa_driveway", descriptionKey: "attraction_chirihama_nagisa_driveway_desc", coordinate: CLLocationCoordinate2D(latitude: 36.8833, longitude: 136.6833)),
                     LocalizedAttractionLocation(nameKey: "attraction_wajima_morning_market", descriptionKey: "attraction_wajima_morning_market_desc", coordinate: CLLocationCoordinate2D(latitude: 37.3889, longitude: 136.9000)),
-                    LocalizedAttractionLocation(nameKey: "attraction_higashi_chaya_district", descriptionKey: "attraction_higashi_chaya_district_desc", coordinate: CLLocationCoordinate2D(latitude: 36.5700, longitude: 136.6725))
+                    LocalizedAttractionLocation(nameKey: "attraction_higashi_chaya_district", descriptionKey: "attraction_higashi_chaya_district_desc", coordinate: CLLocationCoordinate2D(latitude: 36.5700, longitude: 136.6725)),
+                    LocalizedAttractionLocation(nameKey: "attraction_kanazawa_21museum", descriptionKey: "attraction_kanazawa_21museum_desc", coordinate: CLLocationCoordinate2D(latitude: 36.5609, longitude: 136.6582)),
+                    LocalizedAttractionLocation(nameKey: "attraction_myoryuji", descriptionKey: "attraction_myoryuji_desc", coordinate: CLLocationCoordinate2D(latitude: 36.5554, longitude: 136.6490))
                 ],
                 foodKeys: ["food_kaga_cuisine", "food_kanazawa_curry", "food_noto_beef", "food_jibuni", "food_nodoguro"],
                 searchKeyword: "Ishikawa Japan",
@@ -463,7 +473,9 @@ extension Prefecture {
                     LocalizedAttractionLocation(nameKey: "attraction_kasuga_taisha", descriptionKey: "attraction_kasuga_taisha_desc", coordinate: CLLocationCoordinate2D(latitude: 34.6815, longitude: 135.8483)),
                     LocalizedAttractionLocation(nameKey: "attraction_horyuji", descriptionKey: "attraction_horyuji_desc", coordinate: CLLocationCoordinate2D(latitude: 34.6147, longitude: 135.7344)),
                     LocalizedAttractionLocation(nameKey: "attraction_yoshinoyama", descriptionKey: "attraction_yoshinoyama_desc", coordinate: CLLocationCoordinate2D(latitude: 34.3667, longitude: 135.8667)),
-                    LocalizedAttractionLocation(nameKey: "attraction_kofukuji", descriptionKey: "attraction_kofukuji_desc", coordinate: CLLocationCoordinate2D(latitude: 34.6836, longitude: 135.8311))
+                    LocalizedAttractionLocation(nameKey: "attraction_kofukuji", descriptionKey: "attraction_kofukuji_desc", coordinate: CLLocationCoordinate2D(latitude: 34.6836, longitude: 135.8311)),
+                    LocalizedAttractionLocation(nameKey: "attraction_yakushiji", descriptionKey: "attraction_yakushiji_desc", coordinate: CLLocationCoordinate2D(latitude: 34.6685, longitude: 135.7843)),
+                    LocalizedAttractionLocation(nameKey: "attraction_hasedera", descriptionKey: "attraction_hasedera_desc", coordinate: CLLocationCoordinate2D(latitude: 34.5359, longitude: 135.9067))
                 ],
                 foodKeys: ["food_kakinoha_sushi", "food_miwa_somen", "food_narazuke", "food_yamato_beef", "food_kuzukiri"],
                 searchKeyword: "Nara Japan",
@@ -536,7 +548,9 @@ extension Prefecture {
                     LocalizedAttractionLocation(nameKey: "attraction_miyajima", descriptionKey: "attraction_miyajima_desc", coordinate: CLLocationCoordinate2D(latitude: 34.2967, longitude: 132.3197)),
                     LocalizedAttractionLocation(nameKey: "attraction_onomichi", descriptionKey: "attraction_onomichi_desc", coordinate: CLLocationCoordinate2D(latitude: 34.4097, longitude: 133.2044)),
                     LocalizedAttractionLocation(nameKey: "attraction_takehara", descriptionKey: "attraction_takehara_desc", coordinate: CLLocationCoordinate2D(latitude: 34.3400, longitude: 132.9100)),
-                    LocalizedAttractionLocation(nameKey: "attraction_tomonoura", descriptionKey: "attraction_tomonoura_desc", coordinate: CLLocationCoordinate2D(latitude: 34.3833, longitude: 133.3833))
+                    LocalizedAttractionLocation(nameKey: "attraction_tomonoura", descriptionKey: "attraction_tomonoura_desc", coordinate: CLLocationCoordinate2D(latitude: 34.3833, longitude: 133.3833)),
+                    LocalizedAttractionLocation(nameKey: "attraction_hiroshima_castle", descriptionKey: "attraction_hiroshima_castle_desc", coordinate: CLLocationCoordinate2D(latitude: 34.4027, longitude: 132.4590)),
+                    LocalizedAttractionLocation(nameKey: "attraction_yamato_museum", descriptionKey: "attraction_yamato_museum_desc", coordinate: CLLocationCoordinate2D(latitude: 34.2417, longitude: 132.5560))
                 ],
                 foodKeys: ["food_okonomiyaki_hiroshima", "food_oyster", "food_momiji_manju", "food_hiroshima_tsukemen", "food_anago_meshi"],
                 searchKeyword: "Hiroshima Japan",
@@ -720,7 +734,9 @@ extension Prefecture {
                     LocalizedAttractionLocation(nameKey: "attraction_peace_park", descriptionKey: "attraction_peace_park_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7756, longitude: 129.8653)),
                     LocalizedAttractionLocation(nameKey: "attraction_gunkanjima", descriptionKey: "attraction_gunkanjima_desc", coordinate: CLLocationCoordinate2D(latitude: 32.6278, longitude: 129.7389)),
                     LocalizedAttractionLocation(nameKey: "attraction_unzen_onsen", descriptionKey: "attraction_unzen_onsen_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7500, longitude: 130.2833)),
-                    LocalizedAttractionLocation(nameKey: "attraction_shimabara_castle", descriptionKey: "attraction_shimabara_castle_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7833, longitude: 130.3667))
+                    LocalizedAttractionLocation(nameKey: "attraction_shimabara_castle", descriptionKey: "attraction_shimabara_castle_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7833, longitude: 130.3667)),
+                    LocalizedAttractionLocation(nameKey: "attraction_dejima", descriptionKey: "attraction_dejima_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7436, longitude: 129.8724)),
+                    LocalizedAttractionLocation(nameKey: "attraction_oura_church", descriptionKey: "attraction_oura_church_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7343, longitude: 129.8701))
                 ],
                 foodKeys: ["food_champon", "food_sara_udon", "food_castella", "food_sasebo_burger", "food_kakuni_manju"],
                 searchKeyword: "Nagasaki Japan",

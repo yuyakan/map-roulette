@@ -255,6 +255,24 @@ extension Prefecture {
                     price: NSLocalizedString("hiroshima.hiroshima_na.price", comment: ""),
                     bestSeason: NSLocalizedString("common.year_round", comment: ""),
                     popularity: 3
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("hiroshima.toyoka.name", comment: ""),
+                    description: NSLocalizedString("hiroshima.toyoka.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "leaf.fill",
+                    price: NSLocalizedString("hiroshima.toyoka.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("hiroshima.lemon_cake.name", comment: ""),
+                    description: NSLocalizedString("hiroshima.lemon_cake.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "circle.fill",
+                    price: NSLocalizedString("hiroshima.lemon_cake.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
                 )
             ]
             
@@ -674,6 +692,24 @@ extension Prefecture {
                     price: NSLocalizedString("nagasaki.kakuni_manju.price", comment: ""),
                     bestSeason: NSLocalizedString("common.year_round", comment: ""),
                     popularity: 4
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("nagasaki.kujuku_sempei.name", comment: ""),
+                    description: NSLocalizedString("nagasaki.kujuku_sempei.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "circle.fill",
+                    price: NSLocalizedString("nagasaki.kujuku_sempei.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("nagasaki.nagasaki_monogatari.name", comment: ""),
+                    description: NSLocalizedString("nagasaki.nagasaki_monogatari.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "rectangle.fill",
+                    price: NSLocalizedString("nagasaki.nagasaki_monogatari.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
                 )
             ]
             
@@ -927,6 +963,24 @@ extension Prefecture {
                     price: NSLocalizedString("miyagi.hakumatsuga_monaka.price", comment: ""),
                     bestSeason: NSLocalizedString("common.year_round", comment: ""),
                     popularity: 3
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("miyagi.shiogama_kohada.name", comment: ""),
+                    description: NSLocalizedString("miyagi.shiogama_kohada.description", comment: ""),
+                    category: .food,
+                    imageSymbol: "fish.fill",
+                    price: NSLocalizedString("miyagi.shiogama_kohada.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("miyagi.kikufuku.name", comment: ""),
+                    description: NSLocalizedString("miyagi.kikufuku.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "circle.fill",
+                    price: NSLocalizedString("miyagi.kikufuku.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 4
                 ),
                 SouvenirItem(
                     name: NSLocalizedString("miyagi.kokeshi.name", comment: ""),
@@ -1328,6 +1382,24 @@ extension Prefecture {
                     price: NSLocalizedString("chiba.rakkasei.price", comment: ""),
                     bestSeason: NSLocalizedString("common.autumn", comment: ""),
                     popularity: 4
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("chiba.nure_senbei.name", comment: ""),
+                    description: NSLocalizedString("chiba.nure_senbei.description", comment: ""),
+                    category: .food,
+                    imageSymbol: "circle.fill",
+                    price: NSLocalizedString("chiba.nure_senbei.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("chiba.peanut_sub.name", comment: ""),
+                    description: NSLocalizedString("chiba.peanut_sub.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "oval.fill",
+                    price: NSLocalizedString("chiba.peanut_sub.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
                 )
             ]
             
@@ -1611,6 +1683,24 @@ extension Prefecture {
                     popularity: 4
                 ),
                 SouvenirItem(
+                    name: NSLocalizedString("ishikawa.shibafune.name", comment: ""),
+                    description: NSLocalizedString("ishikawa.shibafune.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "circle.fill",
+                    price: NSLocalizedString("ishikawa.shibafune.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("ishikawa.kaga_bocha.name", comment: ""),
+                    description: NSLocalizedString("ishikawa.kaga_bocha.description", comment: ""),
+                    category: .drinks,
+                    imageSymbol: "leaf.fill",
+                    price: NSLocalizedString("ishikawa.kaga_bocha.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
+                ),
+                SouvenirItem(
                     name: NSLocalizedString("ishikawa.wajima_nuri.name", comment: ""),
                     description: NSLocalizedString("ishikawa.wajima_nuri.description", comment: ""),
                     category: .crafts,
@@ -1717,6 +1807,24 @@ extension Prefecture {
                             price: NSLocalizedString("nara.shika_goods.price", comment: ""),
                             bestSeason: NSLocalizedString("common.year_round", comment: ""),
                             popularity: 4
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("nara.narazuke.name", comment: ""),
+                            description: NSLocalizedString("nara.narazuke.description", comment: ""),
+                            category: .food,
+                            imageSymbol: "leaf.fill",
+                            price: NSLocalizedString("nara.narazuke.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 3
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("nara.kaki_no_ha_cha.name", comment: ""),
+                            description: NSLocalizedString("nara.kaki_no_ha_cha.description", comment: ""),
+                            category: .drinks,
+                            imageSymbol: "leaf.fill",
+                            price: NSLocalizedString("nara.kaki_no_ha_cha.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 3
                         )
                     ]
                     
@@ -1913,6 +2021,24 @@ extension Prefecture {
                             price: NSLocalizedString("nagano.nozawana.price", comment: ""),
                             bestSeason: NSLocalizedString("common.winter", comment: ""),
                             popularity: 3
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("nagano.oyaki.name", comment: ""),
+                            description: NSLocalizedString("nagano.oyaki.description", comment: ""),
+                            category: .food,
+                            imageSymbol: "circle.fill",
+                            price: NSLocalizedString("nagano.oyaki.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 4
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("nagano.kurumi_yubeshi.name", comment: ""),
+                            description: NSLocalizedString("nagano.kurumi_yubeshi.description", comment: ""),
+                            category: .sweets,
+                            imageSymbol: "circle.fill",
+                            price: NSLocalizedString("nagano.kurumi_yubeshi.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 3
                         )
                     ]
                     
@@ -2011,6 +2137,24 @@ extension Prefecture {
                             price: NSLocalizedString("shizuoka.shizuoka_cha.price", comment: ""),
                             bestSeason: NSLocalizedString("common.year_round", comment: ""),
                             popularity: 5
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("shizuoka.wasabi_zuke.name", comment: ""),
+                            description: NSLocalizedString("shizuoka.wasabi_zuke.description", comment: ""),
+                            category: .food,
+                            imageSymbol: "leaf.fill",
+                            price: NSLocalizedString("shizuoka.wasabi_zuke.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 3
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("shizuoka.abekawa_mochi.name", comment: ""),
+                            description: NSLocalizedString("shizuoka.abekawa_mochi.description", comment: ""),
+                            category: .sweets,
+                            imageSymbol: "circle.fill",
+                            price: NSLocalizedString("shizuoka.abekawa_mochi.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 3
                         )
                     ]
                     
