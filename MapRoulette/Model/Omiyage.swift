@@ -558,6 +558,24 @@ extension Prefecture {
                     price: NSLocalizedString("fukuoka.hakata_ori.price", comment: ""),
                     bestSeason: NSLocalizedString("common.year_round", comment: ""),
                     popularity: 3
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("fukuoka.chikushi_mochi.name", comment: ""),
+                    description: NSLocalizedString("fukuoka.chikushi_mochi.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "circle.fill",
+                    price: NSLocalizedString("fukuoka.chikushi_mochi.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 4
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("fukuoka.menbei.name", comment: ""),
+                    description: NSLocalizedString("fukuoka.menbei.description", comment: ""),
+                    category: .food,
+                    imageSymbol: "circle.fill",
+                    price: NSLocalizedString("fukuoka.menbei.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 4
                 )
             ]
             
@@ -752,6 +770,24 @@ extension Prefecture {
                     imageSymbol: "circle.fill",
                     price: NSLocalizedString("hokkaido.yubari_melon_jelly.price", comment: ""),
                     bestSeason: NSLocalizedString("common.summer", comment: ""),
+                    popularity: 4
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("hokkaido.trappist_cookie.name", comment: ""),
+                    description: NSLocalizedString("hokkaido.trappist_cookie.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "circle.fill",
+                    price: NSLocalizedString("hokkaido.trappist_cookie.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("hokkaido.kitakaro_baumkuchen.name", comment: ""),
+                    description: NSLocalizedString("hokkaido.kitakaro_baumkuchen.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "circle.fill",
+                    price: NSLocalizedString("hokkaido.kitakaro_baumkuchen.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
                     popularity: 4
                 )
             ]
@@ -1350,9 +1386,27 @@ extension Prefecture {
                     price: NSLocalizedString("tokyo.edo_kiriko.price", comment: ""),
                     bestSeason: NSLocalizedString("common.year_round", comment: ""),
                     popularity: 4
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("tokyo.goma_tamago.name", comment: ""),
+                    description: NSLocalizedString("tokyo.goma_tamago.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "oval.fill",
+                    price: NSLocalizedString("tokyo.goma_tamago.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 4
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("tokyo.kusaka_senbei.name", comment: ""),
+                    description: NSLocalizedString("tokyo.kusaka_senbei.description", comment: ""),
+                    category: .food,
+                    imageSymbol: "circle.fill",
+                    price: NSLocalizedString("tokyo.kusaka_senbei.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
                 )
             ]
-            
+
         case .kanagawa:
             return [
                 SouvenirItem(
@@ -1399,6 +1453,24 @@ extension Prefecture {
                     price: NSLocalizedString("kanagawa.hakone_yosegi.price", comment: ""),
                     bestSeason: NSLocalizedString("common.year_round", comment: ""),
                     popularity: 4
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("kanagawa.hakone_manju.name", comment: ""),
+                    description: NSLocalizedString("kanagawa.hakone_manju.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "circle.fill",
+                    price: NSLocalizedString("kanagawa.hakone_manju.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
+                ),
+                SouvenirItem(
+                    name: NSLocalizedString("kanagawa.kamakura_raisin_wich.name", comment: ""),
+                    description: NSLocalizedString("kanagawa.kamakura_raisin_wich.description", comment: ""),
+                    category: .sweets,
+                    imageSymbol: "rectangle.fill",
+                    price: NSLocalizedString("kanagawa.kamakura_raisin_wich.price", comment: ""),
+                    bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                    popularity: 3
                 )
             ]
             
@@ -1988,6 +2060,24 @@ extension Prefecture {
                             price: NSLocalizedString("aichi.arimatsu_shibori.price", comment: ""),
                             bestSeason: NSLocalizedString("common.year_round", comment: ""),
                             popularity: 3
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("aichi.shiruko_sand.name", comment: ""),
+                            description: NSLocalizedString("aichi.shiruko_sand.description", comment: ""),
+                            category: .sweets,
+                            imageSymbol: "circle.fill",
+                            price: NSLocalizedString("aichi.shiruko_sand.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 3
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("aichi.ebi_senbei.name", comment: ""),
+                            description: NSLocalizedString("aichi.ebi_senbei.description", comment: ""),
+                            category: .food,
+                            imageSymbol: "circle.fill",
+                            price: NSLocalizedString("aichi.ebi_senbei.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 4
                         )
                     ]
                     
@@ -2144,6 +2234,24 @@ extension Prefecture {
                             price: NSLocalizedString("kyoto.kiyomizu_yaki.price", comment: ""),
                             bestSeason: NSLocalizedString("common.year_round", comment: ""),
                             popularity: 4
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("kyoto.kyo_baum.name", comment: ""),
+                            description: NSLocalizedString("kyoto.kyo_baum.description", comment: ""),
+                            category: .sweets,
+                            imageSymbol: "circle.fill",
+                            price: NSLocalizedString("kyoto.kyo_baum.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 4
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("kyoto.matcha_chocolate.name", comment: ""),
+                            description: NSLocalizedString("kyoto.matcha_chocolate.description", comment: ""),
+                            category: .sweets,
+                            imageSymbol: "leaf.fill",
+                            price: NSLocalizedString("kyoto.matcha_chocolate.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 4
                         )
                     ]
                     
@@ -2193,9 +2301,27 @@ extension Prefecture {
                             price: NSLocalizedString("osaka.takoyaki_goods.price", comment: ""),
                             bestSeason: NSLocalizedString("common.year_round", comment: ""),
                             popularity: 4
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("osaka.iwa_okoshi.name", comment: ""),
+                            description: NSLocalizedString("osaka.iwa_okoshi.description", comment: ""),
+                            category: .sweets,
+                            imageSymbol: "square.fill",
+                            price: NSLocalizedString("osaka.iwa_okoshi.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 3
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("osaka.tenten_gyoza.name", comment: ""),
+                            description: NSLocalizedString("osaka.tenten_gyoza.description", comment: ""),
+                            category: .food,
+                            imageSymbol: "circle.fill",
+                            price: NSLocalizedString("osaka.tenten_gyoza.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 3
                         )
                     ]
-                    
+
                 case .hyogo:
                     return [
                         SouvenirItem(
@@ -2406,6 +2532,24 @@ extension Prefecture {
                             price: NSLocalizedString("okinawa.shisa.price", comment: ""),
                             bestSeason: NSLocalizedString("common.year_round", comment: ""),
                             popularity: 4
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("okinawa.kokuto.name", comment: ""),
+                            description: NSLocalizedString("okinawa.kokuto.description", comment: ""),
+                            category: .food,
+                            imageSymbol: "cube.fill",
+                            price: NSLocalizedString("okinawa.kokuto.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 3
+                        ),
+                        SouvenirItem(
+                            name: NSLocalizedString("okinawa.shio_senbei.name", comment: ""),
+                            description: NSLocalizedString("okinawa.shio_senbei.description", comment: ""),
+                            category: .food,
+                            imageSymbol: "circle.fill",
+                            price: NSLocalizedString("okinawa.shio_senbei.price", comment: ""),
+                            bestSeason: NSLocalizedString("common.year_round", comment: ""),
+                            popularity: 3
                         )
                     ]
         }
