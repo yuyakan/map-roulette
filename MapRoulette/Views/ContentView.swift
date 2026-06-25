@@ -103,13 +103,19 @@ struct TabBarItem: View {
     
     var body: some View {
         Button(action: action) {
-            VStack(spacing: 4) {
+            VStack(spacing: 8) {
+                // SF Symbol ごとに描画高さが異なるため、固定高さの枠に入れて中央揃えし、
+                // アイコン下端（＝テキスト位置）をタブ間で揃える。
                 Image(systemName: icon)
-                    .font(.system(size: 20, weight: .medium)) // サイズを大きく設定
+                    .font(.system(size: 20, weight: .medium))
+                    .frame(height: 24)
                     .foregroundColor(isSelected ? .orange : .gray)
-                
+
+                // タイトルは常に 1 行に固定。言語により折り返して高さがずれるのを防ぐ。
                 Text(title)
                     .font(.system(size: 11, weight: isSelected ? .medium : .regular))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
                     .foregroundColor(isSelected ? .orange : .gray)
             }
             .frame(maxWidth: .infinity)
