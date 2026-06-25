@@ -151,7 +151,7 @@ struct GourmetItemCard: View {
                     .lineLimit(2)
                     .multilineTextAlignment(.leading)
             }
-            
+
             Spacer()
             
             // ボトム情報
@@ -190,7 +190,7 @@ struct GourmetItemCard: View {
             }
         }
         .padding(16)
-        .frame(height: 200)
+        .frame(height: 224)
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .fill(Color(.systemBackground))
