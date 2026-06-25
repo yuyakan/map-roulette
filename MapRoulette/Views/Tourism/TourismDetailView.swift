@@ -186,6 +186,9 @@ struct TourismDetailView: View {
                     RichFestivalSection(prefecture: prefecture)
                     
                     RichOtherFestivalSection(prefecture: prefecture)
+
+                    // 最下部に余白を入れてスクロールに余裕を持たせる
+                    Color.clear.frame(height: 40)
                 }
             }
             .navigationBarHidden(true)
