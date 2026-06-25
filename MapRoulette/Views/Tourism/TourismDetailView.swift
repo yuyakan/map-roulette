@@ -10,9 +10,6 @@ import MapKit
 
 struct TourismDetailView: View {
     let prefecture: Prefecture
-    @StateObject private var photoManager = PhotoManager()
-    @State private var selectedPhotoIndex = 0
-    @State private var showFullScreenPhoto = false
     @State private var cameraPosition: MapCameraPosition
     @State private var isPressed = false
     @State private var selectedAttraction: LocalizedAttractionLocation? = nil
@@ -189,79 +186,9 @@ struct TourismDetailView: View {
                     RichFestivalSection(prefecture: prefecture)
                     
                     RichOtherFestivalSection(prefecture: prefecture)
-
-
-                    // 写真ギャラリー
-                    VStack(alignment: .leading, spacing: 16) {
-                        RichSectionHeader(
-                            icon: "photo.on.rectangle.angled",
-                            title: "tourism_detail_photo".localized,
-                            accent: PlanTheme.primary
-                        )
-
-                        if photoManager.isLoading {
-                            HStack {
-                                Spacer()
-                                ProgressView()
-                                    .scaleEffect(1.2)
-                                Text("tourism_detail_photo_loading".localized)
-                                    .foregroundColor(.secondary)
-                                Spacer()
-                            }
-                            .frame(height: 200)
-                        } else if !photoManager.photos.isEmpty {
-                            TabView(selection: $selectedPhotoIndex) {
-                                ForEach(0..<photoManager.photos.count, id: \.self) { index in
-                                    let photo = photoManager.photos[index]
-                                    
-                                    VStack(spacing: 8) {
-                                        AsyncImage(url: URL(string: photo.urls.regular)) { image in
-                                            image
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fill)
-                                        } placeholder: {
-                                            Rectangle()
-                                                .fill(Color.gray.opacity(0.3))
-                                                .overlay(
-                                                    ProgressView()
-                                                )
-                                        }
-                                        .frame(height: 200)
-                                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                                        // Unsplash API ガイドライン: 表示する各写真に撮影者・Unsplash クレジットを付与。
-                                        .overlay(alignment: .bottomLeading) {
-                                            UnsplashCreditView(photo: photo, onDark: true)
-                                                .padding(.horizontal, 8)
-                                                .padding(.vertical, 4)
-                                                .background(.black.opacity(0.35), in: Capsule())
-                                                .padding(8)
-                                        }
-                                        .onTapGesture {
-                                            showFullScreenPhoto = true
-                                        }
-                                    }
-                                    .tag(index)
-                                }
-                            }
-                            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-                            .frame(height: 230)
-                        }
-                    }
-                    .padding(.horizontal)
                 }
             }
             .navigationBarHidden(true)
-            .onAppear {
-                photoManager.fetchPhotos(for: prefecture.tourismInfo.searchKeyword)
-            }
-            .sheet(isPresented: $showFullScreenPhoto) {
-                if !photoManager.photos.isEmpty {
-                    PhotoDetailView(
-                        photos: photoManager.photos,
-                        selectedIndex: $selectedPhotoIndex
-                    )
-                }
-            }
             .fullScreenCover(item: $selectedAttraction) { attraction in
                 AttractionDetailView(attraction: attraction, prefecture: prefecture)
             }
