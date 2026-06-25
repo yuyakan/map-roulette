@@ -464,12 +464,18 @@ struct LocationPickerView: View {
 
 // MARK: - 表示画面（保存済みカスタム項目）
 
+/// 保存済みカスタム項目（ホテル・移動・その他）の詳細画面。
+/// デザインは観光・グルメ詳細と統一（ヒーローヘッダー／白カード群／地図カード）。
+/// 基調色はカテゴリ色（ホテル＝藍、移動＝青緑 等）を使う。
 struct CustomPlanItemView: View {
     let item: PlanItem
     @Environment(\.dismiss) private var dismiss
     @State private var showingEditor = false
     /// 住所コピー直後に「コピーしました」を一時表示するためのフラグ
     @State private var addressCopied = false
+
+    /// この項目の基調色（カテゴリ色）。
+    private var accent: Color { PlanTheme.color(for: item.category) }
 
     /// この項目が属するプランID（編集に必要）。store から逆引き。
     private var planID: UUID? {
@@ -478,82 +484,126 @@ struct CustomPlanItemView: View {
 
     var body: some View {
         NavigationStack {
-            ZStack {
-                PlanTheme.backgroundGradient.ignoresSafeArea()
+            ZStack(alignment: .topTrailing) {
+                // 上方向バウンス時にヘッダー背後へ白が出ないよう最背面に基調色を敷く。
+                accent.ignoresSafeArea()
+
                 ScrollView {
-                    VStack(spacing: 16) {
+                    VStack(alignment: .leading, spacing: 18) {
                         header
-                        if let detail = item.customDetail, !detail.isEmpty {
-                            detailCard(detail)
+                        VStack(alignment: .leading, spacing: 18) {
+                            if let detail = item.customDetail?.trimmingCharacters(in: .whitespacesAndNewlines), !detail.isEmpty {
+                                detailCard(detail)
+                            }
+                            if let coord = item.coordinate {
+                                placeCard(coordinate: coord)
+                            }
                         }
-                        if let coord = item.coordinate {
-                            placeCard(coordinate: coord)
-                        }
+                        .padding(.horizontal, 18)
                     }
-                    .padding()
+                    .padding(.bottom, 32)
                 }
+                .background(PlanTheme.backgroundGradient.ignoresSafeArea())
+                .ignoresSafeArea(edges: .top)
+
+                topButtons
             }
-            .navigationTitle(item.name)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button(NSLocalizedString("common.close", comment: "")) { dismiss() }
-                }
-                ToolbarItem(placement: .navigationBarLeading) {
-                    if planID != nil {
-                        Button(NSLocalizedString("common.edit", comment: "")) { showingEditor = true }
-                    }
-                }
-            }
+            .navigationBarHidden(true)
             .sheet(isPresented: $showingEditor) {
                 if let planID {
                     CustomPlanItemEditor(planID: planID, editing: item)
                 }
             }
         }
-        .tint(PlanTheme.primary)
+        .tint(accent)
     }
+
+    // MARK: - 右上のボタン（編集・閉じる）
+
+    private var topButtons: some View {
+        HStack(spacing: 12) {
+            if planID != nil {
+                circleButton(icon: "square.and.pencil") { showingEditor = true }
+            }
+            circleButton(icon: "xmark") { dismiss() }
+        }
+        .padding(.top, 56)
+        .padding(.trailing, 18)
+    }
+
+    private func circleButton(icon: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Image(systemName: icon)
+                .font(.system(size: 15, weight: .bold))
+                .foregroundColor(accent)
+                .frame(width: 36, height: 36)
+                .background(.ultraThinMaterial, in: Circle())
+                .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
+                .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
+        }
+    }
+
+    // MARK: - ヒーローヘッダー
 
     private var header: some View {
-        VStack(spacing: 12) {
-            Image(systemName: item.category.icon)
-                .font(.system(size: 40))
-                .foregroundColor(.white)
-                .frame(width: 80, height: 80)
-                .background(Circle().fill(PlanTheme.color(for: item.category)))
-            Text(item.name).font(.title2.bold()).multilineTextAlignment(.center)
-            Text(item.category.localizedName)
-                .font(.subheadline)
-                .foregroundColor(.secondary)
+        VStack(alignment: .leading, spacing: 16) {
+            ZStack {
+                Circle()
+                    .fill(.white.opacity(0.22))
+                    .frame(width: 76, height: 76)
+                Image(systemName: item.category.icon)
+                    .font(.system(size: 32, weight: .semibold))
+                    .foregroundColor(.white)
+            }
+            .padding(.top, 60)
+
+            VStack(alignment: .leading, spacing: 6) {
+                Text(item.name)
+                    .font(.system(size: 28, weight: .heavy, design: .rounded))
+                    .foregroundColor(.white)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Label(item.category.localizedName, systemImage: "tag.fill")
+                    .font(.subheadline.weight(.medium))
+                    .foregroundColor(.white.opacity(0.9))
+            }
         }
-        .frame(maxWidth: .infinity)
-        .padding(.top, 8)
+        .padding(.horizontal, 22)
+        .padding(.bottom, 24)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
+    // MARK: - メモ
+
     private func detailCard(_ detail: String) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Label(NSLocalizedString("plan.memo.label", comment: ""), systemImage: "note.text")
-                .font(.caption.bold())
-                .foregroundColor(PlanTheme.primary)
-            Text(detail).font(.body)
+        VStack(alignment: .leading, spacing: 10) {
+            sectionHeader(icon: "note.text", title: "plan.memo.label".localized)
+            Text(detail)
+                .font(.body)
+                .lineSpacing(6)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .planCard()
     }
 
+    // MARK: - 場所カード（施設名・住所・地図・マップ起動）
+
     @ViewBuilder
     private func placeCard(coordinate coord: CLLocationCoordinate2D) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .leading, spacing: 12) {
+            sectionHeader(icon: "mappin.and.ellipse", title: "attraction.open_in_maps".localized)
+
             // 検索で施設名・地名を保存している場合のみ、その名前を表示
             if let placeName = item.customPlaceName, !placeName.isEmpty {
-                Label(placeName, systemImage: "mappin.circle.fill")
+                Text(placeName)
                     .font(.subheadline.bold())
-                    .foregroundColor(PlanTheme.primary)
+                    .foregroundColor(accent)
                     .lineLimit(2)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
 
-            // 住所があれば施設名の下に表示（検索選択・ピン手動移動の両方で保存される）
+            // 住所があれば表示（検索選択・ピン手動移動の両方で保存される）
             if let address = item.effectiveAddress {
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
                     Text(address)
@@ -572,23 +622,79 @@ struct CustomPlanItemView: View {
                     } label: {
                         Image(systemName: addressCopied ? "checkmark.circle.fill" : "doc.on.doc")
                             .font(.caption)
-                            .foregroundColor(addressCopied ? .green : PlanTheme.primary)
+                            .foregroundColor(addressCopied ? .green : accent)
                     }
                     .buttonStyle(.plain)
                     .accessibilityLabel(NSLocalizedString("plan.address.copy", comment: ""))
                 }
             }
 
-            // 地図はカード装飾で囲まず、全幅・大きめに表示する
             Map(initialPosition: .region(MKCoordinateRegion(
                 center: coord,
                 span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
             ))) {
                 Marker(item.customPlaceName ?? item.name, coordinate: coord)
-                    .tint(PlanTheme.primary)
+                    .tint(accent)
             }
-            .frame(height: 220)
-            .clipShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
+            .frame(height: 200)
+            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+
+            Button {
+                openInMaps(coordinate: coord)
+            } label: {
+                HStack(spacing: 12) {
+                    Image(systemName: "map.fill")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundColor(accent)
+                        .frame(width: 32, height: 32)
+                        .background(.white, in: Circle())
+                    Text("attraction.open_in_maps".localized)
+                        .font(.system(size: 16, weight: .bold, design: .rounded))
+                        .foregroundColor(.white)
+                    Spacer(minLength: 0)
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 13, weight: .bold))
+                        .foregroundColor(.white.opacity(0.85))
+                }
+                .padding(.horizontal, 14)
+                .padding(.vertical, 12)
+                .frame(maxWidth: .infinity)
+                .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(accent))
+                .shadow(color: accent.opacity(0.3), radius: 6, y: 3)
+            }
+            .buttonStyle(.plain)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .planCard()
+    }
+
+    // MARK: - 共通
+
+    private func sectionHeader(icon: String, title: String) -> some View {
+        HStack(spacing: 10) {
+            RoundedRectangle(cornerRadius: 2, style: .continuous)
+                .fill(accent)
+                .frame(width: 4, height: 18)
+            Image(systemName: icon)
+                .font(.subheadline.weight(.semibold))
+                .foregroundColor(accent)
+            Text(title)
+                .font(.system(.headline, design: .rounded))
+                .fontWeight(.bold)
+        }
+    }
+
+    /// 保存済みの座標を Apple マップ（無ければ Google マップ）で開く。
+    /// 施設名があればラベル付きで、無ければ座標で開く。
+    private func openInMaps(coordinate coord: CLLocationCoordinate2D) {
+        let lat = coord.latitude, lng = coord.longitude
+        let name = (item.customPlaceName?.isEmpty == false) ? item.customPlaceName! : item.name
+        if let encoded = name.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+           let url = URL(string: "http://maps.apple.com/?q=\(encoded)&ll=\(lat),\(lng)"),
+           UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        } else if let url = URL(string: "https://maps.google.com/maps?q=\(lat),\(lng)") {
+            UIApplication.shared.open(url)
         }
     }
 }
