@@ -13,7 +13,7 @@ struct BannerAdView: UIViewRepresentable {
 
         let banner = BannerView(adSize: AdSizeBanner)
 
-        banner.adUnitID = testIdBanner
+        banner.adUnitID = prodIdBanner
 
         banner.rootViewController = UIApplication.shared.connectedScenes
 
