@@ -1355,7 +1355,10 @@ struct OtherFestivalDetailView: View {
     }
 
     private var closeButton: some View {
-        Button { dismiss() } label: {
+        Button {
+            InterstitialViewModel.count += 2
+            dismiss()
+        } label: {
             Image(systemName: "xmark")
                 .font(.system(size: 15, weight: .bold))
                 .foregroundColor(accent)

@@ -302,15 +302,7 @@ struct JapanMapView: View {
                                 Spacer()
                                 Button(action: {
                                     resetGame()
-                                    if InterstitialViewModel.isShowAd {
-                                        InterstitialViewModel.isShowAd = false
-                                    } else {
-                                        InterstitialViewModel.count += 5
-                                    }
-                                    if InterstitialViewModel.count >= 10 {
-                                        interstitial.showAd()
-                                        InterstitialViewModel.count = 0
-                                    }
+                                    interstitial.registerRouletteSpin()
                                 }) {
                                     HStack(spacing: 10) {
                                         Image(systemName: "arrow.clockwise")
@@ -361,14 +353,7 @@ struct JapanMapView: View {
                 updateEnabledPrefecturesForMode()
             }
             .onAppear {
-                if InterstitialViewModel.count >= 10 {
-                    interstitial.showAd()
-                    InterstitialViewModel.isShowAd = true
-                    InterstitialViewModel.count = 0
-                }
-                Task {
-                    await interstitial.loadAd()
-                }
+                interstitial.handleMapAppear()
             }
 
             

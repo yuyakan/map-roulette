@@ -5187,3 +5187,8 @@
 "otherFestival.illumination_tag" = "Illumination";
 "otherFestival.snow_tag" = "Snow";
 "otherFestival.traditional_tag" = "Traditional";
+
+"review.prompt.title" = "Enjoying Tabisaki Choice?";
+"review.prompt.message" = "If you like the app, a quick review would mean a lot to us.";
+"review.prompt.yes" = "Write a Review";
+"review.prompt.no" = "Not Now";

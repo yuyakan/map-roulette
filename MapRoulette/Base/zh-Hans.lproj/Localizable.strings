@@ -5930,3 +5930,8 @@
 "otherFestival.illumination_tag" = "灯光秀";
 "otherFestival.snow_tag" = "雪祭";
 "otherFestival.traditional_tag" = "传统活动";
+
+"review.prompt.title" = "您喜欢旅先Choice吗？";
+"review.prompt.message" = "如果您喜欢这款应用，欢迎给我们留下评价支持一下。";
+"review.prompt.yes" = "去评价";
+"review.prompt.no" = "暂不";

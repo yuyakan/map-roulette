@@ -5928,3 +5928,8 @@
 "otherFestival.illumination_tag" = "灯光秀";
 "otherFestival.snow_tag" = "雪祭";
 "otherFestival.traditional_tag" = "传统活动";
+
+"review.prompt.title" = "您喜歡旅先Choice嗎？";
+"review.prompt.message" = "如果您喜歡呢個應用程式，歡迎畀個評價支持一下。";
+"review.prompt.yes" = "去評價";
+"review.prompt.no" = "暫不";

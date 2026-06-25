@@ -5185,3 +5185,8 @@
 "otherFestival.illumination_tag" = "イルミネーション";
 "otherFestival.snow_tag" = "雪まつり";
 "otherFestival.traditional_tag" = "伝統行事";
+
+"review.prompt.title" = "旅さきChoiceはいかがですか？";
+"review.prompt.message" = "よろしければレビューでご感想をお聞かせください";
+"review.prompt.yes" = "レビューする";
+"review.prompt.no" = "今はしない";

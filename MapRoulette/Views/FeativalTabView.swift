@@ -476,10 +476,7 @@ struct AllFestivalsComparisonView: View {
                 }
             }
             .onChange(of: modalDismissed) {
-                if InterstitialViewModel.count >= 10 {
-                    interstitial.showAd()
-                    InterstitialViewModel.count = 0
-                }
+                interstitial.maybePresent()
                 modalDismissed = false
             }
         }

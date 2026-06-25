@@ -5043,3 +5043,8 @@
 "otherFestival.illumination_tag" = "일루미네이션";
 "otherFestival.snow_tag" = "눈축제";
 "otherFestival.traditional_tag" = "전통행사";
+
+"review.prompt.title" = "여행지 Choice는 어떠신가요?";
+"review.prompt.message" = "마음에 드셨다면 리뷰로 응원해 주시면 큰 힘이 됩니다.";
+"review.prompt.yes" = "리뷰 작성";
+"review.prompt.no" = "나중에";

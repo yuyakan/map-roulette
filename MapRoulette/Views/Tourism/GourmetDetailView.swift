@@ -80,6 +80,7 @@ struct GourmetDetailView: View {
 
     private var closeButton: some View {
         Button {
+            InterstitialViewModel.count += 2
             dismiss()
         } label: {
             Image(systemName: "xmark")
