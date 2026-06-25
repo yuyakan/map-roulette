@@ -13,18 +13,18 @@ struct TourismDetailView: View {
     @StateObject private var photoManager = PhotoManager()
     @State private var selectedPhotoIndex = 0
     @State private var showFullScreenPhoto = false
-    @State private var region: MKCoordinateRegion
+    @State private var cameraPosition: MapCameraPosition
     @State private var isPressed = false
     @State private var selectedAttraction: LocalizedAttractionLocation? = nil
     @Environment(\.dismiss) private var dismiss
-    
+
     init(prefecture: Prefecture) {
         self.prefecture = prefecture
         let tourismInfo = prefecture.tourismInfo
-        self._region = State(initialValue: MKCoordinateRegion(
+        self._cameraPosition = State(initialValue: .region(MKCoordinateRegion(
             center: tourismInfo.region,
             span: MKCoordinateSpan(latitudeDelta: 0.8, longitudeDelta: 0.8)
-        ))
+        )))
     }
     
     var body: some View {
@@ -54,22 +54,27 @@ struct TourismDetailView: View {
                             accent: PlanTheme.primary
                         )
 
-                        Map(coordinateRegion: $region, annotationItems: prefecture.tourismInfo.attractions) { attraction in
-                            MapAnnotation(coordinate: attraction.coordinate) {
-                                VStack(spacing: 4) {
-                                    Image(systemName: "mappin.circle.fill")
-                                        .font(.title2)
-                                        .foregroundColor(.red)
-                                        .background(Color.white)
-                                        .clipShape(Circle())
-                                    
-                                    Text(attraction.name)
-                                        .font(.caption2)
-                                        .padding(.horizontal, 6)
-                                        .padding(.vertical, 2)
-                                        .background(Color.white.opacity(0.9))
-                                        .cornerRadius(4)
-                                        .shadow(radius: 2)
+                        Map(position: $cameraPosition) {
+                            ForEach(prefecture.tourismInfo.attractions) { attraction in
+                                Annotation(attraction.name, coordinate: attraction.coordinate) {
+                                    VStack(spacing: 4) {
+                                        Image(systemName: "mappin.circle.fill")
+                                            .font(.title2)
+                                            .foregroundColor(.red)
+                                            .background(Color.white)
+                                            .clipShape(Circle())
+
+                                        Text(attraction.name)
+                                            .font(.caption2)
+                                            .padding(.horizontal, 6)
+                                            .padding(.vertical, 2)
+                                            .background(Color.white.opacity(0.9))
+                                            .cornerRadius(4)
+                                            .shadow(radius: 2)
+                                    }
+                                    .onTapGesture {
+                                        selectedAttraction = attraction
+                                    }
                                 }
                             }
                         }
