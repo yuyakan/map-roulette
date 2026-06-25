@@ -120,7 +120,7 @@ class InterstitialViewModel: NSObject, FullScreenContentDelegate {
     func loadAd() async {
         do {
             interstitialAd = try await InterstitialAd.load(
-                with: prodIdInter, request: Request())
+                with: testIdInter, request: Request())
             interstitialAd?.fullScreenContentDelegate = self
         } catch {
             print("Failed to load interstitial ad with error: \(error.localizedDescription)")
