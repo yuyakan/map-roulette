@@ -1,5 +1,15 @@
 [
  {
+  "nameKey": "attraction_dinosaur_museum",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "先従隗始",
+  "title": "Fukui Prefectural Dinosaur Museum 20210504 01.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fukui_Prefectural_Dinosaur_Museum_20210504_01.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_ginzan_onsen",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -7,6 +17,26 @@
   "author": "lumoplank",
   "title": "Ginzan Onsen in blue hour.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ginzan_Onsen_in_blue_hour.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_hida_takayama",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Raita Futo from Tokyo, Japan",
+  "title": "Hida Takayama old town streets (48519369602).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hida_Takayama_old_town_streets_(48519369602).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_higashi_chaya_district",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "くろふね",
+  "title": "ひがし茶屋街 - panoramio (1).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%81%B2%E3%81%8C%E3%81%97%E8%8C%B6%E5%B1%8B%E8%A1%97_-_panoramio_(1).jpg",
   "modified": "resized"
  },
  {
@@ -30,6 +60,36 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_inuyama_castle",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "Hyppolyte de Saint-Rambert",
+  "title": "Inuyama Castle (Inuyama Aichi) VLux5 hdsr 08.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inuyama_Castle_(Inuyama_Aichi)_VLux5_hdsr_08.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_ise_shrine",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "MaedaAkihiko",
+  "title": "Ise-Shrine Naiku-Ujibashi-Torii.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ise-Shrine_Naiku-Ujibashi-Torii.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_jigokudani_monkey",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "nomao saeki saekinomao",
+  "title": "Wild Winter Primates (Unsplash).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wild_Winter_Primates_(Unsplash).jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_jodogahama",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -37,6 +97,16 @@
   "author": "Raita Futo from Tokyo, Japan",
   "title": "Jodogahama Beach (51971544590).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jodogahama_Beach_(51971544590).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_kamikochi",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "pcs34560 from jawp\n\n This photo was taken with Canon EOS 500D‎",
+  "title": "Kappabashi bridge Kamikōchi 20110717 0743 photo by Pcs34560.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kappabashi_bridge_Kamik%C5%8Dchi_20110717_0743_photo_by_Pcs34560.jpg",
   "modified": "resized"
  },
  {
@@ -50,6 +120,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_kenrokuen",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "DimiTalen",
+  "title": "View towards Hanami-bashi with sakura, Kenroku-en, Kanazawa, 2016.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_towards_Hanami-bashi_with_sakura,_Kenroku-en,_Kanazawa,_2016.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_kinkakuji",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -57,6 +137,26 @@
   "author": "Mustang Joe",
   "title": "Temple of the Golden Pavilion, Kyoto Japan (14437492520).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_the_Golden_Pavilion,_Kyoto_Japan_(14437492520).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_kiyotsu_gorge",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Saigen Jiro",
+  "title": "Kiyotsukyo, gaikan.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiyotsukyo,_gaikan.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_kurobe_dam",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Kentaro Ohno",
+  "title": "Kurobe Dam 2015-09-23 01.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kurobe_Dam_2015-09-23_01.jpg",
   "modified": "resized"
  },
  {
@@ -90,6 +190,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_matsumoto_castle",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Syced",
+  "title": "Matsumoto castle, stitched (69119).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matsumoto_castle,_stitched_(69119).jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_matsushima",
   "licenseClass": "CC BY",
   "license": "CC BY 3.0",
@@ -117,6 +227,16 @@
   "author": "Dang Son",
   "title": "12-Chureito-pagoda-and-Mount-Fuji-Japan (29677439878).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:12-Chureito-pagoda-and-Mount-Fuji-Japan_(29677439878).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_nagoya_castle",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Syced",
+  "title": "Nagoya castle (53895).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nagoya_castle_(53895).jpg",
   "modified": "resized"
  },
  {
@@ -150,6 +270,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_omuroyama",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Immanuelle",
+  "title": "Crater of Mount Omuro (Izu Peninsula)-14.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crater_of_Mount_Omuro_(Izu_Peninsula)-14.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_otaru_canal",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -177,6 +307,46 @@
   "author": "Akonnchiroll",
   "title": "Sensoji 2023.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sensoji_2023.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_shiraito_falls",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Saigen Jiro",
+  "title": "Shiraito Falls (Shizuoka), zenkei-2.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shiraito_Falls_(Shizuoka),_zenkei-2.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_shirakawago",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Wicki",
+  "title": "Traditional Japanese village Shirakawa-go.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traditional_Japanese_village_Shirakawa-go.JPG",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_tateyama_kurobe_alpine_route",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "author": "663highland",
+  "title": "Mt Tateyama01s4592.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Tateyama01s4592.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_tojinbo",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "雷太",
+  "title": "Tojinbo cliffs, Fukui Prefecture; September 2019 (01).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tojinbo_cliffs,_Fukui_Prefecture;_September_2019_(01).jpg",
   "modified": "resized"
  },
  {
