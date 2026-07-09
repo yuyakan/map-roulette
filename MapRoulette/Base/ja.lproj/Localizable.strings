@@ -225,6 +225,7 @@
 
 "tourism_detail_back" = "戻る";
 "tourism_detail_map" = "観光地マップ";
+"tourism_detail_photos" = "写真";
 "tourism_detail_photo" = "観光地写真";
 "tourism_detail_photo_loading" = "写真を読み込み中...";
 

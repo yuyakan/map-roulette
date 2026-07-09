@@ -184,8 +184,11 @@ struct TourismDetailView: View {
                     }
                     
                     RichFestivalSection(prefecture: prefecture)
-                    
+
                     RichOtherFestivalSection(prefecture: prefecture)
+
+                    // 実写フォトカルーセル（写真があるスポットのみ・CC0で帰属不要）
+                    photoCarousel
 
                     // 最下部に余白を入れてスクロールに余裕を持たせる
                     Color.clear.frame(height: 40)
@@ -227,6 +230,58 @@ struct TourismDetailView: View {
                 Spacer()
             }
         }
+    }
+
+    // MARK: - 実写フォトカルーセル
+
+    /// 県内で写真を持つスポットを横スクロールで見せる。
+    /// 写真が 1 枚も無い県では、セクションごと表示しない（従来通りの見た目）。
+    @ViewBuilder
+    private var photoCarousel: some View {
+        let photographed = AttractionPhoto.photographedAttractions(in: prefecture)
+        if !photographed.isEmpty {
+            VStack(alignment: .leading, spacing: 16) {
+                RichSectionHeader(
+                    icon: "photo.on.rectangle.angled",
+                    title: "tourism_detail_photos".localized,
+                    accent: PlanTheme.primary
+                )
+
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12) {
+                        ForEach(photographed) { attraction in
+                            photoCard(for: attraction)
+                        }
+                    }
+                    .padding(.horizontal, 2)
+                }
+            }
+            .padding(.horizontal)
+        }
+    }
+
+    /// カルーセル内の 1 枚（写真＋スポット名）。
+    private func photoCard(for attraction: LocalizedAttractionLocation) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
+            if let photo = AttractionPhoto.image(for: attraction.nameKey) {
+                photo
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 260, height: 180)
+                    .clipped()
+            }
+
+            Text(attraction.name)
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundColor(.primary)
+                .lineLimit(1)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 10)
+                .frame(width: 260, alignment: .leading)
+        }
+        .background(Color(.systemBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
     }
 
 }

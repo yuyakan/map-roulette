@@ -231,6 +231,7 @@
 
 "tourism_detail_back" = "back";
 "tourism_detail_map" = "Map";
+"tourism_detail_photos" = "Photos";
 "tourism_detail_photo" = "Photo";
 "tourism_detail_photo_loading" = "loading...";
 
