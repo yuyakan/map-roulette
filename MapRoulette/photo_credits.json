@@ -1,5 +1,15 @@
 [
  {
+  "nameKey": "attraction_aoshima",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Cher V",
+  "title": "Ogre's Washboards and Torii, Aoshima, Miyazaki - Nov 5, 2017.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ogre%27s_Washboards_and_Torii,_Aoshima,_Miyazaki_-_Nov_5,_2017.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_arashiyama",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -17,6 +27,16 @@
   "author": "Balon Greyjoy",
   "title": "20190317 Atomic Bomb Dome-1.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190317_Atomic_Bomb_Dome-1.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_churaumi_aquarium",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Sgt. Josh Cox",
+  "title": "USMC-081220-M-0902C-004.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:USMC-081220-M-0902C-004.jpg",
   "modified": "resized"
  },
  {
@@ -67,6 +87,26 @@
   "author": "lumoplank",
   "title": "Ginzan Onsen in blue hour.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ginzan_Onsen_in_blue_hour.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_glover_garden",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Fg2",
+  "title": "Nagasaki-Glover-Garden-5340.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nagasaki-Glover-Garden-5340.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_gunkanjima",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "Jakub Hałun",
+  "title": "Hashima, Nagasaki, Japan, 20240814 1421 3377.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hashima,_Nagasaki,_Japan,_20240814_1421_3377.jpg",
   "modified": "resized"
  },
  {
@@ -140,6 +180,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_ishigaki_island",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Metatron",
+  "title": "Kabirawan.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kabirawan.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_itsukushima_shrine",
   "licenseClass": "CC BY",
   "license": "CC BY 4.0",
@@ -170,6 +220,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_jigoku_meguri",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Raita Futo",
+  "title": "The Beppu's Sea Hell (52133778575).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Beppu%27s_Sea_Hell_(52133778575).jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_jigokudani_monkey",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -197,6 +257,16 @@
   "author": "pcs34560 from jawp\n\n This photo was taken with Canon EOS 500D‎",
   "title": "Kappabashi bridge Kamikōchi 20110717 0743 photo by Pcs34560.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kappabashi_bridge_Kamik%C5%8Dchi_20110717_0743_photo_by_Pcs34560.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_karatsu_castle",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "SuperTaiyaki from Osaka, Japan",
+  "title": "Karatsu Castle (38299875212).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karatsu_Castle_(38299875212).jpg",
   "modified": "resized"
  },
  {
@@ -277,6 +347,16 @@
   "author": "takeokahp",
   "title": "後楽園と城 by takeokahp - panoramio.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%BE%8C%E6%A5%BD%E5%9C%92%E3%81%A8%E5%9F%8E_by_takeokahp_-_panoramio.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_kumamoto_castle",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "Hyppolyte de Saint-Rambert",
+  "title": "Kumamoto castle (Chuo-ku, Kumamoto) VLux5 hdsr kt03.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kumamoto_castle_(Chuo-ku,_Kumamoto)_VLux5_hdsr_kt03.jpg",
   "modified": "resized"
  },
  {
@@ -397,6 +477,26 @@
   "author": "Justin Taylor",
   "title": "Minato Mirai - Yokohama Skyline March 2025.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minato_Mirai_-_Yokohama_Skyline_March_2025.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_mojiko_retro",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Kirin7739",
+  "title": "View of Mojiko Station from Mojiko Retro.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Mojiko_Station_from_Mojiko_Retro.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_mount_aso",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Lawsonstu",
+  "title": "Mount Nakadake, Aso-san.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Nakadake,_Aso-san.jpg",
   "modified": "resized"
  },
  {
@@ -540,6 +640,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_sakurajima",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Karl Baron",
+  "title": "Kagoshima view from Murasakibaru - Jan 29, 2012.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kagoshima_view_from_Murasakibaru_-_Jan_29,_2012.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_sensoji",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -567,6 +677,26 @@
   "author": "Wicki",
   "title": "Traditional Japanese village Shirakawa-go.JPG",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traditional_Japanese_village_Shirakawa-go.JPG",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_shuri_castle",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Fg2",
+  "title": "Shuri Castle Scan Slide.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shuri_Castle_Scan_Slide.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_takachiho_gorge",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Max Smith",
+  "title": "Takachiho Gorge by boat.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Takachiho_Gorge_by_boat.jpg",
   "modified": "resized"
  },
  {
@@ -640,6 +770,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_yakushima",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "MaedaAkihiko",
+  "title": "Yaku-Island Shiratani-Unsui-Gorge.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yaku-Island_Shiratani-Unsui-Gorge.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_yamadera",
   "licenseClass": "CC BY",
   "license": "CC BY 3.0",
@@ -650,6 +790,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_yanagawa_kudari",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "No machine-readable author provided. Shii assumed (based on copyright claims).",
+  "title": "Bridge in Yanagawa.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bridge_in_Yanagawa.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_yashima",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -657,6 +807,26 @@
   "author": "ラハール",
   "title": "Mt. Yashima.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Yashima.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_yoshinogari_ruins",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Saigen Jiro",
+  "title": "Yoshinogari-iseki tateanashiki-juukyo.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yoshinogari-iseki_tateanashiki-juukyo.JPG",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_yufuin",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Bobo12345 at English Wikipedia",
+  "title": "Yufuin, Ōita Prefecture (4 November 2006).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yufuin,_%C5%8Cita_Prefecture_(4_November_2006).jpg",
   "modified": "resized"
  }
 ]
