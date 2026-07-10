@@ -30,6 +30,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_chichibu",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "雷太",
+  "title": "Chichibu's shibazakura, Saitama Prefecture; April 2017 (04).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chichibu%27s_shibazakura,_Saitama_Prefecture;_April_2017_(04).jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_churaumi_aquarium",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -250,6 +260,26 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_kakunodate_samurai_houses",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "Kmhkmh",
+  "title": "Kakunodate 488.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kakunodate_488.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_kamakura_daibutsu",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Maarten Heerlien from Voorschoten, The Netherlands",
+  "title": "The Daibutsu or Great Buddha of Kamakura (9412296776).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Daibutsu_or_Great_Buddha_of_Kamakura_(9412296776).jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_kamikochi",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -277,6 +307,16 @@
   "author": "baggio4ever",
   "title": "桂浜 坂本龍馬像1 Katsura-hama Beach - panoramio.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%A1%82%E6%B5%9C_%E5%9D%82%E6%9C%AC%E9%BE%8D%E9%A6%AC%E5%83%8F1_Katsura-hama_Beach_-_panoramio.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_kawagoe",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "Balabd",
+  "title": "Japan Kawagoe.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japan_Kawagoe.jpg",
   "modified": "resized"
  },
  {
@@ -400,6 +440,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_lake_tazawa",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Brian Dell",
+  "title": "Lake Tazawa in winter.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Tazawa_in_winter.JPG",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_lake_towada",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -442,11 +492,11 @@
  {
   "nameKey": "attraction_matsushima",
   "licenseClass": "CC BY",
-  "license": "CC BY 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-  "author": "lienyuan lee",
-  "title": "雄島 Oshima Island - panoramio.jpg",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%9B%84%E5%B3%B6_Oshima_Island_-_panoramio.jpg",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "Makoto_Lab",
+  "title": "Miyagi-Landscape of cherry blossoms and Matsushima Bay-xl.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miyagi-Landscape_of_cherry_blossoms_and_Matsushima_Bay-xl.jpg",
   "modified": "resized"
  },
  {
@@ -567,6 +617,16 @@
   "author": "\"EMPe\"",
   "title": "The whirling current in Naruto.JPG",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_whirling_current_in_Naruto.JPG",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_nikko_toshogu",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Marco Almbauer",
+  "title": "Nikkō Tōshō-gū 4.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nikk%C5%8D_T%C5%8Dsh%C5%8D-g%C5%AB_4.jpg",
   "modified": "resized"
  },
  {
@@ -827,6 +887,16 @@
   "author": "Bobo12345 at English Wikipedia",
   "title": "Yufuin, Ōita Prefecture (4 November 2006).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yufuin,_%C5%8Cita_Prefecture_(4_November_2006).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_zuihoden",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "author": "663highland",
+  "title": "Zuiho-den17s3872.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zuiho-den17s3872.jpg",
   "modified": "resized"
  }
 ]
