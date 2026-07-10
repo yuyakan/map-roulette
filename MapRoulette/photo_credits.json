@@ -1,5 +1,15 @@
 [
  {
+  "nameKey": "attraction_aizu_wakamatsu_castle",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Umako",
+  "title": "Tsuruga Castle 2007.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsuruga_Castle_2007.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_aoshima",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -77,6 +87,16 @@
   "author": "Kristoffer Trolle from Copenhagen, Denmark",
   "title": "Dōtonbori at night, Osaka (19551420339).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:D%C5%8Dtonbori_at_night,_Osaka_(19551420339).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_fukuroda_falls",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Raita Futo from Tokyo, Japan",
+  "title": "Fukuroda Falls, Ibaraki (52531432264).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fukuroda_Falls,_Ibaraki_(52531432264).jpg",
   "modified": "resized"
  },
  {
@@ -167,6 +187,16 @@
   "author": "Σ64",
   "title": "Miharashino Oka (Hitachi Seaside Park) 45.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miharashino_Oka_(Hitachi_Seaside_Park)_45.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_inubosaki_lighthouse",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Aspere",
+  "title": "250821 Inubosaki Lighthouse 03.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:250821_Inubosaki_Lighthouse_03.jpg",
   "modified": "resized"
  },
  {
@@ -440,6 +470,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_lake_kawaguchi",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Marion & Christoph Aistleitner",
+  "title": "Fuji Kawaguchi 452.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fuji_Kawaguchi_452.JPG",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_lake_tazawa",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -567,6 +607,16 @@
   "author": "Dang Son",
   "title": "12-Chureito-pagoda-and-Mount-Fuji-Japan (29677439878).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:12-Chureito-pagoda-and-Mount-Fuji-Japan_(29677439878).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_nabana_no_sato",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "carloshonda",
+  "title": "Nabana no Sato (Winter Illumination), Kuwana, Mie, Japan, なばなの里, 三重, 三重県 - panoramio (1).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nabana_no_Sato_(Winter_Illumination),_Kuwana,_Mie,_Japan,_%E3%81%AA%E3%81%B0%E3%81%AA%E3%81%AE%E9%87%8C,_%E4%B8%89%E9%87%8D,_%E4%B8%89%E9%87%8D%E7%9C%8C_-_panoramio_(1).jpg",
   "modified": "resized"
  },
  {
@@ -700,6 +750,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_ryusendo_cave",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "--[[利用者:あおもりくま|あおもりくま]]（会話） 2020年11月21日 (土) 01:16 (UTC)",
+  "title": "Ryusendo Cave Underground Lake Cap 20201115.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ryusendo_Cave_Underground_Lake_Cap_20201115.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_sakurajima",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -717,6 +777,16 @@
   "author": "Akonnchiroll",
   "title": "Sensoji 2023.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sensoji_2023.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_shirahama_onsen",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "玄史生",
+  "title": "Engetsu Island Nearview.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Engetsu_Island_Nearview.jpg",
   "modified": "resized"
  },
  {
@@ -810,6 +880,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_tomioka_silk_mill",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "C1815",
+  "title": "Tomioka Silk Mill Main Building.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomioka_Silk_Mill_Main_Building.JPG",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_tottori_sand_dunes",
   "licenseClass": "CC BY",
   "license": "CC BY 4.0",
@@ -827,6 +907,16 @@
   "author": "Thomas Au",
   "title": "角島大橋 (38654569244).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%A7%92%E5%B3%B6%E5%A4%A7%E6%A9%8B_(38654569244).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_yahiko_shrine",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Saigen Jiro",
+  "title": "Iyahiko-jinja haiden.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iyahiko-jinja_haiden.JPG",
   "modified": "resized"
  },
  {
