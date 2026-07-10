@@ -30,6 +30,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_dogo_onsen",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "lienyuan lee",
+  "title": "Dogo Onsen Honkan 道後溫泉本館 - panoramio (1).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dogo_Onsen_Honkan_%E9%81%93%E5%BE%8C%E6%BA%AB%E6%B3%89%E6%9C%AC%E9%A4%A8_-_panoramio_(1).jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_dotonbori",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -140,6 +150,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_iya_kazura_bridge",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Mike B in Colorado",
+  "title": "The Iya vine bridge 01157.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Iya_vine_bridge_01157.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_izumo_taisha",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -177,6 +197,16 @@
   "author": "pcs34560 from jawp\n\n This photo was taken with Canon EOS 500D‎",
   "title": "Kappabashi bridge Kamikōchi 20110717 0743 photo by Pcs34560.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kappabashi_bridge_Kamik%C5%8Dchi_20110717_0743_photo_by_Pcs34560.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_katsurahama",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "baggio4ever",
+  "title": "桂浜 坂本龍馬像1 Katsura-hama Beach - panoramio.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%A1%82%E6%B5%9C_%E5%9D%82%E6%9C%AC%E9%BE%8D%E9%A6%AC%E5%83%8F1_Katsura-hama_Beach_-_panoramio.jpg",
   "modified": "resized"
  },
  {
@@ -227,6 +257,16 @@
   "author": "Saigen Jiro",
   "title": "Kiyotsukyo, gaikan.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiyotsukyo,_gaikan.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_kochi_castle",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Saigen Jiro",
+  "title": "Kochi Castle, enkei.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kochi_Castle,_enkei.jpg",
   "modified": "resized"
  },
  {
@@ -330,6 +370,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_matsuyama_castle",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Urashimataro",
+  "title": "Matsuyama Castle Main.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matsuyama_Castle_Main.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_metasequoia_avenue",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -410,6 +460,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_naruto_whirlpools",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "\"EMPe\"",
+  "title": "The whirling current in Naruto.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_whirling_current_in_Naruto.JPG",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_noboribetsu_jigokudani",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -467,6 +527,16 @@
   "author": "ウィキ太郎　(Wiki Taro)",
   "title": "Ouchi-juku Fukushima Prefecture Japan 2013-04-29b.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ouchi-juku_Fukushima_Prefecture_Japan_2013-04-29b.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_ritsurin_garden",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Fg2",
+  "title": "Ritsurin-Garden-M3566.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ritsurin-Garden-M3566.jpg",
   "modified": "resized"
  },
  {
@@ -577,6 +647,16 @@
   "author": "lienyuan lee",
   "title": "立石寺 Risshaku-ji Temple - panoramio (1).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%AB%8B%E7%9F%B3%E5%AF%BA_Risshaku-ji_Temple_-_panoramio_(1).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_yashima",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "ラハール",
+  "title": "Mt. Yashima.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Yashima.jpg",
   "modified": "resized"
  }
 ]
