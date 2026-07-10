@@ -1,5 +1,15 @@
 [
  {
+  "nameKey": "attraction_arashiyama",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Marco Almbauer",
+  "title": "Sagano Bamboo forest.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sagano_Bamboo_forest.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_dinosaur_museum",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -7,6 +17,26 @@
   "author": "先従隗始",
   "title": "Fukui Prefectural Dinosaur Museum 20210504 01.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fukui_Prefectural_Dinosaur_Museum_20210504_01.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_dotonbori",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Kristoffer Trolle from Copenhagen, Denmark",
+  "title": "Dōtonbori at night, Osaka (19551420339).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:D%C5%8Dtonbori_at_night,_Osaka_(19551420339).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_fushimi_inari_taisha",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Balon Greyjoy",
+  "title": "20181110 Fushimi Inari Torii 9.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:20181110_Fushimi_Inari_Torii_9.jpg",
   "modified": "resized"
  },
  {
@@ -37,6 +67,16 @@
   "author": "くろふね",
   "title": "ひがし茶屋街 - panoramio (1).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%81%B2%E3%81%8C%E3%81%97%E8%8C%B6%E5%B1%8B%E8%A1%97_-_panoramio_(1).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_himeji_castle",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Winniepix",
+  "title": "Himeji Castle also known as the White Heron castle (\"Shirasagijo\") (53621201074).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himeji_Castle_also_known_as_the_White_Heron_castle_(%22Shirasagijo%22)_(53621201074).jpg",
   "modified": "resized"
  },
  {
@@ -170,6 +210,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_lake_biwa",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "baggio4ever",
+  "title": "Shirahige Shrine 白鬚神社4 - panoramio.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shirahige_Shrine_%E7%99%BD%E9%AC%9A%E7%A5%9E%E7%A4%BE4_-_panoramio.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_lake_towada",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -210,6 +260,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_metasequoia_avenue",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "先従隗始",
+  "title": "A row of Metasequoia trees Makino 20200919.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_row_of_Metasequoia_trees_Makino_20200919.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_minato_mirai",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -230,6 +290,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_nachi_falls",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "Douglas Perkins",
+  "title": "Kumano Nachi Taisha 02.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kumano_Nachi_Taisha_02.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_nagoya_castle",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -237,6 +307,16 @@
   "author": "Syced",
   "title": "Nagoya castle (53895).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nagoya_castle_(53895).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_nara_park",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Balon Greyjoy",
+  "title": "20190121 Nara deer-4.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190121_Nara_deer-4.jpg",
   "modified": "resized"
  },
  {
@@ -277,6 +357,16 @@
   "author": "Immanuelle",
   "title": "Crater of Mount Omuro (Izu Peninsula)-14.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crater_of_Mount_Omuro_(Izu_Peninsula)-14.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_osaka_castle",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Balon Greyjoy",
+  "title": "20190121 Osaka Castle-1.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190121_Osaka_Castle-1.jpg",
   "modified": "resized"
  },
  {
@@ -330,6 +420,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_takeda_castle_ruins",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Brakeet",
+  "title": "Takeda Castle 2011 03.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Takeda_Castle_2011_03.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_tateyama_kurobe_alpine_route",
   "licenseClass": "CC BY",
   "license": "CC BY 2.5",
@@ -337,6 +437,16 @@
   "author": "663highland",
   "title": "Mt Tateyama01s4592.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Tateyama01s4592.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_todaiji",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Balon Greyjoy",
+  "title": "20190121 Tōdai-ji Great Buddha Hall-1.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190121_T%C5%8Ddai-ji_Great_Buddha_Hall-1.jpg",
   "modified": "resized"
  },
  {
