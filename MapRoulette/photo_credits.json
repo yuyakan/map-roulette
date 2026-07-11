@@ -40,6 +40,26 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_atsuta_shrine",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "Hyppolyte de Saint-Rambert",
+  "title": "Atsuta-jingū (Atsuta-ku, Nagoya) VLux5 hdsr at10.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atsuta-jing%C5%AB_(Atsuta-ku,_Nagoya)_VLux5_hdsr_at10.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_canal_city",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "FlyingToaster",
+  "title": "Canal city hakata fukuoka3.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canal_city_hakata_fukuoka3.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_chichibu",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -107,6 +127,16 @@
   "author": "Balon Greyjoy",
   "title": "20181110 Fushimi Inari Torii 9.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20181110_Fushimi_Inari_Torii_9.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_ginkakuji",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Yamato369",
+  "title": "Ginkakuji 20181015e.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ginkakuji_20181015e.jpg",
   "modified": "resized"
  },
  {
@@ -187,6 +217,16 @@
   "author": "Σ64",
   "title": "Miharashino Oka (Hitachi Seaside Park) 45.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miharashino_Oka_(Hitachi_Seaside_Park)_45.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_imperial_palace",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Bernard Spragg. NZ from Christchurch, New Zealand",
+  "title": "Nijubashi Bridge. Tokyo. (42521677522).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nijubashi_Bridge._Tokyo._(42521677522).jpg",
   "modified": "resized"
  },
  {
@@ -550,6 +590,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_meiji_shrine",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Mustang Joe",
+  "title": "Torii gate for the Meiji Shrine (14628328081).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Torii_gate_for_the_Meiji_Shrine_(14628328081).jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_metasequoia_avenue",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -670,6 +720,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_nijo_castle",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "ほっきー",
+  "title": "二条城 唐門 2025.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%8C%E6%9D%A1%E5%9F%8E_%E5%94%90%E9%96%80_2025.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_nikko_toshogu",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -687,6 +747,16 @@
   "author": "Kentaro Ohno",
   "title": "Hell Valley (Jigokudani) - 22567574857.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hell_Valley_(Jigokudani)_-_22567574857.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_odaiba",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Pierre Blaché from Paris, France",
+  "title": "Tokyo and the Rainbow Bridge from Odaiba (48838291248).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_and_the_Rainbow_Bridge_from_Odaiba_(48838291248).jpg",
   "modified": "resized"
  },
  {
@@ -740,6 +810,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_owakudani",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "Ka23 13",
+  "title": "Hakone 20221104 100950.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hakone_20221104_100950.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_ritsurin_garden",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -780,6 +860,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_shinsekai",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Sakai Yayoi",
+  "title": "Shinsekai and Tsutenkaku Tower.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinsekai_and_Tsutenkaku_Tower.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_shirahama_onsen",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -817,6 +907,16 @@
   "author": "Fg2",
   "title": "Shuri Castle Scan Slide.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shuri_Castle_Scan_Slide.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_sumiyoshi_taisha",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "北谷2",
+  "title": "Taikobashi of Sumiyoshitaisha.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taikobashi_of_Sumiyoshitaisha.jpg",
   "modified": "resized"
  },
  {
@@ -957,6 +1057,16 @@
   "author": "ラハール",
   "title": "Mt. Yashima.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Yashima.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_yokohama_chinatown",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Syced",
+  "title": "Yokohama Chinatown 34.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yokohama_Chinatown_34.jpg",
   "modified": "resized"
  },
  {
