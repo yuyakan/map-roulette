@@ -1207,567 +1207,567 @@
 
 // Hokkaido Gourmet
 "gourmet_genghis_khan" = "จิงกิสข่าน (เนื้อแกะย่าง)";
-"gourmet_genghis_khan_desc" = "Hokkaido's famous grilled lamb dish with special sauce";
+"gourmet_genghis_khan_desc" = "เมนูเนื้อแกะขึ้นชื่อของฮอกไกโด ย่างด้วยซอสสูตรพิเศษจนนุ่ม";
 "gourmet_seafood_bowl" = "ข้าวหน้าอาหารทะเล";
-"gourmet_seafood_bowl_desc" = "Luxurious bowl with fresh seafood including sea urchin, salmon roe, and crab";
+"gourmet_seafood_bowl_desc" = "ข้าวหน้าอาหารทะเลสดชิ้นโต ทั้งไข่หอยเม่น ไข่ปลาแซลมอน และปู";
 "gourmet_soup_curry" = "ซุปแกงกะหรี่";
-"gourmet_soup_curry_desc" = "Sapporo-originated curry with thin soup and plenty of vegetables";
+"gourmet_soup_curry_desc" = "แกงกะหรี่น้ำใสต้นตำรับซัปโปโร ใส่ผักเต็มจาน";
 "gourmet_yubari_melon" = "เมลอนยูบาริ";
-"gourmet_yubari_melon_desc" = "Sweet and aromatic premium melon, Hokkaido's representative fruit";
+"gourmet_yubari_melon_desc" = "เมลอนพรีเมียมหวานหอม ผลไม้ตัวแทนของฮอกไกโด";
 "gourmet_shiroi_koibito" = "ชิโรอิ โคอิบิโตะ";
-"gourmet_shiroi_koibito_desc" = "Classic Hokkaido souvenir. Perfect combination of langue de chat and white chocolate";
+"gourmet_shiroi_koibito_desc" = "ของฝากยอดนิยมของฮอกไกโด คุกกี้ลังก์เดอชาสอดไส้ไวต์ช็อกโกแลต";
 
 // Aomori Gourmet
 "gourmet_aomori_apple" = "แอปเปิลอาโอโมริ";
-"gourmet_aomori_apple_desc" = "Sweet and juicy apples with Japan's largest production volume";
+"gourmet_aomori_apple_desc" = "แอปเปิลหวานฉ่ำ ผลผลิตอันดับหนึ่งของญี่ปุ่น";
 "gourmet_oma_tuna" = "ทูน่าโอมะ";
-"gourmet_oma_tuna_desc" = "Premium bluefin tuna caught at Oma, the northernmost tip of Honshu";
+"gourmet_oma_tuna_desc" = "ปลาทูน่าครีบน้ำเงินชั้นเลิศจากโอมะ ปลายสุดทางเหนือของเกาะฮอนชู";
 "gourmet_senbei_soup" = "ซุปเซมเบ้";
-"gourmet_senbei_soup_desc" = "Aomori's local dish with broken Nanbu senbei crackers";
+"gourmet_senbei_soup_desc" = "อาหารพื้นเมืองอาโอโมริ ใส่แครกเกอร์นันบุเซมเบ้หักลงในน้ำซุป";
 "gourmet_tsugaru_soba" = "โซบะสึการุ";
-"gourmet_tsugaru_soba_desc" = "Hand-made soba from Tsugaru region with rich country flavor";
+"gourmet_tsugaru_soba_desc" = "โซบะทำมือของแคว้นสึการุ รสชาติแบบชนบทที่หอมกรุ่น";
 "gourmet_ichigo_ni" = "อิจิโกะนิ (ซุปเม่นทะเล)";
-"gourmet_ichigo_ni_desc" = "Clear soup with sea urchin and abalone, a competition of premium seafood";
+"gourmet_ichigo_ni_desc" = "น้ำซุปใสหอยเม่นกับหอยเป๋าฮื้อ การประชันของอาหารทะเลชั้นเลิศ";
 
 // Iwate Gourmet
 "gourmet_wanko_soba" = "วังโกะโซบะ";
-"gourmet_wanko_soba_desc" = "Iwate's famous soba served in small bowls, eat as many as you can";
+"gourmet_wanko_soba_desc" = "โซบะขึ้นชื่อของอิวาเตะ เสิร์ฟในถ้วยเล็ก กินได้ไม่อั้น";
 "gourmet_morioka_cold_noodles" = "บะหมี่เย็นโมริโอกะ";
-"gourmet_morioka_cold_noodles_desc" = "Characterized by chewy noodles and sour soup";
+"gourmet_morioka_cold_noodles_desc" = "โดดเด่นด้วยเส้นเหนียวนุ่มและน้ำซุปรสเปรี้ยว";
 "gourmet_maezawa_beef" = "เนื้อวัวมาเอซาวะ";
-"gourmet_maezawa_beef_desc" = "Iwate's pride brand beef with beautiful marbling, highest quality";
+"gourmet_maezawa_beef_desc" = "เนื้อวัวแบรนด์ที่อิวาเตะภูมิใจ ลายหินอ่อนสวยระดับพรีเมียม";
 "gourmet_nanbu_senbei" = "นันบุเซมเบ้";
-"gourmet_nanbu_senbei_desc" = "Fragrant rice crackers with sesame and peanuts";
+"gourmet_nanbu_senbei_desc" = "เซมเบ้หอมกรุ่นใส่งาและถั่วลิสง";
 "gourmet_gangetsu" = "กังเก็ตสึ";
-"gourmet_gangetsu_desc" = "Iwate's traditional confection with egg yolk filling";
+"gourmet_gangetsu_desc" = "ขนมชื่อดังของอิวาเตะ สอดไส้ถั่วกวนไข่แดง";
 
 // Akita Gourmet
 "gourmet_kiritanpo" = "คิริตัมโปะ";
-"gourmet_kiritanpo_desc" = "Akita's local dish. Mashed rice wrapped around a stick and grilled";
+"gourmet_kiritanpo_desc" = "อาหารพื้นเมืองอาคิตะ ข้าวบดพันแท่งไม้แล้วนำไปย่าง";
 "gourmet_hinai_chicken" = "ไก่ฮินาอิ";
-"gourmet_hinai_chicken_desc" = "Akita's local chicken with rich flavor, essential for kiritanpo hot pot";
+"gourmet_hinai_chicken_desc" = "ไก่พื้นเมืองอาคิตะ รสอูมามิเข้มข้น ขาดไม่ได้ในหม้อไฟคิริตัมโปะ";
 "gourmet_inaniwa_udon" = "อุด้งอินานิวะ";
-"gourmet_inaniwa_udon_desc" = "Thin, chewy, and elegant udon made by hand-stretching method";
+"gourmet_inaniwa_udon_desc" = "อุด้งเส้นบางเหนียวนุ่มระดับพรีเมียม ทำด้วยวิธียืดมือ";
 "gourmet_akita_komachi" = "ข้าวอาคิตะโคมาจิ";
-"gourmet_akita_komachi_desc" = "Delicious rice from Akita Prefecture, fluffy and chewy";
+"gourmet_akita_komachi_desc" = "ข้าวอร่อยจากจังหวัดอาคิตะ นุ่มฟูเหนียวหนึบ";
 "gourmet_babahera_ice" = "ไอศกรีมบาบาเฮระ";
-"gourmet_babahera_ice_desc" = "Colorful ice cream hand-sold by grandmothers";
+"gourmet_babahera_ice_desc" = "ไอศกรีมสีสันสดใสที่คุณยายขายด้วยมือ";
 
 // Miyagi Gourmet
 "gourmet_beef_tongue" = "ลิ้นวัวย่าง";
-"gourmet_beef_tongue_desc" = "Sendai's specialty thick-cut beef tongue, grilled over charcoal";
+"gourmet_beef_tongue_desc" = "ลิ้นวัวหั่นหนาขึ้นชื่อของเซนได ย่างถ่านหอมกรุ่น";
 "gourmet_sasukamaboko" = "ซาซะคามาโบโกะ";
-"gourmet_sasukamaboko_desc" = "Miyagi's specialty fish cake made from high-quality fish paste";
+"gourmet_sasukamaboko_desc" = "สินค้าขึ้นชื่อของมิยางิ ทำจากเนื้อปลาบดคุณภาพดี";
 "gourmet_zunda_mochi" = "ซุนดะโมจิ";
-"gourmet_zunda_mochi_desc" = "Characterized by green bean paste made from mashed edamame";
+"gourmet_zunda_mochi_desc" = "โดดเด่นด้วยไส้ถั่วแระบดสีเขียว";
 "gourmet_seri_nabe" = "หม้อไฟผักเซริ";
-"gourmet_seri_nabe_desc" = "Hot pot dish using seri (Japanese parsley) from Natori City, Miyagi";
+"gourmet_seri_nabe_desc" = "หม้อไฟที่ใช้ผักเซริขึ้นชื่อของเมืองนาโตริ จังหวัดมิยางิ";
 "gourmet_shiroishi_somen" = "โซเม็งชิโรอิชิ";
-"gourmet_shiroishi_somen_desc" = "Oil-free noodles shorter than regular somen, gentle on the stomach";
+"gourmet_shiroishi_somen_desc" = "เส้นสั้นกว่าโซเม็งทั่วไปและไม่ใช้น้ำมัน ย่อยง่าย";
 
 // Yamagata Gourmet
 "gourmet_cherry" = "เชอร์รี";
-"gourmet_cherry_desc" = "Japan's largest production volume that Yamagata is proud of. Sato-nishiki is famous";
+"gourmet_cherry_desc" = "ผลผลิตอันดับหนึ่งของญี่ปุ่นที่ยามางาตะภูมิใจ พันธุ์ซาโตนิชิกิขึ้นชื่อ";
 "gourmet_yonezawa_beef" = "เนื้อวัวโยเนซาวะ";
-"gourmet_yonezawa_beef_desc" = "Yamagata's highest quality brand beef with melting marbling";
+"gourmet_yonezawa_beef_desc" = "เนื้อวัวแบรนด์ระดับสูงสุดของยามางาตะ ลายหินอ่อนละลายในปาก";
 "gourmet_imoni" = "อิโมนิ (หม้อไฟเผือก)";
-"gourmet_imoni_desc" = "Autumn tradition. Stewed taro and beef enjoyed by the riverside";
+"gourmet_imoni_desc" = "ภาพประจำฤดูใบไม้ร่วง เมนูตุ๋นเผือกกับเนื้อวัวที่กินริมแม่น้ำ";
 "gourmet_tama_konnyaku" = "ทามะคอนเนียคุ";
-"gourmet_tama_konnyaku_desc" = "Round konnyaku simmered in soy sauce. Yamagata's staple";
+"gourmet_tama_konnyaku_desc" = "คอนเนียคุลูกกลมตุ๋นซอสถั่วเหลือง ของขึ้นชื่อยามางาตะ";
 "gourmet_cold_ramen" = "ราเมนเย็น";
-"gourmet_cold_ramen_desc" = "Cold ramen originated in Yamagata for summer";
+"gourmet_cold_ramen_desc" = "ราเมนเย็นสำหรับหน้าร้อน มีต้นกำเนิดที่ยามางาตะ";
 
 // Fukushima Gourmet
 "gourmet_kitakata_ramen" = "ราเมนคิตะกะตะ";
-"gourmet_kitakata_ramen_desc" = "Clear soy sauce-based soup with flat curly noodles";
+"gourmet_kitakata_ramen_desc" = "น้ำซุปโชยุใสกับเส้นหยักแบนกว้าง";
 "gourmet_aizu_chicken" = "ไก่ไอสึ";
-"gourmet_aizu_chicken_desc" = "Local chicken from Aizu region, Fukushima with rich flavor";
+"gourmet_aizu_chicken_desc" = "ไก่พื้นเมืองแคว้นไอสึ จังหวัดฟุกุชิมะ รสชาติเข้มข้น";
 "gourmet_mamadooru" = "มามาโดรุ";
-"gourmet_mamadooru_desc" = "Fukushima's traditional confection with gentle milk flavor";
+"gourmet_mamadooru_desc" = "ขนมชื่อดังของฟุกุชิมะ ขนมรสนมนุ่มละมุน";
 "gourmet_fukushima_peach" = "พีชฟุกุชิมะ";
-"gourmet_fukushima_peach_desc" = "Sweet and juicy peaches from Fukushima Prefecture";
+"gourmet_fukushima_peach_desc" = "พีชหวานฉ่ำจากจังหวัดฟุกุชิมะ";
 "gourmet_shirakawa_ramen" = "ราเมนชิรากาวะ";
-"gourmet_shirakawa_ramen_desc" = "Shirakawa-style ramen with hand-made curly noodles and soy sauce soup";
+"gourmet_shirakawa_ramen_desc" = "ราเมนสายชิรากาวะ เส้นหยักทำมือกับน้ำซุปโชยุ";
 
 // Ibaraki Gourmet
 "gourmet_natto" = "นัตโตะ";
-"gourmet_natto_desc" = "Ibaraki Prefecture has Japan's largest natto production, sticky and stringy";
+"gourmet_natto_desc" = "จังหวัดอิบารากิผลิตนัตโตะมากที่สุดในญี่ปุ่น เหนียวยืดเป็นเส้น";
 "gourmet_anko_nabe" = "หม้อไฟปลาแองเกลอร์";
-"gourmet_anko_nabe_desc" = "King of winter delicacies, hot pot rich in collagen";
+"gourmet_anko_nabe_desc" = "ราชาแห่งรสชาติฤดูหนาว หม้อไฟที่อุดมด้วยคอลลาเจน";
 "gourmet_hitachi_beef" = "เนื้อวัวฮิตาจิ";
-"gourmet_hitachi_beef_desc" = "Ibaraki's brand beef, tender and full of flavor";
+"gourmet_hitachi_beef_desc" = "เนื้อวัวแบรนด์ของอิบารากิ นุ่มและเต็มไปด้วยรสอูมามิ";
 "gourmet_ibaraki_melon" = "เมลอน";
-"gourmet_ibaraki_melon_desc" = "Ibaraki Prefecture has Japan's largest melon production, sweet and aromatic";
+"gourmet_ibaraki_melon_desc" = "จังหวัดอิบารากิผลิตเมลอนมากที่สุดในญี่ปุ่น หวานและหอม";
 "gourmet_dried_sweet_potato" = "มันหวานตากแห้ง";
-"gourmet_dried_sweet_potato_desc" = "Ibaraki's specialty with natural sweetness, traditional snack";
+"gourmet_dried_sweet_potato_desc" = "สินค้าขึ้นชื่อของอิบารากิ ของว่างดั้งเดิมรสหวานตามธรรมชาติ";
 
 // Chiba Gourmet
 "gourmet_peanuts" = "ถั่วลิสง";
-"gourmet_peanuts_desc" = "Fresh peanuts from Chiba Prefecture with excellent sweetness and aroma";
+"gourmet_peanuts_desc" = "ถั่วลิสงสดจากจังหวัดชิบะ หวานและหอมสุดยอด";
 "gourmet_loquat" = "ลูกหว้า (บิวะ)";
-"gourmet_loquat_desc" = "Sweet loquats grown in the warm climate of Boso Peninsula";
+"gourmet_loquat_desc" = "ลูกบิวะหวานที่ปลูกในภูมิอากาศอบอุ่นของคาบสมุทรโบโซ";
 "gourmet_namerou" = "นาเมโร";
-"gourmet_namerou_desc" = "Boso fisherman's dish, minced horse mackerel mixed with miso";
+"gourmet_namerou_desc" = "อาหารชาวประมงโบโซ สับปลาอาจิผสมมิโซะ";
 "gourmet_katsuura_tantanmen" = "ทันทันเมนคัตสึอุระ";
-"gourmet_katsuura_tantanmen_desc" = "Spicy ramen created by Katsuura fishermen to warm their bodies";
+"gourmet_katsuura_tantanmen_desc" = "ราเมนเผ็ดที่ชาวประมงคัตสึอุระคิดค้นเพื่อให้ร่างกายอบอุ่น";
 "gourmet_boso_seafood" = "อาหารทะเลโบโซ";
-"gourmet_boso_seafood_desc" = "Fresh seafood including spiny lobster and abalone";
+"gourmet_boso_seafood_desc" = "อาหารทะเลสด ทั้งกุ้งมังกรอิเสะ หอยเป๋าฮื้อ และอื่นๆ มากมาย";
 
 // Tochigi Gourmet
 "gourmet_utsunomiya_gyoza" = "เกี๊ยวซ่าอุสึโนมิยะ";
-"gourmet_utsunomiya_gyoza_desc" = "Utsunomiya City is the gyoza capital, famous for pan-fried dumplings";
+"gourmet_utsunomiya_gyoza_desc" = "เมืองอุสึโนมิยะเป็นเมืองแห่งเกี๊ยวซ่า เกี๊ยวซ่าทอดขึ้นชื่อ";
 "gourmet_yuba" = "ยูบะ (ฟองเต้าหู้)";
-"gourmet_yuba_desc" = "Nikko's specialty, thin film formed on the surface of soymilk";
+"gourmet_yuba_desc" = "ของขึ้นชื่อนิกโก้ ฟิล์มบางที่เกิดบนผิวน้ำนมถั่วเหลือง";
 "gourmet_tochiotome" = "สตรอว์เบอร์รีโทจิโอโตเมะ";
-"gourmet_tochiotome_desc" = "Tochigi Prefecture's brand strawberry, sweet and large";
+"gourmet_tochiotome_desc" = "สตรอว์เบอร์รีแบรนด์ของจังหวัดโทจิงิ หวานและผลใหญ่";
 "gourmet_shimotsukare" = "ชิโมสึกาเระ";
-"gourmet_shimotsukare_desc" = "Tochigi's local dish, simmered grated daikon and salmon head";
+"gourmet_shimotsukare_desc" = "อาหารพื้นเมืองโทจิงิ ตุ๋นหัวไชเท้าขูดกับหัวปลาแซลมอน";
 "gourmet_lemon_milk" = "นมรสเลมอน";
-"gourmet_lemon_milk_desc" = "Tochigi people's soul drink, sweet milk with lemon flavor";
+"gourmet_lemon_milk_desc" = "เครื่องดื่มในดวงใจของชาวโทจิงิ นมหวานรสเลมอน";
 
 // Gunma Gourmet
 "gourmet_yaki_manju" = "ยากิมันจู";
-"gourmet_yaki_manju_desc" = "Gunma's specialty, steamed buns grilled with sweet miso sauce";
+"gourmet_yaki_manju_desc" = "ของขึ้นชื่อกุนมะ ซาลาเปาย่างทาซอสมิโซะหวาน";
 "gourmet_shimonita_negi" = "ต้นหอมชิโมนิตะ";
-"gourmet_shimonita_negi_desc" = "Gunma's specialty, thick leeks with strong sweetness";
+"gourmet_shimonita_negi_desc" = "สินค้าขึ้นชื่อกุนมะ ต้นหอมอวบใหญ่รสหวานจัด";
 "gourmet_konnyaku" = "คอนเนียคุ";
-"gourmet_konnyaku_desc" = "Gunma Prefecture has Japan's largest konnyaku potato production";
+"gourmet_konnyaku_desc" = "จังหวัดกุนมะผลิตหัวคอนเนียคุมากที่สุดในญี่ปุ่น";
 "gourmet_mizusawa_udon" = "อุด้งมิซุซาวะ";
-"gourmet_mizusawa_udon_desc" = "Gunma's specialty udon with strong texture and excellent throat-feel";
+"gourmet_mizusawa_udon_desc" = "อุด้งขึ้นชื่อกุนมะ เส้นเหนียวนุ่มลื่นคอ";
 "gourmet_daruma_bento" = "ดารุมะเบนโตะ";
-"gourmet_daruma_bento_desc" = "Takasaki Station's famous ekiben with distinctive daruma container";
+"gourmet_daruma_bento_desc" = "ข้าวกล่องขึ้นชื่อของสถานีทาคาซากิ กล่องรูปดารุมะเป็นเอกลักษณ์";
 
 // Saitama Gourmet
 "gourmet_kawagoe_sweet_potato" = "มันหวานคาวาโกเอะ";
-"gourmet_kawagoe_sweet_potato_desc" = "Kawagoe's specialty, sticky and sweet sweet potatoes";
+"gourmet_kawagoe_sweet_potato_desc" = "สินค้าขึ้นชื่อคาวาโกเอะ มันหวานเนื้อเหนียวหนึบ";
 "gourmet_chichibu_soba" = "โซบะจิจิบุ";
-"gourmet_chichibu_soba_desc" = "Hand-made soba from Chichibu region with aromatic country flavor";
+"gourmet_chichibu_soba_desc" = "โซบะทำมือของแคว้นจิจิบุ รสชาติชนบทที่หอมกรุ่น";
 "gourmet_soka_senbei" = "โซกะเซมเบ้";
-"gourmet_soka_senbei_desc" = "Soka City's specialty, crispy and fragrant soy sauce rice crackers";
+"gourmet_soka_senbei_desc" = "ของขึ้นชื่อเมืองโซกะ เซมเบ้โชยุกรอบหอม";
 "gourmet_gokaho" = "โกกะโฮ";
-"gourmet_gokaho_desc" = "Kumagaya's traditional confection, old-fashioned sweet dusted with kinako";
+"gourmet_gokaho_desc" = "ขนมชื่อดังของคุมางายะ ขนมโบราณคลุกผงถั่วคินาโกะ";
 "gourmet_iga_manju" = "อิกะมันจู";
-"gourmet_iga_manju_desc" = "Gyoda's specialty, steamed buns covered with red rice";
+"gourmet_iga_manju_desc" = "ของขึ้นชื่อเกียวดะ ซาลาเปานึ่งคลุกข้าวเหนียวแดง";
 
 // Tokyo Gourmet
 "gourmet_edomae_sushi" = "ซูชิเอโดมาเอะ";
-"gourmet_edomae_sushi_desc" = "Traditional sushi using seafood caught in Tokyo Bay";
+"gourmet_edomae_sushi_desc" = "ซูชิดั้งเดิมที่ใช้อาหารทะเลจากอ่าวโตเกียว";
 "gourmet_monjayaki" = "มนจะยากิ";
-"gourmet_monjayaki_desc" = "Downtown specialty, loose batter with dashi grilled on iron plate";
+"gourmet_monjayaki_desc" = "ของขึ้นชื่อย่านเมืองเก่า แป้งเหลวรสดาชิย่างบนกระทะเหล็ก";
 "gourmet_fukagawa_don" = "ข้าวหน้าฟุกางาวะ";
-"gourmet_fukagawa_don_desc" = "Common people's taste since Edo period, clam miso soup over rice";
+"gourmet_fukagawa_don_desc" = "รสชาติของสามัญชนตั้งแต่สมัยเอโดะ ราดซุปมิโซะหอยลายบนข้าว";
 "gourmet_imagawayaki" = "อิมางาวะยากิ";
-"gourmet_imagawayaki_desc" = "Tokyo-originated confection, round grilled cake filled with sweet bean paste";
+"gourmet_imagawayaki_desc" = "ขนมญี่ปุ่นต้นกำเนิดโตเกียว ขนมย่างทรงกลมสอดไส้ถั่วกวน";
 "gourmet_tsukudani" = "สึกุดานิ";
-"gourmet_tsukudani_desc" = "Preserved food since Edo period, small fish and kelp simmered sweet and salty";
+"gourmet_tsukudani_desc" = "อาหารถนอมตั้งแต่สมัยเอโดะ ปลาเล็กและสาหร่ายคอมบุตุ๋นรสหวานเค็ม";
 
 // Kanagawa Gourmet
 "gourmet_shumai" = "ชูมาย";
-"gourmet_shumai_desc" = "Yokohama's famous pork shumai, Kiyoken is well-known";
+"gourmet_shumai_desc" = "ชูมายหมูขึ้นชื่อของโยโกฮามะ ร้านคิโยเก็นโด่งดัง";
 "gourmet_kamakura_vegetables" = "ผักคามาคุระ";
-"gourmet_kamakura_vegetables_desc" = "Fresh and delicious vegetables grown in Kamakura";
+"gourmet_kamakura_vegetables_desc" = "ผักสดอร่อยที่ปลูกในคามาคุระ";
 "gourmet_shonan_shirasu" = "ปลาข้าวสารโชนัน";
-"gourmet_shonan_shirasu_desc" = "Fresh whitebait caught in Sagami Bay, enjoyed raw or boiled";
+"gourmet_shonan_shirasu_desc" = "ปลาข้าวสารสดจากอ่าวซางามิ อร่อยทั้งแบบดิบและลวก";
 "gourmet_iekei_ramen" = "ราเมนอิเอเกอิ";
-"gourmet_iekei_ramen_desc" = "Yokohama-originated tonkotsu soy sauce ramen with rich soup";
+"gourmet_iekei_ramen_desc" = "ราเมนทงคตสึโชยุต้นกำเนิดโยโกฮามะ น้ำซุปเข้มข้น";
 "gourmet_yokohama_chinatown_gourmet" = "อาหารไชน่าทาวน์โยโกฮามะ";
-"gourmet_yokohama_chinatown_gourmet_desc" = "Authentic Chinese cuisine in Japan's largest Chinatown";
+"gourmet_yokohama_chinatown_gourmet_desc" = "อาหารจีนต้นตำรับในไชน่าทาวน์ที่ใหญ่ที่สุดในญี่ปุ่น";
 
 // Niigata Gourmet
 "gourmet_niigata_rice" = "ข้าวนีงาตะ";
-"gourmet_niigata_rice_desc" = "One of Japan's leading rice producing regions, Koshihikari is especially famous";
+"gourmet_niigata_rice_desc" = "แหล่งผลิตข้าวชั้นนำของญี่ปุ่น พันธุ์โคชิฮิคาริขึ้นชื่อเป็นพิเศษ";
 "gourmet_noppe" = "น็อปเปะ";
-"gourmet_noppe_desc" = "Niigata's local dish, gentle-tasting simmered taro and carrots";
+"gourmet_noppe_desc" = "อาหารพื้นเมืองนีงาตะ ตุ๋นเผือกกับแครอทรสอ่อนละมุน";
 "gourmet_hegi_soba" = "เฮงิโซบะ";
-"gourmet_hegi_soba_desc" = "Niigata's specialty soba using funori seaweed as binding agent";
+"gourmet_hegi_soba_desc" = "โซบะขึ้นชื่อนีงาตะ ใช้สาหร่ายฟุโนริเป็นตัวประสาน";
 "gourmet_niigata_salmon" = "แซลมอนนีงาตะ";
-"gourmet_niigata_salmon_desc" = "Salmon caught in Shinano River, Niigata's autumn delicacy";
+"gourmet_niigata_salmon_desc" = "ปลาแซลมอนจากแม่น้ำชินาโนะ รสชาติฤดูใบไม้ร่วงของนีงาตะ";
 "gourmet_sake" = "สาเก";
-"gourmet_sake_desc" = "One of the nation's leading sake regions, fine sake made with clear water";
+"gourmet_sake_desc" = "แหล่งผลิตสาเกชั้นนำของประเทศ สุราชั้นเลิศจากน้ำใสบริสุทธิ์";
 
 // Nagano Gourmet
 "gourmet_shinshu_soba" = "โซบะชินชู";
-"gourmet_shinshu_soba_desc" = "Nagano Prefecture's specialty, hand-made soba using aromatic buckwheat";
+"gourmet_shinshu_soba_desc" = "ของขึ้นชื่อจังหวัดนางาโนะ โซบะทำมือจากเมล็ดบัควีตหอมกรุ่น";
 "gourmet_oyaki" = "โอยากิ";
-"gourmet_oyaki_desc" = "Local dish of vegetables and wild plants wrapped in wheat flour skin and grilled";
+"gourmet_oyaki_desc" = "อาหารพื้นเมืองที่ห่อผักและผักป่าด้วยแป้งสาลีแล้วนำไปย่าง";
 "gourmet_nozawana" = "โนซาวานะ";
-"gourmet_nozawana_desc" = "Nagano's specialty vegetable, commonly eaten pickled";
+"gourmet_nozawana_desc" = "ผักขึ้นชื่อของนางาโนะ นิยมกินแบบดอง";
 "gourmet_shinshu_apple" = "แอปเปิลชินชู";
-"gourmet_shinshu_apple_desc" = "Sweet and juicy apples from Nagano Prefecture";
+"gourmet_shinshu_apple_desc" = "แอปเปิลหวานฉ่ำจากจังหวัดนางาโนะ";
 "gourmet_shinshu_miso" = "มิโซะชินชู";
-"gourmet_shinshu_miso_desc" = "Nagano Prefecture's miso, sweet and aromatic red miso";
+"gourmet_shinshu_miso_desc" = "มิโซะจากจังหวัดนางาโนะ มิโซะแดงรสหวานหอมกรุ่น";
 
 // Yamanashi Gourmet
 "gourmet_hoto" = "โฮโตะ";
-"gourmet_hoto_desc" = "Yamanashi's specialty dish, flat noodles and vegetables simmered in miso";
+"gourmet_hoto_desc" = "อาหารขึ้นชื่อยามานาชิ ต้มเส้นแบนกับผักในน้ำมิโซะ";
 "gourmet_shingen_mochi" = "ชินเก็นโมจิ";
-"gourmet_shingen_mochi_desc" = "Yamanashi's representative confection, eaten with kinako and black syrup";
+"gourmet_shingen_mochi_desc" = "ขนมตัวแทนของยามานาชิ กินกับผงคินาโกะและน้ำเชื่อมดำ";
 "gourmet_yamanashi_grape" = "องุ่นยามานาชิ";
-"gourmet_yamanashi_grape_desc" = "Sweet grapes grown in Kofu Basin, Kyoho and Shine Muscat";
+"gourmet_yamanashi_grape_desc" = "องุ่นหวานจากแอ่งโคฟุ ทั้งเคียวโฮและไชน์มัสกัต";
 "gourmet_yamanashi_peach" = "พีชยามานาชิ";
-"gourmet_yamanashi_peach_desc" = "Sweet and juicy peaches from Yamanashi Prefecture";
+"gourmet_yamanashi_peach_desc" = "พีชหวานฉ่ำจากจังหวัดยามานาชิ";
 "gourmet_koshu_wine" = "ไวน์โคชู";
-"gourmet_koshu_wine_desc" = "Japanese wine made from Yamanashi Prefecture grapes";
+"gourmet_koshu_wine_desc" = "ไวน์ญี่ปุ่นที่ทำจากองุ่นจังหวัดยามานาชิ";
 
 // Shizuoka Gourmet
 "gourmet_shizuoka_tea" = "ชาชิซุโอกะ";
-"gourmet_shizuoka_tea_desc" = "Japan's largest tea production region. Aromatic green tea";
+"gourmet_shizuoka_tea_desc" = "ผลผลิตอันดับหนึ่งของประเทศ ชาเขียวหอมกรุ่น";
 "gourmet_unagi" = "ปลาไหลย่าง";
-"gourmet_unagi_desc" = "Lake Hamana eel. Fluffy flesh with sweet sauce";
+"gourmet_unagi_desc" = "ปลาไหลจากทะเลสาบฮามานะ เนื้อนุ่มฟูกับซอสหวาน";
 "gourmet_wasabi" = "วาซาบิ";
-"gourmet_wasabi_desc" = "Fresh wasabi grown in Izu's clear streams. Sharp spiciness that goes through the nose";
+"gourmet_wasabi_desc" = "วาซาบิแท้ที่ปลูกในลำธารใสของอิซุ รสเผ็ดซ่าแล่นขึ้นจมูก";
 "gourmet_sakura_ebi" = "กุ้งซากุระ";
-"gourmet_sakura_ebi_desc" = "Gem of Suruga Bay. Beautiful pink color available in spring and autumn only";
+"gourmet_sakura_ebi_desc" = "อัญมณีแห่งอ่าวซุรุกะ สีชมพูสวยงามมีเฉพาะฤดูใบไม้ผลิและใบไม้ร่วง";
 "gourmet_kuro_hanpen" = "คุโระฮัมเปน";
-"gourmet_kuro_hanpen_desc" = "Staple of Shizuoka oden. Black hanpen made with sardines";
+"gourmet_kuro_hanpen_desc" = "ของคู่โอเด้งชิซุโอกะ ฮัมเปนสีดำทำจากปลาซาร์ดีน";
 
 // Aichi Gourmet
 "gourmet_miso_katsu" = "มิโซะคัตสึ";
-"gourmet_miso_katsu_desc" = "Nagoya specialty. Pork cutlet with rich red miso sauce";
+"gourmet_miso_katsu_desc" = "ของขึ้นชื่อนาโกยา หมูทอดราดซอสมิโซะแดงเข้มข้น";
 "gourmet_hitsumabushi" = "ฮิสึมะบุชิ";
-"gourmet_hitsumabushi_desc" = "Nagoya eel dish. Enjoy in three different ways";
+"gourmet_hitsumabushi_desc" = "เมนูปลาไหลของนาโกยา อร่อยได้สามแบบ";
 "gourmet_tebasaki" = "ปีกไก่ทอด";
-"gourmet_tebasaki_desc" = "Nagoya izakaya specialty. Sweet and spicy sauce chicken wings";
+"gourmet_tebasaki_desc" = "ของขึ้นชื่อร้านเหล้านาโกยา ปีกไก่ซอสหวานเผ็ดสุดยอด";
 "gourmet_kishimen" = "คิชิเม็ง";
-"gourmet_kishimen_desc" = "Nagoya's flat udon noodles. Smooth texture";
+"gourmet_kishimen_desc" = "อุด้งเส้นแบนของนาโกยา สัมผัสลื่นนุ่ม";
 "gourmet_taiwan_ramen" = "ราเมนไต้หวัน";
-"gourmet_taiwan_ramen_desc" = "Spicy ramen originated in Nagoya. No relation to Taiwan";
+"gourmet_taiwan_ramen_desc" = "ราเมนเผ็ดต้นกำเนิดนาโกยา ไม่เกี่ยวกับไต้หวัน";
 
 // Mie Gourmet
 "gourmet_ise_ebi" = "กุ้งมังกรอิเสะ";
-"gourmet_ise_ebi_desc" = "Mie Prefecture's luxury ingredient. Firm texture and sweetness";
+"gourmet_ise_ebi_desc" = "วัตถุดิบชั้นสูงของจังหวัดมิเอะ เนื้อเด้งและหวาน";
 "gourmet_matsusaka_beef" = "เนื้อวัวมัตสึซากะ";
-"gourmet_matsusaka_beef_desc" = "World's finest wagyu. Melting marbling";
+"gourmet_matsusaka_beef_desc" = "วากิวชั้นเลิศระดับโลก ลายหินอ่อนละลายในปาก";
 "gourmet_akafuku" = "อากะฟุกุ";
-"gourmet_akafuku_desc" = "Ise Shrine's specialty. Rice cake wrapped in sweet bean paste";
+"gourmet_akafuku_desc" = "ของขึ้นชื่อศาลเจ้าอิเสะ โมจิห่อด้วยถั่วกวน";
 "gourmet_tekone_sushi" = "ซูชิเทโกเนะ";
-"gourmet_tekone_sushi_desc" = "Shima region's local dish. Sushi mixed with marinated bonito";
+"gourmet_tekone_sushi_desc" = "อาหารพื้นเมืองแคว้นชิมะ ซูชิคลุกปลาโบนิโตะหมัก";
 "gourmet_iga_beef" = "เนื้อวัวอิกะ";
-"gourmet_iga_beef_desc" = "Brand beef from Iga region, Mie Prefecture. High-quality meat";
+"gourmet_iga_beef_desc" = "เนื้อวัวแบรนด์ของแคว้นอิกะ จังหวัดมิเอะ เนื้อคุณภาพเยี่ยม";
 
 // Gifu Gourmet
 "gourmet_hida_beef" = "เนื้อวัวฮิดะ";
-"gourmet_hida_beef_desc" = "Brand beef from Hida region, Gifu Prefecture. Top-grade A5 rank";
+"gourmet_hida_beef_desc" = "เนื้อวัวแบรนด์ของแคว้นฮิดะ จังหวัดกิฟุ ระดับ A5 สูงสุด";
 "gourmet_hoba_miso" = "โฮบะมิโซะ";
-"gourmet_hoba_miso_desc" = "Hida's local dish. Miso grilled on magnolia leaves";
+"gourmet_hoba_miso_desc" = "อาหารพื้นเมืองฮิดะ ย่างมิโซะบนใบโฮบะ";
 "gourmet_gohei_mochi" = "โกเฮโมจิ";
-"gourmet_gohei_mochi_desc" = "Chubu region's local dish. Sweet and savory sauce is fragrant";
+"gourmet_gohei_mochi_desc" = "อาหารพื้นเมืองภาคชูบุ ซอสหวานเผ็ดหอมกรุ่น";
 "gourmet_ayu_shioyaki" = "ปลาอายุย่างเกลือ";
-"gourmet_ayu_shioyaki_desc" = "Sweetfish raised in clear streams. Summer tradition";
+"gourmet_ayu_shioyaki_desc" = "ปลาอายุที่เติบโตในลำธารใส ภาพประจำฤดูร้อน";
 "gourmet_kuri_kinton" = "คุริคินตง";
-"gourmet_kuri_kinton_desc" = "Nakatsugawa specialty. Japanese confection showcasing chestnut sweetness";
+"gourmet_kuri_kinton_desc" = "ของขึ้นชื่อนากาสึกาวะ ขนมญี่ปุ่นที่ชูรสหวานของเกาลัด";
 
 // Fukui Gourmet
 "gourmet_echizen_crab" = "ปูเอจิเซ็น";
-"gourmet_echizen_crab_desc" = "King of Fukui's winter delicacies. Sweet with packed meat";
+"gourmet_echizen_crab_desc" = "ราชาแห่งรสชาติฤดูหนาวของฟุกุอิ หวานและเนื้อแน่น";
 "gourmet_echizen_soba" = "โซบะเอจิเซ็น";
-"gourmet_echizen_soba_desc" = "Fukui's specialty soba. Served with grated daikon radish";
+"gourmet_echizen_soba_desc" = "โซบะขึ้นชื่อของฟุกุอิ กินคู่กับหัวไชเท้าขูด";
 "gourmet_sauce_katsu_don" = "ข้าวหน้าหมูทอดซอส";
-"gourmet_sauce_katsu_don_desc" = "Originated in Fukui. Katsu don with sauce";
+"gourmet_sauce_katsu_don_desc" = "มีต้นกำเนิดที่ฟุกุอิ ข้าวหน้าหมูทอดราดซอส";
 "gourmet_habutae_mochi" = "ฮาบูตาเอะโมจิ";
-"gourmet_habutae_mochi_desc" = "Fukui's famous confection. Soft with elegant sweetness";
+"gourmet_habutae_mochi_desc" = "ขนมชื่อดังของฟุกุอิ นุ่มและหวานละมุน";
 "gourmet_wakasa_beef" = "เนื้อวัววากาสะ";
-"gourmet_wakasa_beef_desc" = "Brand beef from Wakasa region, Fukui Prefecture";
+"gourmet_wakasa_beef_desc" = "เนื้อวัวแบรนด์ของแคว้นวากาสะ จังหวัดฟุกุอิ";
 
 // Ishikawa Gourmet
 "gourmet_kaga_cuisine" = "อาหารคางะ";
-"gourmet_kaga_cuisine_desc" = "Kanazawa's haute cuisine. Competition of sea and mountain delicacies";
+"gourmet_kaga_cuisine_desc" = "อาหารชั้นสูงของคานาซาวะ การประชันของอาหารทะเลและอาหารภูเขา";
 "gourmet_kanazawa_curry" = "แกงกะหรี่คานาซาวะ";
-"gourmet_kanazawa_curry_desc" = "Kanazawa B-grade gourmet. Rich roux with cabbage topping";
+"gourmet_kanazawa_curry_desc" = "อาหารบีเกรดของคานาซาวะ รูข้นเข้มโปะกะหล่ำปลี";
 "gourmet_noto_beef" = "เนื้อวัวโนโตะ";
-"gourmet_noto_beef_desc" = "Brand beef from Noto region, Ishikawa Prefecture";
+"gourmet_noto_beef_desc" = "เนื้อวัวแบรนด์ของแคว้นโนโตะ จังหวัดอิชิกาวะ";
 "gourmet_jibuni" = "จิบุนิ";
-"gourmet_jibuni_desc" = "Kanazawa's local dish. Duck and vegetable stew";
+"gourmet_jibuni_desc" = "อาหารพื้นเมืองคานาซาวะ ตุ๋นเนื้อเป็ดกับผัก";
 "gourmet_nodoguro" = "ปลาโนโดงุโระ";
-"gourmet_nodoguro_desc" = "Japan Sea's luxury fish. Exquisite elegant sweetness";
+"gourmet_nodoguro_desc" = "ปลาชั้นสูงของทะเลญี่ปุ่น รสหวานละมุนสุดยอด";
 
 // Toyama Gourmet
 "gourmet_shiro_ebi" = "กุ้งขาว";
-"gourmet_shiro_ebi_desc" = "Gem of Toyama Bay. Transparent and beautiful sweet shrimp";
+"gourmet_shiro_ebi_desc" = "อัญมณีแห่งอ่าวโทยามะ กุ้งหวานใสสวยงาม";
 "gourmet_hotaru_ika" = "ปลาหมึกหิ่งห้อย";
-"gourmet_hotaru_ika_desc" = "Spring tradition of Toyama Bay. Small squid that glows blue";
+"gourmet_hotaru_ika_desc" = "ภาพประจำฤดูใบไม้ผลิของอ่าวโทยามะ ปลาหมึกตัวเล็กเรืองแสงสีฟ้า";
 "gourmet_masu_sushi" = "ซูชิปลาเทราต์";
-"gourmet_masu_sushi_desc" = "Famous as Toyama's ekiben. Pressed sushi wrapped in bamboo leaves";
+"gourmet_masu_sushi_desc" = "ขึ้นชื่อในฐานะข้าวกล่องของโทยามะ ซูชิอัดห่อใบไผ่";
 "gourmet_toyama_black_ramen" = "ราเมนดำโทยามะ";
-"gourmet_toyama_black_ramen_desc" = "Toyama's local ramen. Jet-black soup";
+"gourmet_toyama_black_ramen_desc" = "ราเมนประจำถิ่นของโทยามะ น้ำซุปสีดำสนิท";
 "gourmet_himi_beef" = "เนื้อวัวฮิมิ";
-"gourmet_himi_beef_desc" = "Brand beef from Himi City, Toyama Prefecture";
+"gourmet_himi_beef_desc" = "เนื้อวัวแบรนด์ของเมืองฮิมิ จังหวัดโทยามะ";
 
 // Shiga Gourmet
 "gourmet_omi_beef" = "เนื้อวัวโอมิ";
-"gourmet_omi_beef_desc" = "One of Japan's three major wagyu. Brand beef with 400 years of history";
+"gourmet_omi_beef_desc" = "หนึ่งในสามวากิวชั้นเลิศของญี่ปุ่น เนื้อแบรนด์ประวัติ 400 ปี";
 "gourmet_funa_sushi" = "ฟุนะซูชิ";
-"gourmet_funa_sushi_desc" = "Fermented sushi using crucian carp from Lake Biwa. Shiga's traditional food";
+"gourmet_funa_sushi_desc" = "ซูชิหมักจากปลาตะเพียนทะเลสาบบิวะ อาหารดั้งเดิมของชิงะ";
 "gourmet_aka_konnyaku" = "คอนเนียคุแดง";
-"gourmet_aka_konnyaku_desc" = "Shiga Prefecture specialty. Konnyaku dyed red with iron";
+"gourmet_aka_konnyaku_desc" = "ของขึ้นชื่อจังหวัดชิงะ คอนเนียคุย้อมสีแดงด้วยธาตุเหล็ก";
 "gourmet_shigaraki_pottery" = "เครื่องปั้นดินเผาชิการากิ";
-"gourmet_shigaraki_pottery_desc" = "Pottery from Shigaraki Town, Shiga Prefecture. Famous for tanuki figurines";
+"gourmet_shigaraki_pottery_desc" = "เครื่องปั้นดินเผาเมืองชิการากิ จังหวัดชิงะ ตุ๊กตาทานุกิขึ้นชื่อ";
 "gourmet_lake_fish_cuisine" = "อาหารปลาน้ำจืด";
-"gourmet_lake_fish_cuisine_desc" = "Local cuisine using fish from Lake Biwa";
+"gourmet_lake_fish_cuisine_desc" = "อาหารพื้นเมืองที่ใช้ปลาจากทะเลสาบบิวะ";
 
 // Kyoto Gourmet
 "gourmet_yudofu" = "ยุโดฟุ (เต้าหู้ต้ม)";
-"gourmet_yudofu_desc" = "Kyoto's Buddhist cuisine. Tofu warmed in elegant dashi";
+"gourmet_yudofu_desc" = "อาหารเจของเกียวโต เต้าหู้อุ่นในน้ำดาชิรสละมุน";
 "gourmet_kyoto_kaiseki" = "ไคเซกิเกียวโต";
-"gourmet_kyoto_kaiseki_desc" = "Kyoto's haute cuisine. Beautiful dishes that value seasonality";
+"gourmet_kyoto_kaiseki_desc" = "อาหารชั้นสูงของเกียวโต งดงามและให้ความสำคัญกับฤดูกาล";
 "gourmet_matcha_sweets" = "ขนมชาเขียวมัทฉะ";
-"gourmet_matcha_sweets_desc" = "Japanese sweets using Uji matcha";
+"gourmet_matcha_sweets_desc" = "ขนมญี่ปุ่นที่ใช้ชาเขียวมัทฉะจากอุจิ";
 "gourmet_obanzai" = "โอบันไซ";
-"gourmet_obanzai_desc" = "Kyoto's home cooking. Gentle taste centered on vegetables";
+"gourmet_obanzai_desc" = "อาหารบ้านๆ ของเกียวโต รสอ่อนละมุนเน้นผัก";
 "gourmet_kyoto_pickles" = "ผักดองเกียวโต";
-"gourmet_kyoto_pickles_desc" = "Traditional pickles from Kyoto. Elegant flavor";
+"gourmet_kyoto_pickles_desc" = "ผักดองดั้งเดิมของเกียวโต รสชาติละมุน";
 
 // Hyogo Gourmet
 "gourmet_kobe_beef" = "เนื้อวัวโกเบ";
-"gourmet_kobe_beef_desc" = "World's finest brand beef. Melting texture";
+"gourmet_kobe_beef_desc" = "เนื้อวัวแบรนด์ชั้นเลิศระดับโลก สัมผัสละลายในปาก";
 "gourmet_akashiyaki" = "อากาชิยากิ";
-"gourmet_akashiyaki_desc" = "Akashi specialty. Fluffier texture than takoyaki";
+"gourmet_akashiyaki_desc" = "ของขึ้นชื่ออาคาชิ สัมผัสฟูนุ่มกว่าทาโกยากิ";
 "gourmet_ikanago" = "อิคานาโกะ";
-"gourmet_ikanago_desc" = "Spring delicacy of the Seto Inland Sea. Eaten as tsukudani";
+"gourmet_ikanago_desc" = "รสชาติฤดูใบไม้ผลิของทะเลเซโตะใน กินแบบสึกุดานิ";
 "gourmet_banshu_ramen" = "ราเมนบันชู";
-"gourmet_banshu_ramen_desc" = "Local ramen from Banshu region, Hyogo Prefecture";
+"gourmet_banshu_ramen_desc" = "ราเมนประจำถิ่นของแคว้นบันชู จังหวัดเฮียวโงะ";
 "gourmet_awaji_onion" = "หัวหอมอาวาจิ";
-"gourmet_awaji_onion_desc" = "Sweet and soft specialty of Awaji Island";
+"gourmet_awaji_onion_desc" = "สินค้าขึ้นชื่อของเกาะอาวาจิ หวานและเนื้อนุ่ม";
 
 // Nara Gourmet
 "gourmet_kakinoha_sushi" = "ซูชิใบพลับ";
-"gourmet_kakinoha_sushi_desc" = "Nara's local dish. Pressed sushi wrapped in persimmon leaves";
+"gourmet_kakinoha_sushi_desc" = "อาหารพื้นเมืองนาระ ซูชิอัดห่อใบพลับ";
 "gourmet_miwa_somen" = "โซเม็งมิวะ";
-"gourmet_miwa_somen_desc" = "Hand-stretched somen from Miwa region, Nara Prefecture";
+"gourmet_miwa_somen_desc" = "โซเม็งยืดมือของแคว้นมิวะ จังหวัดนาระ";
 "gourmet_narazuke" = "นาราซึเกะ";
-"gourmet_narazuke_desc" = "Specialty of Nara pickled in sake lees";
+"gourmet_narazuke_desc" = "สินค้าขึ้นชื่อของนาระ ดองในกากสาเก";
 "gourmet_yamato_beef" = "เนื้อวัวยามาโตะ";
-"gourmet_yamato_beef_desc" = "Brand beef from Nara Prefecture. Tender and high-quality";
+"gourmet_yamato_beef_desc" = "เนื้อวัวแบรนด์ของจังหวัดนาระ นุ่มและคุณภาพเยี่ยม";
 "gourmet_kuzukiri" = "คุซึคิริ";
-"gourmet_kuzukiri_desc" = "Transparent noodles made from kudzu flour. Elegant sweetness";
+"gourmet_kuzukiri_desc" = "เส้นใสทำจากแป้งคุซุ รสหวานละมุน";
 
 // Wakayama Gourmet
 "gourmet_umeboshi" = "อุเมะโบชิ (บ๊วยดอง)";
-"gourmet_umeboshi_desc" = "Wakayama Prefecture has Japan's largest plum production. Nanko plums are famous";
+"gourmet_umeboshi_desc" = "จังหวัดวากายามะผลิตบ๊วยมากที่สุดในญี่ปุ่น พันธุ์นันโกขึ้นชื่อ";
 "gourmet_wakayama_ramen" = "ราเมนวากายามะ";
-"gourmet_wakayama_ramen_desc" = "Rich tonkotsu soy sauce ramen. Also called chuka soba";
+"gourmet_wakayama_ramen_desc" = "ราเมนทงคตสึโชยุเข้มข้น หรือเรียกว่าจูกะโซบะ";
 "gourmet_tuna" = "ทูน่า";
-"gourmet_tuna_desc" = "Tuna from Kishu Katsuura. Fresh with good fat content";
+"gourmet_tuna_desc" = "ทูน่าจากคิชูคัตสึอุระ สดและมันกำลังดี";
 "gourmet_persimmon" = "ลูกพลับวากายามะ";
-"gourmet_persimmon_desc" = "Sweet and delicious persimmons from Wakayama Prefecture";
+"gourmet_persimmon_desc" = "ลูกพลับหวานอร่อยจากจังหวัดวากายามะ";
 "gourmet_kishu_kinzanji_miso" = "มิโซะคินซันจิคิชู";
-"gourmet_kishu_kinzanji_miso_desc" = "Sweet miso with vegetables. Wakayama specialty";
+"gourmet_kishu_kinzanji_miso_desc" = "มิโซะหวานผสมผัก สินค้าขึ้นชื่อวากายามะ";
 
 // Tottori Gourmet
 "gourmet_matsuba_crab" = "ปูมัตสึบะ";
-"gourmet_matsuba_crab_desc" = "Tottori's winter delicacy. Sweet with meat packed tightly in luxury crab";
+"gourmet_matsuba_crab_desc" = "รสชาติฤดูหนาวของทตโตริ ปูชั้นเลิศเนื้อแน่นหวาน";
 "gourmet_nijisseiki_pear" = "สาลี่ศตวรรษที่ 20";
-"gourmet_nijisseiki_pear_desc" = "Tottori specialty. Juicy with crispy texture";
+"gourmet_nijisseiki_pear_desc" = "สินค้าขึ้นชื่อทตโตริ ฉ่ำน้ำเนื้อกรอบ";
 "gourmet_sakaiminato_seafood" = "อาหารทะเลซาไกมินาโตะ";
-"gourmet_sakaiminato_seafood_desc" = "Fresh seafood from the Japan Sea. Abundant crabs and fish";
+"gourmet_sakaiminato_seafood_desc" = "อาหารทะเลสดจากทะเลญี่ปุ่น อุดมด้วยปูและปลา";
 "gourmet_tofu_chikuwa" = "เต้าหู้ชิกุวะ";
-"gourmet_tofu_chikuwa_desc" = "Tottori specialty. White chikuwa mixed with tofu";
+"gourmet_tofu_chikuwa_desc" = "ของขึ้นชื่อทตโตริ ชิกุวะสีขาวผสมเต้าหู้";
 "gourmet_gyu_kotsu_ramen" = "ราเมนกระดูกวัว";
-"gourmet_gyu_kotsu_ramen_desc" = "Tottori's local ramen. Characterized by beef bone broth";
+"gourmet_gyu_kotsu_ramen_desc" = "ราเมนประจำถิ่นทตโตริ เด่นด้วยน้ำซุปกระดูกวัว";
 
 // Okayama Gourmet
 "gourmet_white_peach" = "พีชขาว";
-"gourmet_white_peach_desc" = "Okayama specialty. Sweet and juicy luxury peach";
+"gourmet_white_peach_desc" = "สินค้าขึ้นชื่อโอกายามะ พีชขาวชั้นเลิศหวานฉ่ำ";
 "gourmet_muscat" = "มัสกัต";
-"gourmet_muscat_desc" = "Okayama Prefecture's Muscat of Alexandria";
+"gourmet_muscat_desc" = "มัสกัตออฟอเล็กซานเดรียจากจังหวัดโอกายามะ";
 "gourmet_kibidango" = "คิบิดังโงะ";
-"gourmet_kibidango_desc" = "Okayama's specialty confection. Famous from Momotaro legend";
+"gourmet_kibidango_desc" = "ขนมขึ้นชื่อโอกายามะ โด่งดังจากตำนานโมโมทาโร่";
 "gourmet_mamakari" = "มามาการิ";
-"gourmet_mamakari_desc" = "Okayama's local dish. Small fish pickled in vinegar";
+"gourmet_mamakari_desc" = "อาหารพื้นเมืองโอกายามะ ปลาเล็กดองน้ำส้ม";
 "gourmet_demi_katsu_don" = "ข้าวหน้าหมูทอดซอสเดมิ";
-"gourmet_demi_katsu_don_desc" = "Okayama B-grade gourmet. Katsu don with demi-glace sauce";
+"gourmet_demi_katsu_don_desc" = "อาหารบีเกรดโอกายามะ ข้าวหน้าหมูทอดซอสเดมิกลาส";
 
 // Hiroshima Gourmet
 "gourmet_okonomiyaki_hiroshima" = "โอโคโนมิยากิสไตล์ฮิโรชิมะ";
-"gourmet_okonomiyaki_hiroshima_desc" = "Okonomiyaki with noodles. Hiroshima's soul food";
+"gourmet_okonomiyaki_hiroshima_desc" = "โอโคโนมิยากิใส่เส้น อาหารในดวงใจของฮิโรชิมะ";
 "gourmet_oyster" = "หอยนางรม";
-"gourmet_oyster_desc" = "Oysters from Hiroshima Bay. Rich and creamy taste";
+"gourmet_oyster_desc" = "หอยนางรมจากอ่าวฮิโรชิมะ รสเข้มข้นครีมมี";
 "gourmet_momiji_manju" = "โมมิจิมันจู";
-"gourmet_momiji_manju_desc" = "Hiroshima's famous confection. Maple leaf-shaped castella bun";
+"gourmet_momiji_manju_desc" = "ขนมชื่อดังฮิโรชิมะ ซาลาเปาคาสเตลลาทรงใบเมเปิล";
 "gourmet_hiroshima_tsukemen" = "สึเคเม็งฮิโรชิมะ";
-"gourmet_hiroshima_tsukemen_desc" = "Hiroshima ramen dipped in spicy miso sauce";
+"gourmet_hiroshima_tsukemen_desc" = "ราเมนฮิโรชิมะที่จิ้มซอสมิโซะเผ็ด";
 "gourmet_anago_meshi" = "ข้าวหน้าปลาไหลทะเล";
-"gourmet_anago_meshi_desc" = "Miyajima specialty. Rice topped with grilled conger eel";
+"gourmet_anago_meshi_desc" = "ของขึ้นชื่อมิยาจิมะ ข้าวหน้าปลาไหลทะเลย่าง";
 
 // Yamaguchi Gourmet
 "gourmet_fugu" = "ปลาปักเป้า";
-"gourmet_fugu_desc" = "Shimonoseki fugu. Representative of luxury ingredients";
+"gourmet_fugu_desc" = "ปลาปักเป้าชิโมโนเซกิ ตัวแทนของวัตถุดิบชั้นสูง";
 "gourmet_kawara_soba" = "โซบะบนกระเบื้อง";
-"gourmet_kawara_soba_desc" = "Yamaguchi Prefecture specialty. Green tea soba grilled on heated roof tiles";
+"gourmet_kawara_soba_desc" = "ของขึ้นชื่อจังหวัดยามางุจิ ชาโซบะย่างบนกระเบื้องร้อน";
 "gourmet_iwakuni_lotus_root" = "รากบัวอิวาคุนิ";
-"gourmet_iwakuni_lotus_root_desc" = "Iwakuni specialty. Many holes with good texture";
+"gourmet_iwakuni_lotus_root_desc" = "สินค้าขึ้นชื่ออิวาคุนิ มีรูมากและสัมผัสดี";
 "gourmet_shimonoseki_whale" = "เนื้อวาฬชิโมโนเซกิ";
-"gourmet_shimonoseki_whale_desc" = "Traditional ingredient from Shimonoseki. Whale meat dishes";
+"gourmet_shimonoseki_whale_desc" = "วัตถุดิบดั้งเดิมของชิโมโนเซกิ เมนูเนื้อวาฬ";
 "gourmet_natsumikan" = "ส้มนัตสึมิกัง";
-"gourmet_natsumikan_desc" = "Yamaguchi Prefecture specialty. Characterized by refreshing acidity";
+"gourmet_natsumikan_desc" = "สินค้าขึ้นชื่อจังหวัดยามางุจิ เด่นด้วยรสเปรี้ยวสดชื่น";
 
 // Shimane Gourmet
 "gourmet_izumo_soba" = "โซบะอิซุโมะ";
-"gourmet_izumo_soba_desc" = "Shimane's specialty soba. Eaten in three-tiered wariko boxes";
+"gourmet_izumo_soba_desc" = "โซบะขึ้นชื่อชิมาเนะ กินในกล่องวาริโกะสามชั้น";
 "gourmet_shinjiko_shijimi" = "หอยลายทะเลสาบชินจิ";
-"gourmet_shinjiko_shijimi_desc" = "Large corbicula clams from Lake Shinji. Miso soup is exquisite";
+"gourmet_shinjiko_shijimi_desc" = "หอยลายเม็ดใหญ่จากทะเลสาบชินจิ ซุปมิโซะรสเลิศ";
 "gourmet_nodoguro_shimane" = "ปลาโนโดงุโระ";
-"gourmet_nodoguro_shimane_desc" = "Luxury fish from the Japan Sea. Elegant fat and sweetness";
+"gourmet_nodoguro_shimane_desc" = "ปลาชั้นสูงของทะเลญี่ปุ่น มันและหวานละมุน";
 "gourmet_matsue_wagashi" = "ขนมญี่ปุ่นมัตสึเอะ";
-"gourmet_matsue_wagashi_desc" = "Traditional Japanese sweets supporting Matsue's tea culture";
+"gourmet_matsue_wagashi_desc" = "ขนมญี่ปุ่นชั้นดีที่ค้ำจุนวัฒนธรรมชงชาของมัตสึเอะ";
 "gourmet_wariko_soba" = "วาริโกะโซบะ";
-"gourmet_wariko_soba_desc" = "Traditional way of eating Izumo soba";
+"gourmet_wariko_soba_desc" = "วิธีกินโซบะอิซุโมะแบบดั้งเดิม";
 
 // Kagawa Gourmet
 "gourmet_sanuki_udon" = "อุด้งซานุกิ";
-"gourmet_sanuki_udon_desc" = "Kagawa Prefecture specialty. Hand-beaten udon with strong texture";
+"gourmet_sanuki_udon_desc" = "ของขึ้นชื่อจังหวัดคางาวะ อุด้งทำมือเส้นเหนียวนุ่ม";
 "gourmet_olive" = "มะกอกโอลีฟ";
-"gourmet_olive_desc" = "Shodoshima specialty. Birthplace of Japanese olives";
+"gourmet_olive_desc" = "สินค้าขึ้นชื่อโชโดชิมะ แหล่งกำเนิดโอลีฟของญี่ปุ่น";
 "gourmet_honetsuki_dori" = "ไก่ติดกระดูกย่าง";
-"gourmet_honetsuki_dori_desc" = "Kagawa B-grade gourmet. Spicy chicken thigh";
+"gourmet_honetsuki_dori_desc" = "อาหารบีเกรดคางาวะ น่องไก่รสเผ็ด";
 "gourmet_wasanbon" = "วาซันบง";
-"gourmet_wasanbon_desc" = "Kagawa's luxury sugar. Japanese sweets with elegant sweetness";
+"gourmet_wasanbon_desc" = "น้ำตาลชั้นสูงของคางาวะ ขนมญี่ปุ่นรสหวานละมุน";
 "gourmet_shodoshima_somen" = "โซเม็งโชโดชิมะ";
-"gourmet_shodoshima_somen_desc" = "Hand-stretched somen from Shodoshima. 400 years of history";
+"gourmet_shodoshima_somen_desc" = "โซเม็งยืดมือของโชโดชิมะ ประวัติศาสตร์ 400 ปี";
 
 // Tokushima Gourmet
 "gourmet_awa_odori_chicken" = "ไก่อาวะโอโดริ";
-"gourmet_awa_odori_chicken_desc" = "Tokushima Prefecture's brand chicken. Elastic texture";
+"gourmet_awa_odori_chicken_desc" = "ไก่แบรนด์ของจังหวัดโทกุชิมะ สัมผัสเหนียวนุ่ม";
 "gourmet_tarai_udon" = "ทาไรอุด้ง";
-"gourmet_tarai_udon_desc" = "Tokushima's local dish. Udon eaten from a large wooden tub";
+"gourmet_tarai_udon_desc" = "อาหารพื้นเมืองโทกุชิมะ อุด้งกินจากอ่างไม้ใบใหญ่";
 "gourmet_sudachi" = "ซุดาจิ";
-"gourmet_sudachi_desc" = "Tokushima specialty. Citrus with refreshing acidity";
+"gourmet_sudachi_desc" = "สินค้าขึ้นชื่อโทกุชิมะ ส้มรสเปรี้ยวสดชื่น";
 "gourmet_naruto_kintoki" = "มันหวานนารูโตะคินโตกิ";
-"gourmet_naruto_kintoki_desc" = "Sweet potato specialty from Naruto City, Tokushima. Fluffy and sweet";
+"gourmet_naruto_kintoki_desc" = "มันหวานขึ้นชื่อเมืองนารูโตะ จังหวัดโทกุชิมะ เนื้อฟูและหวาน";
 "gourmet_handa_somen" = "โซเม็งฮันดะ";
-"gourmet_handa_somen_desc" = "Hand-stretched somen from Tsurugi Town, Tokushima";
+"gourmet_handa_somen_desc" = "โซเม็งยืดมือของเมืองสึรุงิ จังหวัดโทกุชิมะ";
 
 // Kochi Gourmet
 "gourmet_katsuo_tataki" = "คัตสึโอะทาทากิ";
-"gourmet_katsuo_tataki_desc" = "Kochi specialty. Fragrant bonito seared with straw";
+"gourmet_katsuo_tataki_desc" = "ของขึ้นชื่อโคจิ ปลาโบนิโตะย่างไฟฟางหอมกรุ่น";
 "gourmet_sawachi_cuisine" = "อาหารซาวาจิ";
-"gourmet_sawachi_cuisine_desc" = "Kochi's local cuisine. Luxurious dishes served on large platters";
+"gourmet_sawachi_cuisine_desc" = "อาหารพื้นเมืองโคจิ อาหารหรูจัดวางบนจานใหญ่";
 "gourmet_tosa_sake" = "สาเกโทสะ";
-"gourmet_tosa_sake_desc" = "Kochi's Japanese sake. Dry with crisp taste";
+"gourmet_tosa_sake_desc" = "สาเกของโคจิ รสแห้งคมสะอาด";
 "gourmet_yuzu" = "ยูซุ";
-"gourmet_yuzu_desc" = "Kochi Prefecture has Japan's largest yuzu production. Rich aroma";
+"gourmet_yuzu_desc" = "จังหวัดโคจิผลิตยูซุมากที่สุดในญี่ปุ่น หอมกรุ่น";
 "gourmet_tosa_buntan" = "ส้มโอโทสะ";
-"gourmet_tosa_buntan_desc" = "Kochi's specialty citrus. Large and sweet-sour";
+"gourmet_tosa_buntan_desc" = "ส้มขึ้นชื่อของโคจิ ผลใหญ่รสหวานอมเปรี้ยว";
 
 // Ehime Gourmet
 "gourmet_mikan" = "ส้มมิคังเอฮิเมะ";
-"gourmet_mikan_desc" = "Ehime Prefecture is the citrus kingdom. Sweet and juicy";
+"gourmet_mikan_desc" = "จังหวัดเอฮิเมะคืออาณาจักรส้ม หวานและฉ่ำ";
 "gourmet_jakoten" = "จาโกะเท็น";
-"gourmet_jakoten_desc" = "Ehime specialty. Fried fish paste made from small fish";
+"gourmet_jakoten_desc" = "ของขึ้นชื่อเอฮิเมะ ปลาบดทอดจากปลาเล็ก";
 "gourmet_tai_meshi" = "ข้าวหน้าปลาไท";
-"gourmet_tai_meshi_desc" = "Ehime's local dish. Rice cooked with fresh sea bream";
+"gourmet_tai_meshi_desc" = "อาหารพื้นเมืองเอฮิเมะ ข้าวหุงกับปลาไทสด";
 "gourmet_iyokan" = "ส้มอิโยกัง";
-"gourmet_iyokan_desc" = "Ehime's representative citrus. Refreshing sweet and sour taste";
+"gourmet_iyokan_desc" = "ส้มตัวแทนของเอฮิเมะ รสหวานอมเปรี้ยวสดชื่น";
 "gourmet_botchan_dango" = "บตจังดังโงะ";
-"gourmet_botchan_dango_desc" = "Matsuyama specialty. Beautiful three-colored dango";
+"gourmet_botchan_dango_desc" = "ของขึ้นชื่อมัตสึยามะ ดังโงะสามสีสวยงาม";
 
 // Oita Gourmet
 "gourmet_seki_saba_aji" = "ปลาซาบะ・อาจิเซกิ";
-"gourmet_seki_saba_aji_desc" = "Oita Prefecture's luxury fish. Exquisite fish raised in Bungo Channel";
+"gourmet_seki_saba_aji_desc" = "ปลาชั้นสูงของจังหวัดโออิตะ ปลารสเลิศจากช่องแคบบุงโงะ";
 "gourmet_toriten" = "โทริเท็น (ไก่ชุบแป้งทอด)";
-"gourmet_toriten_desc" = "Chicken tempura originated in Oita. Crispy and juicy";
+"gourmet_toriten_desc" = "เท็มปุระไก่ต้นกำเนิดโออิตะ กรอบนอกฉ่ำใน";
 "gourmet_dango_soup" = "ซุปดังโงะ";
-"gourmet_dango_soup_desc" = "Oita's local dish. Miso soup with wheat flour dumplings";
+"gourmet_dango_soup_desc" = "อาหารพื้นเมืองโออิตะ ซุปมิโซะใส่แผ่นแป้งสาลี";
 "gourmet_bungo_beef" = "เนื้อวัวบุงโงะ";
-"gourmet_bungo_beef_desc" = "Oita Prefecture's brand beef. Tender with rich umami";
+"gourmet_bungo_beef_desc" = "เนื้อวัวแบรนด์ของจังหวัดโออิตะ นุ่มและรสอูมามิเข้มข้น";
 "gourmet_kabosu" = "คาโบสึ";
-"gourmet_kabosu_desc" = "Oita's specialty citrus. Refreshing acidity";
+"gourmet_kabosu_desc" = "ส้มขึ้นชื่อของโออิตะ รสเปรี้ยวสดชื่น";
 
 // Miyazaki Gourmet
 "gourmet_miyazaki_beef" = "เนื้อวัวมิยาซากิ";
-"gourmet_miyazaki_beef_desc" = "Miyazaki Prefecture's brand beef. Beautiful marbling, finest beef";
+"gourmet_miyazaki_beef_desc" = "เนื้อวัวแบรนด์ของจังหวัดมิยาซากิ ลายหินอ่อนงามระดับสูงสุด";
 "gourmet_chicken_nanban" = "ไก่นันบัง";
-"gourmet_chicken_nanban_desc" = "Chicken dish originated in Miyazaki. Sweet vinegar and tartar sauce are exquisite";
+"gourmet_chicken_nanban_desc" = "เมนูไก่ต้นกำเนิดมิยาซากิ ซอสหวานเปรี้ยวกับทาร์ทาร์สุดยอด";
 "gourmet_hiyajiru" = "ฮิยะจิรุ";
-"gourmet_hiyajiru_desc" = "Miyazaki's local dish. Cold miso soup poured over rice";
+"gourmet_hiyajiru_desc" = "อาหารพื้นเมืองมิยาซากิ ราดซุปมิโซะเย็นบนข้าว";
 "gourmet_miyazaki_mango" = "มะม่วงมิยาซากิ";
-"gourmet_miyazaki_mango_desc" = "Fully ripened mango from Miyazaki Prefecture. Sweet with melting texture";
+"gourmet_miyazaki_mango_desc" = "มะม่วงสุกงอมจากจังหวัดมิยาซากิ หวานและเนื้อละลาย";
 "gourmet_miyazaki_shochu" = "โชจูมิยาซากิ";
-"gourmet_miyazaki_shochu_desc" = "Sweet potato shochu from Miyazaki Prefecture. Mellow and easy to drink";
+"gourmet_miyazaki_shochu_desc" = "โชจูมันหวานของจังหวัดมิยาซากิ นุ่มละมุนดื่มง่าย";
 
 // Kagoshima Gourmet
 "gourmet_kurobuta" = "หมูดำคาโงชิมะ";
-"gourmet_kurobuta_desc" = "Kagoshima's specialty pork. Sweet and juicy";
+"gourmet_kurobuta_desc" = "หมูขึ้นชื่อของคาโงชิมะ มีรสหวานและฉ่ำ";
 "gourmet_satsuma_imo" = "มันหวานซัตสึมะ";
-"gourmet_satsuma_imo_desc" = "Kagoshima specialty. Sweet and fluffy sweet potato";
+"gourmet_satsuma_imo_desc" = "สินค้าขึ้นชื่อคาโงชิมะ มันหวานเนื้อฟูรสหวาน";
 "gourmet_kagoshima_shochu" = "โชจูมันหวาน";
-"gourmet_kagoshima_shochu_desc" = "Kagoshima's representative shochu. Sweet potato aroma and flavor";
+"gourmet_kagoshima_shochu_desc" = "โชจูตัวแทนของคาโงชิมะ รสหวานและหอมมันหวาน";
 "gourmet_kibinago" = "คิบินาโกะ";
-"gourmet_kibinago_desc" = "Small fish from Kagoshima. Eaten as sashimi or fried";
+"gourmet_kibinago_desc" = "ปลาเล็กของคาโงชิมะ กินแบบซาชิมิหรือทอด";
 "gourmet_shirokuma" = "ชิโรกุมะ (น้ำแข็งไส)";
-"gourmet_shirokuma_desc" = "Kagoshima's shaved ice. Plenty of condensed milk and fruits";
+"gourmet_shirokuma_desc" = "น้ำแข็งไสของคาโงชิมะ ราดนมข้นและผลไม้เต็มที่";
 
 // Kumamoto Gourmet
 "gourmet_basashi" = "บาซาชิ (ซาชิมิเนื้อม้า)";
-"gourmet_basashi_desc" = "Kumamoto specialty. Fresh horse meat sashimi";
+"gourmet_basashi_desc" = "ของขึ้นชื่อคุมาโมโตะ ซาชิมิเนื้อม้าสด";
 "gourmet_dago_soup" = "ซุปดาโกะ";
-"gourmet_dago_soup_desc" = "Kumamoto's local dish. Miso soup with wheat flour dumplings";
+"gourmet_dago_soup_desc" = "อาหารพื้นเมืองคุมาโมโตะ ซุปมิโซะใส่แผ่นแป้งสาลี";
 "gourmet_taipien" = "ไทเปี้ยน";
-"gourmet_taipien_desc" = "Kumamoto's local Chinese dish. Gentle soup with glass noodles";
+"gourmet_taipien_desc" = "อาหารจีนประจำถิ่นคุมาโมโตะ ซุปวุ้นเส้นรสละมุน";
 "gourmet_karashi_renkon" = "รากบัวยัดไส้มัสตาร์ด";
-"gourmet_karashi_renkon_desc" = "Kumamoto's local dish. Lotus root stuffed with spicy miso and fried";
+"gourmet_karashi_renkon_desc" = "อาหารพื้นเมืองคุมาโมโตะ รากบัวยัดมิโซะเผ็ดแล้วทอด";
 "gourmet_ikinari_dango" = "อิคินาริดังโงะ";
-"gourmet_ikinari_dango_desc" = "Kumamoto's local confection. Dumplings with sweet potato and sweet bean paste";
+"gourmet_ikinari_dango_desc" = "ขนมพื้นเมืองคุมาโมโตะ ดังโงะไส้มันหวานและถั่วกวน";
 
 // Saga Gourmet
 "gourmet_saga_beef" = "เนื้อวัวซากะ";
-"gourmet_saga_beef_desc" = "Saga Prefecture's brand beef. Beautiful fine marbling";
+"gourmet_saga_beef_desc" = "เนื้อวัวแบรนด์ของจังหวัดซากะ ลายหินอ่อนละเอียดสวยงาม";
 "gourmet_yobuko_ika" = "ปลาหมึกโยบุโกะ";
-"gourmet_yobuko_ika_desc" = "Transparent squid from Yobuko Town, Saga Prefecture. Eaten as live sashimi";
+"gourmet_yobuko_ika_desc" = "ปลาหมึกใสของเมืองโยบุโกะ จังหวัดซากะ กินแบบเป็นๆ";
 "gourmet_gabai_manju" = "กาไบมันจู";
-"gourmet_gabai_manju_desc" = "Saga's famous confection. Simple bun with gentle sweetness";
+"gourmet_gabai_manju_desc" = "ขนมชื่อดังของซากะ ซาลาเปาเรียบง่ายรสหวานละมุน";
 "gourmet_marubolo" = "มารุโบโระ";
-"gourmet_marubolo_desc" = "Saga's traditional confection. Sweet cake like castella";
+"gourmet_marubolo_desc" = "ขนมดั้งเดิมของซากะ ขนมหวานคล้ายคาสเตลลา";
 "gourmet_onsen_yudofu" = "เต้าหู้ต้มน้ำแร่";
-"gourmet_onsen_yudofu_desc" = "Ureshino Onsen specialty. Melting tofu made with hot spring water";
+"gourmet_onsen_yudofu_desc" = "ของขึ้นชื่อออนเซ็นอุเรชิโนะ เต้าหู้ละลายทำจากน้ำแร่";
 
 // Nagasaki Gourmet
 "gourmet_champon" = "จัมปง";
-"gourmet_champon_desc" = "Nagasaki's specialty noodle dish. Plenty of vegetables and seafood";
+"gourmet_champon_desc" = "เมนูเส้นขึ้นชื่อของนางาซากิ ใส่ผักและอาหารทะเลเต็มที่";
 "gourmet_sara_udon" = "ซาระอุด้ง";
-"gourmet_sara_udon_desc" = "Nagasaki's local dish. Thick sauce over crispy noodles";
+"gourmet_sara_udon_desc" = "อาหารพื้นเมืองนางาซากิ เส้นกรอบราดซอสข้น";
 "gourmet_castella" = "คาสเตลลา";
-"gourmet_castella_desc" = "Nagasaki's representative confection. Moist and sweet sponge cake";
+"gourmet_castella_desc" = "ขนมตัวแทนของนางาซากิ เค้กสปันจ์หวานนุ่มชุ่ม";
 "gourmet_sasebo_burger" = "เบอร์เกอร์ซาเซโบะ";
-"gourmet_sasebo_burger_desc" = "Sasebo's local burger. Large handmade hamburger";
+"gourmet_sasebo_burger_desc" = "เบอร์เกอร์ประจำถิ่นซาเซโบะ แฮมเบอร์เกอร์ทำมือชิ้นใหญ่";
 "gourmet_kakuni_manju" = "คาคุนิมันจู (ซาลาเปาหมูตุ๋น)";
-"gourmet_kakuni_manju_desc" = "Nagasaki specialty. Bun filled with tender braised pork belly";
+"gourmet_kakuni_manju_desc" = "ของขึ้นชื่อนางาซากิ ซาลาเปาสอดไส้หมูสามชั้นตุ๋นนุ่ม";
 
 // Osaka Gourmet
 "gourmet_takoyaki" = "ทาโกยากิ";
-"gourmet_takoyaki_desc" = "Osaka's soul food, crispy outside and creamy inside";
+"gourmet_takoyaki_desc" = "อาหารในดวงใจของโอซากะ กรอบนอกครีมมีใน";
 "gourmet_okonomiyaki" = "โอโคโนมิยากิ";
-"gourmet_okonomiyaki_desc" = "Kansai-style okonomiyaki, fluffy with plenty of cabbage";
+"gourmet_okonomiyaki_desc" = "โอโคโนมิยากิสไตล์คันไซ ใส่กะหล่ำปลีเยอะ เนื้อฟูนุ่ม";
 "gourmet_kushikatsu" = "คุชิคัตสึ";
-"gourmet_kushikatsu_desc" = "Shinsekai specialty, no double-dipping in sauce allowed";
+"gourmet_kushikatsu_desc" = "ของขึ้นชื่อชินเซไก ห้ามจุ่มซอสซ้ำ";
 "gourmet_ikayaki" = "อิคายากิ";
-"gourmet_ikayaki_desc" = "Osaka's flour-based culture, fragrant squid grilled with press";
+"gourmet_ikayaki_desc" = "วัฒนธรรมแป้งของโอซากะ ปลาหมึกย่างอัดหอมกรุ่น";
 "gourmet_butaman" = "บูตะมัง (ซาลาเปาหมู)";
-"gourmet_butaman_desc" = "In Kansai, it's called butaman not nikuman";
+"gourmet_butaman_desc" = "ที่คันไซเรียกว่าบูตะมัง ไม่ใช่นิคุมัง";
 
 // Fukuoka Gourmet
 "gourmet_hakata_ramen" = "ราเมนฮากาตะ";
-"gourmet_hakata_ramen_desc" = "Home of tonkotsu ramen with rich and creamy soup";
+"gourmet_hakata_ramen_desc" = "ต้นตำรับราเมนทงคตสึ น้ำซุปเข้มข้นครีมมี";
 "gourmet_motsu_nabe" = "หม้อไฟโมสึ";
-"gourmet_motsu_nabe_desc" = "Fukuoka's specialty hot pot with excellent beef offal and vegetable flavor";
+"gourmet_motsu_nabe_desc" = "หม้อไฟขึ้นชื่อของฟุกุโอกะ รสอูมามิของเครื่องในวัวและผักสุดยอด";
 "gourmet_karashi_mentaiko" = "เมนไทโกะรสเผ็ด";
-"gourmet_karashi_mentaiko_desc" = "Fukuoka's specialty product, spicy and full of umami";
+"gourmet_karashi_mentaiko_desc" = "สินค้าขึ้นชื่อฟุกุโอกะ เผ็ดนิดๆ และเต็มไปด้วยรสอูมามิ";
 "gourmet_mizutaki" = "มิซุทากิ";
-"gourmet_mizutaki_desc" = "Hakata's local dish, hot pot with concentrated chicken flavor";
+"gourmet_mizutaki_desc" = "อาหารพื้นเมืองฮากาตะ หม้อไฟที่รวมรสอูมามิของไก่";
 "gourmet_hakata_torimon" = "ฮากาตะโทริมง";
-"gourmet_hakata_torimon_desc" = "Fukuoka's traditional confection with elegant sweetness of milk bun";
+"gourmet_hakata_torimon_desc" = "ขนมชื่อดังของฟุกุโอกะ ซาลาเปารสนมหวานละมุน";
 
 // Okinawa Gourmet
 "gourmet_goya_chanpuru" = "โกยาจัมปุรุ";
-"gourmet_goya_chanpuru_desc" = "Okinawa's representative local dish, stir-fried bitter gourd and tofu";
+"gourmet_goya_chanpuru_desc" = "อาหารพื้นเมืองตัวแทนของโอกินาวะ ผัดมะระกับเต้าหู้";
 "gourmet_soki_soba" = "โซคิโซบะ";
-"gourmet_soki_soba_desc" = "Okinawan soba topped with pork ribs";
+"gourmet_soki_soba_desc" = "โซบะโอกินาวะ ท็อปด้วยซี่โครงหมู";
 "gourmet_sata_andagi" = "ซาตะอันดางิ";
-"gourmet_sata_andagi_desc" = "Okinawan fried confection, crispy outside and fluffy inside";
+"gourmet_sata_andagi_desc" = "ขนมทอดโอกินาวะ กรอบนอกฟูใน";
 "gourmet_umi_budo" = "องุ่นทะเล";
-"gourmet_umi_budo_desc" = "Okinawan seaweed with enjoyable popping texture";
+"gourmet_umi_budo_desc" = "สาหร่ายโอกินาวะ สนุกกับสัมผัสเด้งกรุบในปาก";
 "gourmet_awamori" = "อาวาโมริ";
-"gourmet_awamori_desc" = "Okinawa's traditional distilled liquor with distinctive flavor made from rice";
+"gourmet_awamori_desc" = "สุรากลั่นดั้งเดิมของโอกินาวะ ทำจากข้าว มีกลิ่นรสเฉพาะตัว";
 
 "famous_gourmet_title" = "ของขึ้นชื่อประจำถิ่น";
 "taste_prefecture_format" = "ลิ้มรสของ %@";
@@ -5229,21 +5229,21 @@
 "attraction_expo_park_desc" = "A park on the former Osaka Expo site, symbolized by the Tower of the Sun by Taro Okamoto.";
 
 "gourmet_chanko_nabe" = "จังโกะนาเบะ (หม้อไฟนักซูโม่)";
-"gourmet_chanko_nabe_desc" = "A hearty hot pot originating from sumo stables, packed with meat, seafood, and vegetables.";
+"gourmet_chanko_nabe_desc" = "หม้อไฟเครื่องแน่นต้นกำเนิดค่ายซูโม่ ตุ๋นเนื้อ อาหารทะเล และผักเต็มที่ คุณค่าทางโภชนาการสูง";
 "gourmet_edomae_tempura" = "เท็มปุระเอโดมาเอะ";
-"gourmet_edomae_tempura_desc" = "Tempura made with Tokyo Bay seafood, featuring a crisp batter and the natural flavor of the ingredients.";
+"gourmet_edomae_tempura_desc" = "เท็มปุระเอโดมาเอะที่ใช้อาหารทะเลจากอ่าวโตเกียว แป้งกรอบกับรสธรรมชาติของวัตถุดิบ";
 "gourmet_miso_nikomi_udon" = "อุด้งตุ๋นมิโซะ";
-"gourmet_miso_nikomi_udon_desc" = "A Nagoya specialty of udon simmered in rich bean miso broth, served piping hot in a clay pot.";
+"gourmet_miso_nikomi_udon_desc" = "ของขึ้นชื่อนาโกยา อุด้งตุ๋นในน้ำมิโซะถั่วเข้มข้น เสิร์ฟร้อนในหม้อดิน";
 "gourmet_ankake_spa" = "สปาเกตตีซอสข้น (อันคาเกะ)";
-"gourmet_ankake_spa_desc" = "Nagoya-style spaghetti topped with a thick, spicy sauce that pairs perfectly with the thick noodles.";
+"gourmet_ankake_spa_desc" = "สปาเกตตีสไตล์นาโกยา ราดซอสข้นรสเผ็ด เข้ากับเส้นใหญ่อย่างลงตัว";
 "gourmet_niku_sui" = "นิคุซุย (ซุปเนื้อ)";
-"gourmet_niku_sui_desc" = "An Osaka broth dish like beef udon without the noodles, rich with beef and dashi flavor.";
+"gourmet_niku_sui_desc" = "อาหารน้ำซุปดาชิของโอซากะ เหมือนนิคุอุด้งที่ไม่ใส่เส้น รสเนื้อและดาชิเข้มข้น";
 "gourmet_doteyaki" = "โดเตะยากิ";
-"gourmet_doteyaki_desc" = "Beef tendon slowly simmered in miso and mirin, an Osaka izakaya favorite served on skewers.";
+"gourmet_doteyaki_desc" = "เอ็นวัวตุ๋นมิโซะและมิริงอย่างช้าๆ ของคู่ร้านเหล้าโอซากะ เสิร์ฟเป็นไม้เสียบ";
 "gourmet_taco_rice" = "ทาโก้ไรซ์";
-"gourmet_taco_rice_desc" = "An Okinawan dish of taco ingredients over rice, hearty and popular with all ages.";
+"gourmet_taco_rice_desc" = "อาหารกำเนิดโอกินาวะ วางเครื่องทาโก้บนข้าว อิ่มท้องและนิยมทุกวัย";
 "gourmet_rafute" = "ราฟุเตะ";
-"gourmet_rafute_desc" = "An Okinawan dish of pork belly simmered in awamori and brown sugar until meltingly tender.";
+"gourmet_rafute_desc" = "อาหารพื้นเมืองโอกินาวะ ตุ๋นหมูสามชั้นในอาวาโมริและน้ำตาลแดงจนละลายนุ่ม";
 
 "tokyo.goma_tamago.name" = "Goma Tamago";
 "tokyo.goma_tamago.description" = "An egg-shaped Tokyo sweet of black sesame paste coated in white chocolate. A souvenir staple.";
@@ -5288,21 +5288,21 @@
 "attraction_tsurugaoka_hachimangu_desc" = "A symbolic shrine of Kamakura, with historic sites like the Dankazura approach and the dance hall.";
 
 "gourmet_sapporo_miso_ramen" = "ราเมนมิโซะซัปโปโร";
-"gourmet_sapporo_miso_ramen_desc" = "A Sapporo specialty of curly noodles in rich miso soup, often topped with butter and corn.";
+"gourmet_sapporo_miso_ramen_desc" = "ของขึ้นชื่อซัปโปโร เส้นหยักในน้ำซุปมิโซะเข้มข้น มักโปะเนยและข้าวโพด";
 "gourmet_zangi" = "ซังงิ (ไก่ทอด)";
-"gourmet_zangi_desc" = "Hokkaido-style fried chicken marinated for deep flavor. Juicy and a popular izakaya dish.";
+"gourmet_zangi_desc" = "ไก่ทอดสไตล์ฮอกไกโด หมักเครื่องเข้มข้นก่อนทอด ฉ่ำนุ่มและเป็นเมนูฮิตร้านเหล้า";
 "gourmet_nishin_soba" = "โซบะปลานิชิน";
-"gourmet_nishin_soba_desc" = "A Kyoto specialty soba topped with sweet-savory simmered herring, pairing perfectly with the broth.";
+"gourmet_nishin_soba_desc" = "โซบะขึ้นชื่อเกียวโต ท็อปด้วยปลานิชินเคี่ยวหวานเค็ม เข้ากับน้ำดาชิอย่างลงตัว";
 "gourmet_kyoto_yuba" = "อาหารยูบะ";
-"gourmet_kyoto_yuba_desc" = "Kyoto vegetarian cuisine using delicate soy milk skin, prized for its smooth texture and refined taste.";
+"gourmet_kyoto_yuba_desc" = "อาหารเจเกียวโตที่ใช้ฟองเต้าหู้บอบบาง เด่นด้วยสัมผัสเนียนและรสละมุน";
 "gourmet_gobo_ten_udon" = "อุด้งโกโบเท็น";
-"gourmet_gobo_ten_udon_desc" = "A Fukuoka soul-food udon topped with burdock tempura, known for soft noodles and rich broth.";
+"gourmet_gobo_ten_udon_desc" = "อุด้งในดวงใจของฟุกุโอกะ ท็อปด้วยเท็มปุระโกโบ เส้นนุ่มและน้ำดาชิเป็นเอกลักษณ์";
 "gourmet_goma_saba" = "ปลาซาบะงา";
-"gourmet_goma_saba_desc" = "A Fukuoka local dish of fresh mackerel dressed in sesame sauce, great with sake.";
+"gourmet_goma_saba_desc" = "อาหารพื้นเมืองฟุกุโอกะ ปลาซาบะสดคลุกซอสงา เข้ากับสาเก";
 "gourmet_sanma_men" = "ซัมมาเม็ง";
-"gourmet_sanma_men_desc" = "A Yokohama-born ramen topped with a thick, vegetable-rich starchy sauce.";
+"gourmet_sanma_men_desc" = "ราเมนกำเนิดโยโกฮามะ ราดซอสข้นใส่ผักเยอะ";
 "gourmet_yokosuka_navy_curry" = "แกงกะหรี่กองทัพเรือโยโกสุกะ";
-"gourmet_yokosuka_navy_curry_desc" = "A Yokosuka specialty curry recreating an old navy recipe, served with milk and salad.";
+"gourmet_yokosuka_navy_curry_desc" = "แกงกะหรี่ขึ้นชื่อโยโกสุกะ จำลองสูตรกองทัพเรือเก่า เสิร์ฟกับนมและสลัด";
 
 "hokkaido.trappist_cookie.name" = "Trappist Cookies";
 "hokkaido.trappist_cookie.description" = "Simple, richly buttery cookies made at a monastery in Hakodate.";
@@ -5363,37 +5363,37 @@
 "attraction_omuroyama_desc" = "An Izu symbol with a beautiful bowl shape, offering stunning summit views reached by chairlift.";
 
 "gourmet_shirunashi_tantanmen" = "ทันทันเมนแห้ง";
-"gourmet_shirunashi_tantanmen_desc" = "Brothless dandan noodles from Hiroshima, spicy with Sichuan pepper and chili.";
+"gourmet_shirunashi_tantanmen_desc" = "ทันทันเมนไร้น้ำซุป เผ็ดด้วยพริกและพริกหอมเสฉวน กำเนิดฮิโรชิมะ";
 "gourmet_gansu" = "กันสึ";
-"gourmet_gansu_desc" = "Hiroshima soul food of deep-fried fish paste, fluffy and great with drinks.";
+"gourmet_gansu_desc" = "อาหารในดวงใจของฮิโรชิมะ ปลาบดทอด สัมผัสฟูนุ่มเข้ากับเครื่องดื่ม";
 "gourmet_shinshu_salmon" = "แซลมอนชินชู";
-"gourmet_shinshu_salmon_desc" = "A brand fish raised in Nagano, known for fine flesh and rich flavor.";
+"gourmet_shinshu_salmon_desc" = "ปลาแบรนด์ที่จังหวัดนางาโนะเพาะเลี้ยง เด่นด้วยเนื้อละเอียดและรสเข้มข้น";
 "gourmet_nagano_gohei_mochi" = "โกเฮโมจิ";
-"gourmet_nagano_gohei_mochi_desc" = "Mashed rice on a skewer, coated with sweet-savory miso sauce and grilled.";
+"gourmet_nagano_gohei_mochi_desc" = "ข้าวบดพันแท่งไม้ ทาซอสมิโซะหวานเผ็ดแล้วย่าง";
 "gourmet_turkish_rice" = "ตุรกีไรซ์";
-"gourmet_turkish_rice_desc" = "A Nagasaki dish of pilaf, spaghetti, and pork cutlet on one plate. Very filling.";
+"gourmet_turkish_rice_desc" = "อาหารฝรั่งของนางาซากิ วางพิลาฟ สปาเกตตี และหมูทอดในจานเดียว อิ่มมาก";
 "gourmet_hatoshi" = "ฮาโตชิ";
-"gourmet_hatoshi_desc" = "A Nagasaki Chinese-style dish of shrimp paste between bread, deep-fried until crisp.";
+"gourmet_hatoshi_desc" = "อาหารจีนสไตล์นางาซากิ สอดปลาบดกุ้งในขนมปังแล้วทอดกรอบ";
 "gourmet_hanton_rice" = "ฮันตงไรซ์";
-"gourmet_hanton_rice_desc" = "A Kanazawa dish of omurice topped with fried white fish, usually with tartar sauce.";
+"gourmet_hanton_rice_desc" = "อาหารฝรั่งของคานาซาวะ วางปลาขาวทอดบนออมไรซ์ ราดทาร์ทาร์เป็นสูตรมาตรฐาน";
 "gourmet_kanazawa_oden" = "โอเด้งคานาซาวะ";
-"gourmet_kanazawa_oden_desc" = "Kanazawa oden with unique ingredients like wheat gluten and whelk, in flavorful broth.";
+"gourmet_kanazawa_oden_desc" = "โอเด้งคานาซาวะที่มีเครื่องเฉพาะตัว เช่น ฟุกลูตินและหอยไบงาอิ ในน้ำดาชิรสกลมกล่อม";
 "gourmet_harako_meshi" = "ฮาราโกะเมชิ (ข้าวหน้าแซลมอนกับไข่)";
-"gourmet_harako_meshi_desc" = "A Miyagi dish of rice cooked in salmon broth topped with salmon and roe. An autumn taste.";
+"gourmet_harako_meshi_desc" = "อาหารพื้นเมืองมิยางิ ข้าวหุงในน้ำต้มแซลมอน ท็อปด้วยแซลมอนและไข่ปลา รสชาติฤดูใบไม้ร่วง";
 "gourmet_aburafu_don" = "ข้าวหน้าอาบุระฟุ";
-"gourmet_aburafu_don_desc" = "A northern Miyagi rice bowl with fried wheat gluten simmered with egg. Gentle flavor.";
+"gourmet_aburafu_don_desc" = "ข้าวหน้าขึ้นชื่อทางเหนือของมิยางิ กลูเตนทอดตุ๋นกับไข่ รสละมุน";
 "gourmet_asuka_nabe" = "อาสุกะนาเบะ";
-"gourmet_asuka_nabe_desc" = "A Nara hot pot of chicken and vegetables in a milk-based broth, with a mild taste.";
+"gourmet_asuka_nabe_desc" = "หม้อไฟของนาระ ตุ๋นไก่และผักในน้ำดาชิฐานนม รสกลมกล่อม";
 "gourmet_chagayu" = "ชากายุ (โจ๊กชา)";
-"gourmet_chagayu_desc" = "A light Nara rice porridge cooked in roasted tea, traditionally eaten for breakfast.";
+"gourmet_chagayu_desc" = "โจ๊กข้าวของนาระ หุงด้วยชาโฮจิ รสอ่อนๆ นิยมกินเป็นอาหารเช้า";
 "gourmet_futomaki_sushi" = "ฟุโตมากิ (ซูชิเทศกาล)";
-"gourmet_futomaki_sushi_desc" = "A colorful Chiba decorative roll revealing flowers or patterns when sliced.";
+"gourmet_futomaki_sushi_desc" = "ซูชิม้วนตกแต่งอันงดงามของชิบะ ปรากฏลายดอกไม้หรือลวดลายเมื่อหั่น";
 "gourmet_hakarime_don" = "ฮาคาริเมะดง (ข้าวหน้าปลาไหลข้าว)";
-"gourmet_hakarime_don_desc" = "A Futtsu specialty rice bowl of conger eel in sweet-savory sauce; hakarime is the local name.";
+"gourmet_hakarime_don_desc" = "ข้าวหน้าขึ้นชื่อฟุตสึ ปลาไหลทะเลราดซอสหวานเค็ม \"ฮาคาริเมะ\" คือชื่อท้องถิ่นของอานาโกะ";
 "gourmet_shizuoka_oden" = "โอเด้งชิซุโอกะ";
-"gourmet_shizuoka_oden_desc" = "Shizuoka oden of skewered ingredients in dark broth, topped with dashi powder and aonori.";
+"gourmet_shizuoka_oden_desc" = "โอเด้งชิซุโอกะ ต้มเครื่องเสียบไม้ในน้ำดาชิสีดำ โรยผงดาชิและสาหร่ายอาโอโนริ";
 "gourmet_fujinomiya_yakisoba" = "ยากิโซบะฟุจิโนมิยะ";
-"gourmet_fujinomiya_yakisoba_desc" = "Local yakisoba with firm special noodles and meat crisps. A famous B-class gourmet.";
+"gourmet_fujinomiya_yakisoba_desc" = "ยากิโซบะประจำถิ่นชิซุโอกะ เส้นเหนียวหนึบกับปลาซาร์ดีนป่นเป็นเอกลักษณ์";
 
 "hiroshima.toyoka.name" = "Toyoka";
 "hiroshima.toyoka.description" = "A Hiroshima sweet of red bean paste wrapped in mochi-flour dough and baked. Loved for its chewy texture.";

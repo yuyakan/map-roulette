@@ -1207,567 +1207,567 @@
 
 // Hokkaido Gourmet
 "gourmet_genghis_khan" = "Genghis Khan (cordero a la parrilla)";
-"gourmet_genghis_khan_desc" = "Hokkaido's famous grilled lamb dish with special sauce";
+"gourmet_genghis_khan_desc" = "Plato de cordero típico de Hokkaido, a la parrilla y tierno con salsa especial";
 "gourmet_seafood_bowl" = "Bol de mariscos";
-"gourmet_seafood_bowl_desc" = "Luxurious bowl with fresh seafood including sea urchin, salmon roe, and crab";
+"gourmet_seafood_bowl_desc" = "Bol lujoso de mariscos frescos: erizo, huevas de salmón y cangrejo";
 "gourmet_soup_curry" = "Curry sopa";
-"gourmet_soup_curry_desc" = "Sapporo-originated curry with thin soup and plenty of vegetables";
+"gourmet_soup_curry_desc" = "Curry sopa originario de Sapporo, ligero y con muchas verduras";
 "gourmet_yubari_melon" = "Melón de Yubari";
-"gourmet_yubari_melon_desc" = "Sweet and aromatic premium melon, Hokkaido's representative fruit";
+"gourmet_yubari_melon_desc" = "Melón premium dulce y aromático, fruta representativa de Hokkaido";
 "gourmet_shiroi_koibito" = "Shiroi Koibito";
-"gourmet_shiroi_koibito_desc" = "Classic Hokkaido souvenir. Perfect combination of langue de chat and white chocolate";
+"gourmet_shiroi_koibito_desc" = "Souvenir clásico de Hokkaido: lengua de gato con chocolate blanco";
 
 // Aomori Gourmet
 "gourmet_aomori_apple" = "Manzana de Aomori";
-"gourmet_aomori_apple_desc" = "Sweet and juicy apples with Japan's largest production volume";
+"gourmet_aomori_apple_desc" = "Manzanas dulces y jugosas, la mayor producción de Japón";
 "gourmet_oma_tuna" = "Atún de Oma";
-"gourmet_oma_tuna_desc" = "Premium bluefin tuna caught at Oma, the northernmost tip of Honshu";
+"gourmet_oma_tuna_desc" = "Atún rojo de primera pescado en Oma, el extremo norte de Honshu";
 "gourmet_senbei_soup" = "Sopa de senbei";
-"gourmet_senbei_soup_desc" = "Aomori's local dish with broken Nanbu senbei crackers";
+"gourmet_senbei_soup_desc" = "Plato local de Aomori con senbei Nanbu troceados en el caldo";
 "gourmet_tsugaru_soba" = "Soba de Tsugaru";
-"gourmet_tsugaru_soba_desc" = "Hand-made soba from Tsugaru region with rich country flavor";
+"gourmet_tsugaru_soba_desc" = "Soba hecho a mano de la región de Tsugaru, de rico sabor rústico";
 "gourmet_ichigo_ni" = "Ichigo-ni (sopa de erizo de mar)";
-"gourmet_ichigo_ni_desc" = "Clear soup with sea urchin and abalone, a competition of premium seafood";
+"gourmet_ichigo_ni_desc" = "Caldo claro de erizo y oreja de mar, encuentro de mariscos selectos";
 
 // Iwate Gourmet
 "gourmet_wanko_soba" = "Wanko soba";
-"gourmet_wanko_soba_desc" = "Iwate's famous soba served in small bowls, eat as many as you can";
+"gourmet_wanko_soba_desc" = "Soba de Iwate servido en cuencos pequeños, a discreción";
 "gourmet_morioka_cold_noodles" = "Fideos fríos de Morioka";
-"gourmet_morioka_cold_noodles_desc" = "Characterized by chewy noodles and sour soup";
+"gourmet_morioka_cold_noodles_desc" = "Destaca por sus fideos elásticos y su caldo ácido";
 "gourmet_maezawa_beef" = "Ternera de Maezawa";
-"gourmet_maezawa_beef_desc" = "Iwate's pride brand beef with beautiful marbling, highest quality";
+"gourmet_maezawa_beef_desc" = "Ternera de marca, orgullo de Iwate, con un marmoleo excepcional";
 "gourmet_nanbu_senbei" = "Nanbu senbei";
-"gourmet_nanbu_senbei_desc" = "Fragrant rice crackers with sesame and peanuts";
+"gourmet_nanbu_senbei_desc" = "Senbei aromático con sésamo y cacahuetes";
 "gourmet_gangetsu" = "Gangetsu";
-"gourmet_gangetsu_desc" = "Iwate's traditional confection with egg yolk filling";
+"gourmet_gangetsu_desc" = "Dulce famoso de Iwate relleno de pasta de yema";
 
 // Akita Gourmet
 "gourmet_kiritanpo" = "Kiritanpo";
-"gourmet_kiritanpo_desc" = "Akita's local dish. Mashed rice wrapped around a stick and grilled";
+"gourmet_kiritanpo_desc" = "Plato local de Akita: arroz majado en un palo y asado";
 "gourmet_hinai_chicken" = "Pollo Hinai";
-"gourmet_hinai_chicken_desc" = "Akita's local chicken with rich flavor, essential for kiritanpo hot pot";
+"gourmet_hinai_chicken_desc" = "Pollo autóctono de Akita con intenso umami, esencial en el nabe de kiritanpo";
 "gourmet_inaniwa_udon" = "Udon de Inaniwa";
-"gourmet_inaniwa_udon_desc" = "Thin, chewy, and elegant udon made by hand-stretching method";
+"gourmet_inaniwa_udon_desc" = "Udon fino, elástico y refinado, estirado a mano";
 "gourmet_akita_komachi" = "Arroz Akita Komachi";
-"gourmet_akita_komachi_desc" = "Delicious rice from Akita Prefecture, fluffy and chewy";
+"gourmet_akita_komachi_desc" = "Arroz delicioso de Akita, esponjoso y ligeramente pegajoso";
 "gourmet_babahera_ice" = "Helado Babahera";
-"gourmet_babahera_ice_desc" = "Colorful ice cream hand-sold by grandmothers";
+"gourmet_babahera_ice_desc" = "Helado colorido vendido a mano por abuelas";
 
 // Miyagi Gourmet
 "gourmet_beef_tongue" = "Lengua de ternera";
-"gourmet_beef_tongue_desc" = "Sendai's specialty thick-cut beef tongue, grilled over charcoal";
+"gourmet_beef_tongue_desc" = "Lengua de ternera en corte grueso, especialidad de Sendai, al carbón";
 "gourmet_sasukamaboko" = "Sasa-kamaboko";
-"gourmet_sasukamaboko_desc" = "Miyagi's specialty fish cake made from high-quality fish paste";
+"gourmet_sasukamaboko_desc" = "Especialidad de Miyagi, elaborada con pasta de pescado de calidad";
 "gourmet_zunda_mochi" = "Zunda mochi";
-"gourmet_zunda_mochi_desc" = "Characterized by green bean paste made from mashed edamame";
+"gourmet_zunda_mochi_desc" = "Destaca por su pasta verde de edamame majado";
 "gourmet_seri_nabe" = "Cocido de seri";
-"gourmet_seri_nabe_desc" = "Hot pot dish using seri (Japanese parsley) from Natori City, Miyagi";
+"gourmet_seri_nabe_desc" = "Cocido con seri, especialidad de la ciudad de Natori (Miyagi)";
 "gourmet_shiroishi_somen" = "Somen de Shiroishi";
-"gourmet_shiroishi_somen_desc" = "Oil-free noodles shorter than regular somen, gentle on the stomach";
+"gourmet_shiroishi_somen_desc" = "Fideos sin aceite, más cortos que el somen, ligeros para el estómago";
 
 // Yamagata Gourmet
 "gourmet_cherry" = "Cereza";
-"gourmet_cherry_desc" = "Japan's largest production volume that Yamagata is proud of. Sato-nishiki is famous";
+"gourmet_cherry_desc" = "La mayor producción de Japón, orgullo de Yamagata; famosa la Sato-nishiki";
 "gourmet_yonezawa_beef" = "Ternera de Yonezawa";
-"gourmet_yonezawa_beef_desc" = "Yamagata's highest quality brand beef with melting marbling";
+"gourmet_yonezawa_beef_desc" = "Ternera de marca de máxima calidad de Yamagata, con marmoleo que se derrite";
 "gourmet_imoni" = "Imoni (guiso de taro)";
-"gourmet_imoni_desc" = "Autumn tradition. Stewed taro and beef enjoyed by the riverside";
+"gourmet_imoni_desc" = "Tradición otoñal: guiso de taro y ternera que se disfruta junto al río";
 "gourmet_tama_konnyaku" = "Tama konnyaku";
-"gourmet_tama_konnyaku_desc" = "Round konnyaku simmered in soy sauce. Yamagata's staple";
+"gourmet_tama_konnyaku_desc" = "Konjac redondo guisado en salsa de soja, típico de Yamagata";
 "gourmet_cold_ramen" = "Ramen frío";
-"gourmet_cold_ramen_desc" = "Cold ramen originated in Yamagata for summer";
+"gourmet_cold_ramen_desc" = "Ramen frío de verano, originario de Yamagata";
 
 // Fukushima Gourmet
 "gourmet_kitakata_ramen" = "Ramen de Kitakata";
-"gourmet_kitakata_ramen_desc" = "Clear soy sauce-based soup with flat curly noodles";
+"gourmet_kitakata_ramen_desc" = "Caldo claro de salsa de soja con fideos planos ondulados";
 "gourmet_aizu_chicken" = "Pollo de Aizu";
-"gourmet_aizu_chicken_desc" = "Local chicken from Aizu region, Fukushima with rich flavor";
+"gourmet_aizu_chicken_desc" = "Pollo autóctono de la región de Aizu (Fukushima), de sabor intenso";
 "gourmet_mamadooru" = "Mamadoru";
-"gourmet_mamadooru_desc" = "Fukushima's traditional confection with gentle milk flavor";
+"gourmet_mamadooru_desc" = "Dulce famoso de Fukushima, con suave sabor a leche";
 "gourmet_fukushima_peach" = "Melocotón de Fukushima";
-"gourmet_fukushima_peach_desc" = "Sweet and juicy peaches from Fukushima Prefecture";
+"gourmet_fukushima_peach_desc" = "Melocotones dulces y jugosos de la prefectura de Fukushima";
 "gourmet_shirakawa_ramen" = "Ramen de Shirakawa";
-"gourmet_shirakawa_ramen_desc" = "Shirakawa-style ramen with hand-made curly noodles and soy sauce soup";
+"gourmet_shirakawa_ramen_desc" = "Ramen estilo Shirakawa: fideos ondulados hechos a mano y caldo de soja";
 
 // Ibaraki Gourmet
 "gourmet_natto" = "Natto";
-"gourmet_natto_desc" = "Ibaraki Prefecture has Japan's largest natto production, sticky and stringy";
+"gourmet_natto_desc" = "Ibaraki, la mayor productora de natto de Japón, pegajoso y filamentoso";
 "gourmet_anko_nabe" = "Cocido de rape";
-"gourmet_anko_nabe_desc" = "King of winter delicacies, hot pot rich in collagen";
+"gourmet_anko_nabe_desc" = "El rey de los sabores de invierno, un cocido rico en colágeno";
 "gourmet_hitachi_beef" = "Ternera de Hitachi";
-"gourmet_hitachi_beef_desc" = "Ibaraki's brand beef, tender and full of flavor";
+"gourmet_hitachi_beef_desc" = "Ternera de marca de Ibaraki, tierna y llena de umami";
 "gourmet_ibaraki_melon" = "Melón";
-"gourmet_ibaraki_melon_desc" = "Ibaraki Prefecture has Japan's largest melon production, sweet and aromatic";
+"gourmet_ibaraki_melon_desc" = "Ibaraki, la mayor productora de melones de Japón, dulces y aromáticos";
 "gourmet_dried_sweet_potato" = "Boniato seco";
-"gourmet_dried_sweet_potato_desc" = "Ibaraki's specialty with natural sweetness, traditional snack";
+"gourmet_dried_sweet_potato_desc" = "Especialidad de Ibaraki, aperitivo tradicional de dulzor natural";
 
 // Chiba Gourmet
 "gourmet_peanuts" = "Cacahuetes";
-"gourmet_peanuts_desc" = "Fresh peanuts from Chiba Prefecture with excellent sweetness and aroma";
+"gourmet_peanuts_desc" = "Cacahuetes frescos de Chiba, de dulzor y aroma exquisitos";
 "gourmet_loquat" = "Níspero";
-"gourmet_loquat_desc" = "Sweet loquats grown in the warm climate of Boso Peninsula";
+"gourmet_loquat_desc" = "Nísperos dulces cultivados en el clima cálido de la península de Boso";
 "gourmet_namerou" = "Namerou";
-"gourmet_namerou_desc" = "Boso fisherman's dish, minced horse mackerel mixed with miso";
+"gourmet_namerou_desc" = "Plato de los pescadores de Boso: jurel picado mezclado con miso";
 "gourmet_katsuura_tantanmen" = "Tantanmen de Katsuura";
-"gourmet_katsuura_tantanmen_desc" = "Spicy ramen created by Katsuura fishermen to warm their bodies";
+"gourmet_katsuura_tantanmen_desc" = "Ramen picante creado por los pescadores de Katsuura para entrar en calor";
 "gourmet_boso_seafood" = "Mariscos de Boso";
-"gourmet_boso_seafood_desc" = "Fresh seafood including spiny lobster and abalone";
+"gourmet_boso_seafood_desc" = "Mariscos frescos en abundancia: langosta, oreja de mar y mucho más";
 
 // Tochigi Gourmet
 "gourmet_utsunomiya_gyoza" = "Gyoza de Utsunomiya";
-"gourmet_utsunomiya_gyoza_desc" = "Utsunomiya City is the gyoza capital, famous for pan-fried dumplings";
+"gourmet_utsunomiya_gyoza_desc" = "Utsunomiya, la capital del gyoza, famosa por sus empanadillas a la plancha";
 "gourmet_yuba" = "Yuba (nata de tofu)";
-"gourmet_yuba_desc" = "Nikko's specialty, thin film formed on the surface of soymilk";
+"gourmet_yuba_desc" = "Especialidad de Nikko: fina película formada sobre la leche de soja";
 "gourmet_tochiotome" = "Fresa Tochiotome";
-"gourmet_tochiotome_desc" = "Tochigi Prefecture's brand strawberry, sweet and large";
+"gourmet_tochiotome_desc" = "Fresa de marca de Tochigi, dulce y de gran tamaño";
 "gourmet_shimotsukare" = "Shimotsukare";
-"gourmet_shimotsukare_desc" = "Tochigi's local dish, simmered grated daikon and salmon head";
+"gourmet_shimotsukare_desc" = "Plato local de Tochigi: daikon rallado y cabeza de salmón guisados";
 "gourmet_lemon_milk" = "Leche de limón";
-"gourmet_lemon_milk_desc" = "Tochigi people's soul drink, sweet milk with lemon flavor";
+"gourmet_lemon_milk_desc" = "Bebida emblemática de Tochigi: leche dulce con sabor a limón";
 
 // Gunma Gourmet
 "gourmet_yaki_manju" = "Yaki manju";
-"gourmet_yaki_manju_desc" = "Gunma's specialty, steamed buns grilled with sweet miso sauce";
+"gourmet_yaki_manju_desc" = "Especialidad de Gunma: bollos asados con salsa de miso dulce";
 "gourmet_shimonita_negi" = "Puerro de Shimonita";
-"gourmet_shimonita_negi_desc" = "Gunma's specialty, thick leeks with strong sweetness";
+"gourmet_shimonita_negi_desc" = "Especialidad de Gunma: puerros gruesos de gran dulzor";
 "gourmet_konnyaku" = "Konjac";
-"gourmet_konnyaku_desc" = "Gunma Prefecture has Japan's largest konnyaku potato production";
+"gourmet_konnyaku_desc" = "Gunma, la mayor productora de konjac de Japón";
 "gourmet_mizusawa_udon" = "Udon de Mizusawa";
-"gourmet_mizusawa_udon_desc" = "Gunma's specialty udon with strong texture and excellent throat-feel";
+"gourmet_mizusawa_udon_desc" = "Udon famoso de Gunma, firme y de excelente paso por la garganta";
 "gourmet_daruma_bento" = "Bento Daruma";
-"gourmet_daruma_bento_desc" = "Takasaki Station's famous ekiben with distinctive daruma container";
+"gourmet_daruma_bento_desc" = "Ekiben famoso de la estación de Takasaki, con caja en forma de daruma";
 
 // Saitama Gourmet
 "gourmet_kawagoe_sweet_potato" = "Boniato de Kawagoe";
-"gourmet_kawagoe_sweet_potato_desc" = "Kawagoe's specialty, sticky and sweet sweet potatoes";
+"gourmet_kawagoe_sweet_potato_desc" = "Especialidad de Kawagoe: boniatos melosos y dulces";
 "gourmet_chichibu_soba" = "Soba de Chichibu";
-"gourmet_chichibu_soba_desc" = "Hand-made soba from Chichibu region with aromatic country flavor";
+"gourmet_chichibu_soba_desc" = "Soba hecho a mano de la región de Chichibu, de aroma rústico";
 "gourmet_soka_senbei" = "Soka senbei";
-"gourmet_soka_senbei_desc" = "Soka City's specialty, crispy and fragrant soy sauce rice crackers";
+"gourmet_soka_senbei_desc" = "Especialidad de Soka: senbei de salsa de soja, crujientes y aromáticos";
 "gourmet_gokaho" = "Gokaho";
-"gourmet_gokaho_desc" = "Kumagaya's traditional confection, old-fashioned sweet dusted with kinako";
+"gourmet_gokaho_desc" = "Dulce famoso de Kumagaya, tradicional espolvoreado con kinako";
 "gourmet_iga_manju" = "Iga manju";
-"gourmet_iga_manju_desc" = "Gyoda's specialty, steamed buns covered with red rice";
+"gourmet_iga_manju_desc" = "Especialidad de Gyoda: bollos al vapor cubiertos de arroz rojo";
 
 // Tokyo Gourmet
 "gourmet_edomae_sushi" = "Sushi edomae";
-"gourmet_edomae_sushi_desc" = "Traditional sushi using seafood caught in Tokyo Bay";
+"gourmet_edomae_sushi_desc" = "Sushi tradicional con mariscos capturados en la bahía de Tokio";
 "gourmet_monjayaki" = "Monjayaki";
-"gourmet_monjayaki_desc" = "Downtown specialty, loose batter with dashi grilled on iron plate";
+"gourmet_monjayaki_desc" = "Especialidad de los barrios populares: masa líquida al dashi a la plancha";
 "gourmet_fukagawa_don" = "Fukagawa-don";
-"gourmet_fukagawa_don_desc" = "Common people's taste since Edo period, clam miso soup over rice";
+"gourmet_fukagawa_don_desc" = "Sabor popular desde la era Edo: arroz con sopa de miso y almejas";
 "gourmet_imagawayaki" = "Imagawayaki";
-"gourmet_imagawayaki_desc" = "Tokyo-originated confection, round grilled cake filled with sweet bean paste";
+"gourmet_imagawayaki_desc" = "Dulce originario de Tokio: pastelito redondo relleno de pasta de judías";
 "gourmet_tsukudani" = "Tsukudani";
-"gourmet_tsukudani_desc" = "Preserved food since Edo period, small fish and kelp simmered sweet and salty";
+"gourmet_tsukudani_desc" = "Conserva desde la era Edo: pescaditos y alga kombu guisados agridulces";
 
 // Kanagawa Gourmet
 "gourmet_shumai" = "Shumai";
-"gourmet_shumai_desc" = "Yokohama's famous pork shumai, Kiyoken is well-known";
+"gourmet_shumai_desc" = "Shumai de cerdo, especialidad de Yokohama; Kiyoken es muy conocido";
 "gourmet_kamakura_vegetables" = "Verduras de Kamakura";
-"gourmet_kamakura_vegetables_desc" = "Fresh and delicious vegetables grown in Kamakura";
+"gourmet_kamakura_vegetables_desc" = "Verduras frescas y sabrosas cultivadas en Kamakura";
 "gourmet_shonan_shirasu" = "Chanquetes de Shonan";
-"gourmet_shonan_shirasu_desc" = "Fresh whitebait caught in Sagami Bay, enjoyed raw or boiled";
+"gourmet_shonan_shirasu_desc" = "Chanquetes frescos de la bahía de Sagami, crudos o hervidos";
 "gourmet_iekei_ramen" = "Ramen iekei";
-"gourmet_iekei_ramen_desc" = "Yokohama-originated tonkotsu soy sauce ramen with rich soup";
+"gourmet_iekei_ramen_desc" = "Ramen tonkotsu-soja originario de Yokohama, de caldo intenso";
 "gourmet_yokohama_chinatown_gourmet" = "Gastronomía del barrio chino de Yokohama";
-"gourmet_yokohama_chinatown_gourmet_desc" = "Authentic Chinese cuisine in Japan's largest Chinatown";
+"gourmet_yokohama_chinatown_gourmet_desc" = "Auténtica cocina china en el mayor barrio chino de Japón";
 
 // Niigata Gourmet
 "gourmet_niigata_rice" = "Arroz de Niigata";
-"gourmet_niigata_rice_desc" = "One of Japan's leading rice producing regions, Koshihikari is especially famous";
+"gourmet_niigata_rice_desc" = "Una de las grandes regiones arroceras de Japón; famoso el Koshihikari";
 "gourmet_noppe" = "Noppe";
-"gourmet_noppe_desc" = "Niigata's local dish, gentle-tasting simmered taro and carrots";
+"gourmet_noppe_desc" = "Plato local de Niigata: taro y zanahoria guisados de sabor suave";
 "gourmet_hegi_soba" = "Hegi soba";
-"gourmet_hegi_soba_desc" = "Niigata's specialty soba using funori seaweed as binding agent";
+"gourmet_hegi_soba_desc" = "Soba famoso de Niigata, ligado con alga funori";
 "gourmet_niigata_salmon" = "Salmón de Niigata";
-"gourmet_niigata_salmon_desc" = "Salmon caught in Shinano River, Niigata's autumn delicacy";
+"gourmet_niigata_salmon_desc" = "Salmón del río Shinano, sabor otoñal de Niigata";
 "gourmet_sake" = "Sake";
-"gourmet_sake_desc" = "One of the nation's leading sake regions, fine sake made with clear water";
+"gourmet_sake_desc" = "Gran región de sake, licor refinado elaborado con agua cristalina";
 
 // Nagano Gourmet
 "gourmet_shinshu_soba" = "Soba de Shinshu";
-"gourmet_shinshu_soba_desc" = "Nagano Prefecture's specialty, hand-made soba using aromatic buckwheat";
+"gourmet_shinshu_soba_desc" = "Especialidad de Nagano: soba hecho a mano con alforfón aromático";
 "gourmet_oyaki" = "Oyaki";
-"gourmet_oyaki_desc" = "Local dish of vegetables and wild plants wrapped in wheat flour skin and grilled";
+"gourmet_oyaki_desc" = "Plato local: verduras y plantas silvestres envueltas en masa y asadas";
 "gourmet_nozawana" = "Nozawana";
-"gourmet_nozawana_desc" = "Nagano's specialty vegetable, commonly eaten pickled";
+"gourmet_nozawana_desc" = "Verdura típica de Nagano, se come sobre todo encurtida";
 "gourmet_shinshu_apple" = "Manzana de Shinshu";
-"gourmet_shinshu_apple_desc" = "Sweet and juicy apples from Nagano Prefecture";
+"gourmet_shinshu_apple_desc" = "Manzanas dulces y jugosas de la prefectura de Nagano";
 "gourmet_shinshu_miso" = "Miso de Shinshu";
-"gourmet_shinshu_miso_desc" = "Nagano Prefecture's miso, sweet and aromatic red miso";
+"gourmet_shinshu_miso_desc" = "Miso de Nagano: miso rojo dulce y aromático";
 
 // Yamanashi Gourmet
 "gourmet_hoto" = "Hoto";
-"gourmet_hoto_desc" = "Yamanashi's specialty dish, flat noodles and vegetables simmered in miso";
+"gourmet_hoto_desc" = "Plato famoso de Yamanashi: fideos planos y verduras guisados en miso";
 "gourmet_shingen_mochi" = "Shingen mochi";
-"gourmet_shingen_mochi_desc" = "Yamanashi's representative confection, eaten with kinako and black syrup";
+"gourmet_shingen_mochi_desc" = "Dulce representativo de Yamanashi, con kinako y sirope negro";
 "gourmet_yamanashi_grape" = "Uva de Yamanashi";
-"gourmet_yamanashi_grape_desc" = "Sweet grapes grown in Kofu Basin, Kyoho and Shine Muscat";
+"gourmet_yamanashi_grape_desc" = "Uvas dulces de la cuenca de Kofu: Kyoho y Shine Muscat";
 "gourmet_yamanashi_peach" = "Melocotón de Yamanashi";
-"gourmet_yamanashi_peach_desc" = "Sweet and juicy peaches from Yamanashi Prefecture";
+"gourmet_yamanashi_peach_desc" = "Melocotones dulces y jugosos de la prefectura de Yamanashi";
 "gourmet_koshu_wine" = "Vino de Koshu";
-"gourmet_koshu_wine_desc" = "Japanese wine made from Yamanashi Prefecture grapes";
+"gourmet_koshu_wine_desc" = "Vino japonés elaborado con uvas de Yamanashi";
 
 // Shizuoka Gourmet
 "gourmet_shizuoka_tea" = "Té de Shizuoka";
-"gourmet_shizuoka_tea_desc" = "Japan's largest tea production region. Aromatic green tea";
+"gourmet_shizuoka_tea_desc" = "La mayor producción del país, té verde muy aromático";
 "gourmet_unagi" = "Anguila";
-"gourmet_unagi_desc" = "Lake Hamana eel. Fluffy flesh with sweet sauce";
+"gourmet_unagi_desc" = "Anguila del lago Hamana: carne esponjosa y salsa dulce";
 "gourmet_wasabi" = "Wasabi";
-"gourmet_wasabi_desc" = "Fresh wasabi grown in Izu's clear streams. Sharp spiciness that goes through the nose";
+"gourmet_wasabi_desc" = "Wasabi auténtico de los arroyos cristalinos de Izu, picor que sube a la nariz";
 "gourmet_sakura_ebi" = "Camarón sakura";
-"gourmet_sakura_ebi_desc" = "Gem of Suruga Bay. Beautiful pink color available in spring and autumn only";
+"gourmet_sakura_ebi_desc" = "Joya de la bahía de Suruga: rosa hermoso, solo en primavera y otoño";
 "gourmet_kuro_hanpen" = "Hanpen negro";
-"gourmet_kuro_hanpen_desc" = "Staple of Shizuoka oden. Black hanpen made with sardines";
+"gourmet_kuro_hanpen_desc" = "Básico del oden de Shizuoka: hanpen negro de sardina";
 
 // Aichi Gourmet
 "gourmet_miso_katsu" = "Miso katsu";
-"gourmet_miso_katsu_desc" = "Nagoya specialty. Pork cutlet with rich red miso sauce";
+"gourmet_miso_katsu_desc" = "Especialidad de Nagoya: cerdo empanado con intensa salsa de miso rojo";
 "gourmet_hitsumabushi" = "Hitsumabushi";
-"gourmet_hitsumabushi_desc" = "Nagoya eel dish. Enjoy in three different ways";
+"gourmet_hitsumabushi_desc" = "Plato de anguila de Nagoya, se disfruta de tres maneras";
 "gourmet_tebasaki" = "Alitas de pollo";
-"gourmet_tebasaki_desc" = "Nagoya izakaya specialty. Sweet and spicy sauce chicken wings";
+"gourmet_tebasaki_desc" = "Especialidad de los izakaya de Nagoya: alitas con salsa agridulce picante";
 "gourmet_kishimen" = "Kishimen";
-"gourmet_kishimen_desc" = "Nagoya's flat udon noodles. Smooth texture";
+"gourmet_kishimen_desc" = "Udon plano de Nagoya, de textura suave";
 "gourmet_taiwan_ramen" = "Ramen taiwanés";
-"gourmet_taiwan_ramen_desc" = "Spicy ramen originated in Nagoya. No relation to Taiwan";
+"gourmet_taiwan_ramen_desc" = "Ramen picante originario de Nagoya, sin relación con Taiwán";
 
 // Mie Gourmet
 "gourmet_ise_ebi" = "Langosta de Ise";
-"gourmet_ise_ebi_desc" = "Mie Prefecture's luxury ingredient. Firm texture and sweetness";
+"gourmet_ise_ebi_desc" = "Ingrediente de lujo de Mie, de carne firme y dulce";
 "gourmet_matsusaka_beef" = "Ternera de Matsusaka";
-"gourmet_matsusaka_beef_desc" = "World's finest wagyu. Melting marbling";
+"gourmet_matsusaka_beef_desc" = "Wagyu de los más finos del mundo, con marmoleo que se derrite";
 "gourmet_akafuku" = "Akafuku";
-"gourmet_akafuku_desc" = "Ise Shrine's specialty. Rice cake wrapped in sweet bean paste";
+"gourmet_akafuku_desc" = "Especialidad del santuario de Ise: mochi cubierto de pasta de judías";
 "gourmet_tekone_sushi" = "Sushi tekone";
-"gourmet_tekone_sushi_desc" = "Shima region's local dish. Sushi mixed with marinated bonito";
+"gourmet_tekone_sushi_desc" = "Plato local de la región de Shima: sushi con bonito marinado";
 "gourmet_iga_beef" = "Ternera de Iga";
-"gourmet_iga_beef_desc" = "Brand beef from Iga region, Mie Prefecture. High-quality meat";
+"gourmet_iga_beef_desc" = "Ternera de marca de la región de Iga (Mie), carne de alta calidad";
 
 // Gifu Gourmet
 "gourmet_hida_beef" = "Ternera de Hida";
-"gourmet_hida_beef_desc" = "Brand beef from Hida region, Gifu Prefecture. Top-grade A5 rank";
+"gourmet_hida_beef_desc" = "Ternera de marca de la región de Hida (Gifu), máximo grado A5";
 "gourmet_hoba_miso" = "Hoba miso";
-"gourmet_hoba_miso_desc" = "Hida's local dish. Miso grilled on magnolia leaves";
+"gourmet_hoba_miso_desc" = "Plato local de Hida: miso asado sobre hoja de magnolia";
 "gourmet_gohei_mochi" = "Gohei mochi";
-"gourmet_gohei_mochi_desc" = "Chubu region's local dish. Sweet and savory sauce is fragrant";
+"gourmet_gohei_mochi_desc" = "Plato local de la región de Chubu, con aromática salsa agridulce";
 "gourmet_ayu_shioyaki" = "Ayu a la sal";
-"gourmet_ayu_shioyaki_desc" = "Sweetfish raised in clear streams. Summer tradition";
+"gourmet_ayu_shioyaki_desc" = "Ayu criado en aguas cristalinas, tradición veraniega";
 "gourmet_kuri_kinton" = "Kuri kinton";
-"gourmet_kuri_kinton_desc" = "Nakatsugawa specialty. Japanese confection showcasing chestnut sweetness";
+"gourmet_kuri_kinton_desc" = "Especialidad de Nakatsugawa, dulce que realza el sabor de la castaña";
 
 // Fukui Gourmet
 "gourmet_echizen_crab" = "Cangrejo de Echizen";
-"gourmet_echizen_crab_desc" = "King of Fukui's winter delicacies. Sweet with packed meat";
+"gourmet_echizen_crab_desc" = "El rey de los sabores de invierno de Fukui: dulce y con mucha carne";
 "gourmet_echizen_soba" = "Soba de Echizen";
-"gourmet_echizen_soba_desc" = "Fukui's specialty soba. Served with grated daikon radish";
+"gourmet_echizen_soba_desc" = "Soba famoso de Fukui, servido con daikon rallado";
 "gourmet_sauce_katsu_don" = "Katsudon con salsa";
-"gourmet_sauce_katsu_don_desc" = "Originated in Fukui. Katsu don with sauce";
+"gourmet_sauce_katsu_don_desc" = "Originario de Fukui: katsudon con salsa";
 "gourmet_habutae_mochi" = "Habutae mochi";
-"gourmet_habutae_mochi_desc" = "Fukui's famous confection. Soft with elegant sweetness";
+"gourmet_habutae_mochi_desc" = "Dulce famoso de Fukui, blando y de dulzor delicado";
 "gourmet_wakasa_beef" = "Ternera de Wakasa";
-"gourmet_wakasa_beef_desc" = "Brand beef from Wakasa region, Fukui Prefecture";
+"gourmet_wakasa_beef_desc" = "Ternera de marca de la región de Wakasa (Fukui)";
 
 // Ishikawa Gourmet
 "gourmet_kaga_cuisine" = "Cocina de Kaga";
-"gourmet_kaga_cuisine_desc" = "Kanazawa's haute cuisine. Competition of sea and mountain delicacies";
+"gourmet_kaga_cuisine_desc" = "Alta cocina de Kanazawa: encuentro de productos del mar y la montaña";
 "gourmet_kanazawa_curry" = "Curry de Kanazawa";
-"gourmet_kanazawa_curry_desc" = "Kanazawa B-grade gourmet. Rich roux with cabbage topping";
+"gourmet_kanazawa_curry_desc" = "Comida callejera de Kanazawa: roux espeso con col";
 "gourmet_noto_beef" = "Ternera de Noto";
-"gourmet_noto_beef_desc" = "Brand beef from Noto region, Ishikawa Prefecture";
+"gourmet_noto_beef_desc" = "Ternera de marca de la región de Noto (Ishikawa)";
 "gourmet_jibuni" = "Jibuni";
-"gourmet_jibuni_desc" = "Kanazawa's local dish. Duck and vegetable stew";
+"gourmet_jibuni_desc" = "Plato local de Kanazawa: pato y verduras guisados";
 "gourmet_nodoguro" = "Nodoguro";
-"gourmet_nodoguro_desc" = "Japan Sea's luxury fish. Exquisite elegant sweetness";
+"gourmet_nodoguro_desc" = "Pescado selecto del mar de Japón, de exquisito dulzor";
 
 // Toyama Gourmet
 "gourmet_shiro_ebi" = "Camarón blanco";
-"gourmet_shiro_ebi_desc" = "Gem of Toyama Bay. Transparent and beautiful sweet shrimp";
+"gourmet_shiro_ebi_desc" = "Joya de la bahía de Toyama: camarón dulce y transparente";
 "gourmet_hotaru_ika" = "Calamar luciérnaga";
-"gourmet_hotaru_ika_desc" = "Spring tradition of Toyama Bay. Small squid that glows blue";
+"gourmet_hotaru_ika_desc" = "Tradición primaveral de la bahía de Toyama: calamares que brillan azul";
 "gourmet_masu_sushi" = "Sushi de trucha";
-"gourmet_masu_sushi_desc" = "Famous as Toyama's ekiben. Pressed sushi wrapped in bamboo leaves";
+"gourmet_masu_sushi_desc" = "Famoso ekiben de Toyama: sushi prensado envuelto en hojas de bambú";
 "gourmet_toyama_black_ramen" = "Ramen negro de Toyama";
-"gourmet_toyama_black_ramen_desc" = "Toyama's local ramen. Jet-black soup";
+"gourmet_toyama_black_ramen_desc" = "Ramen local de Toyama, de caldo negro azabache";
 "gourmet_himi_beef" = "Ternera de Himi";
-"gourmet_himi_beef_desc" = "Brand beef from Himi City, Toyama Prefecture";
+"gourmet_himi_beef_desc" = "Ternera de marca de la ciudad de Himi (Toyama)";
 
 // Shiga Gourmet
 "gourmet_omi_beef" = "Ternera de Omi";
-"gourmet_omi_beef_desc" = "One of Japan's three major wagyu. Brand beef with 400 years of history";
+"gourmet_omi_beef_desc" = "Uno de los tres grandes wagyu de Japón, marca con 400 años de historia";
 "gourmet_funa_sushi" = "Funa-zushi";
-"gourmet_funa_sushi_desc" = "Fermented sushi using crucian carp from Lake Biwa. Shiga's traditional food";
+"gourmet_funa_sushi_desc" = "Sushi fermentado con carpín del lago Biwa, comida tradicional de Shiga";
 "gourmet_aka_konnyaku" = "Konjac rojo";
-"gourmet_aka_konnyaku_desc" = "Shiga Prefecture specialty. Konnyaku dyed red with iron";
+"gourmet_aka_konnyaku_desc" = "Especialidad de Shiga: konjac teñido de rojo con hierro";
 "gourmet_shigaraki_pottery" = "Cerámica de Shigaraki";
-"gourmet_shigaraki_pottery_desc" = "Pottery from Shigaraki Town, Shiga Prefecture. Famous for tanuki figurines";
+"gourmet_shigaraki_pottery_desc" = "Cerámica de Shigaraki (Shiga), famosa por sus figuras de tanuki";
 "gourmet_lake_fish_cuisine" = "Cocina de peces de lago";
-"gourmet_lake_fish_cuisine_desc" = "Local cuisine using fish from Lake Biwa";
+"gourmet_lake_fish_cuisine_desc" = "Cocina local a base de peces del lago Biwa";
 
 // Kyoto Gourmet
 "gourmet_yudofu" = "Yudofu (tofu hervido)";
-"gourmet_yudofu_desc" = "Kyoto's Buddhist cuisine. Tofu warmed in elegant dashi";
+"gourmet_yudofu_desc" = "Cocina budista de Kioto: tofu calentado en un elegante dashi";
 "gourmet_kyoto_kaiseki" = "Kaiseki de Kioto";
-"gourmet_kyoto_kaiseki_desc" = "Kyoto's haute cuisine. Beautiful dishes that value seasonality";
+"gourmet_kyoto_kaiseki_desc" = "Alta cocina de Kioto: platos bellos que valoran la estacionalidad";
 "gourmet_matcha_sweets" = "Dulces de matcha";
-"gourmet_matcha_sweets_desc" = "Japanese sweets using Uji matcha";
+"gourmet_matcha_sweets_desc" = "Dulces japoneses con matcha de Uji";
 "gourmet_obanzai" = "Obanzai";
-"gourmet_obanzai_desc" = "Kyoto's home cooking. Gentle taste centered on vegetables";
+"gourmet_obanzai_desc" = "Cocina casera de Kioto: sabor suave centrado en las verduras";
 "gourmet_kyoto_pickles" = "Encurtidos de Kioto";
-"gourmet_kyoto_pickles_desc" = "Traditional pickles from Kyoto. Elegant flavor";
+"gourmet_kyoto_pickles_desc" = "Encurtidos tradicionales de Kioto, de sabor refinado";
 
 // Hyogo Gourmet
 "gourmet_kobe_beef" = "Ternera de Kobe";
-"gourmet_kobe_beef_desc" = "World's finest brand beef. Melting texture";
+"gourmet_kobe_beef_desc" = "Ternera de marca de las más finas del mundo, de textura que se derrite";
 "gourmet_akashiyaki" = "Akashiyaki";
-"gourmet_akashiyaki_desc" = "Akashi specialty. Fluffier texture than takoyaki";
+"gourmet_akashiyaki_desc" = "Especialidad de Akashi, más esponjoso que el takoyaki";
 "gourmet_ikanago" = "Ikanago";
-"gourmet_ikanago_desc" = "Spring delicacy of the Seto Inland Sea. Eaten as tsukudani";
+"gourmet_ikanago_desc" = "Sabor primaveral del mar interior de Seto, se come como tsukudani";
 "gourmet_banshu_ramen" = "Ramen de Banshu";
-"gourmet_banshu_ramen_desc" = "Local ramen from Banshu region, Hyogo Prefecture";
+"gourmet_banshu_ramen_desc" = "Ramen local de la región de Banshu (Hyogo)";
 "gourmet_awaji_onion" = "Cebolla de Awaji";
-"gourmet_awaji_onion_desc" = "Sweet and soft specialty of Awaji Island";
+"gourmet_awaji_onion_desc" = "Especialidad de la isla de Awaji: dulce y tierna";
 
 // Nara Gourmet
 "gourmet_kakinoha_sushi" = "Sushi en hoja de caqui";
-"gourmet_kakinoha_sushi_desc" = "Nara's local dish. Pressed sushi wrapped in persimmon leaves";
+"gourmet_kakinoha_sushi_desc" = "Plato local de Nara: sushi prensado envuelto en hojas de caqui";
 "gourmet_miwa_somen" = "Somen de Miwa";
-"gourmet_miwa_somen_desc" = "Hand-stretched somen from Miwa region, Nara Prefecture";
+"gourmet_miwa_somen_desc" = "Somen estirado a mano de la región de Miwa (Nara)";
 "gourmet_narazuke" = "Narazuke";
-"gourmet_narazuke_desc" = "Specialty of Nara pickled in sake lees";
+"gourmet_narazuke_desc" = "Especialidad de Nara encurtida en las heces del sake";
 "gourmet_yamato_beef" = "Ternera de Yamato";
-"gourmet_yamato_beef_desc" = "Brand beef from Nara Prefecture. Tender and high-quality";
+"gourmet_yamato_beef_desc" = "Ternera de marca de la prefectura de Nara, tierna y de calidad";
 "gourmet_kuzukiri" = "Kuzukiri";
-"gourmet_kuzukiri_desc" = "Transparent noodles made from kudzu flour. Elegant sweetness";
+"gourmet_kuzukiri_desc" = "Fideos transparentes de almidón de kudzu, de sabor delicado";
 
 // Wakayama Gourmet
 "gourmet_umeboshi" = "Umeboshi (ciruela encurtida)";
-"gourmet_umeboshi_desc" = "Wakayama Prefecture has Japan's largest plum production. Nanko plums are famous";
+"gourmet_umeboshi_desc" = "Wakayama, la mayor productora de ciruela de Japón; famosa la Nanko";
 "gourmet_wakayama_ramen" = "Ramen de Wakayama";
-"gourmet_wakayama_ramen_desc" = "Rich tonkotsu soy sauce ramen. Also called chuka soba";
+"gourmet_wakayama_ramen_desc" = "Ramen tonkotsu-soja intenso, también llamado chuka soba";
 "gourmet_tuna" = "Atún";
-"gourmet_tuna_desc" = "Tuna from Kishu Katsuura. Fresh with good fat content";
+"gourmet_tuna_desc" = "Atún de Kishu-Katsuura: fresco y con buena grasa";
 "gourmet_persimmon" = "Caqui de Wakayama";
-"gourmet_persimmon_desc" = "Sweet and delicious persimmons from Wakayama Prefecture";
+"gourmet_persimmon_desc" = "Caquis dulces y sabrosos de la prefectura de Wakayama";
 "gourmet_kishu_kinzanji_miso" = "Miso Kinzanji de Kishu";
-"gourmet_kishu_kinzanji_miso_desc" = "Sweet miso with vegetables. Wakayama specialty";
+"gourmet_kishu_kinzanji_miso_desc" = "Miso dulce con verduras, especialidad de Wakayama";
 
 // Tottori Gourmet
 "gourmet_matsuba_crab" = "Cangrejo Matsuba";
-"gourmet_matsuba_crab_desc" = "Tottori's winter delicacy. Sweet with meat packed tightly in luxury crab";
+"gourmet_matsuba_crab_desc" = "Delicia invernal de Tottori: cangrejo de lujo, dulce y carnoso";
 "gourmet_nijisseiki_pear" = "Pera del siglo XX";
-"gourmet_nijisseiki_pear_desc" = "Tottori specialty. Juicy with crispy texture";
+"gourmet_nijisseiki_pear_desc" = "Especialidad de Tottori: jugosa y crujiente";
 "gourmet_sakaiminato_seafood" = "Mariscos de Sakaiminato";
-"gourmet_sakaiminato_seafood_desc" = "Fresh seafood from the Japan Sea. Abundant crabs and fish";
+"gourmet_sakaiminato_seafood_desc" = "Mariscos frescos del mar de Japón: abundantes cangrejos y peces";
 "gourmet_tofu_chikuwa" = "Tofu chikuwa";
-"gourmet_tofu_chikuwa_desc" = "Tottori specialty. White chikuwa mixed with tofu";
+"gourmet_tofu_chikuwa_desc" = "Especialidad de Tottori: chikuwa blanco mezclado con tofu";
 "gourmet_gyu_kotsu_ramen" = "Ramen de hueso de res";
-"gourmet_gyu_kotsu_ramen_desc" = "Tottori's local ramen. Characterized by beef bone broth";
+"gourmet_gyu_kotsu_ramen_desc" = "Ramen local de Tottori, con caldo de hueso de res";
 
 // Okayama Gourmet
 "gourmet_white_peach" = "Melocotón blanco";
-"gourmet_white_peach_desc" = "Okayama specialty. Sweet and juicy luxury peach";
+"gourmet_white_peach_desc" = "Especialidad de Okayama: melocotón blanco de lujo, dulce y jugoso";
 "gourmet_muscat" = "Uva moscatel";
-"gourmet_muscat_desc" = "Okayama Prefecture's Muscat of Alexandria";
+"gourmet_muscat_desc" = "Moscatel de Alejandría de la prefectura de Okayama";
 "gourmet_kibidango" = "Kibidango";
-"gourmet_kibidango_desc" = "Okayama's specialty confection. Famous from Momotaro legend";
+"gourmet_kibidango_desc" = "Dulce famoso de Okayama, célebre por la leyenda de Momotaro";
 "gourmet_mamakari" = "Mamakari";
-"gourmet_mamakari_desc" = "Okayama's local dish. Small fish pickled in vinegar";
+"gourmet_mamakari_desc" = "Plato local de Okayama: pescaditos en vinagre";
 "gourmet_demi_katsu_don" = "Katsudon con salsa demi";
-"gourmet_demi_katsu_don_desc" = "Okayama B-grade gourmet. Katsu don with demi-glace sauce";
+"gourmet_demi_katsu_don_desc" = "Comida callejera de Okayama: katsudon con salsa demi-glace";
 
 // Hiroshima Gourmet
 "gourmet_okonomiyaki_hiroshima" = "Okonomiyaki estilo Hiroshima";
-"gourmet_okonomiyaki_hiroshima_desc" = "Okonomiyaki with noodles. Hiroshima's soul food";
+"gourmet_okonomiyaki_hiroshima_desc" = "Okonomiyaki con fideos, plato emblemático de Hiroshima";
 "gourmet_oyster" = "Ostra";
-"gourmet_oyster_desc" = "Oysters from Hiroshima Bay. Rich and creamy taste";
+"gourmet_oyster_desc" = "Ostras de la bahía de Hiroshima: sabor intenso y cremoso";
 "gourmet_momiji_manju" = "Momiji manju";
-"gourmet_momiji_manju_desc" = "Hiroshima's famous confection. Maple leaf-shaped castella bun";
+"gourmet_momiji_manju_desc" = "Dulce famoso de Hiroshima: bollo de castella en forma de hoja de arce";
 "gourmet_hiroshima_tsukemen" = "Tsukemen de Hiroshima";
-"gourmet_hiroshima_tsukemen_desc" = "Hiroshima ramen dipped in spicy miso sauce";
+"gourmet_hiroshima_tsukemen_desc" = "Ramen de Hiroshima mojado en salsa de miso picante";
 "gourmet_anago_meshi" = "Anago meshi (arroz con congrio)";
-"gourmet_anago_meshi_desc" = "Miyajima specialty. Rice topped with grilled conger eel";
+"gourmet_anago_meshi_desc" = "Especialidad de Miyajima: arroz con congrio a la parrilla";
 
 // Yamaguchi Gourmet
 "gourmet_fugu" = "Fugu (pez globo)";
-"gourmet_fugu_desc" = "Shimonoseki fugu. Representative of luxury ingredients";
+"gourmet_fugu_desc" = "Fugu de Shimonoseki, representante de los ingredientes de lujo";
 "gourmet_kawara_soba" = "Kawara soba";
-"gourmet_kawara_soba_desc" = "Yamaguchi Prefecture specialty. Green tea soba grilled on heated roof tiles";
+"gourmet_kawara_soba_desc" = "Especialidad de Yamaguchi: soba de té asado sobre teja caliente";
 "gourmet_iwakuni_lotus_root" = "Raíz de loto de Iwakuni";
-"gourmet_iwakuni_lotus_root_desc" = "Iwakuni specialty. Many holes with good texture";
+"gourmet_iwakuni_lotus_root_desc" = "Especialidad de Iwakuni: con muchos orificios y buena textura";
 "gourmet_shimonoseki_whale" = "Ballena de Shimonoseki";
-"gourmet_shimonoseki_whale_desc" = "Traditional ingredient from Shimonoseki. Whale meat dishes";
+"gourmet_shimonoseki_whale_desc" = "Ingrediente tradicional de Shimonoseki: platos de carne de ballena";
 "gourmet_natsumikan" = "Natsumikan (naranja de verano)";
-"gourmet_natsumikan_desc" = "Yamaguchi Prefecture specialty. Characterized by refreshing acidity";
+"gourmet_natsumikan_desc" = "Especialidad de Yamaguchi, de refrescante acidez";
 
 // Shimane Gourmet
 "gourmet_izumo_soba" = "Soba de Izumo";
-"gourmet_izumo_soba_desc" = "Shimane's specialty soba. Eaten in three-tiered wariko boxes";
+"gourmet_izumo_soba_desc" = "Soba famoso de Shimane, servido en cajas wariko de tres pisos";
 "gourmet_shinjiko_shijimi" = "Almejas del lago Shinji";
-"gourmet_shinjiko_shijimi_desc" = "Large corbicula clams from Lake Shinji. Miso soup is exquisite";
+"gourmet_shinjiko_shijimi_desc" = "Almejas grandes del lago Shinji: la sopa de miso es exquisita";
 "gourmet_nodoguro_shimane" = "Nodoguro";
-"gourmet_nodoguro_shimane_desc" = "Luxury fish from the Japan Sea. Elegant fat and sweetness";
+"gourmet_nodoguro_shimane_desc" = "Pescado selecto del mar de Japón: grasa y dulzor elegantes";
 "gourmet_matsue_wagashi" = "Wagashi de Matsue";
-"gourmet_matsue_wagashi_desc" = "Traditional Japanese sweets supporting Matsue's tea culture";
+"gourmet_matsue_wagashi_desc" = "Wagashi refinados que sostienen la cultura del té de Matsue";
 "gourmet_wariko_soba" = "Wariko soba";
-"gourmet_wariko_soba_desc" = "Traditional way of eating Izumo soba";
+"gourmet_wariko_soba_desc" = "Forma tradicional de comer el soba de Izumo";
 
 // Kagawa Gourmet
 "gourmet_sanuki_udon" = "Udon Sanuki";
-"gourmet_sanuki_udon_desc" = "Kagawa Prefecture specialty. Hand-beaten udon with strong texture";
+"gourmet_sanuki_udon_desc" = "Especialidad de Kagawa: udon hecho a mano, firme y elástico";
 "gourmet_olive" = "Aceituna";
-"gourmet_olive_desc" = "Shodoshima specialty. Birthplace of Japanese olives";
+"gourmet_olive_desc" = "Especialidad de Shodoshima, cuna del olivo en Japón";
 "gourmet_honetsuki_dori" = "Honetsuki-dori (pollo con hueso)";
-"gourmet_honetsuki_dori_desc" = "Kagawa B-grade gourmet. Spicy chicken thigh";
+"gourmet_honetsuki_dori_desc" = "Comida callejera de Kagawa: muslo de pollo picante";
 "gourmet_wasanbon" = "Wasanbon";
-"gourmet_wasanbon_desc" = "Kagawa's luxury sugar. Japanese sweets with elegant sweetness";
+"gourmet_wasanbon_desc" = "Azúcar refinado de Kagawa: wagashi de dulzor delicado";
 "gourmet_shodoshima_somen" = "Somen de Shodoshima";
-"gourmet_shodoshima_somen_desc" = "Hand-stretched somen from Shodoshima. 400 years of history";
+"gourmet_shodoshima_somen_desc" = "Somen estirado a mano de Shodoshima, 400 años de historia";
 
 // Tokushima Gourmet
 "gourmet_awa_odori_chicken" = "Pollo Awa-odori";
-"gourmet_awa_odori_chicken_desc" = "Tokushima Prefecture's brand chicken. Elastic texture";
+"gourmet_awa_odori_chicken_desc" = "Pollo de marca de Tokushima, de textura elástica";
 "gourmet_tarai_udon" = "Tarai udon";
-"gourmet_tarai_udon_desc" = "Tokushima's local dish. Udon eaten from a large wooden tub";
+"gourmet_tarai_udon_desc" = "Plato local de Tokushima: udon servido en un gran barreño de madera";
 "gourmet_sudachi" = "Sudachi";
-"gourmet_sudachi_desc" = "Tokushima specialty. Citrus with refreshing acidity";
+"gourmet_sudachi_desc" = "Especialidad de Tokushima: cítrico de refrescante acidez";
 "gourmet_naruto_kintoki" = "Boniato Naruto Kintoki";
-"gourmet_naruto_kintoki_desc" = "Sweet potato specialty from Naruto City, Tokushima. Fluffy and sweet";
+"gourmet_naruto_kintoki_desc" = "Boniato de la ciudad de Naruto (Tokushima), harinoso y dulce";
 "gourmet_handa_somen" = "Somen de Handa";
-"gourmet_handa_somen_desc" = "Hand-stretched somen from Tsurugi Town, Tokushima";
+"gourmet_handa_somen_desc" = "Somen estirado a mano de Tsurugi (Tokushima)";
 
 // Kochi Gourmet
 "gourmet_katsuo_tataki" = "Katsuo tataki (bonito sellado)";
-"gourmet_katsuo_tataki_desc" = "Kochi specialty. Fragrant bonito seared with straw";
+"gourmet_katsuo_tataki_desc" = "Especialidad de Kochi: bonito sellado con llama de paja, aromático";
 "gourmet_sawachi_cuisine" = "Cocina sawachi";
-"gourmet_sawachi_cuisine_desc" = "Kochi's local cuisine. Luxurious dishes served on large platters";
+"gourmet_sawachi_cuisine_desc" = "Cocina local de Kochi: platos suntuosos servidos en grandes fuentes";
 "gourmet_tosa_sake" = "Sake de Tosa";
-"gourmet_tosa_sake_desc" = "Kochi's Japanese sake. Dry with crisp taste";
+"gourmet_tosa_sake_desc" = "Sake de Kochi: seco y de sabor limpio";
 "gourmet_yuzu" = "Yuzu";
-"gourmet_yuzu_desc" = "Kochi Prefecture has Japan's largest yuzu production. Rich aroma";
+"gourmet_yuzu_desc" = "Kochi, la mayor productora de yuzu de Japón, muy aromático";
 "gourmet_tosa_buntan" = "Pomelo Buntan de Tosa";
-"gourmet_tosa_buntan_desc" = "Kochi's specialty citrus. Large and sweet-sour";
+"gourmet_tosa_buntan_desc" = "Cítrico típico de Kochi: grande y agridulce";
 
 // Ehime Gourmet
 "gourmet_mikan" = "Mandarina de Ehime";
-"gourmet_mikan_desc" = "Ehime Prefecture is the citrus kingdom. Sweet and juicy";
+"gourmet_mikan_desc" = "Ehime, el reino de los cítricos: dulces y jugosos";
 "gourmet_jakoten" = "Jakoten";
-"gourmet_jakoten_desc" = "Ehime specialty. Fried fish paste made from small fish";
+"gourmet_jakoten_desc" = "Especialidad de Ehime: pasta de pescaditos frita";
 "gourmet_tai_meshi" = "Tai meshi (arroz con besugo)";
-"gourmet_tai_meshi_desc" = "Ehime's local dish. Rice cooked with fresh sea bream";
+"gourmet_tai_meshi_desc" = "Plato local de Ehime: arroz cocido con besugo fresco";
 "gourmet_iyokan" = "Iyokan (cítrico)";
-"gourmet_iyokan_desc" = "Ehime's representative citrus. Refreshing sweet and sour taste";
+"gourmet_iyokan_desc" = "Cítrico emblemático de Ehime: agridulce y refrescante";
 "gourmet_botchan_dango" = "Botchan dango";
-"gourmet_botchan_dango_desc" = "Matsuyama specialty. Beautiful three-colored dango";
+"gourmet_botchan_dango_desc" = "Especialidad de Matsuyama: bonitos dango de tres colores";
 
 // Oita Gourmet
 "gourmet_seki_saba_aji" = "Caballa y jurel de Seki";
-"gourmet_seki_saba_aji_desc" = "Oita Prefecture's luxury fish. Exquisite fish raised in Bungo Channel";
+"gourmet_seki_saba_aji_desc" = "Pescado selecto de Oita: peces exquisitos del canal de Bungo";
 "gourmet_toriten" = "Toriten (pollo en tempura)";
-"gourmet_toriten_desc" = "Chicken tempura originated in Oita. Crispy and juicy";
+"gourmet_toriten_desc" = "Tempura de pollo originario de Oita: crujiente y jugoso";
 "gourmet_dango_soup" = "Sopa de dango";
-"gourmet_dango_soup_desc" = "Oita's local dish. Miso soup with wheat flour dumplings";
+"gourmet_dango_soup_desc" = "Plato local de Oita: sopa de miso con masa de harina";
 "gourmet_bungo_beef" = "Ternera de Bungo";
-"gourmet_bungo_beef_desc" = "Oita Prefecture's brand beef. Tender with rich umami";
+"gourmet_bungo_beef_desc" = "Ternera de marca de Oita: tierna y de intenso umami";
 "gourmet_kabosu" = "Kabosu";
-"gourmet_kabosu_desc" = "Oita's specialty citrus. Refreshing acidity";
+"gourmet_kabosu_desc" = "Cítrico típico de Oita, de refrescante acidez";
 
 // Miyazaki Gourmet
 "gourmet_miyazaki_beef" = "Ternera de Miyazaki";
-"gourmet_miyazaki_beef_desc" = "Miyazaki Prefecture's brand beef. Beautiful marbling, finest beef";
+"gourmet_miyazaki_beef_desc" = "Ternera de marca de Miyazaki: de bello marmoleo, la mejor";
 "gourmet_chicken_nanban" = "Pollo nanban";
-"gourmet_chicken_nanban_desc" = "Chicken dish originated in Miyazaki. Sweet vinegar and tartar sauce are exquisite";
+"gourmet_chicken_nanban_desc" = "Plato de pollo originario de Miyazaki: vinagre dulce y salsa tártara exquisitos";
 "gourmet_hiyajiru" = "Hiyajiru (sopa fría)";
-"gourmet_hiyajiru_desc" = "Miyazaki's local dish. Cold miso soup poured over rice";
+"gourmet_hiyajiru_desc" = "Plato local de Miyazaki: sopa de miso fría vertida sobre el arroz";
 "gourmet_miyazaki_mango" = "Mango de Miyazaki";
-"gourmet_miyazaki_mango_desc" = "Fully ripened mango from Miyazaki Prefecture. Sweet with melting texture";
+"gourmet_miyazaki_mango_desc" = "Mango madurado en el árbol de Miyazaki, dulce y de textura que se derrite";
 "gourmet_miyazaki_shochu" = "Shochu de Miyazaki";
-"gourmet_miyazaki_shochu_desc" = "Sweet potato shochu from Miyazaki Prefecture. Mellow and easy to drink";
+"gourmet_miyazaki_shochu_desc" = "Shochu de boniato de Miyazaki, suave y fácil de beber";
 
 // Kagoshima Gourmet
 "gourmet_kurobuta" = "Cerdo negro de Kagoshima";
-"gourmet_kurobuta_desc" = "Kagoshima's specialty pork. Sweet and juicy";
+"gourmet_kurobuta_desc" = "Cerdo típico de Kagoshima: dulce y jugoso";
 "gourmet_satsuma_imo" = "Boniato Satsuma";
-"gourmet_satsuma_imo_desc" = "Kagoshima specialty. Sweet and fluffy sweet potato";
+"gourmet_satsuma_imo_desc" = "Especialidad de Kagoshima: boniato harinoso y dulce";
 "gourmet_kagoshima_shochu" = "Shochu de boniato";
-"gourmet_kagoshima_shochu_desc" = "Kagoshima's representative shochu. Sweet potato aroma and flavor";
+"gourmet_kagoshima_shochu_desc" = "Shochu emblemático de Kagoshima: dulzor y aroma a boniato";
 "gourmet_kibinago" = "Kibinago";
-"gourmet_kibinago_desc" = "Small fish from Kagoshima. Eaten as sashimi or fried";
+"gourmet_kibinago_desc" = "Pescaditos de Kagoshima, en sashimi o fritos";
 "gourmet_shirokuma" = "Shirokuma (hielo raspado)";
-"gourmet_shirokuma_desc" = "Kagoshima's shaved ice. Plenty of condensed milk and fruits";
+"gourmet_shirokuma_desc" = "Hielo raspado de Kagoshima: leche condensada y fruta en abundancia";
 
 // Kumamoto Gourmet
 "gourmet_basashi" = "Basashi (sashimi de caballo)";
-"gourmet_basashi_desc" = "Kumamoto specialty. Fresh horse meat sashimi";
+"gourmet_basashi_desc" = "Especialidad de Kumamoto: sashimi de caballo fresco";
 "gourmet_dago_soup" = "Sopa de dago";
-"gourmet_dago_soup_desc" = "Kumamoto's local dish. Miso soup with wheat flour dumplings";
+"gourmet_dago_soup_desc" = "Plato local de Kumamoto: sopa de miso con masa de harina";
 "gourmet_taipien" = "Taipien";
-"gourmet_taipien_desc" = "Kumamoto's local Chinese dish. Gentle soup with glass noodles";
+"gourmet_taipien_desc" = "Plato chino local de Kumamoto: sopa suave con fideos de cristal";
 "gourmet_karashi_renkon" = "Karashi renkon (loto con mostaza)";
-"gourmet_karashi_renkon_desc" = "Kumamoto's local dish. Lotus root stuffed with spicy miso and fried";
+"gourmet_karashi_renkon_desc" = "Plato local de Kumamoto: loto relleno de miso picante y frito";
 "gourmet_ikinari_dango" = "Ikinari dango";
-"gourmet_ikinari_dango_desc" = "Kumamoto's local confection. Dumplings with sweet potato and sweet bean paste";
+"gourmet_ikinari_dango_desc" = "Dulce local de Kumamoto: dango con boniato y pasta de judías";
 
 // Saga Gourmet
 "gourmet_saga_beef" = "Ternera de Saga";
-"gourmet_saga_beef_desc" = "Saga Prefecture's brand beef. Beautiful fine marbling";
+"gourmet_saga_beef_desc" = "Ternera de marca de Saga: de fino y bello marmoleo";
 "gourmet_yobuko_ika" = "Calamar de Yobuko";
-"gourmet_yobuko_ika_desc" = "Transparent squid from Yobuko Town, Saga Prefecture. Eaten as live sashimi";
+"gourmet_yobuko_ika_desc" = "Calamar transparente de Yobuko (Saga), servido vivo";
 "gourmet_gabai_manju" = "Gabai manju";
-"gourmet_gabai_manju_desc" = "Saga's famous confection. Simple bun with gentle sweetness";
+"gourmet_gabai_manju_desc" = "Dulce famoso de Saga: bollo sencillo de dulzor delicado";
 "gourmet_marubolo" = "Marubolo";
-"gourmet_marubolo_desc" = "Saga's traditional confection. Sweet cake like castella";
+"gourmet_marubolo_desc" = "Dulce tradicional de Saga: pastel dulce parecido al castella";
 "gourmet_onsen_yudofu" = "Yudofu de aguas termales";
-"gourmet_onsen_yudofu_desc" = "Ureshino Onsen specialty. Melting tofu made with hot spring water";
+"gourmet_onsen_yudofu_desc" = "Especialidad de las termas de Ureshino: tofu fundente con agua termal";
 
 // Nagasaki Gourmet
 "gourmet_champon" = "Champon";
-"gourmet_champon_desc" = "Nagasaki's specialty noodle dish. Plenty of vegetables and seafood";
+"gourmet_champon_desc" = "Plato de fideos famoso de Nagasaki: lleno de verduras y marisco";
 "gourmet_sara_udon" = "Sara udon";
-"gourmet_sara_udon_desc" = "Nagasaki's local dish. Thick sauce over crispy noodles";
+"gourmet_sara_udon_desc" = "Plato local de Nagasaki: fideos crujientes con salsa espesa";
 "gourmet_castella" = "Castella";
-"gourmet_castella_desc" = "Nagasaki's representative confection. Moist and sweet sponge cake";
+"gourmet_castella_desc" = "Dulce emblemático de Nagasaki: bizcocho húmedo y dulce";
 "gourmet_sasebo_burger" = "Hamburguesa de Sasebo";
-"gourmet_sasebo_burger_desc" = "Sasebo's local burger. Large handmade hamburger";
+"gourmet_sasebo_burger_desc" = "Hamburguesa local de Sasebo: gran hamburguesa artesanal";
 "gourmet_kakuni_manju" = "Kakuni manju (bollo de cerdo estofado)";
-"gourmet_kakuni_manju_desc" = "Nagasaki specialty. Bun filled with tender braised pork belly";
+"gourmet_kakuni_manju_desc" = "Especialidad de Nagasaki: bollo relleno de panceta estofada tierna";
 
 // Osaka Gourmet
 "gourmet_takoyaki" = "Takoyaki";
-"gourmet_takoyaki_desc" = "Osaka's soul food, crispy outside and creamy inside";
+"gourmet_takoyaki_desc" = "Soul food de Osaka: crujiente por fuera, cremoso por dentro";
 "gourmet_okonomiyaki" = "Okonomiyaki";
-"gourmet_okonomiyaki_desc" = "Kansai-style okonomiyaki, fluffy with plenty of cabbage";
+"gourmet_okonomiyaki_desc" = "Okonomiyaki estilo Kansai: esponjoso y con mucha col";
 "gourmet_kushikatsu" = "Kushikatsu";
-"gourmet_kushikatsu_desc" = "Shinsekai specialty, no double-dipping in sauce allowed";
+"gourmet_kushikatsu_desc" = "Especialidad de Shinsekai: prohibido remojar dos veces en la salsa";
 "gourmet_ikayaki" = "Ikayaki";
-"gourmet_ikayaki_desc" = "Osaka's flour-based culture, fragrant squid grilled with press";
+"gourmet_ikayaki_desc" = "Cultura del «konamon» de Osaka: calamar prensado y asado, aromático";
 "gourmet_butaman" = "Butaman (bollo de cerdo)";
-"gourmet_butaman_desc" = "In Kansai, it's called butaman not nikuman";
+"gourmet_butaman_desc" = "En Kansai se llama butaman, no nikuman";
 
 // Fukuoka Gourmet
 "gourmet_hakata_ramen" = "Ramen de Hakata";
-"gourmet_hakata_ramen_desc" = "Home of tonkotsu ramen with rich and creamy soup";
+"gourmet_hakata_ramen_desc" = "Cuna del ramen tonkotsu, de caldo intenso y cremoso";
 "gourmet_motsu_nabe" = "Motsu nabe (guiso de callos)";
-"gourmet_motsu_nabe_desc" = "Fukuoka's specialty hot pot with excellent beef offal and vegetable flavor";
+"gourmet_motsu_nabe_desc" = "Cocido famoso de Fukuoka: umami exquisito de callos de res y verduras";
 "gourmet_karashi_mentaiko" = "Mentaiko picante";
-"gourmet_karashi_mentaiko_desc" = "Fukuoka's specialty product, spicy and full of umami";
+"gourmet_karashi_mentaiko_desc" = "Especialidad de Fukuoka: ligeramente picante y lleno de umami";
 "gourmet_mizutaki" = "Mizutaki (cocido de pollo)";
-"gourmet_mizutaki_desc" = "Hakata's local dish, hot pot with concentrated chicken flavor";
+"gourmet_mizutaki_desc" = "Plato local de Hakata: cocido que concentra el sabor del pollo";
 "gourmet_hakata_torimon" = "Hakata Torimon";
-"gourmet_hakata_torimon_desc" = "Fukuoka's traditional confection with elegant sweetness of milk bun";
+"gourmet_hakata_torimon_desc" = "Dulce famoso de Fukuoka: bollo de leche de dulzor refinado";
 
 // Okinawa Gourmet
 "gourmet_goya_chanpuru" = "Goya chanpuru";
-"gourmet_goya_chanpuru_desc" = "Okinawa's representative local dish, stir-fried bitter gourd and tofu";
+"gourmet_goya_chanpuru_desc" = "Plato local emblemático de Okinawa: salteado de melón amargo y tofu";
 "gourmet_soki_soba" = "Soki soba";
-"gourmet_soki_soba_desc" = "Okinawan soba topped with pork ribs";
+"gourmet_soki_soba_desc" = "Soba de Okinawa cubierto con costillas de cerdo";
 "gourmet_sata_andagi" = "Sata andagi";
-"gourmet_sata_andagi_desc" = "Okinawan fried confection, crispy outside and fluffy inside";
+"gourmet_sata_andagi_desc" = "Buñuelo de Okinawa: crujiente por fuera, esponjoso por dentro";
 "gourmet_umi_budo" = "Uvas de mar";
-"gourmet_umi_budo_desc" = "Okinawan seaweed with enjoyable popping texture";
+"gourmet_umi_budo_desc" = "Alga de Okinawa de agradable textura que estalla en la boca";
 "gourmet_awamori" = "Awamori";
-"gourmet_awamori_desc" = "Okinawa's traditional distilled liquor with distinctive flavor made from rice";
+"gourmet_awamori_desc" = "Licor destilado tradicional de Okinawa a base de arroz, de aroma único";
 
 "famous_gourmet_title" = "Especialidades locales";
 "taste_prefecture_format" = "Saborea el sabor de %@";
@@ -5229,21 +5229,21 @@
 "attraction_expo_park_desc" = "A park on the former Osaka Expo site, symbolized by the Tower of the Sun by Taro Okamoto.";
 
 "gourmet_chanko_nabe" = "Chanko nabe";
-"gourmet_chanko_nabe_desc" = "A hearty hot pot originating from sumo stables, packed with meat, seafood, and vegetables.";
+"gourmet_chanko_nabe_desc" = "Cocido abundante nacido en los establos de sumo: carne, marisco y verduras, muy nutritivo";
 "gourmet_edomae_tempura" = "Tempura edomae";
-"gourmet_edomae_tempura_desc" = "Tempura made with Tokyo Bay seafood, featuring a crisp batter and the natural flavor of the ingredients.";
+"gourmet_edomae_tempura_desc" = "Tempura edomae con marisco de la bahía de Tokio: rebozado crujiente y sabor natural";
 "gourmet_miso_nikomi_udon" = "Udon guisado en miso";
-"gourmet_miso_nikomi_udon_desc" = "A Nagoya specialty of udon simmered in rich bean miso broth, served piping hot in a clay pot.";
+"gourmet_miso_nikomi_udon_desc" = "Especialidad de Nagoya: udon guisado en caldo intenso de miso, servido hirviendo en olla";
 "gourmet_ankake_spa" = "Espagueti ankake";
-"gourmet_ankake_spa_desc" = "Nagoya-style spaghetti topped with a thick, spicy sauce that pairs perfectly with the thick noodles.";
+"gourmet_ankake_spa_desc" = "Espagueti al estilo Nagoya con salsa espesa y picante, perfecto con fideos gruesos";
 "gourmet_niku_sui" = "Niku sui (sopa de carne)";
-"gourmet_niku_sui_desc" = "An Osaka broth dish like beef udon without the noodles, rich with beef and dashi flavor.";
+"gourmet_niku_sui_desc" = "Plato de caldo dashi de Osaka, como un niku udon sin fideos, rico en ternera y dashi";
 "gourmet_doteyaki" = "Doteyaki";
-"gourmet_doteyaki_desc" = "Beef tendon slowly simmered in miso and mirin, an Osaka izakaya favorite served on skewers.";
+"gourmet_doteyaki_desc" = "Tendón de res guisado a fuego lento en miso y mirin, favorito de los izakaya de Osaka, en brochetas";
 "gourmet_taco_rice" = "Taco rice";
-"gourmet_taco_rice_desc" = "An Okinawan dish of taco ingredients over rice, hearty and popular with all ages.";
+"gourmet_taco_rice_desc" = "Plato nacido en Okinawa: ingredientes de taco sobre arroz, contundente y para todas las edades";
 "gourmet_rafute" = "Rafute";
-"gourmet_rafute_desc" = "An Okinawan dish of pork belly simmered in awamori and brown sugar until meltingly tender.";
+"gourmet_rafute_desc" = "Plato local de Okinawa: panceta guisada en awamori y azúcar moreno hasta quedar fundente";
 
 "tokyo.goma_tamago.name" = "Goma Tamago";
 "tokyo.goma_tamago.description" = "An egg-shaped Tokyo sweet of black sesame paste coated in white chocolate. A souvenir staple.";
@@ -5288,21 +5288,21 @@
 "attraction_tsurugaoka_hachimangu_desc" = "A symbolic shrine of Kamakura, with historic sites like the Dankazura approach and the dance hall.";
 
 "gourmet_sapporo_miso_ramen" = "Ramen de miso de Sapporo";
-"gourmet_sapporo_miso_ramen_desc" = "A Sapporo specialty of curly noodles in rich miso soup, often topped with butter and corn.";
+"gourmet_sapporo_miso_ramen_desc" = "Especialidad de Sapporo: fideos ondulados en caldo intenso de miso, a menudo con mantequilla y maíz";
 "gourmet_zangi" = "Zangi (pollo frito)";
-"gourmet_zangi_desc" = "Hokkaido-style fried chicken marinated for deep flavor. Juicy and a popular izakaya dish.";
+"gourmet_zangi_desc" = "Pollo frito al estilo Hokkaido, bien marinado antes de freír: jugoso y estrella de los izakaya";
 "gourmet_nishin_soba" = "Soba con arenque";
-"gourmet_nishin_soba_desc" = "A Kyoto specialty soba topped with sweet-savory simmered herring, pairing perfectly with the broth.";
+"gourmet_nishin_soba_desc" = "Soba famoso de Kioto con arenque guisado agridulce, en perfecta armonía con el caldo";
 "gourmet_kyoto_yuba" = "Cocina de yuba";
-"gourmet_kyoto_yuba_desc" = "Kyoto vegetarian cuisine using delicate soy milk skin, prized for its smooth texture and refined taste.";
+"gourmet_kyoto_yuba_desc" = "Cocina budista de Kioto con delicada nata de tofu, de textura sedosa y sabor refinado";
 "gourmet_gobo_ten_udon" = "Udon con gobo-ten";
-"gourmet_gobo_ten_udon_desc" = "A Fukuoka soul-food udon topped with burdock tempura, known for soft noodles and rich broth.";
+"gourmet_gobo_ten_udon_desc" = "Udon emblemático de Fukuoka con tempura de bardana: fideos suaves y caldo característico";
 "gourmet_goma_saba" = "Caballa con sésamo";
-"gourmet_goma_saba_desc" = "A Fukuoka local dish of fresh mackerel dressed in sesame sauce, great with sake.";
+"gourmet_goma_saba_desc" = "Plato local de Fukuoka: caballa fresca en salsa de sésamo, ideal con sake";
 "gourmet_sanma_men" = "Sanma-men";
-"gourmet_sanma_men_desc" = "A Yokohama-born ramen topped with a thick, vegetable-rich starchy sauce.";
+"gourmet_sanma_men_desc" = "Ramen nacido en Yokohama, con salsa espesa y muchas verduras";
 "gourmet_yokosuka_navy_curry" = "Curry naval de Yokosuka";
-"gourmet_yokosuka_navy_curry_desc" = "A Yokosuka specialty curry recreating an old navy recipe, served with milk and salad.";
+"gourmet_yokosuka_navy_curry_desc" = "Curry famoso de Yokosuka que recrea una vieja receta naval, con leche y ensalada";
 
 "hokkaido.trappist_cookie.name" = "Trappist Cookies";
 "hokkaido.trappist_cookie.description" = "Simple, richly buttery cookies made at a monastery in Hakodate.";
@@ -5363,37 +5363,37 @@
 "attraction_omuroyama_desc" = "An Izu symbol with a beautiful bowl shape, offering stunning summit views reached by chairlift.";
 
 "gourmet_shirunashi_tantanmen" = "Tantanmen sin caldo";
-"gourmet_shirunashi_tantanmen_desc" = "Brothless dandan noodles from Hiroshima, spicy with Sichuan pepper and chili.";
+"gourmet_shirunashi_tantanmen_desc" = "Dandan sin caldo, picante con pimienta de Sichuan y guindilla, nacido en Hiroshima";
 "gourmet_gansu" = "Gansu";
-"gourmet_gansu_desc" = "Hiroshima soul food of deep-fried fish paste, fluffy and great with drinks.";
+"gourmet_gansu_desc" = "Soul food de Hiroshima: pasta de pescado frita, esponjosa e ideal para acompañar bebidas";
 "gourmet_shinshu_salmon" = "Salmón de Shinshu";
-"gourmet_shinshu_salmon_desc" = "A brand fish raised in Nagano, known for fine flesh and rich flavor.";
+"gourmet_shinshu_salmon_desc" = "Pez de marca criado en Nagano, de carne fina y sabor intenso";
 "gourmet_nagano_gohei_mochi" = "Gohei mochi";
-"gourmet_nagano_gohei_mochi_desc" = "Mashed rice on a skewer, coated with sweet-savory miso sauce and grilled.";
+"gourmet_nagano_gohei_mochi_desc" = "Arroz majado en un palo, untado con salsa de miso agridulce y asado";
 "gourmet_turkish_rice" = "Arroz turco";
-"gourmet_turkish_rice_desc" = "A Nagasaki dish of pilaf, spaghetti, and pork cutlet on one plate. Very filling.";
+"gourmet_turkish_rice_desc" = "Plato occidental de Nagasaki: pilaf, espagueti y cerdo empanado en un plato, muy contundente";
 "gourmet_hatoshi" = "Hatoshi";
-"gourmet_hatoshi_desc" = "A Nagasaki Chinese-style dish of shrimp paste between bread, deep-fried until crisp.";
+"gourmet_hatoshi_desc" = "Plato chino-nagasakiense: pasta de gamba entre pan y frito hasta quedar crujiente";
 "gourmet_hanton_rice" = "Hanton rice";
-"gourmet_hanton_rice_desc" = "A Kanazawa dish of omurice topped with fried white fish, usually with tartar sauce.";
+"gourmet_hanton_rice_desc" = "Plato occidental de Kanazawa: omurice con pescado blanco frito, normalmente con salsa tártara";
 "gourmet_kanazawa_oden" = "Oden de Kanazawa";
-"gourmet_kanazawa_oden_desc" = "Kanazawa oden with unique ingredients like wheat gluten and whelk, in flavorful broth.";
+"gourmet_kanazawa_oden_desc" = "Oden de Kanazawa con ingredientes únicos como gluten de trigo y bocina, en caldo sabroso";
 "gourmet_harako_meshi" = "Harako meshi (arroz con salmón y huevas)";
-"gourmet_harako_meshi_desc" = "A Miyagi dish of rice cooked in salmon broth topped with salmon and roe. An autumn taste.";
+"gourmet_harako_meshi_desc" = "Plato de Miyagi: arroz cocido en caldo de salmón, con salmón y huevas, sabor otoñal";
 "gourmet_aburafu_don" = "Aburafu-don";
-"gourmet_aburafu_don_desc" = "A northern Miyagi rice bowl with fried wheat gluten simmered with egg. Gentle flavor.";
+"gourmet_aburafu_don_desc" = "Bol del norte de Miyagi: gluten de trigo frito guisado con huevo, sabor suave";
 "gourmet_asuka_nabe" = "Asuka nabe";
-"gourmet_asuka_nabe_desc" = "A Nara hot pot of chicken and vegetables in a milk-based broth, with a mild taste.";
+"gourmet_asuka_nabe_desc" = "Cocido de Nara: pollo y verduras guisados en dashi con leche, sabor suave";
 "gourmet_chagayu" = "Chagayu (gachas de té)";
-"gourmet_chagayu_desc" = "A light Nara rice porridge cooked in roasted tea, traditionally eaten for breakfast.";
+"gourmet_chagayu_desc" = "Gachas de arroz de Nara cocidas con té tostado, ligeras, se comen al desayuno";
 "gourmet_futomaki_sushi" = "Futomaki (sushi festivo)";
-"gourmet_futomaki_sushi_desc" = "A colorful Chiba decorative roll revealing flowers or patterns when sliced.";
+"gourmet_futomaki_sushi_desc" = "Sushi enrollado decorativo de Chiba: al cortarlo aparecen flores o dibujos";
 "gourmet_hakarime_don" = "Hakarime-don";
-"gourmet_hakarime_don_desc" = "A Futtsu specialty rice bowl of conger eel in sweet-savory sauce; hakarime is the local name.";
+"gourmet_hakarime_don_desc" = "Bol famoso de Futtsu: congrio en salsa agridulce; «hakarime» es el nombre local";
 "gourmet_shizuoka_oden" = "Oden de Shizuoka";
-"gourmet_shizuoka_oden_desc" = "Shizuoka oden of skewered ingredients in dark broth, topped with dashi powder and aonori.";
+"gourmet_shizuoka_oden_desc" = "Oden de Shizuoka: brochetas guisadas en caldo negro, con polvo de dashi y alga aonori";
 "gourmet_fujinomiya_yakisoba" = "Yakisoba de Fujinomiya";
-"gourmet_fujinomiya_yakisoba_desc" = "Local yakisoba with firm special noodles and meat crisps. A famous B-class gourmet.";
+"gourmet_fujinomiya_yakisoba_desc" = "Yakisoba local de Shizuoka: fideos firmes y característico polvo de sardina";
 
 "hiroshima.toyoka.name" = "Toyoka";
 "hiroshima.toyoka.description" = "A Hiroshima sweet of red bean paste wrapped in mochi-flour dough and baked. Loved for its chewy texture.";
