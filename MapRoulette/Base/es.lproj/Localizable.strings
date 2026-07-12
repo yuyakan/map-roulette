@@ -3350,14 +3350,14 @@
 "kamakura_festival_location" = "Tsurugaoka Hachimangu";
 "kamakura_festival_feature1" = "Festival de primavera de la antigua capital";
 "kamakura_festival_feature2" = "Danza de Shizuka Gozen";
-"kamakura_festival_feature3" = "Horseback Archery";
+"kamakura_festival_feature3" = "Yabusame (tiro con arco a caballo)";
 
-"atsugi_ayu_festival_name" = "Atsugi Sweetfish Festival";
-"atsugi_ayu_festival_description" = "A summer festival themed around sweetfish from the Sagami River. Salt-grilled sweetfish and fireworks displays enliven Atsugi's summer.";
-"atsugi_ayu_festival_location" = "Sagami River Riverbed";
-"atsugi_ayu_festival_feature1" = "Salt-grilled Sweetfish";
-"atsugi_ayu_festival_feature2" = "Sagami River Fireworks";
-"atsugi_ayu_festival_feature3" = "River's Bounty";
+"atsugi_ayu_festival_name" = "Festival del Ayu de Atsugi";
+"atsugi_ayu_festival_description" = "Festival de verano centrado en el ayu del río Sagami. El ayu a la sal y los fuegos artificiales animan el verano de Atsugi.";
+"atsugi_ayu_festival_location" = "Ribera del río Sagami";
+"atsugi_ayu_festival_feature1" = "Ayu a la sal";
+"atsugi_ayu_festival_feature2" = "Fuegos del río Sagami";
+"atsugi_ayu_festival_feature3" = "Frutos del río";
 
 // MARK: - Niigata Prefecture
 "nagaoka_hanabi_name" = "Nagaoka Festival Grand Fireworks";
@@ -3367,12 +3367,12 @@
 "nagaoka_hanabi_feature2" = "Sanshakudama Shells";
 "nagaoka_hanabi_feature3" = "Phoenix Display";
 
-"katakai_festival_name" = "Katakai Festival";
-"katakai_festival_description" = "A fireworks display featuring the world's largest Yonshakudama shells. A traditional festival with 400 years of history as dedicatory fireworks.";
-"katakai_festival_location" = "Ojiya City, Katakai Town";
-"katakai_festival_feature1" = "World's Largest Yonshakudama";
-"katakai_festival_feature2" = "Dedicatory Fireworks";
-"katakai_festival_feature3" = "400 Years of History";
+"katakai_festival_name" = "Festival de Katakai";
+"katakai_festival_description" = "Espectáculo pirotécnico que lanza la mayor bomba yonshakudama del mundo. Un festival tradicional de 400 años de historia como fuegos votivos.";
+"katakai_festival_location" = "Ojiya - Ciudad de Katakai";
+"katakai_festival_feature1" = "La mayor yonshakudama del mundo";
+"katakai_festival_feature2" = "Fuegos votivos";
+"katakai_festival_feature3" = "400 años de historia";
 
 "kashiwazaki_umi_hanabi_name" = "Kashiwazaki Sea Grand Fireworks";
 "kashiwazaki_umi_hanabi_description" = "A fireworks display launched against the backdrop of the Sea of Japan. Marine fireworks and 300 consecutive large shells are the highlights.";
@@ -3381,12 +3381,12 @@
 "kashiwazaki_umi_hanabi_feature2" = "300 Consecutive Large Shells";
 "kashiwazaki_umi_hanabi_feature3" = "Sea of Japan Backdrop";
 
-"echigo_festival_name" = "Echigo Festival";
-"echigo_festival_description" = "Niigata's representative summer festival. The city becomes most lively of the year with folk song parades and grand fireworks displays.";
-"echigo_festival_location" = "Central Niigata City";
-"echigo_festival_feature1" = "Folk Song Parade";
-"echigo_festival_feature2" = "Grand Fireworks Display";
-"echigo_festival_feature3" = "Niigata's Summer";
+"echigo_festival_name" = "Festival de Echigo";
+"echigo_festival_description" = "Festival emblemático del verano de Niigata. La ciudad de Niigata vive su momento más animado del año con los desfiles de canciones populares y el gran espectáculo pirotécnico.";
+"echigo_festival_location" = "Centro de la ciudad de Niigata";
+"echigo_festival_feature1" = "Desfile de canciones populares";
+"echigo_festival_feature2" = "Gran espectáculo pirotécnico";
+"echigo_festival_feature3" = "El verano de Niigata";
 
 // MARK: - Toyama Prefecture
 "takaoka_tanabata_name" = "Takaoka Tanabata Festival";
@@ -3403,20 +3403,20 @@
 "owara_kazenobon_feature2" = "Kokyu Sound";
 "owara_kazenobon_feature3" = "Mystical Atmosphere";
 
-"toyama_festival_name" = "Toyama Festival";
-"toyama_festival_description" = "Toyama's representative summer festival. Folk song dance parades and fireworks displays enliven Toyama City.";
-"toyama_festival_location" = "Central Toyama City";
-"toyama_festival_feature1" = "Folk Song Dancing";
-"toyama_festival_feature2" = "Parade";
-"toyama_festival_feature3" = "Fireworks Display";
+"toyama_festival_name" = "Festival de Toyama";
+"toyama_festival_description" = "Festival emblemático del verano de Toyama. Los desfiles de danza folclórica y los fuegos artificiales animan la ciudad de Toyama.";
+"toyama_festival_location" = "Centro de la ciudad de Toyama";
+"toyama_festival_feature1" = "Danza folclórica";
+"toyama_festival_feature2" = "Desfile";
+"toyama_festival_feature3" = "Fuegos artificiales";
 
 // MARK: - Ishikawa Prefecture
-"kanazawa_hyakumangoku_festival_name" = "Kanazawa Hyakumangoku Festival";
-"kanazawa_hyakumangoku_festival_description" = "Kanazawa's largest festival recreating Maeda Toshiie's entry into Kanazawa. The gorgeous Hyakumangoku procession is the highlight.";
-"kanazawa_hyakumangoku_festival_location" = "Central Kanazawa City";
-"kanazawa_hyakumangoku_festival_feature1" = "Hyakumangoku Procession";
-"kanazawa_hyakumangoku_festival_feature2" = "Maeda Toshiie Recreation";
-"kanazawa_hyakumangoku_festival_feature3" = "Kanazawa's Largest";
+"kanazawa_hyakumangoku_festival_name" = "Festival Hyakumangoku de Kanazawa";
+"kanazawa_hyakumangoku_festival_description" = "El mayor festival de Kanazawa, que recrea la entrada de Maeda Toshiie en Kanazawa. El suntuoso cortejo Hyakumangoku es lo más destacado.";
+"kanazawa_hyakumangoku_festival_location" = "Centro de la ciudad de Kanazawa";
+"kanazawa_hyakumangoku_festival_feature1" = "Cortejo Hyakumangoku";
+"kanazawa_hyakumangoku_festival_feature2" = "Recreación de Maeda Toshiie";
+"kanazawa_hyakumangoku_festival_feature3" = "El mayor de Kanazawa";
 
 "wajima_taisai_name" = "Wajima Grand Festival";
 "wajima_taisai_description" = "Wajima's summer festival, famous for Wajima lacquerware. Vigorous portable shrines and drums enliven the Noto Peninsula's summer.";
@@ -3425,49 +3425,49 @@
 "wajima_taisai_feature2" = "Vigorous Shrines";
 "wajima_taisai_feature3" = "Noto's Summer";
 
-"komatsu_otabi_festival_name" = "Komatsu Otabi Festival";
-"komatsu_otabi_festival_description" = "Komatsu's spring festival featuring gorgeous floats parading through the streets. Also famous for children's kabuki performances.";
-"komatsu_otabi_festival_location" = "Komatsu City";
-"komatsu_otabi_festival_feature1" = "Gorgeous Floats";
-"komatsu_otabi_festival_feature2" = "Children's Kabuki";
-"komatsu_otabi_festival_feature3" = "Spring Festival";
+"komatsu_otabi_festival_name" = "Festival Otabi de Komatsu";
+"komatsu_otabi_festival_description" = "Festival de primavera de Komatsu, con suntuosas carrozas desfilando por las calles. También famoso por sus representaciones de kabuki infantil.";
+"komatsu_otabi_festival_location" = "Ciudad de Komatsu";
+"komatsu_otabi_festival_feature1" = "Carrozas suntuosas";
+"komatsu_otabi_festival_feature2" = "Kabuki infantil";
+"komatsu_otabi_festival_feature3" = "Festival de primavera";
 
 // MARK: - Fukui Prefecture
-"mikuni_fireworks_name" = "Mikuni Fireworks Festival";
-"mikuni_fireworks_description" = "Hokuriku region's largest fireworks display. About 10,000 fireworks are launched against the backdrop of the Sea of Japan.";
-"mikuni_fireworks_location" = "Sakai City, Mikuni Town";
-"mikuni_fireworks_feature1" = "Hokuriku's Largest";
-"mikuni_fireworks_feature2" = "10,000 Fireworks";
-"mikuni_fireworks_feature3" = "Sea of Japan Backdrop";
+"mikuni_fireworks_name" = "Fuegos Artificiales de Mikuni";
+"mikuni_fireworks_description" = "El mayor espectáculo pirotécnico de la región de Hokuriku. Unos 10 000 fuegos se lanzan con el mar de Japón como telón de fondo.";
+"mikuni_fireworks_location" = "Sakai - Ciudad de Mikuni";
+"mikuni_fireworks_feature1" = "El mayor de Hokuriku";
+"mikuni_fireworks_feature2" = "10 000 fuegos";
+"mikuni_fireworks_feature3" = "Con el mar de Japón de fondo";
 
-"tsuruga_festival_name" = "Tsuruga Festival";
-"tsuruga_festival_description" = "A traditional festival coloring Tsuruga's autumn. Float processions and ship festivals at Tsuruga Port are the highlights.";
-"tsuruga_festival_location" = "Tsuruga City";
-"tsuruga_festival_feature1" = "Float Procession";
-"tsuruga_festival_feature2" = "Ship Festival";
-"tsuruga_festival_feature3" = "Port Town Festival";
+"tsuruga_festival_name" = "Festival de Tsuruga";
+"tsuruga_festival_description" = "Festival tradicional que engalana el otoño de Tsuruga. El cortejo de carrozas y el festival de barcos en el puerto de Tsuruga son lo más destacado.";
+"tsuruga_festival_location" = "Ciudad de Tsuruga";
+"tsuruga_festival_feature1" = "Cortejo de carrozas";
+"tsuruga_festival_feature2" = "Festival de barcos";
+"tsuruga_festival_feature3" = "Festival de ciudad portuaria";
 
-"wakasa_obama_festival_name" = "Wakasa Obama Festival";
-"wakasa_obama_festival_description" = "Obama City's summer festival. A seaside festival where you can enjoy Wakasa Bay's seafood and traditional performing arts.";
-"wakasa_obama_festival_location" = "Obama City";
-"wakasa_obama_festival_feature1" = "Wakasa Bay";
-"wakasa_obama_festival_feature2" = "Seafood";
-"wakasa_obama_festival_feature3" = "Traditional Arts";
+"wakasa_obama_festival_name" = "Festival de Wakasa Obama";
+"wakasa_obama_festival_description" = "Festival de verano de la ciudad de Obama. Un festival junto al mar donde disfrutar de los mariscos de la bahía de Wakasa y las artes tradicionales.";
+"wakasa_obama_festival_location" = "Ciudad de Obama";
+"wakasa_obama_festival_feature1" = "Bahía de Wakasa";
+"wakasa_obama_festival_feature2" = "Mariscos";
+"wakasa_obama_festival_feature3" = "Artes tradicionales";
 
 // MARK: - Yamanashi Prefecture
-"fujigoko_fireworks_name" = "Fuji Five Lakes Fireworks Festival";
-"fujigoko_fireworks_description" = "A fireworks display launched against the backdrop of Mount Fuji. The beautiful collaboration of fireworks reflected on the lake surface and Mount Fuji is the highlight.";
-"fujigoko_fireworks_location" = "Fuji Five Lakes Area";
-"fujigoko_fireworks_feature1" = "Mount Fuji Backdrop";
-"fujigoko_fireworks_feature2" = "Lake Surface Fireworks";
-"fujigoko_fireworks_feature3" = "Scenic Collaboration";
+"fujigoko_fireworks_name" = "Fuegos Artificiales de los Cinco Lagos del Fuji";
+"fujigoko_fireworks_description" = "Espectáculo pirotécnico lanzado con el monte Fuji de fondo. La bella combinación de los fuegos reflejados en el lago y el monte Fuji es lo más destacado.";
+"fujigoko_fireworks_location" = "Región de los Cinco Lagos del Fuji";
+"fujigoko_fireworks_feature1" = "Con el monte Fuji de fondo";
+"fujigoko_fireworks_feature2" = "Fuegos sobre el lago";
+"fujigoko_fireworks_feature3" = "Combinación panorámica";
 
-"kofu_summer_festival_name" = "Kofu Summer Festival";
-"kofu_summer_festival_description" = "Kofu's representative summer festival. Various events are held as the summer version of the Takeda Shingen Festival.";
-"kofu_summer_festival_location" = "Central Kofu City";
+"kofu_summer_festival_name" = "Festival de verano de Kofu";
+"kofu_summer_festival_description" = "Festival emblemático del verano de Kofu. Se celebran diversos eventos como versión veraniega del festival Takeda Shingen.";
+"kofu_summer_festival_location" = "Centro de la ciudad de Kofu";
 "kofu_summer_festival_feature1" = "Takeda Shingen";
-"kofu_summer_festival_feature2" = "Summer Events";
-"kofu_summer_festival_feature3" = "Kofu's Summer";
+"kofu_summer_festival_feature2" = "Eventos de verano";
+"kofu_summer_festival_feature3" = "El verano de Kofu";
 
 "yoshida_himatsuri_name" = "Yoshida Fire Festival";
 "yoshida_himatsuri_description" = "A festival announcing the end of Mount Fuji climbing season. A magnificent festival known for giant torches and Mount Fuji fire rituals.";
@@ -3477,12 +3477,12 @@
 "yoshida_himatsuri_feature3" = "Season End Ceremony";
 
 // MARK: - Nagano Prefecture
-"suwako_fireworks_name" = "Lake Suwa Festival Fireworks";
-"suwako_fireworks_description" = "One of Japan's premier fireworks displays. Over 40,000 fireworks launched from Lake Suwa beautifully color the lake surface.";
-"suwako_fireworks_location" = "Suwa City, Lake Suwa";
-"suwako_fireworks_feature1" = "Over 40,000 Fireworks";
-"suwako_fireworks_feature2" = "Lake Fireworks";
-"suwako_fireworks_feature3" = "National Premier";
+"suwako_fireworks_name" = "Fuegos Artificiales del Lago Suwa";
+"suwako_fireworks_description" = "Uno de los mayores espectáculos pirotécnicos del país. Más de 40 000 fuegos lanzados desde el lago Suwa colorean bellamente su superficie.";
+"suwako_fireworks_location" = "Suwa - Lago Suwa";
+"suwako_fireworks_feature1" = "Más de 40 000 fuegos";
+"suwako_fireworks_feature2" = "Fuegos sobre el lago";
+"suwako_fireworks_feature3" = "De los mejores del país";
 
 "matsumoto_bonbon_name" = "Matsumoto Bon-Bon";
 "matsumoto_bonbon_description" = "Matsumoto's summer festival with total citizen participation. Citizen dancing to the chant of 'Bon-Bon' enlivens Matsumoto's nights.";
@@ -3506,32 +3506,32 @@
 "gujo_odori_feature2" = "All-night Dancing";
 "gujo_odori_feature3" = "2-month Duration";
 
-"gero_onsen_festival_name" = "Gero Hot Springs Festival";
-"gero_onsen_festival_description" = "A summer festival held in Gero hot spring district. Hot spring portable shrines and fireworks displays enliven the spa town.";
-"gero_onsen_festival_location" = "Gero City";
-"gero_onsen_festival_feature1" = "Hot Spring Shrine";
-"gero_onsen_festival_feature2" = "Fireworks Display";
-"gero_onsen_festival_feature3" = "Spa Town Festival";
+"gero_onsen_festival_name" = "Festival de las Aguas Termales de Gero";
+"gero_onsen_festival_description" = "Festival de verano celebrado en la zona termal de Gero. El santuario portátil termal y los fuegos artificiales animan el pueblo termal.";
+"gero_onsen_festival_location" = "Ciudad de Gero";
+"gero_onsen_festival_feature1" = "Santuario portátil termal";
+"gero_onsen_festival_feature2" = "Fuegos artificiales";
+"gero_onsen_festival_feature3" = "Festival del pueblo termal";
 
-"hida_takayama_summer_festival_name" = "Hida Takayama Summer Festival";
-"hida_takayama_summer_festival_description" = "Takayama's summer festival known for its historic streets. Enjoy traditional floats and Hida culture.";
-"hida_takayama_summer_festival_location" = "Takayama City";
-"hida_takayama_summer_festival_feature1" = "Historic Streets";
-"hida_takayama_summer_festival_feature2" = "Traditional Floats";
-"hida_takayama_summer_festival_feature3" = "Hida Culture";
+"hida_takayama_summer_festival_name" = "Festival de verano de Hida Takayama";
+"hida_takayama_summer_festival_description" = "Festival de verano de Takayama, conocido por su casco antiguo. Disfruta de las carrozas tradicionales y la cultura de Hida.";
+"hida_takayama_summer_festival_location" = "Ciudad de Takayama";
+"hida_takayama_summer_festival_feature1" = "Casco antiguo";
+"hida_takayama_summer_festival_feature2" = "Carrozas tradicionales";
+"hida_takayama_summer_festival_feature3" = "Cultura de Hida";
 
 // MARK: - Shizuoka Prefecture
-"atami_kaijo_fireworks_name" = "Atami Marine Fireworks";
-"atami_kaijo_fireworks_description" = "Fireworks displays held throughout the year. Marine fireworks over Atami Bay color the spa town.";
-"atami_kaijo_fireworks_location" = "Atami City, Atami Bay";
-"atami_kaijo_fireworks_feature1" = "Year-round Events";
-"atami_kaijo_fireworks_feature2" = "Marine Fireworks";
-"atami_kaijo_fireworks_feature3" = "Spa Town";
+"atami_kaijo_fireworks_name" = "Fuegos Artificiales Marinos de Atami";
+"atami_kaijo_fireworks_description" = "Espectáculo pirotécnico celebrado durante todo el año. Los fuegos marinos sobre la bahía de Atami colorean el pueblo termal.";
+"atami_kaijo_fireworks_location" = "Atami - Bahía de Atami";
+"atami_kaijo_fireworks_feature1" = "Todo el año";
+"atami_kaijo_fireworks_feature2" = "Fuegos marinos";
+"atami_kaijo_fireworks_feature3" = "Pueblo termal";
 
-"shimizu_port_festival_name" = "Shimizu Port Festival";
-"shimizu_port_festival_description" = "A summer festival held at Shimizu Port. Ship parades and fireworks displays unique to port festivals are the highlights.";
-"shimizu_port_festival_location" = "Shizuoka City, Shimizu Ward";
-"shimizu_port_festival_feature1" = "Ship Parade";
+"shimizu_port_festival_name" = "Festival del Puerto de Shimizu";
+"shimizu_port_festival_description" = "Festival de verano celebrado en el puerto de Shimizu. El desfile de barcos y los fuegos artificiales propios de los festivales portuarios son lo más destacado.";
+"shimizu_port_festival_location" = "Shizuoka, distrito de Shimizu";
+"shimizu_port_festival_feature1" = "Desfile de barcos";
 "shimizu_port_festival_feature2" = "Port Festival Fireworks";
 "shimizu_port_festival_feature3" = "Shimizu Port";
 

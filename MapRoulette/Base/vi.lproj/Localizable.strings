@@ -3350,14 +3350,14 @@
 "kamakura_festival_location" = "Tsurugaoka Hachimangu";
 "kamakura_festival_feature1" = "Lễ hội mùa xuân cố đô";
 "kamakura_festival_feature2" = "Điệu múa Shizuka Gozen";
-"kamakura_festival_feature3" = "Horseback Archery";
+"kamakura_festival_feature3" = "Yabusame (bắn cung trên ngựa)";
 
-"atsugi_ayu_festival_name" = "Atsugi Sweetfish Festival";
-"atsugi_ayu_festival_description" = "A summer festival themed around sweetfish from the Sagami River. Salt-grilled sweetfish and fireworks displays enliven Atsugi's summer.";
-"atsugi_ayu_festival_location" = "Sagami River Riverbed";
-"atsugi_ayu_festival_feature1" = "Salt-grilled Sweetfish";
-"atsugi_ayu_festival_feature2" = "Sagami River Fireworks";
-"atsugi_ayu_festival_feature3" = "River's Bounty";
+"atsugi_ayu_festival_name" = "Lễ hội cá ayu Atsugi";
+"atsugi_ayu_festival_description" = "Lễ hội mùa hè lấy chủ đề cá ayu sông Sagami. Cá ayu nướng muối và màn pháo hoa làm sôi động mùa hè Atsugi.";
+"atsugi_ayu_festival_location" = "Bãi sông Sagami";
+"atsugi_ayu_festival_feature1" = "Cá ayu nướng muối";
+"atsugi_ayu_festival_feature2" = "Pháo hoa sông Sagami";
+"atsugi_ayu_festival_feature3" = "Ơn nghĩa dòng sông";
 
 // MARK: - Niigata Prefecture
 "nagaoka_hanabi_name" = "Nagaoka Festival Grand Fireworks";
@@ -3367,12 +3367,12 @@
 "nagaoka_hanabi_feature2" = "Sanshakudama Shells";
 "nagaoka_hanabi_feature3" = "Phoenix Display";
 
-"katakai_festival_name" = "Katakai Festival";
-"katakai_festival_description" = "A fireworks display featuring the world's largest Yonshakudama shells. A traditional festival with 400 years of history as dedicatory fireworks.";
-"katakai_festival_location" = "Ojiya City, Katakai Town";
-"katakai_festival_feature1" = "World's Largest Yonshakudama";
-"katakai_festival_feature2" = "Dedicatory Fireworks";
-"katakai_festival_feature3" = "400 Years of History";
+"katakai_festival_name" = "Lễ hội Katakai";
+"katakai_festival_description" = "Đại hội pháo hoa bắn quả yonshakudama lớn nhất thế giới. Lễ hội truyền thống 400 năm lịch sử với vai trò pháo hoa cúng dường.";
+"katakai_festival_location" = "Thành phố Ojiya - Thị trấn Katakai";
+"katakai_festival_feature1" = "Yonshakudama lớn nhất thế giới";
+"katakai_festival_feature2" = "Pháo hoa cúng dường";
+"katakai_festival_feature3" = "Lịch sử 400 năm";
 
 "kashiwazaki_umi_hanabi_name" = "Kashiwazaki Sea Grand Fireworks";
 "kashiwazaki_umi_hanabi_description" = "A fireworks display launched against the backdrop of the Sea of Japan. Marine fireworks and 300 consecutive large shells are the highlights.";
@@ -3381,12 +3381,12 @@
 "kashiwazaki_umi_hanabi_feature2" = "300 Consecutive Large Shells";
 "kashiwazaki_umi_hanabi_feature3" = "Sea of Japan Backdrop";
 
-"echigo_festival_name" = "Echigo Festival";
-"echigo_festival_description" = "Niigata's representative summer festival. The city becomes most lively of the year with folk song parades and grand fireworks displays.";
-"echigo_festival_location" = "Central Niigata City";
-"echigo_festival_feature1" = "Folk Song Parade";
-"echigo_festival_feature2" = "Grand Fireworks Display";
-"echigo_festival_feature3" = "Niigata's Summer";
+"echigo_festival_name" = "Lễ hội Echigo";
+"echigo_festival_description" = "Lễ hội tiêu biểu cho mùa hè Niigata. Thành phố Niigata nhộn nhịp nhất trong năm với đoàn diễu hành dân ca và đại hội pháo hoa.";
+"echigo_festival_location" = "Trung tâm thành phố Niigata";
+"echigo_festival_feature1" = "Diễu hành dân ca";
+"echigo_festival_feature2" = "Đại hội pháo hoa";
+"echigo_festival_feature3" = "Mùa hè của Niigata";
 
 // MARK: - Toyama Prefecture
 "takaoka_tanabata_name" = "Takaoka Tanabata Festival";
@@ -3403,20 +3403,20 @@
 "owara_kazenobon_feature2" = "Kokyu Sound";
 "owara_kazenobon_feature3" = "Mystical Atmosphere";
 
-"toyama_festival_name" = "Toyama Festival";
-"toyama_festival_description" = "Toyama's representative summer festival. Folk song dance parades and fireworks displays enliven Toyama City.";
-"toyama_festival_location" = "Central Toyama City";
-"toyama_festival_feature1" = "Folk Song Dancing";
-"toyama_festival_feature2" = "Parade";
-"toyama_festival_feature3" = "Fireworks Display";
+"toyama_festival_name" = "Lễ hội Toyama";
+"toyama_festival_description" = "Lễ hội tiêu biểu cho mùa hè Toyama. Đoàn diễu hành múa dân ca và màn pháo hoa làm sôi động thành phố Toyama.";
+"toyama_festival_location" = "Trung tâm thành phố Toyama";
+"toyama_festival_feature1" = "Múa dân ca";
+"toyama_festival_feature2" = "Diễu hành";
+"toyama_festival_feature3" = "Bắn pháo hoa";
 
 // MARK: - Ishikawa Prefecture
-"kanazawa_hyakumangoku_festival_name" = "Kanazawa Hyakumangoku Festival";
-"kanazawa_hyakumangoku_festival_description" = "Kanazawa's largest festival recreating Maeda Toshiie's entry into Kanazawa. The gorgeous Hyakumangoku procession is the highlight.";
-"kanazawa_hyakumangoku_festival_location" = "Central Kanazawa City";
-"kanazawa_hyakumangoku_festival_feature1" = "Hyakumangoku Procession";
-"kanazawa_hyakumangoku_festival_feature2" = "Maeda Toshiie Recreation";
-"kanazawa_hyakumangoku_festival_feature3" = "Kanazawa's Largest";
+"kanazawa_hyakumangoku_festival_name" = "Lễ hội Hyakumangoku Kanazawa";
+"kanazawa_hyakumangoku_festival_description" = "Lễ hội lớn nhất Kanazawa tái hiện việc Maeda Toshiie vào thành Kanazawa. Đoàn diễu hành Hyakumangoku lộng lẫy là điểm nhấn.";
+"kanazawa_hyakumangoku_festival_location" = "Trung tâm thành phố Kanazawa";
+"kanazawa_hyakumangoku_festival_feature1" = "Diễu hành Hyakumangoku";
+"kanazawa_hyakumangoku_festival_feature2" = "Tái hiện Maeda Toshiie";
+"kanazawa_hyakumangoku_festival_feature3" = "Lớn nhất Kanazawa";
 
 "wajima_taisai_name" = "Wajima Grand Festival";
 "wajima_taisai_description" = "Wajima's summer festival, famous for Wajima lacquerware. Vigorous portable shrines and drums enliven the Noto Peninsula's summer.";
@@ -3425,49 +3425,49 @@
 "wajima_taisai_feature2" = "Vigorous Shrines";
 "wajima_taisai_feature3" = "Noto's Summer";
 
-"komatsu_otabi_festival_name" = "Komatsu Otabi Festival";
-"komatsu_otabi_festival_description" = "Komatsu's spring festival featuring gorgeous floats parading through the streets. Also famous for children's kabuki performances.";
-"komatsu_otabi_festival_location" = "Komatsu City";
-"komatsu_otabi_festival_feature1" = "Gorgeous Floats";
-"komatsu_otabi_festival_feature2" = "Children's Kabuki";
-"komatsu_otabi_festival_feature3" = "Spring Festival";
+"komatsu_otabi_festival_name" = "Lễ hội Otabi Komatsu";
+"komatsu_otabi_festival_description" = "Lễ hội mùa xuân Komatsu với xe rước lộng lẫy diễu hành. Cũng nổi tiếng với các buổi diễn kabuki thiếu nhi.";
+"komatsu_otabi_festival_location" = "Thành phố Komatsu";
+"komatsu_otabi_festival_feature1" = "Xe rước lộng lẫy";
+"komatsu_otabi_festival_feature2" = "Kabuki thiếu nhi";
+"komatsu_otabi_festival_feature3" = "Lễ hội mùa xuân";
 
 // MARK: - Fukui Prefecture
-"mikuni_fireworks_name" = "Mikuni Fireworks Festival";
-"mikuni_fireworks_description" = "Hokuriku region's largest fireworks display. About 10,000 fireworks are launched against the backdrop of the Sea of Japan.";
-"mikuni_fireworks_location" = "Sakai City, Mikuni Town";
-"mikuni_fireworks_feature1" = "Hokuriku's Largest";
-"mikuni_fireworks_feature2" = "10,000 Fireworks";
-"mikuni_fireworks_feature3" = "Sea of Japan Backdrop";
+"mikuni_fireworks_name" = "Lễ hội pháo hoa Mikuni";
+"mikuni_fireworks_description" = "Đại hội pháo hoa lớn nhất vùng Hokuriku. Khoảng 10.000 quả pháo bắn lên với hậu cảnh là biển Nhật Bản.";
+"mikuni_fireworks_location" = "Thành phố Sakai - Thị trấn Mikuni";
+"mikuni_fireworks_feature1" = "Lớn nhất Hokuriku";
+"mikuni_fireworks_feature2" = "10.000 quả pháo";
+"mikuni_fireworks_feature3" = "Hậu cảnh biển Nhật Bản";
 
-"tsuruga_festival_name" = "Tsuruga Festival";
-"tsuruga_festival_description" = "A traditional festival coloring Tsuruga's autumn. Float processions and ship festivals at Tsuruga Port are the highlights.";
-"tsuruga_festival_location" = "Tsuruga City";
-"tsuruga_festival_feature1" = "Float Procession";
-"tsuruga_festival_feature2" = "Ship Festival";
-"tsuruga_festival_feature3" = "Port Town Festival";
+"tsuruga_festival_name" = "Lễ hội Tsuruga";
+"tsuruga_festival_description" = "Lễ hội truyền thống tô điểm mùa thu Tsuruga. Đoàn xe rước và lễ hội thuyền tại cảng Tsuruga là điểm nhấn.";
+"tsuruga_festival_location" = "Thành phố Tsuruga";
+"tsuruga_festival_feature1" = "Đoàn xe rước";
+"tsuruga_festival_feature2" = "Lễ hội thuyền";
+"tsuruga_festival_feature3" = "Lễ hội thành phố cảng";
 
-"wakasa_obama_festival_name" = "Wakasa Obama Festival";
-"wakasa_obama_festival_description" = "Obama City's summer festival. A seaside festival where you can enjoy Wakasa Bay's seafood and traditional performing arts.";
-"wakasa_obama_festival_location" = "Obama City";
-"wakasa_obama_festival_feature1" = "Wakasa Bay";
-"wakasa_obama_festival_feature2" = "Seafood";
-"wakasa_obama_festival_feature3" = "Traditional Arts";
+"wakasa_obama_festival_name" = "Lễ hội Wakasa Obama";
+"wakasa_obama_festival_description" = "Lễ hội mùa hè thành phố Obama. Lễ hội ven biển tận hưởng hải sản vịnh Wakasa và nghệ thuật truyền thống.";
+"wakasa_obama_festival_location" = "Thành phố Obama";
+"wakasa_obama_festival_feature1" = "Vịnh Wakasa";
+"wakasa_obama_festival_feature2" = "Hải sản";
+"wakasa_obama_festival_feature3" = "Nghệ thuật truyền thống";
 
 // MARK: - Yamanashi Prefecture
-"fujigoko_fireworks_name" = "Fuji Five Lakes Fireworks Festival";
-"fujigoko_fireworks_description" = "A fireworks display launched against the backdrop of Mount Fuji. The beautiful collaboration of fireworks reflected on the lake surface and Mount Fuji is the highlight.";
-"fujigoko_fireworks_location" = "Fuji Five Lakes Area";
-"fujigoko_fireworks_feature1" = "Mount Fuji Backdrop";
-"fujigoko_fireworks_feature2" = "Lake Surface Fireworks";
-"fujigoko_fireworks_feature3" = "Scenic Collaboration";
+"fujigoko_fireworks_name" = "Lễ hội pháo hoa Ngũ Hồ Phú Sĩ";
+"fujigoko_fireworks_description" = "Đại hội pháo hoa bắn lên với hậu cảnh núi Phú Sĩ. Sự kết hợp đẹp mắt giữa pháo hoa phản chiếu trên mặt hồ và núi Phú Sĩ là điểm nhấn.";
+"fujigoko_fireworks_location" = "Khu vực Ngũ Hồ Phú Sĩ";
+"fujigoko_fireworks_feature1" = "Hậu cảnh núi Phú Sĩ";
+"fujigoko_fireworks_feature2" = "Pháo hoa mặt hồ";
+"fujigoko_fireworks_feature3" = "Kết hợp cảnh tuyệt đẹp";
 
-"kofu_summer_festival_name" = "Kofu Summer Festival";
-"kofu_summer_festival_description" = "Kofu's representative summer festival. Various events are held as the summer version of the Takeda Shingen Festival.";
-"kofu_summer_festival_location" = "Central Kofu City";
+"kofu_summer_festival_name" = "Lễ hội mùa hè Kofu";
+"kofu_summer_festival_description" = "Lễ hội tiêu biểu cho mùa hè Kofu. Nhiều sự kiện đa dạng được tổ chức như phiên bản mùa hè của lễ hội Takeda Shingen.";
+"kofu_summer_festival_location" = "Trung tâm thành phố Kofu";
 "kofu_summer_festival_feature1" = "Takeda Shingen";
-"kofu_summer_festival_feature2" = "Summer Events";
-"kofu_summer_festival_feature3" = "Kofu's Summer";
+"kofu_summer_festival_feature2" = "Sự kiện mùa hè";
+"kofu_summer_festival_feature3" = "Mùa hè của Kofu";
 
 "yoshida_himatsuri_name" = "Yoshida Fire Festival";
 "yoshida_himatsuri_description" = "A festival announcing the end of Mount Fuji climbing season. A magnificent festival known for giant torches and Mount Fuji fire rituals.";
@@ -3477,12 +3477,12 @@
 "yoshida_himatsuri_feature3" = "Season End Ceremony";
 
 // MARK: - Nagano Prefecture
-"suwako_fireworks_name" = "Lake Suwa Festival Fireworks";
-"suwako_fireworks_description" = "One of Japan's premier fireworks displays. Over 40,000 fireworks launched from Lake Suwa beautifully color the lake surface.";
-"suwako_fireworks_location" = "Suwa City, Lake Suwa";
-"suwako_fireworks_feature1" = "Over 40,000 Fireworks";
-"suwako_fireworks_feature2" = "Lake Fireworks";
-"suwako_fireworks_feature3" = "National Premier";
+"suwako_fireworks_name" = "Lễ hội pháo hoa trên hồ Suwa";
+"suwako_fireworks_description" = "Đại hội pháo hoa hàng đầu cả nước. Hơn 40.000 quả pháo bắn từ trên hồ Suwa tô điểm mặt hồ đẹp mắt.";
+"suwako_fireworks_location" = "Thành phố Suwa - Hồ Suwa";
+"suwako_fireworks_feature1" = "Hơn 40.000 quả pháo";
+"suwako_fireworks_feature2" = "Pháo hoa trên hồ";
+"suwako_fireworks_feature3" = "Hàng đầu cả nước";
 
 "matsumoto_bonbon_name" = "Matsumoto Bon-Bon";
 "matsumoto_bonbon_description" = "Matsumoto's summer festival with total citizen participation. Citizen dancing to the chant of 'Bon-Bon' enlivens Matsumoto's nights.";
@@ -3506,32 +3506,32 @@
 "gujo_odori_feature2" = "All-night Dancing";
 "gujo_odori_feature3" = "2-month Duration";
 
-"gero_onsen_festival_name" = "Gero Hot Springs Festival";
-"gero_onsen_festival_description" = "A summer festival held in Gero hot spring district. Hot spring portable shrines and fireworks displays enliven the spa town.";
-"gero_onsen_festival_location" = "Gero City";
-"gero_onsen_festival_feature1" = "Hot Spring Shrine";
-"gero_onsen_festival_feature2" = "Fireworks Display";
-"gero_onsen_festival_feature3" = "Spa Town Festival";
+"gero_onsen_festival_name" = "Lễ hội suối nước nóng Gero";
+"gero_onsen_festival_description" = "Lễ hội mùa hè tổ chức tại phố suối nước nóng Gero. Kiệu mikoshi suối nước nóng và màn pháo hoa làm sôi động phố onsen.";
+"gero_onsen_festival_location" = "Thành phố Gero";
+"gero_onsen_festival_feature1" = "Kiệu mikoshi suối nước nóng";
+"gero_onsen_festival_feature2" = "Bắn pháo hoa";
+"gero_onsen_festival_feature3" = "Lễ hội phố onsen";
 
-"hida_takayama_summer_festival_name" = "Hida Takayama Summer Festival";
-"hida_takayama_summer_festival_description" = "Takayama's summer festival known for its historic streets. Enjoy traditional floats and Hida culture.";
-"hida_takayama_summer_festival_location" = "Takayama City";
-"hida_takayama_summer_festival_feature1" = "Historic Streets";
-"hida_takayama_summer_festival_feature2" = "Traditional Floats";
-"hida_takayama_summer_festival_feature3" = "Hida Culture";
+"hida_takayama_summer_festival_name" = "Lễ hội mùa hè Hida Takayama";
+"hida_takayama_summer_festival_description" = "Lễ hội mùa hè Takayama nổi tiếng với phố cổ. Tận hưởng những chiếc xe rước truyền thống và văn hóa Hida.";
+"hida_takayama_summer_festival_location" = "Thành phố Takayama";
+"hida_takayama_summer_festival_feature1" = "Phố cổ";
+"hida_takayama_summer_festival_feature2" = "Xe rước truyền thống";
+"hida_takayama_summer_festival_feature3" = "Văn hóa Hida";
 
 // MARK: - Shizuoka Prefecture
-"atami_kaijo_fireworks_name" = "Atami Marine Fireworks";
-"atami_kaijo_fireworks_description" = "Fireworks displays held throughout the year. Marine fireworks over Atami Bay color the spa town.";
-"atami_kaijo_fireworks_location" = "Atami City, Atami Bay";
-"atami_kaijo_fireworks_feature1" = "Year-round Events";
-"atami_kaijo_fireworks_feature2" = "Marine Fireworks";
-"atami_kaijo_fireworks_feature3" = "Spa Town";
+"atami_kaijo_fireworks_name" = "Lễ hội pháo hoa trên biển Atami";
+"atami_kaijo_fireworks_description" = "Đại hội pháo hoa tổ chức quanh năm. Pháo hoa trên biển tại vịnh Atami tô điểm phố onsen.";
+"atami_kaijo_fireworks_location" = "Thành phố Atami - Vịnh Atami";
+"atami_kaijo_fireworks_feature1" = "Tổ chức quanh năm";
+"atami_kaijo_fireworks_feature2" = "Pháo hoa trên biển";
+"atami_kaijo_fireworks_feature3" = "Phố onsen";
 
-"shimizu_port_festival_name" = "Shimizu Port Festival";
-"shimizu_port_festival_description" = "A summer festival held at Shimizu Port. Ship parades and fireworks displays unique to port festivals are the highlights.";
-"shimizu_port_festival_location" = "Shizuoka City, Shimizu Ward";
-"shimizu_port_festival_feature1" = "Ship Parade";
+"shimizu_port_festival_name" = "Lễ hội cảng Shimizu";
+"shimizu_port_festival_description" = "Lễ hội mùa hè tổ chức tại cảng Shimizu. Đoàn diễu hành thuyền và màn pháo hoa đặc trưng của lễ hội cảng là điểm nhấn.";
+"shimizu_port_festival_location" = "Thành phố Shizuoka, quận Shimizu";
+"shimizu_port_festival_feature1" = "Diễu hành thuyền";
 "shimizu_port_festival_feature2" = "Port Festival Fireworks";
 "shimizu_port_festival_feature3" = "Shimizu Port";
 

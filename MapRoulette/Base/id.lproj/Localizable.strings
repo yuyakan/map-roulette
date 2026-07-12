@@ -3350,14 +3350,14 @@
 "kamakura_festival_location" = "Tsurugaoka Hachimangu";
 "kamakura_festival_feature1" = "Festival musim semi ibu kota kuno";
 "kamakura_festival_feature2" = "Tarian Shizuka Gozen";
-"kamakura_festival_feature3" = "Horseback Archery";
+"kamakura_festival_feature3" = "Yabusame (memanah di atas kuda)";
 
-"atsugi_ayu_festival_name" = "Atsugi Sweetfish Festival";
-"atsugi_ayu_festival_description" = "A summer festival themed around sweetfish from the Sagami River. Salt-grilled sweetfish and fireworks displays enliven Atsugi's summer.";
-"atsugi_ayu_festival_location" = "Sagami River Riverbed";
-"atsugi_ayu_festival_feature1" = "Salt-grilled Sweetfish";
-"atsugi_ayu_festival_feature2" = "Sagami River Fireworks";
-"atsugi_ayu_festival_feature3" = "River's Bounty";
+"atsugi_ayu_festival_name" = "Festival Ikan Ayu Atsugi";
+"atsugi_ayu_festival_description" = "Festival musim panas bertema ikan ayu Sungai Sagami. Ayu bakar garam dan pertunjukan kembang api menyemarakkan musim panas Atsugi.";
+"atsugi_ayu_festival_location" = "Tepi Sungai Sagami";
+"atsugi_ayu_festival_feature1" = "Ayu bakar garam";
+"atsugi_ayu_festival_feature2" = "Kembang api Sungai Sagami";
+"atsugi_ayu_festival_feature3" = "Berkah sungai";
 
 // MARK: - Niigata Prefecture
 "nagaoka_hanabi_name" = "Nagaoka Festival Grand Fireworks";
@@ -3367,12 +3367,12 @@
 "nagaoka_hanabi_feature2" = "Sanshakudama Shells";
 "nagaoka_hanabi_feature3" = "Phoenix Display";
 
-"katakai_festival_name" = "Katakai Festival";
-"katakai_festival_description" = "A fireworks display featuring the world's largest Yonshakudama shells. A traditional festival with 400 years of history as dedicatory fireworks.";
-"katakai_festival_location" = "Ojiya City, Katakai Town";
-"katakai_festival_feature1" = "World's Largest Yonshakudama";
-"katakai_festival_feature2" = "Dedicatory Fireworks";
-"katakai_festival_feature3" = "400 Years of History";
+"katakai_festival_name" = "Festival Katakai";
+"katakai_festival_description" = "Pertunjukan kembang api yang meluncurkan yonshakudama terbesar di dunia. Festival tradisional berusia 400 tahun sebagai kembang api persembahan.";
+"katakai_festival_location" = "Ojiya - Kota Katakai";
+"katakai_festival_feature1" = "Yonshakudama terbesar dunia";
+"katakai_festival_feature2" = "Kembang api persembahan";
+"katakai_festival_feature3" = "Sejarah 400 tahun";
 
 "kashiwazaki_umi_hanabi_name" = "Kashiwazaki Sea Grand Fireworks";
 "kashiwazaki_umi_hanabi_description" = "A fireworks display launched against the backdrop of the Sea of Japan. Marine fireworks and 300 consecutive large shells are the highlights.";
@@ -3381,12 +3381,12 @@
 "kashiwazaki_umi_hanabi_feature2" = "300 Consecutive Large Shells";
 "kashiwazaki_umi_hanabi_feature3" = "Sea of Japan Backdrop";
 
-"echigo_festival_name" = "Echigo Festival";
-"echigo_festival_description" = "Niigata's representative summer festival. The city becomes most lively of the year with folk song parades and grand fireworks displays.";
-"echigo_festival_location" = "Central Niigata City";
-"echigo_festival_feature1" = "Folk Song Parade";
-"echigo_festival_feature2" = "Grand Fireworks Display";
-"echigo_festival_feature3" = "Niigata's Summer";
+"echigo_festival_name" = "Festival Echigo";
+"echigo_festival_description" = "Festival khas musim panas Niigata. Kota Niigata paling ramai sepanjang tahun dengan pawai lagu daerah dan pertunjukan kembang api besar.";
+"echigo_festival_location" = "Pusat Kota Niigata";
+"echigo_festival_feature1" = "Pawai lagu daerah";
+"echigo_festival_feature2" = "Pertunjukan kembang api besar";
+"echigo_festival_feature3" = "Musim panas Niigata";
 
 // MARK: - Toyama Prefecture
 "takaoka_tanabata_name" = "Takaoka Tanabata Festival";
@@ -3403,20 +3403,20 @@
 "owara_kazenobon_feature2" = "Kokyu Sound";
 "owara_kazenobon_feature3" = "Mystical Atmosphere";
 
-"toyama_festival_name" = "Toyama Festival";
-"toyama_festival_description" = "Toyama's representative summer festival. Folk song dance parades and fireworks displays enliven Toyama City.";
-"toyama_festival_location" = "Central Toyama City";
-"toyama_festival_feature1" = "Folk Song Dancing";
-"toyama_festival_feature2" = "Parade";
-"toyama_festival_feature3" = "Fireworks Display";
+"toyama_festival_name" = "Festival Toyama";
+"toyama_festival_description" = "Festival khas musim panas Toyama. Pawai tari lagu daerah dan pertunjukan kembang api menyemarakkan Kota Toyama.";
+"toyama_festival_location" = "Pusat Kota Toyama";
+"toyama_festival_feature1" = "Tari lagu daerah";
+"toyama_festival_feature2" = "Pawai";
+"toyama_festival_feature3" = "Pertunjukan kembang api";
 
 // MARK: - Ishikawa Prefecture
-"kanazawa_hyakumangoku_festival_name" = "Kanazawa Hyakumangoku Festival";
-"kanazawa_hyakumangoku_festival_description" = "Kanazawa's largest festival recreating Maeda Toshiie's entry into Kanazawa. The gorgeous Hyakumangoku procession is the highlight.";
-"kanazawa_hyakumangoku_festival_location" = "Central Kanazawa City";
-"kanazawa_hyakumangoku_festival_feature1" = "Hyakumangoku Procession";
-"kanazawa_hyakumangoku_festival_feature2" = "Maeda Toshiie Recreation";
-"kanazawa_hyakumangoku_festival_feature3" = "Kanazawa's Largest";
+"kanazawa_hyakumangoku_festival_name" = "Festival Hyakumangoku Kanazawa";
+"kanazawa_hyakumangoku_festival_description" = "Festival terbesar Kanazawa yang menghidupkan masuknya Maeda Toshiie ke Kanazawa. Arak-arakan Hyakumangoku yang megah jadi sorotan.";
+"kanazawa_hyakumangoku_festival_location" = "Pusat Kota Kanazawa";
+"kanazawa_hyakumangoku_festival_feature1" = "Arak-arakan Hyakumangoku";
+"kanazawa_hyakumangoku_festival_feature2" = "Rekonstruksi Maeda Toshiie";
+"kanazawa_hyakumangoku_festival_feature3" = "Terbesar di Kanazawa";
 
 "wajima_taisai_name" = "Wajima Grand Festival";
 "wajima_taisai_description" = "Wajima's summer festival, famous for Wajima lacquerware. Vigorous portable shrines and drums enliven the Noto Peninsula's summer.";
@@ -3425,49 +3425,49 @@
 "wajima_taisai_feature2" = "Vigorous Shrines";
 "wajima_taisai_feature3" = "Noto's Summer";
 
-"komatsu_otabi_festival_name" = "Komatsu Otabi Festival";
-"komatsu_otabi_festival_description" = "Komatsu's spring festival featuring gorgeous floats parading through the streets. Also famous for children's kabuki performances.";
-"komatsu_otabi_festival_location" = "Komatsu City";
-"komatsu_otabi_festival_feature1" = "Gorgeous Floats";
-"komatsu_otabi_festival_feature2" = "Children's Kabuki";
-"komatsu_otabi_festival_feature3" = "Spring Festival";
+"komatsu_otabi_festival_name" = "Festival Otabi Komatsu";
+"komatsu_otabi_festival_description" = "Festival musim semi Komatsu dengan kereta hias mewah yang diarak. Juga terkenal dengan pertunjukan kabuki anak.";
+"komatsu_otabi_festival_location" = "Kota Komatsu";
+"komatsu_otabi_festival_feature1" = "Kereta hias mewah";
+"komatsu_otabi_festival_feature2" = "Kabuki anak";
+"komatsu_otabi_festival_feature3" = "Festival musim semi";
 
 // MARK: - Fukui Prefecture
-"mikuni_fireworks_name" = "Mikuni Fireworks Festival";
-"mikuni_fireworks_description" = "Hokuriku region's largest fireworks display. About 10,000 fireworks are launched against the backdrop of the Sea of Japan.";
-"mikuni_fireworks_location" = "Sakai City, Mikuni Town";
-"mikuni_fireworks_feature1" = "Hokuriku's Largest";
-"mikuni_fireworks_feature2" = "10,000 Fireworks";
-"mikuni_fireworks_feature3" = "Sea of Japan Backdrop";
+"mikuni_fireworks_name" = "Festival Kembang Api Mikuni";
+"mikuni_fireworks_description" = "Pertunjukan kembang api terbesar di Hokuriku. Sekitar 10.000 kembang api diluncurkan dengan latar Laut Jepang.";
+"mikuni_fireworks_location" = "Sakai - Kota Mikuni";
+"mikuni_fireworks_feature1" = "Terbesar di Hokuriku";
+"mikuni_fireworks_feature2" = "10.000 kembang api";
+"mikuni_fireworks_feature3" = "Latar Laut Jepang";
 
-"tsuruga_festival_name" = "Tsuruga Festival";
-"tsuruga_festival_description" = "A traditional festival coloring Tsuruga's autumn. Float processions and ship festivals at Tsuruga Port are the highlights.";
-"tsuruga_festival_location" = "Tsuruga City";
-"tsuruga_festival_feature1" = "Float Procession";
-"tsuruga_festival_feature2" = "Ship Festival";
-"tsuruga_festival_feature3" = "Port Town Festival";
+"tsuruga_festival_name" = "Festival Tsuruga";
+"tsuruga_festival_description" = "Festival tradisional yang mewarnai musim gugur Tsuruga. Arak-arakan kereta dan festival perahu di Pelabuhan Tsuruga jadi sorotan.";
+"tsuruga_festival_location" = "Kota Tsuruga";
+"tsuruga_festival_feature1" = "Arak-arakan kereta";
+"tsuruga_festival_feature2" = "Festival perahu";
+"tsuruga_festival_feature3" = "Festival kota pelabuhan";
 
-"wakasa_obama_festival_name" = "Wakasa Obama Festival";
-"wakasa_obama_festival_description" = "Obama City's summer festival. A seaside festival where you can enjoy Wakasa Bay's seafood and traditional performing arts.";
-"wakasa_obama_festival_location" = "Obama City";
-"wakasa_obama_festival_feature1" = "Wakasa Bay";
-"wakasa_obama_festival_feature2" = "Seafood";
-"wakasa_obama_festival_feature3" = "Traditional Arts";
+"wakasa_obama_festival_name" = "Festival Wakasa Obama";
+"wakasa_obama_festival_description" = "Festival musim panas Kota Obama. Festival tepi laut untuk menikmati hasil laut Teluk Wakasa dan seni tradisional.";
+"wakasa_obama_festival_location" = "Kota Obama";
+"wakasa_obama_festival_feature1" = "Teluk Wakasa";
+"wakasa_obama_festival_feature2" = "Hasil laut";
+"wakasa_obama_festival_feature3" = "Seni tradisional";
 
 // MARK: - Yamanashi Prefecture
-"fujigoko_fireworks_name" = "Fuji Five Lakes Fireworks Festival";
-"fujigoko_fireworks_description" = "A fireworks display launched against the backdrop of Mount Fuji. The beautiful collaboration of fireworks reflected on the lake surface and Mount Fuji is the highlight.";
-"fujigoko_fireworks_location" = "Fuji Five Lakes Area";
-"fujigoko_fireworks_feature1" = "Mount Fuji Backdrop";
-"fujigoko_fireworks_feature2" = "Lake Surface Fireworks";
-"fujigoko_fireworks_feature3" = "Scenic Collaboration";
+"fujigoko_fireworks_name" = "Festival Kembang Api Lima Danau Fuji";
+"fujigoko_fireworks_description" = "Pertunjukan kembang api dengan latar Gunung Fuji. Perpaduan indah antara kembang api yang memantul di danau dan Gunung Fuji jadi sorotan.";
+"fujigoko_fireworks_location" = "Kawasan Lima Danau Fuji";
+"fujigoko_fireworks_feature1" = "Latar Gunung Fuji";
+"fujigoko_fireworks_feature2" = "Kembang api di danau";
+"fujigoko_fireworks_feature3" = "Perpaduan panorama";
 
-"kofu_summer_festival_name" = "Kofu Summer Festival";
-"kofu_summer_festival_description" = "Kofu's representative summer festival. Various events are held as the summer version of the Takeda Shingen Festival.";
-"kofu_summer_festival_location" = "Central Kofu City";
+"kofu_summer_festival_name" = "Festival Musim Panas Kofu";
+"kofu_summer_festival_description" = "Festival khas musim panas Kofu. Beragam acara digelar sebagai versi musim panas festival Takeda Shingen.";
+"kofu_summer_festival_location" = "Pusat Kota Kofu";
 "kofu_summer_festival_feature1" = "Takeda Shingen";
-"kofu_summer_festival_feature2" = "Summer Events";
-"kofu_summer_festival_feature3" = "Kofu's Summer";
+"kofu_summer_festival_feature2" = "Acara musim panas";
+"kofu_summer_festival_feature3" = "Musim panas Kofu";
 
 "yoshida_himatsuri_name" = "Yoshida Fire Festival";
 "yoshida_himatsuri_description" = "A festival announcing the end of Mount Fuji climbing season. A magnificent festival known for giant torches and Mount Fuji fire rituals.";
@@ -3477,12 +3477,12 @@
 "yoshida_himatsuri_feature3" = "Season End Ceremony";
 
 // MARK: - Nagano Prefecture
-"suwako_fireworks_name" = "Lake Suwa Festival Fireworks";
-"suwako_fireworks_description" = "One of Japan's premier fireworks displays. Over 40,000 fireworks launched from Lake Suwa beautifully color the lake surface.";
-"suwako_fireworks_location" = "Suwa City, Lake Suwa";
-"suwako_fireworks_feature1" = "Over 40,000 Fireworks";
-"suwako_fireworks_feature2" = "Lake Fireworks";
-"suwako_fireworks_feature3" = "National Premier";
+"suwako_fireworks_name" = "Festival Kembang Api Danau Suwa";
+"suwako_fireworks_description" = "Salah satu pertunjukan kembang api terbesar nasional. Lebih dari 40.000 kembang api yang diluncurkan dari Danau Suwa mewarnai indah permukaan danau.";
+"suwako_fireworks_location" = "Suwa - Danau Suwa";
+"suwako_fireworks_feature1" = "Lebih dari 40.000 kembang api";
+"suwako_fireworks_feature2" = "Kembang api di atas danau";
+"suwako_fireworks_feature3" = "Terkemuka nasional";
 
 "matsumoto_bonbon_name" = "Matsumoto Bon-Bon";
 "matsumoto_bonbon_description" = "Matsumoto's summer festival with total citizen participation. Citizen dancing to the chant of 'Bon-Bon' enlivens Matsumoto's nights.";
@@ -3506,32 +3506,32 @@
 "gujo_odori_feature2" = "All-night Dancing";
 "gujo_odori_feature3" = "2-month Duration";
 
-"gero_onsen_festival_name" = "Gero Hot Springs Festival";
-"gero_onsen_festival_description" = "A summer festival held in Gero hot spring district. Hot spring portable shrines and fireworks displays enliven the spa town.";
-"gero_onsen_festival_location" = "Gero City";
-"gero_onsen_festival_feature1" = "Hot Spring Shrine";
-"gero_onsen_festival_feature2" = "Fireworks Display";
-"gero_onsen_festival_feature3" = "Spa Town Festival";
+"gero_onsen_festival_name" = "Festival Onsen Gero";
+"gero_onsen_festival_description" = "Festival musim panas di kawasan onsen Gero. Mikoshi onsen dan pertunjukan kembang api menyemarakkan kawasan onsen.";
+"gero_onsen_festival_location" = "Kota Gero";
+"gero_onsen_festival_feature1" = "Mikoshi onsen";
+"gero_onsen_festival_feature2" = "Pertunjukan kembang api";
+"gero_onsen_festival_feature3" = "Festival kawasan onsen";
 
-"hida_takayama_summer_festival_name" = "Hida Takayama Summer Festival";
-"hida_takayama_summer_festival_description" = "Takayama's summer festival known for its historic streets. Enjoy traditional floats and Hida culture.";
-"hida_takayama_summer_festival_location" = "Takayama City";
-"hida_takayama_summer_festival_feature1" = "Historic Streets";
-"hida_takayama_summer_festival_feature2" = "Traditional Floats";
-"hida_takayama_summer_festival_feature3" = "Hida Culture";
+"hida_takayama_summer_festival_name" = "Festival Musim Panas Hida Takayama";
+"hida_takayama_summer_festival_description" = "Festival musim panas Takayama yang terkenal dengan kota tua. Nikmati kereta hias tradisional dan budaya Hida.";
+"hida_takayama_summer_festival_location" = "Kota Takayama";
+"hida_takayama_summer_festival_feature1" = "Kota tua";
+"hida_takayama_summer_festival_feature2" = "Kereta hias tradisional";
+"hida_takayama_summer_festival_feature3" = "Budaya Hida";
 
 // MARK: - Shizuoka Prefecture
-"atami_kaijo_fireworks_name" = "Atami Marine Fireworks";
-"atami_kaijo_fireworks_description" = "Fireworks displays held throughout the year. Marine fireworks over Atami Bay color the spa town.";
-"atami_kaijo_fireworks_location" = "Atami City, Atami Bay";
-"atami_kaijo_fireworks_feature1" = "Year-round Events";
-"atami_kaijo_fireworks_feature2" = "Marine Fireworks";
-"atami_kaijo_fireworks_feature3" = "Spa Town";
+"atami_kaijo_fireworks_name" = "Festival Kembang Api Laut Atami";
+"atami_kaijo_fireworks_description" = "Pertunjukan kembang api yang digelar sepanjang tahun. Kembang api laut di atas Teluk Atami mewarnai kawasan onsen.";
+"atami_kaijo_fireworks_location" = "Atami - Teluk Atami";
+"atami_kaijo_fireworks_feature1" = "Digelar sepanjang tahun";
+"atami_kaijo_fireworks_feature2" = "Kembang api laut";
+"atami_kaijo_fireworks_feature3" = "Kawasan onsen";
 
-"shimizu_port_festival_name" = "Shimizu Port Festival";
-"shimizu_port_festival_description" = "A summer festival held at Shimizu Port. Ship parades and fireworks displays unique to port festivals are the highlights.";
-"shimizu_port_festival_location" = "Shizuoka City, Shimizu Ward";
-"shimizu_port_festival_feature1" = "Ship Parade";
+"shimizu_port_festival_name" = "Festival Pelabuhan Shimizu";
+"shimizu_port_festival_description" = "Festival musim panas di Pelabuhan Shimizu. Pawai perahu dan kembang api khas festival pelabuhan jadi sorotan.";
+"shimizu_port_festival_location" = "Kota Shizuoka, Distrik Shimizu";
+"shimizu_port_festival_feature1" = "Pawai perahu";
 "shimizu_port_festival_feature2" = "Port Festival Fireworks";
 "shimizu_port_festival_feature3" = "Shimizu Port";
 
