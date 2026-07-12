@@ -252,6 +252,7 @@ struct SouvenirDetailView<PlaceMap: View>: View {
                         // プランで位置を設定した場合のみ、検索ボタン群の下に地図を表示
                         placeMap()
                         descriptionCard
+                        MediumRectangleAdView(adUnitID: adUnitIdDetailBanner)
                         infoCard
                     }
                     .padding(.horizontal, 18)

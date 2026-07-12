@@ -72,6 +72,7 @@ struct GourmetDetailView<PlaceMap: View>: View {
                             placeMap()
 
                             descriptionCard
+                            MediumRectangleAdView(adUnitID: adUnitIdDetailBanner)
                             infoGrid
                             recommendationsCard
                         }

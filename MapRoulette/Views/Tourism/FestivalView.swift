@@ -2823,6 +2823,7 @@ struct FestivalDetailView: View {
                     VStack(alignment: .leading, spacing: 18) {
                         actionCard
                         descriptionCard
+                        MediumRectangleAdView(adUnitID: adUnitIdDetailBanner)
                         infoCard
                         if !item.features.isEmpty { highlightsCard }
                         if item.coordinate != nil { mapCard }
