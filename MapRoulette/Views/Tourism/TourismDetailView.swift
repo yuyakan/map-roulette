@@ -155,33 +155,19 @@ struct TourismDetailView: View {
                     }
                     .padding(.horizontal)
                     
-                    HStack {
-                        Spacer()
-                        BannerAdView()
-                            .frame(width: 320, height: 50)
-                        Spacer()
-                    }
+                    AdaptiveBannerAdView()
                     
                     RichGourmetSection(prefecture: prefecture)
-                    
-                    HStack {
-                        Spacer()
-                        BannerAdView()
-                            .frame(width: 320, height: 50)
-                        Spacer()
-                    }
-                    
+
+                    // グルメの下だけレクタングル(300x250)。eCPMが高い傾向のため試験的に採用。
+                    MediumRectangleAdView()
+
                     RichOnsenSection(prefecture: prefecture)
                     
                     RichSouvenirSection(prefecture: prefecture)
                         .padding(.top, prefecture.onsenItems.isEmpty ? 0 : 4)
                     
-                    HStack {
-                        Spacer()
-                        BannerAdView()
-                            .frame(width: 320, height: 50)
-                        Spacer()
-                    }
+                    AdaptiveBannerAdView()
                     
                     RichFestivalSection(prefecture: prefecture)
 
