@@ -246,19 +246,19 @@
 
 // Hokkaido
 "attraction_sapporo_snow_festival" = "Festival Salju Sapporo";
-"attraction_sapporo_snow_festival_desc" = "A winter festival of snow and ice that colors Sapporo";
+"attraction_sapporo_snow_festival_desc" = "Festival salju dan es yang mewarnai musim dingin Sapporo";
 "attraction_hakodate_mountain" = "Gunung Hakodate";
-"attraction_hakodate_mountain_desc" = "Symbol of Hakodate famous for its beautiful night view";
+"attraction_hakodate_mountain_desc" = "Ikon Hakodate yang terkenal dengan panorama malam indah";
 "attraction_asahiyama_zoo" = "Kebun Binatang Asahiyama";
-"attraction_asahiyama_zoo_desc" = "Zoo famous for its behavioral exhibits";
+"attraction_asahiyama_zoo_desc" = "Kebun binatang terkenal karena pameran perilaku hewannya";
 "attraction_furano_lavender" = "Ladang lavender Furano";
-"attraction_furano_lavender_desc" = "Spectacular purple landscape in summer";
+"attraction_furano_lavender_desc" = "Pemandangan ungu memukau di musim panas";
 "attraction_shiretoko_lakes" = "Lima Danau Shiretoko";
-"attraction_shiretoko_lakes_desc" = "Pristine forest of World Natural Heritage";
+"attraction_shiretoko_lakes_desc" = "Hutan purba Warisan Alam Dunia";
 "attraction_otaru_canal" = "Kanal Otaru";
-"attraction_otaru_canal_desc" = "Romantic canal woven with gas lamps and brick warehouses";
+"attraction_otaru_canal_desc" = "Kanal romantis berhias lampu gas dan gudang bata";
 "attraction_lake_toya" = "Danau Toya";
-"attraction_lake_toya_desc" = "Caldera lake famous for hot springs and fireworks";
+"attraction_lake_toya_desc" = "Danau kaldera terkenal dengan onsen dan kembang api";
 
 "food_genghis_khan" = "Genghis Khan (domba panggang)";
 "food_seafood_bowl" = "Nasi seafood";
@@ -268,17 +268,17 @@
 
 // Aomori
 "attraction_hirosaki_castle" = "Kastel Hirosaki";
-"attraction_hirosaki_castle_desc" = "Beautiful castle famous as a cherry blossom spot";
+"attraction_hirosaki_castle_desc" = "Kastel indah yang terkenal sebagai spot sakura";
 "attraction_oirase_stream" = "Aliran Sungai Oirase";
-"attraction_oirase_stream_desc" = "Stream known for its beautiful autumn foliage";
+"attraction_oirase_stream_desc" = "Aliran sungai yang tersohor karena keindahan daun musim gugur";
 "attraction_lake_towada" = "Danau Towada";
-"attraction_lake_towada_desc" = "Mystical beauty of a caldera lake";
+"attraction_lake_towada_desc" = "Keindahan misterius danau kaldera";
 "attraction_shirakami_mountains" = "Pegunungan Shirakami";
-"attraction_shirakami_mountains_desc" = "World's largest beech primeval forest";
+"attraction_shirakami_mountains_desc" = "Hutan beech purba terbesar di dunia";
 "attraction_nebuta_museum" = "Museum Nebuta Wa Rasse";
-"attraction_nebuta_museum_desc" = "Experience the charm of Aomori's summer festival";
+"attraction_nebuta_museum_desc" = "Rasakan pesona festival musim panas Aomori";
 "attraction_hakkoda_mountains" = "Pegunungan Hakkoda";
-"attraction_hakkoda_mountains_desc" = "Mountain resort where you can enjoy ice trees and spectacular views";
+"attraction_hakkoda_mountains_desc" = "Resor gunung untuk menikmati pohon salju dan pemandangan menakjubkan";
 
 "food_apple" = "Apel";
 "food_oma_tuna" = "Tuna Oma";
@@ -288,17 +288,17 @@
 
 // Iwate
 "attraction_chusonji" = "Kuil Chusonji";
-"attraction_chusonji_desc" = "Center of Hiraizumi's World Heritage";
+"attraction_chusonji_desc" = "Pusat Warisan Dunia Hiraizumi";
 "attraction_hiraizumi" = "Hiraizumi";
-"attraction_hiraizumi_desc" = "Reminiscent of the prosperity of the Oshu Fujiwara clan";
+"attraction_hiraizumi_desc" = "Mengenang kejayaan klan Fujiwara Oshu";
 "attraction_ryusendo_cave" = "Gua Ryusendo";
-"attraction_ryusendo_cave_desc" = "Blue beauty of underground lakes";
+"attraction_ryusendo_cave_desc" = "Keindahan biru danau bawah tanah";
 "attraction_hachimantai" = "Hachimantai";
-"attraction_hachimantai_desc" = "Highland nature and hot springs";
+"attraction_hachimantai_desc" = "Alam dataran tinggi dan onsen";
 "attraction_hanamaki_onsen" = "Onsen Hanamaki";
-"attraction_hanamaki_onsen_desc" = "Hot spring resort associated with Kenji Miyazawa";
+"attraction_hanamaki_onsen_desc" = "Onsen yang terkait dengan Kenji Miyazawa";
 "attraction_jodogahama" = "Pantai Jodogahama";
-"attraction_jodogahama_desc" = "Beautiful coast with contrasting white rocks and blue sea";
+"attraction_jodogahama_desc" = "Pesisir indah dengan kontras batu putih dan laut biru";
 
 "food_wanko_soba" = "Wanko soba";
 "food_morioka_cold_noodles" = "Mi dingin Morioka";
@@ -308,17 +308,17 @@
 
 // Akita
 "attraction_kakunodate_samurai_houses" = "Distrik Samurai Kakunodate";
-"attraction_kakunodate_samurai_houses_desc" = "Little Kyoto of Michinoku";
+"attraction_kakunodate_samurai_houses_desc" = "Kyoto kecil di Michinoku";
 "attraction_lake_tazawa" = "Danau Tazawa";
-"attraction_lake_tazawa_desc" = "Japan's deepest lake";
+"attraction_lake_tazawa_desc" = "Danau terdalam di Jepang";
 "attraction_namahage_museum" = "Museum Namahage";
-"attraction_namahage_museum_desc" = "Experience Akita's traditional culture";
+"attraction_namahage_museum_desc" = "Rasakan budaya tradisional Akita";
 "attraction_akita_kanto_festival" = "Festival Kanto Akita";
-"attraction_akita_kanto_festival_desc" = "Kanto lanterns that color summer nights";
+"attraction_akita_kanto_festival_desc" = "Lentera kanto yang menghiasi malam musim panas";
 "attraction_shirakami_mountains_akita" = "Pegunungan Shirakami";
-"attraction_shirakami_mountains_akita_desc" = "World Heritage beech primeval forest";
+"attraction_shirakami_mountains_akita_desc" = "Hutan beech purba Warisan Dunia";
 "attraction_nyuto_onsen" = "Onsen Nyuto";
-"attraction_nyuto_onsen_desc" = "Hot spring village with a hidden hot spring atmosphere";
+"attraction_nyuto_onsen_desc" = "Onsen bernuansa pemandian rahasia";
 
 "food_kiritanpo" = "Kiritanpo";
 "food_hinai_chicken" = "Ayam Hinai";
@@ -328,17 +328,17 @@
 
 // Miyagi
 "attraction_matsushima" = "Matsushima";
-"attraction_matsushima_desc" = "One of Japan's three scenic views";
+"attraction_matsushima_desc" = "Salah satu dari tiga pemandangan terindah Jepang";
 "attraction_sendai_castle" = "Reruntuhan Kastel Sendai";
-"attraction_sendai_castle_desc" = "Castle ruins of Date Masamune";
+"attraction_sendai_castle_desc" = "Reruntuhan kastel kediaman Date Masamune";
 "attraction_zao" = "Zao";
-"attraction_zao_desc" = "Famous for ice trees and skiing";
+"attraction_zao_desc" = "Terkenal dengan pohon salju dan ski";
 "attraction_naruko_onsen" = "Onsen Naruko";
-"attraction_naruko_onsen_desc" = "Historic hot spring resort";
+"attraction_naruko_onsen_desc" = "Onsen bersejarah";
 "attraction_zuiganji" = "Kuil Zuiganji";
-"attraction_zuiganji_desc" = "Famous temple of Matsushima";
+"attraction_zuiganji_desc" = "Kuil termasyhur di Matsushima";
 "attraction_akiu_onsen" = "Onsen Akiu";
-"attraction_akiu_onsen_desc" = "One of the three famous hot springs of Oshu, popular for beautiful skin";
+"attraction_akiu_onsen_desc" = "Salah satu dari tiga onsen ternama Oshu, digemari untuk kecantikan kulit";
 
 "food_beef_tongue" = "Lidah sapi";
 "food_sasukamaboko" = "Sasa-kamaboko";
@@ -348,17 +348,17 @@
 
 // Yamagata
 "attraction_yamadera" = "Kuil Yamadera";
-"attraction_yamadera_desc" = "Famous temple also visited by Matsuo Basho";
+"attraction_yamadera_desc" = "Kuil termasyhur yang pernah dikunjungi Matsuo Basho";
 "attraction_zao_onsen" = "Onsen Zao";
-"attraction_zao_onsen_desc" = "Hot spring resort famous for ice trees";
+"attraction_zao_onsen_desc" = "Onsen yang terkenal dengan pohon salju";
 "attraction_ginzan_onsen" = "Onsen Ginzan";
-"attraction_ginzan_onsen_desc" = "Hot spring town with Taisho romance atmosphere";
+"attraction_ginzan_onsen_desc" = "Kawasan onsen bernuansa romansa era Taisho";
 "attraction_mount_gassan" = "Gunung Gassan";
-"attraction_mount_gassan_desc" = "One of the three Dewa mountains";
+"attraction_mount_gassan_desc" = "Salah satu dari Tiga Gunung Dewa";
 "attraction_mount_haguro" = "Gunung Haguro";
-"attraction_mount_haguro_desc" = "Main shrine of Dewa Sanzan Shrine";
+"attraction_mount_haguro_desc" = "Kuil utama Dewa Sanzan";
 "attraction_mogami_river_cruise" = "Pesiar Sungai Mogami";
-"attraction_mogami_river_cruise_desc" = "Scenic river cruise experience";
+"attraction_mogami_river_cruise_desc" = "Pengalaman menyusuri sungai di tengah panorama indah";
 
 "food_cherry" = "Ceri";
 "food_yonezawa_beef" = "Daging sapi Yonezawa";
@@ -368,17 +368,17 @@
 
 // Fukushima
 "attraction_aizu_wakamatsu_castle" = "Kastel Aizu-Wakamatsu";
-"attraction_aizu_wakamatsu_castle_desc" = "Famous castle of the Byakkotai";
+"attraction_aizu_wakamatsu_castle_desc" = "Kastel termasyhur milik Byakkotai";
 "attraction_goshikinuma" = "Goshikinuma";
-"attraction_goshikinuma_desc" = "Mysterious colored pond group";
+"attraction_goshikinuma_desc" = "Gugusan telaga berwarna misterius";
 "attraction_spa_resort_hawaiians" = "Spa Resort Hawaiians";
-"attraction_spa_resort_hawaiians_desc" = "Tropical resort facility";
+"attraction_spa_resort_hawaiians_desc" = "Resor tropis sepanjang tahun";
 "attraction_ouchi_juku" = "Ouchi-juku";
-"attraction_ouchi_juku_desc" = "Edo period post town";
+"attraction_ouchi_juku_desc" = "Kota pos era Edo";
 "attraction_lake_inawashiro" = "Danau Inawashiro";
-"attraction_lake_inawashiro_desc" = "Beautiful lake called Tenkyo Lake";
+"attraction_lake_inawashiro_desc" = "Danau indah yang dijuluki Danau Cermin Langit";
 "attraction_abukuma_cave" = "Gua Abukuma";
-"attraction_abukuma_cave_desc" = "Mysterious underground world of limestone caves";
+"attraction_abukuma_cave_desc" = "Dunia bawah tanah misterius gua stalaktit";
 
 "food_kitakata_ramen" = "Ramen Kitakata";
 "food_aizu_chicken" = "Ayam Aizu";
@@ -388,17 +388,17 @@
 
 // Ibaraki
 "attraction_kairakuen" = "Taman Kairakuen";
-"attraction_kairakuen_desc" = "One of Japan's three famous gardens";
+"attraction_kairakuen_desc" = "Salah satu dari tiga taman termasyhur Jepang";
 "attraction_fukuroda_falls" = "Air Terjun Fukuroda";
-"attraction_fukuroda_falls_desc" = "One of Japan's three great waterfalls";
+"attraction_fukuroda_falls_desc" = "Salah satu dari tiga air terjun besar Jepang";
 "attraction_hitachi_seaside_park" = "Taman Tepi Laut Hitachi";
-"attraction_hitachi_seaside_park_desc" = "Park famous for nemophila";
+"attraction_hitachi_seaside_park_desc" = "Taman terkenal dengan bunga nemophila";
 "attraction_mount_tsukuba" = "Gunung Tsukuba";
-"attraction_mount_tsukuba_desc" = "Fuji in the west, Tsukuba in the east";
+"attraction_mount_tsukuba_desc" = "Fuji di barat, Tsukuba di timur";
 "attraction_oarai_coast" = "Pesisir Oarai";
-"attraction_oarai_coast_desc" = "Beautiful coastline";
+"attraction_oarai_coast_desc" = "Garis pantai yang indah";
 "attraction_ryujin_bridge" = "Jembatan Gantung Ryujin";
-"attraction_ryujin_bridge_desc" = "One of Honshu's longest pedestrian suspension bridges where you can also enjoy bungee jumping";
+"attraction_ryujin_bridge_desc" = "Jembatan gantung pejalan kaki terpanjang di Honshu, bisa bungee jumping";
 
 "food_natto" = "Natto";
 "food_anko_nabe" = "Nabe ikan monkfish";
@@ -408,17 +408,17 @@
 
 // Chiba
 "attraction_tokyo_disneyland" = "Tokyo Disneyland";
-"attraction_tokyo_disneyland_desc" = "The magical kingdom of dreams";
+"attraction_tokyo_disneyland_desc" = "Kerajaan impian dan sihir";
 "attraction_naritasan_shinshoji" = "Kuil Naritasan Shinshoji";
-"attraction_naritasan_shinshoji_desc" = "One of Kanto's three great Fudo temples";
+"attraction_naritasan_shinshoji_desc" = "Salah satu dari tiga kuil Fudo ternama Kanto";
 "attraction_kamogawa_seaworld" = "Kamogawa SeaWorld";
-"attraction_kamogawa_seaworld_desc" = "Encounters with marine life";
+"attraction_kamogawa_seaworld_desc" = "Berjumpa dengan makhluk laut";
 "attraction_choshi" = "Choshi";
-"attraction_choshi_desc" = "Easternmost city of Honshu";
+"attraction_choshi_desc" = "Kota paling timur di Honshu";
 "attraction_mother_farm" = "Mother Farm";
-"attraction_mother_farm_desc" = "Interaction with nature and animals";
+"attraction_mother_farm_desc" = "Berinteraksi dengan alam dan hewan";
 "attraction_tokyo_disneysea" = "Tokyo DisneySea";
-"attraction_tokyo_disneysea_desc" = "A world of ocean-themed adventure and imagination";
+"attraction_tokyo_disneysea_desc" = "Dunia petualangan dan imajinasi bertema laut";
 
 "food_peanuts" = "Kacang tanah";
 "food_loquat" = "Buah loquat";
@@ -428,17 +428,17 @@
 
 // Tochigi
 "attraction_nikko_toshogu" = "Kuil Nikko Toshogu";
-"attraction_nikko_toshogu_desc" = "Gorgeous mausoleum where Tokugawa Ieyasu rests";
+"attraction_nikko_toshogu_desc" = "Mausoleum megah tempat Tokugawa Ieyasu bersemayam";
 "attraction_kegon_falls" = "Air Terjun Kegon";
-"attraction_kegon_falls_desc" = "Famous waterfall of Nikko";
+"attraction_kegon_falls_desc" = "Air terjun termasyhur di Nikko";
 "attraction_lake_chuzenji" = "Danau Chuzenji";
-"attraction_lake_chuzenji_desc" = "Beautiful highland lake";
+"attraction_lake_chuzenji_desc" = "Danau dataran tinggi nan indah";
 "attraction_nasu_highlands" = "Dataran Tinggi Nasu";
-"attraction_nasu_highlands_desc" = "Popular as a resort area";
+"attraction_nasu_highlands_desc" = "Populer sebagai kawasan resor";
 "attraction_ashikaga_flower_park" = "Taman Bunga Ashikaga";
-"attraction_ashikaga_flower_park_desc" = "Famous for wisteria flowers";
+"attraction_ashikaga_flower_park_desc" = "Terkenal dengan bunga wisteria";
 "attraction_oya_museum" = "Museum Sejarah Oya";
-"attraction_oya_museum_desc" = "Former Oya stone quarry with mysterious underground space";
+"attraction_oya_museum_desc" = "Bekas tambang batu Oya dengan ruang bawah tanah misterius";
 
 "food_utsunomiya_gyoza" = "Gyoza Utsunomiya";
 "food_yuba" = "Yuba (kulit tahu)";
@@ -448,17 +448,17 @@
 
 // Gunma
 "attraction_kusatsu_onsen" = "Onsen Kusatsu";
-"attraction_kusatsu_onsen_desc" = "One of Japan's three famous hot springs";
+"attraction_kusatsu_onsen_desc" = "Salah satu dari tiga onsen ternama Jepang";
 "attraction_ikaho_onsen" = "Onsen Ikaho";
-"attraction_ikaho_onsen_desc" = "Hot spring famous for its stone steps";
+"attraction_ikaho_onsen_desc" = "Onsen yang terkenal dengan jalan tangga batu";
 "attraction_oze" = "Oze";
-"attraction_oze_desc" = "Marshland where skunk cabbage blooms";
+"attraction_oze_desc" = "Rawa tempat bunga mizubasho mekar";
 "attraction_tomioka_silk_mill" = "Pabrik Sutra Tomioka";
-"attraction_tomioka_silk_mill_desc" = "World Heritage silk industry site";
+"attraction_tomioka_silk_mill_desc" = "Situs industri sutra Warisan Dunia";
 "attraction_lake_haruna" = "Danau Haruna";
-"attraction_lake_haruna_desc" = "Caldera lake of Mount Haruna";
+"attraction_lake_haruna_desc" = "Danau kaldera Gunung Haruna";
 "attraction_mount_tanigawa" = "Gunung Tanigawa";
-"attraction_mount_tanigawa_desc" = "Spectacular views and trekking enjoyed by ropeway";
+"attraction_mount_tanigawa_desc" = "Pemandangan menakjubkan dan trekking dengan kereta gantung";
 
 "food_yaki_manju" = "Yaki manju";
 "food_shimonita_negi" = "Daun bawang Shimonita";
@@ -468,17 +468,17 @@
 
 // Saitama
 "attraction_kawagoe" = "Kawagoe";
-"attraction_kawagoe_desc" = "Storehouse town called Little Edo";
+"attraction_kawagoe_desc" = "Kota gudang yang dijuluki Edo Kecil";
 "attraction_chichibu" = "Chichibu";
-"attraction_chichibu_desc" = "Nature-rich mountain town";
+"attraction_chichibu_desc" = "Kota pegunungan yang kaya alam";
 "attraction_nagatoro" = "Nagatoro";
-"attraction_nagatoro_desc" = "Scenic spot famous for rock formations";
+"attraction_nagatoro_desc" = "Tempat wisata terkenal dengan hamparan batu";
 "attraction_railway_museum" = "Museum Kereta Api";
-"attraction_railway_museum_desc" = "Learn about railway history";
+"attraction_railway_museum_desc" = "Belajar sejarah kereta api";
 "attraction_ranzan_valley" = "Lembah Ranzan";
-"attraction_ranzan_valley_desc" = "Valley beautiful for autumn foliage";
+"attraction_ranzan_valley_desc" = "Lembah dengan daun musim gugur yang indah";
 "attraction_musashi_ichinomiya_hikawa_shrine" = "Kuil Musashi Ichinomiya Hikawa";
-"attraction_musashi_ichinomiya_hikawa_shrine_desc" = "Prestigious shrine as the first shrine of Musashi Province";
+"attraction_musashi_ichinomiya_hikawa_shrine_desc" = "Kuil bergengsi sebagai kuil utama Provinsi Musashi";
 
 "food_kawagoe_sweet_potato" = "Ubi Kawagoe";
 "food_chichibu_soba" = "Soba Chichibu";
@@ -488,21 +488,21 @@
 
 // Tokyo
 "attraction_tokyo_skytree" = "Tokyo Skytree";
-"attraction_tokyo_skytree_desc" = "Tokyo's new symbol at 634m high";
+"attraction_tokyo_skytree_desc" = "Ikon baru Tokyo setinggi 634 m";
 "attraction_sensoji" = "Kuil Sensoji";
-"attraction_sensoji_desc" = "Tokyo's oldest temple";
+"attraction_sensoji_desc" = "Kuil tertua di Tokyo";
 "attraction_imperial_palace" = "Istana Kekaisaran";
-"attraction_imperial_palace_desc" = "Residence of His Majesty the Emperor";
+"attraction_imperial_palace_desc" = "Kediaman Yang Mulia Kaisar";
 "attraction_shibuya_crossing" = "Persimpangan Shibuya";
-"attraction_shibuya_crossing_desc" = "World's most famous intersection";
+"attraction_shibuya_crossing_desc" = "Persimpangan paling terkenal di dunia";
 "attraction_tokyo_tower" = "Menara Tokyo";
-"attraction_tokyo_tower_desc" = "Beautiful red and white radio tower";
+"attraction_tokyo_tower_desc" = "Menara pemancar merah-putih yang indah";
 "attraction_meiji_shrine" = "Kuil Meiji";
-"attraction_meiji_shrine_desc" = "Shrine standing in a sacred forest in the city center";
+"attraction_meiji_shrine_desc" = "Kuil di tengah hutan suci di jantung kota";
 "attraction_odaiba" = "Odaiba";
-"attraction_odaiba_desc" = "Futuristic area with beautiful Rainbow Bridge and night views";
+"attraction_odaiba_desc" = "Kawasan futuristik dengan Rainbow Bridge dan panorama malam indah";
 "attraction_ueno_zoo" = "Kebun Binatang Ueno";
-"attraction_ueno_zoo_desc" = "Japan's oldest zoo, famous for pandas";
+"attraction_ueno_zoo_desc" = "Kebun binatang tertua di Jepang, terkenal dengan pandanya";
 
 "food_edomae_sushi" = "Sushi Edomae";
 "food_monjayaki" = "Monjayaki";
@@ -512,19 +512,19 @@
 
 // Kanagawa
 "attraction_kamakura_daibutsu" = "Buddha Raksasa Kamakura";
-"attraction_kamakura_daibutsu_desc" = "Bronze Great Buddha of Kotokuin Temple";
+"attraction_kamakura_daibutsu_desc" = "Buddha perunggu raksasa Kuil Kotokuin";
 "attraction_enoshima" = "Enoshima";
-"attraction_enoshima_desc" = "Popular tourist destination in Shonan";
+"attraction_enoshima_desc" = "Destinasi wisata populer di Shonan";
 "attraction_hakone" = "Hakone";
-"attraction_hakone_desc" = "Town of hot springs and art";
+"attraction_hakone_desc" = "Kota onsen dan seni";
 "attraction_yokohama_chinatown" = "Pecinan Yokohama";
-"attraction_yokohama_chinatown_desc" = "Japan's largest Chinatown";
+"attraction_yokohama_chinatown_desc" = "Pecinan terbesar di Jepang";
 "attraction_minato_mirai" = "Minato Mirai";
-"attraction_minato_mirai_desc" = "Yokohama's future city";
+"attraction_minato_mirai_desc" = "Kota masa depan Yokohama";
 "attraction_owakudani" = "Owakudani";
-"attraction_owakudani_desc" = "Dynamic scenery created by Hakone's volcanic activity";
+"attraction_owakudani_desc" = "Pemandangan dahsyat hasil aktivitas vulkanik Hakone";
 "attraction_hokokuji" = "Kuil Hokokuji";
-"attraction_hokokuji_desc" = "Kamakura Zen temple famous for its beautiful bamboo grove";
+"attraction_hokokuji_desc" = "Kuil Zen Kamakura yang terkenal dengan hutan bambu indah";
 
 "food_shumai" = "Siomai";
 "food_kamakura_vegetables" = "Sayuran Kamakura";
@@ -534,17 +534,17 @@
 
 // Niigata
 "attraction_sado_island" = "Pulau Sado";
-"attraction_sado_island_desc" = "Island of gold mines and nature";
+"attraction_sado_island_desc" = "Pulau tambang emas dan alam";
 "attraction_naeba_ski_resort" = "Resor Ski Naeba";
-"attraction_naeba_ski_resort_desc" = "Winter sports resort";
+"attraction_naeba_ski_resort_desc" = "Resor olahraga musim dingin";
 "attraction_yahiko_shrine" = "Kuil Yahiko";
-"attraction_yahiko_shrine_desc" = "Ancient shrine of Echigo Province";
+"attraction_yahiko_shrine_desc" = "Kuil kuno utama Provinsi Echigo";
 "attraction_joetsu_kokusai_ski_resort" = "Resor Ski Internasional Joetsu";
-"attraction_joetsu_kokusai_ski_resort_desc" = "Vast ski area";
+"attraction_joetsu_kokusai_ski_resort_desc" = "Area ski yang luas";
 "attraction_myoko_kogen" = "Dataran Tinggi Myoko";
-"attraction_myoko_kogen_desc" = "Nature of the four seasons";
+"attraction_myoko_kogen_desc" = "Alam empat musim";
 "attraction_kiyotsu_gorge" = "Ngarai Kiyotsu";
-"attraction_kiyotsu_gorge_desc" = "One of Japan's three great gorges, also enjoy art works";
+"attraction_kiyotsu_gorge_desc" = "Salah satu dari tiga ngarai besar Jepang, ada karya seni juga";
 
 "food_niigata_rice" = "Beras Niigata";
 "food_noppe" = "Noppe";
@@ -554,19 +554,19 @@
 
 // Nagano
 "attraction_zenkoji" = "Kuil Zenkoji";
-"attraction_zenkoji_desc" = "Non-sectarian ancient temple";
+"attraction_zenkoji_desc" = "Kuil kuno tanpa aliran tertentu";
 "attraction_karuizawa" = "Karuizawa";
-"attraction_karuizawa_desc" = "Popular as a summer resort";
+"attraction_karuizawa_desc" = "Populer sebagai tempat peristirahatan musim panas";
 "attraction_kamikochi" = "Kamikochi";
-"attraction_kamikochi_desc" = "One of Japan's premier mountain scenic spots";
+"attraction_kamikochi_desc" = "Salah satu panorama pegunungan terbaik Jepang";
 "attraction_hakuba" = "Hakuba";
-"attraction_hakuba_desc" = "Northern Alps resort";
+"attraction_hakuba_desc" = "Resor Pegunungan Alpen Utara";
 "attraction_matsumoto_castle" = "Kastel Matsumoto";
-"attraction_matsumoto_castle_desc" = "National treasure with existing castle keep";
+"attraction_matsumoto_castle_desc" = "Harta nasional dengan menara asli";
 "attraction_lake_suwa" = "Danau Suwa";
-"attraction_lake_suwa_desc" = "Beautiful lake famous for fireworks festivals";
+"attraction_lake_suwa_desc" = "Danau indah yang terkenal dengan festival kembang api";
 "attraction_togakushi" = "Togakushi";
-"attraction_togakushi_desc" = "Famous as a ninja village and soba production area";
+"attraction_togakushi_desc" = "Terkenal sebagai desa ninja dan sentra soba";
 
 "food_shinshu_soba" = "Soba Shinshu";
 "food_oyaki" = "Oyaki";
@@ -576,17 +576,17 @@
 
 // Yamanashi
 "attraction_mount_fuji" = "Gunung Fuji";
-"attraction_mount_fuji_desc" = "Japan's highest sacred mountain";
+"attraction_mount_fuji_desc" = "Gunung suci tertinggi di Jepang";
 "attraction_lake_kawaguchi" = "Danau Kawaguchi";
-"attraction_lake_kawaguchi_desc" = "One of the Fuji Five Lakes";
+"attraction_lake_kawaguchi_desc" = "Salah satu dari Lima Danau Fuji";
 "attraction_shosenkyo" = "Ngarai Shosenkyo";
-"attraction_shosenkyo_desc" = "Beautiful granite gorge";
+"attraction_shosenkyo_desc" = "Ngarai granit yang indah";
 "attraction_lake_yamanaka" = "Danau Yamanaka";
-"attraction_lake_yamanaka_desc" = "Largest of the Fuji Five Lakes";
+"attraction_lake_yamanaka_desc" = "Danau terbesar di Lima Danau Fuji";
 "attraction_oshino_hakkai" = "Oshino Hakkai";
-"attraction_oshino_hakkai_desc" = "Spring water group of Mount Fuji";
+"attraction_oshino_hakkai_desc" = "Gugusan mata air Gunung Fuji";
 "attraction_takeda_shrine" = "Kuil Takeda";
-"attraction_takeda_shrine_desc" = "Shrine dedicated to Takeda Shingen for victory";
+"attraction_takeda_shrine_desc" = "Kuil kemenangan yang memuja Takeda Shingen";
 
 "food_hoto" = "Hoto";
 "food_shingen_mochi" = "Shingen mochi";
@@ -596,19 +596,19 @@
 
 // Shizuoka
 "attraction_mount_fuji_shizuoka" = "Gunung Fuji";
-"attraction_mount_fuji_shizuoka_desc" = "Symbol of Japan";
+"attraction_mount_fuji_shizuoka_desc" = "Ikon Jepang";
 "attraction_izu_peninsula" = "Semenanjung Izu";
-"attraction_izu_peninsula_desc" = "Peninsula of hot springs and resorts";
+"attraction_izu_peninsula_desc" = "Semenanjung onsen dan resor";
 "attraction_atami_onsen" = "Onsen Atami";
-"attraction_atami_onsen_desc" = "Historic hot spring resort";
+"attraction_atami_onsen_desc" = "Onsen yang telah ada sejak lama";
 "attraction_lake_hamana" = "Danau Hamana";
-"attraction_lake_hamana_desc" = "Lake famous for eel";
+"attraction_lake_hamana_desc" = "Danau yang terkenal dengan belutnya";
 "attraction_kunozan_toshogu" = "Kuil Kunozan Toshogu";
-"attraction_kunozan_toshogu_desc" = "First burial site of Tokugawa Ieyasu";
+"attraction_kunozan_toshogu_desc" = "Tempat pemakaman pertama Tokugawa Ieyasu";
 "attraction_shiraito_falls" = "Air Terjun Shiraito";
-"attraction_shiraito_falls_desc" = "Beautiful waterfall like silk threads at the foot of Mount Fuji";
+"attraction_shiraito_falls_desc" = "Air terjun indah bagai benang sutra di kaki Gunung Fuji";
 "attraction_miho_matsubara" = "Hutan Pinus Miho";
-"attraction_miho_matsubara_desc" = "World Heritage component with spectacular views of Mount Fuji and pine forest";
+"attraction_miho_matsubara_desc" = "Panorama Fuji dan hutan pinus, bagian Warisan Dunia";
 
 "food_shizuoka_tea" = "Teh Shizuoka";
 "food_unagi" = "Belut";
@@ -618,17 +618,17 @@
 
 // Aichi
 "attraction_nagoya_castle" = "Kastel Nagoya";
-"attraction_nagoya_castle_desc" = "Famous for its golden shachihoko";
+"attraction_nagoya_castle_desc" = "Terkenal dengan shachihoko emas";
 "attraction_atsuta_shrine" = "Kuil Atsuta";
-"attraction_atsuta_shrine_desc" = "Shrine housing one of the Three Sacred Treasures";
+"attraction_atsuta_shrine_desc" = "Kuil yang menyimpan salah satu Tiga Pusaka Suci";
 "attraction_inuyama_castle" = "Kastel Inuyama";
-"attraction_inuyama_castle_desc" = "National treasure with existing castle keep";
+"attraction_inuyama_castle_desc" = "Harta nasional dengan menara asli";
 "attraction_chita_peninsula" = "Semenanjung Chita";
-"attraction_chita_peninsula_desc" = "Seafood and hot springs";
+"attraction_chita_peninsula_desc" = "Hasil laut dan onsen";
 "attraction_korankei" = "Korankei";
-"attraction_korankei_desc" = "Famous spot for autumn foliage";
+"attraction_korankei_desc" = "Tempat termasyhur untuk daun musim gugur";
 "attraction_linear_railway_museum" = "Museum Kereta Linear";
-"attraction_linear_railway_museum_desc" = "Museum where you can experience the latest railway technology";
+"attraction_linear_railway_museum_desc" = "Museum untuk merasakan teknologi kereta terbaru";
 
 "food_miso_katsu" = "Miso katsu";
 "food_hitsumabushi" = "Hitsumabushi";
@@ -638,17 +638,17 @@
 
 // Mie
 "attraction_ise_shrine" = "Kuil Agung Ise";
-"attraction_ise_shrine_desc" = "Spiritual home of the Japanese people";
+"attraction_ise_shrine_desc" = "Kampung batin bangsa Jepang";
 "attraction_toba_aquarium" = "Akuarium Toba";
-"attraction_toba_aquarium_desc" = "Treasure trove of marine life";
+"attraction_toba_aquarium_desc" = "Gudang kekayaan biota laut";
 "attraction_kumano_kodo" = "Jalur Kumano Kodo";
-"attraction_kumano_kodo_desc" = "World Heritage pilgrimage routes";
+"attraction_kumano_kodo_desc" = "Jalur ziarah Warisan Dunia";
 "attraction_nabana_no_sato" = "Nabana no Sato";
-"attraction_nabana_no_sato_desc" = "Famous for illuminations";
+"attraction_nabana_no_sato_desc" = "Terkenal dengan iluminasi";
 "attraction_iga_ueno_castle" = "Kastel Iga Ueno";
-"attraction_iga_ueno_castle_desc" = "Castle in the ninja village";
+"attraction_iga_ueno_castle_desc" = "Kastel di desa ninja";
 "attraction_shima_spain_village" = "Desa Spanyol Shima";
-"attraction_shima_spain_village_desc" = "Theme park where you can enjoy Spanish culture and atmosphere";
+"attraction_shima_spain_village_desc" = "Taman tema untuk menikmati budaya dan suasana Spanyol";
 
 "food_ise_ebi" = "Lobster Ise";
 "food_matsusaka_beef" = "Daging sapi Matsusaka";
@@ -658,17 +658,17 @@
 
 // Gifu
 "attraction_shirakawago" = "Shirakawa-go";
-"attraction_shirakawago_desc" = "World Heritage gassho-zukuri village";
+"attraction_shirakawago_desc" = "Desa gassho-zukuri Warisan Dunia";
 "attraction_hida_takayama" = "Hida Takayama";
-"attraction_hida_takayama_desc" = "Beautiful old townscape";
+"attraction_hida_takayama_desc" = "Kawasan kota tua yang indah";
 "attraction_gero_onsen" = "Onsen Gero";
-"attraction_gero_onsen_desc" = "One of Japan's three famous hot springs";
+"attraction_gero_onsen_desc" = "Salah satu dari tiga onsen ternama Jepang";
 "attraction_kinkazan" = "Gunung Kinka";
-"attraction_kinkazan_desc" = "View from Gifu Castle";
+"attraction_kinkazan_desc" = "Panorama dari Kastel Gifu";
 "attraction_magome_juku" = "Magome-juku";
-"attraction_magome_juku_desc" = "Post town on the Nakasendo";
+"attraction_magome_juku_desc" = "Kota pos di jalur Nakasendo";
 "attraction_okuhida_onsen" = "Onsen Okuhida";
-"attraction_okuhida_onsen_desc" = "Hidden hot spring villages scattered at the foot of the Northern Alps";
+"attraction_okuhida_onsen_desc" = "Gugusan onsen tersembunyi di kaki Alpen Utara";
 
 "food_hida_beef" = "Daging sapi Hida";
 "food_hoba_miso" = "Hoba miso";
@@ -678,17 +678,17 @@
 
 // Fukui
 "attraction_tojinbo" = "Tebing Tojinbo";
-"attraction_tojinbo_desc" = "Scenic cliff landscape";
+"attraction_tojinbo_desc" = "Tempat wisata tebing curam";
 "attraction_eiheiji" = "Kuil Eiheiji";
-"attraction_eiheiji_desc" = "Head temple of Soto Zen";
+"attraction_eiheiji_desc" = "Kuil pusat Zen Soto";
 "attraction_dinosaur_museum" = "Museum Dinosaurus Fukui";
-"attraction_dinosaur_museum_desc" = "Treasure trove of dinosaur fossils";
+"attraction_dinosaur_museum_desc" = "Gudang fosil dinosaurus";
 "attraction_ichijodani_asakura_ruins" = "Reruntuhan Asakura Ichijodani";
-"attraction_ichijodani_asakura_ruins_desc" = "Castle town ruins from the Warring States period";
+"attraction_ichijodani_asakura_ruins_desc" = "Reruntuhan kota kastel era Sengoku";
 "attraction_wakasa_bay" = "Teluk Wakasa";
-"attraction_wakasa_bay_desc" = "Beauty of ria coastline";
+"attraction_wakasa_bay_desc" = "Keindahan pantai berjenis ria";
 "attraction_mikata_goko" = "Lima Danau Mikata";
-"attraction_mikata_goko_desc" = "Five mysterious lakes each with different colors";
+"attraction_mikata_goko_desc" = "Lima danau misterius dengan warna berbeda";
 
 "food_echizen_crab" = "Kepiting Echizen";
 "food_echizen_soba" = "Soba Echizen";
@@ -698,17 +698,17 @@
 
 // Ishikawa
 "attraction_kenrokuen" = "Taman Kenrokuen";
-"attraction_kenrokuen_desc" = "One of Japan's three famous gardens";
+"attraction_kenrokuen_desc" = "Salah satu dari tiga taman termasyhur Jepang";
 "attraction_kanazawa_castle" = "Kastel Kanazawa";
-"attraction_kanazawa_castle_desc" = "Castle of the Kaga Domain worth a million koku";
+"attraction_kanazawa_castle_desc" = "Kastel Domain Kaga yang bernilai sejuta koku";
 "attraction_wakura_onsen" = "Onsen Wakura";
-"attraction_wakura_onsen_desc" = "Famous hot spring of Noto Peninsula";
+"attraction_wakura_onsen_desc" = "Onsen ternama di Semenanjung Noto";
 "attraction_chirihama_nagisa_driveway" = "Jalan Pantai Chirihama";
-"attraction_chirihama_nagisa_driveway_desc" = "Beach where you can drive on sand";
+"attraction_chirihama_nagisa_driveway_desc" = "Pantai yang bisa dilewati mobil";
 "attraction_wajima_morning_market" = "Pasar Pagi Wajima";
-"attraction_wajima_morning_market_desc" = "Morning market that has continued for a thousand years";
+"attraction_wajima_morning_market_desc" = "Pasar pagi yang bertahan seribu tahun";
 "attraction_higashi_chaya_district" = "Distrik Higashi Chaya";
-"attraction_higashi_chaya_district_desc" = "Historic geisha district in Kanazawa where you can experience geiko culture";
+"attraction_higashi_chaya_district_desc" = "Distrik chaya bersejarah Kanazawa, rasakan budaya geiko";
 
 "food_kaga_cuisine" = "Masakan Kaga";
 "food_kanazawa_curry" = "Kari Kanazawa";
@@ -718,17 +718,17 @@
 
 // Toyama
 "attraction_tateyama_kurobe_alpine_route" = "Rute Alpine Tateyama Kurobe";
-"attraction_tateyama_kurobe_alpine_route_desc" = "Spectacular route above the clouds";
+"attraction_tateyama_kurobe_alpine_route_desc" = "Rute panorama menakjubkan di atas awan";
 "attraction_kurobe_dam" = "Bendungan Kurobe";
-"attraction_kurobe_dam_desc" = "One of Japan's largest arch dams";
+"attraction_kurobe_dam_desc" = "Salah satu bendungan busur terbesar Jepang";
 "attraction_gokayama" = "Gokayama";
-"attraction_gokayama_desc" = "Gassho-zukuri village";
+"attraction_gokayama_desc" = "Desa gassho-zukuri";
 "attraction_toyama_bay" = "Teluk Toyama";
-"attraction_toyama_bay_desc" = "Treasure trove of seafood";
+"attraction_toyama_bay_desc" = "Gudang kekayaan hasil laut";
 "attraction_shomyo_falls" = "Air Terjun Shomyo";
-"attraction_shomyo_falls_desc" = "Waterfall with Japan's greatest drop";
+"attraction_shomyo_falls_desc" = "Air terjun dengan jatuhan tertinggi di Jepang";
 "attraction_unazuki_onsen" = "Onsen Unazuki";
-"attraction_unazuki_onsen_desc" = "Hot spring resort that serves as the starting point for the Kurobe Gorge Railway";
+"attraction_unazuki_onsen_desc" = "Onsen sebagai titik awal kereta Ngarai Kurobe";
 
 "food_shiro_ebi" = "Udang putih";
 "food_hotaru_ika" = "Cumi kunang-kunang";
@@ -738,17 +738,17 @@
 
 // Shiga
 "attraction_lake_biwa" = "Danau Biwa";
-"attraction_lake_biwa_desc" = "Japan's largest lake";
+"attraction_lake_biwa_desc" = "Danau terbesar di Jepang";
 "attraction_hikone_castle" = "Kastel Hikone";
-"attraction_hikone_castle_desc" = "National treasure famous for Hikonyan";
+"attraction_hikone_castle_desc" = "Harta nasional yang terkenal berkat Hikonyan";
 "attraction_hieizan_enryakuji" = "Kuil Enryakuji Gunung Hiei";
-"attraction_hieizan_enryakuji_desc" = "Head temple of Tendai Buddhism";
+"attraction_hieizan_enryakuji_desc" = "Kuil pusat Buddhisme Tendai";
 "attraction_azuchi_castle_ruins" = "Reruntuhan Kastel Azuchi";
-"attraction_azuchi_castle_ruins_desc" = "Castle ruins of Oda Nobunaga";
+"attraction_azuchi_castle_ruins_desc" = "Reruntuhan kastel kediaman Oda Nobunaga";
 "attraction_omihachiman" = "Omihachiman";
-"attraction_omihachiman_desc" = "Town of waterways and merchants";
+"attraction_omihachiman_desc" = "Kota kanal air dan saudagar";
 "attraction_metasequoia_avenue" = "Jalan Metasequoia";
-"attraction_metasequoia_avenue_desc" = "Spectacular tree-lined avenue created by about 500 metasequoia trees";
+"attraction_metasequoia_avenue_desc" = "Jalan berpohon menakjubkan dari sekitar 500 metasequoia";
 
 "food_omi_beef" = "Daging sapi Omi";
 "food_funa_sushi" = "Funa sushi";
@@ -758,19 +758,19 @@
 
 // Kyoto
 "attraction_kiyomizu_dera" = "Kuil Kiyomizu-dera";
-"attraction_kiyomizu_dera_desc" = "World Heritage representing Kyoto";
+"attraction_kiyomizu_dera_desc" = "Warisan Dunia yang mewakili Kyoto";
 "attraction_kinkakuji" = "Kinkaku-ji (Paviliun Emas)";
-"attraction_kinkakuji_desc" = "Beautiful temple shining in gold";
+"attraction_kinkakuji_desc" = "Kuil indah berkilau keemasan";
 "attraction_fushimi_inari_taisha" = "Kuil Fushimi Inari";
-"attraction_fushimi_inari_taisha_desc" = "Inari shrine famous for thousands of torii gates";
+"attraction_fushimi_inari_taisha_desc" = "Kuil Inari yang terkenal dengan ribuan gerbang torii";
 "attraction_arashiyama" = "Arashiyama";
-"attraction_arashiyama_desc" = "Famous spot for bamboo grove path and cherry blossoms/autumn foliage";
+"attraction_arashiyama_desc" = "Tempat termasyhur dengan jalan hutan bambu serta sakura/daun musim gugur";
 "attraction_philosophers_path" = "Jalan Filsuf";
-"attraction_philosophers_path_desc" = "Beautiful walking path lined with cherry trees";
+"attraction_philosophers_path_desc" = "Jalur pejalan indah berjajar pohon sakura";
 "attraction_amanohashidate" = "Amanohashidate";
-"attraction_amanohashidate_desc" = "One of Japan's three scenic views, famous for the inverted view";
+"attraction_amanohashidate_desc" = "Salah satu dari tiga pemandangan terindah Jepang, terkenal dengan cara memandang terbalik";
 "attraction_byodoin" = "Kuil Byodo-in";
-"attraction_byodoin_desc" = "Beautiful temple depicted on the 10-yen coin";
+"attraction_byodoin_desc" = "Kuil indah yang tergambar di koin 10 yen";
 
 "food_yudofu" = "Yudofu (tahu rebus)";
 "food_kyoto_kaiseki" = "Kaiseki Kyoto";
@@ -780,19 +780,19 @@
 
 // Hyogo
 "attraction_himeji_castle" = "Kastel Himeji";
-"attraction_himeji_castle_desc" = "World Heritage called White Heron Castle";
+"attraction_himeji_castle_desc" = "Warisan Dunia yang dijuluki Kastel Bangau Putih";
 "attraction_arima_onsen" = "Onsen Arima";
-"attraction_arima_onsen_desc" = "One of Japan's three oldest hot springs";
+"attraction_arima_onsen_desc" = "Salah satu dari tiga onsen tertua Jepang";
 "attraction_kobe_port_tower" = "Menara Pelabuhan Kobe";
-"attraction_kobe_port_tower_desc" = "Symbol of Kobe Port";
+"attraction_kobe_port_tower_desc" = "Ikon Pelabuhan Kobe";
 "attraction_takeda_castle_ruins" = "Reruntuhan Kastel Takeda";
-"attraction_takeda_castle_ruins_desc" = "Castle in the Sky";
+"attraction_takeda_castle_ruins_desc" = "Kastel di angkasa";
 "attraction_awaji_island" = "Pulau Awaji";
-"attraction_awaji_island_desc" = "Island of flowers and greenery";
+"attraction_awaji_island_desc" = "Pulau bunga dan hijauan";
 "attraction_mount_rokko" = "Gunung Rokko";
-"attraction_mount_rokko_desc" = "Popular spot for panoramic views of Kobe's night scene";
+"attraction_mount_rokko_desc" = "Spot populer untuk memandang panorama malam Kobe";
 "attraction_takarazuka_grand_theater" = "Teater Agung Takarazuka";
-"attraction_takarazuka_grand_theater_desc" = "Sacred place of Takarazuka Revue";
+"attraction_takarazuka_grand_theater_desc" = "Tempat sakral Revue Takarazuka";
 
 "food_kobe_beef" = "Daging sapi Kobe";
 "food_akashiyaki" = "Akashiyaki";
@@ -802,17 +802,17 @@
 
 // Nara
 "attraction_todaiji" = "Kuil Todai-ji";
-"attraction_todaiji_desc" = "Famous for the Great Buddha of Nara";
+"attraction_todaiji_desc" = "Terkenal dengan Buddha Raksasa Nara";
 "attraction_nara_park" = "Taman Nara";
-"attraction_nara_park_desc" = "Park where you can interact with deer";
+"attraction_nara_park_desc" = "Taman tempat berinteraksi dengan rusa";
 "attraction_kasuga_taisha" = "Kuil Kasuga Taisha";
-"attraction_kasuga_taisha_desc" = "Thousands of stone lanterns";
+"attraction_kasuga_taisha_desc" = "Ribuan lentera batu";
 "attraction_horyuji" = "Kuil Horyu-ji";
-"attraction_horyuji_desc" = "World's oldest wooden architecture";
+"attraction_horyuji_desc" = "Arsitektur kayu tertua di dunia";
 "attraction_yoshinoyama" = "Gunung Yoshino";
-"attraction_yoshinoyama_desc" = "Famous cherry blossom spot";
+"attraction_yoshinoyama_desc" = "Tempat termasyhur untuk sakura";
 "attraction_kofukuji" = "Kuil Kofuku-ji";
-"attraction_kofukuji_desc" = "Ancient temple famous for its beautiful five-story pagoda";
+"attraction_kofukuji_desc" = "Kuil kuno yang terkenal dengan pagoda lima tingkat nan indah";
 
 "food_kakinoha_sushi" = "Sushi daun kesemek";
 "food_miwa_somen" = "Somen Miwa";
@@ -822,17 +822,17 @@
 
 // Wakayama
 "attraction_kumano_kodo_wakayama" = "Jalur Kumano Kodo";
-"attraction_kumano_kodo_wakayama_desc" = "World Heritage pilgrimage routes";
+"attraction_kumano_kodo_wakayama_desc" = "Jalur ziarah Warisan Dunia";
 "attraction_koyasan" = "Koyasan";
-"attraction_koyasan_desc" = "Sacred place of Shingon Buddhism";
+"attraction_koyasan_desc" = "Tempat suci Buddhisme Shingon";
 "attraction_shirahama_onsen" = "Onsen Shirahama";
-"attraction_shirahama_onsen_desc" = "Hot spring resort with white sandy beaches";
+"attraction_shirahama_onsen_desc" = "Onsen berpantai pasir putih";
 "attraction_nachi_falls" = "Air Terjun Nachi";
-"attraction_nachi_falls_desc" = "One of Japan's three great waterfalls";
+"attraction_nachi_falls_desc" = "Salah satu dari tiga air terjun besar Jepang";
 "attraction_adventure_world" = "Adventure World";
-"attraction_adventure_world_desc" = "Zoo famous for pandas";
+"attraction_adventure_world_desc" = "Kebun binatang terkenal dengan pandanya";
 "attraction_wakayama_castle" = "Kastel Wakayama";
-"attraction_wakayama_castle_desc" = "Castle of the Tokugawa Kishu Domain";
+"attraction_wakayama_castle_desc" = "Kastel Domain Kishu klan Tokugawa";
 
 "food_umeboshi" = "Umeboshi (asinan plum)";
 "food_wakayama_ramen" = "Ramen Wakayama";
@@ -842,17 +842,17 @@
 
 // Osaka
 "attraction_osaka_castle" = "Kastel Osaka";
-"attraction_osaka_castle_desc" = "Famous castle built by Toyotomi Hideyoshi";
+"attraction_osaka_castle_desc" = "Kastel termasyhur yang dibangun Toyotomi Hideyoshi";
 "attraction_dotonbori" = "Dotonbori";
-"attraction_dotonbori_desc" = "Osaka's entertainment district and gourmet center";
+"attraction_dotonbori_desc" = "Kawasan ramai dan pusat kuliner Osaka";
 "attraction_universal_studios" = "Universal Studios Japan";
-"attraction_universal_studios_desc" = "Theme park where you can experience the world of movies";
+"attraction_universal_studios_desc" = "Taman tema untuk merasakan dunia film";
 "attraction_sumiyoshi_taisha" = "Kuil Sumiyoshi Taisha";
-"attraction_sumiyoshi_taisha_desc" = "Head shrine of about 2,300 Sumiyoshi shrines nationwide";
+"attraction_sumiyoshi_taisha_desc" = "Kuil pusat dari sekitar 2.300 kuil Sumiyoshi se-negeri";
 "attraction_shinsekai" = "Shinsekai";
-"attraction_shinsekai_desc" = "District of Tsutenkaku and kushikatsu";
+"attraction_shinsekai_desc" = "Kawasan Tsutenkaku dan kushikatsu";
 "attraction_shitennoji" = "Kuil Shitennoji";
-"attraction_shitennoji_desc" = "Japan's oldest government temple built by Prince Shotoku";
+"attraction_shitennoji_desc" = "Kuil resmi tertua di Jepang yang dibangun Pangeran Shotoku";
 
 "food_takoyaki" = "Takoyaki";
 "food_okonomiyaki" = "Okonomiyaki";
@@ -862,17 +862,17 @@
 
 // Tottori
 "attraction_tottori_sand_dunes" = "Gumuk Pasir Tottori";
-"attraction_tottori_sand_dunes_desc" = "Japan's largest sand dunes";
+"attraction_tottori_sand_dunes_desc" = "Gumuk pasir terbesar di Jepang";
 "attraction_mount_daisen" = "Gunung Daisen";
-"attraction_mount_daisen_desc" = "Highest peak in the Chugoku region";
+"attraction_mount_daisen_desc" = "Puncak tertinggi di wilayah Chugoku";
 "attraction_mizuki_shigeru_road" = "Jalan Mizuki Shigeru";
-"attraction_mizuki_shigeru_road_desc" = "Town of yokai";
+"attraction_mizuki_shigeru_road_desc" = "Kota para yokai";
 "attraction_uradome_coast" = "Pesisir Uradome";
-"attraction_uradome_coast_desc" = "San'in Kaigan Geopark";
+"attraction_uradome_coast_desc" = "Geopark Pesisir San'in";
 "attraction_misasa_onsen" = "Onsen Misasa";
-"attraction_misasa_onsen_desc" = "Famous for radium hot springs";
+"attraction_misasa_onsen_desc" = "Terkenal dengan onsen radium";
 "attraction_hakuto_coast" = "Pesisir Hakuto";
-"attraction_hakuto_coast_desc" = "Beautiful coast that was the stage for the legend of the White Rabbit of Inaba";
+"attraction_hakuto_coast_desc" = "Pesisir indah berlatar legenda Kelinci Putih Inaba";
 
 "food_matsuba_crab" = "Kepiting Matsuba";
 "food_nijisseiki_pear" = "Pir abad ke-20";
@@ -882,17 +882,17 @@
 
 // Okayama
 "attraction_okayama_castle" = "Kastel Okayama";
-"attraction_okayama_castle_desc" = "Black castle called Karasu-jo";
+"attraction_okayama_castle_desc" = "Kastel hitam yang dijuluki Kastel Gagak";
 "attraction_korakuen" = "Taman Korakuen";
-"attraction_korakuen_desc" = "One of Japan's three famous gardens";
+"attraction_korakuen_desc" = "Salah satu dari tiga taman termasyhur Jepang";
 "attraction_kurashiki_bikan" = "Kawasan Bersejarah Kurashiki Bikan";
-"attraction_kurashiki_bikan_desc" = "Beautiful white-walled storehouses";
+"attraction_kurashiki_bikan_desc" = "Gudang berdinding putih yang indah";
 "attraction_kibitsu_shrine" = "Kuil Kibitsu";
-"attraction_kibitsu_shrine_desc" = "Shrine of Momotaro legend";
+"attraction_kibitsu_shrine_desc" = "Kuil legenda Momotaro";
 "attraction_hiruzen_kogen" = "Dataran Tinggi Hiruzen";
-"attraction_hiruzen_kogen_desc" = "Karuizawa of the West";
+"attraction_hiruzen_kogen_desc" = "Karuizawa dari barat";
 "attraction_seto_ohashi" = "Jembatan Seto Ohashi";
-"attraction_seto_ohashi_desc" = "Magnificent bridge connecting Honshu and Shikoku";
+"attraction_seto_ohashi_desc" = "Jembatan megah penghubung Honshu dan Shikoku";
 
 "food_white_peach" = "Persik putih";
 "food_muscat" = "Anggur muskat";
@@ -902,17 +902,17 @@
 
 // Hiroshima
 "attraction_itsukushima_shrine" = "Kuil Itsukushima";
-"attraction_itsukushima_shrine_desc" = "Famous for its floating torii gate in the sea";
+"attraction_itsukushima_shrine_desc" = "Terkenal dengan gerbang torii terapung di laut";
 "attraction_atomic_bomb_dome" = "Kubah Bom Atom";
-"attraction_atomic_bomb_dome_desc" = "Symbol of peace";
+"attraction_atomic_bomb_dome_desc" = "Simbol perdamaian";
 "attraction_miyajima" = "Miyajima";
-"attraction_miyajima_desc" = "One of Japan's three scenic views";
+"attraction_miyajima_desc" = "Salah satu dari tiga pemandangan terindah Jepang";
 "attraction_onomichi" = "Onomichi";
-"attraction_onomichi_desc" = "City of slopes and cats";
+"attraction_onomichi_desc" = "Kota tanjakan dan kucing";
 "attraction_takehara" = "Takehara";
-"attraction_takehara_desc" = "Little Kyoto of Aki";
+"attraction_takehara_desc" = "Kyoto kecil di Aki";
 "attraction_tomonoura" = "Tomonoura";
-"attraction_tomonoura_desc" = "Beautiful port town retaining the atmosphere of an Edo period harbor";
+"attraction_tomonoura_desc" = "Kota pelabuhan indah yang menyimpan nuansa pelabuhan era Edo";
 
 "food_okonomiyaki_hiroshima" = "Okonomiyaki Hiroshima";
 "food_oyster" = "Tiram";
@@ -922,17 +922,17 @@
 
 // Yamaguchi
 "attraction_akiyoshidai" = "Akiyoshidai";
-"attraction_akiyoshidai_desc" = "Japan's largest karst plateau";
+"attraction_akiyoshidai_desc" = "Dataran tinggi karst terbesar di Jepang";
 "attraction_hagi" = "Hagi";
-"attraction_hagi_desc" = "Stage of the Meiji Restoration";
+"attraction_hagi_desc" = "Panggung Restorasi Meiji";
 "attraction_kintaikyo" = "Jembatan Kintaikyo";
-"attraction_kintaikyo_desc" = "One of Japan's three famous bridges";
+"attraction_kintaikyo_desc" = "Salah satu dari tiga jembatan termasyhur Jepang";
 "attraction_shimonoseki" = "Shimonoseki";
-"attraction_shimonoseki_desc" = "Westernmost city of Honshu";
+"attraction_shimonoseki_desc" = "Kota paling barat di Honshu";
 "attraction_rurikoji" = "Kuil Rurikoji";
-"attraction_rurikoji_desc" = "Famous for its five-story pagoda";
+"attraction_rurikoji_desc" = "Terkenal dengan pagoda lima tingkat";
 "attraction_tsunoshima_bridge" = "Jembatan Tsunoshima";
-"attraction_tsunoshima_bridge_desc" = "Spectacular bridge over emerald green sea";
+"attraction_tsunoshima_bridge_desc" = "Jembatan menakjubkan di atas laut hijau zamrud";
 
 "food_fugu" = "Ikan fugu";
 "food_kawara_soba" = "Kawara soba";
@@ -942,17 +942,17 @@
 
 // Shimane
 "attraction_izumo_taisha" = "Kuil Agung Izumo";
-"attraction_izumo_taisha_desc" = "God of matchmaking";
+"attraction_izumo_taisha_desc" = "Dewa penjodoh";
 "attraction_matsue_castle" = "Kastel Matsue";
-"attraction_matsue_castle_desc" = "National treasure with existing castle keep";
+"attraction_matsue_castle_desc" = "Harta nasional dengan menara asli";
 "attraction_iwami_ginzan" = "Tambang Perak Iwami";
-"attraction_iwami_ginzan_desc" = "World Heritage silver mine ruins";
+"attraction_iwami_ginzan_desc" = "Situs tambang perak Warisan Dunia";
 "attraction_oki_islands" = "Kepulauan Oki";
-"attraction_oki_islands_desc" = "Beautiful islands in the Sea of Japan";
+"attraction_oki_islands_desc" = "Pulau-pulau indah di Laut Jepang";
 "attraction_adachi_museum" = "Museum Seni Adachi";
-"attraction_adachi_museum_desc" = "Famous for Japanese gardens";
+"attraction_adachi_museum_desc" = "Terkenal dengan taman Jepangnya";
 "attraction_lake_shinji" = "Danau Shinji";
-"attraction_lake_shinji_desc" = "Lake famous for beautiful sunsets";
+"attraction_lake_shinji_desc" = "Danau yang terkenal dengan matahari terbenam indah";
 
 "food_izumo_soba" = "Soba Izumo";
 "food_shinjiko_shijimi" = "Kerang danau Shinji";
@@ -962,17 +962,17 @@
 
 // Kagawa
 "attraction_kotohira_shrine" = "Kuil Kotohira";
-"attraction_kotohira_shrine_desc" = "Affectionately called Konpira-san";
+"attraction_kotohira_shrine_desc" = "Akrab disebut Konpira-san";
 "attraction_ritsurin_garden" = "Taman Ritsurin";
-"attraction_ritsurin_garden_desc" = "Special scenic beauty Japanese garden";
+"attraction_ritsurin_garden_desc" = "Taman Jepang berstatus keindahan panorama istimewa";
 "attraction_shodoshima" = "Shodoshima";
-"attraction_shodoshima_desc" = "Olive island";
+"attraction_shodoshima_desc" = "Pulau zaitun";
 "attraction_yashima" = "Yashima";
-"attraction_yashima_desc" = "Stage of the Genpei War";
+"attraction_yashima_desc" = "Panggung Perang Genpei";
 "attraction_naoshima" = "Naoshima";
-"attraction_naoshima_desc" = "Art island";
+"attraction_naoshima_desc" = "Pulau seni";
 "attraction_seto_ohashi_memorial_park" = "Taman Peringatan Jembatan Seto Ohashi";
-"attraction_seto_ohashi_memorial_park_desc" = "Spectacular spot to see the Seto Ohashi Bridge up close";
+"attraction_seto_ohashi_memorial_park_desc" = "Spot menakjubkan untuk melihat Jembatan Seto Ohashi dari dekat";
 
 "food_sanuki_udon" = "Udon Sanuki";
 "food_olive" = "Zaitun";
@@ -982,17 +982,17 @@
 
 // Tokushima
 "attraction_naruto_whirlpools" = "Pusaran Air Naruto";
-"attraction_naruto_whirlpools_desc" = "World's largest whirlpools";
+"attraction_naruto_whirlpools_desc" = "Pusaran air terbesar di dunia";
 "attraction_awa_odori" = "Tarian Awa Odori";
-"attraction_awa_odori_desc" = "Tokushima's summer festival";
+"attraction_awa_odori_desc" = "Festival musim panas Tokushima";
 "attraction_iya_kazura_bridge" = "Jembatan Sulur Iya";
-"attraction_iya_kazura_bridge_desc" = "Thrilling suspension bridge";
+"attraction_iya_kazura_bridge_desc" = "Jembatan gantung yang menegangkan";
 "attraction_otsuka_museum" = "Museum Seni Otsuka";
-"attraction_otsuka_museum_desc" = "Museum of ceramic masterpiece reproductions";
+"attraction_otsuka_museum_desc" = "Museum reproduksi mahakarya di atas keramik";
 "attraction_mount_tsurugi" = "Gunung Tsurugi";
-"attraction_mount_tsurugi_desc" = "Second highest peak in Shikoku";
+"attraction_mount_tsurugi_desc" = "Puncak tertinggi kedua di Shikoku";
 "attraction_bizan" = "Gunung Bizan";
-"attraction_bizan_desc" = "Symbol of Tokushima City, night views can also be enjoyed by ropeway";
+"attraction_bizan_desc" = "Ikon Kota Tokushima, panorama malam via kereta gantung";
 
 "food_awa_odori_chicken" = "Ayam Awa-odori";
 "food_tarai_udon" = "Tarai udon";
@@ -1002,17 +1002,17 @@
 
 // Kochi
 "attraction_kochi_castle" = "Kastel Kochi";
-"attraction_kochi_castle_desc" = "Famous castle with existing castle keep";
+"attraction_kochi_castle_desc" = "Kastel termasyhur dengan menara asli";
 "attraction_katsurahama" = "Pantai Katsurahama";
-"attraction_katsurahama_desc" = "Famous for the statue of Sakamoto Ryoma";
+"attraction_katsurahama_desc" = "Terkenal dengan patung Sakamoto Ryoma";
 "attraction_shimanto_river" = "Sungai Shimanto";
-"attraction_shimanto_river_desc" = "Japan's last clear stream";
+"attraction_shimanto_river_desc" = "Sungai jernih terakhir di Jepang";
 "attraction_muroto_cape" = "Tanjung Muroto";
-"attraction_muroto_cape_desc" = "Spectacular Pacific views";
+"attraction_muroto_cape_desc" = "Panorama Samudra Pasifik yang menakjubkan";
 "attraction_ashizuri_cape" = "Tanjung Ashizuri";
-"attraction_ashizuri_cape_desc" = "Southernmost cape of Shikoku";
+"attraction_ashizuri_cape_desc" = "Tanjung paling selatan di Shikoku";
 "attraction_ryugado_cave" = "Gua Ryugado";
-"attraction_ryugado_cave_desc" = "One of Japan's three great limestone caves, mysterious underground world";
+"attraction_ryugado_cave_desc" = "Salah satu dari tiga gua stalaktit besar Jepang, dunia bawah tanah misterius";
 
 "food_katsuo_tataki" = "Katsuo tataki";
 "food_sawachi_cuisine" = "Masakan sawachi";
@@ -1022,17 +1022,17 @@
 
 // Ehime
 "attraction_matsuyama_castle" = "Kastel Matsuyama";
-"attraction_matsuyama_castle_desc" = "Famous castle with existing castle keep";
+"attraction_matsuyama_castle_desc" = "Kastel termasyhur dengan menara asli";
 "attraction_dogo_onsen" = "Onsen Dogo";
-"attraction_dogo_onsen_desc" = "One of Japan's oldest hot springs";
+"attraction_dogo_onsen_desc" = "Salah satu onsen tertua di Jepang";
 "attraction_shimanami_kaido" = "Shimanami Kaido";
-"attraction_shimanami_kaido_desc" = "Beautiful bridges of the Seto Inland Sea";
+"attraction_shimanami_kaido_desc" = "Jembatan-jembatan indah Laut Seto";
 "attraction_uchiko_town" = "Kota Uchiko";
-"attraction_uchiko_town_desc" = "Edo period townscape";
+"attraction_uchiko_town_desc" = "Kawasan kota era Edo";
 "attraction_mount_ishizuchi" = "Gunung Ishizuchi";
-"attraction_mount_ishizuchi_desc" = "Highest peak in Shikoku";
+"attraction_mount_ishizuchi_desc" = "Puncak tertinggi di Shikoku";
 "attraction_imabari_castle" = "Kastel Imabari";
-"attraction_imabari_castle_desc" = "Rare sea castle using seawater in its moat";
+"attraction_imabari_castle_desc" = "Kastel laut langka yang paritnya memakai air laut";
 
 "food_mikan" = "Jeruk mikan";
 "food_jakoten" = "Jakoten";
@@ -1042,17 +1042,17 @@
 
 // Fukuoka
 "attraction_dazaifu_tenmangu" = "Kuil Dazaifu Tenmangu";
-"attraction_dazaifu_tenmangu_desc" = "God of learning";
+"attraction_dazaifu_tenmangu_desc" = "Dewa ilmu pengetahuan";
 "attraction_fukuoka_castle" = "Kastel Fukuoka";
-"attraction_fukuoka_castle_desc" = "Castle of Kuroda Kanbei";
+"attraction_fukuoka_castle_desc" = "Kastel kediaman Kuroda Kanbei";
 "attraction_hakata_za" = "Teater Hakata-za";
-"attraction_hakata_za_desc" = "Theater hall of Kyushu";
+"attraction_hakata_za_desc" = "Panggung teater terkemuka Kyushu";
 "attraction_canal_city" = "Canal City Hakata";
-"attraction_canal_city_desc" = "Shopping mall with canals";
+"attraction_canal_city_desc" = "Mal dengan kanal air";
 "attraction_yanagawa_kudari" = "Pesiar Sungai Yanagawa";
-"attraction_yanagawa_kudari_desc" = "River cruise on donko boats";
+"attraction_yanagawa_kudari_desc" = "Menyusuri sungai dengan perahu donko";
 "attraction_mojiko_retro" = "Mojiko Retro";
-"attraction_mojiko_retro_desc" = "Port town streetscape with Taisho romance atmosphere";
+"attraction_mojiko_retro_desc" = "Kawasan pelabuhan bernuansa romansa era Taisho";
 
 "food_hakata_ramen" = "Ramen Hakata";
 "food_motsu_nabe" = "Motsu nabe";
@@ -1062,17 +1062,17 @@
 
 // Oita
 "attraction_beppu_onsen" = "Onsen Beppu";
-"attraction_beppu_onsen_desc" = "City of hot springs";
+"attraction_beppu_onsen_desc" = "Kota onsen";
 "attraction_yufuin" = "Yufuin";
-"attraction_yufuin_desc" = "Hot spring resort at the foot of Mount Yufu";
+"attraction_yufuin_desc" = "Onsen di kaki Gunung Yufu";
 "attraction_usuki_stone_buddhas" = "Patung Buddha Batu Usuki";
-"attraction_usuki_stone_buddhas_desc" = "National treasure stone Buddha group";
+"attraction_usuki_stone_buddhas_desc" = "Kelompok patung Buddha batu harta nasional";
 "attraction_kuju_mountains" = "Pegunungan Kuju";
-"attraction_kuju_mountains_desc" = "Roof of Kyushu";
+"attraction_kuju_mountains_desc" = "Atap Kyushu";
 "attraction_nakatsu_castle" = "Kastel Nakatsu";
-"attraction_nakatsu_castle_desc" = "Castle of Kuroda Kanbei";
+"attraction_nakatsu_castle_desc" = "Kastel kediaman Kuroda Kanbei";
 "attraction_jigoku_meguri" = "Tur Neraka (Jigoku Meguri)";
-"attraction_jigoku_meguri_desc" = "Beppu's specialty, tour of colorful hot spring groups";
+"attraction_jigoku_meguri_desc" = "Khas Beppu: menyusuri gugusan onsen warna-warni";
 
 "food_seki_saba_aji" = "Makerel & selar Seki";
 "food_toriten" = "Toriten (ayam tempura)";
@@ -1082,17 +1082,17 @@
 
 // Miyazaki
 "attraction_takachiho_gorge" = "Ngarai Takachiho";
-"attraction_takachiho_gorge_desc" = "Spectacular scenery of the mythical village";
+"attraction_takachiho_gorge_desc" = "Panorama menakjubkan desa mitologi";
 "attraction_nichinan_coast" = "Pesisir Nichinan";
-"attraction_nichinan_coast_desc" = "Beautiful ria coastline";
+"attraction_nichinan_coast_desc" = "Pantai ria yang indah";
 "attraction_aoshima" = "Aoshima";
-"attraction_aoshima_desc" = "Famous for Devil's Washboard rock formations";
+"attraction_aoshima_desc" = "Terkenal dengan formasi batu Papan Cuci Iblis";
 "attraction_udo_shrine" = "Kuil Udo";
-"attraction_udo_shrine_desc" = "Shrine inside a cave";
+"attraction_udo_shrine_desc" = "Kuil di dalam gua";
 "attraction_sun_messe_nichinan" = "Sun Messe Nichinan";
-"attraction_sun_messe_nichinan_desc" = "Park with Moai statues";
+"attraction_sun_messe_nichinan_desc" = "Taman berpatung Moai";
 "attraction_saito_ancient_burial_mounds" = "Gundukan Makam Kuno Saitobaru";
-"attraction_saito_ancient_burial_mounds_desc" = "Japan's largest ancient burial mound complex full of ancient romance";
+"attraction_saito_ancient_burial_mounds_desc" = "Kompleks makam kuno terbesar Jepang, sarat pesona purbakala";
 
 "food_miyazaki_beef" = "Daging sapi Miyazaki";
 "food_chicken_nanban" = "Ayam nanban";
@@ -1102,17 +1102,17 @@
 
 // Kagoshima
 "attraction_sakurajima" = "Sakurajima";
-"attraction_sakurajima_desc" = "Magnificent view of active volcano";
+"attraction_sakurajima_desc" = "Sosok megah gunung berapi aktif";
 "attraction_yakushima" = "Yakushima";
-"attraction_yakushima_desc" = "World Natural Heritage forest";
+"attraction_yakushima_desc" = "Hutan Warisan Alam Dunia";
 "attraction_kirishima_onsen" = "Onsen Kirishima";
-"attraction_kirishima_onsen_desc" = "Hot spring resort in Kirishima mountain range";
+"attraction_kirishima_onsen_desc" = "Kawasan onsen Pegunungan Kirishima";
 "attraction_ibusuki_onsen" = "Onsen Ibusuki";
-"attraction_ibusuki_onsen_desc" = "Famous for sand bath hot springs";
+"attraction_ibusuki_onsen_desc" = "Terkenal dengan pemandian pasir panas";
 "attraction_amami_oshima" = "Amami Oshima";
-"attraction_amami_oshima_desc" = "Subtropical nature";
+"attraction_amami_oshima_desc" = "Alam subtropis";
 "attraction_chiran_peace_museum" = "Museum Perdamaian Chiran";
-"attraction_chiran_peace_museum_desc" = "Place for peace education conveying memories of war";
+"attraction_chiran_peace_museum_desc" = "Tempat edukasi perdamaian yang menyampaikan kenangan perang";
 
 "food_kurobuta" = "Babi hitam (kurobuta)";
 "food_satsuma_imo" = "Ubi Satsuma";
@@ -1122,17 +1122,17 @@
 
 // Kumamoto
 "attraction_kumamoto_castle" = "Kastel Kumamoto";
-"attraction_kumamoto_castle_desc" = "One of Japan's three famous castles";
+"attraction_kumamoto_castle_desc" = "Salah satu dari tiga kastel termasyhur Jepang";
 "attraction_mount_aso" = "Gunung Aso";
-"attraction_mount_aso_desc" = "World's largest caldera";
+"attraction_mount_aso_desc" = "Kaldera terbesar di dunia";
 "attraction_kurokawa_onsen" = "Onsen Kurokawa";
-"attraction_kurokawa_onsen_desc" = "Atmospheric hot spring town";
+"attraction_kurokawa_onsen_desc" = "Kawasan onsen yang penuh nuansa";
 "attraction_amakusa" = "Amakusa";
-"attraction_amakusa_desc" = "Hometown of Amakusa Shiro";
+"attraction_amakusa_desc" = "Kampung halaman Amakusa Shiro";
 "attraction_kikuchi_valley" = "Lembah Kikuchi";
-"attraction_kikuchi_valley_desc" = "Beautiful valley with clear streams";
+"attraction_kikuchi_valley_desc" = "Lembah indah bersungai jernih";
 "attraction_tsujun_bridge" = "Jembatan Tsujun";
-"attraction_tsujun_bridge_desc" = "Stone arch bridge representing the pinnacle of Edo period technology";
+"attraction_tsujun_bridge_desc" = "Jembatan lengkung batu, puncak teknologi era Edo";
 
 "food_basashi" = "Basashi (sashimi kuda)";
 "food_dago_soup" = "Sup dago";
@@ -1142,17 +1142,17 @@
 
 // Saga
 "attraction_yoshinogari_ruins" = "Situs Yoshinogari";
-"attraction_yoshinogari_ruins_desc" = "Large-scale moated settlement from the Yayoi period";
+"attraction_yoshinogari_ruins_desc" = "Permukiman berparit besar dari era Yayoi";
 "attraction_arita_porcelain" = "Porselen Arita";
-"attraction_arita_porcelain_desc" = "Village of ceramics";
+"attraction_arita_porcelain_desc" = "Desa keramik";
 "attraction_yobuko" = "Yobuko";
-"attraction_yobuko_desc" = "Port town famous for squid";
+"attraction_yobuko_desc" = "Kota pelabuhan terkenal dengan cumi";
 "attraction_takeo_onsen" = "Onsen Takeo";
-"attraction_takeo_onsen_desc" = "Famous for beautiful skin hot springs";
+"attraction_takeo_onsen_desc" = "Terkenal sebagai onsen pencantik kulit";
 "attraction_karatsu_castle" = "Kastel Karatsu";
-"attraction_karatsu_castle_desc" = "Castle overlooking Genkai Sea";
+"attraction_karatsu_castle_desc" = "Kastel yang menghadap Laut Genkai";
 "attraction_ureshino_onsen" = "Onsen Ureshino";
-"attraction_ureshino_onsen_desc" = "Hot spring popular for beauty effects and tea production area";
+"attraction_ureshino_onsen_desc" = "Onsen pencantik kulit yang populer sekaligus sentra teh";
 
 "food_saga_beef" = "Daging sapi Saga";
 "food_yobuko_ika" = "Cumi Yobuko";
@@ -1162,17 +1162,17 @@
 
 // Nagasaki
 "attraction_huis_ten_bosch" = "Huis Ten Bosch";
-"attraction_huis_ten_bosch_desc" = "Recreation of Dutch townscape";
+"attraction_huis_ten_bosch_desc" = "Rekonstruksi kota Belanda";
 "attraction_glover_garden" = "Taman Glover";
-"attraction_glover_garden_desc" = "Meiji period Western-style buildings";
+"attraction_glover_garden_desc" = "Kompleks bangunan bergaya Barat era Meiji";
 "attraction_peace_park" = "Taman Perdamaian";
-"attraction_peace_park_desc" = "With prayers for peace";
+"attraction_peace_park_desc" = "Dengan doa untuk perdamaian";
 "attraction_gunkanjima" = "Pulau Gunkanjima (Pulau Kapal Perang)";
-"attraction_gunkanjima_desc" = "World Heritage ruins island";
+"attraction_gunkanjima_desc" = "Pulau reruntuhan Warisan Dunia";
 "attraction_unzen_onsen" = "Onsen Unzen";
-"attraction_unzen_onsen_desc" = "Famous for hell tour";
+"attraction_unzen_onsen_desc" = "Terkenal dengan tur neraka";
 "attraction_shimabara_castle" = "Kastel Shimabara";
-"attraction_shimabara_castle_desc" = "Historic castle that was the stage of the Shimabara Rebellion";
+"attraction_shimabara_castle_desc" = "Kastel bersejarah panggung Pemberontakan Shimabara";
 
 "food_champon" = "Champon";
 "food_sara_udon" = "Sara udon";
@@ -1182,19 +1182,19 @@
 
 // Okinawa
 "attraction_shuri_castle" = "Kastel Shuri";
-"attraction_shuri_castle_desc" = "Castle telling the history of the Ryukyu Kingdom";
+"attraction_shuri_castle_desc" = "Kastel yang mengisahkan sejarah Kerajaan Ryukyu";
 "attraction_churaumi_aquarium" = "Akuarium Churaumi";
-"attraction_churaumi_aquarium_desc" = "Aquarium with one of the world's largest tanks";
+"attraction_churaumi_aquarium_desc" = "Akuarium dengan salah satu tangki terbesar di dunia";
 "attraction_taketomi_island" = "Pulau Taketomi";
-"attraction_taketomi_island_desc" = "Beautiful island preserving Okinawa's original landscape";
+"attraction_taketomi_island_desc" = "Pulau indah yang menjaga lanskap asli Okinawa";
 "attraction_ishigaki_island" = "Pulau Ishigaki";
-"attraction_ishigaki_island_desc" = "Central island of the Yaeyama Islands";
+"attraction_ishigaki_island_desc" = "Pulau utama Kepulauan Yaeyama";
 "attraction_zamami_island" = "Pulau Zamami";
-"attraction_zamami_island_desc" = "Island with beautiful Kerama Blue sea";
+"attraction_zamami_island_desc" = "Pulau dengan laut biru Kerama yang indah";
 "attraction_manzamo" = "Manzamo";
-"attraction_manzamo_desc" = "Spectacular cliff like an elephant's trunk with blue sea views";
+"attraction_manzamo_desc" = "Panorama tebing menyerupai belalai gajah dan laut biru";
 "attraction_himeyuri_no_to" = "Monumen Himeyuri";
-"attraction_himeyuri_no_to_desc" = "Memorial tower conveying the tragedy of war";
+"attraction_himeyuri_no_to_desc" = "Monumen yang menyampaikan tragedi perang";
 
 "food_goya_chanpuru" = "Goya chanpuru";
 "food_soki_soba" = "Soki soba";
@@ -5209,24 +5209,24 @@
 "review.prompt.no" = "Not Now";
 
 "attraction_azabudai_hills" = "Azabudai Hills";
-"attraction_azabudai_hills_desc" = "Opened in 2023. A green urban complex centered on Mori JP Tower, Japan's tallest building.";
+"attraction_azabudai_hills_desc" = "Dibuka 2023. Kompleks kota hijau berpusat pada Mori JP Tower, gedung tertinggi Jepang";
 "attraction_wb_studio_tour_tokyo" = "Warner Bros. Studio Tour Tokyo";
-"attraction_wb_studio_tour_tokyo_desc" = "Opened in 2023 on the former Toshimaen site, an attraction where you can experience the world of Harry Potter.";
+"attraction_wb_studio_tour_tokyo_desc" = "Dibuka 2023 di bekas Toshimaen, tempat merasakan dunia film Harry Potter";
 "attraction_ghibli_park" = "Taman Ghibli";
-"attraction_ghibli_park_desc" = "Opened in 2022. A theme park within Expo 2005 Aichi Commemorative Park where you can enjoy the world of Studio Ghibli.";
+"attraction_ghibli_park_desc" = "Dibuka 2022. Taman tema di Taman Peringatan Expo Aichi, menikmati dunia Studio Ghibli";
 "attraction_grand_green_osaka" = "Grand Green Osaka";
-"attraction_grand_green_osaka_desc" = "Opened in 2024. A mixed-use complex with a vast urban park in the Umekita district, directly connected to Osaka Station.";
+"attraction_grand_green_osaka_desc" = "Dibuka 2024. Kompleks dengan taman kota luas di Umekita, terhubung langsung dengan Stasiun Osaka";
 "attraction_junglia_okinawa" = "JUNGLIA OKINAWA";
-"attraction_junglia_okinawa_desc" = "Opened in 2025. A theme park set in the wild nature of northern Okinawa, featuring dinosaurs and scenic attractions.";
+"attraction_junglia_okinawa_desc" = "Dibuka 2025. Taman tema di alam liar Okinawa utara dengan dinosaurus dan wahana panorama";
 
 "attraction_toyosu_market" = "Pasar Toyosu";
-"attraction_toyosu_market_desc" = "Tokyo's kitchen, relocated from Tsukiji. Enjoy fresh seafood, tuna auction viewing, and dining facilities.";
+"attraction_toyosu_market_desc" = "Dapur Tokyo yang pindah dari Tsukiji. Nikmati seafood segar, lelang tuna, dan kedai di dalam pasar";
 "attraction_shinjuku_gyoen" = "Taman Shinjuku Gyoen";
-"attraction_shinjuku_gyoen_desc" = "A vast garden in central Tokyo, famous for its Japanese garden and cherry blossoms across the seasons.";
+"attraction_shinjuku_gyoen_desc" = "Taman luas di pusat Tokyo, terkenal dengan taman Jepang dan sakura, indah sepanjang musim";
 "attraction_kaiyukan" = "Akuarium Kaiyukan Osaka";
-"attraction_kaiyukan_desc" = "One of the world's largest aquariums in Tempozan, featuring a giant tank with swimming whale sharks.";
+"attraction_kaiyukan_desc" = "Salah satu akuarium terbesar dunia di Tempozan, dengan tangki raksasa berisi hiu paus";
 "attraction_expo_park" = "Taman Peringatan Expo '70";
-"attraction_expo_park_desc" = "A park on the former Osaka Expo site, symbolized by the Tower of the Sun by Taro Okamoto.";
+"attraction_expo_park_desc" = "Taman di bekas Expo Osaka, dengan ikon Menara Matahari karya Taro Okamoto";
 
 "gourmet_chanko_nabe" = "Chanko nabe";
 "gourmet_chanko_nabe_desc" = "Nabe berisi melimpah asal sasana sumo: daging, seafood, dan sayuran, sangat bergizi";
@@ -5271,21 +5271,21 @@
 "okinawa.shio_senbei.price" = "From 300 yen";
 
 "attraction_goryokaku" = "Goryokaku";
-"attraction_goryokaku_desc" = "A star-shaped fort site in Hakodate. The pentagonal view from the tower and spring cherry blossoms are beautiful.";
+"attraction_goryokaku_desc" = "Situs benteng bintang di Hakodate. Panorama pentagon dari menara dan sakura musim semi sangat indah";
 "attraction_noboribetsu_jigokudani" = "Lembah Neraka Noboribetsu";
-"attraction_noboribetsu_jigokudani_desc" = "The source of Noboribetsu Onsen, shrouded in steam and sulfur, with dramatic volcanic terrain.";
+"attraction_noboribetsu_jigokudani_desc" = "Sumber Onsen Noboribetsu berselimut uap dan belerang, dengan bentang alam vulkanik dramatis";
 "attraction_nijo_castle" = "Kastel Nijo";
-"attraction_nijo_castle_desc" = "A World Heritage Site linked to the Tokugawa shoguns, known for its nightingale floors and lavish wall paintings.";
+"attraction_nijo_castle_desc" = "Warisan Dunia terkait klan Tokugawa, terkenal dengan lantai burung bulbul dan lukisan dinding mewah";
 "attraction_ginkakuji" = "Ginkaku-ji (Paviliun Perak)";
-"attraction_ginkakuji_desc" = "Officially Jisho-ji. A World Heritage Site with a serene wabi-sabi garden and sand mound.";
+"attraction_ginkakuji_desc" = "Nama resminya Jisho-ji. Warisan Dunia dengan taman wabi-sabi yang tenang dan gundukan pasir";
 "attraction_fukuoka_tower" = "Menara Fukuoka";
-"attraction_fukuoka_tower_desc" = "Japan's tallest seaside tower and a symbol of Hakata, with a popular observation deck and night views.";
+"attraction_fukuoka_tower_desc" = "Menara pantai tertinggi Jepang dan ikon Hakata, dengan dek observasi dan panorama malam populer";
 "attraction_uminonakamichi" = "Taman Tepi Laut Uminonakamichi";
-"attraction_uminonakamichi_desc" = "A vast national park facing Hakata Bay, with seasonal flower fields and animal encounters.";
+"attraction_uminonakamichi_desc" = "Taman nasional luas menghadap Teluk Hakata, dengan ladang bunga musiman dan interaksi hewan";
 "attraction_yokohama_akarenga" = "Gudang Bata Merah Yokohama";
-"attraction_yokohama_akarenga_desc" = "A commercial facility in Meiji-era warehouses, offering Minato Mirai views and events.";
+"attraction_yokohama_akarenga_desc" = "Pusat perbelanjaan di gudang era Meiji, menikmati panorama Minato Mirai dan berbagai acara";
 "attraction_tsurugaoka_hachimangu" = "Kuil Tsurugaoka Hachimangu";
-"attraction_tsurugaoka_hachimangu_desc" = "A symbolic shrine of Kamakura, with historic sites like the Dankazura approach and the dance hall.";
+"attraction_tsurugaoka_hachimangu_desc" = "Kuil ikonik Kamakura dengan situs bersejarah seperti jalan Dankazura dan balai tari";
 
 "gourmet_sapporo_miso_ramen" = "Ramen miso Sapporo";
 "gourmet_sapporo_miso_ramen_desc" = "Khas Sapporo: mi keriting dalam kuah miso kental, sering ditambah mentega dan jagung";
@@ -5330,37 +5330,37 @@
 "kanagawa.kamakura_raisin_wich.price" = "From 1,000 yen";
 
 "attraction_hiroshima_castle" = "Kastel Hiroshima";
-"attraction_hiroshima_castle_desc" = "Also called Carp Castle. Its beautiful moated keep, rebuilt after the bombing, is a symbol of Hiroshima.";
+"attraction_hiroshima_castle_desc" = "Disebut juga Kastel Ikan Mas. Menara indah berparit ini dibangun ulang setelah pengeboman, ikon Hiroshima";
 "attraction_yamato_museum" = "Museum Yamato";
-"attraction_yamato_museum_desc" = "A maritime museum in Kure, featuring a stunning 1/10 scale model of the battleship Yamato.";
+"attraction_yamato_museum_desc" = "Museum maritim di Kota Kure, dengan model kapal perang Yamato skala 1/10 yang memukau";
 "attraction_jigokudani_monkey" = "Taman Monyet Jigokudani";
-"attraction_jigokudani_monkey_desc" = "World-famous for snow monkeys bathing in hot springs. The winter snow scenery is a highlight.";
+"attraction_jigokudani_monkey_desc" = "Terkenal sedunia dengan monyet salju berendam di onsen; pemandangan salju musim dingin jadi sorotan";
 "attraction_suwa_taisha" = "Kuil Suwa Taisha";
-"attraction_suwa_taisha_desc" = "The head shrine of all Suwa shrines, a historic site known for the Onbashira Festival.";
+"attraction_suwa_taisha_desc" = "Kuil pusat semua kuil Suwa se-negeri, situs kuno yang terkenal dengan Festival Onbashira";
 "attraction_dejima" = "Dejima";
-"attraction_dejima_desc" = "The only artificial island open to the West during the isolation era. Experience history in its restored streets.";
+"attraction_dejima_desc" = "Satu-satunya pulau buatan yang terbuka ke Barat saat isolasi; rasakan sejarah di kawasan yang dipugar";
 "attraction_oura_church" = "Gereja Oura";
-"attraction_oura_church_desc" = "Japan's oldest surviving Christian building, a Gothic-style World Heritage church.";
+"attraction_oura_church_desc" = "Bangunan Kristen tertua yang masih ada di Jepang, gereja bergaya Gotik Warisan Dunia";
 "attraction_kanazawa_21museum" = "Museum Seni Kontemporer Abad ke-21";
-"attraction_kanazawa_21museum_desc" = "A contemporary art museum in a distinctive circular building, popular for interactive works like the pool.";
+"attraction_kanazawa_21museum_desc" = "Museum seni kontemporer di gedung melingkar khas, karya interaktif seperti kolam sangat populer";
 "attraction_myoryuji" = "Kuil Myoryuji (Kuil Ninja)";
-"attraction_myoryuji_desc" = "A temple full of hidden stairs and traps, nicknamed the Ninja Temple.";
+"attraction_myoryuji_desc" = "Kuil penuh tangga rahasia dan jebakan, dijuluki Kuil Ninja";
 "attraction_zuihoden" = "Mausoleum Zuihoden";
-"attraction_zuihoden_desc" = "The lavish mausoleum of Date Masamune, with splendid Momoyama-era carvings and colors.";
+"attraction_zuihoden_desc" = "Mausoleum megah untuk Date Masamune, dengan ukiran dan warna gaya Momoyama yang indah";
 "attraction_zao_fox_village" = "Desa Rubah Zao";
-"attraction_zao_fox_village_desc" = "A popular spot to interact with free-roaming foxes, soothing with its many foxes.";
+"attraction_zao_fox_village_desc" = "Spot populer berinteraksi dengan rubah yang dibiarkan lepas, menenangkan dengan banyaknya rubah";
 "attraction_yakushiji" = "Kuil Yakushiji";
-"attraction_yakushiji_desc" = "A World Heritage Site known for its beautiful East Pagoda, a classic of Hakuho culture.";
+"attraction_yakushiji_desc" = "Warisan Dunia yang terkenal dengan Pagoda Timur nan indah, kuil kuno khas budaya Hakuho";
 "attraction_hasedera" = "Kuil Hasedera";
-"attraction_hasedera_desc" = "An ancient temple in Sakurai called the Temple of Flowers, famous for peonies and hydrangeas.";
+"attraction_hasedera_desc" = "Kuil kuno di Sakurai yang disebut Kuil Bunga, terkenal dengan peoni dan hortensia";
 "attraction_inubosaki_lighthouse" = "Mercusuar Inubosaki";
-"attraction_inubosaki_lighthouse_desc" = "A white lighthouse at Kanto's easternmost point, a famous spot for the first sunrise over the Pacific.";
+"attraction_inubosaki_lighthouse_desc" = "Mercusuar putih di ujung timur Kanto, tempat termasyhur menyaksikan matahari terbit pertama di atas Pasifik";
 "attraction_nokogiriyama" = "Gunung Nokogiri";
-"attraction_nokogiriyama_desc" = "A mountain known for its cliff-edge Hell Lookout and giant Buddha, reached by ropeway.";
+"attraction_nokogiriyama_desc" = "Gunung yang terkenal dengan Tepian Neraka di bibir tebing dan Buddha raksasa, ke puncak dengan kereta gantung";
 "attraction_sunpu_castle" = "Kastel Sunpu";
-"attraction_sunpu_castle_desc" = "The castle where Tokugawa Ieyasu spent his later years, now a spacious park.";
+"attraction_sunpu_castle_desc" = "Kastel tempat Tokugawa Ieyasu menghabiskan masa tuanya, kini menjadi taman luas";
 "attraction_omuroyama" = "Gunung Omuro";
-"attraction_omuroyama_desc" = "An Izu symbol with a beautiful bowl shape, offering stunning summit views reached by chairlift.";
+"attraction_omuroyama_desc" = "Ikon Izu berbentuk mangkuk indah, panorama puncak yang dicapai dengan kursi gantung memukau";
 
 "gourmet_shirunashi_tantanmen" = "Tantanmen tanpa kuah";
 "gourmet_shirunashi_tantanmen_desc" = "Tantanmen tanpa kuah, pedas dengan merica Sichuan dan cabai, asal Hiroshima";

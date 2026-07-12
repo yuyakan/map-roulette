@@ -246,19 +246,19 @@
 
 // Hokkaido
 "attraction_sapporo_snow_festival" = "เทศกาลหิมะซัปโปโร";
-"attraction_sapporo_snow_festival_desc" = "A winter festival of snow and ice that colors Sapporo";
+"attraction_sapporo_snow_festival_desc" = "เทศกาลหิมะและน้ำแข็งที่แต่งแต้มฤดูหนาวของซัปโปโร";
 "attraction_hakodate_mountain" = "ภูเขาฮาโกดาเตะ";
-"attraction_hakodate_mountain_desc" = "Symbol of Hakodate famous for its beautiful night view";
+"attraction_hakodate_mountain_desc" = "สัญลักษณ์ของฮาโกดาเตะ ขึ้นชื่อเรื่องวิวกลางคืนที่งดงาม";
 "attraction_asahiyama_zoo" = "สวนสัตว์อาซาฮิยามะ";
-"attraction_asahiyama_zoo_desc" = "Zoo famous for its behavioral exhibits";
+"attraction_asahiyama_zoo_desc" = "สวนสัตว์ที่โด่งดังจากการจัดแสดงพฤติกรรมสัตว์";
 "attraction_furano_lavender" = "ทุ่งลาเวนเดอร์ฟุราโนะ";
-"attraction_furano_lavender_desc" = "Spectacular purple landscape in summer";
+"attraction_furano_lavender_desc" = "ทิวทัศน์สีม่วงสุดตระการตาในฤดูร้อน";
 "attraction_shiretoko_lakes" = "ทะเลสาบทั้งห้าชิเรโตโกะ";
-"attraction_shiretoko_lakes_desc" = "Pristine forest of World Natural Heritage";
+"attraction_shiretoko_lakes_desc" = "ป่าดึกดำบรรพ์แห่งมรดกโลกทางธรรมชาติ";
 "attraction_otaru_canal" = "คลองโอตารุ";
-"attraction_otaru_canal_desc" = "Romantic canal woven with gas lamps and brick warehouses";
+"attraction_otaru_canal_desc" = "คลองสุดโรแมนติกที่ประกอบด้วยตะเกียงแก๊สและโกดังอิฐ";
 "attraction_lake_toya" = "ทะเลสาบโทยะ";
-"attraction_lake_toya_desc" = "Caldera lake famous for hot springs and fireworks";
+"attraction_lake_toya_desc" = "ทะเลสาบปล่องภูเขาไฟที่ขึ้นชื่อเรื่องออนเซ็นและดอกไม้ไฟ";
 
 "food_genghis_khan" = "จิงกิสข่าน (เนื้อแกะย่าง)";
 "food_seafood_bowl" = "ข้าวหน้าอาหารทะเล";
@@ -268,17 +268,17 @@
 
 // Aomori
 "attraction_hirosaki_castle" = "ปราสาทฮิโรซากิ";
-"attraction_hirosaki_castle_desc" = "Beautiful castle famous as a cherry blossom spot";
+"attraction_hirosaki_castle_desc" = "ปราสาทงดงามที่ขึ้นชื่อในฐานะจุดชมซากุระ";
 "attraction_oirase_stream" = "ลำธารโออิราเสะ";
-"attraction_oirase_stream_desc" = "Stream known for its beautiful autumn foliage";
+"attraction_oirase_stream_desc" = "ลำธารที่ขึ้นชื่อเรื่องใบไม้เปลี่ยนสีอันงดงาม";
 "attraction_lake_towada" = "ทะเลสาบโทวาดะ";
-"attraction_lake_towada_desc" = "Mystical beauty of a caldera lake";
+"attraction_lake_towada_desc" = "ความงามลึกลับของทะเลสาบปล่องภูเขาไฟ";
 "attraction_shirakami_mountains" = "เทือกเขาชิรากามิ";
-"attraction_shirakami_mountains_desc" = "World's largest beech primeval forest";
+"attraction_shirakami_mountains_desc" = "ป่าบีชดึกดำบรรพ์ที่ใหญ่ที่สุดในโลก";
 "attraction_nebuta_museum" = "พิพิธภัณฑ์เนบุตะ วะรัสเซะ";
-"attraction_nebuta_museum_desc" = "Experience the charm of Aomori's summer festival";
+"attraction_nebuta_museum_desc" = "สัมผัสเสน่ห์ของเทศกาลฤดูร้อนแห่งอาโอโมริ";
 "attraction_hakkoda_mountains" = "เทือกเขาฮักโกดะ";
-"attraction_hakkoda_mountains_desc" = "Mountain resort where you can enjoy ice trees and spectacular views";
+"attraction_hakkoda_mountains_desc" = "รีสอร์ทภูเขาที่เพลิดเพลินกับต้นไม้เคลือบน้ำแข็งและวิวสุดอลังการ";
 
 "food_apple" = "แอปเปิล";
 "food_oma_tuna" = "ทูน่าโอมะ";
@@ -288,17 +288,17 @@
 
 // Iwate
 "attraction_chusonji" = "วัดชูซนจิ";
-"attraction_chusonji_desc" = "Center of Hiraizumi's World Heritage";
+"attraction_chusonji_desc" = "ศูนย์กลางของมรดกโลกฮิราอิซุมิ";
 "attraction_hiraizumi" = "ฮิราอิซุมิ";
-"attraction_hiraizumi_desc" = "Reminiscent of the prosperity of the Oshu Fujiwara clan";
+"attraction_hiraizumi_desc" = "รำลึกถึงความรุ่งเรืองของตระกูลฟูจิวาระแห่งโอชู";
 "attraction_ryusendo_cave" = "ถ้ำริวเซนโด";
-"attraction_ryusendo_cave_desc" = "Blue beauty of underground lakes";
+"attraction_ryusendo_cave_desc" = "ความงามสีฟ้าของทะเลสาบใต้ดิน";
 "attraction_hachimantai" = "ฮาจิมันไต";
-"attraction_hachimantai_desc" = "Highland nature and hot springs";
+"attraction_hachimantai_desc" = "ธรรมชาติบนที่ราบสูงและออนเซ็น";
 "attraction_hanamaki_onsen" = "ออนเซ็นฮานามากิ";
-"attraction_hanamaki_onsen_desc" = "Hot spring resort associated with Kenji Miyazawa";
+"attraction_hanamaki_onsen_desc" = "แหล่งออนเซ็นที่เกี่ยวข้องกับมิยาซาวะ เค็นจิ";
 "attraction_jodogahama" = "หาดโจโดกาฮามะ";
-"attraction_jodogahama_desc" = "Beautiful coast with contrasting white rocks and blue sea";
+"attraction_jodogahama_desc" = "ชายฝั่งงดงามที่หินขาวตัดกับทะเลสีคราม";
 
 "food_wanko_soba" = "วังโกะโซบะ";
 "food_morioka_cold_noodles" = "บะหมี่เย็นโมริโอกะ";
@@ -308,17 +308,17 @@
 
 // Akita
 "attraction_kakunodate_samurai_houses" = "ย่านซามูไรคาคุโนดาเตะ";
-"attraction_kakunodate_samurai_houses_desc" = "Little Kyoto of Michinoku";
+"attraction_kakunodate_samurai_houses_desc" = "เกียวโตน้อยแห่งมิจิโนกุ";
 "attraction_lake_tazawa" = "ทะเลสาบทาซาวะ";
-"attraction_lake_tazawa_desc" = "Japan's deepest lake";
+"attraction_lake_tazawa_desc" = "ทะเลสาบที่ลึกที่สุดในญี่ปุ่น";
 "attraction_namahage_museum" = "พิพิธภัณฑ์นามาฮาเกะ";
-"attraction_namahage_museum_desc" = "Experience Akita's traditional culture";
+"attraction_namahage_museum_desc" = "สัมผัสวัฒนธรรมดั้งเดิมของอาคิตะ";
 "attraction_akita_kanto_festival" = "เทศกาลคันโตอาคิตะ";
-"attraction_akita_kanto_festival_desc" = "Kanto lanterns that color summer nights";
+"attraction_akita_kanto_festival_desc" = "โคมคันโตที่แต่งแต้มค่ำคืนฤดูร้อน";
 "attraction_shirakami_mountains_akita" = "เทือกเขาชิรากามิ";
-"attraction_shirakami_mountains_akita_desc" = "World Heritage beech primeval forest";
+"attraction_shirakami_mountains_akita_desc" = "ป่าบีชดึกดำบรรพ์แห่งมรดกโลก";
 "attraction_nyuto_onsen" = "ออนเซ็นนิวโต";
-"attraction_nyuto_onsen_desc" = "Hot spring village with a hidden hot spring atmosphere";
+"attraction_nyuto_onsen_desc" = "ออนเซ็นที่มีบรรยากาศของบ่อน้ำพุร้อนลับ";
 
 "food_kiritanpo" = "คิริตัมโปะ";
 "food_hinai_chicken" = "ไก่ฮินาอิ";
@@ -328,17 +328,17 @@
 
 // Miyagi
 "attraction_matsushima" = "มัตสึชิมะ";
-"attraction_matsushima_desc" = "One of Japan's three scenic views";
+"attraction_matsushima_desc" = "หนึ่งในสามทัศนียภาพงามที่สุดของญี่ปุ่น";
 "attraction_sendai_castle" = "ซากปราสาทเซนได";
-"attraction_sendai_castle_desc" = "Castle ruins of Date Masamune";
+"attraction_sendai_castle_desc" = "ซากปราสาทที่ประทับของดาเตะ มาซามุเนะ";
 "attraction_zao" = "ซาโอ";
-"attraction_zao_desc" = "Famous for ice trees and skiing";
+"attraction_zao_desc" = "ขึ้นชื่อเรื่องต้นไม้เคลือบน้ำแข็งและสกี";
 "attraction_naruko_onsen" = "ออนเซ็นนารูโกะ";
-"attraction_naruko_onsen_desc" = "Historic hot spring resort";
+"attraction_naruko_onsen_desc" = "แหล่งออนเซ็นที่มีประวัติศาสตร์ยาวนาน";
 "attraction_zuiganji" = "วัดซุยกันจิ";
-"attraction_zuiganji_desc" = "Famous temple of Matsushima";
+"attraction_zuiganji_desc" = "วัดชื่อดังแห่งมัตสึชิมะ";
 "attraction_akiu_onsen" = "ออนเซ็นอากิอุ";
-"attraction_akiu_onsen_desc" = "One of the three famous hot springs of Oshu, popular for beautiful skin";
+"attraction_akiu_onsen_desc" = "หนึ่งในสามออนเซ็นชื่อดังแห่งโอชู ยอดนิยมด้านผิวสวย";
 
 "food_beef_tongue" = "ลิ้นวัวย่าง";
 "food_sasukamaboko" = "ซาซะคามาโบโกะ";
@@ -348,17 +348,17 @@
 
 // Yamagata
 "attraction_yamadera" = "วัดยามาเดระ";
-"attraction_yamadera_desc" = "Famous temple also visited by Matsuo Basho";
+"attraction_yamadera_desc" = "วัดชื่อดังที่มัตสึโอะ บาโช เคยมาเยือน";
 "attraction_zao_onsen" = "ออนเซ็นซาโอ";
-"attraction_zao_onsen_desc" = "Hot spring resort famous for ice trees";
+"attraction_zao_onsen_desc" = "แหล่งออนเซ็นที่ขึ้นชื่อเรื่องต้นไม้เคลือบน้ำแข็ง";
 "attraction_ginzan_onsen" = "ออนเซ็นกินซัง";
-"attraction_ginzan_onsen_desc" = "Hot spring town with Taisho romance atmosphere";
+"attraction_ginzan_onsen_desc" = "ย่านออนเซ็นที่อบอวลด้วยกลิ่นอายไทโชโรมัน";
 "attraction_mount_gassan" = "ภูเขากัสซัง";
-"attraction_mount_gassan_desc" = "One of the three Dewa mountains";
+"attraction_mount_gassan_desc" = "หนึ่งในสามภูเขาแห่งเดวะ";
 "attraction_mount_haguro" = "ภูเขาฮากุโระ";
-"attraction_mount_haguro_desc" = "Main shrine of Dewa Sanzan Shrine";
+"attraction_mount_haguro_desc" = "ศาลเจ้าหลักของศาลเจ้าเดวะซันซัง";
 "attraction_mogami_river_cruise" = "ล่องเรือแม่น้ำโมกามิ";
-"attraction_mogami_river_cruise_desc" = "Scenic river cruise experience";
+"attraction_mogami_river_cruise_desc" = "ประสบการณ์ล่องเรือแม่น้ำท่ามกลางทิวทัศน์งดงาม";
 
 "food_cherry" = "เชอร์รี";
 "food_yonezawa_beef" = "เนื้อวัวโยเนซาวะ";
@@ -368,17 +368,17 @@
 
 // Fukushima
 "attraction_aizu_wakamatsu_castle" = "ปราสาทไอสึวากามัตสึ";
-"attraction_aizu_wakamatsu_castle_desc" = "Famous castle of the Byakkotai";
+"attraction_aizu_wakamatsu_castle_desc" = "ปราสาทชื่อดังจากหน่วยเบียคโคไต";
 "attraction_goshikinuma" = "โกชิกินุมะ";
-"attraction_goshikinuma_desc" = "Mysterious colored pond group";
+"attraction_goshikinuma_desc" = "กลุ่มบึงสีลึกลับ";
 "attraction_spa_resort_hawaiians" = "สปารีสอร์ทฮาวายเอี้ยนส์";
-"attraction_spa_resort_hawaiians_desc" = "Tropical resort facility";
+"attraction_spa_resort_hawaiians_desc" = "รีสอร์ตเมืองร้อนตลอดปี";
 "attraction_ouchi_juku" = "โออุจิจูกุ";
-"attraction_ouchi_juku_desc" = "Edo period post town";
+"attraction_ouchi_juku_desc" = "เมืองสถานีสมัยเอโดะ";
 "attraction_lake_inawashiro" = "ทะเลสาบอินาวาชิโระ";
-"attraction_lake_inawashiro_desc" = "Beautiful lake called Tenkyo Lake";
+"attraction_lake_inawashiro_desc" = "ทะเลสาบงดงามที่ถูกเรียกว่าทะเลสาบกระจกสวรรค์";
 "attraction_abukuma_cave" = "ถ้ำอาบุคุมะ";
-"attraction_abukuma_cave_desc" = "Mysterious underground world of limestone caves";
+"attraction_abukuma_cave_desc" = "โลกใต้ดินลึกลับของถ้ำหินงอกหินย้อย";
 
 "food_kitakata_ramen" = "ราเมนคิตะกะตะ";
 "food_aizu_chicken" = "ไก่ไอสึ";
@@ -388,17 +388,17 @@
 
 // Ibaraki
 "attraction_kairakuen" = "สวนไคระคุเอ็ง";
-"attraction_kairakuen_desc" = "One of Japan's three famous gardens";
+"attraction_kairakuen_desc" = "หนึ่งในสามสวนชื่อดังของญี่ปุ่น";
 "attraction_fukuroda_falls" = "น้ำตกฟุกุโรดะ";
-"attraction_fukuroda_falls_desc" = "One of Japan's three great waterfalls";
+"attraction_fukuroda_falls_desc" = "หนึ่งในสามน้ำตกที่ยิ่งใหญ่ของญี่ปุ่น";
 "attraction_hitachi_seaside_park" = "สวนริมทะเลฮิตาชิ";
-"attraction_hitachi_seaside_park_desc" = "Park famous for nemophila";
+"attraction_hitachi_seaside_park_desc" = "สวนที่ขึ้นชื่อเรื่องดอกเนโมฟีลา";
 "attraction_mount_tsukuba" = "ภูเขาสึคุบะ";
-"attraction_mount_tsukuba_desc" = "Fuji in the west, Tsukuba in the east";
+"attraction_mount_tsukuba_desc" = "ฟูจิแห่งตะวันตก สึคุบะแห่งตะวันออก";
 "attraction_oarai_coast" = "ชายฝั่งโออาราอิ";
-"attraction_oarai_coast_desc" = "Beautiful coastline";
+"attraction_oarai_coast_desc" = "แนวชายฝั่งที่งดงาม";
 "attraction_ryujin_bridge" = "สะพานแขวนริวจิน";
-"attraction_ryujin_bridge_desc" = "One of Honshu's longest pedestrian suspension bridges where you can also enjoy bungee jumping";
+"attraction_ryujin_bridge_desc" = "สะพานแขวนคนเดินยาวที่สุดในฮอนชู เล่นบันจีจัมพ์ได้ด้วย";
 
 "food_natto" = "นัตโตะ";
 "food_anko_nabe" = "หม้อไฟปลาแองเกลอร์";
@@ -408,17 +408,17 @@
 
 // Chiba
 "attraction_tokyo_disneyland" = "โตเกียวดิสนีย์แลนด์";
-"attraction_tokyo_disneyland_desc" = "The magical kingdom of dreams";
+"attraction_tokyo_disneyland_desc" = "อาณาจักรแห่งความฝันและเวทมนตร์";
 "attraction_naritasan_shinshoji" = "วัดนาริตะซังชินโชจิ";
-"attraction_naritasan_shinshoji_desc" = "One of Kanto's three great Fudo temples";
+"attraction_naritasan_shinshoji_desc" = "หนึ่งในสามวัดฟุโดชื่อดังแห่งคันโต";
 "attraction_kamogawa_seaworld" = "คาโมกาวะซีเวิลด์";
-"attraction_kamogawa_seaworld_desc" = "Encounters with marine life";
+"attraction_kamogawa_seaworld_desc" = "พบปะกับสิ่งมีชีวิตในท้องทะเล";
 "attraction_choshi" = "โชชิ";
-"attraction_choshi_desc" = "Easternmost city of Honshu";
+"attraction_choshi_desc" = "เมืองที่อยู่ปลายสุดตะวันออกของฮอนชู";
 "attraction_mother_farm" = "ฟาร์มมาเธอร์";
-"attraction_mother_farm_desc" = "Interaction with nature and animals";
+"attraction_mother_farm_desc" = "สัมผัสธรรมชาติและสัตว์";
 "attraction_tokyo_disneysea" = "โตเกียวดิสนีย์ซี";
-"attraction_tokyo_disneysea_desc" = "A world of ocean-themed adventure and imagination";
+"attraction_tokyo_disneysea_desc" = "โลกแห่งการผจญภัยและจินตนาการธีมทะเล";
 
 "food_peanuts" = "ถั่วลิสง";
 "food_loquat" = "ลูกหว้า (บิวะ)";
@@ -428,17 +428,17 @@
 
 // Tochigi
 "attraction_nikko_toshogu" = "ศาลเจ้านิกโก้โทโชกุ";
-"attraction_nikko_toshogu_desc" = "Gorgeous mausoleum where Tokugawa Ieyasu rests";
+"attraction_nikko_toshogu_desc" = "สุสานอันงดงามที่ฝังศพโทกุงาวะ อิเอยาสุ";
 "attraction_kegon_falls" = "น้ำตกเคกอน";
-"attraction_kegon_falls_desc" = "Famous waterfall of Nikko";
+"attraction_kegon_falls_desc" = "น้ำตกชื่อดังแห่งนิกโก้";
 "attraction_lake_chuzenji" = "ทะเลสาบชูเซนจิ";
-"attraction_lake_chuzenji_desc" = "Beautiful highland lake";
+"attraction_lake_chuzenji_desc" = "ทะเลสาบงดงามบนที่ราบสูง";
 "attraction_nasu_highlands" = "ที่ราบสูงนาสุ";
-"attraction_nasu_highlands_desc" = "Popular as a resort area";
+"attraction_nasu_highlands_desc" = "เป็นที่นิยมในฐานะแหล่งรีสอร์ต";
 "attraction_ashikaga_flower_park" = "สวนดอกไม้อาชิคางะ";
-"attraction_ashikaga_flower_park_desc" = "Famous for wisteria flowers";
+"attraction_ashikaga_flower_park_desc" = "ขึ้นชื่อเรื่องดอกวิสทีเรีย";
 "attraction_oya_museum" = "พิพิธภัณฑ์หินโอยะ";
-"attraction_oya_museum_desc" = "Former Oya stone quarry with mysterious underground space";
+"attraction_oya_museum_desc" = "เหมืองหินโอยะเก่าที่มีพื้นที่ใต้ดินลึกลับกว้างขวาง";
 
 "food_utsunomiya_gyoza" = "เกี๊ยวซ่าอุสึโนมิยะ";
 "food_yuba" = "ยูบะ (ฟองเต้าหู้)";
@@ -448,17 +448,17 @@
 
 // Gunma
 "attraction_kusatsu_onsen" = "ออนเซ็นคุซัตสึ";
-"attraction_kusatsu_onsen_desc" = "One of Japan's three famous hot springs";
+"attraction_kusatsu_onsen_desc" = "หนึ่งในสามออนเซ็นชื่อดังของญี่ปุ่น";
 "attraction_ikaho_onsen" = "ออนเซ็นอิคาโฮะ";
-"attraction_ikaho_onsen_desc" = "Hot spring famous for its stone steps";
+"attraction_ikaho_onsen_desc" = "ออนเซ็นที่ขึ้นชื่อเรื่องถนนบันไดหิน";
 "attraction_oze" = "โอเซะ";
-"attraction_oze_desc" = "Marshland where skunk cabbage blooms";
+"attraction_oze_desc" = "พื้นที่ชุ่มน้ำที่ดอกมิซุบาโชะบาน";
 "attraction_tomioka_silk_mill" = "โรงงานทอไหมโทมิโอกะ";
-"attraction_tomioka_silk_mill_desc" = "World Heritage silk industry site";
+"attraction_tomioka_silk_mill_desc" = "แหล่งอุตสาหกรรมไหมมรดกโลก";
 "attraction_lake_haruna" = "ทะเลสาบฮารุนะ";
-"attraction_lake_haruna_desc" = "Caldera lake of Mount Haruna";
+"attraction_lake_haruna_desc" = "ทะเลสาบปล่องภูเขาไฟฮารุนะ";
 "attraction_mount_tanigawa" = "ภูเขาทานิงาวะ";
-"attraction_mount_tanigawa_desc" = "Spectacular views and trekking enjoyed by ropeway";
+"attraction_mount_tanigawa_desc" = "วิวสุดอลังการและการเดินป่าที่เพลิดเพลินด้วยกระเช้าไฟฟ้า";
 
 "food_yaki_manju" = "ยากิมันจู";
 "food_shimonita_negi" = "ต้นหอมชิโมนิตะ";
@@ -468,17 +468,17 @@
 
 // Saitama
 "attraction_kawagoe" = "คาวาโกเอะ";
-"attraction_kawagoe_desc" = "Storehouse town called Little Edo";
+"attraction_kawagoe_desc" = "เมืองโกดังที่ถูกเรียกว่าเอโดะน้อย";
 "attraction_chichibu" = "จิจิบุ";
-"attraction_chichibu_desc" = "Nature-rich mountain town";
+"attraction_chichibu_desc" = "เมืองในหุบเขาที่อุดมด้วยธรรมชาติ";
 "attraction_nagatoro" = "นางาโทโระ";
-"attraction_nagatoro_desc" = "Scenic spot famous for rock formations";
+"attraction_nagatoro_desc" = "แหล่งท่องเที่ยวที่ขึ้นชื่อเรื่องหินปูพื้น";
 "attraction_railway_museum" = "พิพิธภัณฑ์รถไฟ";
-"attraction_railway_museum_desc" = "Learn about railway history";
+"attraction_railway_museum_desc" = "เรียนรู้ประวัติศาสตร์รถไฟ";
 "attraction_ranzan_valley" = "หุบเขารันซัน";
-"attraction_ranzan_valley_desc" = "Valley beautiful for autumn foliage";
+"attraction_ranzan_valley_desc" = "หุบเขาที่ใบไม้เปลี่ยนสีงดงาม";
 "attraction_musashi_ichinomiya_hikawa_shrine" = "ศาลเจ้ามุซาชิอิจิโนมิยะฮิกาวะ";
-"attraction_musashi_ichinomiya_hikawa_shrine_desc" = "Prestigious shrine as the first shrine of Musashi Province";
+"attraction_musashi_ichinomiya_hikawa_shrine_desc" = "ศาลเจ้าอันทรงเกียรติในฐานะศาลเจ้าอันดับหนึ่งของแคว้นมุซาชิ";
 
 "food_kawagoe_sweet_potato" = "มันหวานคาวาโกเอะ";
 "food_chichibu_soba" = "โซบะจิจิบุ";
@@ -488,21 +488,21 @@
 
 // Tokyo
 "attraction_tokyo_skytree" = "โตเกียวสกายทรี";
-"attraction_tokyo_skytree_desc" = "Tokyo's new symbol at 634m high";
+"attraction_tokyo_skytree_desc" = "สัญลักษณ์ใหม่ของโตเกียว สูง 634 เมตร";
 "attraction_sensoji" = "วัดเซนโซจิ";
-"attraction_sensoji_desc" = "Tokyo's oldest temple";
+"attraction_sensoji_desc" = "วัดที่เก่าแก่ที่สุดในโตเกียว";
 "attraction_imperial_palace" = "พระราชวังหลวง";
-"attraction_imperial_palace_desc" = "Residence of His Majesty the Emperor";
+"attraction_imperial_palace_desc" = "ที่ประทับขององค์จักรพรรดิ";
 "attraction_shibuya_crossing" = "สี่แยกชิบุยะ";
-"attraction_shibuya_crossing_desc" = "World's most famous intersection";
+"attraction_shibuya_crossing_desc" = "สี่แยกที่มีชื่อเสียงที่สุดในโลก";
 "attraction_tokyo_tower" = "โตเกียวทาวเวอร์";
-"attraction_tokyo_tower_desc" = "Beautiful red and white radio tower";
+"attraction_tokyo_tower_desc" = "หอส่งสัญญาณสีแดงขาวที่งดงาม";
 "attraction_meiji_shrine" = "ศาลเจ้าเมจิ";
-"attraction_meiji_shrine_desc" = "Shrine standing in a sacred forest in the city center";
+"attraction_meiji_shrine_desc" = "ศาลเจ้าที่ตั้งอยู่ในป่าศักดิ์สิทธิ์ใจกลางเมือง";
 "attraction_odaiba" = "โอไดบะ";
-"attraction_odaiba_desc" = "Futuristic area with beautiful Rainbow Bridge and night views";
+"attraction_odaiba_desc" = "ย่านล้ำสมัยที่สะพานเรนโบว์และวิวกลางคืนงดงาม";
 "attraction_ueno_zoo" = "สวนสัตว์อุเอโนะ";
-"attraction_ueno_zoo_desc" = "Japan's oldest zoo, famous for pandas";
+"attraction_ueno_zoo_desc" = "สวนสัตว์ที่เก่าแก่ที่สุดในญี่ปุ่น ขึ้นชื่อเรื่องแพนด้า";
 
 "food_edomae_sushi" = "ซูชิเอโดมาเอะ";
 "food_monjayaki" = "มนจะยากิ";
@@ -512,19 +512,19 @@
 
 // Kanagawa
 "attraction_kamakura_daibutsu" = "พระใหญ่คามาคุระ";
-"attraction_kamakura_daibutsu_desc" = "Bronze Great Buddha of Kotokuin Temple";
+"attraction_kamakura_daibutsu_desc" = "พระใหญ่สำริดแห่งวัดโคโทคุอิน";
 "attraction_enoshima" = "เอโนชิมะ";
-"attraction_enoshima_desc" = "Popular tourist destination in Shonan";
+"attraction_enoshima_desc" = "แหล่งท่องเที่ยวยอดนิยมแห่งโชนัน";
 "attraction_hakone" = "ฮาโกเนะ";
-"attraction_hakone_desc" = "Town of hot springs and art";
+"attraction_hakone_desc" = "เมืองแห่งออนเซ็นและศิลปะ";
 "attraction_yokohama_chinatown" = "ไชน่าทาวน์โยโกฮามะ";
-"attraction_yokohama_chinatown_desc" = "Japan's largest Chinatown";
+"attraction_yokohama_chinatown_desc" = "ไชน่าทาวน์ที่ใหญ่ที่สุดในญี่ปุ่น";
 "attraction_minato_mirai" = "มินาโตะมิไร";
-"attraction_minato_mirai_desc" = "Yokohama's future city";
+"attraction_minato_mirai_desc" = "เมืองแห่งอนาคตของโยโกฮามะ";
 "attraction_owakudani" = "โอวาคุดานิ";
-"attraction_owakudani_desc" = "Dynamic scenery created by Hakone's volcanic activity";
+"attraction_owakudani_desc" = "ทัศนียภาพทรงพลังที่เกิดจากการปะทุของภูเขาไฟฮาโกเนะ";
 "attraction_hokokuji" = "วัดโฮโคคุจิ";
-"attraction_hokokuji_desc" = "Kamakura Zen temple famous for its beautiful bamboo grove";
+"attraction_hokokuji_desc" = "วัดเซนคามาคุระที่ขึ้นชื่อเรื่องป่าไผ่งดงาม";
 
 "food_shumai" = "ชูมาย";
 "food_kamakura_vegetables" = "ผักคามาคุระ";
@@ -534,17 +534,17 @@
 
 // Niigata
 "attraction_sado_island" = "เกาะซาโดะ";
-"attraction_sado_island_desc" = "Island of gold mines and nature";
+"attraction_sado_island_desc" = "เกาะแห่งเหมืองทองและธรรมชาติ";
 "attraction_naeba_ski_resort" = "ลานสกีนาเอบะ";
-"attraction_naeba_ski_resort_desc" = "Winter sports resort";
+"attraction_naeba_ski_resort_desc" = "รีสอร์ตกีฬาฤดูหนาว";
 "attraction_yahiko_shrine" = "ศาลเจ้ายาฮิโกะ";
-"attraction_yahiko_shrine_desc" = "Ancient shrine of Echigo Province";
+"attraction_yahiko_shrine_desc" = "ศาลเจ้าโบราณอันดับหนึ่งของแคว้นเอจิโกะ";
 "attraction_joetsu_kokusai_ski_resort" = "ลานสกีนานาชาติโจเอตสึ";
-"attraction_joetsu_kokusai_ski_resort_desc" = "Vast ski area";
+"attraction_joetsu_kokusai_ski_resort_desc" = "ลานสกีขนาดกว้างใหญ่";
 "attraction_myoko_kogen" = "ที่ราบสูงเมียวโค";
-"attraction_myoko_kogen_desc" = "Nature of the four seasons";
+"attraction_myoko_kogen_desc" = "ธรรมชาติที่เปลี่ยนไปตามฤดูกาล";
 "attraction_kiyotsu_gorge" = "หุบเขาคิโยสึ";
-"attraction_kiyotsu_gorge_desc" = "One of Japan's three great gorges, also enjoy art works";
+"attraction_kiyotsu_gorge_desc" = "หนึ่งในสามหุบเขาใหญ่ของญี่ปุ่น ชมงานศิลปะได้ด้วย";
 
 "food_niigata_rice" = "ข้าวนีงาตะ";
 "food_noppe" = "น็อปเปะ";
@@ -554,19 +554,19 @@
 
 // Nagano
 "attraction_zenkoji" = "วัดเซนโคจิ";
-"attraction_zenkoji_desc" = "Non-sectarian ancient temple";
+"attraction_zenkoji_desc" = "วัดโบราณที่ไม่สังกัดนิกาย";
 "attraction_karuizawa" = "คารุอิซาวะ";
-"attraction_karuizawa_desc" = "Popular as a summer resort";
+"attraction_karuizawa_desc" = "เป็นที่นิยมในฐานะเมืองพักร้อน";
 "attraction_kamikochi" = "คามิโคจิ";
-"attraction_kamikochi_desc" = "One of Japan's premier mountain scenic spots";
+"attraction_kamikochi_desc" = "แหล่งชมทัศนียภาพภูเขาชั้นนำของญี่ปุ่น";
 "attraction_hakuba" = "ฮาคุบะ";
-"attraction_hakuba_desc" = "Northern Alps resort";
+"attraction_hakuba_desc" = "รีสอร์ตแห่งเทือกเขาแอลป์เหนือ";
 "attraction_matsumoto_castle" = "ปราสาทมัตสึโมโตะ";
-"attraction_matsumoto_castle_desc" = "National treasure with existing castle keep";
+"attraction_matsumoto_castle_desc" = "สมบัติชาติที่มีหอปราสาทดั้งเดิม";
 "attraction_lake_suwa" = "ทะเลสาบซุวะ";
-"attraction_lake_suwa_desc" = "Beautiful lake famous for fireworks festivals";
+"attraction_lake_suwa_desc" = "ทะเลสาบงดงามที่ขึ้นชื่อเรื่องเทศกาลดอกไม้ไฟ";
 "attraction_togakushi" = "โทงาคุชิ";
-"attraction_togakushi_desc" = "Famous as a ninja village and soba production area";
+"attraction_togakushi_desc" = "ขึ้นชื่อในฐานะหมู่บ้านนินจาและแหล่งผลิตโซบะ";
 
 "food_shinshu_soba" = "โซบะชินชู";
 "food_oyaki" = "โอยากิ";
@@ -576,17 +576,17 @@
 
 // Yamanashi
 "attraction_mount_fuji" = "ภูเขาไฟฟูจิ";
-"attraction_mount_fuji_desc" = "Japan's highest sacred mountain";
+"attraction_mount_fuji_desc" = "ภูเขาศักดิ์สิทธิ์ที่สูงที่สุดในญี่ปุ่น";
 "attraction_lake_kawaguchi" = "ทะเลสาบคาวางุจิ";
-"attraction_lake_kawaguchi_desc" = "One of the Fuji Five Lakes";
+"attraction_lake_kawaguchi_desc" = "หนึ่งในทะเลสาบทั้งห้าแห่งฟูจิ";
 "attraction_shosenkyo" = "หุบเขาโชเซนเคียว";
-"attraction_shosenkyo_desc" = "Beautiful granite gorge";
+"attraction_shosenkyo_desc" = "หุบเขาหินแกรนิตอันงดงาม";
 "attraction_lake_yamanaka" = "ทะเลสาบยามานากะ";
-"attraction_lake_yamanaka_desc" = "Largest of the Fuji Five Lakes";
+"attraction_lake_yamanaka_desc" = "ทะเลสาบที่ใหญ่ที่สุดในทะเลสาบทั้งห้าแห่งฟูจิ";
 "attraction_oshino_hakkai" = "โอชิโนะฮักไก";
-"attraction_oshino_hakkai_desc" = "Spring water group of Mount Fuji";
+"attraction_oshino_hakkai_desc" = "กลุ่มน้ำผุดของภูเขาไฟฟูจิ";
 "attraction_takeda_shrine" = "ศาลเจ้าทาเคดะ";
-"attraction_takeda_shrine_desc" = "Shrine dedicated to Takeda Shingen for victory";
+"attraction_takeda_shrine_desc" = "ศาลเจ้าแห่งชัยชนะที่บูชาทาเคดะ ชินเก็น";
 
 "food_hoto" = "โฮโตะ";
 "food_shingen_mochi" = "ชินเก็นโมจิ";
@@ -596,19 +596,19 @@
 
 // Shizuoka
 "attraction_mount_fuji_shizuoka" = "ภูเขาไฟฟูจิ";
-"attraction_mount_fuji_shizuoka_desc" = "Symbol of Japan";
+"attraction_mount_fuji_shizuoka_desc" = "สัญลักษณ์ของญี่ปุ่น";
 "attraction_izu_peninsula" = "คาบสมุทรอิซุ";
-"attraction_izu_peninsula_desc" = "Peninsula of hot springs and resorts";
+"attraction_izu_peninsula_desc" = "คาบสมุทรแห่งออนเซ็นและรีสอร์ต";
 "attraction_atami_onsen" = "ออนเซ็นอาตามิ";
-"attraction_atami_onsen_desc" = "Historic hot spring resort";
+"attraction_atami_onsen_desc" = "แหล่งออนเซ็นที่มีมาแต่โบราณ";
 "attraction_lake_hamana" = "ทะเลสาบฮามานะ";
-"attraction_lake_hamana_desc" = "Lake famous for eel";
+"attraction_lake_hamana_desc" = "ทะเลสาบที่ขึ้นชื่อเรื่องปลาไหล";
 "attraction_kunozan_toshogu" = "ศาลเจ้าคุโนซังโทโชกุ";
-"attraction_kunozan_toshogu_desc" = "First burial site of Tokugawa Ieyasu";
+"attraction_kunozan_toshogu_desc" = "สถานที่ฝังศพแรกของโทกุงาวะ อิเอยาสุ";
 "attraction_shiraito_falls" = "น้ำตกชิราอิโตะ";
-"attraction_shiraito_falls_desc" = "Beautiful waterfall like silk threads at the foot of Mount Fuji";
+"attraction_shiraito_falls_desc" = "น้ำตกงดงามคล้ายเส้นไหมที่เชิงภูเขาไฟฟูจิ";
 "attraction_miho_matsubara" = "ป่าสนมิโฮะ";
-"attraction_miho_matsubara_desc" = "World Heritage component with spectacular views of Mount Fuji and pine forest";
+"attraction_miho_matsubara_desc" = "ทัศนียภาพภูเขาไฟฟูจิและป่าสน ทรัพย์สินองค์ประกอบของมรดกโลก";
 
 "food_shizuoka_tea" = "ชาชิซุโอกะ";
 "food_unagi" = "ปลาไหลย่าง";
@@ -618,17 +618,17 @@
 
 // Aichi
 "attraction_nagoya_castle" = "ปราสาทนาโกยา";
-"attraction_nagoya_castle_desc" = "Famous for its golden shachihoko";
+"attraction_nagoya_castle_desc" = "ขึ้นชื่อเรื่องปลาชาจิโฮโกะทองคำ";
 "attraction_atsuta_shrine" = "ศาลเจ้าอัตสึตะ";
-"attraction_atsuta_shrine_desc" = "Shrine housing one of the Three Sacred Treasures";
+"attraction_atsuta_shrine_desc" = "ศาลเจ้าที่ประดิษฐานหนึ่งในสามเครื่องราชกกุธภัณฑ์";
 "attraction_inuyama_castle" = "ปราสาทอินุยามะ";
-"attraction_inuyama_castle_desc" = "National treasure with existing castle keep";
+"attraction_inuyama_castle_desc" = "สมบัติชาติที่มีหอปราสาทดั้งเดิม";
 "attraction_chita_peninsula" = "คาบสมุทรจิตะ";
-"attraction_chita_peninsula_desc" = "Seafood and hot springs";
+"attraction_chita_peninsula_desc" = "อาหารทะเลและออนเซ็น";
 "attraction_korankei" = "โครันเค";
-"attraction_korankei_desc" = "Famous spot for autumn foliage";
+"attraction_korankei_desc" = "แหล่งชมใบไม้เปลี่ยนสีชื่อดัง";
 "attraction_linear_railway_museum" = "พิพิธภัณฑ์รถไฟลิเนียร์";
-"attraction_linear_railway_museum_desc" = "Museum where you can experience the latest railway technology";
+"attraction_linear_railway_museum_desc" = "พิพิธภัณฑ์ที่สัมผัสเทคโนโลยีรถไฟล่าสุด";
 
 "food_miso_katsu" = "มิโซะคัตสึ";
 "food_hitsumabushi" = "ฮิสึมะบุชิ";
@@ -638,17 +638,17 @@
 
 // Mie
 "attraction_ise_shrine" = "ศาลเจ้าอิเสะ";
-"attraction_ise_shrine_desc" = "Spiritual home of the Japanese people";
+"attraction_ise_shrine_desc" = "บ้านเกิดทางจิตใจของชาวญี่ปุ่น";
 "attraction_toba_aquarium" = "พิพิธภัณฑ์สัตว์น้ำโทบะ";
-"attraction_toba_aquarium_desc" = "Treasure trove of marine life";
+"attraction_toba_aquarium_desc" = "ขุมทรัพย์แห่งสิ่งมีชีวิตในทะเล";
 "attraction_kumano_kodo" = "เส้นทางแสวงบุญคุมาโนะโคโด";
-"attraction_kumano_kodo_desc" = "World Heritage pilgrimage routes";
+"attraction_kumano_kodo_desc" = "เส้นทางแสวงบุญมรดกโลก";
 "attraction_nabana_no_sato" = "นาบานะโนะซาโตะ";
-"attraction_nabana_no_sato_desc" = "Famous for illuminations";
+"attraction_nabana_no_sato_desc" = "ขึ้นชื่อเรื่องไฟประดับ";
 "attraction_iga_ueno_castle" = "ปราสาทอิกะอุเอโนะ";
-"attraction_iga_ueno_castle_desc" = "Castle in the ninja village";
+"attraction_iga_ueno_castle_desc" = "ปราสาทในหมู่บ้านนินจา";
 "attraction_shima_spain_village" = "หมู่บ้านสเปนชิมะ";
-"attraction_shima_spain_village_desc" = "Theme park where you can enjoy Spanish culture and atmosphere";
+"attraction_shima_spain_village_desc" = "สวนสนุกธีมที่เพลิดเพลินกับวัฒนธรรมและบรรยากาศสเปน";
 
 "food_ise_ebi" = "กุ้งมังกรอิเสะ";
 "food_matsusaka_beef" = "เนื้อวัวมัตสึซากะ";
@@ -658,17 +658,17 @@
 
 // Gifu
 "attraction_shirakawago" = "ชิราคาวาโกะ";
-"attraction_shirakawago_desc" = "World Heritage gassho-zukuri village";
+"attraction_shirakawago_desc" = "หมู่บ้านมรดกโลกทรงกัชโช";
 "attraction_hida_takayama" = "ฮิดะทาคายามะ";
-"attraction_hida_takayama_desc" = "Beautiful old townscape";
+"attraction_hida_takayama_desc" = "ย่านเมืองเก่าที่งดงาม";
 "attraction_gero_onsen" = "ออนเซ็นเกโระ";
-"attraction_gero_onsen_desc" = "One of Japan's three famous hot springs";
+"attraction_gero_onsen_desc" = "หนึ่งในสามออนเซ็นชื่อดังของญี่ปุ่น";
 "attraction_kinkazan" = "ภูเขาคินคะ";
-"attraction_kinkazan_desc" = "View from Gifu Castle";
+"attraction_kinkazan_desc" = "ทัศนียภาพจากปราสาทกิฟุ";
 "attraction_magome_juku" = "มาโกเมะจูกุ";
-"attraction_magome_juku_desc" = "Post town on the Nakasendo";
+"attraction_magome_juku_desc" = "เมืองสถานีบนเส้นทางนากาเซนโด";
 "attraction_okuhida_onsen" = "ออนเซ็นโอคุฮิดะ";
-"attraction_okuhida_onsen_desc" = "Hidden hot spring villages scattered at the foot of the Northern Alps";
+"attraction_okuhida_onsen_desc" = "กลุ่มออนเซ็นลับที่กระจายอยู่เชิงเทือกเขาแอลป์เหนือ";
 
 "food_hida_beef" = "เนื้อวัวฮิดะ";
 "food_hoba_miso" = "โฮบะมิโซะ";
@@ -678,17 +678,17 @@
 
 // Fukui
 "attraction_tojinbo" = "หน้าผาโทจินโบ";
-"attraction_tojinbo_desc" = "Scenic cliff landscape";
+"attraction_tojinbo_desc" = "แหล่งท่องเที่ยวหน้าผาสูงชัน";
 "attraction_eiheiji" = "วัดเออิเฮจิ";
-"attraction_eiheiji_desc" = "Head temple of Soto Zen";
+"attraction_eiheiji_desc" = "วัดใหญ่ต้นสังกัดของนิกายโซโต";
 "attraction_dinosaur_museum" = "พิพิธภัณฑ์ไดโนเสาร์ฟุกุอิ";
-"attraction_dinosaur_museum_desc" = "Treasure trove of dinosaur fossils";
+"attraction_dinosaur_museum_desc" = "ขุมทรัพย์ฟอสซิลไดโนเสาร์";
 "attraction_ichijodani_asakura_ruins" = "ซากตระกูลอาซาคุระอิจิโจดานิ";
-"attraction_ichijodani_asakura_ruins_desc" = "Castle town ruins from the Warring States period";
+"attraction_ichijodani_asakura_ruins_desc" = "ซากเมืองปราสาทสมัยเซ็นโกกุ";
 "attraction_wakasa_bay" = "อ่าววากาสะ";
-"attraction_wakasa_bay_desc" = "Beauty of ria coastline";
+"attraction_wakasa_bay_desc" = "ความงามของชายฝั่งแบบเรียส";
 "attraction_mikata_goko" = "ทะเลสาบทั้งห้ามิคาตะ";
-"attraction_mikata_goko_desc" = "Five mysterious lakes each with different colors";
+"attraction_mikata_goko_desc" = "ทะเลสาบลึกลับห้าแห่งที่มีสีแตกต่างกัน";
 
 "food_echizen_crab" = "ปูเอจิเซ็น";
 "food_echizen_soba" = "โซบะเอจิเซ็น";
@@ -698,17 +698,17 @@
 
 // Ishikawa
 "attraction_kenrokuen" = "สวนเค็นโรคุเอ็ง";
-"attraction_kenrokuen_desc" = "One of Japan's three famous gardens";
+"attraction_kenrokuen_desc" = "หนึ่งในสามสวนชื่อดังของญี่ปุ่น";
 "attraction_kanazawa_castle" = "ปราสาทคานาซาวะ";
-"attraction_kanazawa_castle_desc" = "Castle of the Kaga Domain worth a million koku";
+"attraction_kanazawa_castle_desc" = "ปราสาทที่ประทับของแคว้นคางะร้อยหมื่นโคคุ";
 "attraction_wakura_onsen" = "ออนเซ็นวาคุระ";
-"attraction_wakura_onsen_desc" = "Famous hot spring of Noto Peninsula";
+"attraction_wakura_onsen_desc" = "ออนเซ็นชื่อดังของคาบสมุทรโนโตะ";
 "attraction_chirihama_nagisa_driveway" = "ถนนเลียบหาดชิริฮามะ";
-"attraction_chirihama_nagisa_driveway_desc" = "Beach where you can drive on sand";
+"attraction_chirihama_nagisa_driveway_desc" = "หาดทรายที่ขับรถได้";
 "attraction_wajima_morning_market" = "ตลาดเช้าวาจิมะ";
-"attraction_wajima_morning_market_desc" = "Morning market that has continued for a thousand years";
+"attraction_wajima_morning_market_desc" = "ตลาดเช้าที่สืบทอดมาพันปี";
 "attraction_higashi_chaya_district" = "ย่านฮิงาชิชายะ";
-"attraction_higashi_chaya_district_desc" = "Historic geisha district in Kanazawa where you can experience geiko culture";
+"attraction_higashi_chaya_district_desc" = "ย่านชายะเก่าแก่ของคานาซาวะ สัมผัสวัฒนธรรมเกอิโกะ";
 
 "food_kaga_cuisine" = "อาหารคางะ";
 "food_kanazawa_curry" = "แกงกะหรี่คานาซาวะ";
@@ -718,17 +718,17 @@
 
 // Toyama
 "attraction_tateyama_kurobe_alpine_route" = "เส้นทางเทือกเขาทาเทยามะคุโรเบะ";
-"attraction_tateyama_kurobe_alpine_route_desc" = "Spectacular route above the clouds";
+"attraction_tateyama_kurobe_alpine_route_desc" = "เส้นทางชมวิวสุดอลังการเหนือเมฆ";
 "attraction_kurobe_dam" = "เขื่อนคุโรเบะ";
-"attraction_kurobe_dam_desc" = "One of Japan's largest arch dams";
+"attraction_kurobe_dam_desc" = "เขื่อนโค้งที่ใหญ่ที่สุดแห่งหนึ่งของญี่ปุ่น";
 "attraction_gokayama" = "โกคายามะ";
-"attraction_gokayama_desc" = "Gassho-zukuri village";
+"attraction_gokayama_desc" = "หมู่บ้านทรงกัชโช";
 "attraction_toyama_bay" = "อ่าวโทยามะ";
-"attraction_toyama_bay_desc" = "Treasure trove of seafood";
+"attraction_toyama_bay_desc" = "ขุมทรัพย์แห่งอาหารทะเล";
 "attraction_shomyo_falls" = "น้ำตกโชเมียว";
-"attraction_shomyo_falls_desc" = "Waterfall with Japan's greatest drop";
+"attraction_shomyo_falls_desc" = "น้ำตกที่มีความสูงมากที่สุดในญี่ปุ่น";
 "attraction_unazuki_onsen" = "ออนเซ็นอุนาซึกิ";
-"attraction_unazuki_onsen_desc" = "Hot spring resort that serves as the starting point for the Kurobe Gorge Railway";
+"attraction_unazuki_onsen_desc" = "ออนเซ็นที่เป็นจุดเริ่มต้นของรถไฟหุบเขาคุโรเบะ";
 
 "food_shiro_ebi" = "กุ้งขาว";
 "food_hotaru_ika" = "ปลาหมึกหิ่งห้อย";
@@ -738,17 +738,17 @@
 
 // Shiga
 "attraction_lake_biwa" = "ทะเลสาบบิวะ";
-"attraction_lake_biwa_desc" = "Japan's largest lake";
+"attraction_lake_biwa_desc" = "ทะเลสาบที่ใหญ่ที่สุดในญี่ปุ่น";
 "attraction_hikone_castle" = "ปราสาทฮิโกเนะ";
-"attraction_hikone_castle_desc" = "National treasure famous for Hikonyan";
+"attraction_hikone_castle_desc" = "สมบัติชาติที่ขึ้นชื่อจากฮิโกเนียน";
 "attraction_hieizan_enryakuji" = "วัดเอนเรียคุจิเขาฮิเออิ";
-"attraction_hieizan_enryakuji_desc" = "Head temple of Tendai Buddhism";
+"attraction_hieizan_enryakuji_desc" = "วัดใหญ่ต้นสังกัดของนิกายเท็นได";
 "attraction_azuchi_castle_ruins" = "ซากปราสาทอาซุจิ";
-"attraction_azuchi_castle_ruins_desc" = "Castle ruins of Oda Nobunaga";
+"attraction_azuchi_castle_ruins_desc" = "ซากปราสาทที่ประทับของโอดะ โนบุนางะ";
 "attraction_omihachiman" = "โอมิฮาจิมัง";
-"attraction_omihachiman_desc" = "Town of waterways and merchants";
+"attraction_omihachiman_desc" = "เมืองแห่งคูน้ำและพ่อค้า";
 "attraction_metasequoia_avenue" = "ถนนต้นเมตาเซโควีย";
-"attraction_metasequoia_avenue_desc" = "Spectacular tree-lined avenue created by about 500 metasequoia trees";
+"attraction_metasequoia_avenue_desc" = "ถนนต้นไม้สุดอลังการที่เกิดจากต้นเมตาเซโควียราว 500 ต้น";
 
 "food_omi_beef" = "เนื้อวัวโอมิ";
 "food_funa_sushi" = "ฟุนะซูชิ";
@@ -758,19 +758,19 @@
 
 // Kyoto
 "attraction_kiyomizu_dera" = "วัดคิโยมิซุ";
-"attraction_kiyomizu_dera_desc" = "World Heritage representing Kyoto";
+"attraction_kiyomizu_dera_desc" = "มรดกโลกอันเป็นตัวแทนของเกียวโต";
 "attraction_kinkakuji" = "วัดคินคะคุจิ (พลับพลาทอง)";
-"attraction_kinkakuji_desc" = "Beautiful temple shining in gold";
+"attraction_kinkakuji_desc" = "วัดงดงามที่ส่องประกายสีทอง";
 "attraction_fushimi_inari_taisha" = "ศาลเจ้าฟูชิมิอินาริ";
-"attraction_fushimi_inari_taisha_desc" = "Inari shrine famous for thousands of torii gates";
+"attraction_fushimi_inari_taisha_desc" = "ศาลเจ้าอินาริที่ขึ้นชื่อเรื่องเสาโทริอินับพัน";
 "attraction_arashiyama" = "อาราชิยามะ";
-"attraction_arashiyama_desc" = "Famous spot for bamboo grove path and cherry blossoms/autumn foliage";
+"attraction_arashiyama_desc" = "แหล่งชื่อดังของเส้นทางป่าไผ่และซากุระ/ใบไม้เปลี่ยนสี";
 "attraction_philosophers_path" = "เส้นทางแห่งปราชญ์";
-"attraction_philosophers_path_desc" = "Beautiful walking path lined with cherry trees";
+"attraction_philosophers_path_desc" = "เส้นทางเดินเล่นงดงามเรียงรายด้วยต้นซากุระ";
 "attraction_amanohashidate" = "อามาโนะฮาชิดาเตะ";
-"attraction_amanohashidate_desc" = "One of Japan's three scenic views, famous for the inverted view";
+"attraction_amanohashidate_desc" = "หนึ่งในสามทัศนียภาพงามของญี่ปุ่น ขึ้นชื่อการมองลอดขา";
 "attraction_byodoin" = "วัดเบียวโดอิน";
-"attraction_byodoin_desc" = "Beautiful temple depicted on the 10-yen coin";
+"attraction_byodoin_desc" = "วัดงดงามที่ปรากฏบนเหรียญ 10 เยน";
 
 "food_yudofu" = "ยุโดฟุ (เต้าหู้ต้ม)";
 "food_kyoto_kaiseki" = "ไคเซกิเกียวโต";
@@ -780,19 +780,19 @@
 
 // Hyogo
 "attraction_himeji_castle" = "ปราสาทฮิเมจิ";
-"attraction_himeji_castle_desc" = "World Heritage called White Heron Castle";
+"attraction_himeji_castle_desc" = "มรดกโลกที่ถูกเรียกว่าปราสาทนกกระยางขาว";
 "attraction_arima_onsen" = "ออนเซ็นอาริมะ";
-"attraction_arima_onsen_desc" = "One of Japan's three oldest hot springs";
+"attraction_arima_onsen_desc" = "หนึ่งในสามออนเซ็นเก่าแก่ที่สุดของญี่ปุ่น";
 "attraction_kobe_port_tower" = "หอคอยท่าเรือโกเบ";
-"attraction_kobe_port_tower_desc" = "Symbol of Kobe Port";
+"attraction_kobe_port_tower_desc" = "สัญลักษณ์ของท่าเรือโกเบ";
 "attraction_takeda_castle_ruins" = "ซากปราสาททาเคดะ";
-"attraction_takeda_castle_ruins_desc" = "Castle in the Sky";
+"attraction_takeda_castle_ruins_desc" = "ปราสาทลอยฟ้า";
 "attraction_awaji_island" = "เกาะอาวาจิ";
-"attraction_awaji_island_desc" = "Island of flowers and greenery";
+"attraction_awaji_island_desc" = "เกาะแห่งดอกไม้และความเขียวขจี";
 "attraction_mount_rokko" = "ภูเขาร็อกโก";
-"attraction_mount_rokko_desc" = "Popular spot for panoramic views of Kobe's night scene";
+"attraction_mount_rokko_desc" = "จุดยอดนิยมที่ชมวิวกลางคืนของโกเบได้ทั้งเมือง";
 "attraction_takarazuka_grand_theater" = "โรงละครใหญ่ทาการาซึกะ";
-"attraction_takarazuka_grand_theater_desc" = "Sacred place of Takarazuka Revue";
+"attraction_takarazuka_grand_theater_desc" = "ดินแดนศักดิ์สิทธิ์ของคณะละครทาการาซึกะ";
 
 "food_kobe_beef" = "เนื้อวัวโกเบ";
 "food_akashiyaki" = "อากาชิยากิ";
@@ -802,17 +802,17 @@
 
 // Nara
 "attraction_todaiji" = "วัดโทได";
-"attraction_todaiji_desc" = "Famous for the Great Buddha of Nara";
+"attraction_todaiji_desc" = "ขึ้นชื่อเรื่องพระใหญ่แห่งนาระ";
 "attraction_nara_park" = "สวนนาระ";
-"attraction_nara_park_desc" = "Park where you can interact with deer";
+"attraction_nara_park_desc" = "สวนที่สัมผัสกับกวางได้";
 "attraction_kasuga_taisha" = "ศาลเจ้าคาสุกะ";
-"attraction_kasuga_taisha_desc" = "Thousands of stone lanterns";
+"attraction_kasuga_taisha_desc" = "โคมหินนับพันดวง";
 "attraction_horyuji" = "วัดโฮริว";
-"attraction_horyuji_desc" = "World's oldest wooden architecture";
+"attraction_horyuji_desc" = "สถาปัตยกรรมไม้ที่เก่าแก่ที่สุดในโลก";
 "attraction_yoshinoyama" = "ภูเขาโยชิโนะ";
-"attraction_yoshinoyama_desc" = "Famous cherry blossom spot";
+"attraction_yoshinoyama_desc" = "แหล่งชมซากุระชื่อดัง";
 "attraction_kofukuji" = "วัดโคฟุคุ";
-"attraction_kofukuji_desc" = "Ancient temple famous for its beautiful five-story pagoda";
+"attraction_kofukuji_desc" = "วัดโบราณที่ขึ้นชื่อเรื่องเจดีย์ห้าชั้นอันงดงาม";
 
 "food_kakinoha_sushi" = "ซูชิใบพลับ";
 "food_miwa_somen" = "โซเม็งมิวะ";
@@ -822,17 +822,17 @@
 
 // Wakayama
 "attraction_kumano_kodo_wakayama" = "เส้นทางแสวงบุญคุมาโนะโคโด";
-"attraction_kumano_kodo_wakayama_desc" = "World Heritage pilgrimage routes";
+"attraction_kumano_kodo_wakayama_desc" = "เส้นทางแสวงบุญมรดกโลก";
 "attraction_koyasan" = "โคยะซัง";
-"attraction_koyasan_desc" = "Sacred place of Shingon Buddhism";
+"attraction_koyasan_desc" = "ดินแดนศักดิ์สิทธิ์ของนิกายชินงอน";
 "attraction_shirahama_onsen" = "ออนเซ็นชิราฮามะ";
-"attraction_shirahama_onsen_desc" = "Hot spring resort with white sandy beaches";
+"attraction_shirahama_onsen_desc" = "แหล่งออนเซ็นที่มีหาดทรายขาว";
 "attraction_nachi_falls" = "น้ำตกนาจิ";
-"attraction_nachi_falls_desc" = "One of Japan's three great waterfalls";
+"attraction_nachi_falls_desc" = "หนึ่งในสามน้ำตกที่ยิ่งใหญ่ของญี่ปุ่น";
 "attraction_adventure_world" = "แอดเวนเจอร์เวิลด์";
-"attraction_adventure_world_desc" = "Zoo famous for pandas";
+"attraction_adventure_world_desc" = "สวนสัตว์ที่ขึ้นชื่อเรื่องแพนด้า";
 "attraction_wakayama_castle" = "ปราสาทวากายามะ";
-"attraction_wakayama_castle_desc" = "Castle of the Tokugawa Kishu Domain";
+"attraction_wakayama_castle_desc" = "ปราสาทที่ประทับของแคว้นคิชูตระกูลโทกุงาวะ";
 
 "food_umeboshi" = "อุเมะโบชิ (บ๊วยดอง)";
 "food_wakayama_ramen" = "ราเมนวากายามะ";
@@ -842,17 +842,17 @@
 
 // Osaka
 "attraction_osaka_castle" = "ปราสาทโอซากะ";
-"attraction_osaka_castle_desc" = "Famous castle built by Toyotomi Hideyoshi";
+"attraction_osaka_castle_desc" = "ปราสาทชื่อดังที่โทโยโตมิ ฮิเดโยชิสร้าง";
 "attraction_dotonbori" = "โดทงโบริ";
-"attraction_dotonbori_desc" = "Osaka's entertainment district and gourmet center";
+"attraction_dotonbori_desc" = "ย่านการค้าและศูนย์กลางอาหารของโอซากะ";
 "attraction_universal_studios" = "ยูนิเวอร์แซล สตูดิโอ เจแปน";
-"attraction_universal_studios_desc" = "Theme park where you can experience the world of movies";
+"attraction_universal_studios_desc" = "สวนสนุกธีมที่สัมผัสโลกภาพยนตร์";
 "attraction_sumiyoshi_taisha" = "ศาลเจ้าซุมิโยชิ";
-"attraction_sumiyoshi_taisha_desc" = "Head shrine of about 2,300 Sumiyoshi shrines nationwide";
+"attraction_sumiyoshi_taisha_desc" = "ศาลเจ้าใหญ่ต้นสังกัดของศาลเจ้าซุมิโยชิราว 2,300 แห่งทั่วประเทศ";
 "attraction_shinsekai" = "ชินเซไก";
-"attraction_shinsekai_desc" = "District of Tsutenkaku and kushikatsu";
+"attraction_shinsekai_desc" = "ย่านของหอสึเทนคาคุและคุชิคัตสึ";
 "attraction_shitennoji" = "วัดชิเทนโน";
-"attraction_shitennoji_desc" = "Japan's oldest government temple built by Prince Shotoku";
+"attraction_shitennoji_desc" = "วัดหลวงที่เก่าแก่ที่สุดในญี่ปุ่นที่เจ้าชายโชโตกุสร้าง";
 
 "food_takoyaki" = "ทาโกยากิ";
 "food_okonomiyaki" = "โอโคโนมิยากิ";
@@ -862,17 +862,17 @@
 
 // Tottori
 "attraction_tottori_sand_dunes" = "เนินทรายทตโตริ";
-"attraction_tottori_sand_dunes_desc" = "Japan's largest sand dunes";
+"attraction_tottori_sand_dunes_desc" = "เนินทรายที่ใหญ่ที่สุดในญี่ปุ่น";
 "attraction_mount_daisen" = "ภูเขาไดเซ็น";
-"attraction_mount_daisen_desc" = "Highest peak in the Chugoku region";
+"attraction_mount_daisen_desc" = "ยอดเขาที่สูงที่สุดในภูมิภาคชูโงกุ";
 "attraction_mizuki_shigeru_road" = "ถนนมิซุกิ ชิเงรุ";
-"attraction_mizuki_shigeru_road_desc" = "Town of yokai";
+"attraction_mizuki_shigeru_road_desc" = "เมืองแห่งภูตผีปีศาจ";
 "attraction_uradome_coast" = "ชายฝั่งอุราโดเมะ";
-"attraction_uradome_coast_desc" = "San'in Kaigan Geopark";
+"attraction_uradome_coast_desc" = "จีโอพาร์กชายฝั่งซันอิน";
 "attraction_misasa_onsen" = "ออนเซ็นมิซาสะ";
-"attraction_misasa_onsen_desc" = "Famous for radium hot springs";
+"attraction_misasa_onsen_desc" = "ขึ้นชื่อเรื่องออนเซ็นเรเดียม";
 "attraction_hakuto_coast" = "ชายฝั่งฮาคุโตะ";
-"attraction_hakuto_coast_desc" = "Beautiful coast that was the stage for the legend of the White Rabbit of Inaba";
+"attraction_hakuto_coast_desc" = "ชายฝั่งงดงามที่เป็นฉากในตำนานกระต่ายขาวแห่งอินาบะ";
 
 "food_matsuba_crab" = "ปูมัตสึบะ";
 "food_nijisseiki_pear" = "สาลี่ศตวรรษที่ 20";
@@ -882,17 +882,17 @@
 
 // Okayama
 "attraction_okayama_castle" = "ปราสาทโอกายามะ";
-"attraction_okayama_castle_desc" = "Black castle called Karasu-jo";
+"attraction_okayama_castle_desc" = "ปราสาทสีดำที่ถูกเรียกว่าปราสาทอีกา";
 "attraction_korakuen" = "สวนโคระคุเอ็ง";
-"attraction_korakuen_desc" = "One of Japan's three famous gardens";
+"attraction_korakuen_desc" = "หนึ่งในสามสวนชื่อดังของญี่ปุ่น";
 "attraction_kurashiki_bikan" = "ย่านประวัติศาสตร์คุราชิกิ บิคัง";
-"attraction_kurashiki_bikan_desc" = "Beautiful white-walled storehouses";
+"attraction_kurashiki_bikan_desc" = "โกดังผนังสีขาวที่งดงาม";
 "attraction_kibitsu_shrine" = "ศาลเจ้าคิบิตสึ";
-"attraction_kibitsu_shrine_desc" = "Shrine of Momotaro legend";
+"attraction_kibitsu_shrine_desc" = "ศาลเจ้าแห่งตำนานโมโมทาโร่";
 "attraction_hiruzen_kogen" = "ที่ราบสูงฮิรุเซ็น";
-"attraction_hiruzen_kogen_desc" = "Karuizawa of the West";
+"attraction_hiruzen_kogen_desc" = "คารุอิซาวะแห่งตะวันตก";
 "attraction_seto_ohashi" = "สะพานเซโตะโอฮาชิ";
-"attraction_seto_ohashi_desc" = "Magnificent bridge connecting Honshu and Shikoku";
+"attraction_seto_ohashi_desc" = "สะพานอันยิ่งใหญ่ที่เชื่อมฮอนชูกับชิโกกุ";
 
 "food_white_peach" = "พีชขาว";
 "food_muscat" = "มัสกัต";
@@ -902,17 +902,17 @@
 
 // Hiroshima
 "attraction_itsukushima_shrine" = "ศาลเจ้าอิสึคุชิมะ";
-"attraction_itsukushima_shrine_desc" = "Famous for its floating torii gate in the sea";
+"attraction_itsukushima_shrine_desc" = "ขึ้นชื่อเรื่องเสาโทริอิที่ลอยอยู่ในทะเล";
 "attraction_atomic_bomb_dome" = "โดมปรมาณู";
-"attraction_atomic_bomb_dome_desc" = "Symbol of peace";
+"attraction_atomic_bomb_dome_desc" = "สัญลักษณ์แห่งสันติภาพ";
 "attraction_miyajima" = "มิยาจิมะ";
-"attraction_miyajima_desc" = "One of Japan's three scenic views";
+"attraction_miyajima_desc" = "หนึ่งในสามทัศนียภาพงามของญี่ปุ่น";
 "attraction_onomichi" = "โอโนมิจิ";
-"attraction_onomichi_desc" = "City of slopes and cats";
+"attraction_onomichi_desc" = "เมืองแห่งทางลาดและแมว";
 "attraction_takehara" = "ทาเคฮาระ";
-"attraction_takehara_desc" = "Little Kyoto of Aki";
+"attraction_takehara_desc" = "เกียวโตน้อยแห่งอากิ";
 "attraction_tomonoura" = "โทโมโนอุระ";
-"attraction_tomonoura_desc" = "Beautiful port town retaining the atmosphere of an Edo period harbor";
+"attraction_tomonoura_desc" = "เมืองท่างดงามที่คงกลิ่นอายเมืองท่าสมัยเอโดะ";
 
 "food_okonomiyaki_hiroshima" = "โอโคโนมิยากิฮิโรชิมะ";
 "food_oyster" = "หอยนางรม";
@@ -922,17 +922,17 @@
 
 // Yamaguchi
 "attraction_akiyoshidai" = "อาคิโยชิได";
-"attraction_akiyoshidai_desc" = "Japan's largest karst plateau";
+"attraction_akiyoshidai_desc" = "ที่ราบหินปูนที่ใหญ่ที่สุดในญี่ปุ่น";
 "attraction_hagi" = "ฮางิ";
-"attraction_hagi_desc" = "Stage of the Meiji Restoration";
+"attraction_hagi_desc" = "เวทีของการปฏิรูปเมจิ";
 "attraction_kintaikyo" = "สะพานคินไตเคียว";
-"attraction_kintaikyo_desc" = "One of Japan's three famous bridges";
+"attraction_kintaikyo_desc" = "หนึ่งในสามสะพานชื่อดังของญี่ปุ่น";
 "attraction_shimonoseki" = "ชิโมโนเซกิ";
-"attraction_shimonoseki_desc" = "Westernmost city of Honshu";
+"attraction_shimonoseki_desc" = "เมืองที่อยู่ปลายสุดตะวันตกของฮอนชู";
 "attraction_rurikoji" = "วัดรุริโคจิ";
-"attraction_rurikoji_desc" = "Famous for its five-story pagoda";
+"attraction_rurikoji_desc" = "ขึ้นชื่อเรื่องเจดีย์ห้าชั้น";
 "attraction_tsunoshima_bridge" = "สะพานสึโนชิมะ";
-"attraction_tsunoshima_bridge_desc" = "Spectacular bridge over emerald green sea";
+"attraction_tsunoshima_bridge_desc" = "สะพานวิวสุดอลังการเหนือทะเลสีเขียวมรกต";
 
 "food_fugu" = "ปลาปักเป้า";
 "food_kawara_soba" = "โซบะบนกระเบื้อง";
@@ -942,17 +942,17 @@
 
 // Shimane
 "attraction_izumo_taisha" = "ศาลเจ้าอิซุโมะ";
-"attraction_izumo_taisha_desc" = "God of matchmaking";
+"attraction_izumo_taisha_desc" = "เทพเจ้าแห่งการผูกสัมพันธ์";
 "attraction_matsue_castle" = "ปราสาทมัตสึเอะ";
-"attraction_matsue_castle_desc" = "National treasure with existing castle keep";
+"attraction_matsue_castle_desc" = "สมบัติชาติที่มีหอปราสาทดั้งเดิม";
 "attraction_iwami_ginzan" = "เหมืองเงินอิวามิ";
-"attraction_iwami_ginzan_desc" = "World Heritage silver mine ruins";
+"attraction_iwami_ginzan_desc" = "ซากเหมืองเงินมรดกโลก";
 "attraction_oki_islands" = "หมู่เกาะโอกิ";
-"attraction_oki_islands_desc" = "Beautiful islands in the Sea of Japan";
+"attraction_oki_islands_desc" = "เกาะงดงามในทะเลญี่ปุ่น";
 "attraction_adachi_museum" = "พิพิธภัณฑ์ศิลปะอาดาจิ";
-"attraction_adachi_museum_desc" = "Famous for Japanese gardens";
+"attraction_adachi_museum_desc" = "ขึ้นชื่อเรื่องสวนญี่ปุ่น";
 "attraction_lake_shinji" = "ทะเลสาบชินจิ";
-"attraction_lake_shinji_desc" = "Lake famous for beautiful sunsets";
+"attraction_lake_shinji_desc" = "ทะเลสาบที่ขึ้นชื่อเรื่องพระอาทิตย์ตกอันงดงาม";
 
 "food_izumo_soba" = "โซบะอิซุโมะ";
 "food_shinjiko_shijimi" = "หอยลายทะเลสาบชินจิ";
@@ -962,17 +962,17 @@
 
 // Kagawa
 "attraction_kotohira_shrine" = "ศาลเจ้าโคโตฮิระ";
-"attraction_kotohira_shrine_desc" = "Affectionately called Konpira-san";
+"attraction_kotohira_shrine_desc" = "เป็นที่รักในชื่อคมปิระซัง";
 "attraction_ritsurin_garden" = "สวนริตสึริน";
-"attraction_ritsurin_garden_desc" = "Special scenic beauty Japanese garden";
+"attraction_ritsurin_garden_desc" = "สวนญี่ปุ่นที่ได้รับการขึ้นทะเบียนเป็นทัศนียภาพงามพิเศษ";
 "attraction_shodoshima" = "โชโดชิมะ";
-"attraction_shodoshima_desc" = "Olive island";
+"attraction_shodoshima_desc" = "เกาะแห่งโอลีฟ";
 "attraction_yashima" = "ยาชิมะ";
-"attraction_yashima_desc" = "Stage of the Genpei War";
+"attraction_yashima_desc" = "เวทีของสงครามเก็นเป";
 "attraction_naoshima" = "นาโอชิมะ";
-"attraction_naoshima_desc" = "Art island";
+"attraction_naoshima_desc" = "เกาะแห่งศิลปะ";
 "attraction_seto_ohashi_memorial_park" = "สวนอนุสรณ์สะพานเซโตะโอฮาชิ";
-"attraction_seto_ohashi_memorial_park_desc" = "Spectacular spot to see the Seto Ohashi Bridge up close";
+"attraction_seto_ohashi_memorial_park_desc" = "จุดชมวิวสุดอลังการที่เห็นสะพานเซโตะโอฮาชิใกล้ๆ";
 
 "food_sanuki_udon" = "อุด้งซานุกิ";
 "food_olive" = "มะกอกโอลีฟ";
@@ -982,17 +982,17 @@
 
 // Tokushima
 "attraction_naruto_whirlpools" = "น้ำวนนารูโตะ";
-"attraction_naruto_whirlpools_desc" = "World's largest whirlpools";
+"attraction_naruto_whirlpools_desc" = "น้ำวนที่ใหญ่ที่สุดในโลก";
 "attraction_awa_odori" = "ระบำอาวะโอโดริ";
-"attraction_awa_odori_desc" = "Tokushima's summer festival";
+"attraction_awa_odori_desc" = "เทศกาลฤดูร้อนของโทกุชิมะ";
 "attraction_iya_kazura_bridge" = "สะพานเถาวัลย์อิยะ";
-"attraction_iya_kazura_bridge_desc" = "Thrilling suspension bridge";
+"attraction_iya_kazura_bridge_desc" = "สะพานแขวนที่เต็มไปด้วยความตื่นเต้น";
 "attraction_otsuka_museum" = "พิพิธภัณฑ์ศิลปะโอสึกะ";
-"attraction_otsuka_museum_desc" = "Museum of ceramic masterpiece reproductions";
+"attraction_otsuka_museum_desc" = "พิพิธภัณฑ์ภาพวาดชื่อดังจำลองบนแผ่นเซรามิก";
 "attraction_mount_tsurugi" = "ภูเขาสึรุกิ";
-"attraction_mount_tsurugi_desc" = "Second highest peak in Shikoku";
+"attraction_mount_tsurugi_desc" = "ยอดเขาที่สูงเป็นอันดับสองของชิโกกุ";
 "attraction_bizan" = "ภูเขาบิซัง";
-"attraction_bizan_desc" = "Symbol of Tokushima City, night views can also be enjoyed by ropeway";
+"attraction_bizan_desc" = "สัญลักษณ์ของเมืองโทกุชิมะ ชมวิวกลางคืนด้วยกระเช้าได้";
 
 "food_awa_odori_chicken" = "ไก่อาวะโอโดริ";
 "food_tarai_udon" = "ทาไรอุด้ง";
@@ -1002,17 +1002,17 @@
 
 // Kochi
 "attraction_kochi_castle" = "ปราสาทโคจิ";
-"attraction_kochi_castle_desc" = "Famous castle with existing castle keep";
+"attraction_kochi_castle_desc" = "ปราสาทชื่อดังที่มีหอปราสาทดั้งเดิม";
 "attraction_katsurahama" = "หาดคัตสึระฮามะ";
-"attraction_katsurahama_desc" = "Famous for the statue of Sakamoto Ryoma";
+"attraction_katsurahama_desc" = "ขึ้นชื่อเรื่องรูปปั้นซากาโมโตะ เรียวมะ";
 "attraction_shimanto_river" = "แม่น้ำชิมันโตะ";
-"attraction_shimanto_river_desc" = "Japan's last clear stream";
+"attraction_shimanto_river_desc" = "สายน้ำใสสุดท้ายของญี่ปุ่น";
 "attraction_muroto_cape" = "แหลมมุโรโตะ";
-"attraction_muroto_cape_desc" = "Spectacular Pacific views";
+"attraction_muroto_cape_desc" = "ทัศนียภาพสุดอลังการของมหาสมุทรแปซิฟิก";
 "attraction_ashizuri_cape" = "แหลมอาชิซุริ";
-"attraction_ashizuri_cape_desc" = "Southernmost cape of Shikoku";
+"attraction_ashizuri_cape_desc" = "แหลมที่อยู่ใต้สุดของชิโกกุ";
 "attraction_ryugado_cave" = "ถ้ำริวกาโด";
-"attraction_ryugado_cave_desc" = "One of Japan's three great limestone caves, mysterious underground world";
+"attraction_ryugado_cave_desc" = "หนึ่งในสามถ้ำหินงอกหินย้อยที่ยิ่งใหญ่ของญี่ปุ่น โลกใต้ดินลึกลับ";
 
 "food_katsuo_tataki" = "คัตสึโอะทาทากิ";
 "food_sawachi_cuisine" = "อาหารซาวาจิ";
@@ -1022,17 +1022,17 @@
 
 // Ehime
 "attraction_matsuyama_castle" = "ปราสาทมัตสึยามะ";
-"attraction_matsuyama_castle_desc" = "Famous castle with existing castle keep";
+"attraction_matsuyama_castle_desc" = "ปราสาทชื่อดังที่มีหอปราสาทดั้งเดิม";
 "attraction_dogo_onsen" = "ออนเซ็นโดโงะ";
-"attraction_dogo_onsen_desc" = "One of Japan's oldest hot springs";
+"attraction_dogo_onsen_desc" = "หนึ่งในออนเซ็นที่เก่าแก่ที่สุดของญี่ปุ่น";
 "attraction_shimanami_kaido" = "ทางหลวงชิมานามิ";
-"attraction_shimanami_kaido_desc" = "Beautiful bridges of the Seto Inland Sea";
+"attraction_shimanami_kaido_desc" = "สะพานงดงามแห่งทะเลเซโตะใน";
 "attraction_uchiko_town" = "เมืองอุจิโกะ";
-"attraction_uchiko_town_desc" = "Edo period townscape";
+"attraction_uchiko_town_desc" = "ย่านเมืองสมัยเอโดะ";
 "attraction_mount_ishizuchi" = "ภูเขาอิชิซึจิ";
-"attraction_mount_ishizuchi_desc" = "Highest peak in Shikoku";
+"attraction_mount_ishizuchi_desc" = "ยอดเขาที่สูงที่สุดของชิโกกุ";
 "attraction_imabari_castle" = "ปราสาทอิมาบาริ";
-"attraction_imabari_castle_desc" = "Rare sea castle using seawater in its moat";
+"attraction_imabari_castle_desc" = "ปราสาททะเลที่หายากใช้น้ำทะเลเป็นคูเมือง";
 
 "food_mikan" = "ส้มมิคัง";
 "food_jakoten" = "จาโกะเท็น";
@@ -1042,17 +1042,17 @@
 
 // Fukuoka
 "attraction_dazaifu_tenmangu" = "ศาลเจ้าดาไซฟุเท็นมังกู";
-"attraction_dazaifu_tenmangu_desc" = "God of learning";
+"attraction_dazaifu_tenmangu_desc" = "เทพเจ้าแห่งการเรียน";
 "attraction_fukuoka_castle" = "ปราสาทฟุกุโอกะ";
-"attraction_fukuoka_castle_desc" = "Castle of Kuroda Kanbei";
+"attraction_fukuoka_castle_desc" = "ปราสาทที่ประทับของคุโรดะ คันเบ";
 "attraction_hakata_za" = "โรงละครฮากาตะซะ";
-"attraction_hakata_za_desc" = "Theater hall of Kyushu";
+"attraction_hakata_za_desc" = "วิหารแห่งการละครของคิวชู";
 "attraction_canal_city" = "คาแนลซิตี้ ฮากาตะ";
-"attraction_canal_city_desc" = "Shopping mall with canals";
+"attraction_canal_city_desc" = "ห้างสรรพสินค้าที่มีคลอง";
 "attraction_yanagawa_kudari" = "ล่องเรือยานางาวะ";
-"attraction_yanagawa_kudari_desc" = "River cruise on donko boats";
+"attraction_yanagawa_kudari_desc" = "ล่องเรือดงโกะชมแม่น้ำ";
 "attraction_mojiko_retro" = "โมจิโกะ เรโทร";
-"attraction_mojiko_retro_desc" = "Port town streetscape with Taisho romance atmosphere";
+"attraction_mojiko_retro_desc" = "ย่านเมืองท่าที่อบอวลด้วยกลิ่นอายไทโชโรมัน";
 
 "food_hakata_ramen" = "ราเมนฮากาตะ";
 "food_motsu_nabe" = "หม้อไฟโมสึ";
@@ -1062,17 +1062,17 @@
 
 // Oita
 "attraction_beppu_onsen" = "ออนเซ็นเบปปุ";
-"attraction_beppu_onsen_desc" = "City of hot springs";
+"attraction_beppu_onsen_desc" = "เมืองแห่งออนเซ็น";
 "attraction_yufuin" = "ยูฟุอิน";
-"attraction_yufuin_desc" = "Hot spring resort at the foot of Mount Yufu";
+"attraction_yufuin_desc" = "แหล่งออนเซ็นที่เชิงภูเขายูฟุ";
 "attraction_usuki_stone_buddhas" = "พระพุทธรูปหินอุสึกิ";
-"attraction_usuki_stone_buddhas_desc" = "National treasure stone Buddha group";
+"attraction_usuki_stone_buddhas_desc" = "กลุ่มพระพุทธรูปหินระดับสมบัติชาติ";
 "attraction_kuju_mountains" = "เทือกเขาคูจู";
-"attraction_kuju_mountains_desc" = "Roof of Kyushu";
+"attraction_kuju_mountains_desc" = "หลังคาแห่งคิวชู";
 "attraction_nakatsu_castle" = "ปราสาทนากัตสึ";
-"attraction_nakatsu_castle_desc" = "Castle of Kuroda Kanbei";
+"attraction_nakatsu_castle_desc" = "ปราสาทที่ประทับของคุโรดะ คันเบ";
 "attraction_jigoku_meguri" = "ทัวร์บ่อนรก (จิโกกุเมกุริ)";
-"attraction_jigoku_meguri_desc" = "Beppu's specialty, tour of colorful hot spring groups";
+"attraction_jigoku_meguri_desc" = "ของขึ้นชื่อเบปปุ ชมกลุ่มออนเซ็นหลากสีสัน";
 
 "food_seki_saba_aji" = "ปลาซาบะ・อาจิเซกิ";
 "food_toriten" = "โทริเท็น (ไก่ชุบแป้งทอด)";
@@ -1082,17 +1082,17 @@
 
 // Miyazaki
 "attraction_takachiho_gorge" = "หุบเขาทาคาจิโฮะ";
-"attraction_takachiho_gorge_desc" = "Spectacular scenery of the mythical village";
+"attraction_takachiho_gorge_desc" = "ทัศนียภาพสุดอลังการของหมู่บ้านในตำนาน";
 "attraction_nichinan_coast" = "ชายฝั่งนิจินัน";
-"attraction_nichinan_coast_desc" = "Beautiful ria coastline";
+"attraction_nichinan_coast_desc" = "ชายฝั่งแบบเรียสอันงดงาม";
 "attraction_aoshima" = "อาโอชิมะ";
-"attraction_aoshima_desc" = "Famous for Devil's Washboard rock formations";
+"attraction_aoshima_desc" = "ขึ้นชื่อเรื่องหินกระดานซักผ้าปีศาจ";
 "attraction_udo_shrine" = "ศาลเจ้าอุโดะ";
-"attraction_udo_shrine_desc" = "Shrine inside a cave";
+"attraction_udo_shrine_desc" = "ศาลเจ้าที่อยู่ในถ้ำ";
 "attraction_sun_messe_nichinan" = "ซันเมสเซะ นิจินัน";
-"attraction_sun_messe_nichinan_desc" = "Park with Moai statues";
+"attraction_sun_messe_nichinan_desc" = "สวนที่มีรูปปั้นโมอาย";
 "attraction_saito_ancient_burial_mounds" = "กลุ่มสุสานโบราณไซโตะบารุ";
-"attraction_saito_ancient_burial_mounds_desc" = "Japan's largest ancient burial mound complex full of ancient romance";
+"attraction_saito_ancient_burial_mounds_desc" = "กลุ่มสุสานโบราณที่ใหญ่ที่สุดในญี่ปุ่น เต็มไปด้วยมนตร์เสน่ห์แห่งอดีต";
 
 "food_miyazaki_beef" = "เนื้อวัวมิยาซากิ";
 "food_chicken_nanban" = "ไก่นันบัง";
@@ -1102,17 +1102,17 @@
 
 // Kagoshima
 "attraction_sakurajima" = "ซากุระจิมะ";
-"attraction_sakurajima_desc" = "Magnificent view of active volcano";
+"attraction_sakurajima_desc" = "รูปลักษณ์อันยิ่งใหญ่ของภูเขาไฟที่ยังคุกรุ่น";
 "attraction_yakushima" = "ยาคุชิมะ";
-"attraction_yakushima_desc" = "World Natural Heritage forest";
+"attraction_yakushima_desc" = "ป่ามรดกโลกทางธรรมชาติ";
 "attraction_kirishima_onsen" = "ออนเซ็นคิริชิมะ";
-"attraction_kirishima_onsen_desc" = "Hot spring resort in Kirishima mountain range";
+"attraction_kirishima_onsen_desc" = "ย่านออนเซ็นแห่งเทือกเขาคิริชิมะ";
 "attraction_ibusuki_onsen" = "ออนเซ็นอิบุสุกิ";
-"attraction_ibusuki_onsen_desc" = "Famous for sand bath hot springs";
+"attraction_ibusuki_onsen_desc" = "ขึ้นชื่อเรื่องออนเซ็นอบทราย";
 "attraction_amami_oshima" = "อามามิโอชิมะ";
-"attraction_amami_oshima_desc" = "Subtropical nature";
+"attraction_amami_oshima_desc" = "ธรรมชาติกึ่งเขตร้อน";
 "attraction_chiran_peace_museum" = "พิพิธภัณฑ์สันติภาพชิรัน";
-"attraction_chiran_peace_museum_desc" = "Place for peace education conveying memories of war";
+"attraction_chiran_peace_museum_desc" = "สถานที่เรียนรู้สันติภาพที่ถ่ายทอดความทรงจำจากสงคราม";
 
 "food_kurobuta" = "หมูดำคุโรบุตะ";
 "food_satsuma_imo" = "มันหวานซัตสึมะ";
@@ -1122,17 +1122,17 @@
 
 // Kumamoto
 "attraction_kumamoto_castle" = "ปราสาทคุมาโมโตะ";
-"attraction_kumamoto_castle_desc" = "One of Japan's three famous castles";
+"attraction_kumamoto_castle_desc" = "หนึ่งในสามปราสาทชื่อดังของญี่ปุ่น";
 "attraction_mount_aso" = "ภูเขาไฟอาโสะ";
-"attraction_mount_aso_desc" = "World's largest caldera";
+"attraction_mount_aso_desc" = "แอ่งภูเขาไฟที่ใหญ่ที่สุดในโลก";
 "attraction_kurokawa_onsen" = "ออนเซ็นคุโรกาวะ";
-"attraction_kurokawa_onsen_desc" = "Atmospheric hot spring town";
+"attraction_kurokawa_onsen_desc" = "ย่านออนเซ็นที่มีบรรยากาศงดงาม";
 "attraction_amakusa" = "อามากุสะ";
-"attraction_amakusa_desc" = "Hometown of Amakusa Shiro";
+"attraction_amakusa_desc" = "บ้านเกิดของอามาคุสะ ชิโร";
 "attraction_kikuchi_valley" = "หุบเขาคิคุจิ";
-"attraction_kikuchi_valley_desc" = "Beautiful valley with clear streams";
+"attraction_kikuchi_valley_desc" = "หุบเขางดงามที่มีสายน้ำใส";
 "attraction_tsujun_bridge" = "สะพานสึจุน";
-"attraction_tsujun_bridge_desc" = "Stone arch bridge representing the pinnacle of Edo period technology";
+"attraction_tsujun_bridge_desc" = "สะพานโค้งหินที่รวมความล้ำเลิศของเทคโนโลยีสมัยเอโดะ";
 
 "food_basashi" = "บาซาชิ (ซาชิมิเนื้อม้า)";
 "food_dago_soup" = "ซุปดาโกะ";
@@ -1142,17 +1142,17 @@
 
 // Saga
 "attraction_yoshinogari_ruins" = "แหล่งโบราณคดีโยชิโนงาริ";
-"attraction_yoshinogari_ruins_desc" = "Large-scale moated settlement from the Yayoi period";
+"attraction_yoshinogari_ruins_desc" = "หมู่บ้านล้อมคูขนาดใหญ่จากยุคยาโยอิ";
 "attraction_arita_porcelain" = "เครื่องกระเบื้องอาริตะ";
-"attraction_arita_porcelain_desc" = "Village of ceramics";
+"attraction_arita_porcelain_desc" = "หมู่บ้านเครื่องกระเบื้อง";
 "attraction_yobuko" = "โยบุโกะ";
-"attraction_yobuko_desc" = "Port town famous for squid";
+"attraction_yobuko_desc" = "เมืองท่าที่ขึ้นชื่อเรื่องปลาหมึก";
 "attraction_takeo_onsen" = "ออนเซ็นทาเคโอะ";
-"attraction_takeo_onsen_desc" = "Famous for beautiful skin hot springs";
+"attraction_takeo_onsen_desc" = "ขึ้นชื่อในฐานะออนเซ็นเพื่อผิวสวย";
 "attraction_karatsu_castle" = "ปราสาทคาราสึ";
-"attraction_karatsu_castle_desc" = "Castle overlooking Genkai Sea";
+"attraction_karatsu_castle_desc" = "ปราสาทที่มองเห็นทะเลเก็นไก";
 "attraction_ureshino_onsen" = "ออนเซ็นอุเรชิโนะ";
-"attraction_ureshino_onsen_desc" = "Hot spring popular for beauty effects and tea production area";
+"attraction_ureshino_onsen_desc" = "ออนเซ็นยอดนิยมด้านผิวสวยและแหล่งผลิตชา";
 
 "food_saga_beef" = "เนื้อวัวซากะ";
 "food_yobuko_ika" = "ปลาหมึกโยบุโกะ";
@@ -1162,17 +1162,17 @@
 
 // Nagasaki
 "attraction_huis_ten_bosch" = "เฮาส์เทนบอส";
-"attraction_huis_ten_bosch_desc" = "Recreation of Dutch townscape";
+"attraction_huis_ten_bosch_desc" = "จำลองย่านเมืองของเนเธอร์แลนด์";
 "attraction_glover_garden" = "สวนโกลเวอร์";
-"attraction_glover_garden_desc" = "Meiji period Western-style buildings";
+"attraction_glover_garden_desc" = "กลุ่มอาคารสไตล์ตะวันตกสมัยเมจิ";
 "attraction_peace_park" = "สวนสันติภาพ";
-"attraction_peace_park_desc" = "With prayers for peace";
+"attraction_peace_park_desc" = "ด้วยคำอธิษฐานเพื่อสันติภาพ";
 "attraction_gunkanjima" = "เกาะกุนคังจิมะ (เกาะเรือรบ)";
-"attraction_gunkanjima_desc" = "World Heritage ruins island";
+"attraction_gunkanjima_desc" = "เกาะซากปรักหักพังมรดกโลก";
 "attraction_unzen_onsen" = "ออนเซ็นอุนเซ็น";
-"attraction_unzen_onsen_desc" = "Famous for hell tour";
+"attraction_unzen_onsen_desc" = "ขึ้นชื่อเรื่องทัวร์บ่อนรก";
 "attraction_shimabara_castle" = "ปราสาทชิมาบาระ";
-"attraction_shimabara_castle_desc" = "Historic castle that was the stage of the Shimabara Rebellion";
+"attraction_shimabara_castle_desc" = "ปราสาทประวัติศาสตร์ที่เป็นเวทีของกบฏชิมาบาระ";
 
 "food_champon" = "จัมปง";
 "food_sara_udon" = "ซาระอุด้ง";
@@ -1182,19 +1182,19 @@
 
 // Okinawa
 "attraction_shuri_castle" = "ปราสาทชูริ";
-"attraction_shuri_castle_desc" = "Castle telling the history of the Ryukyu Kingdom";
+"attraction_shuri_castle_desc" = "ปราสาทที่บอกเล่าประวัติศาสตร์อาณาจักรริวกิว";
 "attraction_churaumi_aquarium" = "พิพิธภัณฑ์สัตว์น้ำชูราอุมิ";
-"attraction_churaumi_aquarium_desc" = "Aquarium with one of the world's largest tanks";
+"attraction_churaumi_aquarium_desc" = "พิพิธภัณฑ์สัตว์น้ำที่มีตู้ปลาขนาดใหญ่ที่สุดแห่งหนึ่งของโลก";
 "attraction_taketomi_island" = "เกาะทาเคโทมิ";
-"attraction_taketomi_island_desc" = "Beautiful island preserving Okinawa's original landscape";
+"attraction_taketomi_island_desc" = "เกาะงดงามที่คงทัศนียภาพดั้งเดิมของโอกินาวะ";
 "attraction_ishigaki_island" = "เกาะอิชิงากิ";
-"attraction_ishigaki_island_desc" = "Central island of the Yaeyama Islands";
+"attraction_ishigaki_island_desc" = "เกาะศูนย์กลางของหมู่เกาะยาเอยามะ";
 "attraction_zamami_island" = "เกาะซามามิ";
-"attraction_zamami_island_desc" = "Island with beautiful Kerama Blue sea";
+"attraction_zamami_island_desc" = "เกาะที่มีทะเลสีฟ้าเกรามะบลูอันงดงาม";
 "attraction_manzamo" = "มันซาโมะ";
-"attraction_manzamo_desc" = "Spectacular cliff like an elephant's trunk with blue sea views";
+"attraction_manzamo_desc" = "ทัศนียภาพสุดอลังการของหน้าผารูปงวงช้างกับทะเลสีคราม";
 "attraction_himeyuri_no_to" = "อนุสรณ์ฮิเมยูริ";
-"attraction_himeyuri_no_to_desc" = "Memorial tower conveying the tragedy of war";
+"attraction_himeyuri_no_to_desc" = "หอรำลึกที่ถ่ายทอดโศกนาฏกรรมของสงคราม";
 
 "food_goya_chanpuru" = "โกยาจัมปุรุ";
 "food_soki_soba" = "โซคิโซบะ";
@@ -5209,24 +5209,24 @@
 "review.prompt.no" = "Not Now";
 
 "attraction_azabudai_hills" = "อาซาบุได ฮิลส์";
-"attraction_azabudai_hills_desc" = "Opened in 2023. A green urban complex centered on Mori JP Tower, Japan's tallest building.";
+"attraction_azabudai_hills_desc" = "เปิดปี 2023 เมืองเชิงซ้อนสีเขียวที่มีหอโมริ JP อาคารที่สูงที่สุดในญี่ปุ่นเป็นศูนย์กลาง";
 "attraction_wb_studio_tour_tokyo" = "วอร์เนอร์ บราเธอร์ส สตูดิโอทัวร์โตเกียว";
-"attraction_wb_studio_tour_tokyo_desc" = "Opened in 2023 on the former Toshimaen site, an attraction where you can experience the world of Harry Potter.";
+"attraction_wb_studio_tour_tokyo_desc" = "เปิดปี 2023 บนพื้นที่เดิมของโทชิมะเอ็น สถานที่สัมผัสโลกภาพยนตร์แฮร์รี่ พอตเตอร์";
 "attraction_ghibli_park" = "สวนสนุกจิบลิ";
-"attraction_ghibli_park_desc" = "Opened in 2022. A theme park within Expo 2005 Aichi Commemorative Park where you can enjoy the world of Studio Ghibli.";
+"attraction_ghibli_park_desc" = "เปิดปี 2022 สวนสนุกในสวนอนุสรณ์เอ็กซ์โปไอจิ ที่เพลิดเพลินกับโลกของสตูดิโอจิบลิ";
 "attraction_grand_green_osaka" = "แกรนด์กรีนโอซากะ";
-"attraction_grand_green_osaka_desc" = "Opened in 2024. A mixed-use complex with a vast urban park in the Umekita district, directly connected to Osaka Station.";
+"attraction_grand_green_osaka_desc" = "เปิดปี 2024 อาคารเชิงซ้อนที่มีสวนสาธารณะขนาดใหญ่ในย่านอุเมะกิตะ เชื่อมตรงกับสถานีโอซากะ";
 "attraction_junglia_okinawa" = "จังเกลีย โอกินาวะ";
-"attraction_junglia_okinawa_desc" = "Opened in 2025. A theme park set in the wild nature of northern Okinawa, featuring dinosaurs and scenic attractions.";
+"attraction_junglia_okinawa_desc" = "เปิดปี 2025 สวนสนุกท่ามกลางธรรมชาติทางเหนือของโอกินาวะ สนุกกับไดโนเสาร์และเครื่องเล่นชมวิว";
 
 "attraction_toyosu_market" = "ตลาดโทโยสุ";
-"attraction_toyosu_market_desc" = "Tokyo's kitchen, relocated from Tsukiji. Enjoy fresh seafood, tuna auction viewing, and dining facilities.";
+"attraction_toyosu_market_desc" = "ครัวของโตเกียวที่ย้ายมาจากสึกิจิ เพลิดเพลินกับอาหารทะเลสด ชมการประมูลทูน่า และร้านอาหารในตลาด";
 "attraction_shinjuku_gyoen" = "สวนชินจูกุเกียวเอ็ง";
-"attraction_shinjuku_gyoen_desc" = "A vast garden in central Tokyo, famous for its Japanese garden and cherry blossoms across the seasons.";
+"attraction_shinjuku_gyoen_desc" = "สวนขนาดใหญ่ใจกลางโตเกียว ขึ้นชื่อเรื่องสวนญี่ปุ่นและซากุระ ชมทัศนียภาพสี่ฤดู";
 "attraction_kaiyukan" = "พิพิธภัณฑ์สัตว์น้ำไคยูกัง โอซากะ";
-"attraction_kaiyukan_desc" = "One of the world's largest aquariums in Tempozan, featuring a giant tank with swimming whale sharks.";
+"attraction_kaiyukan_desc" = "พิพิธภัณฑ์สัตว์น้ำที่ใหญ่ที่สุดแห่งหนึ่งของโลกในเท็นโปซัง เด่นด้วยตู้ยักษ์ที่มีฉลามวาฬว่ายน้ำ";
 "attraction_expo_park" = "สวนอนุสรณ์เอ็กซ์โป '70";
-"attraction_expo_park_desc" = "A park on the former Osaka Expo site, symbolized by the Tower of the Sun by Taro Okamoto.";
+"attraction_expo_park_desc" = "สวนบนพื้นที่เดิมของงานเอ็กซ์โปโอซากะ สัญลักษณ์คือหอคอยแห่งดวงอาทิตย์ผลงานของทาโร โอกาโมโตะ";
 
 "gourmet_chanko_nabe" = "จังโกะนาเบะ (หม้อไฟนักซูโม่)";
 "gourmet_chanko_nabe_desc" = "หม้อไฟเครื่องแน่นต้นกำเนิดค่ายซูโม่ ตุ๋นเนื้อ อาหารทะเล และผักเต็มที่ คุณค่าทางโภชนาการสูง";
@@ -5271,21 +5271,21 @@
 "okinawa.shio_senbei.price" = "From 300 yen";
 
 "attraction_goryokaku" = "โกเรียวคาคุ";
-"attraction_goryokaku_desc" = "A star-shaped fort site in Hakodate. The pentagonal view from the tower and spring cherry blossoms are beautiful.";
+"attraction_goryokaku_desc" = "ซากป้อมรูปดาวในฮาโกดาเตะ ทิวทัศน์รูปห้าเหลี่ยมจากหอคอยและซากุระในฤดูใบไม้ผลิงดงาม";
 "attraction_noboribetsu_jigokudani" = "หุบเขานรกโนโบริเบตสึ";
-"attraction_noboribetsu_jigokudani_desc" = "The source of Noboribetsu Onsen, shrouded in steam and sulfur, with dramatic volcanic terrain.";
+"attraction_noboribetsu_jigokudani_desc" = "แหล่งน้ำพุร้อนของออนเซ็นโนโบริเบตสึที่ปกคลุมด้วยไอน้ำและกำมะถัน ภูมิประเทศภูเขาไฟที่ดุดัน";
 "attraction_nijo_castle" = "ปราสาทนิโจ";
-"attraction_nijo_castle_desc" = "A World Heritage Site linked to the Tokugawa shoguns, known for its nightingale floors and lavish wall paintings.";
+"attraction_nijo_castle_desc" = "มรดกโลกที่เกี่ยวข้องกับตระกูลโทกุงาวะ ขึ้นชื่อทางเดินไม้ร้องและภาพวาดฝาผนังหรูหรา";
 "attraction_ginkakuji" = "วัดกินคะคุจิ (พลับพลาเงิน)";
-"attraction_ginkakuji_desc" = "Officially Jisho-ji. A World Heritage Site with a serene wabi-sabi garden and sand mound.";
+"attraction_ginkakuji_desc" = "ชื่อทางการคือจิโชจิ มรดกโลกที่มีสวนสไตล์วาบิ-ซาบิและเนินทรางิงินซาอันงดงาม";
 "attraction_fukuoka_tower" = "หอคอยฟุกุโอกะ";
-"attraction_fukuoka_tower_desc" = "Japan's tallest seaside tower and a symbol of Hakata, with a popular observation deck and night views.";
+"attraction_fukuoka_tower_desc" = "หอชายทะเลที่สูงที่สุดในญี่ปุ่นและสัญลักษณ์ของฮากาตะ จุดชมวิวและวิวกลางคืนได้รับความนิยม";
 "attraction_uminonakamichi" = "สวนริมทะเลอุมิโนะนาคามิจิ";
-"attraction_uminonakamichi_desc" = "A vast national park facing Hakata Bay, with seasonal flower fields and animal encounters.";
+"attraction_uminonakamichi_desc" = "สวนแห่งชาติขนาดใหญ่ที่หันหน้าสู่อ่าวฮากาตะ เพลิดเพลินกับทุ่งดอกไม้ตามฤดูกาลและสัมผัสสัตว์";
 "attraction_yokohama_akarenga" = "โกดังอิฐแดงโยโกฮามะ";
-"attraction_yokohama_akarenga_desc" = "A commercial facility in Meiji-era warehouses, offering Minato Mirai views and events.";
+"attraction_yokohama_akarenga_desc" = "ศูนย์การค้าที่ใช้โกดังสมัยเมจิ เพลิดเพลินกับทัศนียภาพมินาโตะมิไรและอีเวนต์";
 "attraction_tsurugaoka_hachimangu" = "ศาลเจ้าสึรุงาโอกะฮาจิมันกู";
-"attraction_tsurugaoka_hachimangu_desc" = "A symbolic shrine of Kamakura, with historic sites like the Dankazura approach and the dance hall.";
+"attraction_tsurugaoka_hachimangu_desc" = "ศาลเจ้าเชิงสัญลักษณ์ของคามาคุระ มีสถานที่ประวัติศาสตร์อย่างทางเดินดันคาซึระและหอรำ";
 
 "gourmet_sapporo_miso_ramen" = "ราเมนมิโซะซัปโปโร";
 "gourmet_sapporo_miso_ramen_desc" = "ของขึ้นชื่อซัปโปโร เส้นหยักในน้ำซุปมิโซะเข้มข้น มักโปะเนยและข้าวโพด";
@@ -5330,37 +5330,37 @@
 "kanagawa.kamakura_raisin_wich.price" = "From 1,000 yen";
 
 "attraction_hiroshima_castle" = "ปราสาทฮิโรชิมะ";
-"attraction_hiroshima_castle_desc" = "Also called Carp Castle. Its beautiful moated keep, rebuilt after the bombing, is a symbol of Hiroshima.";
+"attraction_hiroshima_castle_desc" = "หรือเรียกว่าปราสาทปลาคาร์ป หอปราสาทงดงามที่ล้อมด้วยคูน้ำ สร้างใหม่หลังถูกระเบิด เป็นสัญลักษณ์ของฮิโรชิมะ";
 "attraction_yamato_museum" = "พิพิธภัณฑ์ยามาโตะ";
-"attraction_yamato_museum_desc" = "A maritime museum in Kure, featuring a stunning 1/10 scale model of the battleship Yamato.";
+"attraction_yamato_museum_desc" = "พิพิธภัณฑ์การเดินเรือในเมืองคุเระ โมเดลเรือรบยามาโตะสเกล 1/10 น่าตื่นตา";
 "attraction_jigokudani_monkey" = "สวนลิงจิโกกุดานิ";
-"attraction_jigokudani_monkey_desc" = "World-famous for snow monkeys bathing in hot springs. The winter snow scenery is a highlight.";
+"attraction_jigokudani_monkey_desc" = "โด่งดังทั่วโลกจากลิงญี่ปุ่นที่แช่ออนเซ็น ทัศนียภาพหิมะในฤดูหนาวเป็นไฮไลต์";
 "attraction_suwa_taisha" = "ศาลเจ้าซุวะ";
-"attraction_suwa_taisha_desc" = "The head shrine of all Suwa shrines, a historic site known for the Onbashira Festival.";
+"attraction_suwa_taisha_desc" = "ศาลเจ้าใหญ่ต้นสังกัดของศาลเจ้าซุวะทั่วประเทศ ศาลเจ้าเก่าแก่ที่ขึ้นชื่อเทศกาลอนบาชิระ";
 "attraction_dejima" = "เดจิมะ";
-"attraction_dejima_desc" = "The only artificial island open to the West during the isolation era. Experience history in its restored streets.";
+"attraction_dejima_desc" = "เกาะเทียมแห่งเดียวที่เปิดสู่ตะวันตกในยุคปิดประเทศ สัมผัสประวัติศาสตร์ในย่านที่ได้รับการบูรณะ";
 "attraction_oura_church" = "โบสถ์โออุระ";
-"attraction_oura_church_desc" = "Japan's oldest surviving Christian building, a Gothic-style World Heritage church.";
+"attraction_oura_church_desc" = "อาคารคริสต์ศาสนาที่เก่าแก่ที่สุดที่ยังหลงเหลือในญี่ปุ่น โบสถ์สไตล์โกธิกที่ขึ้นทะเบียนมรดกโลก";
 "attraction_kanazawa_21museum" = "พิพิธภัณฑ์ศิลปะร่วมสมัยแห่งศตวรรษที่ 21";
-"attraction_kanazawa_21museum_desc" = "A contemporary art museum in a distinctive circular building, popular for interactive works like the pool.";
+"attraction_kanazawa_21museum_desc" = "พิพิธภัณฑ์ศิลปะร่วมสมัยในอาคารทรงกลมอันโดดเด่น งานแบบสัมผัสได้อย่างสระว่ายน้ำได้รับความนิยม";
 "attraction_myoryuji" = "วัดเมียวริว (วัดนินจา)";
-"attraction_myoryuji_desc" = "A temple full of hidden stairs and traps, nicknamed the Ninja Temple.";
+"attraction_myoryuji_desc" = "วัดที่เต็มไปด้วยบันไดลับและกับดัก มีชื่อเล่นว่าวัดนินจา";
 "attraction_zuihoden" = "สุสานซุยโฮเด็น";
-"attraction_zuihoden_desc" = "The lavish mausoleum of Date Masamune, with splendid Momoyama-era carvings and colors.";
+"attraction_zuihoden_desc" = "สุสานอันหรูหราที่บูชาดาเตะ มาซามุเนะ งานแกะสลักและสีสันสไตล์โมโมยามะงดงาม";
 "attraction_zao_fox_village" = "หมู่บ้านจิ้งจอกซาโอ";
-"attraction_zao_fox_village_desc" = "A popular spot to interact with free-roaming foxes, soothing with its many foxes.";
+"attraction_zao_fox_village_desc" = "จุดยอดนิยมที่สัมผัสกับจิ้งจอกที่เลี้ยงแบบปล่อย ผ่อนคลายกับจิ้งจอกจำนวนมาก";
 "attraction_yakushiji" = "วัดยาคุชิ";
-"attraction_yakushiji_desc" = "A World Heritage Site known for its beautiful East Pagoda, a classic of Hakuho culture.";
+"attraction_yakushiji_desc" = "มรดกโลกที่ขึ้นชื่อเรื่องเจดีย์ตะวันออกอันงดงาม วัดโบราณตัวแทนของวัฒนธรรมฮาคุโฮ";
 "attraction_hasedera" = "วัดฮาเซเดระ";
-"attraction_hasedera_desc" = "An ancient temple in Sakurai called the Temple of Flowers, famous for peonies and hydrangeas.";
+"attraction_hasedera_desc" = "วัดโบราณในเมืองซากุระอิที่ได้ชื่อว่าวัดแห่งดอกไม้ ขึ้นชื่อดอกโบตั๋นและไฮเดรนเยีย";
 "attraction_inubosaki_lighthouse" = "ประภาคารอินุโบซากิ";
-"attraction_inubosaki_lighthouse_desc" = "A white lighthouse at Kanto's easternmost point, a famous spot for the first sunrise over the Pacific.";
+"attraction_inubosaki_lighthouse_desc" = "ประภาคารสีขาวที่ปลายสุดตะวันออกของคันโต จุดชมพระอาทิตย์ขึ้นแรกของปีเหนือมหาสมุทรแปซิฟิก";
 "attraction_nokogiriyama" = "ภูเขาโนโคกิริ";
-"attraction_nokogiriyama_desc" = "A mountain known for its cliff-edge Hell Lookout and giant Buddha, reached by ropeway.";
+"attraction_nokogiriyama_desc" = "ภูเขาที่ขึ้นชื่อเรื่องจุดชมวิวนรกริมหน้าผาและพระใหญ่ ขึ้นสู่ยอดด้วยกระเช้า";
 "attraction_sunpu_castle" = "ปราสาทซุนปุ";
-"attraction_sunpu_castle_desc" = "The castle where Tokugawa Ieyasu spent his later years, now a spacious park.";
+"attraction_sunpu_castle_desc" = "ปราสาทที่โทกุงาวะ อิเอยาสุใช้ชีวิตบั้นปลาย ปัจจุบันจัดเป็นสวนสาธารณะอันกว้างขวาง";
 "attraction_omuroyama" = "ภูเขาโอมุโระ";
-"attraction_omuroyama_desc" = "An Izu symbol with a beautiful bowl shape, offering stunning summit views reached by chairlift.";
+"attraction_omuroyama_desc" = "สัญลักษณ์ของอิซุที่มีรูปทรงชามอันงดงาม ทัศนียภาพจากยอดเขาที่ขึ้นด้วยลิฟต์นั่งน่าประทับใจ";
 
 "gourmet_shirunashi_tantanmen" = "ทันทันเมนแห้ง";
 "gourmet_shirunashi_tantanmen_desc" = "ทันทันเมนไร้น้ำซุป เผ็ดด้วยพริกและพริกหอมเสฉวน กำเนิดฮิโรชิมะ";
