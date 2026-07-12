@@ -1871,184 +1871,184 @@
 // =====================================================
 // Fukui
 // =====================================================
-"fukui.habutae_mochi.name" = "Habutae Mochi";
-"fukui.habutae_mochi.description" = "Fukui confection. Soft and elegant sweetness";
+"fukui.habutae_mochi.name" = "Habutae mochi";
+"fukui.habutae_mochi.description" = "Dulce famoso de Fukui, blando y de dulzor delicado";
 "fukui.habutae_mochi.price" = "1,000–2,500 ¥";
 
-"fukui.satsukigase_senbei.name" = "Satsukigase Senbei";
-"fukui.satsukigase_senbei.description" = "Long-established rice crackers from Fukui";
+"fukui.satsukigase_senbei.name" = "Senbei Satsukigase";
+"fukui.satsukigase_senbei.description" = "Senbei de una casa centenaria de Fukui";
 "fukui.satsukigase_senbei.price" = "1,000–2,000 ¥";
 
-"fukui.gyuhi_kombu.name" = "Gyuhi Kombu";
-"fukui.gyuhi_kombu.description" = "Japanese confection made with Fukui kelp";
+"fukui.gyuhi_kombu.name" = "Gyuhi kombu";
+"fukui.gyuhi_kombu.description" = "Dulce japonés con alga kombu de Fukui";
 "fukui.gyuhi_kombu.price" = "800–1,500 ¥";
 
-"fukui.mizu_yokan.name" = "Mizu Yokan";
-"fukui.mizu_yokan.description" = "Summer specialty confection from Fukui";
+"fukui.mizu_yokan.name" = "Mizu yokan";
+"fukui.mizu_yokan.description" = "Dulce típico de verano de Fukui";
 "fukui.mizu_yokan.price" = "500–1,200 ¥";
 
-"fukui.echizen_washi.name" = "Echizen Washi";
-"fukui.echizen_washi.description" = "Traditional crafts from Fukui";
+"fukui.echizen_washi.name" = "Washi de Echizen";
+"fukui.echizen_washi.description" = "Artesanía tradicional de Fukui";
 "fukui.echizen_washi.price" = "1,000–10,000 ¥";
 
 // =====================================================
 // Yamanashi
 // =====================================================
-"yamanashi.kikyo_shingen_mochi.name" = "Kikyo Shingen Mochi";
-"yamanashi.kikyo_shingen_mochi.description" = "Representative confection of Yamanashi. Eaten with kinako and brown sugar syrup";
+"yamanashi.kikyo_shingen_mochi.name" = "Kikyo Shingen mochi";
+"yamanashi.kikyo_shingen_mochi.description" = "Dulce representativo de Yamanashi, con kinako y sirope negro";
 "yamanashi.kikyo_shingen_mochi.price" = "1,000–2,500 ¥";
 
 "yamanashi.kikyo_shingen_soft.name" = "Kikyo Shingen Soft";
-"yamanashi.kikyo_shingen_soft.description" = "Soft cream-style confection with Shingen mochi flavor";
+"yamanashi.kikyo_shingen_soft.description" = "Helado suave con sabor a Shingen mochi";
 "yamanashi.kikyo_shingen_soft.price" = "300–600 ¥";
 
 "yamanashi.budo_no_sato.name" = "Budo no Sato";
-"yamanashi.budo_no_sato.description" = "Confection made with Yamanashi grapes";
+"yamanashi.budo_no_sato.description" = "Dulce con uvas de Yamanashi";
 "yamanashi.budo_no_sato.price" = "1,200–2,500 ¥";
 
 "yamanashi.fuji_no_shirayuki.name" = "Fuji no Shirayuki";
-"yamanashi.fuji_no_shirayuki.description" = "Confection with Mount Fuji motif";
+"yamanashi.fuji_no_shirayuki.description" = "Dulce inspirado en el monte Fuji";
 "yamanashi.fuji_no_shirayuki.price" = "1,000–2,000 ¥";
 
-"yamanashi.koshu_wine.name" = "Koshu Wine";
-"yamanashi.koshu_wine.description" = "Japanese wine made with Yamanashi grapes";
+"yamanashi.koshu_wine.name" = "Vino de Koshu";
+"yamanashi.koshu_wine.description" = "Vino japonés elaborado con uvas de Yamanashi";
 "yamanashi.koshu_wine.price" = "2,000–10,000 ¥";
 
 // =====================================================
 // Nagano
 // =====================================================
 "nagano.raicho_no_sato.name" = "Raicho no Sato";
-"nagano.raicho_no_sato.description" = "Representative confection of Nagano";
+"nagano.raicho_no_sato.description" = "Dulce representativo de Nagano";
 "nagano.raicho_no_sato.price" = "1,200–2,500 ¥";
 
-"nagano.misuzu_ame.name" = "Misuzu Ame";
-"nagano.misuzu_ame.description" = "Fruit jelly made by a long-established shop in Nagano";
+"nagano.misuzu_ame.name" = "Misuzu ame";
+"nagano.misuzu_ame.description" = "Gelatina de fruta de una casa centenaria de Nagano";
 "nagano.misuzu_ame.price" = "800–2,000 ¥";
 
-"nagano.yawataya_isogoro_shichimi.name" = "Yawataya Isogoro Shichimi";
-"nagano.yawataya_isogoro_shichimi.description" = "Seven-spice blend from a long-established shop in front of Zenkoji Temple";
+"nagano.yawataya_isogoro_shichimi.name" = "Shichimi Yawataya Isogoro";
+"nagano.yawataya_isogoro_shichimi.description" = "Mezcla de siete especias de una casa centenaria frente al templo Zenkoji";
 "nagano.yawataya_isogoro_shichimi.price" = "500–1,500 ¥";
 
-"nagano.kuri_kanoko.name" = "Kuri Kanoko";
-"nagano.kuri_kanoko.description" = "Chestnut confection from Obuse Town, Nagano";
+"nagano.kuri_kanoko.name" = "Kuri kanoko";
+"nagano.kuri_kanoko.description" = "Dulce de castaña de Obuse (Nagano)";
 "nagano.kuri_kanoko.price" = "1,500–3,000 ¥";
 
 "nagano.nozawana.name" = "Nozawana";
-"nagano.nozawana.description" = "Pickled vegetables specialty from Nagano";
+"nagano.nozawana.description" = "Encurtido de la verdura típica de Nagano";
 "nagano.nozawana.price" = "500–1,500 ¥";
 
 // =====================================================
 // Gifu
 // =====================================================
 "gifu.hida_no_sato.name" = "Hida no Sato";
-"gifu.hida_no_sato.description" = "Famous confection from Hida region, Gifu";
+"gifu.hida_no_sato.description" = "Dulce famoso de la región de Hida (Gifu)";
 "gifu.hida_no_sato.price" = "1,200–2,500 ¥";
 
-"gifu.kuri_kinton.name" = "Kuri Kinton";
-"gifu.kuri_kinton.description" = "Nakatsugawa specialty. Japanese confection that brings out the sweetness of chestnuts";
+"gifu.kuri_kinton.name" = "Kuri kinton";
+"gifu.kuri_kinton.description" = "Especialidad de Nakatsugawa, dulce que realza el sabor de la castaña";
 "gifu.kuri_kinton.price" = "1,500–3,000 ¥";
 
-"gifu.ayu_gashi.name" = "Ayu Confection";
-"gifu.ayu_gashi.description" = "Confection with sweetfish motif from Gifu";
+"gifu.ayu_gashi.name" = "Dulce ayu";
+"gifu.ayu_gashi.description" = "Dulce inspirado en el ayu de Gifu";
 "gifu.ayu_gashi.price" = "1,000–2,000 ¥";
 
-"gifu.hoba_miso_senbei.name" = "Hoba Miso Senbei";
-"gifu.hoba_miso_senbei.description" = "Rice crackers with Hida's local cuisine motif";
+"gifu.hoba_miso_senbei.name" = "Senbei de hoba miso";
+"gifu.hoba_miso_senbei.description" = "Senbei inspirado en la cocina local de Hida";
 "gifu.hoba_miso_senbei.price" = "800–1,500 ¥";
 
-"gifu.mino_washi.name" = "Mino Washi";
-"gifu.mino_washi.description" = "Traditional crafts from Gifu";
+"gifu.mino_washi.name" = "Washi de Mino";
+"gifu.mino_washi.description" = "Artesanía tradicional de Gifu";
 "gifu.mino_washi.price" = "1,000–10,000 ¥";
 
 // =====================================================
 // Shizuoka
 // =====================================================
-"shizuoka.unagi_pie.name" = "Unagi Pie";
-"shizuoka.unagi_pie.description" = "Hamamatsu specialty. Crispy pie confection";
+"shizuoka.unagi_pie.name" = "Unagi Pie (hojaldre de anguila)";
+"shizuoka.unagi_pie.description" = "Especialidad de Hamamatsu: hojaldre crujiente";
 "shizuoka.unagi_pie.price" = "1,000–2,500 ¥";
 
 "shizuoka.kokko.name" = "Kokko";
-"shizuoka.kokko.description" = "Representative confection of Shizuoka";
+"shizuoka.kokko.description" = "Dulce representativo de Shizuoka";
 "shizuoka.kokko.price" = "1,200–2,000 ¥";
 
-"shizuoka.jiichiro_baumkuchen.name" = "Jiichiro Baumkuchen";
-"shizuoka.jiichiro_baumkuchen.description" = "Premium baumkuchen originating from Shizuoka";
+"shizuoka.jiichiro_baumkuchen.name" = "Baumkuchen de Jiichiro";
+"shizuoka.jiichiro_baumkuchen.description" = "Baumkuchen premium originario de Shizuoka";
 "shizuoka.jiichiro_baumkuchen.price" = "1,500–3,000 ¥";
 
 "shizuoka.fujisan_cho.name" = "Fujisan-cho";
-"shizuoka.fujisan_cho.description" = "Confection with Mount Fuji motif";
+"shizuoka.fujisan_cho.description" = "Dulce inspirado en el monte Fuji";
 "shizuoka.fujisan_cho.price" = "1,000–2,000 ¥";
 
-"shizuoka.shizuoka_cha.name" = "Shizuoka Tea";
-"shizuoka.shizuoka_cha.description" = "Specialty product from Shizuoka";
+"shizuoka.shizuoka_cha.name" = "Té de Shizuoka";
+"shizuoka.shizuoka_cha.description" = "Especialidad de Shizuoka";
 "shizuoka.shizuoka_cha.price" = "1,000–5,000 ¥";
 
 // =====================================================
 // Aichi
 // =====================================================
 "aichi.uiro.name" = "Uiro";
-"aichi.uiro.description" = "Representative Japanese confection of Nagoya";
+"aichi.uiro.description" = "Dulce japonés representativo de Nagoya";
 "aichi.uiro.price" = "800–2,000 ¥";
 
 "aichi.yukari.name" = "Yukari";
-"aichi.yukari.description" = "Shrimp rice crackers made by a long-established shop in Nagoya";
+"aichi.yukari.description" = "Senbei de gambas de una casa centenaria de Nagoya";
 "aichi.yukari.price" = "1,000–2,500 ¥";
 
-"aichi.sakakaku_ebi_senbei.name" = "Sakakaku Sohonpo Shrimp Crackers";
-"aichi.sakakaku_ebi_senbei.description" = "Premium shrimp rice crackers from Aichi";
+"aichi.sakakaku_ebi_senbei.name" = "Senbei de gambas de Sakakaku Sohonpo";
+"aichi.sakakaku_ebi_senbei.description" = "Senbei de gambas premium de Aichi";
 "aichi.sakakaku_ebi_senbei.price" = "1,500–5,000 ¥";
 
 "aichi.nagoyan.name" = "Nagoyan";
-"aichi.nagoyan.description" = "Famous confection of Nagoya";
+"aichi.nagoyan.description" = "Dulce famoso de Nagoya";
 "aichi.nagoyan.price" = "1,000–2,000 ¥";
 
-"aichi.arimatsu_shibori.name" = "Arimatsu Shibori";
-"aichi.arimatsu_shibori.description" = "Traditional crafts from Aichi";
+"aichi.arimatsu_shibori.name" = "Arimatsu shibori";
+"aichi.arimatsu_shibori.description" = "Artesanía tradicional de Aichi";
 "aichi.arimatsu_shibori.price" = "3,000–20,000 ¥";
 
 // =====================================================
 // Mie
 // =====================================================
 "mie.akafuku.name" = "Akafuku";
-"mie.akafuku.description" = "Famous confection of Ise Shrine. Mochi wrapped in sweet red bean paste";
+"mie.akafuku.description" = "Especialidad del santuario de Ise: mochi cubierto de pasta de judías";
 "mie.akafuku.price" = "1,000–3,000 ¥";
 
-"mie.henba_mochi.name" = "Henba Mochi";
-"mie.henba_mochi.description" = "Traditional mochi confection from Mie";
+"mie.henba_mochi.name" = "Henba mochi";
+"mie.henba_mochi.description" = "Dulce de mochi tradicional de Mie";
 "mie.henba_mochi.price" = "800–1,500 ¥";
 
-"mie.yasunaga_mochi.name" = "Yasunaga Mochi";
-"mie.yasunaga_mochi.description" = "Famous mochi confection from Mie";
+"mie.yasunaga_mochi.name" = "Yasunaga mochi";
+"mie.yasunaga_mochi.description" = "Dulce de mochi famoso de Mie";
 "mie.yasunaga_mochi.price" = "800–1,500 ¥";
 
-"mie.toraya_uiro.name" = "Toraya Uiro";
-"mie.toraya_uiro.description" = "Uiro from Ise City, Mie";
+"mie.toraya_uiro.name" = "Uiro de Toraya";
+"mie.toraya_uiro.description" = "Uiro de la ciudad de Ise (Mie)";
 "mie.toraya_uiro.price" = "1,000–2,000 ¥";
 
-"mie.shinju.name" = "Pearls";
-"mie.shinju.description" = "Specialty product from Mie";
+"mie.shinju.name" = "Perlas";
+"mie.shinju.description" = "Especialidad de Mie";
 "mie.shinju.price" = "5,000–100,000 ¥";
 
 // =====================================================
 // Shiga
 // =====================================================
-"shiga.kisho_juian_kinogumo.name" = "Kisho Juian Kinogumo";
-"shiga.kisho_juian_kinogumo.description" = "Premium Japanese confection from Shiga";
+"shiga.kisho_juian_kinogumo.name" = "Kinogumo de Kano Shojuan";
+"shiga.kisho_juian_kinogumo.description" = "Dulce japonés premium de Shiga";
 "shiga.kisho_juian_kinogumo.price" = "2,000–5,000 ¥";
 
-"shiga.itokiri_mochi.name" = "Itokiri Mochi";
-"shiga.itokiri_mochi.description" = "Traditional mochi confection from Shiga";
+"shiga.itokiri_mochi.name" = "Itokiri mochi";
+"shiga.itokiri_mochi.description" = "Dulce de mochi tradicional de Shiga";
 "shiga.itokiri_mochi.price" = "800–1,500 ¥";
 
 "shiga.chojifu.name" = "Chojifu";
-"shiga.chojifu.description" = "Specialty product from Shiga";
+"shiga.chojifu.description" = "Especialidad de Shiga";
 "shiga.chojifu.price" = "500–1,200 ¥";
 
-"shiga.shigaraki_yaki.name" = "Shigaraki Pottery";
-"shiga.shigaraki_yaki.description" = "Pottery from Shigaraki Town, Shiga";
+"shiga.shigaraki_yaki.name" = "Cerámica de Shigaraki";
+"shiga.shigaraki_yaki.description" = "Cerámica de Shigaraki (Shiga)";
 "shiga.shigaraki_yaki.price" = "2,000–20,000 ¥";
 
-"shiga.biwa_ko_goods.name" = "Lake Biwa Goods";
+"shiga.biwa_ko_goods.name" = "Productos del lago Biwa";
 "shiga.biwa_ko_goods.description" = "Souvenirs with Lake Biwa motif";
 "shiga.biwa_ko_goods.price" = "500–3,000 ¥";
 
