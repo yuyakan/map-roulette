@@ -3095,52 +3095,52 @@
 "akita_kanto_festival_description" = "L'un des trois grands festivals du Tohoku. Un festival traditionnel où l'on admire l'art d'équilibrer les perches Kanto sur la paume, le front et l'épaule.";
 "akita_kanto_festival_location" = "Centre d'Akita";
 "akita_kanto_festival_feature1" = "Trois grands festivals du Tohoku";
-"akita_kanto_festival_feature2" = "Kanto Balancing Skills";
-"akita_kanto_festival_feature3" = "280 Kanto Poles";
+"akita_kanto_festival_feature2" = "Art d'équilibre des Kanto";
+"akita_kanto_festival_feature3" = "280 perches Kanto";
 
-"omagari_fireworks_name" = "Omagari Fireworks";
-"omagari_fireworks_description" = "Known as the National Fireworks Competition, this is Japan's premier fireworks display. A competition showcasing the finest skills of fireworks artisans.";
-"omagari_fireworks_location" = "Daisen City, Omono River Riverbed";
-"omagari_fireworks_feature1" = "National Competition";
-"omagari_fireworks_feature2" = "Premier Techniques";
-"omagari_fireworks_feature3" = "Over 20,000 Fireworks";
+"omagari_fireworks_name" = "Feu d'artifice d'Omagari";
+"omagari_fireworks_description" = "Le plus prestigieux feu d'artifice du Japon, connu comme le concours national. Une compétition rassemblant le meilleur savoir-faire des artificiers.";
+"omagari_fireworks_location" = "Daisen - Berges de la rivière Omono";
+"omagari_fireworks_feature1" = "Concours national";
+"omagari_fireworks_feature2" = "Techniques d'excellence";
+"omagari_fireworks_feature3" = "Plus de 20 000 fusées";
 
-"kakunodate_festival_name" = "Kakunodate Festival Float Events";
-"kakunodate_festival_description" = "Kakunodate's autumn festival registered as UNESCO Intangible Cultural Heritage. Spectacular collisions between gorgeous floats are the highlight.";
-"kakunodate_festival_location" = "Kakunodate Town";
-"kakunodate_festival_feature1" = "UNESCO Heritage";
-"kakunodate_festival_feature2" = "Float Collisions";
-"kakunodate_festival_feature3" = "400 Years of History";
+"kakunodate_festival_name" = "Défilé des chars de Kakunodate";
+"kakunodate_festival_description" = "Festival d'automne de Kakunodate, inscrit au patrimoine culturel immatériel de l'UNESCO. Les spectaculaires collisions entre chars somptueux en sont le clou.";
+"kakunodate_festival_location" = "Ville de Kakunodate";
+"kakunodate_festival_feature1" = "Patrimoine UNESCO";
+"kakunodate_festival_feature2" = "Collisions de chars";
+"kakunodate_festival_feature3" = "400 ans d'histoire";
 
 // MARK: - Yamagata Prefecture
-"yamagata_hanagasa_festival_name" = "Yamagata Hanagasa Festival";
-"yamagata_hanagasa_festival_description" = "Yamagata's representative festival featuring dancing to the chants of 'Yassho, Makasho'. Gorgeous Hanagasa dancing parades through the streets.";
-"yamagata_hanagasa_festival_location" = "Central Yamagata City";
-"yamagata_hanagasa_festival_feature1" = "Hanagasa Dancing";
+"yamagata_hanagasa_festival_name" = "Festival Hanagasa de Yamagata";
+"yamagata_hanagasa_festival_description" = "Festival emblématique de Yamagata, dansé au cri « Yassho, Makasho ». Le somptueux Hanagasa Odori défile dans les rues.";
+"yamagata_hanagasa_festival_location" = "Centre de Yamagata";
+"yamagata_hanagasa_festival_feature1" = "Danse Hanagasa";
 "yamagata_hanagasa_festival_feature2" = "Yassho Makasho";
-"yamagata_hanagasa_festival_feature3" = "10,000 Dancers";
+"yamagata_hanagasa_festival_feature3" = "10 000 danseurs";
 
-"shinjo_festival_name" = "Shinjo Festival";
-"shinjo_festival_description" = "Shinjo's summer festival featuring gorgeous floats parading through the streets. Floats recreating Kabuki and historical scenes are the highlights.";
-"shinjo_festival_location" = "Central Shinjo City";
-"shinjo_festival_feature1" = "Gorgeous Floats";
-"shinjo_festival_feature2" = "Kabuki Recreation";
-"shinjo_festival_feature3" = "260 Years of History";
+"shinjo_festival_name" = "Festival de Shinjo";
+"shinjo_festival_description" = "Festival estival de Shinjo, avec de somptueux chars défilant dans les rues. Les chars recréant des scènes de kabuki et de grands moments historiques en sont le clou.";
+"shinjo_festival_location" = "Centre de Shinjo";
+"shinjo_festival_feature1" = "Chars somptueux";
+"shinjo_festival_feature2" = "Recréation de kabuki";
+"shinjo_festival_feature3" = "260 ans d'histoire";
 
-"sakata_festival_name" = "Sakata Festival";
-"sakata_festival_description" = "A traditional festival coloring Sakata's spring. Gorgeous float processions and lion dances parade through the port town of Sakata.";
-"sakata_festival_location" = "Central Sakata City";
-"sakata_festival_feature1" = "Port Town Festival";
-"sakata_festival_feature2" = "Float Procession";
-"sakata_festival_feature3" = "Lion Dance";
+"sakata_festival_name" = "Festival de Sakata";
+"sakata_festival_description" = "Festival traditionnel qui égaie le printemps de Sakata. De somptueux cortèges de chars et des danses du lion parcourent la ville portuaire de Sakata.";
+"sakata_festival_location" = "Centre de Sakata";
+"sakata_festival_feature1" = "Festival de ville portuaire";
+"sakata_festival_feature2" = "Cortège de chars";
+"sakata_festival_feature3" = "Danse du lion";
 
 // MARK: - Fukushima Prefecture
-"fukushima_waraji_festival_name" = "Fukushima Waraji Festival";
-"fukushima_waraji_festival_description" = "Fukushima's summer festival featuring Japan's largest waraji (straw sandals) being carried through the streets. A 12-meter giant waraji is spectacular.";
-"fukushima_waraji_festival_location" = "Central Fukushima City";
-"fukushima_waraji_festival_feature1" = "Japan's Largest Waraji";
-"fukushima_waraji_festival_feature2" = "12 Meters Long";
-"fukushima_waraji_festival_feature3" = "Prayer for Strong Legs";
+"fukushima_waraji_festival_name" = "Festival Waraji de Fukushima";
+"fukushima_waraji_festival_description" = "Festival estival de Fukushima, où l'on porte le plus grand waraji (sandale de paille) du Japon. Le waraji géant de 12 mètres est spectaculaire.";
+"fukushima_waraji_festival_location" = "Centre de Fukushima";
+"fukushima_waraji_festival_feature1" = "Le plus grand waraji du Japon";
+"fukushima_waraji_festival_feature2" = "12 mètres de long";
+"fukushima_waraji_festival_feature3" = "Prière pour des jambes solides";
 
 "soma_nomaoi_name" = "Soma Nomaoi";
 "soma_nomaoi_description" = "A traditional event in the Soma region continuing for over 1,000 years. A magnificent festival featuring mounted warriors in armor.";
@@ -3149,93 +3149,93 @@
 "soma_nomaoi_feature2" = "Mounted Warriors";
 "soma_nomaoi_feature3" = "Armor Procession";
 
-"aizu_festival_name" = "Aizu Festival";
-"aizu_festival_description" = "An autumn festival recreating the history of the Aizu Domain. Aizu Domain lord processions and warrior parades at Tsuruga Castle are the highlights.";
-"aizu_festival_location" = "Aizuwakamatsu City";
-"aizu_festival_feature1" = "Aizu Domain Recreation";
-"aizu_festival_feature2" = "Warrior Parade";
-"aizu_festival_feature3" = "Tsuruga Castle";
+"aizu_festival_name" = "Festival d'Aizu";
+"aizu_festival_description" = "Festival d'automne recréant l'histoire du domaine d'Aizu. Le cortège du seigneur d'Aizu et le défilé de guerriers au château de Tsuruga en sont les temps forts.";
+"aizu_festival_location" = "Ville d'Aizuwakamatsu";
+"aizu_festival_feature1" = "Recréation du domaine d'Aizu";
+"aizu_festival_feature2" = "Défilé de guerriers";
+"aizu_festival_feature3" = "Château de Tsuruga";
 
 // MARK: - Ibaraki Prefecture
-"mito_komon_festival_name" = "Mito Komon Festival";
-"mito_komon_festival_description" = "Mito's summer festival commemorating Lord Tokugawa Mitsukuni. Komon-sama parades and fireworks displays are the highlights.";
-"mito_komon_festival_location" = "Central Mito City";
-"mito_komon_festival_feature1" = "Komon-sama Parade";
-"mito_komon_festival_feature2" = "Fireworks Display";
-"mito_komon_festival_feature3" = "Mito's Summer";
+"mito_komon_festival_name" = "Festival Mito Komon";
+"mito_komon_festival_description" = "Festival estival de Mito en mémoire du seigneur Tokugawa Mitsukuni. Le défilé de Komon-sama et le feu d'artifice en sont les temps forts.";
+"mito_komon_festival_location" = "Centre de Mito";
+"mito_komon_festival_feature1" = "Défilé de Komon-sama";
+"mito_komon_festival_feature2" = "Feu d'artifice";
+"mito_komon_festival_feature3" = "L'été de Mito";
 
-"tsuchiura_fireworks_name" = "Tsuchiura National Fireworks Competition";
-"tsuchiura_fireworks_description" = "One of Japan's three major fireworks displays. Famous as a competition where fireworks artisans from across the nation compete in technique.";
-"tsuchiura_fireworks_location" = "Tsuchiura City, Sakura River Banks";
-"tsuchiura_fireworks_feature1" = "Japan's Three Major Fireworks";
-"tsuchiura_fireworks_feature2" = "National Competition";
-"tsuchiura_fireworks_feature3" = "Autumn Fireworks";
+"tsuchiura_fireworks_name" = "Concours national de feux d'artifice de Tsuchiura";
+"tsuchiura_fireworks_description" = "L'un des trois grands feux d'artifice du Japon. Célèbre comme un concours où les artificiers de tout le pays rivalisent de technique.";
+"tsuchiura_fireworks_location" = "Tsuchiura - Berges de la rivière Sakura";
+"tsuchiura_fireworks_feature1" = "Trois grands feux d'artifice du Japon";
+"tsuchiura_fireworks_feature2" = "Concours national";
+"tsuchiura_fireworks_feature3" = "Feux d'automne";
 
-"koga_fireworks_name" = "Koga Fireworks Festival";
-"koga_fireworks_description" = "One of Kanto region's largest fireworks displays. 25,000 fireworks launched from Watarase River riverbed color the night sky.";
-"koga_fireworks_location" = "Koga City, Watarase River";
-"koga_fireworks_feature1" = "Kanto's Largest";
-"koga_fireworks_feature2" = "25,000 Fireworks";
-"koga_fireworks_feature3" = "Riverbed Fireworks";
+"koga_fireworks_name" = "Feu d'artifice de Koga";
+"koga_fireworks_description" = "L'un des plus grands feux d'artifice du Kanto. 25 000 fusées tirées depuis les berges de la rivière Watarase illuminent le ciel nocturne.";
+"koga_fireworks_location" = "Koga - Rivière Watarase";
+"koga_fireworks_feature1" = "Le plus grand du Kanto";
+"koga_fireworks_feature2" = "25 000 fusées";
+"koga_fireworks_feature3" = "Feux au bord de la rivière";
 
 // MARK: - Tochigi Prefecture
-"utsunomiya_fireworks_name" = "Utsunomiya Fireworks Festival";
-"utsunomiya_fireworks_description" = "One of Kanto region's largest fireworks displays. About 30,000 fireworks beautifully color Utsunomiya's night sky.";
-"utsunomiya_fireworks_location" = "Utsunomiya City, Kinugawa Riverbed";
-"utsunomiya_fireworks_feature1" = "30,000 Fireworks";
-"utsunomiya_fireworks_feature2" = "Kanto's Largest";
-"utsunomiya_fireworks_feature3" = "Kinugawa Riverbed";
+"utsunomiya_fireworks_name" = "Feu d'artifice d'Utsunomiya";
+"utsunomiya_fireworks_description" = "L'un des plus grands feux d'artifice du Kanto. Environ 30 000 fusées colorent magnifiquement le ciel nocturne d'Utsunomiya.";
+"utsunomiya_fireworks_location" = "Utsunomiya - Berges de la rivière Kinugawa";
+"utsunomiya_fireworks_feature1" = "30 000 fusées";
+"utsunomiya_fireworks_feature2" = "Le plus grand du Kanto";
+"utsunomiya_fireworks_feature3" = "Berges de la Kinugawa";
 
-"ashikaga_fireworks_name" = "Ashikaga Fireworks Festival";
-"ashikaga_fireworks_description" = "A fireworks display held at Watarase River riverbed. Large fireworks shells and grand starmine fireworks color the night sky.";
-"ashikaga_fireworks_location" = "Ashikaga City, Watarase River";
-"ashikaga_fireworks_feature1" = "Large Fireworks Shells";
-"ashikaga_fireworks_feature2" = "Grand Starmine";
-"ashikaga_fireworks_feature3" = "Watarase River";
+"ashikaga_fireworks_name" = "Feu d'artifice d'Ashikaga";
+"ashikaga_fireworks_description" = "Feu d'artifice organisé sur les berges de la rivière Watarase. De grosses bombes et de grandioses starmines colorent le ciel nocturne.";
+"ashikaga_fireworks_location" = "Ashikaga - Rivière Watarase";
+"ashikaga_fireworks_feature1" = "Grosses bombes";
+"ashikaga_fireworks_feature2" = "Grande starmine";
+"ashikaga_fireworks_feature3" = "Rivière Watarase";
 
-"nasu_makigari_festival_name" = "Nasu Makigari Festival";
-"nasu_makigari_festival_description" = "A historical festival recreating Minamoto no Yoritomo's Nasu hunting expedition. Warrior processions and archery ceremonies are the highlights.";
-"nasu_makigari_festival_location" = "Nasu Town";
-"nasu_makigari_festival_feature1" = "Yoritomo Recreation";
-"nasu_makigari_festival_feature2" = "Warrior Procession";
-"nasu_makigari_festival_feature3" = "Archery Ceremony";
+"nasu_makigari_festival_name" = "Festival de chasse Nasuno Makigari";
+"nasu_makigari_festival_description" = "Festival historique recréant la chasse de Nasuno menée par Minamoto no Yoritomo. Le défilé de guerriers et la cérémonie de tir à l'arc en sont les temps forts.";
+"nasu_makigari_festival_location" = "Ville de Nasu";
+"nasu_makigari_festival_feature1" = "Recréation de Yoritomo";
+"nasu_makigari_festival_feature2" = "Défilé de guerriers";
+"nasu_makigari_festival_feature3" = "Cérémonie de tir à l'arc";
 
 // MARK: - Gunma Prefecture
-"maebashi_tanabata_festival_name" = "Maebashi Tanabata Festival";
-"maebashi_tanabata_festival_description" = "One of Kanto region's major Tanabata festivals. Central Maebashi is beautifully decorated with colorful Tanabata ornaments.";
-"maebashi_tanabata_festival_location" = "Central Maebashi City";
-"maebashi_tanabata_festival_feature1" = "Kanto's Major Festival";
-"maebashi_tanabata_festival_feature2" = "Tanabata Decorations";
-"maebashi_tanabata_festival_feature3" = "City Center Decorations";
+"maebashi_tanabata_festival_name" = "Festival Tanabata de Maebashi";
+"maebashi_tanabata_festival_description" = "L'un des principaux festivals de Tanabata du Kanto. Le centre de Maebashi se pare magnifiquement de colorées décorations de Tanabata.";
+"maebashi_tanabata_festival_location" = "Centre de Maebashi";
+"maebashi_tanabata_festival_feature1" = "Parmi les meilleurs du Kanto";
+"maebashi_tanabata_festival_feature2" = "Décorations de Tanabata";
+"maebashi_tanabata_festival_feature3" = "Décorations du centre-ville";
 
-"kiryu_yagibushi_festival_name" = "Kiryu Yagibushi Festival";
-"kiryu_yagibushi_festival_description" = "A summer festival held in Kiryu, the birthplace of Yagibushi. Yagibushi dancing and food stalls enliven summer nights.";
-"kiryu_yagibushi_festival_location" = "Central Kiryu City";
-"kiryu_yagibushi_festival_feature1" = "Yagibushi Birthplace";
-"kiryu_yagibushi_festival_feature2" = "Dance Parade";
-"kiryu_yagibushi_festival_feature3" = "Food Stall Gourmet";
+"kiryu_yagibushi_festival_name" = "Festival Yagibushi de Kiryu";
+"kiryu_yagibushi_festival_description" = "Festival estival organisé à Kiryu, berceau du Yagibushi. La danse Yagibushi et les stands animent les nuits d'été.";
+"kiryu_yagibushi_festival_location" = "Centre de Kiryu";
+"kiryu_yagibushi_festival_feature1" = "Berceau du Yagibushi";
+"kiryu_yagibushi_festival_feature2" = "Défilé de danse";
+"kiryu_yagibushi_festival_feature3" = "Street-food des stands";
 
-"isesaki_fireworks_name" = "Isesaki Fireworks Festival";
-"isesaki_fireworks_description" = "Gunma Prefecture's largest fireworks display. About 10,000 fireworks gorgeously color Isesaki's night sky.";
-"isesaki_fireworks_location" = "Isesaki City, Tone River Riverbed";
-"isesaki_fireworks_feature1" = "Prefecture's Largest";
-"isesaki_fireworks_feature2" = "10,000 Fireworks";
-"isesaki_fireworks_feature3" = "Tone River Riverbed";
+"isesaki_fireworks_name" = "Feu d'artifice d'Isesaki";
+"isesaki_fireworks_description" = "Le plus grand feu d'artifice de la préfecture de Gunma. Environ 10 000 fusées colorent somptueusement le ciel nocturne d'Isesaki.";
+"isesaki_fireworks_location" = "Isesaki - Berges de la rivière Tone";
+"isesaki_fireworks_feature1" = "Le plus grand de la préfecture";
+"isesaki_fireworks_feature2" = "10 000 fusées";
+"isesaki_fireworks_feature3" = "Berges de la Tone";
 
 // MARK: - Saitama Prefecture
-"kumagaya_uchiwa_festival_name" = "Kumagaya Uchiwa Festival";
-"kumagaya_uchiwa_festival_description" = "Kumagaya's summer festival known as Kanto region's premier Gion festival. Gorgeous floats and festival stalls are the highlights.";
-"kumagaya_uchiwa_festival_location" = "Central Kumagaya City";
-"kumagaya_uchiwa_festival_feature1" = "Kanto's Premier Gion";
-"kumagaya_uchiwa_festival_feature2" = "Gorgeous Floats";
-"kumagaya_uchiwa_festival_feature3" = "12 Festival Stalls";
+"kumagaya_uchiwa_festival_name" = "Festival des éventails de Kumagaya";
+"kumagaya_uchiwa_festival_description" = "Festival estival de Kumagaya, connu comme le premier festival de Gion du Kanto. Les somptueux chars et les stands en sont les temps forts.";
+"kumagaya_uchiwa_festival_location" = "Centre de Kumagaya";
+"kumagaya_uchiwa_festival_feature1" = "Premier Gion du Kanto";
+"kumagaya_uchiwa_festival_feature2" = "Chars somptueux";
+"kumagaya_uchiwa_festival_feature3" = "12 stands";
 
-"kawagoe_festival_name" = "Kawagoe Festival";
-"kawagoe_festival_description" = "The Kawagoe Hikawa Festival, a UNESCO Intangible Cultural Heritage. Elaborate floats parade through the streets of Little Edo Kawagoe.";
-"kawagoe_festival_location" = "Central Kawagoe City";
-"kawagoe_festival_feature1" = "UNESCO Heritage";
-"kawagoe_festival_feature2" = "Little Edo";
-"kawagoe_festival_feature3" = "Elaborate Floats";
+"kawagoe_festival_name" = "Festival de Kawagoe";
+"kawagoe_festival_description" = "Le festival Hikawa de Kawagoe, patrimoine culturel immatériel de l'UNESCO. Des chars finement ouvragés défilent dans les rues du « petit Edo » de Kawagoe.";
+"kawagoe_festival_location" = "Centre de Kawagoe";
+"kawagoe_festival_feature1" = "Patrimoine UNESCO";
+"kawagoe_festival_feature2" = "Petit Edo";
+"kawagoe_festival_feature3" = "Chars ouvragés";
 
 "chichibu_yomatsuri_name" = "Chichibu Night Festival";
 "chichibu_yomatsuri_description" = "One of Japan's three major float festivals. A magnificent festival where gorgeous stalls and umbrella floats color Chichibu's winter nights.";
@@ -3244,91 +3244,91 @@
 "chichibu_yomatsuri_feature2" = "Winter Festival";
 "chichibu_yomatsuri_feature3" = "Stalls and Umbrella Floats";
 
-"todabashi_fireworks_name" = "Todabashi Fireworks Festival";
-"todabashi_fireworks_description" = "A fireworks display held at Arakawa riverbed. About 12,000 fireworks are launched in joint hosting with Tokyo's Itabashi Ward.";
-"todabashi_fireworks_location" = "Toda City, Arakawa Riverbed";
-"todabashi_fireworks_feature1" = "Joint Hosting";
-"todabashi_fireworks_feature2" = "12,000 Fireworks";
-"todabashi_fireworks_feature3" = "Arakawa Riverbed";
+"todabashi_fireworks_name" = "Feu d'artifice de Todabashi";
+"todabashi_fireworks_description" = "Feu d'artifice organisé sur les berges de l'Arakawa. Coorganisé avec l'arrondissement d'Itabashi à Tokyo, environ 12 000 fusées sont tirées.";
+"todabashi_fireworks_location" = "Toda - Berges de l'Arakawa";
+"todabashi_fireworks_feature1" = "Coorganisation";
+"todabashi_fireworks_feature2" = "12 000 fusées";
+"todabashi_fireworks_feature3" = "Berges de l'Arakawa";
 
 // MARK: - Chiba Prefecture
-"sakura_fireworks_name" = "Sakura Fireworks Festa";
-"sakura_fireworks_description" = "A fireworks display held at Inbanuma lakeside. A beautiful event featuring about 18,000 fireworks and lake surface reflections.";
-"sakura_fireworks_location" = "Sakura City, Inbanuma";
-"sakura_fireworks_feature1" = "18,000 Fireworks";
-"sakura_fireworks_feature2" = "Lake Surface Reflection";
-"sakura_fireworks_feature3" = "Inbanuma";
+"sakura_fireworks_name" = "Festa des feux d'artifice de Sakura";
+"sakura_fireworks_description" = "Feu d'artifice organisé au bord de l'étang d'Inbanuma. Un bel événement avec environ 18 000 fusées et leur reflet sur l'eau.";
+"sakura_fireworks_location" = "Sakura - Étang d'Inbanuma";
+"sakura_fireworks_feature1" = "18 000 fusées";
+"sakura_fireworks_feature2" = "Reflet sur le lac";
+"sakura_fireworks_feature3" = "Étang d'Inbanuma";
 
-"kashiwa_festival_name" = "Kashiwa Festival";
-"kashiwa_festival_description" = "A summer festival held around Kashiwa Station. Enjoy Nebuta parades and diverse stage events.";
-"kashiwa_festival_location" = "Kashiwa Station Area";
-"kashiwa_festival_feature1" = "Nebuta Parade";
-"kashiwa_festival_feature2" = "Stage Events";
-"kashiwa_festival_feature3" = "Station Front Festival";
+"kashiwa_festival_name" = "Festival de Kashiwa";
+"kashiwa_festival_description" = "Festival estival organisé autour de la gare de Kashiwa. Profitez des défilés de Nebuta et de spectacles variés.";
+"kashiwa_festival_location" = "Gare de Kashiwa";
+"kashiwa_festival_feature1" = "Défilé de Nebuta";
+"kashiwa_festival_feature2" = "Spectacles sur scène";
+"kashiwa_festival_feature3" = "Festival devant la gare";
 
-"narita_gion_festival_name" = "Narita Gion Festival";
-"narita_gion_festival_description" = "A festival ceremony of Narita-san Shinshoji Temple. A 300-year-old traditional festival where 10 all-keyaki wooden floats parade through Narita's streets.";
-"narita_gion_festival_location" = "Narita City, Narita-san Area";
-"narita_gion_festival_feature1" = "300 Years of History";
-"narita_gion_festival_feature2" = "All-Keyaki Wooden Floats";
-"narita_gion_festival_feature3" = "Narita-san Festival";
+"narita_gion_festival_name" = "Festival de Gion de Narita";
+"narita_gion_festival_description" = "Cérémonie festive du temple Naritasan Shinshoji. Un festival de 300 ans où 10 chars entièrement en bois de zelkova défilent dans les rues de Narita.";
+"narita_gion_festival_location" = "Narita - Zone de Naritasan";
+"narita_gion_festival_feature1" = "300 ans d'histoire";
+"narita_gion_festival_feature2" = "Chars tout en zelkova";
+"narita_gion_festival_feature3" = "Cérémonie de Naritasan";
 
-"kisarazu_port_festival_name" = "Kisarazu Port Festival";
-"kisarazu_port_festival_description" = "A summer festival held at Kisarazu Port. Yassai-Mossai dancing and port festival fireworks are the highlights.";
-"kisarazu_port_festival_location" = "Kisarazu Port Area";
+"kisarazu_port_festival_name" = "Festival du port de Kisarazu";
+"kisarazu_port_festival_description" = "Festival estival organisé au port de Kisarazu. La danse Yassai-Mossai et le feu d'artifice du festival portuaire en sont les temps forts.";
+"kisarazu_port_festival_location" = "Zone du port de Kisarazu";
 "kisarazu_port_festival_feature1" = "Yassai-Mossai";
-"kisarazu_port_festival_feature2" = "Port Festival Fireworks";
-"kisarazu_port_festival_feature3" = "Port Town Festival";
+"kisarazu_port_festival_feature2" = "Feux du festival portuaire";
+"kisarazu_port_festival_feature3" = "Festival de ville portuaire";
 
 // MARK: - Tokyo Prefecture
-"sumidagawa_fireworks_name" = "Sumida River Fireworks Festival";
-"sumidagawa_fireworks_description" = "Tokyo's representative fireworks display. About 20,000 fireworks color the summer night sky, with over 1 million visitors attending this historic event.";
-"sumidagawa_fireworks_location" = "Sumida River Riverbed";
-"sumidagawa_fireworks_feature1" = "20,000 Fireworks";
-"sumidagawa_fireworks_feature2" = "1 Million Visitors";
-"sumidagawa_fireworks_feature3" = "Tradition from Edo Period";
+"sumidagawa_fireworks_name" = "Feu d'artifice de la rivière Sumida";
+"sumidagawa_fireworks_description" = "Feu d'artifice emblématique de Tokyo. Environ 20 000 fusées colorent le ciel nocturne estival, un événement historique attirant plus d'un million de spectateurs.";
+"sumidagawa_fireworks_location" = "Berges de la rivière Sumida";
+"sumidagawa_fireworks_feature1" = "20 000 fusées";
+"sumidagawa_fireworks_feature2" = "1 million de spectateurs";
+"sumidagawa_fireworks_feature3" = "Tradition depuis l'époque d'Edo";
 
-"jingu_gaien_fireworks_name" = "Jingu Gaien Fireworks Festival";
-"jingu_gaien_fireworks_description" = "One of Tokyo's premier fireworks displays held at Meiji Jingu Gaien. Enjoy about 12,000 fireworks and artist live performances.";
+"jingu_gaien_fireworks_name" = "Feu d'artifice de Jingu Gaien";
+"jingu_gaien_fireworks_description" = "Feu d'artifice majeur de Tokyo organisé au Meiji Jingu Gaien. Profitez d'environ 12 000 fusées et de concerts live d'artistes.";
 "jingu_gaien_fireworks_location" = "Meiji Jingu Gaien";
-"jingu_gaien_fireworks_feature1" = "12,000 Fireworks";
-"jingu_gaien_fireworks_feature2" = "Artist Live Performance";
-"jingu_gaien_fireworks_feature3" = "Central Tokyo Fireworks";
+"jingu_gaien_fireworks_feature1" = "12 000 fusées";
+"jingu_gaien_fireworks_feature2" = "Concert live d'artistes";
+"jingu_gaien_fireworks_feature3" = "Feux d'artifice en centre-ville";
 
-"edogawaku_fireworks_name" = "Edogawa Ward Fireworks Festival";
-"edogawaku_fireworks_description" = "A fireworks display held at Edogawa riverbed. About 14,000 fireworks beautifully color Edogawa Ward's night sky.";
-"edogawaku_fireworks_location" = "Edogawa Riverbed";
-"edogawaku_fireworks_feature1" = "14,000 Fireworks";
-"edogawaku_fireworks_feature2" = "Edogawa Riverbed";
-"edogawaku_fireworks_feature3" = "Summer Tradition";
+"edogawaku_fireworks_name" = "Feu d'artifice de l'arrondissement d'Edogawa";
+"edogawaku_fireworks_description" = "Feu d'artifice organisé sur les berges de l'Edogawa. Environ 14 000 fusées colorent magnifiquement le ciel nocturne de l'arrondissement d'Edogawa.";
+"edogawaku_fireworks_location" = "Berges de l'Edogawa";
+"edogawaku_fireworks_feature1" = "14 000 fusées";
+"edogawaku_fireworks_feature2" = "Berges de l'Edogawa";
+"edogawaku_fireworks_feature3" = "Tradition estivale";
 
-"adachi_fireworks_name" = "Adachi Fireworks";
-"adachi_fireworks_description" = "A fireworks display held at Arakawa riverbed. About 13,000 fireworks color Adachi Ward's summer.";
-"adachi_fireworks_location" = "Arakawa Riverbed";
-"adachi_fireworks_feature1" = "13,000 Fireworks";
-"adachi_fireworks_feature2" = "Arakawa Riverbed";
-"adachi_fireworks_feature3" = "Adachi's Summer";
+"adachi_fireworks_name" = "Feu d'artifice d'Adachi";
+"adachi_fireworks_description" = "Feu d'artifice organisé sur les berges de l'Arakawa. Environ 13 000 fusées colorent l'été de l'arrondissement d'Adachi.";
+"adachi_fireworks_location" = "Berges de l'Arakawa";
+"adachi_fireworks_feature1" = "13 000 fusées";
+"adachi_fireworks_feature2" = "Berges de l'Arakawa";
+"adachi_fireworks_feature3" = "L'été d'Adachi";
 
-"itabashi_fireworks_name" = "Itabashi Fireworks Festival";
-"itabashi_fireworks_description" = "A fireworks display held at Arakawa riverbed. About 12,000 fireworks are launched in joint hosting with Saitama's Toda City.";
-"itabashi_fireworks_location" = "Arakawa Riverbed";
-"itabashi_fireworks_feature1" = "Joint Hosting";
-"itabashi_fireworks_feature2" = "12,000 Fireworks";
-"itabashi_fireworks_feature3" = "Arakawa Riverbed";
+"itabashi_fireworks_name" = "Feu d'artifice d'Itabashi";
+"itabashi_fireworks_description" = "Feu d'artifice organisé sur les berges de l'Arakawa. Coorganisé avec la ville de Toda (Saitama), environ 12 000 fusées sont tirées.";
+"itabashi_fireworks_location" = "Berges de l'Arakawa";
+"itabashi_fireworks_feature1" = "Coorganisation";
+"itabashi_fireworks_feature2" = "12 000 fusées";
+"itabashi_fireworks_feature3" = "Berges de l'Arakawa";
 
-"fukagawa_hachiman_festival_name" = "Fukagawa Hachiman Festival";
-"fukagawa_hachiman_festival_description" = "One of Edo's three major festivals, beloved as the 'Water Splashing Festival'. Famous for the unique custom of splashing purifying water on shrine bearers.";
-"fukagawa_hachiman_festival_location" = "Tomioka Hachimangu Area";
-"fukagawa_hachiman_festival_feature1" = "Water Splashing Festival";
-"fukagawa_hachiman_festival_feature2" = "Edo's Three Major Festivals";
-"fukagawa_hachiman_festival_feature3" = "Vigorous Shrine Carrying";
+"fukagawa_hachiman_festival_name" = "Festival Fukagawa Hachiman";
+"fukagawa_hachiman_festival_description" = "L'un des trois grands festivals d'Edo, connu comme le « festival de l'aspersion d'eau ». Célèbre pour la coutume unique d'asperger d'eau purificatrice les porteurs du sanctuaire.";
+"fukagawa_hachiman_festival_location" = "Zone de Tomioka Hachimangu";
+"fukagawa_hachiman_festival_feature1" = "Festival de l'aspersion d'eau";
+"fukagawa_hachiman_festival_feature2" = "Trois grands festivals d'Edo";
+"fukagawa_hachiman_festival_feature3" = "Portage vigoureux du sanctuaire";
 
-"kanda_festival_name" = "Kanda Festival";
-"kanda_festival_description" = "One of Edo's three major festivals. A traditional festival known for gorgeous shrine processions and float parades, called the 'Flower of Edo'.";
-"kanda_festival_location" = "Kanda Myojin Area";
-"kanda_festival_feature1" = "Edo's Three Major Festivals";
-"kanda_festival_feature2" = "Shrine Procession";
-"kanda_festival_feature3" = "Float Parade";
+"kanda_festival_name" = "Festival de Kanda";
+"kanda_festival_description" = "L'un des trois grands festivals d'Edo. Un festival traditionnel connu pour ses somptueuses processions de sanctuaires et de chars, surnommé « la fleur d'Edo ».";
+"kanda_festival_location" = "Zone de Kanda Myojin";
+"kanda_festival_feature1" = "Trois grands festivals d'Edo";
+"kanda_festival_feature2" = "Procession de sanctuaires";
+"kanda_festival_feature3" = "Défilé de chars";
 
 // MARK: - Kanagawa Prefecture
 "shonan_hiratsuka_tanabata_name" = "Shonan Hiratsuka Tanabata Festival";
@@ -3345,11 +3345,11 @@
 "yokohama_kaikosai_feature2" = "Minato Mirai";
 "yokohama_kaikosai_feature3" = "Port Fireworks";
 
-"kamakura_festival_name" = "Kamakura Festival";
-"kamakura_festival_description" = "A festival coloring the spring of ancient Kamakura. Recreates the elegant culture of the Kamakura period with Shizuka Gozen's dance and horseback archery.";
+"kamakura_festival_name" = "Festival de Kamakura";
+"kamakura_festival_description" = "Festival qui égaie le printemps de l'ancienne capitale Kamakura. Il recrée la culture raffinée de l'époque de Kamakura avec la danse de Shizuka Gozen et le tir à l'arc à cheval.";
 "kamakura_festival_location" = "Tsurugaoka Hachimangu";
-"kamakura_festival_feature1" = "Ancient Capital Spring Festival";
-"kamakura_festival_feature2" = "Shizuka Gozen's Dance";
+"kamakura_festival_feature1" = "Festival de printemps de l'ancienne capitale";
+"kamakura_festival_feature2" = "Danse de Shizuka Gozen";
 "kamakura_festival_feature3" = "Horseback Archery";
 
 "atsugi_ayu_festival_name" = "Atsugi Sweetfish Festival";
