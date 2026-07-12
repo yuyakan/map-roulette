@@ -240,6 +240,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_hiroshima_castle",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Evelyn-rose",
+  "title": "Hiroshima-Castle-1.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hiroshima-Castle-1.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_hitachi_seaside_park",
   "licenseClass": "CC BY",
   "license": "CC BY 4.0",
@@ -1157,6 +1167,16 @@
   "author": "Bobo12345 at English Wikipedia",
   "title": "Yufuin, Ōita Prefecture (4 November 2006).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yufuin,_%C5%8Cita_Prefecture_(4_November_2006).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_zenkoji",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "author": "663highland",
+  "title": "160501 Zenkoji Nagano Japan01s3.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:160501_Zenkoji_Nagano_Japan01s3.jpg",
   "modified": "resized"
  },
  {
