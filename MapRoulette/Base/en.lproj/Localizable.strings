@@ -5154,6 +5154,8 @@
 "plan.item.addmemo" = "Add memo";
 "plan.item.editmemo" = "Edit memo";
 "plan.item.memo" = "Memo";
+"plan.share" = "Share";
+"plan.timeblock.untimed" = "No time set";
 
 "social.search_youtube" = "Search on YouTube";
 "social.search_instagram" = "Search on Instagram";

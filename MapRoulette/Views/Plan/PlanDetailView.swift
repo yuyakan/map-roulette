@@ -41,6 +41,13 @@ struct PlanDetailView: View {
                     Text(plan.title).font(.headline)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
+                    ShareLink(item: PlanShareFormatter.text(for: plan)) {
+                        Image(systemName: "square.and.arrow.up")
+                            .foregroundColor(PlanTheme.primary)
+                    }
+                    .accessibilityLabel(NSLocalizedString("plan.share", comment: ""))
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         startEditing(plan)
                     } label: {

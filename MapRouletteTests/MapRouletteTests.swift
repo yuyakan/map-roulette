@@ -7,6 +7,7 @@
 
 import Testing
 import Foundation
+import CoreLocation
 @testable import MapRoulette
 
 struct MapRouletteTests {
@@ -117,5 +118,127 @@ struct MapRouletteTests {
 
         // テストで作ったプランは片付ける（テストホストのサンドボックスに残さない）
         store.deletePlan(plan)
+    }
+
+    // MARK: - 共有テキスト整形
+
+    /// フラットモード: タイトル・メモ・各項目が 1 リストとして並ぶことを確認する。
+    @Test func shareTextFlatIncludesTitleMemoAndItems() throws {
+        let castle = PlanItem(category: .attraction, prefecture: .ishikawa, name: "金沢城")
+        let hotel = PlanItem(customCategory: .hotel, title: "ホテル日航", detail: "2泊")
+        let plan = TravelPlan(title: "石川の旅", memo: "冬に行く", items: [castle, hotel])
+
+        let text = PlanShareFormatter.text(for: plan)
+
+        #expect(text.contains("石川の旅"))
+        #expect(text.contains("冬に行く"))
+        // アプリ項目は都道府県が添えられる
+        #expect(text.contains("金沢城"))
+        #expect(text.contains("石川県"))
+        // カスタム項目とそのメモ
+        #expect(text.contains("ホテル日航"))
+        #expect(text.contains("2泊"))
+    }
+
+    /// 日程モード: Day 見出しと時間ブロックの時刻ラベルで区切られることを確認する。
+    @Test func shareTextDayModeSeparatesByDayAndTimeBlock() throws {
+        var castle = PlanItem(category: .attraction, prefecture: .ishikawa, name: "金沢城")
+        castle.dayNumber = 1
+        let morning = TimeBlock(dayNumber: 1, startHour: 9, startMinute: 30, title: "午前")
+        castle.timeBlockID = morning.id
+
+        let plan = TravelPlan(
+            title: "石川の旅",
+            items: [castle],
+            groupingMode: .day,
+            dayCount: 2,
+            timeBlocks: [morning]
+        )
+
+        let text = PlanShareFormatter.text(for: plan)
+
+        // Day1 の見出しと時刻ラベルが出て、項目がその下に並ぶ
+        #expect(text.contains("1日目"))
+        #expect(text.contains("09:30"))
+        #expect(text.contains("午前"))
+        #expect(text.contains("金沢城"))
+        // 項目の無い Day2 は見出しごと出さない
+        #expect(!text.contains("2日目"))
+    }
+
+    /// 日程モード: 同じ日に時間指定ありの項目と時間未指定の項目が混在するとき、
+    /// 時間未指定の項目が時間指定ブロックに続けて並ばず、「時間未定」見出しで区切られることを確認する。
+    @Test func shareTextDayModeSeparatesUntimedItems() throws {
+        // 時間指定ありブロックの項目
+        var castle = PlanItem(category: .attraction, prefecture: .ishikawa, name: "金沢城")
+        castle.dayNumber = 1
+        let morning = TimeBlock(dayNumber: 1, startHour: 9, startMinute: 30)
+        castle.timeBlockID = morning.id
+        // 同じ日の時間未割当（timeBlockID = nil）項目
+        var lunch = PlanItem(customCategory: .other, title: "近江町市場で昼食")
+        lunch.dayNumber = 1
+
+        let plan = TravelPlan(
+            title: "石川の旅",
+            items: [castle, lunch],
+            groupingMode: .day,
+            dayCount: 1,
+            timeBlocks: [morning]
+        )
+
+        let text = PlanShareFormatter.text(for: plan)
+        let untimedLabel = NSLocalizedString("plan.timeblock.untimed", comment: "")
+
+        // 「時間未定」見出しが出て、両方の項目が含まれる
+        #expect(text.contains(untimedLabel))
+        #expect(text.contains("金沢城"))
+        #expect(text.contains("近江町市場で昼食"))
+
+        // 時間未指定の項目は「時間未定」見出しより後ろに置かれる（時間指定項目に続けて並ばない）
+        let lines = text.components(separatedBy: "\n")
+        let untimedHeaderIndex = try #require(lines.firstIndex { $0.contains(untimedLabel) })
+        let lunchIndex = try #require(lines.firstIndex { $0.contains("近江町市場で昼食") })
+        #expect(untimedHeaderIndex < lunchIndex)
+    }
+
+    /// フッター（アプリ署名）を出力しないことを確認する。
+    @Test func shareTextHasNoFooter() throws {
+        let hotel = PlanItem(customCategory: .hotel, title: "ホテル日航")
+        let plan = TravelPlan(title: "石川の旅", items: [hotel])
+
+        let text = PlanShareFormatter.text(for: plan)
+
+        // 余計な署名は付かない（末尾は項目行）
+        #expect(!text.contains("旅のしおり"))
+        #expect(text.hasSuffix("ホテル日航"))
+    }
+
+    /// 位置情報を持つ項目には Apple Maps のリンク行が添えられ、
+    /// 位置情報を持たない項目には付かないことを確認する。
+    @Test func shareTextAddsMapLinkWhenLocationAvailable() throws {
+        // 手動座標を持つカスタム項目（実データに依存せず確実に座標を持たせる）
+        let located = PlanItem(
+            customCategory: .hotel,
+            title: "金沢のホテル",
+            coordinate: CLLocationCoordinate2D(latitude: 36.5613, longitude: 136.6562)
+        )
+        // 座標を持たないカスタム項目
+        let unlocated = PlanItem(customCategory: .other, title: "近江町市場で昼食")
+        let plan = TravelPlan(title: "石川の旅", items: [located, unlocated])
+
+        let text = PlanShareFormatter.text(for: plan)
+
+        // 座標を持つ項目には maps.apple.com のリンクが付く
+        #expect(text.contains("https://maps.apple.com/"))
+        #expect(text.contains("ll=36.5613,136.6562"))
+        // リンクは対象項目の直後に置かれる
+        let lines = text.components(separatedBy: "\n")
+        let hotelIndex = try #require(lines.firstIndex { $0.contains("金沢のホテル") })
+        #expect(lines[hotelIndex + 1].contains("maps.apple.com"))
+
+        // 座標を持たない項目のあとにはリンクが付かない
+        let lunchIndex = try #require(lines.firstIndex { $0.contains("近江町市場で昼食") })
+        let afterLunch = lunchIndex + 1 < lines.count ? lines[lunchIndex + 1] : ""
+        #expect(!afterLunch.contains("maps.apple.com"))
     }
 }
