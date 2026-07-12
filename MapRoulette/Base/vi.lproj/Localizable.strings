@@ -3532,96 +3532,96 @@
 "shimizu_port_festival_description" = "Lễ hội mùa hè tổ chức tại cảng Shimizu. Đoàn diễu hành thuyền và màn pháo hoa đặc trưng của lễ hội cảng là điểm nhấn.";
 "shimizu_port_festival_location" = "Thành phố Shizuoka, quận Shimizu";
 "shimizu_port_festival_feature1" = "Diễu hành thuyền";
-"shimizu_port_festival_feature2" = "Port Festival Fireworks";
-"shimizu_port_festival_feature3" = "Shimizu Port";
+"shimizu_port_festival_feature2" = "Pháo hoa lễ hội cảng";
+"shimizu_port_festival_feature3" = "Cảng Shimizu";
 
-"hamamatsu_festival_name" = "Hamamatsu Festival";
-"hamamatsu_festival_description" = "Enshu region's largest festival. A magnificent spring festival known for giant kite flying and palace float parades.";
-"hamamatsu_festival_location" = "Hamamatsu City";
-"hamamatsu_festival_feature1" = "Giant Kite Flying";
-"hamamatsu_festival_feature2" = "Palace Floats";
-"hamamatsu_festival_feature3" = "Enshu's Largest";
+"hamamatsu_festival_name" = "Lễ hội Hamamatsu";
+"hamamatsu_festival_description" = "Lễ hội lớn nhất vùng Enshu. Lễ hội mùa xuân hùng tráng nổi tiếng với thả diều khổng lồ và kéo xe rước goten.";
+"hamamatsu_festival_location" = "Thành phố Hamamatsu";
+"hamamatsu_festival_feature1" = "Thả diều khổng lồ";
+"hamamatsu_festival_feature2" = "Xe rước goten";
+"hamamatsu_festival_feature3" = "Lớn nhất Enshu";
 
 // MARK: - Aichi Prefecture
-"anjo_tanabata_festival_name" = "Anjo Tanabata Festival";
-"anjo_tanabata_festival_description" = "One of Japan's three major Tanabata festivals. Central Anjo City is beautifully decorated with colorful Tanabata ornaments.";
-"anjo_tanabata_festival_location" = "Central Anjo City";
-"anjo_tanabata_festival_feature1" = "Japan's Three Major Tanabata";
-"anjo_tanabata_festival_feature2" = "Tanabata Decorations";
-"anjo_tanabata_festival_feature3" = "1 Million Visitors";
+"anjo_tanabata_festival_name" = "Lễ hội Tanabata Anjo";
+"anjo_tanabata_festival_description" = "Một trong ba lễ hội Tanabata lớn của Nhật Bản. Trung tâm Anjo được tô điểm rực rỡ bằng các trang trí Tanabata đủ màu.";
+"anjo_tanabata_festival_location" = "Trung tâm thành phố Anjo";
+"anjo_tanabata_festival_feature1" = "Ba lễ hội Tanabata lớn Nhật Bản";
+"anjo_tanabata_festival_feature2" = "Trang trí Tanabata";
+"anjo_tanabata_festival_feature3" = "1 triệu lượt khách";
 
-"toyohashi_gion_festival_name" = "Toyohashi Gion Festival";
-"toyohashi_gion_festival_description" = "One of Tokai region's major Gion festivals. Spectacular dedicatory hand-held and large tube fireworks are the highlights.";
-"toyohashi_gion_festival_location" = "Toyohashi City";
-"toyohashi_gion_festival_feature1" = "Tokai's Major Gion";
-"toyohashi_gion_festival_feature2" = "Hand-held Fireworks";
-"toyohashi_gion_festival_feature3" = "Large Tube Fireworks";
+"toyohashi_gion_festival_name" = "Lễ hội Gion Toyohashi";
+"toyohashi_gion_festival_description" = "Lễ hội Gion hàng đầu vùng Tokai. Màn cúng dường pháo hoa cầm tay và pháo ống lớn đầy uy lực là điểm nhấn.";
+"toyohashi_gion_festival_location" = "Thành phố Toyohashi";
+"toyohashi_gion_festival_feature1" = "Gion hàng đầu Tokai";
+"toyohashi_gion_festival_feature2" = "Pháo hoa cầm tay";
+"toyohashi_gion_festival_feature3" = "Pháo ống lớn";
 
-"nagoya_festival_name" = "Nagoya Festival";
-"nagoya_festival_description" = "Nagoya's representative autumn festival. The Three Local Heroes parade and various events enliven Nagoya.";
-"nagoya_festival_location" = "Central Nagoya City";
-"nagoya_festival_feature1" = "Three Heroes Parade";
-"nagoya_festival_feature2" = "Nagoya's Autumn";
-"nagoya_festival_feature3" = "Large-scale Events";
+"nagoya_festival_name" = "Lễ hội Nagoya";
+"nagoya_festival_description" = "Lễ hội tiêu biểu cho mùa thu Nagoya. Đoàn diễu hành Ba anh hùng quê hương và nhiều sự kiện làm sôi động Nagoya.";
+"nagoya_festival_location" = "Trung tâm thành phố Nagoya";
+"nagoya_festival_feature1" = "Diễu hành Ba anh hùng";
+"nagoya_festival_feature2" = "Mùa thu của Nagoya";
+"nagoya_festival_feature3" = "Sự kiện quy mô lớn";
 
-"okazaki_ieyasu_summer_festival_name" = "Okazaki Castle Town Ieyasu Summer Festival";
-"okazaki_ieyasu_summer_festival_description" = "Okazaki's summer festival in the birthplace of Tokugawa Ieyasu. Enjoy fireworks displays and castle town events.";
-"okazaki_ieyasu_summer_festival_location" = "Okazaki City";
-"okazaki_ieyasu_summer_festival_feature1" = "Ieyasu's Birthplace";
-"okazaki_ieyasu_summer_festival_feature2" = "Castle Town";
-"okazaki_ieyasu_summer_festival_feature3" = "Fireworks Display";
+"okazaki_ieyasu_summer_festival_name" = "Lễ hội mùa hè Ieyasu thành Okazaki";
+"okazaki_ieyasu_summer_festival_description" = "Lễ hội mùa hè Okazaki, quê hương của Tokugawa Ieyasu. Tận hưởng màn pháo hoa và các sự kiện phố thành.";
+"okazaki_ieyasu_summer_festival_location" = "Thành phố Okazaki";
+"okazaki_ieyasu_summer_festival_feature1" = "Quê hương của Ieyasu";
+"okazaki_ieyasu_summer_festival_feature2" = "Phố thành";
+"okazaki_ieyasu_summer_festival_feature3" = "Bắn pháo hoa";
 
 // MARK: - Mie Prefecture
-"tsu_festival_name" = "Tsu Festival";
-"tsu_festival_description" = "Tsu City's largest festival. Chinese lion dance and Anotsu Yosakoi enliven Tsu's autumn.";
-"tsu_festival_location" = "Central Tsu City";
-"tsu_festival_feature1" = "Chinese Lion Dance";
+"tsu_festival_name" = "Lễ hội Tsu";
+"tsu_festival_description" = "Lễ hội lớn nhất thành phố Tsu. Múa Trung Hoa (Tojin Odori) và Anotsu Yosakoi làm sôi động mùa thu Tsu.";
+"tsu_festival_location" = "Trung tâm thành phố Tsu";
+"tsu_festival_feature1" = "Múa Trung Hoa";
 "tsu_festival_feature2" = "Anotsu Yosakoi";
-"tsu_festival_feature3" = "Tsu's Largest";
+"tsu_festival_feature3" = "Lớn nhất Tsu";
 
-"suzuka_genki_fireworks_name" = "Suzuka Genki Fireworks Festival";
-"suzuka_genki_fireworks_description" = "A fireworks display held at Suzuka Circuit. About 8,000 fireworks enjoyed at the holy land of motorsports.";
-"suzuka_genki_fireworks_location" = "Suzuka City";
-"suzuka_genki_fireworks_feature1" = "Suzuka Circuit";
-"suzuka_genki_fireworks_feature2" = "8,000 Fireworks";
-"suzuka_genki_fireworks_feature3" = "Motorsports";
+"suzuka_genki_fireworks_name" = "Lễ hội pháo hoa Genki Suzuka";
+"suzuka_genki_fireworks_description" = "Đại hội pháo hoa tổ chức tại đường đua Suzuka. Khoảng 8.000 quả pháo thưởng thức tại thánh địa của môn đua xe.";
+"suzuka_genki_fireworks_location" = "Thành phố Suzuka";
+"suzuka_genki_fireworks_feature1" = "Đường đua Suzuka";
+"suzuka_genki_fireworks_feature2" = "8.000 quả pháo";
+"suzuka_genki_fireworks_feature3" = "Đua xe thể thao";
 
-"ise_jingu_fireworks_name" = "Ise Jingu Dedicatory National Fireworks";
-"ise_jingu_fireworks_description" = "Fireworks dedicated to Ise Grand Shrine. Held as a competition among fireworks artisans selected from across the nation.";
-"ise_jingu_fireworks_location" = "Ise City, Miyagawa Riverside";
-"ise_jingu_fireworks_feature1" = "Ise Shrine Dedication";
-"ise_jingu_fireworks_feature2" = "National Competition";
-"ise_jingu_fireworks_feature3" = "Artisan Competition";
+"ise_jingu_fireworks_name" = "Đại hội pháo hoa toàn quốc cúng dường đền Ise";
+"ise_jingu_fireworks_description" = "Đại hội pháo hoa cúng dường đền Ise. Tổ chức theo hình thức thi đấu giữa các nghệ nhân pháo hoa được tuyển chọn khắp cả nước.";
+"ise_jingu_fireworks_location" = "Thành phố Ise - Bờ sông Miyagawa";
+"ise_jingu_fireworks_feature1" = "Cúng dường đền Ise";
+"ise_jingu_fireworks_feature2" = "Giải đấu toàn quốc";
+"ise_jingu_fireworks_feature3" = "So tài nghệ nhân pháo hoa";
 
 // MARK: - Shiga Prefecture
-"biwako_dai_fireworks_name" = "Lake Biwa Grand Fireworks";
-"biwako_dai_fireworks_description" = "One of Kansai region's premier fireworks displays staged on Lake Biwa. About 10,000 fireworks reflected on the lake surface create mystical beauty.";
-"biwako_dai_fireworks_location" = "Otsu City, Lake Biwa";
-"biwako_dai_fireworks_feature1" = "Kansai's Premier";
-"biwako_dai_fireworks_feature2" = "10,000 Fireworks";
-"biwako_dai_fireworks_feature3" = "Lake Surface Fireworks";
+"biwako_dai_fireworks_name" = "Đại hội pháo hoa hồ Biwa";
+"biwako_dai_fireworks_description" = "Đại hội pháo hoa hàng đầu vùng Kansai diễn ra trên hồ Biwa. Khoảng 10.000 quả pháo phản chiếu trên mặt hồ tạo nên vẻ đẹp huyền ảo.";
+"biwako_dai_fireworks_location" = "Thành phố Otsu - Hồ Biwa";
+"biwako_dai_fireworks_feature1" = "Hàng đầu Kansai";
+"biwako_dai_fireworks_feature2" = "10.000 quả pháo";
+"biwako_dai_fireworks_feature3" = "Pháo hoa mặt hồ";
 
-"otsu_festival_name" = "Otsu Festival";
-"otsu_festival_description" = "One of Kokoku's three major festivals. A historic festival where 13 floats with mechanical dolls parade through Otsu's streets.";
-"otsu_festival_location" = "Otsu City";
-"otsu_festival_feature1" = "Kokoku's Three Major";
-"otsu_festival_feature2" = "Mechanical Dolls";
-"otsu_festival_feature3" = "13 Floats";
+"otsu_festival_name" = "Lễ hội Otsu";
+"otsu_festival_description" = "Một trong ba lễ hội lớn xứ hồ (Kokoku). Lễ hội truyền thống với 13 xe rước chở búp bê cơ khí diễu hành khắp phố Otsu.";
+"otsu_festival_location" = "Thành phố Otsu";
+"otsu_festival_feature1" = "Ba lễ hội lớn xứ hồ";
+"otsu_festival_feature2" = "Búp bê cơ khí";
+"otsu_festival_feature3" = "13 xe rước";
 
-"nagahama_hikiyama_festival_name" = "Nagahama Hikiyama Festival";
-"nagahama_hikiyama_festival_description" = "A UNESCO Intangible Cultural Heritage festival. Floats featuring children's kabuki performances color Nagahama's spring.";
-"nagahama_hikiyama_festival_location" = "Nagahama City";
-"nagahama_hikiyama_festival_feature1" = "UNESCO Heritage";
-"nagahama_hikiyama_festival_feature2" = "Children's Kabuki";
-"nagahama_hikiyama_festival_feature3" = "Float Festival";
+"nagahama_hikiyama_festival_name" = "Lễ hội rước xe Nagahama";
+"nagahama_hikiyama_festival_description" = "Lễ hội Di sản Văn hóa Phi vật thể UNESCO. Những chiếc xe rước diễn kabuki thiếu nhi tô điểm mùa xuân Nagahama.";
+"nagahama_hikiyama_festival_location" = "Thành phố Nagahama";
+"nagahama_hikiyama_festival_feature1" = "Di sản UNESCO";
+"nagahama_hikiyama_festival_feature2" = "Kabuki thiếu nhi";
+"nagahama_hikiyama_festival_feature3" = "Lễ hội rước xe";
 
 // MARK: - Kyoto Prefecture
-"gion_festival_name" = "Gion Festival";
-"gion_festival_description" = "One of Japan's three major festivals. Kyoto's largest festival lasting one month, particularly famous for the Yamahoko procession.";
-"gion_festival_location" = "Central Kyoto City";
-"gion_festival_feature1" = "Japan's Three Major Festivals";
-"gion_festival_feature2" = "Yamahoko Procession";
-"gion_festival_feature3" = "Month-long Event";
+"gion_festival_name" = "Lễ hội Gion";
+"gion_festival_description" = "Một trong ba lễ hội lớn của Nhật Bản. Lễ hội lớn nhất Kyoto kéo dài một tháng, đặc biệt nổi tiếng với đoàn rước Yamahoko.";
+"gion_festival_location" = "Trung tâm thành phố Kyoto";
+"gion_festival_feature1" = "Ba lễ hội lớn của Nhật Bản";
+"gion_festival_feature2" = "Đoàn rước Yamahoko";
+"gion_festival_feature3" = "Kéo dài một tháng";
 
 "gozan_okuribi_name" = "Gozan Okuribi";
 "gozan_okuribi_description" = "Kyoto's summer tradition for sending off Bon spirits. Five bonfires including the famous Daimonji character illuminate the night sky.";
@@ -3630,63 +3630,63 @@
 "gozan_okuribi_feature2" = "Spirit Sending";
 "gozan_okuribi_feature3" = "Summer Tradition";
 
-"jidai_festival_name" = "Jidai Festival";
-"jidai_festival_description" = "One of Kyoto's three major festivals. A procession in period costumes from the Heian period to the Meiji Restoration recreates Kyoto's history.";
-"jidai_festival_location" = "Kyoto Imperial Palace to Heian Shrine";
-"jidai_festival_feature1" = "Kyoto's Three Major";
-"jidai_festival_feature2" = "Period Costumes";
-"jidai_festival_feature3" = "Historical Recreation";
+"jidai_festival_name" = "Lễ hội Jidai";
+"jidai_festival_description" = "Một trong ba lễ hội lớn của Kyoto. Đoàn diễu hành với trang phục các thời đại từ thời Heian đến Duy tân Minh Trị tái hiện lịch sử Kyoto.";
+"jidai_festival_location" = "Hoàng cung Kyoto ~ đền Heian";
+"jidai_festival_feature1" = "Ba lễ hội lớn của Kyoto";
+"jidai_festival_feature2" = "Trang phục các thời đại";
+"jidai_festival_feature3" = "Tái hiện lịch sử";
 
 // MARK: - Osaka Prefecture
-"tenjin_festival_name" = "Tenjin Festival";
-"tenjin_festival_description" = "One of Japan's three major festivals. Famous for boat processions and dedicatory fireworks, this is Osaka's summer tradition with over 1,000 years of history.";
-"tenjin_festival_location" = "Osaka Tenmangu, Okawa River";
-"tenjin_festival_feature1" = "Japan's Three Major Festivals";
-"tenjin_festival_feature2" = "Boat Procession";
-"tenjin_festival_feature3" = "Dedicatory Fireworks";
+"tenjin_festival_name" = "Lễ hội Tenjin";
+"tenjin_festival_description" = "Một trong ba lễ hội lớn của Nhật Bản. Nổi tiếng với lễ rước thuyền và pháo hoa cúng dường, là nét đặc trưng mùa hè Osaka với lịch sử hơn 1.000 năm.";
+"tenjin_festival_location" = "Osaka Tenmangu - Sông Okawa";
+"tenjin_festival_feature1" = "Ba lễ hội lớn của Nhật Bản";
+"tenjin_festival_feature2" = "Lễ rước thuyền";
+"tenjin_festival_feature3" = "Pháo hoa cúng dường";
 
-"yodogawa_fireworks_name" = "Yodogawa Fireworks Festival";
-"yodogawa_fireworks_description" = "One of Kansai region's largest fireworks displays. About 50,000 fireworks beautifully color the Yodogawa night sky.";
-"yodogawa_fireworks_location" = "Osaka City, Yodogawa Riverbed";
-"yodogawa_fireworks_feature1" = "Kansai's Largest";
-"yodogawa_fireworks_feature2" = "50,000 Fireworks";
-"yodogawa_fireworks_feature3" = "Yodogawa Riverbed";
+"yodogawa_fireworks_name" = "Lễ hội pháo hoa Yodogawa";
+"yodogawa_fireworks_description" = "Đại hội pháo hoa lớn nhất vùng Kansai. Khoảng 50.000 quả pháo tô điểm đẹp mắt bầu trời đêm Yodogawa.";
+"yodogawa_fireworks_location" = "Thành phố Osaka - Bãi sông Yodogawa";
+"yodogawa_fireworks_feature1" = "Lớn nhất Kansai";
+"yodogawa_fireworks_feature2" = "50.000 quả pháo";
+"yodogawa_fireworks_feature3" = "Bãi sông Yodogawa";
 
-"pl_fireworks_name" = "PL Fireworks Art";
-"pl_fireworks_description" = "One of Kansai region's largest fireworks displays. About 20,000 fireworks color the night sky, known for highly artistic fireworks presentations.";
-"pl_fireworks_location" = "Tondabayashi City, PL Kyodan";
-"pl_fireworks_feature1" = "20,000 Fireworks";
-"pl_fireworks_feature2" = "Artistic Presentation";
-"pl_fireworks_feature3" = "Kansai's Largest";
+"pl_fireworks_name" = "Nghệ thuật pháo hoa PL";
+"pl_fireworks_description" = "Đại hội pháo hoa lớn nhất vùng Kansai. Khoảng 20.000 quả pháo tô điểm bầu trời đêm, nổi tiếng với màn trình diễn pháo hoa giàu tính nghệ thuật.";
+"pl_fireworks_location" = "Thành phố Tondabayashi - Giáo đoàn PL";
+"pl_fireworks_feature1" = "20.000 quả pháo";
+"pl_fireworks_feature2" = "Trình diễn nghệ thuật";
+"pl_fireworks_feature3" = "Lớn nhất Kansai";
 
-"naniwa_yodogawa_fireworks_name" = "Naniwa Yodogawa Fireworks Festival";
-"naniwa_yodogawa_fireworks_description" = "A citizen-organized fireworks display on the Yodogawa River. The warmth of about 10,000 fireworks and citizen volunteers is charming.";
-"naniwa_yodogawa_fireworks_location" = "Osaka City, Yodogawa River";
-"naniwa_yodogawa_fireworks_feature1" = "Citizen-organized";
-"naniwa_yodogawa_fireworks_feature2" = "10,000 Fireworks";
-"naniwa_yodogawa_fireworks_feature3" = "Volunteers";
+"naniwa_yodogawa_fireworks_name" = "Lễ hội pháo hoa Naniwa Yodogawa";
+"naniwa_yodogawa_fireworks_description" = "Đại hội pháo hoa do người dân tự tổ chức trên sông Yodogawa. Sức hút nằm ở khoảng 10.000 quả pháo và sự ấm áp của các tình nguyện viên.";
+"naniwa_yodogawa_fireworks_location" = "Thành phố Osaka - Sông Yodogawa";
+"naniwa_yodogawa_fireworks_feature1" = "Người dân tự làm";
+"naniwa_yodogawa_fireworks_feature2" = "10.000 quả pháo";
+"naniwa_yodogawa_fireworks_feature3" = "Tình nguyện viên";
 
 // MARK: - Hyogo Prefecture
-"minato_kobe_fireworks_name" = "Minato Kobe Marine Fireworks";
-"minato_kobe_fireworks_description" = "A marine fireworks display held at Kobe Port. About 10,000 fireworks create beautiful scenes together with Kobe's night view.";
-"minato_kobe_fireworks_location" = "Kobe Port";
-"minato_kobe_fireworks_feature1" = "Marine Fireworks";
-"minato_kobe_fireworks_feature2" = "10,000 Fireworks";
-"minato_kobe_fireworks_feature3" = "Kobe Night View";
+"minato_kobe_fireworks_name" = "Lễ hội pháo hoa trên biển Minato Kobe";
+"minato_kobe_fireworks_description" = "Đại hội pháo hoa trên biển tổ chức tại cảng Kobe. Khoảng 10.000 quả pháo tạo nên khung cảnh đẹp cùng cảnh đêm Kobe.";
+"minato_kobe_fireworks_location" = "Cảng Kobe";
+"minato_kobe_fireworks_feature1" = "Pháo hoa trên biển";
+"minato_kobe_fireworks_feature2" = "10.000 quả pháo";
+"minato_kobe_fireworks_feature3" = "Cảnh đêm Kobe";
 
-"inagawa_fireworks_name" = "Inagawa Fireworks Festival";
-"inagawa_fireworks_description" = "A fireworks display jointly hosted with Ikeda City, Osaka Prefecture. About 4,000 fireworks color the Inagawa night sky.";
-"inagawa_fireworks_location" = "Kawanishi City, Inagawa River";
-"inagawa_fireworks_feature1" = "Joint Hosting";
-"inagawa_fireworks_feature2" = "4,000 Fireworks";
-"inagawa_fireworks_feature3" = "Inagawa River";
+"inagawa_fireworks_name" = "Lễ hội pháo hoa Inagawa";
+"inagawa_fireworks_description" = "Đại hội pháo hoa đồng tổ chức với thành phố Ikeda tỉnh Osaka. Khoảng 4.000 quả pháo tô điểm bầu trời đêm Inagawa.";
+"inagawa_fireworks_location" = "Thành phố Kawanishi - Sông Inagawa";
+"inagawa_fireworks_feature1" = "Đồng tổ chức";
+"inagawa_fireworks_feature2" = "4.000 quả pháo";
+"inagawa_fireworks_feature3" = "Sông Inagawa";
 
-"himeji_yukata_festival_name" = "Himeji Yukata Festival";
-"himeji_yukata_festival_description" = "A yukata festival held in Himeji castle town. An early summer tradition where participants in yukata parade through shopping streets.";
-"himeji_yukata_festival_location" = "Central Himeji City";
-"himeji_yukata_festival_feature1" = "Yukata Festival";
-"himeji_yukata_festival_feature2" = "Himeji Castle Town";
-"himeji_yukata_festival_feature3" = "Early Summer Tradition";
+"himeji_yukata_festival_name" = "Lễ hội Yukata Himeji";
+"himeji_yukata_festival_description" = "Lễ hội yukata tổ chức ở phố thành Himeji. Nét đặc trưng đầu hè khi những người tham gia mặc yukata diễu hành khắp phố buôn bán.";
+"himeji_yukata_festival_location" = "Trung tâm thành phố Himeji";
+"himeji_yukata_festival_feature1" = "Lễ hội yukata";
+"himeji_yukata_festival_feature2" = "Phố thành Himeji";
+"himeji_yukata_festival_feature3" = "Nét đặc trưng đầu hè";
 
 // MARK: - Nara Prefecture
 "nara_tokae_name" = "Nara Tokae";
@@ -3703,27 +3703,27 @@
 "kasuga_taisha_mantoro_feature2" = "Mystical";
 "kasuga_taisha_mantoro_feature3" = "Twice Yearly";
 
-"heijokyo_tenpyo_festival_name" = "Heijo-kyo Tenpyo Festival";
-"heijokyo_tenpyo_festival_description" = "A festival full of ancient romance held at Heijo Palace ruins. Enjoy events recreating Tenpyo period culture.";
-"heijokyo_tenpyo_festival_location" = "Heijo Palace Ruins";
-"heijokyo_tenpyo_festival_feature1" = "Tenpyo Period Recreation";
-"heijokyo_tenpyo_festival_feature2" = "Ancient Romance";
-"heijokyo_tenpyo_festival_feature3" = "Heijo Palace Ruins";
+"heijokyo_tenpyo_festival_name" = "Lễ hội Tenpyo Heijo-kyo";
+"heijokyo_tenpyo_festival_description" = "Lễ hội đậm chất lãng mạn cổ đại tổ chức tại di tích cung Heijo. Tận hưởng các sự kiện tái hiện văn hóa thời Tenpyo.";
+"heijokyo_tenpyo_festival_location" = "Di tích cung Heijo";
+"heijokyo_tenpyo_festival_feature1" = "Tái hiện thời Tenpyo";
+"heijokyo_tenpyo_festival_feature2" = "Lãng mạn cổ đại";
+"heijokyo_tenpyo_festival_feature3" = "Di tích cung Heijo";
 
 
 // MARK: - Wakayama
-"kinokawa_momoyama_festival_name" = "Kinokawa Momoyama Festival";
-"kinokawa_momoyama_festival_description" = "A summer festival held in Kinokawa, the hometown of peaches. Enjoy a peach-themed celebration and a grand fireworks display.";
-"kinokawa_momoyama_festival_location" = "Kinokawa City";
-"kinokawa_momoyama_festival_feature1" = "Peach Hometown";
-"kinokawa_momoyama_festival_feature2" = "Peach Theme";
-"kinokawa_momoyama_festival_feature3" = "Fireworks Festival";
+"kinokawa_momoyama_festival_name" = "Lễ hội Momoyama Kinokawa";
+"kinokawa_momoyama_festival_description" = "Lễ hội mùa hè tổ chức tại thành phố Kinokawa, xứ sở của đào. Tận hưởng lễ hội chủ đề đào và màn pháo hoa.";
+"kinokawa_momoyama_festival_location" = "Thành phố Kinokawa";
+"kinokawa_momoyama_festival_feature1" = "Xứ sở của đào";
+"kinokawa_momoyama_festival_feature2" = "Chủ đề đào";
+"kinokawa_momoyama_festival_feature3" = "Bắn pháo hoa";
 
-"tanabe_benkei_festival_name" = "Tanabe Benkei Festival";
-"tanabe_benkei_festival_description" = "An autumn festival in Tanabe, the birthplace of warrior monk Benkei. Highlights include the Benkei Dance and the Musashibō Benkei parade.";
-"tanabe_benkei_festival_location" = "Tanabe City";
-"tanabe_benkei_festival_feature1" = "Birthplace of Benkei";
-"tanabe_benkei_festival_feature2" = "Benkei Dance";
+"tanabe_benkei_festival_name" = "Lễ hội Benkei Tanabe";
+"tanabe_benkei_festival_description" = "Lễ hội mùa thu tổ chức tại Tanabe, quê hương của tăng binh Benkei. Điểm nhấn là điệu múa Benkei và đoàn diễu hành Musashibo Benkei.";
+"tanabe_benkei_festival_location" = "Thành phố Tanabe";
+"tanabe_benkei_festival_feature1" = "Quê hương của Benkei";
+"tanabe_benkei_festival_feature2" = "Múa Benkei";
 "tanabe_benkei_festival_feature3" = "Musashibō Parade";
 
 "kushimoto_festival_name" = "Kushimoto Festival";
@@ -3750,18 +3750,18 @@
 
 
 // MARK: - Wakayama Prefecture
-"kinokawa_momoyama_festival_name" = "Kinokawa Momoyama Festival";
-"kinokawa_momoyama_festival_description" = "A summer festival held in the peach village of Kinokawa City. Enjoy a peach-themed festival and fireworks display.";
-"kinokawa_momoyama_festival_location" = "Kinokawa City";
-"kinokawa_momoyama_festival_feature1" = "Peach Village";
-"kinokawa_momoyama_festival_feature2" = "Peach Theme";
-"kinokawa_momoyama_festival_feature3" = "Fireworks Display";
+"kinokawa_momoyama_festival_name" = "Lễ hội Momoyama Kinokawa";
+"kinokawa_momoyama_festival_description" = "Lễ hội mùa hè tổ chức tại thành phố Kinokawa, xứ sở của đào. Tận hưởng lễ hội chủ đề đào và màn pháo hoa.";
+"kinokawa_momoyama_festival_location" = "Thành phố Kinokawa";
+"kinokawa_momoyama_festival_feature1" = "Xứ sở của đào";
+"kinokawa_momoyama_festival_feature2" = "Chủ đề đào";
+"kinokawa_momoyama_festival_feature3" = "Bắn pháo hoa";
 
-"tanabe_benkei_festival_name" = "Tanabe Benkei Festival";
-"tanabe_benkei_festival_description" = "An autumn festival held in Tanabe, the birthplace of Benkei. Highlights include the Benkei dance and Musashibo Benkei parade.";
-"tanabe_benkei_festival_location" = "Tanabe City";
-"tanabe_benkei_festival_feature1" = "Benkei Birthplace";
-"tanabe_benkei_festival_feature2" = "Benkei Dance";
+"tanabe_benkei_festival_name" = "Lễ hội Benkei Tanabe";
+"tanabe_benkei_festival_description" = "Lễ hội mùa thu tổ chức tại Tanabe, quê hương của tăng binh Benkei. Điểm nhấn là điệu múa Benkei và đoàn diễu hành Musashibo Benkei.";
+"tanabe_benkei_festival_location" = "Thành phố Tanabe";
+"tanabe_benkei_festival_feature1" = "Quê hương của Benkei";
+"tanabe_benkei_festival_feature2" = "Múa Benkei";
 "tanabe_benkei_festival_feature3" = "Musashibo Parade";
 
 "kushimoto_festival_name" = "Kushimoto Festival";

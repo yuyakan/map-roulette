@@ -3532,96 +3532,96 @@
 "shimizu_port_festival_description" = "Festival de verano celebrado en el puerto de Shimizu. El desfile de barcos y los fuegos artificiales propios de los festivales portuarios son lo más destacado.";
 "shimizu_port_festival_location" = "Shizuoka, distrito de Shimizu";
 "shimizu_port_festival_feature1" = "Desfile de barcos";
-"shimizu_port_festival_feature2" = "Port Festival Fireworks";
-"shimizu_port_festival_feature3" = "Shimizu Port";
+"shimizu_port_festival_feature2" = "Fuegos del festival portuario";
+"shimizu_port_festival_feature3" = "Puerto de Shimizu";
 
-"hamamatsu_festival_name" = "Hamamatsu Festival";
-"hamamatsu_festival_description" = "Enshu region's largest festival. A magnificent spring festival known for giant kite flying and palace float parades.";
-"hamamatsu_festival_location" = "Hamamatsu City";
-"hamamatsu_festival_feature1" = "Giant Kite Flying";
-"hamamatsu_festival_feature2" = "Palace Floats";
-"hamamatsu_festival_feature3" = "Enshu's Largest";
+"hamamatsu_festival_name" = "Festival de Hamamatsu";
+"hamamatsu_festival_description" = "El mayor festival de la región de Enshu. Un vigoroso festival de primavera conocido por el vuelo de cometas gigantes y los desfiles de carrozas palaciegas.";
+"hamamatsu_festival_location" = "Ciudad de Hamamatsu";
+"hamamatsu_festival_feature1" = "Vuelo de cometas gigantes";
+"hamamatsu_festival_feature2" = "Carrozas palaciegas";
+"hamamatsu_festival_feature3" = "El mayor de Enshu";
 
 // MARK: - Aichi Prefecture
-"anjo_tanabata_festival_name" = "Anjo Tanabata Festival";
-"anjo_tanabata_festival_description" = "One of Japan's three major Tanabata festivals. Central Anjo City is beautifully decorated with colorful Tanabata ornaments.";
-"anjo_tanabata_festival_location" = "Central Anjo City";
-"anjo_tanabata_festival_feature1" = "Japan's Three Major Tanabata";
-"anjo_tanabata_festival_feature2" = "Tanabata Decorations";
-"anjo_tanabata_festival_feature3" = "1 Million Visitors";
+"anjo_tanabata_festival_name" = "Festival Tanabata de Anjo";
+"anjo_tanabata_festival_description" = "Uno de los tres grandes festivales de Tanabata de Japón. El centro de Anjo se engalana con coloridas decoraciones de Tanabata.";
+"anjo_tanabata_festival_location" = "Centro de la ciudad de Anjo";
+"anjo_tanabata_festival_feature1" = "Tres grandes Tanabata de Japón";
+"anjo_tanabata_festival_feature2" = "Decoraciones de Tanabata";
+"anjo_tanabata_festival_feature3" = "1 millón de visitantes";
 
-"toyohashi_gion_festival_name" = "Toyohashi Gion Festival";
-"toyohashi_gion_festival_description" = "One of Tokai region's major Gion festivals. Spectacular dedicatory hand-held and large tube fireworks are the highlights.";
-"toyohashi_gion_festival_location" = "Toyohashi City";
-"toyohashi_gion_festival_feature1" = "Tokai's Major Gion";
-"toyohashi_gion_festival_feature2" = "Hand-held Fireworks";
-"toyohashi_gion_festival_feature3" = "Large Tube Fireworks";
+"toyohashi_gion_festival_name" = "Festival de Gion de Toyohashi";
+"toyohashi_gion_festival_description" = "Uno de los principales festivales de Gion de Tokai. La impresionante ofrenda de fuegos artificiales de mano y de gran tubo es lo más destacado.";
+"toyohashi_gion_festival_location" = "Ciudad de Toyohashi";
+"toyohashi_gion_festival_feature1" = "Gran Gion de Tokai";
+"toyohashi_gion_festival_feature2" = "Fuegos de mano";
+"toyohashi_gion_festival_feature3" = "Fuegos de gran tubo";
 
-"nagoya_festival_name" = "Nagoya Festival";
-"nagoya_festival_description" = "Nagoya's representative autumn festival. The Three Local Heroes parade and various events enliven Nagoya.";
-"nagoya_festival_location" = "Central Nagoya City";
-"nagoya_festival_feature1" = "Three Heroes Parade";
-"nagoya_festival_feature2" = "Nagoya's Autumn";
-"nagoya_festival_feature3" = "Large-scale Events";
+"nagoya_festival_name" = "Festival de Nagoya";
+"nagoya_festival_description" = "Festival emblemático del otoño de Nagoya. El desfile de los Tres Héroes locales y diversos eventos animan Nagoya.";
+"nagoya_festival_location" = "Centro de la ciudad de Nagoya";
+"nagoya_festival_feature1" = "Desfile de los Tres Héroes";
+"nagoya_festival_feature2" = "El otoño de Nagoya";
+"nagoya_festival_feature3" = "Eventos a gran escala";
 
-"okazaki_ieyasu_summer_festival_name" = "Okazaki Castle Town Ieyasu Summer Festival";
-"okazaki_ieyasu_summer_festival_description" = "Okazaki's summer festival in the birthplace of Tokugawa Ieyasu. Enjoy fireworks displays and castle town events.";
-"okazaki_ieyasu_summer_festival_location" = "Okazaki City";
-"okazaki_ieyasu_summer_festival_feature1" = "Ieyasu's Birthplace";
-"okazaki_ieyasu_summer_festival_feature2" = "Castle Town";
-"okazaki_ieyasu_summer_festival_feature3" = "Fireworks Display";
+"okazaki_ieyasu_summer_festival_name" = "Festival de verano de Ieyasu de la ciudad-castillo de Okazaki";
+"okazaki_ieyasu_summer_festival_description" = "Festival de verano de Okazaki, cuna de Tokugawa Ieyasu. Disfruta de los fuegos artificiales y los eventos de la ciudad-castillo.";
+"okazaki_ieyasu_summer_festival_location" = "Ciudad de Okazaki";
+"okazaki_ieyasu_summer_festival_feature1" = "Cuna de Ieyasu";
+"okazaki_ieyasu_summer_festival_feature2" = "Ciudad-castillo";
+"okazaki_ieyasu_summer_festival_feature3" = "Fuegos artificiales";
 
 // MARK: - Mie Prefecture
-"tsu_festival_name" = "Tsu Festival";
-"tsu_festival_description" = "Tsu City's largest festival. Chinese lion dance and Anotsu Yosakoi enliven Tsu's autumn.";
-"tsu_festival_location" = "Central Tsu City";
-"tsu_festival_feature1" = "Chinese Lion Dance";
+"tsu_festival_name" = "Festival de Tsu";
+"tsu_festival_description" = "El mayor festival de la ciudad de Tsu. La danza china (Tojin Odori) y el Anotsu Yosakoi animan el otoño de Tsu.";
+"tsu_festival_location" = "Centro de la ciudad de Tsu";
+"tsu_festival_feature1" = "Danza china";
 "tsu_festival_feature2" = "Anotsu Yosakoi";
-"tsu_festival_feature3" = "Tsu's Largest";
+"tsu_festival_feature3" = "El mayor de Tsu";
 
-"suzuka_genki_fireworks_name" = "Suzuka Genki Fireworks Festival";
-"suzuka_genki_fireworks_description" = "A fireworks display held at Suzuka Circuit. About 8,000 fireworks enjoyed at the holy land of motorsports.";
-"suzuka_genki_fireworks_location" = "Suzuka City";
-"suzuka_genki_fireworks_feature1" = "Suzuka Circuit";
-"suzuka_genki_fireworks_feature2" = "8,000 Fireworks";
-"suzuka_genki_fireworks_feature3" = "Motorsports";
+"suzuka_genki_fireworks_name" = "Fuegos Artificiales Genki de Suzuka";
+"suzuka_genki_fireworks_description" = "Espectáculo pirotécnico celebrado en el circuito de Suzuka. Unos 8 000 fuegos para disfrutar en la meca del automovilismo.";
+"suzuka_genki_fireworks_location" = "Ciudad de Suzuka";
+"suzuka_genki_fireworks_feature1" = "Circuito de Suzuka";
+"suzuka_genki_fireworks_feature2" = "8 000 fuegos";
+"suzuka_genki_fireworks_feature3" = "Automovilismo";
 
-"ise_jingu_fireworks_name" = "Ise Jingu Dedicatory National Fireworks";
-"ise_jingu_fireworks_description" = "Fireworks dedicated to Ise Grand Shrine. Held as a competition among fireworks artisans selected from across the nation.";
-"ise_jingu_fireworks_location" = "Ise City, Miyagawa Riverside";
-"ise_jingu_fireworks_feature1" = "Ise Shrine Dedication";
-"ise_jingu_fireworks_feature2" = "National Competition";
-"ise_jingu_fireworks_feature3" = "Artisan Competition";
+"ise_jingu_fireworks_name" = "Fuegos Artificiales Nacionales Votivos del Santuario de Ise";
+"ise_jingu_fireworks_description" = "Espectáculo pirotécnico dedicado al Gran Santuario de Ise. Se celebra como una competición entre artesanos pirotécnicos seleccionados de todo el país.";
+"ise_jingu_fireworks_location" = "Ise - Ribera del río Miyagawa";
+"ise_jingu_fireworks_feature1" = "Ofrenda al santuario de Ise";
+"ise_jingu_fireworks_feature2" = "Concurso nacional";
+"ise_jingu_fireworks_feature3" = "Competición de artesanos";
 
 // MARK: - Shiga Prefecture
-"biwako_dai_fireworks_name" = "Lake Biwa Grand Fireworks";
-"biwako_dai_fireworks_description" = "One of Kansai region's premier fireworks displays staged on Lake Biwa. About 10,000 fireworks reflected on the lake surface create mystical beauty.";
-"biwako_dai_fireworks_location" = "Otsu City, Lake Biwa";
-"biwako_dai_fireworks_feature1" = "Kansai's Premier";
-"biwako_dai_fireworks_feature2" = "10,000 Fireworks";
-"biwako_dai_fireworks_feature3" = "Lake Surface Fireworks";
+"biwako_dai_fireworks_name" = "Gran Espectáculo Pirotécnico del Lago Biwa";
+"biwako_dai_fireworks_description" = "Uno de los principales espectáculos pirotécnicos de Kansai, escenificado en el lago Biwa. Unos 10 000 fuegos reflejados en el lago crean una belleza mágica.";
+"biwako_dai_fireworks_location" = "Otsu - Lago Biwa";
+"biwako_dai_fireworks_feature1" = "Referente de Kansai";
+"biwako_dai_fireworks_feature2" = "10 000 fuegos";
+"biwako_dai_fireworks_feature3" = "Fuegos sobre el lago";
 
-"otsu_festival_name" = "Otsu Festival";
-"otsu_festival_description" = "One of Kokoku's three major festivals. A historic festival where 13 floats with mechanical dolls parade through Otsu's streets.";
-"otsu_festival_location" = "Otsu City";
-"otsu_festival_feature1" = "Kokoku's Three Major";
-"otsu_festival_feature2" = "Mechanical Dolls";
-"otsu_festival_feature3" = "13 Floats";
+"otsu_festival_name" = "Festival de Otsu";
+"otsu_festival_description" = "Uno de los tres grandes festivales del «país del lago» (Kokoku). Un festival histórico en el que 13 carrozas con muñecos mecánicos desfilan por las calles de Otsu.";
+"otsu_festival_location" = "Ciudad de Otsu";
+"otsu_festival_feature1" = "Tres grandes festivales de Kokoku";
+"otsu_festival_feature2" = "Muñecos mecánicos";
+"otsu_festival_feature3" = "13 carrozas";
 
-"nagahama_hikiyama_festival_name" = "Nagahama Hikiyama Festival";
-"nagahama_hikiyama_festival_description" = "A UNESCO Intangible Cultural Heritage festival. Floats featuring children's kabuki performances color Nagahama's spring.";
-"nagahama_hikiyama_festival_location" = "Nagahama City";
-"nagahama_hikiyama_festival_feature1" = "UNESCO Heritage";
-"nagahama_hikiyama_festival_feature2" = "Children's Kabuki";
-"nagahama_hikiyama_festival_feature3" = "Float Festival";
+"nagahama_hikiyama_festival_name" = "Festival de las Carrozas de Nagahama";
+"nagahama_hikiyama_festival_description" = "Festival del patrimonio cultural inmaterial de la UNESCO. Carrozas que representan kabuki infantil colorean la primavera de Nagahama.";
+"nagahama_hikiyama_festival_location" = "Ciudad de Nagahama";
+"nagahama_hikiyama_festival_feature1" = "Patrimonio UNESCO";
+"nagahama_hikiyama_festival_feature2" = "Kabuki infantil";
+"nagahama_hikiyama_festival_feature3" = "Festival de carrozas";
 
 // MARK: - Kyoto Prefecture
-"gion_festival_name" = "Gion Festival";
-"gion_festival_description" = "One of Japan's three major festivals. Kyoto's largest festival lasting one month, particularly famous for the Yamahoko procession.";
-"gion_festival_location" = "Central Kyoto City";
-"gion_festival_feature1" = "Japan's Three Major Festivals";
-"gion_festival_feature2" = "Yamahoko Procession";
-"gion_festival_feature3" = "Month-long Event";
+"gion_festival_name" = "Festival de Gion";
+"gion_festival_description" = "Uno de los tres grandes festivales de Japón. El mayor festival de Kioto, que dura un mes, es especialmente famoso por la procesión de los Yamahoko.";
+"gion_festival_location" = "Centro de la ciudad de Kioto";
+"gion_festival_feature1" = "Tres grandes festivales de Japón";
+"gion_festival_feature2" = "Procesión de los Yamahoko";
+"gion_festival_feature3" = "Evento de un mes";
 
 "gozan_okuribi_name" = "Gozan Okuribi";
 "gozan_okuribi_description" = "Kyoto's summer tradition for sending off Bon spirits. Five bonfires including the famous Daimonji character illuminate the night sky.";
@@ -3630,63 +3630,63 @@
 "gozan_okuribi_feature2" = "Spirit Sending";
 "gozan_okuribi_feature3" = "Summer Tradition";
 
-"jidai_festival_name" = "Jidai Festival";
-"jidai_festival_description" = "One of Kyoto's three major festivals. A procession in period costumes from the Heian period to the Meiji Restoration recreates Kyoto's history.";
-"jidai_festival_location" = "Kyoto Imperial Palace to Heian Shrine";
-"jidai_festival_feature1" = "Kyoto's Three Major";
-"jidai_festival_feature2" = "Period Costumes";
-"jidai_festival_feature3" = "Historical Recreation";
+"jidai_festival_name" = "Festival Jidai";
+"jidai_festival_description" = "Uno de los tres grandes festivales de Kioto. Un cortejo con trajes de época, del período Heian a la Restauración Meiji, recrea la historia de Kioto.";
+"jidai_festival_location" = "Palacio Imperial de Kioto - Santuario Heian";
+"jidai_festival_feature1" = "Tres grandes festivales de Kioto";
+"jidai_festival_feature2" = "Trajes de época";
+"jidai_festival_feature3" = "Recreación histórica";
 
 // MARK: - Osaka Prefecture
-"tenjin_festival_name" = "Tenjin Festival";
-"tenjin_festival_description" = "One of Japan's three major festivals. Famous for boat processions and dedicatory fireworks, this is Osaka's summer tradition with over 1,000 years of history.";
-"tenjin_festival_location" = "Osaka Tenmangu, Okawa River";
-"tenjin_festival_feature1" = "Japan's Three Major Festivals";
-"tenjin_festival_feature2" = "Boat Procession";
-"tenjin_festival_feature3" = "Dedicatory Fireworks";
+"tenjin_festival_name" = "Festival de Tenjin";
+"tenjin_festival_description" = "Uno de los tres grandes festivales de Japón. Famoso por su procesión fluvial y sus fuegos votivos, es una tradición veraniega de Osaka con más de 1000 años de historia.";
+"tenjin_festival_location" = "Osaka Tenmangu - Río Okawa";
+"tenjin_festival_feature1" = "Tres grandes festivales de Japón";
+"tenjin_festival_feature2" = "Procesión fluvial";
+"tenjin_festival_feature3" = "Fuegos votivos";
 
-"yodogawa_fireworks_name" = "Yodogawa Fireworks Festival";
-"yodogawa_fireworks_description" = "One of Kansai region's largest fireworks displays. About 50,000 fireworks beautifully color the Yodogawa night sky.";
-"yodogawa_fireworks_location" = "Osaka City, Yodogawa Riverbed";
-"yodogawa_fireworks_feature1" = "Kansai's Largest";
-"yodogawa_fireworks_feature2" = "50,000 Fireworks";
-"yodogawa_fireworks_feature3" = "Yodogawa Riverbed";
+"yodogawa_fireworks_name" = "Fuegos Artificiales de Yodogawa";
+"yodogawa_fireworks_description" = "El mayor espectáculo pirotécnico de Kansai. Unos 50 000 fuegos colorean bellamente el cielo nocturno del Yodogawa.";
+"yodogawa_fireworks_location" = "Osaka - Ribera del río Yodogawa";
+"yodogawa_fireworks_feature1" = "El mayor de Kansai";
+"yodogawa_fireworks_feature2" = "50 000 fuegos";
+"yodogawa_fireworks_feature3" = "Ribera del Yodogawa";
 
-"pl_fireworks_name" = "PL Fireworks Art";
-"pl_fireworks_description" = "One of Kansai region's largest fireworks displays. About 20,000 fireworks color the night sky, known for highly artistic fireworks presentations.";
-"pl_fireworks_location" = "Tondabayashi City, PL Kyodan";
-"pl_fireworks_feature1" = "20,000 Fireworks";
-"pl_fireworks_feature2" = "Artistic Presentation";
-"pl_fireworks_feature3" = "Kansai's Largest";
+"pl_fireworks_name" = "Arte Pirotécnico PL";
+"pl_fireworks_description" = "El mayor espectáculo pirotécnico de Kansai. Unos 20 000 fuegos colorean el cielo nocturno, conocido por sus presentaciones de gran valor artístico.";
+"pl_fireworks_location" = "Tondabayashi - PL Kyodan";
+"pl_fireworks_feature1" = "20 000 fuegos";
+"pl_fireworks_feature2" = "Presentación artística";
+"pl_fireworks_feature3" = "El mayor de Kansai";
 
-"naniwa_yodogawa_fireworks_name" = "Naniwa Yodogawa Fireworks Festival";
-"naniwa_yodogawa_fireworks_description" = "A citizen-organized fireworks display on the Yodogawa River. The warmth of about 10,000 fireworks and citizen volunteers is charming.";
-"naniwa_yodogawa_fireworks_location" = "Osaka City, Yodogawa River";
-"naniwa_yodogawa_fireworks_feature1" = "Citizen-organized";
-"naniwa_yodogawa_fireworks_feature2" = "10,000 Fireworks";
-"naniwa_yodogawa_fireworks_feature3" = "Volunteers";
+"naniwa_yodogawa_fireworks_name" = "Fuegos Artificiales de Naniwa Yodogawa";
+"naniwa_yodogawa_fireworks_description" = "Espectáculo pirotécnico organizado por los ciudadanos en el río Yodogawa. Su encanto reside en los unos 10 000 fuegos y la calidez de los voluntarios.";
+"naniwa_yodogawa_fireworks_location" = "Osaka - Río Yodogawa";
+"naniwa_yodogawa_fireworks_feature1" = "Organizado por los ciudadanos";
+"naniwa_yodogawa_fireworks_feature2" = "10 000 fuegos";
+"naniwa_yodogawa_fireworks_feature3" = "Voluntarios";
 
 // MARK: - Hyogo Prefecture
-"minato_kobe_fireworks_name" = "Minato Kobe Marine Fireworks";
-"minato_kobe_fireworks_description" = "A marine fireworks display held at Kobe Port. About 10,000 fireworks create beautiful scenes together with Kobe's night view.";
-"minato_kobe_fireworks_location" = "Kobe Port";
-"minato_kobe_fireworks_feature1" = "Marine Fireworks";
-"minato_kobe_fireworks_feature2" = "10,000 Fireworks";
-"minato_kobe_fireworks_feature3" = "Kobe Night View";
+"minato_kobe_fireworks_name" = "Fuegos Artificiales Marinos de Minato Kobe";
+"minato_kobe_fireworks_description" = "Espectáculo pirotécnico marino celebrado en el puerto de Kobe. Unos 10 000 fuegos crean bellas escenas junto a las vistas nocturnas de Kobe.";
+"minato_kobe_fireworks_location" = "Puerto de Kobe";
+"minato_kobe_fireworks_feature1" = "Fuegos marinos";
+"minato_kobe_fireworks_feature2" = "10 000 fuegos";
+"minato_kobe_fireworks_feature3" = "Vistas nocturnas de Kobe";
 
-"inagawa_fireworks_name" = "Inagawa Fireworks Festival";
-"inagawa_fireworks_description" = "A fireworks display jointly hosted with Ikeda City, Osaka Prefecture. About 4,000 fireworks color the Inagawa night sky.";
-"inagawa_fireworks_location" = "Kawanishi City, Inagawa River";
-"inagawa_fireworks_feature1" = "Joint Hosting";
-"inagawa_fireworks_feature2" = "4,000 Fireworks";
-"inagawa_fireworks_feature3" = "Inagawa River";
+"inagawa_fireworks_name" = "Fuegos Artificiales de Inagawa";
+"inagawa_fireworks_description" = "Espectáculo pirotécnico coorganizado con la ciudad de Ikeda (Osaka). Unos 4 000 fuegos colorean el cielo nocturno del Inagawa.";
+"inagawa_fireworks_location" = "Kawanishi - Río Inagawa";
+"inagawa_fireworks_feature1" = "Coorganización";
+"inagawa_fireworks_feature2" = "4 000 fuegos";
+"inagawa_fireworks_feature3" = "Río Inagawa";
 
-"himeji_yukata_festival_name" = "Himeji Yukata Festival";
-"himeji_yukata_festival_description" = "A yukata festival held in Himeji castle town. An early summer tradition where participants in yukata parade through shopping streets.";
-"himeji_yukata_festival_location" = "Central Himeji City";
-"himeji_yukata_festival_feature1" = "Yukata Festival";
-"himeji_yukata_festival_feature2" = "Himeji Castle Town";
-"himeji_yukata_festival_feature3" = "Early Summer Tradition";
+"himeji_yukata_festival_name" = "Festival del Yukata de Himeji";
+"himeji_yukata_festival_description" = "Festival del yukata celebrado en la ciudad-castillo de Himeji. Una tradición de comienzos de verano en la que los participantes en yukata desfilan por las calles comerciales.";
+"himeji_yukata_festival_location" = "Centro de la ciudad de Himeji";
+"himeji_yukata_festival_feature1" = "Festival del yukata";
+"himeji_yukata_festival_feature2" = "Ciudad-castillo de Himeji";
+"himeji_yukata_festival_feature3" = "Tradición de comienzos de verano";
 
 // MARK: - Nara Prefecture
 "nara_tokae_name" = "Nara Tokae";
@@ -3703,27 +3703,27 @@
 "kasuga_taisha_mantoro_feature2" = "Mystical";
 "kasuga_taisha_mantoro_feature3" = "Twice Yearly";
 
-"heijokyo_tenpyo_festival_name" = "Heijo-kyo Tenpyo Festival";
-"heijokyo_tenpyo_festival_description" = "A festival full of ancient romance held at Heijo Palace ruins. Enjoy events recreating Tenpyo period culture.";
-"heijokyo_tenpyo_festival_location" = "Heijo Palace Ruins";
-"heijokyo_tenpyo_festival_feature1" = "Tenpyo Period Recreation";
-"heijokyo_tenpyo_festival_feature2" = "Ancient Romance";
-"heijokyo_tenpyo_festival_feature3" = "Heijo Palace Ruins";
+"heijokyo_tenpyo_festival_name" = "Festival Tenpyo de Heijo-kyo";
+"heijokyo_tenpyo_festival_description" = "Festival lleno de romanticismo antiguo celebrado en las ruinas del palacio de Heijo. Disfruta de eventos que recrean la cultura del período Tenpyo.";
+"heijokyo_tenpyo_festival_location" = "Ruinas del palacio de Heijo";
+"heijokyo_tenpyo_festival_feature1" = "Recreación del período Tenpyo";
+"heijokyo_tenpyo_festival_feature2" = "Romanticismo antiguo";
+"heijokyo_tenpyo_festival_feature3" = "Ruinas del palacio de Heijo";
 
 
 // MARK: - Wakayama
-"kinokawa_momoyama_festival_name" = "Kinokawa Momoyama Festival";
-"kinokawa_momoyama_festival_description" = "A summer festival held in Kinokawa, the hometown of peaches. Enjoy a peach-themed celebration and a grand fireworks display.";
-"kinokawa_momoyama_festival_location" = "Kinokawa City";
-"kinokawa_momoyama_festival_feature1" = "Peach Hometown";
-"kinokawa_momoyama_festival_feature2" = "Peach Theme";
-"kinokawa_momoyama_festival_feature3" = "Fireworks Festival";
+"kinokawa_momoyama_festival_name" = "Festival Momoyama de Kinokawa";
+"kinokawa_momoyama_festival_description" = "Festival de verano celebrado en Kinokawa, la tierra de los melocotones. Disfruta de una fiesta temática del melocotón y de un gran espectáculo pirotécnico.";
+"kinokawa_momoyama_festival_location" = "Ciudad de Kinokawa";
+"kinokawa_momoyama_festival_feature1" = "Tierra de los melocotones";
+"kinokawa_momoyama_festival_feature2" = "Temática del melocotón";
+"kinokawa_momoyama_festival_feature3" = "Fuegos artificiales";
 
-"tanabe_benkei_festival_name" = "Tanabe Benkei Festival";
-"tanabe_benkei_festival_description" = "An autumn festival in Tanabe, the birthplace of warrior monk Benkei. Highlights include the Benkei Dance and the Musashibō Benkei parade.";
-"tanabe_benkei_festival_location" = "Tanabe City";
-"tanabe_benkei_festival_feature1" = "Birthplace of Benkei";
-"tanabe_benkei_festival_feature2" = "Benkei Dance";
+"tanabe_benkei_festival_name" = "Festival Benkei de Tanabe";
+"tanabe_benkei_festival_description" = "Festival de otoño en Tanabe, cuna del monje guerrero Benkei. Lo más destacado son la danza Benkei y el desfile de Musashibo Benkei.";
+"tanabe_benkei_festival_location" = "Ciudad de Tanabe";
+"tanabe_benkei_festival_feature1" = "Cuna de Benkei";
+"tanabe_benkei_festival_feature2" = "Danza Benkei";
 "tanabe_benkei_festival_feature3" = "Musashibō Parade";
 
 "kushimoto_festival_name" = "Kushimoto Festival";
@@ -3750,18 +3750,18 @@
 
 
 // MARK: - Wakayama Prefecture
-"kinokawa_momoyama_festival_name" = "Kinokawa Momoyama Festival";
-"kinokawa_momoyama_festival_description" = "A summer festival held in the peach village of Kinokawa City. Enjoy a peach-themed festival and fireworks display.";
-"kinokawa_momoyama_festival_location" = "Kinokawa City";
-"kinokawa_momoyama_festival_feature1" = "Peach Village";
-"kinokawa_momoyama_festival_feature2" = "Peach Theme";
-"kinokawa_momoyama_festival_feature3" = "Fireworks Display";
+"kinokawa_momoyama_festival_name" = "Festival Momoyama de Kinokawa";
+"kinokawa_momoyama_festival_description" = "Festival de verano celebrado en Kinokawa, la tierra de los melocotones. Disfruta de una fiesta temática del melocotón y de un gran espectáculo pirotécnico.";
+"kinokawa_momoyama_festival_location" = "Ciudad de Kinokawa";
+"kinokawa_momoyama_festival_feature1" = "Tierra de los melocotones";
+"kinokawa_momoyama_festival_feature2" = "Temática del melocotón";
+"kinokawa_momoyama_festival_feature3" = "Fuegos artificiales";
 
-"tanabe_benkei_festival_name" = "Tanabe Benkei Festival";
-"tanabe_benkei_festival_description" = "An autumn festival held in Tanabe, the birthplace of Benkei. Highlights include the Benkei dance and Musashibo Benkei parade.";
-"tanabe_benkei_festival_location" = "Tanabe City";
-"tanabe_benkei_festival_feature1" = "Benkei Birthplace";
-"tanabe_benkei_festival_feature2" = "Benkei Dance";
+"tanabe_benkei_festival_name" = "Festival Benkei de Tanabe";
+"tanabe_benkei_festival_description" = "Festival de otoño en Tanabe, cuna del monje guerrero Benkei. Lo más destacado son la danza Benkei y el desfile de Musashibo Benkei.";
+"tanabe_benkei_festival_location" = "Ciudad de Tanabe";
+"tanabe_benkei_festival_feature1" = "Cuna de Benkei";
+"tanabe_benkei_festival_feature2" = "Danza Benkei";
 "tanabe_benkei_festival_feature3" = "Musashibo Parade";
 
 "kushimoto_festival_name" = "Kushimoto Festival";
