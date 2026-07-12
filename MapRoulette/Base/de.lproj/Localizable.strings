@@ -89,9 +89,9 @@
 "reset" = "Zurücksetzen";
 "disabled" = "Deaktiviert";
 "weight_format" = "Gewichtung: %.1f";
-"onsen_count_format" = "Hot Springs: %d locations";
-"onsen_locations_count" = "%d hot spring locations";
-"onsen_region_count" = "(%d hot spring(s))";
+"onsen_count_format" = "Thermalquellen: %d Orte";
+"onsen_locations_count" = "%d Thermalorte";
+"onsen_region_count" = "(%d Thermalquellen)";
 "detail_info" = "Detailinformationen";
 "no_onsen" = "Keine Thermalquellen";
 "back" = "Zurück";
@@ -103,103 +103,103 @@
 "hot_spring_area_map" = "Karte der Thermalquellen";
 "open_in_external_map" = "In externer Karten-App öffnen";
 "hot_spring_info" = "Infos zu Thermalquellen";
-"onsen_type.scenic" = "Scenic Hot Spring";
-"onsen_type.historical" = "Historical Hot Spring";
-"onsen_type.therapeutic" = "Therapeutic Hot Spring";
+"onsen_type.scenic" = "Aussichts-Therme";
+"onsen_type.historical" = "Historische Therme";
+"onsen_type.therapeutic" = "Kur-Therme";
 "onsen_type.resort" = "Resort";
-"onsen_type.mountain" = "Mountain Hot Spring";
-"onsen_type.seaside" = "Seaside Hot Spring";
-"onsen_type.ski" = "Ski Hot Spring";
+"onsen_type.mountain" = "Bergtherme";
+"onsen_type.seaside" = "Küstentherme";
+"onsen_type.ski" = "Ski-Therme";
 
 /* Onsen Names in English */
-"onsen.noboribetsu" = "Noboribetsu Onsen";
-"onsen.toyako" = "Lake Toya Onsen";
-"onsen.jozankei" = "Jozankei Onsen";
-"onsen.yunokawa" = "Hakodate Yunokawa Onsen";
-"onsen.nyuto" = "Nyuto Onsen";
-"onsen.ginzan" = "Ginzan Onsen";
-"onsen.zao" = "Zao Onsen";
-"onsen.hanamaki" = "Hanamaki Onsen";
-"onsen.naruko" = "Naruko Onsen";
-"onsen.iizaka" = "Iizaka Onsen";
-"onsen.hakone" = "Hakone Onsen";
-"onsen.kusatsu" = "Kusatsu Onsen";
-"onsen.ikaho" = "Ikaho Onsen";
-"onsen.atami" = "Atami Onsen";
-"onsen.shuzenji" = "Shuzenji Onsen";
-"onsen.atagawa" = "Atagawa Onsen";
-"onsen.isawa" = "Isawa Onsen";
-"onsen.nozawa" = "Nozawa Onsen";
-"onsen.kamisuwa" = "Kamisuwa Onsen";
-"onsen.gero" = "Gero Onsen";
-"onsen.yamanaka" = "Yamanaka Onsen";
-"onsen.wakura" = "Wakura Onsen";
-"onsen.yamashiro" = "Yamashiro Onsen";
-"onsen.katayamazu" = "Katayamazu Onsen";
-"onsen.unazuki" = "Unazuki Onsen";
-"onsen.arima" = "Arima Onsen";
-"onsen.kinosaki" = "Kinosaki Onsen";
-"onsen.yumura" = "Yumura Onsen";
-"onsen.shirahama" = "Shirahama Onsen";
-"onsen.katsuura" = "Katsuura Onsen";
-"onsen.misasa" = "Misasa Onsen";
-"onsen.tamatsukuri" = "Tamatsukuri Onsen";
-"onsen.dogo" = "Dogo Onsen";
-"onsen.beppu" = "Beppu Onsen";
-"onsen.yufuin" = "Yufuin Onsen";
-"onsen.ibusuki" = "Ibusuki Onsen";
-"onsen.kurokawa" = "Kurokawa Onsen";
-"onsen.unzen" = "Unzen Onsen";
-"onsen.ureshino" = "Ureshino Onsen";
-"onsen.takeo" = "Takeo Onsen";
+"onsen.noboribetsu" = "Noboribetsu-Onsen";
+"onsen.toyako" = "Toyako-Onsen";
+"onsen.jozankei" = "Jozankei-Onsen";
+"onsen.yunokawa" = "Hakodate-Yunokawa-Onsen";
+"onsen.nyuto" = "Nyuto-Onsen";
+"onsen.ginzan" = "Ginzan-Onsen";
+"onsen.zao" = "Zao-Onsen";
+"onsen.hanamaki" = "Hanamaki-Onsen";
+"onsen.naruko" = "Naruko-Onsen";
+"onsen.iizaka" = "Iizaka-Onsen";
+"onsen.hakone" = "Hakone-Onsen";
+"onsen.kusatsu" = "Kusatsu-Onsen";
+"onsen.ikaho" = "Ikaho-Onsen";
+"onsen.atami" = "Atami-Onsen";
+"onsen.shuzenji" = "Shuzenji-Onsen";
+"onsen.atagawa" = "Atagawa-Onsen";
+"onsen.isawa" = "Isawa-Onsen";
+"onsen.nozawa" = "Nozawa-Onsen";
+"onsen.kamisuwa" = "Kamisuwa-Onsen";
+"onsen.gero" = "Gero-Onsen";
+"onsen.yamanaka" = "Yamanaka-Onsen";
+"onsen.wakura" = "Wakura-Onsen";
+"onsen.yamashiro" = "Yamashiro-Onsen";
+"onsen.katayamazu" = "Katayamazu-Onsen";
+"onsen.unazuki" = "Unazuki-Onsen";
+"onsen.arima" = "Arima-Onsen";
+"onsen.kinosaki" = "Kinosaki-Onsen";
+"onsen.yumura" = "Yumura-Onsen";
+"onsen.shirahama" = "Shirahama-Onsen";
+"onsen.katsuura" = "Katsuura-Onsen";
+"onsen.misasa" = "Misasa-Onsen";
+"onsen.tamatsukuri" = "Tamatsukuri-Onsen";
+"onsen.dogo" = "Dogo-Onsen";
+"onsen.beppu" = "Beppu-Onsen";
+"onsen.yufuin" = "Yufuin-Onsen";
+"onsen.ibusuki" = "Ibusuki-Onsen";
+"onsen.kurokawa" = "Kurokawa-Onsen";
+"onsen.unzen" = "Unzen-Onsen";
+"onsen.ureshino" = "Ureshino-Onsen";
+"onsen.takeo" = "Takeo-Onsen";
 
 /* Onsen Descriptions in English */
-"onsen.noboribetsu.desc" = "Famous sulfur hot spring known for Jigokudani (Hell Valley)";
-"onsen.toyako.desc" = "Beautiful lakeside hot spring resort";
-"onsen.jozankei.desc" = "Known as Sapporo's inner parlor";
-"onsen.yunokawa.desc" = "Hot spring area that serves as a base for Hakodate sightseeing";
-"onsen.nyuto.desc" = "Mountain hot spring village with a perfect secluded atmosphere";
-"onsen.ginzan.desc" = "Nostalgic hot spring town full of Taisho romance";
-"onsen.zao.desc" = "Highland hot spring also famous for skiing";
-"onsen.hanamaki.desc" = "Place associated with Kenji Miyazawa";
-"onsen.naruko.desc" = "Also known as a famous autumn foliage spot";
-"onsen.iizaka.desc" = "Historic hot spring visited by Matsuo Basho";
-"onsen.hakone.desc" = "Good access from the city center, enjoy views of Lake Ashi and Mt. Fuji";
-"onsen.kusatsu.desc" = "Famous for its strong acidic hot springs said to cure everything except lovesickness";
-"onsen.ikaho.desc" = "Atmospheric hot spring town known for its stone steps";
-"onsen.atami.desc" = "Seaside resort hot spring close to the capital area";
-"onsen.shuzenji.desc" = "Literary village in the mountains of Izu Peninsula";
-"onsen.atagawa.desc" = "Hot spring overlooking the sea on the east coast of Izu";
-"onsen.isawa.desc" = "Enjoy grape picking and hot springs";
-"onsen.nozawa.desc" = "Famous for skiing and outdoor bath hopping";
-"onsen.kamisuwa.desc" = "Hot spring area by Lake Suwa";
-"onsen.gero.desc" = "Known as one of Japan's three famous hot springs for beautiful skin";
-"onsen.yamanaka.desc" = "One of Kaga hot spring resorts, hot spring area loved by Matsuo Basho";
-"onsen.wakura.desc" = "Seaside hot spring on Noto Peninsula";
-"onsen.yamashiro.desc" = "Central presence of Kaga hot spring resorts";
-"onsen.katayamazu.desc" = "Lakeside hot spring overlooking Shibayamagata";
-"onsen.unazuki.desc" = "Gateway to Kurobe Gorge";
-"onsen.arima.desc" = "One of Japan's oldest hot springs, famous for golden and silver springs";
-"onsen.kinosaki.desc" = "Famous for hopping between seven outdoor baths";
-"onsen.yumura.desc" = "Called the little Kyoto of San'in";
-"onsen.shirahama.desc" = "Seaside hot spring area, close to Adventure World famous for pandas";
-"onsen.katsuura.desc" = "Seaside hot spring known for cave baths";
-"onsen.misasa.desc" = "Famous for radon hot springs";
-"onsen.tamatsukuri.desc" = "Popular with women as beautiful skin hot springs";
-"onsen.dogo.desc" = "One of Japan's oldest hot springs, setting of Natsume Soseki's 'Botchan'";
-"onsen.beppu.desc" = "Hot spring kingdom boasting the most sources in Japan";
-"onsen.yufuin.desc" = "Highland resort with a calm atmosphere overlooking Mt. Yufu";
-"onsen.ibusuki.desc" = "Southern hot spring area famous for sand baths";
-"onsen.kurokawa.desc" = "Popular for outdoor baths that blend into nature";
-"onsen.unzen.desc" = "Highland hot spring on the hillside of Mt. Unzen";
-"onsen.ureshino.desc" = "Slippery hot springs with high skin beautifying effects";
-"onsen.takeo.desc" = "Famous for its gate reminiscent of the Dragon Palace";
+"onsen.noboribetsu.desc" = "Berühmte Schwefelquelle, bekannt für das Höllental Jigokudani";
+"onsen.toyako.desc" = "Schönes Seeufer-Thermalresort";
+"onsen.jozankei.desc" = "Bekannt als Sapporos verstecktes Wohnzimmer";
+"onsen.yunokawa.desc" = "Thermalort, auch als Stützpunkt für Hakodate-Ausflüge";
+"onsen.nyuto.desc" = "Bergthermaldorf mit perfekter Geheimquellen-Atmosphäre";
+"onsen.ginzan.desc" = "Nostalgische Thermalstraße voller Taisho-Romantik";
+"onsen.zao.desc" = "Hochlandtherme, auch fürs Skifahren berühmt";
+"onsen.hanamaki.desc" = "Ort mit Bezug zu Kenji Miyazawa";
+"onsen.naruko.desc" = "Auch als bekannter Herbstlaub-Ort bekannt";
+"onsen.iizaka.desc" = "Historische Therme, die Matsuo Basho besuchte";
+"onsen.hakone.desc" = "Gut vom Zentrum erreichbar, mit Blick auf den Ashi-See und den Fuji";
+"onsen.kusatsu.desc" = "Berühmt für stark saure Quellen, die „alles außer Liebeskummer heilen“";
+"onsen.ikaho.desc" = "Stimmungsvolle Thermalstraße, bekannt für ihre Steintreppe";
+"onsen.atami.desc" = "Küstentherme in der Nähe der Hauptstadtregion";
+"onsen.shuzenji.desc" = "Literaturdorf in den Bergen der Izu-Halbinsel";
+"onsen.atagawa.desc" = "Therme mit Meerblick an der Ostküste von Izu";
+"onsen.isawa.desc" = "Genießen Sie Traubenernte und Thermalquellen";
+"onsen.nozawa.desc" = "Berühmt für Skifahren und die Tour durch öffentliche Bäder";
+"onsen.kamisuwa.desc" = "Thermalort am Suwa-See";
+"onsen.gero.desc" = "Bekannt als eine der drei Hautschönheits-Thermen Japans";
+"onsen.yamanaka.desc" = "Einer der Kaga-Thermalorte, den Matsuo Basho liebte";
+"onsen.wakura.desc" = "Küstentherme der Noto-Halbinsel";
+"onsen.yamashiro.desc" = "Zentrum der Kaga-Thermalorte";
+"onsen.katayamazu.desc" = "Seeufer-Therme mit Blick auf die Shibayama-Lagune";
+"onsen.unazuki.desc" = "Tor zur Kurobe-Schlucht";
+"onsen.arima.desc" = "Eine der ältesten Thermen Japans, berühmt für Gold- und Silberquellen";
+"onsen.kinosaki.desc" = "Berühmt für die Tour durch sieben öffentliche Bäder";
+"onsen.yumura.desc" = "Das kleine Kyoto von San'in genannt";
+"onsen.shirahama.desc" = "Küstentherme, nahe der für Pandas berühmten Adventure World";
+"onsen.katsuura.desc" = "Küstentherme, bekannt für Höhlenbäder";
+"onsen.misasa.desc" = "Berühmt für seine Radon-Quellen";
+"onsen.tamatsukuri.desc" = "Bei Frauen beliebt als Hautschönheits-Therme";
+"onsen.dogo.desc" = "Eine der ältesten Thermen Japans, Schauplatz von Natsume Sosekis „Botchan“";
+"onsen.beppu.desc" = "Thermalkönigreich mit den meisten Quellen Japans";
+"onsen.yufuin.desc" = "Ruhiges Hochlandresort mit Blick auf den Berg Yufu";
+"onsen.ibusuki.desc" = "Südliche Therme, berühmt für Sandbäder";
+"onsen.kurokawa.desc" = "Beliebt für Freiluftbäder, die mit der Natur verschmelzen";
+"onsen.unzen.desc" = "Hochlandtherme am Hang des Berges Unzen";
+"onsen.ureshino.desc" = "Schlüpfrige Quellen mit starker hautverschönernder Wirkung";
+"onsen.takeo.desc" = "Berühmt für sein Torhaus, das an den Drachenpalast erinnert";
 
 
 /* Main Settings */
-"onsen_settings_title" = "";
+"onsen_settings_title" = "Onsen-Einstellungen";
 "display_settings" = "Anzeigeeinstellungen";
-"onsen_selection" = "Hot Spring Selection";
+"onsen_selection" = "Onsen-Auswahl";
 "select_all" = "Alle auswählen";
 "deselect_all" = "Alle abwählen";
 "done" = "Fertig";
@@ -223,8 +223,8 @@
 
 
 /* OnsenDetailView */
-"onsen_features" = "Hot Spring Features"; // 英語版
-"onsen_map" = "Hot Spring Map"; // 英語版
+"onsen_features" = "Merkmale der Thermalquellen"; // 英語版
+"onsen_map" = "Onsen-Karte"; // 英語版
 "open_external_map" = "In externer Karten-App öffnen"; // 英語版
 "start" = "Start"; // 英語版
 "stop" = "Stopp"; // 英語版
@@ -4760,215 +4760,215 @@
 "nightview_moiwa_description" = "Hokkaido's night view spot overlooking Sapporo cityscape";
 
 // MARK: - Starry Sky Spots
-"starry_achi_name" = "Achi Village";
-"starry_achi_description" = "Nagano's stargazing location certified as Japan's number one starry sky village";
+"starry_achi_name" = "Dorf Achi";
+"starry_achi_description" = "Sternbeobachtungsort in Nagano, zertifiziert als Japans bestes Sternenhimmeldorf";
 
-"starry_ishigaki_name" = "Ishigaki Island";
-"starry_ishigaki_description" = "Okinawa's stargazing spot where you can see the Southern Cross";
+"starry_ishigaki_name" = "Insel Ishigaki";
+"starry_ishigaki_description" = "Sternbeobachtungsort in Okinawa, wo das Kreuz des Südens zu sehen ist";
 
-"starry_nobeyama_name" = "Nobeyama Plateau";
-"starry_nobeyama_description" = "Beautiful stargazing location on a 1,300m high plateau";
+"starry_nobeyama_name" = "Hochebene Nobeyama";
+"starry_nobeyama_description" = "Schöner Sternbeobachtungsort auf einer Hochebene in 1.300 m Höhe";
 
-"starry_utsukushigahara_name" = "Utsukushigahara Plateau";
-"starry_utsukushigahara_description" = "Excellent stargazing location overlooking the Yatsugatake mountain range";
+"starry_utsukushigahara_name" = "Hochebene Utsukushigahara";
+"starry_utsukushigahara_description" = "Erstklassiger Sternbeobachtungsort mit Blick auf das Yatsugatake-Gebirge";
 
 "starry_odaigahara_name" = "Odaigahara";
-"starry_odaigahara_description" = "Nara's highland known as the Kinki region's best stargazing location";
+"starry_odaigahara_description" = "Hochebene in Nara, bekannt als bester Sternbeobachtungsort der Kinki-Region";
 
 "starry_yatsugatake_name" = "Yatsugatake";
-"starry_yatsugatake_description" = "Famous stargazing location spanning Nagano and Yamanashi prefectures";
+"starry_yatsugatake_description" = "Bekannter Sternbeobachtungsort in Nagano und Yamanashi";
 
-"starry_iriomote_name" = "Iriomote Island";
-"starry_iriomote_description" = "Okinawa's stargazing spot surrounded by pristine nature";
+"starry_iriomote_name" = "Insel Iriomote";
+"starry_iriomote_description" = "Sternbeobachtungsort in Okinawa, umgeben von unberührter Natur";
 
-"starry_kuju_name" = "Kuju Plateau";
-"starry_kuju_description" = "Highland stargazing location in Oita Prefecture, Kyushu";
+"starry_kuju_name" = "Hochebene Kuju";
+"starry_kuju_description" = "Sternbeobachtungsort auf einer Hochebene in Oita, Kyushu";
 
-"starry_kirigamine_name" = "Kirigamine Plateau";
-"starry_kirigamine_description" = "Beautiful stargazing spot in Nagano's highland region";
+"starry_kirigamine_name" = "Hochebene Kirigamine";
+"starry_kirigamine_description" = "Schöner Sternbeobachtungsort im Hochland von Nagano";
 
-"starry_akagi_name" = "Mount Akagi";
-"starry_akagi_description" = "Mountaintop stargazing location in Gunma Prefecture";
+"starry_akagi_name" = "Berg Akagi";
+"starry_akagi_description" = "Sternbeobachtungsort auf dem Gipfel in der Präfektur Gunma";
 
-"starry_zao_name" = "Mount Zao";
-"starry_zao_description" = "Stargazing spot on the border between Yamagata and Miyagi prefectures";
+"starry_zao_name" = "Berg Zao";
+"starry_zao_description" = "Sternbeobachtungsort an der Grenze von Yamagata und Miyagi";
 
 "starry_daisetsu_name" = "Daisetsuzan";
-"starry_daisetsu_description" = "Magnificent stargazing experience at Hokkaido's highest peak";
+"starry_daisetsu_description" = "Grandioses Sternbeobachtungserlebnis auf Hokkaidos höchstem Gipfel";
 
-"starry_tsubetsu_name" = "Tsubetsu Pass";
-"starry_tsubetsu_description" = "One of Hokkaido's premier stargazing locations";
+"starry_tsubetsu_name" = "Tsubetsu-Pass";
+"starry_tsubetsu_description" = "Einer der besten Sternbeobachtungsorte Hokkaidos";
 
-"starry_erimo_name" = "Cape Erimo";
-"starry_erimo_description" = "Beautiful stargazing spot at Hokkaido's southernmost point";
+"starry_erimo_name" = "Kap Erimo";
+"starry_erimo_description" = "Schöner Sternbeobachtungsort an der Südspitze Hokkaidos";
 
 // MARK: - Camping Spots
 // Hokkaido
-"camping_toya_name" = "Lake Toya Campground";
-"camping_toya_description" = "Camping by a hot spring lake in Hokkaido";
-"camping_shikotsu_name" = "Lake Shikotsu Campground";
-"camping_shikotsu_description" = "Camping by a highly transparent lake in Hokkaido";
-"camping_mashu_name" = "Lake Mashu Campground";
-"camping_mashu_description" = "Camping by a beautiful lake in Hokkaido";
-"camping_furano_biei_name" = "Furano-Biei Area Campground";
-"camping_furano_biei_description" = "Camping in flower fields and rolling hills of Hokkaido";
-"camping_niseko_name" = "Niseko Area Campground";
-"camping_niseko_description" = "Camping in a resort area of Hokkaido";
+"camping_toya_name" = "Campingplatz am Toya-See";
+"camping_toya_description" = "Camping an einem Thermalsee in Hokkaido";
+"camping_shikotsu_name" = "Campingplatz am Shikotsu-See";
+"camping_shikotsu_description" = "Camping an einem sehr klaren See in Hokkaido";
+"camping_mashu_name" = "Campingplatz am Mashu-See";
+"camping_mashu_description" = "Camping an einem schönen See in Hokkaido";
+"camping_furano_biei_name" = "Campingplatz im Gebiet Furano-Biei";
+"camping_furano_biei_description" = "Camping in Blumenfeldern und Hügeln Hokkaidos";
+"camping_niseko_name" = "Campingplatz rund um Niseko";
+"camping_niseko_description" = "Camping in einem Ferienort Hokkaidos";
 // Tohoku
-"camping_towada_name" = "Lake Towada Campground";
-"camping_towada_description" = "Camping by a beautiful lakeside in Aomori and Akita prefectures";
-"camping_bandai_name" = "Bandai Plateau Campground";
-"camping_bandai_description" = "Camping on the plateau in Fukushima Prefecture";
-"camping_goshikinuma_name" = "Urabandai Goshikinuma Campground";
-"camping_goshikinuma_description" = "Camping among mystical ponds in Fukushima Prefecture";
-"camping_zao_name" = "Zao Boping Campground";
-"camping_zao_description" = "Camping in the mountainous region of Yamagata and Miyagi prefectures";
+"camping_towada_name" = "Campingplatz am Towada-See";
+"camping_towada_description" = "Camping am schönen Seeufer in Aomori und Akita";
+"camping_bandai_name" = "Campingplatz auf der Bandai-Hochebene";
+"camping_bandai_description" = "Camping auf der Hochebene in Fukushima";
+"camping_goshikinuma_name" = "Campingplatz Urabandai Goshikinuma";
+"camping_goshikinuma_description" = "Camping inmitten geheimnisvoller Teiche in Fukushima";
+"camping_zao_name" = "Campingplatz Zao Bodaira";
+"camping_zao_description" = "Camping in der Bergregion von Yamagata und Miyagi";
 // Kanto
-"camping_okutama_name" = "Okutama Campground Complex";
-"camping_okutama_description" = "Nature-rich camping grounds in Tokyo";
-"camping_tanzawa_name" = "Lake Tanzawa Campground";
-"camping_tanzawa_description" = "Camping in the mountainous lake area of Kanagawa Prefecture";
-"camping_nasu_name" = "Nasu Plateau Campground";
-"camping_nasu_description" = "Camping in the highland resort of Tochigi Prefecture";
-"camping_okunikko_name" = "Oku-Nikko Campground";
-"camping_okunikko_description" = "Camping around Lake Chuzenji in Tochigi Prefecture";
-"camping_hakone_name" = "Hakone Campground";
-"camping_hakone_description" = "Camping in the hot spring resort of Kanagawa Prefecture";
+"camping_okutama_name" = "Campingplätze in Okutama";
+"camping_okutama_description" = "Naturreicher Campingplatz in Tokio";
+"camping_tanzawa_name" = "Campingplatz am Tanzawa-See";
+"camping_tanzawa_description" = "Camping in der Berg- und Seenregion von Kanagawa";
+"camping_nasu_name" = "Campingplatz auf der Nasu-Hochebene";
+"camping_nasu_description" = "Camping im Hochlandresort von Tochigi";
+"camping_okunikko_name" = "Campingplatz Oku-Nikko";
+"camping_okunikko_description" = "Camping rund um den Chuzenji-See in Tochigi";
+"camping_hakone_name" = "Campingplatz Hakone";
+"camping_hakone_description" = "Camping im Thermalresort von Kanagawa";
 // Chubu
-"camping_fujigoko_name" = "Fuji Five Lakes Campground Complex";
-"camping_fujigoko_description" = "Excellent camping area with views of Mount Fuji";
-"camping_kamikochi_name" = "Kamikochi Campground";
-"camping_kamikochi_description" = "Camping at the gateway to the Northern Alps";
-"camping_hakuba_name" = "Hakuba Iwatake Campground";
-"camping_hakuba_description" = "Camping in the Northern Alps of Nagano Prefecture";
-"camping_karuizawa_name" = "Karuizawa Campground";
-"camping_karuizawa_description" = "Camping in the summer resort of Nagano Prefecture";
-"camping_kiyosato_name" = "Kiyosato Plateau Campground";
-"camping_kiyosato_description" = "Camping at the southern foot of Yatsugatake in Yamanashi Prefecture";
-"camping_shiga_name" = "Shiga Kogen Campground";
-"camping_shiga_description" = "Camping in the highland resort of Nagano Prefecture";
+"camping_fujigoko_name" = "Campingplätze der Fuji-Fünf-Seen";
+"camping_fujigoko_description" = "Erstklassiger Campingbereich mit Blick auf den Fuji";
+"camping_kamikochi_name" = "Campingplatz Kamikochi";
+"camping_kamikochi_description" = "Camping am Tor zu den Nördlichen Alpen";
+"camping_hakuba_name" = "Campingplatz Hakuba Iwatake";
+"camping_hakuba_description" = "Camping in den Nördlichen Alpen von Nagano";
+"camping_karuizawa_name" = "Campingplatz Karuizawa";
+"camping_karuizawa_description" = "Camping in der Sommerfrische von Nagano";
+"camping_kiyosato_name" = "Campingplatz auf der Kiyosato-Hochebene";
+"camping_kiyosato_description" = "Camping am Südfuß des Yatsugatake in Yamanashi";
+"camping_shiga_name" = "Campingplatz auf der Shiga-Hochebene";
+"camping_shiga_description" = "Camping im Hochlandresort von Nagano";
 // Kansai, Chugoku, Shikoku
-"camping_biwa_name" = "Lake Biwa Campground";
-"camping_biwa_description" = "Camping by Japan's largest lake in Shiga Prefecture";
-"camping_hiruzen_name" = "Hiruzen Plateau Campground";
-"camping_hiruzen_description" = "Highland camping experience in Okayama Prefecture";
-"camping_odaigahara_name" = "Odaigahara Campground";
-"camping_odaigahara_description" = "Camping in the mountainous region of Nara and Mie prefectures";
-"camping_tsurugi_name" = "Mount Tsurugi Campground";
-"camping_tsurugi_description" = "Camping at Shikoku's second highest peak in Tokushima Prefecture";
-"camping_shimanto_name" = "Shimanto River Campground";
-"camping_shimanto_description" = "Camping by the clear Shimanto River in Kochi Prefecture";
+"camping_biwa_name" = "Campingplatz am Biwa-See";
+"camping_biwa_description" = "Camping am größten See Japans in Shiga";
+"camping_hiruzen_name" = "Campingplatz auf der Hiruzen-Hochebene";
+"camping_hiruzen_description" = "Camping-Erlebnis auf der Hochebene von Okayama";
+"camping_odaigahara_name" = "Campingplatz Odaigahara";
+"camping_odaigahara_description" = "Camping in der Bergregion von Nara und Mie";
+"camping_tsurugi_name" = "Campingplatz am Berg Tsurugi";
+"camping_tsurugi_description" = "Camping am zweithöchsten Gipfel Shikokus in Tokushima";
+"camping_shimanto_name" = "Campingplatz am Shimanto-Fluss";
+"camping_shimanto_description" = "Camping am klaren Shimanto-Fluss in Kochi";
 // Kyushu, Okinawa
-"camping_aso_name" = "Aso Kusasenri Campground";
-"camping_aso_description" = "Camping in the magnificent caldera of Kumamoto Prefecture";
-"camping_kuju_name" = "Kuju Plateau Campground";
-"camping_kuju_description" = "Camping in the Kuju Mountains of Oita Prefecture";
-"camping_kirishima_name" = "Kirishima Plateau Campground";
-"camping_kirishima_description" = "Camping among volcanic peaks in Kagoshima and Miyazaki prefectures";
-"camping_yakushima_name" = "Yakushima Campground";
-"camping_yakushima_description" = "Camping on the World Heritage island in Kagoshima Prefecture";
-"camping_yanbaru_name" = "Yanbaru Campground";
-"camping_yanbaru_description" = "Camping in the subtropical forest of northern Okinawa Prefecture";
+"camping_aso_name" = "Campingplatz Aso Kusasenri";
+"camping_aso_description" = "Camping in der majestätischen Caldera von Kumamoto";
+"camping_kuju_name" = "Campingplatz auf der Kuju-Hochebene";
+"camping_kuju_description" = "Camping in den Kuju-Bergen von Oita";
+"camping_kirishima_name" = "Campingplatz auf der Kirishima-Hochebene";
+"camping_kirishima_description" = "Camping inmitten der Vulkane von Kagoshima und Miyazaki";
+"camping_yakushima_name" = "Campingplatz Yakushima";
+"camping_yakushima_description" = "Camping auf der Welterbe-Insel in Kagoshima";
+"camping_yanbaru_name" = "Campingplatz Yanbaru (Okinawa)";
+"camping_yanbaru_description" = "Camping im subtropischen Wald Nord-Okinawas";
 
 // MARK: - Sea Spots
-"sea_miyako_irabu_name" = "Miyako Island & Irabu Bridge";
-"sea_miyako_irabu_description" = "Crystal-clear blue sea and spectacular bridge";
+"sea_miyako_irabu_name" = "Insel Miyako – Irabu-Brücke";
+"sea_miyako_irabu_description" = "Kristallklares blaues Meer und spektakuläre Brücke";
 
-"sea_ishigaki_kabira_name" = "Ishigaki Island & Kabira Bay";
-"sea_ishigaki_kabira_description" = "Beautiful emerald green bay";
+"sea_ishigaki_kabira_name" = "Insel Ishigaki – Kabira-Bucht";
+"sea_ishigaki_kabira_description" = "Schöne smaragdgrüne Bucht";
 
-"sea_shirahama_name" = "Shirahama Beach";
-"sea_shirahama_description" = "Beautiful white sand beach in Wakayama Prefecture";
+"sea_shirahama_name" = "Strand Shirarahama";
+"sea_shirahama_description" = "Schöner weißer Sandstrand in Wakayama";
 
-"sea_tsunoshima_name" = "Tsunoshima Bridge";
-"sea_tsunoshima_description" = "Spectacular bridge over emerald green sea";
+"sea_tsunoshima_name" = "Tsunoshima-Brücke";
+"sea_tsunoshima_description" = "Spektakuläre Brücke über smaragdgrünem Meer";
 
-"sea_takeno_name" = "Takeno Coast";
-"sea_takeno_description" = "Beautiful coastline in Hyogo Prefecture";
+"sea_takeno_name" = "Küste von Takeno";
+"sea_takeno_description" = "Schöne Küstenlinie in Hyogo";
 
-"sea_kujukurihama_name" = "Kujukuri Beach";
-"sea_kujukurihama_description" = "Long sandy beach coast in Chiba Prefecture";
+"sea_kujukurihama_name" = "Strand Kujukuri";
+"sea_kujukurihama_description" = "Langer Sandstrand in Chiba";
 
-"sea_shonan_name" = "Shonan Coast";
-"sea_shonan_description" = "Kanagawa's representative coastal resort";
+"sea_shonan_name" = "Küste von Shonan";
+"sea_shonan_description" = "Typisches Küstenresort von Kanagawa";
 
-"sea_izu_shirahama_name" = "Izu Shirahama Coast";
-"sea_izu_shirahama_description" = "Beautiful white sand beach in Shizuoka Prefecture";
+"sea_izu_shirahama_name" = "Küste von Izu-Shirahama";
+"sea_izu_shirahama_description" = "Schöner weißer Sandstrand in Shizuoka";
 
-"sea_chirihama_name" = "Noto Peninsula & Chirihama Nagisa Driveway";
-"sea_chirihama_description" = "Japan's only beach you can drive on";
+"sea_chirihama_name" = "Noto-Halbinsel – Chirihama-Küstenstraße";
+"sea_chirihama_description" = "Der einzige Strand Japans, auf dem man fahren kann";
 
-"sea_tottori_name" = "Tottori Sand Dunes";
-"sea_tottori_description" = "Japan's largest sand dunes with spectacular Sea of Japan views";
+"sea_tottori_name" = "Sanddünen von Tottori";
+"sea_tottori_description" = "Die größten Dünen Japans mit grandiosem Blick aufs Japanische Meer";
 
-"sea_katsurahama_name" = "Katsurahama Beach";
-"sea_katsurahama_description" = "Beautiful coast in Kochi Prefecture, famous as a moon viewing spot";
+"sea_katsurahama_name" = "Strand Katsurahama";
+"sea_katsurahama_description" = "Schöne Küste in Kochi, bekannt als Ort zur Mondbetrachtung";
 
-"sea_blue_cave_name" = "Blue Cave & Cape Maeda";
-"sea_blue_cave_description" = "Mystical cave wrapped in blue light";
+"sea_blue_cave_name" = "Blaue Grotte – Kap Maeda";
+"sea_blue_cave_description" = "Höhle, in fantastisches blaues Licht getaucht";
 
-"sea_zanpa_name" = "Cape Zanpa";
-"sea_zanpa_description" = "Spectacular cape on Okinawa's main island";
+"sea_zanpa_name" = "Kap Zanpa";
+"sea_zanpa_description" = "Panoramakap auf Okinawas Hauptinsel";
 
 "sea_manzamo_name" = "Manzamo";
-"sea_manzamo_description" = "Spectacular cape on Okinawa's main island shaped like an elephant's trunk";
+"sea_manzamo_description" = "Panoramakap in Elefantenrüsselform auf Okinawas Hauptinsel";
 
-"sea_hedo_name" = "Cape Hedo";
-"sea_hedo_description" = "Northernmost cape of Okinawa's main island";
+"sea_hedo_name" = "Kap Hedo";
+"sea_hedo_description" = "Nördlichstes Kap von Okinawas Hauptinsel";
 
-"sea_erimo_cape_name" = "Cape Erimo";
-"sea_erimo_cape_description" = "Magnificent seascape at Hokkaido's southernmost point";
+"sea_erimo_cape_name" = "Kap Erimo";
+"sea_erimo_cape_description" = "Grandiose Meereslandschaft an der Südspitze Hokkaidos";
 
-"sea_shakotan_name" = "Shakotan Peninsula & Cape Kamui";
-"sea_shakotan_description" = "Hokkaido's beautiful coastline and spectacular cape";
+"sea_shakotan_name" = "Shakotan-Halbinsel – Kap Kamui";
+"sea_shakotan_description" = "Schöne Küstenlinie und Panoramakap in Hokkaido";
 
-"sea_shiretoko_name" = "Shiretoko Peninsula";
-"sea_shiretoko_description" = "Magnificent coastline of this World Natural Heritage site";
+"sea_shiretoko_name" = "Shiretoko-Halbinsel";
+"sea_shiretoko_description" = "Grandiose Küste dieses UNESCO-Naturerbes";
 
-"sea_sanriku_name" = "Sanriku Coast";
-"sea_sanriku_description" = "Beautiful ria coast in Iwate and Miyagi prefectures";
+"sea_sanriku_name" = "Sanriku-Küste";
+"sea_sanriku_description" = "Schöne Rias-Küste in Iwate und Miyagi";
 
 "sea_matsushima_name" = "Matsushima";
-"sea_matsushima_description" = "One of Japan's three most scenic views in Miyagi Prefecture";
+"sea_matsushima_description" = "Eine der drei schönsten Landschaften Japans in Miyagi";
 
-"sea_tanesashi_name" = "Tanesashi Coast";
-"sea_tanesashi_description" = "Beautiful coastline in Aomori Prefecture";
+"sea_tanesashi_name" = "Küste von Tanesashi";
+"sea_tanesashi_description" = "Schöne Küstenlinie in Aomori";
 
-"sea_jogashima_name" = "Jogashima Island";
-"sea_jogashima_description" = "Scenic spot on Kanagawa's Miura Peninsula";
+"sea_jogashima_name" = "Insel Jogashima";
+"sea_jogashima_description" = "Malerischer Ort auf der Miura-Halbinsel in Kanagawa";
 
 "sea_enoshima_name" = "Enoshima";
-"sea_enoshima_description" = "Representative marine resort of Shonan";
+"sea_enoshima_description" = "Typisches Meeresresort von Shonan";
 
-"sea_atami_name" = "Atami Coast";
-"sea_atami_description" = "Hot spring resort coast in Shizuoka Prefecture";
+"sea_atami_name" = "Küste von Atami";
+"sea_atami_description" = "Thermalresort-Küste in Shizuoka";
 
 "sea_iseshima_name" = "Ise-Shima";
-"sea_iseshima_description" = "Beautiful coast and ria topography in Mie Prefecture";
+"sea_iseshima_description" = "Schöne Küste und Rias-Relief in Mie";
 
 "sea_amanohashidate_name" = "Amanohashidate";
-"sea_amanohashidate_description" = "One of Japan's three most scenic views in Kyoto Prefecture";
+"sea_amanohashidate_description" = "Eine der drei schönsten Landschaften Japans in Kyoto";
 
-"sea_naruto_name" = "Naruto Strait";
-"sea_naruto_description" = "Strait in Tokushima Prefecture famous for whirlpools";
+"sea_naruto_name" = "Naruto-Straße";
+"sea_naruto_description" = "Meerenge in Tokushima, berühmt für ihre Strudel";
 
-"sea_muroto_name" = "Cape Muroto";
-"sea_muroto_description" = "Cape jutting into the Pacific Ocean in Kochi Prefecture";
+"sea_muroto_name" = "Kap Muroto";
+"sea_muroto_description" = "Kap, das in Kochi in den Pazifik ragt";
 
-"sea_ashizuri_name" = "Cape Ashizuri";
-"sea_ashizuri_description" = "Spectacular cape at Kochi Prefecture's southernmost point";
+"sea_ashizuri_name" = "Kap Ashizuri";
+"sea_ashizuri_description" = "Panoramakap an der Südspitze von Kochi";
 
-"sea_munakata_name" = "Munakata & Okinoshima";
-"sea_munakata_description" = "World Heritage island in Fukuoka Prefecture";
+"sea_munakata_name" = "Munakata – Okinoshima";
+"sea_munakata_description" = "Welterbe-Insel in Fukuoka";
 
-"sea_iki_tsushima_name" = "Iki & Tsushima";
-"sea_iki_tsushima_description" = "Historic remote islands in Nagasaki Prefecture";
+"sea_iki_tsushima_name" = "Iki – Tsushima";
+"sea_iki_tsushima_description" = "Historische abgelegene Inseln in Nagasaki";
 
 "sea_amakusa_name" = "Amakusa";
-"sea_amakusa_description" = "Beautiful islands in Kumamoto Prefecture";
+"sea_amakusa_description" = "Schöne Inseln in Kumamoto";
 
-"sea_nichinan_name" = "Nichinan Coast";
-"sea_nichinan_description" = "Beautiful coastline in Miyazaki Prefecture";
+"sea_nichinan_name" = "Nichinan-Küste";
+"sea_nichinan_description" = "Schöne Küstenlinie in Miyazaki";
 
 
 // Night View Spots
@@ -5165,12 +5165,12 @@
 "gourmet.explore_more" = "Explore more";
 
 /* --- カード上のタグ表示用の短縮名（英語は長いため短縮） --- */
-"onsen_type_tag.scenic" = "Scenic";
-"onsen_type_tag.historical" = "Historic";
-"onsen_type_tag.therapeutic" = "Therapeutic";
+"onsen_type_tag.scenic" = "Aussicht";
+"onsen_type_tag.historical" = "Historisch";
+"onsen_type_tag.therapeutic" = "Kur";
 "onsen_type_tag.resort" = "Resort";
-"onsen_type_tag.mountain" = "Mountain";
-"onsen_type_tag.seaside" = "Seaside";
+"onsen_type_tag.mountain" = "Berg";
+"onsen_type_tag.seaside" = "Küste";
 "onsen_type_tag.ski" = "Ski";
 "food_category_ramen_tag" = "Ramen";
 "food_category_seafood_tag" = "Meeresfrüchte";

@@ -89,9 +89,9 @@
 "reset" = "Đặt lại";
 "disabled" = "Đã tắt";
 "weight_format" = "Trọng số: %.1f";
-"onsen_count_format" = "Hot Springs: %d locations";
-"onsen_locations_count" = "%d hot spring locations";
-"onsen_region_count" = "(%d hot spring(s))";
+"onsen_count_format" = "Suối nước nóng: %d nơi";
+"onsen_locations_count" = "%d khu suối nước nóng";
+"onsen_region_count" = "(%d khu suối nước nóng)";
 "detail_info" = "Thông tin chi tiết";
 "no_onsen" = "Không có suối nước nóng";
 "back" = "Quay lại";
@@ -103,103 +103,103 @@
 "hot_spring_area_map" = "Bản đồ khu suối nước nóng";
 "open_in_external_map" = "Mở trong ứng dụng bản đồ khác";
 "hot_spring_info" = "Thông tin suối nước nóng";
-"onsen_type.scenic" = "Scenic Hot Spring";
-"onsen_type.historical" = "Historical Hot Spring";
-"onsen_type.therapeutic" = "Therapeutic Hot Spring";
-"onsen_type.resort" = "Resort";
-"onsen_type.mountain" = "Mountain Hot Spring";
-"onsen_type.seaside" = "Seaside Hot Spring";
-"onsen_type.ski" = "Ski Hot Spring";
+"onsen_type.scenic" = "Suối nước nóng cảnh đẹp";
+"onsen_type.historical" = "Suối nước nóng lịch sử";
+"onsen_type.therapeutic" = "Suối nước nóng trị liệu";
+"onsen_type.resort" = "Khu nghỉ dưỡng";
+"onsen_type.mountain" = "Suối nước nóng vùng núi";
+"onsen_type.seaside" = "Suối nước nóng ven biển";
+"onsen_type.ski" = "Suối nước nóng khu trượt tuyết";
 
 /* Onsen Names in English */
-"onsen.noboribetsu" = "Noboribetsu Onsen";
-"onsen.toyako" = "Lake Toya Onsen";
-"onsen.jozankei" = "Jozankei Onsen";
-"onsen.yunokawa" = "Hakodate Yunokawa Onsen";
-"onsen.nyuto" = "Nyuto Onsen";
-"onsen.ginzan" = "Ginzan Onsen";
-"onsen.zao" = "Zao Onsen";
-"onsen.hanamaki" = "Hanamaki Onsen";
-"onsen.naruko" = "Naruko Onsen";
-"onsen.iizaka" = "Iizaka Onsen";
-"onsen.hakone" = "Hakone Onsen";
-"onsen.kusatsu" = "Kusatsu Onsen";
-"onsen.ikaho" = "Ikaho Onsen";
-"onsen.atami" = "Atami Onsen";
-"onsen.shuzenji" = "Shuzenji Onsen";
-"onsen.atagawa" = "Atagawa Onsen";
-"onsen.isawa" = "Isawa Onsen";
-"onsen.nozawa" = "Nozawa Onsen";
-"onsen.kamisuwa" = "Kamisuwa Onsen";
-"onsen.gero" = "Gero Onsen";
-"onsen.yamanaka" = "Yamanaka Onsen";
-"onsen.wakura" = "Wakura Onsen";
-"onsen.yamashiro" = "Yamashiro Onsen";
-"onsen.katayamazu" = "Katayamazu Onsen";
-"onsen.unazuki" = "Unazuki Onsen";
-"onsen.arima" = "Arima Onsen";
-"onsen.kinosaki" = "Kinosaki Onsen";
-"onsen.yumura" = "Yumura Onsen";
-"onsen.shirahama" = "Shirahama Onsen";
-"onsen.katsuura" = "Katsuura Onsen";
-"onsen.misasa" = "Misasa Onsen";
-"onsen.tamatsukuri" = "Tamatsukuri Onsen";
-"onsen.dogo" = "Dogo Onsen";
-"onsen.beppu" = "Beppu Onsen";
-"onsen.yufuin" = "Yufuin Onsen";
-"onsen.ibusuki" = "Ibusuki Onsen";
-"onsen.kurokawa" = "Kurokawa Onsen";
-"onsen.unzen" = "Unzen Onsen";
-"onsen.ureshino" = "Ureshino Onsen";
-"onsen.takeo" = "Takeo Onsen";
+"onsen.noboribetsu" = "Suối nước nóng Noboribetsu";
+"onsen.toyako" = "Suối nước nóng hồ Toya";
+"onsen.jozankei" = "Suối nước nóng Jozankei";
+"onsen.yunokawa" = "Suối nước nóng Yunokawa Hakodate";
+"onsen.nyuto" = "Suối nước nóng Nyuto";
+"onsen.ginzan" = "Suối nước nóng Ginzan";
+"onsen.zao" = "Suối nước nóng Zao";
+"onsen.hanamaki" = "Suối nước nóng Hanamaki";
+"onsen.naruko" = "Suối nước nóng Naruko";
+"onsen.iizaka" = "Suối nước nóng Iizaka";
+"onsen.hakone" = "Suối nước nóng Hakone";
+"onsen.kusatsu" = "Suối nước nóng Kusatsu";
+"onsen.ikaho" = "Suối nước nóng Ikaho";
+"onsen.atami" = "Suối nước nóng Atami";
+"onsen.shuzenji" = "Suối nước nóng Shuzenji";
+"onsen.atagawa" = "Suối nước nóng Atagawa";
+"onsen.isawa" = "Suối nước nóng Isawa";
+"onsen.nozawa" = "Suối nước nóng Nozawa";
+"onsen.kamisuwa" = "Suối nước nóng Kamisuwa";
+"onsen.gero" = "Suối nước nóng Gero";
+"onsen.yamanaka" = "Suối nước nóng Yamanaka";
+"onsen.wakura" = "Suối nước nóng Wakura";
+"onsen.yamashiro" = "Suối nước nóng Yamashiro";
+"onsen.katayamazu" = "Suối nước nóng Katayamazu";
+"onsen.unazuki" = "Suối nước nóng Unazuki";
+"onsen.arima" = "Suối nước nóng Arima";
+"onsen.kinosaki" = "Suối nước nóng Kinosaki";
+"onsen.yumura" = "Suối nước nóng Yumura";
+"onsen.shirahama" = "Suối nước nóng Shirahama";
+"onsen.katsuura" = "Suối nước nóng Katsuura";
+"onsen.misasa" = "Suối nước nóng Misasa";
+"onsen.tamatsukuri" = "Suối nước nóng Tamatsukuri";
+"onsen.dogo" = "Suối nước nóng Dogo";
+"onsen.beppu" = "Suối nước nóng Beppu";
+"onsen.yufuin" = "Suối nước nóng Yufuin";
+"onsen.ibusuki" = "Suối nước nóng Ibusuki";
+"onsen.kurokawa" = "Suối nước nóng Kurokawa";
+"onsen.unzen" = "Suối nước nóng Unzen";
+"onsen.ureshino" = "Suối nước nóng Ureshino";
+"onsen.takeo" = "Suối nước nóng Takeo";
 
 /* Onsen Descriptions in English */
-"onsen.noboribetsu.desc" = "Famous sulfur hot spring known for Jigokudani (Hell Valley)";
-"onsen.toyako.desc" = "Beautiful lakeside hot spring resort";
-"onsen.jozankei.desc" = "Known as Sapporo's inner parlor";
-"onsen.yunokawa.desc" = "Hot spring area that serves as a base for Hakodate sightseeing";
-"onsen.nyuto.desc" = "Mountain hot spring village with a perfect secluded atmosphere";
-"onsen.ginzan.desc" = "Nostalgic hot spring town full of Taisho romance";
-"onsen.zao.desc" = "Highland hot spring also famous for skiing";
-"onsen.hanamaki.desc" = "Place associated with Kenji Miyazawa";
-"onsen.naruko.desc" = "Also known as a famous autumn foliage spot";
-"onsen.iizaka.desc" = "Historic hot spring visited by Matsuo Basho";
-"onsen.hakone.desc" = "Good access from the city center, enjoy views of Lake Ashi and Mt. Fuji";
-"onsen.kusatsu.desc" = "Famous for its strong acidic hot springs said to cure everything except lovesickness";
-"onsen.ikaho.desc" = "Atmospheric hot spring town known for its stone steps";
-"onsen.atami.desc" = "Seaside resort hot spring close to the capital area";
-"onsen.shuzenji.desc" = "Literary village in the mountains of Izu Peninsula";
-"onsen.atagawa.desc" = "Hot spring overlooking the sea on the east coast of Izu";
-"onsen.isawa.desc" = "Enjoy grape picking and hot springs";
-"onsen.nozawa.desc" = "Famous for skiing and outdoor bath hopping";
-"onsen.kamisuwa.desc" = "Hot spring area by Lake Suwa";
-"onsen.gero.desc" = "Known as one of Japan's three famous hot springs for beautiful skin";
-"onsen.yamanaka.desc" = "One of Kaga hot spring resorts, hot spring area loved by Matsuo Basho";
-"onsen.wakura.desc" = "Seaside hot spring on Noto Peninsula";
-"onsen.yamashiro.desc" = "Central presence of Kaga hot spring resorts";
-"onsen.katayamazu.desc" = "Lakeside hot spring overlooking Shibayamagata";
-"onsen.unazuki.desc" = "Gateway to Kurobe Gorge";
-"onsen.arima.desc" = "One of Japan's oldest hot springs, famous for golden and silver springs";
-"onsen.kinosaki.desc" = "Famous for hopping between seven outdoor baths";
-"onsen.yumura.desc" = "Called the little Kyoto of San'in";
-"onsen.shirahama.desc" = "Seaside hot spring area, close to Adventure World famous for pandas";
-"onsen.katsuura.desc" = "Seaside hot spring known for cave baths";
-"onsen.misasa.desc" = "Famous for radon hot springs";
-"onsen.tamatsukuri.desc" = "Popular with women as beautiful skin hot springs";
-"onsen.dogo.desc" = "One of Japan's oldest hot springs, setting of Natsume Soseki's 'Botchan'";
-"onsen.beppu.desc" = "Hot spring kingdom boasting the most sources in Japan";
-"onsen.yufuin.desc" = "Highland resort with a calm atmosphere overlooking Mt. Yufu";
-"onsen.ibusuki.desc" = "Southern hot spring area famous for sand baths";
-"onsen.kurokawa.desc" = "Popular for outdoor baths that blend into nature";
-"onsen.unzen.desc" = "Highland hot spring on the hillside of Mt. Unzen";
-"onsen.ureshino.desc" = "Slippery hot springs with high skin beautifying effects";
-"onsen.takeo.desc" = "Famous for its gate reminiscent of the Dragon Palace";
+"onsen.noboribetsu.desc" = "Suối lưu huỳnh nổi tiếng với thung lũng địa ngục Jigokudani";
+"onsen.toyako.desc" = "Khu nghỉ suối nước nóng bên hồ tuyệt đẹp";
+"onsen.jozankei.desc" = "Được yêu mến như phòng khách hậu viện của Sapporo";
+"onsen.yunokawa.desc" = "Suối nước nóng làm điểm dừng chân du lịch Hakodate";
+"onsen.nyuto.desc" = "Vùng suối nước nóng miền núi đậm chất ôn tuyền bí ẩn";
+"onsen.ginzan.desc" = "Phố suối nước nóng hoài cổ đậm chất lãng mạn Taisho";
+"onsen.zao.desc" = "Suối nước nóng cao nguyên cũng nổi tiếng trượt tuyết";
+"onsen.hanamaki.desc" = "Nơi gắn với Miyazawa Kenji";
+"onsen.naruko.desc" = "Cũng được biết đến là danh thắng lá thu đỏ";
+"onsen.iizaka.desc" = "Suối nước nóng lâu đời mà Matsuo Basho từng ghé";
+"onsen.hakone.desc" = "Đi lại thuận tiện từ trung tâm, ngắm được hồ Ashi và núi Phú Sĩ";
+"onsen.kusatsu.desc" = "Nổi tiếng với suối axit mạnh được nói là chữa được mọi thứ trừ bệnh tương tư";
+"onsen.ikaho.desc" = "Phố suối nước nóng đầy chất thơ nổi tiếng với phố bậc đá";
+"onsen.atami.desc" = "Onsen resort ven biển gần khu vực thủ đô";
+"onsen.shuzenji.desc" = "Làng văn chương giữa núi bán đảo Izu";
+"onsen.atagawa.desc" = "Suối nước nóng nhìn ra biển ở bờ đông Izu";
+"onsen.isawa.desc" = "Tận hưởng hái nho và suối nước nóng";
+"onsen.nozawa.desc" = "Nổi tiếng với trượt tuyết và dạo các nhà tắm công cộng";
+"onsen.kamisuwa.desc" = "Suối nước nóng bên hồ Suwa";
+"onsen.gero.desc" = "Nổi tiếng là một trong ba suối làm đẹp da của Nhật Bản";
+"onsen.yamanaka.desc" = "Một trong vùng suối Kaga, nơi Matsuo Basho yêu thích";
+"onsen.wakura.desc" = "Suối nước nóng ven biển bán đảo Noto";
+"onsen.yamashiro.desc" = "Trung tâm của vùng suối Kaga";
+"onsen.katayamazu.desc" = "Suối nước nóng bên hồ nhìn ra đầm Shibayama";
+"onsen.unazuki.desc" = "Cửa ngõ vào hẻm núi Kurobe";
+"onsen.arima.desc" = "Một trong những suối cổ nhất Nhật Bản, nổi tiếng suối vàng và suối bạc";
+"onsen.kinosaki.desc" = "Nổi tiếng với dạo bảy nhà tắm công cộng";
+"onsen.yumura.desc" = "Được gọi là Tiểu Kyoto của San'in";
+"onsen.shirahama.desc" = "Onsen ven biển, gần Adventure World nổi tiếng gấu trúc";
+"onsen.katsuura.desc" = "Onsen ven biển nổi tiếng với bồn tắm trong hang";
+"onsen.misasa.desc" = "Nổi tiếng với suối radon";
+"onsen.tamatsukuri.desc" = "Được phụ nữ ưa chuộng vì làm đẹp da";
+"onsen.dogo.desc" = "Suối nước nóng cổ bậc nhất Nhật Bản, bối cảnh tiểu thuyết Botchan của Natsume Soseki";
+"onsen.beppu.desc" = "Vương quốc suối nước nóng có số nguồn suối nhiều nhất Nhật Bản";
+"onsen.yufuin.desc" = "Khu nghỉ cao nguyên yên bình nhìn ra núi Yufu";
+"onsen.ibusuki.desc" = "Onsen miền nhiệt đới nổi tiếng với tắm cát nóng";
+"onsen.kurokawa.desc" = "Được ưa chuộng với bồn tắm ngoài trời hòa vào thiên nhiên";
+"onsen.unzen.desc" = "Suối nước nóng cao nguyên lưng chừng núi Unzen";
+"onsen.ureshino.desc" = "Suối trơn mượt có công dụng làm đẹp da cao";
+"onsen.takeo.desc" = "Nổi tiếng với cổng lầu gợi nhớ Long Cung";
 
 
 /* Main Settings */
-"onsen_settings_title" = "";
+"onsen_settings_title" = "Cài đặt suối nước nóng";
 "display_settings" = "Cài đặt hiển thị";
-"onsen_selection" = "Hot Spring Selection";
+"onsen_selection" = "Chọn khu suối nước nóng";
 "select_all" = "Chọn tất cả";
 "deselect_all" = "Bỏ chọn tất cả";
 "done" = "Xong";
@@ -223,8 +223,8 @@
 
 
 /* OnsenDetailView */
-"onsen_features" = "Hot Spring Features"; // 英語版
-"onsen_map" = "Hot Spring Map"; // 英語版
+"onsen_features" = "Đặc điểm suối nước nóng"; // 英語版
+"onsen_map" = "Bản đồ khu suối nước nóng"; // 英語版
 "open_external_map" = "Mở trong ứng dụng bản đồ khác"; // 英語版
 "start" = "Bắt đầu"; // 英語版
 "stop" = "Dừng"; // 英語版
@@ -4760,215 +4760,215 @@
 "nightview_moiwa_description" = "Hokkaido's night view spot overlooking Sapporo cityscape";
 
 // MARK: - Starry Sky Spots
-"starry_achi_name" = "Achi Village";
-"starry_achi_description" = "Nagano's stargazing location certified as Japan's number one starry sky village";
+"starry_achi_name" = "Làng Achi";
+"starry_achi_description" = "Điểm ngắm sao ở Nagano được công nhận là làng bầu trời sao đẹp nhất Nhật Bản";
 
-"starry_ishigaki_name" = "Ishigaki Island";
-"starry_ishigaki_description" = "Okinawa's stargazing spot where you can see the Southern Cross";
+"starry_ishigaki_name" = "Đảo Ishigaki";
+"starry_ishigaki_description" = "Điểm ngắm sao ở Okinawa nơi thấy được chòm Nam Thập Tự";
 
-"starry_nobeyama_name" = "Nobeyama Plateau";
-"starry_nobeyama_description" = "Beautiful stargazing location on a 1,300m high plateau";
+"starry_nobeyama_name" = "Cao nguyên Nobeyama";
+"starry_nobeyama_description" = "Điểm ngắm sao đẹp trên cao nguyên cao 1.300 m";
 
-"starry_utsukushigahara_name" = "Utsukushigahara Plateau";
-"starry_utsukushigahara_description" = "Excellent stargazing location overlooking the Yatsugatake mountain range";
+"starry_utsukushigahara_name" = "Cao nguyên Utsukushigahara";
+"starry_utsukushigahara_description" = "Điểm ngắm sao tuyệt hảo nhìn ra dãy Yatsugatake";
 
 "starry_odaigahara_name" = "Odaigahara";
-"starry_odaigahara_description" = "Nara's highland known as the Kinki region's best stargazing location";
+"starry_odaigahara_description" = "Cao nguyên Nara nổi tiếng là điểm ngắm sao đẹp nhất vùng Kinki";
 
 "starry_yatsugatake_name" = "Yatsugatake";
-"starry_yatsugatake_description" = "Famous stargazing location spanning Nagano and Yamanashi prefectures";
+"starry_yatsugatake_description" = "Danh thắng ngắm sao trải dài giữa Nagano và Yamanashi";
 
-"starry_iriomote_name" = "Iriomote Island";
-"starry_iriomote_description" = "Okinawa's stargazing spot surrounded by pristine nature";
+"starry_iriomote_name" = "Đảo Iriomote";
+"starry_iriomote_description" = "Điểm ngắm sao ở Okinawa được bao quanh bởi thiên nhiên nguyên sơ";
 
-"starry_kuju_name" = "Kuju Plateau";
-"starry_kuju_description" = "Highland stargazing location in Oita Prefecture, Kyushu";
+"starry_kuju_name" = "Cao nguyên Kuju";
+"starry_kuju_description" = "Điểm ngắm sao trên cao nguyên tỉnh Oita, Kyushu";
 
-"starry_kirigamine_name" = "Kirigamine Plateau";
-"starry_kirigamine_description" = "Beautiful stargazing spot in Nagano's highland region";
+"starry_kirigamine_name" = "Cao nguyên Kirigamine";
+"starry_kirigamine_description" = "Điểm ngắm sao đẹp ở vùng cao nguyên Nagano";
 
-"starry_akagi_name" = "Mount Akagi";
-"starry_akagi_description" = "Mountaintop stargazing location in Gunma Prefecture";
+"starry_akagi_name" = "Núi Akagi";
+"starry_akagi_description" = "Điểm ngắm sao trên đỉnh núi tỉnh Gunma";
 
-"starry_zao_name" = "Mount Zao";
-"starry_zao_description" = "Stargazing spot on the border between Yamagata and Miyagi prefectures";
+"starry_zao_name" = "Núi Zao";
+"starry_zao_description" = "Điểm ngắm sao ở ranh giới Yamagata và Miyagi";
 
 "starry_daisetsu_name" = "Daisetsuzan";
-"starry_daisetsu_description" = "Magnificent stargazing experience at Hokkaido's highest peak";
+"starry_daisetsu_description" = "Trải nghiệm ngắm sao hùng vĩ tại đỉnh cao nhất Hokkaido";
 
-"starry_tsubetsu_name" = "Tsubetsu Pass";
-"starry_tsubetsu_description" = "One of Hokkaido's premier stargazing locations";
+"starry_tsubetsu_name" = "Đèo Tsubetsu";
+"starry_tsubetsu_description" = "Một trong những điểm ngắm sao hàng đầu Hokkaido";
 
-"starry_erimo_name" = "Cape Erimo";
-"starry_erimo_description" = "Beautiful stargazing spot at Hokkaido's southernmost point";
+"starry_erimo_name" = "Mũi Erimo";
+"starry_erimo_description" = "Điểm ngắm sao đẹp ở cực nam Hokkaido";
 
 // MARK: - Camping Spots
 // Hokkaido
-"camping_toya_name" = "Lake Toya Campground";
-"camping_toya_description" = "Camping by a hot spring lake in Hokkaido";
-"camping_shikotsu_name" = "Lake Shikotsu Campground";
-"camping_shikotsu_description" = "Camping by a highly transparent lake in Hokkaido";
-"camping_mashu_name" = "Lake Mashu Campground";
-"camping_mashu_description" = "Camping by a beautiful lake in Hokkaido";
-"camping_furano_biei_name" = "Furano-Biei Area Campground";
-"camping_furano_biei_description" = "Camping in flower fields and rolling hills of Hokkaido";
-"camping_niseko_name" = "Niseko Area Campground";
-"camping_niseko_description" = "Camping in a resort area of Hokkaido";
+"camping_toya_name" = "Khu cắm trại bên hồ Toya";
+"camping_toya_description" = "Cắm trại bên hồ suối nước nóng ở Hokkaido";
+"camping_shikotsu_name" = "Khu cắm trại bên hồ Shikotsu";
+"camping_shikotsu_description" = "Cắm trại bên hồ trong vắt ở Hokkaido";
+"camping_mashu_name" = "Khu cắm trại bên hồ Mashu";
+"camping_mashu_description" = "Cắm trại bên hồ đẹp ở Hokkaido";
+"camping_furano_biei_name" = "Khu cắm trại vùng Furano-Biei";
+"camping_furano_biei_description" = "Cắm trại giữa cánh đồng hoa và đồi thoải của Hokkaido";
+"camping_niseko_name" = "Khu cắm trại quanh Niseko";
+"camping_niseko_description" = "Cắm trại tại khu nghỉ dưỡng Hokkaido";
 // Tohoku
-"camping_towada_name" = "Lake Towada Campground";
-"camping_towada_description" = "Camping by a beautiful lakeside in Aomori and Akita prefectures";
-"camping_bandai_name" = "Bandai Plateau Campground";
-"camping_bandai_description" = "Camping on the plateau in Fukushima Prefecture";
-"camping_goshikinuma_name" = "Urabandai Goshikinuma Campground";
-"camping_goshikinuma_description" = "Camping among mystical ponds in Fukushima Prefecture";
-"camping_zao_name" = "Zao Boping Campground";
-"camping_zao_description" = "Camping in the mountainous region of Yamagata and Miyagi prefectures";
+"camping_towada_name" = "Khu cắm trại bên hồ Towada";
+"camping_towada_description" = "Cắm trại bên hồ đẹp ở Aomori và Akita";
+"camping_bandai_name" = "Khu cắm trại cao nguyên Bandai";
+"camping_bandai_description" = "Cắm trại trên cao nguyên tỉnh Fukushima";
+"camping_goshikinuma_name" = "Khu cắm trại Urabandai Goshikinuma";
+"camping_goshikinuma_description" = "Cắm trại giữa cụm đầm huyền bí ở Fukushima";
+"camping_zao_name" = "Khu cắm trại Zao Bodaira";
+"camping_zao_description" = "Cắm trại ở vùng núi Yamagata và Miyagi";
 // Kanto
-"camping_okutama_name" = "Okutama Campground Complex";
-"camping_okutama_description" = "Nature-rich camping grounds in Tokyo";
-"camping_tanzawa_name" = "Lake Tanzawa Campground";
-"camping_tanzawa_description" = "Camping in the mountainous lake area of Kanagawa Prefecture";
-"camping_nasu_name" = "Nasu Plateau Campground";
-"camping_nasu_description" = "Camping in the highland resort of Tochigi Prefecture";
-"camping_okunikko_name" = "Oku-Nikko Campground";
-"camping_okunikko_description" = "Camping around Lake Chuzenji in Tochigi Prefecture";
-"camping_hakone_name" = "Hakone Campground";
-"camping_hakone_description" = "Camping in the hot spring resort of Kanagawa Prefecture";
+"camping_okutama_name" = "Cụm khu cắm trại Okutama";
+"camping_okutama_description" = "Khu cắm trại giàu thiên nhiên ở Tokyo";
+"camping_tanzawa_name" = "Khu cắm trại hồ Tanzawa";
+"camping_tanzawa_description" = "Cắm trại ở vùng núi và hồ tỉnh Kanagawa";
+"camping_nasu_name" = "Khu cắm trại cao nguyên Nasu";
+"camping_nasu_description" = "Cắm trại tại khu nghỉ cao nguyên tỉnh Tochigi";
+"camping_okunikko_name" = "Khu cắm trại Oku-Nikko";
+"camping_okunikko_description" = "Cắm trại quanh hồ Chuzenji tỉnh Tochigi";
+"camping_hakone_name" = "Khu cắm trại Hakone";
+"camping_hakone_description" = "Cắm trại tại khu nghỉ suối nước nóng tỉnh Kanagawa";
 // Chubu
-"camping_fujigoko_name" = "Fuji Five Lakes Campground Complex";
-"camping_fujigoko_description" = "Excellent camping area with views of Mount Fuji";
-"camping_kamikochi_name" = "Kamikochi Campground";
-"camping_kamikochi_description" = "Camping at the gateway to the Northern Alps";
-"camping_hakuba_name" = "Hakuba Iwatake Campground";
-"camping_hakuba_description" = "Camping in the Northern Alps of Nagano Prefecture";
-"camping_karuizawa_name" = "Karuizawa Campground";
-"camping_karuizawa_description" = "Camping in the summer resort of Nagano Prefecture";
-"camping_kiyosato_name" = "Kiyosato Plateau Campground";
-"camping_kiyosato_description" = "Camping at the southern foot of Yatsugatake in Yamanashi Prefecture";
-"camping_shiga_name" = "Shiga Kogen Campground";
-"camping_shiga_description" = "Camping in the highland resort of Nagano Prefecture";
+"camping_fujigoko_name" = "Cụm khu cắm trại Ngũ Hồ Phú Sĩ";
+"camping_fujigoko_description" = "Khu cắm trại tuyệt hảo nhìn ra núi Phú Sĩ";
+"camping_kamikochi_name" = "Khu cắm trại Kamikochi";
+"camping_kamikochi_description" = "Cắm trại tại cửa ngõ dãy Alps Bắc";
+"camping_hakuba_name" = "Khu cắm trại Hakuba Iwatake";
+"camping_hakuba_description" = "Cắm trại ở dãy Alps Bắc tỉnh Nagano";
+"camping_karuizawa_name" = "Khu cắm trại Karuizawa";
+"camping_karuizawa_description" = "Cắm trại tại nơi tránh nóng tỉnh Nagano";
+"camping_kiyosato_name" = "Khu cắm trại cao nguyên Kiyosato";
+"camping_kiyosato_description" = "Cắm trại dưới chân nam Yatsugatake tỉnh Yamanashi";
+"camping_shiga_name" = "Khu cắm trại cao nguyên Shiga";
+"camping_shiga_description" = "Cắm trại tại khu nghỉ cao nguyên tỉnh Nagano";
 // Kansai, Chugoku, Shikoku
-"camping_biwa_name" = "Lake Biwa Campground";
-"camping_biwa_description" = "Camping by Japan's largest lake in Shiga Prefecture";
-"camping_hiruzen_name" = "Hiruzen Plateau Campground";
-"camping_hiruzen_description" = "Highland camping experience in Okayama Prefecture";
-"camping_odaigahara_name" = "Odaigahara Campground";
-"camping_odaigahara_description" = "Camping in the mountainous region of Nara and Mie prefectures";
-"camping_tsurugi_name" = "Mount Tsurugi Campground";
-"camping_tsurugi_description" = "Camping at Shikoku's second highest peak in Tokushima Prefecture";
-"camping_shimanto_name" = "Shimanto River Campground";
-"camping_shimanto_description" = "Camping by the clear Shimanto River in Kochi Prefecture";
+"camping_biwa_name" = "Khu cắm trại bên hồ Biwa";
+"camping_biwa_description" = "Cắm trại bên hồ lớn nhất Nhật Bản ở tỉnh Shiga";
+"camping_hiruzen_name" = "Khu cắm trại cao nguyên Hiruzen";
+"camping_hiruzen_description" = "Trải nghiệm cắm trại trên cao nguyên tỉnh Okayama";
+"camping_odaigahara_name" = "Khu cắm trại Odaigahara";
+"camping_odaigahara_description" = "Cắm trại ở vùng núi Nara và Mie";
+"camping_tsurugi_name" = "Khu cắm trại núi Tsurugi";
+"camping_tsurugi_description" = "Cắm trại tại đỉnh cao thứ hai Shikoku ở tỉnh Tokushima";
+"camping_shimanto_name" = "Khu cắm trại sông Shimanto";
+"camping_shimanto_description" = "Cắm trại bên dòng Shimanto trong vắt ở tỉnh Kochi";
 // Kyushu, Okinawa
-"camping_aso_name" = "Aso Kusasenri Campground";
-"camping_aso_description" = "Camping in the magnificent caldera of Kumamoto Prefecture";
-"camping_kuju_name" = "Kuju Plateau Campground";
-"camping_kuju_description" = "Camping in the Kuju Mountains of Oita Prefecture";
-"camping_kirishima_name" = "Kirishima Plateau Campground";
-"camping_kirishima_description" = "Camping among volcanic peaks in Kagoshima and Miyazaki prefectures";
-"camping_yakushima_name" = "Yakushima Campground";
-"camping_yakushima_description" = "Camping on the World Heritage island in Kagoshima Prefecture";
-"camping_yanbaru_name" = "Yanbaru Campground";
-"camping_yanbaru_description" = "Camping in the subtropical forest of northern Okinawa Prefecture";
+"camping_aso_name" = "Khu cắm trại Aso Kusasenri";
+"camping_aso_description" = "Cắm trại trong miệng núi lửa hùng vĩ tỉnh Kumamoto";
+"camping_kuju_name" = "Khu cắm trại cao nguyên Kuju";
+"camping_kuju_description" = "Cắm trại ở dãy Kuju tỉnh Oita";
+"camping_kirishima_name" = "Khu cắm trại cao nguyên Kirishima";
+"camping_kirishima_description" = "Cắm trại giữa cụm núi lửa ở Kagoshima và Miyazaki";
+"camping_yakushima_name" = "Khu cắm trại Yakushima";
+"camping_yakushima_description" = "Cắm trại trên đảo Di sản Thế giới tỉnh Kagoshima";
+"camping_yanbaru_name" = "Khu cắm trại Yanbaru (Okinawa)";
+"camping_yanbaru_description" = "Cắm trại trong rừng cận nhiệt đới bắc Okinawa";
 
 // MARK: - Sea Spots
-"sea_miyako_irabu_name" = "Miyako Island & Irabu Bridge";
-"sea_miyako_irabu_description" = "Crystal-clear blue sea and spectacular bridge";
+"sea_miyako_irabu_name" = "Đảo Miyako - Cầu Irabu";
+"sea_miyako_irabu_description" = "Biển xanh trong vắt và cây cầu tuyệt cảnh";
 
-"sea_ishigaki_kabira_name" = "Ishigaki Island & Kabira Bay";
-"sea_ishigaki_kabira_description" = "Beautiful emerald green bay";
+"sea_ishigaki_kabira_name" = "Đảo Ishigaki - Vịnh Kabira";
+"sea_ishigaki_kabira_description" = "Vịnh xanh ngọc lục bảo tuyệt đẹp";
 
-"sea_shirahama_name" = "Shirahama Beach";
-"sea_shirahama_description" = "Beautiful white sand beach in Wakayama Prefecture";
+"sea_shirahama_name" = "Bãi biển Shirarahama";
+"sea_shirahama_description" = "Bãi cát trắng đẹp ở tỉnh Wakayama";
 
-"sea_tsunoshima_name" = "Tsunoshima Bridge";
-"sea_tsunoshima_description" = "Spectacular bridge over emerald green sea";
+"sea_tsunoshima_name" = "Cầu Tsunoshima";
+"sea_tsunoshima_description" = "Cây cầu tuyệt cảnh bắc qua biển xanh ngọc lục bảo";
 
-"sea_takeno_name" = "Takeno Coast";
-"sea_takeno_description" = "Beautiful coastline in Hyogo Prefecture";
+"sea_takeno_name" = "Bờ biển Takeno";
+"sea_takeno_description" = "Đường bờ biển đẹp ở tỉnh Hyogo";
 
-"sea_kujukurihama_name" = "Kujukuri Beach";
-"sea_kujukurihama_description" = "Long sandy beach coast in Chiba Prefecture";
+"sea_kujukurihama_name" = "Bãi biển Kujukuri";
+"sea_kujukurihama_description" = "Bờ cát dài mênh mông ở tỉnh Chiba";
 
-"sea_shonan_name" = "Shonan Coast";
-"sea_shonan_description" = "Kanagawa's representative coastal resort";
+"sea_shonan_name" = "Bờ biển Shonan";
+"sea_shonan_description" = "Khu nghỉ ven biển tiêu biểu của Kanagawa";
 
-"sea_izu_shirahama_name" = "Izu Shirahama Coast";
-"sea_izu_shirahama_description" = "Beautiful white sand beach in Shizuoka Prefecture";
+"sea_izu_shirahama_name" = "Bờ biển Izu Shirahama";
+"sea_izu_shirahama_description" = "Bãi cát trắng đẹp ở tỉnh Shizuoka";
 
-"sea_chirihama_name" = "Noto Peninsula & Chirihama Nagisa Driveway";
-"sea_chirihama_description" = "Japan's only beach you can drive on";
+"sea_chirihama_name" = "Bán đảo Noto - Đường ven biển Chirihama";
+"sea_chirihama_description" = "Bãi cát duy nhất Nhật Bản có thể lái xe";
 
-"sea_tottori_name" = "Tottori Sand Dunes";
-"sea_tottori_description" = "Japan's largest sand dunes with spectacular Sea of Japan views";
+"sea_tottori_name" = "Đồi cát Tottori";
+"sea_tottori_description" = "Đồi cát lớn nhất Nhật Bản và cảnh biển Nhật Bản tuyệt đẹp";
 
-"sea_katsurahama_name" = "Katsurahama Beach";
-"sea_katsurahama_description" = "Beautiful coast in Kochi Prefecture, famous as a moon viewing spot";
+"sea_katsurahama_name" = "Bãi biển Katsurahama";
+"sea_katsurahama_description" = "Bờ biển đẹp ở Kochi nổi tiếng là điểm ngắm trăng";
 
-"sea_blue_cave_name" = "Blue Cave & Cape Maeda";
-"sea_blue_cave_description" = "Mystical cave wrapped in blue light";
+"sea_blue_cave_name" = "Hang Xanh - Mũi Maeda";
+"sea_blue_cave_description" = "Hang động chìm trong ánh sáng xanh huyền ảo";
 
-"sea_zanpa_name" = "Cape Zanpa";
-"sea_zanpa_description" = "Spectacular cape on Okinawa's main island";
+"sea_zanpa_name" = "Mũi Zanpa";
+"sea_zanpa_description" = "Mũi cảnh đẹp trên đảo chính Okinawa";
 
 "sea_manzamo_name" = "Manzamo";
-"sea_manzamo_description" = "Spectacular cape on Okinawa's main island shaped like an elephant's trunk";
+"sea_manzamo_description" = "Mũi cảnh đẹp hình vòi voi trên đảo chính Okinawa";
 
-"sea_hedo_name" = "Cape Hedo";
-"sea_hedo_description" = "Northernmost cape of Okinawa's main island";
+"sea_hedo_name" = "Mũi Hedo";
+"sea_hedo_description" = "Mũi cực bắc đảo chính Okinawa";
 
-"sea_erimo_cape_name" = "Cape Erimo";
-"sea_erimo_cape_description" = "Magnificent seascape at Hokkaido's southernmost point";
+"sea_erimo_cape_name" = "Mũi Erimo";
+"sea_erimo_cape_description" = "Cảnh biển hùng vĩ ở cực nam Hokkaido";
 
-"sea_shakotan_name" = "Shakotan Peninsula & Cape Kamui";
-"sea_shakotan_description" = "Hokkaido's beautiful coastline and spectacular cape";
+"sea_shakotan_name" = "Bán đảo Shakotan - Mũi Kamui";
+"sea_shakotan_description" = "Đường bờ biển đẹp và mũi cảnh đẹp của Hokkaido";
 
-"sea_shiretoko_name" = "Shiretoko Peninsula";
-"sea_shiretoko_description" = "Magnificent coastline of this World Natural Heritage site";
+"sea_shiretoko_name" = "Bán đảo Shiretoko";
+"sea_shiretoko_description" = "Đường bờ biển hùng vĩ của Di sản Thiên nhiên Thế giới";
 
-"sea_sanriku_name" = "Sanriku Coast";
-"sea_sanriku_description" = "Beautiful ria coast in Iwate and Miyagi prefectures";
+"sea_sanriku_name" = "Bờ biển Sanriku";
+"sea_sanriku_description" = "Bờ biển ria đẹp ở Iwate và Miyagi";
 
 "sea_matsushima_name" = "Matsushima";
-"sea_matsushima_description" = "One of Japan's three most scenic views in Miyagi Prefecture";
+"sea_matsushima_description" = "Một trong ba thắng cảnh Nhật Bản ở tỉnh Miyagi";
 
-"sea_tanesashi_name" = "Tanesashi Coast";
-"sea_tanesashi_description" = "Beautiful coastline in Aomori Prefecture";
+"sea_tanesashi_name" = "Bờ biển Tanesashi";
+"sea_tanesashi_description" = "Đường bờ biển đẹp ở tỉnh Aomori";
 
-"sea_jogashima_name" = "Jogashima Island";
-"sea_jogashima_description" = "Scenic spot on Kanagawa's Miura Peninsula";
+"sea_jogashima_name" = "Đảo Jogashima";
+"sea_jogashima_description" = "Danh thắng trên bán đảo Miura tỉnh Kanagawa";
 
 "sea_enoshima_name" = "Enoshima";
-"sea_enoshima_description" = "Representative marine resort of Shonan";
+"sea_enoshima_description" = "Khu nghỉ biển tiêu biểu của Shonan";
 
-"sea_atami_name" = "Atami Coast";
-"sea_atami_description" = "Hot spring resort coast in Shizuoka Prefecture";
+"sea_atami_name" = "Bờ biển Atami";
+"sea_atami_description" = "Bờ biển khu nghỉ suối nước nóng ở tỉnh Shizuoka";
 
 "sea_iseshima_name" = "Ise-Shima";
-"sea_iseshima_description" = "Beautiful coast and ria topography in Mie Prefecture";
+"sea_iseshima_description" = "Bờ biển đẹp và địa hình ria ở tỉnh Mie";
 
 "sea_amanohashidate_name" = "Amanohashidate";
-"sea_amanohashidate_description" = "One of Japan's three most scenic views in Kyoto Prefecture";
+"sea_amanohashidate_description" = "Một trong ba thắng cảnh Nhật Bản ở tỉnh Kyoto";
 
-"sea_naruto_name" = "Naruto Strait";
-"sea_naruto_description" = "Strait in Tokushima Prefecture famous for whirlpools";
+"sea_naruto_name" = "Eo biển Naruto";
+"sea_naruto_description" = "Eo biển ở Tokushima nổi tiếng với xoáy nước";
 
-"sea_muroto_name" = "Cape Muroto";
-"sea_muroto_description" = "Cape jutting into the Pacific Ocean in Kochi Prefecture";
+"sea_muroto_name" = "Mũi Muroto";
+"sea_muroto_description" = "Mũi nhô ra Thái Bình Dương ở tỉnh Kochi";
 
-"sea_ashizuri_name" = "Cape Ashizuri";
-"sea_ashizuri_description" = "Spectacular cape at Kochi Prefecture's southernmost point";
+"sea_ashizuri_name" = "Mũi Ashizuri";
+"sea_ashizuri_description" = "Mũi cảnh đẹp ở cực nam tỉnh Kochi";
 
-"sea_munakata_name" = "Munakata & Okinoshima";
-"sea_munakata_description" = "World Heritage island in Fukuoka Prefecture";
+"sea_munakata_name" = "Munakata - Okinoshima";
+"sea_munakata_description" = "Đảo Di sản Thế giới ở tỉnh Fukuoka";
 
-"sea_iki_tsushima_name" = "Iki & Tsushima";
-"sea_iki_tsushima_description" = "Historic remote islands in Nagasaki Prefecture";
+"sea_iki_tsushima_name" = "Iki - Tsushima";
+"sea_iki_tsushima_description" = "Đảo xa bờ giàu lịch sử ở tỉnh Nagasaki";
 
 "sea_amakusa_name" = "Amakusa";
-"sea_amakusa_description" = "Beautiful islands in Kumamoto Prefecture";
+"sea_amakusa_description" = "Những hòn đảo đẹp ở tỉnh Kumamoto";
 
-"sea_nichinan_name" = "Nichinan Coast";
-"sea_nichinan_description" = "Beautiful coastline in Miyazaki Prefecture";
+"sea_nichinan_name" = "Bờ biển Nichinan";
+"sea_nichinan_description" = "Đường bờ biển đẹp ở tỉnh Miyazaki";
 
 
 // Night View Spots
@@ -5165,13 +5165,13 @@
 "gourmet.explore_more" = "Explore more";
 
 /* --- カード上のタグ表示用の短縮名（英語は長いため短縮） --- */
-"onsen_type_tag.scenic" = "Scenic";
-"onsen_type_tag.historical" = "Historic";
-"onsen_type_tag.therapeutic" = "Therapeutic";
-"onsen_type_tag.resort" = "Resort";
-"onsen_type_tag.mountain" = "Mountain";
-"onsen_type_tag.seaside" = "Seaside";
-"onsen_type_tag.ski" = "Ski";
+"onsen_type_tag.scenic" = "Cảnh đẹp";
+"onsen_type_tag.historical" = "Lịch sử";
+"onsen_type_tag.therapeutic" = "Trị liệu";
+"onsen_type_tag.resort" = "Nghỉ dưỡng";
+"onsen_type_tag.mountain" = "Miền núi";
+"onsen_type_tag.seaside" = "Ven biển";
+"onsen_type_tag.ski" = "Trượt tuyết";
 "food_category_ramen_tag" = "Ramen";
 "food_category_seafood_tag" = "Hải sản";
 "food_category_meat_tag" = "Thịt";
