@@ -1033,7 +1033,7 @@
 "food_jakoten" = "竹叶鱼糕";
 "food_tai_meshi" = "鲷鱼饭";
 "food_iyokan" = "伊予柑";
-"attraction_botchan_dango" = "少爷团子";
+"food_botchan_dango" = "少爺團子";
 
 // 福冈县 (Fukuoka)
 "attraction_dazaifu_tenmangu" = "太宰府天满宫";
@@ -3596,216 +3596,64 @@
 /* **名物美食部分完整中文翻译** */
 
 // 价格区间相关
-"price_range_under_500" = "500日元以下";
-"price_range_500_1000" = "500-1,000日元";
-"price_range_1000_2000" = "1,000-2,000日元";
-"price_range_2000_3000" = "2,000-3,000日元";
-"price_range_3000_5000" = "3,000-5,000日元";
-"price_range_over_5000" = "5,000日元以上";
 
 // 人气排名相关
-"popularity_rank_1" = "第1位";
-"popularity_rank_2" = "第2位";
-"popularity_rank_3" = "第3位";
-"popularity_rank_top5" = "前5位";
-"popularity_rank_top10" = "前10位";
 
 // 详细美食信息翻译
-"gourmet_detail_history" = "历史由来";
-"gourmet_detail_ingredients" = "主要食材";
-"gourmet_detail_cooking_method" = "烹饪方法";
-"gourmet_detail_nutrition" = "营养信息";
-"gourmet_detail_where_to_eat" = "推荐品尝地点";
-"gourmet_detail_similar_foods" = "相似料理";
-"gourmet_detail_pairing" = "推荐搭配";
 
 // 特定地区美食组合翻译
-"hokkaido_gourmet_combo" = "北海道三大美食";
-"hokkaido_gourmet_combo_desc" = "海鲜、成吉思汗烤肉、汤咖喱的豪华组合";
 
-"tohoku_gourmet_combo" = "东北三大拉面";
-"tohoku_gourmet_combo_desc" = "喜多方拉面、札幌拉面、盛冈冷面";
 
-"kanto_gourmet_combo" = "关东B级美食";
-"kanto_gourmet_combo_desc" = "宇都宫饺子、草加煎饼、川越芋";
 
-"chubu_gourmet_combo" = "中部山岳美食";
-"chubu_gourmet_combo_desc" = "信州荞麦面、飞騨牛、越前蟹";
 
-"kansai_gourmet_combo" = "关西粉物三兄弟";
-"kansai_gourmet_combo_desc" = "大阪烧、章鱼烧、明石烧";
 
-"chugoku_gourmet_combo" = "中国地方海鲜";
-"chugoku_gourmet_combo_desc" = "河豚、牡蛎、松叶蟹";
 
-"shikoku_gourmet_combo" = "四国四县名物";
-"shikoku_gourmet_combo_desc" = "赞岐乌冬面、鲣鱼半敲烧、阿波尾鸡、鲷鱼饭";
 
-"kyushu_gourmet_combo" = "九州拉面巡礼";
-"kyushu_gourmet_combo_desc" = "博多拉面、熊本拉面、鹿儿岛拉面";
 
-"okinawa_gourmet_combo" = "冲绳传统料理";
-"okinawa_gourmet_combo_desc" = "苦瓜炒菜、排骨荞麦面、萨塔安达吉";
 
 // 特殊饮食需求相关翻译
-"vegetarian_friendly" = "素食友好";
-"halal_friendly" = "清真友好";
-"gluten_free" = "无麸质";
-"allergy_info" = "过敏原信息";
-"spicy_level" = "辣度等级";
-"alcohol_content" = "酒精含量";
 
 // 辣度等级
-"spicy_level_none" = "不辣";
-"spicy_level_mild" = "微辣";
-"spicy_level_medium" = "中辣";
-"spicy_level_hot" = "辣";
-"spicy_level_very_hot" = "非常辣";
 
 // 制作方法相关
-"cooking_method_grilled" = "烧烤";
-"cooking_method_boiled" = "水煮";
-"cooking_method_fried" = "油炸";
-"cooking_method_steamed" = "蒸制";
-"cooking_method_raw" = "生食";
-"cooking_method_pickled" = "腌制";
-"cooking_method_fermented" = "发酵";
-"cooking_method_smoked" = "熏制";
 
 // 食材来源相关
-"ingredient_source_local" = "当地产";
-"ingredient_source_seasonal" = "当季";
-"ingredient_source_premium" = "高级";
-"ingredient_source_organic" = "有机";
-"ingredient_source_wild" = "野生";
-"ingredient_source_farm_fresh" = "农场直送";
 
 // 营养价值相关
-"nutrition_high_protein" = "高蛋白";
-"nutrition_low_calories" = "低卡路里";
-"nutrition_rich_vitamins" = "维生素丰富";
-"nutrition_good_for_health" = "有益健康";
-"nutrition_collagen_rich" = "胶原蛋白丰富";
-"nutrition_omega3_rich" = "富含Omega-3";
 
 // 品尝建议相关
-"tasting_suggestion_hot" = "趁热享用";
-"tasting_suggestion_cold" = "冷却后享用";
-"tasting_suggestion_with_rice" = "配米饭";
-"tasting_suggestion_with_alcohol" = "配酒类";
-"tasting_suggestion_share" = "适合分享";
-"tasting_suggestion_solo" = "个人享用";
 
 // 购买相关信息
-"where_to_buy_market" = "市场";
-"where_to_buy_department_store" = "百货店";
-"where_to_buy_specialty_store" = "专门店";
-"where_to_buy_convenience_store" = "便利店";
-"where_to_buy_online" = "网购";
-"where_to_buy_airport" = "机场";
-"where_to_buy_station" = "车站";
 
 // 保存方法相关
-"storage_refrigerate" = "冷藏保存";
-"storage_freeze" = "冷冻保存";
-"storage_room_temperature" = "常温保存";
-"storage_consume_quickly" = "尽快食用";
-"storage_long_term" = "可长期保存";
 
 // 特别注意事项
-"special_note_seasonal_only" = "季节限定";
-"special_note_limited_quantity" = "限量销售";
-"special_note_reservation_required" = "需要预约";
-"special_note_morning_only" = "仅限上午";
-"special_note_weekend_only" = "仅限周末";
-"special_note_sold_out_quickly" = "售完即止";
 
 // 文化背景相关
-"cultural_background_festival" = "祭典料理";
-"cultural_background_ceremony" = "仪式料理";
-"cultural_background_daily" = "日常料理";
-"cultural_background_celebration" = "庆祝料理";
-"cultural_background_comfort_food" = "家常料理";
-"cultural_background_street_food" = "街头小吃";
 
 // 推荐人群
-"recommended_for_families" = "适合家庭";
-"recommended_for_couples" = "适合情侣";
-"recommended_for_tourists" = "适合游客";
-"recommended_for_locals" = "当地人推荐";
-"recommended_for_kids" = "适合儿童";
-"recommended_for_elderly" = "适合老人";
 
 // 体验方式
-"experience_cooking_class" = "料理体验";
-"experience_farm_visit" = "农场参观";
-"experience_factory_tour" = "工厂见学";
-"experience_tasting_tour" = "美食巡礼";
-"experience_market_tour" = "市场巡游";
-"experience_restaurant_hopping" = "餐厅巡礼";
 
 // 搭配建议
-"pairing_sake" = "配日本酒";
-"pairing_beer" = "配啤酒";
-"pairing_wine" = "配葡萄酒";
-"pairing_tea" = "配茶";
-"pairing_coffee" = "配咖啡";
-"pairing_soft_drink" = "配软饮料";
 
 // 制作难度
-"difficulty_easy" = "简单";
-"difficulty_medium" = "中等";
-"difficulty_hard" = "困难";
-"difficulty_professional" = "专业级";
 
 // 特色标签
-"feature_instagram_worthy" = "适合拍照";
-"feature_unique_flavor" = "独特风味";
-"feature_healthy" = "健康";
-"feature_comfort" = "暖心";
-"feature_refreshing" = "清爽";
-"feature_rich" = "浓郁";
-"feature_light" = "清淡";
-"feature_filling" = "饱腹";
 
 // 年龄相关推荐
-"age_recommendation_all_ages" = "全年龄";
-"age_recommendation_adult" = "成人向";
-"age_recommendation_senior" = "老年人向";
-"age_recommendation_young" = "年轻人向";
 
 // 时间相关
-"best_time_morning" = "早晨";
-"best_time_lunch" = "午餐";
-"best_time_dinner" = "晚餐";
-"best_time_snack" = "点心时间";
-"best_time_late_night" = "深夜";
-"best_time_anytime" = "任何时候";
 
 // 量的表示
-"serving_size_individual" = "一人份";
-"serving_size_sharing" = "分享装";
-"serving_size_family" = "家庭装";
-"serving_size_party" = "聚会装";
 
 // 特产认证相关
-"certification_local_specialty" = "地方特产认证";
-"certification_traditional" = "传统工艺认证";
-"certification_organic" = "有机认证";
-"certification_jas" = "JAS认证";
-"certification_geographical" = "地理标志认证";
 
 // MARK: - 结束标记 - 京都府美食 (Kyoto Gourmet)
 "gourmet_kyoto_kaiseki" = "京怀石";
 "gourmet_kyoto_kaiseki_desc" = "京都的高级料理。美丽摆盘与季节感的竞演";
 "gourmet_yudofu" = "汤豆腐";
 "gourmet_yudofu_desc" = "京都的精进料理。用上品汤汁温热的豆腐";
-"gourmet_kyo_wagashi" = "京和果子";
-"gourmet_kyo_wagashi_desc" = "代表京都雅致文化的传统和果子";
-"gourmet_kyoto_vegetables" = "京野菜";
-"gourmet_kyoto_vegetables_desc" = "在京都培育的传统蔬菜。味道深邃";
-"gourmet_matcha" = "抹茶";
-"gourmet_matcha_desc" = "宇治的抹茶。浓厚苦味与甜味的平衡";
 
 // MARK: - 大阪府美食 (Osaka Gourmet)
 "gourmet_takoyaki" = "章鱼烧";
@@ -3814,8 +3662,6 @@
 "gourmet_okonomiyaki_desc" = "大阪的粉物文化代表。卷心菜满满";
 "gourmet_kushikatsu" = "串炸";
 "gourmet_kushikatsu_desc" = "新世界的名物。禁止二次蘸酱";
-"gourmet_kitsune_udon" = "狐狸乌冬面";
-"gourmet_kitsune_udon_desc" = "大阪发祥的甜甜油豆腐乌冬面";
 "gourmet_butaman" = "猪肉包";
 "gourmet_butaman_desc" = "关西的叫法。蓬松肉包";
 
@@ -3824,10 +3670,6 @@
 "gourmet_kobe_beef_desc" = "世界闻名的最高级和牛。入口即化的霜降";
 "gourmet_akashiyaki" = "明石烧";
 "gourmet_akashiyaki_desc" = "明石的名物。章鱼蛋烧蘸汤汁食用";
-"gourmet_botan_nabe" = "野猪肉火锅";
-"gourmet_botan_nabe_desc" = "丹波地方的名物。野猪肉的火锅料理";
-"gourmet_kasuudon" = "粕乌冬面";
-"gourmet_kasuudon_desc" = "使用酒粕的兵库乡土料理";
 "gourmet_awaji_onion" = "淡路洋葱";
 "gourmet_awaji_onion_desc" = "淡路岛特产的甜洋葱";
 
@@ -3838,56 +3680,30 @@
 "gourmet_miwa_somen_desc" = "奈良的手延素面。细而有韧性";
 "gourmet_yamato_beef" = "大和牛";
 "gourmet_yamato_beef_desc" = "奈良县的品牌牛。上品味道";
-"gourmet_kudzu_mochi" = "葛饼";
-"gourmet_kudzu_mochi_desc" = "使用吉野葛的透明年糕。清爽口感";
 "gourmet_narazuke" = "奈良渍";
 "gourmet_narazuke_desc" = "用酒粕腌制的奈良传统咸菜";
 
 // MARK: - 和歌山县美食 (Wakayama Gourmet)
 "gourmet_umeboshi" = "梅干";
 "gourmet_umeboshi_desc" = "和歌山的特产品。南高梅的酸甜味";
-"gourmet_kujira" = "鲸鱼";
-"gourmet_kujira_desc" = "太地町的传统食文化。各种烹饪法享受";
 "gourmet_wakayama_ramen" = "和歌山拉面";
 "gourmet_wakayama_ramen_desc" = "猪骨酱油汤的和歌山当地拉面";
 "gourmet_mikan" = "蜜柑";
 "gourmet_mikan_desc" = "和歌山县产的甜蜜柑。有田蜜柑很有名";
-"gourmet_mehari_sushi" = "目张寿司";
-"gourmet_mehari_sushi_desc" = "熊野地方的乡土料理。用高菜包的饭团";
 
 // MARK: - 鸟取县美食 (Tottori Gourmet)
 "gourmet_matsuba_crab" = "松叶蟹";
 "gourmet_matsuba_crab_desc" = "鸟取冬季味觉之王。甜美蟹肉";
-"gourmet_nijisseiki_nashi" = "二十世纪梨";
-"gourmet_nijisseiki_nashi_desc" = "鸟取的特产水果。多汁清脆";
-"gourmet_rakudai" = "落第";
-"gourmet_rakudai_desc" = "鸟取的B级美食。炒面三明治";
-"gourmet_tottori_beef" = "鸟取和牛";
-"gourmet_tottori_beef_desc" = "鸟取县的品牌牛。优质肉质";
-"gourmet_shirohata_tempura" = "白旗天妇罗";
-"gourmet_shirohata_tempura_desc" = "鸟取的当地料理。鱼糕天妇罗";
 
 // MARK: - 岛根县美食 (Shimane Gourmet)
 "gourmet_izumo_soba" = "出云荞麦面";
 "gourmet_izumo_soba_desc" = "颜色较黑的荞麦面。3层叠放的割子很有名";
-"gourmet_shijimi" = "蚬贝";
-"gourmet_shijimi_desc" = "宍道湖的特产。味噌汤是定番";
 "gourmet_nodoguro_shimane" = "喉黑鱼";
 "gourmet_nodoguro_shimane_desc" = "岛根沿岸捕获的高级鱼。上品甜味";
-"gourmet_shimane_beef" = "岛根牛";
-"gourmet_shimane_beef_desc" = "岛根县的品牌牛";
-"gourmet_shimashumai" = "島烧卖";
-"gourmet_shimashumai_desc" = "松江的当地美食。大的烧卖";
 
 // MARK: - 冈山县美食 (Okayama Gourmet)
-"gourmet_okayama_momo" = "冈山白桃";
-"gourmet_okayama_momo_desc" = "冈山的特产水果。甜美多汁如同女王般";
 "gourmet_muscat" = "麝香葡萄";
 "gourmet_muscat_desc" = "冈山的高级葡萄。优雅甜味与香气";
-"gourmet_okayama_beef" = "冈山牛";
-"gourmet_okayama_beef_desc" = "冈山县的品牌牛";
-"gourmet_demisauce_katsu" = "多美酱炸猪排";
-"gourmet_demisauce_katsu_desc" = "冈山的B级美食。浇多美调味酱的炸猪排";
 "gourmet_mamakari" = "黄鲱";
 "gourmet_mamakari_desc" = "冈山的乡土料理。醋腌小鱼";
 
@@ -3940,8 +3756,6 @@
 "gourmet_shodoshima_somen_desc" = "小豆岛的手延素面。使用橄榄油";
 
 // MARK: - 爱媛县美食 (Ehime Gourmet)
-"gourmet_mikan_ehime" = "蜜柑";
-"gourmet_mikan_ehime_desc" = "爱媛的特产水果。甜美多汁";
 "gourmet_jakoten" = "竹叶鱼糕";
 "gourmet_jakoten_desc" = "爱媛的乡土料理。小鱼整条制成的鱼糕";
 "gourmet_tai_meshi" = "鲷鱼饭";
@@ -4030,18 +3844,12 @@
 "gourmet_chicken_nanban_desc" = "宫崎发祥的鸡肉料理。塔塔酱绝品";
 "gourmet_hiyajiru" = "冷汁";
 "gourmet_hiyajiru_desc" = "宫崎的乡土料理。冷味噌汤泡饭";
-"gourmet_mango" = "芒果";
-"gourmet_mango_desc" = "宫崎的特产水果。太阳芒果特别有名";
-"gourmet_shochu" = "烧酒";
-"gourmet_shochu_desc" = "宫崎的特产。地瓜烧酒";
 
 // MARK: - 鹿儿岛县美食 (Kagoshima Gourmet)
 "gourmet_kurobuta" = "黑猪";
 "gourmet_kurobuta_desc" = "鹿儿岛的品牌猪。甜美脂肪与柔嫩肉质";
 "gourmet_satsuma_imo" = "萨摩芋";
 "gourmet_satsuma_imo_desc" = "鹿儿岛的特产地瓜。甜美香浓";
-"gourmet_shochu_kagoshima" = "烧酒";
-"gourmet_shochu_kagoshima_desc" = "鹿儿岛的特产。地瓜烧酒和麦烧酒";
 "gourmet_kibinago" = "银带鲱";
 "gourmet_kibinago_desc" = "鹿儿岛的小鱼。刺身或天妇罗";
 "gourmet_shirokuma" = "白熊";
@@ -4426,8 +4234,6 @@
 "gourmet_aka_konnyaku_desc" = "滋贺县的名物。用铁分染红的蒟蒻";
 "gourmet_lake_fish_cuisine" = "湖鱼料理";
 "gourmet_lake_fish_cuisine_desc" = "使用琵琶湖鱼类的乡土料理";
-"gourmet_ohmi_champon" = "近江什锦面";
-"gourmet_ohmi_champon_desc" = "滋贺县的当地拉面。蔬菜丰富";
 
 
 // =====================================================
@@ -6170,3 +5976,99 @@
 "shizuoka.abekawa_mochi.name" = "安倍川餅";
 "shizuoka.abekawa_mochi.description" = "在軟糯麻糬上裹黃豆粉與豆沙的靜岡傳統和菓子。";
 "shizuoka.abekawa_mochi.price" = "600日圓起";
+
+/* --- My Plans (plan.* / common.*) --- */
+"tab.plan" = "我的計畫";
+"attraction.open_in_maps" = "在地圖中開啟";
+"common.add" = "新增";
+"common.cancel" = "取消";
+"common.close" = "關閉";
+"common.create" = "建立";
+"common.save" = "儲存";
+"common.delete" = "刪除";
+"common.edit" = "編輯";
+"common.done" = "完成";
+"plan.myplans.title" = "我的計畫";
+"plan.empty.title" = "還沒有任何計畫";
+"plan.empty.message" = "收集你喜歡的景點、美食、溫泉和祭典，打造專屬於你的旅行計畫吧。";
+"plan.create" = "建立計畫";
+"plan.create.andadd" = "新建計畫並加入";
+"plan.untitled" = "未命名的計畫";
+"plan.title.label" = "計畫名稱";
+"plan.title.placeholder" = "例如：夏日北海道之旅";
+"plan.addto.title" = "加入計畫";
+"plan.add.button" = "加入計畫";
+"plan.select.existing" = "加入現有計畫";
+"plan.itemcount.format" = "%d 個項目";
+"plan.notfound" = "找不到該計畫";
+"plan.detail.empty" = "還沒有項目。可在各詳細頁面透過「加入計畫」來新增項目。";
+"plan.detail.items.header" = "計畫項目";
+"plan.memo.label" = "備註";
+"plan.editmemo" = "編輯備註";
+"plan.showmap" = "在地圖上查看";
+"plan.reorder" = "重新排序";
+"plan.category.attraction" = "景點";
+"plan.category.gourmet" = "美食";
+"plan.category.onsen" = "溫泉";
+"plan.category.festival" = "祭典·活動";
+"plan.category.nature" = "自然";
+"plan.category.souvenir" = "伴手禮";
+"plan.category.hotel" = "住宿";
+"plan.category.transport" = "車站·機場";
+"plan.category.other" = "其他";
+"plan.grouping.label" = "顯示";
+"plan.grouping.prefecture" = "都道府縣";
+"plan.grouping.day" = "行程";
+"plan.grouping.day.toggle" = "依天分組";
+"plan.grouping.flat" = "全部一起顯示";
+"plan.daycount.format" = "天數：%d 天";
+"plan.daycount.short" = "%d 天";
+"plan.day.format" = "第 %d 天";
+"plan.day.short.format" = "第 %d 天";
+"plan.day.unassigned" = "未分配";
+"plan.day.unassigned.short" = "選擇日期";
+"plan.day.unassign" = "移回未分配";
+"plan.day.empty" = "這一天還沒有項目";
+"plan.day.additem" = "為這一天新增項目";
+"plan.day.addcustom" = "新增飯店、車站等";
+"plan.card.empty" = "還沒有項目";
+"plan.dragdrop.hint" = "長按並拖曳卡片即可分配到各天。";
+"plan.item.notfound" = "找不到該項目的詳細資訊。";
+"plan.timeblock.add" = "新增時間區塊";
+"plan.timeblock.edit" = "時間區塊";
+"plan.timeblock.delete" = "刪除此時間區塊";
+"plan.timeblock.delete.confirm" = "要刪除此時間區塊嗎？";
+"plan.timeblock.delete.message" = "僅刪除時間區塊。其中的項目會恢復為未設定時間。";
+"plan.timeblock.settime" = "設定開始時間";
+"plan.timeblock.starttime" = "開始時間";
+"plan.timeblock.empty" = "將項目拖曳到這裡";
+"plan.timeblock.title.label" = "標題（選填）";
+"plan.timeblock.title.placeholder" = "例如：上午 / 午餐 / 傍晚";
+"plan.timeblock.untimed" = "未定時間";
+"plan.custom.add" = "新增飯店、車站等";
+"plan.custom.edit" = "編輯項目";
+"plan.custom.type" = "類型";
+"plan.custom.title.label" = "標題";
+"plan.custom.title.placeholder" = "例如：○○飯店 / 14:00 新幹線";
+"plan.custom.detail.label" = "備註";
+"plan.custom.location.add" = "新增位置（選填）";
+"plan.custom.location.set" = "變更位置";
+"plan.custom.location.pick" = "選擇位置";
+"plan.custom.location.clear" = "刪除位置";
+"plan.custom.location.search" = "以地名或設施名稱搜尋";
+"plan.custom.location.hint" = "拖曳地圖，將中央的圖釘對準位置";
+"plan.address.copy" = "複製地址";
+"plan.map.alldays" = "全部";
+"plan.map.showdetail" = "查看詳細";
+"plan.map.directions" = "路線導航";
+"plan.map.route.day" = "第 %d 天路線導航";
+"plan.map.route.weblimit" = "在瀏覽器中開啟時，部分途經點可能不會納入路線";
+"plan.locatable.add" = "新增店家位置";
+"plan.locatable.change" = "變更店家位置";
+"plan.location.saveas" = "儲存為 %@";
+"plan.location.savepoint" = "儲存此地點";
+"plan.edit" = "編輯計畫";
+"plan.item.addmemo" = "新增備註";
+"plan.item.editmemo" = "編輯備註";
+"plan.item.memo" = "備註";
+"plan.share" = "分享";
