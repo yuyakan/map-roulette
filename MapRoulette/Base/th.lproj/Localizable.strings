@@ -1873,1101 +1873,1101 @@
 // =====================================================
 "fukui.habutae_mochi.name" = "Habutae Mochi";
 "fukui.habutae_mochi.description" = "Fukui confection. Soft and elegant sweetness";
-"fukui.habutae_mochi.price" = "¥1,000-2,500";
+"fukui.habutae_mochi.price" = "1,000–2,500 เยน";
 
 "fukui.satsukigase_senbei.name" = "Satsukigase Senbei";
 "fukui.satsukigase_senbei.description" = "Long-established rice crackers from Fukui";
-"fukui.satsukigase_senbei.price" = "¥1,000-2,000";
+"fukui.satsukigase_senbei.price" = "1,000–2,000 เยน";
 
 "fukui.gyuhi_kombu.name" = "Gyuhi Kombu";
 "fukui.gyuhi_kombu.description" = "Japanese confection made with Fukui kelp";
-"fukui.gyuhi_kombu.price" = "¥800-1,500";
+"fukui.gyuhi_kombu.price" = "800–1,500 เยน";
 
 "fukui.mizu_yokan.name" = "Mizu Yokan";
 "fukui.mizu_yokan.description" = "Summer specialty confection from Fukui";
-"fukui.mizu_yokan.price" = "¥500-1,200";
+"fukui.mizu_yokan.price" = "500–1,200 เยน";
 
 "fukui.echizen_washi.name" = "Echizen Washi";
 "fukui.echizen_washi.description" = "Traditional crafts from Fukui";
-"fukui.echizen_washi.price" = "¥1,000-10,000";
+"fukui.echizen_washi.price" = "1,000–10,000 เยน";
 
 // =====================================================
 // Yamanashi
 // =====================================================
 "yamanashi.kikyo_shingen_mochi.name" = "Kikyo Shingen Mochi";
 "yamanashi.kikyo_shingen_mochi.description" = "Representative confection of Yamanashi. Eaten with kinako and brown sugar syrup";
-"yamanashi.kikyo_shingen_mochi.price" = "¥1,000-2,500";
+"yamanashi.kikyo_shingen_mochi.price" = "1,000–2,500 เยน";
 
 "yamanashi.kikyo_shingen_soft.name" = "Kikyo Shingen Soft";
 "yamanashi.kikyo_shingen_soft.description" = "Soft cream-style confection with Shingen mochi flavor";
-"yamanashi.kikyo_shingen_soft.price" = "¥300-600";
+"yamanashi.kikyo_shingen_soft.price" = "300–600 เยน";
 
 "yamanashi.budo_no_sato.name" = "Budo no Sato";
 "yamanashi.budo_no_sato.description" = "Confection made with Yamanashi grapes";
-"yamanashi.budo_no_sato.price" = "¥1,200-2,500";
+"yamanashi.budo_no_sato.price" = "1,200–2,500 เยน";
 
 "yamanashi.fuji_no_shirayuki.name" = "Fuji no Shirayuki";
 "yamanashi.fuji_no_shirayuki.description" = "Confection with Mount Fuji motif";
-"yamanashi.fuji_no_shirayuki.price" = "¥1,000-2,000";
+"yamanashi.fuji_no_shirayuki.price" = "1,000–2,000 เยน";
 
 "yamanashi.koshu_wine.name" = "Koshu Wine";
 "yamanashi.koshu_wine.description" = "Japanese wine made with Yamanashi grapes";
-"yamanashi.koshu_wine.price" = "¥2,000-10,000";
+"yamanashi.koshu_wine.price" = "2,000–10,000 เยน";
 
 // =====================================================
 // Nagano
 // =====================================================
 "nagano.raicho_no_sato.name" = "Raicho no Sato";
 "nagano.raicho_no_sato.description" = "Representative confection of Nagano";
-"nagano.raicho_no_sato.price" = "¥1,200-2,500";
+"nagano.raicho_no_sato.price" = "1,200–2,500 เยน";
 
 "nagano.misuzu_ame.name" = "Misuzu Ame";
 "nagano.misuzu_ame.description" = "Fruit jelly made by a long-established shop in Nagano";
-"nagano.misuzu_ame.price" = "¥800-2,000";
+"nagano.misuzu_ame.price" = "800–2,000 เยน";
 
 "nagano.yawataya_isogoro_shichimi.name" = "Yawataya Isogoro Shichimi";
 "nagano.yawataya_isogoro_shichimi.description" = "Seven-spice blend from a long-established shop in front of Zenkoji Temple";
-"nagano.yawataya_isogoro_shichimi.price" = "¥500-1,500";
+"nagano.yawataya_isogoro_shichimi.price" = "500–1,500 เยน";
 
 "nagano.kuri_kanoko.name" = "Kuri Kanoko";
 "nagano.kuri_kanoko.description" = "Chestnut confection from Obuse Town, Nagano";
-"nagano.kuri_kanoko.price" = "¥1,500-3,000";
+"nagano.kuri_kanoko.price" = "1,500–3,000 เยน";
 
 "nagano.nozawana.name" = "Nozawana";
 "nagano.nozawana.description" = "Pickled vegetables specialty from Nagano";
-"nagano.nozawana.price" = "¥500-1,500";
+"nagano.nozawana.price" = "500–1,500 เยน";
 
 // =====================================================
 // Gifu
 // =====================================================
 "gifu.hida_no_sato.name" = "Hida no Sato";
 "gifu.hida_no_sato.description" = "Famous confection from Hida region, Gifu";
-"gifu.hida_no_sato.price" = "¥1,200-2,500";
+"gifu.hida_no_sato.price" = "1,200–2,500 เยน";
 
 "gifu.kuri_kinton.name" = "Kuri Kinton";
 "gifu.kuri_kinton.description" = "Nakatsugawa specialty. Japanese confection that brings out the sweetness of chestnuts";
-"gifu.kuri_kinton.price" = "¥1,500-3,000";
+"gifu.kuri_kinton.price" = "1,500–3,000 เยน";
 
 "gifu.ayu_gashi.name" = "Ayu Confection";
 "gifu.ayu_gashi.description" = "Confection with sweetfish motif from Gifu";
-"gifu.ayu_gashi.price" = "¥1,000-2,000";
+"gifu.ayu_gashi.price" = "1,000–2,000 เยน";
 
 "gifu.hoba_miso_senbei.name" = "Hoba Miso Senbei";
 "gifu.hoba_miso_senbei.description" = "Rice crackers with Hida's local cuisine motif";
-"gifu.hoba_miso_senbei.price" = "¥800-1,500";
+"gifu.hoba_miso_senbei.price" = "800–1,500 เยน";
 
 "gifu.mino_washi.name" = "Mino Washi";
 "gifu.mino_washi.description" = "Traditional crafts from Gifu";
-"gifu.mino_washi.price" = "¥1,000-10,000";
+"gifu.mino_washi.price" = "1,000–10,000 เยน";
 
 // =====================================================
 // Shizuoka
 // =====================================================
 "shizuoka.unagi_pie.name" = "Unagi Pie";
 "shizuoka.unagi_pie.description" = "Hamamatsu specialty. Crispy pie confection";
-"shizuoka.unagi_pie.price" = "¥1,000-2,500";
+"shizuoka.unagi_pie.price" = "1,000–2,500 เยน";
 
 "shizuoka.kokko.name" = "Kokko";
 "shizuoka.kokko.description" = "Representative confection of Shizuoka";
-"shizuoka.kokko.price" = "¥1,200-2,000";
+"shizuoka.kokko.price" = "1,200–2,000 เยน";
 
 "shizuoka.jiichiro_baumkuchen.name" = "Jiichiro Baumkuchen";
 "shizuoka.jiichiro_baumkuchen.description" = "Premium baumkuchen originating from Shizuoka";
-"shizuoka.jiichiro_baumkuchen.price" = "¥1,500-3,000";
+"shizuoka.jiichiro_baumkuchen.price" = "1,500–3,000 เยน";
 
 "shizuoka.fujisan_cho.name" = "Fujisan-cho";
 "shizuoka.fujisan_cho.description" = "Confection with Mount Fuji motif";
-"shizuoka.fujisan_cho.price" = "¥1,000-2,000";
+"shizuoka.fujisan_cho.price" = "1,000–2,000 เยน";
 
 "shizuoka.shizuoka_cha.name" = "Shizuoka Tea";
 "shizuoka.shizuoka_cha.description" = "Specialty product from Shizuoka";
-"shizuoka.shizuoka_cha.price" = "¥1,000-5,000";
+"shizuoka.shizuoka_cha.price" = "1,000–5,000 เยน";
 
 // =====================================================
 // Aichi
 // =====================================================
 "aichi.uiro.name" = "Uiro";
 "aichi.uiro.description" = "Representative Japanese confection of Nagoya";
-"aichi.uiro.price" = "¥800-2,000";
+"aichi.uiro.price" = "800–2,000 เยน";
 
 "aichi.yukari.name" = "Yukari";
 "aichi.yukari.description" = "Shrimp rice crackers made by a long-established shop in Nagoya";
-"aichi.yukari.price" = "¥1,000-2,500";
+"aichi.yukari.price" = "1,000–2,500 เยน";
 
 "aichi.sakakaku_ebi_senbei.name" = "Sakakaku Sohonpo Shrimp Crackers";
 "aichi.sakakaku_ebi_senbei.description" = "Premium shrimp rice crackers from Aichi";
-"aichi.sakakaku_ebi_senbei.price" = "¥1,500-5,000";
+"aichi.sakakaku_ebi_senbei.price" = "1,500–5,000 เยน";
 
 "aichi.nagoyan.name" = "Nagoyan";
 "aichi.nagoyan.description" = "Famous confection of Nagoya";
-"aichi.nagoyan.price" = "¥1,000-2,000";
+"aichi.nagoyan.price" = "1,000–2,000 เยน";
 
 "aichi.arimatsu_shibori.name" = "Arimatsu Shibori";
 "aichi.arimatsu_shibori.description" = "Traditional crafts from Aichi";
-"aichi.arimatsu_shibori.price" = "¥3,000-20,000";
+"aichi.arimatsu_shibori.price" = "3,000–20,000 เยน";
 
 // =====================================================
 // Mie
 // =====================================================
 "mie.akafuku.name" = "Akafuku";
 "mie.akafuku.description" = "Famous confection of Ise Shrine. Mochi wrapped in sweet red bean paste";
-"mie.akafuku.price" = "¥1,000-3,000";
+"mie.akafuku.price" = "1,000–3,000 เยน";
 
 "mie.henba_mochi.name" = "Henba Mochi";
 "mie.henba_mochi.description" = "Traditional mochi confection from Mie";
-"mie.henba_mochi.price" = "¥800-1,500";
+"mie.henba_mochi.price" = "800–1,500 เยน";
 
 "mie.yasunaga_mochi.name" = "Yasunaga Mochi";
 "mie.yasunaga_mochi.description" = "Famous mochi confection from Mie";
-"mie.yasunaga_mochi.price" = "¥800-1,500";
+"mie.yasunaga_mochi.price" = "800–1,500 เยน";
 
 "mie.toraya_uiro.name" = "Toraya Uiro";
 "mie.toraya_uiro.description" = "Uiro from Ise City, Mie";
-"mie.toraya_uiro.price" = "¥1,000-2,000";
+"mie.toraya_uiro.price" = "1,000–2,000 เยน";
 
 "mie.shinju.name" = "Pearls";
 "mie.shinju.description" = "Specialty product from Mie";
-"mie.shinju.price" = "¥5,000-100,000";
+"mie.shinju.price" = "5,000–100,000 เยน";
 
 // =====================================================
 // Shiga
 // =====================================================
 "shiga.kisho_juian_kinogumo.name" = "Kisho Juian Kinogumo";
 "shiga.kisho_juian_kinogumo.description" = "Premium Japanese confection from Shiga";
-"shiga.kisho_juian_kinogumo.price" = "¥2,000-5,000";
+"shiga.kisho_juian_kinogumo.price" = "2,000–5,000 เยน";
 
 "shiga.itokiri_mochi.name" = "Itokiri Mochi";
 "shiga.itokiri_mochi.description" = "Traditional mochi confection from Shiga";
-"shiga.itokiri_mochi.price" = "¥800-1,500";
+"shiga.itokiri_mochi.price" = "800–1,500 เยน";
 
 "shiga.chojifu.name" = "Chojifu";
 "shiga.chojifu.description" = "Specialty product from Shiga";
-"shiga.chojifu.price" = "¥500-1,200";
+"shiga.chojifu.price" = "500–1,200 เยน";
 
 "shiga.shigaraki_yaki.name" = "Shigaraki Pottery";
 "shiga.shigaraki_yaki.description" = "Pottery from Shigaraki Town, Shiga";
-"shiga.shigaraki_yaki.price" = "¥2,000-20,000";
+"shiga.shigaraki_yaki.price" = "2,000–20,000 เยน";
 
 "shiga.biwa_ko_goods.name" = "Lake Biwa Goods";
 "shiga.biwa_ko_goods.description" = "Souvenirs with Lake Biwa motif";
-"shiga.biwa_ko_goods.price" = "¥500-3,000";
+"shiga.biwa_ko_goods.price" = "500–3,000 เยน";
 
 // =====================================================
 // Kyoto
 // =====================================================
 "kyoto.yatsuhashi.name" = "Yatsuhashi";
 "kyoto.yatsuhashi.description" = "Representative confection of Kyoto. Both nama yatsuhashi and baked yatsuhashi";
-"kyoto.yatsuhashi.price" = "¥800-2,500";
+"kyoto.yatsuhashi.price" = "800–2,500 เยน";
 
 "kyoto.ajari_mochi.name" = "Ajari Mochi";
 "kyoto.ajari_mochi.description" = "Famous confection from a long-established shop in Kyoto";
-"kyoto.ajari_mochi.price" = "¥1,500-3,000";
+"kyoto.ajari_mochi.price" = "1,500–3,000 เยน";
 
 "kyoto.cha_no_ka.name" = "Cha no Ka";
 "kyoto.cha_no_ka.description" = "Western confection made with Kyoto matcha";
-"kyoto.cha_no_ka.price" = "¥1,200-2,500";
+"kyoto.cha_no_ka.price" = "1,200–2,500 เยน";
 
 "kyoto.marl_bransh_okoicha.name" = "Marl Bransh Okoicha Langue de Chat";
 "kyoto.marl_bransh_okoicha.description" = "Matcha langue de chat from Kyoto";
-"kyoto.marl_bransh_okoicha.price" = "¥1,500-3,000";
+"kyoto.marl_bransh_okoicha.price" = "1,500–3,000 เยน";
 
 "kyoto.yojiya_aburatorigami.name" = "Yojiya Oil-Blotting Paper";
 "kyoto.yojiya_aburatorigami.description" = "Products from a long-established cosmetics shop in Kyoto";
-"kyoto.yojiya_aburatorigami.price" = "¥500-2,000";
+"kyoto.yojiya_aburatorigami.price" = "500–2,000 เยน";
 
 "kyoto.kiyomizu_yaki.name" = "Kiyomizu Pottery";
 "kyoto.kiyomizu_yaki.description" = "Traditional crafts from Kyoto";
-"kyoto.kiyomizu_yaki.price" = "¥3,000-50,000";
+"kyoto.kiyomizu_yaki.price" = "3,000–50,000 เยน";
 
 // =====================================================
 // Osaka
 // =====================================================
 "osaka.butaman_551.name" = "551 Horai Pork Bun";
 "osaka.butaman_551.description" = "Famous Osaka pork bun";
-"osaka.butaman_551.price" = "¥1,000-3,000";
+"osaka.butaman_551.price" = "1,000–3,000 เยน";
 
 "osaka.rikuro_cheesecake.name" = "Rikuro Ojisan Cheesecake";
 "osaka.rikuro_cheesecake.description" = "Popular Osaka cheesecake";
-"osaka.rikuro_cheesecake.price" = "¥800-1,500";
+"osaka.rikuro_cheesecake.price" = "800–1,500 เยน";
 
 "osaka.omoshiroi_koibito.name" = "Omoshiroi Koibito";
 "osaka.omoshiroi_koibito.description" = "Osaka parody souvenir confection";
-"osaka.omoshiroi_koibito.price" = "¥1,000-2,000";
+"osaka.omoshiroi_koibito.price" = "1,000–2,000 เยน";
 
 "osaka.mitarashi_dango.name" = "Mitarashi Dango";
 "osaka.mitarashi_dango.description" = "Product from a long-established dango shop in Osaka";
-"osaka.mitarashi_dango.price" = "¥500-1,200";
+"osaka.mitarashi_dango.price" = "500–1,200 เยน";
 
 "osaka.takoyaki_goods.name" = "Takoyaki-themed Goods";
 "osaka.takoyaki_goods.description" = "Products inspired by Osaka's soul food";
-"osaka.takoyaki_goods.price" = "¥500-2,500";
+"osaka.takoyaki_goods.price" = "500–2,500 เยน";
 
 // =====================================================
 // Hyogo
 // =====================================================
 "hyogo.kobe_fugetsudo_gofer.name" = "Kobe Fugetsudo Gofer";
 "hyogo.kobe_fugetsudo_gofer.description" = "Representative product of a long-established confectionery in Kobe";
-"hyogo.kobe_fugetsudo_gofer.price" = "¥1,000-3,000";
+"hyogo.kobe_fugetsudo_gofer.price" = "1,000–3,000 เยน";
 
 "hyogo.mon_loire_chocolate.name" = "Mon Loire Chocolate";
 "hyogo.mon_loire_chocolate.description" = "Premium chocolate from Kobe";
-"hyogo.mon_loire_chocolate.price" = "¥1,500-5,000";
+"hyogo.mon_loire_chocolate.price" = "1,500–5,000 เยน";
 
 "hyogo.kannonya_denmark_cheesecake.name" = "Kannonya Denmark Cheesecake";
 "hyogo.kannonya_denmark_cheesecake.description" = "Long-established cheesecake from Kobe";
-"hyogo.kannonya_denmark_cheesecake.price" = "¥1,200-2,500";
+"hyogo.kannonya_denmark_cheesecake.price" = "1,200–2,500 เยน";
 
 "hyogo.kobe_beef_goods.name" = "Kobe Beef Products";
 "hyogo.kobe_beef_goods.description" = "Processed products made with Kobe beef";
-"hyogo.kobe_beef_goods.price" = "¥2,000-10,000";
+"hyogo.kobe_beef_goods.price" = "2,000–10,000 เยน";
 
 "hyogo.arima_onsen_goods.name" = "Arima Onsen Goods";
 "hyogo.arima_onsen_goods.description" = "Souvenirs from Arima Hot Springs";
-"hyogo.arima_onsen_goods.price" = "¥800-3,000";
+"hyogo.arima_onsen_goods.price" = "800–3,000 เยน";
 
 // =====================================================
 // Nara
 // =====================================================
 "nara.shika_sable.name" = "Deer Sablé";
 "nara.shika_sable.description" = "Sablé with Nara deer motif";
-"nara.shika_sable.price" = "¥800-1,500";
+"nara.shika_sable.price" = "800–1,500 เยน";
 
 "nara.mikasa.name" = "Mikasa";
 "nara.mikasa.description" = "Representative confection of Nara";
-"nara.mikasa.price" = "¥1,000-2,000";
+"nara.mikasa.price" = "1,000–2,000 เยน";
 
 "nara.kaki_senmon_ishii.name" = "Kaki Senmon Ishii";
 "nara.kaki_senmon_ishii.description" = "Confection made with Nara persimmons";
-"nara.kaki_senmon_ishii.price" = "¥1,200-2,500";
+"nara.kaki_senmon_ishii.price" = "1,200–2,500 เยน";
 
 "nara.nakagawa_masashichi_goods.name" = "Nakagawa Masashichi Goods";
 "nara.nakagawa_masashichi_goods.description" = "Products from a long-established general store in Nara";
-"nara.nakagawa_masashichi_goods.price" = "¥1,000-10,000";
+"nara.nakagawa_masashichi_goods.price" = "1,000–10,000 เยน";
 
 "nara.shika_goods.name" = "Deer Goods";
 "nara.shika_goods.description" = "Various products with Nara deer motif";
-"nara.shika_goods.price" = "¥500-3,000";
+"nara.shika_goods.price" = "500–3,000 เยน";
 
 // =====================================================
 // Wakayama
 // =====================================================
 "wakayama.kagero.name" = "Kagero";
 "wakayama.kagero.description" = "Representative confection of Wakayama";
-"wakayama.kagero.price" = "¥1,000-2,500";
+"wakayama.kagero.price" = "1,000–2,500 เยน";
 
 "wakayama.nachi_guro.name" = "Nachi Guro";
 "wakayama.nachi_guro.description" = "Brown sugar confection from Wakayama";
-"wakayama.nachi_guro.price" = "¥500-1,200";
+"wakayama.nachi_guro.price" = "500–1,200 เยน";
 
 "wakayama.kinokawa_kaki.name" = "Kinokawa Persimmon";
 "wakayama.kinokawa_kaki.description" = "Confection made with Wakayama persimmons";
-"wakayama.kinokawa_kaki.price" = "¥1,000-2,000";
+"wakayama.kinokawa_kaki.price" = "1,000–2,000 เยน";
 
 "wakayama.arita_mikan_daifuku.name" = "Arita Mikan Daifuku";
 "wakayama.arita_mikan_daifuku.description" = "Daifuku made with Wakayama Arita mandarin oranges";
-"wakayama.arita_mikan_daifuku.price" = "¥1,200-2,000";
+"wakayama.arita_mikan_daifuku.price" = "1,200–2,000 เยน";
 
 "wakayama.umeboshi.name" = "Umeboshi";
 "wakayama.umeboshi.description" = "Pickled plums made with Wakayama Nanko plums";
-"wakayama.umeboshi.price" = "¥1,500-5,000";
+"wakayama.umeboshi.price" = "1,500–5,000 เยน";
 
 // =====================================================
 // Tottori
 // =====================================================
 "tottori.inaba_no_shiro_usagi.name" = "Inaba no Shiro Usagi";
 "tottori.inaba_no_shiro_usagi.description" = "Representative confection of Tottori";
-"tottori.inaba_no_shiro_usagi.price" = "¥1,200-2,500";
+"tottori.inaba_no_shiro_usagi.price" = "1,200–2,500 เยน";
 
 "tottori.ofuroboshi.name" = "Ofuroboshi";
 "tottori.ofuroboshi.description" = "Famous confection from Tottori";
-"tottori.ofuroboshi.price" = "¥1,000-2,000";
+"tottori.ofuroboshi.price" = "1,000–2,000 เยน";
 
 "tottori.nijusseiki_nashi_jelly.name" = "20th Century Pear Jelly";
 "tottori.nijusseiki_nashi_jelly.description" = "Jelly made with Tottori pears";
-"tottori.nijusseiki_nashi_jelly.price" = "¥1,500-3,000";
+"tottori.nijusseiki_nashi_jelly.price" = "1,500–3,000 เยน";
 
 "tottori.hakubaranyu_goods.name" = "Hakubara Milk Products";
 "tottori.hakubaranyu_goods.description" = "Products from Tottori's milk brand";
-"tottori.hakubaranyu_goods.price" = "¥500-1,500";
+"tottori.hakubaranyu_goods.price" = "500–1,500 เยน";
 
 "tottori.sakyu_goods.name" = "Sand Dune Goods";
 "tottori.sakyu_goods.description" = "Products with Tottori Sand Dunes motif";
-"tottori.sakyu_goods.price" = "¥500-2,500";
+"tottori.sakyu_goods.price" = "500–2,500 เยน";
 
 // =====================================================
 // Shimane
 // =====================================================
 "shimane.dojo_sukui_manju.name" = "Dojo Sukui Manju";
 "shimane.dojo_sukui_manju.description" = "Famous steamed bun from Shimane";
-"shimane.dojo_sukui_manju.price" = "¥1,000-2,000";
+"shimane.dojo_sukui_manju.price" = "1,000–2,000 เยน";
 
 "shimane.genji_maki.name" = "Genji Maki";
 "shimane.genji_maki.description" = "Representative confection of Shimane";
-"shimane.genji_maki.price" = "¥1,200-2,500";
+"shimane.genji_maki.price" = "1,200–2,500 เยน";
 
 "shimane.wakakusa.name" = "Wakakusa";
 "shimane.wakakusa.description" = "Japanese confection from Shimane";
-"shimane.wakakusa.price" = "¥1,000-2,000";
+"shimane.wakakusa.price" = "1,000–2,000 เยน";
 
 "shimane.shimane_wine.name" = "Shimane Wine";
 "shimane.shimane_wine.description" = "Wine made with Shimane grapes";
-"shimane.shimane_wine.price" = "¥2,000-8,000";
+"shimane.shimane_wine.price" = "2,000–8,000 เยน";
 
 "shimane.iwami_ginzan_goods.name" = "Iwami Ginzan Goods";
 "shimane.iwami_ginzan_goods.description" = "Souvenirs from World Heritage Iwami Ginzan";
-"shimane.iwami_ginzan_goods.price" = "¥800-3,000";
+"shimane.iwami_ginzan_goods.price" = "800–3,000 เยน";
 
 // =====================================================
 // Okayama
 // =====================================================
 "okayama.ote_manju.name" = "Ote Manju";
 "okayama.ote_manju.description" = "Representative confection of Okayama";
-"okayama.ote_manju.price" = "¥1,000-2,500";
+"okayama.ote_manju.price" = "1,000–2,500 เยน";
 
 "okayama.kibi_dango.name" = "Kibi Dango";
 "okayama.kibi_dango.description" = "Famous confection of Okayama. Known from the Momotaro legend";
-"okayama.kibi_dango.price" = "¥800-2,000";
+"okayama.kibi_dango.price" = "800–2,000 เยน";
 
 "okayama.chofu.name" = "Chofu";
 "okayama.chofu.description" = "Famous confection from Okayama";
-"okayama.chofu.price" = "¥1,200-2,000";
+"okayama.chofu.price" = "1,200–2,000 เยน";
 
 "okayama.hakujuji_waffle.name" = "Hakujuji Waffle";
 "okayama.hakujuji_waffle.description" = "Western confection from Okayama";
-"okayama.hakujuji_waffle.price" = "¥1,000-2,500";
+"okayama.hakujuji_waffle.price" = "1,000–2,500 เยน";
 
 "okayama.bizen_yaki.name" = "Bizen Pottery";
 "okayama.bizen_yaki.description" = "Traditional crafts from Okayama";
-"okayama.bizen_yaki.price" = "¥3,000-50,000";
+"okayama.bizen_yaki.price" = "3,000–50,000 เยน";
 
 // =====================================================
 // Hiroshima
 // =====================================================
 "hiroshima.momiji_manju.name" = "Momiji Manju";
 "hiroshima.momiji_manju.description" = "Famous confection of Hiroshima. Maple leaf-shaped castella bun";
-"hiroshima.momiji_manju.price" = "¥1,000-2,500";
+"hiroshima.momiji_manju.price" = "1,000–2,500 เยน";
 
 "hiroshima.nama_momiji.name" = "Nama Momiji";
 "hiroshima.nama_momiji.description" = "Fresh type of momiji manju";
-"hiroshima.nama_momiji.price" = "¥1,200-2,500";
+"hiroshima.nama_momiji.price" = "1,200–2,500 เยน";
 
 "hiroshima.nishikido_momiji.name" = "Nishikido Momiji Manju";
 "hiroshima.nishikido_momiji.description" = "Long-established momiji manju shop in Hiroshima";
-"hiroshima.nishikido_momiji.price" = "¥1,000-2,500";
+"hiroshima.nishikido_momiji.price" = "1,000–2,500 เยน";
 
 "hiroshima.kawadori_mochi.name" = "Kawadori Mochi";
 "hiroshima.kawadori_mochi.description" = "Traditional mochi confection from Hiroshima";
-"hiroshima.kawadori_mochi.price" = "¥800-1,500";
+"hiroshima.kawadori_mochi.price" = "800–1,500 เยน";
 
 "hiroshima.hiroshima_na.name" = "Hiroshima-na";
 "hiroshima.hiroshima_na.description" = "Pickled vegetables specialty from Hiroshima";
-"hiroshima.hiroshima_na.price" = "¥500-1,500";
+"hiroshima.hiroshima_na.price" = "500–1,500 เยน";
 
 // =====================================================
 // Yamaguchi
 // =====================================================
 "yamaguchi.mameshiro.name" = "Mameshiro";
 "yamaguchi.mameshiro.description" = "Representative confection of Yamaguchi";
-"yamaguchi.mameshiro.price" = "¥1,000-2,500";
+"yamaguchi.mameshiro.price" = "1,000–2,500 เยน";
 
 "yamaguchi.uiro.name" = "Uiro";
 "yamaguchi.uiro.description" = "Traditional Japanese confection from Yamaguchi";
-"yamaguchi.uiro.price" = "¥800-2,000";
+"yamaguchi.uiro.price" = "800–2,000 เยน";
 
 "yamaguchi.tsuki_de_hirotta_tamago.name" = "Tsuki de Hirotta Tamago";
 "yamaguchi.tsuki_de_hirotta_tamago.description" = "Famous confection from Yamaguchi";
-"yamaguchi.tsuki_de_hirotta_tamago.price" = "¥1,200-2,000";
+"yamaguchi.tsuki_de_hirotta_tamago.price" = "1,200–2,000 เยน";
 
 "yamaguchi.hagi_yaki.name" = "Hagi Pottery";
 "yamaguchi.hagi_yaki.description" = "Traditional crafts from Hagi City, Yamaguchi";
-"yamaguchi.hagi_yaki.price" = "¥3,000-30,000";
+"yamaguchi.hagi_yaki.price" = "3,000–30,000 เยน";
 
 "yamaguchi.natsu_mikan_goods.name" = "Summer Orange Products";
 "yamaguchi.natsu_mikan_goods.description" = "Products made with Yamaguchi's specialty summer oranges";
-"yamaguchi.natsu_mikan_goods.price" = "¥800-2,000";
+"yamaguchi.natsu_mikan_goods.price" = "800–2,000 เยน";
 
 // =====================================================
 // Tokushima
 // =====================================================
 "tokushima.kincho_manju.name" = "Kincho Manju";
 "tokushima.kincho_manju.description" = "Representative confection of Tokushima";
-"tokushima.kincho_manju.price" = "¥1,000-2,000";
+"tokushima.kincho_manju.price" = "1,000–2,000 เยน";
 
 "tokushima.potelet.name" = "Potelet";
 "tokushima.potelet.description" = "Confection made with Tokushima's Naruto Kintoki sweet potatoes";
-"tokushima.potelet.price" = "¥800-1,500";
+"tokushima.potelet.price" = "800–1,500 เยน";
 
 "tokushima.wasanbon.name" = "Wasanbon Sugar";
 "tokushima.wasanbon.description" = "Confection made with Tokushima's premium sugar";
-"tokushima.wasanbon.price" = "¥1,500-3,000";
+"tokushima.wasanbon.price" = "1,500–3,000 เยน";
 
 "tokushima.ai_no_sato.name" = "Ai no Sato";
 "tokushima.ai_no_sato.description" = "Products made with Tokushima's indigo dyeing";
-"tokushima.ai_no_sato.price" = "¥2,000-10,000";
+"tokushima.ai_no_sato.price" = "2,000–10,000 เยน";
 
 "tokushima.awa_odori_goods.name" = "Awa Odori Goods";
 "tokushima.awa_odori_goods.description" = "Products with Tokushima's Awa Odori motif";
-"tokushima.awa_odori_goods.price" = "¥800-3,000";
+"tokushima.awa_odori_goods.price" = "800–3,000 เยน";
 
 // =====================================================
 // Kagawa
 // =====================================================
 "kagawa.meibutsu_kamado.name" = "Meibutsu Kamado";
 "kagawa.meibutsu_kamado.description" = "Representative confection of Kagawa";
-"kagawa.meibutsu_kamado.price" = "¥1,200-2,500";
+"kagawa.meibutsu_kamado.price" = "1,200–2,500 เยน";
 
 "kagawa.oiri.name" = "Oiri";
 "kagawa.oiri.description" = "Traditional arare confection from Kagawa";
-"kagawa.oiri.price" = "¥500-1,200";
+"kagawa.oiri.price" = "500–1,200 เยน";
 
 "kagawa.kyu_man.name" = "Kyu Man";
 "kagawa.kyu_man.description" = "Hot spring manju from Kagawa";
-"kagawa.kyu_man.price" = "¥800-1,500";
+"kagawa.kyu_man.price" = "800–1,500 เยน";
 
 "kagawa.honetsuki_tori_senbei.name" = "Honetsuki-dori Senbei";
 "kagawa.honetsuki_tori_senbei.description" = "Rice crackers with Kagawa's bone-in chicken motif";
-"kagawa.honetsuki_tori_senbei.price" = "¥800-1,500";
+"kagawa.honetsuki_tori_senbei.price" = "800–1,500 เยน";
 
 "kagawa.olive_goods.name" = "Olive Products";
 "kagawa.olive_goods.description" = "Products made with olives from Shodoshima";
-"kagawa.olive_goods.price" = "¥1,000-3,000";
+"kagawa.olive_goods.price" = "1,000–3,000 เยน";
 
 // =====================================================
 // Ehime
 // =====================================================
 "ehime.botchan_dango.name" = "Botchan Dango";
 "ehime.botchan_dango.description" = "Matsuyama specialty. Beautiful three-colored dumplings";
-"ehime.botchan_dango.price" = "¥500-1,200";
+"ehime.botchan_dango.price" = "500–1,200 เยน";
 
 "ehime.tart.name" = "Tart";
 "ehime.tart.description" = "Representative Western confection of Ehime";
-"ehime.tart.price" = "¥1,200-2,500";
+"ehime.tart.price" = "1,200–2,500 เยน";
 
 "ehime.botemu.name" = "Botemu";
 "ehime.botemu.description" = "Famous confection from Ehime";
-"ehime.botemu.price" = "¥1,000-2,000";
+"ehime.botemu.price" = "1,000–2,000 เยน";
 
 "ehime.imabari_towel.name" = "Imabari Towel";
 "ehime.imabari_towel.description" = "Premium towels from Imabari City, Ehime";
-"ehime.imabari_towel.price" = "¥2,000-10,000";
+"ehime.imabari_towel.price" = "2,000–10,000 เยน";
 
 "ehime.tobe_yaki.name" = "Tobe Pottery";
 "ehime.tobe_yaki.description" = "Traditional crafts from Tobe Town, Ehime";
-"ehime.tobe_yaki.price" = "¥2,000-20,000";
+"ehime.tobe_yaki.price" = "2,000–20,000 เยน";
 
 // =====================================================
 // Kochi
 // =====================================================
 "kochi.mille_biscuit.name" = "Mille Biscuit";
 "kochi.mille_biscuit.description" = "Representative confection of Kochi";
-"kochi.mille_biscuit.price" = "¥500-1,200";
+"kochi.mille_biscuit.price" = "500–1,200 เยน";
 
 "kochi.imo_kenpi.name" = "Imo Kenpi";
 "kochi.imo_kenpi.description" = "Specialty confection from Kochi";
-"kochi.imo_kenpi.price" = "¥800-1,500";
+"kochi.imo_kenpi.price" = "800–1,500 เยน";
 
 "kochi.tosa_nikki.name" = "Tosa Nikki";
 "kochi.tosa_nikki.description" = "Famous confection from Kochi";
-"kochi.tosa_nikki.price" = "¥1,000-2,000";
+"kochi.tosa_nikki.price" = "1,000–2,000 เยน";
 
 "kochi.kanzashi.name" = "Kanzashi";
 "kochi.kanzashi.description" = "Traditional crafts from Kochi";
-"kochi.kanzashi.price" = "¥3,000-15,000";
+"kochi.kanzashi.price" = "3,000–15,000 เยน";
 
 "kochi.tosa_washi.name" = "Tosa Washi";
 "kochi.tosa_washi.description" = "Traditional crafts from Kochi";
-"kochi.tosa_washi.price" = "¥1,000-8,000";
+"kochi.tosa_washi.price" = "1,000–8,000 เยน";
 
 // =====================================================
 // Fukuoka
 // =====================================================
 "fukuoka.hakata_torimon.name" = "Hakata Torimon";
 "fukuoka.hakata_torimon.description" = "Famous confection of Fukuoka. Elegant sweetness of milk manju";
-"fukuoka.hakata_torimon.price" = "¥1,200-2,500";
+"fukuoka.hakata_torimon.price" = "1,200–2,500 เยน";
 
 "fukuoka.hiyoko.name" = "Hiyoko";
 "fukuoka.hiyoko.description" = "Hakata specialty chick-shaped steamed bun";
-"fukuoka.hiyoko.price" = "¥1,000-2,500";
+"fukuoka.hiyoko.price" = "1,000–2,500 เยน";
 
 "fukuoka.tirolian.name" = "Tirolian";
 "fukuoka.tirolian.description" = "Representative confection of Fukuoka";
-"fukuoka.tirolian.price" = "¥800-1,500";
+"fukuoka.tirolian.price" = "800–1,500 เยน";
 
 "fukuoka.hakata_no_onna.name" = "Hakata no Onna";
 "fukuoka.hakata_no_onna.description" = "Famous confection from Fukuoka";
-"fukuoka.hakata_no_onna.price" = "¥1,000-2,000";
+"fukuoka.hakata_no_onna.price" = "1,000–2,000 เยน";
 
 "fukuoka.mentaiko.name" = "Mentaiko";
 "fukuoka.mentaiko.description" = "Specialty product from Fukuoka";
-"fukuoka.mentaiko.price" = "¥1,500-5,000";
+"fukuoka.mentaiko.price" = "1,500–5,000 เยน";
 
 "fukuoka.hakata_ori.name" = "Hakata Ori";
 "fukuoka.hakata_ori.description" = "Traditional crafts from Fukuoka";
-"fukuoka.hakata_ori.price" = "¥5,000-50,000";
+"fukuoka.hakata_ori.price" = "5,000–50,000 เยน";
 
 // =====================================================
 // Saga
 // =====================================================
 "saga.maru_boro.name" = "Maru Boro";
 "saga.maru_boro.description" = "Traditional confection of Saga. Sweet confection like castella";
-"saga.maru_boro.price" = "¥800-2,000";
+"saga.maru_boro.price" = "800–2,000 เยน";
 
 "saga.ikkoko.name" = "Ikkoko";
 "saga.ikkoko.description" = "Famous confection from Saga";
-"saga.ikkoko.price" = "¥1,000-2,000";
+"saga.ikkoko.price" = "1,000–2,000 เยน";
 
 "saga.shoro_manju.name" = "Shoro Manju";
 "saga.shoro_manju.description" = "Representative confection of Saga";
-"saga.shoro_manju.price" = "¥1,200-2,500";
+"saga.shoro_manju.price" = "1,200–2,500 เยน";
 
 "saga.ogi_yokan.name" = "Ogi Yokan";
 "saga.ogi_yokan.description" = "Traditional yokan from Ogi City, Saga";
-"saga.ogi_yokan.price" = "¥1,500-3,000";
+"saga.ogi_yokan.price" = "1,500–3,000 เยน";
 
 "saga.arita_yaki.name" = "Arita Pottery";
 "saga.arita_yaki.description" = "Traditional crafts from Arita Town, Saga";
-"saga.arita_yaki.price" = "¥3,000-100,000";
+"saga.arita_yaki.price" = "3,000–100,000 เยน";
 
 // =====================================================
 // Nagasaki
 // =====================================================
 "nagasaki.fukusaya_castella.name" = "Fukusaya Castella";
 "nagasaki.fukusaya_castella.description" = "Representative confection of Nagasaki. Moist and sweet sponge";
-"nagasaki.fukusaya_castella.price" = "¥2,000-5,000";
+"nagasaki.fukusaya_castella.price" = "2,000–5,000 เยน";
 
 "nagasaki.kurusu.name" = "Kurusu";
 "nagasaki.kurusu.description" = "Western confection from Nagasaki";
-"nagasaki.kurusu.price" = "¥1,200-2,500";
+"nagasaki.kurusu.price" = "1,200–2,500 เยน";
 
 "nagasaki.yoriyori.name" = "Yoriyori";
 "nagasaki.yoriyori.description" = "Chinese confection from Nagasaki";
-"nagasaki.yoriyori.price" = "¥800-1,500";
+"nagasaki.yoriyori.price" = "800–1,500 เยน";
 
 "nagasaki.momo_castella.name" = "Momo Castella";
 "nagasaki.momo_castella.description" = "Nagasaki's Hinamatsuri castella";
-"nagasaki.momo_castella.price" = "¥2,000-4,000";
+"nagasaki.momo_castella.price" = "2,000–4,000 เยน";
 
 "nagasaki.kakuni_manju.name" = "Kakuni Manju";
 "nagasaki.kakuni_manju.description" = "Nagasaki specialty. Steamed bun with tender braised pork belly";
-"nagasaki.kakuni_manju.price" = "¥500-1,200";
+"nagasaki.kakuni_manju.price" = "500–1,200 เยน";
 
 // =====================================================
 // Kumamoto
 // =====================================================
 "kumamoto.homare_no_jindaiko.name" = "Homare no Jindaiko";
 "kumamoto.homare_no_jindaiko.description" = "Representative confection of Kumamoto";
-"kumamoto.homare_no_jindaiko.price" = "¥1,200-2,500";
+"kumamoto.homare_no_jindaiko.price" = "1,200–2,500 เยน";
 
 "kumamoto.ikinari_dango.name" = "Ikinari Dango";
 "kumamoto.ikinari_dango.description" = "Local confection of Kumamoto. Dumplings with sweet potato and sweet bean paste";
-"kumamoto.ikinari_dango.price" = "¥500-1,000";
+"kumamoto.ikinari_dango.price" = "500–1,000 เยน";
 
 "kumamoto.musha_gaeshi.name" = "Musha Gaeshi";
 "kumamoto.musha_gaeshi.description" = "Famous confection from Kumamoto";
-"kumamoto.musha_gaeshi.price" = "¥1,000-2,000";
+"kumamoto.musha_gaeshi.price" = "1,000–2,000 เยน";
 
 "kumamoto.chosen_ame.name" = "Chosen Ame";
 "kumamoto.chosen_ame.description" = "Traditional candy from Kumamoto";
-"kumamoto.chosen_ame.price" = "¥800-1,500";
+"kumamoto.chosen_ame.price" = "800–1,500 เยน";
 
 "kumamoto.kumamon_goods.name" = "Kumamon Goods";
 "kumamoto.kumamon_goods.description" = "Products featuring Kumamoto's mascot character";
-"kumamoto.kumamon_goods.price" = "¥500-3,000";
+"kumamoto.kumamon_goods.price" = "500–3,000 เยน";
 
 // =====================================================
 // Oita
 // =====================================================
 "oita.zabieru.name" = "Zabieru";
 "oita.zabieru.description" = "Representative confection of Oita";
-"oita.zabieru.price" = "¥1,200-2,500";
+"oita.zabieru.price" = "1,200–2,500 เยน";
 
 "oita.kojono_tsuki.name" = "Kojo no Tsuki";
 "oita.kojono_tsuki.description" = "Famous confection from Oita";
-"oita.kojono_tsuki.price" = "¥1,000-2,000";
+"oita.kojono_tsuki.price" = "1,000–2,000 เยน";
 
 "oita.yaseuma.name" = "Yaseuma";
 "oita.yaseuma.description" = "Local confection from Oita";
-"oita.yaseuma.price" = "¥800-1,500";
+"oita.yaseuma.price" = "800–1,500 เยน";
 
 "oita.gomadashi_udon.name" = "Gomadashi Udon";
 "oita.gomadashi_udon.description" = "Specialty product from Oita";
-"oita.gomadashi_udon.price" = "¥1,000-2,000";
+"oita.gomadashi_udon.price" = "1,000–2,000 เยน";
 
 "oita.onsen_goods.name" = "Hot Spring Goods";
 "oita.onsen_goods.description" = "Hot spring goods from Oita, the Onsen Prefecture";
-"oita.onsen_goods.price" = "¥800-3,000";
+"oita.onsen_goods.price" = "800–3,000 เยน";
 
 // =====================================================
 // Miyazaki
 // =====================================================
 "miyazaki.nanjako_daifuku.name" = "Nanjako Daifuku";
 "miyazaki.nanjako_daifuku.description" = "Popular daifuku from Miyazaki";
-"miyazaki.nanjako_daifuku.price" = "¥1,000-2,000";
+"miyazaki.nanjako_daifuku.price" = "1,000–2,000 เยน";
 
 "miyazaki.cheese_manju.name" = "Cheese Manju";
 "miyazaki.cheese_manju.description" = "Representative confection of Miyazaki";
-"miyazaki.cheese_manju.price" = "¥1,200-2,500";
+"miyazaki.cheese_manju.price" = "1,200–2,500 เยน";
 
 "miyazaki.aoshima_senbei.name" = "Aoshima Senbei";
 "miyazaki.aoshima_senbei.description" = "Famous rice crackers from Aoshima, Miyazaki";
-"miyazaki.aoshima_senbei.price" = "¥800-1,500";
+"miyazaki.aoshima_senbei.price" = "800–1,500 เยน";
 
 "miyazaki.hyuganatsu_sable.name" = "Hyuganatsu Sablé";
 "miyazaki.hyuganatsu_sable.description" = "Sablé made with Miyazaki's specialty hyuganatsu citrus";
-"miyazaki.hyuganatsu_sable.price" = "¥1,000-2,000";
+"miyazaki.hyuganatsu_sable.price" = "1,000–2,000 เยน";
 
 "miyazaki.mango_goods.name" = "Mango Products";
 "miyazaki.mango_goods.description" = "Products made with Miyazaki mangoes";
-"miyazaki.mango_goods.price" = "¥1,500-5,000";
+"miyazaki.mango_goods.price" = "1,500–5,000 เยน";
 
 // =====================================================
 // Kagoshima
 // =====================================================
 "kagoshima.karukan.name" = "Karukan";
 "kagoshima.karukan.description" = "Representative confection of Kagoshima";
-"kagoshima.karukan.price" = "¥1,000-2,500";
+"kagoshima.karukan.price" = "1,000–2,500 เยน";
 
 "kagoshima.satsuma_imo_tart.name" = "Satsuma Sweet Potato Tart";
 "kagoshima.satsuma_imo_tart.description" = "Tart made with Kagoshima's satsuma sweet potatoes";
-"kagoshima.satsuma_imo_tart.price" = "¥1,200-2,500";
+"kagoshima.satsuma_imo_tart.price" = "1,200–2,500 เยน";
 
 "kagoshima.karukan_manju.name" = "Karukan Manju";
 "kagoshima.karukan_manju.description" = "Traditional steamed bun from Kagoshima";
-"kagoshima.karukan_manju.price" = "¥1,000-2,000";
+"kagoshima.karukan_manju.price" = "1,000–2,000 เยน";
 
 "kagoshima.satsuma_kiriko.name" = "Satsuma Kiriko";
 "kagoshima.satsuma_kiriko.description" = "Traditional crafts from Kagoshima";
-"kagoshima.satsuma_kiriko.price" = "¥10,000-100,000";
+"kagoshima.satsuma_kiriko.price" = "10,000–100,000 เยน";
 
 "kagoshima.imo_shochu.name" = "Sweet Potato Shochu";
 "kagoshima.imo_shochu.description" = "Representative shochu from Kagoshima";
-"kagoshima.imo_shochu.price" = "¥1,500-10,000";
+"kagoshima.imo_shochu.price" = "1,500–10,000 เยน";
 
 // =====================================================
 // Okinawa
 // =====================================================
 "okinawa.chinsuko.name" = "Chinsuko";
 "okinawa.chinsuko.description" = "Representative confection of Okinawa";
-"okinawa.chinsuko.price" = "¥800-2,000";
+"okinawa.chinsuko.price" = "800–2,000 เยน";
 
 "okinawa.beni_imo_tart.name" = "Purple Sweet Potato Tart";
 "okinawa.beni_imo_tart.description" = "Tart made with Okinawa purple sweet potatoes";
-"okinawa.beni_imo_tart.price" = "¥1,200-2,500";
+"okinawa.beni_imo_tart.price" = "1,200–2,500 เยน";
 
 "okinawa.yukishio_chinsuko.name" = "Snow Salt Chinsuko";
 "okinawa.yukishio_chinsuko.description" = "Chinsuko made with Miyakojima snow salt";
-"okinawa.yukishio_chinsuko.price" = "¥1,000-2,000";
+"okinawa.yukishio_chinsuko.price" = "1,000–2,000 เยน";
 
 "okinawa.sata_andagi.name" = "Sata Andagi";
 "okinawa.sata_andagi.description" = "Okinawan fried confection";
-"okinawa.sata_andagi.price" = "¥500-1,200";
+"okinawa.sata_andagi.price" = "500–1,200 เยน";
 
 "okinawa.awamori_cookie.name" = "Ryukyu Awamori Cookie";
 "okinawa.awamori_cookie.description" = "Cookies made with Okinawan awamori";
-"okinawa.awamori_cookie.price" = "¥800-1,500";
+"okinawa.awamori_cookie.price" = "800–1,500 เยน";
 
 "okinawa.ryukyu_glass.name" = "Ryukyu Glass";
 "okinawa.ryukyu_glass.description" = "Traditional crafts from Okinawa";
-"okinawa.ryukyu_glass.price" = "¥2,000-20,000";
+"okinawa.ryukyu_glass.price" = "2,000–20,000 เยน";
 
 "okinawa.shisa.name" = "Shisa";
 "okinawa.shisa.description" = "Guardian lion-dog figurines of Okinawa";
-"okinawa.shisa.price" = "¥1,000-10,000";
+"okinawa.shisa.price" = "1,000–10,000 เยน";
 
 // =====================================================
 // Hokkaido
 // =====================================================
 "hokkaido.shiroi_koibito.name" = "Shiroi Koibito";
 "hokkaido.shiroi_koibito.description" = "Classic Hokkaido souvenir. Perfect combination of langue de chat and white chocolate";
-"hokkaido.shiroi_koibito.price" = "¥500-2,000";
+"hokkaido.shiroi_koibito.price" = "500–2,000 เยน";
 
 "hokkaido.marsei_butter_sand.name" = "Marsei Butter Sandwich";
 "hokkaido.marsei_butter_sand.description" = "Rokkatei's signature confection. Excellent butter cream and raisins";
-"hokkaido.marsei_butter_sand.price" = "¥1,200-2,000";
+"hokkaido.marsei_butter_sand.price" = "1,200–2,000 เยน";
 
 "hokkaido.jaga_pokkuru.name" = "Jaga Pokkuru";
 "hokkaido.jaga_pokkuru.description" = "Crispy snack made from Hokkaido potatoes";
-"hokkaido.jaga_pokkuru.price" = "¥1,000-1,500";
+"hokkaido.jaga_pokkuru.price" = "1,000–1,500 เยน";
 
 "hokkaido.royce_nama_chocolate.name" = "Royce' Nama Chocolate";
 "hokkaido.royce_nama_chocolate.description" = "Smooth-melting nama chocolate";
-"hokkaido.royce_nama_chocolate.price" = "¥800-2,500";
+"hokkaido.royce_nama_chocolate.price" = "800–2,500 เยน";
 
 "hokkaido.yubari_melon_jelly.name" = "Yubari Melon Pure Jelly";
 "hokkaido.yubari_melon_jelly.description" = "Jelly full of Yubari melon juice";
-"hokkaido.yubari_melon_jelly.price" = "¥2,000-4,000";
+"hokkaido.yubari_melon_jelly.price" = "2,000–4,000 เยน";
 
 // =====================================================
 // Aomori
 // =====================================================
 "aomori.kininaruringo.name" = "Kininaruringo";
 "aomori.kininaruringo.description" = "Apple pie-style confection using Aomori apples";
-"aomori.kininaruringo.price" = "¥1,000-2,000";
+"aomori.kininaruringo.price" = "1,000–2,000 เยน";
 
 "aomori.asa_no_hakkoda.name" = "Asa no Hakkoda";
 "aomori.asa_no_hakkoda.description" = "Representative confection of Aomori";
-"aomori.asa_no_hakkoda.price" = "¥1,500-3,000";
+"aomori.asa_no_hakkoda.price" = "1,500–3,000 เยน";
 
 "aomori.ringo_stick.name" = "Apple Stick";
 "aomori.ringo_stick.description" = "Stick-shaped confection made with Aomori apples";
-"aomori.ringo_stick.price" = "¥800-1,500";
+"aomori.ringo_stick.price" = "800–1,500 เยน";
 
 "aomori.tsugaru_vidro.name" = "Tsugaru Vidro";
 "aomori.tsugaru_vidro.description" = "Traditional Aomori glassware";
-"aomori.tsugaru_vidro.price" = "¥2,000-10,000";
+"aomori.tsugaru_vidro.price" = "2,000–10,000 เยน";
 
 "aomori.nebuta_goods.name" = "Nebuta Festival Goods";
 "aomori.nebuta_goods.description" = "Folk crafts inspired by Aomori Nebuta Festival";
-"aomori.nebuta_goods.price" = "¥500-3,000";
+"aomori.nebuta_goods.price" = "500–3,000 เยน";
 
 // =====================================================
 // Iwate
 // =====================================================
 "iwate.kamome_no_tamago.name" = "Kamome no Tamago";
 "iwate.kamome_no_tamago.description" = "Representative confection of Ofunato City, Iwate";
-"iwate.kamome_no_tamago.price" = "¥1,000-2,500";
+"iwate.kamome_no_tamago.price" = "1,000–2,500 เยน";
 
 "iwate.nanbu_senbei.name" = "Nanbu Senbei";
 "iwate.nanbu_senbei.description" = "Traditional rice crackers from Iwate";
-"iwate.nanbu_senbei.price" = "¥500-1,500";
+"iwate.nanbu_senbei.price" = "500–1,500 เยน";
 
 "iwate.nanbu_tekki.name" = "Nanbu Tekki";
 "iwate.nanbu_tekki.description" = "Traditional ironware from Iwate. Iron teapots and pots";
-"iwate.nanbu_tekki.price" = "¥3,000-30,000";
+"iwate.nanbu_tekki.price" = "3,000–30,000 เยน";
 
 "iwate.gangetsu.name" = "Gangetsu";
 "iwate.gangetsu.description" = "Iwate confection with egg yolk filling";
-"iwate.gangetsu.price" = "¥1,500-3,000";
+"iwate.gangetsu.price" = "1,500–3,000 เยน";
 
 "iwate.fukuda_pan.name" = "Fukuda Pan";
 "iwate.fukuda_pan.description" = "Coppe pan bread loved by Morioka citizens";
-"iwate.fukuda_pan.price" = "¥200-500";
+"iwate.fukuda_pan.price" = "200–500 เยน";
 
 // =====================================================
 // Miyagi
 // =====================================================
 "miyagi.hagi_no_tsuki.name" = "Hagi no Tsuki";
 "miyagi.hagi_no_tsuki.description" = "Sendai's famous confection. Sponge cake with custard cream filling";
-"miyagi.hagi_no_tsuki.price" = "¥1,500-3,000";
+"miyagi.hagi_no_tsuki.price" = "1,500–3,000 เยน";
 
 "miyagi.sasa_kamaboko.name" = "Sasa Kamaboko";
 "miyagi.sasa_kamaboko.description" = "Miyagi specialty. High-quality fish paste shaped like bamboo leaves";
-"miyagi.sasa_kamaboko.price" = "¥1,000-3,000";
+"miyagi.sasa_kamaboko.price" = "1,000–3,000 เยน";
 
 "miyagi.zunda_saryo.name" = "Zunda Saryo";
 "miyagi.zunda_saryo.description" = "Sweets brand products using edamame beans";
-"miyagi.zunda_saryo.price" = "¥800-2,500";
+"miyagi.zunda_saryo.price" = "800–2,500 เยน";
 
 "miyagi.hakumatsuga_monaka.name" = "Hakumatsuga Monaka";
 "miyagi.hakumatsuga_monaka.description" = "Monaka from a long-established confectionery in Sendai";
-"miyagi.hakumatsuga_monaka.price" = "¥1,000-2,000";
+"miyagi.hakumatsuga_monaka.price" = "1,000–2,000 เยน";
 
 "miyagi.kokeshi.name" = "Kokeshi";
 "miyagi.kokeshi.description" = "Traditional wooden dolls from Miyagi";
-"miyagi.kokeshi.price" = "¥1,000-10,000";
+"miyagi.kokeshi.price" = "1,000–10,000 เยน";
 
 // =====================================================
 // Akita
 // =====================================================
 "akita.kinman.name" = "Kinman";
 "akita.kinman.description" = "Representative confection of Akita. Castella bun with white bean filling";
-"akita.kinman.price" = "¥1,000-2,500";
+"akita.kinman.price" = "1,000–2,500 เยน";
 
 "akita.butter_mochi.name" = "Butter Mochi";
 "akita.butter_mochi.description" = "Akita's local confection. Mochi with butter and sugar";
-"akita.butter_mochi.price" = "¥800-1,500";
+"akita.butter_mochi.price" = "800–1,500 เยน";
 
 "akita.namahage_goods.name" = "Namahage Goods";
 "akita.namahage_goods.description" = "Souvenirs of Akita's traditional Namahage ritual";
-"akita.namahage_goods.price" = "¥500-3,000";
+"akita.namahage_goods.price" = "500–3,000 เยน";
 
 "akita.morokoshi.name" = "Morokoshi";
 "akita.morokoshi.description" = "Traditional Akita confection. A type of rakugan";
-"akita.morokoshi.price" = "¥1,000-2,000";
+"akita.morokoshi.price" = "1,000–2,000 เยน";
 
 "akita.inaniwa_udon.name" = "Inaniwa Udon";
 "akita.inaniwa_udon.description" = "Hand-stretched udon noodles from Akita";
-"akita.inaniwa_udon.price" = "¥1,500-3,000";
+"akita.inaniwa_udon.price" = "1,500–3,000 เยน";
 
 // =====================================================
 // Yamagata
 // =====================================================
 "yamagata.oshidori_milk_cake.name" = "Oshidori Milk Cake";
 "yamagata.oshidori_milk_cake.description" = "Representative confection of Yamagata";
-"yamagata.oshidori_milk_cake.price" = "¥800-1,500";
+"yamagata.oshidori_milk_cake.price" = "800–1,500 เยน";
 
 "yamagata.noshi_ume.name" = "Noshi Ume";
 "yamagata.noshi_ume.description" = "Yamagata confection made with plums";
-"yamagata.noshi_ume.price" = "¥1,000-2,500";
+"yamagata.noshi_ume.price" = "1,000–2,500 เยน";
 
 "yamagata.sakuranbo_kirara.name" = "Sakuranbo Kirara";
 "yamagata.sakuranbo_kirara.description" = "Jelly made with Yamagata cherries";
-"yamagata.sakuranbo_kirara.price" = "¥1,500-3,000";
+"yamagata.sakuranbo_kirara.price" = "1,500–3,000 เยน";
 
 "yamagata.shogi_koma.name" = "Shogi Pieces";
 "yamagata.shogi_koma.description" = "Traditional crafts from Tendo City, Yamagata";
-"yamagata.shogi_koma.price" = "¥2,000-50,000";
+"yamagata.shogi_koma.price" = "2,000–50,000 เยน";
 
 "yamagata.dadacha_mame.name" = "Dadacha Mame";
 "yamagata.dadacha_mame.description" = "Specialty edamame from Tsuruoka City, Yamagata";
-"yamagata.dadacha_mame.price" = "¥1,000-2,000";
+"yamagata.dadacha_mame.price" = "1,000–2,000 เยน";
 
 // =====================================================
 // Fukushima
 // =====================================================
 "fukushima.mamadoru.name" = "Mamadoru";
 "fukushima.mamadoru.description" = "Fukushima's famous confection. Gentle milk-flavored Western-style sweet";
-"fukushima.mamadoru.price" = "¥1,000-2,500";
+"fukushima.mamadoru.price" = "1,000–2,500 เยน";
 
 "fukushima.usukawa_manju.name" = "Usukawa Manju";
 "fukushima.usukawa_manju.description" = "Representative confection of Koriyama City, Fukushima";
-"fukushima.usukawa_manju.price" = "¥1,000-2,000";
+"fukushima.usukawa_manju.price" = "1,000–2,000 เยน";
 
 "fukushima.exson_pie.name" = "Exson Pie";
 "fukushima.exson_pie.description" = "Pie confection from Fukushima";
-"fukushima.exson_pie.price" = "¥1,200-2,000";
+"fukushima.exson_pie.price" = "1,200–2,000 เยน";
 
 "fukushima.aizu_nuri.name" = "Aizu Lacquerware";
 "fukushima.aizu_nuri.description" = "Traditional crafts from Aizu region, Fukushima";
-"fukushima.aizu_nuri.price" = "¥3,000-30,000";
+"fukushima.aizu_nuri.price" = "3,000–30,000 เยน";
 
 "fukushima.kitakata_ramen.name" = "Kitakata Ramen";
 "fukushima.kitakata_ramen.description" = "Local ramen from Kitakata City, Fukushima (souvenir version)";
-"fukushima.kitakata_ramen.price" = "¥1,000-2,500";
+"fukushima.kitakata_ramen.price" = "1,000–2,500 เยน";
 
 // =====================================================
 // Ibaraki
 // =====================================================
 "ibaraki.yoshiwara_denchu.name" = "Yoshiwara Denchu";
 "ibaraki.yoshiwara_denchu.description" = "Representative confection of Mito City, Ibaraki";
-"ibaraki.yoshiwara_denchu.price" = "¥1,000-2,000";
+"ibaraki.yoshiwara_denchu.price" = "1,000–2,000 เยน";
 
 "ibaraki.noshi_ume.name" = "Noshi Ume";
 "ibaraki.noshi_ume.description" = "Ibaraki confection made with plums";
-"ibaraki.noshi_ume.price" = "¥800-1,500";
+"ibaraki.noshi_ume.price" = "800–1,500 เยน";
 
 "ibaraki.natto.name" = "Natto";
 "ibaraki.natto.description" = "Ibaraki specialty. Various types of fermented soybeans";
-"ibaraki.natto.price" = "¥300-1,000";
+"ibaraki.natto.price" = "300–1,000 เยน";
 
 "ibaraki.hoshi_imo.name" = "Hoshi Imo";
 "ibaraki.hoshi_imo.description" = "Ibaraki specialty. Naturally sweet dried sweet potatoes";
-"ibaraki.hoshi_imo.price" = "¥800-2,000";
+"ibaraki.hoshi_imo.price" = "800–2,000 เยน";
 
 "ibaraki.hitachi_fudoki.name" = "Hitachi Fudoki no Oka";
 "ibaraki.hitachi_fudoki.description" = "Ibaraki confection";
-"ibaraki.hitachi_fudoki.price" = "¥1,200-2,500";
+"ibaraki.hitachi_fudoki.price" = "1,200–2,500 เยน";
 
 // =====================================================
 // Tochigi
 // =====================================================
 "tochigi.goyotei_no_tsuki.name" = "Goyotei no Tsuki";
 "tochigi.goyotei_no_tsuki.description" = "Representative confection of Tochigi";
-"tochigi.goyotei_no_tsuki.price" = "¥1,500-3,000";
+"tochigi.goyotei_no_tsuki.price" = "1,500–3,000 เยน";
 
 "tochigi.lemon_milk_cookie.name" = "Lemon Milk Cookie";
 "tochigi.lemon_milk_cookie.description" = "Cookies made with Tochigi's soul drink";
-"tochigi.lemon_milk_cookie.price" = "¥800-1,500";
+"tochigi.lemon_milk_cookie.price" = "800–1,500 เยน";
 
 "tochigi.yuba_senbei.name" = "Yuba Senbei";
 "tochigi.yuba_senbei.description" = "Rice crackers made with Nikko's famous yuba";
-"tochigi.yuba_senbei.price" = "¥1,000-2,000";
+"tochigi.yuba_senbei.price" = "1,000–2,000 เยน";
 
 "tochigi.mashiko_yaki.name" = "Mashiko Pottery";
 "tochigi.mashiko_yaki.description" = "Traditional crafts from Mashiko Town, Tochigi";
-"tochigi.mashiko_yaki.price" = "¥2,000-20,000";
+"tochigi.mashiko_yaki.price" = "2,000–20,000 เยน";
 
 "tochigi.tochiotome_goods.name" = "Tochiotome Strawberry Products";
 "tochigi.tochiotome_goods.description" = "Confections made with Tochigi strawberries";
-"tochigi.tochiotome_goods.price" = "¥800-2,000";
+"tochigi.tochiotome_goods.price" = "800–2,000 เยน";
 
 // =====================================================
 // Gunma
 // =====================================================
 "gunma.tabi_garasu.name" = "Tabi Garasu";
 "gunma.tabi_garasu.description" = "Representative confection of Gunma";
-"gunma.tabi_garasu.price" = "¥1,000-2,500";
+"gunma.tabi_garasu.price" = "1,000–2,500 เยน";
 
 "gunma.isobe_senbei.name" = "Isobe Senbei";
 "gunma.isobe_senbei.description" = "Famous rice crackers from Isobe Onsen, Annaka City, Gunma";
-"gunma.isobe_senbei.price" = "¥800-1,500";
+"gunma.isobe_senbei.price" = "800–1,500 เยน";
 
 "gunma.konnyaku_park.name" = "Konnyaku Park Products";
 "gunma.konnyaku_park.description" = "Various products made with Gunma's konjac";
-"gunma.konnyaku_park.price" = "¥500-2,000";
+"gunma.konnyaku_park.price" = "500–2,000 เยน";
 
 "gunma.daruma_bento.name" = "Daruma Bento";
 "gunma.daruma_bento.description" = "Famous ekiben from Takasaki Station. Features a daruma-shaped container";
-"gunma.daruma_bento.price" = "¥1,200-1,500";
+"gunma.daruma_bento.price" = "1,200–1,500 เยน";
 
 "gunma.yaki_manju.name" = "Yaki Manju";
 "gunma.yaki_manju.description" = "Gunma specialty. Steamed buns grilled with sweet miso sauce";
-"gunma.yaki_manju.price" = "¥200-500";
+"gunma.yaki_manju.price" = "200–500 เยน";
 
 // =====================================================
 // Saitama
 // =====================================================
 "saitama.jumangoku_manju.name" = "Jumangoku Manju";
 "saitama.jumangoku_manju.description" = "Representative confection of Saitama. Thin-skinned bun with red bean paste";
-"saitama.jumangoku_manju.price" = "¥1,000-2,000";
+"saitama.jumangoku_manju.price" = "1,000–2,000 เยน";
 
 "saitama.gokaho.name" = "Gokaho";
 "saitama.gokaho.description" = "Kumagaya's famous confection. Traditional sweet coated with kinako";
-"saitama.gokaho.price" = "¥800-1,500";
+"saitama.gokaho.price" = "800–1,500 เยน";
 
 "saitama.soka_senbei.name" = "Soka Senbei";
 "saitama.soka_senbei.description" = "Soka City specialty. Crispy and fragrant soy sauce rice crackers";
-"saitama.soka_senbei.price" = "¥1,000-2,500";
+"saitama.soka_senbei.price" = "1,000–2,500 เยน";
 
 "saitama.kawagoe_imo_cookie.name" = "Kawagoe Sweet Potato Cookies";
 "saitama.kawagoe_imo_cookie.description" = "Cookies made with Kawagoe's specialty sweet potatoes";
-"saitama.kawagoe_imo_cookie.price" = "¥800-1,500";
+"saitama.kawagoe_imo_cookie.price" = "800–1,500 เยน";
 
 "saitama.sayama_cha.name" = "Sayama Tea";
 "saitama.sayama_cha.description" = "Specialty product from Sayama City, Saitama";
-"saitama.sayama_cha.price" = "¥1,000-3,000";
+"saitama.sayama_cha.price" = "1,000–3,000 เยน";
 
 // =====================================================
 // Chiba
 // =====================================================
 "chiba.peanut_monaka.name" = "Peanut Monaka";
 "chiba.peanut_monaka.description" = "Monaka made with Chiba peanuts";
-"chiba.peanut_monaka.price" = "¥1,200-2,500";
+"chiba.peanut_monaka.price" = "1,200–2,500 เยน";
 
 "chiba.boso_biwa_jelly.name" = "Boso Loquat Jelly";
 "chiba.boso_biwa_jelly.description" = "Jelly made with Chiba loquats";
-"chiba.boso_biwa_jelly.price" = "¥1,000-2,000";
+"chiba.boso_biwa_jelly.price" = "1,000–2,000 เยน";
 
 "chiba.nagomi_komeya.name" = "Nagomi no Komeya";
 "chiba.nagomi_komeya.description" = "Products from a long-established confectionery in Narita City, Chiba";
-"chiba.nagomi_komeya.price" = "¥800-2,000";
+"chiba.nagomi_komeya.price" = "800–2,000 เยน";
 
 "chiba.oranda_sable.name" = "Oranda-ya Sablé";
 "chiba.oranda_sable.description" = "Products from Chiba's sablé specialty shop";
-"chiba.oranda_sable.price" = "¥1,000-2,500";
+"chiba.oranda_sable.price" = "1,000–2,500 เยน";
 
 "chiba.rakkasei.name" = "Peanuts";
 "chiba.rakkasei.description" = "Fresh peanuts from Chiba";
-"chiba.rakkasei.price" = "¥800-2,000";
+"chiba.rakkasei.price" = "800–2,000 เยน";
 
 // =====================================================
 // Tokyo
 // =====================================================
 "tokyo.hiyoko.name" = "Hiyoko";
 "tokyo.hiyoko.description" = "Classic Tokyo souvenir. Cute chick-shaped steamed bun";
-"tokyo.hiyoko.price" = "¥1,000-3,000";
+"tokyo.hiyoko.price" = "1,000–3,000 เยน";
 
 "tokyo.tokyo_banana.name" = "Tokyo Banana";
 "tokyo.tokyo_banana.description" = "Representative Tokyo souvenir. Banana-flavored sponge cake";
-"tokyo.tokyo_banana.price" = "¥1,200-2,500";
+"tokyo.tokyo_banana.price" = "1,200–2,500 เยน";
 
 "tokyo.funawa_imo_yokan.name" = "Funawa Sweet Potato Yokan";
 "tokyo.funawa_imo_yokan.description" = "Specialty of a long-established confectionery in Asakusa";
-"tokyo.funawa_imo_yokan.price" = "¥1,000-2,000";
+"tokyo.funawa_imo_yokan.price" = "1,000–2,000 เยน";
 
 "tokyo.kaminari_okoshi.name" = "Kaminari Okoshi";
 "tokyo.kaminari_okoshi.description" = "Famous confection from Asakusa Kaminarimon";
-"tokyo.kaminari_okoshi.price" = "¥500-1,500";
+"tokyo.kaminari_okoshi.price" = "500–1,500 เยน";
 
 "tokyo.ningyo_yaki.name" = "Ningyo-yaki";
 "tokyo.ningyo_yaki.description" = "Traditional Tokyo confection";
-"tokyo.ningyo_yaki.price" = "¥800-1,500";
+"tokyo.ningyo_yaki.price" = "800–1,500 เยน";
 
 "tokyo.edo_kiriko.name" = "Edo Kiriko";
 "tokyo.edo_kiriko.description" = "Traditional Tokyo cut glass crafts";
-"tokyo.edo_kiriko.price" = "¥5,000-50,000";
+"tokyo.edo_kiriko.price" = "5,000–50,000 เยน";
 
 // =====================================================
 // Kanagawa
 // =====================================================
 "kanagawa.hato_sable.name" = "Hato Sablé";
 "kanagawa.hato_sable.description" = "Kamakura specialty. Dove-shaped sablé";
-"kanagawa.hato_sable.price" = "¥1,000-2,500";
+"kanagawa.hato_sable.price" = "1,000–2,500 เยน";
 
 "kanagawa.yokohama_renga.name" = "Yokohama Renga";
 "kanagawa.yokohama_renga.description" = "Representative Western confection of Yokohama";
-"kanagawa.yokohama_renga.price" = "¥1,500-3,000";
+"kanagawa.yokohama_renga.price" = "1,500–3,000 เยน";
 
 "kanagawa.ariake_harbor.name" = "Ariake Harbor";
 "kanagawa.ariake_harbor.description" = "Representative product of a long-established confectionery in Yokohama";
-"kanagawa.ariake_harbor.price" = "¥1,200-2,500";
+"kanagawa.ariake_harbor.price" = "1,200–2,500 เยน";
 
 "kanagawa.kiyoken_hyochan.name" = "Kiyoken Hyochan Sablé";
 "kanagawa.kiyoken_hyochan.description" = "Sablé featuring Kiyoken's mascot character";
-"kanagawa.kiyoken_hyochan.price" = "¥800-1,500";
+"kanagawa.kiyoken_hyochan.price" = "800–1,500 เยน";
 
 "kanagawa.hakone_yosegi.name" = "Hakone Yosegi Zaiku";
 "kanagawa.hakone_yosegi.description" = "Traditional crafts from Hakone";
-"kanagawa.hakone_yosegi.price" = "¥2,000-20,000";
+"kanagawa.hakone_yosegi.price" = "2,000–20,000 เยน";
 
 // =====================================================
 // Niigata
 // =====================================================
 "niigata.sasa_dango.name" = "Sasa Dango";
 "niigata.sasa_dango.description" = "Representative Japanese confection of Niigata. Mugwort dumplings wrapped in bamboo leaves";
-"niigata.sasa_dango.price" = "¥800-1,500";
+"niigata.sasa_dango.price" = "800–1,500 เยน";
 
 "niigata.kasen_kaki_no_tane.name" = "Kasen Kaki no Tane";
 "niigata.kasen_kaki_no_tane.description" = "Original kaki no tane from Niigata";
-"niigata.kasen_kaki_no_tane.price" = "¥500-1,500";
+"niigata.kasen_kaki_no_tane.price" = "500–1,500 เยน";
 
 "niigata.yukiguni_arare.name" = "Yukiguni Arare";
 "niigata.yukiguni_arare.description" = "Rice crackers from Niigata";
-"niigata.yukiguni_arare.price" = "¥800-2,000";
+"niigata.yukiguni_arare.price" = "800–2,000 เยน";
 
 "niigata.echigo_hime_sandwich.name" = "Echigo-hime Strawberry Sandwich";
 "niigata.echigo_hime_sandwich.description" = "Sandwich cookies made with Niigata strawberries";
-"niigata.echigo_hime_sandwich.price" = "¥1,200-2,000";
+"niigata.echigo_hime_sandwich.price" = "1,200–2,000 เยน";
 
 "niigata.nihonshu.name" = "Niigata Sake";
 "niigata.nihonshu.description" = "Local sake from Niigata";
-"niigata.nihonshu.price" = "¥2,000-10,000";
+"niigata.nihonshu.price" = "2,000–10,000 เยน";
 
 // =====================================================
 // Toyama
 // =====================================================
 "toyama.masu_sushi.name" = "Masu Sushi";
 "toyama.masu_sushi.description" = "Famous ekiben from Toyama. Pressed sushi wrapped in bamboo leaves";
-"toyama.masu_sushi.price" = "¥1,500-3,000";
+"toyama.masu_sushi.price" = "1,500–3,000 เยน";
 
 "toyama.shiro_ebi_kiko.name" = "Shiro-ebi Kiko";
 "toyama.shiro_ebi_kiko.description" = "Rice crackers made with white shrimp from Toyama Bay";
-"toyama.shiro_ebi_kiko.price" = "¥1,000-2,000";
+"toyama.shiro_ebi_kiko.price" = "1,000–2,000 เยน";
 
 "toyama.getsusekai.name" = "Getsusekai";
 "toyama.getsusekai.description" = "Representative confection of Toyama";
-"toyama.getsusekai.price" = "¥1,000-2,500";
+"toyama.getsusekai.price" = "1,000–2,500 เยน";
 
 "toyama.kankintan.name" = "Kankintan";
 "toyama.kankintan.description" = "Traditional medicinal confection from Toyama";
-"toyama.kankintan.price" = "¥1,500-3,000";
+"toyama.kankintan.price" = "1,500–3,000 เยน";
 
 "toyama.kombu.name" = "Toyama Kelp";
 "toyama.kombu.description" = "Specialty product from Toyama";
-"toyama.kombu.price" = "¥1,000-3,000";
+"toyama.kombu.price" = "1,000–3,000 เยน";
 
 // =====================================================
 // Ishikawa
 // =====================================================
 "ishikawa.ukokukei_castella.name" = "Silky Fowl Castella";
 "ishikawa.ukokukei_castella.description" = "Premium castella from Kanazawa";
-"ishikawa.ukokukei_castella.price" = "¥2,000-5,000";
+"ishikawa.ukokukei_castella.price" = "2,000–5,000 เยน";
 
 "ishikawa.kinpaku_castella.name" = "Gold Leaf Castella";
 "ishikawa.kinpaku_castella.description" = "Castella decorated with Kanazawa's famous gold leaf";
-"ishikawa.kinpaku_castella.price" = "¥2,500-5,000";
+"ishikawa.kinpaku_castella.price" = "2,500–5,000 เยน";
 
 "ishikawa.jiroame.name" = "Jiroame";
 "ishikawa.jiroame.description" = "Traditional mizuame from Kanazawa";
-"ishikawa.jiroame.price" = "¥800-1,500";
+"ishikawa.jiroame.price" = "800–1,500 เยน";
 
 "ishikawa.kutani_yaki.name" = "Kutani Pottery";
 "ishikawa.kutani_yaki.description" = "Traditional crafts from Ishikawa";
-"ishikawa.kutani_yaki.price" = "¥3,000-50,000";
+"ishikawa.kutani_yaki.price" = "3,000–50,000 เยน";
 
 "ishikawa.wajima_nuri.name" = "Wajima Lacquerware";
 "ishikawa.wajima_nuri.description" = "Traditional crafts from Wajima City, Ishikawa";
-"ishikawa.wajima_nuri.price" = "¥10,000-100,000";
+"ishikawa.wajima_nuri.price" = "10,000–100,000 เยน";
 
 
 
@@ -5247,28 +5247,28 @@
 
 "tokyo.goma_tamago.name" = "Goma Tamago";
 "tokyo.goma_tamago.description" = "An egg-shaped Tokyo sweet of black sesame paste coated in white chocolate. A souvenir staple.";
-"tokyo.goma_tamago.price" = "From 650 yen";
+"tokyo.goma_tamago.price" = "ตั้งแต่ 650 เยน";
 "tokyo.kusaka_senbei.name" = "Soka Senbei";
 "tokyo.kusaka_senbei.description" = "Savory soy-sauce rice crackers baked firm from non-glutinous rice. A representative Kanto rice snack.";
-"tokyo.kusaka_senbei.price" = "From 500 yen";
+"tokyo.kusaka_senbei.price" = "ตั้งแต่ 500 เยน";
 "aichi.shiruko_sand.name" = "Shiruko Sand";
 "aichi.shiruko_sand.description" = "A long-selling Nagoya snack of red bean paste between biscuits, loved for its simple sweetness.";
-"aichi.shiruko_sand.price" = "From 300 yen";
+"aichi.shiruko_sand.price" = "ตั้งแต่ 300 เยน";
 "aichi.ebi_senbei.name" = "Ebi Senbei";
 "aichi.ebi_senbei.description" = "Shrimp crackers baked to bring out the savory flavor, an Aichi specialty perfect as a gift.";
-"aichi.ebi_senbei.price" = "From 500 yen";
+"aichi.ebi_senbei.price" = "ตั้งแต่ 500 เยน";
 "osaka.iwa_okoshi.name" = "Iwa Okoshi";
 "osaka.iwa_okoshi.description" = "A traditional hard Osaka confection made from compressed rice, named for its rock-like crunch.";
-"osaka.iwa_okoshi.price" = "From 500 yen";
+"osaka.iwa_okoshi.price" = "ตั้งแต่ 500 เยน";
 "osaka.tenten_gyoza.name" = "Tenten Gyoza";
 "osaka.tenten_gyoza.description" = "Bite-sized dumplings, a popular chilled and frozen Osaka gourmet souvenir.";
-"osaka.tenten_gyoza.price" = "From 700 yen";
+"osaka.tenten_gyoza.price" = "ตั้งแต่ 700 เยน";
 "okinawa.kokuto.name" = "Okinawa Brown Sugar";
 "okinawa.kokuto.description" = "Okinawa's specialty brown sugar made from sugarcane, with a rich, deep sweetness.";
-"okinawa.kokuto.price" = "From 400 yen";
+"okinawa.kokuto.price" = "ตั้งแต่ 400 เยน";
 "okinawa.shio_senbei.name" = "Shio Senbei";
 "okinawa.shio_senbei.description" = "Simple, firm salted rice crackers from Okinawa, a beloved local everyday snack.";
-"okinawa.shio_senbei.price" = "From 300 yen";
+"okinawa.shio_senbei.price" = "ตั้งแต่ 300 เยน";
 
 "attraction_goryokaku" = "โกเรียวคาคุ";
 "attraction_goryokaku_desc" = "ซากป้อมรูปดาวในฮาโกดาเตะ ทิวทัศน์รูปห้าเหลี่ยมจากหอคอยและซากุระในฤดูใบไม้ผลิงดงาม";
@@ -5306,28 +5306,28 @@
 
 "hokkaido.trappist_cookie.name" = "Trappist Cookies";
 "hokkaido.trappist_cookie.description" = "Simple, richly buttery cookies made at a monastery in Hakodate.";
-"hokkaido.trappist_cookie.price" = "From 600 yen";
+"hokkaido.trappist_cookie.price" = "ตั้งแต่ 600 เยน";
 "hokkaido.kitakaro_baumkuchen.name" = "Kitakaro Baumkuchen";
 "hokkaido.kitakaro_baumkuchen.description" = "A moist baumkuchen made with Hokkaido ingredients.";
-"hokkaido.kitakaro_baumkuchen.price" = "From 1,300 yen";
+"hokkaido.kitakaro_baumkuchen.price" = "ตั้งแต่ 1,300 เยน";
 "kyoto.kyo_baum.name" = "Kyo Baum";
 "kyoto.kyo_baum.description" = "A Kyoto-born baumkuchen made with Uji matcha and soy milk.";
-"kyoto.kyo_baum.price" = "From 1,200 yen";
+"kyoto.kyo_baum.price" = "ตั้งแต่ 1,200 เยน";
 "kyoto.matcha_chocolate.name" = "Matcha Chocolate";
 "kyoto.matcha_chocolate.description" = "Elegantly sweet chocolate confection highlighting the flavor of Uji matcha.";
-"kyoto.matcha_chocolate.price" = "From 700 yen";
+"kyoto.matcha_chocolate.price" = "ตั้งแต่ 700 เยน";
 "fukuoka.chikushi_mochi.name" = "Chikushi Mochi";
 "fukuoka.chikushi_mochi.description" = "Soft mochi dusted with kinako and brown sugar syrup. A Fukuoka staple souvenir.";
-"fukuoka.chikushi_mochi.price" = "From 600 yen";
+"fukuoka.chikushi_mochi.price" = "ตั้งแต่ 600 เยน";
 "fukuoka.menbei.name" = "Menbei";
 "fukuoka.menbei.description" = "Flavorful rice crackers kneaded with mentaiko. A popular Fukuoka souvenir.";
-"fukuoka.menbei.price" = "From 500 yen";
+"fukuoka.menbei.price" = "ตั้งแต่ 500 เยน";
 "kanagawa.hakone_manju.name" = "Hakone Onsen Manju";
 "kanagawa.hakone_manju.description" = "Freshly steamed hot-spring buns beloved in the Hakone spa town.";
-"kanagawa.hakone_manju.price" = "From 500 yen";
+"kanagawa.hakone_manju.price" = "ตั้งแต่ 500 เยน";
 "kanagawa.kamakura_raisin_wich.name" = "Kamakura Raisin Wich";
 "kanagawa.kamakura_raisin_wich.description" = "A Kamakura specialty of buttercream and raisins between sable cookies.";
-"kanagawa.kamakura_raisin_wich.price" = "From 1,000 yen";
+"kanagawa.kamakura_raisin_wich.price" = "ตั้งแต่ 1,000 เยน";
 
 "attraction_hiroshima_castle" = "ปราสาทฮิโรชิมะ";
 "attraction_hiroshima_castle_desc" = "หรือเรียกว่าปราสาทปลาคาร์ป หอปราสาทงดงามที่ล้อมด้วยคูน้ำ สร้างใหม่หลังถูกระเบิด เป็นสัญลักษณ์ของฮิโรชิมะ";
@@ -5397,49 +5397,49 @@
 
 "hiroshima.toyoka.name" = "Toyoka";
 "hiroshima.toyoka.description" = "A Hiroshima sweet of red bean paste wrapped in mochi-flour dough and baked. Loved for its chewy texture.";
-"hiroshima.toyoka.price" = "From 650 yen";
+"hiroshima.toyoka.price" = "ตั้งแต่ 650 เยน";
 "hiroshima.lemon_cake.name" = "Lemon Cake";
 "hiroshima.lemon_cake.description" = "A refreshing baked sweet made with Setouchi lemons. A Hiroshima souvenir staple.";
-"hiroshima.lemon_cake.price" = "From 600 yen";
+"hiroshima.lemon_cake.price" = "ตั้งแต่ 600 เยน";
 "nagasaki.kujuku_sempei.name" = "Kujukushima Sempei";
 "nagasaki.kujuku_sempei.description" = "Light tile-shaped crackers dotted with peanuts. A Nagasaki sweet originating in Sasebo.";
-"nagasaki.kujuku_sempei.price" = "From 600 yen";
+"nagasaki.kujuku_sempei.price" = "ตั้งแต่ 600 เยน";
 "nagasaki.nagasaki_monogatari.name" = "Nagasaki Monogatari";
 "nagasaki.nagasaki_monogatari.description" = "A rolled confection of cream wrapped in castella sponge.";
-"nagasaki.nagasaki_monogatari.price" = "From 700 yen";
+"nagasaki.nagasaki_monogatari.price" = "ตั้งแต่ 700 เยน";
 "nara.narazuke.name" = "Narazuke";
 "nara.narazuke.description" = "Traditional Nara pickles of melon and cucumber cured in sake lees.";
-"nara.narazuke.price" = "From 600 yen";
+"nara.narazuke.price" = "ตั้งแต่ 600 เยน";
 "nara.kaki_no_ha_cha.name" = "Persimmon Leaf Tea";
 "nara.kaki_no_ha_cha.description" = "A Nara tea made from vitamin-rich persimmon leaves, fragrant and mellow.";
-"nara.kaki_no_ha_cha.price" = "From 500 yen";
+"nara.kaki_no_ha_cha.price" = "ตั้งแต่ 500 เยน";
 "miyagi.shiogama_kohada.name" = "Shiogama";
 "miyagi.shiogama_kohada.description" = "An elegantly sweet rakugan made with Shiogama seaweed salt. A long-standing Miyagi sweet.";
-"miyagi.shiogama_kohada.price" = "From 500 yen";
+"miyagi.shiogama_kohada.price" = "ตั้งแต่ 500 เยน";
 "miyagi.kikufuku.name" = "Kikufuku";
 "miyagi.kikufuku.description" = "A popular Sendai sweet of fresh cream and bean paste wrapped in mochi. Zunda flavor too.";
-"miyagi.kikufuku.price" = "From 700 yen";
+"miyagi.kikufuku.price" = "ตั้งแต่ 700 เยน";
 "chiba.nure_senbei.name" = "Nure Senbei";
 "chiba.nure_senbei.description" = "A Choshi specialty cracker with a moist texture, soaked in plenty of soy sauce.";
-"chiba.nure_senbei.price" = "From 400 yen";
+"chiba.nure_senbei.price" = "ตั้งแต่ 400 เยน";
 "chiba.peanut_sub.name" = "Peanut Sable";
 "chiba.peanut_sub.description" = "A fragrant sable highlighting the flavor of Chiba peanuts.";
-"chiba.peanut_sub.price" = "From 600 yen";
+"chiba.peanut_sub.price" = "ตั้งแต่ 600 เยน";
 "ishikawa.shibafune.name" = "Shibafune";
 "ishikawa.shibafune.description" = "Thin crackers with a touch of ginger. A traditional Kanazawa sweet.";
-"ishikawa.shibafune.price" = "From 600 yen";
+"ishikawa.shibafune.price" = "ตั้งแต่ 600 เยน";
 "ishikawa.kaga_bocha.name" = "Kaga Bocha";
 "ishikawa.kaga_bocha.description" = "Fragrant Kanazawa roasted stem tea with a clean, crisp taste.";
-"ishikawa.kaga_bocha.price" = "From 500 yen";
+"ishikawa.kaga_bocha.price" = "ตั้งแต่ 500 เยน";
 "nagano.oyaki.name" = "Oyaki";
 "nagano.oyaki.description" = "A Nagano local food of nozawana or bean paste wrapped in wheat dough and grilled.";
-"nagano.oyaki.price" = "From 150 yen";
+"nagano.oyaki.price" = "ตั้งแต่ 150 เยน";
 "nagano.kurumi_yubeshi.name" = "Kurumi Yubeshi";
 "nagano.kurumi_yubeshi.description" = "A chewy Japanese sweet kneaded with walnuts. A Shinshu souvenir staple.";
-"nagano.kurumi_yubeshi.price" = "From 500 yen";
+"nagano.kurumi_yubeshi.price" = "ตั้งแต่ 500 เยน";
 "shizuoka.wasabi_zuke.name" = "Wasabi Zuke";
 "shizuoka.wasabi_zuke.description" = "A Shizuoka specialty of wasabi cured in sake lees, with sharp heat and faint sweetness.";
-"shizuoka.wasabi_zuke.price" = "From 500 yen";
+"shizuoka.wasabi_zuke.price" = "ตั้งแต่ 500 เยน";
 "shizuoka.abekawa_mochi.name" = "Abekawa Mochi";
 "shizuoka.abekawa_mochi.description" = "A traditional Shizuoka sweet of soft mochi coated in kinako and bean paste.";
-"shizuoka.abekawa_mochi.price" = "From 600 yen";
+"shizuoka.abekawa_mochi.price" = "ตั้งแต่ 600 เยน";
