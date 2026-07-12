@@ -2049,279 +2049,279 @@
 "shiga.shigaraki_yaki.price" = "2,000–20,000 ¥";
 
 "shiga.biwa_ko_goods.name" = "Productos del lago Biwa";
-"shiga.biwa_ko_goods.description" = "Souvenirs with Lake Biwa motif";
+"shiga.biwa_ko_goods.description" = "Recuerdos inspirados en el lago Biwa";
 "shiga.biwa_ko_goods.price" = "500–3,000 ¥";
 
 // =====================================================
 // Kyoto
 // =====================================================
 "kyoto.yatsuhashi.name" = "Yatsuhashi";
-"kyoto.yatsuhashi.description" = "Representative confection of Kyoto. Both nama yatsuhashi and baked yatsuhashi";
+"kyoto.yatsuhashi.description" = "Dulce representativo de Kioto, en versión fresca y horneada";
 "kyoto.yatsuhashi.price" = "800–2,500 ¥";
 
-"kyoto.ajari_mochi.name" = "Ajari Mochi";
-"kyoto.ajari_mochi.description" = "Famous confection from a long-established shop in Kyoto";
+"kyoto.ajari_mochi.name" = "Ajari mochi";
+"kyoto.ajari_mochi.description" = "Especialidad de una confitería centenaria de Kioto";
 "kyoto.ajari_mochi.price" = "1,500–3,000 ¥";
 
 "kyoto.cha_no_ka.name" = "Cha no Ka";
-"kyoto.cha_no_ka.description" = "Western confection made with Kyoto matcha";
+"kyoto.cha_no_ka.description" = "Dulce occidental con matcha de Kioto";
 "kyoto.cha_no_ka.price" = "1,200–2,500 ¥";
 
-"kyoto.marl_bransh_okoicha.name" = "Marl Bransh Okoicha Langue de Chat";
-"kyoto.marl_bransh_okoicha.description" = "Matcha langue de chat from Kyoto";
+"kyoto.marl_bransh_okoicha.name" = "Langue de chat de matcha intenso de Malebranche";
+"kyoto.marl_bransh_okoicha.description" = "Langue de chat de matcha de Kioto";
 "kyoto.marl_bransh_okoicha.price" = "1,500–3,000 ¥";
 
-"kyoto.yojiya_aburatorigami.name" = "Yojiya Oil-Blotting Paper";
-"kyoto.yojiya_aburatorigami.description" = "Products from a long-established cosmetics shop in Kyoto";
+"kyoto.yojiya_aburatorigami.name" = "Papel matificante Yojiya";
+"kyoto.yojiya_aburatorigami.description" = "Productos de una tienda de cosméticos centenaria de Kioto";
 "kyoto.yojiya_aburatorigami.price" = "500–2,000 ¥";
 
-"kyoto.kiyomizu_yaki.name" = "Kiyomizu Pottery";
-"kyoto.kiyomizu_yaki.description" = "Traditional crafts from Kyoto";
+"kyoto.kiyomizu_yaki.name" = "Cerámica de Kiyomizu";
+"kyoto.kiyomizu_yaki.description" = "Artesanía tradicional de Kioto";
 "kyoto.kiyomizu_yaki.price" = "3,000–50,000 ¥";
 
 // =====================================================
 // Osaka
 // =====================================================
-"osaka.butaman_551.name" = "551 Horai Pork Bun";
-"osaka.butaman_551.description" = "Famous Osaka pork bun";
+"osaka.butaman_551.name" = "Bollo de cerdo de 551 Horai";
+"osaka.butaman_551.description" = "Bollo de cerdo, especialidad de Osaka";
 "osaka.butaman_551.price" = "1,000–3,000 ¥";
 
-"osaka.rikuro_cheesecake.name" = "Rikuro Ojisan Cheesecake";
-"osaka.rikuro_cheesecake.description" = "Popular Osaka cheesecake";
+"osaka.rikuro_cheesecake.name" = "Tarta de queso del tío Rikuro";
+"osaka.rikuro_cheesecake.description" = "Tarta de queso popular de Osaka";
 "osaka.rikuro_cheesecake.price" = "800–1,500 ¥";
 
 "osaka.omoshiroi_koibito.name" = "Omoshiroi Koibito";
-"osaka.omoshiroi_koibito.description" = "Osaka parody souvenir confection";
+"osaka.omoshiroi_koibito.description" = "Dulce souvenir paródico de Osaka";
 "osaka.omoshiroi_koibito.price" = "1,000–2,000 ¥";
 
-"osaka.mitarashi_dango.name" = "Mitarashi Dango";
-"osaka.mitarashi_dango.description" = "Product from a long-established dango shop in Osaka";
+"osaka.mitarashi_dango.name" = "Mitarashi dango";
+"osaka.mitarashi_dango.description" = "Producto de una casa de dango centenaria de Osaka";
 "osaka.mitarashi_dango.price" = "500–1,200 ¥";
 
-"osaka.takoyaki_goods.name" = "Takoyaki-themed Goods";
-"osaka.takoyaki_goods.description" = "Products inspired by Osaka's soul food";
+"osaka.takoyaki_goods.name" = "Productos temáticos de takoyaki";
+"osaka.takoyaki_goods.description" = "Productos inspirados en la comida emblemática de Osaka";
 "osaka.takoyaki_goods.price" = "500–2,500 ¥";
 
 // =====================================================
 // Hyogo
 // =====================================================
-"hyogo.kobe_fugetsudo_gofer.name" = "Kobe Fugetsudo Gofer";
-"hyogo.kobe_fugetsudo_gofer.description" = "Representative product of a long-established confectionery in Kobe";
+"hyogo.kobe_fugetsudo_gofer.name" = "Gofre de Kobe Fugetsudo";
+"hyogo.kobe_fugetsudo_gofer.description" = "Producto insignia de una pastelería centenaria de Kobe";
 "hyogo.kobe_fugetsudo_gofer.price" = "1,000–3,000 ¥";
 
-"hyogo.mon_loire_chocolate.name" = "Mon Loire Chocolate";
-"hyogo.mon_loire_chocolate.description" = "Premium chocolate from Kobe";
+"hyogo.mon_loire_chocolate.name" = "Chocolate Mon Loire";
+"hyogo.mon_loire_chocolate.description" = "Chocolate premium de Kobe";
 "hyogo.mon_loire_chocolate.price" = "1,500–5,000 ¥";
 
-"hyogo.kannonya_denmark_cheesecake.name" = "Kannonya Denmark Cheesecake";
-"hyogo.kannonya_denmark_cheesecake.description" = "Long-established cheesecake from Kobe";
+"hyogo.kannonya_denmark_cheesecake.name" = "Tarta de queso danesa de Kannonya";
+"hyogo.kannonya_denmark_cheesecake.description" = "Tarta de queso de una casa centenaria de Kobe";
 "hyogo.kannonya_denmark_cheesecake.price" = "1,200–2,500 ¥";
 
-"hyogo.kobe_beef_goods.name" = "Kobe Beef Products";
-"hyogo.kobe_beef_goods.description" = "Processed products made with Kobe beef";
+"hyogo.kobe_beef_goods.name" = "Productos de ternera de Kobe";
+"hyogo.kobe_beef_goods.description" = "Productos elaborados con ternera de Kobe";
 "hyogo.kobe_beef_goods.price" = "2,000–10,000 ¥";
 
-"hyogo.arima_onsen_goods.name" = "Arima Onsen Goods";
-"hyogo.arima_onsen_goods.description" = "Souvenirs from Arima Hot Springs";
+"hyogo.arima_onsen_goods.name" = "Productos de las termas de Arima";
+"hyogo.arima_onsen_goods.description" = "Recuerdos de las termas de Arima";
 "hyogo.arima_onsen_goods.price" = "800–3,000 ¥";
 
 // =====================================================
 // Nara
 // =====================================================
-"nara.shika_sable.name" = "Deer Sablé";
-"nara.shika_sable.description" = "Sablé with Nara deer motif";
+"nara.shika_sable.name" = "Sablé con motivo de ciervo";
+"nara.shika_sable.description" = "Sablé inspirado en los ciervos de Nara";
 "nara.shika_sable.price" = "800–1,500 ¥";
 
 "nara.mikasa.name" = "Mikasa";
-"nara.mikasa.description" = "Representative confection of Nara";
+"nara.mikasa.description" = "Dulce representativo de Nara";
 "nara.mikasa.price" = "1,000–2,000 ¥";
 
-"nara.kaki_senmon_ishii.name" = "Kaki Senmon Ishii";
-"nara.kaki_senmon_ishii.description" = "Confection made with Nara persimmons";
+"nara.kaki_senmon_ishii.name" = "Ishii, especialista en caqui";
+"nara.kaki_senmon_ishii.description" = "Dulce con caqui de Nara";
 "nara.kaki_senmon_ishii.price" = "1,200–2,500 ¥";
 
-"nara.nakagawa_masashichi_goods.name" = "Nakagawa Masashichi Goods";
-"nara.nakagawa_masashichi_goods.description" = "Products from a long-established general store in Nara";
+"nara.nakagawa_masashichi_goods.name" = "Artículos de Nakagawa Masashichi";
+"nara.nakagawa_masashichi_goods.description" = "Productos de una tienda centenaria de Nara";
 "nara.nakagawa_masashichi_goods.price" = "1,000–10,000 ¥";
 
-"nara.shika_goods.name" = "Deer Goods";
-"nara.shika_goods.description" = "Various products with Nara deer motif";
+"nara.shika_goods.name" = "Productos temáticos de ciervo";
+"nara.shika_goods.description" = "Diversos productos inspirados en los ciervos de Nara";
 "nara.shika_goods.price" = "500–3,000 ¥";
 
 // =====================================================
 // Wakayama
 // =====================================================
 "wakayama.kagero.name" = "Kagero";
-"wakayama.kagero.description" = "Representative confection of Wakayama";
+"wakayama.kagero.description" = "Dulce representativo de Wakayama";
 "wakayama.kagero.price" = "1,000–2,500 ¥";
 
 "wakayama.nachi_guro.name" = "Nachi Guro";
-"wakayama.nachi_guro.description" = "Brown sugar confection from Wakayama";
+"wakayama.nachi_guro.description" = "Dulce de azúcar moreno de Wakayama";
 "wakayama.nachi_guro.price" = "500–1,200 ¥";
 
-"wakayama.kinokawa_kaki.name" = "Kinokawa Persimmon";
-"wakayama.kinokawa_kaki.description" = "Confection made with Wakayama persimmons";
+"wakayama.kinokawa_kaki.name" = "Caqui de Kinokawa";
+"wakayama.kinokawa_kaki.description" = "Dulce con caqui de Wakayama";
 "wakayama.kinokawa_kaki.price" = "1,000–2,000 ¥";
 
-"wakayama.arita_mikan_daifuku.name" = "Arita Mikan Daifuku";
-"wakayama.arita_mikan_daifuku.description" = "Daifuku made with Wakayama Arita mandarin oranges";
+"wakayama.arita_mikan_daifuku.name" = "Daifuku de mandarina de Arita";
+"wakayama.arita_mikan_daifuku.description" = "Daifuku con mandarina de Arita (Wakayama)";
 "wakayama.arita_mikan_daifuku.price" = "1,200–2,000 ¥";
 
-"wakayama.umeboshi.name" = "Umeboshi";
-"wakayama.umeboshi.description" = "Pickled plums made with Wakayama Nanko plums";
+"wakayama.umeboshi.name" = "Umeboshi (ciruela encurtida)";
+"wakayama.umeboshi.description" = "Umeboshi de ciruelas Nanko de Wakayama";
 "wakayama.umeboshi.price" = "1,500–5,000 ¥";
 
 // =====================================================
 // Tottori
 // =====================================================
-"tottori.inaba_no_shiro_usagi.name" = "Inaba no Shiro Usagi";
-"tottori.inaba_no_shiro_usagi.description" = "Representative confection of Tottori";
+"tottori.inaba_no_shiro_usagi.name" = "La liebre blanca de Inaba";
+"tottori.inaba_no_shiro_usagi.description" = "Dulce representativo de Tottori";
 "tottori.inaba_no_shiro_usagi.price" = "1,200–2,500 ¥";
 
 "tottori.ofuroboshi.name" = "Ofuroboshi";
-"tottori.ofuroboshi.description" = "Famous confection from Tottori";
+"tottori.ofuroboshi.description" = "Dulce famoso de Tottori";
 "tottori.ofuroboshi.price" = "1,000–2,000 ¥";
 
-"tottori.nijusseiki_nashi_jelly.name" = "20th Century Pear Jelly";
-"tottori.nijusseiki_nashi_jelly.description" = "Jelly made with Tottori pears";
+"tottori.nijusseiki_nashi_jelly.name" = "Gelatina de pera del siglo XX";
+"tottori.nijusseiki_nashi_jelly.description" = "Gelatina con pera de Tottori";
 "tottori.nijusseiki_nashi_jelly.price" = "1,500–3,000 ¥";
 
-"tottori.hakubaranyu_goods.name" = "Hakubara Milk Products";
-"tottori.hakubaranyu_goods.description" = "Products from Tottori's milk brand";
+"tottori.hakubaranyu_goods.name" = "Productos lácteos Hakubara";
+"tottori.hakubaranyu_goods.description" = "Productos de la marca de leche de Tottori";
 "tottori.hakubaranyu_goods.price" = "500–1,500 ¥";
 
-"tottori.sakyu_goods.name" = "Sand Dune Goods";
-"tottori.sakyu_goods.description" = "Products with Tottori Sand Dunes motif";
+"tottori.sakyu_goods.name" = "Productos temáticos de las dunas";
+"tottori.sakyu_goods.description" = "Productos inspirados en las dunas de Tottori";
 "tottori.sakyu_goods.price" = "500–2,500 ¥";
 
 // =====================================================
 // Shimane
 // =====================================================
-"shimane.dojo_sukui_manju.name" = "Dojo Sukui Manju";
-"shimane.dojo_sukui_manju.description" = "Famous steamed bun from Shimane";
+"shimane.dojo_sukui_manju.name" = "Manju Dojo Sukui";
+"shimane.dojo_sukui_manju.description" = "Manju famoso de Shimane";
 "shimane.dojo_sukui_manju.price" = "1,000–2,000 ¥";
 
-"shimane.genji_maki.name" = "Genji Maki";
-"shimane.genji_maki.description" = "Representative confection of Shimane";
+"shimane.genji_maki.name" = "Genji maki";
+"shimane.genji_maki.description" = "Dulce representativo de Shimane";
 "shimane.genji_maki.price" = "1,200–2,500 ¥";
 
 "shimane.wakakusa.name" = "Wakakusa";
-"shimane.wakakusa.description" = "Japanese confection from Shimane";
+"shimane.wakakusa.description" = "Dulce japonés de Shimane";
 "shimane.wakakusa.price" = "1,000–2,000 ¥";
 
-"shimane.shimane_wine.name" = "Shimane Wine";
-"shimane.shimane_wine.description" = "Wine made with Shimane grapes";
+"shimane.shimane_wine.name" = "Vino de Shimane";
+"shimane.shimane_wine.description" = "Vino elaborado con uvas de Shimane";
 "shimane.shimane_wine.price" = "2,000–8,000 ¥";
 
-"shimane.iwami_ginzan_goods.name" = "Iwami Ginzan Goods";
-"shimane.iwami_ginzan_goods.description" = "Souvenirs from World Heritage Iwami Ginzan";
+"shimane.iwami_ginzan_goods.name" = "Productos de Iwami Ginzan";
+"shimane.iwami_ginzan_goods.description" = "Recuerdos de la mina de plata Iwami Ginzan, Patrimonio Mundial";
 "shimane.iwami_ginzan_goods.price" = "800–3,000 ¥";
 
 // =====================================================
 // Okayama
 // =====================================================
-"okayama.ote_manju.name" = "Ote Manju";
-"okayama.ote_manju.description" = "Representative confection of Okayama";
+"okayama.ote_manju.name" = "Manju Ote";
+"okayama.ote_manju.description" = "Dulce representativo de Okayama";
 "okayama.ote_manju.price" = "1,000–2,500 ¥";
 
-"okayama.kibi_dango.name" = "Kibi Dango";
-"okayama.kibi_dango.description" = "Famous confection of Okayama. Known from the Momotaro legend";
+"okayama.kibi_dango.name" = "Kibidango";
+"okayama.kibi_dango.description" = "Dulce famoso de Okayama, célebre por la leyenda de Momotaro";
 "okayama.kibi_dango.price" = "800–2,000 ¥";
 
 "okayama.chofu.name" = "Chofu";
-"okayama.chofu.description" = "Famous confection from Okayama";
+"okayama.chofu.description" = "Dulce famoso de Okayama";
 "okayama.chofu.price" = "1,200–2,000 ¥";
 
-"okayama.hakujuji_waffle.name" = "Hakujuji Waffle";
-"okayama.hakujuji_waffle.description" = "Western confection from Okayama";
+"okayama.hakujuji_waffle.name" = "Gofre Hakujuji";
+"okayama.hakujuji_waffle.description" = "Dulce occidental de Okayama";
 "okayama.hakujuji_waffle.price" = "1,000–2,500 ¥";
 
-"okayama.bizen_yaki.name" = "Bizen Pottery";
-"okayama.bizen_yaki.description" = "Traditional crafts from Okayama";
+"okayama.bizen_yaki.name" = "Cerámica de Bizen";
+"okayama.bizen_yaki.description" = "Artesanía tradicional de Okayama";
 "okayama.bizen_yaki.price" = "3,000–50,000 ¥";
 
 // =====================================================
 // Hiroshima
 // =====================================================
-"hiroshima.momiji_manju.name" = "Momiji Manju";
-"hiroshima.momiji_manju.description" = "Famous confection of Hiroshima. Maple leaf-shaped castella bun";
+"hiroshima.momiji_manju.name" = "Momiji manju";
+"hiroshima.momiji_manju.description" = "Dulce famoso de Hiroshima: bollo de castella en forma de hoja de arce";
 "hiroshima.momiji_manju.price" = "1,000–2,500 ¥";
 
-"hiroshima.nama_momiji.name" = "Nama Momiji";
-"hiroshima.nama_momiji.description" = "Fresh type of momiji manju";
+"hiroshima.nama_momiji.name" = "Nama momiji";
+"hiroshima.nama_momiji.description" = "Versión fresca del momiji manju";
 "hiroshima.nama_momiji.price" = "1,200–2,500 ¥";
 
-"hiroshima.nishikido_momiji.name" = "Nishikido Momiji Manju";
-"hiroshima.nishikido_momiji.description" = "Long-established momiji manju shop in Hiroshima";
+"hiroshima.nishikido_momiji.name" = "Momiji manju de Nishikido";
+"hiroshima.nishikido_momiji.description" = "Casa centenaria de momiji manju en Hiroshima";
 "hiroshima.nishikido_momiji.price" = "1,000–2,500 ¥";
 
-"hiroshima.kawadori_mochi.name" = "Kawadori Mochi";
-"hiroshima.kawadori_mochi.description" = "Traditional mochi confection from Hiroshima";
+"hiroshima.kawadori_mochi.name" = "Kawadori mochi";
+"hiroshima.kawadori_mochi.description" = "Dulce de mochi tradicional de Hiroshima";
 "hiroshima.kawadori_mochi.price" = "800–1,500 ¥";
 
 "hiroshima.hiroshima_na.name" = "Hiroshima-na";
-"hiroshima.hiroshima_na.description" = "Pickled vegetables specialty from Hiroshima";
+"hiroshima.hiroshima_na.description" = "Encurtido de la verdura típica de Hiroshima";
 "hiroshima.hiroshima_na.price" = "500–1,500 ¥";
 
 // =====================================================
 // Yamaguchi
 // =====================================================
 "yamaguchi.mameshiro.name" = "Mameshiro";
-"yamaguchi.mameshiro.description" = "Representative confection of Yamaguchi";
+"yamaguchi.mameshiro.description" = "Dulce representativo de Yamaguchi";
 "yamaguchi.mameshiro.price" = "1,000–2,500 ¥";
 
 "yamaguchi.uiro.name" = "Uiro";
-"yamaguchi.uiro.description" = "Traditional Japanese confection from Yamaguchi";
+"yamaguchi.uiro.description" = "Dulce japonés tradicional de Yamaguchi";
 "yamaguchi.uiro.price" = "800–2,000 ¥";
 
-"yamaguchi.tsuki_de_hirotta_tamago.name" = "Tsuki de Hirotta Tamago";
-"yamaguchi.tsuki_de_hirotta_tamago.description" = "Famous confection from Yamaguchi";
+"yamaguchi.tsuki_de_hirotta_tamago.name" = "El huevo recogido en la luna";
+"yamaguchi.tsuki_de_hirotta_tamago.description" = "Dulce famoso de Yamaguchi";
 "yamaguchi.tsuki_de_hirotta_tamago.price" = "1,200–2,000 ¥";
 
-"yamaguchi.hagi_yaki.name" = "Hagi Pottery";
-"yamaguchi.hagi_yaki.description" = "Traditional crafts from Hagi City, Yamaguchi";
+"yamaguchi.hagi_yaki.name" = "Cerámica de Hagi";
+"yamaguchi.hagi_yaki.description" = "Artesanía tradicional de la ciudad de Hagi (Yamaguchi)";
 "yamaguchi.hagi_yaki.price" = "3,000–30,000 ¥";
 
-"yamaguchi.natsu_mikan_goods.name" = "Summer Orange Products";
-"yamaguchi.natsu_mikan_goods.description" = "Products made with Yamaguchi's specialty summer oranges";
+"yamaguchi.natsu_mikan_goods.name" = "Productos de natsumikan";
+"yamaguchi.natsu_mikan_goods.description" = "Productos con natsumikan, especialidad de Yamaguchi";
 "yamaguchi.natsu_mikan_goods.price" = "800–2,000 ¥";
 
 // =====================================================
 // Tokushima
 // =====================================================
-"tokushima.kincho_manju.name" = "Kincho Manju";
-"tokushima.kincho_manju.description" = "Representative confection of Tokushima";
+"tokushima.kincho_manju.name" = "Manju Kincho";
+"tokushima.kincho_manju.description" = "Dulce representativo de Tokushima";
 "tokushima.kincho_manju.price" = "1,000–2,000 ¥";
 
 "tokushima.potelet.name" = "Potelet";
-"tokushima.potelet.description" = "Confection made with Tokushima's Naruto Kintoki sweet potatoes";
+"tokushima.potelet.description" = "Dulce con boniato Naruto Kintoki de Tokushima";
 "tokushima.potelet.price" = "800–1,500 ¥";
 
-"tokushima.wasanbon.name" = "Wasanbon Sugar";
-"tokushima.wasanbon.description" = "Confection made with Tokushima's premium sugar";
+"tokushima.wasanbon.name" = "Azúcar wasanbon";
+"tokushima.wasanbon.description" = "Dulce con azúcar refinado de Tokushima";
 "tokushima.wasanbon.price" = "1,500–3,000 ¥";
 
 "tokushima.ai_no_sato.name" = "Ai no Sato";
-"tokushima.ai_no_sato.description" = "Products made with Tokushima's indigo dyeing";
+"tokushima.ai_no_sato.description" = "Productos con el teñido índigo de Tokushima";
 "tokushima.ai_no_sato.price" = "2,000–10,000 ¥";
 
-"tokushima.awa_odori_goods.name" = "Awa Odori Goods";
-"tokushima.awa_odori_goods.description" = "Products with Tokushima's Awa Odori motif";
+"tokushima.awa_odori_goods.name" = "Productos temáticos del Awa Odori";
+"tokushima.awa_odori_goods.description" = "Productos inspirados en el Awa Odori de Tokushima";
 "tokushima.awa_odori_goods.price" = "800–3,000 ¥";
 
 // =====================================================
 // Kagawa
 // =====================================================
 "kagawa.meibutsu_kamado.name" = "Meibutsu Kamado";
-"kagawa.meibutsu_kamado.description" = "Representative confection of Kagawa";
+"kagawa.meibutsu_kamado.description" = "Dulce representativo de Kagawa";
 "kagawa.meibutsu_kamado.price" = "1,200–2,500 ¥";
 
 "kagawa.oiri.name" = "Oiri";
-"kagawa.oiri.description" = "Traditional arare confection from Kagawa";
+"kagawa.oiri.description" = "Dulce arare tradicional de Kagawa";
 "kagawa.oiri.price" = "500–1,200 ¥";
 
-"kagawa.kyu_man.name" = "Kyu Man";
-"kagawa.kyu_man.description" = "Hot spring manju from Kagawa";
+"kagawa.kyu_man.name" = "Kyu man";
+"kagawa.kyu_man.description" = "Manju termal de Kagawa";
 "kagawa.kyu_man.price" = "800–1,500 ¥";
 
 "kagawa.honetsuki_tori_senbei.name" = "Honetsuki-dori Senbei";
