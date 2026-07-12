@@ -7,10 +7,19 @@
 
 import SwiftUI
 
-struct GourmetDetailView: View {
+struct GourmetDetailView<PlaceMap: View>: View {
     let item: GourmetItem
     let prefecture: Prefecture
+    /// プラン経由で位置を設定した場合に、検索ボタン群の下へ差し込む地図カード。
+    /// 通常表示（プラン外）では空ビューが渡され、何も表示されない。
+    @ViewBuilder let placeMap: () -> PlaceMap
     @Environment(\.dismiss) private var dismiss
+
+    init(item: GourmetItem, prefecture: Prefecture, @ViewBuilder placeMap: @escaping () -> PlaceMap = { EmptyView() }) {
+        self.item = item
+        self.prefecture = prefecture
+        self.placeMap = placeMap
+    }
 
     /// 一覧カードと色を揃えるためのカテゴリ色グラデーション。
     private var categoryGradient: LinearGradient {
@@ -58,6 +67,9 @@ struct GourmetDetailView: View {
                                 )
                             }
                             .planCard()
+
+                            // プランで位置を設定した場合のみ、検索ボタン群の下に地図を表示
+                            placeMap()
 
                             descriptionCard
                             infoGrid

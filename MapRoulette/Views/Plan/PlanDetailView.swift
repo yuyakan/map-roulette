@@ -91,10 +91,12 @@ struct PlanDetailView: View {
                     memoCard(plan.memo)
                 }
 
-                if plan.items.isEmpty {
-                    emptyHint
-                } else if plan.groupingMode == .day {
+                if plan.groupingMode == .day {
+                    // 日程モードでは項目が空でも各 Day のセクションを表示し、
+                    // その日に直接ホテル・移動などを追加できるようにする。
                     dayGroups(for: plan)
+                } else if plan.items.isEmpty {
+                    emptyHint
                 } else {
                     flatList(for: plan)
                 }
@@ -140,12 +142,35 @@ struct PlanDetailView: View {
     }
 
     private var emptyHint: some View {
-        Text(NSLocalizedString("plan.detail.empty", comment: ""))
-            .font(.subheadline)
-            .foregroundColor(.secondary)
-            .multilineTextAlignment(.center)
-            .frame(maxWidth: .infinity)
-            .planCard()
+        VStack(spacing: 14) {
+            Text(NSLocalizedString("plan.detail.empty", comment: ""))
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: .infinity)
+
+            // 項目が 1 つも無くてもホテル・移動などのカスタム項目は追加できる
+            addCustomButton
+        }
+        .planCard()
+    }
+
+    /// ホテル・移動などのカスタム項目を追加するボタン（フラット表示・空状態で共用）。
+    private var addCustomButton: some View {
+        Button {
+            showingCustomEditor = true
+        } label: {
+            Label(NSLocalizedString("plan.day.addcustom", comment: ""), systemImage: "plus")
+                .font(.subheadline.bold())
+                .foregroundColor(PlanTheme.primary)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
+                .background(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .strokeBorder(PlanTheme.primary.opacity(0.4), style: StrokeStyle(lineWidth: 1, dash: [4]))
+                )
+        }
+        .buttonStyle(.plain)
     }
 
     // MARK: - フラット表示（日程分けなし）
@@ -157,20 +182,7 @@ struct PlanDetailView: View {
             }
 
             // ホテル・移動などのカスタム項目を追加
-            Button {
-                showingCustomEditor = true
-            } label: {
-                Label(NSLocalizedString("plan.day.addcustom", comment: ""), systemImage: "plus")
-                    .font(.subheadline.bold())
-                    .foregroundColor(PlanTheme.primary)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 12)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .strokeBorder(PlanTheme.primary.opacity(0.4), style: StrokeStyle(lineWidth: 1, dash: [4]))
-                    )
-            }
-            .buttonStyle(.plain)
+            addCustomButton
         }
     }
 
