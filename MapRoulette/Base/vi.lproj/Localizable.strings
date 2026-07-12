@@ -3724,29 +3724,29 @@
 "tanabe_benkei_festival_location" = "Thành phố Tanabe";
 "tanabe_benkei_festival_feature1" = "Quê hương của Benkei";
 "tanabe_benkei_festival_feature2" = "Múa Benkei";
-"tanabe_benkei_festival_feature3" = "Musashibō Parade";
+"tanabe_benkei_festival_feature3" = "Diễu hành Musashibo";
 
-"kushimoto_festival_name" = "Kushimoto Festival";
-"kushimoto_festival_description" = "A summer festival in Kushimoto, the southernmost town of Honshu. A harbor town celebration giving thanks for the blessings of the sea.";
-"kushimoto_festival_location" = "Kushimoto Town";
-"kushimoto_festival_feature1" = "Southernmost in Honshu";
-"kushimoto_festival_feature2" = "Blessings of the Sea";
-"kushimoto_festival_feature3" = "Harbor Festival";
+"kushimoto_festival_name" = "Lễ hội Kushimoto";
+"kushimoto_festival_description" = "Lễ hội mùa hè tổ chức tại thị trấn Kushimoto, cực nam Honshu. Lễ hội đặc trưng của thành phố cảng tạ ơn biển cả.";
+"kushimoto_festival_location" = "Thị trấn Kushimoto";
+"kushimoto_festival_feature1" = "Cực nam Honshu";
+"kushimoto_festival_feature2" = "Ơn nghĩa biển cả";
+"kushimoto_festival_feature3" = "Lễ hội thành phố cảng";
 
 // MARK: - Tottori
-"tottori_shanshan_festival_name" = "Tottori Shanshan Festival";
-"tottori_shanshan_festival_description" = "A summer festival involving the whole city of Tottori. Famous for the Shanshan Umbrella Dance, which holds a Guinness World Record for scale.";
-"tottori_shanshan_festival_location" = "Central Tottori City";
-"tottori_shanshan_festival_feature1" = "Shanshan Umbrella Dance";
-"tottori_shanshan_festival_feature2" = "Guinness Record";
-"tottori_shanshan_festival_feature3" = "Citywide Participation";
+"tottori_shanshan_festival_name" = "Lễ hội Shanshan Tottori";
+"tottori_shanshan_festival_description" = "Lễ hội mùa hè toàn dân Tottori tham gia. Nổi tiếng với điệu múa ô Shanshan, lễ hội múa quy mô lớn giữ kỷ lục Guinness.";
+"tottori_shanshan_festival_location" = "Trung tâm thành phố Tottori";
+"tottori_shanshan_festival_feature1" = "Múa ô Shanshan";
+"tottori_shanshan_festival_feature2" = "Kỷ lục Guinness";
+"tottori_shanshan_festival_feature3" = "Toàn dân tham gia";
 
-"yonago_gaina_festival_name" = "Yonago Gaina Festival";
-"yonago_gaina_festival_description" = "A summer festival in Yonago. The Gaina Lanterns and fireworks illuminate the summer nights of the San'in region.";
-"yonago_gaina_festival_location" = "Yonago City";
-"yonago_gaina_festival_feature1" = "Gaina Lanterns";
-"yonago_gaina_festival_feature2" = "Fireworks Festival";
-"yonago_gaina_festival_feature3" = "San'in Nights";
+"yonago_gaina_festival_name" = "Lễ hội Gaina Yonago";
+"yonago_gaina_festival_description" = "Lễ hội mùa hè thành phố Yonago. Đèn lồng Gaina và màn pháo hoa tô điểm đẹp mắt bầu trời đêm San'in.";
+"yonago_gaina_festival_location" = "Thành phố Yonago";
+"yonago_gaina_festival_feature1" = "Đèn lồng Gaina";
+"yonago_gaina_festival_feature2" = "Bắn pháo hoa";
+"yonago_gaina_festival_feature3" = "Đêm San'in";
 
 
 // MARK: - Wakayama Prefecture
@@ -3762,103 +3762,103 @@
 "tanabe_benkei_festival_location" = "Thành phố Tanabe";
 "tanabe_benkei_festival_feature1" = "Quê hương của Benkei";
 "tanabe_benkei_festival_feature2" = "Múa Benkei";
-"tanabe_benkei_festival_feature3" = "Musashibo Parade";
+"tanabe_benkei_festival_feature3" = "Diễu hành Musashibo";
 
-"kushimoto_festival_name" = "Kushimoto Festival";
-"kushimoto_festival_description" = "A summer festival held in Kushimoto Town, the southernmost point of Honshu. A festival unique to this port town that celebrates the blessings of the sea.";
-"kushimoto_festival_location" = "Kushimoto Town";
-"kushimoto_festival_feature1" = "Southernmost Honshu";
-"kushimoto_festival_feature2" = "Blessings of the Sea";
-"kushimoto_festival_feature3" = "Port Town Festival";
+"kushimoto_festival_name" = "Lễ hội Kushimoto";
+"kushimoto_festival_description" = "Lễ hội mùa hè tổ chức tại thị trấn Kushimoto, cực nam Honshu. Lễ hội đặc trưng của thành phố cảng tạ ơn biển cả.";
+"kushimoto_festival_location" = "Thị trấn Kushimoto";
+"kushimoto_festival_feature1" = "Cực nam Honshu";
+"kushimoto_festival_feature2" = "Ơn nghĩa biển cả";
+"kushimoto_festival_feature3" = "Lễ hội thành phố cảng";
 
 // MARK: - Tottori Prefecture
-"tottori_shanshan_festival_name" = "Tottori Shanshan Festival";
-"tottori_shanshan_festival_description" = "A summer festival with full citizen participation in Tottori City. Known for the Shanshan umbrella dance, it is a large-scale dance festival with a Guinness World Record.";
-"tottori_shanshan_festival_location" = "Central Tottori City";
-"tottori_shanshan_festival_feature1" = "Shanshan Umbrella Dance";
-"tottori_shanshan_festival_feature2" = "Guinness Record";
-"tottori_shanshan_festival_feature3" = "Full Citizen Participation";
+"tottori_shanshan_festival_name" = "Lễ hội Shanshan Tottori";
+"tottori_shanshan_festival_description" = "Lễ hội mùa hè toàn dân Tottori tham gia. Nổi tiếng với điệu múa ô Shanshan, lễ hội múa quy mô lớn giữ kỷ lục Guinness.";
+"tottori_shanshan_festival_location" = "Trung tâm thành phố Tottori";
+"tottori_shanshan_festival_feature1" = "Múa ô Shanshan";
+"tottori_shanshan_festival_feature2" = "Kỷ lục Guinness";
+"tottori_shanshan_festival_feature3" = "Toàn dân tham gia";
 
-"yonago_gaina_festival_name" = "Yonago Gaina Festival";
-"yonago_gaina_festival_description" = "A summer festival in Yonago City. The Gaina lanterns and fireworks illuminate the San'in night sky beautifully.";
-"yonago_gaina_festival_location" = "Yonago City";
-"yonago_gaina_festival_feature1" = "Gaina Lanterns";
-"yonago_gaina_festival_feature2" = "Fireworks Display";
-"yonago_gaina_festival_feature3" = "San'in Night";
+"yonago_gaina_festival_name" = "Lễ hội Gaina Yonago";
+"yonago_gaina_festival_description" = "Lễ hội mùa hè thành phố Yonago. Đèn lồng Gaina và màn pháo hoa tô điểm đẹp mắt bầu trời đêm San'in.";
+"yonago_gaina_festival_location" = "Thành phố Yonago";
+"yonago_gaina_festival_feature1" = "Đèn lồng Gaina";
+"yonago_gaina_festival_feature2" = "Bắn pháo hoa";
+"yonago_gaina_festival_feature3" = "Đêm San'in";
 
 // MARK: - Shimane Prefecture
-"matsue_suigo_festival_name" = "Matsue Suigo Festival";
-"matsue_suigo_festival_description" = "A summer festival held at Lake Shinji in Matsue. The lakeside fireworks and boat procession color the water city of Matsue.";
-"matsue_suigo_festival_location" = "Matsue City / Lake Shinji";
-"matsue_suigo_festival_feature1" = "Lakeside Fireworks";
-"matsue_suigo_festival_feature2" = "Boat Procession";
-"matsue_suigo_festival_feature3" = "Water City";
+"matsue_suigo_festival_name" = "Lễ hội Suigo Matsue";
+"matsue_suigo_festival_description" = "Lễ hội mùa hè Matsue tổ chức tại hồ Shinji. Đại hội pháo hoa trên hồ và đoàn thuyền tô điểm cho thành phố nước Matsue.";
+"matsue_suigo_festival_location" = "Thành phố Matsue - Hồ Shinji";
+"matsue_suigo_festival_feature1" = "Pháo hoa trên hồ";
+"matsue_suigo_festival_feature2" = "Đoàn thuyền";
+"matsue_suigo_festival_feature3" = "Thành phố nước";
 
-"izumo_shinwa_festival_name" = "Izumo Mythology Festival";
-"izumo_shinwa_festival_description" = "A summer festival held in the land of mythology, Izumo. Enjoy various events themed around myths.";
-"izumo_shinwa_festival_location" = "Izumo City";
-"izumo_shinwa_festival_feature1" = "Land of Mythology";
-"izumo_shinwa_festival_feature2" = "Mythology Theme";
-"izumo_shinwa_festival_feature3" = "Cultural Events";
+"izumo_shinwa_festival_name" = "Lễ hội thần thoại Izumo";
+"izumo_shinwa_festival_description" = "Lễ hội mùa hè tổ chức tại xứ thần thoại Izumo. Tận hưởng nhiều sự kiện lấy chủ đề thần thoại.";
+"izumo_shinwa_festival_location" = "Thành phố Izumo";
+"izumo_shinwa_festival_feature1" = "Xứ thần thoại";
+"izumo_shinwa_festival_feature2" = "Chủ đề thần thoại";
+"izumo_shinwa_festival_feature3" = "Sự kiện văn hóa";
 
 // MARK: - Okayama Prefecture
-"okayama_momotaro_festival_name" = "Okayama Momotaro Festival";
-"okayama_momotaro_festival_description" = "A summer festival famous for the Momotaro legend in Okayama. The Urja dance and evening fireworks liven up Okayama's nights.";
-"okayama_momotaro_festival_location" = "Central Okayama City";
-"okayama_momotaro_festival_feature1" = "Momotaro Legend";
-"okayama_momotaro_festival_feature2" = "Urja Dance";
-"okayama_momotaro_festival_feature3" = "Cooling Fireworks";
+"okayama_momotaro_festival_name" = "Lễ hội Momotaro Okayama";
+"okayama_momotaro_festival_description" = "Lễ hội mùa hè Okayama nổi tiếng với truyền thuyết Momotaro. Điệu múa Uraja và màn pháo hoa hóng mát làm sôi động đêm Okayama.";
+"okayama_momotaro_festival_location" = "Trung tâm thành phố Okayama";
+"okayama_momotaro_festival_feature1" = "Truyền thuyết Momotaro";
+"okayama_momotaro_festival_feature2" = "Múa Uraja";
+"okayama_momotaro_festival_feature3" = "Pháo hoa hóng mát";
 
-"kurashiki_tenryo_festival_name" = "Kurashiki Tenryo Summer Festival";
-"kurashiki_tenryo_festival_description" = "A summer festival in Kurashiki, known for its historic Bikan district. Tenryo drums and fireworks brighten the white-walled town.";
-"kurashiki_tenryo_festival_location" = "Kurashiki City";
-"kurashiki_tenryo_festival_feature1" = "Bikan District";
-"kurashiki_tenryo_festival_feature2" = "Tenryo Drums";
-"kurashiki_tenryo_festival_feature3" = "White-Walled Town";
+"kurashiki_tenryo_festival_name" = "Lễ hội mùa hè Tenryo Kurashiki";
+"kurashiki_tenryo_festival_description" = "Lễ hội mùa hè Kurashiki nổi tiếng với khu Bikan. Trống Tenryo và màn pháo hoa tô điểm cho phố tường trắng.";
+"kurashiki_tenryo_festival_location" = "Thành phố Kurashiki";
+"kurashiki_tenryo_festival_feature1" = "Khu Bikan";
+"kurashiki_tenryo_festival_feature2" = "Trống Tenryo";
+"kurashiki_tenryo_festival_feature3" = "Phố tường trắng";
 
 // MARK: - Hiroshima Prefecture
-"miyajima_suichu_fireworks_name" = "Miyajima Underwater Fireworks Festival";
-"miyajima_suichu_fireworks_description" = "A fireworks festival set against the giant torii gate of Itsukushima Shrine, a World Heritage Site. Underwater fireworks beautifully color the Seto Inland Sea.";
-"miyajima_suichu_fireworks_location" = "Hatsukaichi City / Miyajima";
-"miyajima_suichu_fireworks_feature1" = "World Heritage Backdrop";
-"miyajima_suichu_fireworks_feature2" = "Underwater Fireworks";
-"miyajima_suichu_fireworks_feature3" = "Giant Torii Gate";
+"miyajima_suichu_fireworks_name" = "Lễ hội pháo hoa dưới nước Miyajima";
+"miyajima_suichu_fireworks_description" = "Đại hội pháo hoa với hậu cảnh cổng torii lớn của đền Itsukushima Di sản Thế giới. Pháo hoa dưới nước tô điểm đẹp mắt biển Seto.";
+"miyajima_suichu_fireworks_location" = "Thành phố Hatsukaichi - Miyajima";
+"miyajima_suichu_fireworks_feature1" = "Hậu cảnh Di sản Thế giới";
+"miyajima_suichu_fireworks_feature2" = "Pháo hoa dưới nước";
+"miyajima_suichu_fireworks_feature3" = "Cổng torii lớn";
 
-"kure_kaijo_fireworks_name" = "Kure Marine Fireworks Festival";
-"kure_kaijo_fireworks_description" = "A marine fireworks festival held in the port town of Kure. About 10,000 fireworks light up the night sky over Kure Port.";
-"kure_kaijo_fireworks_location" = "Kure City / Kure Port";
-"kure_kaijo_fireworks_feature1" = "Port Town Fireworks";
-"kure_kaijo_fireworks_feature2" = "10,000 Fireworks";
-"kure_kaijo_fireworks_feature3" = "Kure Port";
+"kure_kaijo_fireworks_name" = "Lễ hội pháo hoa trên biển Kure";
+"kure_kaijo_fireworks_description" = "Đại hội pháo hoa trên biển tổ chức tại thành phố cảng Kure. Khoảng 10.000 quả pháo tô điểm đẹp mắt bầu trời đêm cảng Kure.";
+"kure_kaijo_fireworks_location" = "Thành phố Kure - Cảng Kure";
+"kure_kaijo_fireworks_feature1" = "Pháo hoa thành phố cảng";
+"kure_kaijo_fireworks_feature2" = "10.000 quả pháo";
+"kure_kaijo_fireworks_feature3" = "Cảng Kure";
 
-"hiroshima_minato_fireworks_name" = "Hiroshima Minato Dream Fireworks Festival";
-"hiroshima_minato_fireworks_description" = "A fireworks festival at Hiroshima Port. Around 10,000 fireworks illuminate Hiroshima’s summer nights.";
-"hiroshima_minato_fireworks_location" = "Hiroshima City / Hiroshima Port";
-"hiroshima_minato_fireworks_feature1" = "10,000 Fireworks";
-"hiroshima_minato_fireworks_feature2" = "Hiroshima Port";
-"hiroshima_minato_fireworks_feature3" = "Summer Night Fireworks";
+"hiroshima_minato_fireworks_name" = "Lễ hội pháo hoa Minato Yume Hiroshima";
+"hiroshima_minato_fireworks_description" = "Đại hội pháo hoa tổ chức tại cảng Hiroshima. Khoảng 10.000 quả pháo tô điểm đêm hè Hiroshima.";
+"hiroshima_minato_fireworks_location" = "Thành phố Hiroshima - Cảng Hiroshima";
+"hiroshima_minato_fireworks_feature1" = "10.000 quả pháo";
+"hiroshima_minato_fireworks_feature2" = "Cảng Hiroshima";
+"hiroshima_minato_fireworks_feature3" = "Pháo hoa đêm hè";
 
 // MARK: - Yamaguchi Prefecture
-"kanmon_kaikyo_fireworks_name" = "Kanmon Strait Fireworks Festival";
-"kanmon_kaikyo_fireworks_description" = "A fireworks festival held at the Kanmon Strait that separates Honshu and Kyushu. About 13,000 fireworks are launched from both shores.";
-"kanmon_kaikyo_fireworks_location" = "Shimonoseki City / Kanmon Strait";
-"kanmon_kaikyo_fireworks_feature1" = "Fireworks from Both Shores";
-"kanmon_kaikyo_fireworks_feature2" = "13,000 Fireworks";
-"kanmon_kaikyo_fireworks_feature3" = "Honshu and Kyushu";
+"kanmon_kaikyo_fireworks_name" = "Lễ hội pháo hoa eo biển Kanmon";
+"kanmon_kaikyo_fireworks_description" = "Đại hội pháo hoa tổ chức tại eo biển Kanmon ngăn cách Honshu và Kyushu. Khoảng 13.000 quả pháo bắn lên từ cả hai bờ.";
+"kanmon_kaikyo_fireworks_location" = "Thành phố Shimonoseki - Eo biển Kanmon";
+"kanmon_kaikyo_fireworks_feature1" = "Pháo hoa hai bờ";
+"kanmon_kaikyo_fireworks_feature2" = "13.000 quả pháo";
+"kanmon_kaikyo_fireworks_feature3" = "Honshu và Kyushu";
 
-"shimonoseki_kaikyo_kan_fireworks_name" = "Shimonoseki Kaikyo-kan Fireworks Festival";
-"shimonoseki_kaikyo_kan_fireworks_description" = "A fireworks festival that brightens up Shimonoseki’s summer. Fireworks launched from the sea in front of the Kaikyo-kan light up the Kanmon Strait.";
-"shimonoseki_kaikyo_kan_fireworks_location" = "Shimonoseki City / Kaikyo-kan";
+"shimonoseki_kaikyo_kan_fireworks_name" = "Lễ hội pháo hoa Kaikyo-kan Shimonoseki";
+"shimonoseki_kaikyo_kan_fireworks_description" = "Đại hội pháo hoa tô điểm mùa hè Shimonoseki. Pháo hoa bắn từ biển trước Kaikyo-kan chiếu sáng eo biển Kanmon.";
+"shimonoseki_kaikyo_kan_fireworks_location" = "Thành phố Shimonoseki - Kaikyo-kan";
 "shimonoseki_kaikyo_kan_fireworks_feature1" = "Kaikyo-kan";
-"shimonoseki_kaikyo_kan_fireworks_feature2" = "Marine Fireworks";
-"shimonoseki_kaikyo_kan_fireworks_feature3" = "Kanmon Strait";
+"shimonoseki_kaikyo_kan_fireworks_feature2" = "Pháo hoa trên biển";
+"shimonoseki_kaikyo_kan_fireworks_feature3" = "Eo biển Kanmon";
 
-"yamaguchi_tanabata_chochin_festival_name" = "Yamaguchi Tanabata Lantern Festival";
-"yamaguchi_tanabata_chochin_festival_description" = "A summer festival in Yamaguchi where about 100,000 red lanterns light up the city. The fantastic lantern lights beautifully illuminate Yamaguchi at night.";
-"yamaguchi_tanabata_chochin_festival_location" = "Central Yamaguchi City";
-"yamaguchi_tanabata_chochin_festival_feature1" = "100,000 Lanterns";
-"yamaguchi_tanabata_chochin_festival_feature2" = "Red Lanterns";
-"yamaguchi_tanabata_chochin_festival_feature3" = "Fantastic";
+"yamaguchi_tanabata_chochin_festival_name" = "Lễ hội đèn lồng Tanabata Yamaguchi";
+"yamaguchi_tanabata_chochin_festival_description" = "Lễ hội mùa hè Yamaguchi với khoảng 100.000 đèn lồng đỏ tô điểm phố phường. Ánh đèn lồng huyền ảo chiếu sáng đẹp mắt đêm Yamaguchi.";
+"yamaguchi_tanabata_chochin_festival_location" = "Trung tâm thành phố Yamaguchi";
+"yamaguchi_tanabata_chochin_festival_feature1" = "100.000 đèn lồng";
+"yamaguchi_tanabata_chochin_festival_feature2" = "Đèn lồng đỏ";
+"yamaguchi_tanabata_chochin_festival_feature3" = "Huyền ảo";
 
 // MARK: - Tokushima Prefecture
 "awa_odori_name" = "Awa Odori";
@@ -3876,55 +3876,55 @@
 "tokushima_awa_odori_feature3" = "Colorful Performances";
 
 // MARK: - Kagawa Prefecture
-"sanuki_takamatsu_festival_name" = "Sanuki Takamatsu Festival";
-"sanuki_takamatsu_festival_description" = "A summer festival in Takamatsu City. The group dances and fireworks enliven the summer in Sanuki.";
-"sanuki_takamatsu_festival_location" = "Central Takamatsu City";
-"sanuki_takamatsu_festival_feature1" = "Group Dance";
-"sanuki_takamatsu_festival_feature2" = "Fireworks Display";
-"sanuki_takamatsu_festival_feature3" = "Sanuki Summer";
+"sanuki_takamatsu_festival_name" = "Lễ hội Sanuki Takamatsu";
+"sanuki_takamatsu_festival_description" = "Lễ hội mùa hè thành phố Takamatsu. Màn tổng vũ và pháo hoa làm sôi động mùa hè Sanuki.";
+"sanuki_takamatsu_festival_location" = "Trung tâm thành phố Takamatsu";
+"sanuki_takamatsu_festival_feature1" = "Tổng vũ";
+"sanuki_takamatsu_festival_feature2" = "Bắn pháo hoa";
+"sanuki_takamatsu_festival_feature3" = "Mùa hè Sanuki";
 
-"marugame_oshiro_festival_name" = "Marugame Castle Festival";
-"marugame_oshiro_festival_description" = "A spring festival centered around Marugame Castle. Various events are held with the castle as a backdrop.";
-"marugame_oshiro_festival_location" = "Marugame City / Marugame Castle";
-"marugame_oshiro_festival_feature1" = "Marugame Castle";
-"marugame_oshiro_festival_feature2" = "Castle Festival";
-"marugame_oshiro_festival_feature3" = "Spring Events";
+"marugame_oshiro_festival_name" = "Lễ hội thành Marugame";
+"marugame_oshiro_festival_description" = "Lễ hội mùa xuân lấy thành Marugame làm sân khấu. Nhiều sự kiện được tổ chức với hậu cảnh là tòa thành.";
+"marugame_oshiro_festival_location" = "Thành phố Marugame - Thành Marugame";
+"marugame_oshiro_festival_feature1" = "Thành Marugame";
+"marugame_oshiro_festival_feature2" = "Lễ hội thành";
+"marugame_oshiro_festival_feature3" = "Sự kiện mùa xuân";
 
 // MARK: - Ehime Prefecture
-"matsuyama_festival_name" = "Matsuyama Festival";
-"matsuyama_festival_description" = "A summer festival in Matsuyama City. The Baseball Fist dance and fireworks animate the Dogo Onsen area.";
-"matsuyama_festival_location" = "Central Matsuyama City";
-"matsuyama_festival_feature1" = "Baseball Fist Dance";
-"matsuyama_festival_feature2" = "Fireworks Display";
-"matsuyama_festival_feature3" = "Dogo Onsen";
+"matsuyama_festival_name" = "Lễ hội Matsuyama";
+"matsuyama_festival_description" = "Lễ hội mùa hè thành phố Matsuyama. Điệu múa Yakyuken và màn pháo hoa làm sôi động khu suối nước nóng Dogo.";
+"matsuyama_festival_location" = "Trung tâm thành phố Matsuyama";
+"matsuyama_festival_feature1" = "Múa Yakyuken";
+"matsuyama_festival_feature2" = "Bắn pháo hoa";
+"matsuyama_festival_feature3" = "Suối nước nóng Dogo";
 
-"niihama_taiko_festival_name" = "Niihama Taiko Festival";
-"niihama_taiko_festival_description" = "One of Shikoku’s three major festivals. A vigorous autumn festival featuring large drum floats weighing about 3 tons.";
-"niihama_taiko_festival_location" = "Niihama City";
-"niihama_taiko_festival_feature1" = "One of Shikoku’s Three Major Festivals";
-"niihama_taiko_festival_feature2" = "3-Ton Drum Floats";
-"niihama_taiko_festival_feature3" = "Vigorous Festival";
+"niihama_taiko_festival_name" = "Lễ hội trống Niihama";
+"niihama_taiko_festival_description" = "Một trong ba lễ hội lớn của Shikoku. Lễ hội mùa thu hùng tráng với những đài trống nặng khoảng 3 tấn diễu hành.";
+"niihama_taiko_festival_location" = "Thành phố Niihama";
+"niihama_taiko_festival_feature1" = "Ba lễ hội lớn của Shikoku";
+"niihama_taiko_festival_feature2" = "Đài trống 3 tấn";
+"niihama_taiko_festival_feature3" = "Lễ hội hùng tráng";
 
-"uwajima_ushioni_festival_name" = "Uwajima Ushioni Festival";
-"uwajima_ushioni_festival_description" = "A summer festival in Uwajima featuring the fantastic Ushioni (cow demon) floats parading through town. Also famous for the Gaia Carnival.";
-"uwajima_ushioni_festival_location" = "Uwajima City";
-"uwajima_ushioni_festival_feature1" = "Ushioni Floats";
+"uwajima_ushioni_festival_name" = "Lễ hội Ushioni Uwajima";
+"uwajima_ushioni_festival_description" = "Lễ hội mùa hè Uwajima với hình nộm Ushioni (quỷ trâu) huyền ảo diễu hành khắp phố. Cũng nổi tiếng với lễ hội Gaia Carnival.";
+"uwajima_ushioni_festival_location" = "Thành phố Uwajima";
+"uwajima_ushioni_festival_feature1" = "Hình nộm Ushioni";
 "uwajima_ushioni_festival_feature2" = "Gaia Carnival";
-"uwajima_ushioni_festival_feature3" = "Fantastic";
+"uwajima_ushioni_festival_feature3" = "Huyền ảo";
 
 // MARK: - Kochi Prefecture
-"yosakoi_festival_name" = "Yosakoi Festival";
-"yosakoi_festival_description" = "The festival of Yosakoi dance, originating in Kochi. A colorful festival where dancers use wooden clappers called naruko, spreading nationwide.";
-"yosakoi_festival_location" = "Central Kochi City";
-"yosakoi_festival_feature1" = "Origin of Yosakoi";
-"yosakoi_festival_feature2" = "Naruko Dance";
-"yosakoi_festival_feature3" = "Nationwide Spread";
+"yosakoi_festival_name" = "Lễ hội Yosakoi";
+"yosakoi_festival_description" = "Lễ hội múa Yosakoi có nguồn gốc từ Kochi. Lễ hội rực rỡ nơi vũ công cầm naruko (thanh gõ) nhảy múa, lan rộng khắp cả nước.";
+"yosakoi_festival_location" = "Trung tâm thành phố Kochi";
+"yosakoi_festival_feature1" = "Cái nôi Yosakoi";
+"yosakoi_festival_feature2" = "Múa naruko";
+"yosakoi_festival_feature3" = "Lan rộng cả nước";
 
-"tosa_festival_name" = "Tosa Festival";
-"tosa_festival_description" = "A representative summer festival of Kochi. Fireworks and Yosakoi dance brighten the summer nights in Tosa.";
-"tosa_festival_location" = "Kochi City";
-"tosa_festival_feature1" = "Tosa Summer";
-"tosa_festival_feature2" = "Fireworks Display";
+"tosa_festival_name" = "Lễ hội Tosa";
+"tosa_festival_description" = "Lễ hội tiêu biểu cho mùa hè Kochi. Màn pháo hoa và điệu múa Yosakoi làm sôi động đêm Tosa.";
+"tosa_festival_location" = "Thành phố Kochi";
+"tosa_festival_feature1" = "Mùa hè Tosa";
+"tosa_festival_feature2" = "Bắn pháo hoa";
 "tosa_festival_feature3" = "Yosakoi";
 
 // MARK: - Fukuoka Prefecture
@@ -3949,12 +3949,12 @@
 "tobata_gion_oyamakasa_feature2" = "Lantern Yamakasa";
 "tobata_gion_oyamakasa_feature3" = "Fantastic Night View";
 
-"chikugogawa_fireworks_name" = "Chikugo River Fireworks Festival";
-"chikugogawa_fireworks_description" = "One of the largest fireworks festivals in Kyushu. About 18,000 fireworks are launched from the Chikugo River riverbed.";
-"chikugogawa_fireworks_location" = "Kurume City / Chikugo River";
-"chikugogawa_fireworks_feature1" = "One of Kyushu’s Largest";
-"chikugogawa_fireworks_feature2" = "18,000 Fireworks";
-"chikugogawa_fireworks_feature3" = "Chikugo River";
+"chikugogawa_fireworks_name" = "Lễ hội pháo hoa sông Chikugo";
+"chikugogawa_fireworks_description" = "Đại hội pháo hoa lớn nhất Kyushu. Khoảng 18.000 quả pháo bắn từ bãi sông Chikugo.";
+"chikugogawa_fireworks_location" = "Thành phố Kurume - Sông Chikugo";
+"chikugogawa_fireworks_feature1" = "Lớn nhất Kyushu";
+"chikugogawa_fireworks_feature2" = "18.000 quả pháo";
+"chikugogawa_fireworks_feature3" = "Sông Chikugo";
 
 // MARK: - Saga Prefecture
 "saga_balloon_festa_name" = "Saga International Balloon Fiesta";
@@ -3986,64 +3986,64 @@
 "nagasaki_kunchi_feature2" = "Suwa Shrine";
 "nagasaki_kunchi_feature3" = "380 Years of History";
 
-"sasebo_seaside_festival_name" = "Sasebo Seaside Festival";
-"sasebo_seaside_festival_description" = "A summer festival held at Sasebo Port. Enjoy marine events unique to the port town and a fireworks display.";
-"sasebo_seaside_festival_location" = "Sasebo City, Sasebo Port";
-"sasebo_seaside_festival_feature1" = "Port Town Festival";
-"sasebo_seaside_festival_feature2" = "Marine Events";
-"sasebo_seaside_festival_feature3" = "Fireworks Display";
+"sasebo_seaside_festival_name" = "Lễ hội bờ biển Sasebo";
+"sasebo_seaside_festival_description" = "Lễ hội mùa hè tổ chức tại cảng Sasebo. Tận hưởng các sự kiện trên biển đặc trưng của thành phố cảng và màn pháo hoa.";
+"sasebo_seaside_festival_location" = "Thành phố Sasebo - Cảng Sasebo";
+"sasebo_seaside_festival_feature1" = "Lễ hội thành phố cảng";
+"sasebo_seaside_festival_feature2" = "Sự kiện trên biển";
+"sasebo_seaside_festival_feature3" = "Bắn pháo hoa";
 
 // MARK: - Kumamoto Prefecture
-"kumamoto_hinokuni_festival_name" = "Kumamoto Hinokuni Festival";
-"kumamoto_hinokuni_festival_description" = "A representative summer festival of Kumamoto. The Hinokuni dance and fireworks light up the area around Kumamoto Castle.";
-"kumamoto_hinokuni_festival_location" = "Kumamoto City Center";
-"kumamoto_hinokuni_festival_feature1" = "Hinokuni Dance";
-"kumamoto_hinokuni_festival_feature2" = "Fireworks Display";
-"kumamoto_hinokuni_festival_feature3" = "Kumamoto Castle Area";
+"kumamoto_hinokuni_festival_name" = "Lễ hội Hinokuni Kumamoto";
+"kumamoto_hinokuni_festival_description" = "Lễ hội tiêu biểu cho mùa hè Kumamoto. Điệu múa Hinokuni và màn pháo hoa làm sôi động khu vực thành Kumamoto.";
+"kumamoto_hinokuni_festival_location" = "Trung tâm thành phố Kumamoto";
+"kumamoto_hinokuni_festival_feature1" = "Múa Hinokuni";
+"kumamoto_hinokuni_festival_feature2" = "Bắn pháo hoa";
+"kumamoto_hinokuni_festival_feature3" = "Khu vực thành Kumamoto";
 
-"yamaga_toro_festival_name" = "Yamaga Toro Festival";
-"yamaga_toro_festival_description" = "A magical festival where dancers carry lanterns made only of Japanese paper and glue on their heads. The thousand-person lantern dance is spectacular.";
-"yamaga_toro_festival_location" = "Yamaga City";
-"yamaga_toro_festival_feature1" = "Japanese Paper Lanterns";
-"yamaga_toro_festival_feature2" = "Thousand-Person Dance";
-"yamaga_toro_festival_feature3" = "Magical Atmosphere";
+"yamaga_toro_festival_name" = "Lễ hội đèn lồng Yamaga";
+"yamaga_toro_festival_description" = "Lễ hội huyền ảo nơi vũ công đội trên đầu chiếc đèn lồng chỉ làm từ giấy washi và hồ để nhảy múa. Điệu múa đèn lồng nghìn người thật ngoạn mục.";
+"yamaga_toro_festival_location" = "Thành phố Yamaga";
+"yamaga_toro_festival_feature1" = "Đèn lồng giấy washi";
+"yamaga_toro_festival_feature2" = "Múa nghìn người";
+"yamaga_toro_festival_feature3" = "Huyền ảo";
 
-"hitoyoshi_fireworks_name" = "Hitoyoshi Fireworks Festival";
-"hitoyoshi_fireworks_description" = "A fireworks festival held along the Kuma River. About 5,000 fireworks beautifully illuminate the night sky of Hitoyoshi.";
-"hitoyoshi_fireworks_location" = "Hitoyoshi City, Kuma River";
-"hitoyoshi_fireworks_feature1" = "5,000 Fireworks";
-"hitoyoshi_fireworks_feature2" = "Kuma River";
-"hitoyoshi_fireworks_feature3" = "Clear Stream Fireworks";
+"hitoyoshi_fireworks_name" = "Lễ hội pháo hoa Hitoyoshi";
+"hitoyoshi_fireworks_description" = "Đại hội pháo hoa tổ chức bên sông Kuma. Khoảng 5.000 quả pháo chiếu sáng đẹp mắt bầu trời đêm Hitoyoshi.";
+"hitoyoshi_fireworks_location" = "Thành phố Hitoyoshi - Sông Kuma";
+"hitoyoshi_fireworks_feature1" = "5.000 quả pháo";
+"hitoyoshi_fireworks_feature2" = "Sông Kuma";
+"hitoyoshi_fireworks_feature3" = "Pháo hoa dòng suối trong";
 
 // MARK: - Oita Prefecture
-"oita_tanabata_festival_name" = "Oita Tanabata Festival";
-"oita_tanabata_festival_description" = "A summer festival in Oita City. The city center is decorated with Tanabata ornaments, and various events are held.";
-"oita_tanabata_festival_location" = "Oita City Center";
-"oita_tanabata_festival_feature1" = "Tanabata Decorations";
-"oita_tanabata_festival_feature2" = "City Center";
-"oita_tanabata_festival_feature3" = "Summer Events";
+"oita_tanabata_festival_name" = "Lễ hội Tanabata Oita";
+"oita_tanabata_festival_description" = "Lễ hội mùa hè thành phố Oita. Khu trung tâm được tô điểm bằng trang trí Tanabata và nhiều sự kiện được tổ chức.";
+"oita_tanabata_festival_location" = "Trung tâm thành phố Oita";
+"oita_tanabata_festival_feature1" = "Trang trí Tanabata";
+"oita_tanabata_festival_feature2" = "Khu trung tâm";
+"oita_tanabata_festival_feature3" = "Sự kiện mùa hè";
 
-"hita_gion_festival_name" = "Hita Gion Festival";
-"hita_gion_festival_description" = "A summer festival in the water town of Hita. Luxurious floats parade along the Mikuma River in one of Kyushu's major Gion festivals.";
-"hita_gion_festival_location" = "Hita City";
-"hita_gion_festival_feature1" = "Water Town Festival";
-"hita_gion_festival_feature2" = "Luxurious Floats";
-"hita_gion_festival_feature3" = "One of Kyushu's Largest";
+"hita_gion_festival_name" = "Lễ hội Gion Hita";
+"hita_gion_festival_description" = "Lễ hội mùa hè của Hita xứ sông nước. Những chiếc yamahoko lộng lẫy diễu hành dọc sông Mikuma, là lễ hội Gion hàng đầu Kyushu.";
+"hita_gion_festival_location" = "Thành phố Hita";
+"hita_gion_festival_feature1" = "Lễ hội xứ sông nước";
+"hita_gion_festival_feature2" = "Yamahoko lộng lẫy";
+"hita_gion_festival_feature3" = "Hàng đầu Kyushu";
 
-"beppu_hinoumi_festival_name" = "Beppu Hinoumi Festival";
-"beppu_hinoumi_festival_description" = "A summer festival held in Beppu's hot spring district. The hot spring festival and fireworks light up Beppu's nights.";
-"beppu_hinoumi_festival_location" = "Beppu City";
-"beppu_hinoumi_festival_feature1" = "Hot Spring District";
-"beppu_hinoumi_festival_feature2" = "Hot Spring Festival";
-"beppu_hinoumi_festival_feature3" = "Fireworks Display";
+"beppu_hinoumi_festival_name" = "Lễ hội Hinoumi Beppu";
+"beppu_hinoumi_festival_description" = "Lễ hội mùa hè tổ chức tại phố suối nước nóng Beppu. Lễ hội onsen và màn pháo hoa tô điểm đêm Beppu.";
+"beppu_hinoumi_festival_location" = "Thành phố Beppu";
+"beppu_hinoumi_festival_feature1" = "Phố onsen";
+"beppu_hinoumi_festival_feature2" = "Lễ hội onsen";
+"beppu_hinoumi_festival_feature3" = "Bắn pháo hoa";
 
 // MARK: - Miyazaki Prefecture
-"hyuga_hyottoko_festival_name" = "Hyuga Hyottoko Summer Festival";
-"hyuga_hyottoko_festival_description" = "A summer festival in Hyuga City famous for the Hyottoko dance. Participants wear humorous Hyottoko masks and dance joyfully.";
-"hyuga_hyottoko_festival_location" = "Hyuga City";
-"hyuga_hyottoko_festival_feature1" = "Hyottoko Dance";
-"hyuga_hyottoko_festival_feature2" = "Humorous";
-"hyuga_hyottoko_festival_feature3" = "Mask Dance";
+"hyuga_hyottoko_festival_name" = "Lễ hội mùa hè Hyottoko Hyuga";
+"hyuga_hyottoko_festival_description" = "Lễ hội mùa hè thành phố Hyuga nổi tiếng với điệu múa Hyottoko. Lễ hội vui nhộn nơi mọi người đeo mặt nạ Hyottoko hài hước rồi nhảy múa.";
+"hyuga_hyottoko_festival_location" = "Thành phố Hyuga";
+"hyuga_hyottoko_festival_feature1" = "Múa Hyottoko";
+"hyuga_hyottoko_festival_feature2" = "Hài hước";
+"hyuga_hyottoko_festival_feature3" = "Múa mặt nạ";
 
 "miyazaki_jingu_taisai_name" = "Miyazaki Jingu Grand Festival";
 "miyazaki_jingu_taisai_description" = "An autumn festival at Miyazaki Jingu Shrine. A historic festival held at Miyazaki Jingu, related to Emperor Jimmu.";
@@ -4053,41 +4053,41 @@
 "miyazaki_jingu_taisai_feature3" = "Historic Festival";
 
 // MARK: - Kagoshima Prefecture
-"kagoshima_ohara_festival_name" = "Kagoshima Ohara Festival";
-"kagoshima_ohara_festival_description" = "A city-wide dance festival in Kagoshima City. Citizens parade dancing to Ohara-bushi, coloring the autumn of Kagoshima.";
-"kagoshima_ohara_festival_location" = "Kagoshima City Center";
-"kagoshima_ohara_festival_feature1" = "Citywide Dance";
+"kagoshima_ohara_festival_name" = "Lễ hội Ohara Kagoshima";
+"kagoshima_ohara_festival_description" = "Lễ hội tổng vũ của người dân Kagoshima. Đoàn diễu hành thị dân nhảy theo nhịp Ohara-bushi tô điểm mùa thu Kagoshima.";
+"kagoshima_ohara_festival_location" = "Trung tâm thành phố Kagoshima";
+"kagoshima_ohara_festival_feature1" = "Tổng vũ thị dân";
 "kagoshima_ohara_festival_feature2" = "Ohara-bushi";
-"kagoshima_ohara_festival_feature3" = "20,000 Participants";
+"kagoshima_ohara_festival_feature3" = "20.000 người tham gia";
 
-"sendaigawa_fireworks_name" = "Sendaigawa Fireworks Festival";
-"sendaigawa_fireworks_description" = "A fireworks festival held along the Sendaigawa River. Approximately 8,000 fireworks light up the night sky of Satsumasendai City.";
-"sendaigawa_fireworks_location" = "Satsumasendai City, Sendaigawa River";
-"sendaigawa_fireworks_feature1" = "8,000 Fireworks";
-"sendaigawa_fireworks_feature2" = "Sendaigawa River";
-"sendaigawa_fireworks_feature3" = "Satsuma Nights";
+"sendaigawa_fireworks_name" = "Lễ hội pháo hoa sông Sendai";
+"sendaigawa_fireworks_description" = "Đại hội pháo hoa tổ chức bên sông Sendai. Khoảng 8.000 quả pháo tô điểm bầu trời đêm thành phố Satsumasendai.";
+"sendaigawa_fireworks_location" = "Thành phố Satsumasendai - Sông Sendai";
+"sendaigawa_fireworks_feature1" = "8.000 quả pháo";
+"sendaigawa_fireworks_feature2" = "Sông Sendai";
+"sendaigawa_fireworks_feature3" = "Đêm Satsuma";
 
 // MARK: - Okinawa Prefecture
-"okinawa_zento_eisa_festival_name" = "Okinawa All-Island Eisa Festival";
-"okinawa_zento_eisa_festival_description" = "A representative summer festival of Okinawa. Eisa groups from across the prefecture gather to perform vigorous Eisa dances.";
-"okinawa_zento_eisa_festival_location" = "Okinawa City";
-"okinawa_zento_eisa_festival_feature1" = "All-Island Eisa";
-"okinawa_zento_eisa_festival_feature2" = "Vigorous Dance";
-"okinawa_zento_eisa_festival_feature3" = "Okinawa Summer";
+"okinawa_zento_eisa_festival_name" = "Lễ hội Eisa toàn đảo Okinawa";
+"okinawa_zento_eisa_festival_description" = "Lễ hội tiêu biểu cho mùa hè Okinawa. Các đoàn Eisa khắp tỉnh quy tụ trình diễn điệu múa Eisa hùng dũng.";
+"okinawa_zento_eisa_festival_location" = "Thành phố Okinawa";
+"okinawa_zento_eisa_festival_feature1" = "Eisa toàn đảo";
+"okinawa_zento_eisa_festival_feature2" = "Điệu múa hùng dũng";
+"okinawa_zento_eisa_festival_feature3" = "Mùa hè Okinawa";
 
-"naha_festival_name" = "Naha Festival";
-"naha_festival_description" = "The largest festival in Naha City. Parades on Kokusai Street and a fireworks display enliven the autumn in Okinawa.";
-"naha_festival_location" = "Naha City";
-"naha_festival_feature1" = "Kokusai Street";
-"naha_festival_feature2" = "Parade";
-"naha_festival_feature3" = "Naha's Largest";
+"naha_festival_name" = "Lễ hội Naha";
+"naha_festival_description" = "Lễ hội lớn nhất thành phố Naha. Đoàn diễu hành trên phố Kokusai và màn pháo hoa làm sôi động mùa thu Okinawa.";
+"naha_festival_location" = "Thành phố Naha";
+"naha_festival_feature1" = "Phố Kokusai";
+"naha_festival_feature2" = "Diễu hành";
+"naha_festival_feature3" = "Lớn nhất Naha";
 
-"ginowan_hagoromo_festival_name" = "Ginowan Hagoromo Festival";
-"ginowan_hagoromo_festival_description" = "A summer festival in Ginowan City. The Hagoromo Ondo dance and fireworks beautifully color the nights in Ginowan.";
-"ginowan_hagoromo_festival_location" = "Ginowan City";
+"ginowan_hagoromo_festival_name" = "Lễ hội Hagoromo Ginowan";
+"ginowan_hagoromo_festival_description" = "Lễ hội mùa hè thành phố Ginowan. Điệu múa Hagoromo Ondo và màn pháo hoa tô điểm đẹp mắt đêm Ginowan.";
+"ginowan_hagoromo_festival_location" = "Thành phố Ginowan";
 "ginowan_hagoromo_festival_feature1" = "Hagoromo Ondo";
-"ginowan_hagoromo_festival_feature2" = "Fireworks Display";
-"ginowan_hagoromo_festival_feature3" = "Ginowan Nights";
+"ginowan_hagoromo_festival_feature2" = "Bắn pháo hoa";
+"ginowan_hagoromo_festival_feature3" = "Đêm Ginowan";
 
 // MARK: - Month Strings
 "month_january" = "January";
