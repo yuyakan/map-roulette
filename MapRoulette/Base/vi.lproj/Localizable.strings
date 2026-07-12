@@ -2975,62 +2975,62 @@
 
 
 // MARK: - Hokkaido Prefecture
-"sapporo_summer_festival_name" = "Sapporo Summer Festival";
-"sapporo_summer_festival_description" = "A major summer event held in central Sapporo. Enjoy beer gardens, gourmet stalls, and diverse stage events.";
-"sapporo_summer_festival_location" = "Odori Park & Susukino";
-"sapporo_summer_festival_feature1" = "Beer Gardens";
-"sapporo_summer_festival_feature2" = "Gourmet Stalls";
-"sapporo_summer_festival_feature3" = "Stage Events";
+"sapporo_summer_festival_name" = "Lễ hội mùa hè Sapporo";
+"sapporo_summer_festival_description" = "Sự kiện mùa hè lớn tổ chức ở trung tâm Sapporo. Tận hưởng vườn bia, quầy ẩm thực và nhiều tiết mục sân khấu đa dạng.";
+"sapporo_summer_festival_location" = "Công viên Odori & Susukino";
+"sapporo_summer_festival_feature1" = "Vườn bia";
+"sapporo_summer_festival_feature2" = "Quầy ẩm thực";
+"sapporo_summer_festival_feature3" = "Tiết mục sân khấu";
 
-"noboribetsu_hell_festival_name" = "Noboribetsu Hell Festival";
-"noboribetsu_hell_festival_description" = "A thrilling festival where demons from Hell Valley appear in the city. Famous for dynamic dancing by red and blue demons and fireworks.";
-"noboribetsu_hell_festival_location" = "Noboribetsu Hot Spring District";
-"noboribetsu_hell_festival_feature1" = "Demon Dancing";
-"noboribetsu_hell_festival_feature2" = "Hell Drums";
-"noboribetsu_hell_festival_feature3" = "Fireworks Display";
+"noboribetsu_hell_festival_name" = "Lễ hội địa ngục Noboribetsu";
+"noboribetsu_hell_festival_description" = "Lễ hội đầy kịch tính khi lũ quỷ từ thung lũng địa ngục xuất hiện trong phố. Nổi tiếng với điệu múa hùng dũng của quỷ đỏ, quỷ xanh và pháo hoa.";
+"noboribetsu_hell_festival_location" = "Phố suối nước nóng Noboribetsu";
+"noboribetsu_hell_festival_feature1" = "Múa quỷ";
+"noboribetsu_hell_festival_feature2" = "Trống địa ngục";
+"noboribetsu_hell_festival_feature3" = "Bắn pháo hoa";
 
-"otaru_ushio_festival_name" = "Otaru Tide Festival";
-"otaru_ushio_festival_description" = "A summer festival celebrating the sea's bounty at Otaru Port. Dance parades to the Ushio Ondo rhythm and marine fireworks beautify this port town.";
-"otaru_ushio_festival_location" = "Otaru Port Area";
+"otaru_ushio_festival_name" = "Lễ hội thủy triều Otaru";
+"otaru_ushio_festival_description" = "Lễ hội mùa hè tạ ơn biển cả bội thu ở cảng Otaru. Đoàn diễu hành nhảy theo nhịp Ushio Ondo và pháo hoa trên biển tô điểm cho thành phố cảng xinh đẹp.";
+"otaru_ushio_festival_location" = "Khu vực cảng Otaru";
 "otaru_ushio_festival_feature1" = "Ushio Ondo";
-"otaru_ushio_festival_feature2" = "Dance Parade";
-"otaru_ushio_festival_feature3" = "Marine Fireworks";
+"otaru_ushio_festival_feature2" = "Diễu hành nhảy múa";
+"otaru_ushio_festival_feature3" = "Pháo hoa trên biển";
 
-"hakodate_port_festival_name" = "Hakodate Port Festival";
-"hakodate_port_festival_description" = "The representative summer festival of Hakodate. The port town becomes most lively of the year with squid dance parades and Hakodate Port fireworks.";
-"hakodate_port_festival_location" = "Hakodate Port Area";
-"hakodate_port_festival_feature1" = "Squid Dance";
-"hakodate_port_festival_feature2" = "Port Festival Parade";
-"hakodate_port_festival_feature3" = "Fireworks Display";
+"hakodate_port_festival_name" = "Lễ hội cảng Hakodate";
+"hakodate_port_festival_description" = "Lễ hội tiêu biểu cho mùa hè Hakodate. Thành phố cảng nhộn nhịp nhất trong năm với đoàn diễu hành múa mực và pháo hoa cảng Hakodate.";
+"hakodate_port_festival_location" = "Khu vực cảng Hakodate";
+"hakodate_port_festival_feature1" = "Múa mực";
+"hakodate_port_festival_feature2" = "Diễu hành lễ hội cảng";
+"hakodate_port_festival_feature3" = "Bắn pháo hoa";
 
-"doshin_uhb_fireworks_name" = "Doshin-UHB Fireworks Festival";
-"doshin_uhb_fireworks_description" = "A grand fireworks display that colors Sapporo's summer night sky. About 4,000 fireworks launched from Toyohira River are the highlight.";
-"doshin_uhb_fireworks_location" = "Toyohira River Riverbed";
-"doshin_uhb_fireworks_feature1" = "4,000 Fireworks";
-"doshin_uhb_fireworks_feature2" = "Music & Fireworks Collaboration";
-"doshin_uhb_fireworks_feature3" = "Summer Tradition";
+"doshin_uhb_fireworks_name" = "Lễ hội pháo hoa Doshin-UHB";
+"doshin_uhb_fireworks_description" = "Đại tiệc pháo hoa tô điểm bầu trời đêm mùa hè Sapporo. Khoảng 4.000 quả pháo bắn từ bãi sông Toyohira là điểm nhấn.";
+"doshin_uhb_fireworks_location" = "Bãi sông Toyohira";
+"doshin_uhb_fireworks_feature1" = "4.000 quả pháo hoa";
+"doshin_uhb_fireworks_feature2" = "Kết hợp âm nhạc và pháo hoa";
+"doshin_uhb_fireworks_feature3" = "Nét đặc trưng mùa hè";
 
-"toyako_longrun_fireworks_name" = "Lake Toya Long-Run Fireworks";
-"toyako_longrun_fireworks_description" = "A unique fireworks display held daily from April to October. The beauty of fireworks reflected on the lake surface is exceptional.";
-"toyako_longrun_fireworks_location" = "Lake Toya Lakeside";
-"toyako_longrun_fireworks_feature1" = "Daily Display";
-"toyako_longrun_fireworks_feature2" = "Lake Surface Fireworks";
-"toyako_longrun_fireworks_feature3" = "Hot Springs & Fireworks";
+"toyako_longrun_fireworks_name" = "Lễ hội pháo hoa Long-Run hồ Toya";
+"toyako_longrun_fireworks_description" = "Màn pháo hoa hiếm có tổ chức mỗi ngày từ tháng 4 đến tháng 10. Vẻ đẹp của pháo hoa phản chiếu trên mặt hồ thật đặc biệt.";
+"toyako_longrun_fireworks_location" = "Bên hồ Toya";
+"toyako_longrun_fireworks_feature1" = "Tổ chức mỗi ngày";
+"toyako_longrun_fireworks_feature2" = "Pháo hoa mặt hồ";
+"toyako_longrun_fireworks_feature3" = "Suối nước nóng và pháo hoa";
 
 // MARK: - Aomori Prefecture
-"aomori_nebuta_festival_name" = "Aomori Nebuta Festival";
-"aomori_nebuta_festival_description" = "One of Japan's three major festivals. Giant warrior-shaped lanterns called 'Nebuta' parade through the streets, representing Aomori's summer.";
-"aomori_nebuta_festival_location" = "Central Aomori City";
-"aomori_nebuta_festival_feature1" = "Japan's Three Major Festivals";
-"aomori_nebuta_festival_feature2" = "Giant Nebuta";
-"aomori_nebuta_festival_feature3" = "Haneto Dancing";
+"aomori_nebuta_festival_name" = "Lễ hội Nebuta Aomori";
+"aomori_nebuta_festival_description" = "Một trong ba lễ hội lớn của Nhật Bản. Những chiếc đèn lồng hình võ sĩ khổng lồ gọi là \"Nebuta\" diễu hành qua phố, tiêu biểu cho mùa hè Aomori.";
+"aomori_nebuta_festival_location" = "Trung tâm thành phố Aomori";
+"aomori_nebuta_festival_feature1" = "Ba lễ hội lớn của Nhật Bản";
+"aomori_nebuta_festival_feature2" = "Nebuta khổng lồ";
+"aomori_nebuta_festival_feature3" = "Múa Haneto";
 
-"hirosaki_neputa_festival_name" = "Hirosaki Neputa Festival";
-"hirosaki_neputa_festival_description" = "Beautiful fan-shaped lanterns called 'Neputa' parade silently through the streets in this emotional Tsugaru summer festival.";
-"hirosaki_neputa_festival_location" = "Central Hirosaki City";
-"hirosaki_neputa_festival_feature1" = "Fan-shaped Neputa";
-"hirosaki_neputa_festival_feature2" = "Tsugaru Atmosphere";
-"hirosaki_neputa_festival_feature3" = "Silent Beauty";
+"hirosaki_neputa_festival_name" = "Lễ hội Neputa Hirosaki";
+"hirosaki_neputa_festival_description" = "Những chiếc đèn lồng hình quạt đẹp gọi là \"Neputa\" diễu hành trong tĩnh lặng, lễ hội mùa hè xứ Tsugaru đầy cảm xúc.";
+"hirosaki_neputa_festival_location" = "Trung tâm thành phố Hirosaki";
+"hirosaki_neputa_festival_feature1" = "Neputa hình quạt";
+"hirosaki_neputa_festival_feature2" = "Cảm xúc xứ Tsugaru";
+"hirosaki_neputa_festival_feature3" = "Vẻ đẹp của tĩnh lặng";
 
 "goshogawara_tachineputa_name" = "Goshogawara Tachi-Neputa";
 "goshogawara_tachineputa_description" = "A spectacular festival featuring 23-meter tall Tachi-Neputa. Its power and beauty captivate audiences.";
@@ -3039,62 +3039,62 @@
 "goshogawara_tachineputa_feature2" = "Giant Tachi-Neputa";
 "goshogawara_tachineputa_feature3" = "Overwhelming Power";
 
-"hachinohe_sansha_festival_name" = "Hachinohe Sansha Grand Festival";
-"hachinohe_sansha_festival_description" = "Hachinohe's largest festival featuring gorgeous floats parading through the streets. Elaborate dolls and beautiful decorations are the highlights.";
-"hachinohe_sansha_festival_location" = "Central Hachinohe City";
-"hachinohe_sansha_festival_feature1" = "Gorgeous Floats";
-"hachinohe_sansha_festival_feature2" = "Elaborate Dolls";
-"hachinohe_sansha_festival_feature3" = "Hachinohe's Largest";
+"hachinohe_sansha_festival_name" = "Đại lễ Tam Xã Hachinohe";
+"hachinohe_sansha_festival_description" = "Lễ hội lớn nhất Hachinohe với những chiếc xe rước lộng lẫy diễu hành. Búp bê tinh xảo và trang trí đẹp mắt là điểm nhấn.";
+"hachinohe_sansha_festival_location" = "Trung tâm thành phố Hachinohe";
+"hachinohe_sansha_festival_feature1" = "Xe rước lộng lẫy";
+"hachinohe_sansha_festival_feature2" = "Búp bê tinh xảo";
+"hachinohe_sansha_festival_feature3" = "Lớn nhất Hachinohe";
 
 // MARK: - Iwate Prefecture
-"morioka_sansa_festival_name" = "Morioka Sansa Odori";
-"morioka_sansa_festival_description" = "Iwate's representative festival featuring dancing to drum rhythms. The traditional chant 'Sakkora-Choi-Wa-Yasse' echoes throughout.";
-"morioka_sansa_festival_location" = "Central Morioka City";
-"morioka_sansa_festival_feature1" = "Drums and Dancing";
-"morioka_sansa_festival_feature2" = "Traditional Chants";
-"morioka_sansa_festival_feature3" = "Participatory Festival";
+"morioka_sansa_festival_name" = "Múa Sansa Morioka";
+"morioka_sansa_festival_description" = "Lễ hội tiêu biểu của Iwate, nhảy theo nhịp trống. Câu hô \"Sakkora-Choi-Wa-Yasse\" vang khắp nơi.";
+"morioka_sansa_festival_location" = "Trung tâm thành phố Morioka";
+"morioka_sansa_festival_feature1" = "Trống và điệu múa";
+"morioka_sansa_festival_feature2" = "Câu hô truyền thống";
+"morioka_sansa_festival_feature3" = "Lễ hội có sự tham gia";
 
-"hanamaki_festival_name" = "Hanamaki Festival";
-"hanamaki_festival_description" = "Hanamaki's autumn festival featuring gorgeous floats and portable shrines parading through the streets. A traditional festival with over 400 years of history.";
-"hanamaki_festival_location" = "Hanamaki City Streets";
-"hanamaki_festival_feature1" = "400 Years of History";
-"hanamaki_festival_feature2" = "Gorgeous Floats";
-"hanamaki_festival_feature3" = "Autumn Tradition";
+"hanamaki_festival_name" = "Lễ hội Hanamaki";
+"hanamaki_festival_description" = "Lễ hội mùa thu Hanamaki với xe rước lộng lẫy và kiệu mikoshi diễu hành. Lễ hội truyền thống với lịch sử hơn 400 năm.";
+"hanamaki_festival_location" = "Khu trung tâm Hanamaki";
+"hanamaki_festival_feature1" = "Lịch sử 400 năm";
+"hanamaki_festival_feature2" = "Xe rước lộng lẫy";
+"hanamaki_festival_feature3" = "Nét đặc trưng mùa thu";
 
-"kitakami_michinoku_festival_name" = "Kitakami Michinoku Performing Arts Festival";
-"kitakami_michinoku_festival_description" = "A festival where folk performing arts from throughout Tohoku gather. Traditional arts competition including Oni Kenbai (demon sword dance) is the highlight.";
-"kitakami_michinoku_festival_location" = "Kitakami City";
-"kitakami_michinoku_festival_feature1" = "Folk Performing Arts";
+"kitakami_michinoku_festival_name" = "Lễ hội nghệ thuật dân gian Michinoku Kitakami";
+"kitakami_michinoku_festival_description" = "Lễ hội quy tụ nghệ thuật dân gian khắp Tohoku. Cuộc so tài nghệ thuật truyền thống, gồm cả múa kiếm quỷ (Oni Kenbai), là điểm nhấn.";
+"kitakami_michinoku_festival_location" = "Thành phố Kitakami";
+"kitakami_michinoku_festival_feature1" = "Nghệ thuật dân gian";
 "kitakami_michinoku_festival_feature2" = "Oni Kenbai";
-"kitakami_michinoku_festival_feature3" = "Traditional Arts Competition";
+"kitakami_michinoku_festival_feature3" = "So tài nghệ thuật truyền thống";
 
 // MARK: - Miyagi Prefecture
-"sendai_tanabata_festival_name" = "Sendai Tanabata Festival";
-"sendai_tanabata_festival_description" = "One of Tohoku's three major festivals. A beautiful summer festival where colorful Tanabata decorations adorn the streets of Sendai.";
-"sendai_tanabata_festival_location" = "Central Sendai City";
-"sendai_tanabata_festival_feature1" = "Tohoku's Three Major Festivals";
-"sendai_tanabata_festival_feature2" = "Tanabata Decorations";
-"sendai_tanabata_festival_feature3" = "Shopping Street Decorations";
+"sendai_tanabata_festival_name" = "Lễ hội Tanabata Sendai";
+"sendai_tanabata_festival_description" = "Một trong ba lễ hội lớn của Tohoku. Lễ hội mùa hè đẹp mắt với các trang trí Tanabata rực rỡ tô điểm phố phường Sendai.";
+"sendai_tanabata_festival_location" = "Trung tâm thành phố Sendai";
+"sendai_tanabata_festival_feature1" = "Ba lễ hội lớn của Tohoku";
+"sendai_tanabata_festival_feature2" = "Trang trí Tanabata";
+"sendai_tanabata_festival_feature3" = "Trang trí phố buôn bán";
 
-"sendai_aoba_festival_name" = "Sendai Aoba Festival";
-"sendai_aoba_festival_description" = "Sendai's spring festival commemorating Lord Date Masamune. Gorgeous period processions and Aoba Shrine portable shrine parades are the highlights.";
-"sendai_aoba_festival_location" = "Central Sendai City";
+"sendai_aoba_festival_name" = "Lễ hội Aoba Sendai";
+"sendai_aoba_festival_description" = "Lễ hội mùa xuân Sendai tưởng nhớ Date Masamune. Đoàn diễu hành cổ trang lộng lẫy và lễ rước kiệu đền Aoba là điểm nhấn.";
+"sendai_aoba_festival_location" = "Trung tâm thành phố Sendai";
 "sendai_aoba_festival_feature1" = "Date Masamune";
-"sendai_aoba_festival_feature2" = "Period Procession";
-"sendai_aoba_festival_feature3" = "Warrior Procession";
+"sendai_aoba_festival_feature2" = "Diễu hành cổ trang";
+"sendai_aoba_festival_feature3" = "Diễu hành võ sĩ";
 
-"ishinomaki_kawabiraki_festival_name" = "Ishinomaki River Opening Festival";
-"ishinomaki_kawabiraki_festival_description" = "Ishinomaki's summer festival giving thanks for the blessings of the Kitakami River. Fireworks over the river and memorial services are impressive.";
-"ishinomaki_kawabiraki_festival_location" = "Ishinomaki City, Kitakami River";
-"ishinomaki_kawabiraki_festival_feature1" = "River Opening Fireworks";
-"ishinomaki_kawabiraki_festival_feature2" = "Memorial Service";
-"ishinomaki_kawabiraki_festival_feature3" = "River's Blessing";
+"ishinomaki_kawabiraki_festival_name" = "Lễ hội mở sông Ishinomaki";
+"ishinomaki_kawabiraki_festival_description" = "Lễ hội mùa hè Ishinomaki tạ ơn dòng sông Kitakami. Màn pháo hoa tô điểm mặt nước và lễ cầu siêu thật ấn tượng.";
+"ishinomaki_kawabiraki_festival_location" = "Thành phố Ishinomaki - Sông Kitakami";
+"ishinomaki_kawabiraki_festival_feature1" = "Pháo hoa mở sông";
+"ishinomaki_kawabiraki_festival_feature2" = "Lễ cầu siêu";
+"ishinomaki_kawabiraki_festival_feature3" = "Ơn nghĩa dòng sông";
 
 // MARK: - Akita Prefecture
-"akita_kanto_festival_name" = "Akita Kanto Festival";
-"akita_kanto_festival_description" = "One of Tohoku's three major festivals. A traditional festival featuring the skillful balancing of Kanto poles on palms, foreheads, and shoulders.";
-"akita_kanto_festival_location" = "Central Akita City";
-"akita_kanto_festival_feature1" = "Tohoku's Three Major Festivals";
+"akita_kanto_festival_name" = "Lễ hội Kanto Akita";
+"akita_kanto_festival_description" = "Một trong ba lễ hội lớn của Tohoku. Lễ hội truyền thống với điểm nhấn là kỹ thuật giữ thăng bằng cột đèn Kanto trên lòng bàn tay, trán và vai.";
+"akita_kanto_festival_location" = "Trung tâm thành phố Akita";
+"akita_kanto_festival_feature1" = "Ba lễ hội lớn của Tohoku";
 "akita_kanto_festival_feature2" = "Kanto Balancing Skills";
 "akita_kanto_festival_feature3" = "280 Kanto Poles";
 

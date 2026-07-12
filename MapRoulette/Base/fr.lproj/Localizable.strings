@@ -2975,62 +2975,62 @@
 
 
 // MARK: - Hokkaido Prefecture
-"sapporo_summer_festival_name" = "Sapporo Summer Festival";
-"sapporo_summer_festival_description" = "A major summer event held in central Sapporo. Enjoy beer gardens, gourmet stalls, and diverse stage events.";
-"sapporo_summer_festival_location" = "Odori Park & Susukino";
-"sapporo_summer_festival_feature1" = "Beer Gardens";
-"sapporo_summer_festival_feature2" = "Gourmet Stalls";
-"sapporo_summer_festival_feature3" = "Stage Events";
+"sapporo_summer_festival_name" = "Festival d'été de Sapporo";
+"sapporo_summer_festival_description" = "Grand événement estival au cœur de Sapporo. Profitez des jardins à bière, des stands gourmands et de spectacles variés.";
+"sapporo_summer_festival_location" = "Parc Odori et Susukino";
+"sapporo_summer_festival_feature1" = "Jardins à bière";
+"sapporo_summer_festival_feature2" = "Stands gourmands";
+"sapporo_summer_festival_feature3" = "Spectacles sur scène";
 
-"noboribetsu_hell_festival_name" = "Noboribetsu Hell Festival";
-"noboribetsu_hell_festival_description" = "A thrilling festival where demons from Hell Valley appear in the city. Famous for dynamic dancing by red and blue demons and fireworks.";
-"noboribetsu_hell_festival_location" = "Noboribetsu Hot Spring District";
-"noboribetsu_hell_festival_feature1" = "Demon Dancing";
-"noboribetsu_hell_festival_feature2" = "Hell Drums";
-"noboribetsu_hell_festival_feature3" = "Fireworks Display";
+"noboribetsu_hell_festival_name" = "Festival de l'enfer de Noboribetsu";
+"noboribetsu_hell_festival_description" = "Festival palpitant où les démons de la vallée de l'enfer envahissent la ville. Célèbre pour les danses vigoureuses des démons rouges et bleus et le feu d'artifice.";
+"noboribetsu_hell_festival_location" = "Quartier thermal de Noboribetsu";
+"noboribetsu_hell_festival_feature1" = "Danse des démons";
+"noboribetsu_hell_festival_feature2" = "Tambours de l'enfer";
+"noboribetsu_hell_festival_feature3" = "Feu d'artifice";
 
-"otaru_ushio_festival_name" = "Otaru Tide Festival";
-"otaru_ushio_festival_description" = "A summer festival celebrating the sea's bounty at Otaru Port. Dance parades to the Ushio Ondo rhythm and marine fireworks beautify this port town.";
-"otaru_ushio_festival_location" = "Otaru Port Area";
+"otaru_ushio_festival_name" = "Festival des marées d'Otaru";
+"otaru_ushio_festival_description" = "Festival estival de gratitude envers les bienfaits de la mer au port d'Otaru. Les défilés de danse au rythme de l'Ushio Ondo et les feux d'artifice marins embellissent cette ville portuaire.";
+"otaru_ushio_festival_location" = "Zone du port d'Otaru";
 "otaru_ushio_festival_feature1" = "Ushio Ondo";
-"otaru_ushio_festival_feature2" = "Dance Parade";
-"otaru_ushio_festival_feature3" = "Marine Fireworks";
+"otaru_ushio_festival_feature2" = "Défilé de danse";
+"otaru_ushio_festival_feature3" = "Feux d'artifice marins";
 
-"hakodate_port_festival_name" = "Hakodate Port Festival";
-"hakodate_port_festival_description" = "The representative summer festival of Hakodate. The port town becomes most lively of the year with squid dance parades and Hakodate Port fireworks.";
-"hakodate_port_festival_location" = "Hakodate Port Area";
-"hakodate_port_festival_feature1" = "Squid Dance";
-"hakodate_port_festival_feature2" = "Port Festival Parade";
-"hakodate_port_festival_feature3" = "Fireworks Display";
+"hakodate_port_festival_name" = "Festival du port de Hakodate";
+"hakodate_port_festival_description" = "Festival emblématique de l'été à Hakodate. La ville portuaire connaît son moment le plus animé de l'année avec les défilés de la danse du calmar et le feu d'artifice du port de Hakodate.";
+"hakodate_port_festival_location" = "Zone du port de Hakodate";
+"hakodate_port_festival_feature1" = "Danse du calmar";
+"hakodate_port_festival_feature2" = "Défilé du festival portuaire";
+"hakodate_port_festival_feature3" = "Feu d'artifice";
 
-"doshin_uhb_fireworks_name" = "Doshin-UHB Fireworks Festival";
-"doshin_uhb_fireworks_description" = "A grand fireworks display that colors Sapporo's summer night sky. About 4,000 fireworks launched from Toyohira River are the highlight.";
-"doshin_uhb_fireworks_location" = "Toyohira River Riverbed";
-"doshin_uhb_fireworks_feature1" = "4,000 Fireworks";
-"doshin_uhb_fireworks_feature2" = "Music & Fireworks Collaboration";
-"doshin_uhb_fireworks_feature3" = "Summer Tradition";
+"doshin_uhb_fireworks_name" = "Feu d'artifice Doshin-UHB";
+"doshin_uhb_fireworks_description" = "Grand feu d'artifice qui illumine le ciel nocturne estival de Sapporo. Environ 4 000 fusées tirées depuis les berges de la rivière Toyohira en sont le clou.";
+"doshin_uhb_fireworks_location" = "Berges de la rivière Toyohira";
+"doshin_uhb_fireworks_feature1" = "4 000 fusées";
+"doshin_uhb_fireworks_feature2" = "Musique et feux d'artifice";
+"doshin_uhb_fireworks_feature3" = "Tradition estivale";
 
-"toyako_longrun_fireworks_name" = "Lake Toya Long-Run Fireworks";
-"toyako_longrun_fireworks_description" = "A unique fireworks display held daily from April to October. The beauty of fireworks reflected on the lake surface is exceptional.";
-"toyako_longrun_fireworks_location" = "Lake Toya Lakeside";
-"toyako_longrun_fireworks_feature1" = "Daily Display";
-"toyako_longrun_fireworks_feature2" = "Lake Surface Fireworks";
-"toyako_longrun_fireworks_feature3" = "Hot Springs & Fireworks";
+"toyako_longrun_fireworks_name" = "Feu d'artifice Long-Run du lac Toya";
+"toyako_longrun_fireworks_description" = "Feu d'artifice unique organisé chaque jour d'avril à octobre. La beauté des feux se reflétant sur le lac est exceptionnelle.";
+"toyako_longrun_fireworks_location" = "Bord du lac Toya";
+"toyako_longrun_fireworks_feature1" = "Chaque jour";
+"toyako_longrun_fireworks_feature2" = "Feux sur le lac";
+"toyako_longrun_fireworks_feature3" = "Sources chaudes et feux d'artifice";
 
 // MARK: - Aomori Prefecture
-"aomori_nebuta_festival_name" = "Aomori Nebuta Festival";
-"aomori_nebuta_festival_description" = "One of Japan's three major festivals. Giant warrior-shaped lanterns called 'Nebuta' parade through the streets, representing Aomori's summer.";
-"aomori_nebuta_festival_location" = "Central Aomori City";
-"aomori_nebuta_festival_feature1" = "Japan's Three Major Festivals";
-"aomori_nebuta_festival_feature2" = "Giant Nebuta";
-"aomori_nebuta_festival_feature3" = "Haneto Dancing";
+"aomori_nebuta_festival_name" = "Festival Nebuta d'Aomori";
+"aomori_nebuta_festival_description" = "L'un des trois grands festivals du Japon. De gigantesques lanternes en forme de guerriers, les « Nebuta », défilent dans les rues, symbole de l'été d'Aomori.";
+"aomori_nebuta_festival_location" = "Centre d'Aomori";
+"aomori_nebuta_festival_feature1" = "Trois grands festivals du Japon";
+"aomori_nebuta_festival_feature2" = "Nebuta géant";
+"aomori_nebuta_festival_feature3" = "Danse Haneto";
 
-"hirosaki_neputa_festival_name" = "Hirosaki Neputa Festival";
-"hirosaki_neputa_festival_description" = "Beautiful fan-shaped lanterns called 'Neputa' parade silently through the streets in this emotional Tsugaru summer festival.";
-"hirosaki_neputa_festival_location" = "Central Hirosaki City";
-"hirosaki_neputa_festival_feature1" = "Fan-shaped Neputa";
-"hirosaki_neputa_festival_feature2" = "Tsugaru Atmosphere";
-"hirosaki_neputa_festival_feature3" = "Silent Beauty";
+"hirosaki_neputa_festival_name" = "Festival Neputa de Hirosaki";
+"hirosaki_neputa_festival_description" = "De belles lanternes en forme d'éventail, les « Neputa », défilent dans le silence : un festival estival de Tsugaru plein d'émotion.";
+"hirosaki_neputa_festival_location" = "Centre de Hirosaki";
+"hirosaki_neputa_festival_feature1" = "Neputa en éventail";
+"hirosaki_neputa_festival_feature2" = "Ambiance de Tsugaru";
+"hirosaki_neputa_festival_feature3" = "Beauté du silence";
 
 "goshogawara_tachineputa_name" = "Goshogawara Tachi-Neputa";
 "goshogawara_tachineputa_description" = "A spectacular festival featuring 23-meter tall Tachi-Neputa. Its power and beauty captivate audiences.";
@@ -3039,62 +3039,62 @@
 "goshogawara_tachineputa_feature2" = "Giant Tachi-Neputa";
 "goshogawara_tachineputa_feature3" = "Overwhelming Power";
 
-"hachinohe_sansha_festival_name" = "Hachinohe Sansha Grand Festival";
-"hachinohe_sansha_festival_description" = "Hachinohe's largest festival featuring gorgeous floats parading through the streets. Elaborate dolls and beautiful decorations are the highlights.";
-"hachinohe_sansha_festival_location" = "Central Hachinohe City";
-"hachinohe_sansha_festival_feature1" = "Gorgeous Floats";
-"hachinohe_sansha_festival_feature2" = "Elaborate Dolls";
-"hachinohe_sansha_festival_feature3" = "Hachinohe's Largest";
+"hachinohe_sansha_festival_name" = "Grand festival des trois sanctuaires de Hachinohe";
+"hachinohe_sansha_festival_description" = "Le plus grand festival de Hachinohe, avec de somptueux chars défilant dans les rues. Poupées finement ouvragées et magnifiques décorations en sont les temps forts.";
+"hachinohe_sansha_festival_location" = "Centre de Hachinohe";
+"hachinohe_sansha_festival_feature1" = "Chars somptueux";
+"hachinohe_sansha_festival_feature2" = "Poupées ouvragées";
+"hachinohe_sansha_festival_feature3" = "Le plus grand de Hachinohe";
 
 // MARK: - Iwate Prefecture
-"morioka_sansa_festival_name" = "Morioka Sansa Odori";
-"morioka_sansa_festival_description" = "Iwate's representative festival featuring dancing to drum rhythms. The traditional chant 'Sakkora-Choi-Wa-Yasse' echoes throughout.";
-"morioka_sansa_festival_location" = "Central Morioka City";
-"morioka_sansa_festival_feature1" = "Drums and Dancing";
-"morioka_sansa_festival_feature2" = "Traditional Chants";
-"morioka_sansa_festival_feature3" = "Participatory Festival";
+"morioka_sansa_festival_name" = "Sansa Odori de Morioka";
+"morioka_sansa_festival_description" = "Festival emblématique d'Iwate, dansé au rythme des tambours. Le cri traditionnel « Sakkora-Choi-Wa-Yasse » y résonne partout.";
+"morioka_sansa_festival_location" = "Centre de Morioka";
+"morioka_sansa_festival_feature1" = "Tambours et danse";
+"morioka_sansa_festival_feature2" = "Cris traditionnels";
+"morioka_sansa_festival_feature3" = "Festival participatif";
 
-"hanamaki_festival_name" = "Hanamaki Festival";
-"hanamaki_festival_description" = "Hanamaki's autumn festival featuring gorgeous floats and portable shrines parading through the streets. A traditional festival with over 400 years of history.";
-"hanamaki_festival_location" = "Hanamaki City Streets";
-"hanamaki_festival_feature1" = "400 Years of History";
-"hanamaki_festival_feature2" = "Gorgeous Floats";
-"hanamaki_festival_feature3" = "Autumn Tradition";
+"hanamaki_festival_name" = "Festival de Hanamaki";
+"hanamaki_festival_description" = "Festival d'automne de Hanamaki, avec chars somptueux et sanctuaires portatifs en procession. Un festival traditionnel de plus de 400 ans d'histoire.";
+"hanamaki_festival_location" = "Centre-ville de Hanamaki";
+"hanamaki_festival_feature1" = "400 ans d'histoire";
+"hanamaki_festival_feature2" = "Chars somptueux";
+"hanamaki_festival_feature3" = "Tradition automnale";
 
-"kitakami_michinoku_festival_name" = "Kitakami Michinoku Performing Arts Festival";
-"kitakami_michinoku_festival_description" = "A festival where folk performing arts from throughout Tohoku gather. Traditional arts competition including Oni Kenbai (demon sword dance) is the highlight.";
-"kitakami_michinoku_festival_location" = "Kitakami City";
-"kitakami_michinoku_festival_feature1" = "Folk Performing Arts";
+"kitakami_michinoku_festival_name" = "Festival des arts du spectacle Michinoku de Kitakami";
+"kitakami_michinoku_festival_description" = "Festival réunissant les arts populaires de tout le Tohoku. La compétition d'arts traditionnels, dont l'Oni Kenbai (danse du sabre des démons), en est le clou.";
+"kitakami_michinoku_festival_location" = "Ville de Kitakami";
+"kitakami_michinoku_festival_feature1" = "Arts populaires";
 "kitakami_michinoku_festival_feature2" = "Oni Kenbai";
-"kitakami_michinoku_festival_feature3" = "Traditional Arts Competition";
+"kitakami_michinoku_festival_feature3" = "Compétition d'arts traditionnels";
 
 // MARK: - Miyagi Prefecture
-"sendai_tanabata_festival_name" = "Sendai Tanabata Festival";
-"sendai_tanabata_festival_description" = "One of Tohoku's three major festivals. A beautiful summer festival where colorful Tanabata decorations adorn the streets of Sendai.";
-"sendai_tanabata_festival_location" = "Central Sendai City";
-"sendai_tanabata_festival_feature1" = "Tohoku's Three Major Festivals";
-"sendai_tanabata_festival_feature2" = "Tanabata Decorations";
-"sendai_tanabata_festival_feature3" = "Shopping Street Decorations";
+"sendai_tanabata_festival_name" = "Festival Tanabata de Sendai";
+"sendai_tanabata_festival_description" = "L'un des trois grands festivals du Tohoku. Un beau festival estival où de colorées décorations de Tanabata ornent les rues de Sendai.";
+"sendai_tanabata_festival_location" = "Centre de Sendai";
+"sendai_tanabata_festival_feature1" = "Trois grands festivals du Tohoku";
+"sendai_tanabata_festival_feature2" = "Décorations de Tanabata";
+"sendai_tanabata_festival_feature3" = "Décorations des galeries commerçantes";
 
-"sendai_aoba_festival_name" = "Sendai Aoba Festival";
-"sendai_aoba_festival_description" = "Sendai's spring festival commemorating Lord Date Masamune. Gorgeous period processions and Aoba Shrine portable shrine parades are the highlights.";
-"sendai_aoba_festival_location" = "Central Sendai City";
+"sendai_aoba_festival_name" = "Festival Aoba de Sendai";
+"sendai_aoba_festival_description" = "Festival de printemps de Sendai en mémoire de Date Masamune. Le somptueux cortège d'époque et la procession du sanctuaire Aoba en sont les temps forts.";
+"sendai_aoba_festival_location" = "Centre de Sendai";
 "sendai_aoba_festival_feature1" = "Date Masamune";
-"sendai_aoba_festival_feature2" = "Period Procession";
-"sendai_aoba_festival_feature3" = "Warrior Procession";
+"sendai_aoba_festival_feature2" = "Cortège d'époque";
+"sendai_aoba_festival_feature3" = "Cortège de guerriers";
 
-"ishinomaki_kawabiraki_festival_name" = "Ishinomaki River Opening Festival";
-"ishinomaki_kawabiraki_festival_description" = "Ishinomaki's summer festival giving thanks for the blessings of the Kitakami River. Fireworks over the river and memorial services are impressive.";
-"ishinomaki_kawabiraki_festival_location" = "Ishinomaki City, Kitakami River";
-"ishinomaki_kawabiraki_festival_feature1" = "River Opening Fireworks";
-"ishinomaki_kawabiraki_festival_feature2" = "Memorial Service";
-"ishinomaki_kawabiraki_festival_feature3" = "River's Blessing";
+"ishinomaki_kawabiraki_festival_name" = "Festival d'ouverture de la rivière d'Ishinomaki";
+"ishinomaki_kawabiraki_festival_description" = "Festival estival d'Ishinomaki en gratitude envers les bienfaits de la rivière Kitakami. Le feu d'artifice sur l'eau et la cérémonie de recueillement sont impressionnants.";
+"ishinomaki_kawabiraki_festival_location" = "Ishinomaki - Rivière Kitakami";
+"ishinomaki_kawabiraki_festival_feature1" = "Feux d'artifice d'ouverture de la rivière";
+"ishinomaki_kawabiraki_festival_feature2" = "Cérémonie de recueillement";
+"ishinomaki_kawabiraki_festival_feature3" = "Bienfaits de la rivière";
 
 // MARK: - Akita Prefecture
-"akita_kanto_festival_name" = "Akita Kanto Festival";
-"akita_kanto_festival_description" = "One of Tohoku's three major festivals. A traditional festival featuring the skillful balancing of Kanto poles on palms, foreheads, and shoulders.";
-"akita_kanto_festival_location" = "Central Akita City";
-"akita_kanto_festival_feature1" = "Tohoku's Three Major Festivals";
+"akita_kanto_festival_name" = "Festival Kanto d'Akita";
+"akita_kanto_festival_description" = "L'un des trois grands festivals du Tohoku. Un festival traditionnel où l'on admire l'art d'équilibrer les perches Kanto sur la paume, le front et l'épaule.";
+"akita_kanto_festival_location" = "Centre d'Akita";
+"akita_kanto_festival_feature1" = "Trois grands festivals du Tohoku";
 "akita_kanto_festival_feature2" = "Kanto Balancing Skills";
 "akita_kanto_festival_feature3" = "280 Kanto Poles";
 
