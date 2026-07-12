@@ -90,7 +90,9 @@ struct PlanItemDetailRouter: View {
             case .gourmet:
                 if let g = prefecture.gourmetItems.first(where: { PlanItemResolver.matches(item.name, $0.name) }) {
                     PlanLocatableDetailView(item: item) {
-                        GourmetDetailView(item: g, prefecture: prefecture)
+                        GourmetDetailView(item: g, prefecture: prefecture) {
+                            PlanItemPlaceMap(itemID: item.id, accent: PlanTheme.color(for: .gourmet))
+                        }
                     }
                 } else { fallback }
 
@@ -123,7 +125,9 @@ struct PlanItemDetailRouter: View {
             case .souvenir:
                 if let s = prefecture.souvenirItems.first(where: { PlanItemResolver.matches(item.name, $0.name) }) {
                     PlanLocatableDetailView(item: item) {
-                        SouvenirDetailView(item: s, prefecture: prefecture)
+                        SouvenirDetailView(item: s, prefecture: prefecture) {
+                            PlanItemPlaceMap(itemID: item.id, accent: PlanTheme.color(for: .souvenir))
+                        }
                     }
                 } else { fallback }
 
@@ -180,14 +184,18 @@ private struct PlanLocatableDetailView<Content: View>: View {
 
     var body: some View {
         content()
-            // 下部フローティングバーと最下部コンテンツが重ならないよう余白を確保
-            .safeAreaInset(edge: .bottom) {
-                Color.clear.frame(height: 72)
-            }
-            .overlay(alignment: .bottom) { actionBar }
-            .sheet(item: $pickerSession) { _ in
-                LocationPickerView(coordinate: $pickedCoordinate, placeName: $pickedPlaceName, address: $pickedAddress)
-                    .onDisappear { saveLocation() }
+            .overlay(alignment: .bottomTrailing) { actionButtons }
+            .sheet(item: $pickerSession) { session in
+                // session.coordinate は「位置」ボタンを押した瞬間に確定した既存座標。
+                // pickedCoordinate（@State）は同一 tick で更新されるため提示時に間に合わないことが
+                // あり、初期中心はセッションの座標を明示的に渡して確実に反映させる。
+                LocationPickerView(
+                    coordinate: $pickedCoordinate,
+                    placeName: $pickedPlaceName,
+                    address: $pickedAddress,
+                    initialCoordinate: session.coordinate
+                )
+                .onDisappear { saveLocation() }
             }
             .sheet(isPresented: $showingMemoEditor) { memoEditor }
     }
@@ -198,43 +206,47 @@ private struct PlanLocatableDetailView<Content: View>: View {
         item.category.allowsUserCoordinate && !item.category.isCustom
     }
 
-    // 下部のメモ・位置アクションバー
-    private var actionBar: some View {
+    // 右下のメモ・位置フローティングボタン（アイコンのみ・縦積み）
+    private var actionButtons: some View {
         let hasMemo = !(currentItem?.customDetail?.isEmpty ?? true)
         let hasLocation = currentItem?.customCoordinate != nil
-        return HStack(spacing: 10) {
-            Button {
-                memoDraft = currentItem?.customDetail ?? ""
-                showingMemoEditor = true
-            } label: {
-                Label(NSLocalizedString(hasMemo ? "plan.item.editmemo" : "plan.item.addmemo", comment: ""),
-                      systemImage: "note.text")
-                    .font(.subheadline.bold())
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 12)
-                    .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(PlanTheme.primary.opacity(0.15)))
-                    .foregroundColor(PlanTheme.primary)
-            }
+        return VStack(spacing: 12) {
+            // 位置（グルメ・お土産のみ）。設定済みなら塗りアイコンで示す。
             if allowsLocation {
-                Button {
+                circleButton(
+                    icon: hasLocation ? "mappin.circle.fill" : "mappin.and.ellipse",
+                    label: NSLocalizedString(hasLocation ? "plan.locatable.change" : "plan.locatable.add", comment: "")
+                ) {
                     pickedCoordinate = currentItem?.customCoordinate
                     pickedPlaceName = currentItem?.customPlaceName
                     pickedAddress = currentItem?.customAddress
                     pickerSession = LocationPickSession(coordinate: currentItem?.customCoordinate)
-                } label: {
-                    Label(NSLocalizedString(hasLocation ? "plan.locatable.change" : "plan.locatable.add", comment: ""),
-                          systemImage: hasLocation ? "mappin.circle.fill" : "mappin.and.ellipse")
-                        .font(.subheadline.bold())
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 12)
-                        .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(PlanTheme.primary.opacity(0.15)))
-                        .foregroundColor(PlanTheme.primary)
                 }
             }
+            // メモ（全カテゴリ）。記入済みなら塗りアイコンで示す。
+            circleButton(
+                icon: hasMemo ? "note.text.badge.plus" : "note.text",
+                label: NSLocalizedString(hasMemo ? "plan.item.editmemo" : "plan.item.addmemo", comment: "")
+            ) {
+                memoDraft = currentItem?.customDetail ?? ""
+                showingMemoEditor = true
+            }
         }
-        .lineLimit(1)
-        .padding(.horizontal)
-        .padding(.bottom, 12)
+        .padding(.trailing, 20)
+        .padding(.bottom, 20)
+    }
+
+    /// 地図ボタン（PlanDetailView）と同じ 56pt の円形フローティングボタン。
+    private func circleButton(icon: String, label: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Image(systemName: icon)
+                .font(.system(size: 22, weight: .semibold))
+                .foregroundColor(.white)
+                .frame(width: 56, height: 56)
+                .background(Circle().fill(PlanTheme.brandGradient))
+                .shadow(color: PlanTheme.primary.opacity(0.4), radius: 10, x: 0, y: 4)
+        }
+        .accessibilityLabel(label)
     }
 
     private var memoEditor: some View {
@@ -288,3 +300,4 @@ private struct LocationPickSession: Identifiable {
     let id = UUID()
     let coordinate: CLLocationCoordinate2D?
 }
+

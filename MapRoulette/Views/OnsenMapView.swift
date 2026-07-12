@@ -913,6 +913,7 @@ struct OnsenDetailView: View {
                     VStack(alignment: .leading, spacing: 18) {
                         actionCard
                         descriptionCard
+                        MediumRectangleAdView(adUnitID: adUnitIdDetailBanner)
                         mapCard
                     }
                     .padding(.horizontal, 18)

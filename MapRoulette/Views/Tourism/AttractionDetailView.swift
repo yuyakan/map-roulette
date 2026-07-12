@@ -43,6 +43,7 @@ struct AttractionDetailView: View {
                             if !attraction.description.isEmpty {
                                 descriptionCard
                             }
+                            MediumRectangleAdView(adUnitID: adUnitIdDetailBanner)
                             mapCard
                         }
                         .padding(.horizontal, 18)

@@ -224,10 +224,19 @@ struct SouvenirItemCard: View {
 }
 
 // お土産詳細ビュー
-struct SouvenirDetailView: View {
+struct SouvenirDetailView<PlaceMap: View>: View {
     let item: SouvenirItem
     let prefecture: Prefecture
+    /// プラン経由で位置を設定した場合に、検索ボタン群の下へ差し込む地図カード。
+    /// 通常表示（プラン外）では空ビューが渡され、何も表示されない。
+    @ViewBuilder let placeMap: () -> PlaceMap
     @Environment(\.dismiss) private var dismiss
+
+    init(item: SouvenirItem, prefecture: Prefecture, @ViewBuilder placeMap: @escaping () -> PlaceMap = { EmptyView() }) {
+        self.item = item
+        self.prefecture = prefecture
+        self.placeMap = placeMap
+    }
 
     private var accent: Color { item.category.color }
 
@@ -240,7 +249,10 @@ struct SouvenirDetailView: View {
                     header
                     VStack(alignment: .leading, spacing: 18) {
                         actionCard
+                        // プランで位置を設定した場合のみ、検索ボタン群の下に地図を表示
+                        placeMap()
                         descriptionCard
+                        MediumRectangleAdView(adUnitID: adUnitIdDetailBanner)
                         infoCard
                     }
                     .padding(.horizontal, 18)

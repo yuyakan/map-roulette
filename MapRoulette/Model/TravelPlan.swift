@@ -99,6 +99,7 @@ struct PlanItem: Identifiable, Codable, Hashable {
     var prefectureRawValue: String   // Prefecture.rawValue。カスタム項目では空文字可。
     var name: String                 // アプリ項目: 元データを引くキー / カスタム項目: ユーザー入力のタイトル
     var dayNumber: Int?              // 日程グループ表示で「何日目か」。nil は未割当。
+    var timeBlockID: UUID?           // 日程内の時間ブロックへの割当。nil はブロック未割当。
 
     // --- カスタム項目（hotel/transport/other）専用。アプリ項目では nil ---
     var customDetail: String?        // ユーザー入力のメモ
@@ -145,7 +146,7 @@ struct PlanItem: Identifiable, Codable, Hashable {
 
     // 旧フォーマットとの後方互換（カスタム用フィールドは任意デコード）
     enum CodingKeys: String, CodingKey {
-        case id, category, prefectureRawValue, name, dayNumber
+        case id, category, prefectureRawValue, name, dayNumber, timeBlockID
         case customDetail, customLatitude, customLongitude, customPlaceName, customAddress
     }
 
@@ -156,6 +157,7 @@ struct PlanItem: Identifiable, Codable, Hashable {
         prefectureRawValue = try c.decode(String.self, forKey: .prefectureRawValue)
         name = try c.decode(String.self, forKey: .name)
         dayNumber = try c.decodeIfPresent(Int.self, forKey: .dayNumber)
+        timeBlockID = try c.decodeIfPresent(UUID.self, forKey: .timeBlockID)
         customDetail = try c.decodeIfPresent(String.self, forKey: .customDetail)
         customLatitude = try c.decodeIfPresent(Double.self, forKey: .customLatitude)
         customLongitude = try c.decodeIfPresent(Double.self, forKey: .customLongitude)
@@ -215,6 +217,60 @@ enum PlanGroupingMode: String, Codable, CaseIterable {
     }
 }
 
+// MARK: - TimeBlock
+/// 日程モードで、1 日の中を時間帯で区切るブロック。
+/// 任意の開始時刻（時・分のみ）と見出しを持ち、この中に複数の PlanItem を入れる。
+/// どの日のブロックかは dayNumber で持ち、項目側は timeBlockID で所属を指す。
+struct TimeBlock: Identifiable, Codable, Hashable {
+    let id: UUID
+    var dayNumber: Int          // このブロックが属する日（1 始まり）
+    var startHour: Int?         // 開始「時」。nil は時間未設定ブロック。
+    var startMinute: Int?       // 開始「分」。
+    var title: String           // 任意の見出し（"午前" 等）。空でも可。
+
+    init(
+        id: UUID = UUID(),
+        dayNumber: Int,
+        startHour: Int? = nil,
+        startMinute: Int? = nil,
+        title: String = ""
+    ) {
+        self.id = id
+        self.dayNumber = dayNumber
+        self.startHour = startHour
+        self.startMinute = startMinute
+        self.title = title
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case id, dayNumber, startHour, startMinute, title
+    }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        id = try c.decode(UUID.self, forKey: .id)
+        dayNumber = try c.decode(Int.self, forKey: .dayNumber)
+        startHour = try c.decodeIfPresent(Int.self, forKey: .startHour)
+        startMinute = try c.decodeIfPresent(Int.self, forKey: .startMinute)
+        title = try c.decodeIfPresent(String.self, forKey: .title) ?? ""
+    }
+
+    /// 開始時刻を持つか（時が設定されていれば時刻ありとみなす）。
+    var hasTime: Bool { startHour != nil }
+
+    /// "09:05" 形式の時刻ラベル。時刻未設定なら nil。
+    var timeLabel: String? {
+        guard let h = startHour else { return nil }
+        return String(format: "%02d:%02d", h, startMinute ?? 0)
+    }
+
+    /// ソート用の分換算（時刻なしは末尾へ回すため大きな値）。
+    var sortKey: Int {
+        guard let h = startHour else { return Int.max }
+        return h * 60 + (startMinute ?? 0)
+    }
+}
+
 // MARK: - TravelPlan
 /// 1 つの旅行プラン（旅のしおり）。順序を持つ PlanItem のリストを保持する。
 struct TravelPlan: Identifiable, Codable, Hashable {
@@ -224,6 +280,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
     var items: [PlanItem]
     var groupingMode: PlanGroupingMode  // 表示の区切り方（プランごとに保存）
     var dayCount: Int                   // 日程モードでの日数（最低 1）
+    var timeBlocks: [TimeBlock]         // 日程内の時間ブロック定義（日程モードで使用）
     let createdAt: Date
     var updatedAt: Date
 
@@ -234,6 +291,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         items: [PlanItem] = [],
         groupingMode: PlanGroupingMode = .flat,
         dayCount: Int = 1,
+        timeBlocks: [TimeBlock] = [],
         createdAt: Date = Date(),
         updatedAt: Date = Date()
     ) {
@@ -243,13 +301,14 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         self.items = items
         self.groupingMode = groupingMode
         self.dayCount = max(1, dayCount)
+        self.timeBlocks = timeBlocks
         self.createdAt = createdAt
         self.updatedAt = updatedAt
     }
 
-    // 古い保存データ（groupingMode / dayCount 無し）との後方互換
+    // 古い保存データ（groupingMode / dayCount / timeBlocks 無し）との後方互換
     enum CodingKeys: String, CodingKey {
-        case id, title, memo, items, groupingMode, dayCount, createdAt, updatedAt
+        case id, title, memo, items, groupingMode, dayCount, timeBlocks, createdAt, updatedAt
     }
 
     init(from decoder: Decoder) throws {
@@ -261,6 +320,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         // 旧データの "prefecture" など未知の値は .flat に倒す
         groupingMode = (try? c.decodeIfPresent(PlanGroupingMode.self, forKey: .groupingMode)) ?? .flat
         dayCount = max(1, try c.decodeIfPresent(Int.self, forKey: .dayCount) ?? 1)
+        timeBlocks = try c.decodeIfPresent([TimeBlock].self, forKey: .timeBlocks) ?? []
         createdAt = try c.decode(Date.self, forKey: .createdAt)
         updatedAt = try c.decode(Date.self, forKey: .updatedAt)
     }
@@ -294,6 +354,38 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         }
         let unassigned = items.filter { $0.dayNumber == nil || ($0.dayNumber ?? 0) > dayCount || ($0.dayNumber ?? 1) < 1 }
         if !unassigned.isEmpty {
+            result.append((nil, unassigned))
+        }
+        return result
+    }
+
+    /// 指定した日の時間ブロック（開始時刻順・時刻なしは末尾）。
+    func timeBlocks(forDay day: Int) -> [TimeBlock] {
+        timeBlocks
+            .filter { $0.dayNumber == day }
+            .sorted { a, b in
+                if a.sortKey != b.sortKey { return a.sortKey < b.sortKey }
+                return a.id.uuidString < b.id.uuidString   // 同時刻は安定順
+            }
+    }
+
+    /// 指定した日の項目を「時間ブロックごと」に分けて返す。
+    /// - blockID が現存ブロックを指す項目は、そのブロックへ。
+    /// - block が nil（未割当）／存在しないブロックを指す項目は、末尾の「ブロック未割当」へ。
+    /// 各ブロック内および未割当内の項目順は items 配列の順序（手動並び）を保つ。
+    func blockSections(forDay day: Int) -> [(block: TimeBlock?, items: [PlanItem])] {
+        let dayItems = items.filter { $0.dayNumber == day }
+        let blocks = timeBlocks(forDay: day)
+        let validIDs = Set(blocks.map { $0.id })
+
+        var result: [(block: TimeBlock?, items: [PlanItem])] = []
+        for block in blocks {
+            let blockItems = dayItems.filter { $0.timeBlockID == block.id }
+            result.append((block, blockItems))
+        }
+        let unassigned = dayItems.filter { $0.timeBlockID == nil || !validIDs.contains($0.timeBlockID!) }
+        // ブロックが 1 つも無い日は「未割当」見出しを出さず、項目だけを nil セクションで返す。
+        if !unassigned.isEmpty || blocks.isEmpty {
             result.append((nil, unassigned))
         }
         return result

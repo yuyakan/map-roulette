@@ -231,6 +231,7 @@
 
 "tourism_detail_back" = "back";
 "tourism_detail_map" = "Map";
+"tourism_detail_photos" = "Photos";
 "tourism_detail_photo" = "Photo";
 "tourism_detail_photo_loading" = "loading...";
 
@@ -5099,6 +5100,16 @@
 "plan.day.unassigned.short" = "Pick day";
 "plan.day.unassign" = "Move to unassigned";
 "plan.day.empty" = "No items for this day yet";
+"plan.timeblock.add" = "Add time block";
+"plan.timeblock.edit" = "Time block";
+"plan.timeblock.delete" = "Delete this time block";
+"plan.timeblock.delete.confirm" = "Delete this time block?";
+"plan.timeblock.delete.message" = "Only the block is deleted. Its items move back to no time set.";
+"plan.timeblock.settime" = "Set start time";
+"plan.timeblock.starttime" = "Start time";
+"plan.timeblock.empty" = "Drag items here";
+"plan.timeblock.title.label" = "Heading (optional)";
+"plan.timeblock.title.placeholder" = "e.g. Morning / Lunch / Evening";
 "attraction.open_in_maps" = "Open in Maps";
 "plan.category.souvenir" = "Souvenir";
 "plan.grouping.day.toggle" = "Split by day";
@@ -5143,6 +5154,8 @@
 "plan.item.addmemo" = "Add memo";
 "plan.item.editmemo" = "Edit memo";
 "plan.item.memo" = "Memo";
+"plan.share" = "Share";
+"plan.timeblock.untimed" = "No time set";
 
 "social.search_youtube" = "Search on YouTube";
 "social.search_instagram" = "Search on Instagram";

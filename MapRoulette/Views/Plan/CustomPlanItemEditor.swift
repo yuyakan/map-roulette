@@ -233,11 +233,13 @@ struct LocationPickerView: View {
     /// 保存時の逆ジオコーディング中フラグ（ボタン二度押し防止）
     @State private var isResolvingAddress = false
 
-    init(coordinate: Binding<CLLocationCoordinate2D?>, placeName: Binding<String?>? = nil, address: Binding<String?>? = nil) {
+    init(coordinate: Binding<CLLocationCoordinate2D?>, placeName: Binding<String?>? = nil, address: Binding<String?>? = nil, initialCoordinate: CLLocationCoordinate2D? = nil) {
         _coordinate = coordinate
         self.placeName = placeName
         self.address = address
-        let center = coordinate.wrappedValue ?? CLLocationCoordinate2D(latitude: 35.6812, longitude: 139.7671)
+        // 地図の初期中心。呼び出し元が明示指定（initialCoordinate）した場合はそれを優先する。
+        // .sheet(item:) 提示時にバインディングの更新が間に合わないケースへの保険。
+        let center = initialCoordinate ?? coordinate.wrappedValue ?? CLLocationCoordinate2D(latitude: 35.6812, longitude: 139.7671)
         self.initialCenter = center
         _currentCenter = State(initialValue: center)
         _selectedName = State(initialValue: placeName?.wrappedValue)
