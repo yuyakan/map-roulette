@@ -194,6 +194,7 @@ struct PlanDetailView: View {
                 DayDropSection(
                     day: group.day,
                     items: group.items,
+                    plan: plan,
                     store: store,
                     planID: planID
                 )
@@ -287,10 +288,12 @@ struct PlanDetailView: View {
 private struct DayDropSection: View {
     let day: Int?           // nil は「未割当」
     let items: [PlanItem]
+    let plan: TravelPlan    // 時間ブロックの参照に必要
     let store: TravelPlanStore
     let planID: UUID
     @State private var isTargeted = false
     @State private var showingCustomEditor = false
+    @State private var editingBlock: TimeBlock?   // 時刻編集シートの対象
 
     private var title: String {
         if let day {
@@ -298,6 +301,12 @@ private struct DayDropSection: View {
         } else {
             return NSLocalizedString("plan.day.unassigned", comment: "")
         }
+    }
+
+    /// 実日（day != nil）では時間ブロックごとに分けて表示する。
+    private var blockSections: [(block: TimeBlock?, items: [PlanItem])] {
+        guard let day else { return [(nil, items)] }
+        return plan.blockSections(forDay: day)
     }
 
     var body: some View {
@@ -320,14 +329,13 @@ private struct DayDropSection: View {
                 }
             }
 
-            if items.isEmpty {
+            if items.isEmpty && day == nil {
                 Text(NSLocalizedString("plan.day.empty", comment: ""))
                     .font(.caption)
                     .foregroundColor(.secondary)
                     .frame(maxWidth: .infinity, minHeight: 44)
-            } else {
-                // カード間に挿入用のドロップ受け口を挟む。
-                // 各カードへドロップ＝そのカードの直前へ挿入（同じ日なら並び替え、別の日なら移動）。
+            } else if day == nil {
+                // 未割当セクションはタイムライン無しのフラット表示
                 ForEach(items) { item in
                     PlanItemCard(
                         item: item,
@@ -339,6 +347,36 @@ private struct DayDropSection: View {
                         }
                     )
                 }
+            } else {
+                // 実日: 時間ブロックごとのタイムライン表示
+                ForEach(blockSections, id: \.block?.id) { section in
+                    TimelineBlockRow(
+                        day: day!,
+                        block: section.block,
+                        items: section.items,
+                        store: store,
+                        planID: planID,
+                        onEditBlock: { editingBlock = $0 }
+                    )
+                }
+
+                // この日に時間ブロックを追加
+                Button {
+                    let now = Calendar.current.dateComponents([.hour, .minute], from: Date())
+                    store.addTimeBlock(toDay: day!, startHour: now.hour, startMinute: now.minute, in: planID)
+                } label: {
+                    Label(NSLocalizedString("plan.timeblock.add", comment: ""), systemImage: "clock.badge.plus")
+                        .font(.caption.bold())
+                        .foregroundColor(PlanTheme.primary)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .background(
+                            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                                .strokeBorder(PlanTheme.primary.opacity(0.4), style: StrokeStyle(lineWidth: 1, dash: [4]))
+                        )
+                }
+                .buttonStyle(.plain)
+                .padding(.top, 2)
             }
         }
         .padding(14)
@@ -366,6 +404,257 @@ private struct DayDropSection: View {
         .sheet(isPresented: $showingCustomEditor) {
             CustomPlanItemEditor(planID: planID, initialDay: day)
         }
+        .sheet(item: $editingBlock) { block in
+            TimeBlockEditor(block: block, store: store, planID: planID)
+        }
+    }
+}
+
+// MARK: - TimelineBlockRow
+/// 1 つの時間ブロック行。左に時刻列＋接続線、右に項目カード群を並べる。
+/// block == nil は「時間未割当」の受け皿（見出しは控えめ）。
+
+private struct TimelineBlockRow: View {
+    let day: Int
+    let block: TimeBlock?
+    let items: [PlanItem]
+    let store: TravelPlanStore
+    let planID: UUID
+    let onEditBlock: (TimeBlock) -> Void
+    @State private var isTargeted = false
+    @State private var showingDeleteConfirm = false
+
+    private var blockID: UUID? { block?.id }
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 10) {
+            timeColumn
+            content
+        }
+        .padding(.vertical, 4)
+        // ブロック全体へのドロップ＝そのブロックの末尾へ移動。
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(isTargeted ? PlanTheme.primary.opacity(0.06) : .clear)
+        )
+        // 透明な余白部分もドロップ判定に含める（空ブロックの判定領域を広げる）。
+        .contentShape(Rectangle())
+        .dropDestination(for: String.self) { droppedIDs, _ in
+            guard let idString = droppedIDs.first, let uuid = UUID(uuidString: idString) else { return false }
+            store.moveItem(uuid, toDay: day, block: blockID, before: nil, in: planID)
+            return true
+        } isTargeted: { targeted in
+            withAnimation(.easeOut(duration: 0.12)) { isTargeted = targeted }
+        }
+        // ブロック削除の確認。所属項目は「時間未割当」へ戻る（削除されない）。
+        .alert(NSLocalizedString("plan.timeblock.delete.confirm", comment: ""), isPresented: $showingDeleteConfirm) {
+            Button(NSLocalizedString("common.cancel", comment: ""), role: .cancel) { }
+            Button(NSLocalizedString("common.delete", comment: ""), role: .destructive) {
+                if let blockID { store.removeTimeBlock(blockID, in: planID) }
+            }
+        } message: {
+            Text(NSLocalizedString("plan.timeblock.delete.message", comment: ""))
+        }
+    }
+
+    // MARK: - 左の時刻列（ドット＋接続線）
+
+    private var timeColumn: some View {
+        VStack(spacing: 0) {
+            // 時刻を設定していないブロックはラベルを出さず、ドットと接続線だけにする。
+            Group {
+                if let label = block?.timeLabel {
+                    Text(label)
+                        .font(.caption.bold().monospacedDigit())
+                        .foregroundColor(PlanTheme.primary)
+                } else {
+                    Color.clear.frame(height: 1)
+                }
+            }
+            .frame(width: 46)
+
+            Circle()
+                .fill(block == nil ? Color.secondary.opacity(0.5) : PlanTheme.primary)
+                .frame(width: 9, height: 9)
+                .padding(.top, 4)
+
+            // 下方向へ伸びる接続線（このブロックの高さいっぱい）
+            Rectangle()
+                .fill((block == nil ? Color.secondary.opacity(0.3) : PlanTheme.primary.opacity(0.35)))
+                .frame(width: 2)
+                .frame(maxHeight: .infinity)
+                .padding(.top, 2)
+        }
+        .frame(width: 52)
+    }
+
+    // MARK: - 右の内容（見出し＋項目カード）
+
+    private var content: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            // ブロック見出し（時刻編集ボタン付き）。時間未割当ブロック（block == nil）には
+            // 見出しラベルを一切出さず、項目だけを並べる（時間指定なしでも自然に使えるように）。
+            if let block {
+                HStack(spacing: 10) {
+                    if !block.title.isEmpty {
+                        Text(block.title)
+                            .font(.subheadline.bold())
+                            .foregroundColor(.primary)
+                    }
+                    Button {
+                        onEditBlock(block)
+                    } label: {
+                        Image(systemName: "clock.arrow.circlepath")
+                            .font(.caption)
+                            .foregroundColor(PlanTheme.primary)
+                    }
+                    .buttonStyle(.plain)
+                    Spacer()
+                    // 時間ブロックの削除。誤タップ防止に確認アラートを挟む。
+                    Button {
+                        showingDeleteConfirm = true
+                    } label: {
+                        Image(systemName: "trash")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(NSLocalizedString("plan.timeblock.delete", comment: ""))
+                }
+            }
+
+            if items.isEmpty {
+                // 空ブロックのドロップ受け皿。判定領域を広く取り、破線の枠で落とせる場所を明示する。
+                Label(NSLocalizedString("plan.timeblock.empty", comment: ""), systemImage: "arrow.down.to.line")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                    .frame(maxWidth: .infinity, minHeight: 60)
+                    .background(
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .strokeBorder(PlanTheme.primary.opacity(0.3), style: StrokeStyle(lineWidth: 1.5, dash: [5]))
+                    )
+                    .contentShape(Rectangle())
+            } else {
+                ForEach(items) { item in
+                    PlanItemCard(
+                        item: item,
+                        store: store,
+                        planID: planID,
+                        draggable: true,
+                        onDrop: { droppedID in
+                            store.moveItem(droppedID, toDay: day, block: blockID, before: item.id, in: planID)
+                        }
+                    )
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+// MARK: - TimeBlockEditor
+/// 時間ブロックの開始時刻・見出しの編集シート。削除もここから行う。
+
+private struct TimeBlockEditor: View {
+    let store: TravelPlanStore
+    let planID: UUID
+    @Environment(\.dismiss) private var dismiss
+
+    private let blockID: UUID
+    private let dayNumber: Int
+    @State private var hasTime: Bool
+    @State private var time: Date
+    @State private var title: String
+
+    init(block: TimeBlock, store: TravelPlanStore, planID: UUID) {
+        self.store = store
+        self.planID = planID
+        self.blockID = block.id
+        self.dayNumber = block.dayNumber
+        _hasTime = State(initialValue: block.hasTime)
+        _title = State(initialValue: block.title)
+        var comps = DateComponents()
+        comps.hour = block.startHour ?? 9
+        comps.minute = block.startMinute ?? 0
+        _time = State(initialValue: Calendar.current.date(from: comps) ?? Date())
+    }
+
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                PlanTheme.backgroundGradient.ignoresSafeArea()
+                VStack(spacing: 16) {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Toggle(isOn: $hasTime) {
+                            Label(NSLocalizedString("plan.timeblock.settime", comment: ""), systemImage: "clock")
+                                .font(.subheadline.bold())
+                        }
+                        .tint(PlanTheme.primary)
+
+                        if hasTime {
+                            Divider()
+                            DatePicker(
+                                NSLocalizedString("plan.timeblock.starttime", comment: ""),
+                                selection: $time,
+                                displayedComponents: .hourAndMinute
+                            )
+                            .datePickerStyle(.compact)
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .planCard()
+
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(NSLocalizedString("plan.timeblock.title.label", comment: ""))
+                            .font(.caption.bold())
+                            .foregroundColor(PlanTheme.primary)
+                        TextField(NSLocalizedString("plan.timeblock.title.placeholder", comment: ""), text: $title)
+                            .textFieldStyle(.plain)
+                            .font(.title3)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .planCard()
+
+                    Button(role: .destructive) {
+                        store.removeTimeBlock(blockID, in: planID)
+                        dismiss()
+                    } label: {
+                        Label(NSLocalizedString("plan.timeblock.delete", comment: ""), systemImage: "trash")
+                            .font(.subheadline.bold())
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 12)
+                    }
+                    .foregroundColor(.red)
+
+                    Spacer()
+                }
+                .padding()
+            }
+            .navigationTitle(NSLocalizedString("plan.timeblock.edit", comment: ""))
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button(NSLocalizedString("common.cancel", comment: "")) { dismiss() }
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button(NSLocalizedString("common.save", comment: "")) { save() }
+                }
+            }
+        }
+        .tint(PlanTheme.primary)
+    }
+
+    private func save() {
+        let comps = Calendar.current.dateComponents([.hour, .minute], from: time)
+        let updated = TimeBlock(
+            id: blockID,
+            dayNumber: dayNumber,
+            startHour: hasTime ? comps.hour : nil,
+            startMinute: hasTime ? comps.minute : nil,
+            title: title.trimmingCharacters(in: .whitespacesAndNewlines)
+        )
+        store.updateTimeBlock(updated, in: planID)
+        dismiss()
     }
 }
 

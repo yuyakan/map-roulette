@@ -5098,6 +5098,16 @@
 "plan.day.unassigned.short" = "日を選ぶ";
 "plan.day.unassign" = "未割当に戻す";
 "plan.day.empty" = "この日にはまだ項目がありません";
+"plan.timeblock.add" = "時間ブロックを追加";
+"plan.timeblock.edit" = "時間ブロック";
+"plan.timeblock.delete" = "この時間ブロックを削除";
+"plan.timeblock.delete.confirm" = "時間ブロックを削除しますか？";
+"plan.timeblock.delete.message" = "ブロックだけを削除します。中の項目は時間未割当に戻ります。";
+"plan.timeblock.settime" = "開始時刻を設定";
+"plan.timeblock.starttime" = "開始時刻";
+"plan.timeblock.empty" = "ここに項目をドラッグ";
+"plan.timeblock.title.label" = "見出し（任意）";
+"plan.timeblock.title.placeholder" = "例：午前 / 昼食 / 夕方";
 "attraction.open_in_maps" = "マップで開く";
 "plan.category.souvenir" = "お土産";
 "plan.grouping.day.toggle" = "日程ごとに分ける";
