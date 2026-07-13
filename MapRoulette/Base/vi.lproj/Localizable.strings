@@ -4465,241 +4465,241 @@
 "yamanashi.fuji_shibazakura_festival.location" = "Fuji Motosuko Resort";
 "yamanashi.fuji_shibazakura_festival.feature1" = "800.000 khóm";
 "yamanashi.fuji_shibazakura_festival.feature2" = "Hậu cảnh núi Phú Sĩ";
-"yamanashi.fuji_shibazakura_festival.feature3" = "Pink carpet";
+"yamanashi.fuji_shibazakura_festival.feature3" = "Thảm hồng";
 
 /* **MARK: - Nagano** */
 "nagano.takato_castle_cherry_festival.name" = "Lễ hội hoa anh đào công viên di tích thành Takato";
 "nagano.takato_castle_cherry_festival.description" = "Lễ hội hoa anh đào Takato được mệnh danh \"anh đào đệ nhất thiên hạ\". Khoảng 1.500 cây Takato Kohigan nhuộm sắc hồng phấn.";
-"nagano.takato_castle_cherry_festival.location" = "Takato Castle Ruins Park";
-"nagano.takato_castle_cherry_festival.feature1" = "Japan's number one";
-"nagano.takato_castle_cherry_festival.feature2" = "1,500 trees";
-"nagano.takato_castle_cherry_festival.feature3" = "Takato Kohigan cherry";
+"nagano.takato_castle_cherry_festival.location" = "Công viên di tích thành Takato";
+"nagano.takato_castle_cherry_festival.feature1" = "Đệ nhất thiên hạ";
+"nagano.takato_castle_cherry_festival.feature2" = "1.500 cây";
+"nagano.takato_castle_cherry_festival.feature3" = "Anh đào Takato Kohigan";
 
 /* **MARK: - Gifu** */
 "gifu.shirakawago_illumination.name" = "Thắp sáng Shirakawa-go";
 "gifu.shirakawago_illumination.description" = "Sự kiện tuyệt cảnh mùa đông khi làng nhà gassho Shirakawa-go Di sản Thế giới được thắp sáng. Cảnh tuyết và ánh sáng ấm áp tạo vẻ đẹp huyền ảo.";
-"gifu.shirakawago_illumination.location" = "Shirakawa-go Gassho-zukuri Village";
-"gifu.shirakawago_illumination.feature1" = "World Heritage";
-"gifu.shirakawago_illumination.feature2" = "Gassho-zukuri";
-"gifu.shirakawago_illumination.feature3" = "Snow scene illumination";
+"gifu.shirakawago_illumination.location" = "Làng nhà gassho Shirakawa-go";
+"gifu.shirakawago_illumination.feature1" = "Di sản Thế giới";
+"gifu.shirakawago_illumination.feature2" = "Nhà gassho";
+"gifu.shirakawago_illumination.feature3" = "Thắp sáng cảnh tuyết";
 
 /* **MARK: - Shizuoka** */
 "shizuoka.kawazu_cherry_festival.name" = "Lễ hội hoa anh đào Kawazu";
 "shizuoka.kawazu_cherry_festival.description" = "Lễ hội anh đào Kawazu nở sớm nhất Honshu. Khoảng 8.000 cây anh đào nở sớm tô điểm Izu từ tháng 2 đến tháng 3.";
-"shizuoka.kawazu_cherry_festival.location" = "Kawazu Town";
-"shizuoka.kawazu_cherry_festival.feature1" = "Earliest blooming";
-"shizuoka.kawazu_cherry_festival.feature2" = "8,000 trees";
-"shizuoka.kawazu_cherry_festival.feature3" = "Early spring cherry";
+"shizuoka.kawazu_cherry_festival.location" = "Thị trấn Kawazu";
+"shizuoka.kawazu_cherry_festival.feature1" = "Nở sớm nhất";
+"shizuoka.kawazu_cherry_festival.feature2" = "8.000 cây";
+"shizuoka.kawazu_cherry_festival.feature3" = "Anh đào đầu xuân";
 
 "shizuoka.atami_plum_festival.name" = "Lễ hội hoa mơ vườn mơ Atami";
 "shizuoka.atami_plum_festival.description" = "Vườn mơ nở sớm nhất Nhật Bản. Khoảng 470 cây mơ nở từ tháng 1 đến tháng 3, báo hiệu xuân về phố onsen.";
-"shizuoka.atami_plum_festival.location" = "Atami Plum Garden";
-"shizuoka.atami_plum_festival.feature1" = "Earliest blooming";
-"shizuoka.atami_plum_festival.feature2" = "470 plum trees";
-"shizuoka.atami_plum_festival.feature3" = "Hot spring town";
+"shizuoka.atami_plum_festival.location" = "Vườn mơ Atami";
+"shizuoka.atami_plum_festival.feature1" = "Nở sớm nhất";
+"shizuoka.atami_plum_festival.feature2" = "470 cây mơ";
+"shizuoka.atami_plum_festival.feature3" = "Phố onsen";
 
 /* **MARK: - Aichi** */
 "aichi.korankei_maple_festival.name" = "Lễ hội lá đỏ Korankei";
 "aichi.korankei_maple_festival.description" = "Danh thắng lá đỏ số một vùng Tokai. Đường hầm lá thu do khoảng 4.000 cây phong tạo nên đẹp đến nghẹt thở.";
-"aichi.korankei_maple_festival.location" = "Korankei, Toyota City";
-"aichi.korankei_maple_festival.feature1" = "Premier Tokai spot";
-"aichi.korankei_maple_festival.feature2" = "4,000 maple trees";
-"aichi.korankei_maple_festival.feature3" = "Autumn foliage tunnel";
+"aichi.korankei_maple_festival.location" = "Korankei, thành phố Toyota";
+"aichi.korankei_maple_festival.feature1" = "Số một vùng Tokai";
+"aichi.korankei_maple_festival.feature2" = "4.000 cây phong";
+"aichi.korankei_maple_festival.feature3" = "Đường hầm lá thu";
 
 /* **MARK: - Mie** */
 "mie.nabana_no_sato_illumination.name" = "Thắp sáng Nabana no Sato";
 "mie.nabana_no_sato_illumination.description" = "Màn thắp sáng lớn nhất cả nước. Cảnh ánh sáng do khoảng 8 triệu bóng LED tạo nên thu hút nhiều người, là nét đặc trưng mùa đông.";
 "mie.nabana_no_sato_illumination.location" = "Nabana no Sato";
-"mie.nabana_no_sato_illumination.feature1" = "Japan's largest";
-"mie.nabana_no_sato_illumination.feature2" = "8 million LEDs";
-"mie.nabana_no_sato_illumination.feature3" = "8-month duration";
+"mie.nabana_no_sato_illumination.feature1" = "Lớn nhất cả nước";
+"mie.nabana_no_sato_illumination.feature2" = "8 triệu bóng LED";
+"mie.nabana_no_sato_illumination.feature3" = "Kéo dài 8 tháng";
 
 /* **MARK: - Kyoto** */
 "kyoto.aoi_matsuri.name" = "Lễ hội Aoi";
 "kyoto.aoi_matsuri.description" = "Một trong ba lễ hội lớn của Kyoto. Đoàn diễu hành trong trang phục thanh nhã thời Heian đi từ Hoàng cung Kyoto đến đền Shimogamo và Kamigamo.";
-"kyoto.aoi_matsuri.location" = "Kyoto Imperial Palace to Kamigamo Shrine";
-"kyoto.aoi_matsuri.feature1" = "Kyoto's top 3 festivals";
-"kyoto.aoi_matsuri.feature2" = "Heian costumes";
-"kyoto.aoi_matsuri.feature3" = "Elegant procession";
+"kyoto.aoi_matsuri.location" = "Hoàng cung Kyoto ~ đền Kamigamo";
+"kyoto.aoi_matsuri.feature1" = "Ba lễ hội lớn của Kyoto";
+"kyoto.aoi_matsuri.feature2" = "Trang phục thời Heian";
+"kyoto.aoi_matsuri.feature3" = "Đoàn diễu hành thanh nhã";
 
 "kyoto.kyoto_hanatoro.name" = "Kyoto Hanatoro";
 "kyoto.kyoto_hanatoro.description" = "Nét đặc trưng mùa đông thắp sáng phố Kyoto bằng khoảng 2.500 đèn andon. Còn có thể tham quan đặc biệt các chùa và đền.";
 "kyoto.kyoto_hanatoro.location" = "Arashiyama & Higashiyama";
-"kyoto.kyoto_hanatoro.feature1" = "2,500 paper lanterns";
-"kyoto.kyoto_hanatoro.feature2" = "Temple illumination";
-"kyoto.kyoto_hanatoro.feature3" = "Special visits";
+"kyoto.kyoto_hanatoro.feature1" = "2.500 đèn andon";
+"kyoto.kyoto_hanatoro.feature2" = "Thắp sáng chùa đền";
+"kyoto.kyoto_hanatoro.feature3" = "Tham quan đặc biệt";
 
 /* **MARK: - Osaka** */
 "osaka.mint_cherry_blossom.name" = "Đường xuyên hoa anh đào Sở đúc tiền";
 "osaka.mint_cherry_blossom.description" = "Nét đặc trưng mùa xuân Osaka. Sự kiện giới hạn một tuần mở cửa hàng anh đào trong Sở đúc tiền cho công chúng. Thưởng ngoạn khoảng 350 cây anh đào kép.";
-"osaka.mint_cherry_blossom.location" = "Mint Bureau";
-"osaka.mint_cherry_blossom.feature1" = "One-week limited";
-"osaka.mint_cherry_blossom.feature2" = "350 double cherry trees";
-"osaka.mint_cherry_blossom.feature3" = "Spring tradition";
+"osaka.mint_cherry_blossom.location" = "Sở đúc tiền";
+"osaka.mint_cherry_blossom.feature1" = "Giới hạn một tuần";
+"osaka.mint_cherry_blossom.feature2" = "350 cây anh đào kép";
+"osaka.mint_cherry_blossom.feature3" = "Nét đặc trưng mùa xuân";
 
 /* **MARK: - Hyogo** */
 "hyogo.kobe_luminarie.name" = "Kobe Luminarie";
 "hyogo.kobe_luminarie.description" = "Màn thắp sáng khởi nguồn từ lời cầu siêu và tái thiết sau động đất lớn Hanshin-Awaji. Khoảng 300.000 bóng đèn tô điểm đêm Kobe huyền ảo.";
-"hyogo.kobe_luminarie.location" = "Kobe City Center";
-"hyogo.kobe_luminarie.feature1" = "Earthquake reconstruction prayer";
-"hyogo.kobe_luminarie.feature2" = "300,000 light bulbs";
-"hyogo.kobe_luminarie.feature3" = "Mystical";
+"hyogo.kobe_luminarie.location" = "Trung tâm thành phố Kobe";
+"hyogo.kobe_luminarie.feature1" = "Cầu tái thiết sau động đất";
+"hyogo.kobe_luminarie.feature2" = "300.000 bóng đèn";
+"hyogo.kobe_luminarie.feature3" = "Huyền ảo";
 
 /* **MARK: - Nara** */
 "nara.yoshinoyama_cherry_festival.name" = "Lễ hội hoa anh đào núi Yoshino";
 "nara.yoshinoyama_cherry_festival.description" = "Danh thắng hoa anh đào số một Nhật Bản. Lễ hội hoành tráng với khoảng 30.000 cây anh đào phủ kín cả núi, nở dần từ Shimo-senbon đến Oku-senbon.";
-"nara.yoshinoyama_cherry_festival.location" = "Yoshinoyama";
-"nara.yoshinoyama_cherry_festival.feature1" = "Japan's number one";
-"nara.yoshinoyama_cherry_festival.feature2" = "30,000 cherry trees";
-"nara.yoshinoyama_cherry_festival.feature3" = "Thousand cherry trees";
+"nara.yoshinoyama_cherry_festival.location" = "Núi Yoshino";
+"nara.yoshinoyama_cherry_festival.feature1" = "Số một Nhật Bản";
+"nara.yoshinoyama_cherry_festival.feature2" = "30.000 cây anh đào";
+"nara.yoshinoyama_cherry_festival.feature3" = "Nghìn cây anh đào";
 
 "nara.wakakusayama_yamayaki.name" = "Đốt núi Wakakusayama";
 "nara.wakakusayama_yamayaki.description" = "Nét đặc trưng mùa đông của Nara. Lễ hội lửa hùng tráng đốt cả núi Wakakusayama, nhuộm đỏ bầu trời đêm cố đô Nara.";
-"nara.wakakusayama_yamayaki.location" = "Wakakusayama";
-"nara.wakakusayama_yamayaki.feature1" = "Entire mountain burning";
-"nara.wakakusayama_yamayaki.feature2" = "Winter tradition";
-"nara.wakakusayama_yamayaki.feature3" = "Ancient capital's night sky";
+"nara.wakakusayama_yamayaki.location" = "Núi Wakakusayama";
+"nara.wakakusayama_yamayaki.feature1" = "Đốt cả núi";
+"nara.wakakusayama_yamayaki.feature2" = "Nét đặc trưng mùa đông";
+"nara.wakakusayama_yamayaki.feature3" = "Bầu trời đêm cố đô";
 
 /* **MARK: - Wakayama** */
 "wakayama.nanbu_plum_grove.name" = "Rừng mơ Nanbu";
 "wakayama.nanbu_plum_grove.description" = "Danh thắng hoa mơ được mệnh danh \"một cái nhìn triệu bông, hương thơm mười dặm\". Cảnh tuyệt đẹp khi khoảng 100.000 cây mơ nhuộm trắng núi non thị trấn Nanbu.";
-"wakayama.nanbu_plum_grove.location" = "Minabe Town";
-"wakayama.nanbu_plum_grove.feature1" = "One million at a glance";
-"wakayama.nanbu_plum_grove.feature2" = "100,000 plum trees";
-"wakayama.nanbu_plum_grove.feature3" = "White-dyed mountains";
+"wakayama.nanbu_plum_grove.location" = "Thị trấn Minabe";
+"wakayama.nanbu_plum_grove.feature1" = "Một cái nhìn triệu bông";
+"wakayama.nanbu_plum_grove.feature2" = "100.000 cây mơ";
+"wakayama.nanbu_plum_grove.feature3" = "Nhuộm trắng núi non";
 
 /* **MARK: - Shimane** */
 "shimane.matsue_castle_cherry_festival.name" = "Lễ hội hoa anh đào thành Matsue";
 "shimane.matsue_castle_cherry_festival.description" = "Lễ hội hoa anh đào thành Matsue có tháp thành nguyên bản. Khoảng 200 cây anh đào tô điểm tòa thành bảo vật quốc gia, còn ngắm được anh đào đêm.";
-"shimane.matsue_castle_cherry_festival.location" = "Matsue Castle";
-"shimane.matsue_castle_cherry_festival.feature1" = "Existing tenshu";
-"shimane.matsue_castle_cherry_festival.feature2" = "National Treasure castle";
-"shimane.matsue_castle_cherry_festival.feature3" = "200 cherry trees";
+"shimane.matsue_castle_cherry_festival.location" = "Thành Matsue";
+"shimane.matsue_castle_cherry_festival.feature1" = "Tháp thành nguyên bản";
+"shimane.matsue_castle_cherry_festival.feature2" = "Tòa thành bảo vật quốc gia";
+"shimane.matsue_castle_cherry_festival.feature3" = "200 cây anh đào";
 
 /* **MARK: - Okayama** */
 "okayama.korakuen_cherry_festival.name" = "Lễ hội hoa anh đào Korakuen Okayama";
 "okayama.korakuen_cherry_festival.description" = "Lễ hội hoa anh đào Korakuen, một trong ba khu vườn nổi tiếng Nhật Bản. Thưởng ngoạn cảnh đẹp từ sự hòa quyện giữa vẻ đẹp khu vườn và hoa anh đào.";
-"okayama.korakuen_cherry_festival.location" = "Okayama Korakuen";
-"okayama.korakuen_cherry_festival.feature1" = "Japan's top 3 gardens";
-"okayama.korakuen_cherry_festival.feature2" = "Garden beauty";
-"okayama.korakuen_cherry_festival.feature3" = "Cherry harmony";
+"okayama.korakuen_cherry_festival.location" = "Korakuen Okayama";
+"okayama.korakuen_cherry_festival.feature1" = "Ba khu vườn nổi tiếng Nhật Bản";
+"okayama.korakuen_cherry_festival.feature2" = "Vẻ đẹp khu vườn";
+"okayama.korakuen_cherry_festival.feature3" = "Hòa quyện với hoa anh đào";
 
 /* **MARK: - Hiroshima** */
 "hiroshima.miyajima_cherry_festival.name" = "Lễ hội hoa anh đào Miyajima";
 "hiroshima.miyajima_cherry_festival.description" = "Sự kết hợp giữa đền Itsukushima Di sản Thế giới và hoa anh đào. Hoa anh đào với hậu cảnh cổng torii lớn là cảnh tượng tiêu biểu cho vẻ đẹp Nhật Bản.";
 "hiroshima.miyajima_cherry_festival.location" = "Miyajima";
-"hiroshima.miyajima_cherry_festival.feature1" = "World Heritage";
-"hiroshima.miyajima_cherry_festival.feature2" = "Great torii backdrop";
-"hiroshima.miyajima_cherry_festival.feature3" = "Japanese beauty";
+"hiroshima.miyajima_cherry_festival.feature1" = "Di sản Thế giới";
+"hiroshima.miyajima_cherry_festival.feature2" = "Hậu cảnh cổng torii lớn";
+"hiroshima.miyajima_cherry_festival.feature3" = "Vẻ đẹp Nhật Bản";
 
 "hiroshima.miyajima_autumn_festival.name" = "Lễ hội lá đỏ Miyajima";
 "hiroshima.miyajima_autumn_festival.description" = "Màn thắp sáng lá đỏ của đền Itsukushima. Thưởng ngoạn cảnh thu huyền ảo do các điện thờ sơn son và lá đỏ tạo nên.";
 "hiroshima.miyajima_autumn_festival.location" = "Miyajima";
-"hiroshima.miyajima_autumn_festival.feature1" = "Autumn illumination";
-"hiroshima.miyajima_autumn_festival.feature2" = "Vermillion shrine buildings";
-"hiroshima.miyajima_autumn_festival.feature3" = "Mystical";
+"hiroshima.miyajima_autumn_festival.feature1" = "Thắp sáng lá đỏ";
+"hiroshima.miyajima_autumn_festival.feature2" = "Điện thờ sơn son";
+"hiroshima.miyajima_autumn_festival.feature3" = "Huyền ảo";
 
 /* **MARK: - Yamaguchi** */
 "yamaguchi.kintaikyo_cherry_festival.name" = "Lễ hội hoa anh đào Kintaikyo";
 "yamaguchi.kintaikyo_cherry_festival.description" = "Sự kết hợp đẹp mắt giữa cầu Kintaikyo, một trong ba cây cầu nổi tiếng Nhật Bản, và hoa anh đào. Cảnh tuyệt đẹp khi khoảng 3.000 cây anh đào hòa cùng cây cầu.";
-"yamaguchi.kintaikyo_cherry_festival.location" = "Kintaikyo Bridge, Iwakuni City";
-"yamaguchi.kintaikyo_cherry_festival.feature1" = "Japan's top 3 bridges";
-"yamaguchi.kintaikyo_cherry_festival.feature2" = "3,000 cherry trees";
-"yamaguchi.kintaikyo_cherry_festival.feature3" = "Bridge harmony";
+"yamaguchi.kintaikyo_cherry_festival.location" = "Cầu Kintaikyo, thành phố Iwakuni";
+"yamaguchi.kintaikyo_cherry_festival.feature1" = "Ba cây cầu nổi tiếng Nhật Bản";
+"yamaguchi.kintaikyo_cherry_festival.feature2" = "3.000 cây anh đào";
+"yamaguchi.kintaikyo_cherry_festival.feature3" = "Hòa quyện với cây cầu";
 
 /* **MARK: - Tokushima** */
 "tokushima.katsuura_big_hina_festival.name" = "Lễ hội búp bê Hina lớn thị trấn Katsuura";
 "tokushima.katsuura_big_hina_festival.description" = "Lễ hội búp bê Hina lớn nhất Nhật Bản với khoảng 30.000 búp bê tô điểm cả thị trấn. Kệ búp bê hình kim tự tháp là cảnh tượng ngoạn mục.";
-"tokushima.katsuura_big_hina_festival.location" = "Katsuura Town";
-"tokushima.katsuura_big_hina_festival.feature1" = "30,000 hina dolls";
-"tokushima.katsuura_big_hina_festival.feature2" = "Japan's largest";
-"tokushima.katsuura_big_hina_festival.feature3" = "Pyramid display";
+"tokushima.katsuura_big_hina_festival.location" = "Thị trấn Katsuura";
+"tokushima.katsuura_big_hina_festival.feature1" = "30.000 búp bê Hina";
+"tokushima.katsuura_big_hina_festival.feature2" = "Lớn nhất Nhật Bản";
+"tokushima.katsuura_big_hina_festival.feature3" = "Kệ hình kim tự tháp";
 
 /* **MARK: - Kagawa** */
 "kagawa.ritsurin_cherry_festival.name" = "Lễ hội hoa anh đào vườn Ritsurin";
 "kagawa.ritsurin_cherry_festival.description" = "Lễ hội hoa anh đào vườn Ritsurin, thắng cảnh đặc biệt quốc gia. Thưởng ngoạn vẻ đẹp khu vườn với khoảng 300 cây anh đào và hậu cảnh Sanuki Fuji.";
-"kagawa.ritsurin_cherry_festival.location" = "Ritsurin Garden";
-"kagawa.ritsurin_cherry_festival.feature1" = "Special scenic beauty";
-"kagawa.ritsurin_cherry_festival.feature2" = "300 cherry trees";
+"kagawa.ritsurin_cherry_festival.location" = "Vườn Ritsurin";
+"kagawa.ritsurin_cherry_festival.feature1" = "Thắng cảnh đặc biệt";
+"kagawa.ritsurin_cherry_festival.feature2" = "300 cây anh đào";
 "kagawa.ritsurin_cherry_festival.feature3" = "Sanuki Fuji";
 
 /* **MARK: - Ehime** */
 "ehime.matsuyama_castle_cherry_festival.name" = "Lễ hội hoa anh đào thành Matsuyama";
 "ehime.matsuyama_castle_cherry_festival.description" = "Lễ hội hoa anh đào thành Matsuyama, một trong 12 tháp thành nguyên bản. Khoảng 200 cây anh đào tô điểm núi thành, thưởng ngoạn cùng suối Dogo.";
-"ehime.matsuyama_castle_cherry_festival.location" = "Matsuyama Castle";
-"ehime.matsuyama_castle_cherry_festival.feature1" = "12 existing tenshu";
-"ehime.matsuyama_castle_cherry_festival.feature2" = "200 cherry trees";
-"ehime.matsuyama_castle_cherry_festival.feature3" = "Dogo Onsen";
+"ehime.matsuyama_castle_cherry_festival.location" = "Thành Matsuyama";
+"ehime.matsuyama_castle_cherry_festival.feature1" = "12 tháp thành nguyên bản";
+"ehime.matsuyama_castle_cherry_festival.feature2" = "200 cây anh đào";
+"ehime.matsuyama_castle_cherry_festival.feature3" = "Suối nước nóng Dogo";
 
 /* **MARK: - Kochi** */
 "kochi.kochi_castle_cherry_festival.name" = "Lễ hội hoa anh đào thành Kochi";
 "kochi.kochi_castle_cherry_festival.description" = "Lễ hội hoa anh đào thành Kochi có tháp thành nguyên bản. Khoảng 220 cây anh đào tô điểm tòa thành xứ Tosa tuyệt đẹp.";
-"kochi.kochi_castle_cherry_festival.location" = "Kochi Castle";
-"kochi.kochi_castle_cherry_festival.feature1" = "Existing tenshu";
-"kochi.kochi_castle_cherry_festival.feature2" = "220 cherry trees";
-"kochi.kochi_castle_cherry_festival.feature3" = "Tosa castle";
+"kochi.kochi_castle_cherry_festival.location" = "Thành Kochi";
+"kochi.kochi_castle_cherry_festival.feature1" = "Tháp thành nguyên bản";
+"kochi.kochi_castle_cherry_festival.feature2" = "220 cây anh đào";
+"kochi.kochi_castle_cherry_festival.feature3" = "Tòa thành xứ Tosa";
 
 /* **MARK: - Fukuoka** */
 "fukuoka.fukuoka_castle_cherry_festival.name" = "Lễ hội hoa anh đào thành Fukuoka";
 "fukuoka.fukuoka_castle_cherry_festival.description" = "Lễ hội hoa anh đào Fukuoka tổ chức tại công viên Maizuru. Khoảng 1.000 cây anh đào tô điểm di tích thành Fukuoka, còn có nhiều quầy hàng.";
-"fukuoka.fukuoka_castle_cherry_festival.location" = "Maizuru Park";
-"fukuoka.fukuoka_castle_cherry_festival.feature1" = "1,000 cherry trees";
-"fukuoka.fukuoka_castle_cherry_festival.feature2" = "Fukuoka Castle ruins";
-"fukuoka.fukuoka_castle_cherry_festival.feature3" = "Food stalls";
+"fukuoka.fukuoka_castle_cherry_festival.location" = "Công viên Maizuru";
+"fukuoka.fukuoka_castle_cherry_festival.feature1" = "1.000 cây anh đào";
+"fukuoka.fukuoka_castle_cherry_festival.feature2" = "Di tích thành Fukuoka";
+"fukuoka.fukuoka_castle_cherry_festival.feature3" = "Quầy hàng";
 
 /* **MARK: - Saga** */
 "saga.arita_pottery_fair.name" = "Chợ gốm Arita";
 "saga.arita_pottery_fair.description" = "Chợ gốm với lịch sử 400 năm. Khoảng 400 gian hàng san sát, là chợ gốm lớn nhất Nhật Bản với 1 triệu khách mỗi năm.";
-"saga.arita_pottery_fair.location" = "Arita Town";
-"saga.arita_pottery_fair.feature1" = "400 years history";
-"saga.arita_pottery_fair.feature2" = "400 stores";
-"saga.arita_pottery_fair.feature3" = "1 million visitors";
+"saga.arita_pottery_fair.location" = "Thị trấn Arita";
+"saga.arita_pottery_fair.feature1" = "Lịch sử 400 năm";
+"saga.arita_pottery_fair.feature2" = "400 gian hàng";
+"saga.arita_pottery_fair.feature3" = "1 triệu khách";
 
 /* **MARK: - Nagasaki** */
 "nagasaki.huis_ten_bosch_flower_festival.name" = "Lễ hội hoa Huis Ten Bosch";
 "nagasaki.huis_ten_bosch_flower_festival.description" = "Lễ hội mùa xuân của công viên chủ đề kiểu châu Âu với 1 triệu bông tulip khoe sắc. Thưởng ngoạn cảnh tuyệt đẹp của cối xay gió và tulip.";
 "nagasaki.huis_ten_bosch_flower_festival.location" = "Huis Ten Bosch";
-"nagasaki.huis_ten_bosch_flower_festival.feature1" = "1 million tulips";
-"nagasaki.huis_ten_bosch_flower_festival.feature2" = "European style";
-"nagasaki.huis_ten_bosch_flower_festival.feature3" = "Windmills and tulips";
+"nagasaki.huis_ten_bosch_flower_festival.feature1" = "1 triệu bông tulip";
+"nagasaki.huis_ten_bosch_flower_festival.feature2" = "Kiểu châu Âu";
+"nagasaki.huis_ten_bosch_flower_festival.feature3" = "Cối xay gió và tulip";
 
 "nagasaki.huis_ten_bosch_kingdom_of_light.name" = "Vương quốc ánh sáng Huis Ten Bosch";
 "nagasaki.huis_ten_bosch_kingdom_of_light.description" = "Màn thắp sáng lớn nhất thế giới với 13 triệu bóng đèn. Thế giới ánh sáng quy mô hoành tráng trải rộng với thác ánh sáng và quán cà phê trên không bằng ánh sáng.";
 "nagasaki.huis_ten_bosch_kingdom_of_light.location" = "Huis Ten Bosch";
-"nagasaki.huis_ten_bosch_kingdom_of_light.feature1" = "World's largest";
-"nagasaki.huis_ten_bosch_kingdom_of_light.feature2" = "13 million bulbs";
-"nagasaki.huis_ten_bosch_kingdom_of_light.feature3" = "6-month duration";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature1" = "Lớn nhất thế giới";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature2" = "13 triệu bóng đèn";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature3" = "Kéo dài 6 tháng";
 
 /* **MARK: - Kumamoto** */
 "kumamoto.kumamoto_castle_cherry_festival.name" = "Lễ hội hoa anh đào thành Kumamoto";
 "kumamoto.kumamoto_castle_cherry_festival.description" = "Lễ hội hoa anh đào thành Kumamoto, một trong ba tòa thành nổi tiếng Nhật Bản. Khoảng 800 cây anh đào tô điểm tòa thành đang phục dựng, trở thành biểu tượng hy vọng.";
-"kumamoto.kumamoto_castle_cherry_festival.location" = "Kumamoto Castle";
-"kumamoto.kumamoto_castle_cherry_festival.feature1" = "Japan's top 3 castles";
-"kumamoto.kumamoto_castle_cherry_festival.feature2" = "800 cherry trees";
-"kumamoto.kumamoto_castle_cherry_festival.feature3" = "Symbol of hope";
+"kumamoto.kumamoto_castle_cherry_festival.location" = "Thành Kumamoto";
+"kumamoto.kumamoto_castle_cherry_festival.feature1" = "Ba tòa thành nổi tiếng Nhật Bản";
+"kumamoto.kumamoto_castle_cherry_festival.feature2" = "800 cây anh đào";
+"kumamoto.kumamoto_castle_cherry_festival.feature3" = "Biểu tượng tái thiết";
 
 /* **MARK: - Miyazaki** */
 "miyazaki.takachiho_yokagura.name" = "Kagura đêm Takachiho";
 "miyazaki.takachiho_yokagura.description" = "Nghệ thuật truyền thống của Miyazaki. Từ tháng 11 đến tháng 2, 33 màn kagura được dâng cúng, tạo nên những đêm huyền bí ở xứ thần thoại.";
-"miyazaki.takachiho_yokagura.location" = "Takachiho Town";
-"miyazaki.takachiho_yokagura.feature1" = "33 kagura dances";
-"miyazaki.takachiho_yokagura.feature2" = "Land of mythology";
-"miyazaki.takachiho_yokagura.feature3" = "4-month duration";
+"miyazaki.takachiho_yokagura.location" = "Thị trấn Takachiho";
+"miyazaki.takachiho_yokagura.feature1" = "33 màn kagura";
+"miyazaki.takachiho_yokagura.feature2" = "Xứ thần thoại";
+"miyazaki.takachiho_yokagura.feature3" = "Kéo dài 4 tháng";
 
 /* **MARK: - Okinawa** */
 "okinawa.ryukyu_kaiensai.name" = "Ryukyu Kaiensai";
 "okinawa.ryukyu_kaiensai.description" = "Đại hội pháo hoa lớn nhất Okinawa. Thưởng thức show giải trí do khoảng 10.000 quả pháo và âm nhạc tạo nên.";
-"okinawa.ryukyu_kaiensai.location" = "Ginowan Seaside Park";
-"okinawa.ryukyu_kaiensai.feature1" = "Okinawa's largest";
-"okinawa.ryukyu_kaiensai.feature2" = "10,000 fireworks";
-"okinawa.ryukyu_kaiensai.feature3" = "Music show";
+"okinawa.ryukyu_kaiensai.location" = "Công viên ven biển Ginowan";
+"okinawa.ryukyu_kaiensai.feature1" = "Lớn nhất Okinawa";
+"okinawa.ryukyu_kaiensai.feature2" = "10.000 quả pháo";
+"okinawa.ryukyu_kaiensai.feature3" = "Show âm nhạc";
 
 "okinawa.professional_baseball_camp.name" = "Trại tập huấn bóng chày chuyên nghiệp";
 "okinawa.professional_baseball_camp.description" = "Nét đặc trưng từ đông sang xuân của Okinawa. Là nơi tập huấn của 12 đội bóng chày chuyên nghiệp, cổ động viên có thể xem ở cự ly gần.";
-"okinawa.professional_baseball_camp.location" = "Various locations in Okinawa";
-"okinawa.professional_baseball_camp.feature1" = "12 teams";
-"okinawa.professional_baseball_camp.feature2" = "Close-distance fans";
-"okinawa.professional_baseball_camp.feature3" = "Winter-spring tradition";
+"okinawa.professional_baseball_camp.location" = "Khắp tỉnh Okinawa";
+"okinawa.professional_baseball_camp.feature1" = "12 đội";
+"okinawa.professional_baseball_camp.feature2" = "Cổ động viên cự ly gần";
+"okinawa.professional_baseball_camp.feature3" = "Nét đặc trưng đông–xuân";
 
 
 

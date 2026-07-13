@@ -4465,241 +4465,241 @@
 "yamanashi.fuji_shibazakura_festival.location" = "Fuji Motosuko Resort";
 "yamanashi.fuji_shibazakura_festival.feature1" = "800 000 plantas";
 "yamanashi.fuji_shibazakura_festival.feature2" = "Con el monte Fuji de fondo";
-"yamanashi.fuji_shibazakura_festival.feature3" = "Pink carpet";
+"yamanashi.fuji_shibazakura_festival.feature3" = "Alfombra rosa";
 
 /* **MARK: - Nagano** */
 "nagano.takato_castle_cherry_festival.name" = "Festival de los Cerezos del Parque de las Ruinas del Castillo de Takato";
 "nagano.takato_castle_cherry_festival.description" = "Festival de los cerezos de Takato, llamado «los cerezos número uno del mundo». Unos 1500 cerezos Takato Kohigan se tiñen de rosa pálido.";
-"nagano.takato_castle_cherry_festival.location" = "Takato Castle Ruins Park";
-"nagano.takato_castle_cherry_festival.feature1" = "Japan's number one";
-"nagano.takato_castle_cherry_festival.feature2" = "1,500 trees";
-"nagano.takato_castle_cherry_festival.feature3" = "Takato Kohigan cherry";
+"nagano.takato_castle_cherry_festival.location" = "Parque de las ruinas del castillo de Takato";
+"nagano.takato_castle_cherry_festival.feature1" = "El mejor del mundo";
+"nagano.takato_castle_cherry_festival.feature2" = "1500 árboles";
+"nagano.takato_castle_cherry_festival.feature3" = "Cerezo Takato Kohigan";
 
 /* **MARK: - Gifu** */
 "gifu.shirakawago_illumination.name" = "Iluminación de Shirakawa-go";
 "gifu.shirakawago_illumination.description" = "Evento invernal espectacular en el que se ilumina la aldea gassho-zukuri de Shirakawa-go, Patrimonio Mundial. El paisaje nevado y la cálida luz crean una belleza mágica.";
-"gifu.shirakawago_illumination.location" = "Shirakawa-go Gassho-zukuri Village";
-"gifu.shirakawago_illumination.feature1" = "World Heritage";
+"gifu.shirakawago_illumination.location" = "Aldea gassho-zukuri de Shirakawa-go";
+"gifu.shirakawago_illumination.feature1" = "Patrimonio Mundial";
 "gifu.shirakawago_illumination.feature2" = "Gassho-zukuri";
-"gifu.shirakawago_illumination.feature3" = "Snow scene illumination";
+"gifu.shirakawago_illumination.feature3" = "Iluminación del paisaje nevado";
 
 /* **MARK: - Shizuoka** */
 "shizuoka.kawazu_cherry_festival.name" = "Festival de los Cerezos de Kawazu";
 "shizuoka.kawazu_cherry_festival.description" = "Festival de los cerezos Kawazu, los más tempranos de Honshu. Unos 8000 cerezos tempranos colorean Izu de febrero a marzo.";
-"shizuoka.kawazu_cherry_festival.location" = "Kawazu Town";
-"shizuoka.kawazu_cherry_festival.feature1" = "Earliest blooming";
-"shizuoka.kawazu_cherry_festival.feature2" = "8,000 trees";
-"shizuoka.kawazu_cherry_festival.feature3" = "Early spring cherry";
+"shizuoka.kawazu_cherry_festival.location" = "Ciudad de Kawazu";
+"shizuoka.kawazu_cherry_festival.feature1" = "Floración más temprana";
+"shizuoka.kawazu_cherry_festival.feature2" = "8000 árboles";
+"shizuoka.kawazu_cherry_festival.feature3" = "Cerezos de comienzos de primavera";
 
 "shizuoka.atami_plum_festival.name" = "Festival del Ciruelo del Jardín de Atami";
 "shizuoka.atami_plum_festival.description" = "El jardín de ciruelos más temprano de Japón. Unos 470 ciruelos florecen de enero a marzo, anunciando la primavera al pueblo termal.";
-"shizuoka.atami_plum_festival.location" = "Atami Plum Garden";
-"shizuoka.atami_plum_festival.feature1" = "Earliest blooming";
-"shizuoka.atami_plum_festival.feature2" = "470 plum trees";
-"shizuoka.atami_plum_festival.feature3" = "Hot spring town";
+"shizuoka.atami_plum_festival.location" = "Jardín de ciruelos de Atami";
+"shizuoka.atami_plum_festival.feature1" = "Floración más temprana";
+"shizuoka.atami_plum_festival.feature2" = "470 ciruelos";
+"shizuoka.atami_plum_festival.feature3" = "Zona termal";
 
 /* **MARK: - Aichi** */
 "aichi.korankei_maple_festival.name" = "Festival de los Arces de Korankei";
 "aichi.korankei_maple_festival.description" = "El mejor lugar de follaje otoñal de Tokai. El túnel de arces formado por unos 4000 árboles es de una belleza sobrecogedora.";
-"aichi.korankei_maple_festival.location" = "Korankei, Toyota City";
-"aichi.korankei_maple_festival.feature1" = "Premier Tokai spot";
-"aichi.korankei_maple_festival.feature2" = "4,000 maple trees";
-"aichi.korankei_maple_festival.feature3" = "Autumn foliage tunnel";
+"aichi.korankei_maple_festival.location" = "Korankei, ciudad de Toyota";
+"aichi.korankei_maple_festival.feature1" = "El mejor de Tokai";
+"aichi.korankei_maple_festival.feature2" = "4000 arces";
+"aichi.korankei_maple_festival.feature3" = "Túnel de follaje otoñal";
 
 /* **MARK: - Mie** */
 "mie.nabana_no_sato_illumination.name" = "Iluminación de Nabana no Sato";
 "mie.nabana_no_sato_illumination.description" = "Una de las mayores iluminaciones del país. El espectáculo de luz de unos 8 millones de LED cautiva a mucha gente como tradición invernal.";
 "mie.nabana_no_sato_illumination.location" = "Nabana no Sato";
-"mie.nabana_no_sato_illumination.feature1" = "Japan's largest";
-"mie.nabana_no_sato_illumination.feature2" = "8 million LEDs";
-"mie.nabana_no_sato_illumination.feature3" = "8-month duration";
+"mie.nabana_no_sato_illumination.feature1" = "El mayor del país";
+"mie.nabana_no_sato_illumination.feature2" = "8 millones de LED";
+"mie.nabana_no_sato_illumination.feature3" = "Durante 8 meses";
 
 /* **MARK: - Kyoto** */
 "kyoto.aoi_matsuri.name" = "Aoi Matsuri";
 "kyoto.aoi_matsuri.description" = "Uno de los tres grandes festivales de Kioto. Un cortejo con elegantes trajes de la era Heian va del Palacio Imperial a los santuarios Shimogamo y Kamigamo.";
-"kyoto.aoi_matsuri.location" = "Kyoto Imperial Palace to Kamigamo Shrine";
-"kyoto.aoi_matsuri.feature1" = "Kyoto's top 3 festivals";
-"kyoto.aoi_matsuri.feature2" = "Heian costumes";
-"kyoto.aoi_matsuri.feature3" = "Elegant procession";
+"kyoto.aoi_matsuri.location" = "Palacio Imperial de Kioto - Santuario Kamigamo";
+"kyoto.aoi_matsuri.feature1" = "Tres grandes festivales de Kioto";
+"kyoto.aoi_matsuri.feature2" = "Trajes de la era Heian";
+"kyoto.aoi_matsuri.feature3" = "Cortejo elegante";
 
 "kyoto.kyoto_hanatoro.name" = "Kyoto Hanatoro";
 "kyoto.kyoto_hanatoro.description" = "Tradición invernal que ilumina las calles de Kioto con unas 2500 lámparas andon. También se pueden disfrutar visitas especiales a templos y santuarios.";
-"kyoto.kyoto_hanatoro.location" = "Arashiyama & Higashiyama";
-"kyoto.kyoto_hanatoro.feature1" = "2,500 paper lanterns";
-"kyoto.kyoto_hanatoro.feature2" = "Temple illumination";
-"kyoto.kyoto_hanatoro.feature3" = "Special visits";
+"kyoto.kyoto_hanatoro.location" = "Arashiyama y Higashiyama";
+"kyoto.kyoto_hanatoro.feature1" = "2500 lámparas andon";
+"kyoto.kyoto_hanatoro.feature2" = "Iluminación de templos y santuarios";
+"kyoto.kyoto_hanatoro.feature3" = "Visitas especiales";
 
 /* **MARK: - Osaka** */
 "osaka.mint_cherry_blossom.name" = "Paseo entre cerezos de la Casa de la Moneda";
 "osaka.mint_cherry_blossom.description" = "Tradición primaveral de Osaka. Evento de una semana que abre al público la avenida de cerezos de la Casa de la Moneda. Unos 350 cerezos dobles para disfrutar.";
-"osaka.mint_cherry_blossom.location" = "Mint Bureau";
-"osaka.mint_cherry_blossom.feature1" = "One-week limited";
-"osaka.mint_cherry_blossom.feature2" = "350 double cherry trees";
-"osaka.mint_cherry_blossom.feature3" = "Spring tradition";
+"osaka.mint_cherry_blossom.location" = "La Casa de la Moneda";
+"osaka.mint_cherry_blossom.feature1" = "Limitado a una semana";
+"osaka.mint_cherry_blossom.feature2" = "350 cerezos dobles";
+"osaka.mint_cherry_blossom.feature3" = "Tradición primaveral";
 
 /* **MARK: - Hyogo** */
 "hyogo.kobe_luminarie.name" = "Kobe Luminarie";
 "hyogo.kobe_luminarie.description" = "Iluminación nacida de las oraciones por las almas y la reconstrucción tras el terremoto de Hanshin-Awaji. Unas 300 000 bombillas colorean mágicamente la noche de Kobe.";
-"hyogo.kobe_luminarie.location" = "Kobe City Center";
-"hyogo.kobe_luminarie.feature1" = "Earthquake reconstruction prayer";
-"hyogo.kobe_luminarie.feature2" = "300,000 light bulbs";
-"hyogo.kobe_luminarie.feature3" = "Mystical";
+"hyogo.kobe_luminarie.location" = "Centro de la ciudad de Kobe";
+"hyogo.kobe_luminarie.feature1" = "Oración por la reconstrucción tras el sismo";
+"hyogo.kobe_luminarie.feature2" = "300 000 bombillas";
+"hyogo.kobe_luminarie.feature3" = "Mágico";
 
 /* **MARK: - Nara** */
 "nara.yoshinoyama_cherry_festival.name" = "Festival de los Cerezos del Monte Yoshino";
 "nara.yoshinoyama_cherry_festival.description" = "El mejor lugar de cerezos de Japón. Un grandioso festival en el que unos 30 000 cerezos cubren toda la montaña, floreciendo sucesivamente de Shimo-senbon a Oku-senbon.";
-"nara.yoshinoyama_cherry_festival.location" = "Yoshinoyama";
-"nara.yoshinoyama_cherry_festival.feature1" = "Japan's number one";
-"nara.yoshinoyama_cherry_festival.feature2" = "30,000 cherry trees";
-"nara.yoshinoyama_cherry_festival.feature3" = "Thousand cherry trees";
+"nara.yoshinoyama_cherry_festival.location" = "Monte Yoshino";
+"nara.yoshinoyama_cherry_festival.feature1" = "El mejor de Japón";
+"nara.yoshinoyama_cherry_festival.feature2" = "30 000 cerezos";
+"nara.yoshinoyama_cherry_festival.feature3" = "Mil cerezos";
 
 "nara.wakakusayama_yamayaki.name" = "Quema del Monte Wakakusa";
 "nara.wakakusayama_yamayaki.description" = "Tradición invernal de Nara. Un vigoroso festival del fuego que quema todo el monte Wakakusa, tiñendo de rojo el cielo nocturno de la antigua capital.";
-"nara.wakakusayama_yamayaki.location" = "Wakakusayama";
-"nara.wakakusayama_yamayaki.feature1" = "Entire mountain burning";
-"nara.wakakusayama_yamayaki.feature2" = "Winter tradition";
-"nara.wakakusayama_yamayaki.feature3" = "Ancient capital's night sky";
+"nara.wakakusayama_yamayaki.location" = "Monte Wakakusa";
+"nara.wakakusayama_yamayaki.feature1" = "Quema de toda la montaña";
+"nara.wakakusayama_yamayaki.feature2" = "Tradición invernal";
+"nara.wakakusayama_yamayaki.feature3" = "Cielo nocturno de la antigua capital";
 
 /* **MARK: - Wakayama** */
 "wakayama.nanbu_plum_grove.name" = "Ciruelar de Nanbu";
 "wakayama.nanbu_plum_grove.description" = "Lugar de ciruelos llamado «un millón de un vistazo, fragancia de diez ri». Un panorama en el que unos 100 000 ciruelos tiñen de blanco las montañas de Nanbu.";
-"wakayama.nanbu_plum_grove.location" = "Minabe Town";
-"wakayama.nanbu_plum_grove.feature1" = "One million at a glance";
-"wakayama.nanbu_plum_grove.feature2" = "100,000 plum trees";
-"wakayama.nanbu_plum_grove.feature3" = "White-dyed mountains";
+"wakayama.nanbu_plum_grove.location" = "Ciudad de Minabe";
+"wakayama.nanbu_plum_grove.feature1" = "Un millón de un vistazo";
+"wakayama.nanbu_plum_grove.feature2" = "100 000 ciruelos";
+"wakayama.nanbu_plum_grove.feature3" = "Montañas teñidas de blanco";
 
 /* **MARK: - Shimane** */
 "shimane.matsue_castle_cherry_festival.name" = "Festival de los Cerezos del Castillo de Matsue";
 "shimane.matsue_castle_cherry_festival.description" = "Festival de los cerezos del castillo de Matsue con torreón original. Unos 200 cerezos colorean el castillo tesoro nacional, y también hay hanami nocturno.";
-"shimane.matsue_castle_cherry_festival.location" = "Matsue Castle";
-"shimane.matsue_castle_cherry_festival.feature1" = "Existing tenshu";
-"shimane.matsue_castle_cherry_festival.feature2" = "National Treasure castle";
-"shimane.matsue_castle_cherry_festival.feature3" = "200 cherry trees";
+"shimane.matsue_castle_cherry_festival.location" = "Castillo de Matsue";
+"shimane.matsue_castle_cherry_festival.feature1" = "Torreón original";
+"shimane.matsue_castle_cherry_festival.feature2" = "Castillo tesoro nacional";
+"shimane.matsue_castle_cherry_festival.feature3" = "200 cerezos";
 
 /* **MARK: - Okayama** */
 "okayama.korakuen_cherry_festival.name" = "Festival de los Cerezos del Korakuen de Okayama";
 "okayama.korakuen_cherry_festival.description" = "Festival de los cerezos del Korakuen, uno de los tres jardines más famosos de Japón. Se disfrutan bellos paisajes que nacen de la armonía entre el jardín y los cerezos.";
-"okayama.korakuen_cherry_festival.location" = "Okayama Korakuen";
-"okayama.korakuen_cherry_festival.feature1" = "Japan's top 3 gardens";
-"okayama.korakuen_cherry_festival.feature2" = "Garden beauty";
-"okayama.korakuen_cherry_festival.feature3" = "Cherry harmony";
+"okayama.korakuen_cherry_festival.location" = "Korakuen de Okayama";
+"okayama.korakuen_cherry_festival.feature1" = "Tres grandes jardines de Japón";
+"okayama.korakuen_cherry_festival.feature2" = "Belleza del jardín";
+"okayama.korakuen_cherry_festival.feature3" = "Armonía con los cerezos";
 
 /* **MARK: - Hiroshima** */
 "hiroshima.miyajima_cherry_festival.name" = "Festival de los Cerezos de Miyajima";
 "hiroshima.miyajima_cherry_festival.description" = "Combinación del santuario de Itsukushima, Patrimonio Mundial, y los cerezos. Los cerezos con el gran torii de fondo son un panorama que simboliza la belleza japonesa.";
 "hiroshima.miyajima_cherry_festival.location" = "Miyajima";
-"hiroshima.miyajima_cherry_festival.feature1" = "World Heritage";
-"hiroshima.miyajima_cherry_festival.feature2" = "Great torii backdrop";
-"hiroshima.miyajima_cherry_festival.feature3" = "Japanese beauty";
+"hiroshima.miyajima_cherry_festival.feature1" = "Patrimonio Mundial";
+"hiroshima.miyajima_cherry_festival.feature2" = "Con el gran torii de fondo";
+"hiroshima.miyajima_cherry_festival.feature3" = "Belleza japonesa";
 
 "hiroshima.miyajima_autumn_festival.name" = "Festival del Follaje Otoñal de Miyajima";
 "hiroshima.miyajima_autumn_festival.description" = "Iluminación del follaje otoñal en el santuario de Itsukushima. Se disfruta de un panorama otoñal mágico que nace de los edificios bermellón y las hojas rojas.";
 "hiroshima.miyajima_autumn_festival.location" = "Miyajima";
-"hiroshima.miyajima_autumn_festival.feature1" = "Autumn illumination";
-"hiroshima.miyajima_autumn_festival.feature2" = "Vermillion shrine buildings";
-"hiroshima.miyajima_autumn_festival.feature3" = "Mystical";
+"hiroshima.miyajima_autumn_festival.feature1" = "Iluminación del follaje otoñal";
+"hiroshima.miyajima_autumn_festival.feature2" = "Edificios bermellón";
+"hiroshima.miyajima_autumn_festival.feature3" = "Mágico";
 
 /* **MARK: - Yamaguchi** */
 "yamaguchi.kintaikyo_cherry_festival.name" = "Festival de los Cerezos de Kintaikyo";
 "yamaguchi.kintaikyo_cherry_festival.description" = "Bella combinación entre el puente Kintaikyo, uno de los tres puentes famosos de Japón, y los cerezos. Un panorama en el que unos 3000 cerezos armonizan con el puente.";
-"yamaguchi.kintaikyo_cherry_festival.location" = "Kintaikyo Bridge, Iwakuni City";
-"yamaguchi.kintaikyo_cherry_festival.feature1" = "Japan's top 3 bridges";
-"yamaguchi.kintaikyo_cherry_festival.feature2" = "3,000 cherry trees";
-"yamaguchi.kintaikyo_cherry_festival.feature3" = "Bridge harmony";
+"yamaguchi.kintaikyo_cherry_festival.location" = "Puente Kintaikyo, ciudad de Iwakuni";
+"yamaguchi.kintaikyo_cherry_festival.feature1" = "Tres puentes famosos de Japón";
+"yamaguchi.kintaikyo_cherry_festival.feature2" = "3000 cerezos";
+"yamaguchi.kintaikyo_cherry_festival.feature3" = "Armonía con el puente";
 
 /* **MARK: - Tokushima** */
 "tokushima.katsuura_big_hina_festival.name" = "Gran Festival de las Muñecas de Katsuura";
 "tokushima.katsuura_big_hina_festival.description" = "El mayor festival de muñecas Hina de Japón, donde unas 30 000 muñecas colorean el pueblo. La grada piramidal de muñecas es un espectáculo impresionante.";
-"tokushima.katsuura_big_hina_festival.location" = "Katsuura Town";
-"tokushima.katsuura_big_hina_festival.feature1" = "30,000 hina dolls";
-"tokushima.katsuura_big_hina_festival.feature2" = "Japan's largest";
-"tokushima.katsuura_big_hina_festival.feature3" = "Pyramid display";
+"tokushima.katsuura_big_hina_festival.location" = "Ciudad de Katsuura";
+"tokushima.katsuura_big_hina_festival.feature1" = "30 000 muñecas Hina";
+"tokushima.katsuura_big_hina_festival.feature2" = "El mayor de Japón";
+"tokushima.katsuura_big_hina_festival.feature3" = "Grada piramidal";
 
 /* **MARK: - Kagawa** */
 "kagawa.ritsurin_cherry_festival.name" = "Festival de los Cerezos del Jardín Ritsurin";
 "kagawa.ritsurin_cherry_festival.description" = "Festival de los cerezos del jardín Ritsurin, paraje escénico especial nacional. Se disfruta la belleza del jardín con unos 300 cerezos y el Sanuki-Fuji de fondo.";
-"kagawa.ritsurin_cherry_festival.location" = "Ritsurin Garden";
-"kagawa.ritsurin_cherry_festival.feature1" = "Special scenic beauty";
-"kagawa.ritsurin_cherry_festival.feature2" = "300 cherry trees";
-"kagawa.ritsurin_cherry_festival.feature3" = "Sanuki Fuji";
+"kagawa.ritsurin_cherry_festival.location" = "Jardín Ritsurin";
+"kagawa.ritsurin_cherry_festival.feature1" = "Paraje escénico especial";
+"kagawa.ritsurin_cherry_festival.feature2" = "300 cerezos";
+"kagawa.ritsurin_cherry_festival.feature3" = "Sanuki-Fuji";
 
 /* **MARK: - Ehime** */
 "ehime.matsuyama_castle_cherry_festival.name" = "Festival de los Cerezos del Castillo de Matsuyama";
 "ehime.matsuyama_castle_cherry_festival.description" = "Festival de los cerezos del castillo de Matsuyama, uno de los 12 torreones originales. Unos 200 cerezos colorean la colina del castillo, para disfrutar junto a las termas de Dogo.";
-"ehime.matsuyama_castle_cherry_festival.location" = "Matsuyama Castle";
-"ehime.matsuyama_castle_cherry_festival.feature1" = "12 existing tenshu";
-"ehime.matsuyama_castle_cherry_festival.feature2" = "200 cherry trees";
-"ehime.matsuyama_castle_cherry_festival.feature3" = "Dogo Onsen";
+"ehime.matsuyama_castle_cherry_festival.location" = "Castillo de Matsuyama";
+"ehime.matsuyama_castle_cherry_festival.feature1" = "12 torreones originales";
+"ehime.matsuyama_castle_cherry_festival.feature2" = "200 cerezos";
+"ehime.matsuyama_castle_cherry_festival.feature3" = "Aguas termales de Dogo";
 
 /* **MARK: - Kochi** */
 "kochi.kochi_castle_cherry_festival.name" = "Festival de los Cerezos del Castillo de Kochi";
 "kochi.kochi_castle_cherry_festival.description" = "Festival de los cerezos del castillo de Kochi con torreón original. Unos 220 cerezos colorean bellamente el castillo de Tosa.";
-"kochi.kochi_castle_cherry_festival.location" = "Kochi Castle";
-"kochi.kochi_castle_cherry_festival.feature1" = "Existing tenshu";
-"kochi.kochi_castle_cherry_festival.feature2" = "220 cherry trees";
-"kochi.kochi_castle_cherry_festival.feature3" = "Tosa castle";
+"kochi.kochi_castle_cherry_festival.location" = "Castillo de Kochi";
+"kochi.kochi_castle_cherry_festival.feature1" = "Torreón original";
+"kochi.kochi_castle_cherry_festival.feature2" = "220 cerezos";
+"kochi.kochi_castle_cherry_festival.feature3" = "Castillo de Tosa";
 
 /* **MARK: - Fukuoka** */
 "fukuoka.fukuoka_castle_cherry_festival.name" = "Festival de los Cerezos del Castillo de Fukuoka";
 "fukuoka.fukuoka_castle_cherry_festival.description" = "Festival de los cerezos de Fukuoka en el parque Maizuru. Unos 1000 cerezos colorean bellamente las ruinas del castillo, con numerosos puestos.";
-"fukuoka.fukuoka_castle_cherry_festival.location" = "Maizuru Park";
-"fukuoka.fukuoka_castle_cherry_festival.feature1" = "1,000 cherry trees";
-"fukuoka.fukuoka_castle_cherry_festival.feature2" = "Fukuoka Castle ruins";
-"fukuoka.fukuoka_castle_cherry_festival.feature3" = "Food stalls";
+"fukuoka.fukuoka_castle_cherry_festival.location" = "Parque Maizuru";
+"fukuoka.fukuoka_castle_cherry_festival.feature1" = "1000 cerezos";
+"fukuoka.fukuoka_castle_cherry_festival.feature2" = "Ruinas del castillo de Fukuoka";
+"fukuoka.fukuoka_castle_cherry_festival.feature3" = "Puestos";
 
 /* **MARK: - Saga** */
 "saga.arita_pottery_fair.name" = "Feria de Cerámica de Arita";
 "saga.arita_pottery_fair.description" = "Feria de cerámica con 400 años de historia. Unas 400 tiendas se alinean; como la mayor feria de cerámica de Japón, atrae a 1 millón de visitantes al año.";
-"saga.arita_pottery_fair.location" = "Arita Town";
-"saga.arita_pottery_fair.feature1" = "400 years history";
-"saga.arita_pottery_fair.feature2" = "400 stores";
-"saga.arita_pottery_fair.feature3" = "1 million visitors";
+"saga.arita_pottery_fair.location" = "Ciudad de Arita";
+"saga.arita_pottery_fair.feature1" = "400 años de historia";
+"saga.arita_pottery_fair.feature2" = "400 tiendas";
+"saga.arita_pottery_fair.feature3" = "1 millón de visitantes";
 
 /* **MARK: - Nagasaki** */
 "nagasaki.huis_ten_bosch_flower_festival.name" = "Festival de las Flores de Huis Ten Bosch";
 "nagasaki.huis_ten_bosch_flower_festival.description" = "Festival de primavera de un parque temático europeo donde florece 1 millón de tulipanes. Se disfrutan panoramas de molinos de viento y tulipanes.";
 "nagasaki.huis_ten_bosch_flower_festival.location" = "Huis Ten Bosch";
-"nagasaki.huis_ten_bosch_flower_festival.feature1" = "1 million tulips";
-"nagasaki.huis_ten_bosch_flower_festival.feature2" = "European style";
-"nagasaki.huis_ten_bosch_flower_festival.feature3" = "Windmills and tulips";
+"nagasaki.huis_ten_bosch_flower_festival.feature1" = "1 millón de tulipanes";
+"nagasaki.huis_ten_bosch_flower_festival.feature2" = "Estilo europeo";
+"nagasaki.huis_ten_bosch_flower_festival.feature3" = "Molinos y tulipanes";
 
 "nagasaki.huis_ten_bosch_kingdom_of_light.name" = "El Reino de la Luz de Huis Ten Bosch";
 "nagasaki.huis_ten_bosch_kingdom_of_light.description" = "Una de las mayores iluminaciones del mundo con 13 millones de bombillas. Se extiende un mundo de luz de escala abrumadora, con cascadas y cafés celestes de luz.";
 "nagasaki.huis_ten_bosch_kingdom_of_light.location" = "Huis Ten Bosch";
-"nagasaki.huis_ten_bosch_kingdom_of_light.feature1" = "World's largest";
-"nagasaki.huis_ten_bosch_kingdom_of_light.feature2" = "13 million bulbs";
-"nagasaki.huis_ten_bosch_kingdom_of_light.feature3" = "6-month duration";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature1" = "El mayor del mundo";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature2" = "13 millones de bombillas";
+"nagasaki.huis_ten_bosch_kingdom_of_light.feature3" = "Durante 6 meses";
 
 /* **MARK: - Kumamoto** */
 "kumamoto.kumamoto_castle_cherry_festival.name" = "Festival de los Cerezos del Castillo de Kumamoto";
 "kumamoto.kumamoto_castle_cherry_festival.description" = "Festival de los cerezos del castillo de Kumamoto, uno de los tres castillos famosos de Japón. Unos 800 cerezos colorean el castillo en reconstrucción, convertido en símbolo de esperanza.";
-"kumamoto.kumamoto_castle_cherry_festival.location" = "Kumamoto Castle";
-"kumamoto.kumamoto_castle_cherry_festival.feature1" = "Japan's top 3 castles";
-"kumamoto.kumamoto_castle_cherry_festival.feature2" = "800 cherry trees";
-"kumamoto.kumamoto_castle_cherry_festival.feature3" = "Symbol of hope";
+"kumamoto.kumamoto_castle_cherry_festival.location" = "Castillo de Kumamoto";
+"kumamoto.kumamoto_castle_cherry_festival.feature1" = "Tres castillos famosos de Japón";
+"kumamoto.kumamoto_castle_cherry_festival.feature2" = "800 cerezos";
+"kumamoto.kumamoto_castle_cherry_festival.feature3" = "Símbolo de la reconstrucción";
 
 /* **MARK: - Miyazaki** */
 "miyazaki.takachiho_yokagura.name" = "Kagura Nocturno de Takachiho";
 "miyazaki.takachiho_yokagura.description" = "Arte tradicional de Miyazaki. De noviembre a febrero se dedican 33 danzas kagura, creando noches místicas en la tierra de la mitología.";
-"miyazaki.takachiho_yokagura.location" = "Takachiho Town";
-"miyazaki.takachiho_yokagura.feature1" = "33 kagura dances";
-"miyazaki.takachiho_yokagura.feature2" = "Land of mythology";
-"miyazaki.takachiho_yokagura.feature3" = "4-month duration";
+"miyazaki.takachiho_yokagura.location" = "Ciudad de Takachiho";
+"miyazaki.takachiho_yokagura.feature1" = "33 danzas kagura";
+"miyazaki.takachiho_yokagura.feature2" = "Tierra de la mitología";
+"miyazaki.takachiho_yokagura.feature3" = "Durante 4 meses";
 
 /* **MARK: - Okinawa** */
 "okinawa.ryukyu_kaiensai.name" = "Ryukyu Kaiensai";
 "okinawa.ryukyu_kaiensai.description" = "El mayor espectáculo pirotécnico de Okinawa. Se disfruta de un show que combina unos 10 000 fuegos y música.";
-"okinawa.ryukyu_kaiensai.location" = "Ginowan Seaside Park";
-"okinawa.ryukyu_kaiensai.feature1" = "Okinawa's largest";
-"okinawa.ryukyu_kaiensai.feature2" = "10,000 fireworks";
-"okinawa.ryukyu_kaiensai.feature3" = "Music show";
+"okinawa.ryukyu_kaiensai.location" = "Parque costero de Ginowan";
+"okinawa.ryukyu_kaiensai.feature1" = "El mayor de Okinawa";
+"okinawa.ryukyu_kaiensai.feature2" = "10 000 fuegos";
+"okinawa.ryukyu_kaiensai.feature3" = "Espectáculo musical";
 
 "okinawa.professional_baseball_camp.name" = "Entrenamiento de béisbol profesional";
 "okinawa.professional_baseball_camp.description" = "Tradición de invierno a primavera en Okinawa. Como sede de entrenamiento de 12 equipos profesionales de béisbol, los aficionados pueden verlos de cerca.";
-"okinawa.professional_baseball_camp.location" = "Various locations in Okinawa";
-"okinawa.professional_baseball_camp.feature1" = "12 teams";
-"okinawa.professional_baseball_camp.feature2" = "Close-distance fans";
-"okinawa.professional_baseball_camp.feature3" = "Winter-spring tradition";
+"okinawa.professional_baseball_camp.location" = "Varios lugares de Okinawa";
+"okinawa.professional_baseball_camp.feature1" = "12 equipos";
+"okinawa.professional_baseball_camp.feature2" = "Aficionados de cerca";
+"okinawa.professional_baseball_camp.feature3" = "Tradición invierno-primavera";
 
 
 
