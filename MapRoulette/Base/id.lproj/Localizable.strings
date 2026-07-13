@@ -6,8 +6,8 @@
   
 */
 
-"tourism.spot" = "Famous Tourist Spots";
-"tourism.info" = "Tourist Information";
+"tourism.spot" = "Objek wisata terkenal";
+"tourism.info" = "Informasi wisata";
 
 /* Prefecture names in English */
 "prefecture.hokkaido" = "Hokkaido";
@@ -1786,7 +1786,7 @@
 
 "recommended_enjoyment" = "Cara menikmati";
 "price_range" = "Kisaran harga";
-"best_season" = "Best Season";
+"best_season" = "Musim terbaik";
 "category" = "Kategori";
 "popularity_rank" = "Popularitas";
 "basic_info" = "Informasi dasar";
@@ -1839,21 +1839,21 @@
 "season_winter_spring" = "Musim dingin–semi";
 "season_summer_autumn" = "Musim panas–gugur";
 
-"souvenir.title" = "Local Specialty Souvenir";
-"souvenir.memory" = "Bring back memories of %@";
-"souvenir.about" = "About the product";
-"souvenir.bestSeason" = "Best Season";
-"souvenir.category" = "Category";
-"souvenir.popularity" = "Popularity";
-"souvenir.detailTitle" = "Souvenir Details";
+"souvenir.title" = "Oleh-oleh khas";
+"souvenir.memory" = "Bawa pulang kenangan %@";
+"souvenir.about" = "Tentang produk";
+"souvenir.bestSeason" = "Musim rekomendasi";
+"souvenir.category" = "Kategori";
+"souvenir.popularity" = "Popularitas";
+"souvenir.detailTitle" = "Detail oleh-oleh";
 
-"souvenirCategory.sweets" = "Sweets";
-"souvenirCategory.food" = "Food";
-"souvenirCategory.crafts" = "Crafts";
-"souvenirCategory.drinks" = "Drinks";
-"souvenirCategory.textiles" = "Textiles / Clothing";
-"souvenirCategory.ceramics" = "Ceramics";
-"souvenirCategory.regional" = "Regional Specialties";
+"souvenirCategory.sweets" = "Manisan";
+"souvenirCategory.food" = "Makanan";
+"souvenirCategory.crafts" = "Kerajinan";
+"souvenirCategory.drinks" = "Minuman";
+"souvenirCategory.textiles" = "Tekstil & pakaian";
+"souvenirCategory.ceramics" = "Keramik";
+"souvenirCategory.regional" = "Produk khas daerah";
 
 
 // =====================================================
@@ -3032,12 +3032,12 @@
 "hirosaki_neputa_festival_feature2" = "Nuansa Tsugaru";
 "hirosaki_neputa_festival_feature3" = "Keindahan keheningan";
 
-"goshogawara_tachineputa_name" = "Goshogawara Tachi-Neputa";
-"goshogawara_tachineputa_description" = "A spectacular festival featuring 23-meter tall Tachi-Neputa. Its power and beauty captivate audiences.";
-"goshogawara_tachineputa_location" = "Goshogawara City Streets";
-"goshogawara_tachineputa_feature1" = "23 Meters Tall";
-"goshogawara_tachineputa_feature2" = "Giant Tachi-Neputa";
-"goshogawara_tachineputa_feature3" = "Overwhelming Power";
+"goshogawara_tachineputa_name" = "Tachi-Neputa Goshogawara";
+"goshogawara_tachineputa_description" = "Festival spektakuler dengan Tachi-Neputa raksasa setinggi 23 meter. Kekuatan dan keindahannya memukau penonton.";
+"goshogawara_tachineputa_location" = "Pusat Kota Goshogawara";
+"goshogawara_tachineputa_feature1" = "Setinggi 23 meter";
+"goshogawara_tachineputa_feature2" = "Tachi-Neputa raksasa";
+"goshogawara_tachineputa_feature3" = "Kekuatan luar biasa";
 
 "hachinohe_sansha_festival_name" = "Festival Agung Tiga Kuil Hachinohe";
 "hachinohe_sansha_festival_description" = "Festival terbesar Hachinohe dengan kereta hias mewah yang diarak. Boneka rumit dan dekorasi indah jadi sorotan.";
@@ -3143,11 +3143,11 @@
 "fukushima_waraji_festival_feature3" = "Doa kaki kuat";
 
 "soma_nomaoi_name" = "Soma Nomaoi";
-"soma_nomaoi_description" = "A traditional event in the Soma region continuing for over 1,000 years. A magnificent festival featuring mounted warriors in armor.";
-"soma_nomaoi_location" = "Soma City, Minamisoma City";
-"soma_nomaoi_feature1" = "1,000 Years of History";
-"soma_nomaoi_feature2" = "Mounted Warriors";
-"soma_nomaoi_feature3" = "Armor Procession";
+"soma_nomaoi_description" = "Ritual tradisional wilayah Soma yang berlanjut lebih dari 1.000 tahun. Festival megah dengan prajurit berkuda berbaju zirah.";
+"soma_nomaoi_location" = "Kota Soma & Minamisoma";
+"soma_nomaoi_feature1" = "Sejarah 1.000 tahun";
+"soma_nomaoi_feature2" = "Prajurit berkuda";
+"soma_nomaoi_feature3" = "Pawai baju zirah";
 
 "aizu_festival_name" = "Festival Aizu";
 "aizu_festival_description" = "Festival musim gugur yang menghidupkan sejarah Domain Aizu. Arak-arakan tuan Aizu dan pawai kesatria di Kastel Tsuruga jadi sorotan.";
@@ -3237,12 +3237,12 @@
 "kawagoe_festival_feature2" = "Edo Kecil";
 "kawagoe_festival_feature3" = "Kereta hias rumit";
 
-"chichibu_yomatsuri_name" = "Chichibu Night Festival";
-"chichibu_yomatsuri_description" = "One of Japan's three major float festivals. A magnificent festival where gorgeous stalls and umbrella floats color Chichibu's winter nights.";
-"chichibu_yomatsuri_location" = "Chichibu City";
-"chichibu_yomatsuri_feature1" = "Japan's Three Major Float Festivals";
-"chichibu_yomatsuri_feature2" = "Winter Festival";
-"chichibu_yomatsuri_feature3" = "Stalls and Umbrella Floats";
+"chichibu_yomatsuri_name" = "Festival Malam Chichibu";
+"chichibu_yomatsuri_description" = "Salah satu dari tiga festival kereta hias terbesar Jepang. Festival megah dengan yatai dan kasaboko yang menghiasi malam musim dingin Chichibu.";
+"chichibu_yomatsuri_location" = "Kota Chichibu";
+"chichibu_yomatsuri_feature1" = "Tiga festival kereta hias besar Jepang";
+"chichibu_yomatsuri_feature2" = "Festival musim dingin";
+"chichibu_yomatsuri_feature3" = "Yatai dan kasaboko";
 
 "todabashi_fireworks_name" = "Festival Kembang Api Todabashi";
 "todabashi_fireworks_description" = "Pertunjukan kembang api di tepi Sungai Arakawa. Diselenggarakan bersama Distrik Itabashi Tokyo, sekitar 12.000 kembang api diluncurkan.";
@@ -3331,19 +3331,19 @@
 "kanda_festival_feature3" = "Arak-arakan kereta";
 
 // MARK: - Kanagawa Prefecture
-"shonan_hiratsuka_tanabata_name" = "Shonan Hiratsuka Tanabata Festival";
-"shonan_hiratsuka_tanabata_description" = "One of Kanto's three major Tanabata festivals. A summer tradition where central Hiratsuka City is decorated with gorgeous Tanabata ornaments.";
-"shonan_hiratsuka_tanabata_location" = "Central Hiratsuka City";
-"shonan_hiratsuka_tanabata_feature1" = "Kanto's Three Major Tanabata";
-"shonan_hiratsuka_tanabata_feature2" = "Gorgeous Tanabata Decorations";
-"shonan_hiratsuka_tanabata_feature3" = "4 Million Visitors";
+"shonan_hiratsuka_tanabata_name" = "Festival Tanabata Shonan Hiratsuka";
+"shonan_hiratsuka_tanabata_description" = "Salah satu dari tiga festival Tanabata terbesar Kanto. Tradisi musim panas saat pusat Kota Hiratsuka dihiasi ornamen Tanabata yang megah.";
+"shonan_hiratsuka_tanabata_location" = "Pusat Kota Hiratsuka";
+"shonan_hiratsuka_tanabata_feature1" = "Tiga Tanabata besar Kanto";
+"shonan_hiratsuka_tanabata_feature2" = "Ornamen Tanabata megah";
+"shonan_hiratsuka_tanabata_feature3" = "4 juta pengunjung";
 
-"yokohama_kaikosai_name" = "Yokohama Port Opening Festival";
-"yokohama_kaikosai_description" = "A festival commemorating the opening of Yokohama Port. Events at Minato Mirai and fireworks displays color Yokohama's early summer.";
+"yokohama_kaikosai_name" = "Festival Pembukaan Pelabuhan Yokohama";
+"yokohama_kaikosai_description" = "Festival memperingati pembukaan Pelabuhan Yokohama. Acara di Minato Mirai dan pesta kembang api mewarnai awal musim panas Yokohama.";
 "yokohama_kaikosai_location" = "Minato Mirai 21";
-"yokohama_kaikosai_feature1" = "Port Opening Commemoration";
+"yokohama_kaikosai_feature1" = "Peringatan pembukaan pelabuhan";
 "yokohama_kaikosai_feature2" = "Minato Mirai";
-"yokohama_kaikosai_feature3" = "Port Fireworks";
+"yokohama_kaikosai_feature3" = "Kembang api pelabuhan";
 
 "kamakura_festival_name" = "Festival Kamakura";
 "kamakura_festival_description" = "Festival yang mewarnai musim semi ibu kota kuno Kamakura. Menghidupkan budaya anggun era Kamakura seperti tarian Shizuka Gozen dan yabusame (memanah di atas kuda).";
@@ -3360,12 +3360,12 @@
 "atsugi_ayu_festival_feature3" = "Berkah sungai";
 
 // MARK: - Niigata Prefecture
-"nagaoka_hanabi_name" = "Nagaoka Festival Grand Fireworks";
-"nagaoka_hanabi_description" = "One of Japan's three major fireworks displays. Features spectacular Sanshakudama shells and 2km-wide Phoenix display symbolizing recovery and hope.";
-"nagaoka_hanabi_location" = "Nagaoka City, Shinano River Riverbed";
-"nagaoka_hanabi_feature1" = "Japan's Three Major Fireworks";
-"nagaoka_hanabi_feature2" = "Sanshakudama Shells";
-"nagaoka_hanabi_feature3" = "Phoenix Display";
+"nagaoka_hanabi_name" = "Pesta Kembang Api Besar Festival Nagaoka";
+"nagaoka_hanabi_description" = "Salah satu dari tiga pesta kembang api terbesar Jepang. Bola Sanshakudama dan Phoenix sepanjang 2 km yang membawa harapan pemulihan sungguh memukau.";
+"nagaoka_hanabi_location" = "Kota Nagaoka, tepi Sungai Shinano";
+"nagaoka_hanabi_feature1" = "Tiga pesta kembang api besar Jepang";
+"nagaoka_hanabi_feature2" = "Bola Sanshakudama";
+"nagaoka_hanabi_feature3" = "Phoenix";
 
 "katakai_festival_name" = "Festival Katakai";
 "katakai_festival_description" = "Pertunjukan kembang api yang meluncurkan yonshakudama terbesar di dunia. Festival tradisional berusia 400 tahun sebagai kembang api persembahan.";
@@ -3374,12 +3374,12 @@
 "katakai_festival_feature2" = "Kembang api persembahan";
 "katakai_festival_feature3" = "Sejarah 400 tahun";
 
-"kashiwazaki_umi_hanabi_name" = "Kashiwazaki Sea Grand Fireworks";
-"kashiwazaki_umi_hanabi_description" = "A fireworks display launched against the backdrop of the Sea of Japan. Marine fireworks and 300 consecutive large shells are the highlights.";
-"kashiwazaki_umi_hanabi_location" = "Kashiwazaki City, Central Beach";
-"kashiwazaki_umi_hanabi_feature1" = "Marine Fireworks";
-"kashiwazaki_umi_hanabi_feature2" = "300 Consecutive Large Shells";
-"kashiwazaki_umi_hanabi_feature3" = "Sea of Japan Backdrop";
+"kashiwazaki_umi_hanabi_name" = "Pesta Kembang Api Laut Besar Kashiwazaki";
+"kashiwazaki_umi_hanabi_description" = "Kembang api yang diluncurkan berlatar Laut Jepang. Sorotannya adalah kembang api laut dan 300 bola besar beruntun.";
+"kashiwazaki_umi_hanabi_location" = "Kota Kashiwazaki, Pantai Tengah";
+"kashiwazaki_umi_hanabi_feature1" = "Kembang api laut";
+"kashiwazaki_umi_hanabi_feature2" = "300 bola besar beruntun";
+"kashiwazaki_umi_hanabi_feature3" = "Latar Laut Jepang";
 
 "echigo_festival_name" = "Festival Echigo";
 "echigo_festival_description" = "Festival khas musim panas Niigata. Kota Niigata paling ramai sepanjang tahun dengan pawai lagu daerah dan pertunjukan kembang api besar.";
@@ -3389,19 +3389,19 @@
 "echigo_festival_feature3" = "Musim panas Niigata";
 
 // MARK: - Toyama Prefecture
-"takaoka_tanabata_name" = "Takaoka Tanabata Festival";
-"takaoka_tanabata_description" = "A Tanabata festival held in central Takaoka City. Shopping streets are decorated with beautiful Tanabata ornaments.";
-"takaoka_tanabata_location" = "Central Takaoka City";
-"takaoka_tanabata_feature1" = "Shopping Street Decorations";
-"takaoka_tanabata_feature2" = "Tanabata Ornaments";
-"takaoka_tanabata_feature3" = "Week-long Event";
+"takaoka_tanabata_name" = "Festival Tanabata Takaoka";
+"takaoka_tanabata_description" = "Festival Tanabata yang digelar di pusat Kota Takaoka. Kawasan pertokoan dihiasi ornamen Tanabata yang indah.";
+"takaoka_tanabata_location" = "Pusat Kota Takaoka";
+"takaoka_tanabata_feature1" = "Hiasan kawasan pertokoan";
+"takaoka_tanabata_feature2" = "Ornamen Tanabata";
+"takaoka_tanabata_feature3" = "Berlangsung 1 minggu";
 
 "owara_kazenobon_name" = "Owara Kaze-no-Bon";
-"owara_kazenobon_description" = "An elegant dancing festival passed down in Etchu Yatsuo. A mystical festival where dancers perform to the melancholic sound of the kokyu (bowed string instrument).";
-"owara_kazenobon_location" = "Toyama City, Yatsuo Town";
-"owara_kazenobon_feature1" = "Elegant Dancing";
-"owara_kazenobon_feature2" = "Kokyu Sound";
-"owara_kazenobon_feature3" = "Mystical Atmosphere";
+"owara_kazenobon_description" = "Festival tari anggun yang diwariskan di Etchu Yatsuo. Festival magis dengan tarian mengikuti alunan kokyu yang sendu.";
+"owara_kazenobon_location" = "Kota Toyama, Yatsuo";
+"owara_kazenobon_feature1" = "Tarian anggun";
+"owara_kazenobon_feature2" = "Alunan kokyu";
+"owara_kazenobon_feature3" = "Suasana magis";
 
 "toyama_festival_name" = "Festival Toyama";
 "toyama_festival_description" = "Festival khas musim panas Toyama. Pawai tari lagu daerah dan pertunjukan kembang api menyemarakkan Kota Toyama.";
@@ -3418,12 +3418,12 @@
 "kanazawa_hyakumangoku_festival_feature2" = "Rekonstruksi Maeda Toshiie";
 "kanazawa_hyakumangoku_festival_feature3" = "Terbesar di Kanazawa";
 
-"wajima_taisai_name" = "Wajima Grand Festival";
-"wajima_taisai_description" = "Wajima's summer festival, famous for Wajima lacquerware. Vigorous portable shrines and drums enliven the Noto Peninsula's summer.";
-"wajima_taisai_location" = "Wajima City";
-"wajima_taisai_feature1" = "Wajima Lacquerware Town";
-"wajima_taisai_feature2" = "Vigorous Shrines";
-"wajima_taisai_feature3" = "Noto's Summer";
+"wajima_taisai_name" = "Festival Besar Wajima";
+"wajima_taisai_description" = "Festival musim panas Wajima yang terkenal dengan pernis Wajima. Kuil usungan dan tabuhan gendang yang gagah menghidupkan musim panas Semenanjung Noto.";
+"wajima_taisai_location" = "Kota Wajima";
+"wajima_taisai_feature1" = "Kota pernis Wajima";
+"wajima_taisai_feature2" = "Kuil usungan gagah";
+"wajima_taisai_feature3" = "Musim panas Noto";
 
 "komatsu_otabi_festival_name" = "Festival Otabi Komatsu";
 "komatsu_otabi_festival_description" = "Festival musim semi Komatsu dengan kereta hias mewah yang diarak. Juga terkenal dengan pertunjukan kabuki anak.";
@@ -3469,12 +3469,12 @@
 "kofu_summer_festival_feature2" = "Acara musim panas";
 "kofu_summer_festival_feature3" = "Musim panas Kofu";
 
-"yoshida_himatsuri_name" = "Yoshida Fire Festival";
-"yoshida_himatsuri_description" = "A festival announcing the end of Mount Fuji climbing season. A magnificent festival known for giant torches and Mount Fuji fire rituals.";
-"yoshida_himatsuri_location" = "Fujiyoshida City";
-"yoshida_himatsuri_feature1" = "Mount Fuji Festival";
-"yoshida_himatsuri_feature2" = "Giant Torches";
-"yoshida_himatsuri_feature3" = "Season End Ceremony";
+"yoshida_himatsuri_name" = "Festival Api Yoshida";
+"yoshida_himatsuri_description" = "Festival yang menandai berakhirnya musim pendakian Gunung Fuji. Festival gagah yang terkenal dengan obor raksasa dan ritual api Gunung Fuji.";
+"yoshida_himatsuri_location" = "Kota Fujiyoshida";
+"yoshida_himatsuri_feature1" = "Festival Gunung Fuji";
+"yoshida_himatsuri_feature2" = "Obor raksasa";
+"yoshida_himatsuri_feature3" = "Upacara penutupan gunung";
 
 // MARK: - Nagano Prefecture
 "suwako_fireworks_name" = "Festival Kembang Api Danau Suwa";
@@ -3485,26 +3485,26 @@
 "suwako_fireworks_feature3" = "Terkemuka nasional";
 
 "matsumoto_bonbon_name" = "Matsumoto Bon-Bon";
-"matsumoto_bonbon_description" = "Matsumoto's summer festival with total citizen participation. Citizen dancing to the chant of 'Bon-Bon' enlivens Matsumoto's nights.";
-"matsumoto_bonbon_location" = "Central Matsumoto City";
-"matsumoto_bonbon_feature1" = "Total Citizen Participation";
-"matsumoto_bonbon_feature2" = "Bon-Bon Dancing";
-"matsumoto_bonbon_feature3" = "Matsumoto's Night";
+"matsumoto_bonbon_description" = "Festival musim panas dengan partisipasi seluruh warga Matsumoto. Tarian warga dengan seruan \"Bon-Bon\" menghidupkan malam Matsumoto.";
+"matsumoto_bonbon_location" = "Pusat Kota Matsumoto";
+"matsumoto_bonbon_feature1" = "Partisipasi seluruh warga";
+"matsumoto_bonbon_feature2" = "Tarian Bon-Bon";
+"matsumoto_bonbon_feature3" = "Malam Matsumoto";
 
 "iida_ringon_name" = "Iida Ringon";
-"iida_ringon_description" = "Iida City's summer festival. Dance parades along Apple Tree-lined Street are the highlight.";
-"iida_ringon_location" = "Central Iida City";
-"iida_ringon_feature1" = "Apple Tree-lined Street";
-"iida_ringon_feature2" = "Dance Parade";
-"iida_ringon_feature3" = "Iida's Summer";
+"iida_ringon_description" = "Festival musim panas Kota Iida. Sorotannya adalah pawai tari di sepanjang jalan berjajar pohon apel.";
+"iida_ringon_location" = "Pusat Kota Iida";
+"iida_ringon_feature1" = "Jalan berjajar pohon apel";
+"iida_ringon_feature2" = "Pawai tari";
+"iida_ringon_feature3" = "Musim panas Iida";
 
 // MARK: - Gifu Prefecture
 "gujo_odori_name" = "Gujo Odori";
-"gujo_odori_description" = "One of Japan's three major bon dances. A dancing festival continuing from July to September, famous for all-night dancing.";
+"gujo_odori_description" = "Salah satu dari tiga tarian bon terbesar Jepang. Festival tari yang berlangsung dari Juli hingga September, terkenal dengan tarian semalam suntuk.";
 "gujo_odori_location" = "Gujo Hachiman";
-"gujo_odori_feature1" = "Japan's Three Major Bon Dances";
-"gujo_odori_feature2" = "All-night Dancing";
-"gujo_odori_feature3" = "2-month Duration";
+"gujo_odori_feature1" = "Tiga tarian bon besar Jepang";
+"gujo_odori_feature2" = "Tarian semalam suntuk";
+"gujo_odori_feature3" = "Berlangsung 2 bulan";
 
 "gero_onsen_festival_name" = "Festival Onsen Gero";
 "gero_onsen_festival_description" = "Festival musim panas di kawasan onsen Gero. Mikoshi onsen dan pertunjukan kembang api menyemarakkan kawasan onsen.";
@@ -3624,11 +3624,11 @@
 "gion_festival_feature3" = "Berlangsung sebulan";
 
 "gozan_okuribi_name" = "Gozan Okuribi";
-"gozan_okuribi_description" = "Kyoto's summer tradition for sending off Bon spirits. Five bonfires including the famous Daimonji character illuminate the night sky.";
-"gozan_okuribi_location" = "Kyoto City, Higashiyama";
+"gozan_okuribi_description" = "Tradisi musim panas Kyoto untuk mengantar arwah leluhur saat Obon. Lima api pengantar, termasuk aksara Daimonji yang terkenal, menghiasi langit malam.";
+"gozan_okuribi_location" = "Kota Kyoto, Higashiyama";
 "gozan_okuribi_feature1" = "Daimonji";
-"gozan_okuribi_feature2" = "Spirit Sending";
-"gozan_okuribi_feature3" = "Summer Tradition";
+"gozan_okuribi_feature2" = "Mengantar arwah";
+"gozan_okuribi_feature3" = "Tradisi musim panas";
 
 "jidai_festival_name" = "Festival Jidai";
 "jidai_festival_description" = "Salah satu dari tiga festival besar Kyoto. Arak-arakan berbusana zaman dari era Heian hingga Restorasi Meiji menghidupkan sejarah Kyoto.";
@@ -3690,18 +3690,18 @@
 
 // MARK: - Nara Prefecture
 "nara_tokae_name" = "Nara Tokae";
-"nara_tokae_description" = "A mystical summer event illuminating Nara Park area with about 20,000 candles. The nights of ancient Nara are beautifully lit.";
-"nara_tokae_location" = "Nara Park Area";
-"nara_tokae_feature1" = "20,000 Candles";
-"nara_tokae_feature2" = "Mystical Night View";
-"nara_tokae_feature3" = "Ancient Capital Summer";
+"nara_tokae_description" = "Acara musim panas magis yang menghiasi kawasan Taman Nara dengan sekitar 20.000 lilin. Malam ibu kota kuno Nara diterangi dengan indah.";
+"nara_tokae_location" = "Kawasan Taman Nara";
+"nara_tokae_feature1" = "20.000 lilin";
+"nara_tokae_feature2" = "Panorama malam magis";
+"nara_tokae_feature3" = "Musim panas ibu kota kuno";
 
-"kasuga_taisha_mantoro_name" = "Kasuga Taisha Mantoro";
-"kasuga_taisha_mantoro_description" = "A lantern festival held twice yearly at Kasuga Taisha. A mystical festival where about 3,000 lanterns are lit simultaneously.";
-"kasuga_taisha_mantoro_location" = "Kasuga Taisha";
-"kasuga_taisha_mantoro_feature1" = "3,000 Lanterns";
-"kasuga_taisha_mantoro_feature2" = "Mystical";
-"kasuga_taisha_mantoro_feature3" = "Twice Yearly";
+"kasuga_taisha_mantoro_name" = "Mantoro Kasuga Taisha";
+"kasuga_taisha_mantoro_description" = "Festival lentera yang digelar dua kali setahun di Kuil Kasuga Taisha. Festival mistis saat sekitar 3.000 lentera dinyalakan serentak.";
+"kasuga_taisha_mantoro_location" = "Kuil Kasuga Taisha";
+"kasuga_taisha_mantoro_feature1" = "3.000 lentera";
+"kasuga_taisha_mantoro_feature2" = "Mistis";
+"kasuga_taisha_mantoro_feature3" = "Dua kali setahun";
 
 "heijokyo_tenpyo_festival_name" = "Festival Tenpyo Heijo-kyo";
 "heijokyo_tenpyo_festival_description" = "Festival sarat pesona purbakala di situs Istana Heijo. Nikmati acara yang menghidupkan budaya era Tenpyo.";
@@ -3862,18 +3862,18 @@
 
 // MARK: - Tokushima Prefecture
 "awa_odori_name" = "Awa Odori";
-"awa_odori_description" = "One of Japan’s three major Bon dances. Famous for the phrase 'Dancing fools and watching fools, if you are a fool you might as well dance,' this is Tokushima's summer festival.";
-"awa_odori_location" = "Central Tokushima City";
-"awa_odori_feature1" = "One of Japan’s Three Major Bon Dances";
-"awa_odori_feature2" = "Dancing Fools";
-"awa_odori_feature3" = "1 Million Visitors";
+"awa_odori_description" = "Salah satu dari tiga tarian bon terbesar Jepang. Festival musim panas Tokushima yang terkenal dengan ungkapan \"Yang menari itu bodoh, yang menonton pun bodoh; sama-sama bodoh, lebih baik menari\".";
+"awa_odori_location" = "Pusat Kota Tokushima";
+"awa_odori_feature1" = "Satu dari tiga tarian bon besar Jepang";
+"awa_odori_feature2" = "Yang menari itu bodoh";
+"awa_odori_feature3" = "1 juta pengunjung";
 
-"tokushima_awa_odori_name" = "Tokushima City Awa Odori";
-"tokushima_awa_odori_description" = "The authentic Awa Odori held in Tokushima. The highlight is the colorful dancing by groups called 'ren'.";
-"tokushima_awa_odori_location" = "Tokushima City";
-"tokushima_awa_odori_feature1" = "Authentic Awa Odori";
-"tokushima_awa_odori_feature2" = "Ren Dance Groups";
-"tokushima_awa_odori_feature3" = "Colorful Performances";
+"tokushima_awa_odori_name" = "Awa Odori Kota Tokushima";
+"tokushima_awa_odori_description" = "Awa Odori otentik yang digelar di tanah asalnya, Tokushima. Sorotannya adalah tarian meriah dari kelompok penari bernama \"ren\".";
+"tokushima_awa_odori_location" = "Kota Tokushima";
+"tokushima_awa_odori_feature1" = "Awa Odori otentik";
+"tokushima_awa_odori_feature2" = "Tarian ren";
+"tokushima_awa_odori_feature3" = "Pertunjukan meriah";
 
 // MARK: - Kagawa Prefecture
 "sanuki_takamatsu_festival_name" = "Festival Sanuki Takamatsu";
@@ -3929,25 +3929,25 @@
 
 // MARK: - Fukuoka Prefecture
 "hakata_gion_yamakasa_name" = "Hakata Gion Yamakasa";
-"hakata_gion_yamakasa_description" = "A bold festival representing summer in Hakata. Known for decorative Yamakasa floats and the carrying Yamakasa, with the ‘Oiyama’ race as the highlight.";
-"hakata_gion_yamakasa_location" = "Hakata Ward";
-"hakata_gion_yamakasa_feature1" = "Decorative Yamakasa";
-"hakata_gion_yamakasa_feature2" = "Carrying Yamakasa";
-"hakata_gion_yamakasa_feature3" = "Oiyama Race";
+"hakata_gion_yamakasa_description" = "Festival gagah yang mewakili musim panas Hakata. Terkenal dengan yamakasa hias dan yamakasa pikul, dengan lomba \"Oiyama\" sebagai sorotan utama.";
+"hakata_gion_yamakasa_location" = "Distrik Hakata";
+"hakata_gion_yamakasa_feature1" = "Yamakasa hias";
+"hakata_gion_yamakasa_feature2" = "Yamakasa pikul";
+"hakata_gion_yamakasa_feature3" = "Lomba Oiyama";
 
 "kokura_gion_taiko_name" = "Kokura Gion Taiko";
-"kokura_gion_taiko_description" = "A drum festival centered around Kokura Castle. The vigorous drum sounds color the summer in Kokura.";
-"kokura_gion_taiko_location" = "Kokurakita Ward, Kitakyushu City";
-"kokura_gion_taiko_feature1" = "Kokura Castle";
-"kokura_gion_taiko_feature2" = "Vigorous Drums";
-"kokura_gion_taiko_feature3" = "Summer Resonance";
+"kokura_gion_taiko_description" = "Festival gendang yang berpusat di Kastel Kokura. Suara gendang yang gagah mewarnai musim panas Kokura.";
+"kokura_gion_taiko_location" = "Distrik Kokurakita, Kota Kitakyushu";
+"kokura_gion_taiko_feature1" = "Kastel Kokura";
+"kokura_gion_taiko_feature2" = "Gendang gagah";
+"kokura_gion_taiko_feature3" = "Gema musim panas";
 
 "tobata_gion_oyamakasa_name" = "Tobata Gion Oyamakasa";
-"tobata_gion_oyamakasa_description" = "A UNESCO intangible cultural heritage festival in Tobata. Lantern Yamakasa floats create a fantastic nighttime scene.";
-"tobata_gion_oyamakasa_location" = "Tobata Ward, Kitakyushu City";
-"tobata_gion_oyamakasa_feature1" = "UNESCO Heritage";
-"tobata_gion_oyamakasa_feature2" = "Lantern Yamakasa";
-"tobata_gion_oyamakasa_feature3" = "Fantastic Night View";
+"tobata_gion_oyamakasa_description" = "Festival Tobata yang terdaftar sebagai warisan budaya takbenda UNESCO. Yamakasa lampion menghiasi malam secara magis.";
+"tobata_gion_oyamakasa_location" = "Distrik Tobata, Kota Kitakyushu";
+"tobata_gion_oyamakasa_feature1" = "Warisan UNESCO";
+"tobata_gion_oyamakasa_feature2" = "Yamakasa lampion";
+"tobata_gion_oyamakasa_feature3" = "Panorama malam magis";
 
 "chikugogawa_fireworks_name" = "Festival Kembang Api Sungai Chikugo";
 "chikugogawa_fireworks_description" = "Salah satu pertunjukan kembang api terbesar di Kyushu. Sekitar 18.000 kembang api diluncurkan dari tepi Sungai Chikugo.";
@@ -3957,34 +3957,34 @@
 "chikugogawa_fireworks_feature3" = "Sungai Chikugo";
 
 // MARK: - Saga Prefecture
-"saga_balloon_festa_name" = "Saga International Balloon Fiesta";
-"saga_balloon_festa_description" = "One of Asia's largest hot air balloon events. Colorful hot air balloons decorate the Saga Plain sky, an autumn tradition.";
-"saga_balloon_festa_location" = "Saga City / Kase River Riverbed";
-"saga_balloon_festa_feature1" = "One of Asia’s Largest";
-"saga_balloon_festa_feature2" = "Hot Air Balloons";
-"saga_balloon_festa_feature3" = "Over 100 Balloons";
+"saga_balloon_festa_name" = "Fiesta Balon Internasional Saga";
+"saga_balloon_festa_description" = "Kompetisi balon udara terbesar di Asia. Balon udara warna-warni menghiasi langit Dataran Saga, tradisi musim gugur.";
+"saga_balloon_festa_location" = "Kota Saga, tepi Sungai Kase";
+"saga_balloon_festa_feature1" = "Terbesar di Asia";
+"saga_balloon_festa_feature2" = "Balon udara";
+"saga_balloon_festa_feature3" = "Lebih dari 100 balon";
 
 "karatsu_kunchi_name" = "Karatsu Kunchi";
-"karatsu_kunchi_description" = "A UNESCO intangible cultural heritage autumn festival in Karatsu. Fourteen hikiyama floats parade through the town as part of Karatsu Shrine’s festival.";
-"karatsu_kunchi_location" = "Karatsu City";
-"karatsu_kunchi_feature1" = "UNESCO Heritage";
-"karatsu_kunchi_feature2" = "14 Hikiyama Floats";
-"karatsu_kunchi_feature3" = "400 Years of History";
+"karatsu_kunchi_description" = "Festival musim gugur Karatsu, warisan budaya takbenda UNESCO. Empat belas kereta hikiyama diarak keliling kota dalam perayaan Kuil Karatsu.";
+"karatsu_kunchi_location" = "Kota Karatsu";
+"karatsu_kunchi_feature1" = "Warisan UNESCO";
+"karatsu_kunchi_feature2" = "14 kereta hikiyama";
+"karatsu_kunchi_feature3" = "Sejarah 400 tahun";
 
 // MARK: - Nagasaki Prefecture
-"nagasaki_shoryonagashi_name" = "Nagasaki Shōryō Nagashi";
-"nagasaki_shoryonagashi_description" = "A summer festival in Nagasaki known as a traditional Obon event. Spirit boats carrying the souls of the deceased parade through the city.";
-"nagasaki_shoryonagashi_location" = "Nagasaki City Center";
-"nagasaki_shoryonagashi_feature1" = "Obon Event";
-"nagasaki_shoryonagashi_feature2" = "Spirit Boats";
-"nagasaki_shoryonagashi_feature3" = "Sound of Firecrackers";
+"nagasaki_shoryonagashi_name" = "Shoryo Nagashi Nagasaki";
+"nagasaki_shoryonagashi_description" = "Festival musim panas Nagasaki yang dikenal sebagai ritual Obon tradisional. Perahu arwah yang mengantar jiwa mendiang diarak keliling kota.";
+"nagasaki_shoryonagashi_location" = "Pusat Kota Nagasaki";
+"nagasaki_shoryonagashi_feature1" = "Ritual Obon";
+"nagasaki_shoryonagashi_feature2" = "Perahu arwah";
+"nagasaki_shoryonagashi_feature3" = "Suara petasan";
 
 "nagasaki_kunchi_name" = "Nagasaki Kunchi";
-"nagasaki_kunchi_description" = "A representative autumn festival in Nagasaki. Exotic dances and performances are dedicated as a ritual at Suwa Shrine.";
-"nagasaki_kunchi_location" = "Nagasaki City";
-"nagasaki_kunchi_feature1" = "Exotic Atmosphere";
-"nagasaki_kunchi_feature2" = "Suwa Shrine";
-"nagasaki_kunchi_feature3" = "380 Years of History";
+"nagasaki_kunchi_description" = "Festival yang mewakili musim gugur Nagasaki. Tarian dan pertunjukan bernuansa eksotis dipersembahkan dalam perayaan Kuil Suwa.";
+"nagasaki_kunchi_location" = "Kota Nagasaki";
+"nagasaki_kunchi_feature1" = "Nuansa eksotis";
+"nagasaki_kunchi_feature2" = "Kuil Suwa";
+"nagasaki_kunchi_feature3" = "Sejarah 380 tahun";
 
 "sasebo_seaside_festival_name" = "Festival Tepi Laut Sasebo";
 "sasebo_seaside_festival_description" = "Festival musim panas di Pelabuhan Sasebo. Nikmati acara laut khas kota pelabuhan dan pertunjukan kembang api.";
@@ -4045,12 +4045,12 @@
 "hyuga_hyottoko_festival_feature2" = "Lucu";
 "hyuga_hyottoko_festival_feature3" = "Tari topeng";
 
-"miyazaki_jingu_taisai_name" = "Miyazaki Jingu Grand Festival";
-"miyazaki_jingu_taisai_description" = "An autumn festival at Miyazaki Jingu Shrine. A historic festival held at Miyazaki Jingu, related to Emperor Jimmu.";
-"miyazaki_jingu_taisai_location" = "Miyazaki City, Miyazaki Jingu Shrine";
-"miyazaki_jingu_taisai_feature1" = "Emperor Jimmu";
-"miyazaki_jingu_taisai_feature2" = "Miyazaki Jingu Shrine";
-"miyazaki_jingu_taisai_feature3" = "Historic Festival";
+"miyazaki_jingu_taisai_name" = "Festival Besar Miyazaki Jingu";
+"miyazaki_jingu_taisai_description" = "Festival musim gugur Miyazaki Jingu. Festival bersejarah yang digelar di Miyazaki Jingu, terkait dengan Kaisar Jimmu.";
+"miyazaki_jingu_taisai_location" = "Kota Miyazaki, Miyazaki Jingu";
+"miyazaki_jingu_taisai_feature1" = "Kaisar Jimmu";
+"miyazaki_jingu_taisai_feature2" = "Miyazaki Jingu";
+"miyazaki_jingu_taisai_feature3" = "Festival bersejarah";
 
 // MARK: - Kagoshima Prefecture
 "kagoshima_ohara_festival_name" = "Festival Ohara Kagoshima";
@@ -4090,32 +4090,32 @@
 "ginowan_hagoromo_festival_feature3" = "Malam Ginowan";
 
 // MARK: - Month Strings
-"month_january" = "January";
-"month_february" = "February";
-"month_march" = "March";
+"month_january" = "Januari";
+"month_february" = "Februari";
+"month_march" = "Maret";
 "month_april" = "April";
-"month_may" = "May";
-"month_june" = "June";
-"month_july" = "July";
-"month_august" = "August";
+"month_may" = "Mei";
+"month_june" = "Juni";
+"month_july" = "Juli";
+"month_august" = "Agustus";
 "month_september" = "September";
-"month_october" = "October";
+"month_october" = "Oktober";
 "month_november" = "November";
-"month_december" = "December";
+"month_december" = "Desember";
 
-"month_range_july_august" = "July-August";
-"month_range_july_september" = "July-September";
-"month_range_april_october" = "April-October";
-"month_range_january_february" = "January-February";
-"month_range_january_march" = "January-March";
-"month_range_february_march" = "February-March";
-"month_range_february_april" = "February-April";
-"month_range_march_may" = "March-May";
-"month_range_april_may" = "April-May";
-"month_range_october_may" = "October-May";
-"month_range_november_february" = "November-February";
-"month_range_november_may" = "November-May";
-"month_range_december_march" = "December-March";
+"month_range_july_august" = "Juli-Agustus";
+"month_range_july_september" = "Juli-September";
+"month_range_april_october" = "April-Oktober";
+"month_range_january_february" = "Januari-Februari";
+"month_range_january_march" = "Januari-Maret";
+"month_range_february_march" = "Februari-Maret";
+"month_range_february_april" = "Februari-April";
+"month_range_march_may" = "Maret-Mei";
+"month_range_april_may" = "April-Mei";
+"month_range_october_may" = "Oktober-Mei";
+"month_range_november_february" = "November-Februari";
+"month_range_november_may" = "November-Mei";
+"month_range_december_march" = "Desember-Maret";
 
 // MARK: - Duration Strings
 "duration_1_day" = "1 hari";
@@ -4162,33 +4162,33 @@
 "festival_suffix" = " Festival";
 "fireworks_suffix" = " Festival Kembang Api";
 "matsuri_suffix" = " Festival";
-"festival_description_suffix" = " is a highlight.";
+"festival_description_suffix" = " adalah sorotannya.";
 "location_center" = "Pusat kota";
 "location_riverbed" = "Tepi sungai";
 "location_port" = "Area pelabuhan";
 "location_hot_spring" = "Kawasan onsen";
 
 
-"festival.summer" = "Summer Festival";
-"festival.fireworks" = "Fireworks Festival";
-"festival.traditional" = "Traditional Festival";
-"festival.dance" = "Dance Festival";
-"festival.food" = "Food Festival";
-"festival.seasonal" = "Seasonal Festival";
-"festival.religious" = "Religious Festival";
+"festival.summer" = "Festival musim panas";
+"festival.fireworks" = "Pesta kembang api";
+"festival.traditional" = "Festival tradisional";
+"festival.dance" = "Festival tari";
+"festival.food" = "Festival kuliner";
+"festival.seasonal" = "Festival musiman";
+"festival.religious" = "Festival keagamaan";
 
 
-"festival.summer_fireworks" = "Summer Festival & Fireworks";
-"festival.experience" = "Experience festivals in %@";
-"festival.of_prefecture" = "Festivals of %@";
-"festival.event_info" = "Event Information";
+"festival.summer_fireworks" = "Festival musim panas & kembang api";
+"festival.experience" = "Rasakan festival %@";
+"festival.of_prefecture" = "Festival %@";
+"festival.event_info" = "Informasi acara";
 
-"festival.period" = "Period";
-"festival.duration" = "Duration";
-"festival.location" = "Location";
-"festival.scale" = "Scale";
-"festival.highlights" = "Highlights & Features";
-"festival.tips" = "Tips for Enjoyment";
+"festival.period" = "Waktu penyelenggaraan";
+"festival.duration" = "Durasi";
+"festival.location" = "Lokasi";
+"festival.scale" = "Skala";
+"festival.highlights" = "Sorotan & keunikan";
+"festival.tips" = "Tips menikmati";
 
 // Summer Festival Tips
 "tips.summer.1" = "Kenakan yukata untuk menikmati suasananya";
@@ -4261,17 +4261,17 @@
 "tips.traditional.2" = "Nikmati interaksi dengan warga setempat";
 "tips.traditional.3" = "Pertimbangkan ikut serta dengan busana tradisional";
 
-"festival.seasons" = "Spring, Autumn, and Winter Festivals";
-"festival.experience_seasons" = "Experience the four seasons of %@";
+"festival.seasons" = "Festival musim semi, gugur, dan dingin";
+"festival.experience_seasons" = "Rasakan empat musim %@";
 
 
-"otherFestival.spring" = "Spring Festival";
-"otherFestival.autumn" = "Autumn Festival";
-"otherFestival.winter" = "Winter Festival";
-"otherFestival.sakura" = "Cherry Blossom Festival";
-"otherFestival.illumination" = "Illumination";
-"otherFestival.snow" = "Snow Festival";
-"otherFestival.traditional" = "Traditional Event";
+"otherFestival.spring" = "Festival musim semi";
+"otherFestival.autumn" = "Festival musim gugur";
+"otherFestival.winter" = "Festival musim dingin";
+"otherFestival.sakura" = "Festival bunga sakura";
+"otherFestival.illumination" = "Iluminasi";
+"otherFestival.snow" = "Festival salju";
+"otherFestival.traditional" = "Acara tradisional";
 
 "search.placeholder" = "Cari berdasarkan nama festival, deskripsi, atau prefektur";
 
@@ -4704,10 +4704,10 @@
 
 
 // 自然観光名所タイプ
-"nature_type.night_view" = "Night View";
-"nature_type.starry_sky" = "Starry Sky";
-"nature_type.sea" = "Sea";
-"nature_type.camping" = "Camping";
+"nature_type.night_view" = "Panorama malam";
+"nature_type.starry_sky" = "Langit berbintang";
+"nature_type.sea" = "Laut";
+"nature_type.camping" = "Berkemah";
 
 // 設定画面
 "nature_settings" = "Pengaturan";
@@ -4715,49 +4715,49 @@
 "display_icon_settings" = "Pengaturan ikon tampilan";
 "select_display_icons" = "Pilih ikon yang ditampilkan di peta";
 "spots_count_format" = "%d spot";
-"spot_count_format" = "%d spot";
+"spot_count_format" = "%d lokasi";
 
 // 詳細画面
-"spot_features" = "Spot Features";
-"spot_map" = "Spot Map";
+"spot_features" = "Ciri khas lokasi";
+"spot_map" = "Peta lokasi";
 
 
 // MARK: - Night View Spots
-"nightview_hakodate_name" = "Mount Hakodate";
-"nightview_hakodate_description" = "Hokkaido's iconic night view spot famous for its million-dollar night scenery";
+"nightview_hakodate_name" = "Gunung Hakodate";
+"nightview_hakodate_description" = "Titik pemandangan malam ikonik Hokkaido yang terkenal dengan panorama malam senilai sejuta dolar";
 
-"nightview_maya_name" = "Mount Maya Kikuseidai";
-"nightview_maya_description" = "One of Kansai's premier night view spots overlooking Kobe cityscape and Osaka Bay";
+"nightview_maya_name" = "Kikuseidai Gunung Maya";
+"nightview_maya_description" = "Salah satu titik pemandangan malam terbaik Kansai, menyuguhkan panorama Kobe dan Teluk Osaka";
 
-"nightview_inasa_name" = "Mount Inasa";
-"nightview_inasa_description" = "Beautiful night view of Nagasaki, selected as one of the world's new top three night views";
+"nightview_inasa_name" = "Gunung Inasa";
+"nightview_inasa_description" = "Pemandangan malam Nagasaki yang indah, terpilih sebagai satu dari tiga panorama malam terbaik baru dunia";
 
-"nightview_tokyo_towers_name" = "Tokyo Skytree & Tokyo Tower";
-"nightview_tokyo_towers_description" = "Spectacular night views from Tokyo's two iconic towers";
+"nightview_tokyo_towers_name" = "Tokyo Skytree & Menara Tokyo";
+"nightview_tokyo_towers_description" = "Panorama malam menakjubkan dari dua menara ikonik Tokyo";
 
 "nightview_shonan_name" = "Shonan-daira";
-"nightview_shonan_description" = "Kanagawa's night view spot overlooking the Shonan coastline";
+"nightview_shonan_description" = "Titik pemandangan malam Prefektur Kanagawa yang menyuguhkan panorama pantai Shonan";
 
-"nightview_rokko_name" = "Mount Rokko";
-"nightview_rokko_description" = "Kansai's premier night view spot known as the 10-million-dollar night view";
+"nightview_rokko_name" = "Gunung Rokko";
+"nightview_rokko_description" = "Titik pemandangan malam nomor satu Kansai, dijuluki panorama malam senilai sepuluh juta dolar";
 
-"nightview_sarakura_name" = "Mount Sarakura";
-"nightview_sarakura_description" = "One of Japan's new top three night views, overlooking Kitakyushu city";
+"nightview_sarakura_name" = "Gunung Sarakura";
+"nightview_sarakura_description" = "Satu dari tiga panorama malam terbaik baru Jepang, menyuguhkan panorama Kota Kitakyushu";
 
 "nightview_minatomirai_name" = "Minato Mirai 21";
-"nightview_minatomirai_description" = "Yokohama's iconic night view area featuring the Ferris wheel and cityscape";
+"nightview_minatomirai_description" = "Kawasan pemandangan malam ikonik Yokohama, keindahan bianglala dan gedung pencakar langit";
 
 "nightview_tempozan_name" = "Tempozan";
-"nightview_tempozan_description" = "Bay area spot for enjoying Osaka Port's night view";
+"nightview_tempozan_description" = "Titik kawasan teluk untuk menikmati pemandangan malam Pelabuhan Osaka";
 
-"nightview_wakakusa_name" = "Mount Wakakusa";
-"nightview_wakakusa_description" = "Ancient capital's night view spot overlooking the Nara Basin";
+"nightview_wakakusa_name" = "Gunung Wakakusa";
+"nightview_wakakusa_description" = "Titik pemandangan malam ibu kota kuno, menyuguhkan panorama malam Cekungan Nara";
 
-"nightview_shiroyama_name" = "Shiroyama Park";
-"nightview_shiroyama_description" = "Southern Kyushu's night view attraction overlooking Sakurajima and Kagoshima city";
+"nightview_shiroyama_name" = "Taman Shiroyama";
+"nightview_shiroyama_description" = "Tempat pemandangan malam Kyushu selatan, menatap Sakurajima dan Kota Kagoshima";
 
-"nightview_moiwa_name" = "Mount Moiwa";
-"nightview_moiwa_description" = "Hokkaido's night view spot overlooking Sapporo cityscape";
+"nightview_moiwa_name" = "Gunung Moiwa";
+"nightview_moiwa_description" = "Titik pemandangan malam Hokkaido, menyuguhkan panorama Kota Sapporo";
 
 // MARK: - Starry Sky Spots
 "starry_achi_name" = "Desa Achi";
@@ -5112,7 +5112,7 @@
 "plan.timeblock.empty" = "Seret item ke sini";
 "plan.timeblock.title.label" = "Judul (opsional)";
 "plan.timeblock.title.placeholder" = "Contoh: Pagi / Makan siang / Sore";
-"attraction.open_in_maps" = "Open in Maps";
+"attraction.open_in_maps" = "Buka di Peta";
 "plan.category.souvenir" = "Oleh-oleh";
 "plan.grouping.day.toggle" = "Bagi per hari";
 "plan.grouping.flat" = "Gabung semua";
@@ -5159,10 +5159,10 @@
 "plan.share" = "Bagikan";
 "plan.timeblock.untimed" = "Tanpa waktu";
 
-"social.search_youtube" = "Search on YouTube";
-"social.search_instagram" = "Search on Instagram";
-"social.search_tabelog" = "Find restaurants on Tabelog";
-"gourmet.explore_more" = "Explore more";
+"social.search_youtube" = "Cari di YouTube";
+"social.search_instagram" = "Cari di Instagram";
+"social.search_tabelog" = "Cari restoran di Tabelog";
+"gourmet.explore_more" = "Cari tahu & jelajahi lebih";
 
 /* --- カード上のタグ表示用の短縮名（英語は長いため短縮） --- */
 "onsen_type_tag.scenic" = "Panorama";
@@ -5179,34 +5179,34 @@
 "food_category_local_tag" = "Lokal";
 "food_category_drinks_tag" = "Minuman";
 "food_category_vegetables_tag" = "Sayur & buah";
-"souvenirCategory.sweets_tag" = "Sweets";
-"souvenirCategory.food_tag" = "Food";
-"souvenirCategory.crafts_tag" = "Crafts";
-"souvenirCategory.drinks_tag" = "Drinks";
-"souvenirCategory.textiles_tag" = "Textiles";
-"souvenirCategory.ceramics_tag" = "Ceramics";
+"souvenirCategory.sweets_tag" = "Manisan";
+"souvenirCategory.food_tag" = "Makanan";
+"souvenirCategory.crafts_tag" = "Kerajinan";
+"souvenirCategory.drinks_tag" = "Minuman";
+"souvenirCategory.textiles_tag" = "Tekstil";
+"souvenirCategory.ceramics_tag" = "Keramik";
 "souvenirCategory.regional_tag" = "Regional";
 
 /* --- 祭りカード上のタグ表示用の短縮名（英語は長いため "Festival" を省く） --- */
-"festival.summer_tag" = "Summer";
-"festival.fireworks_tag" = "Fireworks";
-"festival.traditional_tag" = "Traditional";
-"festival.dance_tag" = "Dance";
-"festival.food_tag" = "Food";
-"festival.seasonal_tag" = "Seasonal";
-"festival.religious_tag" = "Religious";
-"otherFestival.spring_tag" = "Spring";
-"otherFestival.autumn_tag" = "Autumn";
-"otherFestival.winter_tag" = "Winter";
-"otherFestival.sakura_tag" = "Cherry";
-"otherFestival.illumination_tag" = "Illumination";
-"otherFestival.snow_tag" = "Snow";
-"otherFestival.traditional_tag" = "Traditional";
+"festival.summer_tag" = "Musim panas";
+"festival.fireworks_tag" = "Kembang api";
+"festival.traditional_tag" = "Tradisional";
+"festival.dance_tag" = "Tari";
+"festival.food_tag" = "Kuliner";
+"festival.seasonal_tag" = "Musiman";
+"festival.religious_tag" = "Keagamaan";
+"otherFestival.spring_tag" = "Musim semi";
+"otherFestival.autumn_tag" = "Musim gugur";
+"otherFestival.winter_tag" = "Musim dingin";
+"otherFestival.sakura_tag" = "Sakura";
+"otherFestival.illumination_tag" = "Iluminasi";
+"otherFestival.snow_tag" = "Salju";
+"otherFestival.traditional_tag" = "Tradisional";
 
-"review.prompt.title" = "Enjoying Tabisaki Choice?";
-"review.prompt.message" = "If you like the app, a quick review would mean a lot to us.";
-"review.prompt.yes" = "Write a Review";
-"review.prompt.no" = "Not Now";
+"review.prompt.title" = "Menikmati Tabisaki Choice?";
+"review.prompt.message" = "Jika Anda menyukai aplikasi ini, ulasan singkat sangat berarti bagi kami.";
+"review.prompt.yes" = "Tulis ulasan";
+"review.prompt.no" = "Nanti saja";
 
 "attraction_azabudai_hills" = "Azabudai Hills";
 "attraction_azabudai_hills_desc" = "Dibuka 2023. Kompleks kota hijau berpusat pada Mori JP Tower, gedung tertinggi Jepang";

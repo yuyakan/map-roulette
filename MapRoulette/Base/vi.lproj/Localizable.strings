@@ -6,8 +6,8 @@
   
 */
 
-"tourism.spot" = "Famous Tourist Spots";
-"tourism.info" = "Tourist Information";
+"tourism.spot" = "Điểm du lịch tiêu biểu";
+"tourism.info" = "Thông tin du lịch";
 
 /* Prefecture names in English */
 "prefecture.hokkaido" = "Hokkaido";
@@ -1786,7 +1786,7 @@
 
 "recommended_enjoyment" = "Cách thưởng thức";
 "price_range" = "Khoảng giá";
-"best_season" = "Best Season";
+"best_season" = "Mùa đẹp nhất";
 "category" = "Danh mục";
 "popularity_rank" = "Độ phổ biến";
 "basic_info" = "Thông tin cơ bản";
@@ -1839,21 +1839,21 @@
 "season_winter_spring" = "Đông–Xuân";
 "season_summer_autumn" = "Hè–Thu";
 
-"souvenir.title" = "Local Specialty Souvenir";
-"souvenir.memory" = "Bring back memories of %@";
-"souvenir.about" = "About the product";
-"souvenir.bestSeason" = "Best Season";
-"souvenir.category" = "Category";
-"souvenir.popularity" = "Popularity";
-"souvenir.detailTitle" = "Souvenir Details";
+"souvenir.title" = "Đặc sản làm quà";
+"souvenir.memory" = "Mang theo kỷ niệm về %@";
+"souvenir.about" = "Về sản phẩm";
+"souvenir.bestSeason" = "Thời điểm gợi ý";
+"souvenir.category" = "Danh mục";
+"souvenir.popularity" = "Độ phổ biến";
+"souvenir.detailTitle" = "Chi tiết quà tặng";
 
-"souvenirCategory.sweets" = "Sweets";
-"souvenirCategory.food" = "Food";
-"souvenirCategory.crafts" = "Crafts";
-"souvenirCategory.drinks" = "Drinks";
-"souvenirCategory.textiles" = "Textiles / Clothing";
-"souvenirCategory.ceramics" = "Ceramics";
-"souvenirCategory.regional" = "Regional Specialties";
+"souvenirCategory.sweets" = "Bánh kẹo";
+"souvenirCategory.food" = "Thực phẩm";
+"souvenirCategory.crafts" = "Đồ thủ công";
+"souvenirCategory.drinks" = "Đồ uống";
+"souvenirCategory.textiles" = "Vải vóc & trang phục";
+"souvenirCategory.ceramics" = "Gốm sứ";
+"souvenirCategory.regional" = "Đặc sản vùng miền";
 
 
 // =====================================================
@@ -3032,12 +3032,12 @@
 "hirosaki_neputa_festival_feature2" = "Cảm xúc xứ Tsugaru";
 "hirosaki_neputa_festival_feature3" = "Vẻ đẹp của tĩnh lặng";
 
-"goshogawara_tachineputa_name" = "Goshogawara Tachi-Neputa";
-"goshogawara_tachineputa_description" = "A spectacular festival featuring 23-meter tall Tachi-Neputa. Its power and beauty captivate audiences.";
-"goshogawara_tachineputa_location" = "Goshogawara City Streets";
-"goshogawara_tachineputa_feature1" = "23 Meters Tall";
-"goshogawara_tachineputa_feature2" = "Giant Tachi-Neputa";
-"goshogawara_tachineputa_feature3" = "Overwhelming Power";
+"goshogawara_tachineputa_name" = "Tachi-Neputa Goshogawara";
+"goshogawara_tachineputa_description" = "Lễ hội hoành tráng với Tachi-Neputa khổng lồ cao 23 mét, chinh phục người xem bằng sức mạnh và vẻ đẹp của nó.";
+"goshogawara_tachineputa_location" = "Trung tâm thành phố Goshogawara";
+"goshogawara_tachineputa_feature1" = "Cao 23 mét";
+"goshogawara_tachineputa_feature2" = "Tachi-Neputa khổng lồ";
+"goshogawara_tachineputa_feature3" = "Sức mạnh áp đảo";
 
 "hachinohe_sansha_festival_name" = "Đại lễ Tam Xã Hachinohe";
 "hachinohe_sansha_festival_description" = "Lễ hội lớn nhất Hachinohe với những chiếc xe rước lộng lẫy diễu hành. Búp bê tinh xảo và trang trí đẹp mắt là điểm nhấn.";
@@ -3143,11 +3143,11 @@
 "fukushima_waraji_festival_feature3" = "Cầu đôi chân khỏe";
 
 "soma_nomaoi_name" = "Soma Nomaoi";
-"soma_nomaoi_description" = "A traditional event in the Soma region continuing for over 1,000 years. A magnificent festival featuring mounted warriors in armor.";
-"soma_nomaoi_location" = "Soma City, Minamisoma City";
-"soma_nomaoi_feature1" = "1,000 Years of History";
-"soma_nomaoi_feature2" = "Mounted Warriors";
-"soma_nomaoi_feature3" = "Armor Procession";
+"soma_nomaoi_description" = "Nghi lễ truyền thống hơn 1.000 năm của vùng Soma. Lễ hội hùng tráng với các võ sĩ cưỡi ngựa mặc giáp.";
+"soma_nomaoi_location" = "Thành phố Soma & Minamisoma";
+"soma_nomaoi_feature1" = "Lịch sử 1.000 năm";
+"soma_nomaoi_feature2" = "Võ sĩ cưỡi ngựa";
+"soma_nomaoi_feature3" = "Đoàn diễu hành giáp trụ";
 
 "aizu_festival_name" = "Lễ hội Aizu";
 "aizu_festival_description" = "Lễ hội mùa thu tái hiện lịch sử phiên Aizu. Đoàn diễu hành lãnh chúa Aizu và đoàn võ sĩ tại thành Tsuruga là điểm nhấn.";
@@ -3237,12 +3237,12 @@
 "kawagoe_festival_feature2" = "Tiểu Edo";
 "kawagoe_festival_feature3" = "Xe rước tinh xảo";
 
-"chichibu_yomatsuri_name" = "Chichibu Night Festival";
-"chichibu_yomatsuri_description" = "One of Japan's three major float festivals. A magnificent festival where gorgeous stalls and umbrella floats color Chichibu's winter nights.";
-"chichibu_yomatsuri_location" = "Chichibu City";
-"chichibu_yomatsuri_feature1" = "Japan's Three Major Float Festivals";
-"chichibu_yomatsuri_feature2" = "Winter Festival";
-"chichibu_yomatsuri_feature3" = "Stalls and Umbrella Floats";
+"chichibu_yomatsuri_name" = "Lễ hội đêm Chichibu";
+"chichibu_yomatsuri_description" = "Một trong ba lễ hội xe rước lớn nhất Nhật Bản. Lễ hội hoành tráng với những chiếc yatai và kasaboko lộng lẫy tô điểm đêm đông Chichibu.";
+"chichibu_yomatsuri_location" = "Thành phố Chichibu";
+"chichibu_yomatsuri_feature1" = "Ba lễ hội xe rước lớn Nhật Bản";
+"chichibu_yomatsuri_feature2" = "Lễ hội mùa đông";
+"chichibu_yomatsuri_feature3" = "Yatai và kasaboko";
 
 "todabashi_fireworks_name" = "Lễ hội pháo hoa Todabashi";
 "todabashi_fireworks_description" = "Đại hội pháo hoa tổ chức tại bãi sông Arakawa. Đồng tổ chức với quận Itabashi Tokyo, bắn khoảng 12.000 quả pháo.";
@@ -3331,19 +3331,19 @@
 "kanda_festival_feature3" = "Đoàn xe rước";
 
 // MARK: - Kanagawa Prefecture
-"shonan_hiratsuka_tanabata_name" = "Shonan Hiratsuka Tanabata Festival";
-"shonan_hiratsuka_tanabata_description" = "One of Kanto's three major Tanabata festivals. A summer tradition where central Hiratsuka City is decorated with gorgeous Tanabata ornaments.";
-"shonan_hiratsuka_tanabata_location" = "Central Hiratsuka City";
-"shonan_hiratsuka_tanabata_feature1" = "Kanto's Three Major Tanabata";
-"shonan_hiratsuka_tanabata_feature2" = "Gorgeous Tanabata Decorations";
-"shonan_hiratsuka_tanabata_feature3" = "4 Million Visitors";
+"shonan_hiratsuka_tanabata_name" = "Lễ hội Tanabata Shonan Hiratsuka";
+"shonan_hiratsuka_tanabata_description" = "Một trong ba lễ hội Tanabata lớn nhất vùng Kanto. Nét đặc trưng mùa hè khi trung tâm thành phố Hiratsuka rực rỡ trang trí Tanabata.";
+"shonan_hiratsuka_tanabata_location" = "Trung tâm thành phố Hiratsuka";
+"shonan_hiratsuka_tanabata_feature1" = "Ba lễ hội Tanabata lớn Kanto";
+"shonan_hiratsuka_tanabata_feature2" = "Trang trí Tanabata lộng lẫy";
+"shonan_hiratsuka_tanabata_feature3" = "4 triệu lượt khách";
 
-"yokohama_kaikosai_name" = "Yokohama Port Opening Festival";
-"yokohama_kaikosai_description" = "A festival commemorating the opening of Yokohama Port. Events at Minato Mirai and fireworks displays color Yokohama's early summer.";
+"yokohama_kaikosai_name" = "Lễ hội Khai cảng Yokohama";
+"yokohama_kaikosai_description" = "Lễ hội kỷ niệm ngày khai cảng Yokohama. Các sự kiện tại Minato Mirai và màn pháo hoa tô điểm đầu hè Yokohama.";
 "yokohama_kaikosai_location" = "Minato Mirai 21";
-"yokohama_kaikosai_feature1" = "Port Opening Commemoration";
+"yokohama_kaikosai_feature1" = "Kỷ niệm khai cảng";
 "yokohama_kaikosai_feature2" = "Minato Mirai";
-"yokohama_kaikosai_feature3" = "Port Fireworks";
+"yokohama_kaikosai_feature3" = "Pháo hoa bên cảng";
 
 "kamakura_festival_name" = "Lễ hội Kamakura";
 "kamakura_festival_description" = "Lễ hội tô điểm mùa xuân cố đô Kamakura. Tái hiện văn hóa thanh nhã thời Kamakura như điệu múa của Shizuka Gozen và yabusame (bắn cung trên lưng ngựa).";
@@ -3360,12 +3360,12 @@
 "atsugi_ayu_festival_feature3" = "Ơn nghĩa dòng sông";
 
 // MARK: - Niigata Prefecture
-"nagaoka_hanabi_name" = "Nagaoka Festival Grand Fireworks";
-"nagaoka_hanabi_description" = "One of Japan's three major fireworks displays. Features spectacular Sanshakudama shells and 2km-wide Phoenix display symbolizing recovery and hope.";
-"nagaoka_hanabi_location" = "Nagaoka City, Shinano River Riverbed";
-"nagaoka_hanabi_feature1" = "Japan's Three Major Fireworks";
-"nagaoka_hanabi_feature2" = "Sanshakudama Shells";
-"nagaoka_hanabi_feature3" = "Phoenix Display";
+"nagaoka_hanabi_name" = "Đại hội pháo hoa Lễ hội Nagaoka";
+"nagaoka_hanabi_description" = "Một trong ba đại hội pháo hoa lớn nhất Nhật Bản. Quả pháo Sanshakudama và màn Phoenix dài 2 km gửi gắm ước nguyện phục hưng thật ngoạn mục.";
+"nagaoka_hanabi_location" = "Thành phố Nagaoka & bãi sông Shinano";
+"nagaoka_hanabi_feature1" = "Ba đại hội pháo hoa lớn Nhật Bản";
+"nagaoka_hanabi_feature2" = "Pháo Sanshakudama";
+"nagaoka_hanabi_feature3" = "Phoenix";
 
 "katakai_festival_name" = "Lễ hội Katakai";
 "katakai_festival_description" = "Đại hội pháo hoa bắn quả yonshakudama lớn nhất thế giới. Lễ hội truyền thống 400 năm lịch sử với vai trò pháo hoa cúng dường.";
@@ -3374,12 +3374,12 @@
 "katakai_festival_feature2" = "Pháo hoa cúng dường";
 "katakai_festival_feature3" = "Lịch sử 400 năm";
 
-"kashiwazaki_umi_hanabi_name" = "Kashiwazaki Sea Grand Fireworks";
-"kashiwazaki_umi_hanabi_description" = "A fireworks display launched against the backdrop of the Sea of Japan. Marine fireworks and 300 consecutive large shells are the highlights.";
-"kashiwazaki_umi_hanabi_location" = "Kashiwazaki City, Central Beach";
-"kashiwazaki_umi_hanabi_feature1" = "Marine Fireworks";
-"kashiwazaki_umi_hanabi_feature2" = "300 Consecutive Large Shells";
-"kashiwazaki_umi_hanabi_feature3" = "Sea of Japan Backdrop";
+"kashiwazaki_umi_hanabi_name" = "Đại hội pháo hoa biển Kashiwazaki";
+"kashiwazaki_umi_hanabi_description" = "Đại hội pháo hoa bắn lên với hậu cảnh biển Nhật Bản. Điểm nhấn là pháo hoa trên biển và 300 quả pháo lớn liên tiếp.";
+"kashiwazaki_umi_hanabi_location" = "Thành phố Kashiwazaki, bãi biển trung tâm";
+"kashiwazaki_umi_hanabi_feature1" = "Pháo hoa trên biển";
+"kashiwazaki_umi_hanabi_feature2" = "300 quả pháo lớn liên tiếp";
+"kashiwazaki_umi_hanabi_feature3" = "Hậu cảnh biển Nhật Bản";
 
 "echigo_festival_name" = "Lễ hội Echigo";
 "echigo_festival_description" = "Lễ hội tiêu biểu cho mùa hè Niigata. Thành phố Niigata nhộn nhịp nhất trong năm với đoàn diễu hành dân ca và đại hội pháo hoa.";
@@ -3389,19 +3389,19 @@
 "echigo_festival_feature3" = "Mùa hè của Niigata";
 
 // MARK: - Toyama Prefecture
-"takaoka_tanabata_name" = "Takaoka Tanabata Festival";
-"takaoka_tanabata_description" = "A Tanabata festival held in central Takaoka City. Shopping streets are decorated with beautiful Tanabata ornaments.";
-"takaoka_tanabata_location" = "Central Takaoka City";
-"takaoka_tanabata_feature1" = "Shopping Street Decorations";
-"takaoka_tanabata_feature2" = "Tanabata Ornaments";
-"takaoka_tanabata_feature3" = "Week-long Event";
+"takaoka_tanabata_name" = "Lễ hội Tanabata Takaoka";
+"takaoka_tanabata_description" = "Lễ hội Tanabata tổ chức tại trung tâm thành phố Takaoka. Phố mua sắm được trang hoàng bằng những vật trang trí Tanabata tuyệt đẹp.";
+"takaoka_tanabata_location" = "Trung tâm thành phố Takaoka";
+"takaoka_tanabata_feature1" = "Trang trí phố mua sắm";
+"takaoka_tanabata_feature2" = "Trang trí Tanabata";
+"takaoka_tanabata_feature3" = "Kéo dài 1 tuần";
 
 "owara_kazenobon_name" = "Owara Kaze-no-Bon";
-"owara_kazenobon_description" = "An elegant dancing festival passed down in Etchu Yatsuo. A mystical festival where dancers perform to the melancholic sound of the kokyu (bowed string instrument).";
-"owara_kazenobon_location" = "Toyama City, Yatsuo Town";
-"owara_kazenobon_feature1" = "Elegant Dancing";
-"owara_kazenobon_feature2" = "Kokyu Sound";
-"owara_kazenobon_feature3" = "Mystical Atmosphere";
+"owara_kazenobon_description" = "Lễ hội múa thanh nhã lưu truyền tại Etchu Yatsuo. Lễ hội huyền ảo với những điệu múa hòa cùng tiếng đàn kokyu man mác buồn.";
+"owara_kazenobon_location" = "Thành phố Toyama, thị trấn Yatsuo";
+"owara_kazenobon_feature1" = "Điệu múa thanh nhã";
+"owara_kazenobon_feature2" = "Tiếng đàn kokyu";
+"owara_kazenobon_feature3" = "Bầu không khí huyền ảo";
 
 "toyama_festival_name" = "Lễ hội Toyama";
 "toyama_festival_description" = "Lễ hội tiêu biểu cho mùa hè Toyama. Đoàn diễu hành múa dân ca và màn pháo hoa làm sôi động thành phố Toyama.";
@@ -3418,12 +3418,12 @@
 "kanazawa_hyakumangoku_festival_feature2" = "Tái hiện Maeda Toshiie";
 "kanazawa_hyakumangoku_festival_feature3" = "Lớn nhất Kanazawa";
 
-"wajima_taisai_name" = "Wajima Grand Festival";
-"wajima_taisai_description" = "Wajima's summer festival, famous for Wajima lacquerware. Vigorous portable shrines and drums enliven the Noto Peninsula's summer.";
-"wajima_taisai_location" = "Wajima City";
-"wajima_taisai_feature1" = "Wajima Lacquerware Town";
-"wajima_taisai_feature2" = "Vigorous Shrines";
-"wajima_taisai_feature3" = "Noto's Summer";
+"wajima_taisai_name" = "Đại lễ Wajima";
+"wajima_taisai_description" = "Lễ hội mùa hè của Wajima nổi tiếng với sơn mài Wajima. Kiệu và trống hùng tráng làm sôi động mùa hè bán đảo Noto.";
+"wajima_taisai_location" = "Thành phố Wajima";
+"wajima_taisai_feature1" = "Thị trấn sơn mài Wajima";
+"wajima_taisai_feature2" = "Kiệu hùng tráng";
+"wajima_taisai_feature3" = "Mùa hè Noto";
 
 "komatsu_otabi_festival_name" = "Lễ hội Otabi Komatsu";
 "komatsu_otabi_festival_description" = "Lễ hội mùa xuân Komatsu với xe rước lộng lẫy diễu hành. Cũng nổi tiếng với các buổi diễn kabuki thiếu nhi.";
@@ -3469,12 +3469,12 @@
 "kofu_summer_festival_feature2" = "Sự kiện mùa hè";
 "kofu_summer_festival_feature3" = "Mùa hè của Kofu";
 
-"yoshida_himatsuri_name" = "Yoshida Fire Festival";
-"yoshida_himatsuri_description" = "A festival announcing the end of Mount Fuji climbing season. A magnificent festival known for giant torches and Mount Fuji fire rituals.";
-"yoshida_himatsuri_location" = "Fujiyoshida City";
-"yoshida_himatsuri_feature1" = "Mount Fuji Festival";
-"yoshida_himatsuri_feature2" = "Giant Torches";
-"yoshida_himatsuri_feature3" = "Season End Ceremony";
+"yoshida_himatsuri_name" = "Lễ hội lửa Yoshida";
+"yoshida_himatsuri_description" = "Lễ hội báo hiệu kết thúc mùa leo núi Phú Sĩ. Lễ hội hùng tráng nổi tiếng với những cây đuốc khổng lồ và nghi lễ lửa của núi Phú Sĩ.";
+"yoshida_himatsuri_location" = "Thành phố Fujiyoshida";
+"yoshida_himatsuri_feature1" = "Lễ hội núi Phú Sĩ";
+"yoshida_himatsuri_feature2" = "Đuốc khổng lồ";
+"yoshida_himatsuri_feature3" = "Nghi lễ đóng núi";
 
 // MARK: - Nagano Prefecture
 "suwako_fireworks_name" = "Lễ hội pháo hoa trên hồ Suwa";
@@ -3485,26 +3485,26 @@
 "suwako_fireworks_feature3" = "Hàng đầu cả nước";
 
 "matsumoto_bonbon_name" = "Matsumoto Bon-Bon";
-"matsumoto_bonbon_description" = "Matsumoto's summer festival with total citizen participation. Citizen dancing to the chant of 'Bon-Bon' enlivens Matsumoto's nights.";
-"matsumoto_bonbon_location" = "Central Matsumoto City";
-"matsumoto_bonbon_feature1" = "Total Citizen Participation";
-"matsumoto_bonbon_feature2" = "Bon-Bon Dancing";
-"matsumoto_bonbon_feature3" = "Matsumoto's Night";
+"matsumoto_bonbon_description" = "Lễ hội mùa hè với sự tham gia của toàn thể người dân Matsumoto. Điệu múa của người dân theo tiếng hô \"Bon-Bon\" làm sôi động đêm Matsumoto.";
+"matsumoto_bonbon_location" = "Trung tâm thành phố Matsumoto";
+"matsumoto_bonbon_feature1" = "Toàn dân tham gia";
+"matsumoto_bonbon_feature2" = "Múa Bon-Bon";
+"matsumoto_bonbon_feature3" = "Đêm Matsumoto";
 
 "iida_ringon_name" = "Iida Ringon";
-"iida_ringon_description" = "Iida City's summer festival. Dance parades along Apple Tree-lined Street are the highlight.";
-"iida_ringon_location" = "Central Iida City";
-"iida_ringon_feature1" = "Apple Tree-lined Street";
-"iida_ringon_feature2" = "Dance Parade";
-"iida_ringon_feature3" = "Iida's Summer";
+"iida_ringon_description" = "Lễ hội mùa hè của thành phố Iida. Điểm nhấn là đoàn diễu hành nhảy múa dọc con phố hàng cây táo.";
+"iida_ringon_location" = "Trung tâm thành phố Iida";
+"iida_ringon_feature1" = "Phố hàng cây táo";
+"iida_ringon_feature2" = "Diễu hành nhảy múa";
+"iida_ringon_feature3" = "Mùa hè Iida";
 
 // MARK: - Gifu Prefecture
 "gujo_odori_name" = "Gujo Odori";
-"gujo_odori_description" = "One of Japan's three major bon dances. A dancing festival continuing from July to September, famous for all-night dancing.";
+"gujo_odori_description" = "Một trong ba điệu múa bon lớn nhất Nhật Bản. Lễ hội múa kéo dài từ tháng 7 đến tháng 9, nổi tiếng với màn múa thâu đêm.";
 "gujo_odori_location" = "Gujo Hachiman";
-"gujo_odori_feature1" = "Japan's Three Major Bon Dances";
-"gujo_odori_feature2" = "All-night Dancing";
-"gujo_odori_feature3" = "2-month Duration";
+"gujo_odori_feature1" = "Ba điệu múa bon lớn Nhật Bản";
+"gujo_odori_feature2" = "Múa thâu đêm";
+"gujo_odori_feature3" = "Kéo dài 2 tháng";
 
 "gero_onsen_festival_name" = "Lễ hội suối nước nóng Gero";
 "gero_onsen_festival_description" = "Lễ hội mùa hè tổ chức tại phố suối nước nóng Gero. Kiệu mikoshi suối nước nóng và màn pháo hoa làm sôi động phố onsen.";
@@ -3624,11 +3624,11 @@
 "gion_festival_feature3" = "Kéo dài một tháng";
 
 "gozan_okuribi_name" = "Gozan Okuribi";
-"gozan_okuribi_description" = "Kyoto's summer tradition for sending off Bon spirits. Five bonfires including the famous Daimonji character illuminate the night sky.";
-"gozan_okuribi_location" = "Kyoto City, Higashiyama";
+"gozan_okuribi_description" = "Nét đặc trưng mùa hè của Kyoto tiễn đưa linh hồn tổ tiên dịp lễ Obon. Năm ngọn lửa tiễn, gồm cả chữ Daimonji nổi tiếng, tô điểm bầu trời đêm.";
+"gozan_okuribi_location" = "Thành phố Kyoto, Higashiyama";
 "gozan_okuribi_feature1" = "Daimonji";
-"gozan_okuribi_feature2" = "Spirit Sending";
-"gozan_okuribi_feature3" = "Summer Tradition";
+"gozan_okuribi_feature2" = "Tiễn đưa linh hồn";
+"gozan_okuribi_feature3" = "Nét đặc trưng mùa hè";
 
 "jidai_festival_name" = "Lễ hội Jidai";
 "jidai_festival_description" = "Một trong ba lễ hội lớn của Kyoto. Đoàn diễu hành với trang phục các thời đại từ thời Heian đến Duy tân Minh Trị tái hiện lịch sử Kyoto.";
@@ -3690,18 +3690,18 @@
 
 // MARK: - Nara Prefecture
 "nara_tokae_name" = "Nara Tokae";
-"nara_tokae_description" = "A mystical summer event illuminating Nara Park area with about 20,000 candles. The nights of ancient Nara are beautifully lit.";
-"nara_tokae_location" = "Nara Park Area";
-"nara_tokae_feature1" = "20,000 Candles";
-"nara_tokae_feature2" = "Mystical Night View";
-"nara_tokae_feature3" = "Ancient Capital Summer";
+"nara_tokae_description" = "Sự kiện mùa hè huyền ảo tô điểm khu công viên Nara bằng khoảng 20.000 ngọn nến. Đêm cố đô Nara được thắp sáng tuyệt đẹp.";
+"nara_tokae_location" = "Khu công viên Nara";
+"nara_tokae_feature1" = "20.000 ngọn nến";
+"nara_tokae_feature2" = "Cảnh đêm huyền ảo";
+"nara_tokae_feature3" = "Mùa hè cố đô";
 
-"kasuga_taisha_mantoro_name" = "Kasuga Taisha Mantoro";
-"kasuga_taisha_mantoro_description" = "A lantern festival held twice yearly at Kasuga Taisha. A mystical festival where about 3,000 lanterns are lit simultaneously.";
-"kasuga_taisha_mantoro_location" = "Kasuga Taisha";
-"kasuga_taisha_mantoro_feature1" = "3,000 Lanterns";
-"kasuga_taisha_mantoro_feature2" = "Mystical";
-"kasuga_taisha_mantoro_feature3" = "Twice Yearly";
+"kasuga_taisha_mantoro_name" = "Đèn lồng Vạn Kasuga Taisha";
+"kasuga_taisha_mantoro_description" = "Lễ hội đèn lồng tổ chức hai lần mỗi năm tại đền Kasuga Taisha. Lễ hội huyền bí với khoảng 3.000 chiếc đèn được thắp sáng cùng lúc.";
+"kasuga_taisha_mantoro_location" = "Đền Kasuga Taisha";
+"kasuga_taisha_mantoro_feature1" = "3.000 chiếc đèn";
+"kasuga_taisha_mantoro_feature2" = "Huyền bí";
+"kasuga_taisha_mantoro_feature3" = "Hai lần mỗi năm";
 
 "heijokyo_tenpyo_festival_name" = "Lễ hội Tenpyo Heijo-kyo";
 "heijokyo_tenpyo_festival_description" = "Lễ hội đậm chất lãng mạn cổ đại tổ chức tại di tích cung Heijo. Tận hưởng các sự kiện tái hiện văn hóa thời Tenpyo.";
@@ -3862,18 +3862,18 @@
 
 // MARK: - Tokushima Prefecture
 "awa_odori_name" = "Awa Odori";
-"awa_odori_description" = "One of Japan’s three major Bon dances. Famous for the phrase 'Dancing fools and watching fools, if you are a fool you might as well dance,' this is Tokushima's summer festival.";
-"awa_odori_location" = "Central Tokushima City";
-"awa_odori_feature1" = "One of Japan’s Three Major Bon Dances";
-"awa_odori_feature2" = "Dancing Fools";
-"awa_odori_feature3" = "1 Million Visitors";
+"awa_odori_description" = "Một trong ba điệu múa bon lớn nhất Nhật Bản. Lễ hội mùa hè của Tokushima nổi tiếng với câu \"Kẻ múa là kẻ khờ, người xem cũng khờ, đã khờ như nhau thì không múa là thiệt\".";
+"awa_odori_location" = "Trung tâm thành phố Tokushima";
+"awa_odori_feature1" = "Một trong ba điệu múa bon lớn Nhật Bản";
+"awa_odori_feature2" = "Kẻ múa khờ";
+"awa_odori_feature3" = "1 triệu lượt khách";
 
-"tokushima_awa_odori_name" = "Tokushima City Awa Odori";
-"tokushima_awa_odori_description" = "The authentic Awa Odori held in Tokushima. The highlight is the colorful dancing by groups called 'ren'.";
-"tokushima_awa_odori_location" = "Tokushima City";
-"tokushima_awa_odori_feature1" = "Authentic Awa Odori";
-"tokushima_awa_odori_feature2" = "Ren Dance Groups";
-"tokushima_awa_odori_feature3" = "Colorful Performances";
+"tokushima_awa_odori_name" = "Awa Odori thành phố Tokushima";
+"tokushima_awa_odori_description" = "Awa Odori chính gốc tổ chức tại quê hương Tokushima. Điểm nhấn là những điệu múa rực rỡ của các nhóm múa gọi là \"ren\".";
+"tokushima_awa_odori_location" = "Thành phố Tokushima";
+"tokushima_awa_odori_feature1" = "Awa Odori chính gốc";
+"tokushima_awa_odori_feature2" = "Điệu múa của ren";
+"tokushima_awa_odori_feature3" = "Màn trình diễn rực rỡ";
 
 // MARK: - Kagawa Prefecture
 "sanuki_takamatsu_festival_name" = "Lễ hội Sanuki Takamatsu";
@@ -3929,25 +3929,25 @@
 
 // MARK: - Fukuoka Prefecture
 "hakata_gion_yamakasa_name" = "Hakata Gion Yamakasa";
-"hakata_gion_yamakasa_description" = "A bold festival representing summer in Hakata. Known for decorative Yamakasa floats and the carrying Yamakasa, with the ‘Oiyama’ race as the highlight.";
-"hakata_gion_yamakasa_location" = "Hakata Ward";
-"hakata_gion_yamakasa_feature1" = "Decorative Yamakasa";
-"hakata_gion_yamakasa_feature2" = "Carrying Yamakasa";
-"hakata_gion_yamakasa_feature3" = "Oiyama Race";
+"hakata_gion_yamakasa_description" = "Lễ hội hùng tráng tiêu biểu cho mùa hè Hakata. Nổi tiếng với yamakasa trang trí và yamakasa vác vai, mà màn đua \"Oiyama\" là điểm nhấn lớn nhất.";
+"hakata_gion_yamakasa_location" = "Quận Hakata";
+"hakata_gion_yamakasa_feature1" = "Yamakasa trang trí";
+"hakata_gion_yamakasa_feature2" = "Yamakasa vác vai";
+"hakata_gion_yamakasa_feature3" = "Đua Oiyama";
 
 "kokura_gion_taiko_name" = "Kokura Gion Taiko";
-"kokura_gion_taiko_description" = "A drum festival centered around Kokura Castle. The vigorous drum sounds color the summer in Kokura.";
-"kokura_gion_taiko_location" = "Kokurakita Ward, Kitakyushu City";
-"kokura_gion_taiko_feature1" = "Kokura Castle";
-"kokura_gion_taiko_feature2" = "Vigorous Drums";
-"kokura_gion_taiko_feature3" = "Summer Resonance";
+"kokura_gion_taiko_description" = "Lễ hội trống diễn ra quanh thành Kokura. Tiếng trống hùng tráng tô điểm mùa hè Kokura.";
+"kokura_gion_taiko_location" = "Quận Kokurakita, thành phố Kitakyushu";
+"kokura_gion_taiko_feature1" = "Thành Kokura";
+"kokura_gion_taiko_feature2" = "Trống hùng tráng";
+"kokura_gion_taiko_feature3" = "Âm vang mùa hè";
 
 "tobata_gion_oyamakasa_name" = "Tobata Gion Oyamakasa";
-"tobata_gion_oyamakasa_description" = "A UNESCO intangible cultural heritage festival in Tobata. Lantern Yamakasa floats create a fantastic nighttime scene.";
-"tobata_gion_oyamakasa_location" = "Tobata Ward, Kitakyushu City";
-"tobata_gion_oyamakasa_feature1" = "UNESCO Heritage";
-"tobata_gion_oyamakasa_feature2" = "Lantern Yamakasa";
-"tobata_gion_oyamakasa_feature3" = "Fantastic Night View";
+"tobata_gion_oyamakasa_description" = "Lễ hội của Tobata được UNESCO ghi danh là di sản văn hóa phi vật thể. Những chiếc yamakasa đèn lồng tô điểm màn đêm huyền ảo.";
+"tobata_gion_oyamakasa_location" = "Quận Tobata, thành phố Kitakyushu";
+"tobata_gion_oyamakasa_feature1" = "Di sản UNESCO";
+"tobata_gion_oyamakasa_feature2" = "Yamakasa đèn lồng";
+"tobata_gion_oyamakasa_feature3" = "Cảnh đêm huyền ảo";
 
 "chikugogawa_fireworks_name" = "Lễ hội pháo hoa sông Chikugo";
 "chikugogawa_fireworks_description" = "Đại hội pháo hoa lớn nhất Kyushu. Khoảng 18.000 quả pháo bắn từ bãi sông Chikugo.";
@@ -3957,34 +3957,34 @@
 "chikugogawa_fireworks_feature3" = "Sông Chikugo";
 
 // MARK: - Saga Prefecture
-"saga_balloon_festa_name" = "Saga International Balloon Fiesta";
-"saga_balloon_festa_description" = "One of Asia's largest hot air balloon events. Colorful hot air balloons decorate the Saga Plain sky, an autumn tradition.";
-"saga_balloon_festa_location" = "Saga City / Kase River Riverbed";
-"saga_balloon_festa_feature1" = "One of Asia’s Largest";
-"saga_balloon_festa_feature2" = "Hot Air Balloons";
-"saga_balloon_festa_feature3" = "Over 100 Balloons";
+"saga_balloon_festa_name" = "Lễ hội Khinh khí cầu Quốc tế Saga";
+"saga_balloon_festa_description" = "Cuộc thi khinh khí cầu lớn nhất châu Á. Những chiếc khinh khí cầu đủ màu tô điểm bầu trời đồng bằng Saga, nét đặc trưng mùa thu.";
+"saga_balloon_festa_location" = "Thành phố Saga, bãi sông Kase";
+"saga_balloon_festa_feature1" = "Lớn nhất châu Á";
+"saga_balloon_festa_feature2" = "Khinh khí cầu";
+"saga_balloon_festa_feature3" = "Hơn 100 quả";
 
 "karatsu_kunchi_name" = "Karatsu Kunchi";
-"karatsu_kunchi_description" = "A UNESCO intangible cultural heritage autumn festival in Karatsu. Fourteen hikiyama floats parade through the town as part of Karatsu Shrine’s festival.";
-"karatsu_kunchi_location" = "Karatsu City";
-"karatsu_kunchi_feature1" = "UNESCO Heritage";
-"karatsu_kunchi_feature2" = "14 Hikiyama Floats";
-"karatsu_kunchi_feature3" = "400 Years of History";
+"karatsu_kunchi_description" = "Lễ hội mùa thu của Karatsu, di sản văn hóa phi vật thể UNESCO. 14 chiếc hikiyama diễu hành khắp phố trong lễ tế của đền Karatsu.";
+"karatsu_kunchi_location" = "Thành phố Karatsu";
+"karatsu_kunchi_feature1" = "Di sản UNESCO";
+"karatsu_kunchi_feature2" = "14 chiếc hikiyama";
+"karatsu_kunchi_feature3" = "Lịch sử 400 năm";
 
 // MARK: - Nagasaki Prefecture
-"nagasaki_shoryonagashi_name" = "Nagasaki Shōryō Nagashi";
-"nagasaki_shoryonagashi_description" = "A summer festival in Nagasaki known as a traditional Obon event. Spirit boats carrying the souls of the deceased parade through the city.";
-"nagasaki_shoryonagashi_location" = "Nagasaki City Center";
-"nagasaki_shoryonagashi_feature1" = "Obon Event";
-"nagasaki_shoryonagashi_feature2" = "Spirit Boats";
-"nagasaki_shoryonagashi_feature3" = "Sound of Firecrackers";
+"nagasaki_shoryonagashi_name" = "Shoryo Nagashi Nagasaki";
+"nagasaki_shoryonagashi_description" = "Lễ hội mùa hè của Nagasaki nổi tiếng là nghi lễ Obon truyền thống. Những chiếc thuyền tiễn linh hồn người đã khuất diễu hành khắp phố.";
+"nagasaki_shoryonagashi_location" = "Trung tâm thành phố Nagasaki";
+"nagasaki_shoryonagashi_feature1" = "Nghi lễ Obon";
+"nagasaki_shoryonagashi_feature2" = "Thuyền tiễn linh hồn";
+"nagasaki_shoryonagashi_feature3" = "Tiếng pháo";
 
 "nagasaki_kunchi_name" = "Nagasaki Kunchi";
-"nagasaki_kunchi_description" = "A representative autumn festival in Nagasaki. Exotic dances and performances are dedicated as a ritual at Suwa Shrine.";
-"nagasaki_kunchi_location" = "Nagasaki City";
-"nagasaki_kunchi_feature1" = "Exotic Atmosphere";
-"nagasaki_kunchi_feature2" = "Suwa Shrine";
-"nagasaki_kunchi_feature3" = "380 Years of History";
+"nagasaki_kunchi_description" = "Lễ hội tiêu biểu cho mùa thu Nagasaki. Những điệu múa và tiết mục đậm sắc màu ngoại quốc được dâng cúng trong lễ tế đền Suwa.";
+"nagasaki_kunchi_location" = "Thành phố Nagasaki";
+"nagasaki_kunchi_feature1" = "Sắc màu ngoại quốc";
+"nagasaki_kunchi_feature2" = "Đền Suwa";
+"nagasaki_kunchi_feature3" = "Lịch sử 380 năm";
 
 "sasebo_seaside_festival_name" = "Lễ hội bờ biển Sasebo";
 "sasebo_seaside_festival_description" = "Lễ hội mùa hè tổ chức tại cảng Sasebo. Tận hưởng các sự kiện trên biển đặc trưng của thành phố cảng và màn pháo hoa.";
@@ -4045,12 +4045,12 @@
 "hyuga_hyottoko_festival_feature2" = "Hài hước";
 "hyuga_hyottoko_festival_feature3" = "Múa mặt nạ";
 
-"miyazaki_jingu_taisai_name" = "Miyazaki Jingu Grand Festival";
-"miyazaki_jingu_taisai_description" = "An autumn festival at Miyazaki Jingu Shrine. A historic festival held at Miyazaki Jingu, related to Emperor Jimmu.";
-"miyazaki_jingu_taisai_location" = "Miyazaki City, Miyazaki Jingu Shrine";
-"miyazaki_jingu_taisai_feature1" = "Emperor Jimmu";
-"miyazaki_jingu_taisai_feature2" = "Miyazaki Jingu Shrine";
-"miyazaki_jingu_taisai_feature3" = "Historic Festival";
+"miyazaki_jingu_taisai_name" = "Đại lễ Miyazaki Jingu";
+"miyazaki_jingu_taisai_description" = "Lễ hội mùa thu của đền Miyazaki Jingu. Lễ hội lâu đời tổ chức tại Miyazaki Jingu gắn với Thiên hoàng Jimmu.";
+"miyazaki_jingu_taisai_location" = "Thành phố Miyazaki, đền Miyazaki Jingu";
+"miyazaki_jingu_taisai_feature1" = "Thiên hoàng Jimmu";
+"miyazaki_jingu_taisai_feature2" = "Đền Miyazaki Jingu";
+"miyazaki_jingu_taisai_feature3" = "Lễ hội lâu đời";
 
 // MARK: - Kagoshima Prefecture
 "kagoshima_ohara_festival_name" = "Lễ hội Ohara Kagoshima";
@@ -4090,32 +4090,32 @@
 "ginowan_hagoromo_festival_feature3" = "Đêm Ginowan";
 
 // MARK: - Month Strings
-"month_january" = "January";
-"month_february" = "February";
-"month_march" = "March";
-"month_april" = "April";
-"month_may" = "May";
-"month_june" = "June";
-"month_july" = "July";
-"month_august" = "August";
-"month_september" = "September";
-"month_october" = "October";
-"month_november" = "November";
-"month_december" = "December";
+"month_january" = "Tháng 1";
+"month_february" = "Tháng 2";
+"month_march" = "Tháng 3";
+"month_april" = "Tháng 4";
+"month_may" = "Tháng 5";
+"month_june" = "Tháng 6";
+"month_july" = "Tháng 7";
+"month_august" = "Tháng 8";
+"month_september" = "Tháng 9";
+"month_october" = "Tháng 10";
+"month_november" = "Tháng 11";
+"month_december" = "Tháng 12";
 
-"month_range_july_august" = "July-August";
-"month_range_july_september" = "July-September";
-"month_range_april_october" = "April-October";
-"month_range_january_february" = "January-February";
-"month_range_january_march" = "January-March";
-"month_range_february_march" = "February-March";
-"month_range_february_april" = "February-April";
-"month_range_march_may" = "March-May";
-"month_range_april_may" = "April-May";
-"month_range_october_may" = "October-May";
-"month_range_november_february" = "November-February";
-"month_range_november_may" = "November-May";
-"month_range_december_march" = "December-March";
+"month_range_july_august" = "Tháng 7 - Tháng 8";
+"month_range_july_september" = "Tháng 7 - Tháng 9";
+"month_range_april_october" = "Tháng 4 - Tháng 10";
+"month_range_january_february" = "Tháng 1 - Tháng 2";
+"month_range_january_march" = "Tháng 1 - Tháng 3";
+"month_range_february_march" = "Tháng 2 - Tháng 3";
+"month_range_february_april" = "Tháng 2 - Tháng 4";
+"month_range_march_may" = "Tháng 3 - Tháng 5";
+"month_range_april_may" = "Tháng 4 - Tháng 5";
+"month_range_october_may" = "Tháng 10 - Tháng 5";
+"month_range_november_february" = "Tháng 11 - Tháng 2";
+"month_range_november_may" = "Tháng 11 - Tháng 5";
+"month_range_december_march" = "Tháng 12 - Tháng 3";
 
 // MARK: - Duration Strings
 "duration_1_day" = "1 ngày";
@@ -4159,36 +4159,36 @@
 "scale_5" = "Lớn nhất Nhật Bản";
 
 // MARK: - Common Phrases
-"festival_suffix" = " Festival";
+"festival_suffix" = "Lễ hội";
 "fireworks_suffix" = " Lễ hội pháo hoa";
 "matsuri_suffix" = " Lễ hội";
-"festival_description_suffix" = " is a highlight.";
+"festival_description_suffix" = " là điểm nhấn.";
 "location_center" = "Trung tâm";
 "location_riverbed" = "Bãi sông";
 "location_port" = "Khu cảng";
 "location_hot_spring" = "Khu suối nước nóng";
 
 
-"festival.summer" = "Summer Festival";
-"festival.fireworks" = "Fireworks Festival";
-"festival.traditional" = "Traditional Festival";
-"festival.dance" = "Dance Festival";
-"festival.food" = "Food Festival";
-"festival.seasonal" = "Seasonal Festival";
-"festival.religious" = "Religious Festival";
+"festival.summer" = "Lễ hội mùa hè";
+"festival.fireworks" = "Đại hội pháo hoa";
+"festival.traditional" = "Lễ hội truyền thống";
+"festival.dance" = "Lễ hội múa";
+"festival.food" = "Lễ hội ẩm thực";
+"festival.seasonal" = "Lễ hội theo mùa";
+"festival.religious" = "Lễ hội tôn giáo";
 
 
-"festival.summer_fireworks" = "Summer Festival & Fireworks";
-"festival.experience" = "Experience festivals in %@";
-"festival.of_prefecture" = "Festivals of %@";
-"festival.event_info" = "Event Information";
+"festival.summer_fireworks" = "Lễ hội mùa hè & pháo hoa";
+"festival.experience" = "Trải nghiệm lễ hội %@";
+"festival.of_prefecture" = "Lễ hội của %@";
+"festival.event_info" = "Thông tin sự kiện";
 
-"festival.period" = "Period";
-"festival.duration" = "Duration";
-"festival.location" = "Location";
-"festival.scale" = "Scale";
-"festival.highlights" = "Highlights & Features";
-"festival.tips" = "Tips for Enjoyment";
+"festival.period" = "Thời gian tổ chức";
+"festival.duration" = "Thời lượng";
+"festival.location" = "Địa điểm";
+"festival.scale" = "Quy mô";
+"festival.highlights" = "Điểm nhấn & đặc trưng";
+"festival.tips" = "Mẹo tận hưởng";
 
 // Summer Festival Tips
 "tips.summer.1" = "Mặc yukata để tận hưởng không khí";
@@ -4261,17 +4261,17 @@
 "tips.traditional.2" = "Tận hưởng giao lưu với người địa phương";
 "tips.traditional.3" = "Cân nhắc tham gia trong trang phục truyền thống";
 
-"festival.seasons" = "Spring, Autumn, and Winter Festivals";
-"festival.experience_seasons" = "Experience the four seasons of %@";
+"festival.seasons" = "Lễ hội xuân, thu và đông";
+"festival.experience_seasons" = "Trải nghiệm bốn mùa của %@";
 
 
-"otherFestival.spring" = "Spring Festival";
-"otherFestival.autumn" = "Autumn Festival";
-"otherFestival.winter" = "Winter Festival";
-"otherFestival.sakura" = "Cherry Blossom Festival";
-"otherFestival.illumination" = "Illumination";
-"otherFestival.snow" = "Snow Festival";
-"otherFestival.traditional" = "Traditional Event";
+"otherFestival.spring" = "Lễ hội mùa xuân";
+"otherFestival.autumn" = "Lễ hội mùa thu";
+"otherFestival.winter" = "Lễ hội mùa đông";
+"otherFestival.sakura" = "Lễ hội hoa anh đào";
+"otherFestival.illumination" = "Thắp sáng nghệ thuật";
+"otherFestival.snow" = "Lễ hội tuyết";
+"otherFestival.traditional" = "Nghi lễ truyền thống";
 
 "search.placeholder" = "Tìm theo tên lễ hội, mô tả hoặc tỉnh";
 
@@ -4704,10 +4704,10 @@
 
 
 // 自然観光名所タイプ
-"nature_type.night_view" = "Night View";
-"nature_type.starry_sky" = "Starry Sky";
-"nature_type.sea" = "Sea";
-"nature_type.camping" = "Camping";
+"nature_type.night_view" = "Cảnh đêm";
+"nature_type.starry_sky" = "Bầu trời sao";
+"nature_type.sea" = "Biển";
+"nature_type.camping" = "Cắm trại";
 
 // 設定画面
 "nature_settings" = "Cài đặt";
@@ -4715,49 +4715,49 @@
 "display_icon_settings" = "Cài đặt biểu tượng hiển thị";
 "select_display_icons" = "Vui lòng chọn biểu tượng hiển thị trên bản đồ";
 "spots_count_format" = "%d điểm";
-"spot_count_format" = "%d spot";
+"spot_count_format" = "%d điểm";
 
 // 詳細画面
-"spot_features" = "Spot Features";
-"spot_map" = "Spot Map";
+"spot_features" = "Đặc điểm địa điểm";
+"spot_map" = "Bản đồ địa điểm";
 
 
 // MARK: - Night View Spots
-"nightview_hakodate_name" = "Mount Hakodate";
-"nightview_hakodate_description" = "Hokkaido's iconic night view spot famous for its million-dollar night scenery";
+"nightview_hakodate_name" = "Núi Hakodate";
+"nightview_hakodate_description" = "Điểm ngắm cảnh đêm tiêu biểu của Hokkaido, nổi tiếng với khung cảnh về đêm trị giá triệu đô";
 
-"nightview_maya_name" = "Mount Maya Kikuseidai";
-"nightview_maya_description" = "One of Kansai's premier night view spots overlooking Kobe cityscape and Osaka Bay";
+"nightview_maya_name" = "Đài Kikuseidai núi Maya";
+"nightview_maya_description" = "Một trong những điểm ngắm cảnh đêm hàng đầu vùng Kansai, bao quát toàn cảnh Kobe và vịnh Osaka";
 
-"nightview_inasa_name" = "Mount Inasa";
-"nightview_inasa_description" = "Beautiful night view of Nagasaki, selected as one of the world's new top three night views";
+"nightview_inasa_name" = "Núi Inasa";
+"nightview_inasa_description" = "Cảnh đêm tuyệt đẹp của Nagasaki, được chọn là một trong ba cảnh đêm mới đẹp nhất thế giới";
 
-"nightview_tokyo_towers_name" = "Tokyo Skytree & Tokyo Tower";
-"nightview_tokyo_towers_description" = "Spectacular night views from Tokyo's two iconic towers";
+"nightview_tokyo_towers_name" = "Tokyo Skytree & Tháp Tokyo";
+"nightview_tokyo_towers_description" = "Cảnh đêm tuyệt đẹp từ hai tòa tháp tiêu biểu của Tokyo";
 
 "nightview_shonan_name" = "Shonan-daira";
-"nightview_shonan_description" = "Kanagawa's night view spot overlooking the Shonan coastline";
+"nightview_shonan_description" = "Điểm ngắm cảnh đêm của tỉnh Kanagawa, bao quát toàn cảnh bờ biển Shonan";
 
-"nightview_rokko_name" = "Mount Rokko";
-"nightview_rokko_description" = "Kansai's premier night view spot known as the 10-million-dollar night view";
+"nightview_rokko_name" = "Núi Rokko";
+"nightview_rokko_description" = "Điểm ngắm cảnh đêm số một Kansai, được mệnh danh là cảnh đêm trị giá mười triệu đô";
 
-"nightview_sarakura_name" = "Mount Sarakura";
-"nightview_sarakura_description" = "One of Japan's new top three night views, overlooking Kitakyushu city";
+"nightview_sarakura_name" = "Núi Sarakura";
+"nightview_sarakura_description" = "Một trong ba cảnh đêm mới đẹp nhất Nhật Bản, bao quát toàn cảnh thành phố Kitakyushu";
 
 "nightview_minatomirai_name" = "Minato Mirai 21";
-"nightview_minatomirai_description" = "Yokohama's iconic night view area featuring the Ferris wheel and cityscape";
+"nightview_minatomirai_description" = "Khu ngắm cảnh đêm tiêu biểu của Yokohama, vẻ đẹp của vòng đu quay và những tòa nhà cao tầng";
 
 "nightview_tempozan_name" = "Tempozan";
-"nightview_tempozan_description" = "Bay area spot for enjoying Osaka Port's night view";
+"nightview_tempozan_description" = "Điểm khu vịnh để thưởng thức cảnh đêm cảng Osaka";
 
-"nightview_wakakusa_name" = "Mount Wakakusa";
-"nightview_wakakusa_description" = "Ancient capital's night view spot overlooking the Nara Basin";
+"nightview_wakakusa_name" = "Núi Wakakusa";
+"nightview_wakakusa_description" = "Điểm ngắm cảnh đêm của cố đô, bao quát toàn cảnh về đêm của bồn địa Nara";
 
-"nightview_shiroyama_name" = "Shiroyama Park";
-"nightview_shiroyama_description" = "Southern Kyushu's night view attraction overlooking Sakurajima and Kagoshima city";
+"nightview_shiroyama_name" = "Công viên Shiroyama";
+"nightview_shiroyama_description" = "Danh thắng cảnh đêm nam Kyushu, ngắm nhìn Sakurajima và thành phố Kagoshima";
 
-"nightview_moiwa_name" = "Mount Moiwa";
-"nightview_moiwa_description" = "Hokkaido's night view spot overlooking Sapporo cityscape";
+"nightview_moiwa_name" = "Núi Moiwa";
+"nightview_moiwa_description" = "Điểm ngắm cảnh đêm của Hokkaido, bao quát toàn cảnh thành phố Sapporo";
 
 // MARK: - Starry Sky Spots
 "starry_achi_name" = "Làng Achi";
@@ -5112,7 +5112,7 @@
 "plan.timeblock.empty" = "Kéo các mục vào đây";
 "plan.timeblock.title.label" = "Tiêu đề (tùy chọn)";
 "plan.timeblock.title.placeholder" = "Ví dụ: Buổi sáng / Ăn trưa / Buổi tối";
-"attraction.open_in_maps" = "Open in Maps";
+"attraction.open_in_maps" = "Mở trong Bản đồ";
 "plan.category.souvenir" = "Quà lưu niệm";
 "plan.grouping.day.toggle" = "Chia theo ngày";
 "plan.grouping.flat" = "Gộp chung";
@@ -5159,10 +5159,10 @@
 "plan.share" = "Chia sẻ";
 "plan.timeblock.untimed" = "Chưa đặt giờ";
 
-"social.search_youtube" = "Search on YouTube";
-"social.search_instagram" = "Search on Instagram";
-"social.search_tabelog" = "Find restaurants on Tabelog";
-"gourmet.explore_more" = "Explore more";
+"social.search_youtube" = "Tìm trên YouTube";
+"social.search_instagram" = "Tìm trên Instagram";
+"social.search_tabelog" = "Tìm quán trên Tabelog";
+"gourmet.explore_more" = "Tìm hiểu & khám phá thêm";
 
 /* --- カード上のタグ表示用の短縮名（英語は長いため短縮） --- */
 "onsen_type_tag.scenic" = "Cảnh đẹp";
@@ -5179,34 +5179,34 @@
 "food_category_local_tag" = "Địa phương";
 "food_category_drinks_tag" = "Đồ uống";
 "food_category_vegetables_tag" = "Rau & quả";
-"souvenirCategory.sweets_tag" = "Sweets";
-"souvenirCategory.food_tag" = "Food";
-"souvenirCategory.crafts_tag" = "Crafts";
-"souvenirCategory.drinks_tag" = "Drinks";
-"souvenirCategory.textiles_tag" = "Textiles";
-"souvenirCategory.ceramics_tag" = "Ceramics";
-"souvenirCategory.regional_tag" = "Regional";
+"souvenirCategory.sweets_tag" = "Bánh kẹo";
+"souvenirCategory.food_tag" = "Thực phẩm";
+"souvenirCategory.crafts_tag" = "Thủ công";
+"souvenirCategory.drinks_tag" = "Đồ uống";
+"souvenirCategory.textiles_tag" = "Vải vóc";
+"souvenirCategory.ceramics_tag" = "Gốm sứ";
+"souvenirCategory.regional_tag" = "Đặc sản vùng";
 
 /* --- 祭りカード上のタグ表示用の短縮名（英語は長いため "Festival" を省く） --- */
-"festival.summer_tag" = "Summer";
-"festival.fireworks_tag" = "Fireworks";
-"festival.traditional_tag" = "Traditional";
-"festival.dance_tag" = "Dance";
-"festival.food_tag" = "Food";
-"festival.seasonal_tag" = "Seasonal";
-"festival.religious_tag" = "Religious";
-"otherFestival.spring_tag" = "Spring";
-"otherFestival.autumn_tag" = "Autumn";
-"otherFestival.winter_tag" = "Winter";
-"otherFestival.sakura_tag" = "Cherry";
-"otherFestival.illumination_tag" = "Illumination";
-"otherFestival.snow_tag" = "Snow";
-"otherFestival.traditional_tag" = "Traditional";
+"festival.summer_tag" = "Mùa hè";
+"festival.fireworks_tag" = "Pháo hoa";
+"festival.traditional_tag" = "Truyền thống";
+"festival.dance_tag" = "Múa";
+"festival.food_tag" = "Ẩm thực";
+"festival.seasonal_tag" = "Theo mùa";
+"festival.religious_tag" = "Tôn giáo";
+"otherFestival.spring_tag" = "Mùa xuân";
+"otherFestival.autumn_tag" = "Mùa thu";
+"otherFestival.winter_tag" = "Mùa đông";
+"otherFestival.sakura_tag" = "Hoa anh đào";
+"otherFestival.illumination_tag" = "Thắp sáng";
+"otherFestival.snow_tag" = "Tuyết";
+"otherFestival.traditional_tag" = "Truyền thống";
 
-"review.prompt.title" = "Enjoying Tabisaki Choice?";
-"review.prompt.message" = "If you like the app, a quick review would mean a lot to us.";
-"review.prompt.yes" = "Write a Review";
-"review.prompt.no" = "Not Now";
+"review.prompt.title" = "Bạn thấy Tabisaki Choice thế nào?";
+"review.prompt.message" = "Nếu thích ứng dụng, một đánh giá ngắn sẽ rất ý nghĩa với chúng tôi.";
+"review.prompt.yes" = "Viết đánh giá";
+"review.prompt.no" = "Để sau";
 
 "attraction_azabudai_hills" = "Azabudai Hills";
 "attraction_azabudai_hills_desc" = "Khai trương 2023. Khu đô thị phức hợp xanh mát lấy tháp Mori JP cao nhất Nhật Bản làm trung tâm";

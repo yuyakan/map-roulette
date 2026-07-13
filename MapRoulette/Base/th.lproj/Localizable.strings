@@ -6,8 +6,8 @@
   
 */
 
-"tourism.spot" = "Famous Tourist Spots";
-"tourism.info" = "Tourist Information";
+"tourism.spot" = "สปอตท่องเที่ยวชื่อดัง";
+"tourism.info" = "ข้อมูลท่องเที่ยว";
 
 /* Prefecture names in English */
 "prefecture.hokkaido" = "ฮอกไกโด";
@@ -1786,7 +1786,7 @@
 
 "recommended_enjoyment" = "วิธีเพลิดเพลิน";
 "price_range" = "ช่วงราคา";
-"best_season" = "Best Season";
+"best_season" = "ฤดูกาลที่ดีที่สุด";
 "category" = "หมวดหมู่";
 "popularity_rank" = "ความนิยม";
 "basic_info" = "ข้อมูลพื้นฐาน";
@@ -1839,21 +1839,21 @@
 "season_winter_spring" = "ฤดูหนาว–ใบไม้ผลิ";
 "season_summer_autumn" = "ฤดูร้อน–ใบไม้ร่วง";
 
-"souvenir.title" = "Local Specialty Souvenir";
-"souvenir.memory" = "Bring back memories of %@";
-"souvenir.about" = "About the product";
-"souvenir.bestSeason" = "Best Season";
-"souvenir.category" = "Category";
-"souvenir.popularity" = "Popularity";
-"souvenir.detailTitle" = "Souvenir Details";
+"souvenir.title" = "ของฝากขึ้นชื่อ";
+"souvenir.memory" = "นำความทรงจำของ%@กลับบ้าน";
+"souvenir.about" = "เกี่ยวกับสินค้า";
+"souvenir.bestSeason" = "ช่วงเวลาแนะนำ";
+"souvenir.category" = "หมวดหมู่";
+"souvenir.popularity" = "ความนิยม";
+"souvenir.detailTitle" = "รายละเอียดของฝาก";
 
-"souvenirCategory.sweets" = "Sweets";
-"souvenirCategory.food" = "Food";
-"souvenirCategory.crafts" = "Crafts";
-"souvenirCategory.drinks" = "Drinks";
-"souvenirCategory.textiles" = "Textiles / Clothing";
-"souvenirCategory.ceramics" = "Ceramics";
-"souvenirCategory.regional" = "Regional Specialties";
+"souvenirCategory.sweets" = "ขนม";
+"souvenirCategory.food" = "อาหาร";
+"souvenirCategory.crafts" = "งานหัตถกรรม";
+"souvenirCategory.drinks" = "เครื่องดื่ม";
+"souvenirCategory.textiles" = "สิ่งทอ・เสื้อผ้า";
+"souvenirCategory.ceramics" = "เครื่องปั้นดินเผา";
+"souvenirCategory.regional" = "สินค้าเฉพาะถิ่น";
 
 
 // =====================================================
@@ -3032,12 +3032,12 @@
 "hirosaki_neputa_festival_feature2" = "อารมณ์แบบสึการุ";
 "hirosaki_neputa_festival_feature3" = "ความงามแห่งความเงียบสงัด";
 
-"goshogawara_tachineputa_name" = "Goshogawara Tachi-Neputa";
-"goshogawara_tachineputa_description" = "A spectacular festival featuring 23-meter tall Tachi-Neputa. Its power and beauty captivate audiences.";
-"goshogawara_tachineputa_location" = "Goshogawara City Streets";
-"goshogawara_tachineputa_feature1" = "23 Meters Tall";
-"goshogawara_tachineputa_feature2" = "Giant Tachi-Neputa";
-"goshogawara_tachineputa_feature3" = "Overwhelming Power";
+"goshogawara_tachineputa_name" = "โกโชกาวาระ ทาจิเนปูตะ";
+"goshogawara_tachineputa_description" = "เทศกาลอันน่าตื่นตากับทาจิเนปูตะยักษ์สูง 23 เมตร ที่ตรึงใจผู้ชมด้วยพลังและความงดงาม";
+"goshogawara_tachineputa_location" = "ย่านใจกลางเมืองโกโชกาวาระ";
+"goshogawara_tachineputa_feature1" = "สูง 23 เมตร";
+"goshogawara_tachineputa_feature2" = "ทาจิเนปูตะยักษ์";
+"goshogawara_tachineputa_feature3" = "พลังอันล้นเหลือ";
 
 "hachinohe_sansha_festival_name" = "เทศกาลใหญ่สามศาลเจ้าฮาจิโนเฮะ";
 "hachinohe_sansha_festival_description" = "เทศกาลที่ใหญ่ที่สุดของฮาจิโนเฮะที่มีขบวนรถแห่หรูหราตระการตา หุ่นอันประณีตและการตกแต่งที่งดงามคือไฮไลต์";
@@ -3142,12 +3142,12 @@
 "fukushima_waraji_festival_feature2" = "ยาว 12 เมตร";
 "fukushima_waraji_festival_feature3" = "การอธิษฐานขาแข็งแรง";
 
-"soma_nomaoi_name" = "Soma Nomaoi";
-"soma_nomaoi_description" = "A traditional event in the Soma region continuing for over 1,000 years. A magnificent festival featuring mounted warriors in armor.";
-"soma_nomaoi_location" = "Soma City, Minamisoma City";
-"soma_nomaoi_feature1" = "1,000 Years of History";
-"soma_nomaoi_feature2" = "Mounted Warriors";
-"soma_nomaoi_feature3" = "Armor Procession";
+"soma_nomaoi_name" = "โซมะ โนมาโออิ";
+"soma_nomaoi_description" = "พิธีดั้งเดิมของภูมิภาคโซมะที่สืบทอดมากว่า 1,000 ปี เทศกาลอันสง่างามกับนักรบขี่ม้าในชุดเกราะ";
+"soma_nomaoi_location" = "เมืองโซมะ・เมืองมินามิโซมะ";
+"soma_nomaoi_feature1" = "ประวัติศาสตร์ 1,000 ปี";
+"soma_nomaoi_feature2" = "นักรบขี่ม้า";
+"soma_nomaoi_feature3" = "ขบวนชุดเกราะ";
 
 "aizu_festival_name" = "เทศกาลไอสึ";
 "aizu_festival_description" = "เทศกาลฤดูใบไม้ร่วงที่จำลองประวัติศาสตร์ของแคว้นไอสึ ขบวนเจ้าเมืองไอสึและขบวนนักรบที่ปราสาททสึรุงะคือไฮไลต์";
@@ -3237,12 +3237,12 @@
 "kawagoe_festival_feature2" = "เอโดะน้อย";
 "kawagoe_festival_feature3" = "รถแห่ประณีต";
 
-"chichibu_yomatsuri_name" = "Chichibu Night Festival";
-"chichibu_yomatsuri_description" = "One of Japan's three major float festivals. A magnificent festival where gorgeous stalls and umbrella floats color Chichibu's winter nights.";
-"chichibu_yomatsuri_location" = "Chichibu City";
-"chichibu_yomatsuri_feature1" = "Japan's Three Major Float Festivals";
-"chichibu_yomatsuri_feature2" = "Winter Festival";
-"chichibu_yomatsuri_feature3" = "Stalls and Umbrella Floats";
+"chichibu_yomatsuri_name" = "เทศกาลราตรีจิจิบุ";
+"chichibu_yomatsuri_description" = "หนึ่งในสามเทศกาลรถแห่ที่ยิ่งใหญ่ของญี่ปุ่น เทศกาลอันตระการตากับรถยาไตและคาสะโบโกะที่แต่งแต้มค่ำคืนฤดูหนาวของจิจิบุ";
+"chichibu_yomatsuri_location" = "เมืองจิจิบุ";
+"chichibu_yomatsuri_feature1" = "สามเทศกาลรถแห่ของญี่ปุ่น";
+"chichibu_yomatsuri_feature2" = "เทศกาลฤดูหนาว";
+"chichibu_yomatsuri_feature3" = "รถยาไตและคาสะโบโกะ";
 
 "todabashi_fireworks_name" = "เทศกาลดอกไม้ไฟโทดาบาชิ";
 "todabashi_fireworks_description" = "การแสดงดอกไม้ไฟที่จัดขึ้นริมแม่น้ำอาราคาวะ จัดร่วมกับเขตอิตาบาชิของโตเกียว มีการจุดดอกไม้ไฟราว 12,000 ลูก";
@@ -3331,19 +3331,19 @@
 "kanda_festival_feature3" = "ขบวนรถแห่";
 
 // MARK: - Kanagawa Prefecture
-"shonan_hiratsuka_tanabata_name" = "Shonan Hiratsuka Tanabata Festival";
-"shonan_hiratsuka_tanabata_description" = "One of Kanto's three major Tanabata festivals. A summer tradition where central Hiratsuka City is decorated with gorgeous Tanabata ornaments.";
-"shonan_hiratsuka_tanabata_location" = "Central Hiratsuka City";
-"shonan_hiratsuka_tanabata_feature1" = "Kanto's Three Major Tanabata";
-"shonan_hiratsuka_tanabata_feature2" = "Gorgeous Tanabata Decorations";
-"shonan_hiratsuka_tanabata_feature3" = "4 Million Visitors";
+"shonan_hiratsuka_tanabata_name" = "เทศกาลทานาบาตะโชนัน ฮิระสึกะ";
+"shonan_hiratsuka_tanabata_description" = "หนึ่งในสามเทศกาลทานาบาตะที่ยิ่งใหญ่ของคันโต ภาพประจำฤดูร้อนที่ใจกลางเมืองฮิระสึกะประดับด้วยเครื่องประดับทานาบาตะอันตระการตา";
+"shonan_hiratsuka_tanabata_location" = "ใจกลางเมืองฮิระสึกะ";
+"shonan_hiratsuka_tanabata_feature1" = "สามทานาบาตะของคันโต";
+"shonan_hiratsuka_tanabata_feature2" = "เครื่องประดับทานาบาตะอลังการ";
+"shonan_hiratsuka_tanabata_feature3" = "ผู้มาเยือน 4 ล้านคน";
 
-"yokohama_kaikosai_name" = "Yokohama Port Opening Festival";
-"yokohama_kaikosai_description" = "A festival commemorating the opening of Yokohama Port. Events at Minato Mirai and fireworks displays color Yokohama's early summer.";
-"yokohama_kaikosai_location" = "Minato Mirai 21";
-"yokohama_kaikosai_feature1" = "Port Opening Commemoration";
-"yokohama_kaikosai_feature2" = "Minato Mirai";
-"yokohama_kaikosai_feature3" = "Port Fireworks";
+"yokohama_kaikosai_name" = "เทศกาลเปิดท่าเรือโยโกฮามะ";
+"yokohama_kaikosai_description" = "เทศกาลรำลึกการเปิดท่าเรือโยโกฮามะ อีเวนต์ที่มินาโตะมิไรและการแสดงพลุแต่งแต้มต้นฤดูร้อนของโยโกฮามะ";
+"yokohama_kaikosai_location" = "มินาโตะมิไร 21";
+"yokohama_kaikosai_feature1" = "รำลึกการเปิดท่าเรือ";
+"yokohama_kaikosai_feature2" = "มินาโตะมิไร";
+"yokohama_kaikosai_feature3" = "พลุริมท่าเรือ";
 
 "kamakura_festival_name" = "เทศกาลคามาคุระ";
 "kamakura_festival_description" = "เทศกาลที่แต่งแต้มฤดูใบไม้ผลิของเมืองเก่าคามาคุระ จำลองวัฒนธรรมอันสง่างามของยุคคามาคุระ เช่น ระบำของชิซุกะโกเซ็นและยาบุซาเมะ (ยิงธนูบนหลังม้า)";
@@ -3360,12 +3360,12 @@
 "atsugi_ayu_festival_feature3" = "ความอุดมสมบูรณ์ของแม่น้ำ";
 
 // MARK: - Niigata Prefecture
-"nagaoka_hanabi_name" = "Nagaoka Festival Grand Fireworks";
-"nagaoka_hanabi_description" = "One of Japan's three major fireworks displays. Features spectacular Sanshakudama shells and 2km-wide Phoenix display symbolizing recovery and hope.";
-"nagaoka_hanabi_location" = "Nagaoka City, Shinano River Riverbed";
-"nagaoka_hanabi_feature1" = "Japan's Three Major Fireworks";
-"nagaoka_hanabi_feature2" = "Sanshakudama Shells";
-"nagaoka_hanabi_feature3" = "Phoenix Display";
+"nagaoka_hanabi_name" = "เทศกาลนางาโอกะ พลุใหญ่";
+"nagaoka_hanabi_description" = "หนึ่งในสามเทศกาลพลุที่ยิ่งใหญ่ของญี่ปุ่น ลูกพลุซันชะกุดามะและฟีนิกซ์ยาว 2 กม. ที่บรรจุความหวังสู่การฟื้นฟูช่างน่าตื่นตา";
+"nagaoka_hanabi_location" = "เมืองนางาโอกะ・ริมฝั่งแม่น้ำชินาโนะ";
+"nagaoka_hanabi_feature1" = "สามพลุใหญ่ของญี่ปุ่น";
+"nagaoka_hanabi_feature2" = "ลูกพลุซันชะกุดามะ";
+"nagaoka_hanabi_feature3" = "ฟีนิกซ์";
 
 "katakai_festival_name" = "เทศกาลคาตาไก";
 "katakai_festival_description" = "การแสดงดอกไม้ไฟที่จุดลูกยนชะคุดามะที่ใหญ่ที่สุดในโลก เทศกาลดั้งเดิมที่มีประวัติ 400 ปีในฐานะดอกไม้ไฟถวาย";
@@ -3374,12 +3374,12 @@
 "katakai_festival_feature2" = "ดอกไม้ไฟถวาย";
 "katakai_festival_feature3" = "ประวัติ 400 ปี";
 
-"kashiwazaki_umi_hanabi_name" = "Kashiwazaki Sea Grand Fireworks";
-"kashiwazaki_umi_hanabi_description" = "A fireworks display launched against the backdrop of the Sea of Japan. Marine fireworks and 300 consecutive large shells are the highlights.";
-"kashiwazaki_umi_hanabi_location" = "Kashiwazaki City, Central Beach";
-"kashiwazaki_umi_hanabi_feature1" = "Marine Fireworks";
-"kashiwazaki_umi_hanabi_feature2" = "300 Consecutive Large Shells";
-"kashiwazaki_umi_hanabi_feature3" = "Sea of Japan Backdrop";
+"kashiwazaki_umi_hanabi_name" = "เทศกาลพลุใหญ่แห่งทะเลคาชิวาซากิ";
+"kashiwazaki_umi_hanabi_description" = "เทศกาลพลุที่จุดขึ้นฟ้าโดยมีทะเลญี่ปุ่นเป็นฉากหลัง จุดเด่นคือพลุกลางทะเลและลูกพลุยักษ์ 300 นัดต่อเนื่อง";
+"kashiwazaki_umi_hanabi_location" = "เมืองคาชิวาซากิ・ชายหาดกลาง";
+"kashiwazaki_umi_hanabi_feature1" = "พลุกลางทะเล";
+"kashiwazaki_umi_hanabi_feature2" = "ลูกพลุยักษ์ 300 นัดต่อเนื่อง";
+"kashiwazaki_umi_hanabi_feature3" = "ฉากหลังทะเลญี่ปุ่น";
 
 "echigo_festival_name" = "เทศกาลเอจิโกะ";
 "echigo_festival_description" = "เทศกาลตัวแทนฤดูร้อนของนีงาตะ เมืองนีงาตะคึกคักที่สุดในรอบปีด้วยขบวนเพลงพื้นบ้านและการแสดงดอกไม้ไฟยิ่งใหญ่";
@@ -3389,19 +3389,19 @@
 "echigo_festival_feature3" = "ฤดูร้อนของนีงาตะ";
 
 // MARK: - Toyama Prefecture
-"takaoka_tanabata_name" = "Takaoka Tanabata Festival";
-"takaoka_tanabata_description" = "A Tanabata festival held in central Takaoka City. Shopping streets are decorated with beautiful Tanabata ornaments.";
-"takaoka_tanabata_location" = "Central Takaoka City";
-"takaoka_tanabata_feature1" = "Shopping Street Decorations";
-"takaoka_tanabata_feature2" = "Tanabata Ornaments";
-"takaoka_tanabata_feature3" = "Week-long Event";
+"takaoka_tanabata_name" = "เทศกาลทานาบาตะทากาโอกะ";
+"takaoka_tanabata_description" = "เทศกาลทานาบาตะที่จัดขึ้นในย่านใจกลางเมืองทากาโอกะ ถนนคนเดินประดับด้วยเครื่องประดับทานาบาตะอันงดงาม";
+"takaoka_tanabata_location" = "ใจกลางเมืองทากาโอกะ";
+"takaoka_tanabata_feature1" = "ประดับถนนคนเดิน";
+"takaoka_tanabata_feature2" = "เครื่องประดับทานาบาตะ";
+"takaoka_tanabata_feature3" = "จัดตลอด 1 สัปดาห์";
 
-"owara_kazenobon_name" = "Owara Kaze-no-Bon";
-"owara_kazenobon_description" = "An elegant dancing festival passed down in Etchu Yatsuo. A mystical festival where dancers perform to the melancholic sound of the kokyu (bowed string instrument).";
-"owara_kazenobon_location" = "Toyama City, Yatsuo Town";
-"owara_kazenobon_feature1" = "Elegant Dancing";
-"owara_kazenobon_feature2" = "Kokyu Sound";
-"owara_kazenobon_feature3" = "Mystical Atmosphere";
+"owara_kazenobon_name" = "โอวาระ คาเซะโนะบง";
+"owara_kazenobon_description" = "เทศกาลระบำอันสง่างามที่สืบทอดในเอ็ตชูยัตสึโอะ เทศกาลชวนฝันที่เต้นรำไปตามเสียงโคคิวอันเปี่ยมด้วยความเศร้าสร้อย";
+"owara_kazenobon_location" = "เมืองโทยามะ ยัตสึโอะ";
+"owara_kazenobon_feature1" = "ระบำอันสง่างาม";
+"owara_kazenobon_feature2" = "เสียงโคคิว";
+"owara_kazenobon_feature3" = "บรรยากาศชวนฝัน";
 
 "toyama_festival_name" = "เทศกาลโทยามะ";
 "toyama_festival_description" = "เทศกาลตัวแทนฤดูร้อนของโทยามะ ขบวนพาเหรดระบำเพลงพื้นบ้านและการแสดงดอกไม้ไฟสร้างความคึกคักให้เมืองโทยามะ";
@@ -3418,12 +3418,12 @@
 "kanazawa_hyakumangoku_festival_feature2" = "การจำลองมาเอดะ โทชิอิเอะ";
 "kanazawa_hyakumangoku_festival_feature3" = "ใหญ่ที่สุดในคานาซาวะ";
 
-"wajima_taisai_name" = "Wajima Grand Festival";
-"wajima_taisai_description" = "Wajima's summer festival, famous for Wajima lacquerware. Vigorous portable shrines and drums enliven the Noto Peninsula's summer.";
-"wajima_taisai_location" = "Wajima City";
-"wajima_taisai_feature1" = "Wajima Lacquerware Town";
-"wajima_taisai_feature2" = "Vigorous Shrines";
-"wajima_taisai_feature3" = "Noto's Summer";
+"wajima_taisai_name" = "เทศกาลใหญ่วาจิมะ";
+"wajima_taisai_description" = "เทศกาลฤดูร้อนของวาจิมะที่โด่งดังด้วยเครื่องเขินวาจิมะ ศาลเจ้าเคลื่อนที่และกลองอันสง่างามช่วยปลุกฤดูร้อนของคาบสมุทรโนโตะ";
+"wajima_taisai_location" = "เมืองวาจิมะ";
+"wajima_taisai_feature1" = "เมืองเครื่องเขินวาจิมะ";
+"wajima_taisai_feature2" = "ศาลเจ้าเคลื่อนที่อันสง่างาม";
+"wajima_taisai_feature3" = "ฤดูร้อนของโนโตะ";
 
 "komatsu_otabi_festival_name" = "เทศกาลโอตาบิโคมัตสึ";
 "komatsu_otabi_festival_description" = "เทศกาลฤดูใบไม้ผลิของโคมัตสึที่มีขบวนรถแห่หรูหราตระการตา ขึ้นชื่อเรื่องการแสดงคาบูกิเด็กด้วย";
@@ -3469,12 +3469,12 @@
 "kofu_summer_festival_feature2" = "อีเวนต์ฤดูร้อน";
 "kofu_summer_festival_feature3" = "ฤดูร้อนของโคฟุ";
 
-"yoshida_himatsuri_name" = "Yoshida Fire Festival";
-"yoshida_himatsuri_description" = "A festival announcing the end of Mount Fuji climbing season. A magnificent festival known for giant torches and Mount Fuji fire rituals.";
-"yoshida_himatsuri_location" = "Fujiyoshida City";
-"yoshida_himatsuri_feature1" = "Mount Fuji Festival";
-"yoshida_himatsuri_feature2" = "Giant Torches";
-"yoshida_himatsuri_feature3" = "Season End Ceremony";
+"yoshida_himatsuri_name" = "เทศกาลไฟโยชิดะ";
+"yoshida_himatsuri_description" = "เทศกาลที่ประกาศการปิดฤดูปีนภูเขาฟูจิ เทศกาลอันสง่างามที่รู้จักด้วยคบเพลิงยักษ์และพิธีไฟแห่งภูเขาฟูจิ";
+"yoshida_himatsuri_location" = "เมืองฟูจิโยชิดะ";
+"yoshida_himatsuri_feature1" = "เทศกาลภูเขาฟูจิ";
+"yoshida_himatsuri_feature2" = "คบเพลิงยักษ์";
+"yoshida_himatsuri_feature3" = "พิธีปิดฤดูปีนเขา";
 
 // MARK: - Nagano Prefecture
 "suwako_fireworks_name" = "เทศกาลดอกไม้ไฟเหนือทะเลสาบซุวะ";
@@ -3484,27 +3484,27 @@
 "suwako_fireworks_feature2" = "ดอกไม้ไฟเหนือทะเลสาบ";
 "suwako_fireworks_feature3" = "ชั้นนำของประเทศ";
 
-"matsumoto_bonbon_name" = "Matsumoto Bon-Bon";
-"matsumoto_bonbon_description" = "Matsumoto's summer festival with total citizen participation. Citizen dancing to the chant of 'Bon-Bon' enlivens Matsumoto's nights.";
-"matsumoto_bonbon_location" = "Central Matsumoto City";
-"matsumoto_bonbon_feature1" = "Total Citizen Participation";
-"matsumoto_bonbon_feature2" = "Bon-Bon Dancing";
-"matsumoto_bonbon_feature3" = "Matsumoto's Night";
+"matsumoto_bonbon_name" = "มัตสึโมโตะ บงบง";
+"matsumoto_bonbon_description" = "เทศกาลฤดูร้อนที่ชาวเมืองมัตสึโมโตะร่วมกันทั้งเมือง ระบำของชาวเมืองพร้อมเสียงเชียร์ \"บงบง\" ช่วยปลุกค่ำคืนของมัตสึโมโตะ";
+"matsumoto_bonbon_location" = "ใจกลางเมืองมัตสึโมโตะ";
+"matsumoto_bonbon_feature1" = "ชาวเมืองร่วมกันทั้งเมือง";
+"matsumoto_bonbon_feature2" = "ระบำบงบง";
+"matsumoto_bonbon_feature3" = "ค่ำคืนของมัตสึโมโตะ";
 
-"iida_ringon_name" = "Iida Ringon";
-"iida_ringon_description" = "Iida City's summer festival. Dance parades along Apple Tree-lined Street are the highlight.";
-"iida_ringon_location" = "Central Iida City";
-"iida_ringon_feature1" = "Apple Tree-lined Street";
-"iida_ringon_feature2" = "Dance Parade";
-"iida_ringon_feature3" = "Iida's Summer";
+"iida_ringon_name" = "อีดะ ริงกง";
+"iida_ringon_description" = "เทศกาลฤดูร้อนของเมืองอีดะ จุดเด่นคือขบวนพาเหรดระบำที่จัดขึ้นบนถนนแนวต้นแอปเปิล";
+"iida_ringon_location" = "ใจกลางเมืองอีดะ";
+"iida_ringon_feature1" = "ถนนแนวต้นแอปเปิล";
+"iida_ringon_feature2" = "ขบวนพาเหรดระบำ";
+"iida_ringon_feature3" = "ฤดูร้อนของอีดะ";
 
 // MARK: - Gifu Prefecture
-"gujo_odori_name" = "Gujo Odori";
-"gujo_odori_description" = "One of Japan's three major bon dances. A dancing festival continuing from July to September, famous for all-night dancing.";
-"gujo_odori_location" = "Gujo Hachiman";
-"gujo_odori_feature1" = "Japan's Three Major Bon Dances";
-"gujo_odori_feature2" = "All-night Dancing";
-"gujo_odori_feature3" = "2-month Duration";
+"gujo_odori_name" = "กุโจ โอโดริ";
+"gujo_odori_description" = "หนึ่งในสามระบำบงที่ยิ่งใหญ่ของญี่ปุ่น เทศกาลระบำที่จัดต่อเนื่องตั้งแต่กรกฎาคมถึงกันยายน โด่งดังด้วยการเต้นข้ามคืน";
+"gujo_odori_location" = "กุโจ ฮาจิมัง";
+"gujo_odori_feature1" = "สามระบำบงของญี่ปุ่น";
+"gujo_odori_feature2" = "เต้นข้ามคืน";
+"gujo_odori_feature3" = "จัด 2 เดือน";
 
 "gero_onsen_festival_name" = "เทศกาลออนเซ็นเกโระ";
 "gero_onsen_festival_description" = "เทศกาลฤดูร้อนที่จัดขึ้นในย่านออนเซ็นเกโระ มิโคชิออนเซ็นและการแสดงดอกไม้ไฟสร้างความคึกคักให้ย่านออนเซ็น";
@@ -3623,12 +3623,12 @@
 "gion_festival_feature2" = "ขบวนแห่ยามาโฮโกะ";
 "gion_festival_feature3" = "จัดยาวหนึ่งเดือน";
 
-"gozan_okuribi_name" = "Gozan Okuribi";
-"gozan_okuribi_description" = "Kyoto's summer tradition for sending off Bon spirits. Five bonfires including the famous Daimonji character illuminate the night sky.";
-"gozan_okuribi_location" = "Kyoto City, Higashiyama";
-"gozan_okuribi_feature1" = "Daimonji";
-"gozan_okuribi_feature2" = "Spirit Sending";
-"gozan_okuribi_feature3" = "Summer Tradition";
+"gozan_okuribi_name" = "โกซัง โอคุริบิ";
+"gozan_okuribi_description" = "ภาพประจำฤดูร้อนของเกียวโตในการส่งวิญญาณบรรพบุรุษกลับในเทศกาลบง กองไฟส่ง 5 กองรวมถึงตัวอักษรไดมนจิที่โด่งดังแต่งแต้มท้องฟ้ายามค่ำ";
+"gozan_okuribi_location" = "เมืองเกียวโต・ฮิงาชิยามะ";
+"gozan_okuribi_feature1" = "ไดมนจิ";
+"gozan_okuribi_feature2" = "ส่งวิญญาณบรรพบุรุษ";
+"gozan_okuribi_feature3" = "ภาพประจำฤดูร้อน";
 
 "jidai_festival_name" = "เทศกาลจิได";
 "jidai_festival_description" = "หนึ่งในสามเทศกาลใหญ่ของเกียวโต ขบวนแห่ด้วยชุดแต่งกายตามยุคสมัยตั้งแต่ยุคเฮอันจนถึงการปฏิรูปเมจิ จำลองประวัติศาสตร์ของเกียวโต";
@@ -3689,19 +3689,19 @@
 "himeji_yukata_festival_feature3" = "ภาพประจำต้นฤดูร้อน";
 
 // MARK: - Nara Prefecture
-"nara_tokae_name" = "Nara Tokae";
-"nara_tokae_description" = "A mystical summer event illuminating Nara Park area with about 20,000 candles. The nights of ancient Nara are beautifully lit.";
-"nara_tokae_location" = "Nara Park Area";
-"nara_tokae_feature1" = "20,000 Candles";
-"nara_tokae_feature2" = "Mystical Night View";
-"nara_tokae_feature3" = "Ancient Capital Summer";
+"nara_tokae_name" = "นารา โทกาเอะ";
+"nara_tokae_description" = "อีเวนต์ฤดูร้อนอันชวนฝันที่แต่งแต้มบริเวณสวนนาราด้วยเทียนราว 20,000 เล่ม ค่ำคืนของเมืองหลวงเก่านาราถูกส่องสว่างอย่างงดงาม";
+"nara_tokae_location" = "บริเวณสวนนารา";
+"nara_tokae_feature1" = "เทียน 20,000 เล่ม";
+"nara_tokae_feature2" = "ทัศนียภาพยามค่ำชวนฝัน";
+"nara_tokae_feature3" = "ฤดูร้อนของเมืองหลวงเก่า";
 
-"kasuga_taisha_mantoro_name" = "Kasuga Taisha Mantoro";
-"kasuga_taisha_mantoro_description" = "A lantern festival held twice yearly at Kasuga Taisha. A mystical festival where about 3,000 lanterns are lit simultaneously.";
-"kasuga_taisha_mantoro_location" = "Kasuga Taisha";
-"kasuga_taisha_mantoro_feature1" = "3,000 Lanterns";
-"kasuga_taisha_mantoro_feature2" = "Mystical";
-"kasuga_taisha_mantoro_feature3" = "Twice Yearly";
+"kasuga_taisha_mantoro_name" = "คาซุงะไทฉะ มันโทโร";
+"kasuga_taisha_mantoro_description" = "เทศกาลโคมไฟที่จัดขึ้นปีละ 2 ครั้งที่ศาลเจ้าคาซุงะไทฉะ เทศกาลอันลึกลับที่โคมไฟราว 3,000 ดวงถูกจุดขึ้นพร้อมกัน";
+"kasuga_taisha_mantoro_location" = "ศาลเจ้าคาซุงะไทฉะ";
+"kasuga_taisha_mantoro_feature1" = "โคมไฟ 3,000 ดวง";
+"kasuga_taisha_mantoro_feature2" = "ลึกลับ";
+"kasuga_taisha_mantoro_feature3" = "จัดปีละ 2 ครั้ง";
 
 "heijokyo_tenpyo_festival_name" = "เทศกาลเท็นเปียวเฮโจเกียว";
 "heijokyo_tenpyo_festival_description" = "เทศกาลที่เปี่ยมด้วยมนตร์เสน่ห์แห่งอดีตที่จัดขึ้นที่ซากพระราชวังเฮโจ เพลิดเพลินกับอีเวนต์ที่จำลองวัฒนธรรมยุคเท็นเปียว";
@@ -3861,19 +3861,19 @@
 "yamaguchi_tanabata_chochin_festival_feature3" = "ราวกับความฝัน";
 
 // MARK: - Tokushima Prefecture
-"awa_odori_name" = "Awa Odori";
-"awa_odori_description" = "One of Japan’s three major Bon dances. Famous for the phrase 'Dancing fools and watching fools, if you are a fool you might as well dance,' this is Tokushima's summer festival.";
-"awa_odori_location" = "Central Tokushima City";
-"awa_odori_feature1" = "One of Japan’s Three Major Bon Dances";
-"awa_odori_feature2" = "Dancing Fools";
-"awa_odori_feature3" = "1 Million Visitors";
+"awa_odori_name" = "อาวะ โอโดริ";
+"awa_odori_description" = "หนึ่งในสามระบำบงที่ยิ่งใหญ่ของญี่ปุ่น เทศกาลฤดูร้อนของโทกูชิมะที่โด่งดังด้วยวลี \"คนโง่ที่เต้นกับคนโง่ที่ดู ถ้าโง่เหมือนกันไม่เต้นก็ขาดทุน\"";
+"awa_odori_location" = "ใจกลางเมืองโทกูชิมะ";
+"awa_odori_feature1" = "หนึ่งในสามระบำบงของญี่ปุ่น";
+"awa_odori_feature2" = "คนโง่ที่เต้น";
+"awa_odori_feature3" = "ผู้มาเยือน 1 ล้านคน";
 
-"tokushima_awa_odori_name" = "Tokushima City Awa Odori";
-"tokushima_awa_odori_description" = "The authentic Awa Odori held in Tokushima. The highlight is the colorful dancing by groups called 'ren'.";
-"tokushima_awa_odori_location" = "Tokushima City";
-"tokushima_awa_odori_feature1" = "Authentic Awa Odori";
-"tokushima_awa_odori_feature2" = "Ren Dance Groups";
-"tokushima_awa_odori_feature3" = "Colorful Performances";
+"tokushima_awa_odori_name" = "อาวะโอโดริเมืองโทกูชิมะ";
+"tokushima_awa_odori_description" = "อาวะโอโดริของแท้ที่จัดขึ้น ณ ต้นตำรับโทกูชิมะ จุดเด่นคือระบำอันตระการตาของกลุ่มนักเต้นที่เรียกว่า \"เร็ง\"";
+"tokushima_awa_odori_location" = "เมืองโทกูชิมะ";
+"tokushima_awa_odori_feature1" = "อาวะโอโดริต้นตำรับ";
+"tokushima_awa_odori_feature2" = "ระบำของเร็ง";
+"tokushima_awa_odori_feature3" = "การแสดงอันตระการตา";
 
 // MARK: - Kagawa Prefecture
 "sanuki_takamatsu_festival_name" = "เทศกาลซานุกิทาคามัตสึ";
@@ -3928,26 +3928,26 @@
 "tosa_festival_feature3" = "โยซาโคอิ";
 
 // MARK: - Fukuoka Prefecture
-"hakata_gion_yamakasa_name" = "Hakata Gion Yamakasa";
-"hakata_gion_yamakasa_description" = "A bold festival representing summer in Hakata. Known for decorative Yamakasa floats and the carrying Yamakasa, with the ‘Oiyama’ race as the highlight.";
-"hakata_gion_yamakasa_location" = "Hakata Ward";
-"hakata_gion_yamakasa_feature1" = "Decorative Yamakasa";
-"hakata_gion_yamakasa_feature2" = "Carrying Yamakasa";
-"hakata_gion_yamakasa_feature3" = "Oiyama Race";
+"hakata_gion_yamakasa_name" = "ฮากาตะ กิอง ยามากาสะ";
+"hakata_gion_yamakasa_description" = "เทศกาลอันสง่างามที่เป็นตัวแทนฤดูร้อนของฮากาตะ รู้จักด้วยยามากาสะประดับและยามากาสะแบก โดยมีการแข่ง \"โออิยามะ\" เป็นจุดเด่นที่สุด";
+"hakata_gion_yamakasa_location" = "เขตฮากาตะ";
+"hakata_gion_yamakasa_feature1" = "ยามากาสะประดับ";
+"hakata_gion_yamakasa_feature2" = "ยามากาสะแบก";
+"hakata_gion_yamakasa_feature3" = "การแข่งโออิยามะ";
 
-"kokura_gion_taiko_name" = "Kokura Gion Taiko";
-"kokura_gion_taiko_description" = "A drum festival centered around Kokura Castle. The vigorous drum sounds color the summer in Kokura.";
-"kokura_gion_taiko_location" = "Kokurakita Ward, Kitakyushu City";
-"kokura_gion_taiko_feature1" = "Kokura Castle";
-"kokura_gion_taiko_feature2" = "Vigorous Drums";
-"kokura_gion_taiko_feature3" = "Summer Resonance";
+"kokura_gion_taiko_name" = "โคคุระ กิอง ไทโกะ";
+"kokura_gion_taiko_description" = "เทศกาลกลองที่จัดขึ้นโดยมีปราสาทโคคุระเป็นศูนย์กลาง เสียงกลองอันสง่างามแต่งแต้มฤดูร้อนของโคคุระ";
+"kokura_gion_taiko_location" = "เมืองคิตะคิวชู เขตโคคุระคิตะ";
+"kokura_gion_taiko_feature1" = "ปราสาทโคคุระ";
+"kokura_gion_taiko_feature2" = "กลองอันสง่างาม";
+"kokura_gion_taiko_feature3" = "เสียงกังวานแห่งฤดูร้อน";
 
-"tobata_gion_oyamakasa_name" = "Tobata Gion Oyamakasa";
-"tobata_gion_oyamakasa_description" = "A UNESCO intangible cultural heritage festival in Tobata. Lantern Yamakasa floats create a fantastic nighttime scene.";
-"tobata_gion_oyamakasa_location" = "Tobata Ward, Kitakyushu City";
-"tobata_gion_oyamakasa_feature1" = "UNESCO Heritage";
-"tobata_gion_oyamakasa_feature2" = "Lantern Yamakasa";
-"tobata_gion_oyamakasa_feature3" = "Fantastic Night View";
+"tobata_gion_oyamakasa_name" = "โทบาตะ กิอง โอยามากาสะ";
+"tobata_gion_oyamakasa_description" = "เทศกาลของโทบาตะที่ขึ้นทะเบียนเป็นมรดกทางวัฒนธรรมที่จับต้องไม่ได้ของยูเนสโก ยามากาสะโคมไฟแต่งแต้มค่ำคืนอย่างชวนฝัน";
+"tobata_gion_oyamakasa_location" = "เมืองคิตะคิวชู เขตโทบาตะ";
+"tobata_gion_oyamakasa_feature1" = "มรดกยูเนสโก";
+"tobata_gion_oyamakasa_feature2" = "ยามากาสะโคมไฟ";
+"tobata_gion_oyamakasa_feature3" = "ทัศนียภาพยามค่ำชวนฝัน";
 
 "chikugogawa_fireworks_name" = "เทศกาลดอกไม้ไฟแม่น้ำจิคุโงะ";
 "chikugogawa_fireworks_description" = "การแสดงดอกไม้ไฟที่ใหญ่ที่สุดในคิวชู มีการจุดดอกไม้ไฟราว 18,000 ลูกจากริมแม่น้ำจิคุโงะ";
@@ -3957,34 +3957,34 @@
 "chikugogawa_fireworks_feature3" = "แม่น้ำจิคุโงะ";
 
 // MARK: - Saga Prefecture
-"saga_balloon_festa_name" = "Saga International Balloon Fiesta";
-"saga_balloon_festa_description" = "One of Asia's largest hot air balloon events. Colorful hot air balloons decorate the Saga Plain sky, an autumn tradition.";
-"saga_balloon_festa_location" = "Saga City / Kase River Riverbed";
-"saga_balloon_festa_feature1" = "One of Asia’s Largest";
-"saga_balloon_festa_feature2" = "Hot Air Balloons";
-"saga_balloon_festa_feature3" = "Over 100 Balloons";
+"saga_balloon_festa_name" = "เทศกาลบอลลูนนานาชาติซากะ";
+"saga_balloon_festa_description" = "การแข่งบอลลูนลมร้อนที่ใหญ่ที่สุดในเอเชีย บอลลูนลมร้อนหลากสีสันแต่งแต้มท้องฟ้าเหนือที่ราบซากะ เป็นภาพประจำฤดูใบไม้ร่วง";
+"saga_balloon_festa_location" = "เมืองซากะ・ริมฝั่งแม่น้ำคาเซะ";
+"saga_balloon_festa_feature1" = "ใหญ่ที่สุดในเอเชีย";
+"saga_balloon_festa_feature2" = "บอลลูนลมร้อน";
+"saga_balloon_festa_feature3" = "มากกว่า 100 ลูก";
 
-"karatsu_kunchi_name" = "Karatsu Kunchi";
-"karatsu_kunchi_description" = "A UNESCO intangible cultural heritage autumn festival in Karatsu. Fourteen hikiyama floats parade through the town as part of Karatsu Shrine’s festival.";
-"karatsu_kunchi_location" = "Karatsu City";
-"karatsu_kunchi_feature1" = "UNESCO Heritage";
-"karatsu_kunchi_feature2" = "14 Hikiyama Floats";
-"karatsu_kunchi_feature3" = "400 Years of History";
+"karatsu_kunchi_name" = "คาราสึ คุนจิ";
+"karatsu_kunchi_description" = "เทศกาลฤดูใบไม้ร่วงของคาราสึซึ่งเป็นมรดกทางวัฒนธรรมที่จับต้องไม่ได้ของยูเนสโก ฮิกิยามะ 14 คันแห่ไปตามท้องถนนในฐานะพิธีของศาลเจ้าคาราสึ";
+"karatsu_kunchi_location" = "เมืองคาราสึ";
+"karatsu_kunchi_feature1" = "มรดกยูเนสโก";
+"karatsu_kunchi_feature2" = "ฮิกิยามะ 14 คัน";
+"karatsu_kunchi_feature3" = "ประวัติศาสตร์ 400 ปี";
 
 // MARK: - Nagasaki Prefecture
-"nagasaki_shoryonagashi_name" = "Nagasaki Shōryō Nagashi";
-"nagasaki_shoryonagashi_description" = "A summer festival in Nagasaki known as a traditional Obon event. Spirit boats carrying the souls of the deceased parade through the city.";
-"nagasaki_shoryonagashi_location" = "Nagasaki City Center";
-"nagasaki_shoryonagashi_feature1" = "Obon Event";
-"nagasaki_shoryonagashi_feature2" = "Spirit Boats";
-"nagasaki_shoryonagashi_feature3" = "Sound of Firecrackers";
+"nagasaki_shoryonagashi_name" = "นางาซากิ โชเรียวนางาชิ";
+"nagasaki_shoryonagashi_description" = "เทศกาลฤดูร้อนของนางาซากิที่รู้จักในฐานะพิธีดั้งเดิมของโอบง เรือส่งวิญญาณที่ส่งดวงวิญญาณผู้ล่วงลับแห่ไปตามท้องถนน";
+"nagasaki_shoryonagashi_location" = "ใจกลางเมืองนางาซากิ";
+"nagasaki_shoryonagashi_feature1" = "พิธีโอบง";
+"nagasaki_shoryonagashi_feature2" = "เรือส่งวิญญาณ";
+"nagasaki_shoryonagashi_feature3" = "เสียงประทัด";
 
-"nagasaki_kunchi_name" = "Nagasaki Kunchi";
-"nagasaki_kunchi_description" = "A representative autumn festival in Nagasaki. Exotic dances and performances are dedicated as a ritual at Suwa Shrine.";
-"nagasaki_kunchi_location" = "Nagasaki City";
-"nagasaki_kunchi_feature1" = "Exotic Atmosphere";
-"nagasaki_kunchi_feature2" = "Suwa Shrine";
-"nagasaki_kunchi_feature3" = "380 Years of History";
+"nagasaki_kunchi_name" = "นางาซากิ คุนจิ";
+"nagasaki_kunchi_description" = "เทศกาลที่เป็นตัวแทนฤดูใบไม้ร่วงของนางาซากิ ระบำและการแสดงที่เปี่ยมด้วยกลิ่นอายต่างแดนถูกถวายเป็นพิธีของศาลเจ้าซูวะ";
+"nagasaki_kunchi_location" = "เมืองนางาซากิ";
+"nagasaki_kunchi_feature1" = "กลิ่นอายต่างแดน";
+"nagasaki_kunchi_feature2" = "ศาลเจ้าซูวะ";
+"nagasaki_kunchi_feature3" = "ประวัติศาสตร์ 380 ปี";
 
 "sasebo_seaside_festival_name" = "ซาเซโบะซีไซด์เฟสติวัล";
 "sasebo_seaside_festival_description" = "เทศกาลฤดูร้อนที่จัดขึ้นที่ท่าเรือซาเซโบะ เพลิดเพลินกับอีเวนต์กลางทะเลที่เป็นเอกลักษณ์ของเมืองท่าและการแสดงดอกไม้ไฟ";
@@ -4045,12 +4045,12 @@
 "hyuga_hyottoko_festival_feature2" = "ชวนขัน";
 "hyuga_hyottoko_festival_feature3" = "ระบำหน้ากาก";
 
-"miyazaki_jingu_taisai_name" = "Miyazaki Jingu Grand Festival";
-"miyazaki_jingu_taisai_description" = "An autumn festival at Miyazaki Jingu Shrine. A historic festival held at Miyazaki Jingu, related to Emperor Jimmu.";
-"miyazaki_jingu_taisai_location" = "Miyazaki City, Miyazaki Jingu Shrine";
-"miyazaki_jingu_taisai_feature1" = "Emperor Jimmu";
-"miyazaki_jingu_taisai_feature2" = "Miyazaki Jingu Shrine";
-"miyazaki_jingu_taisai_feature3" = "Historic Festival";
+"miyazaki_jingu_taisai_name" = "เทศกาลใหญ่มิยาซากิจินกู";
+"miyazaki_jingu_taisai_description" = "เทศกาลฤดูใบไม้ร่วงของมิยาซากิจินกู เทศกาลอันเก่าแก่ที่จัดขึ้น ณ มิยาซากิจินกูซึ่งเกี่ยวพันกับจักรพรรดิจิมมุ";
+"miyazaki_jingu_taisai_location" = "เมืองมิยาซากิ・มิยาซากิจินกู";
+"miyazaki_jingu_taisai_feature1" = "จักรพรรดิจิมมุ";
+"miyazaki_jingu_taisai_feature2" = "มิยาซากิจินกู";
+"miyazaki_jingu_taisai_feature3" = "เทศกาลอันเก่าแก่";
 
 // MARK: - Kagoshima Prefecture
 "kagoshima_ohara_festival_name" = "เทศกาลโอฮาระคาโงชิมะ";
@@ -4090,32 +4090,32 @@
 "ginowan_hagoromo_festival_feature3" = "ค่ำคืนของกิโนวัน";
 
 // MARK: - Month Strings
-"month_january" = "January";
-"month_february" = "February";
-"month_march" = "March";
-"month_april" = "April";
-"month_may" = "May";
-"month_june" = "June";
-"month_july" = "July";
-"month_august" = "August";
-"month_september" = "September";
-"month_october" = "October";
-"month_november" = "November";
-"month_december" = "December";
+"month_january" = "มกราคม";
+"month_february" = "กุมภาพันธ์";
+"month_march" = "มีนาคม";
+"month_april" = "เมษายน";
+"month_may" = "พฤษภาคม";
+"month_june" = "มิถุนายน";
+"month_july" = "กรกฎาคม";
+"month_august" = "สิงหาคม";
+"month_september" = "กันยายน";
+"month_october" = "ตุลาคม";
+"month_november" = "พฤศจิกายน";
+"month_december" = "ธันวาคม";
 
-"month_range_july_august" = "July-August";
-"month_range_july_september" = "July-September";
-"month_range_april_october" = "April-October";
-"month_range_january_february" = "January-February";
-"month_range_january_march" = "January-March";
-"month_range_february_march" = "February-March";
-"month_range_february_april" = "February-April";
-"month_range_march_may" = "March-May";
-"month_range_april_may" = "April-May";
-"month_range_october_may" = "October-May";
-"month_range_november_february" = "November-February";
-"month_range_november_may" = "November-May";
-"month_range_december_march" = "December-March";
+"month_range_july_august" = "กรกฎาคม-สิงหาคม";
+"month_range_july_september" = "กรกฎาคม-กันยายน";
+"month_range_april_october" = "เมษายน-ตุลาคม";
+"month_range_january_february" = "มกราคม-กุมภาพันธ์";
+"month_range_january_march" = "มกราคม-มีนาคม";
+"month_range_february_march" = "กุมภาพันธ์-มีนาคม";
+"month_range_february_april" = "กุมภาพันธ์-เมษายน";
+"month_range_march_may" = "มีนาคม-พฤษภาคม";
+"month_range_april_may" = "เมษายน-พฤษภาคม";
+"month_range_october_may" = "ตุลาคม-พฤษภาคม";
+"month_range_november_february" = "พฤศจิกายน-กุมภาพันธ์";
+"month_range_november_may" = "พฤศจิกายน-พฤษภาคม";
+"month_range_december_march" = "ธันวาคม-มีนาคม";
 
 // MARK: - Duration Strings
 "duration_1_day" = "1 วัน";
@@ -4159,36 +4159,36 @@
 "scale_5" = "ใหญ่ที่สุดในญี่ปุ่น";
 
 // MARK: - Common Phrases
-"festival_suffix" = " Festival";
+"festival_suffix" = " เทศกาล";
 "fireworks_suffix" = " เทศกาลดอกไม้ไฟ";
 "matsuri_suffix" = " เทศกาล";
-"festival_description_suffix" = " is a highlight.";
+"festival_description_suffix" = " เป็นจุดเด่น";
 "location_center" = "ใจกลางเมือง";
 "location_riverbed" = "ริมแม่น้ำ";
 "location_port" = "บริเวณท่าเรือ";
 "location_hot_spring" = "ย่านออนเซ็น";
 
 
-"festival.summer" = "Summer Festival";
-"festival.fireworks" = "Fireworks Festival";
-"festival.traditional" = "Traditional Festival";
-"festival.dance" = "Dance Festival";
-"festival.food" = "Food Festival";
-"festival.seasonal" = "Seasonal Festival";
-"festival.religious" = "Religious Festival";
+"festival.summer" = "เทศกาลฤดูร้อน";
+"festival.fireworks" = "เทศกาลพลุ";
+"festival.traditional" = "เทศกาลดั้งเดิม";
+"festival.dance" = "เทศกาลระบำ";
+"festival.food" = "เทศกาลอาหาร";
+"festival.seasonal" = "เทศกาลตามฤดูกาล";
+"festival.religious" = "เทศกาลทางศาสนา";
 
 
-"festival.summer_fireworks" = "Summer Festival & Fireworks";
-"festival.experience" = "Experience festivals in %@";
-"festival.of_prefecture" = "Festivals of %@";
-"festival.event_info" = "Event Information";
+"festival.summer_fireworks" = "เทศกาลฤดูร้อน・เทศกาลพลุ";
+"festival.experience" = "สัมผัสเทศกาลของ%@";
+"festival.of_prefecture" = "เทศกาลของ%@";
+"festival.event_info" = "ข้อมูลการจัดงาน";
 
-"festival.period" = "Period";
-"festival.duration" = "Duration";
-"festival.location" = "Location";
-"festival.scale" = "Scale";
-"festival.highlights" = "Highlights & Features";
-"festival.tips" = "Tips for Enjoyment";
+"festival.period" = "ช่วงเวลาจัดงาน";
+"festival.duration" = "ระยะเวลา";
+"festival.location" = "สถานที่จัดงาน";
+"festival.scale" = "ขนาด";
+"festival.highlights" = "จุดเด่น・ลักษณะเด่น";
+"festival.tips" = "เคล็ดลับการเที่ยวชม";
 
 // Summer Festival Tips
 "tips.summer.1" = "สวมยูกาตะเพื่อดื่มด่ำบรรยากาศ";
@@ -4261,17 +4261,17 @@
 "tips.traditional.2" = "เพลิดเพลินกับการพบปะคนท้องถิ่น";
 "tips.traditional.3" = "ลองร่วมงานในชุดพื้นเมือง";
 
-"festival.seasons" = "Spring, Autumn, and Winter Festivals";
-"festival.experience_seasons" = "Experience the four seasons of %@";
+"festival.seasons" = "เทศกาลฤดูใบไม้ผลิ ฤดูใบไม้ร่วง และฤดูหนาว";
+"festival.experience_seasons" = "สัมผัสสี่ฤดูของ%@";
 
 
-"otherFestival.spring" = "Spring Festival";
-"otherFestival.autumn" = "Autumn Festival";
-"otherFestival.winter" = "Winter Festival";
-"otherFestival.sakura" = "Cherry Blossom Festival";
-"otherFestival.illumination" = "Illumination";
-"otherFestival.snow" = "Snow Festival";
-"otherFestival.traditional" = "Traditional Event";
+"otherFestival.spring" = "เทศกาลฤดูใบไม้ผลิ";
+"otherFestival.autumn" = "เทศกาลฤดูใบไม้ร่วง";
+"otherFestival.winter" = "เทศกาลฤดูหนาว";
+"otherFestival.sakura" = "เทศกาลชมซากุระ";
+"otherFestival.illumination" = "อิลลูมิเนชัน";
+"otherFestival.snow" = "เทศกาลหิมะ";
+"otherFestival.traditional" = "พิธีดั้งเดิม";
 
 "search.placeholder" = "ค้นหาด้วยชื่อเทศกาล คำอธิบาย หรือจังหวัด";
 
@@ -4704,10 +4704,10 @@
 
 
 // 自然観光名所タイプ
-"nature_type.night_view" = "Night View";
-"nature_type.starry_sky" = "Starry Sky";
-"nature_type.sea" = "Sea";
-"nature_type.camping" = "Camping";
+"nature_type.night_view" = "ทัศนียภาพยามค่ำคืน";
+"nature_type.starry_sky" = "ท้องฟ้าดาว";
+"nature_type.sea" = "ทะเล";
+"nature_type.camping" = "แคมป์ปิ้ง";
 
 // 設定画面
 "nature_settings" = "การตั้งค่า";
@@ -4715,49 +4715,49 @@
 "display_icon_settings" = "ตั้งค่าไอคอนที่แสดง";
 "select_display_icons" = "โปรดเลือกไอคอนที่จะแสดงบนแผนที่";
 "spots_count_format" = "%d จุด";
-"spot_count_format" = "%d spot";
+"spot_count_format" = "%d แห่ง";
 
 // 詳細画面
-"spot_features" = "Spot Features";
-"spot_map" = "Spot Map";
+"spot_features" = "ลักษณะเด่นของสปอต";
+"spot_map" = "แผนที่สปอต";
 
 
 // MARK: - Night View Spots
-"nightview_hakodate_name" = "Mount Hakodate";
-"nightview_hakodate_description" = "Hokkaido's iconic night view spot famous for its million-dollar night scenery";
+"nightview_hakodate_name" = "ภูเขาฮาโกดาเตะ";
+"nightview_hakodate_description" = "สปอตชมวิวยามค่ำคืนที่เป็นตัวแทนของฮอกไกโด โด่งดังด้วยทัศนียภาพราตรีมูลค่าล้านดอลลาร์";
 
-"nightview_maya_name" = "Mount Maya Kikuseidai";
-"nightview_maya_description" = "One of Kansai's premier night view spots overlooking Kobe cityscape and Osaka Bay";
+"nightview_maya_name" = "ภูเขามายะ คิคุเซดาอิ";
+"nightview_maya_description" = "หนึ่งในสุดยอดสปอตชมวิวยามค่ำของคันไซ มองเห็นเมืองโกเบและอ่าวโอซากะได้ทั้งหมด";
 
-"nightview_inasa_name" = "Mount Inasa";
-"nightview_inasa_description" = "Beautiful night view of Nagasaki, selected as one of the world's new top three night views";
+"nightview_inasa_name" = "ภูเขาอินาสะ";
+"nightview_inasa_description" = "ทัศนียภาพยามค่ำอันงดงามของนางาซากิ ที่ได้รับเลือกเป็นหนึ่งในสามวิวราตรีใหม่ของโลก";
 
-"nightview_tokyo_towers_name" = "Tokyo Skytree & Tokyo Tower";
-"nightview_tokyo_towers_description" = "Spectacular night views from Tokyo's two iconic towers";
+"nightview_tokyo_towers_name" = "โตเกียวสกายทรี・โตเกียวทาวเวอร์";
+"nightview_tokyo_towers_description" = "ทัศนียภาพยามค่ำสุดตระการตาจากสองหอคอยที่เป็นตัวแทนของโตเกียว";
 
-"nightview_shonan_name" = "Shonan-daira";
-"nightview_shonan_description" = "Kanagawa's night view spot overlooking the Shonan coastline";
+"nightview_shonan_name" = "โชนันไดระ";
+"nightview_shonan_description" = "สปอตชมวิวยามค่ำของจังหวัดคานางาวะ ที่มองเห็นชายฝั่งโชนันได้ทั้งหมด";
 
-"nightview_rokko_name" = "Mount Rokko";
-"nightview_rokko_description" = "Kansai's premier night view spot known as the 10-million-dollar night view";
+"nightview_rokko_name" = "ภูเขาร็อกโก";
+"nightview_rokko_description" = "สุดยอดสปอตชมวิวยามค่ำอันดับหนึ่งของคันไซ ที่ได้ชื่อว่าทัศนียภาพราตรีมูลค่าสิบล้านดอลลาร์";
 
-"nightview_sarakura_name" = "Mount Sarakura";
-"nightview_sarakura_description" = "One of Japan's new top three night views, overlooking Kitakyushu city";
+"nightview_sarakura_name" = "ภูเขาซาราคุระ";
+"nightview_sarakura_description" = "หนึ่งในสามวิวราตรีใหม่ของญี่ปุ่น มองเห็นตัวเมืองคิตะคิวชูได้ทั้งหมด";
 
-"nightview_minatomirai_name" = "Minato Mirai 21";
-"nightview_minatomirai_description" = "Yokohama's iconic night view area featuring the Ferris wheel and cityscape";
+"nightview_minatomirai_name" = "มินาโตะมิไร 21";
+"nightview_minatomirai_description" = "ย่านชมวิวยามค่ำที่เป็นตัวแทนของโยโกฮามะ ความงามของชิงช้าสวรรค์และหมู่ตึกระฟ้า";
 
-"nightview_tempozan_name" = "Tempozan";
-"nightview_tempozan_description" = "Bay area spot for enjoying Osaka Port's night view";
+"nightview_tempozan_name" = "เทมโปซัง";
+"nightview_tempozan_description" = "สปอตย่านเบย์ที่เพลิดเพลินกับวิวยามค่ำของท่าเรือโอซากะได้";
 
-"nightview_wakakusa_name" = "Mount Wakakusa";
-"nightview_wakakusa_description" = "Ancient capital's night view spot overlooking the Nara Basin";
+"nightview_wakakusa_name" = "ภูเขาวากากุสะ";
+"nightview_wakakusa_description" = "สปอตชมวิวยามค่ำแห่งเมืองหลวงเก่า มองเห็นทัศนียภาพราตรีของแอ่งนาราได้ทั้งหมด";
 
-"nightview_shiroyama_name" = "Shiroyama Park";
-"nightview_shiroyama_description" = "Southern Kyushu's night view attraction overlooking Sakurajima and Kagoshima city";
+"nightview_shiroyama_name" = "สวนชิโรยามะ";
+"nightview_shiroyama_description" = "สถานที่ชมวิวยามค่ำของคิวชูตอนใต้ ที่มองเห็นซากุระจิมะและตัวเมืองคาโกชิมะ";
 
-"nightview_moiwa_name" = "Mount Moiwa";
-"nightview_moiwa_description" = "Hokkaido's night view spot overlooking Sapporo cityscape";
+"nightview_moiwa_name" = "ภูเขาโมอิวะ";
+"nightview_moiwa_description" = "สปอตชมวิวยามค่ำของฮอกไกโด ที่มองเห็นตัวเมืองซัปโปโรได้ทั้งหมด";
 
 // MARK: - Starry Sky Spots
 "starry_achi_name" = "หมู่บ้านอาจิ";
@@ -5112,7 +5112,7 @@
 "plan.timeblock.empty" = "ลากรายการมาที่นี่";
 "plan.timeblock.title.label" = "หัวข้อ (ไม่บังคับ)";
 "plan.timeblock.title.placeholder" = "เช่น เช้า / มื้อเที่ยง / เย็น";
-"attraction.open_in_maps" = "Open in Maps";
+"attraction.open_in_maps" = "เปิดในแผนที่";
 "plan.category.souvenir" = "ของฝาก";
 "plan.grouping.day.toggle" = "แยกตามวัน";
 "plan.grouping.flat" = "แสดงรวมกัน";
@@ -5159,10 +5159,10 @@
 "plan.share" = "แชร์";
 "plan.timeblock.untimed" = "ยังไม่กำหนดเวลา";
 
-"social.search_youtube" = "Search on YouTube";
-"social.search_instagram" = "Search on Instagram";
-"social.search_tabelog" = "Find restaurants on Tabelog";
-"gourmet.explore_more" = "Explore more";
+"social.search_youtube" = "ค้นหาใน YouTube";
+"social.search_instagram" = "ค้นหาใน Instagram";
+"social.search_tabelog" = "ค้นหาร้านใน Tabelog";
+"gourmet.explore_more" = "เรียนรู้และค้นหาเพิ่มเติม";
 
 /* --- カード上のタグ表示用の短縮名（英語は長いため短縮） --- */
 "onsen_type_tag.scenic" = "ชมวิว";
@@ -5179,34 +5179,34 @@
 "food_category_local_tag" = "พื้นเมือง";
 "food_category_drinks_tag" = "เครื่องดื่ม";
 "food_category_vegetables_tag" = "ผักผลไม้";
-"souvenirCategory.sweets_tag" = "Sweets";
-"souvenirCategory.food_tag" = "Food";
-"souvenirCategory.crafts_tag" = "Crafts";
-"souvenirCategory.drinks_tag" = "Drinks";
-"souvenirCategory.textiles_tag" = "Textiles";
-"souvenirCategory.ceramics_tag" = "Ceramics";
-"souvenirCategory.regional_tag" = "Regional";
+"souvenirCategory.sweets_tag" = "ขนม";
+"souvenirCategory.food_tag" = "อาหาร";
+"souvenirCategory.crafts_tag" = "งานหัตถกรรม";
+"souvenirCategory.drinks_tag" = "เครื่องดื่ม";
+"souvenirCategory.textiles_tag" = "สิ่งทอ";
+"souvenirCategory.ceramics_tag" = "เครื่องปั้นดินเผา";
+"souvenirCategory.regional_tag" = "สินค้าเฉพาะถิ่น";
 
 /* --- 祭りカード上のタグ表示用の短縮名（英語は長いため "Festival" を省く） --- */
-"festival.summer_tag" = "Summer";
-"festival.fireworks_tag" = "Fireworks";
-"festival.traditional_tag" = "Traditional";
-"festival.dance_tag" = "Dance";
-"festival.food_tag" = "Food";
-"festival.seasonal_tag" = "Seasonal";
-"festival.religious_tag" = "Religious";
-"otherFestival.spring_tag" = "Spring";
-"otherFestival.autumn_tag" = "Autumn";
-"otherFestival.winter_tag" = "Winter";
-"otherFestival.sakura_tag" = "Cherry";
-"otherFestival.illumination_tag" = "Illumination";
-"otherFestival.snow_tag" = "Snow";
-"otherFestival.traditional_tag" = "Traditional";
+"festival.summer_tag" = "ฤดูร้อน";
+"festival.fireworks_tag" = "พลุ";
+"festival.traditional_tag" = "ดั้งเดิม";
+"festival.dance_tag" = "ระบำ";
+"festival.food_tag" = "อาหาร";
+"festival.seasonal_tag" = "ตามฤดูกาล";
+"festival.religious_tag" = "ศาสนา";
+"otherFestival.spring_tag" = "ฤดูใบไม้ผลิ";
+"otherFestival.autumn_tag" = "ฤดูใบไม้ร่วง";
+"otherFestival.winter_tag" = "ฤดูหนาว";
+"otherFestival.sakura_tag" = "ซากุระ";
+"otherFestival.illumination_tag" = "อิลลูมิเนชัน";
+"otherFestival.snow_tag" = "หิมะ";
+"otherFestival.traditional_tag" = "พิธีดั้งเดิม";
 
-"review.prompt.title" = "Enjoying Tabisaki Choice?";
-"review.prompt.message" = "If you like the app, a quick review would mean a lot to us.";
-"review.prompt.yes" = "Write a Review";
-"review.prompt.no" = "Not Now";
+"review.prompt.title" = "สนุกกับ Tabisaki Choice ไหม";
+"review.prompt.message" = "หากถูกใจแอป รบกวนช่วยรีวิวให้เราหน่อยนะ";
+"review.prompt.yes" = "เขียนรีวิว";
+"review.prompt.no" = "ไว้ทีหลัง";
 
 "attraction_azabudai_hills" = "อาซาบุได ฮิลส์";
 "attraction_azabudai_hills_desc" = "เปิดปี 2023 เมืองเชิงซ้อนสีเขียวที่มีหอโมริ JP อาคารที่สูงที่สุดในญี่ปุ่นเป็นศูนย์กลาง";
