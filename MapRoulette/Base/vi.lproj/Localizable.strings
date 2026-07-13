@@ -2324,269 +2324,269 @@
 "kagawa.kyu_man.description" = "Bánh manju suối nước nóng của Kagawa";
 "kagawa.kyu_man.price" = "800–1,500 yên";
 
-"kagawa.honetsuki_tori_senbei.name" = "Honetsuki-dori Senbei";
-"kagawa.honetsuki_tori_senbei.description" = "Rice crackers with Kagawa's bone-in chicken motif";
+"kagawa.honetsuki_tori_senbei.name" = "Bánh senbei honetsuki-dori";
+"kagawa.honetsuki_tori_senbei.description" = "Bánh senbei lấy cảm hứng từ đùi gà honetsuki của Kagawa";
 "kagawa.honetsuki_tori_senbei.price" = "800–1,500 yên";
 
-"kagawa.olive_goods.name" = "Olive Products";
-"kagawa.olive_goods.description" = "Products made with olives from Shodoshima";
+"kagawa.olive_goods.name" = "Sản phẩm ô liu";
+"kagawa.olive_goods.description" = "Sản phẩm dùng ô liu Shodoshima";
 "kagawa.olive_goods.price" = "1,000–3,000 yên";
 
 // =====================================================
 // Ehime
 // =====================================================
-"ehime.botchan_dango.name" = "Botchan Dango";
-"ehime.botchan_dango.description" = "Matsuyama specialty. Beautiful three-colored dumplings";
+"ehime.botchan_dango.name" = "Botchan dango";
+"ehime.botchan_dango.description" = "Đặc sản Matsuyama, bánh dango ba màu đẹp mắt";
 "ehime.botchan_dango.price" = "500–1,200 yên";
 
-"ehime.tart.name" = "Tart";
-"ehime.tart.description" = "Representative Western confection of Ehime";
+"ehime.tart.name" = "Tart (bánh cuộn)";
+"ehime.tart.description" = "Bánh Âu tiêu biểu của Ehime";
 "ehime.tart.price" = "1,200–2,500 yên";
 
 "ehime.botemu.name" = "Botemu";
-"ehime.botemu.description" = "Famous confection from Ehime";
+"ehime.botemu.description" = "Bánh nổi tiếng của Ehime";
 "ehime.botemu.price" = "1,000–2,000 yên";
 
-"ehime.imabari_towel.name" = "Imabari Towel";
-"ehime.imabari_towel.description" = "Premium towels from Imabari City, Ehime";
+"ehime.imabari_towel.name" = "Khăn Imabari";
+"ehime.imabari_towel.description" = "Khăn cao cấp thành phố Imabari, tỉnh Ehime";
 "ehime.imabari_towel.price" = "2,000–10,000 yên";
 
-"ehime.tobe_yaki.name" = "Tobe Pottery";
-"ehime.tobe_yaki.description" = "Traditional crafts from Tobe Town, Ehime";
+"ehime.tobe_yaki.name" = "Gốm Tobe";
+"ehime.tobe_yaki.description" = "Đồ thủ công truyền thống thị trấn Tobe, tỉnh Ehime";
 "ehime.tobe_yaki.price" = "2,000–20,000 yên";
 
 // =====================================================
 // Kochi
 // =====================================================
-"kochi.mille_biscuit.name" = "Mille Biscuit";
-"kochi.mille_biscuit.description" = "Representative confection of Kochi";
+"kochi.mille_biscuit.name" = "Bánh quy Mille";
+"kochi.mille_biscuit.description" = "Bánh tiêu biểu của Kochi";
 "kochi.mille_biscuit.price" = "500–1,200 yên";
 
-"kochi.imo_kenpi.name" = "Imo Kenpi";
-"kochi.imo_kenpi.description" = "Specialty confection from Kochi";
+"kochi.imo_kenpi.name" = "Imo kenpi";
+"kochi.imo_kenpi.description" = "Bánh đặc sản của Kochi";
 "kochi.imo_kenpi.price" = "800–1,500 yên";
 
 "kochi.tosa_nikki.name" = "Tosa Nikki";
-"kochi.tosa_nikki.description" = "Famous confection from Kochi";
+"kochi.tosa_nikki.description" = "Bánh nổi tiếng của Kochi";
 "kochi.tosa_nikki.price" = "1,000–2,000 yên";
 
 "kochi.kanzashi.name" = "Kanzashi";
-"kochi.kanzashi.description" = "Traditional crafts from Kochi";
+"kochi.kanzashi.description" = "Đồ thủ công truyền thống của Kochi";
 "kochi.kanzashi.price" = "3,000–15,000 yên";
 
-"kochi.tosa_washi.name" = "Tosa Washi";
-"kochi.tosa_washi.description" = "Traditional crafts from Kochi";
+"kochi.tosa_washi.name" = "Giấy washi Tosa";
+"kochi.tosa_washi.description" = "Đồ thủ công truyền thống của Kochi";
 "kochi.tosa_washi.price" = "1,000–8,000 yên";
 
 // =====================================================
 // Fukuoka
 // =====================================================
 "fukuoka.hakata_torimon.name" = "Hakata Torimon";
-"fukuoka.hakata_torimon.description" = "Famous confection of Fukuoka. Elegant sweetness of milk manju";
+"fukuoka.hakata_torimon.description" = "Bánh nổi tiếng Fukuoka, bánh bao sữa vị ngọt thanh";
 "fukuoka.hakata_torimon.price" = "1,200–2,500 yên";
 
 "fukuoka.hiyoko.name" = "Hiyoko";
-"fukuoka.hiyoko.description" = "Hakata specialty chick-shaped steamed bun";
+"fukuoka.hiyoko.description" = "Bánh manju hình gà con nổi tiếng Hakata";
 "fukuoka.hiyoko.price" = "1,000–2,500 yên";
 
 "fukuoka.tirolian.name" = "Tirolian";
-"fukuoka.tirolian.description" = "Representative confection of Fukuoka";
+"fukuoka.tirolian.description" = "Bánh tiêu biểu của Fukuoka";
 "fukuoka.tirolian.price" = "800–1,500 yên";
 
 "fukuoka.hakata_no_onna.name" = "Hakata no Onna";
-"fukuoka.hakata_no_onna.description" = "Famous confection from Fukuoka";
+"fukuoka.hakata_no_onna.description" = "Bánh nổi tiếng của Fukuoka";
 "fukuoka.hakata_no_onna.price" = "1,000–2,000 yên";
 
 "fukuoka.mentaiko.name" = "Mentaiko";
-"fukuoka.mentaiko.description" = "Specialty product from Fukuoka";
+"fukuoka.mentaiko.description" = "Đặc sản của Fukuoka";
 "fukuoka.mentaiko.price" = "1,500–5,000 yên";
 
-"fukuoka.hakata_ori.name" = "Hakata Ori";
-"fukuoka.hakata_ori.description" = "Traditional crafts from Fukuoka";
+"fukuoka.hakata_ori.name" = "Vải dệt Hakata";
+"fukuoka.hakata_ori.description" = "Đồ thủ công truyền thống của Fukuoka";
 "fukuoka.hakata_ori.price" = "5,000–50,000 yên";
 
 // =====================================================
 // Saga
 // =====================================================
-"saga.maru_boro.name" = "Maru Boro";
-"saga.maru_boro.description" = "Traditional confection of Saga. Sweet confection like castella";
+"saga.maru_boro.name" = "Marubolo";
+"saga.maru_boro.description" = "Bánh truyền thống Saga, bánh ngọt giống castella";
 "saga.maru_boro.price" = "800–2,000 yên";
 
 "saga.ikkoko.name" = "Ikkoko";
-"saga.ikkoko.description" = "Famous confection from Saga";
+"saga.ikkoko.description" = "Bánh nổi tiếng của Saga";
 "saga.ikkoko.price" = "1,000–2,000 yên";
 
-"saga.shoro_manju.name" = "Shoro Manju";
-"saga.shoro_manju.description" = "Representative confection of Saga";
+"saga.shoro_manju.name" = "Bánh manju Shoro";
+"saga.shoro_manju.description" = "Bánh tiêu biểu của Saga";
 "saga.shoro_manju.price" = "1,200–2,500 yên";
 
-"saga.ogi_yokan.name" = "Ogi Yokan";
-"saga.ogi_yokan.description" = "Traditional yokan from Ogi City, Saga";
+"saga.ogi_yokan.name" = "Yokan Ogi";
+"saga.ogi_yokan.description" = "Yokan truyền thống thành phố Ogi, tỉnh Saga";
 "saga.ogi_yokan.price" = "1,500–3,000 yên";
 
-"saga.arita_yaki.name" = "Arita Pottery";
-"saga.arita_yaki.description" = "Traditional crafts from Arita Town, Saga";
+"saga.arita_yaki.name" = "Gốm sứ Arita";
+"saga.arita_yaki.description" = "Đồ thủ công truyền thống thị trấn Arita, tỉnh Saga";
 "saga.arita_yaki.price" = "3,000–100,000 yên";
 
 // =====================================================
 // Nagasaki
 // =====================================================
-"nagasaki.fukusaya_castella.name" = "Fukusaya Castella";
-"nagasaki.fukusaya_castella.description" = "Representative confection of Nagasaki. Moist and sweet sponge";
+"nagasaki.fukusaya_castella.name" = "Castella Fukusaya";
+"nagasaki.fukusaya_castella.description" = "Bánh tiêu biểu Nagasaki, bánh bông lan ngọt ẩm mềm";
 "nagasaki.fukusaya_castella.price" = "2,000–5,000 yên";
 
 "nagasaki.kurusu.name" = "Kurusu";
-"nagasaki.kurusu.description" = "Western confection from Nagasaki";
+"nagasaki.kurusu.description" = "Bánh Âu của Nagasaki";
 "nagasaki.kurusu.price" = "1,200–2,500 yên";
 
 "nagasaki.yoriyori.name" = "Yoriyori";
-"nagasaki.yoriyori.description" = "Chinese confection from Nagasaki";
+"nagasaki.yoriyori.description" = "Bánh Hoa của Nagasaki";
 "nagasaki.yoriyori.price" = "800–1,500 yên";
 
-"nagasaki.momo_castella.name" = "Momo Castella";
-"nagasaki.momo_castella.description" = "Nagasaki's Hinamatsuri castella";
+"nagasaki.momo_castella.name" = "Castella hình đào";
+"nagasaki.momo_castella.description" = "Castella dùng cho lễ Hinamatsuri của Nagasaki";
 "nagasaki.momo_castella.price" = "2,000–4,000 yên";
 
-"nagasaki.kakuni_manju.name" = "Kakuni Manju";
-"nagasaki.kakuni_manju.description" = "Nagasaki specialty. Steamed bun with tender braised pork belly";
+"nagasaki.kakuni_manju.name" = "Bánh bao thịt kho kakuni";
+"nagasaki.kakuni_manju.description" = "Đặc sản Nagasaki, bánh bao nhân thịt ba chỉ kho mềm";
 "nagasaki.kakuni_manju.price" = "500–1,200 yên";
 
 // =====================================================
 // Kumamoto
 // =====================================================
 "kumamoto.homare_no_jindaiko.name" = "Homare no Jindaiko";
-"kumamoto.homare_no_jindaiko.description" = "Representative confection of Kumamoto";
+"kumamoto.homare_no_jindaiko.description" = "Bánh tiêu biểu của Kumamoto";
 "kumamoto.homare_no_jindaiko.price" = "1,200–2,500 yên";
 
-"kumamoto.ikinari_dango.name" = "Ikinari Dango";
-"kumamoto.ikinari_dango.description" = "Local confection of Kumamoto. Dumplings with sweet potato and sweet bean paste";
+"kumamoto.ikinari_dango.name" = "Ikinari dango";
+"kumamoto.ikinari_dango.description" = "Bánh địa phương Kumamoto, dango nhân khoai lang và đậu đỏ";
 "kumamoto.ikinari_dango.price" = "500–1,000 yên";
 
 "kumamoto.musha_gaeshi.name" = "Musha Gaeshi";
-"kumamoto.musha_gaeshi.description" = "Famous confection from Kumamoto";
+"kumamoto.musha_gaeshi.description" = "Bánh nổi tiếng của Kumamoto";
 "kumamoto.musha_gaeshi.price" = "1,000–2,000 yên";
 
-"kumamoto.chosen_ame.name" = "Chosen Ame";
-"kumamoto.chosen_ame.description" = "Traditional candy from Kumamoto";
+"kumamoto.chosen_ame.name" = "Chosen ame";
+"kumamoto.chosen_ame.description" = "Kẹo truyền thống của Kumamoto";
 "kumamoto.chosen_ame.price" = "800–1,500 yên";
 
-"kumamoto.kumamon_goods.name" = "Kumamon Goods";
-"kumamoto.kumamon_goods.description" = "Products featuring Kumamoto's mascot character";
+"kumamoto.kumamon_goods.name" = "Sản phẩm Kumamon";
+"kumamoto.kumamon_goods.description" = "Sản phẩm nhân vật linh vật của Kumamoto";
 "kumamoto.kumamon_goods.price" = "500–3,000 yên";
 
 // =====================================================
 // Oita
 // =====================================================
 "oita.zabieru.name" = "Zabieru";
-"oita.zabieru.description" = "Representative confection of Oita";
+"oita.zabieru.description" = "Bánh tiêu biểu của Oita";
 "oita.zabieru.price" = "1,200–2,500 yên";
 
 "oita.kojono_tsuki.name" = "Kojo no Tsuki";
-"oita.kojono_tsuki.description" = "Famous confection from Oita";
+"oita.kojono_tsuki.description" = "Bánh nổi tiếng của Oita";
 "oita.kojono_tsuki.price" = "1,000–2,000 yên";
 
 "oita.yaseuma.name" = "Yaseuma";
-"oita.yaseuma.description" = "Local confection from Oita";
+"oita.yaseuma.description" = "Bánh địa phương của Oita";
 "oita.yaseuma.price" = "800–1,500 yên";
 
-"oita.gomadashi_udon.name" = "Gomadashi Udon";
-"oita.gomadashi_udon.description" = "Specialty product from Oita";
+"oita.gomadashi_udon.name" = "Udon nước sốt mè";
+"oita.gomadashi_udon.description" = "Đặc sản của Oita";
 "oita.gomadashi_udon.price" = "1,000–2,000 yên";
 
-"oita.onsen_goods.name" = "Hot Spring Goods";
-"oita.onsen_goods.description" = "Hot spring goods from Oita, the Onsen Prefecture";
+"oita.onsen_goods.name" = "Sản phẩm liên quan suối nước nóng";
+"oita.onsen_goods.description" = "Sản phẩm onsen của Oita, tỉnh suối nước nóng";
 "oita.onsen_goods.price" = "800–3,000 yên";
 
 // =====================================================
 // Miyazaki
 // =====================================================
-"miyazaki.nanjako_daifuku.name" = "Nanjako Daifuku";
-"miyazaki.nanjako_daifuku.description" = "Popular daifuku from Miyazaki";
+"miyazaki.nanjako_daifuku.name" = "Nanjakora daifuku";
+"miyazaki.nanjako_daifuku.description" = "Daifuku được ưa chuộng của Miyazaki";
 "miyazaki.nanjako_daifuku.price" = "1,000–2,000 yên";
 
-"miyazaki.cheese_manju.name" = "Cheese Manju";
-"miyazaki.cheese_manju.description" = "Representative confection of Miyazaki";
+"miyazaki.cheese_manju.name" = "Bánh manju phô mai";
+"miyazaki.cheese_manju.description" = "Bánh tiêu biểu của Miyazaki";
 "miyazaki.cheese_manju.price" = "1,200–2,500 yên";
 
-"miyazaki.aoshima_senbei.name" = "Aoshima Senbei";
-"miyazaki.aoshima_senbei.description" = "Famous rice crackers from Aoshima, Miyazaki";
+"miyazaki.aoshima_senbei.name" = "Bánh senbei Aoshima";
+"miyazaki.aoshima_senbei.description" = "Bánh senbei nổi tiếng của Aoshima, Miyazaki";
 "miyazaki.aoshima_senbei.price" = "800–1,500 yên";
 
-"miyazaki.hyuganatsu_sable.name" = "Hyuganatsu Sablé";
-"miyazaki.hyuganatsu_sable.description" = "Sablé made with Miyazaki's specialty hyuganatsu citrus";
+"miyazaki.hyuganatsu_sable.name" = "Bánh sablé Hyuganatsu";
+"miyazaki.hyuganatsu_sable.description" = "Bánh sablé dùng cam hyuganatsu đặc sản Miyazaki";
 "miyazaki.hyuganatsu_sable.price" = "1,000–2,000 yên";
 
-"miyazaki.mango_goods.name" = "Mango Products";
-"miyazaki.mango_goods.description" = "Products made with Miyazaki mangoes";
+"miyazaki.mango_goods.name" = "Sản phẩm xoài";
+"miyazaki.mango_goods.description" = "Sản phẩm dùng xoài tỉnh Miyazaki";
 "miyazaki.mango_goods.price" = "1,500–5,000 yên";
 
 // =====================================================
 // Kagoshima
 // =====================================================
 "kagoshima.karukan.name" = "Karukan";
-"kagoshima.karukan.description" = "Representative confection of Kagoshima";
+"kagoshima.karukan.description" = "Bánh tiêu biểu của Kagoshima";
 "kagoshima.karukan.price" = "1,000–2,500 yên";
 
-"kagoshima.satsuma_imo_tart.name" = "Satsuma Sweet Potato Tart";
-"kagoshima.satsuma_imo_tart.description" = "Tart made with Kagoshima's satsuma sweet potatoes";
+"kagoshima.satsuma_imo_tart.name" = "Tart khoai lang Satsuma";
+"kagoshima.satsuma_imo_tart.description" = "Tart dùng khoai lang Satsuma của Kagoshima";
 "kagoshima.satsuma_imo_tart.price" = "1,200–2,500 yên";
 
-"kagoshima.karukan_manju.name" = "Karukan Manju";
-"kagoshima.karukan_manju.description" = "Traditional steamed bun from Kagoshima";
+"kagoshima.karukan_manju.name" = "Bánh manju Karukan";
+"kagoshima.karukan_manju.description" = "Bánh manju truyền thống của Kagoshima";
 "kagoshima.karukan_manju.price" = "1,000–2,000 yên";
 
 "kagoshima.satsuma_kiriko.name" = "Satsuma Kiriko";
-"kagoshima.satsuma_kiriko.description" = "Traditional crafts from Kagoshima";
+"kagoshima.satsuma_kiriko.description" = "Đồ thủ công truyền thống của Kagoshima";
 "kagoshima.satsuma_kiriko.price" = "10,000–100,000 yên";
 
-"kagoshima.imo_shochu.name" = "Sweet Potato Shochu";
-"kagoshima.imo_shochu.description" = "Representative shochu from Kagoshima";
+"kagoshima.imo_shochu.name" = "Rượu shochu khoai";
+"kagoshima.imo_shochu.description" = "Rượu shochu tiêu biểu của Kagoshima";
 "kagoshima.imo_shochu.price" = "1,500–10,000 yên";
 
 // =====================================================
 // Okinawa
 // =====================================================
 "okinawa.chinsuko.name" = "Chinsuko";
-"okinawa.chinsuko.description" = "Representative confection of Okinawa";
+"okinawa.chinsuko.description" = "Bánh tiêu biểu của Okinawa";
 "okinawa.chinsuko.price" = "800–2,000 yên";
 
-"okinawa.beni_imo_tart.name" = "Purple Sweet Potato Tart";
-"okinawa.beni_imo_tart.description" = "Tart made with Okinawa purple sweet potatoes";
+"okinawa.beni_imo_tart.name" = "Tart khoai tím";
+"okinawa.beni_imo_tart.description" = "Tart dùng khoai tím Okinawa";
 "okinawa.beni_imo_tart.price" = "1,200–2,500 yên";
 
-"okinawa.yukishio_chinsuko.name" = "Snow Salt Chinsuko";
-"okinawa.yukishio_chinsuko.description" = "Chinsuko made with Miyakojima snow salt";
+"okinawa.yukishio_chinsuko.name" = "Chinsuko muối tuyết";
+"okinawa.yukishio_chinsuko.description" = "Chinsuko dùng muối tuyết Miyakojima";
 "okinawa.yukishio_chinsuko.price" = "1,000–2,000 yên";
 
-"okinawa.sata_andagi.name" = "Sata Andagi";
-"okinawa.sata_andagi.description" = "Okinawan fried confection";
+"okinawa.sata_andagi.name" = "Sata andagi";
+"okinawa.sata_andagi.description" = "Bánh chiên của Okinawa";
 "okinawa.sata_andagi.price" = "500–1,200 yên";
 
-"okinawa.awamori_cookie.name" = "Ryukyu Awamori Cookie";
-"okinawa.awamori_cookie.description" = "Cookies made with Okinawan awamori";
+"okinawa.awamori_cookie.name" = "Bánh quy awamori Ryukyu";
+"okinawa.awamori_cookie.description" = "Bánh quy dùng rượu awamori Okinawa";
 "okinawa.awamori_cookie.price" = "800–1,500 yên";
 
-"okinawa.ryukyu_glass.name" = "Ryukyu Glass";
-"okinawa.ryukyu_glass.description" = "Traditional crafts from Okinawa";
+"okinawa.ryukyu_glass.name" = "Thủy tinh Ryukyu";
+"okinawa.ryukyu_glass.description" = "Đồ thủ công truyền thống của Okinawa";
 "okinawa.ryukyu_glass.price" = "2,000–20,000 yên";
 
 "okinawa.shisa.name" = "Shisa";
-"okinawa.shisa.description" = "Guardian lion-dog figurines of Okinawa";
+"okinawa.shisa.description" = "Tượng sư tử thần hộ mệnh của Okinawa";
 "okinawa.shisa.price" = "1,000–10,000 yên";
 
 // =====================================================
 // Hokkaido
 // =====================================================
 "hokkaido.shiroi_koibito.name" = "Shiroi Koibito";
-"hokkaido.shiroi_koibito.description" = "Classic Hokkaido souvenir. Perfect combination of langue de chat and white chocolate";
+"hokkaido.shiroi_koibito.description" = "Quà lưu niệm kinh điển của Hokkaido, bánh langue de chat kẹp sô cô la trắng";
 "hokkaido.shiroi_koibito.price" = "500–2,000 yên";
 
-"hokkaido.marsei_butter_sand.name" = "Marsei Butter Sandwich";
-"hokkaido.marsei_butter_sand.description" = "Rokkatei's signature confection. Excellent butter cream and raisins";
+"hokkaido.marsei_butter_sand.name" = "Bánh kẹp bơ Marsei";
+"hokkaido.marsei_butter_sand.description" = "Bánh nổi tiếng của Rokkatei, kem bơ và nho khô tuyệt hảo";
 "hokkaido.marsei_butter_sand.price" = "1,200–2,000 yên";
 
 "hokkaido.jaga_pokkuru.name" = "Jaga Pokkuru";
-"hokkaido.jaga_pokkuru.description" = "Crispy snack made from Hokkaido potatoes";
+"hokkaido.jaga_pokkuru.description" = "Snack giòn dùng khoai tây Hokkaido";
 "hokkaido.jaga_pokkuru.price" = "1,000–1,500 yên";
 
 "hokkaido.royce_nama_chocolate.name" = "Royce' Nama Chocolate";
