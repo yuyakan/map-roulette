@@ -4284,187 +4284,187 @@
 /* **MARK: - Hokkaido** */
 "hokkaido.sapporo_snow_festival.name" = "Lễ hội tuyết Sapporo";
 "hokkaido.sapporo_snow_festival.description" = "Lễ hội tuyết và băng nổi tiếng thế giới. Những tượng tuyết, tượng băng khổng lồ dựng ở công viên Odori và Susukino tô điểm mùa đông Sapporo.";
-"hokkaido.sapporo_snow_festival.location" = "Odori Park & Susukino";
-"hokkaido.sapporo_snow_festival.feature1" = "World-class event";
-"hokkaido.sapporo_snow_festival.feature2" = "Giant snow sculptures";
-"hokkaido.sapporo_snow_festival.feature3" = "Ice sculpture displays";
+"hokkaido.sapporo_snow_festival.location" = "Công viên Odori & Susukino";
+"hokkaido.sapporo_snow_festival.feature1" = "Sự kiện tầm thế giới";
+"hokkaido.sapporo_snow_festival.feature2" = "Tượng tuyết khổng lồ";
+"hokkaido.sapporo_snow_festival.feature3" = "Trưng bày tượng băng";
 
 "hokkaido.hakodate_goryokaku_festival.name" = "Lễ hội Goryokaku Hakodate";
 "hokkaido.hakodate_goryokaku_festival.description" = "Lễ hội lịch sử tái hiện chiến tranh Hakodate. Cảm nhận lịch sử cuối thời Edo qua cuộc thi Hijikata Toshizo và đoàn diễu hành Duy tân.";
-"hokkaido.hakodate_goryokaku_festival.location" = "Goryokaku Park";
-"hokkaido.hakodate_goryokaku_festival.feature1" = "Historical recreation";
+"hokkaido.hakodate_goryokaku_festival.location" = "Công viên Goryokaku";
+"hokkaido.hakodate_goryokaku_festival.feature1" = "Tái hiện lịch sử";
 "hokkaido.hakodate_goryokaku_festival.feature2" = "Hijikata Toshizo";
-"hokkaido.hakodate_goryokaku_festival.feature3" = "Meiji Restoration parade";
+"hokkaido.hakodate_goryokaku_festival.feature3" = "Đoàn diễu hành Duy tân";
 
 /* **MARK: - Aomori** */
 "aomori.hirosaki_cherry_festival.name" = "Lễ hội hoa anh đào Hirosaki";
 "aomori.hirosaki_cherry_festival.description" = "Một trong ba nơi ngắm hoa anh đào đẹp nhất Nhật Bản. Cảnh sắc từ thành Hirosaki và khoảng 2.600 cây anh đào được biết đến là lễ hội hoa anh đào đẹp nhất Nhật Bản.";
-"aomori.hirosaki_cherry_festival.location" = "Hirosaki Park";
-"aomori.hirosaki_cherry_festival.feature1" = "Japan's top 3 cherry spots";
-"aomori.hirosaki_cherry_festival.feature2" = "2,600 cherry trees";
-"aomori.hirosaki_cherry_festival.feature3" = "Hirosaki Castle";
+"aomori.hirosaki_cherry_festival.location" = "Công viên Hirosaki";
+"aomori.hirosaki_cherry_festival.feature1" = "Ba nơi anh đào đẹp nhất Nhật Bản";
+"aomori.hirosaki_cherry_festival.feature2" = "2.600 cây anh đào";
+"aomori.hirosaki_cherry_festival.feature3" = "Thành Hirosaki";
 
 "aomori.hachinohe_enburi.name" = "Hachinohe Enburi";
 "aomori.hachinohe_enburi.description" = "Nghệ thuật dân gian vùng nam Aomori cầu mùa màng bội thu. Lễ hội mùa đông huyền ảo với các tayu đội mũ eboshi múa.";
-"aomori.hachinohe_enburi.location" = "Hachinohe City Center";
-"aomori.hachinohe_enburi.feature1" = "Folk performing art";
-"aomori.hachinohe_enburi.feature2" = "Good harvest prayer";
-"aomori.hachinohe_enburi.feature3" = "Traditional dance";
+"aomori.hachinohe_enburi.location" = "Trung tâm thành phố Hachinohe";
+"aomori.hachinohe_enburi.feature1" = "Nghệ thuật dân gian";
+"aomori.hachinohe_enburi.feature2" = "Cầu mùa màng bội thu";
+"aomori.hachinohe_enburi.feature3" = "Múa của tayu";
 
 /* **MARK: - Iwate** */
 "iwate.kitakami_cherry_festival.name" = "Lễ hội hoa anh đào Tenshochi Kitakami";
 "iwate.kitakami_cherry_festival.description" = "Danh thắng hoa anh đào hàng đầu Tohoku. Lễ hội hoa anh đào hoành tráng với hàng anh đào dài khoảng 2 km dọc sông Kitakami.";
 "iwate.kitakami_cherry_festival.location" = "Kitakami Tenshochi";
-"iwate.kitakami_cherry_festival.feature1" = "Leading Tohoku spot";
-"iwate.kitakami_cherry_festival.feature2" = "2km cherry tree avenue";
-"iwate.kitakami_cherry_festival.feature3" = "Along Kitakami River";
+"iwate.kitakami_cherry_festival.feature1" = "Hàng đầu Tohoku";
+"iwate.kitakami_cherry_festival.feature2" = "Hàng anh đào 2 km";
+"iwate.kitakami_cherry_festival.feature3" = "Dọc sông Kitakami";
 
 /* **MARK: - Miyagi** */
 "miyagi.hitome_senbon_cherry_festival.name" = "Lễ hội hoa anh đào Hitome Senbon";
 "miyagi.hitome_senbon_cherry_festival.description" = "Sự kết hợp tuyệt cảnh giữa hàng anh đào ven đê sông Shiroishi và dãy Zao còn tuyết. Khoảng 1.200 cây anh đào khoe sắc suốt 8 km.";
-"miyagi.hitome_senbon_cherry_festival.location" = "Ogawara & Shibata Towns";
-"miyagi.hitome_senbon_cherry_festival.feature1" = "Zao mountain range";
-"miyagi.hitome_senbon_cherry_festival.feature2" = "1,200 cherry trees";
-"miyagi.hitome_senbon_cherry_festival.feature3" = "8km cherry avenue";
+"miyagi.hitome_senbon_cherry_festival.location" = "Thị trấn Ogawara & Shibata";
+"miyagi.hitome_senbon_cherry_festival.feature1" = "Dãy núi Zao";
+"miyagi.hitome_senbon_cherry_festival.feature2" = "1.200 cây anh đào";
+"miyagi.hitome_senbon_cherry_festival.feature3" = "Hàng anh đào 8 km";
 
 /* **MARK: - Akita** */
 "akita.namahage_sedo_festival.name" = "Lễ hội Namahage Sedo";
 "akita.namahage_sedo_festival.description" = "Lễ hội mùa đông tái hiện nghi lễ truyền thống \"Namahage\" của bán đảo Oga. Trống Namahage và ngọn đuốc trên núi tuyết tạo không khí huyền ảo.";
-"akita.namahage_sedo_festival.location" = "Shinzan Shrine, Oga City";
-"akita.namahage_sedo_festival.feature1" = "Namahage tradition";
-"akita.namahage_sedo_festival.feature2" = "Torch flames";
-"akita.namahage_sedo_festival.feature3" = "Oga Peninsula";
+"akita.namahage_sedo_festival.location" = "Đền Shinzan, thành phố Oga";
+"akita.namahage_sedo_festival.feature1" = "Namahage";
+"akita.namahage_sedo_festival.feature2" = "Ngọn lửa đuốc";
+"akita.namahage_sedo_festival.feature3" = "Bán đảo Oga";
 
 /* **MARK: - Yamagata** */
 "yamagata.zao_frost_festival.name" = "Lễ hội cây băng Zao";
 "yamagata.zao_frost_festival.description" = "Lễ hội mùa đông thưởng ngoạn hiện tượng cây băng hiếm có trên thế giới. Màn thắp sáng các cây băng gọi là \"Ice Monster\" thật huyền bí.";
-"yamagata.zao_frost_festival.location" = "Zao Onsen Ski Resort";
-"yamagata.zao_frost_festival.feature1" = "World-rare ice trees";
-"yamagata.zao_frost_festival.feature2" = "Ice Monsters";
-"yamagata.zao_frost_festival.feature3" = "Illumination";
+"yamagata.zao_frost_festival.location" = "Khu trượt tuyết suối Zao";
+"yamagata.zao_frost_festival.feature1" = "Cây băng tầm thế giới";
+"yamagata.zao_frost_festival.feature2" = "Ice Monster";
+"yamagata.zao_frost_festival.feature3" = "Thắp sáng";
 
 /* **MARK: - Fukushima** */
 "fukushima.ouchi_juku_snow_festival.name" = "Lễ hội tuyết Ouchi-juku";
 "fukushima.ouchi_juku_snow_festival.description" = "Lễ hội mùa đông thưởng cảnh tuyết của thị trấn trạm dịch thời Edo. Tuyết phủ trên mái tranh và hơi ấm bếp lò gợi nỗi hoài hương.";
-"fukushima.ouchi_juku_snow_festival.location" = "Ouchi-juku, Shimogo Town";
-"fukushima.ouchi_juku_snow_festival.feature1" = "Edo post town";
-"fukushima.ouchi_juku_snow_festival.feature2" = "Thatched roofs";
-"fukushima.ouchi_juku_snow_festival.feature3" = "Hearth fires";
+"fukushima.ouchi_juku_snow_festival.location" = "Ouchi-juku, thị trấn Shimogo";
+"fukushima.ouchi_juku_snow_festival.feature1" = "Thị trấn trạm dịch Edo";
+"fukushima.ouchi_juku_snow_festival.feature2" = "Mái tranh";
+"fukushima.ouchi_juku_snow_festival.feature3" = "Bếp lò irori";
 
 /* **MARK: - Ibaraki** */
 "ibaraki.nemophila_festival.name" = "Lễ hội nemophila công viên ven biển Hitachi";
 "ibaraki.nemophila_festival.description" = "Sự kiện tuyệt cảnh khi khoảng 5,3 triệu bông nemophila nhuộm xanh cả ngọn đồi. Nổi tiếng với cảnh đẹp gọi là \"thảm xanh\".";
-"ibaraki.nemophila_festival.location" = "Hitachinaka Seaside Park";
-"ibaraki.nemophila_festival.feature1" = "5.3 million flowers";
-"ibaraki.nemophila_festival.feature2" = "Blue carpet";
-"ibaraki.nemophila_festival.feature3" = "Spectacular view";
+"ibaraki.nemophila_festival.location" = "Công viên ven biển Hitachinaka";
+"ibaraki.nemophila_festival.feature1" = "5,3 triệu bông";
+"ibaraki.nemophila_festival.feature2" = "Thảm xanh";
+"ibaraki.nemophila_festival.feature3" = "Cảnh tuyệt đẹp";
 
 "ibaraki.kairakuen_plum_festival.name" = "Lễ hội hoa mơ Kairakuen";
 "ibaraki.kairakuen_plum_festival.description" = "Lễ hội hoa mơ tổ chức tại Kairakuen, một trong ba khu vườn nổi tiếng Nhật Bản. Khoảng 100 giống, 3.000 cây mơ tô điểm đầu xuân Ibaraki.";
-"ibaraki.kairakuen_plum_festival.location" = "Kairakuen, Mito City";
-"ibaraki.kairakuen_plum_festival.feature1" = "Japan's top 3 gardens";
-"ibaraki.kairakuen_plum_festival.feature2" = "100 varieties";
-"ibaraki.kairakuen_plum_festival.feature3" = "3,000 plum trees";
+"ibaraki.kairakuen_plum_festival.location" = "Kairakuen, thành phố Mito";
+"ibaraki.kairakuen_plum_festival.feature1" = "Ba khu vườn nổi tiếng Nhật Bản";
+"ibaraki.kairakuen_plum_festival.feature2" = "100 giống";
+"ibaraki.kairakuen_plum_festival.feature3" = "3.000 cây mơ";
 
 /* **MARK: - Tochigi** */
 "tochigi.ashikaga_wisteria_festival.name" = "Lễ hội tử đằng công viên hoa Ashikaga";
 "tochigi.ashikaga_wisteria_festival.description" = "Danh thắng tử đằng với giàn tử đằng lớn nhất thế giới. Tử đằng tím, trắng, hồng khoe sắc, gồm cả cây đại tử đằng 150 năm tuổi.";
-"tochigi.ashikaga_wisteria_festival.location" = "Ashikaga Flower Park";
-"tochigi.ashikaga_wisteria_festival.feature1" = "World's largest";
-"tochigi.ashikaga_wisteria_festival.feature2" = "150 years old";
-"tochigi.ashikaga_wisteria_festival.feature3" = "Great wisteria trellis";
+"tochigi.ashikaga_wisteria_festival.location" = "Công viên hoa Ashikaga";
+"tochigi.ashikaga_wisteria_festival.feature1" = "Lớn nhất thế giới";
+"tochigi.ashikaga_wisteria_festival.feature2" = "150 năm tuổi";
+"tochigi.ashikaga_wisteria_festival.feature3" = "Giàn tử đằng lớn";
 
 /* **MARK: - Gunma** */
 "gunma.kusatsu_onsen_festival.name" = "Lễ hội tạ ơn suối Kusatsu";
 "gunma.kusatsu_onsen_festival.description" = "Lễ hội mùa đông tạ ơn nguồn nước khoáng Kusatsu. Điệu múa yumomi và ánh đèn phố onsen tạo bầu không khí suối nước nóng.";
-"gunma.kusatsu_onsen_festival.location" = "Kusatsu Onsen Town";
-"gunma.kusatsu_onsen_festival.feature1" = "Yumomi dancing";
-"gunma.kusatsu_onsen_festival.feature2" = "Hot spring town";
-"gunma.kusatsu_onsen_festival.feature3" = "Illumination";
+"gunma.kusatsu_onsen_festival.location" = "Phố suối nước nóng Kusatsu";
+"gunma.kusatsu_onsen_festival.feature1" = "Múa yumomi";
+"gunma.kusatsu_onsen_festival.feature2" = "Phố onsen";
+"gunma.kusatsu_onsen_festival.feature3" = "Thắp sáng";
 
 /* **MARK: - Saitama** */
 "saitama.chichibu_night_festival.name" = "Lễ hội đêm Chichibu";
 "saitama.chichibu_night_festival.description" = "Một trong ba lễ hội xe rước lớn của Nhật Bản. Lễ hội hoành tráng nơi những chiếc xe rước và kasaboko lộng lẫy tô điểm đêm đông Chichibu.";
-"saitama.chichibu_night_festival.location" = "Chichibu City";
-"saitama.chichibu_night_festival.feature1" = "Japan's top 3 float festivals";
-"saitama.chichibu_night_festival.feature2" = "Winter festival";
-"saitama.chichibu_night_festival.feature3" = "Floats and kasaboko";
+"saitama.chichibu_night_festival.location" = "Thành phố Chichibu";
+"saitama.chichibu_night_festival.feature1" = "Ba lễ hội xe rước lớn Nhật Bản";
+"saitama.chichibu_night_festival.feature2" = "Lễ hội mùa đông";
+"saitama.chichibu_night_festival.feature3" = "Xe rước và kasaboko";
 
 /* **MARK: - Chiba** */
 "chiba.sakura_tulip_festa.name" = "Lễ hội hoa tulip Sakura";
 "chiba.sakura_tulip_festa.description" = "Cánh đồng tulip lớn nhất vùng Kanto. Cảnh xuân tuyệt đẹp với khoảng 100 giống, 670.000 bông tulip khoe sắc bên cối xay gió.";
-"chiba.sakura_tulip_festa.location" = "Sakura Furusato Square";
-"chiba.sakura_tulip_festa.feature1" = "Largest in Kanto";
-"chiba.sakura_tulip_festa.feature2" = "670,000 tulips";
-"chiba.sakura_tulip_festa.feature3" = "Dutch windmill";
+"chiba.sakura_tulip_festa.location" = "Quảng trường Furusato Sakura";
+"chiba.sakura_tulip_festa.feature1" = "Lớn nhất vùng Kanto";
+"chiba.sakura_tulip_festa.feature2" = "670.000 bông tulip";
+"chiba.sakura_tulip_festa.feature3" = "Cối xay gió Hà Lan";
 
 /* **MARK: - Tokyo** */
 "tokyo.ueno_cherry_festival.name" = "Lễ hội hoa anh đào Ueno";
 "tokyo.ueno_cherry_festival.description" = "Danh thắng hoa anh đào Tokyo có từ thời Edo. Khoảng 800 cây anh đào tô điểm công viên Ueno, đông đúc khách ngắm hoa.";
-"tokyo.ueno_cherry_festival.location" = "Ueno Onshi Park";
-"tokyo.ueno_cherry_festival.feature1" = "Since Edo period";
-"tokyo.ueno_cherry_festival.feature2" = "800 cherry trees";
-"tokyo.ueno_cherry_festival.feature3" = "Premier Tokyo spot";
+"tokyo.ueno_cherry_festival.location" = "Công viên Ueno Onshi";
+"tokyo.ueno_cherry_festival.feature1" = "Từ thời Edo";
+"tokyo.ueno_cherry_festival.feature2" = "800 cây anh đào";
+"tokyo.ueno_cherry_festival.feature3" = "Hàng đầu Tokyo";
 
 "tokyo.meiji_jingu_ginkgo_festival.name" = "Lễ hội cây bạch quả Meiji Jingu Gaien";
 "tokyo.meiji_jingu_ginkgo_festival.description" = "Lễ hội mùa thu nổi tiếng với hàng cây bạch quả vàng óng. Đường hầm vàng do 146 cây bạch quả tạo nên đẹp choáng ngợp.";
 "tokyo.meiji_jingu_ginkgo_festival.location" = "Meiji Jingu Gaien";
-"tokyo.meiji_jingu_ginkgo_festival.feature1" = "Golden tunnel";
-"tokyo.meiji_jingu_ginkgo_festival.feature2" = "146 ginkgo trees";
-"tokyo.meiji_jingu_ginkgo_festival.feature3" = "Premier Tokyo spot";
+"tokyo.meiji_jingu_ginkgo_festival.feature1" = "Đường hầm vàng";
+"tokyo.meiji_jingu_ginkgo_festival.feature2" = "146 cây bạch quả";
+"tokyo.meiji_jingu_ginkgo_festival.feature3" = "Hàng đầu Tokyo";
 
 "tokyo.meiji_jingu_hatsumode.name" = "Lễ đầu năm đền Meiji";
 "tokyo.meiji_jingu_hatsumode.description" = "Địa điểm lễ đầu năm đông người viếng nhất Nhật Bản. Mỗi năm khoảng 3 triệu người đến cầu nguyện năm mới.";
-"tokyo.meiji_jingu_hatsumode.location" = "Meiji Shrine";
-"tokyo.meiji_jingu_hatsumode.feature1" = "3 million visitors";
-"tokyo.meiji_jingu_hatsumode.feature2" = "Most in Japan";
-"tokyo.meiji_jingu_hatsumode.feature3" = "New Year prayers";
+"tokyo.meiji_jingu_hatsumode.location" = "Đền Meiji";
+"tokyo.meiji_jingu_hatsumode.feature1" = "3 triệu người";
+"tokyo.meiji_jingu_hatsumode.feature2" = "Đông nhất Nhật Bản";
+"tokyo.meiji_jingu_hatsumode.feature3" = "Cầu nguyện năm mới";
 
 /* **MARK: - Kanagawa** */
 "kanagawa.odawara_plum_festival.name" = "Lễ hội hoa mơ Odawara";
 "kanagawa.odawara_plum_festival.description" = "Lễ hội hoa mơ tại công viên di tích thành Odawara nơi khoảng 450 cây mơ nở. Hoa mơ với hậu cảnh tòa thành báo hiệu xuân về.";
-"kanagawa.odawara_plum_festival.location" = "Odawara Castle Ruins Park";
-"kanagawa.odawara_plum_festival.feature1" = "450 plum trees";
-"kanagawa.odawara_plum_festival.feature2" = "Odawara Castle";
-"kanagawa.odawara_plum_festival.feature3" = "Spring arrival";
+"kanagawa.odawara_plum_festival.location" = "Công viên di tích thành Odawara";
+"kanagawa.odawara_plum_festival.feature1" = "450 cây mơ";
+"kanagawa.odawara_plum_festival.feature2" = "Thành Odawara";
+"kanagawa.odawara_plum_festival.feature3" = "Xuân về";
 
 "kanagawa.hakone_ekiden.name" = "Hakone Ekiden";
 "kanagawa.hakone_ekiden.description" = "Đỉnh cao chạy tiếp sức đại học được yêu thích như nét đặc trưng đầu năm. Các đội chạy quãng khứ hồi 217,1 km giữa Tokyo và Hakone trong hai ngày.";
-"kanagawa.hakone_ekiden.location" = "Tokyo-Hakone";
-"kanagawa.hakone_ekiden.feature1" = "New Year tradition";
-"kanagawa.hakone_ekiden.feature2" = "University ekiden";
-"kanagawa.hakone_ekiden.feature3" = "217.1km";
+"kanagawa.hakone_ekiden.location" = "Tokyo ~ Hakone";
+"kanagawa.hakone_ekiden.feature1" = "Nét đặc trưng đầu năm";
+"kanagawa.hakone_ekiden.feature2" = "Chạy tiếp sức đại học";
+"kanagawa.hakone_ekiden.feature3" = "217,1 km";
 
 /* **MARK: - Niigata** */
 "niigata.takada_castle_cherry_festival.name" = "Hội ngắm hoa anh đào triệu người thành Takada";
 "niigata.takada_castle_cherry_festival.description" = "Một trong ba nơi ngắm anh đào đêm đẹp nhất Nhật Bản. Vẻ đẹp hoa anh đào đêm do khoảng 4.000 cây anh đào và 3.000 đèn bonbori tạo nên thật đặc biệt.";
-"niigata.takada_castle_cherry_festival.location" = "Takada Park";
-"niigata.takada_castle_cherry_festival.feature1" = "Japan's top 3 night cherry";
-"niigata.takada_castle_cherry_festival.feature2" = "4,000 cherry trees";
-"niigata.takada_castle_cherry_festival.feature3" = "3,000 paper lanterns";
+"niigata.takada_castle_cherry_festival.location" = "Công viên Takada";
+"niigata.takada_castle_cherry_festival.feature1" = "Ba nơi anh đào đêm đẹp nhất Nhật Bản";
+"niigata.takada_castle_cherry_festival.feature2" = "4.000 cây anh đào";
+"niigata.takada_castle_cherry_festival.feature3" = "3.000 đèn bonbori";
 
 /* **MARK: - Toyama** */
 "toyama.tonami_tulip_fair.name" = "Hội hoa tulip Tonami";
 "toyama.tonami_tulip_fair.description" = "Lễ hội tulip lớn nhất Nhật Bản với 3 triệu bông khoe sắc. Thưởng ngoạn cảnh tuyệt đẹp với hậu cảnh dãy Tateyama.";
-"toyama.tonami_tulip_fair.location" = "Tonami Tulip Park";
-"toyama.tonami_tulip_fair.feature1" = "3 million tulips";
-"toyama.tonami_tulip_fair.feature2" = "Japan's largest";
-"toyama.tonami_tulip_fair.feature3" = "Tateyama range";
+"toyama.tonami_tulip_fair.location" = "Công viên tulip Tonami";
+"toyama.tonami_tulip_fair.feature1" = "3 triệu bông tulip";
+"toyama.tonami_tulip_fair.feature2" = "Lớn nhất Nhật Bản";
+"toyama.tonami_tulip_fair.feature3" = "Dãy Tateyama";
 
 /* **MARK: - Ishikawa** */
 "ishikawa.kenrokuen_cherry_festival.name" = "Lễ hội hoa anh đào Kenrokuen";
 "ishikawa.kenrokuen_cherry_festival.description" = "Lễ hội hoa anh đào tại Kenrokuen, một trong ba khu vườn nổi tiếng Nhật Bản. Khoảng 420 cây anh đào tôn lên vẻ đẹp của vườn Nhật.";
 "ishikawa.kenrokuen_cherry_festival.location" = "Kenrokuen";
-"ishikawa.kenrokuen_cherry_festival.feature1" = "Japan's top 3 gardens";
-"ishikawa.kenrokuen_cherry_festival.feature2" = "420 cherry trees";
-"ishikawa.kenrokuen_cherry_festival.feature3" = "Japanese garden";
+"ishikawa.kenrokuen_cherry_festival.feature1" = "Ba khu vườn nổi tiếng Nhật Bản";
+"ishikawa.kenrokuen_cherry_festival.feature2" = "420 cây anh đào";
+"ishikawa.kenrokuen_cherry_festival.feature3" = "Vườn Nhật";
 
 /* **MARK: - Yamanashi** */
 "yamanashi.fuji_shibazakura_festival.name" = "Lễ hội chi anh Phú Sĩ";
 "yamanashi.fuji_shibazakura_festival.description" = "Sự kiện tuyệt cảnh với 800.000 khóm chi anh khoe sắc bên núi Phú Sĩ. Sự kết hợp thảm hồng và núi Phú Sĩ thật choáng ngợp.";
 "yamanashi.fuji_shibazakura_festival.location" = "Fuji Motosuko Resort";
-"yamanashi.fuji_shibazakura_festival.feature1" = "800,000 plants";
-"yamanashi.fuji_shibazakura_festival.feature2" = "Mount Fuji backdrop";
+"yamanashi.fuji_shibazakura_festival.feature1" = "800.000 khóm";
+"yamanashi.fuji_shibazakura_festival.feature2" = "Hậu cảnh núi Phú Sĩ";
 "yamanashi.fuji_shibazakura_festival.feature3" = "Pink carpet";
 
 /* **MARK: - Nagano** */
@@ -4671,16 +4671,16 @@
 "nagasaki.huis_ten_bosch_kingdom_of_light.feature3" = "6-month duration";
 
 /* **MARK: - Kumamoto** */
-"kumamoto.kumamoto_castle_cherry_festival.name" = "Kumamoto Castle Cherry Blossom Festival";
-"kumamoto.kumamoto_castle_cherry_festival.description" = "A cherry blossom festival at Kumamoto Castle, one of Japan's three famous castles. About 800 cherry trees beautifully color the castle under reconstruction, becoming a symbol of hope.";
+"kumamoto.kumamoto_castle_cherry_festival.name" = "Lễ hội hoa anh đào thành Kumamoto";
+"kumamoto.kumamoto_castle_cherry_festival.description" = "Lễ hội hoa anh đào thành Kumamoto, một trong ba tòa thành nổi tiếng Nhật Bản. Khoảng 800 cây anh đào tô điểm tòa thành đang phục dựng, trở thành biểu tượng hy vọng.";
 "kumamoto.kumamoto_castle_cherry_festival.location" = "Kumamoto Castle";
 "kumamoto.kumamoto_castle_cherry_festival.feature1" = "Japan's top 3 castles";
 "kumamoto.kumamoto_castle_cherry_festival.feature2" = "800 cherry trees";
 "kumamoto.kumamoto_castle_cherry_festival.feature3" = "Symbol of hope";
 
 /* **MARK: - Miyazaki** */
-"miyazaki.takachiho_yokagura.name" = "Takachiho Night Kagura";
-"miyazaki.takachiho_yokagura.description" = "A traditional performing art of Miyazaki Prefecture. From November to February, 33 kagura dances are dedicated, creating mystical nights in the land of mythology.";
+"miyazaki.takachiho_yokagura.name" = "Kagura đêm Takachiho";
+"miyazaki.takachiho_yokagura.description" = "Nghệ thuật truyền thống của Miyazaki. Từ tháng 11 đến tháng 2, 33 màn kagura được dâng cúng, tạo nên những đêm huyền bí ở xứ thần thoại.";
 "miyazaki.takachiho_yokagura.location" = "Takachiho Town";
 "miyazaki.takachiho_yokagura.feature1" = "33 kagura dances";
 "miyazaki.takachiho_yokagura.feature2" = "Land of mythology";
@@ -4688,14 +4688,14 @@
 
 /* **MARK: - Okinawa** */
 "okinawa.ryukyu_kaiensai.name" = "Ryukyu Kaiensai";
-"okinawa.ryukyu_kaiensai.description" = "Okinawa's largest fireworks display. An entertainment show woven by about 10,000 fireworks and music can be enjoyed.";
+"okinawa.ryukyu_kaiensai.description" = "Đại hội pháo hoa lớn nhất Okinawa. Thưởng thức show giải trí do khoảng 10.000 quả pháo và âm nhạc tạo nên.";
 "okinawa.ryukyu_kaiensai.location" = "Ginowan Seaside Park";
 "okinawa.ryukyu_kaiensai.feature1" = "Okinawa's largest";
 "okinawa.ryukyu_kaiensai.feature2" = "10,000 fireworks";
 "okinawa.ryukyu_kaiensai.feature3" = "Music show";
 
-"okinawa.professional_baseball_camp.name" = "Professional Baseball Spring Training";
-"okinawa.professional_baseball_camp.description" = "A winter to spring tradition in Okinawa. As a training camp location for 12 professional baseball teams, close-distance viewing with fans can be enjoyed.";
+"okinawa.professional_baseball_camp.name" = "Trại tập huấn bóng chày chuyên nghiệp";
+"okinawa.professional_baseball_camp.description" = "Nét đặc trưng từ đông sang xuân của Okinawa. Là nơi tập huấn của 12 đội bóng chày chuyên nghiệp, cổ động viên có thể xem ở cự ly gần.";
 "okinawa.professional_baseball_camp.location" = "Various locations in Okinawa";
 "okinawa.professional_baseball_camp.feature1" = "12 teams";
 "okinawa.professional_baseball_camp.feature2" = "Close-distance fans";
@@ -5246,28 +5246,28 @@
 "gourmet_rafute_desc" = "Món địa phương Okinawa, ba chỉ heo ninh với awamori và đường đen đến khi tan mềm";
 
 "tokyo.goma_tamago.name" = "Goma Tamago";
-"tokyo.goma_tamago.description" = "An egg-shaped Tokyo sweet of black sesame paste coated in white chocolate. A souvenir staple.";
+"tokyo.goma_tamago.description" = "Bánh nổi tiếng Tokyo hình trứng với nhân mè đen phủ sô cô la trắng. Quà lưu niệm quen thuộc.";
 "tokyo.goma_tamago.price" = "Từ 650 yên";
-"tokyo.kusaka_senbei.name" = "Soka Senbei";
-"tokyo.kusaka_senbei.description" = "Savory soy-sauce rice crackers baked firm from non-glutinous rice. A representative Kanto rice snack.";
+"tokyo.kusaka_senbei.name" = "Bánh Soka senbei";
+"tokyo.kusaka_senbei.description" = "Bánh senbei xì dầu thơm giòn nướng cứng từ gạo tẻ. Bánh gạo tiêu biểu vùng Kanto.";
 "tokyo.kusaka_senbei.price" = "Từ 500 yên";
 "aichi.shiruko_sand.name" = "Shiruko Sand";
-"aichi.shiruko_sand.description" = "A long-selling Nagoya snack of red bean paste between biscuits, loved for its simple sweetness.";
+"aichi.shiruko_sand.description" = "Bánh bán chạy lâu năm xuất xứ Nagoya, kẹp đậu đỏ giữa bánh quy. Vị ngọt mộc mạc được ưa chuộng.";
 "aichi.shiruko_sand.price" = "Từ 300 yên";
-"aichi.ebi_senbei.name" = "Ebi Senbei";
-"aichi.ebi_senbei.description" = "Shrimp crackers baked to bring out the savory flavor, an Aichi specialty perfect as a gift.";
+"aichi.ebi_senbei.name" = "Bánh senbei tôm";
+"aichi.ebi_senbei.description" = "Bánh senbei nổi tiếng Aichi nướng làm nổi bật vị tôm. Nhiều loại, hợp làm quà.";
 "aichi.ebi_senbei.price" = "Từ 500 yên";
-"osaka.iwa_okoshi.name" = "Iwa Okoshi";
-"osaka.iwa_okoshi.description" = "A traditional hard Osaka confection made from compressed rice, named for its rock-like crunch.";
+"osaka.iwa_okoshi.name" = "Iwa okoshi";
+"osaka.iwa_okoshi.description" = "Bánh dân dã cứng truyền thống Osaka làm từ gạo nén. Độ cứng như đá là nguồn gốc tên gọi.";
 "osaka.iwa_okoshi.price" = "Từ 500 yên";
-"osaka.tenten_gyoza.name" = "Tenten Gyoza";
-"osaka.tenten_gyoza.description" = "Bite-sized dumplings, a popular chilled and frozen Osaka gourmet souvenir.";
+"osaka.tenten_gyoza.name" = "Gyoza Tenten";
+"osaka.tenten_gyoza.description" = "Gyoza cỡ một miếng. Đặc sản Osaka được ưa chuộng dạng bảo quản lạnh và đông lạnh.";
 "osaka.tenten_gyoza.price" = "Từ 700 yên";
-"okinawa.kokuto.name" = "Okinawa Brown Sugar";
-"okinawa.kokuto.description" = "Okinawa's specialty brown sugar made from sugarcane, with a rich, deep sweetness.";
+"okinawa.kokuto.name" = "Đường đen Okinawa";
+"okinawa.kokuto.description" = "Đường đen đặc sản Okinawa làm từ mía. Nổi bật với vị ngọt đậm đà và độ béo.";
 "okinawa.kokuto.price" = "Từ 400 yên";
-"okinawa.shio_senbei.name" = "Shio Senbei";
-"okinawa.shio_senbei.description" = "Simple, firm salted rice crackers from Okinawa, a beloved local everyday snack.";
+"okinawa.shio_senbei.name" = "Bánh senbei muối";
+"okinawa.shio_senbei.description" = "Bánh senbei Okinawa mặn mộc mạc và cứng. Món ăn vặt quen thuộc của người địa phương.";
 "okinawa.shio_senbei.price" = "Từ 300 yên";
 
 "attraction_goryokaku" = "Goryokaku";
@@ -5304,29 +5304,29 @@
 "gourmet_yokosuka_navy_curry" = "Cà ri hải quân Yokosuka";
 "gourmet_yokosuka_navy_curry_desc" = "Cà ri trứ danh Yokosuka tái hiện công thức hải quân xưa, dùng kèm sữa và salad";
 
-"hokkaido.trappist_cookie.name" = "Trappist Cookies";
-"hokkaido.trappist_cookie.description" = "Simple, richly buttery cookies made at a monastery in Hakodate.";
+"hokkaido.trappist_cookie.name" = "Bánh quy Trappist";
+"hokkaido.trappist_cookie.description" = "Bánh quy mộc mạc đậm vị bơ làm tại tu viện Hakodate.";
 "hokkaido.trappist_cookie.price" = "Từ 600 yên";
-"hokkaido.kitakaro_baumkuchen.name" = "Kitakaro Baumkuchen";
-"hokkaido.kitakaro_baumkuchen.description" = "A moist baumkuchen made with Hokkaido ingredients.";
+"hokkaido.kitakaro_baumkuchen.name" = "Baumkuchen Kitakaro";
+"hokkaido.kitakaro_baumkuchen.description" = "Baumkuchen ẩm mềm dùng nguyên liệu Hokkaido.";
 "hokkaido.kitakaro_baumkuchen.price" = "Từ 1,300 yên";
 "kyoto.kyo_baum.name" = "Kyo Baum";
-"kyoto.kyo_baum.description" = "A Kyoto-born baumkuchen made with Uji matcha and soy milk.";
+"kyoto.kyo_baum.description" = "Baumkuchen xuất xứ Kyoto dùng matcha Uji và sữa đậu nành.";
 "kyoto.kyo_baum.price" = "Từ 1,200 yên";
-"kyoto.matcha_chocolate.name" = "Matcha Chocolate";
-"kyoto.matcha_chocolate.description" = "Elegantly sweet chocolate confection highlighting the flavor of Uji matcha.";
+"kyoto.matcha_chocolate.name" = "Sô cô la matcha";
+"kyoto.matcha_chocolate.description" = "Bánh sô cô la vị ngọt thanh tôn lên hương matcha Uji.";
 "kyoto.matcha_chocolate.price" = "Từ 700 yên";
-"fukuoka.chikushi_mochi.name" = "Chikushi Mochi";
-"fukuoka.chikushi_mochi.description" = "Soft mochi dusted with kinako and brown sugar syrup. A Fukuoka staple souvenir.";
+"fukuoka.chikushi_mochi.name" = "Chikushi mochi";
+"fukuoka.chikushi_mochi.description" = "Bánh mochi mềm phủ bột kinako và mật đường đen. Quà lưu niệm quen thuộc của Fukuoka.";
 "fukuoka.chikushi_mochi.price" = "Từ 600 yên";
 "fukuoka.menbei.name" = "Menbei";
-"fukuoka.menbei.description" = "Flavorful rice crackers kneaded with mentaiko. A popular Fukuoka souvenir.";
+"fukuoka.menbei.description" = "Bánh senbei đậm đà nhào trứng cá minh thái. Món quà được ưa chuộng của Fukuoka.";
 "fukuoka.menbei.price" = "Từ 500 yên";
-"kanagawa.hakone_manju.name" = "Hakone Onsen Manju";
-"kanagawa.hakone_manju.description" = "Freshly steamed hot-spring buns beloved in the Hakone spa town.";
+"kanagawa.hakone_manju.name" = "Bánh manju suối Hakone";
+"kanagawa.hakone_manju.description" = "Bánh manju suối nước nóng hấp nóng hổi được ưa chuộng ở phố onsen Hakone.";
 "kanagawa.hakone_manju.price" = "Từ 500 yên";
 "kanagawa.kamakura_raisin_wich.name" = "Kamakura Raisin Wich";
-"kanagawa.kamakura_raisin_wich.description" = "A Kamakura specialty of buttercream and raisins between sable cookies.";
+"kanagawa.kamakura_raisin_wich.description" = "Bánh nổi tiếng Kamakura kẹp kem bơ và nho khô giữa bánh sablé.";
 "kanagawa.kamakura_raisin_wich.price" = "Từ 1,000 yên";
 
 "attraction_hiroshima_castle" = "Thành Hiroshima";
@@ -5396,50 +5396,50 @@
 "gourmet_fujinomiya_yakisoba_desc" = "Yakisoba địa phương Shizuoka, sợi dai và bột cá mòi đặc trưng";
 
 "hiroshima.toyoka.name" = "Toyoka";
-"hiroshima.toyoka.description" = "A Hiroshima sweet of red bean paste wrapped in mochi-flour dough and baked. Loved for its chewy texture.";
+"hiroshima.toyoka.description" = "Bánh nổi tiếng Hiroshima gói đậu đỏ nguyên hạt bằng bột nếp rồi nướng. Kết cấu dẻo dai được ưa chuộng.";
 "hiroshima.toyoka.price" = "Từ 650 yên";
-"hiroshima.lemon_cake.name" = "Lemon Cake";
-"hiroshima.lemon_cake.description" = "A refreshing baked sweet made with Setouchi lemons. A Hiroshima souvenir staple.";
+"hiroshima.lemon_cake.name" = "Bánh chanh";
+"hiroshima.lemon_cake.description" = "Bánh nướng thanh mát dùng chanh Setouchi. Quà lưu niệm quen thuộc của Hiroshima.";
 "hiroshima.lemon_cake.price" = "Từ 600 yên";
-"nagasaki.kujuku_sempei.name" = "Kujukushima Sempei";
-"nagasaki.kujuku_sempei.description" = "Light tile-shaped crackers dotted with peanuts. A Nagasaki sweet originating in Sasebo.";
+"nagasaki.kujuku_sempei.name" = "Bánh Kujukushima sempei";
+"nagasaki.kujuku_sempei.description" = "Bánh senbei hình ngói nhẹ rắc đậu phộng. Bánh nổi tiếng Nagasaki xuất xứ Sasebo.";
 "nagasaki.kujuku_sempei.price" = "Từ 600 yên";
 "nagasaki.nagasaki_monogatari.name" = "Nagasaki Monogatari";
-"nagasaki.nagasaki_monogatari.description" = "A rolled confection of cream wrapped in castella sponge.";
+"nagasaki.nagasaki_monogatari.description" = "Bánh nổi tiếng dạng cuộn với kem gói trong bột castella.";
 "nagasaki.nagasaki_monogatari.price" = "Từ 700 yên";
 "nara.narazuke.name" = "Narazuke";
-"nara.narazuke.description" = "Traditional Nara pickles of melon and cucumber cured in sake lees.";
+"nara.narazuke.description" = "Dưa muối truyền thống xuất xứ Nara, ngâm dưa và dưa chuột trong bã rượu sake.";
 "nara.narazuke.price" = "Từ 600 yên";
-"nara.kaki_no_ha_cha.name" = "Persimmon Leaf Tea";
-"nara.kaki_no_ha_cha.description" = "A Nara tea made from vitamin-rich persimmon leaves, fragrant and mellow.";
+"nara.kaki_no_ha_cha.name" = "Trà lá hồng";
+"nara.kaki_no_ha_cha.description" = "Trà Nara làm từ lá hồng giàu vitamin, thơm và dịu.";
 "nara.kaki_no_ha_cha.price" = "Từ 500 yên";
 "miyagi.shiogama_kohada.name" = "Shiogama";
-"miyagi.shiogama_kohada.description" = "An elegantly sweet rakugan made with Shiogama seaweed salt. A long-standing Miyagi sweet.";
+"miyagi.shiogama_kohada.description" = "Bánh rakugan vị ngọt thanh dùng muối rong Shiogama. Bánh nổi tiếng Miyagi từ xưa.";
 "miyagi.shiogama_kohada.price" = "Từ 500 yên";
 "miyagi.kikufuku.name" = "Kikufuku";
-"miyagi.kikufuku.description" = "A popular Sendai sweet of fresh cream and bean paste wrapped in mochi. Zunda flavor too.";
+"miyagi.kikufuku.description" = "Bánh ngọt được ưa chuộng của Sendai, gói kem tươi và đậu đỏ bằng mochi. Có cả vị zunda.";
 "miyagi.kikufuku.price" = "Từ 700 yên";
-"chiba.nure_senbei.name" = "Nure Senbei";
-"chiba.nure_senbei.description" = "A Choshi specialty cracker with a moist texture, soaked in plenty of soy sauce.";
+"chiba.nure_senbei.name" = "Nure senbei";
+"chiba.nure_senbei.description" = "Bánh senbei nổi tiếng Choshi kết cấu ẩm thấm đẫm sốt xì dầu.";
 "chiba.nure_senbei.price" = "Từ 400 yên";
-"chiba.peanut_sub.name" = "Peanut Sable";
-"chiba.peanut_sub.description" = "A fragrant sable highlighting the flavor of Chiba peanuts.";
+"chiba.peanut_sub.name" = "Bánh sablé đậu phộng";
+"chiba.peanut_sub.description" = "Bánh sablé thơm tôn lên vị đậu phộng Chiba.";
 "chiba.peanut_sub.price" = "Từ 600 yên";
 "ishikawa.shibafune.name" = "Shibafune";
-"ishikawa.shibafune.description" = "Thin crackers with a touch of ginger. A traditional Kanazawa sweet.";
+"ishikawa.shibafune.description" = "Bánh senbei mỏng vị gừng. Bánh truyền thống của Kanazawa.";
 "ishikawa.shibafune.price" = "Từ 600 yên";
-"ishikawa.kaga_bocha.name" = "Kaga Bocha";
-"ishikawa.kaga_bocha.description" = "Fragrant Kanazawa roasted stem tea with a clean, crisp taste.";
+"ishikawa.kaga_bocha.name" = "Trà bocha Kaga";
+"ishikawa.kaga_bocha.description" = "Trà hojicha thơm của Kanazawa rang từ cọng trà, vị thanh sạch.";
 "ishikawa.kaga_bocha.price" = "Từ 500 yên";
 "nagano.oyaki.name" = "Oyaki";
-"nagano.oyaki.description" = "A Nagano local food of nozawana or bean paste wrapped in wheat dough and grilled.";
+"nagano.oyaki.description" = "Món địa phương Nagano gói nozawana hoặc đậu đỏ trong bột mì rồi nướng.";
 "nagano.oyaki.price" = "Từ 150 yên";
-"nagano.kurumi_yubeshi.name" = "Kurumi Yubeshi";
-"nagano.kurumi_yubeshi.description" = "A chewy Japanese sweet kneaded with walnuts. A Shinshu souvenir staple.";
+"nagano.kurumi_yubeshi.name" = "Kurumi yubeshi";
+"nagano.kurumi_yubeshi.description" = "Bánh ngọt dẻo dai nhào óc chó. Quà lưu niệm quen thuộc của Shinshu.";
 "nagano.kurumi_yubeshi.price" = "Từ 500 yên";
-"shizuoka.wasabi_zuke.name" = "Wasabi Zuke";
-"shizuoka.wasabi_zuke.description" = "A Shizuoka specialty of wasabi cured in sake lees, with sharp heat and faint sweetness.";
+"shizuoka.wasabi_zuke.name" = "Wasabi zuke";
+"shizuoka.wasabi_zuke.description" = "Đặc sản Shizuoka ngâm wasabi trong bã rượu sake. Vị cay xộc và ngọt nhẹ.";
 "shizuoka.wasabi_zuke.price" = "Từ 500 yên";
-"shizuoka.abekawa_mochi.name" = "Abekawa Mochi";
-"shizuoka.abekawa_mochi.description" = "A traditional Shizuoka sweet of soft mochi coated in kinako and bean paste.";
+"shizuoka.abekawa_mochi.name" = "Abekawa mochi";
+"shizuoka.abekawa_mochi.description" = "Bánh ngọt truyền thống Shizuoka phủ mochi mềm với bột kinako và đậu đỏ.";
 "shizuoka.abekawa_mochi.price" = "Từ 600 yên";

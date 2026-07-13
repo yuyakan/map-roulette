@@ -4284,187 +4284,187 @@
 /* **MARK: - Hokkaido** */
 "hokkaido.sapporo_snow_festival.name" = "Festival de la neige de Sapporo";
 "hokkaido.sapporo_snow_festival.description" = "Festival de neige et de glace de renommée mondiale. D'immenses sculptures de neige et de glace bordent le parc Odori et Susukino, égayant l'hiver de Sapporo.";
-"hokkaido.sapporo_snow_festival.location" = "Odori Park & Susukino";
-"hokkaido.sapporo_snow_festival.feature1" = "World-class event";
-"hokkaido.sapporo_snow_festival.feature2" = "Giant snow sculptures";
-"hokkaido.sapporo_snow_festival.feature3" = "Ice sculpture displays";
+"hokkaido.sapporo_snow_festival.location" = "Parc Odori et Susukino";
+"hokkaido.sapporo_snow_festival.feature1" = "Événement d'envergure mondiale";
+"hokkaido.sapporo_snow_festival.feature2" = "Sculptures de neige géantes";
+"hokkaido.sapporo_snow_festival.feature3" = "Exposition de sculptures de glace";
 
 "hokkaido.hakodate_goryokaku_festival.name" = "Festival Goryokaku de Hakodate";
 "hokkaido.hakodate_goryokaku_festival.description" = "Festival historique recréant la guerre de Hakodate. Revivez la fin de l'ère Edo à travers le concours Hijikata Toshizo et le défilé de la restauration.";
-"hokkaido.hakodate_goryokaku_festival.location" = "Goryokaku Park";
-"hokkaido.hakodate_goryokaku_festival.feature1" = "Historical recreation";
+"hokkaido.hakodate_goryokaku_festival.location" = "Parc Goryokaku";
+"hokkaido.hakodate_goryokaku_festival.feature1" = "Reconstitution historique";
 "hokkaido.hakodate_goryokaku_festival.feature2" = "Hijikata Toshizo";
-"hokkaido.hakodate_goryokaku_festival.feature3" = "Meiji Restoration parade";
+"hokkaido.hakodate_goryokaku_festival.feature3" = "Défilé de la restauration";
 
 /* **MARK: - Aomori** */
 "aomori.hirosaki_cherry_festival.name" = "Festival des cerisiers de Hirosaki";
 "aomori.hirosaki_cherry_festival.description" = "L'un des trois plus beaux sites de cerisiers du Japon. Le panorama du château de Hirosaki et de quelque 2 600 cerisiers est réputé comme le plus beau festival de cerisiers du Japon.";
-"aomori.hirosaki_cherry_festival.location" = "Hirosaki Park";
-"aomori.hirosaki_cherry_festival.feature1" = "Japan's top 3 cherry spots";
-"aomori.hirosaki_cherry_festival.feature2" = "2,600 cherry trees";
-"aomori.hirosaki_cherry_festival.feature3" = "Hirosaki Castle";
+"aomori.hirosaki_cherry_festival.location" = "Parc de Hirosaki";
+"aomori.hirosaki_cherry_festival.feature1" = "Trois grands sites de cerisiers du Japon";
+"aomori.hirosaki_cherry_festival.feature2" = "2 600 cerisiers";
+"aomori.hirosaki_cherry_festival.feature3" = "Château de Hirosaki";
 
 "aomori.hachinohe_enburi.name" = "Hachinohe Enburi";
 "aomori.hachinohe_enburi.description" = "Art populaire du sud d'Aomori priant pour de bonnes récoltes. Un festival hivernal féerique où des danseurs coiffés d'un eboshi exécutent leur danse.";
-"aomori.hachinohe_enburi.location" = "Hachinohe City Center";
-"aomori.hachinohe_enburi.feature1" = "Folk performing art";
-"aomori.hachinohe_enburi.feature2" = "Good harvest prayer";
-"aomori.hachinohe_enburi.feature3" = "Traditional dance";
+"aomori.hachinohe_enburi.location" = "Centre de Hachinohe";
+"aomori.hachinohe_enburi.feature1" = "Art populaire";
+"aomori.hachinohe_enburi.feature2" = "Prière pour de bonnes récoltes";
+"aomori.hachinohe_enburi.feature3" = "Danse du tayu";
 
 /* **MARK: - Iwate** */
 "iwate.kitakami_cherry_festival.name" = "Festival des cerisiers de Tenshochi à Kitakami";
 "iwate.kitakami_cherry_festival.description" = "Site de cerisiers majeur du Tohoku. Un grandiose festival avec une allée de cerisiers s'étendant sur environ 2 km le long de la rivière Kitakami.";
 "iwate.kitakami_cherry_festival.location" = "Kitakami Tenshochi";
-"iwate.kitakami_cherry_festival.feature1" = "Leading Tohoku spot";
-"iwate.kitakami_cherry_festival.feature2" = "2km cherry tree avenue";
-"iwate.kitakami_cherry_festival.feature3" = "Along Kitakami River";
+"iwate.kitakami_cherry_festival.feature1" = "Grand site du Tohoku";
+"iwate.kitakami_cherry_festival.feature2" = "Allée de cerisiers de 2 km";
+"iwate.kitakami_cherry_festival.feature3" = "Le long de la rivière Kitakami";
 
 /* **MARK: - Miyagi** */
 "miyagi.hitome_senbon_cherry_festival.name" = "Festival des cerisiers Hitome Senbon";
 "miyagi.hitome_senbon_cherry_festival.description" = "Spectaculaire collaboration entre l'allée de cerisiers de la digue de la rivière Shiroishi et le massif enneigé de Zao. Environ 1 200 cerisiers fleurissent sur 8 km.";
-"miyagi.hitome_senbon_cherry_festival.location" = "Ogawara & Shibata Towns";
-"miyagi.hitome_senbon_cherry_festival.feature1" = "Zao mountain range";
-"miyagi.hitome_senbon_cherry_festival.feature2" = "1,200 cherry trees";
-"miyagi.hitome_senbon_cherry_festival.feature3" = "8km cherry avenue";
+"miyagi.hitome_senbon_cherry_festival.location" = "Villes d'Ogawara et Shibata";
+"miyagi.hitome_senbon_cherry_festival.feature1" = "Massif de Zao";
+"miyagi.hitome_senbon_cherry_festival.feature2" = "1 200 cerisiers";
+"miyagi.hitome_senbon_cherry_festival.feature3" = "Allée de cerisiers de 8 km";
 
 /* **MARK: - Akita** */
 "akita.namahage_sedo_festival.name" = "Festival Namahage Sedo";
 "akita.namahage_sedo_festival.description" = "Festival hivernal recréant le rituel traditionnel « Namahage » de la péninsule d'Oga. Les tambours Namahage et les flammes des torches sur la montagne enneigée créent une ambiance féerique.";
-"akita.namahage_sedo_festival.location" = "Shinzan Shrine, Oga City";
-"akita.namahage_sedo_festival.feature1" = "Namahage tradition";
-"akita.namahage_sedo_festival.feature2" = "Torch flames";
-"akita.namahage_sedo_festival.feature3" = "Oga Peninsula";
+"akita.namahage_sedo_festival.location" = "Sanctuaire Shinzan, ville d'Oga";
+"akita.namahage_sedo_festival.feature1" = "Namahage";
+"akita.namahage_sedo_festival.feature2" = "Flammes des torches";
+"akita.namahage_sedo_festival.feature3" = "Péninsule d'Oga";
 
 /* **MARK: - Yamagata** */
 "yamagata.zao_frost_festival.name" = "Festival des arbres givrés de Zao";
 "yamagata.zao_frost_festival.description" = "Festival hivernal pour admirer le phénomène rare des arbres givrés. L'illumination des amas de givre appelés « Ice Monsters » est mystique.";
-"yamagata.zao_frost_festival.location" = "Zao Onsen Ski Resort";
-"yamagata.zao_frost_festival.feature1" = "World-rare ice trees";
+"yamagata.zao_frost_festival.location" = "Station de ski de Zao Onsen";
+"yamagata.zao_frost_festival.feature1" = "Arbres givrés de renommée mondiale";
 "yamagata.zao_frost_festival.feature2" = "Ice Monsters";
 "yamagata.zao_frost_festival.feature3" = "Illumination";
 
 /* **MARK: - Fukushima** */
 "fukushima.ouchi_juku_snow_festival.name" = "Festival de la neige d'Ouchi-juku";
 "fukushima.ouchi_juku_snow_festival.description" = "Festival hivernal pour apprécier le paysage enneigé d'une ville-relais de l'ère Edo. La neige sur les toits de chaume et la chaleur des foyers évoquent la nostalgie.";
-"fukushima.ouchi_juku_snow_festival.location" = "Ouchi-juku, Shimogo Town";
-"fukushima.ouchi_juku_snow_festival.feature1" = "Edo post town";
-"fukushima.ouchi_juku_snow_festival.feature2" = "Thatched roofs";
-"fukushima.ouchi_juku_snow_festival.feature3" = "Hearth fires";
+"fukushima.ouchi_juku_snow_festival.location" = "Ouchi-juku, ville de Shimogo";
+"fukushima.ouchi_juku_snow_festival.feature1" = "Ville-relais d'Edo";
+"fukushima.ouchi_juku_snow_festival.feature2" = "Toits de chaume";
+"fukushima.ouchi_juku_snow_festival.feature3" = "Foyer irori";
 
 /* **MARK: - Ibaraki** */
 "ibaraki.nemophila_festival.name" = "Festival des némophiles du parc balnéaire de Hitachi";
 "ibaraki.nemophila_festival.description" = "Événement spectaculaire où quelque 5,3 millions de némophiles teintent toute la colline en bleu. Célèbre pour le paysage appelé « tapis bleu ».";
-"ibaraki.nemophila_festival.location" = "Hitachinaka Seaside Park";
-"ibaraki.nemophila_festival.feature1" = "5.3 million flowers";
-"ibaraki.nemophila_festival.feature2" = "Blue carpet";
-"ibaraki.nemophila_festival.feature3" = "Spectacular view";
+"ibaraki.nemophila_festival.location" = "Parc balnéaire de Hitachinaka";
+"ibaraki.nemophila_festival.feature1" = "5,3 millions de fleurs";
+"ibaraki.nemophila_festival.feature2" = "Tapis bleu";
+"ibaraki.nemophila_festival.feature3" = "Panorama grandiose";
 
 "ibaraki.kairakuen_plum_festival.name" = "Festival des pruniers de Kairakuen";
 "ibaraki.kairakuen_plum_festival.description" = "Festival des pruniers à Kairakuen, l'un des trois plus beaux jardins du Japon. Environ 100 variétés et 3 000 pruniers colorent le début du printemps d'Ibaraki.";
-"ibaraki.kairakuen_plum_festival.location" = "Kairakuen, Mito City";
-"ibaraki.kairakuen_plum_festival.feature1" = "Japan's top 3 gardens";
-"ibaraki.kairakuen_plum_festival.feature2" = "100 varieties";
-"ibaraki.kairakuen_plum_festival.feature3" = "3,000 plum trees";
+"ibaraki.kairakuen_plum_festival.location" = "Kairakuen, ville de Mito";
+"ibaraki.kairakuen_plum_festival.feature1" = "Trois grands jardins du Japon";
+"ibaraki.kairakuen_plum_festival.feature2" = "100 variétés";
+"ibaraki.kairakuen_plum_festival.feature3" = "3 000 pruniers";
 
 /* **MARK: - Tochigi** */
 "tochigi.ashikaga_wisteria_festival.name" = "Festival des glycines du parc floral d'Ashikaga";
 "tochigi.ashikaga_wisteria_festival.description" = "Site de glycines aux plus grandes tonnelles du monde. Glycines violettes, blanches et roses en pleine floraison, dont une grande glycine de 150 ans.";
-"tochigi.ashikaga_wisteria_festival.location" = "Ashikaga Flower Park";
-"tochigi.ashikaga_wisteria_festival.feature1" = "World's largest";
-"tochigi.ashikaga_wisteria_festival.feature2" = "150 years old";
-"tochigi.ashikaga_wisteria_festival.feature3" = "Great wisteria trellis";
+"tochigi.ashikaga_wisteria_festival.location" = "Parc floral d'Ashikaga";
+"tochigi.ashikaga_wisteria_festival.feature1" = "Le plus grand du monde";
+"tochigi.ashikaga_wisteria_festival.feature2" = "150 ans";
+"tochigi.ashikaga_wisteria_festival.feature3" = "Grande tonnelle de glycines";
 
 /* **MARK: - Gunma** */
 "gunma.kusatsu_onsen_festival.name" = "Festival de gratitude des thermes de Kusatsu";
 "gunma.kusatsu_onsen_festival.description" = "Festival hivernal en gratitude pour les eaux de Kusatsu. La danse du yumomi et l'illumination de la station thermale créent une ambiance thermale.";
-"gunma.kusatsu_onsen_festival.location" = "Kusatsu Onsen Town";
-"gunma.kusatsu_onsen_festival.feature1" = "Yumomi dancing";
-"gunma.kusatsu_onsen_festival.feature2" = "Hot spring town";
+"gunma.kusatsu_onsen_festival.location" = "Rue thermale de Kusatsu";
+"gunma.kusatsu_onsen_festival.feature1" = "Danse du yumomi";
+"gunma.kusatsu_onsen_festival.feature2" = "Station thermale";
 "gunma.kusatsu_onsen_festival.feature3" = "Illumination";
 
 /* **MARK: - Saitama** */
 "saitama.chichibu_night_festival.name" = "Festival nocturne de Chichibu";
 "saitama.chichibu_night_festival.description" = "L'un des trois grands festivals de chars du Japon. Un festival grandiose où de somptueux chars et kasaboko colorent les nuits d'hiver de Chichibu.";
-"saitama.chichibu_night_festival.location" = "Chichibu City";
-"saitama.chichibu_night_festival.feature1" = "Japan's top 3 float festivals";
-"saitama.chichibu_night_festival.feature2" = "Winter festival";
-"saitama.chichibu_night_festival.feature3" = "Floats and kasaboko";
+"saitama.chichibu_night_festival.location" = "Ville de Chichibu";
+"saitama.chichibu_night_festival.feature1" = "Trois grands festivals de chars du Japon";
+"saitama.chichibu_night_festival.feature2" = "Festival hivernal";
+"saitama.chichibu_night_festival.feature3" = "Chars et kasaboko";
 
 /* **MARK: - Chiba** */
 "chiba.sakura_tulip_festa.name" = "Festa des tulipes de Sakura";
 "chiba.sakura_tulip_festa.description" = "Le plus grand champ de tulipes du Kanto. Un panorama printanier où quelque 100 variétés et 670 000 tulipes fleurissent devant des moulins à vent.";
-"chiba.sakura_tulip_festa.location" = "Sakura Furusato Square";
-"chiba.sakura_tulip_festa.feature1" = "Largest in Kanto";
-"chiba.sakura_tulip_festa.feature2" = "670,000 tulips";
-"chiba.sakura_tulip_festa.feature3" = "Dutch windmill";
+"chiba.sakura_tulip_festa.location" = "Place Furusato de Sakura";
+"chiba.sakura_tulip_festa.feature1" = "Le plus grand du Kanto";
+"chiba.sakura_tulip_festa.feature2" = "670 000 tulipes";
+"chiba.sakura_tulip_festa.feature3" = "Moulin à vent néerlandais";
 
 /* **MARK: - Tokyo** */
 "tokyo.ueno_cherry_festival.name" = "Festival des cerisiers d'Ueno";
 "tokyo.ueno_cherry_festival.description" = "Site de cerisiers de Tokyo perpétué depuis l'ère Edo. Environ 800 cerisiers colorent le parc d'Ueno, attirant de nombreux amateurs de hanami.";
-"tokyo.ueno_cherry_festival.location" = "Ueno Onshi Park";
-"tokyo.ueno_cherry_festival.feature1" = "Since Edo period";
-"tokyo.ueno_cherry_festival.feature2" = "800 cherry trees";
-"tokyo.ueno_cherry_festival.feature3" = "Premier Tokyo spot";
+"tokyo.ueno_cherry_festival.location" = "Parc Ueno Onshi";
+"tokyo.ueno_cherry_festival.feature1" = "Depuis l'époque d'Edo";
+"tokyo.ueno_cherry_festival.feature2" = "800 cerisiers";
+"tokyo.ueno_cherry_festival.feature3" = "Grand site de Tokyo";
 
 "tokyo.meiji_jingu_ginkgo_festival.name" = "Festival des ginkgos de Meiji Jingu Gaien";
 "tokyo.meiji_jingu_ginkgo_festival.description" = "Festival d'automne réputé pour son allée de ginkgos dorés. Le tunnel doré formé par 146 ginkgos est d'une beauté saisissante.";
 "tokyo.meiji_jingu_ginkgo_festival.location" = "Meiji Jingu Gaien";
-"tokyo.meiji_jingu_ginkgo_festival.feature1" = "Golden tunnel";
-"tokyo.meiji_jingu_ginkgo_festival.feature2" = "146 ginkgo trees";
-"tokyo.meiji_jingu_ginkgo_festival.feature3" = "Premier Tokyo spot";
+"tokyo.meiji_jingu_ginkgo_festival.feature1" = "Tunnel doré";
+"tokyo.meiji_jingu_ginkgo_festival.feature2" = "146 ginkgos";
+"tokyo.meiji_jingu_ginkgo_festival.feature3" = "Grand site de Tokyo";
 
 "tokyo.meiji_jingu_hatsumode.name" = "Première visite du Nouvel An au sanctuaire Meiji";
 "tokyo.meiji_jingu_hatsumode.description" = "Le lieu de première visite du Nouvel An le plus fréquenté du Japon. Environ 3 millions de personnes viennent prier chaque année.";
-"tokyo.meiji_jingu_hatsumode.location" = "Meiji Shrine";
-"tokyo.meiji_jingu_hatsumode.feature1" = "3 million visitors";
-"tokyo.meiji_jingu_hatsumode.feature2" = "Most in Japan";
-"tokyo.meiji_jingu_hatsumode.feature3" = "New Year prayers";
+"tokyo.meiji_jingu_hatsumode.location" = "Sanctuaire Meiji";
+"tokyo.meiji_jingu_hatsumode.feature1" = "3 millions de visiteurs";
+"tokyo.meiji_jingu_hatsumode.feature2" = "Le plus fréquenté du Japon";
+"tokyo.meiji_jingu_hatsumode.feature3" = "Prières du Nouvel An";
 
 /* **MARK: - Kanagawa** */
 "kanagawa.odawara_plum_festival.name" = "Festival des pruniers d'Odawara";
 "kanagawa.odawara_plum_festival.description" = "Festival des pruniers au parc des ruines du château d'Odawara où fleurissent environ 450 pruniers. Les fleurs de prunier sur fond de château annoncent le printemps.";
-"kanagawa.odawara_plum_festival.location" = "Odawara Castle Ruins Park";
-"kanagawa.odawara_plum_festival.feature1" = "450 plum trees";
-"kanagawa.odawara_plum_festival.feature2" = "Odawara Castle";
-"kanagawa.odawara_plum_festival.feature3" = "Spring arrival";
+"kanagawa.odawara_plum_festival.location" = "Parc des ruines du château d'Odawara";
+"kanagawa.odawara_plum_festival.feature1" = "450 pruniers";
+"kanagawa.odawara_plum_festival.feature2" = "Château d'Odawara";
+"kanagawa.odawara_plum_festival.feature3" = "L'arrivée du printemps";
 
 "kanagawa.hakone_ekiden.name" = "Ekiden de Hakone";
 "kanagawa.hakone_ekiden.description" = "Le summum de l'ekiden universitaire, prisé comme tradition du Nouvel An. Les équipes parcourent 217,1 km aller-retour entre Tokyo et Hakone en deux jours.";
-"kanagawa.hakone_ekiden.location" = "Tokyo-Hakone";
-"kanagawa.hakone_ekiden.feature1" = "New Year tradition";
-"kanagawa.hakone_ekiden.feature2" = "University ekiden";
-"kanagawa.hakone_ekiden.feature3" = "217.1km";
+"kanagawa.hakone_ekiden.location" = "Tokyo – Hakone";
+"kanagawa.hakone_ekiden.feature1" = "Tradition du Nouvel An";
+"kanagawa.hakone_ekiden.feature2" = "Ekiden universitaire";
+"kanagawa.hakone_ekiden.feature3" = "217,1 km";
 
 /* **MARK: - Niigata** */
 "niigata.takada_castle_cherry_festival.name" = "Hanami au château de Takada (un million de visiteurs)";
 "niigata.takada_castle_cherry_festival.description" = "L'un des trois plus beaux sites de cerisiers nocturnes du Japon. La beauté des cerisiers nocturnes tissée par 4 000 cerisiers et 3 000 lanternes bonbori est exceptionnelle.";
-"niigata.takada_castle_cherry_festival.location" = "Takada Park";
-"niigata.takada_castle_cherry_festival.feature1" = "Japan's top 3 night cherry";
-"niigata.takada_castle_cherry_festival.feature2" = "4,000 cherry trees";
-"niigata.takada_castle_cherry_festival.feature3" = "3,000 paper lanterns";
+"niigata.takada_castle_cherry_festival.location" = "Parc de Takada";
+"niigata.takada_castle_cherry_festival.feature1" = "Trois grands sites de cerisiers nocturnes";
+"niigata.takada_castle_cherry_festival.feature2" = "4 000 cerisiers";
+"niigata.takada_castle_cherry_festival.feature3" = "3 000 lanternes bonbori";
 
 /* **MARK: - Toyama** */
 "toyama.tonami_tulip_fair.name" = "Foire aux tulipes de Tonami";
 "toyama.tonami_tulip_fair.description" = "Le plus grand festival de tulipes du Japon, où fleurissent 3 millions de tulipes. On y admire des panoramas grandioses avec le massif de Tateyama en toile de fond.";
-"toyama.tonami_tulip_fair.location" = "Tonami Tulip Park";
-"toyama.tonami_tulip_fair.feature1" = "3 million tulips";
-"toyama.tonami_tulip_fair.feature2" = "Japan's largest";
-"toyama.tonami_tulip_fair.feature3" = "Tateyama range";
+"toyama.tonami_tulip_fair.location" = "Parc aux tulipes de Tonami";
+"toyama.tonami_tulip_fair.feature1" = "3 millions de tulipes";
+"toyama.tonami_tulip_fair.feature2" = "Le plus grand du Japon";
+"toyama.tonami_tulip_fair.feature3" = "Massif de Tateyama";
 
 /* **MARK: - Ishikawa** */
 "ishikawa.kenrokuen_cherry_festival.name" = "Festival des cerisiers de Kenrokuen";
 "ishikawa.kenrokuen_cherry_festival.description" = "Festival des cerisiers à Kenrokuen, l'un des trois plus beaux jardins du Japon. Environ 420 cerisiers rehaussent la beauté du jardin japonais.";
 "ishikawa.kenrokuen_cherry_festival.location" = "Kenrokuen";
-"ishikawa.kenrokuen_cherry_festival.feature1" = "Japan's top 3 gardens";
-"ishikawa.kenrokuen_cherry_festival.feature2" = "420 cherry trees";
-"ishikawa.kenrokuen_cherry_festival.feature3" = "Japanese garden";
+"ishikawa.kenrokuen_cherry_festival.feature1" = "Trois grands jardins du Japon";
+"ishikawa.kenrokuen_cherry_festival.feature2" = "420 cerisiers";
+"ishikawa.kenrokuen_cherry_festival.feature3" = "Jardin japonais";
 
 /* **MARK: - Yamanashi** */
 "yamanashi.fuji_shibazakura_festival.name" = "Festival des shibazakura du Fuji";
 "yamanashi.fuji_shibazakura_festival.description" = "Événement spectaculaire où 800 000 shibazakura fleurissent devant le mont Fuji. La collaboration du tapis rose et du Fuji est saisissante.";
 "yamanashi.fuji_shibazakura_festival.location" = "Fuji Motosuko Resort";
-"yamanashi.fuji_shibazakura_festival.feature1" = "800,000 plants";
-"yamanashi.fuji_shibazakura_festival.feature2" = "Mount Fuji backdrop";
+"yamanashi.fuji_shibazakura_festival.feature1" = "800 000 plants";
+"yamanashi.fuji_shibazakura_festival.feature2" = "Mont Fuji en toile de fond";
 "yamanashi.fuji_shibazakura_festival.feature3" = "Pink carpet";
 
 /* **MARK: - Nagano** */
@@ -4671,16 +4671,16 @@
 "nagasaki.huis_ten_bosch_kingdom_of_light.feature3" = "6-month duration";
 
 /* **MARK: - Kumamoto** */
-"kumamoto.kumamoto_castle_cherry_festival.name" = "Kumamoto Castle Cherry Blossom Festival";
-"kumamoto.kumamoto_castle_cherry_festival.description" = "A cherry blossom festival at Kumamoto Castle, one of Japan's three famous castles. About 800 cherry trees beautifully color the castle under reconstruction, becoming a symbol of hope.";
+"kumamoto.kumamoto_castle_cherry_festival.name" = "Festival des cerisiers du château de Kumamoto";
+"kumamoto.kumamoto_castle_cherry_festival.description" = "Festival des cerisiers du château de Kumamoto, l'un des trois châteaux célèbres du Japon. Environ 800 cerisiers colorent le château en reconstruction, devenu symbole d'espoir.";
 "kumamoto.kumamoto_castle_cherry_festival.location" = "Kumamoto Castle";
 "kumamoto.kumamoto_castle_cherry_festival.feature1" = "Japan's top 3 castles";
 "kumamoto.kumamoto_castle_cherry_festival.feature2" = "800 cherry trees";
 "kumamoto.kumamoto_castle_cherry_festival.feature3" = "Symbol of hope";
 
 /* **MARK: - Miyazaki** */
-"miyazaki.takachiho_yokagura.name" = "Takachiho Night Kagura";
-"miyazaki.takachiho_yokagura.description" = "A traditional performing art of Miyazaki Prefecture. From November to February, 33 kagura dances are dedicated, creating mystical nights in the land of mythology.";
+"miyazaki.takachiho_yokagura.name" = "Kagura nocturne de Takachiho";
+"miyazaki.takachiho_yokagura.description" = "Art traditionnel de Miyazaki. De novembre à février, 33 danses kagura sont dédiées, créant des nuits mystiques au pays de la mythologie.";
 "miyazaki.takachiho_yokagura.location" = "Takachiho Town";
 "miyazaki.takachiho_yokagura.feature1" = "33 kagura dances";
 "miyazaki.takachiho_yokagura.feature2" = "Land of mythology";
@@ -4688,14 +4688,14 @@
 
 /* **MARK: - Okinawa** */
 "okinawa.ryukyu_kaiensai.name" = "Ryukyu Kaiensai";
-"okinawa.ryukyu_kaiensai.description" = "Okinawa's largest fireworks display. An entertainment show woven by about 10,000 fireworks and music can be enjoyed.";
+"okinawa.ryukyu_kaiensai.description" = "Le plus grand feu d'artifice d'Okinawa. On y savoure un spectacle mêlant environ 10 000 fusées et de la musique.";
 "okinawa.ryukyu_kaiensai.location" = "Ginowan Seaside Park";
 "okinawa.ryukyu_kaiensai.feature1" = "Okinawa's largest";
 "okinawa.ryukyu_kaiensai.feature2" = "10,000 fireworks";
 "okinawa.ryukyu_kaiensai.feature3" = "Music show";
 
-"okinawa.professional_baseball_camp.name" = "Professional Baseball Spring Training";
-"okinawa.professional_baseball_camp.description" = "A winter to spring tradition in Okinawa. As a training camp location for 12 professional baseball teams, close-distance viewing with fans can be enjoyed.";
+"okinawa.professional_baseball_camp.name" = "Stage d'entraînement de baseball professionnel";
+"okinawa.professional_baseball_camp.description" = "Tradition de l'hiver au printemps à Okinawa. Lieu d'entraînement de 12 équipes professionnelles de baseball, permettant aux fans d'assister de tout près.";
 "okinawa.professional_baseball_camp.location" = "Various locations in Okinawa";
 "okinawa.professional_baseball_camp.feature1" = "12 teams";
 "okinawa.professional_baseball_camp.feature2" = "Close-distance fans";
@@ -5246,28 +5246,28 @@
 "gourmet_rafute_desc" = "Plat local d'Okinawa : poitrine de porc mijotée à l'awamori et au sucre brun, fondante";
 
 "tokyo.goma_tamago.name" = "Goma Tamago";
-"tokyo.goma_tamago.description" = "An egg-shaped Tokyo sweet of black sesame paste coated in white chocolate. A souvenir staple.";
+"tokyo.goma_tamago.description" = "Confiserie de Tokyo en forme d'œuf : pâte de sésame noir enrobée de chocolat blanc. Un souvenir incontournable.";
 "tokyo.goma_tamago.price" = "À partir de 650 ¥";
-"tokyo.kusaka_senbei.name" = "Soka Senbei";
-"tokyo.kusaka_senbei.description" = "Savory soy-sauce rice crackers baked firm from non-glutinous rice. A representative Kanto rice snack.";
+"tokyo.kusaka_senbei.name" = "Soka senbei";
+"tokyo.kusaka_senbei.description" = "Senbei à la sauce soja, croquant, cuit ferme à partir de riz non gluant. Un biscuit de riz emblématique du Kanto.";
 "tokyo.kusaka_senbei.price" = "À partir de 500 ¥";
 "aichi.shiruko_sand.name" = "Shiruko Sand";
-"aichi.shiruko_sand.description" = "A long-selling Nagoya snack of red bean paste between biscuits, loved for its simple sweetness.";
+"aichi.shiruko_sand.description" = "Snack à succès né à Nagoya : pâte de haricots entre deux biscuits. Sa douceur simple séduit.";
 "aichi.shiruko_sand.price" = "À partir de 300 ¥";
-"aichi.ebi_senbei.name" = "Ebi Senbei";
-"aichi.ebi_senbei.description" = "Shrimp crackers baked to bring out the savory flavor, an Aichi specialty perfect as a gift.";
+"aichi.ebi_senbei.name" = "Senbei aux crevettes";
+"aichi.ebi_senbei.description" = "Senbei d'Aichi cuit pour révéler la saveur de la crevette. Nombreuses variétés, idéal en cadeau.";
 "aichi.ebi_senbei.price" = "À partir de 500 ¥";
-"osaka.iwa_okoshi.name" = "Iwa Okoshi";
-"osaka.iwa_okoshi.description" = "A traditional hard Osaka confection made from compressed rice, named for its rock-like crunch.";
+"osaka.iwa_okoshi.name" = "Iwa okoshi";
+"osaka.iwa_okoshi.description" = "Confiserie dure traditionnelle d'Osaka faite de riz compressé. Son croquant rocheux lui donne son nom.";
 "osaka.iwa_okoshi.price" = "À partir de 500 ¥";
-"osaka.tenten_gyoza.name" = "Tenten Gyoza";
-"osaka.tenten_gyoza.description" = "Bite-sized dumplings, a popular chilled and frozen Osaka gourmet souvenir.";
+"osaka.tenten_gyoza.name" = "Gyoza de Tenten";
+"osaka.tenten_gyoza.description" = "Gyoza bouchée. Un souvenir gourmand d'Osaka prisé, réfrigéré ou surgelé.";
 "osaka.tenten_gyoza.price" = "À partir de 700 ¥";
-"okinawa.kokuto.name" = "Okinawa Brown Sugar";
-"okinawa.kokuto.description" = "Okinawa's specialty brown sugar made from sugarcane, with a rich, deep sweetness.";
+"okinawa.kokuto.name" = "Sucre brun d'Okinawa";
+"okinawa.kokuto.description" = "Sucre brun typique d'Okinawa fait de canne à sucre, à la douceur riche et profonde.";
 "okinawa.kokuto.price" = "À partir de 400 ¥";
-"okinawa.shio_senbei.name" = "Shio Senbei";
-"okinawa.shio_senbei.description" = "Simple, firm salted rice crackers from Okinawa, a beloved local everyday snack.";
+"okinawa.shio_senbei.name" = "Senbei salé";
+"okinawa.shio_senbei.description" = "Senbei d'Okinawa salé, simple et ferme. Un en-cas apprécié des habitants.";
 "okinawa.shio_senbei.price" = "À partir de 300 ¥";
 
 "attraction_goryokaku" = "Goryokaku";
@@ -5304,29 +5304,29 @@
 "gourmet_yokosuka_navy_curry" = "Curry naval de Yokosuka";
 "gourmet_yokosuka_navy_curry_desc" = "Curry réputé de Yokosuka recréant une ancienne recette navale, servi avec lait et salade";
 
-"hokkaido.trappist_cookie.name" = "Trappist Cookies";
-"hokkaido.trappist_cookie.description" = "Simple, richly buttery cookies made at a monastery in Hakodate.";
+"hokkaido.trappist_cookie.name" = "Cookies trappistes";
+"hokkaido.trappist_cookie.description" = "Cookies simples au beurre riche, faits dans un monastère de Hakodate.";
 "hokkaido.trappist_cookie.price" = "À partir de 600 ¥";
-"hokkaido.kitakaro_baumkuchen.name" = "Kitakaro Baumkuchen";
-"hokkaido.kitakaro_baumkuchen.description" = "A moist baumkuchen made with Hokkaido ingredients.";
+"hokkaido.kitakaro_baumkuchen.name" = "Baumkuchen de Kitakaro";
+"hokkaido.kitakaro_baumkuchen.description" = "Baumkuchen moelleux fait avec des ingrédients de Hokkaido.";
 "hokkaido.kitakaro_baumkuchen.price" = "À partir de 1,300 ¥";
 "kyoto.kyo_baum.name" = "Kyo Baum";
-"kyoto.kyo_baum.description" = "A Kyoto-born baumkuchen made with Uji matcha and soy milk.";
+"kyoto.kyo_baum.description" = "Baumkuchen né à Kyoto, au matcha d'Uji et au lait de soja.";
 "kyoto.kyo_baum.price" = "À partir de 1,200 ¥";
-"kyoto.matcha_chocolate.name" = "Matcha Chocolate";
-"kyoto.matcha_chocolate.description" = "Elegantly sweet chocolate confection highlighting the flavor of Uji matcha.";
+"kyoto.matcha_chocolate.name" = "Chocolat au matcha";
+"kyoto.matcha_chocolate.description" = "Confiserie chocolatée à la douceur raffinée mettant en valeur le matcha d'Uji.";
 "kyoto.matcha_chocolate.price" = "À partir de 700 ¥";
-"fukuoka.chikushi_mochi.name" = "Chikushi Mochi";
-"fukuoka.chikushi_mochi.description" = "Soft mochi dusted with kinako and brown sugar syrup. A Fukuoka staple souvenir.";
+"fukuoka.chikushi_mochi.name" = "Chikushi mochi";
+"fukuoka.chikushi_mochi.description" = "Mochi moelleux saupoudré de kinako et de sirop noir. Un souvenir incontournable de Fukuoka.";
 "fukuoka.chikushi_mochi.price" = "À partir de 600 ¥";
 "fukuoka.menbei.name" = "Menbei";
-"fukuoka.menbei.description" = "Flavorful rice crackers kneaded with mentaiko. A popular Fukuoka souvenir.";
+"fukuoka.menbei.description" = "Senbei savoureux pétri de mentaiko. Un souvenir prisé de Fukuoka.";
 "fukuoka.menbei.price" = "À partir de 500 ¥";
-"kanagawa.hakone_manju.name" = "Hakone Onsen Manju";
-"kanagawa.hakone_manju.description" = "Freshly steamed hot-spring buns beloved in the Hakone spa town.";
+"kanagawa.hakone_manju.name" = "Manju thermal de Hakone";
+"kanagawa.hakone_manju.description" = "Manju thermal fraîchement cuit à la vapeur, apprécié dans la station de Hakone.";
 "kanagawa.hakone_manju.price" = "À partir de 500 ¥";
 "kanagawa.kamakura_raisin_wich.name" = "Kamakura Raisin Wich";
-"kanagawa.kamakura_raisin_wich.description" = "A Kamakura specialty of buttercream and raisins between sable cookies.";
+"kanagawa.kamakura_raisin_wich.description" = "Confiserie réputée de Kamakura : crème au beurre et raisins secs entre deux sablés.";
 "kanagawa.kamakura_raisin_wich.price" = "À partir de 1,000 ¥";
 
 "attraction_hiroshima_castle" = "Château de Hiroshima";
@@ -5396,50 +5396,50 @@
 "gourmet_fujinomiya_yakisoba_desc" = "Yakisoba local de Shizuoka : nouilles fermes et poudre de sardine caractéristique";
 
 "hiroshima.toyoka.name" = "Toyoka";
-"hiroshima.toyoka.description" = "A Hiroshima sweet of red bean paste wrapped in mochi-flour dough and baked. Loved for its chewy texture.";
+"hiroshima.toyoka.description" = "Confiserie réputée de Hiroshima : pâte de haricots enrobée de farine de riz gluant et cuite. Sa texture moelleuse séduit.";
 "hiroshima.toyoka.price" = "À partir de 650 ¥";
-"hiroshima.lemon_cake.name" = "Lemon Cake";
-"hiroshima.lemon_cake.description" = "A refreshing baked sweet made with Setouchi lemons. A Hiroshima souvenir staple.";
+"hiroshima.lemon_cake.name" = "Cake au citron";
+"hiroshima.lemon_cake.description" = "Gâteau rafraîchissant aux citrons de Setouchi. Un souvenir incontournable de Hiroshima.";
 "hiroshima.lemon_cake.price" = "À partir de 600 ¥";
-"nagasaki.kujuku_sempei.name" = "Kujukushima Sempei";
-"nagasaki.kujuku_sempei.description" = "Light tile-shaped crackers dotted with peanuts. A Nagasaki sweet originating in Sasebo.";
+"nagasaki.kujuku_sempei.name" = "Kujukushima sempei";
+"nagasaki.kujuku_sempei.description" = "Senbei léger en forme de tuile parsemé de cacahuètes. Confiserie de Nagasaki née à Sasebo.";
 "nagasaki.kujuku_sempei.price" = "À partir de 600 ¥";
 "nagasaki.nagasaki_monogatari.name" = "Nagasaki Monogatari";
-"nagasaki.nagasaki_monogatari.description" = "A rolled confection of cream wrapped in castella sponge.";
+"nagasaki.nagasaki_monogatari.description" = "Confiserie réputée en rouleau : crème enveloppée de génoise castella.";
 "nagasaki.nagasaki_monogatari.price" = "À partir de 700 ¥";
 "nara.narazuke.name" = "Narazuke";
-"nara.narazuke.description" = "Traditional Nara pickles of melon and cucumber cured in sake lees.";
+"nara.narazuke.description" = "Pickles traditionnels nés à Nara : melon et concombre marinés dans la lie de saké.";
 "nara.narazuke.price" = "À partir de 600 ¥";
-"nara.kaki_no_ha_cha.name" = "Persimmon Leaf Tea";
-"nara.kaki_no_ha_cha.description" = "A Nara tea made from vitamin-rich persimmon leaves, fragrant and mellow.";
+"nara.kaki_no_ha_cha.name" = "Thé aux feuilles de kaki";
+"nara.kaki_no_ha_cha.description" = "Thé de Nara aux feuilles de kaki riches en vitamines, parfumé et moelleux.";
 "nara.kaki_no_ha_cha.price" = "À partir de 500 ¥";
 "miyagi.shiogama_kohada.name" = "Shiogama";
-"miyagi.shiogama_kohada.description" = "An elegantly sweet rakugan made with Shiogama seaweed salt. A long-standing Miyagi sweet.";
+"miyagi.shiogama_kohada.description" = "Rakugan à la douceur raffinée au sel d'algues de Shiogama. Une ancienne confiserie de Miyagi.";
 "miyagi.shiogama_kohada.price" = "À partir de 500 ¥";
 "miyagi.kikufuku.name" = "Kikufuku";
-"miyagi.kikufuku.description" = "A popular Sendai sweet of fresh cream and bean paste wrapped in mochi. Zunda flavor too.";
+"miyagi.kikufuku.description" = "Sweet populaire de Sendai : crème fraîche et pâte de haricots dans du mochi. Existe aussi en zunda.";
 "miyagi.kikufuku.price" = "À partir de 700 ¥";
-"chiba.nure_senbei.name" = "Nure Senbei";
-"chiba.nure_senbei.description" = "A Choshi specialty cracker with a moist texture, soaked in plenty of soy sauce.";
+"chiba.nure_senbei.name" = "Nure senbei";
+"chiba.nure_senbei.description" = "Senbei réputé de Choshi à la texture moelleuse, imbibé de sauce soja.";
 "chiba.nure_senbei.price" = "À partir de 400 ¥";
-"chiba.peanut_sub.name" = "Peanut Sable";
-"chiba.peanut_sub.description" = "A fragrant sable highlighting the flavor of Chiba peanuts.";
+"chiba.peanut_sub.name" = "Sablé aux cacahuètes";
+"chiba.peanut_sub.description" = "Sablé parfumé mettant en valeur les cacahuètes de Chiba.";
 "chiba.peanut_sub.price" = "À partir de 600 ¥";
 "ishikawa.shibafune.name" = "Shibafune";
-"ishikawa.shibafune.description" = "Thin crackers with a touch of ginger. A traditional Kanazawa sweet.";
+"ishikawa.shibafune.description" = "Fin senbei relevé de gingembre. Une confiserie traditionnelle de Kanazawa.";
 "ishikawa.shibafune.price" = "À partir de 600 ¥";
-"ishikawa.kaga_bocha.name" = "Kaga Bocha";
-"ishikawa.kaga_bocha.description" = "Fragrant Kanazawa roasted stem tea with a clean, crisp taste.";
+"ishikawa.kaga_bocha.name" = "Bocha de Kaga";
+"ishikawa.kaga_bocha.description" = "Hojicha parfumé de Kanazawa torréfié à partir de tiges, au goût net et frais.";
 "ishikawa.kaga_bocha.price" = "À partir de 500 ¥";
 "nagano.oyaki.name" = "Oyaki";
-"nagano.oyaki.description" = "A Nagano local food of nozawana or bean paste wrapped in wheat dough and grilled.";
+"nagano.oyaki.description" = "Plat local de Nagano : nozawana ou pâte de haricots enveloppés de pâte de blé et grillés.";
 "nagano.oyaki.price" = "À partir de 150 ¥";
-"nagano.kurumi_yubeshi.name" = "Kurumi Yubeshi";
-"nagano.kurumi_yubeshi.description" = "A chewy Japanese sweet kneaded with walnuts. A Shinshu souvenir staple.";
+"nagano.kurumi_yubeshi.name" = "Kurumi yubeshi";
+"nagano.kurumi_yubeshi.description" = "Sweet japonais moelleux pétri de noix. Un souvenir incontournable de Shinshu.";
 "nagano.kurumi_yubeshi.price" = "À partir de 500 ¥";
-"shizuoka.wasabi_zuke.name" = "Wasabi Zuke";
-"shizuoka.wasabi_zuke.description" = "A Shizuoka specialty of wasabi cured in sake lees, with sharp heat and faint sweetness.";
+"shizuoka.wasabi_zuke.name" = "Wasabi zuke";
+"shizuoka.wasabi_zuke.description" = "Spécialité de Shizuoka : wasabi mariné dans la lie de saké, au piquant vif et à la douceur légère.";
 "shizuoka.wasabi_zuke.price" = "À partir de 500 ¥";
-"shizuoka.abekawa_mochi.name" = "Abekawa Mochi";
-"shizuoka.abekawa_mochi.description" = "A traditional Shizuoka sweet of soft mochi coated in kinako and bean paste.";
+"shizuoka.abekawa_mochi.name" = "Abekawa mochi";
+"shizuoka.abekawa_mochi.description" = "Confiserie traditionnelle de Shizuoka : mochi moelleux enrobé de kinako et de pâte de haricots.";
 "shizuoka.abekawa_mochi.price" = "À partir de 600 ¥";

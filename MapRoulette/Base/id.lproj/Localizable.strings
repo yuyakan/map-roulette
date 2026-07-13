@@ -4284,187 +4284,187 @@
 /* **MARK: - Hokkaido** */
 "hokkaido.sapporo_snow_festival.name" = "Festival Salju Sapporo";
 "hokkaido.sapporo_snow_festival.description" = "Festival salju dan es termasyhur di dunia. Patung salju dan es raksasa berjajar di Taman Odori dan Susukino, mewarnai musim dingin Sapporo.";
-"hokkaido.sapporo_snow_festival.location" = "Odori Park & Susukino";
-"hokkaido.sapporo_snow_festival.feature1" = "World-class event";
-"hokkaido.sapporo_snow_festival.feature2" = "Giant snow sculptures";
-"hokkaido.sapporo_snow_festival.feature3" = "Ice sculpture displays";
+"hokkaido.sapporo_snow_festival.location" = "Taman Odori & Susukino";
+"hokkaido.sapporo_snow_festival.feature1" = "Acara kelas dunia";
+"hokkaido.sapporo_snow_festival.feature2" = "Patung salju raksasa";
+"hokkaido.sapporo_snow_festival.feature3" = "Pameran patung es";
 
 "hokkaido.hakodate_goryokaku_festival.name" = "Festival Goryokaku Hakodate";
 "hokkaido.hakodate_goryokaku_festival.description" = "Festival sejarah yang menghidupkan Perang Hakodate. Rasakan sejarah akhir era Edo lewat kontes Hijikata Toshizo dan pawai Restorasi.";
-"hokkaido.hakodate_goryokaku_festival.location" = "Goryokaku Park";
-"hokkaido.hakodate_goryokaku_festival.feature1" = "Historical recreation";
+"hokkaido.hakodate_goryokaku_festival.location" = "Taman Goryokaku";
+"hokkaido.hakodate_goryokaku_festival.feature1" = "Rekonstruksi sejarah";
 "hokkaido.hakodate_goryokaku_festival.feature2" = "Hijikata Toshizo";
-"hokkaido.hakodate_goryokaku_festival.feature3" = "Meiji Restoration parade";
+"hokkaido.hakodate_goryokaku_festival.feature3" = "Pawai Restorasi";
 
 /* **MARK: - Aomori** */
 "aomori.hirosaki_cherry_festival.name" = "Festival Sakura Hirosaki";
 "aomori.hirosaki_cherry_festival.description" = "Salah satu dari tiga tempat sakura terindah Jepang. Panorama Kastel Hirosaki dan sekitar 2.600 pohon sakura dikenal sebagai festival sakura terindah Jepang.";
-"aomori.hirosaki_cherry_festival.location" = "Hirosaki Park";
-"aomori.hirosaki_cherry_festival.feature1" = "Japan's top 3 cherry spots";
-"aomori.hirosaki_cherry_festival.feature2" = "2,600 cherry trees";
-"aomori.hirosaki_cherry_festival.feature3" = "Hirosaki Castle";
+"aomori.hirosaki_cherry_festival.location" = "Taman Hirosaki";
+"aomori.hirosaki_cherry_festival.feature1" = "Tiga tempat sakura terbaik Jepang";
+"aomori.hirosaki_cherry_festival.feature2" = "2.600 pohon sakura";
+"aomori.hirosaki_cherry_festival.feature3" = "Kastel Hirosaki";
 
 "aomori.hachinohe_enburi.name" = "Hachinohe Enburi";
 "aomori.hachinohe_enburi.description" = "Seni rakyat Aomori selatan yang memohon panen melimpah. Festival musim dingin magis saat penari bertopi eboshi menari.";
-"aomori.hachinohe_enburi.location" = "Hachinohe City Center";
-"aomori.hachinohe_enburi.feature1" = "Folk performing art";
-"aomori.hachinohe_enburi.feature2" = "Good harvest prayer";
-"aomori.hachinohe_enburi.feature3" = "Traditional dance";
+"aomori.hachinohe_enburi.location" = "Pusat Kota Hachinohe";
+"aomori.hachinohe_enburi.feature1" = "Seni pertunjukan rakyat";
+"aomori.hachinohe_enburi.feature2" = "Doa panen melimpah";
+"aomori.hachinohe_enburi.feature3" = "Tarian tayu";
 
 /* **MARK: - Iwate** */
 "iwate.kitakami_cherry_festival.name" = "Festival Sakura Tenshochi Kitakami";
 "iwate.kitakami_cherry_festival.description" = "Tempat sakura terkemuka Tohoku. Festival sakura megah dengan jalan berjajar sakura sepanjang sekitar 2 km di tepi Sungai Kitakami.";
 "iwate.kitakami_cherry_festival.location" = "Kitakami Tenshochi";
-"iwate.kitakami_cherry_festival.feature1" = "Leading Tohoku spot";
-"iwate.kitakami_cherry_festival.feature2" = "2km cherry tree avenue";
-"iwate.kitakami_cherry_festival.feature3" = "Along Kitakami River";
+"iwate.kitakami_cherry_festival.feature1" = "Terkemuka Tohoku";
+"iwate.kitakami_cherry_festival.feature2" = "Jalan sakura 2 km";
+"iwate.kitakami_cherry_festival.feature3" = "Sepanjang Sungai Kitakami";
 
 /* **MARK: - Miyagi** */
 "miyagi.hitome_senbon_cherry_festival.name" = "Festival Sakura Hitome Senbon";
 "miyagi.hitome_senbon_cherry_festival.description" = "Perpaduan panorama menakjubkan antara jalan sakura di tanggul Sungai Shiroishi dan Pegunungan Zao bersalju. Sekitar 1.200 pohon sakura mekar sepanjang 8 km.";
-"miyagi.hitome_senbon_cherry_festival.location" = "Ogawara & Shibata Towns";
-"miyagi.hitome_senbon_cherry_festival.feature1" = "Zao mountain range";
-"miyagi.hitome_senbon_cherry_festival.feature2" = "1,200 cherry trees";
-"miyagi.hitome_senbon_cherry_festival.feature3" = "8km cherry avenue";
+"miyagi.hitome_senbon_cherry_festival.location" = "Kota Ogawara & Shibata";
+"miyagi.hitome_senbon_cherry_festival.feature1" = "Pegunungan Zao";
+"miyagi.hitome_senbon_cherry_festival.feature2" = "1.200 pohon sakura";
+"miyagi.hitome_senbon_cherry_festival.feature3" = "Jalan sakura 8 km";
 
 /* **MARK: - Akita** */
 "akita.namahage_sedo_festival.name" = "Festival Namahage Sedo";
 "akita.namahage_sedo_festival.description" = "Festival musim dingin yang menghidupkan ritual tradisional \"Namahage\" Semenanjung Oga. Tabuh Namahage dan nyala obor di gunung salju menciptakan suasana magis.";
-"akita.namahage_sedo_festival.location" = "Shinzan Shrine, Oga City";
-"akita.namahage_sedo_festival.feature1" = "Namahage tradition";
-"akita.namahage_sedo_festival.feature2" = "Torch flames";
-"akita.namahage_sedo_festival.feature3" = "Oga Peninsula";
+"akita.namahage_sedo_festival.location" = "Kuil Shinzan, Kota Oga";
+"akita.namahage_sedo_festival.feature1" = "Namahage";
+"akita.namahage_sedo_festival.feature2" = "Nyala obor";
+"akita.namahage_sedo_festival.feature3" = "Semenanjung Oga";
 
 /* **MARK: - Yamagata** */
 "yamagata.zao_frost_festival.name" = "Festival Pohon Es Zao";
 "yamagata.zao_frost_festival.description" = "Festival musim dingin menikmati fenomena pohon es yang langka di dunia. Iluminasi gugusan pohon es bernama \"Ice Monster\" sungguh magis.";
-"yamagata.zao_frost_festival.location" = "Zao Onsen Ski Resort";
-"yamagata.zao_frost_festival.feature1" = "World-rare ice trees";
-"yamagata.zao_frost_festival.feature2" = "Ice Monsters";
-"yamagata.zao_frost_festival.feature3" = "Illumination";
+"yamagata.zao_frost_festival.location" = "Resor Ski Onsen Zao";
+"yamagata.zao_frost_festival.feature1" = "Pohon es kelas dunia";
+"yamagata.zao_frost_festival.feature2" = "Ice Monster";
+"yamagata.zao_frost_festival.feature3" = "Iluminasi";
 
 /* **MARK: - Fukushima** */
 "fukushima.ouchi_juku_snow_festival.name" = "Festival Salju Ouchi-juku";
 "fukushima.ouchi_juku_snow_festival.description" = "Festival musim dingin menikmati lanskap bersalju kota pos era Edo. Salju di atap jerami dan kehangatan tungku membangkitkan rasa rindu kampung.";
-"fukushima.ouchi_juku_snow_festival.location" = "Ouchi-juku, Shimogo Town";
-"fukushima.ouchi_juku_snow_festival.feature1" = "Edo post town";
-"fukushima.ouchi_juku_snow_festival.feature2" = "Thatched roofs";
-"fukushima.ouchi_juku_snow_festival.feature3" = "Hearth fires";
+"fukushima.ouchi_juku_snow_festival.location" = "Ouchi-juku, Kota Shimogo";
+"fukushima.ouchi_juku_snow_festival.feature1" = "Kota pos Edo";
+"fukushima.ouchi_juku_snow_festival.feature2" = "Atap jerami";
+"fukushima.ouchi_juku_snow_festival.feature3" = "Tungku irori";
 
 /* **MARK: - Ibaraki** */
 "ibaraki.nemophila_festival.name" = "Festival Nemophila Taman Tepi Laut Hitachi";
 "ibaraki.nemophila_festival.description" = "Acara menakjubkan saat sekitar 5,3 juta bunga nemophila membiru satu bukit. Terkenal dengan pemandangan bernama \"karpet biru\".";
-"ibaraki.nemophila_festival.location" = "Hitachinaka Seaside Park";
-"ibaraki.nemophila_festival.feature1" = "5.3 million flowers";
-"ibaraki.nemophila_festival.feature2" = "Blue carpet";
-"ibaraki.nemophila_festival.feature3" = "Spectacular view";
+"ibaraki.nemophila_festival.location" = "Taman Tepi Laut Hitachinaka";
+"ibaraki.nemophila_festival.feature1" = "5,3 juta bunga";
+"ibaraki.nemophila_festival.feature2" = "Karpet biru";
+"ibaraki.nemophila_festival.feature3" = "Panorama menakjubkan";
 
 "ibaraki.kairakuen_plum_festival.name" = "Festival Bunga Plum Kairakuen";
 "ibaraki.kairakuen_plum_festival.description" = "Festival bunga plum di Kairakuen, salah satu dari tiga taman termasyhur Jepang. Sekitar 100 varietas dan 3.000 pohon plum mewarnai awal musim semi Ibaraki.";
-"ibaraki.kairakuen_plum_festival.location" = "Kairakuen, Mito City";
-"ibaraki.kairakuen_plum_festival.feature1" = "Japan's top 3 gardens";
-"ibaraki.kairakuen_plum_festival.feature2" = "100 varieties";
-"ibaraki.kairakuen_plum_festival.feature3" = "3,000 plum trees";
+"ibaraki.kairakuen_plum_festival.location" = "Kairakuen, Kota Mito";
+"ibaraki.kairakuen_plum_festival.feature1" = "Tiga taman termasyhur Jepang";
+"ibaraki.kairakuen_plum_festival.feature2" = "100 varietas";
+"ibaraki.kairakuen_plum_festival.feature3" = "3.000 pohon plum";
 
 /* **MARK: - Tochigi** */
 "tochigi.ashikaga_wisteria_festival.name" = "Festival Wisteria Taman Bunga Ashikaga";
 "tochigi.ashikaga_wisteria_festival.description" = "Tempat wisteria dengan pergola wisteria terbesar di dunia. Wisteria ungu, putih, dan merah muda mekar, termasuk wisteria raksasa berusia 150 tahun.";
-"tochigi.ashikaga_wisteria_festival.location" = "Ashikaga Flower Park";
-"tochigi.ashikaga_wisteria_festival.feature1" = "World's largest";
-"tochigi.ashikaga_wisteria_festival.feature2" = "150 years old";
-"tochigi.ashikaga_wisteria_festival.feature3" = "Great wisteria trellis";
+"tochigi.ashikaga_wisteria_festival.location" = "Taman Bunga Ashikaga";
+"tochigi.ashikaga_wisteria_festival.feature1" = "Terbesar di dunia";
+"tochigi.ashikaga_wisteria_festival.feature2" = "Berusia 150 tahun";
+"tochigi.ashikaga_wisteria_festival.feature3" = "Pergola wisteria besar";
 
 /* **MARK: - Gunma** */
 "gunma.kusatsu_onsen_festival.name" = "Festival Syukur Onsen Kusatsu";
 "gunma.kusatsu_onsen_festival.description" = "Festival musim dingin syukur atas berkah air Kusatsu. Tari yumomi dan iluminasi kawasan onsen menciptakan suasana onsen.";
-"gunma.kusatsu_onsen_festival.location" = "Kusatsu Onsen Town";
-"gunma.kusatsu_onsen_festival.feature1" = "Yumomi dancing";
-"gunma.kusatsu_onsen_festival.feature2" = "Hot spring town";
-"gunma.kusatsu_onsen_festival.feature3" = "Illumination";
+"gunma.kusatsu_onsen_festival.location" = "Kawasan onsen Kusatsu";
+"gunma.kusatsu_onsen_festival.feature1" = "Tari yumomi";
+"gunma.kusatsu_onsen_festival.feature2" = "Kawasan onsen";
+"gunma.kusatsu_onsen_festival.feature3" = "Iluminasi";
 
 /* **MARK: - Saitama** */
 "saitama.chichibu_night_festival.name" = "Festival Malam Chichibu";
 "saitama.chichibu_night_festival.description" = "Salah satu dari tiga festival kereta hias besar Jepang. Festival megah saat kereta hias dan kasaboko yang mewah mewarnai malam musim dingin Chichibu.";
-"saitama.chichibu_night_festival.location" = "Chichibu City";
-"saitama.chichibu_night_festival.feature1" = "Japan's top 3 float festivals";
-"saitama.chichibu_night_festival.feature2" = "Winter festival";
-"saitama.chichibu_night_festival.feature3" = "Floats and kasaboko";
+"saitama.chichibu_night_festival.location" = "Kota Chichibu";
+"saitama.chichibu_night_festival.feature1" = "Tiga festival kereta hias besar Jepang";
+"saitama.chichibu_night_festival.feature2" = "Festival musim dingin";
+"saitama.chichibu_night_festival.feature3" = "Kereta hias dan kasaboko";
 
 /* **MARK: - Chiba** */
 "chiba.sakura_tulip_festa.name" = "Festa Tulip Sakura";
 "chiba.sakura_tulip_festa.description" = "Ladang tulip terbesar di Kanto. Panorama musim semi saat sekitar 100 varietas dan 670.000 tulip mekar berlatar kincir angin.";
-"chiba.sakura_tulip_festa.location" = "Sakura Furusato Square";
-"chiba.sakura_tulip_festa.feature1" = "Largest in Kanto";
-"chiba.sakura_tulip_festa.feature2" = "670,000 tulips";
-"chiba.sakura_tulip_festa.feature3" = "Dutch windmill";
+"chiba.sakura_tulip_festa.location" = "Alun-alun Furusato Sakura";
+"chiba.sakura_tulip_festa.feature1" = "Terbesar di Kanto";
+"chiba.sakura_tulip_festa.feature2" = "670.000 tulip";
+"chiba.sakura_tulip_festa.feature3" = "Kincir angin Belanda";
 
 /* **MARK: - Tokyo** */
 "tokyo.ueno_cherry_festival.name" = "Festival Sakura Ueno";
 "tokyo.ueno_cherry_festival.description" = "Tempat sakura Tokyo yang bertahan sejak era Edo. Sekitar 800 pohon sakura mewarnai Taman Ueno dan ramai pengunjung hanami.";
-"tokyo.ueno_cherry_festival.location" = "Ueno Onshi Park";
-"tokyo.ueno_cherry_festival.feature1" = "Since Edo period";
-"tokyo.ueno_cherry_festival.feature2" = "800 cherry trees";
-"tokyo.ueno_cherry_festival.feature3" = "Premier Tokyo spot";
+"tokyo.ueno_cherry_festival.location" = "Taman Ueno Onshi";
+"tokyo.ueno_cherry_festival.feature1" = "Sejak era Edo";
+"tokyo.ueno_cherry_festival.feature2" = "800 pohon sakura";
+"tokyo.ueno_cherry_festival.feature3" = "Terkemuka di Tokyo";
 
 "tokyo.meiji_jingu_ginkgo_festival.name" = "Festival Ginkgo Meiji Jingu Gaien";
 "tokyo.meiji_jingu_ginkgo_festival.description" = "Festival musim gugur yang terkenal dengan jalan berjajar ginkgo keemasan. Terowongan emas dari 146 pohon ginkgo sungguh memukau.";
 "tokyo.meiji_jingu_ginkgo_festival.location" = "Meiji Jingu Gaien";
-"tokyo.meiji_jingu_ginkgo_festival.feature1" = "Golden tunnel";
-"tokyo.meiji_jingu_ginkgo_festival.feature2" = "146 ginkgo trees";
-"tokyo.meiji_jingu_ginkgo_festival.feature3" = "Premier Tokyo spot";
+"tokyo.meiji_jingu_ginkgo_festival.feature1" = "Terowongan emas";
+"tokyo.meiji_jingu_ginkgo_festival.feature2" = "146 pohon ginkgo";
+"tokyo.meiji_jingu_ginkgo_festival.feature3" = "Terkemuka di Tokyo";
 
 "tokyo.meiji_jingu_hatsumode.name" = "Kunjungan Tahun Baru Kuil Meiji";
 "tokyo.meiji_jingu_hatsumode.description" = "Tempat kunjungan Tahun Baru dengan peziarah terbanyak di Jepang. Setiap tahun sekitar 3 juta orang datang berdoa.";
-"tokyo.meiji_jingu_hatsumode.location" = "Meiji Shrine";
-"tokyo.meiji_jingu_hatsumode.feature1" = "3 million visitors";
-"tokyo.meiji_jingu_hatsumode.feature2" = "Most in Japan";
-"tokyo.meiji_jingu_hatsumode.feature3" = "New Year prayers";
+"tokyo.meiji_jingu_hatsumode.location" = "Kuil Meiji";
+"tokyo.meiji_jingu_hatsumode.feature1" = "3 juta pengunjung";
+"tokyo.meiji_jingu_hatsumode.feature2" = "Terbanyak di Jepang";
+"tokyo.meiji_jingu_hatsumode.feature3" = "Doa Tahun Baru";
 
 /* **MARK: - Kanagawa** */
 "kanagawa.odawara_plum_festival.name" = "Festival Bunga Plum Odawara";
 "kanagawa.odawara_plum_festival.description" = "Festival bunga plum di taman reruntuhan Kastel Odawara tempat sekitar 450 pohon plum mekar. Bunga plum berlatar kastel menandai datangnya musim semi.";
-"kanagawa.odawara_plum_festival.location" = "Odawara Castle Ruins Park";
-"kanagawa.odawara_plum_festival.feature1" = "450 plum trees";
-"kanagawa.odawara_plum_festival.feature2" = "Odawara Castle";
-"kanagawa.odawara_plum_festival.feature3" = "Spring arrival";
+"kanagawa.odawara_plum_festival.location" = "Taman Reruntuhan Kastel Odawara";
+"kanagawa.odawara_plum_festival.feature1" = "450 pohon plum";
+"kanagawa.odawara_plum_festival.feature2" = "Kastel Odawara";
+"kanagawa.odawara_plum_festival.feature3" = "Datangnya musim semi";
 
 "kanagawa.hakone_ekiden.name" = "Hakone Ekiden";
 "kanagawa.hakone_ekiden.description" = "Puncak lari estafet universitas yang disukai sebagai tradisi Tahun Baru. Tim menempuh 217,1 km pulang-pergi antara Tokyo dan Hakone dalam dua hari.";
-"kanagawa.hakone_ekiden.location" = "Tokyo-Hakone";
-"kanagawa.hakone_ekiden.feature1" = "New Year tradition";
-"kanagawa.hakone_ekiden.feature2" = "University ekiden";
-"kanagawa.hakone_ekiden.feature3" = "217.1km";
+"kanagawa.hakone_ekiden.location" = "Tokyo ~ Hakone";
+"kanagawa.hakone_ekiden.feature1" = "Tradisi Tahun Baru";
+"kanagawa.hakone_ekiden.feature2" = "Lari estafet universitas";
+"kanagawa.hakone_ekiden.feature3" = "217,1 km";
 
 /* **MARK: - Niigata** */
 "niigata.takada_castle_cherry_festival.name" = "Hanami Sejuta Orang Kastel Takada";
 "niigata.takada_castle_cherry_festival.description" = "Salah satu dari tiga tempat sakura malam terindah Jepang. Keindahan sakura malam dari sekitar 4.000 pohon dan 3.000 lentera bonbori sungguh istimewa.";
-"niigata.takada_castle_cherry_festival.location" = "Takada Park";
-"niigata.takada_castle_cherry_festival.feature1" = "Japan's top 3 night cherry";
-"niigata.takada_castle_cherry_festival.feature2" = "4,000 cherry trees";
-"niigata.takada_castle_cherry_festival.feature3" = "3,000 paper lanterns";
+"niigata.takada_castle_cherry_festival.location" = "Taman Takada";
+"niigata.takada_castle_cherry_festival.feature1" = "Tiga tempat sakura malam terbaik Jepang";
+"niigata.takada_castle_cherry_festival.feature2" = "4.000 pohon sakura";
+"niigata.takada_castle_cherry_festival.feature3" = "3.000 lentera bonbori";
 
 /* **MARK: - Toyama** */
 "toyama.tonami_tulip_fair.name" = "Pameran Tulip Tonami";
 "toyama.tonami_tulip_fair.description" = "Festival tulip terbesar Jepang dengan 3 juta tulip mekar. Nikmati panorama menakjubkan berlatar Pegunungan Tateyama.";
-"toyama.tonami_tulip_fair.location" = "Tonami Tulip Park";
-"toyama.tonami_tulip_fair.feature1" = "3 million tulips";
-"toyama.tonami_tulip_fair.feature2" = "Japan's largest";
-"toyama.tonami_tulip_fair.feature3" = "Tateyama range";
+"toyama.tonami_tulip_fair.location" = "Taman Tulip Tonami";
+"toyama.tonami_tulip_fair.feature1" = "3 juta tulip";
+"toyama.tonami_tulip_fair.feature2" = "Terbesar di Jepang";
+"toyama.tonami_tulip_fair.feature3" = "Pegunungan Tateyama";
 
 /* **MARK: - Ishikawa** */
 "ishikawa.kenrokuen_cherry_festival.name" = "Festival Sakura Kenrokuen";
 "ishikawa.kenrokuen_cherry_festival.description" = "Festival sakura di Kenrokuen, salah satu dari tiga taman termasyhur Jepang. Sekitar 420 pohon sakura mempercantik taman Jepang.";
 "ishikawa.kenrokuen_cherry_festival.location" = "Kenrokuen";
-"ishikawa.kenrokuen_cherry_festival.feature1" = "Japan's top 3 gardens";
-"ishikawa.kenrokuen_cherry_festival.feature2" = "420 cherry trees";
-"ishikawa.kenrokuen_cherry_festival.feature3" = "Japanese garden";
+"ishikawa.kenrokuen_cherry_festival.feature1" = "Tiga taman termasyhur Jepang";
+"ishikawa.kenrokuen_cherry_festival.feature2" = "420 pohon sakura";
+"ishikawa.kenrokuen_cherry_festival.feature3" = "Taman Jepang";
 
 /* **MARK: - Yamanashi** */
 "yamanashi.fuji_shibazakura_festival.name" = "Festival Shibazakura Fuji";
 "yamanashi.fuji_shibazakura_festival.description" = "Acara menakjubkan saat 800.000 shibazakura mekar berlatar Gunung Fuji. Perpaduan karpet merah muda dan Fuji sungguh memukau.";
 "yamanashi.fuji_shibazakura_festival.location" = "Fuji Motosuko Resort";
-"yamanashi.fuji_shibazakura_festival.feature1" = "800,000 plants";
-"yamanashi.fuji_shibazakura_festival.feature2" = "Mount Fuji backdrop";
+"yamanashi.fuji_shibazakura_festival.feature1" = "800.000 tanaman";
+"yamanashi.fuji_shibazakura_festival.feature2" = "Latar Gunung Fuji";
 "yamanashi.fuji_shibazakura_festival.feature3" = "Pink carpet";
 
 /* **MARK: - Nagano** */
@@ -4671,16 +4671,16 @@
 "nagasaki.huis_ten_bosch_kingdom_of_light.feature3" = "6-month duration";
 
 /* **MARK: - Kumamoto** */
-"kumamoto.kumamoto_castle_cherry_festival.name" = "Kumamoto Castle Cherry Blossom Festival";
-"kumamoto.kumamoto_castle_cherry_festival.description" = "A cherry blossom festival at Kumamoto Castle, one of Japan's three famous castles. About 800 cherry trees beautifully color the castle under reconstruction, becoming a symbol of hope.";
+"kumamoto.kumamoto_castle_cherry_festival.name" = "Festival Sakura Kastel Kumamoto";
+"kumamoto.kumamoto_castle_cherry_festival.description" = "Festival sakura Kastel Kumamoto, salah satu dari tiga kastel termasyhur Jepang. Sekitar 800 sakura mempercantik kastel yang sedang dipugar, menjadi simbol harapan.";
 "kumamoto.kumamoto_castle_cherry_festival.location" = "Kumamoto Castle";
 "kumamoto.kumamoto_castle_cherry_festival.feature1" = "Japan's top 3 castles";
 "kumamoto.kumamoto_castle_cherry_festival.feature2" = "800 cherry trees";
 "kumamoto.kumamoto_castle_cherry_festival.feature3" = "Symbol of hope";
 
 /* **MARK: - Miyazaki** */
-"miyazaki.takachiho_yokagura.name" = "Takachiho Night Kagura";
-"miyazaki.takachiho_yokagura.description" = "A traditional performing art of Miyazaki Prefecture. From November to February, 33 kagura dances are dedicated, creating mystical nights in the land of mythology.";
+"miyazaki.takachiho_yokagura.name" = "Kagura Malam Takachiho";
+"miyazaki.takachiho_yokagura.description" = "Seni tradisional Miyazaki. Dari November hingga Februari, 33 tarian kagura dipersembahkan, menciptakan malam magis di negeri mitologi.";
 "miyazaki.takachiho_yokagura.location" = "Takachiho Town";
 "miyazaki.takachiho_yokagura.feature1" = "33 kagura dances";
 "miyazaki.takachiho_yokagura.feature2" = "Land of mythology";
@@ -4688,14 +4688,14 @@
 
 /* **MARK: - Okinawa** */
 "okinawa.ryukyu_kaiensai.name" = "Ryukyu Kaiensai";
-"okinawa.ryukyu_kaiensai.description" = "Okinawa's largest fireworks display. An entertainment show woven by about 10,000 fireworks and music can be enjoyed.";
+"okinawa.ryukyu_kaiensai.description" = "Pertunjukan kembang api terbesar Okinawa. Nikmati show hiburan dari sekitar 10.000 kembang api dan musik.";
 "okinawa.ryukyu_kaiensai.location" = "Ginowan Seaside Park";
 "okinawa.ryukyu_kaiensai.feature1" = "Okinawa's largest";
 "okinawa.ryukyu_kaiensai.feature2" = "10,000 fireworks";
 "okinawa.ryukyu_kaiensai.feature3" = "Music show";
 
-"okinawa.professional_baseball_camp.name" = "Professional Baseball Spring Training";
-"okinawa.professional_baseball_camp.description" = "A winter to spring tradition in Okinawa. As a training camp location for 12 professional baseball teams, close-distance viewing with fans can be enjoyed.";
+"okinawa.professional_baseball_camp.name" = "Kamp Latihan Bisbol Profesional";
+"okinawa.professional_baseball_camp.description" = "Tradisi musim dingin hingga semi di Okinawa. Sebagai lokasi latihan 12 tim bisbol profesional, penggemar bisa menonton dari jarak dekat.";
 "okinawa.professional_baseball_camp.location" = "Various locations in Okinawa";
 "okinawa.professional_baseball_camp.feature1" = "12 teams";
 "okinawa.professional_baseball_camp.feature2" = "Close-distance fans";
@@ -5246,28 +5246,28 @@
 "gourmet_rafute_desc" = "Masakan khas Okinawa: perut babi direbus dengan awamori dan gula merah hingga lumer";
 
 "tokyo.goma_tamago.name" = "Goma Tamago";
-"tokyo.goma_tamago.description" = "An egg-shaped Tokyo sweet of black sesame paste coated in white chocolate. A souvenir staple.";
+"tokyo.goma_tamago.description" = "Kudapan khas Tokyo berbentuk telur: pasta wijen hitam berlapis cokelat putih. Oleh-oleh andalan.";
 "tokyo.goma_tamago.price" = "Mulai ¥650";
-"tokyo.kusaka_senbei.name" = "Soka Senbei";
-"tokyo.kusaka_senbei.description" = "Savory soy-sauce rice crackers baked firm from non-glutinous rice. A representative Kanto rice snack.";
+"tokyo.kusaka_senbei.name" = "Soka senbei";
+"tokyo.kusaka_senbei.description" = "Senbei shoyu renyah dari beras biasa yang dipanggang keras. Kudapan beras khas Kanto.";
 "tokyo.kusaka_senbei.price" = "Mulai ¥500";
 "aichi.shiruko_sand.name" = "Shiruko Sand";
-"aichi.shiruko_sand.description" = "A long-selling Nagoya snack of red bean paste between biscuits, loved for its simple sweetness.";
+"aichi.shiruko_sand.description" = "Kudapan laris asal Nagoya: pasta kacang di antara biskuit. Manisnya yang sederhana digemari.";
 "aichi.shiruko_sand.price" = "Mulai ¥300";
-"aichi.ebi_senbei.name" = "Ebi Senbei";
-"aichi.ebi_senbei.description" = "Shrimp crackers baked to bring out the savory flavor, an Aichi specialty perfect as a gift.";
+"aichi.ebi_senbei.name" = "Kerupuk udang";
+"aichi.ebi_senbei.description" = "Senbei khas Aichi yang dipanggang untuk menonjolkan rasa udang. Beragam jenis, pas untuk oleh-oleh.";
 "aichi.ebi_senbei.price" = "Mulai ¥500";
-"osaka.iwa_okoshi.name" = "Iwa Okoshi";
-"osaka.iwa_okoshi.description" = "A traditional hard Osaka confection made from compressed rice, named for its rock-like crunch.";
+"osaka.iwa_okoshi.name" = "Iwa okoshi";
+"osaka.iwa_okoshi.description" = "Kudapan keras tradisional Osaka dari beras yang dipadatkan. Kerenyahan sekeras batu jadi asal namanya.";
 "osaka.iwa_okoshi.price" = "Mulai ¥500";
-"osaka.tenten_gyoza.name" = "Tenten Gyoza";
-"osaka.tenten_gyoza.description" = "Bite-sized dumplings, a popular chilled and frozen Osaka gourmet souvenir.";
+"osaka.tenten_gyoza.name" = "Gyoza Tenten";
+"osaka.tenten_gyoza.description" = "Gyoza seukuran sekali gigit. Oleh-oleh kuliner Osaka populer dalam kemasan dingin dan beku.";
 "osaka.tenten_gyoza.price" = "Mulai ¥700";
-"okinawa.kokuto.name" = "Okinawa Brown Sugar";
-"okinawa.kokuto.description" = "Okinawa's specialty brown sugar made from sugarcane, with a rich, deep sweetness.";
+"okinawa.kokuto.name" = "Gula Merah Okinawa";
+"okinawa.kokuto.description" = "Gula merah khas Okinawa dari tebu, dengan manis kaya dan legit.";
 "okinawa.kokuto.price" = "Mulai ¥400";
-"okinawa.shio_senbei.name" = "Shio Senbei";
-"okinawa.shio_senbei.description" = "Simple, firm salted rice crackers from Okinawa, a beloved local everyday snack.";
+"okinawa.shio_senbei.name" = "Senbei garam";
+"okinawa.shio_senbei.description" = "Senbei Okinawa asin yang sederhana dan keras. Camilan favorit warga lokal.";
 "okinawa.shio_senbei.price" = "Mulai ¥300";
 
 "attraction_goryokaku" = "Goryokaku";
@@ -5304,29 +5304,29 @@
 "gourmet_yokosuka_navy_curry" = "Kari angkatan laut Yokosuka";
 "gourmet_yokosuka_navy_curry_desc" = "Kari khas Yokosuka yang menghidupkan resep angkatan laut lama, disajikan dengan susu dan salad";
 
-"hokkaido.trappist_cookie.name" = "Trappist Cookies";
-"hokkaido.trappist_cookie.description" = "Simple, richly buttery cookies made at a monastery in Hakodate.";
+"hokkaido.trappist_cookie.name" = "Kukis Trappist";
+"hokkaido.trappist_cookie.description" = "Kukis sederhana kaya rasa mentega, dibuat di biara Hakodate.";
 "hokkaido.trappist_cookie.price" = "Mulai ¥600";
-"hokkaido.kitakaro_baumkuchen.name" = "Kitakaro Baumkuchen";
-"hokkaido.kitakaro_baumkuchen.description" = "A moist baumkuchen made with Hokkaido ingredients.";
+"hokkaido.kitakaro_baumkuchen.name" = "Baumkuchen Kitakaro";
+"hokkaido.kitakaro_baumkuchen.description" = "Baumkuchen lembut dari bahan-bahan Hokkaido.";
 "hokkaido.kitakaro_baumkuchen.price" = "Mulai ¥1,300";
 "kyoto.kyo_baum.name" = "Kyo Baum";
-"kyoto.kyo_baum.description" = "A Kyoto-born baumkuchen made with Uji matcha and soy milk.";
+"kyoto.kyo_baum.description" = "Baumkuchen asal Kyoto dari matcha Uji dan susu kedelai.";
 "kyoto.kyo_baum.price" = "Mulai ¥1,200";
-"kyoto.matcha_chocolate.name" = "Matcha Chocolate";
-"kyoto.matcha_chocolate.description" = "Elegantly sweet chocolate confection highlighting the flavor of Uji matcha.";
+"kyoto.matcha_chocolate.name" = "Cokelat matcha";
+"kyoto.matcha_chocolate.description" = "Kudapan cokelat bercita rasa manis elegan yang menonjolkan matcha Uji.";
 "kyoto.matcha_chocolate.price" = "Mulai ¥700";
-"fukuoka.chikushi_mochi.name" = "Chikushi Mochi";
-"fukuoka.chikushi_mochi.description" = "Soft mochi dusted with kinako and brown sugar syrup. A Fukuoka staple souvenir.";
+"fukuoka.chikushi_mochi.name" = "Chikushi mochi";
+"fukuoka.chikushi_mochi.description" = "Mochi lembut bertabur kinako dan sirup gula merah. Oleh-oleh andalan Fukuoka.";
 "fukuoka.chikushi_mochi.price" = "Mulai ¥600";
 "fukuoka.menbei.name" = "Menbei";
-"fukuoka.menbei.description" = "Flavorful rice crackers kneaded with mentaiko. A popular Fukuoka souvenir.";
+"fukuoka.menbei.description" = "Senbei bercita rasa kuat yang diadon dengan mentaiko. Oleh-oleh populer Fukuoka.";
 "fukuoka.menbei.price" = "Mulai ¥500";
-"kanagawa.hakone_manju.name" = "Hakone Onsen Manju";
-"kanagawa.hakone_manju.description" = "Freshly steamed hot-spring buns beloved in the Hakone spa town.";
+"kanagawa.hakone_manju.name" = "Manju onsen Hakone";
+"kanagawa.hakone_manju.description" = "Manju onsen kukus hangat yang digemari di kawasan onsen Hakone.";
 "kanagawa.hakone_manju.price" = "Mulai ¥500";
 "kanagawa.kamakura_raisin_wich.name" = "Kamakura Raisin Wich";
-"kanagawa.kamakura_raisin_wich.description" = "A Kamakura specialty of buttercream and raisins between sable cookies.";
+"kanagawa.kamakura_raisin_wich.description" = "Kudapan terkenal Kamakura: krim mentega dan kismis di antara sablé.";
 "kanagawa.kamakura_raisin_wich.price" = "Mulai ¥1,000";
 
 "attraction_hiroshima_castle" = "Kastel Hiroshima";
@@ -5396,50 +5396,50 @@
 "gourmet_fujinomiya_yakisoba_desc" = "Yakisoba khas Shizuoka: mi kenyal dan bubuk ikan sarden yang khas";
 
 "hiroshima.toyoka.name" = "Toyoka";
-"hiroshima.toyoka.description" = "A Hiroshima sweet of red bean paste wrapped in mochi-flour dough and baked. Loved for its chewy texture.";
+"hiroshima.toyoka.description" = "Kudapan terkenal Hiroshima: pasta kacang dibungkus tepung ketan lalu dipanggang. Tekstur kenyalnya digemari.";
 "hiroshima.toyoka.price" = "Mulai ¥650";
-"hiroshima.lemon_cake.name" = "Lemon Cake";
-"hiroshima.lemon_cake.description" = "A refreshing baked sweet made with Setouchi lemons. A Hiroshima souvenir staple.";
+"hiroshima.lemon_cake.name" = "Kue lemon";
+"hiroshima.lemon_cake.description" = "Kue panggang menyegarkan dari lemon Setouchi. Oleh-oleh andalan Hiroshima.";
 "hiroshima.lemon_cake.price" = "Mulai ¥600";
-"nagasaki.kujuku_sempei.name" = "Kujukushima Sempei";
-"nagasaki.kujuku_sempei.description" = "Light tile-shaped crackers dotted with peanuts. A Nagasaki sweet originating in Sasebo.";
+"nagasaki.kujuku_sempei.name" = "Kujukushima sempei";
+"nagasaki.kujuku_sempei.description" = "Senbei ringan berbentuk genteng bertabur kacang. Kudapan khas Nagasaki asal Sasebo.";
 "nagasaki.kujuku_sempei.price" = "Mulai ¥600";
 "nagasaki.nagasaki_monogatari.name" = "Nagasaki Monogatari";
-"nagasaki.nagasaki_monogatari.description" = "A rolled confection of cream wrapped in castella sponge.";
+"nagasaki.nagasaki_monogatari.description" = "Kudapan terkenal berbentuk gulung: krim dibalut bolu castella.";
 "nagasaki.nagasaki_monogatari.price" = "Mulai ¥700";
 "nara.narazuke.name" = "Narazuke";
-"nara.narazuke.description" = "Traditional Nara pickles of melon and cucumber cured in sake lees.";
+"nara.narazuke.description" = "Asinan tradisional asal Nara: melon dan mentimun direndam dalam ampas sake.";
 "nara.narazuke.price" = "Mulai ¥600";
-"nara.kaki_no_ha_cha.name" = "Persimmon Leaf Tea";
-"nara.kaki_no_ha_cha.description" = "A Nara tea made from vitamin-rich persimmon leaves, fragrant and mellow.";
+"nara.kaki_no_ha_cha.name" = "Teh daun kesemek";
+"nara.kaki_no_ha_cha.description" = "Teh Nara dari daun kesemek kaya vitamin, harum dan lembut.";
 "nara.kaki_no_ha_cha.price" = "Mulai ¥500";
 "miyagi.shiogama_kohada.name" = "Shiogama";
-"miyagi.shiogama_kohada.description" = "An elegantly sweet rakugan made with Shiogama seaweed salt. A long-standing Miyagi sweet.";
+"miyagi.shiogama_kohada.description" = "Rakugan bercita rasa manis elegan dari garam rumput laut Shiogama. Kudapan lawas Miyagi.";
 "miyagi.shiogama_kohada.price" = "Mulai ¥500";
 "miyagi.kikufuku.name" = "Kikufuku";
-"miyagi.kikufuku.description" = "A popular Sendai sweet of fresh cream and bean paste wrapped in mochi. Zunda flavor too.";
+"miyagi.kikufuku.description" = "Kudapan populer Sendai: krim segar dan pasta kacang dibungkus mochi. Ada juga rasa zunda.";
 "miyagi.kikufuku.price" = "Mulai ¥700";
-"chiba.nure_senbei.name" = "Nure Senbei";
-"chiba.nure_senbei.description" = "A Choshi specialty cracker with a moist texture, soaked in plenty of soy sauce.";
+"chiba.nure_senbei.name" = "Nure senbei";
+"chiba.nure_senbei.description" = "Senbei khas Choshi bertekstur lembap yang meresap saus shoyu.";
 "chiba.nure_senbei.price" = "Mulai ¥400";
-"chiba.peanut_sub.name" = "Peanut Sable";
-"chiba.peanut_sub.description" = "A fragrant sable highlighting the flavor of Chiba peanuts.";
+"chiba.peanut_sub.name" = "Sablé kacang";
+"chiba.peanut_sub.description" = "Sablé harum yang menonjolkan rasa kacang Chiba.";
 "chiba.peanut_sub.price" = "Mulai ¥600";
 "ishikawa.shibafune.name" = "Shibafune";
-"ishikawa.shibafune.description" = "Thin crackers with a touch of ginger. A traditional Kanazawa sweet.";
+"ishikawa.shibafune.description" = "Senbei tipis beraroma jahe. Kudapan tradisional Kanazawa.";
 "ishikawa.shibafune.price" = "Mulai ¥600";
-"ishikawa.kaga_bocha.name" = "Kaga Bocha";
-"ishikawa.kaga_bocha.description" = "Fragrant Kanazawa roasted stem tea with a clean, crisp taste.";
+"ishikawa.kaga_bocha.name" = "Bocha Kaga";
+"ishikawa.kaga_bocha.description" = "Hojicha harum Kanazawa dari sangrai batang teh, bercita rasa bersih dan segar.";
 "ishikawa.kaga_bocha.price" = "Mulai ¥500";
 "nagano.oyaki.name" = "Oyaki";
-"nagano.oyaki.description" = "A Nagano local food of nozawana or bean paste wrapped in wheat dough and grilled.";
+"nagano.oyaki.description" = "Masakan khas Nagano: nozawana atau pasta kacang dibungkus adonan gandum lalu dipanggang.";
 "nagano.oyaki.price" = "Mulai ¥150";
-"nagano.kurumi_yubeshi.name" = "Kurumi Yubeshi";
-"nagano.kurumi_yubeshi.description" = "A chewy Japanese sweet kneaded with walnuts. A Shinshu souvenir staple.";
+"nagano.kurumi_yubeshi.name" = "Kurumi yubeshi";
+"nagano.kurumi_yubeshi.description" = "Kudapan Jepang kenyal yang diadon dengan kenari. Oleh-oleh andalan Shinshu.";
 "nagano.kurumi_yubeshi.price" = "Mulai ¥500";
-"shizuoka.wasabi_zuke.name" = "Wasabi Zuke";
-"shizuoka.wasabi_zuke.description" = "A Shizuoka specialty of wasabi cured in sake lees, with sharp heat and faint sweetness.";
+"shizuoka.wasabi_zuke.name" = "Wasabi zuke";
+"shizuoka.wasabi_zuke.description" = "Khas Shizuoka: wasabi direndam dalam ampas sake, pedas menyengat dan sedikit manis.";
 "shizuoka.wasabi_zuke.price" = "Mulai ¥500";
-"shizuoka.abekawa_mochi.name" = "Abekawa Mochi";
-"shizuoka.abekawa_mochi.description" = "A traditional Shizuoka sweet of soft mochi coated in kinako and bean paste.";
+"shizuoka.abekawa_mochi.name" = "Abekawa mochi";
+"shizuoka.abekawa_mochi.description" = "Kudapan tradisional Shizuoka: mochi lembut berbalut kinako dan pasta kacang.";
 "shizuoka.abekawa_mochi.price" = "Mulai ¥600";

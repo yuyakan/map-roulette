@@ -4284,187 +4284,187 @@
 /* **MARK: - Hokkaido** */
 "hokkaido.sapporo_snow_festival.name" = "เทศกาลหิมะซัปโปโร";
 "hokkaido.sapporo_snow_festival.description" = "เทศกาลหิมะและน้ำแข็งที่โด่งดังระดับโลก รูปปั้นหิมะและน้ำแข็งขนาดยักษ์เรียงรายที่สวนโอโดริและซุซุกิโนะ แต่งแต้มฤดูหนาวของซัปโปโร";
-"hokkaido.sapporo_snow_festival.location" = "Odori Park & Susukino";
-"hokkaido.sapporo_snow_festival.feature1" = "World-class event";
-"hokkaido.sapporo_snow_festival.feature2" = "Giant snow sculptures";
-"hokkaido.sapporo_snow_festival.feature3" = "Ice sculpture displays";
+"hokkaido.sapporo_snow_festival.location" = "สวนโอโดริ・ซุซุกิโนะ";
+"hokkaido.sapporo_snow_festival.feature1" = "อีเวนต์ระดับโลก";
+"hokkaido.sapporo_snow_festival.feature2" = "รูปปั้นหิมะยักษ์";
+"hokkaido.sapporo_snow_festival.feature3" = "การจัดแสดงรูปปั้นน้ำแข็ง";
 
 "hokkaido.hakodate_goryokaku_festival.name" = "เทศกาลโกเรียวคาคุฮาโกดาเตะ";
 "hokkaido.hakodate_goryokaku_festival.description" = "เทศกาลประวัติศาสตร์ที่จำลองสงครามฮาโกดาเตะ สัมผัสประวัติศาสตร์ปลายยุคเอโดะผ่านการประกวดฮิจิกาตะ โทชิโซและขบวนพาเหรดปฏิรูป";
-"hokkaido.hakodate_goryokaku_festival.location" = "Goryokaku Park";
-"hokkaido.hakodate_goryokaku_festival.feature1" = "Historical recreation";
-"hokkaido.hakodate_goryokaku_festival.feature2" = "Hijikata Toshizo";
-"hokkaido.hakodate_goryokaku_festival.feature3" = "Meiji Restoration parade";
+"hokkaido.hakodate_goryokaku_festival.location" = "สวนโกเรียวคาคุ";
+"hokkaido.hakodate_goryokaku_festival.feature1" = "การจำลองประวัติศาสตร์";
+"hokkaido.hakodate_goryokaku_festival.feature2" = "ฮิจิกาตะ โทชิโซ";
+"hokkaido.hakodate_goryokaku_festival.feature3" = "ขบวนพาเหรดปฏิรูป";
 
 /* **MARK: - Aomori** */
 "aomori.hirosaki_cherry_festival.name" = "เทศกาลซากุระฮิโรซากิ";
 "aomori.hirosaki_cherry_festival.description" = "หนึ่งในสามแหล่งชมซากุระที่ยิ่งใหญ่ของญี่ปุ่น ทัศนียภาพที่ปราสาทฮิโรซากิและซากุระราว 2,600 ต้นสร้างขึ้น ขึ้นชื่อว่าเป็นเทศกาลซากุระที่งดงามที่สุดในญี่ปุ่น";
-"aomori.hirosaki_cherry_festival.location" = "Hirosaki Park";
-"aomori.hirosaki_cherry_festival.feature1" = "Japan's top 3 cherry spots";
-"aomori.hirosaki_cherry_festival.feature2" = "2,600 cherry trees";
-"aomori.hirosaki_cherry_festival.feature3" = "Hirosaki Castle";
+"aomori.hirosaki_cherry_festival.location" = "สวนฮิโรซากิ";
+"aomori.hirosaki_cherry_festival.feature1" = "สามแหล่งซากุระของญี่ปุ่น";
+"aomori.hirosaki_cherry_festival.feature2" = "ซากุระ 2,600 ต้น";
+"aomori.hirosaki_cherry_festival.feature3" = "ปราสาทฮิโรซากิ";
 
 "aomori.hachinohe_enburi.name" = "ฮาจิโนเฮะเอ็มบุริ";
 "aomori.hachinohe_enburi.description" = "ศิลปะการแสดงพื้นบ้านของภาคใต้จังหวัดอาโอโมริที่อธิษฐานขอผลผลิตอุดม เทศกาลฤดูหนาวราวกับความฝันที่ทาโยสวมหมวกเอโบชิร่ายรำ";
-"aomori.hachinohe_enburi.location" = "Hachinohe City Center";
-"aomori.hachinohe_enburi.feature1" = "Folk performing art";
-"aomori.hachinohe_enburi.feature2" = "Good harvest prayer";
-"aomori.hachinohe_enburi.feature3" = "Traditional dance";
+"aomori.hachinohe_enburi.location" = "ใจกลางเมืองฮาจิโนเฮะ";
+"aomori.hachinohe_enburi.feature1" = "ศิลปะการแสดงพื้นบ้าน";
+"aomori.hachinohe_enburi.feature2" = "การอธิษฐานผลผลิตอุดม";
+"aomori.hachinohe_enburi.feature3" = "ระบำทาโย";
 
 /* **MARK: - Iwate** */
 "iwate.kitakami_cherry_festival.name" = "เทศกาลซากุระเท็นโชจิคิตะคามิ";
 "iwate.kitakami_cherry_festival.description" = "แหล่งชมซากุระชั้นนำของโทโฮกุ เทศกาลซากุระอันยิ่งใหญ่ที่ถนนต้นซากุระทอดยาวราว 2 กม. ริมแม่น้ำคิตะคามิ";
-"iwate.kitakami_cherry_festival.location" = "Kitakami Tenshochi";
-"iwate.kitakami_cherry_festival.feature1" = "Leading Tohoku spot";
-"iwate.kitakami_cherry_festival.feature2" = "2km cherry tree avenue";
-"iwate.kitakami_cherry_festival.feature3" = "Along Kitakami River";
+"iwate.kitakami_cherry_festival.location" = "คิตะคามิเท็นโชจิ";
+"iwate.kitakami_cherry_festival.feature1" = "ชั้นนำของโทโฮกุ";
+"iwate.kitakami_cherry_festival.feature2" = "ถนนซากุระ 2 กม.";
+"iwate.kitakami_cherry_festival.feature3" = "ริมแม่น้ำคิตะคามิ";
 
 /* **MARK: - Miyagi** */
 "miyagi.hitome_senbon_cherry_festival.name" = "เทศกาลซากุระฮิโตเมะเซมบง";
 "miyagi.hitome_senbon_cherry_festival.description" = "การผสานทัศนียภาพสุดอลังการระหว่างถนนซากุระริมเขื่อนแม่น้ำชิโรอิชิกับเทือกเขาซาโอที่ยังมีหิมะ ซากุระราว 1,200 ต้นเบ่งบานตลอด 8 กม.";
-"miyagi.hitome_senbon_cherry_festival.location" = "Ogawara & Shibata Towns";
-"miyagi.hitome_senbon_cherry_festival.feature1" = "Zao mountain range";
-"miyagi.hitome_senbon_cherry_festival.feature2" = "1,200 cherry trees";
-"miyagi.hitome_senbon_cherry_festival.feature3" = "8km cherry avenue";
+"miyagi.hitome_senbon_cherry_festival.location" = "เมืองโอกาวาระ・เมืองชิบาตะ";
+"miyagi.hitome_senbon_cherry_festival.feature1" = "เทือกเขาซาโอ";
+"miyagi.hitome_senbon_cherry_festival.feature2" = "ซากุระ 1,200 ต้น";
+"miyagi.hitome_senbon_cherry_festival.feature3" = "ถนนซากุระ 8 กม.";
 
 /* **MARK: - Akita** */
 "akita.namahage_sedo_festival.name" = "เทศกาลนามาฮาเงะเซโด";
 "akita.namahage_sedo_festival.description" = "เทศกาลฤดูหนาวที่จำลองพิธีดั้งเดิม「นามาฮาเงะ」ของคาบสมุทรโอกะ กลองนามาฮาเงะและเปลวไฟคบเพลิงบนภูเขาหิมะสร้างบรรยากาศราวกับความฝัน";
-"akita.namahage_sedo_festival.location" = "Shinzan Shrine, Oga City";
-"akita.namahage_sedo_festival.feature1" = "Namahage tradition";
-"akita.namahage_sedo_festival.feature2" = "Torch flames";
-"akita.namahage_sedo_festival.feature3" = "Oga Peninsula";
+"akita.namahage_sedo_festival.location" = "ศาลเจ้าชินซัง เมืองโอกะ";
+"akita.namahage_sedo_festival.feature1" = "นามาฮาเงะ";
+"akita.namahage_sedo_festival.feature2" = "เปลวไฟคบเพลิง";
+"akita.namahage_sedo_festival.feature3" = "คาบสมุทรโอกะ";
 
 /* **MARK: - Yamagata** */
 "yamagata.zao_frost_festival.name" = "เทศกาลต้นไม้เคลือบน้ำแข็งซาโอ";
 "yamagata.zao_frost_festival.description" = "เทศกาลฤดูหนาวที่เพลิดเพลินกับปรากฏการณ์ต้นไม้เคลือบน้ำแข็งที่หาชมยากระดับโลก การประดับไฟกลุ่มต้นไม้เคลือบน้ำแข็งที่เรียกว่าไอซ์มอนสเตอร์นั้นลึกลับน่าพิศวง";
-"yamagata.zao_frost_festival.location" = "Zao Onsen Ski Resort";
-"yamagata.zao_frost_festival.feature1" = "World-rare ice trees";
-"yamagata.zao_frost_festival.feature2" = "Ice Monsters";
-"yamagata.zao_frost_festival.feature3" = "Illumination";
+"yamagata.zao_frost_festival.location" = "ลานสกีออนเซ็นซาโอ";
+"yamagata.zao_frost_festival.feature1" = "ต้นไม้เคลือบน้ำแข็งระดับโลก";
+"yamagata.zao_frost_festival.feature2" = "ไอซ์มอนสเตอร์";
+"yamagata.zao_frost_festival.feature3" = "การประดับไฟ";
 
 /* **MARK: - Fukushima** */
 "fukushima.ouchi_juku_snow_festival.name" = "เทศกาลหิมะโออุจิจูกุ";
 "fukushima.ouchi_juku_snow_festival.description" = "เทศกาลฤดูหนาวที่เพลิดเพลินกับทัศนียภาพหิมะของเมืองสถานีสมัยเอโดะ หิมะที่สะสมบนหลังคามุงจากและความอบอุ่นของเตาผิงชวนให้คิดถึงบ้าน";
-"fukushima.ouchi_juku_snow_festival.location" = "Ouchi-juku, Shimogo Town";
-"fukushima.ouchi_juku_snow_festival.feature1" = "Edo post town";
-"fukushima.ouchi_juku_snow_festival.feature2" = "Thatched roofs";
-"fukushima.ouchi_juku_snow_festival.feature3" = "Hearth fires";
+"fukushima.ouchi_juku_snow_festival.location" = "โออุจิจูกุ เมืองชิโมโก";
+"fukushima.ouchi_juku_snow_festival.feature1" = "เมืองสถานีเอโดะ";
+"fukushima.ouchi_juku_snow_festival.feature2" = "หลังคามุงจาก";
+"fukushima.ouchi_juku_snow_festival.feature3" = "เตาผิงอิโรริ";
 
 /* **MARK: - Ibaraki** */
 "ibaraki.nemophila_festival.name" = "เทศกาลเนโมฟีลาสวนริมทะเลฮิตาชิ";
 "ibaraki.nemophila_festival.description" = "อีเวนต์สุดตระการตาที่ดอกเนโมฟีลาราว 5.3 ล้านต้นย้อมทั้งเนินเขาเป็นสีฟ้า ขึ้นชื่อเรื่องทัศนียภาพงดงามที่เรียกว่า「พรมสีฟ้า」";
-"ibaraki.nemophila_festival.location" = "Hitachinaka Seaside Park";
-"ibaraki.nemophila_festival.feature1" = "5.3 million flowers";
-"ibaraki.nemophila_festival.feature2" = "Blue carpet";
-"ibaraki.nemophila_festival.feature3" = "Spectacular view";
+"ibaraki.nemophila_festival.location" = "สวนริมทะเลฮิตาชินากะ";
+"ibaraki.nemophila_festival.feature1" = "5.3 ล้านต้น";
+"ibaraki.nemophila_festival.feature2" = "พรมสีฟ้า";
+"ibaraki.nemophila_festival.feature3" = "ทัศนียภาพสุดอลังการ";
 
 "ibaraki.kairakuen_plum_festival.name" = "เทศกาลบ๊วยไคระคุเอ็ง";
 "ibaraki.kairakuen_plum_festival.description" = "เทศกาลบ๊วยที่จัดขึ้นที่ไคระคุเอ็ง หนึ่งในสามสวนชื่อดังของญี่ปุ่น บ๊วยราว 100 พันธุ์ 3,000 ต้นแต่งแต้มต้นฤดูใบไม้ผลิของอิบารากิ";
-"ibaraki.kairakuen_plum_festival.location" = "Kairakuen, Mito City";
-"ibaraki.kairakuen_plum_festival.feature1" = "Japan's top 3 gardens";
-"ibaraki.kairakuen_plum_festival.feature2" = "100 varieties";
-"ibaraki.kairakuen_plum_festival.feature3" = "3,000 plum trees";
+"ibaraki.kairakuen_plum_festival.location" = "ไคระคุเอ็ง เมืองมิโตะ";
+"ibaraki.kairakuen_plum_festival.feature1" = "สามสวนชื่อดังของญี่ปุ่น";
+"ibaraki.kairakuen_plum_festival.feature2" = "100 พันธุ์";
+"ibaraki.kairakuen_plum_festival.feature3" = "บ๊วย 3,000 ต้น";
 
 /* **MARK: - Tochigi** */
 "tochigi.ashikaga_wisteria_festival.name" = "เทศกาลวิสทีเรียสวนดอกไม้อาชิคางะ";
 "tochigi.ashikaga_wisteria_festival.description" = "แหล่งชมวิสทีเรียที่มีซุ้มวิสทีเรียใหญ่ที่สุดในโลก วิสทีเรียสีม่วง ขาว ชมพูเบ่งบานสะพรั่ง รวมถึงวิสทีเรียใหญ่อายุ 150 ปี";
-"tochigi.ashikaga_wisteria_festival.location" = "Ashikaga Flower Park";
-"tochigi.ashikaga_wisteria_festival.feature1" = "World's largest";
-"tochigi.ashikaga_wisteria_festival.feature2" = "150 years old";
-"tochigi.ashikaga_wisteria_festival.feature3" = "Great wisteria trellis";
+"tochigi.ashikaga_wisteria_festival.location" = "สวนดอกไม้อาชิคางะ";
+"tochigi.ashikaga_wisteria_festival.feature1" = "ใหญ่ที่สุดในโลก";
+"tochigi.ashikaga_wisteria_festival.feature2" = "อายุ 150 ปี";
+"tochigi.ashikaga_wisteria_festival.feature3" = "ซุ้มวิสทีเรียใหญ่";
 
 /* **MARK: - Gunma** */
 "gunma.kusatsu_onsen_festival.name" = "เทศกาลขอบคุณออนเซ็นคุซัตสึ";
 "gunma.kusatsu_onsen_festival.description" = "เทศกาลฤดูหนาวที่ขอบคุณความอุดมสมบูรณ์ของน้ำแร่คุซัตสึ ระบำยุโมมิและการประดับไฟย่านออนเซ็นสร้างบรรยากาศออนเซ็น";
-"gunma.kusatsu_onsen_festival.location" = "Kusatsu Onsen Town";
-"gunma.kusatsu_onsen_festival.feature1" = "Yumomi dancing";
-"gunma.kusatsu_onsen_festival.feature2" = "Hot spring town";
-"gunma.kusatsu_onsen_festival.feature3" = "Illumination";
+"gunma.kusatsu_onsen_festival.location" = "ย่านออนเซ็นคุซัตสึ";
+"gunma.kusatsu_onsen_festival.feature1" = "ระบำยุโมมิ";
+"gunma.kusatsu_onsen_festival.feature2" = "ย่านออนเซ็น";
+"gunma.kusatsu_onsen_festival.feature3" = "การประดับไฟ";
 
 /* **MARK: - Saitama** */
 "saitama.chichibu_night_festival.name" = "เทศกาลกลางคืนจิจิบุ";
 "saitama.chichibu_night_festival.description" = "หนึ่งในสามเทศกาลรถแห่ใหญ่ของญี่ปุ่น เทศกาลอันยิ่งใหญ่ที่รถแห่และคาสะโบโกะอันหรูหราตระการตาแต่งแต้มค่ำคืนฤดูหนาวของจิจิบุ";
-"saitama.chichibu_night_festival.location" = "Chichibu City";
-"saitama.chichibu_night_festival.feature1" = "Japan's top 3 float festivals";
-"saitama.chichibu_night_festival.feature2" = "Winter festival";
-"saitama.chichibu_night_festival.feature3" = "Floats and kasaboko";
+"saitama.chichibu_night_festival.location" = "เมืองจิจิบุ";
+"saitama.chichibu_night_festival.feature1" = "สามเทศกาลรถแห่ของญี่ปุ่น";
+"saitama.chichibu_night_festival.feature2" = "เทศกาลฤดูหนาว";
+"saitama.chichibu_night_festival.feature3" = "รถแห่และคาสะโบโกะ";
 
 /* **MARK: - Chiba** */
 "chiba.sakura_tulip_festa.name" = "เทศกาลทิวลิปซากุระ";
 "chiba.sakura_tulip_festa.description" = "ทุ่งทิวลิปที่ใหญ่ที่สุดในภูมิภาคคันโต ทัศนียภาพฤดูใบไม้ผลิที่ทิวลิปราว 100 พันธุ์ 670,000 ต้นเบ่งบานโดยมีกังหันลมเป็นฉากหลัง";
-"chiba.sakura_tulip_festa.location" = "Sakura Furusato Square";
-"chiba.sakura_tulip_festa.feature1" = "Largest in Kanto";
-"chiba.sakura_tulip_festa.feature2" = "670,000 tulips";
-"chiba.sakura_tulip_festa.feature3" = "Dutch windmill";
+"chiba.sakura_tulip_festa.location" = "ลานฟุรุซาโตะซากุระ";
+"chiba.sakura_tulip_festa.feature1" = "ใหญ่ที่สุดในคันโต";
+"chiba.sakura_tulip_festa.feature2" = "ทิวลิป 670,000 ต้น";
+"chiba.sakura_tulip_festa.feature3" = "กังหันลมเนเธอร์แลนด์";
 
 /* **MARK: - Tokyo** */
 "tokyo.ueno_cherry_festival.name" = "เทศกาลซากุระอุเอโนะ";
 "tokyo.ueno_cherry_festival.description" = "แหล่งชมซากุระของโตเกียวที่สืบทอดมาตั้งแต่สมัยเอโดะ ซากุระราว 800 ต้นแต่งแต้มสวนอุเอโนะและคึกคักด้วยผู้มาชมดอกไม้จำนวนมาก";
-"tokyo.ueno_cherry_festival.location" = "Ueno Onshi Park";
-"tokyo.ueno_cherry_festival.feature1" = "Since Edo period";
-"tokyo.ueno_cherry_festival.feature2" = "800 cherry trees";
-"tokyo.ueno_cherry_festival.feature3" = "Premier Tokyo spot";
+"tokyo.ueno_cherry_festival.location" = "สวนอุเอโนะออนชิ";
+"tokyo.ueno_cherry_festival.feature1" = "ตั้งแต่สมัยเอโดะ";
+"tokyo.ueno_cherry_festival.feature2" = "ซากุระ 800 ต้น";
+"tokyo.ueno_cherry_festival.feature3" = "ชั้นนำในโตเกียว";
 
 "tokyo.meiji_jingu_ginkgo_festival.name" = "เทศกาลแปะก๊วยเมจิจินกูไกเอ็น";
 "tokyo.meiji_jingu_ginkgo_festival.description" = "เทศกาลฤดูใบไม้ร่วงที่ขึ้นชื่อเรื่องถนนต้นแปะก๊วยที่ส่องประกายสีทอง อุโมงค์สีทองที่ต้นแปะก๊วย 146 ต้นสร้างขึ้นนั้นงดงามน่าตื่นตา";
-"tokyo.meiji_jingu_ginkgo_festival.location" = "Meiji Jingu Gaien";
-"tokyo.meiji_jingu_ginkgo_festival.feature1" = "Golden tunnel";
-"tokyo.meiji_jingu_ginkgo_festival.feature2" = "146 ginkgo trees";
-"tokyo.meiji_jingu_ginkgo_festival.feature3" = "Premier Tokyo spot";
+"tokyo.meiji_jingu_ginkgo_festival.location" = "เมจิจินกูไกเอ็น";
+"tokyo.meiji_jingu_ginkgo_festival.feature1" = "อุโมงค์สีทอง";
+"tokyo.meiji_jingu_ginkgo_festival.feature2" = "ต้นแปะก๊วย 146 ต้น";
+"tokyo.meiji_jingu_ginkgo_festival.feature3" = "ชั้นนำในโตเกียว";
 
 "tokyo.meiji_jingu_hatsumode.name" = "ไหว้พระปีใหม่ศาลเจ้าเมจิ";
 "tokyo.meiji_jingu_hatsumode.description" = "จุดไหว้พระปีใหม่ที่มีผู้มาสักการะมากที่สุดในญี่ปุ่น ทุกปีมีผู้คนราว 3 ล้านคนมาอธิษฐานปีใหม่";
-"tokyo.meiji_jingu_hatsumode.location" = "Meiji Shrine";
-"tokyo.meiji_jingu_hatsumode.feature1" = "3 million visitors";
-"tokyo.meiji_jingu_hatsumode.feature2" = "Most in Japan";
-"tokyo.meiji_jingu_hatsumode.feature3" = "New Year prayers";
+"tokyo.meiji_jingu_hatsumode.location" = "ศาลเจ้าเมจิ";
+"tokyo.meiji_jingu_hatsumode.feature1" = "ผู้มาเยือน 3 ล้านคน";
+"tokyo.meiji_jingu_hatsumode.feature2" = "มากที่สุดในญี่ปุ่น";
+"tokyo.meiji_jingu_hatsumode.feature3" = "การอธิษฐานปีใหม่";
 
 /* **MARK: - Kanagawa** */
 "kanagawa.odawara_plum_festival.name" = "เทศกาลบ๊วยโอดาวาระ";
 "kanagawa.odawara_plum_festival.description" = "เทศกาลบ๊วยที่สวนซากปราสาทโอดาวาระที่บ๊วยราว 450 ต้นเบ่งบาน ดอกบ๊วยที่มีปราสาทเป็นฉากหลังประกาศการมาถึงของฤดูใบไม้ผลิ";
-"kanagawa.odawara_plum_festival.location" = "Odawara Castle Ruins Park";
-"kanagawa.odawara_plum_festival.feature1" = "450 plum trees";
-"kanagawa.odawara_plum_festival.feature2" = "Odawara Castle";
-"kanagawa.odawara_plum_festival.feature3" = "Spring arrival";
+"kanagawa.odawara_plum_festival.location" = "สวนซากปราสาทโอดาวาระ";
+"kanagawa.odawara_plum_festival.feature1" = "บ๊วย 450 ต้น";
+"kanagawa.odawara_plum_festival.feature2" = "ปราสาทโอดาวาระ";
+"kanagawa.odawara_plum_festival.feature3" = "การมาถึงของฤดูใบไม้ผลิ";
 
 "kanagawa.hakone_ekiden.name" = "ฮาโกเนะเอกิเด็น";
 "kanagawa.hakone_ekiden.description" = "สุดยอดวิ่งผลัดมหาวิทยาลัยที่รักในฐานะภาพประจำปีใหม่ ทีมต่างๆ วิ่งระยะไปกลับ 217.1 กม. ระหว่างโตเกียวกับฮาโกเนะภายในสองวัน";
-"kanagawa.hakone_ekiden.location" = "Tokyo-Hakone";
-"kanagawa.hakone_ekiden.feature1" = "New Year tradition";
-"kanagawa.hakone_ekiden.feature2" = "University ekiden";
-"kanagawa.hakone_ekiden.feature3" = "217.1km";
+"kanagawa.hakone_ekiden.location" = "โตเกียว〜ฮาโกเนะ";
+"kanagawa.hakone_ekiden.feature1" = "ภาพประจำปีใหม่";
+"kanagawa.hakone_ekiden.feature2" = "วิ่งผลัดมหาวิทยาลัย";
+"kanagawa.hakone_ekiden.feature3" = "217.1 กม.";
 
 /* **MARK: - Niigata** */
 "niigata.takada_castle_cherry_festival.name" = "งานชมซากุระล้านคนปราสาททากาดะ";
 "niigata.takada_castle_cherry_festival.description" = "หนึ่งในสามจุดชมซากุระยามค่ำที่ยิ่งใหญ่ของญี่ปุ่น ความงามของซากุระยามค่ำที่ซากุระราว 4,000 ต้นและโคมบมโบริ 3,000 ดวงสร้างขึ้นนั้นพิเศษไม่เหมือนใคร";
-"niigata.takada_castle_cherry_festival.location" = "Takada Park";
-"niigata.takada_castle_cherry_festival.feature1" = "Japan's top 3 night cherry";
-"niigata.takada_castle_cherry_festival.feature2" = "4,000 cherry trees";
-"niigata.takada_castle_cherry_festival.feature3" = "3,000 paper lanterns";
+"niigata.takada_castle_cherry_festival.location" = "สวนทากาดะ";
+"niigata.takada_castle_cherry_festival.feature1" = "สามซากุระยามค่ำของญี่ปุ่น";
+"niigata.takada_castle_cherry_festival.feature2" = "ซากุระ 4,000 ต้น";
+"niigata.takada_castle_cherry_festival.feature3" = "โคมบมโบริ 3,000 ดวง";
 
 /* **MARK: - Toyama** */
 "toyama.tonami_tulip_fair.name" = "งานทิวลิปโทนามิ";
 "toyama.tonami_tulip_fair.description" = "เทศกาลทิวลิปที่ใหญ่ที่สุดในญี่ปุ่นที่ทิวลิป 3 ล้านต้นเบ่งบานสะพรั่ง เพลิดเพลินกับทัศนียภาพสุดอลังการที่มีเทือกเขาทาเทยามะเป็นฉากหลัง";
-"toyama.tonami_tulip_fair.location" = "Tonami Tulip Park";
-"toyama.tonami_tulip_fair.feature1" = "3 million tulips";
-"toyama.tonami_tulip_fair.feature2" = "Japan's largest";
-"toyama.tonami_tulip_fair.feature3" = "Tateyama range";
+"toyama.tonami_tulip_fair.location" = "สวนทิวลิปโทนามิ";
+"toyama.tonami_tulip_fair.feature1" = "ทิวลิป 3 ล้านต้น";
+"toyama.tonami_tulip_fair.feature2" = "ใหญ่ที่สุดในญี่ปุ่น";
+"toyama.tonami_tulip_fair.feature3" = "เทือกเขาทาเทยามะ";
 
 /* **MARK: - Ishikawa** */
 "ishikawa.kenrokuen_cherry_festival.name" = "เทศกาลซากุระเค็นโรคุเอ็ง";
 "ishikawa.kenrokuen_cherry_festival.description" = "เทศกาลซากุระที่จัดขึ้นที่เค็นโรคุเอ็ง หนึ่งในสามสวนชื่อดังของญี่ปุ่น ซากุระราว 420 ต้นช่วยขับเน้นความงามของสวนญี่ปุ่น";
-"ishikawa.kenrokuen_cherry_festival.location" = "Kenrokuen";
-"ishikawa.kenrokuen_cherry_festival.feature1" = "Japan's top 3 gardens";
-"ishikawa.kenrokuen_cherry_festival.feature2" = "420 cherry trees";
-"ishikawa.kenrokuen_cherry_festival.feature3" = "Japanese garden";
+"ishikawa.kenrokuen_cherry_festival.location" = "เค็นโรคุเอ็ง";
+"ishikawa.kenrokuen_cherry_festival.feature1" = "สามสวนชื่อดังของญี่ปุ่น";
+"ishikawa.kenrokuen_cherry_festival.feature2" = "ซากุระ 420 ต้น";
+"ishikawa.kenrokuen_cherry_festival.feature3" = "สวนญี่ปุ่น";
 
 /* **MARK: - Yamanashi** */
 "yamanashi.fuji_shibazakura_festival.name" = "เทศกาลชิบะซากุระฟูจิ";
 "yamanashi.fuji_shibazakura_festival.description" = "อีเวนต์สุดตระการตาที่ชิบะซากุระ 800,000 ต้นเบ่งบานโดยมีภูเขาไฟฟูจิเป็นฉากหลัง การผสานพรมสีชมพูกับภูเขาไฟฟูจินั้นน่าตื่นตา";
-"yamanashi.fuji_shibazakura_festival.location" = "Fuji Motosuko Resort";
-"yamanashi.fuji_shibazakura_festival.feature1" = "800,000 plants";
-"yamanashi.fuji_shibazakura_festival.feature2" = "Mount Fuji backdrop";
+"yamanashi.fuji_shibazakura_festival.location" = "ฟูจิโมโตสุโกะรีสอร์ต";
+"yamanashi.fuji_shibazakura_festival.feature1" = "ต้นชิบะซากุระ 800,000 ต้น";
+"yamanashi.fuji_shibazakura_festival.feature2" = "ฉากหลังภูเขาไฟฟูจิ";
 "yamanashi.fuji_shibazakura_festival.feature3" = "Pink carpet";
 
 /* **MARK: - Nagano** */
@@ -4671,31 +4671,31 @@
 "nagasaki.huis_ten_bosch_kingdom_of_light.feature3" = "6-month duration";
 
 /* **MARK: - Kumamoto** */
-"kumamoto.kumamoto_castle_cherry_festival.name" = "Kumamoto Castle Cherry Blossom Festival";
-"kumamoto.kumamoto_castle_cherry_festival.description" = "A cherry blossom festival at Kumamoto Castle, one of Japan's three famous castles. About 800 cherry trees beautifully color the castle under reconstruction, becoming a symbol of hope.";
+"kumamoto.kumamoto_castle_cherry_festival.name" = "เทศกาลซากุระปราสาทคุมาโมโตะ";
+"kumamoto.kumamoto_castle_cherry_festival.description" = "เทศกาลซากุระของปราสาทคุมาโมโตะ หนึ่งในสามปราสาทชื่อดังของญี่ปุ่น ซากุระราว 800 ต้นแต่งแต้มปราสาทที่กำลังบูรณะอย่างงดงาม กลายเป็นสัญลักษณ์แห่งความหวัง";
 "kumamoto.kumamoto_castle_cherry_festival.location" = "Kumamoto Castle";
 "kumamoto.kumamoto_castle_cherry_festival.feature1" = "Japan's top 3 castles";
 "kumamoto.kumamoto_castle_cherry_festival.feature2" = "800 cherry trees";
 "kumamoto.kumamoto_castle_cherry_festival.feature3" = "Symbol of hope";
 
 /* **MARK: - Miyazaki** */
-"miyazaki.takachiho_yokagura.name" = "Takachiho Night Kagura";
-"miyazaki.takachiho_yokagura.description" = "A traditional performing art of Miyazaki Prefecture. From November to February, 33 kagura dances are dedicated, creating mystical nights in the land of mythology.";
+"miyazaki.takachiho_yokagura.name" = "คางุระกลางคืนทาคาจิโฮะ";
+"miyazaki.takachiho_yokagura.description" = "ศิลปะการแสดงดั้งเดิมของจังหวัดมิยาซากิ ตั้งแต่เดือนพฤศจิกายนถึงกุมภาพันธ์มีการถวายคางุระ 33 บท สร้างค่ำคืนราวกับความฝันของดินแดนแห่งเทพนิยาย";
 "miyazaki.takachiho_yokagura.location" = "Takachiho Town";
 "miyazaki.takachiho_yokagura.feature1" = "33 kagura dances";
 "miyazaki.takachiho_yokagura.feature2" = "Land of mythology";
 "miyazaki.takachiho_yokagura.feature3" = "4-month duration";
 
 /* **MARK: - Okinawa** */
-"okinawa.ryukyu_kaiensai.name" = "Ryukyu Kaiensai";
-"okinawa.ryukyu_kaiensai.description" = "Okinawa's largest fireworks display. An entertainment show woven by about 10,000 fireworks and music can be enjoyed.";
+"okinawa.ryukyu_kaiensai.name" = "ริวกิวไคเอนไซ";
+"okinawa.ryukyu_kaiensai.description" = "การแสดงดอกไม้ไฟที่ใหญ่ที่สุดในโอกินาวะ เพลิดเพลินกับโชว์บันเทิงที่ดอกไม้ไฟราว 10,000 ลูกและดนตรีสร้างขึ้น";
 "okinawa.ryukyu_kaiensai.location" = "Ginowan Seaside Park";
 "okinawa.ryukyu_kaiensai.feature1" = "Okinawa's largest";
 "okinawa.ryukyu_kaiensai.feature2" = "10,000 fireworks";
 "okinawa.ryukyu_kaiensai.feature3" = "Music show";
 
-"okinawa.professional_baseball_camp.name" = "Professional Baseball Spring Training";
-"okinawa.professional_baseball_camp.description" = "A winter to spring tradition in Okinawa. As a training camp location for 12 professional baseball teams, close-distance viewing with fans can be enjoyed.";
+"okinawa.professional_baseball_camp.name" = "แคมป์เบสบอลอาชีพ";
+"okinawa.professional_baseball_camp.description" = "ภาพประจำฤดูหนาวถึงฤดูใบไม้ผลิของโอกินาวะ ในฐานะสถานที่ฝึกซ้อมของทีมเบสบอลอาชีพ 12 ทีม เพลิดเพลินกับการชมที่ใกล้ชิดกับแฟนๆ";
 "okinawa.professional_baseball_camp.location" = "Various locations in Okinawa";
 "okinawa.professional_baseball_camp.feature1" = "12 teams";
 "okinawa.professional_baseball_camp.feature2" = "Close-distance fans";
@@ -5245,29 +5245,29 @@
 "gourmet_rafute" = "ราฟุเตะ";
 "gourmet_rafute_desc" = "อาหารพื้นเมืองโอกินาวะ ตุ๋นหมูสามชั้นในอาวาโมริและน้ำตาลแดงจนละลายนุ่ม";
 
-"tokyo.goma_tamago.name" = "Goma Tamago";
-"tokyo.goma_tamago.description" = "An egg-shaped Tokyo sweet of black sesame paste coated in white chocolate. A souvenir staple.";
+"tokyo.goma_tamago.name" = "โกมะทามาโกะ";
+"tokyo.goma_tamago.description" = "ขนมชื่อดังโตเกียวรูปไข่ที่ทำจากไส้งาดำเคลือบไวต์ช็อกโกแลต ของฝากยอดนิยม";
 "tokyo.goma_tamago.price" = "ตั้งแต่ 650 เยน";
-"tokyo.kusaka_senbei.name" = "Soka Senbei";
-"tokyo.kusaka_senbei.description" = "Savory soy-sauce rice crackers baked firm from non-glutinous rice. A representative Kanto rice snack.";
+"tokyo.kusaka_senbei.name" = "โซกะเซมเบ้";
+"tokyo.kusaka_senbei.description" = "เซมเบ้โชยุหอมกรอบที่อบข้าวเจ้าให้แข็ง ขนมข้าวตัวแทนของคันโต";
 "tokyo.kusaka_senbei.price" = "ตั้งแต่ 500 เยน";
-"aichi.shiruko_sand.name" = "Shiruko Sand";
-"aichi.shiruko_sand.description" = "A long-selling Nagoya snack of red bean paste between biscuits, loved for its simple sweetness.";
+"aichi.shiruko_sand.name" = "ชิรุโกะแซนด์";
+"aichi.shiruko_sand.description" = "ขนมขายดีต้นกำเนิดนาโกยาที่ประกบถั่วกวนกับบิสกิต ความหวานเรียบง่ายเป็นที่นิยม";
 "aichi.shiruko_sand.price" = "ตั้งแต่ 300 เยน";
-"aichi.ebi_senbei.name" = "Ebi Senbei";
-"aichi.ebi_senbei.description" = "Shrimp crackers baked to bring out the savory flavor, an Aichi specialty perfect as a gift.";
+"aichi.ebi_senbei.name" = "เอบิเซมเบ้";
+"aichi.ebi_senbei.description" = "เซมเบ้ขึ้นชื่อไอจิที่อบให้ชูรสอูมามิของกุ้ง มีหลากหลายชนิด เหมาะเป็นของฝาก";
 "aichi.ebi_senbei.price" = "ตั้งแต่ 500 เยน";
-"osaka.iwa_okoshi.name" = "Iwa Okoshi";
-"osaka.iwa_okoshi.description" = "A traditional hard Osaka confection made from compressed rice, named for its rock-like crunch.";
+"osaka.iwa_okoshi.name" = "อิวะโอโคชิ";
+"osaka.iwa_okoshi.description" = "ขนมพื้นบ้านแข็งดั้งเดิมของโอซากะที่ทำจากข้าวอัดแน่น สัมผัสแข็งเหมือนหินเป็นที่มาของชื่อ";
 "osaka.iwa_okoshi.price" = "ตั้งแต่ 500 เยน";
-"osaka.tenten_gyoza.name" = "Tenten Gyoza";
-"osaka.tenten_gyoza.description" = "Bite-sized dumplings, a popular chilled and frozen Osaka gourmet souvenir.";
+"osaka.tenten_gyoza.name" = "เกี๊ยวซ่าเท็นเท็น";
+"osaka.tenten_gyoza.description" = "เกี๊ยวซ่าคำเล็กพอดีคำ ของฝากโอซากะยอดนิยมแบบแช่เย็นและแช่แข็ง";
 "osaka.tenten_gyoza.price" = "ตั้งแต่ 700 เยน";
-"okinawa.kokuto.name" = "Okinawa Brown Sugar";
-"okinawa.kokuto.description" = "Okinawa's specialty brown sugar made from sugarcane, with a rich, deep sweetness.";
+"okinawa.kokuto.name" = "น้ำตาลแดงโอกินาวะ";
+"okinawa.kokuto.description" = "น้ำตาลแดงขึ้นชื่อโอกินาวะที่ทำจากอ้อย เด่นด้วยรสหวานเข้มข้นและความกลมกล่อม";
 "okinawa.kokuto.price" = "ตั้งแต่ 400 เยน";
-"okinawa.shio_senbei.name" = "Shio Senbei";
-"okinawa.shio_senbei.description" = "Simple, firm salted rice crackers from Okinawa, a beloved local everyday snack.";
+"okinawa.shio_senbei.name" = "ชิโอเซมเบ้";
+"okinawa.shio_senbei.description" = "เซมเบ้โอกินาวะรสเค็มเรียบง่ายเนื้อแข็ง ของว่างยอดนิยมที่ชาวท้องถิ่นคุ้นเคย";
 "okinawa.shio_senbei.price" = "ตั้งแต่ 300 เยน";
 
 "attraction_goryokaku" = "โกเรียวคาคุ";
@@ -5304,29 +5304,29 @@
 "gourmet_yokosuka_navy_curry" = "แกงกะหรี่กองทัพเรือโยโกสุกะ";
 "gourmet_yokosuka_navy_curry_desc" = "แกงกะหรี่ขึ้นชื่อโยโกสุกะ จำลองสูตรกองทัพเรือเก่า เสิร์ฟกับนมและสลัด";
 
-"hokkaido.trappist_cookie.name" = "Trappist Cookies";
-"hokkaido.trappist_cookie.description" = "Simple, richly buttery cookies made at a monastery in Hakodate.";
+"hokkaido.trappist_cookie.name" = "คุกกี้แทรปพิสต์";
+"hokkaido.trappist_cookie.description" = "คุกกี้เรียบง่ายรสเนยเข้มข้นที่ทำในอารามแห่งฮาโกดาเตะ";
 "hokkaido.trappist_cookie.price" = "ตั้งแต่ 600 เยน";
-"hokkaido.kitakaro_baumkuchen.name" = "Kitakaro Baumkuchen";
-"hokkaido.kitakaro_baumkuchen.description" = "A moist baumkuchen made with Hokkaido ingredients.";
+"hokkaido.kitakaro_baumkuchen.name" = "บาวม์คูเฮนคิตะคาโร";
+"hokkaido.kitakaro_baumkuchen.description" = "บาวม์คูเฮนสัมผัสชุ่มที่ใช้วัตถุดิบจากฮอกไกโด";
 "hokkaido.kitakaro_baumkuchen.price" = "ตั้งแต่ 1,300 เยน";
-"kyoto.kyo_baum.name" = "Kyo Baum";
-"kyoto.kyo_baum.description" = "A Kyoto-born baumkuchen made with Uji matcha and soy milk.";
+"kyoto.kyo_baum.name" = "เกียวบาวม์";
+"kyoto.kyo_baum.description" = "บาวม์คูเฮนกำเนิดเกียวโตที่ใช้ชาเขียวมัทฉะอุจิและน้ำนมถั่วเหลือง";
 "kyoto.kyo_baum.price" = "ตั้งแต่ 1,200 เยน";
-"kyoto.matcha_chocolate.name" = "Matcha Chocolate";
-"kyoto.matcha_chocolate.description" = "Elegantly sweet chocolate confection highlighting the flavor of Uji matcha.";
+"kyoto.matcha_chocolate.name" = "ช็อกโกแลตมัทฉะ";
+"kyoto.matcha_chocolate.description" = "ขนมช็อกโกแลตรสหวานละมุนที่ชูรสชาเขียวมัทฉะอุจิ";
 "kyoto.matcha_chocolate.price" = "ตั้งแต่ 700 เยน";
-"fukuoka.chikushi_mochi.name" = "Chikushi Mochi";
-"fukuoka.chikushi_mochi.description" = "Soft mochi dusted with kinako and brown sugar syrup. A Fukuoka staple souvenir.";
+"fukuoka.chikushi_mochi.name" = "จิคุชิโมจิ";
+"fukuoka.chikushi_mochi.description" = "ขนมโมจินุ่มที่คลุกผงคินาโกะและน้ำเชื่อมดำ ของฝากยอดนิยมของฟุกุโอกะ";
 "fukuoka.chikushi_mochi.price" = "ตั้งแต่ 600 เยน";
-"fukuoka.menbei.name" = "Menbei";
-"fukuoka.menbei.description" = "Flavorful rice crackers kneaded with mentaiko. A popular Fukuoka souvenir.";
+"fukuoka.menbei.name" = "เมมเบ้";
+"fukuoka.menbei.description" = "เซมเบ้รสชาติเข้มข้นที่นวดเมนไทโกะเข้าไป ของฝากยอดนิยมของฟุกุโอกะ";
 "fukuoka.menbei.price" = "ตั้งแต่ 500 เยน";
-"kanagawa.hakone_manju.name" = "Hakone Onsen Manju";
-"kanagawa.hakone_manju.description" = "Freshly steamed hot-spring buns beloved in the Hakone spa town.";
+"kanagawa.hakone_manju.name" = "ออนเซ็นมันจูฮาโกเนะ";
+"kanagawa.hakone_manju.description" = "ซาลาเปาออนเซ็นนึ่งใหม่ที่ชาวเมืองน้ำแร่ฮาโกเนะคุ้นเคย";
 "kanagawa.hakone_manju.price" = "ตั้งแต่ 500 เยน";
-"kanagawa.kamakura_raisin_wich.name" = "Kamakura Raisin Wich";
-"kanagawa.kamakura_raisin_wich.description" = "A Kamakura specialty of buttercream and raisins between sable cookies.";
+"kanagawa.kamakura_raisin_wich.name" = "คามาคุระเรซินวิช";
+"kanagawa.kamakura_raisin_wich.description" = "ขนมชื่อดังคามาคุระที่ประกบครีมเนยและลูกเกดด้วยซาเบล่า";
 "kanagawa.kamakura_raisin_wich.price" = "ตั้งแต่ 1,000 เยน";
 
 "attraction_hiroshima_castle" = "ปราสาทฮิโรชิมะ";
@@ -5395,51 +5395,51 @@
 "gourmet_fujinomiya_yakisoba" = "ยากิโซบะฟุจิโนมิยะ";
 "gourmet_fujinomiya_yakisoba_desc" = "ยากิโซบะประจำถิ่นชิซุโอกะ เส้นเหนียวหนึบกับปลาซาร์ดีนป่นเป็นเอกลักษณ์";
 
-"hiroshima.toyoka.name" = "Toyoka";
-"hiroshima.toyoka.description" = "A Hiroshima sweet of red bean paste wrapped in mochi-flour dough and baked. Loved for its chewy texture.";
+"hiroshima.toyoka.name" = "โทโยกะ";
+"hiroshima.toyoka.description" = "ขนมชื่อดังฮิโรชิมะที่ห่อถั่วกวนหยาบด้วยแป้งข้าวเหนียวแล้วอบ สัมผัสเหนียวนุ่มเป็นที่นิยม";
 "hiroshima.toyoka.price" = "ตั้งแต่ 650 เยน";
-"hiroshima.lemon_cake.name" = "Lemon Cake";
-"hiroshima.lemon_cake.description" = "A refreshing baked sweet made with Setouchi lemons. A Hiroshima souvenir staple.";
+"hiroshima.lemon_cake.name" = "เลมอนเค้ก";
+"hiroshima.lemon_cake.description" = "ขนมอบสดชื่นที่ใช้เลมอนจากเซโตะอุจิ ของฝากยอดนิยมของฮิโรชิมะ";
 "hiroshima.lemon_cake.price" = "ตั้งแต่ 600 เยน";
-"nagasaki.kujuku_sempei.name" = "Kujukushima Sempei";
-"nagasaki.kujuku_sempei.description" = "Light tile-shaped crackers dotted with peanuts. A Nagasaki sweet originating in Sasebo.";
+"nagasaki.kujuku_sempei.name" = "คุจูกุชิมะเซ็มเป้";
+"nagasaki.kujuku_sempei.description" = "เซมเบ้ทรงกระเบื้องบางเบาที่โรยถั่วลิสง ขนมชื่อดังนางาซากิต้นกำเนิดซาเซโบะ";
 "nagasaki.kujuku_sempei.price" = "ตั้งแต่ 600 เยน";
-"nagasaki.nagasaki_monogatari.name" = "Nagasaki Monogatari";
-"nagasaki.nagasaki_monogatari.description" = "A rolled confection of cream wrapped in castella sponge.";
+"nagasaki.nagasaki_monogatari.name" = "นางาซากิโมโนกาตาริ";
+"nagasaki.nagasaki_monogatari.description" = "ขนมชื่อดังทรงม้วนที่ห่อครีมด้วยแป้งคาสเตลลา";
 "nagasaki.nagasaki_monogatari.price" = "ตั้งแต่ 700 เยน";
-"nara.narazuke.name" = "Narazuke";
-"nara.narazuke.description" = "Traditional Nara pickles of melon and cucumber cured in sake lees.";
+"nara.narazuke.name" = "นาราซึเกะ";
+"nara.narazuke.description" = "ผักดองดั้งเดิมต้นกำเนิดนาระที่ดองแตงและแตงกวาในกากสาเก";
 "nara.narazuke.price" = "ตั้งแต่ 600 เยน";
-"nara.kaki_no_ha_cha.name" = "Persimmon Leaf Tea";
-"nara.kaki_no_ha_cha.description" = "A Nara tea made from vitamin-rich persimmon leaves, fragrant and mellow.";
+"nara.kaki_no_ha_cha.name" = "ชาใบพลับ";
+"nara.kaki_no_ha_cha.description" = "ชาของนาระที่ทำจากใบพลับซึ่งอุดมวิตามิน หอมและกลมกล่อม";
 "nara.kaki_no_ha_cha.price" = "ตั้งแต่ 500 เยน";
-"miyagi.shiogama_kohada.name" = "Shiogama";
-"miyagi.shiogama_kohada.description" = "An elegantly sweet rakugan made with Shiogama seaweed salt. A long-standing Miyagi sweet.";
+"miyagi.shiogama_kohada.name" = "ชิโอกามะ";
+"miyagi.shiogama_kohada.description" = "รากุกันรสหวานละมุนที่ใช้เกลือสาหร่ายชิโอกามะ ขนมชื่อดังมิยางิที่มีมาแต่โบราณ";
 "miyagi.shiogama_kohada.price" = "ตั้งแต่ 500 เยน";
-"miyagi.kikufuku.name" = "Kikufuku";
-"miyagi.kikufuku.description" = "A popular Sendai sweet of fresh cream and bean paste wrapped in mochi. Zunda flavor too.";
+"miyagi.kikufuku.name" = "คิคุฟุกุ";
+"miyagi.kikufuku.description" = "ขนมหวานญี่ปุ่นยอดนิยมของเซนไดที่ห่อครีมสดและถั่วกวนด้วยโมจิ มีรสซุนดะด้วย";
 "miyagi.kikufuku.price" = "ตั้งแต่ 700 เยน";
-"chiba.nure_senbei.name" = "Nure Senbei";
-"chiba.nure_senbei.description" = "A Choshi specialty cracker with a moist texture, soaked in plenty of soy sauce.";
+"chiba.nure_senbei.name" = "นุเระเซมเบ้";
+"chiba.nure_senbei.description" = "เซมเบ้ขึ้นชื่อโชชิสัมผัสชุ่มที่ซึมซับซอสโชยุอย่างเต็มที่";
 "chiba.nure_senbei.price" = "ตั้งแต่ 400 เยน";
-"chiba.peanut_sub.name" = "Peanut Sable";
-"chiba.peanut_sub.description" = "A fragrant sable highlighting the flavor of Chiba peanuts.";
+"chiba.peanut_sub.name" = "ซาเบล่าถั่วลิสง";
+"chiba.peanut_sub.description" = "ซาเบล่าหอมกรุ่นที่ชูรสถั่วลิสงของชิบะ";
 "chiba.peanut_sub.price" = "ตั้งแต่ 600 เยน";
-"ishikawa.shibafune.name" = "Shibafune";
-"ishikawa.shibafune.description" = "Thin crackers with a touch of ginger. A traditional Kanazawa sweet.";
+"ishikawa.shibafune.name" = "ชิบะฟุเนะ";
+"ishikawa.shibafune.description" = "เซมเบ้แผ่นบางรสขิง ขนมดั้งเดิมของคานาซาวะ";
 "ishikawa.shibafune.price" = "ตั้งแต่ 600 เยน";
-"ishikawa.kaga_bocha.name" = "Kaga Bocha";
-"ishikawa.kaga_bocha.description" = "Fragrant Kanazawa roasted stem tea with a clean, crisp taste.";
+"ishikawa.kaga_bocha.name" = "ชาโบชะคางะ";
+"ishikawa.kaga_bocha.description" = "ชาโฮจิหอมกรุ่นของคานาซาวะที่คั่วจากก้านชา รสชาติสะอาดสดชื่น";
 "ishikawa.kaga_bocha.price" = "ตั้งแต่ 500 เยน";
-"nagano.oyaki.name" = "Oyaki";
-"nagano.oyaki.description" = "A Nagano local food of nozawana or bean paste wrapped in wheat dough and grilled.";
+"nagano.oyaki.name" = "โอยากิ";
+"nagano.oyaki.description" = "อาหารพื้นเมืองนางาโนะที่ห่อโนซาวานะหรือถั่วกวนด้วยแป้งสาลีแล้วย่าง";
 "nagano.oyaki.price" = "ตั้งแต่ 150 เยน";
-"nagano.kurumi_yubeshi.name" = "Kurumi Yubeshi";
-"nagano.kurumi_yubeshi.description" = "A chewy Japanese sweet kneaded with walnuts. A Shinshu souvenir staple.";
+"nagano.kurumi_yubeshi.name" = "คุรุมิยุเบชิ";
+"nagano.kurumi_yubeshi.description" = "ขนมญี่ปุ่นเหนียวนุ่มที่นวดวอลนัทเข้าไป ของฝากยอดนิยมของชินชู";
 "nagano.kurumi_yubeshi.price" = "ตั้งแต่ 500 เยน";
-"shizuoka.wasabi_zuke.name" = "Wasabi Zuke";
-"shizuoka.wasabi_zuke.description" = "A Shizuoka specialty of wasabi cured in sake lees, with sharp heat and faint sweetness.";
+"shizuoka.wasabi_zuke.name" = "วาซาบิซึเกะ";
+"shizuoka.wasabi_zuke.description" = "ของขึ้นชื่อชิซุโอกะที่ดองวาซาบิในกากสาเก รสเผ็ดซ่าและหวานอ่อนๆ";
 "shizuoka.wasabi_zuke.price" = "ตั้งแต่ 500 เยน";
-"shizuoka.abekawa_mochi.name" = "Abekawa Mochi";
-"shizuoka.abekawa_mochi.description" = "A traditional Shizuoka sweet of soft mochi coated in kinako and bean paste.";
+"shizuoka.abekawa_mochi.name" = "อาเบคาวะโมจิ";
+"shizuoka.abekawa_mochi.description" = "ขนมญี่ปุ่นดั้งเดิมของชิซุโอกะที่คลุกโมจินุ่มด้วยผงคินาโกะและถั่วกวน";
 "shizuoka.abekawa_mochi.price" = "ตั้งแต่ 600 เยน";
