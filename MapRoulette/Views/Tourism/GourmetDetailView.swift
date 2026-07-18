@@ -63,7 +63,9 @@ struct GourmetDetailView<PlaceMap: View>: View {
 
                                 SocialSearchButtons(
                                     query: item.name,
-                                    tabelog: TabelogSearch(areaSlug: prefecture.rawValue, keyword: item.name)
+                                    // 食べログの店舗DBは日本語ベースで翻訳語ではヒットしないため、
+                                    // 検索キーワードは表示言語に関わらず常に日本語名を渡す。
+                                    tabelog: TabelogSearch(areaSlug: prefecture.rawValue, keyword: item.nameJa)
                                 )
                             }
                             .planCard()

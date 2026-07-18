@@ -22,6 +22,10 @@ struct TabelogSearch {
     let keyword: String
 }
 
+// 食べログの多言語版UI（/en/ /cn/ /tw/ /kr/）は掲載店舗が極端に少なく（外国語対応店のみ収録）、
+// 日本語版の数百件に対し数件しかヒットしないため使わない。
+// 検索は常に日本語版UI（tabelog.com/{area}/）＋日本語のグルメ名で行い、全言語でボタンを表示する。
+
 /// 施設名で YouTube / Instagram を検索するボタンを縦に並べた共通コンポーネント。
 /// グルメなど店探しに使える対象では、`tabelog` を渡すと食べログ検索も表示する。
 struct SocialSearchButtons: View {
@@ -65,6 +69,7 @@ struct SocialSearchButtons: View {
         // エリアを URL パス（例: /mie/）に置くと「全国」が外れ、その県スコープで
         // sw= のフリーワード検索が効く。rstLst が sw= の絞り込みに対応している
         // （rst/rstsearch は sw= が効かず全国全件になる）。
+        // 常に日本語版UI（プレフィックスなし）を開く。keyword は日本語のグルメ名。
         if let url = URL(string: "https://tabelog.com/\(search.areaSlug)/rstLst/?sw=\(q)") {
             UIApplication.shared.open(url)
         }

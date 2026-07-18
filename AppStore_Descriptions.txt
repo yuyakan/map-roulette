@@ -1,0 +1,331 @@
+============================================================
+Japan Trip Map — App Store 説明文（全12言語 / 現行アプリ対応版）
+アプリ名: Japan Trip Map
+※ App Store Connect の説明欄はプレーンテキストです。
+　各言語ブロックの本文をそのままコピペしてください。
+※ 実装（5タブ構成：都道府県ルーレット / 温泉地 / 自然 / 祭・イベント / マイプラン）に合わせた内容です。
+============================================================
+
+
+============================================================
+【日本語 / Japanese (ja)】
+============================================================
+「Japan Trip Map」は、日本全国47都道府県の中から旅行先をルーレットでランダムに選び、その土地の観光・グルメ・温泉・自然・お祭りを深掘りできる旅の発見アプリです。行き先選びに迷ったときも、ゲーム感覚で次の旅のきっかけが見つかります。集めた情報は自分だけの旅行プランにまとめられます。
+
+■ 都道府県ルーレット
+・重み付け設定：都道府県ごとに選ばれる確率を自由にカスタマイズ
+・柔軟な選択：特定の地域を除外したり、お気に入りの都道府県が選ばれやすくなるよう設定
+・直感的な操作：ワンタップで回転スタート＆ストップ
+・日本地図：設定した重みに応じて色分け表示。タップで各県の情報へ
+
+■ テーマ別に探せる
+・温泉地：景観・歴史・療養・リゾート・山間・海辺・スキーなどタイプ別に探せる温泉マップ
+・自然スポット：夜景・星空・海・キャンプなど、目的に合わせた絶景スポット
+・祭・イベント：全国のお祭りを一覧で見比べて、旅の予定に組み込める
+
+■ 充実の詳細情報
+・観光スポット／ご当地グルメ／お土産の詳しい解説
+・地図・座標情報で位置をすぐ確認
+・YouTube・Instagram・食べログでワンタップ検索し、口コミや動画をチェック
+
+■ マイプラン（旅行プラン作成）
+・気になった観光地・グルメ・温泉・お祭り・自然・お土産を集めて自分だけのプランに
+・日程・時間ブロックで1日ごとに整理、ドラッグで並び替え
+・地図で全体のルートを確認、プランを共有
+
+
+============================================================
+【英語 / English (en)】
+============================================================
+"Japan Trip Map" is a travel discovery app that randomly picks a destination from Japan's 47 prefectures with a roulette, then lets you dive into its sights, food, hot springs, nature, and festivals. When you can't decide where to go, it turns choosing into a fun game—and you can gather everything into your own travel plan.
+
+■ Prefecture Roulette
+- Weighted Settings: Customize the selection probability for each prefecture
+- Flexible Selection: Exclude specific regions or make favorite prefectures more likely to be chosen
+- Intuitive Operation: One-tap spin start and stop
+- Japan Map: Color-coded by your weights; tap any prefecture for its info
+
+■ Explore by Theme
+- Hot Springs: A map to find onsen by type—scenic, historical, therapeutic, resort, mountain, seaside, or ski
+- Nature Spots: Stunning locations for night views, starry skies, the sea, camping, and more
+- Festivals & Events: Compare festivals across Japan and add them to your trip
+
+■ Rich Details
+- In-depth guides for attractions, local cuisine, and souvenirs
+- Map and coordinate information to pinpoint each place
+- One-tap search on YouTube, Instagram, and Tabelog to check videos and reviews
+
+■ My Plans (Trip Planner)
+- Collect attractions, food, hot springs, festivals, nature spots, and souvenirs into your own plan
+- Organize by day and time block, and reorder with drag and drop
+- View the whole route on a map and share your plan
+
+
+============================================================
+【中国語・簡体字 / Chinese Simplified (zh-Hans)】
+============================================================
+“Japan Trip Map”是一款旅行发现应用，用轮盘从日本47个都道府县中随机选出旅行目的地，并深入了解当地的观光、美食、温泉、自然与祭典。当你为去哪里而犹豫时，它让选择变成一场有趣的游戏，还能把收集到的信息整理成专属于你的旅行计划。
+
+■ 都道府县轮盘
+・权重设置：自由自定义每个都道府县被选中的概率
+・灵活选择：排除特定地区，或让喜爱的都道府县更容易被选中
+・直观操作：一键开始与停止旋转
+・日本地图：根据设置的权重进行颜色区分，点按各县即可查看信息
+
+■ 按主题探索
+・温泉地：可按景观、历史、疗养、度假、山间、海边、滑雪等类型查找的温泉地图
+・自然景点：夜景、星空、大海、露营等符合目的的绝景景点
+・祭典与活动：一览比较全国祭典，并加入你的旅行计划
+
+■ 丰富的详细信息
+・观光景点、当地美食、特产手信的详细介绍
+・地图与坐标信息，快速确认位置
+・一键在 YouTube、Instagram、食べログ搜索，查看视频与评价
+
+■ 我的计划（行程规划）
+・将心仪的观光地、美食、温泉、祭典、自然、手信收集到专属计划中
+・按日程与时间段整理，可拖动排序
+・在地图上查看整体路线并分享计划
+
+
+============================================================
+【中国語・繁体字 / Chinese Traditional (zh-Hant)】
+============================================================
+「Japan Trip Map」是一款旅行探索應用程式，以輪盤從日本47個都道府縣中隨機挑選旅行目的地，並深入了解當地的觀光、美食、溫泉、自然與祭典。當您猶豫要去哪裡時，它讓選擇變成一場有趣的遊戲，還能將蒐集到的資訊整理成專屬於您的旅行計畫。
+
+■ 都道府縣輪盤
+・權重設定：自由自訂各都道府縣被選中的機率
+・彈性選擇：排除特定地區，或讓喜愛的都道府縣更容易被選中
+・直覺操作：一鍵開始與停止旋轉
+・日本地圖：依據設定的權重以顏色區分，點按各縣即可查看資訊
+
+■ 依主題探索
+・溫泉地：可依景觀、歷史、療養、度假、山間、海邊、滑雪等類型尋找的溫泉地圖
+・自然景點：夜景、星空、大海、露營等符合目的的絕景景點
+・祭典與活動：一覽比較全國祭典，並加入您的旅行計畫
+
+■ 豐富的詳細資訊
+・觀光景點、在地美食、伴手禮的詳細介紹
+・地圖與座標資訊，快速確認位置
+・一鍵在 YouTube、Instagram、食べログ搜尋，查看影片與評價
+
+■ 我的計畫（行程規劃）
+・將喜愛的觀光地、美食、溫泉、祭典、自然、伴手禮蒐集到專屬計畫中
+・依日程與時間區塊整理，可拖曳排序
+・在地圖上查看整體路線並分享計畫
+
+
+============================================================
+【中国語・香港 / Chinese Hong Kong (zh-HK)】
+============================================================
+「Japan Trip Map」是一款旅行探索應用程式，用輪盤喺日本47個都道府縣入面隨機揀出旅行目的地，再深入了解當地嘅觀光、美食、溫泉、自然同祭典。當你猶豫去邊度嘅時候，佢令選擇變成一場有趣嘅遊戲，仲可以將收集到嘅資訊整理成專屬你嘅旅行計劃。
+
+■ 都道府縣輪盤
+・權重設定：自由自訂各都道府縣被揀中嘅機率
+・靈活揀選：排除特定地區，或者令喜愛嘅都道府縣更容易被揀中
+・直覺操作：一撳就開始同停止旋轉
+・日本地圖：根據設定嘅權重以顏色區分，㩒各縣就可以睇資訊
+
+■ 按主題探索
+・溫泉地：可以按景觀、歷史、療養、度假、山間、海邊、滑雪等類型搵嘅溫泉地圖
+・自然景點：夜景、星空、大海、露營等切合目的嘅絕景景點
+・祭典同活動：一覽比較全國祭典，加入你嘅旅行計劃
+
+■ 豐富嘅詳細資訊
+・觀光景點、地道美食、手信嘅詳細介紹
+・地圖同座標資訊，快速確認位置
+・一撳就喺 YouTube、Instagram、食べログ搜尋，睇片同評價
+
+■ 我的計劃（行程規劃）
+・將心水嘅觀光地、美食、溫泉、祭典、自然、手信收集到專屬計劃入面
+・按日程同時間段整理，可以拖動排序
+・喺地圖上睇整體路線並分享計劃
+
+
+============================================================
+【韓国語 / Korean (ko)】
+============================================================
+「Japan Trip Map」은 룰렛으로 일본 47개 도도부현 중에서 여행지를 무작위로 골라, 그 지역의 관광·맛집·온천·자연·축제를 자세히 살펴볼 수 있는 여행 발견 앱입니다. 어디로 갈지 망설여질 때도 게임처럼 즐겁게 다음 여행의 실마리를 찾을 수 있으며, 모은 정보를 나만의 여행 플랜으로 정리할 수 있습니다.
+
+■ 도도부현 룰렛
+・가중치 설정: 도도부현별 선택 확률을 자유롭게 조정
+・유연한 선택: 특정 지역을 제외하거나, 좋아하는 도도부현이 더 자주 선택되도록 설정
+・직관적인 조작: 원탭으로 회전 시작 및 정지
+・일본 지도: 설정한 가중치에 따라 색상으로 구분 표시, 탭하면 각 현 정보 확인
+
+■ 테마별로 찾기
+・온천지: 경관·역사·요양·리조트·산간·해변·스키 등 유형별로 찾는 온천 지도
+・자연 명소: 야경·별하늘·바다·캠핑 등 목적에 맞는 절경 스폿
+・축제·이벤트: 전국의 축제를 한눈에 비교하고 여행 일정에 추가
+
+■ 알찬 상세 정보
+・관광 명소·향토 음식·기념품에 대한 자세한 설명
+・지도·좌표 정보로 위치를 바로 확인
+・YouTube·Instagram·타베로그에서 원탭 검색으로 영상과 리뷰 확인
+
+■ 마이 플랜(여행 플랜 만들기)
+・마음에 든 관광지·맛집·온천·축제·자연·기념품을 모아 나만의 플랜으로
+・일정·시간 블록으로 하루씩 정리하고 드래그로 순서 변경
+・지도에서 전체 경로를 확인하고 플랜 공유
+
+
+============================================================
+【タイ語 / Thai (th)】
+============================================================
+“Japan Trip Map” คือแอปค้นหาจุดหมายการเดินทางที่ใช้วงล้อสุ่มเลือกจุดหมายจาก 47 จังหวัดของญี่ปุ่น แล้วเจาะลึกทั้งสถานที่ท่องเที่ยว อาหาร ออนเซ็น ธรรมชาติ และเทศกาลของท้องถิ่นนั้น เมื่อคุณตัดสินใจไม่ได้ว่าจะไปไหน แอปจะเปลี่ยนการเลือกให้เป็นเกมสนุก ๆ และคุณยังรวบรวมข้อมูลที่พบเป็นแผนการเดินทางของคุณเองได้
+
+■ วงล้อจังหวัด
+- การตั้งค่าน้ำหนัก: ปรับความน่าจะเป็นในการเลือกของแต่ละจังหวัดได้ตามต้องการ
+- การเลือกที่ยืดหยุ่น: ยกเว้นบางภูมิภาค หรือตั้งจังหวัดที่ชื่นชอบให้ถูกเลือกบ่อยขึ้น
+- การใช้งานที่เข้าใจง่าย: แตะครั้งเดียวเพื่อเริ่มหมุนและหยุด
+- แผนที่ญี่ปุ่น: แสดงด้วยสีตามน้ำหนักที่ตั้งไว้ แตะแต่ละจังหวัดเพื่อดูข้อมูล
+
+■ ค้นหาตามธีม
+- ออนเซ็น: แผนที่ออนเซ็นที่ค้นหาได้ตามประเภท เช่น วิวสวย ประวัติศาสตร์ บำบัด รีสอร์ต ภูเขา ริมทะเล และสกี
+- จุดชมธรรมชาติ: จุดชมวิวสุดงดงามสำหรับวิวกลางคืน ท้องฟ้าดาว ทะเล การตั้งแคมป์ และอื่น ๆ
+- เทศกาลและอีเวนต์: เปรียบเทียบเทศกาลทั่วญี่ปุ่นและเพิ่มลงในทริปของคุณ
+
+■ ข้อมูลรายละเอียดครบครัน
+- คำอธิบายโดยละเอียดของสถานที่ท่องเที่ยว อาหารท้องถิ่น และของฝาก
+- ข้อมูลแผนที่และพิกัดเพื่อระบุตำแหน่งได้ทันที
+- ค้นหาด้วยปุ่มเดียวบน YouTube, Instagram และ Tabelog เพื่อดูวิดีโอและรีวิว
+
+■ แผนของฉัน (วางแผนการเดินทาง)
+- รวบรวมสถานที่ท่องเที่ยว อาหาร ออนเซ็น เทศกาล ธรรมชาติ และของฝากเป็นแผนของคุณเอง
+- จัดระเบียบเป็นรายวันและช่วงเวลา พร้อมลากเพื่อจัดลำดับ
+- ดูเส้นทางทั้งหมดบนแผนที่และแชร์แผนของคุณ
+
+
+============================================================
+【ベトナム語 / Vietnamese (vi)】
+============================================================
+“Japan Trip Map” là ứng dụng khám phá du lịch dùng vòng quay để chọn ngẫu nhiên điểm đến trong 47 tỉnh của Nhật Bản, rồi tìm hiểu sâu về danh lam thắng cảnh, ẩm thực, suối nước nóng, thiên nhiên và lễ hội của nơi đó. Khi bạn phân vân chưa biết đi đâu, ứng dụng biến việc lựa chọn thành một trò chơi thú vị, và bạn có thể tập hợp mọi thông tin vào kế hoạch du lịch của riêng mình.
+
+■ Vòng quay tỉnh thành
+- Thiết lập trọng số: Tùy chỉnh xác suất được chọn cho từng tỉnh
+- Lựa chọn linh hoạt: Loại trừ vùng cụ thể hoặc đặt tỉnh yêu thích để được chọn thường xuyên hơn
+- Thao tác trực quan: Chạm một lần để bắt đầu quay và dừng
+- Bản đồ Nhật Bản: Hiển thị màu theo trọng số đã đặt, chạm vào từng tỉnh để xem thông tin
+
+■ Khám phá theo chủ đề
+- Suối nước nóng: Bản đồ onsen tìm theo loại—cảnh đẹp, lịch sử, trị liệu, nghỉ dưỡng, miền núi, ven biển, trượt tuyết
+- Điểm thiên nhiên: Những nơi tuyệt đẹp để ngắm cảnh đêm, bầu trời sao, biển, cắm trại và hơn thế nữa
+- Lễ hội & sự kiện: So sánh các lễ hội trên khắp Nhật Bản và thêm vào chuyến đi của bạn
+
+■ Thông tin chi tiết phong phú
+- Hướng dẫn chi tiết về điểm tham quan, ẩm thực địa phương và quà lưu niệm
+- Thông tin bản đồ và tọa độ để xác định vị trí ngay
+- Tìm kiếm một chạm trên YouTube, Instagram và Tabelog để xem video và đánh giá
+
+■ Kế hoạch của tôi (Lập kế hoạch chuyến đi)
+- Tập hợp điểm tham quan, ẩm thực, suối nước nóng, lễ hội, thiên nhiên và quà lưu niệm vào kế hoạch riêng
+- Sắp xếp theo ngày và khung giờ, kéo thả để đổi thứ tự
+- Xem toàn bộ lộ trình trên bản đồ và chia sẻ kế hoạch
+
+
+============================================================
+【フランス語 / French (fr)】
+============================================================
+« Japan Trip Map » est une application de découverte de voyages qui, à l'aide d'une roulette, choisit au hasard une destination parmi les 47 préfectures du Japon, puis vous permet d'explorer ses sites touristiques, sa gastronomie, ses sources thermales, sa nature et ses festivals. Quand vous hésitez sur votre destination, elle transforme le choix en un jeu amusant, et vous pouvez rassembler toutes les informations dans votre propre plan de voyage.
+
+■ Roulette des préfectures
+- Réglages pondérés : Personnalisez la probabilité de sélection de chaque préfecture
+- Sélection flexible : Excluez certaines régions ou rendez vos préfectures favorites plus susceptibles d'être choisies
+- Utilisation intuitive : Démarrez et arrêtez la rotation d'une seule pression
+- Carte du Japon : Coloriée selon vos pondérations ; appuyez sur une préfecture pour ses informations
+
+■ Explorez par thème
+- Sources thermales : Une carte pour trouver les onsen par type—panoramique, historique, thérapeutique, station, montagne, bord de mer ou ski
+- Sites naturels : Des lieux magnifiques pour les vues nocturnes, les ciels étoilés, la mer, le camping et plus encore
+- Festivals et événements : Comparez les festivals à travers le Japon et ajoutez-les à votre voyage
+
+■ Informations détaillées
+- Guides approfondis des attractions, de la cuisine locale et des souvenirs
+- Cartes et coordonnées pour localiser chaque lieu
+- Recherche en un clic sur YouTube, Instagram et Tabelog pour consulter vidéos et avis
+
+■ Mes plans (Planificateur de voyage)
+- Rassemblez attractions, plats, sources thermales, festivals, sites naturels et souvenirs dans votre propre plan
+- Organisez par jour et par plage horaire, et réorganisez par glisser-déposer
+- Visualisez tout l'itinéraire sur une carte et partagez votre plan
+
+
+============================================================
+【スペイン語 / Spanish (es)】
+============================================================
+«Japan Trip Map» es una aplicación de descubrimiento de viajes que, con una ruleta, elige al azar un destino entre las 47 prefecturas de Japón y luego te permite profundizar en sus lugares de interés, gastronomía, aguas termales, naturaleza y festivales. Cuando no sabes adónde ir, convierte la elección en un juego divertido, y puedes reunir toda la información en tu propio plan de viaje.
+
+■ Ruleta de prefecturas
+- Ajustes ponderados: Personaliza la probabilidad de selección de cada prefectura
+- Selección flexible: Excluye regiones específicas o haz que tus prefecturas favoritas se elijan con mayor frecuencia
+- Manejo intuitivo: Inicia y detén el giro con un solo toque
+- Mapa de Japón: Coloreado según tus pesos; toca cualquier prefectura para ver su información
+
+■ Explora por tema
+- Aguas termales: Un mapa para encontrar onsen por tipo—paisajístico, histórico, terapéutico, resort, montaña, costa o esquí
+- Lugares naturales: Sitios impresionantes para vistas nocturnas, cielos estrellados, el mar, acampada y más
+- Festivales y eventos: Compara festivales de todo Japón y añádelos a tu viaje
+
+■ Información detallada
+- Guías completas de atracciones, cocina local y recuerdos
+- Mapas e información de coordenadas para ubicar cada lugar
+- Búsqueda con un toque en YouTube, Instagram y Tabelog para ver vídeos y reseñas
+
+■ Mis planes (Planificador de viajes)
+- Reúne atracciones, comida, aguas termales, festivales, lugares naturales y recuerdos en tu propio plan
+- Organiza por día y franja horaria, y reordena arrastrando y soltando
+- Visualiza toda la ruta en un mapa y comparte tu plan
+
+
+============================================================
+【ドイツ語 / German (de)】
+============================================================
+„Japan Trip Map“ ist eine App zur Reiseentdeckung, die mit einem Glücksrad zufällig ein Ziel aus den 47 Präfekturen Japans auswählt und dich anschließend in dessen Sehenswürdigkeiten, Küche, heiße Quellen, Natur und Feste eintauchen lässt. Wenn du dich nicht entscheiden kannst, wird die Wahl zu einem unterhaltsamen Spiel – und du kannst alle Informationen in deinem eigenen Reiseplan sammeln.
+
+■ Präfektur-Glücksrad
+- Gewichtete Einstellungen: Passe die Auswahlwahrscheinlichkeit für jede Präfektur an
+- Flexible Auswahl: Schließe bestimmte Regionen aus oder lass Lieblingspräfekturen häufiger auswählen
+- Intuitive Bedienung: Drehung mit einem Fingertipp starten und stoppen
+- Japan-Karte: Farblich nach deinen Gewichtungen; tippe auf eine Präfektur für ihre Infos
+
+■ Nach Thema entdecken
+- Heiße Quellen: Eine Karte, um Onsen nach Typ zu finden – landschaftlich, historisch, therapeutisch, Resort, Berg, Küste oder Ski
+- Naturorte: Atemberaubende Orte für Nachtansichten, Sternenhimmel, Meer, Camping und mehr
+- Feste & Events: Vergleiche Feste in ganz Japan und füge sie deiner Reise hinzu
+
+■ Ausführliche Details
+- Fundierte Guides zu Sehenswürdigkeiten, lokaler Küche und Souvenirs
+- Karten- und Koordinateninformationen zur genauen Verortung jedes Ortes
+- Suche mit einem Tippen auf YouTube, Instagram und Tabelog für Videos und Bewertungen
+
+■ Meine Pläne (Reiseplaner)
+- Sammle Sehenswürdigkeiten, Speisen, heiße Quellen, Feste, Naturorte und Souvenirs in deinem eigenen Plan
+- Ordne nach Tag und Zeitblock und sortiere per Drag-and-drop um
+- Sieh die gesamte Route auf einer Karte und teile deinen Plan
+
+
+============================================================
+【インドネシア語 / Indonesian (id)】
+============================================================
+"Japan Trip Map" adalah aplikasi penemuan perjalanan yang menggunakan roda putar untuk memilih destinasi secara acak dari 47 prefektur di Jepang, lalu memungkinkan Anda mendalami tempat wisata, kuliner, sumber air panas, alam, dan festival daerah tersebut. Saat bingung mau ke mana, aplikasi ini mengubah pilihan menjadi permainan yang seru, dan Anda dapat mengumpulkan semua informasi ke dalam rencana perjalanan Anda sendiri.
+
+■ Roda Putar Prefektur
+- Pengaturan Bobot: Sesuaikan probabilitas pemilihan untuk setiap prefektur
+- Pemilihan Fleksibel: Kecualikan wilayah tertentu atau buat prefektur favorit lebih sering terpilih
+- Pengoperasian Intuitif: Mulai dan hentikan putaran dengan satu ketukan
+- Peta Jepang: Berwarna sesuai bobot Anda; ketuk prefektur mana pun untuk melihat informasinya
+
+■ Jelajahi Berdasarkan Tema
+- Sumber Air Panas: Peta untuk menemukan onsen berdasarkan jenis—pemandangan, sejarah, terapi, resor, pegunungan, tepi laut, atau ski
+- Tempat Alam: Lokasi menakjubkan untuk pemandangan malam, langit berbintang, laut, berkemah, dan lainnya
+- Festival & Acara: Bandingkan festival di seluruh Jepang dan tambahkan ke perjalanan Anda
+
+■ Informasi Terperinci
+- Panduan mendalam tentang atraksi, kuliner lokal, dan oleh-oleh
+- Informasi peta dan koordinat untuk menentukan lokasi setiap tempat
+- Pencarian satu ketukan di YouTube, Instagram, dan Tabelog untuk melihat video dan ulasan
+
+■ Rencana Saya (Perencana Perjalanan)
+- Kumpulkan atraksi, makanan, sumber air panas, festival, tempat alam, dan oleh-oleh ke dalam rencana Anda sendiri
+- Atur berdasarkan hari dan blok waktu, serta ubah urutan dengan seret dan lepas
+- Lihat seluruh rute di peta dan bagikan rencana Anda

@@ -1,0 +1,42 @@
+============================================================
+Japan Trip Map — サブタイトル（全12言語）
+原文: Japan travel info at a glance
+※ App Store Connect の各言語「サブタイトル」欄にコピペ。
+※ 上限30文字以内。（）内は文字数。
+============================================================
+
+【日本語 / ja】(12)
+日本の旅行情報がひと目で
+
+【英語 / en】(29)
+Japan travel info at a glance
+
+【中国語・簡体字 / zh-Hans】(10)
+日本旅行信息一目了然
+
+【中国語・繁体字 / zh-Hant】(10)
+日本旅遊資訊一目瞭然
+
+【中国語・香港 / zh-HK】(10)
+日本旅遊資訊一目了然
+
+【韓国語 / ko】(13)
+일본 여행 정보를 한눈에
+
+【タイ語 / th】(29)
+ข้อมูลเที่ยวญี่ปุ่นในที่เดียว
+
+【ベトナム語 / vi】(26)
+Thông tin du lịch Nhật Bản
+
+【フランス語 / fr】(25)
+Le Japon en un coup d'œil
+
+【スペイン語 / es】(29)
+Viaja por Japón de un vistazo
+
+【ドイツ語 / de】(29)
+Japan-Reiseinfos im Überblick
+
+【インドネシア語 / id】(26)
+Info wisata Jepang sekilas

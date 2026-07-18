@@ -1035,7 +1035,8 @@
 "food_jakoten" = "じゃこ天";
 "food_tai_meshi" = "鯛めし";
 "food_iyokan" = "いよかん";
-"attraction_botchan_dango" = "坊っちゃん団子";
+"food_botchan_dango" = "坊っちゃん団子";
+"gourmet_sara_udon" = "皿うどん";
 
 // Fukuoka
 "attraction_dazaifu_tenmangu" = "太宰府天満宮";

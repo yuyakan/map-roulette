@@ -2328,6 +2328,8 @@
 "kagawa.honetsuki_tori_senbei.description" = "Rice crackers with Kagawa's bone-in chicken motif";
 "kagawa.honetsuki_tori_senbei.price" = "¥800-1,500";
 
+"kagawa.olive_goods.name" = "Olive Products";
+"kagawa.olive_goods.description" = "Products made with olives from Shodoshima";
 "kagawa.olive_goods.price" = "¥1,000-3,000";
 
 // =====================================================

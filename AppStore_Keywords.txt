@@ -1,0 +1,47 @@
+============================================================
+Japan Trip Map — App Store キーワード（全12言語）
+※ App Store Connect の各言語「キーワード」欄にコピペ。
+※ 半角カンマ区切り・スペースなし・各100文字以内。
+------------------------------------------------------------
+【最適化方針】App Storeの検索インデックスは「タイトル＋サブタイトル＋
+キーワード欄」を合算する。重複は加点されないため、タイトル
+"Japan Trip Map" とサブタイトル（日本/旅行/情報/地図 等）に含む語は
+キーワード欄から除外し、その分を未カバーの集客語（季節・自然・
+アクティビティ系: 桜/紅葉/夜景/絶景/キャンプ/寺 等）に充当した。
+============================================================
+
+【日本語 / ja】(100文字)
+ルーレット,ランダム,都道府県,旅,行き先,観光,くじ,グルメ,ご当地,温泉,おみやげ,祭,イベント,夏祭り,花火大会,プラン,名所,夜景,スポット,計画,しおり,ルート,名物,絶景,星空,紅葉,穴場
+
+【英語 / en】(97文字)
+roulette,sightseeing,gourmet,onsen,souvenir,festival,fireworks,plan,route,night view,scenery,spot
+
+【中国語・簡体字 / zh-Hans】(87文字)
+地图,轮盘,随机,都道府县,旅游,行程,目的地,观光,美食,当地,温泉,伴手礼,祭典,活动,夏日祭,烟花大会,名胜,夜景,景点,计划,路线,樱花,红叶,露营,星空,美景,攻略
+
+【中国語・繁体字 / zh-Hant】(84文字)
+地圖,輪盤,隨機,都道府縣,行程,目的地,觀光,美食,在地,溫泉,伴手禮,祭典,活動,夏日祭,煙火大會,名勝,夜景,景點,計畫,路線,櫻花,紅葉,露營,星空,美景,攻略
+
+【中国語・香港 / zh-HK】(83文字)
+地圖,輪盤,隨機,都道府縣,行程,目的地,觀光,美食,地道,溫泉,手信,祭典,活動,夏日祭,煙花大會,名勝,夜景,景點,計劃,路線,櫻花,紅葉,露營,星空,美景,攻略
+
+【韓国語 / ko】(75文字)
+룰렛,랜덤,여정,목적지,관광,맛집,현지,온천,기념품,축제,불꽃축제,플랜,명소,야경,스팟,일정,루트,벚꽃,단풍,캠핑,별하늘,료칸,료칸여행
+
+【タイ語 / th】(98文字)
+แผนที่,รูเล็ต,สุ่ม,จังหวัด,ของกิน,ออนเซ็น,ของฝาก,เทศกาล,ดอกไม้ไฟ,จุดเที่ยว,เส้นทาง,ซากุระ,ใบไม้แดง
+
+【ベトナム語 / vi】(100文字)
+bản đồ,vòng quay,tỉnh,ẩm thực,onsen,quà,lễ hội,pháo hoa,kế hoạch,địa điểm,lộ trình,hoa anh đào,lá đỏ
+
+【フランス語 / fr】(100文字)
+carte,roulette,voyage,tourisme,gastronomie,onsen,souvenir,festival,feu artifice,plan,spot,itinéraire
+
+【スペイン語 / es】(99文字)
+mapa,ruleta,turismo,gastronomia,onsen,recuerdo,festival,fuegos artificiales,plan,lugar,ruta,paisaje
+
+【ドイツ語 / de】(96文字)
+Karte,Roulette,Tourismus,Essen,Onsen,Souvenir,Festival,Feuerwerk,Reiseplan,Route,Aussicht,Tempel
+
+【インドネシア語 / id】(96文字)
+peta,roda putar,perjalanan,kuliner,onsen,oleh-oleh,festival,kembang api,rencana,rute,pemandangan

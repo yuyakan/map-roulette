@@ -614,6 +614,7 @@ struct NatureSpotMapView: View {
                     spotWeightManager: spotWeightManager,
                     selectedDisplayTypes: $selectedDisplayTypes
                 )
+                .largeSheet()
             }
             .navigationDestination(isPresented: $showSpotInfo) {
                 if let spot = tappedSpot {
