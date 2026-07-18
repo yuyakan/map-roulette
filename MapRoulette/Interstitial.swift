@@ -58,6 +58,9 @@ class InterstitialViewModel: NSObject, FullScreenContentDelegate {
     /// 実際に発火したら true を返す。
     @discardableResult
     func maybePresent() -> Bool {
+        // スクショ撮影用に広告・レビュー誘導を一切発火させない。
+        if adsHidden { return false }
+
         guard InterstitialViewModel.count >= InterstitialViewModel.threshold else { return false }
 
         // クールダウン中は発火しない（count は維持し、次の機会に持ち越す）。

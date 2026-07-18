@@ -337,6 +337,7 @@ struct JapanMapView: View {
                     weightManager: weightManager,
                     displayMode: $displayMode
                 )
+                .largeSheet()
             }
             .navigationDestination(isPresented: $showTourismInfo) {
                     if let prefecture = tappedPrefecture ?? selectedPrefecture {

@@ -390,4 +390,11 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         }
         return result
     }
+
+    /// 指定した日の項目を「訪問順」に一列で返す。
+    /// 時間ブロックを開始時刻順に並べ、各ブロック内は手動並び、時刻なし・未割当は末尾。
+    /// リスト表示（blockSections）と同じ順序なので、地図の経路もリストと一致する。
+    func orderedItems(forDay day: Int) -> [PlanItem] {
+        blockSections(forDay: day).flatMap { $0.items }
+    }
 }

@@ -47,14 +47,19 @@ struct AdaptiveBannerAdView: View {
     }
 
     var body: some View {
-        InlineBannerContainer(width: adWidth, adUnitID: adUnitID) { newHeight in
-            if newHeight > 0, abs(newHeight - height) > 1 {
-                height = newHeight
+        // スクショ撮影用に広告を枠ごと非表示にする（余白も出さない）。
+        if adsHidden {
+            EmptyView()
+        } else {
+            InlineBannerContainer(width: adWidth, adUnitID: adUnitID) { newHeight in
+                if newHeight > 0, abs(newHeight - height) > 1 {
+                    height = newHeight
+                }
             }
+            .frame(height: height)
+            .padding(.horizontal, horizontalPadding)
+            .padding(.vertical, verticalPadding)
         }
-        .frame(height: height)
-        .padding(.horizontal, horizontalPadding)
-        .padding(.vertical, verticalPadding)
     }
 }
 
@@ -114,10 +119,15 @@ struct MediumRectangleAdView: View {
     var verticalPadding: CGFloat = 8
 
     var body: some View {
-        MediumRectangleContainer(adUnitID: adUnitID)
-            .frame(width: 300, height: 250)
-            .frame(maxWidth: .infinity) // 水平中央に配置
-            .padding(.vertical, verticalPadding)
+        // スクショ撮影用に広告を枠ごと非表示にする（余白も出さない）。
+        if adsHidden {
+            EmptyView()
+        } else {
+            MediumRectangleContainer(adUnitID: adUnitID)
+                .frame(width: 300, height: 250)
+                .frame(maxWidth: .infinity) // 水平中央に配置
+                .padding(.vertical, verticalPadding)
+        }
     }
 }
 

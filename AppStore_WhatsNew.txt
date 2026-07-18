@@ -1,0 +1,77 @@
+============================================================
+Japan Trip Map — このバージョンの新機能（What's New / 全12言語）
+主な更新：画像追加・共有機能・多言語対応
+※ App Store Connect の「このバージョンの新機能」欄にコピペしてください。
+============================================================
+
+
+【日本語 / Japanese (ja)】
+・各スポットに写真を追加し、旅先のイメージがより伝わるようになりました。
+・作成した旅行プランを共有できるようになりました。
+・12言語に対応し、より多くの方にお使いいただけます。
+
+
+【英語 / English (en)】
+- Added photos to each spot so you can picture your destination better.
+- You can now share the travel plans you create.
+- Added support for 12 languages for more travelers around the world.
+
+
+【中国語・簡体字 / Chinese Simplified (zh-Hans)】
+・为各景点新增照片，让你更直观地想象旅行目的地。
+・现在可以分享你创建的旅行计划。
+・新增12种语言支持，让更多人都能使用。
+
+
+【中国語・繁体字 / Chinese Traditional (zh-Hant)】
+・為各景點新增照片，讓您更直觀地想像旅行目的地。
+・現在可以分享您建立的旅行計畫。
+・新增12種語言支援，讓更多人都能使用。
+
+
+【中国語・香港 / Chinese Hong Kong (zh-HK)】
+・為各景點加入相片，令你更直觀咁想像旅行目的地。
+・依家可以分享你建立嘅旅行計劃。
+・新增12種語言支援，令更多人都用得到。
+
+
+【韓国語 / Korean (ko)】
+・각 스폿에 사진을 추가해 여행지의 모습을 더 생생하게 전달합니다.
+・만든 여행 플랜을 공유할 수 있게 되었습니다.
+・12개 언어를 지원하여 더 많은 분들이 사용할 수 있습니다.
+
+
+【タイ語 / Thai (th)】
+- เพิ่มรูปภาพในแต่ละจุด เพื่อให้คุณนึกภาพจุดหมายได้ชัดเจนยิ่งขึ้น
+- ตอนนี้คุณสามารถแชร์แผนการเดินทางที่สร้างไว้ได้แล้ว
+- รองรับ 12 ภาษา เพื่อให้ผู้คนมากขึ้นได้ใช้งาน
+
+
+【ベトナム語 / Vietnamese (vi)】
+- Thêm hình ảnh cho mỗi địa điểm để bạn hình dung điểm đến rõ hơn.
+- Giờ đây bạn có thể chia sẻ kế hoạch du lịch mình tạo.
+- Hỗ trợ 12 ngôn ngữ để nhiều người dùng hơn.
+
+
+【フランス語 / French (fr)】
+- Ajout de photos pour chaque lieu afin de mieux imaginer votre destination.
+- Vous pouvez désormais partager les plans de voyage que vous créez.
+- Prise en charge de 12 langues pour encore plus de voyageurs.
+
+
+【スペイン語 / Spanish (es)】
+- Se añadieron fotos a cada lugar para imaginar mejor tu destino.
+- Ahora puedes compartir los planes de viaje que creas.
+- Compatibilidad con 12 idiomas para llegar a más viajeros.
+
+
+【ドイツ語 / German (de)】
+- Fotos zu jedem Ort hinzugefügt, damit du dein Ziel besser vor Augen hast.
+- Du kannst jetzt die von dir erstellten Reisepläne teilen.
+- Unterstützung für 12 Sprachen für noch mehr Reisende.
+
+
+【インドネシア語 / Indonesian (id)】
+- Menambahkan foto di setiap tempat agar Anda lebih mudah membayangkan destinasi.
+- Kini Anda dapat membagikan rencana perjalanan yang Anda buat.
+- Mendukung 12 bahasa untuk menjangkau lebih banyak pengguna.

@@ -35,14 +35,13 @@ struct PlanMapView: View {
         return mappable.filter { $0.dayNumber == day }
     }
 
-    /// 日ごとのルート（同じ日の項目を登場順に並べた座標列）
+    /// 日ごとのルート（同じ日の項目を訪問順＝時間ブロック順に並べた座標列）
     private var routesByDay: [(day: Int, coords: [CLLocationCoordinate2D])] {
         guard isDayMode else { return [] }
         var result: [(Int, [CLLocationCoordinate2D])] = []
         for day in 1...max(1, plan.dayCount) {
             if let sel = selectedDay, sel != day { continue }
-            let coords = plan.mappableItems
-                .filter { $0.dayNumber == day }
+            let coords = plan.orderedItems(forDay: day)
                 .compactMap { $0.coordinate }
             if coords.count >= 2 { result.append((day, coords)) }
         }
@@ -98,9 +97,9 @@ struct PlanMapView: View {
 
     // MARK: - 経路案内（Google Maps でその日を一括経路）
 
-    /// 指定日の、座標を持つ項目を登場順に並べたもの。
+    /// 指定日の、座標を持つ項目を訪問順（時間ブロック順）に並べたもの。
     private func dayItems(for day: Int) -> [PlanItem] {
-        plan.mappableItems.filter { $0.dayNumber == day }
+        plan.orderedItems(forDay: day).filter { $0.coordinate != nil }
     }
 
     /// Google Maps に渡す地点表現。
@@ -234,11 +233,11 @@ struct PlanMapView: View {
         }
     }
 
-    /// その項目が、同じ日の中で何番目に訪れるか（1 始まり・登場順）。
+    /// その項目が、同じ日の中で何番目に訪れるか（1 始まり・訪問順＝時間ブロック順）。
     /// day が無い（未割当）項目は番号を付けない。
     private func routeOrder(for item: PlanItem) -> Int? {
         guard let day = item.dayNumber else { return nil }
-        let sameDay = plan.mappableItems.filter { $0.dayNumber == day }
+        let sameDay = dayItems(for: day)
         guard let index = sameDay.firstIndex(where: { $0.id == item.id }) else { return nil }
         return index + 1
     }

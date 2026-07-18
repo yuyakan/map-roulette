@@ -330,6 +330,7 @@ struct OnsenMapView: View {
                     enabledOnsens: $enabledOnsens,
                     onsenWeightManager: onsenWeightManager
                 )
+                .largeSheet()
             }
             .navigationDestination(isPresented: $showOnsenInfo) {
                 if let onsen = tappedOnsen {

@@ -13,6 +13,8 @@ struct TourismDetailView: View {
     @State private var cameraPosition: MapCameraPosition
     @State private var isPressed = false
     @State private var selectedAttraction: LocalizedAttractionLocation? = nil
+    /// フォト全画面ビューアを開くための、タップした写真の開始位置。
+    @State private var photoViewerStart: PhotoViewerStart? = nil
     @Environment(\.dismiss) private var dismiss
 
     init(prefecture: Prefecture) {
@@ -184,6 +186,12 @@ struct TourismDetailView: View {
             .fullScreenCover(item: $selectedAttraction) { attraction in
                 AttractionDetailView(attraction: attraction, prefecture: prefecture)
             }
+            .fullScreenCover(item: $photoViewerStart) { start in
+                PhotoFullScreenViewer(
+                    attractions: AttractionPhoto.photographedAttractions(in: prefecture),
+                    startIndex: start.index
+                )
+            }
 
             VStack() {
                 HStack {
@@ -235,8 +243,11 @@ struct TourismDetailView: View {
 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 12) {
-                        ForEach(photographed) { attraction in
+                        ForEach(Array(photographed.enumerated()), id: \.element.id) { index, attraction in
                             photoCard(for: attraction)
+                                .onTapGesture {
+                                    photoViewerStart = PhotoViewerStart(index: index)
+                                }
                         }
                     }
                     .padding(.horizontal, 2)
@@ -270,5 +281,11 @@ struct TourismDetailView: View {
         .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
     }
 
+}
+
+/// フォト全画面ビューアを `fullScreenCover(item:)` で開くための、開始位置ラッパー。
+struct PhotoViewerStart: Identifiable {
+    let id = UUID()
+    let index: Int
 }
 
