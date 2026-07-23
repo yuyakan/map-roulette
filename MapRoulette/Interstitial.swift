@@ -20,8 +20,6 @@ class InterstitialViewModel: NSObject, FullScreenContentDelegate {
     static let threshold = 10
     /// 広告のクールダウン秒数。前回広告からこの秒数未満は count がしきい値を超えても発火しない。
     static let cooldown: TimeInterval = 90
-    /// App Store の write-review URL に使うアプリ ID。
-    static let appStoreID = "6748571599"
 
     /// 前回広告を表示した時刻。クールダウン判定に使う。
     private static var lastAdShownAt: Date?
@@ -30,6 +28,18 @@ class InterstitialViewModel: NSObject, FullScreenContentDelegate {
     private static var hasShownReview: Bool {
         get { UserDefaults.standard.bool(forKey: reviewShownKey) }
         set { UserDefaults.standard.set(newValue, forKey: reviewShownKey) }
+    }
+
+    // MARK: - 標準レビュー（SKStoreReviewController）の設定
+
+    /// 累計スピン回数がこの値以上になると、標準レビューダイアログの表示を毎スピン試行する。
+    /// 実際に表示されるかは OS 任せ（システムが 365 日で最大 3 回に間引くため呼びすぎの害はない）。
+    static let requestReviewSpinThreshold = 7
+    /// 累計スピン回数（UserDefaults で永続化）。
+    private static let reviewSpinCountKey = "InterstitialViewModel.reviewSpinCount"
+    private static var reviewSpinCount: Int {
+        get { UserDefaults.standard.integer(forKey: reviewSpinCountKey) }
+        set { UserDefaults.standard.set(newValue, forKey: reviewSpinCountKey) }
     }
 
     // MARK: - 発火の集約ロジック
@@ -42,7 +52,18 @@ class InterstitialViewModel: NSObject, FullScreenContentDelegate {
         } else {
             InterstitialViewModel.count += 5
         }
-        maybePresent()
+
+        // 累計スピン数を加算。標準レビューのしきい値判定に使う。
+        InterstitialViewModel.reviewSpinCount += 1
+
+        // 自作ダイアログ／広告が発火したフレームでは標準レビューを呼ばない（二重発火の回避）。
+        if maybePresent() { return }
+
+        // 何も発火していないフレームでのみ、累計スピンがしきい値以上なら標準レビューを試行する。
+        // 実際に表示するかは OS 任せ（システムが 365 日で最大 3 回に間引く）。
+        if InterstitialViewModel.reviewSpinCount >= InterstitialViewModel.requestReviewSpinThreshold {
+            InterstitialViewModel.requestSystemReview()
+        }
     }
 
     /// マップ画面に戻ってきたとき（onAppear）に呼ぶ。発火したら次のルーレットで二重発火しないよう
@@ -72,10 +93,10 @@ class InterstitialViewModel: NSObject, FullScreenContentDelegate {
         InterstitialViewModel.count = 0
         InterstitialViewModel.lastAdShownAt = Date()
 
-        // 初回の発火だけは広告の代わりにレビューダイアログを出す。
+        // 初回の発火だけは広告の代わりに標準レビュー（アプリ内で完結）を試行する。
         if !InterstitialViewModel.hasShownReview {
             InterstitialViewModel.hasShownReview = true
-            InterstitialViewModel.presentReviewPrompt()
+            InterstitialViewModel.requestSystemReview()
         } else {
             showAd()
         }
@@ -84,40 +105,18 @@ class InterstitialViewModel: NSObject, FullScreenContentDelegate {
 
     // MARK: - レビュー誘導
 
-    /// 自作の確認ダイアログを出し、「はい」なら App Store のレビュー投稿ページを開く。
-    static func presentReviewPrompt() {
+    /// 標準のレビュー依頼（アプリ内で完結）を試行する。実際に表示されるかは OS 任せ。
+    static func requestSystemReview() {
         guard let scene = UIApplication.shared.connectedScenes
                 .compactMap({ $0 as? UIWindowScene })
-                .first(where: { $0.activationState == .foregroundActive }),
-              let root = scene.windows.first(where: { $0.isKeyWindow })?.rootViewController
+                .first(where: { $0.activationState == .foregroundActive })
         else { return }
 
-        // 最前面の VC を取得（シート等が乗っている場合に対応）。
-        var top = root
-        while let presented = top.presentedViewController { top = presented }
-
-        let alert = UIAlertController(
-            title: NSLocalizedString("review.prompt.title", comment: ""),
-            message: NSLocalizedString("review.prompt.message", comment: ""),
-            preferredStyle: .alert
-        )
-        alert.addAction(UIAlertAction(
-            title: NSLocalizedString("review.prompt.no", comment: ""),
-            style: .cancel
-        ))
-        alert.addAction(UIAlertAction(
-            title: NSLocalizedString("review.prompt.yes", comment: ""),
-            style: .default
-        ) { _ in
-            openWriteReview()
-        })
-        top.present(alert, animated: true)
-    }
-
-    /// App Store のレビュー投稿ページを開く。
-    static func openWriteReview() {
-        guard let url = URL(string: "https://apps.apple.com/app/id\(appStoreID)?action=write-review") else { return }
-        UIApplication.shared.open(url)
+        if #available(iOS 16.0, *) {
+            AppStore.requestReview(in: scene)
+        } else {
+            SKStoreReviewController.requestReview(in: scene)
+        }
     }
 
     func loadAd() async {
