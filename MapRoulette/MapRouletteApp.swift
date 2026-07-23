@@ -16,7 +16,9 @@ struct MapRouletteApp: App {
             if showSplash {
                 SplashView()
                     .onAppear {
-                        MobileAds.shared.start()
+                        // UMP で同意を取得 → ATT ダイアログ → AdMob 初期化、の順に進める。
+                        // canRequestAds が立ったときだけ広告が配信される。
+                        ConsentManager.shared.gatherConsentThenStartAds {}
                         // 必要に応じて初期化処理
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                             showSplash = false

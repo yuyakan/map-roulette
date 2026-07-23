@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4BC6C56F2E36070E00CDDE87 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC6C56E2E36070E00CDDE87 /* GoogleMobileAds */; };
+		4BC6C5A02E36070E00CDDE87 /* GoogleUserMessagingPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC6C59F2E36070E00CDDE87 /* GoogleUserMessagingPlatform */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC6C56F2E36070E00CDDE87 /* GoogleMobileAds in Frameworks */,
+				4BC6C5A02E36070E00CDDE87 /* GoogleUserMessagingPlatform in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +133,7 @@
 			name = MapRoulette;
 			packageProductDependencies = (
 				4BC6C56E2E36070E00CDDE87 /* GoogleMobileAds */,
+				4BC6C59F2E36070E00CDDE87 /* GoogleUserMessagingPlatform */,
 			);
 			productName = MapRoulette;
 			productReference = 4B7606052E1A55FD001172E6 /* MapRoulette.app */;
@@ -227,6 +230,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				4BC6C56D2E36070E00CDDE87 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				4BC6C59D2E36070E00CDDE87 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4B7606062E1A55FD001172E6 /* Products */;
@@ -621,6 +625,14 @@
 				minimumVersion = 12.7.0;
 			};
 		};
+		4BC6C59D2E36070E00CDDE87 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -628,6 +640,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4BC6C56D2E36070E00CDDE87 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
+		};
+		4BC6C59F2E36070E00CDDE87 /* GoogleUserMessagingPlatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BC6C59D2E36070E00CDDE87 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */;
+			productName = GoogleUserMessagingPlatform;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

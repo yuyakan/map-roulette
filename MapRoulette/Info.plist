@@ -11,6 +11,8 @@
 	</array>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3155724310732667~8192172945</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>あなたの興味・関心に合った広告を表示するために使用します。トラッキングを許可しない場合も広告は表示されますが、関連性が低くなることがあります。</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
