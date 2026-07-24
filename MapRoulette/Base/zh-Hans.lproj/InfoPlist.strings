@@ -7,3 +7,4 @@
 */
 
 "CFBundleDisplayName" = "日本旅游地图";
+"NSUserTrackingUsageDescription" = "用于向您展示符合您兴趣的广告。即使您不允许跟踪，仍会显示广告，但相关性可能会降低。";

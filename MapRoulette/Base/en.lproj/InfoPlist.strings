@@ -7,3 +7,4 @@
 */
 
 "CFBundleDisplayName" = "Japan Trip Map";
+"NSUserTrackingUsageDescription" = "Used to show ads relevant to your interests. Ads will still appear if you don't allow tracking, but they may be less relevant.";

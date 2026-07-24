@@ -4,3 +4,4 @@
 */
 
 "CFBundleDisplayName" = "Peta Wisata Jepang";
+"NSUserTrackingUsageDescription" = "Digunakan untuk menampilkan iklan yang sesuai dengan minat Anda. Iklan tetap akan muncul jika Anda tidak mengizinkan pelacakan, tetapi mungkin kurang relevan.";

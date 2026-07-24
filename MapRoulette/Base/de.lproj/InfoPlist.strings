@@ -4,3 +4,4 @@
 */
 
 "CFBundleDisplayName" = "Japan-Reisekarte";
+"NSUserTrackingUsageDescription" = "Wird verwendet, um Ihnen Werbung anzuzeigen, die zu Ihren Interessen passt. Auch ohne Tracking wird Werbung angezeigt, sie ist dann jedoch möglicherweise weniger relevant.";

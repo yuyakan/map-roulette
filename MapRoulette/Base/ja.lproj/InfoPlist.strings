@@ -7,3 +7,4 @@
 */
 
 "CFBundleDisplayName" = "旅さきChoice";
+"NSUserTrackingUsageDescription" = "あなたの興味・関心に合った広告を表示するために使用します。トラッキングを許可しない場合も広告は表示されますが、関連性が低くなることがあります。";

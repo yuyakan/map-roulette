@@ -4,3 +4,4 @@
 */
 
 "CFBundleDisplayName" = "Bản đồ Du lịch Nhật Bản";
+"NSUserTrackingUsageDescription" = "Được dùng để hiển thị quảng cáo phù hợp với sở thích của bạn. Quảng cáo vẫn sẽ hiển thị nếu bạn không cho phép theo dõi, nhưng có thể ít liên quan hơn.";

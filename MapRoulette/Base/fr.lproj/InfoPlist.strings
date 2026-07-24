@@ -4,3 +4,4 @@
 */
 
 "CFBundleDisplayName" = "Carte Voyage Japon";
+"NSUserTrackingUsageDescription" = "Utilisé pour afficher des publicités adaptées à vos centres d'intérêt. Des publicités s'afficheront même si vous n'autorisez pas le suivi, mais elles pourront être moins pertinentes.";

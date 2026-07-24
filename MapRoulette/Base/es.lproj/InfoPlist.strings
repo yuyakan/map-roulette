@@ -4,3 +4,4 @@
 */
 
 "CFBundleDisplayName" = "Mapa de Viaje por Japón";
+"NSUserTrackingUsageDescription" = "Se utiliza para mostrarte anuncios relevantes para tus intereses. Los anuncios seguirán apareciendo aunque no permitas el seguimiento, pero podrían ser menos relevantes.";
