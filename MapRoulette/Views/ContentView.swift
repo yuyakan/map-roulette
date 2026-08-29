@@ -10,28 +10,25 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab = 0
-    
+
     var body: some View {
         VStack(spacing: 0) {
             // メインコンテンツ
             Group {
                 switch selectedTab {
                 case 0:
-                    JapanMapView()
+                    // 都道府県・温泉・自然を1タブに統合
+                    IntegratedMapView()
                 case 1:
-                    OnsenMapView()
-                case 2:
-                    NatureSpotMapView()
-                case 3:
                     AllFestivalsComparisonView()
-                case 4:
+                case 2:
                     MyPlansView()
                 default:
-                    JapanMapView()
+                    IntegratedMapView()
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            
+
             // カスタムタブバー
             CustomTabBar(selectedTab: $selectedTab)
         }
@@ -44,50 +41,31 @@ struct CustomTabBar: View {
     
     var body: some View {
         HStack(spacing: 0) {
-            // 都道府県タブ
-            // 都道府県タブ
+            // 統合マップタブ（都道府県・温泉・自然）
             TabBarItem(
                 icon: "map",
-                title: NSLocalizedString("tab.prefecture", comment: ""),
+                title: NSLocalizedString("tab.map", comment: ""),
                 isSelected: selectedTab == 0
             ) {
                 selectedTab = 0
-            }
-
-            // 温泉地タブ
-            TabBarItem(
-                icon: "thermometer.sun.fill",
-                title: NSLocalizedString("tab.onsen", comment: ""),
-                isSelected: selectedTab == 1
-            ) {
-                selectedTab = 1
-            }
-
-            // 自然タブ
-            TabBarItem(
-                icon: "leaf",
-                title: NSLocalizedString("tab.nature", comment: ""),
-                isSelected: selectedTab == 2
-            ) {
-                selectedTab = 2
             }
 
             // 祭・イベントタブ
             TabBarItem(
                 icon: "sparkles",
                 title: NSLocalizedString("tab.festival", comment: ""),
-                isSelected: selectedTab == 3
+                isSelected: selectedTab == 1
             ) {
-                selectedTab = 3
+                selectedTab = 1
             }
 
             // マイプランタブ
             TabBarItem(
                 icon: "suitcase.rolling",
                 title: NSLocalizedString("tab.plan", comment: ""),
-                isSelected: selectedTab == 4
+                isSelected: selectedTab == 2
             ) {
-                selectedTab = 4
+                selectedTab = 2
             }
         }
         .padding(.vertical, 8)
@@ -109,14 +87,14 @@ struct TabBarItem: View {
                 Image(systemName: icon)
                     .font(.system(size: 20, weight: .medium))
                     .frame(height: 24)
-                    .foregroundColor(isSelected ? .orange : .gray)
+                    .foregroundColor(isSelected ? PlanTheme.primary : .gray)
 
                 // タイトルは常に 1 行に固定。言語により折り返して高さがずれるのを防ぐ。
                 Text(title)
                     .font(.system(size: 11, weight: isSelected ? .medium : .regular))
                     .lineLimit(1)
                     .minimumScaleFactor(0.8)
-                    .foregroundColor(isSelected ? .orange : .gray)
+                    .foregroundColor(isSelected ? PlanTheme.primary : .gray)
             }
             .frame(maxWidth: .infinity)
             .padding(.vertical, 4)

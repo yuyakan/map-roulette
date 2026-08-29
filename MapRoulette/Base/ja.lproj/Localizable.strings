@@ -230,6 +230,7 @@
 "tourism_detail_photo_loading" = "写真を読み込み中...";
 
 "tab.prefecture" = "都道府県";
+"tab.map" = "マップ";
 "tab.onsen" = "温泉地";
 "tab.nature" = "自然";
 "tab.festival" = "祭・イベント";

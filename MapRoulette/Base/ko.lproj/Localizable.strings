@@ -234,6 +234,7 @@
 "tourism_detail_photo_loading" = "사진을 로딩 중...";
 
 "tab.prefecture" = "도도부현";
+"tab.map" = "지도";
 "tab.onsen" = "온천지";
 "tab.nature" = "자연";
 "tab.festival" = "축제·이벤트";
