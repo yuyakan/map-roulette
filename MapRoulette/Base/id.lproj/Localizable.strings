@@ -239,6 +239,13 @@
 "tab.map" = "Peta";
 "tab.onsen" = "Onsen";
 "tab.nature" = "Alam";
+"tab.nearby" = "Terdekat";
+"nearby.filter.all" = "Semua";
+"nearby.filter.tourism" = "Wisata";
+"nearby.distance.km" = "%.1f km";
+"nearby.distance.m" = "%.0f m";
+"nearby.noResults" = "Tidak ada tempat di dekat Anda";
+"nearby.searchThisArea" = "Cari area ini";
 "tab.festival" = "Festival & Acara";
 
 

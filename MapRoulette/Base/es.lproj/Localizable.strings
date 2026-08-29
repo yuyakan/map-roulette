@@ -239,6 +239,13 @@
 "tab.map" = "Mapa";
 "tab.onsen" = "Aguas termales";
 "tab.nature" = "Naturaleza";
+"tab.nearby" = "Cerca";
+"nearby.filter.all" = "Todos";
+"nearby.filter.tourism" = "Turismo";
+"nearby.distance.km" = "%.1f km";
+"nearby.distance.m" = "%.0f m";
+"nearby.noResults" = "No se encontraron lugares cercanos";
+"nearby.searchThisArea" = "Buscar en esta zona";
 "tab.festival" = "Festivales y eventos";
 
 

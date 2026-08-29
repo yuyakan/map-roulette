@@ -239,6 +239,13 @@
 "tab.map" = "Bản đồ";
 "tab.onsen" = "Suối nước nóng";
 "tab.nature" = "Thiên nhiên";
+"tab.nearby" = "Gần đây";
+"nearby.filter.all" = "Tất cả";
+"nearby.filter.tourism" = "Điểm tham quan";
+"nearby.distance.km" = "%.1f km";
+"nearby.distance.m" = "%.0f m";
+"nearby.noResults" = "Không tìm thấy địa điểm nào gần đây";
+"nearby.searchThisArea" = "Tìm khu vực này";
 "tab.festival" = "Lễ hội & Sự kiện";
 
 

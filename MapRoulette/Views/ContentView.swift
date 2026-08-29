@@ -20,8 +20,10 @@ struct ContentView: View {
                     // 都道府県・温泉・自然を1タブに統合
                     IntegratedMapView()
                 case 1:
-                    AllFestivalsComparisonView()
+                    NearbyView()
                 case 2:
+                    AllFestivalsComparisonView()
+                case 3:
                     MyPlansView()
                 default:
                     IntegratedMapView()
@@ -50,22 +52,31 @@ struct CustomTabBar: View {
                 selectedTab = 0
             }
 
+            // 近くのスポットタブ
+            TabBarItem(
+                icon: "location.circle",
+                title: NSLocalizedString("tab.nearby", comment: ""),
+                isSelected: selectedTab == 1
+            ) {
+                selectedTab = 1
+            }
+
             // 祭・イベントタブ
             TabBarItem(
                 icon: "sparkles",
                 title: NSLocalizedString("tab.festival", comment: ""),
-                isSelected: selectedTab == 1
+                isSelected: selectedTab == 2
             ) {
-                selectedTab = 1
+                selectedTab = 2
             }
 
             // マイプランタブ
             TabBarItem(
                 icon: "suitcase.rolling",
                 title: NSLocalizedString("tab.plan", comment: ""),
-                isSelected: selectedTab == 2
+                isSelected: selectedTab == 3
             ) {
-                selectedTab = 2
+                selectedTab = 3
             }
         }
         .padding(.vertical, 8)

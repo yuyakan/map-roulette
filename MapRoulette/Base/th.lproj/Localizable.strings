@@ -239,6 +239,13 @@
 "tab.map" = "แผนที่";
 "tab.onsen" = "ออนเซ็น";
 "tab.nature" = "ธรรมชาติ";
+"tab.nearby" = "ใกล้ฉัน";
+"nearby.filter.all" = "ทั้งหมด";
+"nearby.filter.tourism" = "แหล่งท่องเที่ยว";
+"nearby.distance.km" = "%.1f km";
+"nearby.distance.m" = "%.0f m";
+"nearby.noResults" = "ไม่พบสถานที่ใกล้เคียง";
+"nearby.searchThisArea" = "ค้นหาพื้นที่นี้";
 "tab.festival" = "เทศกาลและอีเวนต์";
 
 

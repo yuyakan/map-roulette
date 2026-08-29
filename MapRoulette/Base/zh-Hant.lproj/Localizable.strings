@@ -1238,6 +1238,13 @@
 "tab.prefecture" = "都道府县";
 "tab.onsen" = "温泉地";
 "tab.nature" = "自然";
+"tab.nearby" = "附近";
+"nearby.filter.all" = "全部";
+"nearby.filter.tourism" = "觀光地";
+"nearby.distance.km" = "%.1f km";
+"nearby.distance.m" = "%.0f m";
+"nearby.noResults" = "附近找不到景點";
+"nearby.searchThisArea" = "搜尋此區域";
 "tab.festival" = "祭典·活动";
 
 // 美食部分的翻译

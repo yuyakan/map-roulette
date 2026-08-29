@@ -239,6 +239,13 @@
 "tab.map" = "Map";
 "tab.onsen" = "Hot Springs";
 "tab.nature" = "Nature";
+"tab.nearby" = "Nearby";
+"nearby.filter.all" = "All";
+"nearby.filter.tourism" = "Sightseeing";
+"nearby.distance.km" = "%.1f km";
+"nearby.distance.m" = "%.0f m";
+"nearby.noResults" = "No spots found nearby";
+"nearby.searchThisArea" = "Search this area";
 "tab.festival" = "Festivals & Events";
 
 

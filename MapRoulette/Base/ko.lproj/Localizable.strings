@@ -237,6 +237,13 @@
 "tab.map" = "지도";
 "tab.onsen" = "온천지";
 "tab.nature" = "자연";
+"tab.nearby" = "주변";
+"nearby.filter.all" = "전체";
+"nearby.filter.tourism" = "관광지";
+"nearby.distance.km" = "%.1f km";
+"nearby.distance.m" = "%.0f m";
+"nearby.noResults" = "근처에 명소를 찾을 수 없습니다";
+"nearby.searchThisArea" = "이 지역 검색";
 "tab.festival" = "축제·이벤트";
 
 /* Korean Localizable.strings */

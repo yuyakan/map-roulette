@@ -233,6 +233,13 @@
 "tab.map" = "マップ";
 "tab.onsen" = "温泉地";
 "tab.nature" = "自然";
+"tab.nearby" = "近く";
+"nearby.filter.all" = "すべて";
+"nearby.filter.tourism" = "観光地";
+"nearby.distance.km" = "%.1f km";
+"nearby.distance.m" = "%.0f m";
+"nearby.noResults" = "近くにスポットが見つかりませんでした";
+"nearby.searchThisArea" = "このエリアを探す";
 "tab.festival" = "祭・イベント";
 
 

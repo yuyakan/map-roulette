@@ -239,6 +239,13 @@
 "tab.map" = "Karte";
 "tab.onsen" = "Thermalquellen";
 "tab.nature" = "Natur";
+"tab.nearby" = "In der Nähe";
+"nearby.filter.all" = "Alle";
+"nearby.filter.tourism" = "Sehenswürdigkeiten";
+"nearby.distance.km" = "%.1f km";
+"nearby.distance.m" = "%.0f m";
+"nearby.noResults" = "Keine Orte in der Nähe gefunden";
+"nearby.searchThisArea" = "Diesen Bereich suchen";
 "tab.festival" = "Feste & Events";
 
 
