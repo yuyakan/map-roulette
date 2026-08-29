@@ -16,11 +16,11 @@ struct JapanMapView: View {
     @State private var isStopping = false
     @State private var showResultModal = false
     @State private var showSettings = false
-    @State private var enabledPrefectures: Set<Prefecture> = Set(Prefecture.allCases)
+    @State private var enabledPrefectures: Set<Prefecture> = RouletteSettingsStore.loadEnabledPrefectures()
     @StateObject private var weightManager = WeightManager()
     @State private var showTourismInfo = false
     @State private var tappedPrefecture: Prefecture? = nil
-    @State private var displayMode: DisplayMode = .tourism // 表示モード追加
+    @State private var displayMode: DisplayMode = RouletteSettingsStore.loadDisplayMode() // 表示モード追加
     
     let interstitial = InterstitialViewModel()
     
@@ -352,6 +352,12 @@ struct JapanMapView: View {
             .onChange(of: displayMode) { newMode in
                 // 表示モード変更時に選択済み都道府県を調整
                 updateEnabledPrefecturesForMode()
+                // 表示モードを永続化
+                RouletteSettingsStore.saveDisplayMode(newMode)
+            }
+            .onChange(of: enabledPrefectures) { newValue in
+                // 有効な都道府県を永続化
+                RouletteSettingsStore.saveEnabledPrefectures(newValue)
             }
             .onAppear {
                 interstitial.handleMapAppear()

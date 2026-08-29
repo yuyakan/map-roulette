@@ -28,6 +28,9 @@ struct AdaptiveBannerAdView: View {
 
     /// ロード完了後に確定するバナー高さ。初期は幅から算出した推定値。
     @State private var height: CGFloat
+    /// 取得に失敗したか。失敗したら枠ごと畳んで空白を残さない。
+    /// 取得できるまでは推定高さで枠を確保しておく（BannerView を正しいサイズで生成するため）。
+    @State private var didFail = false
 
     init(
         adUnitID: String = adUnitIdBanner,
@@ -50,12 +53,25 @@ struct AdaptiveBannerAdView: View {
         // スクショ撮影用に広告を枠ごと非表示にする（余白も出さない）。
         if adsHidden {
             EmptyView()
+        } else if didFail {
+            // 取得に失敗したら枠ごと消して空白を残さない。
+            EmptyView()
         } else {
-            InlineBannerContainer(width: adWidth, adUnitID: adUnitID) { newHeight in
-                if newHeight > 0, abs(newHeight - height) > 1 {
-                    height = newHeight
+            // 取得できるまでは推定高さで枠を確保する（BannerView を正しいサイズで
+            // 生成するため）。成功したら実サイズに合わせ、失敗したら枠ごと畳む。
+            InlineBannerContainer(
+                width: adWidth,
+                adUnitID: adUnitID,
+                onHeightChange: { newHeight in
+                    if newHeight > 0, abs(newHeight - height) > 1 {
+                        height = newHeight
+                    }
+                    didFail = false
+                },
+                onFailure: {
+                    didFail = true
                 }
-            }
+            )
             .frame(height: height)
             .padding(.horizontal, horizontalPadding)
             .padding(.vertical, verticalPadding)
@@ -69,6 +85,8 @@ private struct InlineBannerContainer: UIViewRepresentable {
     let width: CGFloat
     let adUnitID: String
     let onHeightChange: (CGFloat) -> Void
+    /// 取得に失敗したときの通知。呼び出し側で枠を畳んで空白を消すために使う。
+    let onFailure: () -> Void
 
     func makeUIView(context: Context) -> BannerView {
         let adSize = currentOrientationInlineAdaptiveBanner(width: width)
@@ -85,14 +103,16 @@ private struct InlineBannerContainer: UIViewRepresentable {
     func updateUIView(_ uiView: BannerView, context: Context) {}
 
     func makeCoordinator() -> Coordinator {
-        Coordinator(onHeightChange: onHeightChange)
+        Coordinator(onHeightChange: onHeightChange, onFailure: onFailure)
     }
 
     class Coordinator: NSObject, BannerViewDelegate {
         let onHeightChange: (CGFloat) -> Void
+        let onFailure: () -> Void
 
-        init(onHeightChange: @escaping (CGFloat) -> Void) {
+        init(onHeightChange: @escaping (CGFloat) -> Void, onFailure: @escaping () -> Void) {
             self.onHeightChange = onHeightChange
+            self.onFailure = onFailure
         }
 
         func bannerViewDidReceiveAd(_ bannerView: BannerView) {
@@ -102,6 +122,7 @@ private struct InlineBannerContainer: UIViewRepresentable {
 
         func bannerView(_ bannerView: BannerView, didFailToReceiveAdWithError error: Error) {
             print("Banner failed to load: \(error.localizedDescription)")
+            DispatchQueue.main.async { self.onFailure() }
         }
     }
 }
@@ -118,21 +139,35 @@ struct MediumRectangleAdView: View {
     /// 上下に確保する余白。周囲のカード等と誤タップしないよう最低限は確保する。
     var verticalPadding: CGFloat = 8
 
+    /// 取得に失敗したか。失敗したら枠ごと畳んで空白を残さない。
+    @State private var didFail = false
+
     var body: some View {
         // スクショ撮影用に広告を枠ごと非表示にする（余白も出さない）。
         if adsHidden {
             EmptyView()
+        } else if didFail {
+            // 取得に失敗したら枠ごと消して空白を残さない。
+            EmptyView()
         } else {
-            MediumRectangleContainer(adUnitID: adUnitID)
-                .frame(width: 300, height: 250)
-                .frame(maxWidth: .infinity) // 水平中央に配置
-                .padding(.vertical, verticalPadding)
+            // 取得できるまでは 300x250 の枠を確保しておき、失敗したら枠ごと畳む。
+            MediumRectangleContainer(
+                adUnitID: adUnitID,
+                onLoad: { didFail = false },
+                onFailure: { didFail = true }
+            )
+            .frame(width: 300, height: 250)
+            .frame(maxWidth: .infinity) // 水平中央に配置
+            .padding(.vertical, verticalPadding)
         }
     }
 }
 
 private struct MediumRectangleContainer: UIViewRepresentable {
     let adUnitID: String
+    /// 取得成功／失敗の通知。呼び出し側で枠を出す・畳むために使う。
+    let onLoad: () -> Void
+    let onFailure: () -> Void
 
     func makeUIView(context: Context) -> BannerView {
         let banner = BannerView(adSize: AdSizeMediumRectangle)
@@ -140,9 +175,33 @@ private struct MediumRectangleContainer: UIViewRepresentable {
         banner.rootViewController = UIApplication.shared.connectedScenes
             .compactMap { $0 as? UIWindowScene }
             .first?.windows.first?.rootViewController
+        banner.delegate = context.coordinator
         banner.load(Request())
         return banner
     }
 
     func updateUIView(_ uiView: BannerView, context: Context) {}
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(onLoad: onLoad, onFailure: onFailure)
+    }
+
+    class Coordinator: NSObject, BannerViewDelegate {
+        let onLoad: () -> Void
+        let onFailure: () -> Void
+
+        init(onLoad: @escaping () -> Void, onFailure: @escaping () -> Void) {
+            self.onLoad = onLoad
+            self.onFailure = onFailure
+        }
+
+        func bannerViewDidReceiveAd(_ bannerView: BannerView) {
+            DispatchQueue.main.async { self.onLoad() }
+        }
+
+        func bannerView(_ bannerView: BannerView, didFailToReceiveAdWithError error: Error) {
+            print("MediumRectangle failed to load: \(error.localizedDescription)")
+            DispatchQueue.main.async { self.onFailure() }
+        }
+    }
 }
