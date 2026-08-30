@@ -5123,6 +5123,19 @@
 "attraction.open_in_maps" = "Mở trong Bản đồ";
 "plan.category.souvenir" = "Quà lưu niệm";
 "plan.grouping.day.toggle" = "Chia theo ngày";
+
+/* MARK: - Bản đồ đã đến */
+"plan.section.list" = "Danh sách";
+"plan.section.visited" = "Đã đến";
+"plan.badge.completed" = "Xong";
+"plan.completed.toggle" = "Đánh dấu đã đi";
+"visited.state.toggle" = "Đánh dấu đã đến";
+"visited.related.plans" = "Kế hoạch có tỉnh này";
+"visited.related.none" = "Không có kế hoạch nào có tỉnh này";
+"visited.region.header" = "Theo vùng";
+"visited.region.count.format" = "%d/%d";
+"visited.empty.title" = "Chưa có ghi chép";
+"visited.empty.message" = "Đánh dấu kế hoạch là đã đi để xem các tỉnh bạn đã đến ở đây.";
 "plan.grouping.flat" = "Gộp chung";
 "common.delete" = "Xóa";
 "plan.card.empty" = "Chưa có mục nào";

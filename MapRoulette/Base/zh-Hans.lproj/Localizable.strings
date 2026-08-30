@@ -6030,6 +6030,19 @@
 "plan.grouping.prefecture" = "都道府县";
 "plan.grouping.day" = "行程";
 "plan.grouping.day.toggle" = "按天分组";
+
+/* MARK: - 访问过的地图 */
+"plan.section.list" = "列表";
+"plan.section.visited" = "已访问";
+"plan.badge.completed" = "已完成";
+"plan.completed.toggle" = "标记为已旅行";
+"visited.state.toggle" = "标记为已访问";
+"visited.related.plans" = "包含该都道府县的计划";
+"visited.related.none" = "没有包含该都道府县的计划";
+"visited.region.header" = "各地方进度";
+"visited.region.count.format" = "%d/%d";
+"visited.empty.title" = "还没有记录";
+"visited.empty.message" = "将计划标记为“已旅行”，你去过的都道府县就会显示在这里。";
 "plan.grouping.flat" = "全部一起显示";
 "plan.daycount.format" = "天数：%d 天";
 "plan.daycount.short" = "%d 天";

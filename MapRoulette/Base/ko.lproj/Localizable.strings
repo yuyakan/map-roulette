@@ -5338,6 +5338,19 @@
 "plan.grouping.prefecture" = "지역(도도부현)";
 "plan.grouping.day" = "일정";
 "plan.grouping.day.toggle" = "날짜별로 나누기";
+
+/* MARK: - 방문한 지도 */
+"plan.section.list" = "목록";
+"plan.section.visited" = "방문함";
+"plan.badge.completed" = "완료";
+"plan.completed.toggle" = "여행 완료로 표시";
+"visited.state.toggle" = "방문함으로 표시";
+"visited.related.plans" = "이 지역이 포함된 플랜";
+"visited.related.none" = "이 지역이 포함된 플랜이 없습니다";
+"visited.region.header" = "지방별 정복";
+"visited.region.count.format" = "%d/%d";
+"visited.empty.title" = "아직 기록이 없습니다";
+"visited.empty.message" = "플랜을 ‘여행 완료’로 표시하면 방문한 지역이 여기에 표시됩니다.";
 "plan.grouping.flat" = "한꺼번에 보기";
 "plan.daycount.format" = "일수: %d일";
 "plan.daycount.short" = "%d일";

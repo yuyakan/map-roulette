@@ -5123,6 +5123,19 @@
 "attraction.open_in_maps" = "Open in Maps";
 "plan.category.souvenir" = "Souvenir";
 "plan.grouping.day.toggle" = "Split by day";
+
+/* MARK: - Visited map */
+"plan.section.list" = "Plans";
+"plan.section.visited" = "Visited";
+"plan.badge.completed" = "Done";
+"plan.completed.toggle" = "Mark as visited";
+"visited.state.toggle" = "Mark as visited";
+"visited.related.plans" = "Plans with this prefecture";
+"visited.related.none" = "No plans include this prefecture";
+"visited.region.header" = "By region";
+"visited.region.count.format" = "%d/%d";
+"visited.empty.title" = "No records yet";
+"visited.empty.message" = "Mark a plan as visited to see the prefectures you've traveled here.";
 "plan.grouping.flat" = "All together";
 "common.delete" = "Delete";
 "plan.card.empty" = "No items yet";

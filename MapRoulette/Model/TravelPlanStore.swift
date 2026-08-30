@@ -26,6 +26,21 @@ final class TravelPlanStore: ObservableObject {
 
     init() {
         load()
+        migrateCompletedPlansToVisitedIfNeeded()
+    }
+
+    /// 訪問済みを保存ストア（VisitedPrefectureStore）へ移行する以前は、
+    /// 訪問済み＝「旅行済みプランの県」を都度計算していた。移行後もその分が
+    /// 失われないよう、初回だけ既存の完了プランの県を訪問済みへ流し込む。
+    /// 一度きり（フラグで制御）。以降はユーザーが地図で外した県を復活させない（後勝ち維持）。
+    private func migrateCompletedPlansToVisitedIfNeeded() {
+        let flagKey = "visited.migratedFromCompletedPlans"
+        guard !UserDefaults.standard.bool(forKey: flagKey) else { return }
+        let prefsFromCompleted = plans.filter { $0.isCompleted }.flatMap { $0.prefectures }
+        if !prefsFromCompleted.isEmpty {
+            VisitedPrefectureStore.shared.markVisited(prefsFromCompleted)
+        }
+        UserDefaults.standard.set(true, forKey: flagKey)
     }
 
     // MARK: - 読み込み / 保存
@@ -133,6 +148,20 @@ final class TravelPlanStore: ObservableObject {
     }
 
     // MARK: - 表示モード・日程
+
+    /// プランの「旅行済み」状態を切り替える。
+    /// オンにした瞬間、そのプランに含まれる都道府県を訪問済みへ上書き（後勝ち）する。
+    /// オフに戻しても訪問済みからは自動で外さない（外したい県は地図タップで各自オフにする）。
+    func setCompleted(_ completed: Bool, for planID: UUID) {
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        guard plans[index].isCompleted != completed else { return }
+        plans[index].isCompleted = completed
+        plans[index].updatedAt = Date()
+        persist()
+        if completed {
+            VisitedPrefectureStore.shared.markVisited(plans[index].prefectures)
+        }
+    }
 
     /// 表示の区切り方（都道府県/日程）を切り替える。
     func setGroupingMode(_ mode: PlanGroupingMode, for planID: UUID) {
@@ -295,4 +324,12 @@ final class TravelPlanStore: ObservableObject {
             plan.items.contains { $0.name == name && $0.category == category }
         }
     }
+
+    /// 指定した都道府県を含むプラン（訪問済みマップの県詳細で「紐づくプラン」を出すのに使う）。
+    func plansContaining(prefecture: Prefecture) -> [TravelPlan] {
+        plans.filter { $0.prefectures.contains(prefecture) }
+    }
+
+    // 訪問済み都道府県は VisitedPrefectureStore が唯一の情報源として保持する
+    // （後勝ちで上書きするため、ここでプランから都度計算する派生値は持たない）。
 }

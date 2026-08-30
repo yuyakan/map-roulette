@@ -5123,6 +5123,19 @@
 "attraction.open_in_maps" = "Abrir en Mapas";
 "plan.category.souvenir" = "Recuerdo";
 "plan.grouping.day.toggle" = "Dividir por día";
+
+/* MARK: - Mapa de visitados */
+"plan.section.list" = "Lista";
+"plan.section.visited" = "Visitado";
+"plan.badge.completed" = "Hecho";
+"plan.completed.toggle" = "Marcar como visitado";
+"visited.state.toggle" = "Marcar como visitada";
+"visited.related.plans" = "Planes con esta prefectura";
+"visited.related.none" = "Ningún plan incluye esta prefectura";
+"visited.region.header" = "Por región";
+"visited.region.count.format" = "%d/%d";
+"visited.empty.title" = "Aún no hay registros";
+"visited.empty.message" = "Marca un plan como visitado para ver aquí las prefecturas que has recorrido.";
 "plan.grouping.flat" = "Todo junto";
 "common.delete" = "Eliminar";
 "plan.card.empty" = "Aún no hay elementos";

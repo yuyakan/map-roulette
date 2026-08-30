@@ -5123,6 +5123,19 @@
 "attraction.open_in_maps" = "Buka di Peta";
 "plan.category.souvenir" = "Oleh-oleh";
 "plan.grouping.day.toggle" = "Bagi per hari";
+
+/* MARK: - Peta kunjungan */
+"plan.section.list" = "Daftar";
+"plan.section.visited" = "Dikunjungi";
+"plan.badge.completed" = "Selesai";
+"plan.completed.toggle" = "Tandai sudah dikunjungi";
+"visited.state.toggle" = "Tandai dikunjungi";
+"visited.related.plans" = "Rencana dengan prefektur ini";
+"visited.related.none" = "Tidak ada rencana dengan prefektur ini";
+"visited.region.header" = "Per wilayah";
+"visited.region.count.format" = "%d/%d";
+"visited.empty.title" = "Belum ada catatan";
+"visited.empty.message" = "Tandai rencana sebagai dikunjungi untuk melihat prefektur yang telah kamu jelajahi di sini.";
 "plan.grouping.flat" = "Gabung semua";
 "common.delete" = "Hapus";
 "plan.card.empty" = "Belum ada item";

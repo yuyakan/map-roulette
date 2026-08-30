@@ -6028,6 +6028,19 @@
 "plan.grouping.prefecture" = "都道府縣";
 "plan.grouping.day" = "行程";
 "plan.grouping.day.toggle" = "依天分組";
+
+/* MARK: - 已造訪地圖 */
+"plan.section.list" = "列表";
+"plan.section.visited" = "已造訪";
+"plan.badge.completed" = "已完成";
+"plan.completed.toggle" = "標記為已旅行";
+"visited.state.toggle" = "標記為已造訪";
+"visited.related.plans" = "包含此都道府縣的計畫";
+"visited.related.none" = "沒有包含此都道府縣的計畫";
+"visited.region.header" = "各地方進度";
+"visited.region.count.format" = "%d/%d";
+"visited.empty.title" = "還沒有紀錄";
+"visited.empty.message" = "將計畫標記為「已旅行」，你造訪過的都道府縣就會顯示在這裡。";
 "plan.grouping.flat" = "全部一起顯示";
 "plan.daycount.format" = "天數：%d 天";
 "plan.daycount.short" = "%d 天";

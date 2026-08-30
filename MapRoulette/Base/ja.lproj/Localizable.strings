@@ -5120,6 +5120,19 @@
 "attraction.open_in_maps" = "マップで開く";
 "plan.category.souvenir" = "お土産";
 "plan.grouping.day.toggle" = "日程ごとに分ける";
+
+/* MARK: - 訪問済みマップ */
+"plan.section.list" = "一覧";
+"plan.section.visited" = "訪問済み";
+"plan.badge.completed" = "済";
+"plan.completed.toggle" = "旅行済みにする";
+"visited.state.toggle" = "訪問済みにする";
+"visited.related.plans" = "この県を含むプラン";
+"visited.related.none" = "この県を含むプランはありません";
+"visited.region.header" = "地方別の踏破";
+"visited.region.count.format" = "%d/%d";
+"visited.empty.title" = "まだ記録がありません";
+"visited.empty.message" = "プランを「旅行済み」にすると、訪れた都道府県がここに表示されます。";
 "plan.grouping.flat" = "まとめて表示";
 "common.delete" = "削除";
 "plan.card.empty" = "まだ項目がありません";

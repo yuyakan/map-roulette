@@ -5123,6 +5123,19 @@
 "attraction.open_in_maps" = "เปิดในแผนที่";
 "plan.category.souvenir" = "ของฝาก";
 "plan.grouping.day.toggle" = "แยกตามวัน";
+
+/* MARK: - แผนที่ที่เคยไป */
+"plan.section.list" = "รายการ";
+"plan.section.visited" = "เยือนแล้ว";
+"plan.badge.completed" = "เสร็จ";
+"plan.completed.toggle" = "ทำเครื่องหมายว่าเที่ยวแล้ว";
+"visited.state.toggle" = "ทำเครื่องหมายว่าเยือนแล้ว";
+"visited.related.plans" = "แผนที่มีจังหวัดนี้";
+"visited.related.none" = "ไม่มีแผนที่มีจังหวัดนี้";
+"visited.region.header" = "ตามภูมิภาค";
+"visited.region.count.format" = "%d/%d";
+"visited.empty.title" = "ยังไม่มีบันทึก";
+"visited.empty.message" = "ทำเครื่องหมายแผนว่าเที่ยวแล้ว เพื่อดูจังหวัดที่คุณไปมาที่นี่";
 "plan.grouping.flat" = "แสดงรวมกัน";
 "common.delete" = "ลบ";
 "plan.card.empty" = "ยังไม่มีรายการ";

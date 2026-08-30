@@ -133,6 +133,15 @@ struct PlanDetailView: View {
                         .labelsHidden()
                 }
             }
+
+            Divider()
+
+            // 旅行済みトグル。ONにすると訪問済みマップの集計対象になる。
+            Toggle(isOn: completedBinding(for: plan)) {
+                Label(NSLocalizedString("plan.completed.toggle", comment: ""), systemImage: "checkmark.seal.fill")
+                    .font(.subheadline.bold())
+            }
+            .tint(PlanTheme.primary)
         }
         .planCard()
     }
@@ -222,6 +231,13 @@ struct PlanDetailView: View {
         Binding(
             get: { plan.dayCount },
             set: { store.setDayCount($0, for: planID) }
+        )
+    }
+
+    private func completedBinding(for plan: TravelPlan) -> Binding<Bool> {
+        Binding(
+            get: { plan.isCompleted },
+            set: { store.setCompleted($0, for: planID) }
         )
     }
 

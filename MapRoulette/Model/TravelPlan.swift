@@ -281,6 +281,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
     var groupingMode: PlanGroupingMode  // 表示の区切り方（プランごとに保存）
     var dayCount: Int                   // 日程モードでの日数（最低 1）
     var timeBlocks: [TimeBlock]         // 日程内の時間ブロック定義（日程モードで使用）
+    var isCompleted: Bool               // 旅行済みか（訪問済みマップの集計対象になる）
     let createdAt: Date
     var updatedAt: Date
 
@@ -292,6 +293,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         groupingMode: PlanGroupingMode = .flat,
         dayCount: Int = 1,
         timeBlocks: [TimeBlock] = [],
+        isCompleted: Bool = false,
         createdAt: Date = Date(),
         updatedAt: Date = Date()
     ) {
@@ -302,13 +304,14 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         self.groupingMode = groupingMode
         self.dayCount = max(1, dayCount)
         self.timeBlocks = timeBlocks
+        self.isCompleted = isCompleted
         self.createdAt = createdAt
         self.updatedAt = updatedAt
     }
 
-    // 古い保存データ（groupingMode / dayCount / timeBlocks 無し）との後方互換
+    // 古い保存データ（groupingMode / dayCount / timeBlocks / isCompleted 無し）との後方互換
     enum CodingKeys: String, CodingKey {
-        case id, title, memo, items, groupingMode, dayCount, timeBlocks, createdAt, updatedAt
+        case id, title, memo, items, groupingMode, dayCount, timeBlocks, isCompleted, createdAt, updatedAt
     }
 
     init(from decoder: Decoder) throws {
@@ -321,6 +324,8 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         groupingMode = (try? c.decodeIfPresent(PlanGroupingMode.self, forKey: .groupingMode)) ?? .flat
         dayCount = max(1, try c.decodeIfPresent(Int.self, forKey: .dayCount) ?? 1)
         timeBlocks = try c.decodeIfPresent([TimeBlock].self, forKey: .timeBlocks) ?? []
+        // 旧データは isCompleted を持たないため未完了扱い
+        isCompleted = try c.decodeIfPresent(Bool.self, forKey: .isCompleted) ?? false
         createdAt = try c.decode(Date.self, forKey: .createdAt)
         updatedAt = try c.decode(Date.self, forKey: .updatedAt)
     }
