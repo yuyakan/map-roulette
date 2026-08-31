@@ -132,9 +132,14 @@ struct PlanDetailView: View {
                 } else {
                     flatList(for: plan)
                 }
+
+                // 旅行済みトグルはリスト末尾へ控えめに置く（常に大きく占有しない）。
+                completedFooter(for: plan)
             }
             .padding(.horizontal)
-            .padding(.vertical, 12)
+            .padding(.top, 12)
+            // 末尾は地図 FAB（56pt + 下20pt）と被らないよう広めに空ける。
+            .padding(.bottom, 96)
         }
     }
 
@@ -158,17 +163,24 @@ struct PlanDetailView: View {
                         .labelsHidden()
                 }
             }
-
-            Divider()
-
-            // 旅行済みトグル。ONにすると訪問済みマップの集計対象になる。
-            Toggle(isOn: completedBinding(for: plan)) {
-                Label(NSLocalizedString("plan.completed.toggle", comment: ""), systemImage: "checkmark.seal.fill")
-                    .font(.subheadline.bold())
-            }
-            .tint(PlanTheme.primary)
         }
         .planCard()
+    }
+
+    // MARK: - 旅行済みフッター（リスト末尾の控えめなトグル）
+
+    /// リストの一番下に置く「旅行済みにする」トグル。
+    /// 常に目立つ位置を大きく占有しないよう、スクロール末尾に控えめに配置する。
+    /// ONにすると訪問済みマップの集計対象になる。
+    private func completedFooter(for plan: TravelPlan) -> some View {
+        Toggle(isOn: completedBinding(for: plan)) {
+            Label(NSLocalizedString("plan.completed.toggle", comment: ""), systemImage: "checkmark.seal.fill")
+                .font(.footnote.bold())
+                .foregroundColor(plan.isCompleted ? PlanTheme.primary : .secondary)
+        }
+        .tint(PlanTheme.primary)
+        .padding(.horizontal, 4)
+        .padding(.top, 4)
     }
 
     private func memoCard(_ memo: String) -> some View {
