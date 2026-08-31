@@ -31,7 +31,8 @@ enum PlanShareFormatter {
         if plan.groupingMode == .day {
             appendDayGrouped(plan, into: &lines)
         } else {
-            appendFlat(plan.items, into: &lines)
+            // 費用専用アイテムは旅程の共有テキストには含めない
+            appendFlat(plan.itineraryItems, into: &lines)
         }
 
         // 連続する空行を 1 つに畳んで整える
@@ -174,6 +175,7 @@ private extension PlanItem {
         case .hotel:      return "🏨"
         case .transport:  return "🚉"
         case .other:      return "📝"
+        case .expense:    return "💴"
         }
     }
 }

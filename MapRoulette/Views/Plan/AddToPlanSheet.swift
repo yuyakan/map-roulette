@@ -22,7 +22,7 @@ struct AddToPlanSheet: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                PlanTheme.backgroundGradient.ignoresSafeArea()
+                PlanTheme.pageBackground.ignoresSafeArea()
 
                 ScrollView {
                     VStack(spacing: 16) {

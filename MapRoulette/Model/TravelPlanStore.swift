@@ -140,9 +140,53 @@ final class TravelPlanStore: ObservableObject {
         persist()
     }
 
+    /// 費用専用項目（.expense）を追加する。タイトル・金額に加えて支払者・分担者も同時に設定する。
+    /// 旅程・地図には出ない。タイトルが空なら何もしない。
+    /// - splitMemberIDs: nil は「全員で均等」（既定・人数変動に追従）、配列は一部で割る。
+    func addExpenseItem(title: String, cost: Int?, payerID: UUID? = nil, splitMemberIDs: [UUID]? = nil, to planID: UUID) {
+        let trimmed = title.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return }
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        var item = PlanItem(expenseTitle: trimmed, cost: cost)
+        item.payerID = payerID
+        item.splitMemberIDs = splitMemberIDs
+        plans[index].items.append(item)
+        plans[index].updatedAt = Date()
+        persist()
+    }
+
     func moveItem(in planID: UUID, from source: IndexSet, to destination: Int) {
         guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
         plans[index].items.move(fromOffsets: source, toOffset: destination)
+        plans[index].updatedAt = Date()
+        persist()
+    }
+
+    // MARK: - 旅行メンバー
+
+    /// メンバーを追加する（前後の空白を除去。空文字・同名の重複は追加しない）。
+    func addMember(_ name: String, to planID: UUID) {
+        let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return }
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        guard !plans[index].members.contains(where: { $0.name == trimmed }) else { return }
+        plans[index].members.append(PlanMember(name: trimmed))
+        plans[index].updatedAt = Date()
+        persist()
+    }
+
+    /// 指定位置のメンバーを削除する。
+    /// 削除メンバーを支払者に指定していた項目は支払者を未指定へ戻す。
+    /// 分担者（splitMemberIDs）に含まれていた場合は effectiveSplitMemberIDs 側で除外されるため保存値はそのまま。
+    func removeMembers(at offsets: IndexSet, in planID: UUID) {
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        let removedIDs = Set(offsets.map { plans[index].members[$0].id })
+        plans[index].members.remove(atOffsets: offsets)
+        for i in plans[index].items.indices {
+            if let payer = plans[index].items[i].payerID, removedIDs.contains(payer) {
+                plans[index].items[i].payerID = nil
+            }
+        }
         plans[index].updatedAt = Date()
         persist()
     }

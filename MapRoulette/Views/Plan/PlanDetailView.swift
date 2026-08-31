@@ -11,6 +11,19 @@ import SwiftUI
 import MapKit
 import UniformTypeIdentifiers
 
+/// プラン詳細内の上タブ（旅程 / 費用）
+private enum PlanDetailSection: Int, CaseIterable {
+    case itinerary   // 旅程（既存の内容）
+    case cost        // 費用（メンバー・金額一覧・合計）
+
+    var title: String {
+        switch self {
+        case .itinerary: return NSLocalizedString("plan.section.itinerary", comment: "")
+        case .cost:      return NSLocalizedString("plan.section.cost", comment: "")
+        }
+    }
+}
+
 struct PlanDetailView: View {
     let planID: UUID
     @ObservedObject private var store = TravelPlanStore.shared
@@ -19,6 +32,7 @@ struct PlanDetailView: View {
     @State private var showingCustomEditor = false
     @State private var titleDraft = ""
     @State private var memoDraft = ""
+    @State private var section: PlanDetailSection = .itinerary
 
     private var plan: TravelPlan? {
         store.plans.first { $0.id == planID }
@@ -26,9 +40,19 @@ struct PlanDetailView: View {
 
     var body: some View {
         ZStack {
-            PlanTheme.backgroundGradient.ignoresSafeArea()
+            // プラン詳細は白基調（旅程・費用タブ共通の最背面）。カードは影・グレーで区別する。
+            PlanTheme.pageBackground.ignoresSafeArea()
             if let plan {
-                content(for: plan)
+                // 切替帯は詳細画面の内側最上部に置く。帯の下でタブ内容を差し替える。
+                VStack(spacing: 0) {
+                    PlanDetailSectionBand(section: $section)
+                    switch section {
+                    case .itinerary:
+                        content(for: plan)
+                    case .cost:
+                        PlanCostView(planID: planID)
+                    }
+                }
             } else {
                 Text(NSLocalizedString("plan.notfound", comment: ""))
                     .foregroundColor(.secondary)
@@ -58,7 +82,8 @@ struct PlanDetailView: View {
             }
         }
         .overlay(alignment: .bottomTrailing) {
-            if let plan, !plan.mappableItems.isEmpty {
+            // 地図 FAB は旅程タブのときだけ出す（費用タブでは隠す）。
+            if section == .itinerary, let plan, !plan.mappableItems.isEmpty {
                 Button {
                     showingMapSheet = true
                 } label: {
@@ -102,7 +127,7 @@ struct PlanDetailView: View {
                     // 日程モードでは項目が空でも各 Day のセクションを表示し、
                     // その日に直接ホテル・移動などを追加できるようにする。
                     dayGroups(for: plan)
-                } else if plan.items.isEmpty {
+                } else if plan.itineraryItems.isEmpty {
                     emptyHint
                 } else {
                     flatList(for: plan)
@@ -193,7 +218,7 @@ struct PlanDetailView: View {
 
     private func flatList(for plan: TravelPlan) -> some View {
         VStack(spacing: 12) {
-            ForEach(plan.items) { item in
+            ForEach(plan.itineraryItems) { item in
                 PlanItemCard(item: item, store: store, planID: planID, draggable: false)
             }
 
@@ -252,7 +277,7 @@ struct PlanDetailView: View {
     private func memoEditor(for plan: TravelPlan) -> some View {
         NavigationStack {
             ZStack {
-                PlanTheme.backgroundGradient.ignoresSafeArea()
+                PlanTheme.pageBackground.ignoresSafeArea()
                 VStack(spacing: 16) {
                     // タイトル
                     VStack(alignment: .leading, spacing: 8) {
@@ -302,6 +327,56 @@ struct PlanDetailView: View {
                 }
             }
         }
+    }
+}
+
+// MARK: - PlanDetailSectionBand
+/// プラン詳細内の上タブ切替帯（旅程 / 費用）。
+/// マイプランタブの PlanSectionBand と同じデザイン言語（文字＋ブランド下線）で統一する。
+private struct PlanDetailSectionBand: View {
+    @Binding var section: PlanDetailSection
+
+    // 下線の左右インセット（セル幅からこの分だけ内側に縮める）
+    private let underlineInset: CGFloat = 24
+
+    var body: some View {
+        GeometryReader { geo in
+            let count = CGFloat(PlanDetailSection.allCases.count)
+            let cellWidth = geo.size.width / count
+            let selectedIndex = CGFloat(section.rawValue)
+
+            VStack(spacing: 4) {
+                HStack(spacing: 0) {
+                    ForEach(PlanDetailSection.allCases, id: \.self) { item in
+                        Button {
+                            withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
+                                section = item
+                            }
+                        } label: {
+                            Text(item.title)
+                                .font(.system(size: 15, weight: section == item ? .semibold : .regular))
+                                .foregroundColor(section == item ? PlanTheme.primary : .gray)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.8)
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                    }
+                }
+
+                // 下線（常に1本。offset で選択セルの位置へ移動）
+                Rectangle()
+                    .fill(PlanTheme.brandGradient)
+                    .frame(width: cellWidth - underlineInset * 2, height: 2)
+                    .offset(x: selectedIndex * cellWidth + underlineInset)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .padding(.top, 8)
+            .padding(.bottom, 4)
+            .frame(maxHeight: .infinity, alignment: .top)
+        }
+        .frame(height: 44)
+        // 背景は敷かず透明にして、画面全体の背景グラデーションを透けさせる。
     }
 }
 
@@ -605,7 +680,7 @@ private struct TimeBlockEditor: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                PlanTheme.backgroundGradient.ignoresSafeArea()
+                PlanTheme.pageBackground.ignoresSafeArea()
                 VStack(spacing: 16) {
                     VStack(alignment: .leading, spacing: 12) {
                         Toggle(isOn: $hasTime) {

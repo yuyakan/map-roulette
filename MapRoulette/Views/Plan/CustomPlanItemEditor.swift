@@ -49,7 +49,7 @@ struct CustomPlanItemEditor: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                PlanTheme.backgroundGradient.ignoresSafeArea()
+                PlanTheme.pageBackground.ignoresSafeArea()
                 ScrollView {
                     VStack(spacing: 16) {
                         typeCard
@@ -505,7 +505,7 @@ struct CustomPlanItemView: View {
                     }
                     .padding(.bottom, 32)
                 }
-                .background(PlanTheme.backgroundGradient.ignoresSafeArea())
+                .background(PlanTheme.pageBackground.ignoresSafeArea())
                 .ignoresSafeArea(edges: .top)
 
                 topButtons

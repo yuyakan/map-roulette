@@ -31,8 +31,8 @@ enum PlanItemResolver {
         case .gourmet, .souvenir:
             // グルメ・お土産は座標を持たない
             return nil
-        case .hotel, .transport, .other:
-            // カスタム項目は PlanItem 側で座標を保持するためここでは扱わない
+        case .hotel, .transport, .other, .expense:
+            // カスタム項目は PlanItem 側で座標を保持するためここでは扱わない（expense は座標なし）
             return nil
         }
     }
@@ -54,7 +54,7 @@ enum PlanItemResolver {
             return NatureSpotDataRepository.shared.allFixedSpots.first { matches(name, $0.name) }?.description
         case .souvenir:
             return prefecture.souvenirItems.first { matches(name, $0.name) }?.description
-        case .hotel, .transport, .other:
+        case .hotel, .transport, .other, .expense:
             return nil
         }
     }
@@ -131,7 +131,7 @@ struct PlanItemDetailRouter: View {
                     }
                 } else { fallback }
 
-            case .hotel, .transport, .other:
+            case .hotel, .transport, .other, .expense:
                 CustomPlanItemView(item: item)
             }
         } else {
@@ -252,7 +252,7 @@ private struct PlanLocatableDetailView<Content: View>: View {
     private var memoEditor: some View {
         NavigationStack {
             ZStack {
-                PlanTheme.backgroundGradient.ignoresSafeArea()
+                PlanTheme.pageBackground.ignoresSafeArea()
                 VStack {
                     TextEditor(text: $memoDraft)
                         .frame(minHeight: 200)

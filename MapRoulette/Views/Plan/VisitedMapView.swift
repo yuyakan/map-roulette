@@ -122,7 +122,7 @@ struct VisitedMapView: View {
     private var regionBreakdownSheet: some View {
         NavigationStack {
             ZStack {
-                PlanTheme.backgroundGradient.ignoresSafeArea()
+                PlanTheme.pageBackground.ignoresSafeArea()
                 ScrollView {
                     LazyVGrid(
                         columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)],
@@ -293,7 +293,7 @@ private struct PrefectureDetailSheet: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                PlanTheme.backgroundGradient.ignoresSafeArea()
+                PlanTheme.pageBackground.ignoresSafeArea()
                 ScrollView {
                     VStack(spacing: 16) {
                         // 訪問済みトグル

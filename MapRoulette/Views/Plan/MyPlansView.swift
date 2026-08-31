@@ -50,7 +50,7 @@ struct MyPlansView: View {
             // 背景グラデーションは切替帯も含めた画面全体の背後に敷き、
             // 帯自体は透明にして下の背景と馴染ませる（帯だけ白く浮くのを防ぐ）。
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(PlanTheme.backgroundGradient.ignoresSafeArea())
+            .background(PlanTheme.pageBackground.ignoresSafeArea())
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 // 並び替え用の編集トグル（一覧セクションで 2 件以上あるときだけ表示）。
@@ -188,7 +188,7 @@ struct MyPlansView: View {
     private var newPlanSheet: some View {
         NavigationStack {
             ZStack {
-                PlanTheme.backgroundGradient.ignoresSafeArea()
+                PlanTheme.pageBackground.ignoresSafeArea()
                 VStack(spacing: 24) {
                     VStack(alignment: .leading, spacing: 8) {
                         Text(NSLocalizedString("plan.title.label", comment: ""))
@@ -289,11 +289,11 @@ private struct PlanSectionBand: View {
 private struct PlanCardView: View {
     let plan: TravelPlan
 
-    /// プラン内の代表カテゴリ（最大4種）をアイコン表示
+    /// プラン内の代表カテゴリ（最大4種）をアイコン表示。費用専用アイテムは旅程の見た目に出さない。
     private var categoryIcons: [PlanItemCategory] {
         var seen = Set<PlanItemCategory>()
         var result: [PlanItemCategory] = []
-        for item in plan.items where seen.insert(item.category).inserted {
+        for item in plan.itineraryItems where seen.insert(item.category).inserted {
             result.append(item.category)
         }
         return Array(result.prefix(4))
@@ -321,7 +321,7 @@ private struct PlanCardView: View {
                                 .background(Capsule().fill(.white))
                         }
                     }
-                    Text(String(format: NSLocalizedString("plan.itemcount.format", comment: ""), plan.items.count))
+                    Text(String(format: NSLocalizedString("plan.itemcount.format", comment: ""), plan.itineraryItems.count))
                         .font(.caption.bold())
                         .foregroundColor(.white.opacity(0.9))
                 }

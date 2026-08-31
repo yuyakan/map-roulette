@@ -34,6 +34,19 @@ extension Prefecture {
 
 }
 
+// MARK: - PlanMember
+/// 旅行メンバー。割り勘で項目の支払者・分担者を安定して参照するため ID を持つ。
+/// 名前だけの旧データ（[String]）はデコード時に自動移行する。
+struct PlanMember: Identifiable, Codable, Hashable {
+    let id: UUID
+    var name: String
+
+    init(id: UUID = UUID(), name: String) {
+        self.id = id
+        self.name = name
+    }
+}
+
 // MARK: - PlanItemCategory
 /// プラン項目の種別。元データのどのカテゴリ由来かを表す。
 enum PlanItemCategory: String, Codable, CaseIterable {
@@ -47,6 +60,7 @@ enum PlanItemCategory: String, Codable, CaseIterable {
     case hotel        // 宿泊
     case transport    // 駅・空港など（乗り場の地点。rawValue は互換のため transport を維持）
     case other        // その他メモ
+    case expense      // 費用専用（場所・旅程を持たない出費項目。費用タブにのみ表示）
 
     var localizedName: String {
         NSLocalizedString("plan.category.\(rawValue)", comment: "")
@@ -64,28 +78,33 @@ enum PlanItemCategory: String, Codable, CaseIterable {
         case .hotel:      return "bed.double.fill"
         case .transport:  return "tram.fill"
         case .other:      return "note.text"
+        case .expense:    return "yensign.circle.fill"
         }
     }
 
     /// ユーザーが手動で追加するカスタム項目か（元データ参照を持たない）。
     var isCustom: Bool {
         switch self {
-        case .hotel, .transport, .other: return true
+        case .hotel, .transport, .other, .expense: return true
         default: return false
         }
     }
 
-    /// プランに手動追加できるカスタム種別の一覧。
+    /// 費用専用（場所・旅程を持たず、費用タブにのみ現れる出費項目）か。
+    var isExpenseOnly: Bool { self == .expense }
+
+    /// プランに手動追加できるカスタム種別の一覧（旅程に置ける種類のみ。expense は含めない）。
     static var customCases: [PlanItemCategory] { [.hotel, .transport, .other] }
 
     /// ユーザーが手動で位置（customCoordinate）を持てるカテゴリか。
     /// - カスタム項目（ホテル・駅など）: 地図ピンで位置を指定する
     /// - グルメ・お土産: 元データに座標が無いので任意で店の位置を足せる
     /// - 観光・温泉・祭・自然: 元データに正確な座標があるため手動位置は持たせない
+    /// - 費用専用（expense）: 場所を持たない
     var allowsUserCoordinate: Bool {
         switch self {
         case .hotel, .transport, .other, .gourmet, .souvenir: return true
-        case .attraction, .onsen, .festival, .nature: return false
+        case .attraction, .onsen, .festival, .nature, .expense: return false
         }
     }
 }
@@ -100,6 +119,10 @@ struct PlanItem: Identifiable, Codable, Hashable {
     var name: String                 // アプリ項目: 元データを引くキー / カスタム項目: ユーザー入力のタイトル
     var dayNumber: Int?              // 日程グループ表示で「何日目か」。nil は未割当。
     var timeBlockID: UUID?           // 日程内の時間ブロックへの割当。nil はブロック未割当。
+    var cost: Int?                   // 金額（円・整数）。nil は未入力。費用サマリーで集計する。
+    // --- 割り勘（精算）用。未設定でも合計表示には影響しない ---
+    var payerID: UUID?               // 支払者（立て替えた人）。nil は未指定。
+    var splitMemberIDs: [UUID]?      // 分担者。nil は「全メンバーで均等」（既定・人数変動に追従）、[] は割り勘対象外。
 
     // --- カスタム項目（hotel/transport/other）専用。アプリ項目では nil ---
     var customDetail: String?        // ユーザー入力のメモ
@@ -144,9 +167,25 @@ struct PlanItem: Identifiable, Codable, Hashable {
         self.dayNumber = dayNumber
     }
 
+    /// 費用専用項目（.expense）用のイニシャライザ。タイトルと金額だけを持ち、場所・旅程は持たない。
+    init(
+        id: UUID = UUID(),
+        expenseTitle title: String,
+        cost: Int?,
+        detail: String = ""
+    ) {
+        self.id = id
+        self.category = .expense
+        self.prefectureRawValue = ""
+        self.name = title
+        self.cost = cost
+        self.customDetail = detail
+    }
+
     // 旧フォーマットとの後方互換（カスタム用フィールドは任意デコード）
     enum CodingKeys: String, CodingKey {
-        case id, category, prefectureRawValue, name, dayNumber, timeBlockID
+        case id, category, prefectureRawValue, name, dayNumber, timeBlockID, cost
+        case payerID, splitMemberIDs
         case customDetail, customLatitude, customLongitude, customPlaceName, customAddress
     }
 
@@ -158,6 +197,9 @@ struct PlanItem: Identifiable, Codable, Hashable {
         name = try c.decode(String.self, forKey: .name)
         dayNumber = try c.decodeIfPresent(Int.self, forKey: .dayNumber)
         timeBlockID = try c.decodeIfPresent(UUID.self, forKey: .timeBlockID)
+        cost = try c.decodeIfPresent(Int.self, forKey: .cost)
+        payerID = try c.decodeIfPresent(UUID.self, forKey: .payerID)
+        splitMemberIDs = try c.decodeIfPresent([UUID].self, forKey: .splitMemberIDs)
         customDetail = try c.decodeIfPresent(String.self, forKey: .customDetail)
         customLatitude = try c.decodeIfPresent(Double.self, forKey: .customLatitude)
         customLongitude = try c.decodeIfPresent(Double.self, forKey: .customLongitude)
@@ -278,6 +320,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
     var title: String
     var memo: String
     var items: [PlanItem]
+    var members: [PlanMember]           // 旅行メンバー（登場順）。割り勘で項目の支払者・分担者を ID 参照する。
     var groupingMode: PlanGroupingMode  // 表示の区切り方（プランごとに保存）
     var dayCount: Int                   // 日程モードでの日数（最低 1）
     var timeBlocks: [TimeBlock]         // 日程内の時間ブロック定義（日程モードで使用）
@@ -290,6 +333,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         title: String,
         memo: String = "",
         items: [PlanItem] = [],
+        members: [PlanMember] = [],
         groupingMode: PlanGroupingMode = .flat,
         dayCount: Int = 1,
         timeBlocks: [TimeBlock] = [],
@@ -301,6 +345,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         self.title = title
         self.memo = memo
         self.items = items
+        self.members = members
         self.groupingMode = groupingMode
         self.dayCount = max(1, dayCount)
         self.timeBlocks = timeBlocks
@@ -309,9 +354,9 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         self.updatedAt = updatedAt
     }
 
-    // 古い保存データ（groupingMode / dayCount / timeBlocks / isCompleted 無し）との後方互換
+    // 古い保存データ（groupingMode / dayCount / timeBlocks / isCompleted / members 無し）との後方互換
     enum CodingKeys: String, CodingKey {
-        case id, title, memo, items, groupingMode, dayCount, timeBlocks, isCompleted, createdAt, updatedAt
+        case id, title, memo, items, members, groupingMode, dayCount, timeBlocks, isCompleted, createdAt, updatedAt
     }
 
     init(from decoder: Decoder) throws {
@@ -320,6 +365,15 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         title = try c.decode(String.self, forKey: .title)
         memo = try c.decode(String.self, forKey: .memo)
         items = try c.decode([PlanItem].self, forKey: .items)
+        // members は現行 [PlanMember]。旧データ（[String]）はデコードに失敗するので
+        // その場合は名前配列として読み直し、新 ID 付きメンバーへ移行する。
+        if let decoded = try? c.decode([PlanMember].self, forKey: .members) {
+            members = decoded
+        } else if let names = try? c.decode([String].self, forKey: .members) {
+            members = names.map { PlanMember(name: $0) }
+        } else {
+            members = []
+        }
         // 旧データの "prefecture" など未知の値は .flat に倒す
         groupingMode = (try? c.decodeIfPresent(PlanGroupingMode.self, forKey: .groupingMode)) ?? .flat
         dayCount = max(1, try c.decodeIfPresent(Int.self, forKey: .dayCount) ?? 1)
@@ -330,11 +384,25 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         updatedAt = try c.decode(Date.self, forKey: .updatedAt)
     }
 
+    // MARK: - 項目の分類（旅程 / 費用）
+
+    /// 旅程・地図・共有が対象にする項目（費用専用アイテムを除く）。
+    /// itemsByDay / blockSections / prefectures / mappableItems などはこれを走査する。
+    var itineraryItems: [PlanItem] {
+        items.filter { !$0.category.isExpenseOnly }
+    }
+
+    /// 費用一覧・合計・精算の対象にする項目。費用専用アイテム（.expense）のみ。
+    /// 旅程のスポット（観光・グルメ等）は費用には出さない。
+    var costItems: [PlanItem] {
+        items.filter { $0.category.isExpenseOnly }
+    }
+
     /// プランに含まれる都道府県（重複なし・登場順）
     var prefectures: [Prefecture] {
         var seen = Set<String>()
         var result: [Prefecture] = []
-        for item in items {
+        for item in itineraryItems {
             guard seen.insert(item.prefectureRawValue).inserted,
                   let pref = item.prefecture else { continue }
             result.append(pref)
@@ -344,20 +412,51 @@ struct TravelPlan: Identifiable, Codable, Hashable {
 
     /// 座標を持つ項目だけを抽出（地図表示用）
     var mappableItems: [PlanItem] {
-        items.filter { $0.coordinate != nil }
+        itineraryItems.filter { $0.coordinate != nil }
+    }
+
+    // MARK: - 費用集計
+
+    /// 費用一覧に含める項目の金額合計（未入力=nil は 0 として扱う）。
+    var totalCost: Int {
+        costItems.compactMap(\.cost).reduce(0, +)
+    }
+
+    /// 金額が 1 件でも入力されているか（費用サマリーの空状態判定に使う）。
+    var hasAnyCost: Bool {
+        costItems.contains { $0.cost != nil }
+    }
+
+    // MARK: - 割り勘ヘルパー
+
+    /// メンバー ID から名前を引く（見つからなければ nil）。
+    func memberName(for id: UUID) -> String? {
+        members.first { $0.id == id }?.name
+    }
+
+    /// 項目の実効的な分担者 ID。
+    /// - splitMemberIDs == nil: 全メンバー（人数変動に追従）。
+    /// - それ以外: 保存された ID のうち現存メンバーだけ（削除済みメンバーは除外）。
+    func effectiveSplitMemberIDs(for item: PlanItem) -> [UUID] {
+        let all = members.map(\.id)
+        guard let ids = item.splitMemberIDs else { return all }
+        let valid = Set(all)
+        return ids.filter { valid.contains($0) }
     }
 
     // MARK: - グループ表示用ヘルパー
 
     /// 日程ごとにグループ化した項目。day が nil の項目は「未割当」として nil キーに入る。
     /// 戻り値は (day: Int? , items) の配列で、1日目→dayCount→未割当(nil) の順。
+    /// 費用専用アイテムは旅程に出さないため itineraryItems を対象にする。
     var itemsByDay: [(day: Int?, items: [PlanItem])] {
+        let source = itineraryItems
         var result: [(day: Int?, items: [PlanItem])] = []
         for day in 1...max(1, dayCount) {
-            let dayItems = items.filter { $0.dayNumber == day }
+            let dayItems = source.filter { $0.dayNumber == day }
             result.append((day, dayItems))
         }
-        let unassigned = items.filter { $0.dayNumber == nil || ($0.dayNumber ?? 0) > dayCount || ($0.dayNumber ?? 1) < 1 }
+        let unassigned = source.filter { $0.dayNumber == nil || ($0.dayNumber ?? 0) > dayCount || ($0.dayNumber ?? 1) < 1 }
         if !unassigned.isEmpty {
             result.append((nil, unassigned))
         }
@@ -379,7 +478,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
     /// - block が nil（未割当）／存在しないブロックを指す項目は、末尾の「ブロック未割当」へ。
     /// 各ブロック内および未割当内の項目順は items 配列の順序（手動並び）を保つ。
     func blockSections(forDay day: Int) -> [(block: TimeBlock?, items: [PlanItem])] {
-        let dayItems = items.filter { $0.dayNumber == day }
+        let dayItems = itineraryItems.filter { $0.dayNumber == day }
         let blocks = timeBlocks(forDay: day)
         let validIDs = Set(blocks.map { $0.id })
 
