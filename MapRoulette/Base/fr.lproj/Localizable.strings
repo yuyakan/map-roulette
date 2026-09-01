@@ -5490,3 +5490,10 @@
 "shizuoka.abekawa_mochi.name" = "Abekawa mochi";
 "shizuoka.abekawa_mochi.description" = "Confiserie traditionnelle de Shizuoka : mochi moelleux enrobé de kinako et de pâte de haricots.";
 "shizuoka.abekawa_mochi.price" = "À partir de 600 ¥";
+
+/* 都道府県 検索・一覧導線 */
+"prefecture.search.title" = "Rechercher par préfecture";
+"prefecture.search.placeholder" = "Rechercher par nom de préfecture";
+"prefecture.search.empty" = "Aucune préfecture correspondante";
+"prefecture.search.subtitle" = "Choisissez une préfecture à explorer";
+"prefecture.search.onsen_chip" = "Onsen";

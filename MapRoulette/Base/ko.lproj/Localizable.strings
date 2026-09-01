@@ -5429,3 +5429,10 @@
 "plan.item.editmemo" = "메모 편집";
 "plan.item.memo" = "메모";
 "plan.share" = "공유";
+
+/* 都道府県 検索・一覧導線 */
+"prefecture.search.title" = "도도부현으로 찾기";
+"prefecture.search.placeholder" = "도도부현 이름으로 검색";
+"prefecture.search.empty" = "일치하는 도도부현이 없습니다";
+"prefecture.search.subtitle" = "가고 싶은 도도부현을 선택하세요";
+"prefecture.search.onsen_chip" = "온천";

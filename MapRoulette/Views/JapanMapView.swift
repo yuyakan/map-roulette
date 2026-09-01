@@ -25,6 +25,7 @@ struct JapanMapView: View {
     @StateObject private var weightManager = WeightManager()
     @State private var showTourismInfo = false
     @State private var tappedPrefecture: Prefecture? = nil
+    @State private var showPrefectureSearch = false // 県一覧・検索シート
     @State private var displayMode: DisplayMode = RouletteSettingsStore.loadDisplayMode() // 表示モード追加
     
     let interstitial = InterstitialViewModel()
@@ -67,34 +68,24 @@ struct JapanMapView: View {
                                     .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                             }
                             .disabled(isSpinning)
-                            
+
                             Spacer()
-                            
-                            VStack(alignment: .trailing, spacing: 4) {
-                                //                            HStack(spacing: 4) {
-                                //                                Image(systemName: displayMode.icon)
-                                //                                    .font(.caption2)
-                                //                                    .foregroundColor(displayMode == .onsen ? .orange : .blue)
-                                //                                Text("\(displayMode.rawValue)")
-                                //                                    .font(.caption2)
-                                //                                    .foregroundColor(.secondary)
-                                //                            }
-                                
-                                Text(String(format: NSLocalizedString("target_prefecture_count", comment: ""),
-                                            activeEnabledPrefectures.count))
-                                    .font(.caption)
-                                    .foregroundColor(.secondary)
-                                
-                                // 重み付けがデフォルトでない場合に表示
-                                if hasCustomWeights {
-                                    Text("重み付け: 有効")
-                                        .font(.caption2)
-                                        .foregroundColor(.blue)
-                                        .padding(.horizontal, 6)
-                                        .padding(.vertical, 1)
-                                        .background(Color.blue.opacity(0.1))
-                                        .cornerRadius(3)
+
+                            // 観光モードのときだけ、地図をタップせずに県詳細へ辿り着ける検索導線を出す
+                            if displayMode == .tourism {
+                                Button(action: {
+                                    showPrefectureSearch = true
+                                }) {
+                                    Image(systemName: "magnifyingglass")
+                                        .resizable()
+                                        .frame(width: 18, height: 18)
+                                        .foregroundColor(.black)
+                                        .padding(12)
+                                        .background(.white)
+                                        .clipShape(Circle())
+                                        .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                                 }
+                                .disabled(isSpinning)
                             }
                         }
                         .padding(.horizontal)
@@ -348,6 +339,10 @@ struct JapanMapView: View {
                         TourismDetailView(prefecture: prefecture)
                     }
                 }
+            // 県一覧・検索を全画面で表示。ここから県を選ぶと内部で TourismDetailView を全画面表示する。
+            .fullScreenCover(isPresented: $showPrefectureSearch) {
+                PrefectureSearchView()
+            }
             .onChange(of: showTourismInfo) { isShowing in
                 if !isShowing {
                     tappedPrefecture = nil

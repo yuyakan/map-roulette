@@ -6119,3 +6119,10 @@
 "plan.item.editmemo" = "編輯備註";
 "plan.item.memo" = "備註";
 "plan.share" = "分享";
+
+/* 都道府県 検索・一覧導線 */
+"prefecture.search.title" = "按都道府縣尋找";
+"prefecture.search.placeholder" = "按都道府縣名稱搜尋";
+"prefecture.search.empty" = "沒有符合的都道府縣";
+"prefecture.search.subtitle" = "選擇想去的都道府縣";
+"prefecture.search.onsen_chip" = "溫泉";

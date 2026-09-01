@@ -78,6 +78,67 @@ public enum Prefecture: String, CaseIterable, Identifiable {
     var region: String {
         return NSLocalizedString("region.\(regionKey)", comment: "Region name")
     }
+
+    /// 検索用の平仮名読み（都道府県の「都・道・府・県」を除いた本体の読み）。
+    /// 例: 東京 → "とうきょう" / 北海道 → "ほっかいどう"。
+    /// 漢字表記だけでなく、平仮名入力でも県を絞り込めるようにするために使う。
+    var hiraganaReading: String {
+        switch self {
+        case .hokkaido:  return "ほっかいどう"
+        case .aomori:    return "あおもり"
+        case .iwate:     return "いわて"
+        case .akita:     return "あきた"
+        case .miyagi:    return "みやぎ"
+        case .yamagata:  return "やまがた"
+        case .fukushima: return "ふくしま"
+        case .ibaraki:   return "いばらき"
+        case .chiba:     return "ちば"
+        case .tochigi:   return "とちぎ"
+        case .gunma:     return "ぐんま"
+        case .saitama:   return "さいたま"
+        case .tokyo:     return "とうきょう"
+        case .kanagawa:  return "かながわ"
+        case .niigata:   return "にいがた"
+        case .nagano:    return "ながの"
+        case .yamanashi: return "やまなし"
+        case .shizuoka:  return "しずおか"
+        case .aichi:     return "あいち"
+        case .mie:       return "みえ"
+        case .gifu:      return "ぎふ"
+        case .fukui:     return "ふくい"
+        case .ishikawa:  return "いしかわ"
+        case .toyama:    return "とやま"
+        case .shiga:     return "しが"
+        case .kyoto:     return "きょうと"
+        case .hyogo:     return "ひょうご"
+        case .nara:      return "なら"
+        case .wakayama:  return "わかやま"
+        case .osaka:     return "おおさか"
+        case .tottori:   return "とっとり"
+        case .okayama:   return "おかやま"
+        case .hiroshima: return "ひろしま"
+        case .yamaguchi: return "やまぐち"
+        case .shimane:   return "しまね"
+        case .kagawa:    return "かがわ"
+        case .tokushima: return "とくしま"
+        case .kochi:     return "こうち"
+        case .ehime:     return "えひめ"
+        case .fukuoka:   return "ふくおか"
+        case .oita:      return "おおいた"
+        case .miyazaki:  return "みやざき"
+        case .kagoshima: return "かごしま"
+        case .kumamoto:  return "くまもと"
+        case .saga:      return "さが"
+        case .nagasaki:  return "ながさき"
+        case .okinawa:   return "おきなわ"
+        }
+    }
+
+    /// 検索でヒット判定に使う文字列群（表示名・平仮名読み・ローマ字）。
+    /// rawValue はもともとローマ字（例: "kanagawa"）なので、そのまま英字入力にも対応する。
+    var searchKeywords: [String] {
+        [prefectureName, hiraganaReading, rawValue]
+    }
 }
 
 /// 地方（都道府県を束ねる単位）。訪問済みマップの地方別集計に使う。

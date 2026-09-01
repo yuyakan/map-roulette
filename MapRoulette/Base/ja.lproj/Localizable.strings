@@ -5487,3 +5487,10 @@
 "shizuoka.abekawa_mochi.name" = "安倍川もち";
 "shizuoka.abekawa_mochi.description" = "やわらかい餅にきな粉やあんをまぶした静岡の伝統和菓子。";
 "shizuoka.abekawa_mochi.price" = "600円〜";
+
+/* 都道府県 検索・一覧導線 */
+"prefecture.search.title" = "都道府県から探す";
+"prefecture.search.placeholder" = "都道府県名で検索";
+"prefecture.search.empty" = "該当する都道府県がありません";
+"prefecture.search.subtitle" = "行きたい都道府県を選ぼう";
+"prefecture.search.onsen_chip" = "温泉";

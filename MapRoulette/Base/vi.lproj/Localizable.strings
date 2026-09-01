@@ -5490,3 +5490,10 @@
 "shizuoka.abekawa_mochi.name" = "Abekawa mochi";
 "shizuoka.abekawa_mochi.description" = "Bánh ngọt truyền thống Shizuoka phủ mochi mềm với bột kinako và đậu đỏ.";
 "shizuoka.abekawa_mochi.price" = "Từ 600 yên";
+
+/* 都道府県 検索・一覧導線 */
+"prefecture.search.title" = "Tìm theo tỉnh";
+"prefecture.search.placeholder" = "Tìm theo tên tỉnh";
+"prefecture.search.empty" = "Không có tỉnh phù hợp";
+"prefecture.search.subtitle" = "Chọn tỉnh muốn khám phá";
+"prefecture.search.onsen_chip" = "Onsen";

@@ -5490,3 +5490,10 @@
 "shizuoka.abekawa_mochi.name" = "Abekawa mochi";
 "shizuoka.abekawa_mochi.description" = "Dulce tradicional de Shizuoka: mochi blando cubierto de kinako y pasta de judías.";
 "shizuoka.abekawa_mochi.price" = "Desde 600 ¥";
+
+/* 都道府県 検索・一覧導線 */
+"prefecture.search.title" = "Buscar por prefectura";
+"prefecture.search.placeholder" = "Buscar por nombre de prefectura";
+"prefecture.search.empty" = "No hay prefecturas coincidentes";
+"prefecture.search.subtitle" = "Elige una prefectura para explorar";
+"prefecture.search.onsen_chip" = "Onsen";

@@ -6121,3 +6121,10 @@
 "plan.item.editmemo" = "编辑备注";
 "plan.item.memo" = "备注";
 "plan.share" = "分享";
+
+/* 都道府県 検索・一覧導線 */
+"prefecture.search.title" = "按都道府县查找";
+"prefecture.search.placeholder" = "按都道府县名称搜索";
+"prefecture.search.empty" = "没有匹配的都道府县";
+"prefecture.search.subtitle" = "选择想去的都道府县";
+"prefecture.search.onsen_chip" = "温泉";

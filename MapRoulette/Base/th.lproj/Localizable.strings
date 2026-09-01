@@ -5490,3 +5490,10 @@
 "shizuoka.abekawa_mochi.name" = "อาเบคาวะโมจิ";
 "shizuoka.abekawa_mochi.description" = "ขนมญี่ปุ่นดั้งเดิมของชิซุโอกะที่คลุกโมจินุ่มด้วยผงคินาโกะและถั่วกวน";
 "shizuoka.abekawa_mochi.price" = "ตั้งแต่ 600 เยน";
+
+/* 都道府県 検索・一覧導線 */
+"prefecture.search.title" = "ค้นหาตามจังหวัด";
+"prefecture.search.placeholder" = "ค้นหาด้วยชื่อจังหวัด";
+"prefecture.search.empty" = "ไม่มีจังหวัดที่ตรงกัน";
+"prefecture.search.subtitle" = "เลือกจังหวัดที่อยากไป";
+"prefecture.search.onsen_chip" = "ออนเซ็น";

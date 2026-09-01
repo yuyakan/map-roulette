@@ -5490,3 +5490,10 @@
 "shizuoka.abekawa_mochi.name" = "Abekawa mochi";
 "shizuoka.abekawa_mochi.description" = "Kudapan tradisional Shizuoka: mochi lembut berbalut kinako dan pasta kacang.";
 "shizuoka.abekawa_mochi.price" = "Mulai ¥600";
+
+/* 都道府県 検索・一覧導線 */
+"prefecture.search.title" = "Cari berdasarkan prefektur";
+"prefecture.search.placeholder" = "Cari berdasarkan nama prefektur";
+"prefecture.search.empty" = "Tidak ada prefektur yang cocok";
+"prefecture.search.subtitle" = "Pilih prefektur untuk dijelajahi";
+"prefecture.search.onsen_chip" = "Onsen";
