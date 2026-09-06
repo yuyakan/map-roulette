@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0AD7CC304D6A5400BAAB8F /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BF1E5701A2B3C4D5E6F1002 /* YouTubePlayerKit */; };
 		4BC6C56F2E36070E00CDDE87 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC6C56E2E36070E00CDDE87 /* GoogleMobileAds */; };
 		4BC6C5A02E36070E00CDDE87 /* GoogleUserMessagingPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC6C59F2E36070E00CDDE87 /* GoogleUserMessagingPlatform */; };
 		4BD787BB304D4E8B00F6177F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4BF1E5701A2B3C4D5E6F0001 /* FirebaseFirestore */; };
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B0AD7CC304D6A5400BAAB8F /* YouTubePlayerKit in Frameworks */,
 				4BD787BB304D4E8B00F6177F /* FirebaseFirestore in Frameworks */,
 				4BC6C56F2E36070E00CDDE87 /* GoogleMobileAds in Frameworks */,
 				4BC6C5A02E36070E00CDDE87 /* GoogleUserMessagingPlatform in Frameworks */,

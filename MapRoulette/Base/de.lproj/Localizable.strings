@@ -5520,3 +5520,6 @@
 "home.trend.category.spot" = "Fotospots";
 "home.trend.category.gourmet" = "Gourmet";
 "home.trend.empty" = "Noch keine Trends. Bitte schau später noch einmal vorbei.";
+"home.trend.error.network" = "Bitte überprüfe deine Internetverbindung.";
+"home.trend.error.generic" = "Trends konnten nicht geladen werden.";
+"home.trend.retry" = "Erneut versuchen";

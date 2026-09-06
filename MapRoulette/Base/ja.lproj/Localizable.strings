@@ -5517,3 +5517,6 @@
 "home.trend.category.spot" = "映えスポット";
 "home.trend.category.gourmet" = "グルメ";
 "home.trend.empty" = "トレンドはまだありません。しばらくしてからお試しください。";
+"home.trend.error.network" = "通信状況を確認してください。";
+"home.trend.error.generic" = "トレンドを読み込めませんでした。";
+"home.trend.retry" = "再試行";

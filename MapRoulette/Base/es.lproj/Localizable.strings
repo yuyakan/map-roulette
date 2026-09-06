@@ -5520,3 +5520,6 @@
 "home.trend.category.spot" = "Lugares fotogénicos";
 "home.trend.category.gourmet" = "Gastronomía";
 "home.trend.empty" = "Aún no hay tendencias. Vuelve a intentarlo más tarde.";
+"home.trend.error.network" = "Comprueba tu conexión a internet.";
+"home.trend.error.generic" = "No se pudieron cargar las tendencias.";
+"home.trend.retry" = "Reintentar";

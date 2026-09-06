@@ -39,14 +39,12 @@ struct HomeView: View {
             .navigationTitle(NSLocalizedString("tab.home", comment: "ホーム"))
             .navigationBarTitleDisplayMode(.large)
             .task {
-                // 初回表示時に 1 回だけ読み込む。
+                // 初回表示時のみ。キャッシュ優先＋1日1回だけ Firestore 取得（TrendRepository.load 内で制御）。
                 if case .idle = repository.state {
                     await repository.load()
                 }
             }
-            .refreshable {
-                await repository.load()
-            }
+            // 引っ張って更新は提供しない。再取得は失敗時の「再試行」ボタンのみ（1日1回の自動取得に限定）。
         }
     }
 
@@ -63,9 +61,10 @@ struct HomeView: View {
             } else {
                 TrendSectionView(groups: groups)
             }
-        case .failed:
-            // 読み込み失敗時も画面は独自コンテンツで成立させる（要件C）。空表示で穏当に扱う。
-            trendEmpty
+        case .failed(let kind):
+            // 読み込み失敗時も画面全体は独自コンテンツで成立させる（要件C）。
+            // トレンド部分にはメッセージ＋「再試行」を出す（成功時は再取得手段を出さない）。
+            trendError(kind)
         }
     }
 
@@ -89,6 +88,36 @@ struct HomeView: View {
                 .foregroundColor(.secondary)
                 .padding(.horizontal, 16)
                 .padding(.vertical, 24)
+        }
+    }
+
+    /// 取得失敗表示。種別に応じたメッセージ＋「再試行」ボタン。
+    private func trendError(_ kind: TrendRepository.FailureKind) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            trendSectionHeader
+            VStack(spacing: 12) {
+                Image(systemName: kind == .network ? "wifi.slash" : "exclamationmark.triangle")
+                    .font(.system(size: 28))
+                    .foregroundColor(.secondary)
+                Text(NSLocalizedString(kind.messageKey, comment: ""))
+                    .font(.system(size: 13))
+                    .foregroundColor(.secondary)
+                    .multilineTextAlignment(.center)
+                Button {
+                    Task { await repository.retry() }
+                } label: {
+                    Text(NSLocalizedString("home.trend.retry", comment: "再試行"))
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 10)
+                        .background(PlanTheme.primary)
+                        .clipShape(Capsule())
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 24)
         }
     }
 

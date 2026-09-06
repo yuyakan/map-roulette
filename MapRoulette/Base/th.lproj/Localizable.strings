@@ -5520,3 +5520,6 @@
 "home.trend.category.spot" = "จุดถ่ายรูป";
 "home.trend.category.gourmet" = "ของอร่อย";
 "home.trend.empty" = "ยังไม่มีเทรนด์ กรุณาลองใหม่ภายหลัง";
+"home.trend.error.network" = "โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต";
+"home.trend.error.generic" = "ไม่สามารถโหลดเทรนด์ได้";
+"home.trend.retry" = "ลองอีกครั้ง";

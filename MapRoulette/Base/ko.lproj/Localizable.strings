@@ -5459,3 +5459,6 @@
 "home.trend.category.spot" = "인생샷 명소";
 "home.trend.category.gourmet" = "맛집";
 "home.trend.empty" = "아직 트렌드가 없습니다. 잠시 후 다시 확인해 주세요.";
+"home.trend.error.network" = "네트워크 연결 상태를 확인해 주세요.";
+"home.trend.error.generic" = "트렌드를 불러오지 못했습니다.";
+"home.trend.retry" = "다시 시도";

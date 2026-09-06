@@ -5520,3 +5520,6 @@
 "home.trend.category.spot" = "Spot foto";
 "home.trend.category.gourmet" = "Kuliner";
 "home.trend.empty" = "Belum ada tren. Silakan cek lagi nanti.";
+"home.trend.error.network" = "Periksa koneksi internet Anda.";
+"home.trend.error.generic" = "Tidak dapat memuat tren.";
+"home.trend.retry" = "Coba lagi";

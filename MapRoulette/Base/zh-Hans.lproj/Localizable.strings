@@ -6151,3 +6151,6 @@
 "home.trend.category.spot" = "打卡景点";
 "home.trend.category.gourmet" = "美食";
 "home.trend.empty" = "暂无热门内容，请稍后再来。";
+"home.trend.error.network" = "请检查您的网络连接。";
+"home.trend.error.generic" = "无法加载热门内容。";
+"home.trend.retry" = "重试";

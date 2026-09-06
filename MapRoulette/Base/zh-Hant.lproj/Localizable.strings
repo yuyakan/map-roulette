@@ -6149,3 +6149,6 @@
 "home.trend.category.spot" = "打卡景點";
 "home.trend.category.gourmet" = "美食";
 "home.trend.empty" = "暫無熱門內容，請稍後再來。";
+"home.trend.error.network" = "請檢查您的網路連線。";
+"home.trend.error.generic" = "無法載入熱門內容。";
+"home.trend.retry" = "重試";

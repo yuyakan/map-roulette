@@ -5520,3 +5520,6 @@
 "home.trend.category.spot" = "Điểm sống ảo";
 "home.trend.category.gourmet" = "Ẩm thực";
 "home.trend.empty" = "Chưa có xu hướng. Vui lòng quay lại sau.";
+"home.trend.error.network" = "Vui lòng kiểm tra kết nối mạng của bạn.";
+"home.trend.error.generic" = "Không thể tải xu hướng.";
+"home.trend.retry" = "Thử lại";
