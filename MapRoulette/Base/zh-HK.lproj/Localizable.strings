@@ -6126,3 +6126,26 @@
 "prefecture.search.empty" = "沒有符合的都道府縣";
 "prefecture.search.subtitle" = "選擇想去的都道府縣";
 "prefecture.search.onsen_chip" = "溫泉";
+
+
+// MARK: - Home tab / Trend (YouTube Shorts)
+"tab.home" = "首頁";
+"home.welcome.title" = "歡迎";
+"home.welcome.subtitle" = "今日想去邊度？";
+"home.quick.title" = "快速存取";
+"home.quick.explore" = "地圖探索";
+"home.quick.nearby" = "附近景點";
+"home.quick.festival" = "祭典活動";
+"home.quick.plan" = "我的計劃";
+"home.trend.section.title" = "熱門趨勢";
+"home.trend.group.title" = "%1$@的%2$@";
+"home.trend.source.youtube" = "YouTube";
+"home.trend.watch.youtube" = "喺 YouTube 觀看";
+"home.trend.source.note" = "影片由 YouTube 提供";
+"home.trend.area.tokyo" = "東京";
+"home.trend.area.kyoto" = "京都";
+"home.trend.area.osaka" = "大阪";
+"home.trend.category.cafe" = "咖啡廳";
+"home.trend.category.spot" = "打卡景點";
+"home.trend.category.gourmet" = "美食";
+"home.trend.empty" = "暫無熱門內容，請稍後再嚟。";

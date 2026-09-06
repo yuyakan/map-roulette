@@ -5494,3 +5494,26 @@
 "prefecture.search.empty" = "該当する都道府県がありません";
 "prefecture.search.subtitle" = "行きたい都道府県を選ぼう";
 "prefecture.search.onsen_chip" = "温泉";
+
+
+// MARK: - Home tab / Trend (YouTube Shorts)
+"tab.home" = "ホーム";
+"home.welcome.title" = "ようこそ";
+"home.welcome.subtitle" = "今日はどこへ行こう？";
+"home.quick.title" = "クイックアクセス";
+"home.quick.explore" = "マップで探す";
+"home.quick.nearby" = "近くのスポット";
+"home.quick.festival" = "祭・イベント";
+"home.quick.plan" = "マイプラン";
+"home.trend.section.title" = "トレンド";
+"home.trend.group.title" = "%1$@の%2$@";
+"home.trend.source.youtube" = "YouTube";
+"home.trend.watch.youtube" = "YouTubeで見る";
+"home.trend.source.note" = "動画は YouTube から提供されています";
+"home.trend.area.tokyo" = "東京";
+"home.trend.area.kyoto" = "京都";
+"home.trend.area.osaka" = "大阪";
+"home.trend.category.cafe" = "カフェ";
+"home.trend.category.spot" = "映えスポット";
+"home.trend.category.gourmet" = "グルメ";
+"home.trend.empty" = "トレンドはまだありません。しばらくしてからお試しください。";

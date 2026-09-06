@@ -5497,3 +5497,26 @@
 "prefecture.search.empty" = "No matching prefectures";
 "prefecture.search.subtitle" = "Choose a prefecture to explore";
 "prefecture.search.onsen_chip" = "Onsen";
+
+
+// MARK: - Home tab / Trend (YouTube Shorts)
+"tab.home" = "Home";
+"home.welcome.title" = "Welcome";
+"home.welcome.subtitle" = "Where to today?";
+"home.quick.title" = "Quick access";
+"home.quick.explore" = "Explore map";
+"home.quick.nearby" = "Nearby spots";
+"home.quick.festival" = "Festivals";
+"home.quick.plan" = "My Plans";
+"home.trend.section.title" = "Trending";
+"home.trend.group.title" = "%2$@ in %1$@";
+"home.trend.source.youtube" = "YouTube";
+"home.trend.watch.youtube" = "Watch on YouTube";
+"home.trend.source.note" = "Videos are provided by YouTube";
+"home.trend.area.tokyo" = "Tokyo";
+"home.trend.area.kyoto" = "Kyoto";
+"home.trend.area.osaka" = "Osaka";
+"home.trend.category.cafe" = "Cafés";
+"home.trend.category.spot" = "Photo spots";
+"home.trend.category.gourmet" = "Gourmet";
+"home.trend.empty" = "No trends yet. Please check back later.";

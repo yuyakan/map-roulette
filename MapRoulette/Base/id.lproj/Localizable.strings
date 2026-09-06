@@ -5497,3 +5497,26 @@
 "prefecture.search.empty" = "Tidak ada prefektur yang cocok";
 "prefecture.search.subtitle" = "Pilih prefektur untuk dijelajahi";
 "prefecture.search.onsen_chip" = "Onsen";
+
+
+// MARK: - Home tab / Trend (YouTube Shorts)
+"tab.home" = "Beranda";
+"home.welcome.title" = "Selamat datang";
+"home.welcome.subtitle" = "Mau ke mana hari ini?";
+"home.quick.title" = "Akses cepat";
+"home.quick.explore" = "Jelajahi peta";
+"home.quick.nearby" = "Tempat terdekat";
+"home.quick.festival" = "Festival";
+"home.quick.plan" = "Rencana Saya";
+"home.trend.section.title" = "Sedang tren";
+"home.trend.group.title" = "%2$@ di %1$@";
+"home.trend.source.youtube" = "YouTube";
+"home.trend.watch.youtube" = "Tonton di YouTube";
+"home.trend.source.note" = "Video disediakan oleh YouTube";
+"home.trend.area.tokyo" = "Tokyo";
+"home.trend.area.kyoto" = "Kyoto";
+"home.trend.area.osaka" = "Osaka";
+"home.trend.category.cafe" = "Kafe";
+"home.trend.category.spot" = "Spot foto";
+"home.trend.category.gourmet" = "Kuliner";
+"home.trend.empty" = "Belum ada tren. Silakan cek lagi nanti.";

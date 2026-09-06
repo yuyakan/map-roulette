@@ -5497,3 +5497,26 @@
 "prefecture.search.empty" = "Không có tỉnh phù hợp";
 "prefecture.search.subtitle" = "Chọn tỉnh muốn khám phá";
 "prefecture.search.onsen_chip" = "Onsen";
+
+
+// MARK: - Home tab / Trend (YouTube Shorts)
+"tab.home" = "Trang chủ";
+"home.welcome.title" = "Chào mừng";
+"home.welcome.subtitle" = "Hôm nay đi đâu nhỉ?";
+"home.quick.title" = "Truy cập nhanh";
+"home.quick.explore" = "Khám phá bản đồ";
+"home.quick.nearby" = "Địa điểm gần đây";
+"home.quick.festival" = "Lễ hội";
+"home.quick.plan" = "Kế hoạch của tôi";
+"home.trend.section.title" = "Xu hướng";
+"home.trend.group.title" = "%2$@ ở %1$@";
+"home.trend.source.youtube" = "YouTube";
+"home.trend.watch.youtube" = "Xem trên YouTube";
+"home.trend.source.note" = "Video được cung cấp bởi YouTube";
+"home.trend.area.tokyo" = "Tokyo";
+"home.trend.area.kyoto" = "Kyoto";
+"home.trend.area.osaka" = "Osaka";
+"home.trend.category.cafe" = "Quán cà phê";
+"home.trend.category.spot" = "Điểm sống ảo";
+"home.trend.category.gourmet" = "Ẩm thực";
+"home.trend.empty" = "Chưa có xu hướng. Vui lòng quay lại sau.";

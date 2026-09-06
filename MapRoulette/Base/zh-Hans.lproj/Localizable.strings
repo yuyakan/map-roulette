@@ -6128,3 +6128,26 @@
 "prefecture.search.empty" = "没有匹配的都道府县";
 "prefecture.search.subtitle" = "选择想去的都道府县";
 "prefecture.search.onsen_chip" = "温泉";
+
+
+// MARK: - Home tab / Trend (YouTube Shorts)
+"tab.home" = "首页";
+"home.welcome.title" = "欢迎";
+"home.welcome.subtitle" = "今天想去哪里？";
+"home.quick.title" = "快速访问";
+"home.quick.explore" = "地图探索";
+"home.quick.nearby" = "附近景点";
+"home.quick.festival" = "节庆活动";
+"home.quick.plan" = "我的计划";
+"home.trend.section.title" = "热门趋势";
+"home.trend.group.title" = "%1$@的%2$@";
+"home.trend.source.youtube" = "YouTube";
+"home.trend.watch.youtube" = "在 YouTube 观看";
+"home.trend.source.note" = "视频由 YouTube 提供";
+"home.trend.area.tokyo" = "东京";
+"home.trend.area.kyoto" = "京都";
+"home.trend.area.osaka" = "大阪";
+"home.trend.category.cafe" = "咖啡馆";
+"home.trend.category.spot" = "打卡景点";
+"home.trend.category.gourmet" = "美食";
+"home.trend.empty" = "暂无热门内容，请稍后再来。";

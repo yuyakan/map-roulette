@@ -5436,3 +5436,26 @@
 "prefecture.search.empty" = "일치하는 도도부현이 없습니다";
 "prefecture.search.subtitle" = "가고 싶은 도도부현을 선택하세요";
 "prefecture.search.onsen_chip" = "온천";
+
+
+// MARK: - Home tab / Trend (YouTube Shorts)
+"tab.home" = "홈";
+"home.welcome.title" = "환영합니다";
+"home.welcome.subtitle" = "오늘은 어디로 갈까요?";
+"home.quick.title" = "빠른 실행";
+"home.quick.explore" = "지도 탐색";
+"home.quick.nearby" = "주변 명소";
+"home.quick.festival" = "축제·이벤트";
+"home.quick.plan" = "내 플랜";
+"home.trend.section.title" = "트렌드";
+"home.trend.group.title" = "%1$@의 %2$@";
+"home.trend.source.youtube" = "YouTube";
+"home.trend.watch.youtube" = "YouTube에서 보기";
+"home.trend.source.note" = "동영상은 YouTube에서 제공됩니다";
+"home.trend.area.tokyo" = "도쿄";
+"home.trend.area.kyoto" = "교토";
+"home.trend.area.osaka" = "오사카";
+"home.trend.category.cafe" = "카페";
+"home.trend.category.spot" = "인생샷 명소";
+"home.trend.category.gourmet" = "맛집";
+"home.trend.empty" = "아직 트렌드가 없습니다. 잠시 후 다시 확인해 주세요.";

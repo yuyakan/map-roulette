@@ -25,6 +25,8 @@ struct ContentView: View {
                     AllFestivalsComparisonView()
                 case 3:
                     MyPlansView()
+                case 4:
+                    HomeView()
                 default:
                     IntegratedMapView()
                 }
@@ -77,6 +79,15 @@ struct CustomTabBar: View {
                 isSelected: selectedTab == 3
             ) {
                 selectedTab = 3
+            }
+
+            // ホームタブ（トレンド / YouTube Shorts）
+            TabBarItem(
+                icon: "house",
+                title: NSLocalizedString("tab.home", comment: ""),
+                isSelected: selectedTab == 4
+            ) {
+                selectedTab = 4
             }
         }
         .padding(.vertical, 8)

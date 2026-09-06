@@ -5497,3 +5497,26 @@
 "prefecture.search.empty" = "ไม่มีจังหวัดที่ตรงกัน";
 "prefecture.search.subtitle" = "เลือกจังหวัดที่อยากไป";
 "prefecture.search.onsen_chip" = "ออนเซ็น";
+
+
+// MARK: - Home tab / Trend (YouTube Shorts)
+"tab.home" = "หน้าแรก";
+"home.welcome.title" = "ยินดีต้อนรับ";
+"home.welcome.subtitle" = "วันนี้จะไปที่ไหนดี?";
+"home.quick.title" = "เข้าถึงด่วน";
+"home.quick.explore" = "สำรวจแผนที่";
+"home.quick.nearby" = "สถานที่ใกล้เคียง";
+"home.quick.festival" = "เทศกาล";
+"home.quick.plan" = "แผนของฉัน";
+"home.trend.section.title" = "กำลังเป็นที่นิยม";
+"home.trend.group.title" = "%2$@ใน%1$@";
+"home.trend.source.youtube" = "YouTube";
+"home.trend.watch.youtube" = "ดูบน YouTube";
+"home.trend.source.note" = "วิดีโอจัดหาโดย YouTube";
+"home.trend.area.tokyo" = "โตเกียว";
+"home.trend.area.kyoto" = "เกียวโต";
+"home.trend.area.osaka" = "โอซากะ";
+"home.trend.category.cafe" = "คาเฟ่";
+"home.trend.category.spot" = "จุดถ่ายรูป";
+"home.trend.category.gourmet" = "ของอร่อย";
+"home.trend.empty" = "ยังไม่มีเทรนด์ กรุณาลองใหม่ภายหลัง";

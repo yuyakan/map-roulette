@@ -11,6 +11,12 @@ import GoogleMobileAds
 @main
 struct MapRouletteApp: App {
     @State private var showSplash = true
+
+    init() {
+        // 起動時に 1 回だけ Firebase を初期化（ホームタブのトレンド機能で Firestore を使う）。
+        FirebaseBootstrap.configureIfNeeded()
+    }
+
     var body: some Scene {
         WindowGroup {
             if showSplash {
