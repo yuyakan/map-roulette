@@ -51,6 +51,10 @@ struct TrendSectionView: View {
                     }
                 }
                 .padding(.horizontal, 16)
+                // 横 ScrollView はコンテンツの縦はみ出しを上端でクリップし、
+                // カードの上側の角丸が数px切れてしまう。上下に余白を与えて
+                // カード上端をクリップ境界から離し、角丸を欠けさせない。
+                .padding(.vertical, 8)
             }
         }
     }

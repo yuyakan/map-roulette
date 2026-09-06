@@ -22,12 +22,6 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 28) {
                     welcomeHeader
 
-                    // 要件C: 独自コンテンツ（ホームからの導線）
-                    quickActionsSection
-
-                    Divider()
-                        .padding(.horizontal, 16)
-
                     // トレンドセクション（YouTube Shorts・要件A〜E）
                     trendSection
 
@@ -142,62 +136,6 @@ struct HomeView: View {
                 .foregroundColor(.secondary)
         }
         .padding(.horizontal, 16)
-    }
-
-    // MARK: - クイックアクション（独自コンテンツ・要件C）
-
-    private var quickActionsSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text(NSLocalizedString("home.quick.title", comment: ""))
-                .font(.system(size: 18, weight: .bold))
-                .padding(.horizontal, 16)
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
-                    quickCard(
-                        icon: "map.fill",
-                        title: NSLocalizedString("home.quick.explore", comment: ""),
-                        tint: PlanTheme.primary
-                    )
-                    quickCard(
-                        icon: "location.circle.fill",
-                        title: NSLocalizedString("home.quick.nearby", comment: ""),
-                        tint: PlanTheme.accent
-                    )
-                    quickCard(
-                        icon: "sparkles",
-                        title: NSLocalizedString("home.quick.festival", comment: ""),
-                        tint: Color(red: 0.70, green: 0.40, blue: 0.95)
-                    )
-                    quickCard(
-                        icon: "suitcase.rolling.fill",
-                        title: NSLocalizedString("home.quick.plan", comment: ""),
-                        tint: Color(red: 0.30, green: 0.55, blue: 0.98)
-                    )
-                }
-                .padding(.horizontal, 16)
-            }
-        }
-    }
-
-    private func quickCard(icon: String, title: String, tint: Color) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Image(systemName: icon)
-                .font(.system(size: 22, weight: .semibold))
-                .foregroundColor(.white)
-                .frame(width: 44, height: 44)
-                .background(tint)
-                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-            Text(title)
-                .font(.system(size: 13, weight: .semibold))
-                .foregroundColor(.primary)
-                .lineLimit(1)
-        }
-        .padding(14)
-        .frame(width: 130, alignment: .leading)
-        .background(Color(.systemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .shadow(color: Color.black.opacity(0.05), radius: 8, x: 0, y: 3)
     }
 
     // MARK: - フッター（要件D: 出典の補足）

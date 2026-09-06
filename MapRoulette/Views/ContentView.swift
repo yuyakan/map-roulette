@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedTab = 0
+    // 起動時のデフォルトはホームタブ（真ん中＝index 2）
+    @State private var selectedTab = 2
 
     var body: some View {
         VStack(spacing: 0) {
@@ -22,13 +23,14 @@ struct ContentView: View {
                 case 1:
                     NearbyView()
                 case 2:
-                    AllFestivalsComparisonView()
-                case 3:
-                    MyPlansView()
-                case 4:
+                    // ホームタブ（トレンド / YouTube Shorts）を真ん中に配置
                     HomeView()
+                case 3:
+                    AllFestivalsComparisonView()
+                case 4:
+                    MyPlansView()
                 default:
-                    IntegratedMapView()
+                    HomeView()
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -63,28 +65,28 @@ struct CustomTabBar: View {
                 selectedTab = 1
             }
 
+            // ホームタブ（トレンド / YouTube Shorts）＝真ん中
+            TabBarItem(
+                icon: "house",
+                title: NSLocalizedString("tab.home", comment: ""),
+                isSelected: selectedTab == 2
+            ) {
+                selectedTab = 2
+            }
+
             // 祭・イベントタブ
             TabBarItem(
                 icon: "sparkles",
                 title: NSLocalizedString("tab.festival", comment: ""),
-                isSelected: selectedTab == 2
+                isSelected: selectedTab == 3
             ) {
-                selectedTab = 2
+                selectedTab = 3
             }
 
             // マイプランタブ
             TabBarItem(
                 icon: "suitcase.rolling",
                 title: NSLocalizedString("tab.plan", comment: ""),
-                isSelected: selectedTab == 3
-            ) {
-                selectedTab = 3
-            }
-
-            // ホームタブ（トレンド / YouTube Shorts）
-            TabBarItem(
-                icon: "house",
-                title: NSLocalizedString("tab.home", comment: ""),
                 isSelected: selectedTab == 4
             ) {
                 selectedTab = 4
