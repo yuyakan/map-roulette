@@ -13,8 +13,8 @@
 import SwiftUI
 
 struct HomeView: View {
-    /// Firestore `trends` の読み取り（P3で結線）。
-    @StateObject private var repository = TrendRepository()
+    /// Firestore トレンドの読み取り（アプリ共有インスタンス。県詳細と結果を共有）。
+    @ObservedObject private var repository = TrendRepository.shared
 
     var body: some View {
         NavigationStack {

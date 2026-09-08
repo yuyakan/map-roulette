@@ -229,6 +229,7 @@
 "tourism_detail_unfavorite" = "從收藏中移除";
 "tourism_detail_map" = "观光地地图";
 "tourism_detail_photos" = "相片";
+"tourism_detail_trend" = "熱門";
 "tourism_detail_photo" = "观光地照片";
 "tourism_detail_photo_loading" = "正在加载照片...";
 

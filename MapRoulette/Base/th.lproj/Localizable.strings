@@ -234,6 +234,7 @@
 "tourism_detail_unfavorite" = "นำออกจากรายการโปรด";
 "tourism_detail_map" = "แผนที่";
 "tourism_detail_photos" = "รูปภาพ";
+"tourism_detail_trend" = "กำลังนิยม";
 "tourism_detail_photo" = "รูปภาพ";
 "tourism_detail_photo_loading" = "กำลังโหลด...";
 

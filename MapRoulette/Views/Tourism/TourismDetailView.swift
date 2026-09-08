@@ -17,6 +17,10 @@ struct TourismDetailView: View {
     @State private var photoViewerStart: PhotoViewerStart? = nil
     /// お気に入り都道府県ストア（ホームの「お気に入りの県」セクションの元データ）。
     @ObservedObject private var favorites = FavoritePrefectureStore.shared
+    /// トレンド動画（アプリ共有インスタンス。ホームと結果を共有）。
+    @ObservedObject private var trends = TrendRepository.shared
+    /// この県の Shorts フィードを開く（動画配列 + 開始位置）。
+    @State private var shortsFeed: PrefShortsFeed? = nil
     @Environment(\.dismiss) private var dismiss
 
     init(prefecture: Prefecture) {
@@ -159,8 +163,11 @@ struct TourismDetailView: View {
                     }
                     .padding(.horizontal)
                     
+                    // トレンド動画（YouTube Shorts）。この県の動画がある時だけ表示。
+                    trendVideoSection
+
                     AdaptiveBannerAdView()
-                    
+
                     RichGourmetSection(prefecture: prefecture)
 
                     // グルメの下だけレクタングル(300x250)。eCPMが高い傾向のため試験的に採用。
@@ -190,6 +197,13 @@ struct TourismDetailView: View {
                 // マップからの遷移・県検索からの遷移の両方がこの画面を通るため、ここ1箇所でカバーできる。
                 RecentPrefectureStore.shared.record(prefecture)
             }
+            .task {
+                // ホームを経由せず直接この画面に来た場合でも動画を出せるよう、トレンドをロード。
+                // load() はキャッシュ優先＋鮮度制御済み。既ロードなら何もしない（重複読み込みしない）。
+                if case .idle = trends.state {
+                    await trends.load()
+                }
+            }
             .fullScreenCover(item: $selectedAttraction) { attraction in
                 AttractionDetailView(attraction: attraction, prefecture: prefecture)
             }
@@ -198,6 +212,9 @@ struct TourismDetailView: View {
                     attractions: AttractionPhoto.photographedAttractions(in: prefecture),
                     startIndex: start.index
                 )
+            }
+            .fullScreenCover(item: $shortsFeed) { feed in
+                ShortsFeedView(videos: feed.videos, startIndex: feed.startIndex)
             }
 
             VStack() {
@@ -244,6 +261,41 @@ struct TourismDetailView: View {
                 
                 Spacer()
             }
+        }
+    }
+
+    // MARK: - トレンド動画セクション（YouTube Shorts）
+
+    /// この県の Shorts をカテゴリ問わずまとめて横スクロールで見せる。
+    /// 動画が 1 本も無い県では、セクションごと表示しない（要件C: 独自コンテンツと共存・要件D: 出典）。
+    @ViewBuilder
+    private var trendVideoSection: some View {
+        let videos = trends.videos(for: prefecture)
+        if !videos.isEmpty {
+            VStack(alignment: .leading, spacing: 16) {
+                RichSectionHeader(
+                    icon: "play.rectangle.fill",
+                    title: "tourism_detail_trend".localized,
+                    accent: PlanTheme.primary
+                )
+
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12) {
+                        ForEach(Array(videos.enumerated()), id: \.element.id) { index, video in
+                            Button {
+                                shortsFeed = PrefShortsFeed(videos: videos, startIndex: index)
+                            } label: {
+                                TrendCard(video: video)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                    .padding(.horizontal, 2)
+                    // 横 ScrollView の上端クリップでカード角丸が欠けるのを防ぐ余白。
+                    .padding(.vertical, 8)
+                }
+            }
+            .padding(.horizontal)
         }
     }
 
@@ -308,5 +360,12 @@ struct TourismDetailView: View {
 struct PhotoViewerStart: Identifiable {
     let id = UUID()
     let index: Int
+}
+
+/// 県詳細の Shorts フィードを `fullScreenCover(item:)` で開くためのコンテキスト。
+struct PrefShortsFeed: Identifiable {
+    let id = UUID()
+    let videos: [TrendVideo]
+    let startIndex: Int
 }
 

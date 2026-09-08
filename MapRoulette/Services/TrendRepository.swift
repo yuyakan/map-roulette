@@ -18,6 +18,10 @@ import FirebaseFirestore
 
 @MainActor
 final class TrendRepository: ObservableObject {
+    /// アプリ共有インスタンス。ホーム・県詳細が同じ取得結果を購読し、
+    /// 2ドキュメント読み取りの重複を避ける（load 内でキャッシュ/鮮度も制御）。
+    static let shared = TrendRepository()
+
     /// 取得失敗の種別。UI のメッセージ出し分けに使う。
     enum FailureKind: Equatable {
         case network      // 通信不可・オフライン・サーバ到達不可

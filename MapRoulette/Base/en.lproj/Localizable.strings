@@ -234,6 +234,7 @@
 "tourism_detail_unfavorite" = "Remove from favorites";
 "tourism_detail_map" = "Map";
 "tourism_detail_photos" = "Photos";
+"tourism_detail_trend" = "Trending";
 "tourism_detail_photo" = "Photo";
 "tourism_detail_photo_loading" = "loading...";
 
