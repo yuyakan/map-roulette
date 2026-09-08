@@ -228,6 +228,8 @@
 "stop" = "정지";
 
 "tourism_detail_back" = "뒤로";
+"tourism_detail_favorite" = "즐겨찾기에 추가";
+"tourism_detail_unfavorite" = "즐겨찾기에서 제거";
 "tourism_detail_map" = "관광지 지도";
 "tourism_detail_photos" = "사진";
 "tourism_detail_photo" = "관광지 사진";

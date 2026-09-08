@@ -230,6 +230,8 @@
 "stop" = "Dừng"; // 英語版
 
 "tourism_detail_back" = "Quay lại";
+"tourism_detail_favorite" = "Thêm vào yêu thích";
+"tourism_detail_unfavorite" = "Xóa khỏi yêu thích";
 "tourism_detail_map" = "Bản đồ";
 "tourism_detail_photos" = "Ảnh";
 "tourism_detail_photo" = "Ảnh";

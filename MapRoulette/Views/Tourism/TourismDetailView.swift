@@ -15,6 +15,8 @@ struct TourismDetailView: View {
     @State private var selectedAttraction: LocalizedAttractionLocation? = nil
     /// フォト全画面ビューアを開くための、タップした写真の開始位置。
     @State private var photoViewerStart: PhotoViewerStart? = nil
+    /// お気に入り都道府県ストア（ホームの「お気に入りの県」セクションの元データ）。
+    @ObservedObject private var favorites = FavoritePrefectureStore.shared
     @Environment(\.dismiss) private var dismiss
 
     init(prefecture: Prefecture) {
@@ -183,6 +185,11 @@ struct TourismDetailView: View {
                 }
             }
             .navigationBarHidden(true)
+            .onAppear {
+                // ホームの「最近見た県」に記録する（この画面を開いた＝その県を見た）。
+                // マップからの遷移・県検索からの遷移の両方がこの画面を通るため、ここ1箇所でカバーできる。
+                RecentPrefectureStore.shared.record(prefecture)
+            }
             .fullScreenCover(item: $selectedAttraction) { attraction in
                 AttractionDetailView(attraction: attraction, prefecture: prefecture)
             }
@@ -217,6 +224,20 @@ struct TourismDetailView: View {
                     .cornerRadius(20)
                     .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                     Spacer()
+
+                    // お気に入りトグル（ホームの「お気に入りの県」セクションに反映）。
+                    Button(action: {
+                        favorites.toggle(prefecture)
+                    }) {
+                        Image(systemName: favorites.isFavorite(prefecture) ? "heart.fill" : "heart")
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundColor(favorites.isFavorite(prefecture) ? .pink : .gray)
+                            .padding(10)
+                            .background(.white)
+                            .clipShape(Circle())
+                            .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
+                    }
+                    .accessibilityLabel(favorites.isFavorite(prefecture) ? "tourism_detail_unfavorite".localized : "tourism_detail_favorite".localized)
                 }
                 .padding(.horizontal)
                 .padding(.top, 10)

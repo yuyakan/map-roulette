@@ -230,6 +230,8 @@
 "stop" = "หยุด"; // 英語版
 
 "tourism_detail_back" = "กลับ";
+"tourism_detail_favorite" = "เพิ่มในรายการโปรด";
+"tourism_detail_unfavorite" = "นำออกจากรายการโปรด";
 "tourism_detail_map" = "แผนที่";
 "tourism_detail_photos" = "รูปภาพ";
 "tourism_detail_photo" = "รูปภาพ";

@@ -230,6 +230,8 @@
 "stop" = "Berhenti"; // 英語版
 
 "tourism_detail_back" = "Kembali";
+"tourism_detail_favorite" = "Tambahkan ke favorit";
+"tourism_detail_unfavorite" = "Hapus dari favorit";
 "tourism_detail_map" = "Peta";
 "tourism_detail_photos" = "Foto";
 "tourism_detail_photo" = "Foto";

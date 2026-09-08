@@ -226,6 +226,8 @@
 "stop" = "停止";
 
 "tourism_detail_back" = "返回";
+"tourism_detail_favorite" = "加入收藏";
+"tourism_detail_unfavorite" = "從收藏中移除";
 "tourism_detail_map" = "观光地地图";
 "tourism_detail_photos" = "照片";
 "tourism_detail_photo" = "观光地照片";

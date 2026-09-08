@@ -224,6 +224,8 @@
 "stop" = "ストップ";
 
 "tourism_detail_back" = "戻る";
+"tourism_detail_favorite" = "お気に入りに追加";
+"tourism_detail_unfavorite" = "お気に入りから外す";
 "tourism_detail_map" = "観光地マップ";
 "tourism_detail_photos" = "写真";
 "tourism_detail_photo" = "観光地写真";
