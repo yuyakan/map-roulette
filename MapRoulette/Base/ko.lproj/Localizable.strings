@@ -5451,6 +5451,8 @@
 "home.quick.festival" = "축제·이벤트";
 "home.quick.plan" = "내 플랜";
 "home.trend.section.title" = "트렌드";
+"home.section.recent" = "최근 본 지역";
+"home.section.favorite" = "즐겨찾기";
 "home.trend.group.title" = "%1$@의 %2$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "YouTube에서 보기";

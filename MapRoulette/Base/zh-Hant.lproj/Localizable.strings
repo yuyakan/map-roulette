@@ -6141,6 +6141,8 @@
 "home.quick.festival" = "祭典活動";
 "home.quick.plan" = "我的計劃";
 "home.trend.section.title" = "熱門趨勢";
+"home.section.recent" = "最近瀏覽";
+"home.section.favorite" = "收藏";
 "home.trend.group.title" = "%1$@的%2$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "在 YouTube 觀看";

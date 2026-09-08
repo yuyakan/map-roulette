@@ -5512,6 +5512,8 @@
 "home.quick.festival" = "Festivals";
 "home.quick.plan" = "Mes plans";
 "home.trend.section.title" = "Tendances";
+"home.section.recent" = "Vus récemment";
+"home.section.favorite" = "Favoris";
 "home.trend.group.title" = "%2$@ à %1$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "Voir sur YouTube";

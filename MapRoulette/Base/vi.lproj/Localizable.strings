@@ -5512,6 +5512,8 @@
 "home.quick.festival" = "Lễ hội";
 "home.quick.plan" = "Kế hoạch của tôi";
 "home.trend.section.title" = "Xu hướng";
+"home.section.recent" = "Xem gần đây";
+"home.section.favorite" = "Yêu thích";
 "home.trend.group.title" = "%2$@ ở %1$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "Xem trên YouTube";

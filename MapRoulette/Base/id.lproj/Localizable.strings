@@ -5512,6 +5512,8 @@
 "home.quick.festival" = "Festival";
 "home.quick.plan" = "Rencana Saya";
 "home.trend.section.title" = "Sedang tren";
+"home.section.recent" = "Baru dilihat";
+"home.section.favorite" = "Favorit";
 "home.trend.group.title" = "%2$@ di %1$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "Tonton di YouTube";

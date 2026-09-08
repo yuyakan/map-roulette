@@ -5509,6 +5509,8 @@
 "home.quick.festival" = "祭・イベント";
 "home.quick.plan" = "マイプラン";
 "home.trend.section.title" = "トレンド";
+"home.section.recent" = "最近見た県";
+"home.section.favorite" = "お気に入りの県";
 "home.trend.group.title" = "%1$@の%2$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "YouTubeで見る";
