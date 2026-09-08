@@ -27,13 +27,21 @@ struct ShortsFeedView: View {
         _currentIndex = State(initialValue: startIndex)
     }
 
+    /// プレイヤー(WebView)を実体化しておく前後ページ数。
+    /// currentIndex ± preloadRadius のページはタップ前に iframe を初期化しておき、
+    /// スワイプ時のラグを消す。それより遠いページはサムネのみの軽量表示にしてメモリを節約する。
+    /// 2 = 前後2本ずつ（同時最大5本のプレイヤーを保持）。途切れにくいがメモリ負荷は上がる。
+    private let preloadRadius = 2
+
     var body: some View {
         GeometryReader { geo in
             TabView(selection: $currentIndex) {
                 ForEach(Array(videos.enumerated()), id: \.element.id) { index, video in
                     ShortsPage(
                         video: video,
-                        isActive: index == currentIndex
+                        isActive: index == currentIndex,
+                        // 近傍ページはプレイヤーを先に生成（プリロード）。遠いページはサムネのみ。
+                        isPreloaded: abs(index - currentIndex) <= preloadRadius
                     )
                     .frame(width: geo.size.width, height: geo.size.height)
                     .rotationEffect(.degrees(-90))          // TabView を縦ページ化する定番手法
@@ -70,14 +78,27 @@ struct ShortsFeedView: View {
 private struct ShortsPage: View {
     let video: TrendVideo
     let isActive: Bool
+    /// 近傍ページか。true のときだけプレイヤー(WebView)を実体化し、事前ロードしておく。
+    let isPreloaded: Bool
 
     var body: some View {
         ZStack {
             Color.black
 
-            // 要件B/E: 公式埋め込みを 9:16 で。表示中ページのみ再生。
-            YouTubeShortPlayerView(videoId: video.videoId, isActive: isActive)
+            if isPreloaded {
+                // 要件B/E: 公式埋め込みを 9:16 で。表示中ページのみ再生。
+                // ロード中はサムネでつなぎ、黒画面待ちを避ける。
+                YouTubeShortPlayerView(
+                    videoId: video.videoId,
+                    isActive: isActive,
+                    thumbnailUrl: video.thumbnailUrl
+                )
                 .aspectRatio(9.0 / 16.0, contentMode: .fit)
+            } else {
+                // 遠いページはプレイヤーを持たず、サムネのみ（メモリ節約）。
+                // スワイプで近づいた時点でプレイヤーに差し替わる。
+                thumbnailOnly
+            }
 
             // 要件D: 出典オーバーレイ（下部）
             VStack {
@@ -116,5 +137,17 @@ private struct ShortsPage: View {
                 )
             }
         }
+    }
+
+    /// 非プリロードページのサムネ表示（9:16）。プレイヤー未生成のプレースホルダ。
+    private var thumbnailOnly: some View {
+        AsyncImage(url: URL(string: video.thumbnailUrl)) { image in
+            image
+                .resizable()
+                .scaledToFit()
+        } placeholder: {
+            Color.black
+        }
+        .aspectRatio(9.0 / 16.0, contentMode: .fit)
     }
 }

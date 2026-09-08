@@ -20,8 +20,6 @@ struct HomeView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 28) {
-                    welcomeHeader
-
                     // トレンドセクション（YouTube Shorts・要件A〜E）
                     trendSection
 
@@ -30,8 +28,7 @@ struct HomeView: View {
                 .padding(.vertical, 16)
             }
             .background(Color(.systemGroupedBackground))
-            .navigationTitle(NSLocalizedString("tab.home", comment: "ホーム"))
-            .navigationBarTitleDisplayMode(.large)
+            .navigationBarTitleDisplayMode(.inline)
             .task {
                 // 初回表示時のみ。キャッシュ優先＋1日1回だけ Firestore 取得（TrendRepository.load 内で制御）。
                 if case .idle = repository.state {
@@ -121,19 +118,6 @@ struct HomeView: View {
                 .font(.system(size: 20, weight: .bold))
             YouTubeBadge()
             Spacer()
-        }
-        .padding(.horizontal, 16)
-    }
-
-    // MARK: - ウェルカム見出し（独自コンテンツ）
-
-    private var welcomeHeader: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(NSLocalizedString("home.welcome.title", comment: ""))
-                .font(.system(size: 24, weight: .bold))
-            Text(NSLocalizedString("home.welcome.subtitle", comment: ""))
-                .font(.system(size: 14))
-                .foregroundColor(.secondary)
         }
         .padding(.horizontal, 16)
     }

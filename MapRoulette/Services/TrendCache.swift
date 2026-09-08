@@ -15,8 +15,12 @@
 import Foundation
 
 enum TrendCache {
-    /// バッチが Firestore を更新する時刻（JST の時）。この時刻を「1 日 1 回の更新境界」とみなす。
-    static let refreshHourJST = 6
+    /// バッチ更新後にアプリが再取得してよくなる「1 日 1 回の更新境界」時刻（JST の時）。
+    /// バッチ(GitHub Actions)は 04:00 JST 目標で走るが、スケジュール遅延で書き込み完了が
+    /// 数時間ずれ込むことがある（公式仕様・保証なし）。この境界を書き込み完了より前に置くと、
+    /// 遅延中の古いデータを取得して lastFetchAt を更新してしまい、その日は新データを取り逃す。
+    /// そのため遅延を吸収できる 8 時に設定する（バッチ側 cron のコメントと対応）。
+    static let refreshHourJST = 8
 
     private static let lastFetchKey = "trend.lastFetchAt"
     private static let cacheFileName = "trend_cache.json"
