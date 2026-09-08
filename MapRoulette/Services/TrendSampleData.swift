@@ -36,11 +36,11 @@ enum TrendSampleData {
         )
     }
 
-    /// ホームのトレンドセクションに並べるダミーグループ群。
+    /// ホームのトレンドセクションに並べるダミーグループ群（prefKey は Prefecture.rawValue）。
     static let groups: [TrendGroup] = [
         TrendGroup(
-            area: NSLocalizedString("home.trend.area.tokyo", comment: ""),
-            areaKey: "tokyo",
+            prefKey: "tokyo",
+            prefName: Prefecture.tokyo.prefectureName,
             category: NSLocalizedString("home.trend.category.cafe", comment: ""),
             categoryKey: "cafe",
             updatedAt: Date(),
@@ -52,8 +52,8 @@ enum TrendSampleData {
             ]
         ),
         TrendGroup(
-            area: NSLocalizedString("home.trend.area.kyoto", comment: ""),
-            areaKey: "kyoto",
+            prefKey: "kyoto",
+            prefName: Prefecture.kyoto.prefectureName,
             category: NSLocalizedString("home.trend.category.spot", comment: ""),
             categoryKey: "spot",
             updatedAt: Date(),
@@ -65,8 +65,8 @@ enum TrendSampleData {
             ]
         ),
         TrendGroup(
-            area: NSLocalizedString("home.trend.area.osaka", comment: ""),
-            areaKey: "osaka",
+            prefKey: "osaka",
+            prefName: Prefecture.osaka.prefectureName,
             category: NSLocalizedString("home.trend.category.gourmet", comment: ""),
             categoryKey: "gourmet",
             updatedAt: Date(),

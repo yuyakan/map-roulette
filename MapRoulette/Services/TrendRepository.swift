@@ -80,17 +80,47 @@ final class TrendRepository: ObservableObject {
         await fetchFromServer()
     }
 
+    // MARK: - 県ルックアップ（ホーム・県詳細の共通アクセス）
+
+    /// 現在ロード済みの全グループ（未ロードなら空）。
+    var loadedGroups: [TrendGroup] {
+        if case .loaded(let groups) = state { return groups }
+        return []
+    }
+
+    /// 指定した県に属するグループ（カテゴリ別）を返す。無ければ空。
+    func groups(for prefecture: Prefecture) -> [TrendGroup] {
+        loadedGroups.filter { $0.prefKey == prefecture.rawValue }
+    }
+
+    /// 指定した県の全カテゴリの動画をまとめて返す（県詳細の動画セクション・重複除去）。
+    func videos(for prefecture: Prefecture) -> [TrendVideo] {
+        var seen = Set<String>()
+        var result: [TrendVideo] = []
+        for group in groups(for: prefecture) {
+            for video in group.videos where seen.insert(video.videoId).inserted {
+                result.append(video)
+            }
+        }
+        return result
+    }
+
     /// Firestore から取得してキャッシュを更新する。失敗時はキャッシュ/現状表示を維持。
     private func fetchFromServer() async {
         // キャッシュ表示が無い場合のみ loading を見せる（キャッシュ表示中はちらつかせない）。
         if case .loaded = state {} else { state = .loading }
 
         do {
-            // 集約ドキュメント（trends_bundle/latest）を 1 件だけ読む。
-            // これで Firestore 読み取りは「1 回の取得 = 1 読み取り」になる
-            // （個別 trends/{area}_{category} を全件読むと 56 読み取りになっていた）。
-            let doc = try await db.collection("trends_bundle").document("latest").getDocument()
-            let rawGroups = doc.data()?["groups"] as? [[String: Any]] ?? []
+            // 2群ドキュメント（trends_bundle/groupA・groupB）を読んで結合する。
+            // 47県を A(24)/B(23) の2群に分けてバッチが交互更新しているため、全県ぶんは
+            // 2ドキュメントに分かれている（1MiB/doc 上限対策）。読み取りは 2 回で全県取得。
+            let collection = db.collection("trends_bundle")
+            async let docA = collection.document("groupA").getDocument()
+            async let docB = collection.document("groupB").getDocument()
+            let (a, b) = try await (docA, docB)
+
+            let rawGroups = ((a.data()?["groups"] as? [[String: Any]]) ?? [])
+                + ((b.data()?["groups"] as? [[String: Any]]) ?? [])
             let groups = applyGuards(rawGroups.compactMap { Self.decodeGroup(from: $0) })
             TrendCache.save(groups)
             state = .loaded(groups)
@@ -135,8 +165,8 @@ final class TrendRepository: ObservableObject {
     /// updatedAt は Firestore Timestamp、videos は辞書配列で来るため手動でデコードする。
     private static func decodeGroup(from data: [String: Any]) -> TrendGroup? {
         guard
-            let area = data["area"] as? String,
-            let areaKey = data["areaKey"] as? String,
+            let prefKey = data["prefKey"] as? String,
+            let prefName = data["prefName"] as? String,
             let category = data["category"] as? String,
             let categoryKey = data["categoryKey"] as? String
         else { return nil }
@@ -154,8 +184,8 @@ final class TrendRepository: ObservableObject {
         let videos = rawVideos.compactMap(decodeVideo(from:))
 
         return TrendGroup(
-            area: area,
-            areaKey: areaKey,
+            prefKey: prefKey,
+            prefName: prefName,
             category: category,
             categoryKey: categoryKey,
             updatedAt: updatedAt,
