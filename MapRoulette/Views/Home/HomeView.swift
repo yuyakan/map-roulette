@@ -36,6 +36,9 @@ struct HomeView: View {
                     // ② お気に入りの県
                     favoriteSection
 
+                    // ③ おすすめ（固定県・常に表示）
+                    recommendedSection
+
                     footerNote
                 }
                 .padding(.vertical, 16)
@@ -86,6 +89,22 @@ struct HomeView: View {
                 ForEach(prefs) { pref in
                     prefectureRow(pref)
                 }
+            }
+        }
+    }
+
+    // MARK: - ③ おすすめ（固定県・常に表示）
+
+    /// おすすめとして常に出す県（固定・表示順）。人気の高い定番エリア。
+    private static let recommendedPrefectures: [Prefecture] =
+        [.okinawa, .fukuoka, .kyoto, .hokkaido, .osaka]
+
+    /// おすすめセクション。最近見た県／お気に入りが空でもホームが成立するよう常に表示する。
+    private var recommendedSection: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            sectionHeader(titleKey: "home.section.recommended", icon: "sparkles")
+            ForEach(Self.recommendedPrefectures) { pref in
+                prefectureRow(pref)
             }
         }
     }

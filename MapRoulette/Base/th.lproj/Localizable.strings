@@ -5514,6 +5514,7 @@
 "home.trend.section.title" = "กำลังเป็นที่นิยม";
 "home.section.recent" = "ดูล่าสุด";
 "home.section.favorite" = "รายการโปรด";
+"home.section.recommended" = "แนะนำ";
 "home.trend.group.title" = "%2$@ใน%1$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "ดูบน YouTube";

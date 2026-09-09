@@ -5514,6 +5514,7 @@
 "home.trend.section.title" = "Im Trend";
 "home.section.recent" = "Zuletzt angesehen";
 "home.section.favorite" = "Favoriten";
+"home.section.recommended" = "Empfohlen";
 "home.trend.group.title" = "%2$@ in %1$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "Auf YouTube ansehen";

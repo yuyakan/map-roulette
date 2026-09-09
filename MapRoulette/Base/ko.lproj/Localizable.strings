@@ -5453,6 +5453,7 @@
 "home.trend.section.title" = "트렌드";
 "home.section.recent" = "최근 본 지역";
 "home.section.favorite" = "즐겨찾기";
+"home.section.recommended" = "추천";
 "home.trend.group.title" = "%1$@의 %2$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "YouTube에서 보기";
