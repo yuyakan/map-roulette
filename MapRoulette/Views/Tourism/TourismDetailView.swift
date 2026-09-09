@@ -160,26 +160,33 @@ struct TourismDetailView: View {
                                 }
                             }
                         }
+
+                        // 映えスポットの Shorts（観光地マップセクションの一番下）。
+                        trendCategoryRow(for: "spot")
                     }
                     .padding(.horizontal)
-                    
-                    // トレンド動画（YouTube Shorts）。この県の動画がある時だけ表示。
-                    trendVideoSection
 
                     AdaptiveBannerAdView()
 
                     RichGourmetSection(prefecture: prefecture)
 
+                    // グルメの Shorts（グルメセクションの一番下）。
+                    trendCategoryRow(for: "gourmet")
+                        .padding(.horizontal)
+
                     // グルメの下だけレクタングル(300x250)。eCPMが高い傾向のため試験的に採用。
                     MediumRectangleAdView()
 
                     RichOnsenSection(prefecture: prefecture)
-                    
+
                     RichSouvenirSection(prefecture: prefecture)
                         .padding(.top, prefecture.onsenItems.isEmpty ? 0 : 4)
-                    
+
                     AdaptiveBannerAdView()
-                    
+
+                    // カフェの Shorts（お土産セクション下の広告の、さらに下に独立セクション）。
+                    trendCafeSection
+
                     RichFestivalSection(prefecture: prefecture)
 
                     RichOtherFestivalSection(prefecture: prefecture)
@@ -264,62 +271,63 @@ struct TourismDetailView: View {
         }
     }
 
-    // MARK: - トレンド動画セクション（YouTube Shorts）
+    // MARK: - トレンド動画（YouTube Shorts・カテゴリ別に各セクションへ分散配置）
 
-    /// カテゴリ表示順（cafe → spot → gourmet）。バッチの categoryKey と一致。
-    private static let categoryOrder = ["cafe", "spot", "gourmet"]
+    /// 独立した「トレンド」セクションは作らず、カテゴリごとに対応する既存セクションへ配置する:
+    ///   - spot（映えスポット） → 観光地マップセクションの一番下
+    ///   - gourmet（グルメ）    → グルメセクションの一番下
+    ///   - cafe（カフェ）       → お土産セクション下の広告の、さらに下に独立セクション（trendCafeSection）
 
-    /// この県の Shorts を「カテゴリごとの行」で見せる。
-    /// カテゴリ内に動画があるグループだけを、定義順（categoryOrder）で並べる。
-    /// 動画が 1 本も無い県では、セクションごと表示しない（要件C: 独自コンテンツと共存・要件D: 出典）。
+    /// 指定 categoryKey の Shorts 行（見出し + 横スクロール）。動画が無ければ何も出さない。
+    /// 観光地マップ／グルメセクションの末尾に差し込む用（見出しはカテゴリ名）。
     @ViewBuilder
-    private var trendVideoSection: some View {
-        let groups = trends.groups(for: prefecture)
-            .filter { !$0.videos.isEmpty }
-            .sorted { lhs, rhs in
-                let li = Self.categoryOrder.firstIndex(of: lhs.categoryKey) ?? .max
-                let ri = Self.categoryOrder.firstIndex(of: rhs.categoryKey) ?? .max
-                return li < ri
+    private func trendCategoryRow(for categoryKey: String) -> some View {
+        if let group = trends.groups(for: prefecture)
+            .first(where: { $0.categoryKey == categoryKey && !$0.videos.isEmpty }) {
+            VStack(alignment: .leading, spacing: 8) {
+                Text(group.category)
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundColor(.secondary)
+
+                trendScroll(for: group)
             }
-        if !groups.isEmpty {
-            VStack(alignment: .leading, spacing: 20) {
+            .padding(.top, 4)
+        }
+    }
+
+    /// カフェの独立セクション（お土産下の広告の下）。見出し（アイコン付き）＋横スクロール。
+    @ViewBuilder
+    private var trendCafeSection: some View {
+        if let group = trends.groups(for: prefecture)
+            .first(where: { $0.categoryKey == "cafe" && !$0.videos.isEmpty }) {
+            VStack(alignment: .leading, spacing: 16) {
                 RichSectionHeader(
-                    icon: "play.rectangle.fill",
-                    title: "tourism_detail_trend".localized,
+                    icon: "cup.and.saucer.fill",
+                    title: group.category,
                     accent: PlanTheme.primary
                 )
-
-                ForEach(groups) { group in
-                    trendCategoryRow(group)
-                }
+                trendScroll(for: group)
             }
             .padding(.horizontal)
         }
     }
 
-    /// カテゴリ 1 行: カテゴリ名見出し + そのカテゴリの動画サムネ横スクロール。
-    /// 再生はそのカテゴリ内の動画配列で開く（同カテゴリ内をスワイプで連続再生）。
-    private func trendCategoryRow(_ group: TrendGroup) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(group.category)
-                .font(.system(size: 15, weight: .semibold))
-                .foregroundColor(.secondary)
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
-                    ForEach(Array(group.videos.enumerated()), id: \.element.id) { index, video in
-                        Button {
-                            shortsFeed = PrefShortsFeed(videos: group.videos, startIndex: index)
-                        } label: {
-                            TrendCard(video: video)
-                        }
-                        .buttonStyle(.plain)
+    /// グループの動画サムネ横スクロール（タップで同カテゴリ内を連続再生）。共通部品。
+    private func trendScroll(for group: TrendGroup) -> some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 12) {
+                ForEach(Array(group.videos.enumerated()), id: \.element.id) { index, video in
+                    Button {
+                        shortsFeed = PrefShortsFeed(videos: group.videos, startIndex: index)
+                    } label: {
+                        TrendCard(video: video)
                     }
+                    .buttonStyle(.plain)
                 }
-                .padding(.horizontal, 2)
-                // 横 ScrollView の上端クリップでカード角丸が欠けるのを防ぐ余白。
-                .padding(.vertical, 8)
             }
+            .padding(.horizontal, 2)
+            // 横 ScrollView の上端クリップでカード角丸が欠けるのを防ぐ余白。
+            .padding(.vertical, 8)
         }
     }
 
