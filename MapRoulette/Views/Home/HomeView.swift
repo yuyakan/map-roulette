@@ -3,12 +3,13 @@
 //  MapRoulette
 //
 //  5 タブ目「ホーム」のルート画面。
-//  ユーザーの行動（最近見た県 / お気に入りの県）を軸にパーソナライズした動画棚を並べ、
-//  最下部に全県横断のトレンドを置く。各県ブロックは県詳細（TourismDetailView）への導線も持つ。
+//  ユーザーの行動（最近見た県 / お気に入りの県）を軸にパーソナライズした導線だけを置く。
+//  各県ブロックは県名（→ 県詳細 TourismDetailView）＋その県の動画サムネ（→ Shorts 再生）を持つ。
+//  「全県のトレンドを丸ごと並べる」構成は廃止した（県ごとの動画は県詳細で見られるため冗長）。
 //
 //  設計: docs/HomeTab_Renewal_Plan.md §3.4。
-//  要件C（重要）: トレンドは「ホームの一機能」として MapRoulette 独自コンテンツ（最近見た/
-//  お気に入りの県）と同一画面に共存させ、独自価値を担保する。トレンド単独の広告画面は作らない。
+//  要件C: 動画は「最近見た県 / お気に入りの県」というアプリ独自の文脈（県＝独自データ）に
+//  紐づけて出す。トレンド単独の画面は作らず、この画面には広告も置かない。
 //
 
 import SwiftUI
@@ -34,9 +35,6 @@ struct HomeView: View {
 
                     // ② お気に入りの県
                     favoriteSection
-
-                    // ③ 全県横断トレンド（YouTube Shorts・要件A〜E）
-                    trendSection
 
                     footerNote
                 }
@@ -127,91 +125,6 @@ struct HomeView: View {
                 .padding(.vertical, 8)   // 角丸の上端欠け防止
             }
         }
-    }
-
-    // MARK: - ③ トレンドセクション（状態出し分け）
-
-    @ViewBuilder
-    private var trendSection: some View {
-        switch repository.state {
-        case .idle, .loading:
-            trendLoading
-        case .loaded(let groups):
-            if groups.isEmpty {
-                trendEmpty
-            } else {
-                VStack(alignment: .leading, spacing: 16) {
-                    trendSectionHeader
-                    TrendSectionView(groups: groups)
-                }
-            }
-        case .failed(let kind):
-            // 読み込み失敗時も画面全体は独自コンテンツ（最近見た/お気に入り）で成立させる（要件C）。
-            trendError(kind)
-        }
-    }
-
-    private var trendLoading: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            trendSectionHeader
-            HStack {
-                Spacer()
-                ProgressView()
-                    .padding(.vertical, 40)
-                Spacer()
-            }
-        }
-    }
-
-    private var trendEmpty: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            trendSectionHeader
-            Text(NSLocalizedString("home.trend.empty", comment: ""))
-                .font(.system(size: 13))
-                .foregroundColor(.secondary)
-                .padding(.horizontal, 16)
-                .padding(.vertical, 24)
-        }
-    }
-
-    /// 取得失敗表示。種別に応じたメッセージ＋「再試行」ボタン。
-    private func trendError(_ kind: TrendRepository.FailureKind) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
-            trendSectionHeader
-            VStack(spacing: 12) {
-                Image(systemName: kind == .network ? "wifi.slash" : "exclamationmark.triangle")
-                    .font(.system(size: 28))
-                    .foregroundColor(.secondary)
-                Text(NSLocalizedString(kind.messageKey, comment: ""))
-                    .font(.system(size: 13))
-                    .foregroundColor(.secondary)
-                    .multilineTextAlignment(.center)
-                Button {
-                    Task { await repository.retry() }
-                } label: {
-                    Text(NSLocalizedString("home.trend.retry", comment: "再試行"))
-                        .font(.system(size: 14, weight: .semibold))
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 10)
-                        .background(PlanTheme.primary)
-                        .clipShape(Capsule())
-                }
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.horizontal, 16)
-            .padding(.vertical, 24)
-        }
-    }
-
-    private var trendSectionHeader: some View {
-        HStack(spacing: 8) {
-            Text(NSLocalizedString("home.trend.section.title", comment: "トレンド"))
-                .font(.system(size: 20, weight: .bold))
-            YouTubeBadge()
-            Spacer()
-        }
-        .padding(.horizontal, 16)
     }
 
     // MARK: - 共通セクション見出し
