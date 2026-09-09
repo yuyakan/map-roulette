@@ -266,36 +266,60 @@ struct TourismDetailView: View {
 
     // MARK: - トレンド動画セクション（YouTube Shorts）
 
-    /// この県の Shorts をカテゴリ問わずまとめて横スクロールで見せる。
+    /// カテゴリ表示順（cafe → spot → gourmet）。バッチの categoryKey と一致。
+    private static let categoryOrder = ["cafe", "spot", "gourmet"]
+
+    /// この県の Shorts を「カテゴリごとの行」で見せる。
+    /// カテゴリ内に動画があるグループだけを、定義順（categoryOrder）で並べる。
     /// 動画が 1 本も無い県では、セクションごと表示しない（要件C: 独自コンテンツと共存・要件D: 出典）。
     @ViewBuilder
     private var trendVideoSection: some View {
-        let videos = trends.videos(for: prefecture)
-        if !videos.isEmpty {
-            VStack(alignment: .leading, spacing: 16) {
+        let groups = trends.groups(for: prefecture)
+            .filter { !$0.videos.isEmpty }
+            .sorted { lhs, rhs in
+                let li = Self.categoryOrder.firstIndex(of: lhs.categoryKey) ?? .max
+                let ri = Self.categoryOrder.firstIndex(of: rhs.categoryKey) ?? .max
+                return li < ri
+            }
+        if !groups.isEmpty {
+            VStack(alignment: .leading, spacing: 20) {
                 RichSectionHeader(
                     icon: "play.rectangle.fill",
                     title: "tourism_detail_trend".localized,
                     accent: PlanTheme.primary
                 )
 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 12) {
-                        ForEach(Array(videos.enumerated()), id: \.element.id) { index, video in
-                            Button {
-                                shortsFeed = PrefShortsFeed(videos: videos, startIndex: index)
-                            } label: {
-                                TrendCard(video: video)
-                            }
-                            .buttonStyle(.plain)
-                        }
-                    }
-                    .padding(.horizontal, 2)
-                    // 横 ScrollView の上端クリップでカード角丸が欠けるのを防ぐ余白。
-                    .padding(.vertical, 8)
+                ForEach(groups) { group in
+                    trendCategoryRow(group)
                 }
             }
             .padding(.horizontal)
+        }
+    }
+
+    /// カテゴリ 1 行: カテゴリ名見出し + そのカテゴリの動画サムネ横スクロール。
+    /// 再生はそのカテゴリ内の動画配列で開く（同カテゴリ内をスワイプで連続再生）。
+    private func trendCategoryRow(_ group: TrendGroup) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(group.category)
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundColor(.secondary)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    ForEach(Array(group.videos.enumerated()), id: \.element.id) { index, video in
+                        Button {
+                            shortsFeed = PrefShortsFeed(videos: group.videos, startIndex: index)
+                        } label: {
+                            TrendCard(video: video)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                .padding(.horizontal, 2)
+                // 横 ScrollView の上端クリップでカード角丸が欠けるのを防ぐ余白。
+                .padding(.vertical, 8)
+            }
         }
     }
 
