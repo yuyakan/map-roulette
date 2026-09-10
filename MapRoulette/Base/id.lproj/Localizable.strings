@@ -5132,6 +5132,10 @@
 "plan.section.visited" = "Dikunjungi";
 "plan.badge.completed" = "Selesai";
 "plan.completed.toggle" = "Tandai sudah dikunjungi";
+"plan.status.upcoming" = "Akan datang";
+"plan.status.ongoing" = "Berlangsung";
+"plan.status.completed" = "Selesai";
+"plan.status.label" = "Status";
 "plan.section.itinerary" = "Itinerari";
 "plan.section.cost" = "Biaya";
 "plan.cost.total" = "Total";
@@ -5513,6 +5517,11 @@
 "home.quick.plan" = "Rencana Saya";
 "home.trend.section.title" = "Sedang tren";
 "home.section.recent" = "Baru dilihat";
+"home.section.ongoing" = "Perjalanan berlangsung";
+"home.section.upcoming" = "Perjalanan berikutnya";
+"home.ongoing.empty.title" = "Tidak ada perjalanan berlangsung";
+"home.ongoing.empty.subtitle" = "Tandai rencana sebagai berlangsung untuk melihatnya di sini.";
+"home.ongoing.empty.action" = "Ke Rencana Saya";
 "home.section.favorite" = "Favorit";
 "home.section.recommended" = "Rekomendasi";
 "home.trend.group.title" = "%2$@ di %1$@";

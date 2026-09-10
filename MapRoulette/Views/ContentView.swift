@@ -9,14 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    // 起動時のデフォルトはホームタブ（真ん中＝index 2）
-    @State private var selectedTab = 2
+    // タブ選択・画面またぎ遷移の唯一の共有状態（起動時のデフォルトはホーム＝index 2）。
+    @ObservedObject private var router = AppRouter.shared
 
     var body: some View {
         VStack(spacing: 0) {
             // メインコンテンツ
             Group {
-                switch selectedTab {
+                switch router.selectedTab {
                 case 0:
                     // 都道府県・温泉・自然を1タブに統合
                     IntegratedMapView()
@@ -36,7 +36,7 @@ struct ContentView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
 
             // カスタムタブバー
-            CustomTabBar(selectedTab: $selectedTab)
+            CustomTabBar(selectedTab: $router.selectedTab)
         }
         .ignoresSafeArea(.keyboard, edges: .bottom)
     }

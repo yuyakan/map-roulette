@@ -27,7 +27,7 @@ final class RecentPrefectureStore: ObservableObject {
     @Published private(set) var recents: [Prefecture] = []
 
     /// 保持する最大件数。これを超えたら古いもの（末尾）から落とす。
-    private let maxCount = 10
+    private let maxCount = 3
     private let storageKey = "recent.prefectures"
 
     init() {

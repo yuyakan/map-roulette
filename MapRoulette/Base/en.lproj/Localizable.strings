@@ -5132,6 +5132,10 @@
 "plan.section.visited" = "Visited";
 "plan.badge.completed" = "Done";
 "plan.completed.toggle" = "Mark as visited";
+"plan.status.upcoming" = "Upcoming";
+"plan.status.ongoing" = "In progress";
+"plan.status.completed" = "Completed";
+"plan.status.label" = "Status";
 "plan.section.itinerary" = "Itinerary";
 "plan.section.cost" = "Cost";
 "plan.cost.total" = "Total";
@@ -5513,6 +5517,11 @@
 "home.quick.plan" = "My Plans";
 "home.trend.section.title" = "Trending";
 "home.section.recent" = "Recently viewed";
+"home.section.ongoing" = "On this trip";
+"home.section.upcoming" = "Next trip";
+"home.ongoing.empty.title" = "No trip in progress";
+"home.ongoing.empty.subtitle" = "Mark a plan as in progress to see it here.";
+"home.ongoing.empty.action" = "Go to My Plans";
 "home.section.favorite" = "Favorites";
 "home.section.recommended" = "Recommended";
 "home.trend.group.title" = "%2$@ in %1$@";

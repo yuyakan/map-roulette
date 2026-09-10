@@ -24,6 +24,7 @@ private enum MyPlansSection: Int, CaseIterable {
 
 struct MyPlansView: View {
     @ObservedObject private var store = TravelPlanStore.shared
+    @ObservedObject private var router = AppRouter.shared
     @State private var showingNewPlanSheet = false
     @State private var newPlanTitle = ""
     @State private var editMode: EditMode = .inactive
@@ -49,7 +50,9 @@ struct MyPlansView: View {
             }
             // 背景グラデーションは切替帯も含めた画面全体の背後に敷き、
             // 帯自体は透明にして下の背景と馴染ませる（帯だけ白く浮くのを防ぐ）。
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            // alignment:.top を明示しないと、空状態のように内容が小さいとき VStack 全体が
+            // 中央寄せになり、切替帯まで一緒に下へ落ちてしまう（一覧が空のとき帯が下がる不具合）。
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .background(PlanTheme.pageBackground.ignoresSafeArea())
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -75,8 +78,20 @@ struct MyPlansView: View {
             .sheet(isPresented: $showingNewPlanSheet) {
                 newPlanSheet
             }
+            // ホーム等から「新規作成シートを開いてほしい」と予約されていたら消化する。
+            // タブ切替でこのビューが現れたとき（onAppear）と、既に表示中に予約が来たとき（onChange）の両方に対応。
+            .onAppear { consumePendingNewPlan() }
+            .onChange(of: router.pendingNewPlan) { _, _ in consumePendingNewPlan() }
         }
         .tint(PlanTheme.primary)
+    }
+
+    /// AppRouter の新規作成予約を消化する。一覧セクションに切り替えてからシートを開き、予約を戻す。
+    private func consumePendingNewPlan() {
+        guard router.pendingNewPlan else { return }
+        router.pendingNewPlan = false
+        section = .list
+        showingNewPlanSheet = true
     }
 
     // MARK: - 空状態
@@ -113,6 +128,9 @@ struct MyPlansView: View {
             .padding(.top, 8)
         }
         .padding()
+        // 帯の下の残り領域いっぱいに広がり、その中で中央寄せする。
+        // （外側 VStack を上詰めにした分、空状態のイラストが上に張り付くのを防ぐ）
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     // MARK: - 一覧
@@ -130,7 +148,7 @@ struct MyPlansView: View {
                         } label: { EmptyView() }
                         .opacity(0)
                     }
-                    PlanCardView(plan: plan)
+                    PlanCardView(plan: plan, store: store)
                         .contentShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
                 }
                 .listRowSeparator(.hidden)
@@ -288,6 +306,7 @@ private struct PlanSectionBand: View {
 
 private struct PlanCardView: View {
     let plan: TravelPlan
+    let store: TravelPlanStore
 
     /// プラン内の代表カテゴリ（最大4種）をアイコン表示。費用専用アイテムは旅程の見た目に出さない。
     private var categoryIcons: [PlanItemCategory] {
@@ -309,17 +328,9 @@ private struct PlanCardView: View {
                             .font(.title3.bold())
                             .foregroundColor(.white)
                             .lineLimit(2)
-                        // 旅行済みプランには「済」バッジを付ける
-                        if plan.isCompleted {
-                            Label(NSLocalizedString("plan.badge.completed", comment: ""),
-                                  systemImage: "checkmark.seal.fill")
-                                .labelStyle(.titleAndIcon)
-                                .font(.caption2.bold())
-                                .foregroundColor(PlanTheme.primary)
-                                .padding(.horizontal, 8)
-                                .padding(.vertical, 3)
-                                .background(Capsule().fill(.white))
-                        }
+                        // 状態チップ。タップでその場でステータスを切り替えるメニューを開く
+                        // （常に表示。これからも含めて一覧から直接変更できる）。
+                        statusMenu
                     }
                     Text(String(format: NSLocalizedString("plan.itemcount.format", comment: ""), plan.itineraryItems.count))
                         .font(.caption.bold())
@@ -362,5 +373,36 @@ private struct PlanCardView: View {
         }
         .clipShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
         .shadow(color: PlanTheme.cardShadow, radius: 10, x: 0, y: 4)
+    }
+
+    /// 状態チップ兼メニュー。現在の状態を白カプセルで見せ、タップで 3 択を開く。
+    /// Menu はカードを覆う透明 NavigationLink よりタップが優先されるため、
+    /// ここをタップしたときだけ詳細遷移せずステータス変更できる。
+    private var statusMenu: some View {
+        Menu {
+            Picker(NSLocalizedString("plan.status.label", comment: ""),
+                   selection: Binding(
+                    get: { plan.status },
+                    set: { store.setStatus($0, for: plan.id) }
+                   )) {
+                ForEach(PlanStatus.allCases, id: \.self) { status in
+                    Label(status.localizedName, systemImage: status.icon).tag(status)
+                }
+            }
+        } label: {
+            HStack(spacing: 4) {
+                Image(systemName: plan.status.icon)
+                Text(plan.status.localizedName)
+                Image(systemName: "chevron.down")
+                    .font(.system(size: 9, weight: .bold))
+            }
+            .labelStyle(.titleAndIcon)
+            .font(.caption2.bold())
+            .foregroundColor(PlanTheme.primary)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 3)
+            .background(Capsule().fill(.white))
+        }
+        .buttonStyle(.plain)
     }
 }

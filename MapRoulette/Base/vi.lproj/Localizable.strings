@@ -5132,6 +5132,10 @@
 "plan.section.visited" = "Đã đến";
 "plan.badge.completed" = "Xong";
 "plan.completed.toggle" = "Đánh dấu đã đi";
+"plan.status.upcoming" = "Sắp tới";
+"plan.status.ongoing" = "Đang diễn ra";
+"plan.status.completed" = "Hoàn thành";
+"plan.status.label" = "Trạng thái";
 "plan.section.itinerary" = "Lịch trình";
 "plan.section.cost" = "Chi phí";
 "plan.cost.total" = "Tổng cộng";
@@ -5513,6 +5517,11 @@
 "home.quick.plan" = "Kế hoạch của tôi";
 "home.trend.section.title" = "Xu hướng";
 "home.section.recent" = "Xem gần đây";
+"home.section.ongoing" = "Chuyến đi hiện tại";
+"home.section.upcoming" = "Chuyến đi tiếp theo";
+"home.ongoing.empty.title" = "Không có chuyến đi nào đang diễn ra";
+"home.ongoing.empty.subtitle" = "Đánh dấu một kế hoạch là đang diễn ra để xem tại đây.";
+"home.ongoing.empty.action" = "Đến Kế hoạch của tôi";
 "home.section.favorite" = "Yêu thích";
 "home.section.recommended" = "Đề xuất";
 "home.trend.group.title" = "%2$@ ở %1$@";

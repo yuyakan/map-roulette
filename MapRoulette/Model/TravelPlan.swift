@@ -313,6 +313,31 @@ struct TimeBlock: Identifiable, Codable, Hashable {
     }
 }
 
+// MARK: - PlanStatus
+/// 旅行プランの進行状態。旧データの isCompleted（Bool）を置き換える 3 状態。
+/// - upcoming:  これから行く（デフォルト）
+/// - ongoing:   進行中（今まさに旅行中。ホーム最上部に 1 件だけ導線を出す対象）
+/// - completed: 旅行済み（訪問済みマップの集計対象）
+/// 旧データは isCompleted の真偽で completed / upcoming に振り分けて移行する。
+enum PlanStatus: String, Codable, CaseIterable {
+    case upcoming
+    case ongoing
+    case completed
+
+    var localizedName: String {
+        NSLocalizedString("plan.status.\(rawValue)", comment: "")
+    }
+
+    /// ステータスチップ等で使う SF Symbol。
+    var icon: String {
+        switch self {
+        case .upcoming:  return "calendar"
+        case .ongoing:   return "airplane"
+        case .completed: return "checkmark.seal.fill"
+        }
+    }
+}
+
 // MARK: - TravelPlan
 /// 1 つの旅行プラン（旅のしおり）。順序を持つ PlanItem のリストを保持する。
 struct TravelPlan: Identifiable, Codable, Hashable {
@@ -324,9 +349,13 @@ struct TravelPlan: Identifiable, Codable, Hashable {
     var groupingMode: PlanGroupingMode  // 表示の区切り方（プランごとに保存）
     var dayCount: Int                   // 日程モードでの日数（最低 1）
     var timeBlocks: [TimeBlock]         // 日程内の時間ブロック定義（日程モードで使用）
-    var isCompleted: Bool               // 旅行済みか（訪問済みマップの集計対象になる）
+    var status: PlanStatus              // 進行状態（upcoming / ongoing / completed）。旧 isCompleted を置換。
     let createdAt: Date
     var updatedAt: Date
+
+    /// 旅行済みか（訪問済みマップの集計対象になる）。status からの派生。
+    /// 既存の読み取り箇所との後方互換のために残す。書き込みは status を直接更新すること。
+    var isCompleted: Bool { status == .completed }
 
     init(
         id: UUID = UUID(),
@@ -337,7 +366,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         groupingMode: PlanGroupingMode = .flat,
         dayCount: Int = 1,
         timeBlocks: [TimeBlock] = [],
-        isCompleted: Bool = false,
+        status: PlanStatus = .upcoming,
         createdAt: Date = Date(),
         updatedAt: Date = Date()
     ) {
@@ -349,14 +378,14 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         self.groupingMode = groupingMode
         self.dayCount = max(1, dayCount)
         self.timeBlocks = timeBlocks
-        self.isCompleted = isCompleted
+        self.status = status
         self.createdAt = createdAt
         self.updatedAt = updatedAt
     }
 
-    // 古い保存データ（groupingMode / dayCount / timeBlocks / isCompleted / members 無し）との後方互換
+    // 古い保存データ（groupingMode / dayCount / timeBlocks / status / members 無し）との後方互換
     enum CodingKeys: String, CodingKey {
-        case id, title, memo, items, members, groupingMode, dayCount, timeBlocks, isCompleted, createdAt, updatedAt
+        case id, title, memo, items, members, groupingMode, dayCount, timeBlocks, status, isCompleted, createdAt, updatedAt
     }
 
     init(from decoder: Decoder) throws {
@@ -378,10 +407,33 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         groupingMode = (try? c.decodeIfPresent(PlanGroupingMode.self, forKey: .groupingMode)) ?? .flat
         dayCount = max(1, try c.decodeIfPresent(Int.self, forKey: .dayCount) ?? 1)
         timeBlocks = try c.decodeIfPresent([TimeBlock].self, forKey: .timeBlocks) ?? []
-        // 旧データは isCompleted を持たないため未完了扱い
-        isCompleted = try c.decodeIfPresent(Bool.self, forKey: .isCompleted) ?? false
+        // status を優先。無い旧データは isCompleted（Bool）から completed / upcoming へ移行。
+        if let decodedStatus = try c.decodeIfPresent(PlanStatus.self, forKey: .status) {
+            status = decodedStatus
+        } else {
+            let legacyCompleted = try c.decodeIfPresent(Bool.self, forKey: .isCompleted) ?? false
+            status = legacyCompleted ? .completed : .upcoming
+        }
         createdAt = try c.decode(Date.self, forKey: .createdAt)
         updatedAt = try c.decode(Date.self, forKey: .updatedAt)
+    }
+
+    // isCompleted が computed property になり自動合成が使えないため、明示的にエンコードする。
+    // status を正とし、旧バージョンのアプリでも読めるよう isCompleted も併記しておく。
+    func encode(to encoder: Encoder) throws {
+        var c = encoder.container(keyedBy: CodingKeys.self)
+        try c.encode(id, forKey: .id)
+        try c.encode(title, forKey: .title)
+        try c.encode(memo, forKey: .memo)
+        try c.encode(items, forKey: .items)
+        try c.encode(members, forKey: .members)
+        try c.encode(groupingMode, forKey: .groupingMode)
+        try c.encode(dayCount, forKey: .dayCount)
+        try c.encode(timeBlocks, forKey: .timeBlocks)
+        try c.encode(status, forKey: .status)
+        try c.encode(isCompleted, forKey: .isCompleted)   // 後方互換（旧アプリ用）
+        try c.encode(createdAt, forKey: .createdAt)
+        try c.encode(updatedAt, forKey: .updatedAt)
     }
 
     // MARK: - 項目の分類（旅程 / 費用）

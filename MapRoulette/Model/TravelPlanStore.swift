@@ -193,18 +193,37 @@ final class TravelPlanStore: ObservableObject {
 
     // MARK: - 表示モード・日程
 
-    /// プランの「旅行済み」状態を切り替える。
-    /// オンにした瞬間、そのプランに含まれる都道府県を訪問済みへ上書き（後勝ち）する。
-    /// オフに戻しても訪問済みからは自動で外さない（外したい県は地図タップで各自オフにする）。
-    func setCompleted(_ completed: Bool, for planID: UUID) {
+    /// プランの進行状態（これから / 進行中 / 旅行済み）を設定する。
+    /// 旅行済み（.completed）にした瞬間、そのプランの都道府県を訪問済みへ上書き（後勝ち）する。
+    /// 旅行済みから外しても訪問済みからは自動で外さない（外したい県は地図タップで各自オフにする）。
+    func setStatus(_ status: PlanStatus, for planID: UUID) {
         guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
-        guard plans[index].isCompleted != completed else { return }
-        plans[index].isCompleted = completed
+        guard plans[index].status != status else { return }
+        plans[index].status = status
         plans[index].updatedAt = Date()
         persist()
-        if completed {
+        if status == .completed {
             VisitedPrefectureStore.shared.markVisited(plans[index].prefectures)
         }
+    }
+
+    /// 旧 API 互換。旅行済みトグル（true=.completed / false=.upcoming）。
+    func setCompleted(_ completed: Bool, for planID: UUID) {
+        setStatus(completed ? .completed : .upcoming, for: planID)
+    }
+
+    /// 指定状態のプランのうち、最も最近更新された 1 件。
+    private func latestPlan(with status: PlanStatus) -> TravelPlan? {
+        plans.filter { $0.status == status }.max(by: { $0.updatedAt < $1.updatedAt })
+    }
+
+    /// 現在「進行中」のプラン（最も最近更新されたもの 1 件）。
+    var ongoingPlan: TravelPlan? { latestPlan(with: .ongoing) }
+
+    /// ホーム最上部の帯カードに出すプラン 1 件。
+    /// 進行中を最優先し、無ければ計画中（どちらも最新更新のもの）。両方無ければ nil。
+    var featuredPlan: TravelPlan? {
+        ongoingPlan ?? latestPlan(with: .upcoming)
     }
 
     /// 表示の区切り方（都道府県/日程）を切り替える。

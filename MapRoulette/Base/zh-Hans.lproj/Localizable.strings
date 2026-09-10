@@ -6055,6 +6055,10 @@
 "plan.section.visited" = "已访问";
 "plan.badge.completed" = "已完成";
 "plan.completed.toggle" = "标记为已旅行";
+"plan.status.upcoming" = "即将出发";
+"plan.status.ongoing" = "进行中";
+"plan.status.completed" = "已完成";
+"plan.status.label" = "状态";
 "plan.section.itinerary" = "行程";
 "plan.section.cost" = "费用";
 "plan.cost.total" = "合计";
@@ -6144,6 +6148,11 @@
 "home.quick.plan" = "我的计划";
 "home.trend.section.title" = "热门趋势";
 "home.section.recent" = "最近浏览";
+"home.section.ongoing" = "进行中的旅程";
+"home.section.upcoming" = "下一段旅程";
+"home.ongoing.empty.title" = "没有进行中的旅程";
+"home.ongoing.empty.subtitle" = "将计划标记为进行中即可显示在此处。";
+"home.ongoing.empty.action" = "前往我的计划";
 "home.section.favorite" = "收藏";
 "home.section.recommended" = "推荐";
 "home.trend.group.title" = "%1$@的%2$@";

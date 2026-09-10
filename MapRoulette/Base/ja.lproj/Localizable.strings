@@ -5129,6 +5129,10 @@
 "plan.section.visited" = "訪問済み";
 "plan.badge.completed" = "済";
 "plan.completed.toggle" = "旅行済みにする";
+"plan.status.upcoming" = "計画中";
+"plan.status.ongoing" = "進行中";
+"plan.status.completed" = "旅行済み";
+"plan.status.label" = "状態";
 "plan.section.itinerary" = "旅程";
 "plan.section.cost" = "費用";
 "plan.cost.total" = "合計";
@@ -5510,6 +5514,11 @@
 "home.quick.plan" = "マイプラン";
 "home.trend.section.title" = "トレンド";
 "home.section.recent" = "最近見た県";
+"home.section.ongoing" = "進行中の旅";
+"home.section.upcoming" = "計画中の旅";
+"home.ongoing.empty.title" = "予定している旅はありません";
+"home.ongoing.empty.subtitle" = "プランを作るとここに表示されます。";
+"home.ongoing.empty.action" = "マイプランへ";
 "home.section.favorite" = "お気に入りの県";
 "home.section.recommended" = "おすすめ";
 "home.trend.group.title" = "%1$@の%2$@";

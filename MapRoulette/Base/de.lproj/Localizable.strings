@@ -5132,6 +5132,10 @@
 "plan.section.visited" = "Besucht";
 "plan.badge.completed" = "Fertig";
 "plan.completed.toggle" = "Als besucht markieren";
+"plan.status.upcoming" = "Bevorstehend";
+"plan.status.ongoing" = "Läuft";
+"plan.status.completed" = "Abgeschlossen";
+"plan.status.label" = "Status";
 "plan.section.itinerary" = "Reiseplan";
 "plan.section.cost" = "Kosten";
 "plan.cost.total" = "Gesamt";
@@ -5513,6 +5517,11 @@
 "home.quick.plan" = "Meine Pläne";
 "home.trend.section.title" = "Im Trend";
 "home.section.recent" = "Zuletzt angesehen";
+"home.section.ongoing" = "Aktuelle Reise";
+"home.section.upcoming" = "Nächste Reise";
+"home.ongoing.empty.title" = "Keine laufende Reise";
+"home.ongoing.empty.subtitle" = "Markiere einen Plan als laufend, um ihn hier zu sehen.";
+"home.ongoing.empty.action" = "Zu Meine Pläne";
 "home.section.favorite" = "Favoriten";
 "home.section.recommended" = "Empfohlen";
 "home.trend.group.title" = "%2$@ in %1$@";

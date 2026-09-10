@@ -5132,6 +5132,10 @@
 "plan.section.visited" = "เยือนแล้ว";
 "plan.badge.completed" = "เสร็จ";
 "plan.completed.toggle" = "ทำเครื่องหมายว่าเที่ยวแล้ว";
+"plan.status.upcoming" = "กำลังจะถึง";
+"plan.status.ongoing" = "กำลังดำเนินการ";
+"plan.status.completed" = "เสร็จสิ้น";
+"plan.status.label" = "สถานะ";
 "plan.section.itinerary" = "กำหนดการ";
 "plan.section.cost" = "ค่าใช้จ่าย";
 "plan.cost.total" = "รวม";
@@ -5513,6 +5517,11 @@
 "home.quick.plan" = "แผนของฉัน";
 "home.trend.section.title" = "กำลังเป็นที่นิยม";
 "home.section.recent" = "ดูล่าสุด";
+"home.section.ongoing" = "ทริปที่กำลังไป";
+"home.section.upcoming" = "ทริปถัดไป";
+"home.ongoing.empty.title" = "ไม่มีทริปที่กำลังดำเนินการ";
+"home.ongoing.empty.subtitle" = "ทำเครื่องหมายแผนว่ากำลังดำเนินการเพื่อแสดงที่นี่";
+"home.ongoing.empty.action" = "ไปที่แผนของฉัน";
 "home.section.favorite" = "รายการโปรด";
 "home.section.recommended" = "แนะนำ";
 "home.trend.group.title" = "%2$@ใน%1$@";

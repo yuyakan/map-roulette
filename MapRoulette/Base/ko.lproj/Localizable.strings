@@ -5363,6 +5363,10 @@
 "plan.section.visited" = "방문함";
 "plan.badge.completed" = "완료";
 "plan.completed.toggle" = "여행 완료로 표시";
+"plan.status.upcoming" = "예정";
+"plan.status.ongoing" = "진행 중";
+"plan.status.completed" = "완료";
+"plan.status.label" = "상태";
 "plan.section.itinerary" = "일정";
 "plan.section.cost" = "비용";
 "plan.cost.total" = "합계";
@@ -5452,6 +5456,11 @@
 "home.quick.plan" = "내 플랜";
 "home.trend.section.title" = "트렌드";
 "home.section.recent" = "최근 본 지역";
+"home.section.ongoing" = "진행 중인 여행";
+"home.section.upcoming" = "다음 여행";
+"home.ongoing.empty.title" = "진행 중인 여행이 없습니다";
+"home.ongoing.empty.subtitle" = "플랜을 진행 중으로 표시하면 여기에 나타납니다.";
+"home.ongoing.empty.action" = "내 플랜으로";
 "home.section.favorite" = "즐겨찾기";
 "home.section.recommended" = "추천";
 "home.trend.group.title" = "%1$@의 %2$@";

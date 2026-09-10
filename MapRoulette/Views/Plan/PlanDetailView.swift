@@ -133,8 +133,8 @@ struct PlanDetailView: View {
                     flatList(for: plan)
                 }
 
-                // 旅行済みトグルはリスト末尾へ控えめに置く（常に大きく占有しない）。
-                completedFooter(for: plan)
+                // 進行状態の切り替えはリスト末尾へ控えめに置く（常に大きく占有しない）。
+                statusFooter(for: plan)
             }
             .padding(.horizontal)
             .padding(.top, 12)
@@ -167,18 +167,25 @@ struct PlanDetailView: View {
         .planCard()
     }
 
-    // MARK: - 旅行済みフッター（リスト末尾の控えめなトグル）
+    // MARK: - 進行状態フッター（リスト末尾の控えめなステータス切替）
 
-    /// リストの一番下に置く「旅行済みにする」トグル。
+    /// リストの一番下に置く進行状態（これから / 進行中 / 旅行済み）の切替。
     /// 常に目立つ位置を大きく占有しないよう、スクロール末尾に控えめに配置する。
-    /// ONにすると訪問済みマップの集計対象になる。
-    private func completedFooter(for plan: TravelPlan) -> some View {
-        Toggle(isOn: completedBinding(for: plan)) {
-            Label(NSLocalizedString("plan.completed.toggle", comment: ""), systemImage: "checkmark.seal.fill")
+    /// 「旅行済み」にすると訪問済みマップの集計対象になる。
+    private func statusFooter(for plan: TravelPlan) -> some View {
+        HStack {
+            Label(NSLocalizedString("plan.status.label", comment: ""), systemImage: "flag.fill")
                 .font(.footnote.bold())
-                .foregroundColor(plan.isCompleted ? PlanTheme.primary : .secondary)
+                .foregroundColor(.secondary)
+            Spacer()
+            Picker("", selection: statusBinding(for: plan)) {
+                ForEach(PlanStatus.allCases, id: \.self) { status in
+                    Label(status.localizedName, systemImage: status.icon).tag(status)
+                }
+            }
+            .pickerStyle(.menu)
+            .tint(PlanTheme.primary)
         }
-        .tint(PlanTheme.primary)
         .padding(.horizontal, 4)
         .padding(.top, 4)
     }
@@ -271,10 +278,10 @@ struct PlanDetailView: View {
         )
     }
 
-    private func completedBinding(for plan: TravelPlan) -> Binding<Bool> {
+    private func statusBinding(for plan: TravelPlan) -> Binding<PlanStatus> {
         Binding(
-            get: { plan.isCompleted },
-            set: { store.setCompleted($0, for: planID) }
+            get: { plan.status },
+            set: { store.setStatus($0, for: planID) }
         )
     }
 
