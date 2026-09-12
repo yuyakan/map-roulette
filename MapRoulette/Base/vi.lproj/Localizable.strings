@@ -5196,6 +5196,8 @@
 "plan.custom.location.pick" = "Chọn vị trí";
 "plan.custom.location.clear" = "Xóa vị trí";
 "common.edit" = "Sửa";
+"common.readmore" = "Xem thêm";
+"common.collapse" = "Thu gọn";
 "common.done" = "Xong";
 "plan.address.copy" = "Sao chép địa chỉ";
 "plan.day.additem" = "Thêm mục vào ngày này";
@@ -5213,6 +5215,7 @@
 "plan.location.savepoint" = "Lưu điểm này";
 "plan.map.route.weblimit" = "Khi mở trong trình duyệt, một số điểm dừng có thể không được đưa vào lộ trình";
 "plan.edit" = "Sửa kế hoạch";
+"plan.detail.empty.edithint" = "Chạm “Sửa” ở trên cùng bên phải để thêm mục";
 "plan.item.addmemo" = "Thêm ghi chú";
 "plan.item.editmemo" = "Sửa ghi chú";
 "plan.item.memo" = "Ghi chú";
@@ -5534,6 +5537,7 @@
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "Xem trên YouTube";
 "home.trend.source.note" = "Video được cung cấp bởi YouTube";
+"home.trend.source.developed" = "Developed with YouTube";
 "home.trend.area.tokyo" = "Tokyo";
 "home.trend.area.kyoto" = "Kyoto";
 "home.trend.area.osaka" = "Osaka";

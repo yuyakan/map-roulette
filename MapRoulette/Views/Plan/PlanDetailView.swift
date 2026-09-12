@@ -30,9 +30,15 @@ struct PlanDetailView: View {
     @State private var showingMapSheet = false
     @State private var showingMemoEditor = false
     @State private var showingCustomEditor = false
+    /// タイトル編集アラートの表示状態（タイトルは 1 行なので alert で完結させる）。
+    @State private var showingTitleEditor = false
     @State private var titleDraft = ""
     @State private var memoDraft = ""
     @State private var section: PlanDetailSection = .itinerary
+    /// 編集モード。false（通常）では旅程リストと県だけを静かに表示し、
+    /// 設定カード・削除ボタン・ドラッグハンドル・各種追加ボタンをすべて隠す。
+    /// true のとき初めて編集系 UI を出す。右上「編集」⇄「完了」で切り替える。
+    @State private var isEditing = false
     /// タップした県。セット時に県詳細（TourismDetailView）を全画面表示する。
     @State private var openedPrefecture: Prefecture?
     /// 県を複数選択して追加するシートの表示状態。
@@ -68,21 +74,49 @@ struct PlanDetailView: View {
         .toolbar {
             if let plan {
                 ToolbarItem(placement: .principal) {
-                    Text(plan.title).font(.headline)
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    ShareLink(item: PlanShareFormatter.text(for: plan)) {
-                        Image(systemName: "square.and.arrow.up")
-                            .foregroundColor(PlanTheme.primary)
+                    // 編集モードではタイトルをタップでタイトル編集（鉛筆付きボタン）。
+                    // 通常モードは素のタイトル表示。
+                    if isEditing {
+                        Button {
+                            startEditingTitle(plan)
+                        } label: {
+                            HStack(spacing: 4) {
+                                Text(plan.title)
+                                    .font(.headline)
+                                    .foregroundColor(.primary)
+                                    .lineLimit(1)
+                                Image(systemName: "pencil")
+                                    .font(.caption.bold())
+                                    .foregroundColor(PlanTheme.primary)
+                            }
+                        }
+                        .buttonStyle(.plain)
+                    } else {
+                        Text(plan.title).font(.headline)
                     }
-                    .accessibilityLabel(NSLocalizedString("plan.share", comment: ""))
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        startEditing(plan)
-                    } label: {
-                        Image(systemName: "square.and.pencil")
-                            .foregroundColor(PlanTheme.primary)
+                // 共有は旅程タブの通常モードのときだけ（編集中は編集操作に集中させる）。
+                if section == .itinerary, !isEditing {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        ShareLink(item: PlanShareFormatter.text(for: plan)) {
+                            Image(systemName: "square.and.arrow.up")
+                                .foregroundColor(PlanTheme.primary)
+                        }
+                        .accessibilityLabel(NSLocalizedString("plan.share", comment: ""))
+                    }
+                }
+                // 旅程タブでだけ編集モードに入れる（費用タブは別 UI）。
+                if section == .itinerary {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            withAnimation(.easeInOut(duration: 0.2)) { isEditing.toggle() }
+                        } label: {
+                            Text(isEditing
+                                 ? NSLocalizedString("common.done", comment: "")
+                                 : NSLocalizedString("common.edit", comment: ""))
+                                .font(isEditing ? .headline : .body)
+                                .foregroundColor(PlanTheme.primary)
+                        }
                     }
                 }
             }
@@ -92,14 +126,14 @@ struct PlanDetailView: View {
             // 上から「スポット追加」→「地図」の順に縦積み。
             if section == .itinerary, let plan {
                 VStack(spacing: 14) {
-                    // スポット追加 FAB。日程モードでは各 Day に追加ボタンがあるので、
-                    // フラット表示（日程分けなし）のときだけ出す。
-                    if plan.groupingMode != .day {
+                    // スポット追加 FAB は編集モードのときだけ。日程モードでは各 Day に
+                    // 追加ボタンがあるので、フラット表示（日程分けなし）のときだけ出す。
+                    if isEditing, plan.groupingMode != .day {
                         fabButton(icon: "plus", accessibility: NSLocalizedString("plan.spot.add", comment: "")) {
                             showingSpotQuickAdd = true
                         }
                     }
-                    // 地図 FAB は座標を持つ項目が 1 つ以上あるときだけ出す。
+                    // 地図 FAB は座標を持つ項目が 1 つ以上あるときだけ出す（閲覧にも使うので常時）。
                     if !plan.mappableItems.isEmpty {
                         fabButton(icon: "map.fill", accessibility: NSLocalizedString("plan.showmap", comment: "")) {
                             showingMapSheet = true
@@ -115,6 +149,12 @@ struct PlanDetailView: View {
         }
         .sheet(isPresented: $showingMemoEditor) {
             if let plan { memoEditor(for: plan) }
+        }
+        // タイトル編集（1 行なので alert のテキストフィールドで完結）。
+        .alert(NSLocalizedString("plan.title.label", comment: ""), isPresented: $showingTitleEditor) {
+            TextField(NSLocalizedString("plan.title.placeholder", comment: ""), text: $titleDraft)
+            Button(NSLocalizedString("common.cancel", comment: ""), role: .cancel) { }
+            Button(NSLocalizedString("common.save", comment: "")) { saveTitle() }
         }
         .sheet(isPresented: $showingCustomEditor) {
             CustomPlanItemEditor(planID: planID)
@@ -138,6 +178,10 @@ struct PlanDetailView: View {
         .sheet(isPresented: $showingSpotQuickAdd) {
             SpotQuickAddSheet(planID: planID, suggestedPrefectures: plan?.prefectures ?? [])
         }
+        // 費用タブへ移ったら編集モードは抜ける（編集は旅程タブ専用）。
+        .onChange(of: section) { _, newValue in
+            if newValue != .itinerary { isEditing = false }
+        }
         .tint(PlanTheme.primary)
     }
 
@@ -160,12 +204,18 @@ struct PlanDetailView: View {
     private func content(for plan: TravelPlan) -> some View {
         ScrollView {
             VStack(spacing: 16) {
+                // 県カードの「＋」「長押し削除」は編集モードのときだけ効かせる。
                 prefectureCard(for: plan)
 
-                controlCard(for: plan)
+                // 日程トグル・日数などの設定カードは編集モードのときだけ出す。
+                if isEditing {
+                    controlCard(for: plan)
+                }
 
                 if !plan.memo.isEmpty {
-                    memoCard(plan.memo)
+                    // 通常モードではメモが長いと 3 行で畳み「続きを読む」で展開。
+                    // 編集モードでは全文を出す（設定カードからメモ編集へ飛べる）。
+                    PlanMemoCard(memo: plan.memo, collapsible: !isEditing)
                 }
 
                 if plan.groupingMode == .day {
@@ -173,7 +223,12 @@ struct PlanDetailView: View {
                     // その日に直接ホテル・移動などを追加できるようにする。
                     dayGroups(for: plan)
                 } else if plan.itineraryItems.isEmpty {
-                    emptyHint
+                    // 通常モードで空なら静かな案内だけ。追加導線は編集モードの emptyHint に集約。
+                    if isEditing {
+                        emptyHint
+                    } else {
+                        quietEmptyHint
+                    }
                 } else {
                     flatList(for: plan)
                 }
@@ -181,8 +236,10 @@ struct PlanDetailView: View {
                 // スポット追加はフラット表示では右下のフローティングボタン（FAB）に集約。
                 // 日程モードでは各 Day にスポット追加ボタンがある。
 
-                // 進行状態の切り替えはリスト末尾へ控えめに置く（常に大きく占有しない）。
-                statusFooter(for: plan)
+                // 進行状態の切り替えは編集モードでだけ出す（リスト末尾に控えめに）。
+                if isEditing {
+                    statusFooter(for: plan)
+                }
             }
             .padding(.horizontal)
             .padding(.top, 12)
@@ -190,6 +247,22 @@ struct PlanDetailView: View {
             // 被らないよう広めに空ける。
             .padding(.bottom, 160)
         }
+    }
+
+    /// 通常モードで項目が空のときの静かな案内（追加導線は出さず、編集へ誘導するだけ）。
+    private var quietEmptyHint: some View {
+        VStack(spacing: 8) {
+            Text(NSLocalizedString("plan.detail.empty", comment: ""))
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: .infinity)
+            Text(NSLocalizedString("plan.detail.empty.edithint", comment: ""))
+                .font(.caption)
+                .foregroundColor(.secondary.opacity(0.8))
+                .multilineTextAlignment(.center)
+        }
+        .planCard()
     }
 
     // MARK: - 県カード（行き先候補 → 県詳細への起点）
@@ -202,16 +275,21 @@ struct PlanDetailView: View {
     @ViewBuilder
     private func prefectureCard(for plan: TravelPlan) -> some View {
         if plan.prefectures.isEmpty {
-            addPrefectureButton
-                .planCard()
+            // 県が無いとき: 編集モードなら追加ボタン、通常モードでは何も出さない。
+            if isEditing {
+                addPrefectureButton
+                    .planCard()
+            }
         } else {
             VStack(alignment: .leading, spacing: 12) {
                 FlowLayout(spacing: 8) {
                     ForEach(plan.prefectures) { prefecture in
                         prefectureChip(prefecture, in: plan)
                     }
-                    // チップ列の末尾に置く「＋」ボタン（追加の見出し役）。
-                    addPrefectureIconButton
+                    // チップ列末尾の「＋」は編集モードのときだけ（通常はタップで県詳細のみ）。
+                    if isEditing {
+                        addPrefectureIconButton
+                    }
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -317,7 +395,8 @@ struct PlanDetailView: View {
         }
         .buttonStyle(.plain)
         .contextMenu {
-            if isRemovable {
+            // 長押し削除は編集モードのときだけ。通常モードではタップで県詳細を開くだけ。
+            if isEditing, isRemovable {
                 Button(role: .destructive) {
                     store.removePrefecture(prefecture, from: planID)
                 } label: {
@@ -331,6 +410,24 @@ struct PlanDetailView: View {
 
     private func controlCard(for plan: TravelPlan) -> some View {
         VStack(spacing: 14) {
+            // メモの編集導線（編集モードの設定カード内）。タイトルはツールバーのタイトル部から編集。
+            Button {
+                startEditingMemo(plan)
+            } label: {
+                HStack {
+                    Label(NSLocalizedString("plan.item.editmemo", comment: ""), systemImage: "note.text")
+                        .font(.subheadline.bold())
+                        .foregroundColor(PlanTheme.primary)
+                    Spacer()
+                    Image(systemName: "chevron.right")
+                        .font(.caption.bold())
+                        .foregroundColor(.secondary.opacity(0.5))
+                }
+            }
+            .buttonStyle(.plain)
+
+            Divider()
+
             Toggle(isOn: dayModeBinding(for: plan)) {
                 Label(NSLocalizedString("plan.grouping.day.toggle", comment: ""), systemImage: "calendar")
                     .font(.subheadline.bold())
@@ -374,17 +471,6 @@ struct PlanDetailView: View {
         .padding(.top, 4)
     }
 
-    private func memoCard(_ memo: String) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Label(NSLocalizedString("plan.memo.label", comment: ""), systemImage: "note.text")
-                .font(.caption.bold())
-                .foregroundColor(PlanTheme.primary)
-            Text(memo).font(.subheadline)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .planCard()
-    }
-
     private var emptyHint: some View {
         VStack(spacing: 14) {
             Text(NSLocalizedString("plan.detail.empty", comment: ""))
@@ -422,11 +508,13 @@ struct PlanDetailView: View {
     private func flatList(for plan: TravelPlan) -> some View {
         VStack(spacing: 12) {
             ForEach(plan.itineraryItems) { item in
-                PlanItemCard(item: item, store: store, planID: planID, draggable: false)
+                PlanItemCard(item: item, store: store, planID: planID, draggable: false, isEditing: isEditing)
             }
 
-            // ホテル・移動などのカスタム項目を追加
-            addCustomButton
+            // ホテル・移動などのカスタム項目の追加は編集モードのときだけ。
+            if isEditing {
+                addCustomButton
+            }
         }
     }
 
@@ -440,7 +528,8 @@ struct PlanDetailView: View {
                     items: group.items,
                     plan: plan,
                     store: store,
-                    planID: planID
+                    planID: planID,
+                    isEditing: isEditing
                 )
             }
         }
@@ -469,10 +558,24 @@ struct PlanDetailView: View {
         )
     }
 
-    // MARK: - タイトル・メモ編集
+    // MARK: - タイトル編集（ツールバーのタイトル部から alert で）
 
-    private func startEditing(_ plan: TravelPlan) {
+    private func startEditingTitle(_ plan: TravelPlan) {
         titleDraft = plan.title
+        showingTitleEditor = true
+    }
+
+    private func saveTitle() {
+        guard var updated = plan else { return }
+        let trimmed = titleDraft.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return }   // 空タイトルは保存しない
+        updated.title = trimmed
+        store.updatePlan(updated)
+    }
+
+    // MARK: - メモ編集（メモ専用シート）
+
+    private func startEditingMemo(_ plan: TravelPlan) {
         memoDraft = plan.memo
         showingMemoEditor = true
     }
@@ -482,25 +585,13 @@ struct PlanDetailView: View {
             ZStack {
                 PlanTheme.pageBackground.ignoresSafeArea()
                 VStack(spacing: 16) {
-                    // タイトル
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text(NSLocalizedString("plan.title.label", comment: ""))
-                            .font(.caption.bold())
-                            .foregroundColor(PlanTheme.primary)
-                        TextField(NSLocalizedString("plan.title.placeholder", comment: ""), text: $titleDraft)
-                            .textFieldStyle(.plain)
-                            .font(.title3)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .planCard()
-
                     // メモ
                     VStack(alignment: .leading, spacing: 8) {
                         Text(NSLocalizedString("plan.memo.label", comment: ""))
                             .font(.caption.bold())
                             .foregroundColor(PlanTheme.primary)
                         TextEditor(text: $memoDraft)
-                            .frame(minHeight: 160)
+                            .frame(minHeight: 200)
                             .scrollContentBackground(.hidden)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -510,7 +601,7 @@ struct PlanDetailView: View {
                 }
                 .padding()
             }
-            .navigationTitle(NSLocalizedString("plan.edit", comment: ""))
+            .navigationTitle(NSLocalizedString("plan.item.editmemo", comment: ""))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -521,8 +612,6 @@ struct PlanDetailView: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button(NSLocalizedString("common.save", comment: "")) {
                         var updated = plan
-                        let trimmed = titleDraft.trimmingCharacters(in: .whitespacesAndNewlines)
-                        if !trimmed.isEmpty { updated.title = trimmed }
                         updated.memo = memoDraft
                         store.updatePlan(updated)
                         showingMemoEditor = false
@@ -530,6 +619,82 @@ struct PlanDetailView: View {
                 }
             }
         }
+    }
+}
+
+// MARK: - PlanMemoCard
+/// メモ表示カード。collapsible のとき、3 行を超えるメモは 3 行で畳み
+/// 「続きを読む」/「折りたたむ」で展開・収納できる。
+/// 切り詰めの有無は「3 行制限時の高さ」と「全文の高さ」を裏で測って比較し判定する。
+private struct PlanMemoCard: View {
+    let memo: String
+    /// true のとき 3 行で畳む（通常モード）。false は常に全文表示（編集モード）。
+    let collapsible: Bool
+
+    @State private var isExpanded = false
+    @State private var isTruncatable = false
+
+    private let collapsedLineLimit = 3
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Label(NSLocalizedString("plan.memo.label", comment: ""), systemImage: "note.text")
+                .font(.caption.bold())
+                .foregroundColor(PlanTheme.primary)
+
+            Text(memo)
+                .font(.subheadline)
+                .lineLimit(showFull ? nil : collapsedLineLimit)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(truncationProbe)
+
+            // 3 行を超えるときだけ展開トグルを出す（collapsible のときのみ）。
+            if collapsible && isTruncatable {
+                Button {
+                    withAnimation(.easeInOut(duration: 0.2)) { isExpanded.toggle() }
+                } label: {
+                    Text(isExpanded
+                         ? NSLocalizedString("common.collapse", comment: "")
+                         : NSLocalizedString("common.readmore", comment: ""))
+                        .font(.caption.bold())
+                        .foregroundColor(PlanTheme.primary)
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .planCard()
+    }
+
+    /// 全文を表示するか（展開中、または畳み対象でない＝編集モード）。
+    private var showFull: Bool { !collapsible || isExpanded }
+
+    /// 切り詰め判定用の裏測り。3 行制限した高さと全文高さを比較し、
+    /// 全文の方が高ければ「3 行を超える」と判断する。表示はしない。
+    private var truncationProbe: some View {
+        Text(memo)
+            .font(.subheadline)
+            .lineLimit(collapsedLineLimit)
+            .background(
+                GeometryReader { limitedGeo in
+                    Text(memo)
+                        .font(.subheadline)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .background(
+                            GeometryReader { fullGeo in
+                                Color.clear
+                                    .onAppear {
+                                        isTruncatable = fullGeo.size.height > limitedGeo.size.height + 1
+                                    }
+                                    .onChange(of: fullGeo.size.height) { _, newHeight in
+                                        isTruncatable = newHeight > limitedGeo.size.height + 1
+                                    }
+                            }
+                        )
+                        .hidden()
+                }
+            )
+            .hidden()
     }
 }
 
@@ -592,6 +757,7 @@ private struct DayDropSection: View {
     let plan: TravelPlan    // 時間ブロックの参照に必要
     let store: TravelPlanStore
     let planID: UUID
+    let isEditing: Bool     // 編集モードのときだけ追加ボタン・ドラッグ&ドロップを出す
     @State private var isTargeted = false
     @State private var showingCustomEditor = false
     @State private var showingSpotQuickAdd = false   // 県→スポット一覧から直接追加するシート
@@ -618,8 +784,8 @@ private struct DayDropSection: View {
                     .font(.headline)
                     .foregroundColor(day == nil ? .secondary : PlanTheme.primary)
                 Spacer()
-                // この日にカスタム項目（ホテル・移動など）を追加。「未割当」には出さない。
-                if day != nil {
+                // この日にカスタム項目（ホテル・移動など）を追加。編集モード・実日のときだけ。
+                if isEditing, day != nil {
                     Button {
                         showingCustomEditor = true
                     } label: {
@@ -637,13 +803,14 @@ private struct DayDropSection: View {
                     .foregroundColor(.secondary)
                     .frame(maxWidth: .infinity, minHeight: 44)
             } else if day == nil {
-                // 未割当セクションはタイムライン無しのフラット表示
+                // 未割当セクションはタイムライン無しのフラット表示（ドラッグは編集モードのみ）
                 ForEach(items) { item in
                     PlanItemCard(
                         item: item,
                         store: store,
                         planID: planID,
-                        draggable: true,
+                        draggable: isEditing,
+                        isEditing: isEditing,
                         onDrop: { droppedID in
                             store.moveItem(droppedID, toDay: day, before: item.id, in: planID)
                         }
@@ -658,43 +825,47 @@ private struct DayDropSection: View {
                         items: section.items,
                         store: store,
                         planID: planID,
+                        isEditing: isEditing,
                         onEditBlock: { editingBlock = $0 }
                     )
                 }
 
-                // この日に時間ブロックを追加
-                Button {
-                    let now = Calendar.current.dateComponents([.hour, .minute], from: Date())
-                    store.addTimeBlock(toDay: day!, startHour: now.hour, startMinute: now.minute, in: planID)
-                } label: {
-                    Label(NSLocalizedString("plan.timeblock.add", comment: ""), systemImage: "clock.badge.plus")
-                        .font(.caption.bold())
-                        .foregroundColor(PlanTheme.primary)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 10)
-                        .background(
-                            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .strokeBorder(PlanTheme.primary.opacity(0.4), style: StrokeStyle(lineWidth: 1, dash: [4]))
-                        )
-                }
-                .buttonStyle(.plain)
-                .padding(.top, 2)
+                // 時間ブロック・スポットの追加ボタンは編集モードのときだけ。
+                if isEditing {
+                    // この日に時間ブロックを追加
+                    Button {
+                        let now = Calendar.current.dateComponents([.hour, .minute], from: Date())
+                        store.addTimeBlock(toDay: day!, startHour: now.hour, startMinute: now.minute, in: planID)
+                    } label: {
+                        Label(NSLocalizedString("plan.timeblock.add", comment: ""), systemImage: "clock.badge.plus")
+                            .font(.caption.bold())
+                            .foregroundColor(PlanTheme.primary)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 10)
+                            .background(
+                                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                                    .strokeBorder(PlanTheme.primary.opacity(0.4), style: StrokeStyle(lineWidth: 1, dash: [4]))
+                            )
+                    }
+                    .buttonStyle(.plain)
+                    .padding(.top, 2)
 
-                // この日に県→スポット一覧から直接スポットを追加（この Day に割り当てて入る）。
-                Button {
-                    showingSpotQuickAdd = true
-                } label: {
-                    Label(NSLocalizedString("plan.spot.add", comment: ""), systemImage: "plus.magnifyingglass")
-                        .font(.caption.bold())
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 11)
-                        .background(
-                            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(PlanTheme.brandGradient)
-                        )
+                    // この日に県→スポット一覧から直接スポットを追加（この Day に割り当てて入る）。
+                    Button {
+                        showingSpotQuickAdd = true
+                    } label: {
+                        Label(NSLocalizedString("plan.spot.add", comment: ""), systemImage: "plus.magnifyingglass")
+                            .font(.caption.bold())
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 11)
+                            .background(
+                                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                                    .fill(PlanTheme.brandGradient)
+                            )
+                    }
+                    .buttonStyle(.plain)
                 }
-                .buttonStyle(.plain)
             }
         }
         .padding(14)
@@ -742,6 +913,7 @@ private struct TimelineBlockRow: View {
     let items: [PlanItem]
     let store: TravelPlanStore
     let planID: UUID
+    let isEditing: Bool
     let onEditBlock: (TimeBlock) -> Void
     @State private var isTargeted = false
     @State private var showingDeleteConfirm = false
@@ -823,46 +995,52 @@ private struct TimelineBlockRow: View {
                             .font(.subheadline.bold())
                             .foregroundColor(.primary)
                     }
-                    Button {
-                        onEditBlock(block)
-                    } label: {
-                        Image(systemName: "clock.arrow.circlepath")
-                            .font(.caption)
-                            .foregroundColor(PlanTheme.primary)
+                    // 時刻編集・削除は編集モードのときだけ出す。
+                    if isEditing {
+                        Button {
+                            onEditBlock(block)
+                        } label: {
+                            Image(systemName: "clock.arrow.circlepath")
+                                .font(.caption)
+                                .foregroundColor(PlanTheme.primary)
+                        }
+                        .buttonStyle(.plain)
+                        Spacer()
+                        // 時間ブロックの削除。誤タップ防止に確認アラートを挟む。
+                        Button {
+                            showingDeleteConfirm = true
+                        } label: {
+                            Image(systemName: "trash")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel(NSLocalizedString("plan.timeblock.delete", comment: ""))
                     }
-                    .buttonStyle(.plain)
-                    Spacer()
-                    // 時間ブロックの削除。誤タップ防止に確認アラートを挟む。
-                    Button {
-                        showingDeleteConfirm = true
-                    } label: {
-                        Image(systemName: "trash")
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel(NSLocalizedString("plan.timeblock.delete", comment: ""))
                 }
             }
 
             if items.isEmpty {
-                // 空ブロックのドロップ受け皿。判定領域を広く取り、破線の枠で落とせる場所を明示する。
-                Label(NSLocalizedString("plan.timeblock.empty", comment: ""), systemImage: "arrow.down.to.line")
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
-                    .frame(maxWidth: .infinity, minHeight: 60)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .strokeBorder(PlanTheme.primary.opacity(0.3), style: StrokeStyle(lineWidth: 1.5, dash: [5]))
-                    )
-                    .contentShape(Rectangle())
+                // 空ブロックのドロップ受け皿は編集モードのときだけ（通常は空なら何も出さない）。
+                if isEditing {
+                    Label(NSLocalizedString("plan.timeblock.empty", comment: ""), systemImage: "arrow.down.to.line")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                        .frame(maxWidth: .infinity, minHeight: 60)
+                        .background(
+                            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                                .strokeBorder(PlanTheme.primary.opacity(0.3), style: StrokeStyle(lineWidth: 1.5, dash: [5]))
+                        )
+                        .contentShape(Rectangle())
+                }
             } else {
                 ForEach(items) { item in
                     PlanItemCard(
                         item: item,
                         store: store,
                         planID: planID,
-                        draggable: true,
+                        draggable: isEditing,
+                        isEditing: isEditing,
                         onDrop: { droppedID in
                             store.moveItem(droppedID, toDay: day, block: blockID, before: item.id, in: planID)
                         }
@@ -987,6 +1165,9 @@ private struct PlanItemCard: View {
     let store: TravelPlanStore
     let planID: UUID
     let draggable: Bool
+    /// 編集モードか。false（通常）では削除ボタン・ドラッグハンドル・長押し削除を出さず、
+    /// タップで詳細を開くだけの静かなカードにする。
+    let isEditing: Bool
     /// このカードへドロップされたときの処理（ドロップ元の項目 ID を渡す）。日程モードのみ。
     var onDrop: ((UUID) -> Void)? = nil
     @State private var showingDetail = false
@@ -1026,8 +1207,8 @@ private struct PlanItemCard: View {
 
             Spacer()
 
-            if draggable {
-                // 日程モードでは削除を明示ボタンに（長押しは contextMenu と競合してドラッグを妨げるため付けない）
+            if isEditing {
+                // 編集モードでは削除を明示ボタンに（長押しは contextMenu と競合してドラッグを妨げるため付けない）
                 Button {
                     store.removeItem(item, from: planID)
                 } label: {
@@ -1037,9 +1218,12 @@ private struct PlanItemCard: View {
                 }
                 .buttonStyle(.plain)
 
-                Image(systemName: "line.3.horizontal")
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundColor(PlanTheme.primary.opacity(0.7))
+                // 並べ替えハンドルは日程モード（ドラッグ可能）のときだけ。
+                if draggable {
+                    Image(systemName: "line.3.horizontal")
+                        .font(.system(size: 15, weight: .semibold))
+                        .foregroundColor(PlanTheme.primary.opacity(0.7))
+                }
             } else {
                 Image(systemName: "chevron.right")
                     .font(.caption.bold())
@@ -1065,7 +1249,7 @@ private struct PlanItemCard: View {
         .onTapGesture {
             showingDetail = true
         }
-        .modifier(PlanItemInteraction(draggable: draggable, payload: item.id.uuidString) {
+        .modifier(PlanItemInteraction(draggable: draggable, isEditing: isEditing, payload: item.id.uuidString) {
             store.removeItem(item, from: planID)
         })
         // 日程モードでは各カードがドロップ先になり、ここへ落とすと「この項目の直前」へ挿入される。
@@ -1101,22 +1285,26 @@ private struct PlanItemDropTarget: ViewModifier {
 }
 
 /// 長押しジェスチャの競合を避けるための修飾子。
-/// - draggable=true（日程モード）: .draggable のみ。削除はカード上の明示ボタンで行う。
-/// - draggable=false（フラット表示）: .contextMenu（長押しで削除）のみ。
+/// - draggable=true（日程モードの編集）: .draggable のみ。削除はカード上の明示ボタンで行う。
+/// - draggable=false・isEditing=true（フラット表示の編集）: .contextMenu（長押しで削除）。
+/// - isEditing=false（通常モード）: 何も付けない（タップで詳細を開くだけ）。
 private struct PlanItemInteraction: ViewModifier {
     let draggable: Bool
+    let isEditing: Bool
     let payload: String
     let onDelete: () -> Void
 
     func body(content: Content) -> some View {
         if draggable {
             content.draggable(payload)
-        } else {
+        } else if isEditing {
             content.contextMenu {
                 Button(role: .destructive, action: onDelete) {
                     Label(NSLocalizedString("common.delete", comment: ""), systemImage: "trash")
                 }
             }
+        } else {
+            content
         }
     }
 }

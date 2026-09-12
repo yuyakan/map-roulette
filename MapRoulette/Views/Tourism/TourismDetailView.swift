@@ -164,7 +164,7 @@ struct TourismDetailView: View {
                         // 映えスポットの Shorts（観光地マップセクションの一番下）。
                         trendCategoryRow(for: "spot")
                     }
-                    .padding(.horizontal)
+                    .padding(.horizontal, 16)
 
                     AdaptiveBannerAdView()
 
@@ -172,7 +172,7 @@ struct TourismDetailView: View {
 
                     // グルメの Shorts（グルメセクションの一番下）。
                     trendCategoryRow(for: "gourmet")
-                        .padding(.horizontal)
+                        .padding(.horizontal, 16)
 
                     // グルメの下だけレクタングル(300x250)。eCPMが高い傾向のため試験的に採用。
                     MediumRectangleAdView()
@@ -308,14 +308,21 @@ struct TourismDetailView: View {
                 )
                 trendScroll(for: group)
             }
-            .padding(.horizontal)
+            .padding(.horizontal, 16)
         }
     }
 
     /// グループの動画サムネ横スクロール（タップで同カテゴリ内を連続再生）。共通部品。
-    private func trendScroll(for group: TrendGroup) -> some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 12) {
+    /// - Parameter sectionInset: このスクロールを内包するセクションが持つ左右 padding。
+    ///   その ぶんだけ ScrollView 側で負の padding を当てて画面端まで広げ、代わりに
+    ///   中身（カード列）の先頭・末尾へ同じ量のインセットを入れる。これで「見出しは
+    ///   内側・スクロールは端いっぱい（端のカードは見切れずに次が覗く）」を実現する。
+    private func trendScroll(for group: TrendGroup, sectionInset: CGFloat = 16) -> some View {
+        // カード間の間隔と、開始/終了に足す“見た目の余白”（sectionInset に上乗せ）。
+        let cardSpacing: CGFloat = 16
+        let edgeSpacing: CGFloat = 4
+        return ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: cardSpacing) {
                 ForEach(Array(group.videos.enumerated()), id: \.element.id) { index, video in
                     Button {
                         shortsFeed = PrefShortsFeed(videos: group.videos, startIndex: index)
@@ -325,10 +332,14 @@ struct TourismDetailView: View {
                     .buttonStyle(.plain)
                 }
             }
-            .padding(.horizontal, 2)
+            // カード列の左右端インセット。sectionInset ぶんは見出しと縦を揃えるため、
+            // edgeSpacing ぶんは開始/終了に少しゆとりを持たせるための上乗せ。
+            .padding(.horizontal, sectionInset + edgeSpacing)
             // 横 ScrollView の上端クリップでカード角丸が欠けるのを防ぐ余白。
             .padding(.vertical, 8)
         }
+        // 外側セクションの水平 padding を相殺し、スクロール自体は画面端まで広げる。
+        .padding(.horizontal, -sectionInset)
     }
 
     // MARK: - 実写フォトカルーセル

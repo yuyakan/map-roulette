@@ -118,12 +118,9 @@ private struct ShortsPage: View {
                         }
                     }
                     Spacer()
-                    // 「YouTubeで見る」導線（要件D）
-                    if let url = video.watchURL {
-                        Link(destination: url) {
-                            WatchOnYouTubeLabel()
-                        }
-                    }
+                    // 要件D: 出典は公式埋め込みプレイヤー自体の YouTube ブランドに委ねる。
+                    // 自作の赤い「YouTubeで見る」ラベルはブランドガイドライン違反のため撤去。
+                    // 追加の帰属アイコンも置かず、プレイヤーのブランド＋チャンネル名表示で担保する。
                 }
                 .padding(.horizontal, 16)
                 .padding(.bottom, 40)

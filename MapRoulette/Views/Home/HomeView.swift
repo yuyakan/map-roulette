@@ -370,12 +370,16 @@ struct HomeView: View {
     // MARK: - フッター（要件D: 出典の補足）
 
     private var footerNote: some View {
-        HStack(spacing: 6) {
-            YouTubeBadge()
+        VStack(alignment: .leading, spacing: 6) {
+            // 要件D: 公式「Developed with YouTube」ロゴ（タップで YouTube へ）。
+            // ロゴ自体が「Developed with YouTube」と読めるので主役として大きめに置く。
+            DevelopedWithYouTubeBadge(height: 22)
+            // 補足の一文（出典の説明）。ロゴの下に控えめに添える。
             Text(NSLocalizedString("home.trend.source.note", comment: ""))
                 .font(.system(size: 11))
                 .foregroundColor(.secondary)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal, 16)
         .padding(.top, 4)
     }

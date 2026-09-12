@@ -5308,6 +5308,8 @@
 "common.save" = "저장";
 "common.delete" = "삭제";
 "common.edit" = "편집";
+"common.readmore" = "더 보기";
+"common.collapse" = "접기";
 "common.done" = "완료";
 "plan.myplans.title" = "내 플랜";
 "plan.empty.title" = "아직 플랜이 없습니다";
@@ -5438,6 +5440,7 @@
 "plan.location.saveas" = "%@(으)로 저장";
 "plan.location.savepoint" = "이 지점 저장";
 "plan.edit" = "플랜 편집";
+"plan.detail.empty.edithint" = "오른쪽 위의 “편집”에서 항목을 추가할 수 있습니다";
 "plan.item.addmemo" = "메모 추가";
 "plan.item.editmemo" = "메모 편집";
 "plan.item.memo" = "메모";
@@ -5473,6 +5476,7 @@
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "YouTube에서 보기";
 "home.trend.source.note" = "동영상은 YouTube에서 제공됩니다";
+"home.trend.source.developed" = "Developed with YouTube";
 "home.trend.area.tokyo" = "도쿄";
 "home.trend.area.kyoto" = "교토";
 "home.trend.area.osaka" = "오사카";

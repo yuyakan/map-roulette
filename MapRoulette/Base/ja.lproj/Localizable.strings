@@ -5193,6 +5193,8 @@
 "plan.custom.location.pick" = "位置を選ぶ";
 "plan.custom.location.clear" = "位置を削除";
 "common.edit" = "編集";
+"common.readmore" = "続きを読む";
+"common.collapse" = "折りたたむ";
 "common.done" = "完了";
 "plan.address.copy" = "住所をコピー";
 "plan.day.additem" = "この日に項目を追加";
@@ -5210,6 +5212,7 @@
 "plan.location.savepoint" = "この地点を保存";
 "plan.map.route.weblimit" = "ブラウザで開いた場合、すべての経由地が反映されないことがあります";
 "plan.edit" = "プランを編集";
+"plan.detail.empty.edithint" = "右上の「編集」から項目を追加できます";
 "plan.item.addmemo" = "メモを追加";
 "plan.item.editmemo" = "メモを編集";
 "plan.item.memo" = "メモ";
@@ -5531,6 +5534,7 @@
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "YouTubeで見る";
 "home.trend.source.note" = "動画は YouTube から提供されています";
+"home.trend.source.developed" = "Developed with YouTube";
 "home.trend.area.tokyo" = "東京";
 "home.trend.area.kyoto" = "京都";
 "home.trend.area.osaka" = "大阪";

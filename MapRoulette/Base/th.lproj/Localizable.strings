@@ -5196,6 +5196,8 @@
 "plan.custom.location.pick" = "เลือกตำแหน่ง";
 "plan.custom.location.clear" = "ลบตำแหน่ง";
 "common.edit" = "แก้ไข";
+"common.readmore" = "อ่านเพิ่มเติม";
+"common.collapse" = "แสดงน้อยลง";
 "common.done" = "เสร็จ";
 "plan.address.copy" = "คัดลอกที่อยู่";
 "plan.day.additem" = "เพิ่มรายการในวันนี้";
@@ -5213,6 +5215,7 @@
 "plan.location.savepoint" = "บันทึกจุดนี้";
 "plan.map.route.weblimit" = "เมื่อเปิดในเบราว์เซอร์ จุดแวะบางแห่งอาจไม่ถูกรวมในเส้นทาง";
 "plan.edit" = "แก้ไขแผน";
+"plan.detail.empty.edithint" = "แตะ “แก้ไข” ที่มุมขวาบนเพื่อเพิ่มรายการ";
 "plan.item.addmemo" = "เพิ่มบันทึกย่อ";
 "plan.item.editmemo" = "แก้ไขบันทึกย่อ";
 "plan.item.memo" = "บันทึกย่อ";
@@ -5534,6 +5537,7 @@
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "ดูบน YouTube";
 "home.trend.source.note" = "วิดีโอจัดหาโดย YouTube";
+"home.trend.source.developed" = "Developed with YouTube";
 "home.trend.area.tokyo" = "โตเกียว";
 "home.trend.area.kyoto" = "เกียวโต";
 "home.trend.area.osaka" = "โอซากะ";

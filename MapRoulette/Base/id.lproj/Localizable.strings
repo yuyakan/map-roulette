@@ -5196,6 +5196,8 @@
 "plan.custom.location.pick" = "Pilih lokasi";
 "plan.custom.location.clear" = "Hapus lokasi";
 "common.edit" = "Edit";
+"common.readmore" = "Baca selengkapnya";
+"common.collapse" = "Tampilkan lebih sedikit";
 "common.done" = "Selesai";
 "plan.address.copy" = "Salin alamat";
 "plan.day.additem" = "Tambah item ke hari ini";
@@ -5213,6 +5215,7 @@
 "plan.location.savepoint" = "Simpan titik ini";
 "plan.map.route.weblimit" = "Di browser, sebagian titik singgah mungkin tidak termasuk dalam rute";
 "plan.edit" = "Edit rencana";
+"plan.detail.empty.edithint" = "Ketuk “Edit” di kanan atas untuk menambahkan item";
 "plan.item.addmemo" = "Tambah catatan";
 "plan.item.editmemo" = "Edit catatan";
 "plan.item.memo" = "Catatan";
@@ -5534,6 +5537,7 @@
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "Tonton di YouTube";
 "home.trend.source.note" = "Video disediakan oleh YouTube";
+"home.trend.source.developed" = "Developed with YouTube";
 "home.trend.area.tokyo" = "Tokyo";
 "home.trend.area.kyoto" = "Kyoto";
 "home.trend.area.osaka" = "Osaka";

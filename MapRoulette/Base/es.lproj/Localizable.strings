@@ -5196,6 +5196,8 @@
 "plan.custom.location.pick" = "Elegir ubicación";
 "plan.custom.location.clear" = "Quitar ubicación";
 "common.edit" = "Editar";
+"common.readmore" = "Leer más";
+"common.collapse" = "Mostrar menos";
 "common.done" = "Listo";
 "plan.address.copy" = "Copiar dirección";
 "plan.day.additem" = "Añadir elemento a este día";
@@ -5213,6 +5215,7 @@
 "plan.location.savepoint" = "Guardar este punto";
 "plan.map.route.weblimit" = "En un navegador, es posible que algunas paradas no se incluyan en la ruta";
 "plan.edit" = "Editar plan";
+"plan.detail.empty.edithint" = "Toca “Editar” arriba a la derecha para añadir elementos";
 "plan.item.addmemo" = "Añadir nota";
 "plan.item.editmemo" = "Editar nota";
 "plan.item.memo" = "Nota";
@@ -5534,6 +5537,7 @@
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "Ver en YouTube";
 "home.trend.source.note" = "Los vídeos los proporciona YouTube";
+"home.trend.source.developed" = "Developed with YouTube";
 "home.trend.area.tokyo" = "Tokio";
 "home.trend.area.kyoto" = "Kioto";
 "home.trend.area.osaka" = "Osaka";

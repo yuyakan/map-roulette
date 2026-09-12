@@ -4,7 +4,8 @@
 //
 //  トレンドセクションに並ぶ 1 枚の縦型サムネカード。
 //
-//  要件D: YouTube 出典（YouTubeBadge）とチャンネル名を必ず表示する。
+//  要件D: 出典はチャンネル名を必ず表示することで担保する（サムネ隅の帰属アイコンは置かない。
+//         画面全体の出典はホーム下部の「Developed with YouTube」ロゴが担う）。
 //  要件E: Shorts に合わせ 9:16 の縦型サムネで表示する。
 //
 
@@ -49,9 +50,8 @@ struct TrendCard: View {
             .frame(width: width, height: width * 16 / 9)
             .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
 
-            // 要件D: 出典表示
-            YouTubeBadge()
-                .padding(6)
+            // 要件D: サムネ隅の帰属アイコンは置かない。出典はフッターの
+            // 「Developed with YouTube」ロゴ＋各カードのチャンネル名表示で担保する。
 
             // 尺表示（右下）
             VStack {
