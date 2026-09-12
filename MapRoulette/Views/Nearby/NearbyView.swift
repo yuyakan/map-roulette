@@ -187,9 +187,10 @@ struct NearbyView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        // 上部セーフエリア（ステータスバー/ノッチ）まで地図を広げる。
+        // 上下のセーフエリア（ステータスバー/ノッチ・タブバー）まで地図を広げる。
+        // 下端まで伸ばすことで iOS 26 の Liquid Glass タブバー越しに地図が透けて見える。
         // フィルター等のオーバーレイはセーフエリア内に留まるので被らない。
-        .ignoresSafeArea(edges: .top)
+        .ignoresSafeArea(edges: [.top, .bottom])
     }
 
     /// 現在地の 100km 以内にスポットが無かったときの一時トースト。
