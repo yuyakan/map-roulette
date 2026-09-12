@@ -6015,6 +6015,12 @@
 "plan.itemcount.format" = "%d 个项目";
 "plan.notfound" = "找不到该计划";
 "plan.detail.empty" = "暂无项目";
+"plan.prefectures.add" = "添加县";
+"plan.prefectures.add.count" = "添加 %d 个";
+"plan.spot.add" = "添加景点";
+"plan.spot.suggested" = "已添加的县";
+"plan.spot.change_prefecture" = "更改县";
+"plan.spot.empty_category" = "此类别暂无景点";
 "plan.detail.items.header" = "计划项目";
 "plan.memo.label" = "备注";
 "plan.editmemo" = "编辑备注";

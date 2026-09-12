@@ -5091,6 +5091,12 @@
 "plan.itemcount.format" = "%d item";
 "plan.notfound" = "Rencana tidak ditemukan";
 "plan.detail.empty" = "Belum ada item";
+"plan.prefectures.add" = "Tambah prefektur";
+"plan.prefectures.add.count" = "Tambah %d";
+"plan.spot.add" = "Tambah tempat";
+"plan.spot.suggested" = "Prefektur Anda";
+"plan.spot.change_prefecture" = "Ganti prefektur";
+"plan.spot.empty_category" = "Belum ada tempat di kategori ini";
 "plan.detail.items.header" = "Item rencana";
 "plan.memo.label" = "Catatan";
 "plan.editmemo" = "Edit catatan";

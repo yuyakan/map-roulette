@@ -350,6 +350,9 @@ struct TravelPlan: Identifiable, Codable, Hashable {
     var dayCount: Int                   // 日程モードでの日数（最低 1）
     var timeBlocks: [TimeBlock]         // 日程内の時間ブロック定義（日程モードで使用）
     var status: PlanStatus              // 進行状態（upcoming / ongoing / completed）。旧 isCompleted を置換。
+    // 手動で「行き先候補」として登録した県（スポット追加前でも保持できる旅の骨組み）。
+    // 項目由来の県（itemPrefectures）とは独立。プラン詳細から県詳細へ再訪する起点になる。
+    var plannedPrefectures: [Prefecture]
     let createdAt: Date
     var updatedAt: Date
 
@@ -367,6 +370,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         dayCount: Int = 1,
         timeBlocks: [TimeBlock] = [],
         status: PlanStatus = .upcoming,
+        plannedPrefectures: [Prefecture] = [],
         createdAt: Date = Date(),
         updatedAt: Date = Date()
     ) {
@@ -379,13 +383,14 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         self.dayCount = max(1, dayCount)
         self.timeBlocks = timeBlocks
         self.status = status
+        self.plannedPrefectures = plannedPrefectures
         self.createdAt = createdAt
         self.updatedAt = updatedAt
     }
 
     // 古い保存データ（groupingMode / dayCount / timeBlocks / status / members 無し）との後方互換
     enum CodingKeys: String, CodingKey {
-        case id, title, memo, items, members, groupingMode, dayCount, timeBlocks, status, isCompleted, createdAt, updatedAt
+        case id, title, memo, items, members, groupingMode, dayCount, timeBlocks, status, isCompleted, plannedPrefectures, createdAt, updatedAt
     }
 
     init(from decoder: Decoder) throws {
@@ -414,6 +419,10 @@ struct TravelPlan: Identifiable, Codable, Hashable {
             let legacyCompleted = try c.decodeIfPresent(Bool.self, forKey: .isCompleted) ?? false
             status = legacyCompleted ? .completed : .upcoming
         }
+        // 手動登録の県。既存パターンに合わせて rawValue 文字列配列で保存する。
+        // 旧データ（キー無し）は空配列。未知の rawValue は取り除く。
+        let prefRaws = try c.decodeIfPresent([String].self, forKey: .plannedPrefectures) ?? []
+        plannedPrefectures = prefRaws.compactMap { Prefecture(rawValue: $0) }
         createdAt = try c.decode(Date.self, forKey: .createdAt)
         updatedAt = try c.decode(Date.self, forKey: .updatedAt)
     }
@@ -432,6 +441,7 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         try c.encode(timeBlocks, forKey: .timeBlocks)
         try c.encode(status, forKey: .status)
         try c.encode(isCompleted, forKey: .isCompleted)   // 後方互換（旧アプリ用）
+        try c.encode(plannedPrefectures.map { $0.rawValue }, forKey: .plannedPrefectures)
         try c.encode(createdAt, forKey: .createdAt)
         try c.encode(updatedAt, forKey: .updatedAt)
     }
@@ -450,13 +460,25 @@ struct TravelPlan: Identifiable, Codable, Hashable {
         items.filter { $0.category.isExpenseOnly }
     }
 
-    /// プランに含まれる都道府県（重複なし・登場順）
-    var prefectures: [Prefecture] {
+    /// 旅程項目から導かれる都道府県（重複なし・登場順）。
+    var itemPrefectures: [Prefecture] {
         var seen = Set<String>()
         var result: [Prefecture] = []
         for item in itineraryItems {
             guard seen.insert(item.prefectureRawValue).inserted,
                   let pref = item.prefecture else { continue }
+            result.append(pref)
+        }
+        return result
+    }
+
+    /// プランに関わる都道府県（重複なし・登場順）。
+    /// 手動登録した県（plannedPrefectures）を先に、続けて項目由来で未登場の県を並べる。
+    /// 訪問済みマップ集計・ホームのヒーロー画像・県フィルタなど全ての参照で使う。
+    var prefectures: [Prefecture] {
+        var seen = Set<Prefecture>()
+        var result: [Prefecture] = []
+        for pref in plannedPrefectures + itemPrefectures where seen.insert(pref).inserted {
             result.append(pref)
         }
         return result

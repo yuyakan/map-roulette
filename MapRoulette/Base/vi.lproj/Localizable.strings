@@ -5091,6 +5091,12 @@
 "plan.itemcount.format" = "%d mục";
 "plan.notfound" = "Không tìm thấy kế hoạch";
 "plan.detail.empty" = "Chưa có mục";
+"plan.prefectures.add" = "Thêm tỉnh";
+"plan.prefectures.add.count" = "Thêm %d";
+"plan.spot.add" = "Thêm địa điểm";
+"plan.spot.suggested" = "Các tỉnh của bạn";
+"plan.spot.change_prefecture" = "Đổi tỉnh";
+"plan.spot.empty_category" = "Chưa có địa điểm trong mục này";
 "plan.detail.items.header" = "Các mục trong kế hoạch";
 "plan.memo.label" = "Ghi chú";
 "plan.editmemo" = "Sửa ghi chú";

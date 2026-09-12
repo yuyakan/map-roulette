@@ -247,7 +247,8 @@ struct HomeView: View {
 
     /// おすすめとして常に出す県（固定・表示順）。人気の高い定番エリア。
     private static let recommendedPrefectures: [Prefecture] =
-        [.okinawa, .fukuoka, .kyoto, .hokkaido, .osaka]
+        [.okinawa, .fukuoka, .kyoto, .hokkaido, .osaka,
+         .hiroshima, .hyogo, .aichi, .miyagi, .kanagawa]
 
     /// おすすめセクション。最近見た県／お気に入りが空でもホームが成立するよう常に表示する。
     /// 他セクションと同じ県ビジュアルカードの横スクロールで統一する（動画は県詳細に一本化）。

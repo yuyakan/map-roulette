@@ -212,6 +212,36 @@ final class TravelPlanStore: ObservableObject {
         setStatus(completed ? .completed : .upcoming, for: planID)
     }
 
+    // MARK: - 行き先候補の県
+
+    /// プランに「行き先候補」の県を追加する（重複は無視）。
+    func addPrefecture(_ prefecture: Prefecture, to planID: UUID) {
+        addPrefectures([prefecture], to: planID)
+    }
+
+    /// プランに複数の県をまとめて追加する（既にある県は無視・選択順を保つ）。
+    func addPrefectures<S: Sequence>(_ prefectures: S, to planID: UUID) where S.Element == Prefecture {
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        var existing = Set(plans[index].plannedPrefectures)
+        var added = false
+        for prefecture in prefectures where existing.insert(prefecture).inserted {
+            plans[index].plannedPrefectures.append(prefecture)
+            added = true
+        }
+        guard added else { return }
+        plans[index].updatedAt = Date()
+        persist()
+    }
+
+    /// プランから「行き先候補」の県を外す（項目由来の県には影響しない）。
+    func removePrefecture(_ prefecture: Prefecture, from planID: UUID) {
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        guard plans[index].plannedPrefectures.contains(prefecture) else { return }
+        plans[index].plannedPrefectures.removeAll { $0 == prefecture }
+        plans[index].updatedAt = Date()
+        persist()
+    }
+
     /// 指定状態のプランのうち、最も最近更新された 1 件。
     private func latestPlan(with status: PlanStatus) -> TravelPlan? {
         plans.filter { $0.status == status }.max(by: { $0.updatedAt < $1.updatedAt })

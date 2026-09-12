@@ -5091,6 +5091,12 @@
 "plan.itemcount.format" = "%d items";
 "plan.notfound" = "Plan not found";
 "plan.detail.empty" = "No items yet";
+"plan.prefectures.add" = "Add prefecture";
+"plan.prefectures.add.count" = "Add %d";
+"plan.spot.add" = "Add spots";
+"plan.spot.suggested" = "Your prefectures";
+"plan.spot.change_prefecture" = "Change prefecture";
+"plan.spot.empty_category" = "No spots in this category yet";
 "plan.detail.items.header" = "Plan items";
 "plan.memo.label" = "Memo";
 "plan.editmemo" = "Edit memo";

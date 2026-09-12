@@ -5091,6 +5091,12 @@
 "plan.itemcount.format" = "%d รายการ";
 "plan.notfound" = "ไม่พบแผน";
 "plan.detail.empty" = "ยังไม่มีรายการ";
+"plan.prefectures.add" = "เพิ่มจังหวัด";
+"plan.prefectures.add.count" = "เพิ่ม %d รายการ";
+"plan.spot.add" = "เพิ่มสถานที่";
+"plan.spot.suggested" = "จังหวัดของคุณ";
+"plan.spot.change_prefecture" = "เปลี่ยนจังหวัด";
+"plan.spot.empty_category" = "ยังไม่มีสถานที่ในหมวดนี้";
 "plan.detail.items.header" = "รายการในแผน";
 "plan.memo.label" = "บันทึกย่อ";
 "plan.editmemo" = "แก้ไขบันทึกย่อ";

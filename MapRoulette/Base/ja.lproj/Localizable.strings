@@ -5088,6 +5088,12 @@
 "plan.itemcount.format" = "%d件の項目";
 "plan.notfound" = "プランが見つかりません";
 "plan.detail.empty" = "項目がありません";
+"plan.prefectures.add" = "県を追加";
+"plan.prefectures.add.count" = "%d件を追加";
+"plan.spot.add" = "スポットを追加";
+"plan.spot.suggested" = "登録済みの県";
+"plan.spot.change_prefecture" = "県を変更";
+"plan.spot.empty_category" = "このカテゴリのスポットはまだありません";
 "plan.detail.items.header" = "プランの項目";
 "plan.memo.label" = "メモ";
 "plan.editmemo" = "メモを編集";

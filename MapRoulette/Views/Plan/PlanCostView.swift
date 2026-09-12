@@ -700,7 +700,8 @@ private struct MemberChipsFlow: View {
 
 // MARK: - FlowLayout
 /// 子ビューを左詰めで並べ、幅が足りなくなったら折り返す簡易レイアウト（iOS 16+ Layout）。
-private struct FlowLayout: Layout {
+/// プラン詳細の県チップなど他の Plan 系画面でも共用する。
+struct FlowLayout: Layout {
     var spacing: CGFloat = 8
 
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout Void) -> CGSize {

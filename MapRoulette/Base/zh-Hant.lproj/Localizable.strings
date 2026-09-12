@@ -6013,6 +6013,12 @@
 "plan.itemcount.format" = "%d 個項目";
 "plan.notfound" = "找不到該計畫";
 "plan.detail.empty" = "尚無項目";
+"plan.prefectures.add" = "新增縣";
+"plan.prefectures.add.count" = "新增 %d 個";
+"plan.spot.add" = "新增景點";
+"plan.spot.suggested" = "已新增的縣";
+"plan.spot.change_prefecture" = "更改縣";
+"plan.spot.empty_category" = "此類別尚無景點";
 "plan.detail.items.header" = "計畫項目";
 "plan.memo.label" = "備註";
 "plan.editmemo" = "編輯備註";

@@ -5091,6 +5091,12 @@
 "plan.itemcount.format" = "%d éléments";
 "plan.notfound" = "Plan introuvable";
 "plan.detail.empty" = "Aucun élément";
+"plan.prefectures.add" = "Ajouter une préfecture";
+"plan.prefectures.add.count" = "Ajouter %d";
+"plan.spot.add" = "Ajouter des lieux";
+"plan.spot.suggested" = "Vos préfectures";
+"plan.spot.change_prefecture" = "Changer de préfecture";
+"plan.spot.empty_category" = "Aucun lieu dans cette catégorie";
 "plan.detail.items.header" = "Éléments du plan";
 "plan.memo.label" = "Note";
 "plan.editmemo" = "Modifier la note";

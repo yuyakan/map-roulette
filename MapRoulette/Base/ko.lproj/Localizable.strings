@@ -5323,6 +5323,12 @@
 "plan.itemcount.format" = "항목 %d개";
 "plan.notfound" = "플랜을 찾을 수 없습니다";
 "plan.detail.empty" = "항목 없음";
+"plan.prefectures.add" = "현 추가";
+"plan.prefectures.add.count" = "%d개 추가";
+"plan.spot.add" = "스팟 추가";
+"plan.spot.suggested" = "등록한 현";
+"plan.spot.change_prefecture" = "현 변경";
+"plan.spot.empty_category" = "이 카테고리의 스팟이 아직 없습니다";
 "plan.detail.items.header" = "플랜 항목";
 "plan.memo.label" = "메모";
 "plan.editmemo" = "메모 편집";
