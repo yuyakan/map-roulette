@@ -20,6 +20,10 @@ struct AttractionDetailView: View {
     /// 観光の基調色（ブランドのオレンジ）。
     private var accent: Color { PlanTheme.primary }
 
+    /// このスポットの同梱写真（CC0・無ければ nil）。
+    /// ある場合はヘッダー全面に敷き、無い場合は従来通りカラーヘッダーのまま。
+    private var photo: Image? { AttractionPhoto.image(for: attraction.nameKey) }
+
     init(attraction: LocalizedAttractionLocation, prefecture: Prefecture) {
         self.attraction = attraction
         self.prefecture = prefecture
@@ -50,7 +54,9 @@ struct AttractionDetailView: View {
                     }
                     .padding(.bottom, 32)
                 }
-                .background(PlanTheme.backgroundGradient.ignoresSafeArea())
+                // グラデーションをやめ、カードと同じ系統のシステム背景色（ライト=白）。
+                // ダークでも破綻しないよう固定色にはしない。
+                .background(Color(.systemBackground).ignoresSafeArea())
                 .ignoresSafeArea(edges: .top)
 
                 closeButton
@@ -81,32 +87,63 @@ struct AttractionDetailView: View {
     // MARK: - ヒーローヘッダー
 
     private var header: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            ZStack {
-                Circle()
-                    .fill(.white.opacity(0.22))
-                    .frame(width: 76, height: 76)
-                Image(systemName: "mappin.and.ellipse")
-                    .font(.system(size: 32, weight: .semibold))
-                    .foregroundColor(.white)
+        // 写真がある場合はヘッダー全面に写真を敷き、その上に暗いグラデーションを重ねて
+        // 白文字の可読性を確保する。写真が無い場合は最背面の accent をそのまま透かす。
+        titleBlock
+            .padding(.horizontal, 22)
+            .padding(.top, 150)
+            .padding(.bottom, 24)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background {
+                if let photo {
+                    // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
+                    // 外側で clipped() してヘッダー矩形に収める（左右へのはみ出し防止）。
+                    photo
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .overlay(headerScrim)
+                } else {
+                    // 写真が無い場合は従来のカラーヘッダー。本文背景が不透明色に
+                    // なったため最背面の accent は透けない。ここで自前に敷く。
+                    accent
+                }
             }
-            .padding(.top, 60)
+            .clipped()
+    }
 
-            VStack(alignment: .leading, spacing: 6) {
-                Text(attraction.name)
-                    .font(.system(size: 28, weight: .heavy, design: .rounded))
-                    .foregroundColor(.white)
-                    .fixedSize(horizontal: false, vertical: true)
+    /// 写真の上でもタイトルが読めるようにする暗幕（下へ向かって濃くなる）。
+    private var headerScrim: some View {
+        LinearGradient(
+            colors: [.black.opacity(0.1), .black.opacity(0.35), .black.opacity(0.65)],
+            startPoint: .top,
+            endPoint: .bottom
+        )
+    }
 
-                Label(prefecture.prefectureName, systemImage: "location.fill")
-                    .font(.subheadline.weight(.medium))
-                    .foregroundColor(.white.opacity(0.9))
-            }
+    /// スポット名＋県名（写真あり／なしで共通）。
+    private var titleBlock: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(attraction.name)
+                .font(.system(size: 28, weight: .heavy, design: .rounded))
+                .foregroundColor(.white)
+                .fixedSize(horizontal: false, vertical: true)
+
+            Text(prefecture.prefectureName)
+                .font(.subheadline.weight(.medium))
+                .foregroundColor(.white.opacity(0.9))
         }
-        .padding(.horizontal, 22)
-        .padding(.bottom, 24)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        // ヘッダー自身は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
+        .shadow(color: .black.opacity(photo == nil ? 0 : 0.35), radius: 6, y: 1)
+    }
+
+    // MARK: - カード枠線
+
+    /// 背景を白（systemBackground）にしたため、白いカードが背景と同化する。
+    /// planCard() の形状に合わせて枠線を重ね、モジュールの境界を明示する。
+    /// 色は primary（ライト=黒／ダーク=白）でダークモードでも見える。
+    /// planCard() 自体は他画面と共有のため、この画面内だけで上から重ねる。
+    private var cardBorder: some View {
+        RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous)
+            .stroke(Color.primary, lineWidth: 1)
     }
 
     // MARK: - アクション白カード
@@ -131,6 +168,7 @@ struct AttractionDetailView: View {
             SocialSearchButtons(query: attraction.name)
         }
         .planCard()
+        .overlay(cardBorder)
     }
 
     // MARK: - 説明
@@ -145,6 +183,7 @@ struct AttractionDetailView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .planCard()
+        .overlay(cardBorder)
     }
 
     // MARK: - 地図カード
@@ -186,6 +225,7 @@ struct AttractionDetailView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .planCard()
+        .overlay(cardBorder)
     }
 
     // MARK: - 共通
