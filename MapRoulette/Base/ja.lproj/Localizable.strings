@@ -228,6 +228,7 @@
 "tourism_detail_unfavorite" = "お気に入りから外す";
 "tourism_detail_map" = "観光地マップ";
 "tourism_detail_photos" = "写真";
+"tourism_detail_nature" = "自然";
 "tourism_detail_trend" = "トレンド";
 "tourism_detail_photo" = "観光地写真";
 "tourism_detail_photo_loading" = "写真を読み込み中...";
@@ -795,7 +796,11 @@
 "attraction_awaji_island" = "淡路島";
 "attraction_awaji_island_desc" = "花と緑の島";
 "attraction_mount_rokko" = "六甲山";
+"attraction_mount_maya" = "摩耶山";
+"attraction_inasayama" = "稲佐山";
 "attraction_mount_rokko_desc" = "神戸の夜景を一望できる人気スポット";
+"attraction_mount_maya_desc" = "掬星台からの神戸の夜景は日本三大夜景の一つ";
+"attraction_inasayama_desc" = "長崎の街を見下ろす日本三大夜景の一つ";
 "attraction_takarazuka_grand_theater" = "宝塚大劇場";
 "attraction_takarazuka_grand_theater_desc" = "宝塚歌劇の聖地";
 
@@ -5530,6 +5535,39 @@
 "home.ongoing.empty.action" = "マイプランへ";
 "home.section.favorite" = "お気に入りの県";
 "home.section.recommended" = "おすすめ";
+
+/* ④ テーマ別 都道府県紹介（PrefectureTheme） */
+"home.section.themes" = "テーマで探す";
+"home.theme.japanThreeViews.title" = "日本三景";
+"home.theme.japanThreeViews.subtitle" = "江戸初期に林春斎が選んだ景勝地";
+"home.theme.threeFamousOnsen.title" = "日本三名泉";
+"home.theme.threeFamousOnsen.subtitle" = "林羅山が「天下の三名泉」と記した名湯";
+"home.theme.threeGardens.title" = "日本三名園";
+"home.theme.threeGardens.subtitle" = "日本を代表する三つの大名庭園";
+"home.theme.threeNightViews.title" = "日本三大夜景";
+"home.theme.threeNightViews.subtitle" = "定番として知られる三つの夜景";
+"home.theme.popularSouvenirs.title" = "人気のおみやげ";
+"home.theme.seaAndBeach.title" = "有名なビーチ";
+"beach.jodogahama" = "浄土ヶ浜";
+"beach.kujukurihama" = "九十九里浜";
+"beach.yuigahama" = "由比ヶ浜";
+"beach.izu_shirahama" = "伊豆白浜";
+"beach.suishohama" = "水晶浜";
+"beach.takeno" = "竹野浜";
+"beach.shirarahama" = "白良浜";
+"beach.takahama" = "高浜（五島）";
+"beach.emerald" = "エメラルドビーチ";
+"beach.nishihama" = "ニシ浜（波照間）";
+"beach.jodogahama_desc" = "白い岩と松、澄んだ海が美しい三陸の景勝地";
+"beach.yuigahama_desc" = "鎌倉を代表する海水浴場";
+"beach.suishohama_desc" = "透明度の高い水と白い砂浜が人気の海水浴場";
+"beach.takahama_desc" = "五島列島の白砂とエメラルドの海が広がるビーチ";
+"beach.emerald_desc" = "本部の国営公園にある人工ビーチ";
+"beach.nishihama_desc" = "波照間島の「波照間ブルー」で知られる白砂のビーチ";
+"beach.kujukurihama_desc" = "太平洋に面した全長約60kmの雄大な砂浜海岸";
+"beach.izu_shirahama_desc" = "伊豆半島を代表する白砂と青い海の海水浴場";
+"beach.takeno_desc" = "山陰海岸の透明度が高い遠浅の海水浴場";
+"beach.shirarahama_desc" = "真っ白な砂浜が続く南紀白浜の名ビーチ";
 "home.trend.group.title" = "%1$@の%2$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "YouTubeで見る";

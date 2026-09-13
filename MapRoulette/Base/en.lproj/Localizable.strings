@@ -234,6 +234,7 @@
 "tourism_detail_unfavorite" = "Remove from favorites";
 "tourism_detail_map" = "Map";
 "tourism_detail_photos" = "Photos";
+"tourism_detail_nature" = "Nature";
 "tourism_detail_trend" = "Trending";
 "tourism_detail_photo" = "Photo";
 "tourism_detail_photo_loading" = "loading...";
@@ -801,7 +802,11 @@
 "attraction_awaji_island" = "Awaji Island";
 "attraction_awaji_island_desc" = "Island of flowers and greenery";
 "attraction_mount_rokko" = "Mount Rokko";
+"attraction_mount_maya" = "Mount Maya";
+"attraction_inasayama" = "Mount Inasa";
 "attraction_mount_rokko_desc" = "Popular spot for panoramic views of Kobe's night scene";
+"attraction_mount_maya_desc" = "Kobe's night view from Kikuseidai, one of Japan's three great night views";
+"attraction_inasayama_desc" = "One of Japan's three great night views, overlooking Nagasaki";
 "attraction_takarazuka_grand_theater" = "Takarazuka Grand Theater";
 "attraction_takarazuka_grand_theater_desc" = "Sacred place of Takarazuka Revue";
 
@@ -5533,6 +5538,39 @@
 "home.ongoing.empty.action" = "Go to My Plans";
 "home.section.favorite" = "Favorites";
 "home.section.recommended" = "Recommended";
+
+/* ④ Themed prefecture picks (PrefectureTheme) */
+"home.section.themes" = "Explore by Theme";
+"home.theme.japanThreeViews.title" = "Three Views of Japan";
+"home.theme.japanThreeViews.subtitle" = "Scenic spots chosen in the early Edo period";
+"home.theme.threeFamousOnsen.title" = "Three Famous Hot Springs";
+"home.theme.threeFamousOnsen.subtitle" = "The classic \"three great springs\" of Japan";
+"home.theme.threeGardens.title" = "Three Great Gardens";
+"home.theme.threeGardens.subtitle" = "Japan's three celebrated landscape gardens";
+"home.theme.threeNightViews.title" = "Three Great Night Views";
+"home.theme.threeNightViews.subtitle" = "Japan's three iconic nightscapes";
+"home.theme.popularSouvenirs.title" = "Great for Souvenirs";
+"home.theme.seaAndBeach.title" = "Famous Beaches";
+"beach.jodogahama" = "Jodogahama";
+"beach.kujukurihama" = "Kujukuri Beach";
+"beach.yuigahama" = "Yuigahama";
+"beach.izu_shirahama" = "Izu Shirahama";
+"beach.suishohama" = "Suishohama";
+"beach.takeno" = "Takeno Beach";
+"beach.shirarahama" = "Shirarahama";
+"beach.takahama" = "Takahama (Goto)";
+"beach.emerald" = "Emerald Beach";
+"beach.nishihama" = "Nishihama (Hateruma)";
+"beach.jodogahama_desc" = "Scenic Sanriku spot of white rocks, pines and clear sea";
+"beach.yuigahama_desc" = "Kamakura's iconic swimming beach";
+"beach.suishohama_desc" = "Popular beach with clear water and white sand";
+"beach.takahama_desc" = "White sand and emerald sea in the Goto Islands";
+"beach.emerald_desc" = "Man-made beach in Motobu's national park";
+"beach.nishihama_desc" = "White-sand beach famed for the \"Hateruma Blue\"";
+"beach.kujukurihama_desc" = "Majestic 60km-long sandy shore facing the Pacific";
+"beach.izu_shirahama_desc" = "Izu Peninsula's iconic white-sand swimming beach";
+"beach.takeno_desc" = "Shallow, clear-water beach on the San'in coast";
+"beach.shirarahama_desc" = "Famed pure-white sand beach in Nanki-Shirahama";
 "home.trend.group.title" = "%2$@ in %1$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "Watch on YouTube";

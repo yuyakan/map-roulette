@@ -234,6 +234,7 @@
 "tourism_detail_unfavorite" = "Aus Favoriten entfernen";
 "tourism_detail_map" = "Karte";
 "tourism_detail_photos" = "Fotos";
+"tourism_detail_nature" = "Natur";
 "tourism_detail_trend" = "Trends";
 "tourism_detail_photo" = "Foto";
 "tourism_detail_photo_loading" = "wird geladen…";
@@ -801,7 +802,11 @@
 "attraction_awaji_island" = "Insel Awaji";
 "attraction_awaji_island_desc" = "Insel der Blumen und des Grüns";
 "attraction_mount_rokko" = "Berg Rokko";
+"attraction_mount_maya" = "Berg Maya";
+"attraction_inasayama" = "Berg Inasa";
 "attraction_mount_rokko_desc" = "Beliebter Ort für den Panoramablick auf Kobes Nachtansicht";
+"attraction_mount_maya_desc" = "Kobes Nachtblick vom Kikuseidai, eine der drei großen Nachtansichten Japans";
+"attraction_inasayama_desc" = "Eine der drei großen Nachtansichten Japans mit Blick über Nagasaki";
 "attraction_takarazuka_grand_theater" = "Takarazuka-Großtheater";
 "attraction_takarazuka_grand_theater_desc" = "Heiliger Ort der Takarazuka-Revue";
 
@@ -5533,6 +5538,39 @@
 "home.ongoing.empty.action" = "Zu Meine Pläne";
 "home.section.favorite" = "Favoriten";
 "home.section.recommended" = "Empfohlen";
+
+/* ④ Themenbezogene Präfektur-Auswahl (PrefectureTheme) */
+"home.section.themes" = "Nach Thema entdecken";
+"home.theme.japanThreeViews.title" = "Drei Ansichten Japans";
+"home.theme.japanThreeViews.subtitle" = "In der frühen Edo-Zeit gewählte Landschaften";
+"home.theme.threeFamousOnsen.title" = "Drei berühmte heiße Quellen";
+"home.theme.threeFamousOnsen.subtitle" = "Die klassischen „drei großen Quellen“ Japans";
+"home.theme.threeGardens.title" = "Drei große Gärten";
+"home.theme.threeGardens.subtitle" = "Japans drei berühmte Landschaftsgärten";
+"home.theme.threeNightViews.title" = "Drei große Nachtansichten";
+"home.theme.threeNightViews.subtitle" = "Japans drei ikonische Nachtpanoramen";
+"home.theme.popularSouvenirs.title" = "Top für Souvenirs";
+"home.theme.seaAndBeach.title" = "Berühmte Strände";
+"beach.jodogahama" = "Jodogahama";
+"beach.kujukurihama" = "Kujukuri-Strand";
+"beach.yuigahama" = "Yuigahama";
+"beach.izu_shirahama" = "Izu Shirahama";
+"beach.suishohama" = "Suishohama";
+"beach.takeno" = "Takeno-Strand";
+"beach.shirarahama" = "Shirarahama";
+"beach.takahama" = "Takahama (Goto)";
+"beach.emerald" = "Emerald Beach";
+"beach.nishihama" = "Nishihama (Hateruma)";
+"beach.jodogahama_desc" = "Malerischer Sanriku-Ort mit weißen Felsen, Kiefern und klarem Meer";
+"beach.yuigahama_desc" = "Kamakuras berühmter Badestrand";
+"beach.suishohama_desc" = "Beliebter Strand mit klarem Wasser und weißem Sand";
+"beach.takahama_desc" = "Weißer Sand und smaragdgrünes Meer auf den Goto-Inseln";
+"beach.emerald_desc" = "Künstlicher Strand im Nationalpark von Motobu";
+"beach.nishihama_desc" = "Weißer Sandstrand, bekannt für das „Hateruma-Blau“";
+"beach.kujukurihama_desc" = "Majestätischer, 60 km langer Sandstrand am Pazifik";
+"beach.izu_shirahama_desc" = "Ikonischer weißer Sandstrand der Izu-Halbinsel";
+"beach.takeno_desc" = "Flacher Strand mit klarem Wasser an der San'in-Küste";
+"beach.shirarahama_desc" = "Berühmter schneeweißer Strand in Nanki-Shirahama";
 "home.trend.group.title" = "%2$@ in %1$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "Auf YouTube ansehen";

@@ -100,5 +100,16 @@ enum NatureSpotPrefecture {
         "sea_iki_tsushima_name": .nagasaki,  // 壱岐・対馬
         "sea_amakusa_name": .kumamoto,  // 天草
         "sea_nichinan_name": .miyazaki,  // 日南海岸
+        // ビーチ（ホーム「有名なビーチ」テーマと共通。nameKey は beach.*）
+        "beach.jodogahama": .iwate,      // 浄土ヶ浜
+        "beach.yuigahama": .kanagawa,    // 由比ヶ浜
+        "beach.suishohama": .fukui,      // 水晶浜
+        "beach.takahama": .nagasaki,     // 高浜(五島)
+        "beach.emerald": .okinawa,       // エメラルドビーチ
+        "beach.nishihama": .okinawa,     // ニシ浜(波照間)
+        "beach.kujukurihama": .chiba,    // 九十九里浜
+        "beach.izu_shirahama": .shizuoka, // 伊豆白浜
+        "beach.takeno": .hyogo,          // 竹野浜
+        "beach.shirarahama": .wakayama,  // 白良浜
     ]
 }

@@ -234,6 +234,7 @@
 "tourism_detail_unfavorite" = "นำออกจากรายการโปรด";
 "tourism_detail_map" = "แผนที่";
 "tourism_detail_photos" = "รูปภาพ";
+"tourism_detail_nature" = "ธรรมชาติ";
 "tourism_detail_trend" = "กำลังนิยม";
 "tourism_detail_photo" = "รูปภาพ";
 "tourism_detail_photo_loading" = "กำลังโหลด...";
@@ -801,7 +802,11 @@
 "attraction_awaji_island" = "เกาะอาวาจิ";
 "attraction_awaji_island_desc" = "เกาะแห่งดอกไม้และความเขียวขจี";
 "attraction_mount_rokko" = "ภูเขาร็อกโก";
+"attraction_mount_maya" = "ภูเขามายะ";
+"attraction_inasayama" = "ภูเขาอินาสะ";
 "attraction_mount_rokko_desc" = "จุดยอดนิยมที่ชมวิวกลางคืนของโกเบได้ทั้งเมือง";
+"attraction_mount_maya_desc" = "วิวกลางคืนของโกเบจากคิคุเซดะอิ หนึ่งในสามวิวกลางคืนที่ยิ่งใหญ่ของญี่ปุ่น";
+"attraction_inasayama_desc" = "หนึ่งในสามวิวกลางคืนที่ยิ่งใหญ่ของญี่ปุ่น มองลงไปยังเมืองนางาซากิ";
 "attraction_takarazuka_grand_theater" = "โรงละครใหญ่ทาการาซึกะ";
 "attraction_takarazuka_grand_theater_desc" = "ดินแดนศักดิ์สิทธิ์ของคณะละครทาการาซึกะ";
 
@@ -5533,6 +5538,39 @@
 "home.ongoing.empty.action" = "ไปที่แผนของฉัน";
 "home.section.favorite" = "รายการโปรด";
 "home.section.recommended" = "แนะนำ";
+
+/* ④ การแนะนำจังหวัดตามธีม (PrefectureTheme) */
+"home.section.themes" = "ค้นหาตามธีม";
+"home.theme.japanThreeViews.title" = "สามทัศนียภาพแห่งญี่ปุ่น";
+"home.theme.japanThreeViews.subtitle" = "จุดชมวิวที่คัดสรรในช่วงต้นยุคเอโดะ";
+"home.theme.threeFamousOnsen.title" = "สามบ่อน้ำพุร้อนชื่อดัง";
+"home.theme.threeFamousOnsen.subtitle" = "\"สามบ่อน้ำพุร้อนยิ่งใหญ่\" อันเลื่องชื่อของญี่ปุ่น";
+"home.theme.threeGardens.title" = "สามสวนใหญ่";
+"home.theme.threeGardens.subtitle" = "สามสวนภูมิทัศน์อันเลื่องชื่อของญี่ปุ่น";
+"home.theme.threeNightViews.title" = "สามทัศนียภาพยามค่ำคืน";
+"home.theme.threeNightViews.subtitle" = "สามวิวกลางคืนอันเป็นสัญลักษณ์ของญี่ปุ่น";
+"home.theme.popularSouvenirs.title" = "เด่นเรื่องของฝาก";
+"home.theme.seaAndBeach.title" = "ชายหาดชื่อดัง";
+"beach.jodogahama" = "โจโดกาฮามะ";
+"beach.kujukurihama" = "หาดคุจูกุริ";
+"beach.yuigahama" = "ยุอิกาฮามะ";
+"beach.izu_shirahama" = "อิซุ ชิราฮามะ";
+"beach.suishohama" = "ซุอิโชฮามะ";
+"beach.takeno" = "หาดทาเคโนะ";
+"beach.shirarahama" = "ชิราราฮามะ";
+"beach.takahama" = "ทาคาฮามะ (โกโต)";
+"beach.emerald" = "หาดเอเมอรัลด์";
+"beach.nishihama" = "นิชิฮามะ (ฮาเตรุมะ)";
+"beach.jodogahama_desc" = "จุดชมวิวซันริกุที่มีหินขาว ต้นสน และทะเลใส";
+"beach.yuigahama_desc" = "ชายหาดว่ายน้ำสัญลักษณ์ของคามาคุระ";
+"beach.suishohama_desc" = "ชายหาดยอดนิยมที่มีน้ำใสและทรายขาว";
+"beach.takahama_desc" = "ทรายขาวและทะเลสีมรกตบนหมู่เกาะโกโต";
+"beach.emerald_desc" = "ชายหาดที่มนุษย์สร้างในอุทยานแห่งชาติโมโตบุ";
+"beach.nishihama_desc" = "หาดทรายขาวที่ขึ้นชื่อเรื่อง \"ฮาเตรุมะบลู\"";
+"beach.kujukurihama_desc" = "หาดทรายยาวราว 60 กม. อันยิ่งใหญ่ริมมหาสมุทรแปซิฟิก";
+"beach.izu_shirahama_desc" = "หาดทรายขาวน้ำทะเลใสสัญลักษณ์ของคาบสมุทรอิซุ";
+"beach.takeno_desc" = "หาดน้ำตื้นใสสะอาดบนชายฝั่งซานอิน";
+"beach.shirarahama_desc" = "หาดทรายขาวชื่อดังแห่งนันกิชิราฮามะ";
 "home.trend.group.title" = "%2$@ใน%1$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "ดูบน YouTube";

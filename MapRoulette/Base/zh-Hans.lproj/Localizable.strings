@@ -230,6 +230,7 @@
 "tourism_detail_unfavorite" = "从收藏中移除";
 "tourism_detail_map" = "观光地地图";
 "tourism_detail_photos" = "照片";
+"tourism_detail_nature" = "自然";
 "tourism_detail_trend" = "趋势";
 "tourism_detail_photo" = "观光地照片";
 "tourism_detail_photo_loading" = "正在加载照片...";
@@ -787,7 +788,11 @@
 "attraction_awaji_island" = "淡路岛";
 "attraction_awaji_island_desc" = "花与绿之岛";
 "attraction_mount_rokko" = "六甲山";
+"attraction_mount_maya" = "摩耶山";
+"attraction_inasayama" = "稻佐山";
 "attraction_mount_rokko_desc" = "可以俯瞰神户夜景的热门景点";
+"attraction_mount_maya_desc" = "从掬星台眺望的神户夜景，日本三大夜景之一";
+"attraction_inasayama_desc" = "俯瞰长崎市区的日本三大夜景之一";
 "attraction_takarazuka_grand_theater" = "宝冢大剧场";
 "attraction_takarazuka_grand_theater_desc" = "宝冢歌剧的圣地";
 
@@ -6164,6 +6169,39 @@
 "home.ongoing.empty.action" = "前往我的计划";
 "home.section.favorite" = "收藏";
 "home.section.recommended" = "推荐";
+
+/* ④ 主题都道府县推荐（PrefectureTheme） */
+"home.section.themes" = "按主题探索";
+"home.theme.japanThreeViews.title" = "日本三景";
+"home.theme.japanThreeViews.subtitle" = "江户初期林春斋选定的胜景";
+"home.theme.threeFamousOnsen.title" = "日本三名泉";
+"home.theme.threeFamousOnsen.subtitle" = "林罗山称为“天下三名泉”的名汤";
+"home.theme.threeGardens.title" = "日本三名园";
+"home.theme.threeGardens.subtitle" = "代表日本的三座大名庭园";
+"home.theme.threeNightViews.title" = "日本三大夜景";
+"home.theme.threeNightViews.subtitle" = "广为人知的三处夜景";
+"home.theme.popularSouvenirs.title" = "热门手信";
+"home.theme.seaAndBeach.title" = "著名海滩";
+"beach.jodogahama" = "净土浜";
+"beach.kujukurihama" = "九十九里浜";
+"beach.yuigahama" = "由比浜";
+"beach.izu_shirahama" = "伊豆白浜";
+"beach.suishohama" = "水晶浜";
+"beach.takeno" = "竹野浜";
+"beach.shirarahama" = "白良浜";
+"beach.takahama" = "高浜（五岛）";
+"beach.emerald" = "翡翠海滩";
+"beach.nishihama" = "西浜（波照间）";
+"beach.jodogahama_desc" = "白岩、松树与清澈海水交织的三陆胜景";
+"beach.yuigahama_desc" = "镰仓的代表性海水浴场";
+"beach.suishohama_desc" = "以清澈海水和白沙闻名的人气海水浴场";
+"beach.takahama_desc" = "五岛列岛白沙与翡翠海水的海滩";
+"beach.emerald_desc" = "位于本部国营公园的人工海滩";
+"beach.nishihama_desc" = "以波照间岛「波照间蓝」闻名的白沙海滩";
+"beach.kujukurihama_desc" = "面向太平洋、绵延约60公里的壮阔沙滩";
+"beach.izu_shirahama_desc" = "伊豆半岛代表性的白沙蓝海海水浴场";
+"beach.takeno_desc" = "山阴海岸水质清澈的浅滩海水浴场";
+"beach.shirarahama_desc" = "洁白沙滩绵延的南纪白滨名滩";
 "home.trend.group.title" = "%1$@的%2$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "在 YouTube 观看";

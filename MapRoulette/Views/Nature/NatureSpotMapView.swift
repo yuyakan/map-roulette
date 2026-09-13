@@ -211,7 +211,19 @@ class NatureSpotDataRepository {
             ("sea_munakata_name", "sea_munakata_description", .sea, 4, CLLocationCoordinate2D(latitude: 34.2439, longitude: 130.1039)),
             ("sea_iki_tsushima_name", "sea_iki_tsushima_description", .sea, 4, CLLocationCoordinate2D(latitude: 34.1439, longitude: 129.2839)),
             ("sea_amakusa_name", "sea_amakusa_description", .sea, 4, CLLocationCoordinate2D(latitude: 32.4539, longitude: 130.1939)),
-            ("sea_nichinan_name", "sea_nichinan_description", .sea, 4, CLLocationCoordinate2D(latitude: 31.5739, longitude: 131.4239))
+            ("sea_nichinan_name", "sea_nichinan_description", .sea, 4, CLLocationCoordinate2D(latitude: 31.5739, longitude: 131.4239)),
+            // ビーチ（ホームの「有名なビーチ」テーマと揃えるため追加。nameKey はテーマと共通の beach.*）
+            ("beach.jodogahama", "beach.jodogahama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 39.6389, longitude: 141.9700)),
+            ("beach.yuigahama", "beach.yuigahama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 35.3080, longitude: 139.5490)),
+            ("beach.suishohama", "beach.suishohama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 35.6520, longitude: 136.0400)),
+            ("beach.takahama", "beach.takahama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 32.6980, longitude: 128.8390)),
+            ("beach.emerald", "beach.emerald_desc", .sea, 4, CLLocationCoordinate2D(latitude: 26.6940, longitude: 127.8780)),
+            ("beach.nishihama", "beach.nishihama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 24.0560, longitude: 123.7810)),
+            // ホームの「有名なビーチ」テーマ用に追加（自然タブにも同 nameKey で表示・詳細を開く）。
+            ("beach.kujukurihama", "beach.kujukurihama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 35.5300, longitude: 140.4200)),
+            ("beach.izu_shirahama", "beach.izu_shirahama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 34.6820, longitude: 138.9660)),
+            ("beach.takeno", "beach.takeno_desc", .sea, 4, CLLocationCoordinate2D(latitude: 35.6360, longitude: 134.7700)),
+            ("beach.shirarahama", "beach.shirarahama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 33.6840, longitude: 135.3390))
         ]
         
         for (nameKey, descriptionKey, spotType, popularity, coordinate) in natureSpotData {
@@ -1029,7 +1041,28 @@ struct NatureSpotMapView: View {
                 position = CGPoint(x: 95, y: 425) // 天草 - 熊本県
             case "sea_nichinan_name":
                 position = CGPoint(x: 110, y: 440) // 日南海岸 - 宮崎県
-                
+            // ビーチ（有名なビーチテーマと共通）
+            case "beach.jodogahama":
+                position = CGPoint(x: 382, y: 205) // 浄土ヶ浜 - 岩手県
+            case "beach.yuigahama":
+                position = CGPoint(x: 316, y: 345) // 由比ヶ浜 - 神奈川県
+            case "beach.suishohama":
+                position = CGPoint(x: 238, y: 330) // 水晶浜 - 福井県
+            case "beach.takahama":
+                position = CGPoint(x: 70, y: 405) // 高浜(五島) - 長崎県
+            case "beach.emerald":
+                position = CGPoint(x: 40, y: 478) // エメラルドビーチ - 沖縄県
+            case "beach.nishihama":
+                position = CGPoint(x: 25, y: 490) // ニシ浜(波照間) - 沖縄県
+            case "beach.kujukurihama":
+                position = CGPoint(x: 345, y: 335) // 九十九里浜 - 千葉県
+            case "beach.izu_shirahama":
+                position = CGPoint(x: 305, y: 355) // 伊豆白浜 - 静岡県
+            case "beach.takeno":
+                position = CGPoint(x: 205, y: 340) // 竹野浜 - 兵庫県
+            case "beach.shirarahama":
+                position = CGPoint(x: 235, y: 390) // 白良浜 - 和歌山県
+
         default:
             position = CGPoint(x: 250, y: 250)
         }

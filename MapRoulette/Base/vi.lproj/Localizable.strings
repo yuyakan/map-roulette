@@ -234,6 +234,7 @@
 "tourism_detail_unfavorite" = "Xóa khỏi yêu thích";
 "tourism_detail_map" = "Bản đồ";
 "tourism_detail_photos" = "Ảnh";
+"tourism_detail_nature" = "Thiên nhiên";
 "tourism_detail_trend" = "Xu hướng";
 "tourism_detail_photo" = "Ảnh";
 "tourism_detail_photo_loading" = "Đang tải...";
@@ -801,7 +802,11 @@
 "attraction_awaji_island" = "Đảo Awaji";
 "attraction_awaji_island_desc" = "Hòn đảo của hoa và cây xanh";
 "attraction_mount_rokko" = "Núi Rokko";
+"attraction_mount_maya" = "Núi Maya";
+"attraction_inasayama" = "Núi Inasa";
 "attraction_mount_rokko_desc" = "Điểm nổi tiếng ngắm toàn cảnh đêm Kobe";
+"attraction_mount_maya_desc" = "Cảnh đêm Kobe nhìn từ Kikuseidai, một trong ba cảnh đêm đẹp nhất Nhật Bản";
+"attraction_inasayama_desc" = "Một trong ba cảnh đêm đẹp nhất Nhật Bản, nhìn xuống Nagasaki";
 "attraction_takarazuka_grand_theater" = "Nhà hát lớn Takarazuka";
 "attraction_takarazuka_grand_theater_desc" = "Thánh địa của đoàn kịch Takarazuka";
 
@@ -5533,6 +5538,39 @@
 "home.ongoing.empty.action" = "Đến Kế hoạch của tôi";
 "home.section.favorite" = "Yêu thích";
 "home.section.recommended" = "Đề xuất";
+
+/* ④ Gợi ý tỉnh theo chủ đề (PrefectureTheme) */
+"home.section.themes" = "Khám phá theo chủ đề";
+"home.theme.japanThreeViews.title" = "Ba Cảnh Đẹp Nhật Bản";
+"home.theme.japanThreeViews.subtitle" = "Danh thắng được chọn đầu thời Edo";
+"home.theme.threeFamousOnsen.title" = "Ba Suối Nước Nóng Nổi Tiếng";
+"home.theme.threeFamousOnsen.subtitle" = "\"Ba suối nước nóng lớn\" kinh điển của Nhật Bản";
+"home.theme.threeGardens.title" = "Ba Khu Vườn Lớn";
+"home.theme.threeGardens.subtitle" = "Ba khu vườn cảnh nổi tiếng của Nhật Bản";
+"home.theme.threeNightViews.title" = "Ba Cảnh Đêm Đẹp Nhất";
+"home.theme.threeNightViews.subtitle" = "Ba cảnh đêm biểu tượng của Nhật Bản";
+"home.theme.popularSouvenirs.title" = "Nổi tiếng về quà lưu niệm";
+"home.theme.seaAndBeach.title" = "Bãi biển nổi tiếng";
+"beach.jodogahama" = "Jodogahama";
+"beach.kujukurihama" = "Bãi biển Kujukuri";
+"beach.yuigahama" = "Yuigahama";
+"beach.izu_shirahama" = "Izu Shirahama";
+"beach.suishohama" = "Suishohama";
+"beach.takeno" = "Bãi biển Takeno";
+"beach.shirarahama" = "Shirarahama";
+"beach.takahama" = "Takahama (Goto)";
+"beach.emerald" = "Bãi biển Emerald";
+"beach.nishihama" = "Nishihama (Hateruma)";
+"beach.jodogahama_desc" = "Thắng cảnh Sanriku với đá trắng, thông và biển trong";
+"beach.yuigahama_desc" = "Bãi tắm biểu tượng của Kamakura";
+"beach.suishohama_desc" = "Bãi biển nổi tiếng với nước trong và cát trắng";
+"beach.takahama_desc" = "Cát trắng và biển ngọc lục bảo ở quần đảo Goto";
+"beach.emerald_desc" = "Bãi biển nhân tạo trong công viên quốc gia Motobu";
+"beach.nishihama_desc" = "Bãi cát trắng nổi tiếng với \"Hateruma Blue\"";
+"beach.kujukurihama_desc" = "Bãi cát hùng vĩ dài 60 km hướng ra Thái Bình Dương";
+"beach.izu_shirahama_desc" = "Bãi biển cát trắng biểu tượng của bán đảo Izu";
+"beach.takeno_desc" = "Bãi biển nông, nước trong trên bờ biển San'in";
+"beach.shirarahama_desc" = "Bãi cát trắng nổi tiếng ở Nanki-Shirahama";
 "home.trend.group.title" = "%2$@ ở %1$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "Xem trên YouTube";

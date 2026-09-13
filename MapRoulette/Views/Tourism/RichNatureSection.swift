@@ -1,27 +1,44 @@
 //
-//  RichOnsenSection.swift
+//  RichNatureSection.swift
 //  MapRoulette
 //
-//  Created by 上別縄祐也 on 2025/07/26.
+//  県詳細（TourismDetailView）の「自然」セクション。
+//  自然タブ（NatureSpotMapView）で扱っている固定スポット（夜景・星空・海・キャンプ）の
+//  うち、その県に属するものだけを抜き出してカード表示する。
+//  タップで自然タブと同じ詳細（NatureSpotDetailView）を全画面で開く。
+//
+//  データの出所は NatureSpotDataRepository.shared（自然タブと同一）。ここでは
+//  prefecture でフィルタするだけで、スポット定義は複製しない（単一の真実の源）。
 //
 
 import SwiftUI
-import MapKit
 
-struct RichOnsenSection: View {
+struct RichNatureSection: View {
     let prefecture: Prefecture
+    /// お土産セクションと同じく、初期は先頭4件だけ表示し「もっと見る」で全件展開する。
+    @State private var showAllItems = false
 
-    /// 温泉セクションの基調色。
-    private let accent = Color(red: 0.13, green: 0.58, blue: 0.66)
+    /// 自然セクションの基調色（自然タブのキャンプ＝緑に寄せた、落ち着いた緑）。
+    private let accent = Color(red: 0.20, green: 0.55, blue: 0.36)
+
+    /// この県に属する自然スポット（自然タブと同じデータを prefecture で絞り込む）。
+    /// 並びは自然タブのデータ定義順（夜景→星空→海→キャンプ）をそのまま踏襲する。
+    private var spots: [FixedNatureSpotItem] {
+        NatureSpotDataRepository.shared.allFixedSpots
+            .filter { $0.prefecture == prefecture }
+    }
+
+    /// 実際に表示する件数（他セクションと同じ「最初4件」ルール）。
+    private var displayedSpots: [FixedNatureSpotItem] {
+        showAllItems ? spots : Array(spots.prefix(4))
+    }
 
     var body: some View {
-        let onsens = prefecture.onsenItems
-
-        if !onsens.isEmpty {
+        if !spots.isEmpty {
             VStack(alignment: .leading, spacing: 16) {
                 RichSectionHeader(
-                    icon: "thermometer.sun.fill",
-                    title: "hot_spring_info".localized,
+                    icon: "leaf.fill",
+                    title: "tourism_detail_nature".localized,
                     accent: accent
                 )
 
@@ -29,9 +46,16 @@ struct RichOnsenSection: View {
                     GridItem(.flexible()),
                     GridItem(.flexible())
                 ], spacing: 16) {
-                    ForEach(onsens) { onsen in
-                        OnsenCard(onsen: onsen, prefecture: prefecture)
+                    ForEach(displayedSpots) { spot in
+                        NatureSectionCard(spot: spot)
                             .padding(.horizontal, 2)
+                    }
+                }
+
+                // 5件以上ある県だけ「もっと見る」を出す（お土産セクションと同じ挙動）。
+                if !showAllItems && spots.count > 4 {
+                    LoadMoreButton(title: "load_more_groumet".localized, accent: accent) {
+                        withAnimation(.easeInOut(duration: 0.3)) { showAllItems = true }
                     }
                 }
             }
@@ -40,28 +64,28 @@ struct RichOnsenSection: View {
     }
 }
 
-// MARK: - 温泉カードコンポーネント
-import MapKit
-import SwiftUI
+// MARK: - 自然スポットカード（県詳細用）
 
-// OnsenCardの修正版（FixedOnsenItemを使用）
-struct OnsenCard: View {
-    let onsen: OnsenItem
-    let prefecture: Prefecture
+/// 県詳細の自然セクションで使うカード。温泉セクション（OnsenCard）と同じ見た目・挙動に
+/// 揃え、タップで自然タブと同じ NatureSpotDetailView を全画面で開く。
+private struct NatureSectionCard: View {
+    let spot: FixedNatureSpotItem
     @State private var isPressed = false
     @State private var showingDetail = false
-    
+
+    private var typeColor: Color { spot.spotType.color }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            // ヘッダー部分（アイコンを上段に置き、タイトルはカード全幅を使えるようにする）
+            // ヘッダー部分（アイコン＋人気度スター）
             HStack {
                 ZStack {
                     Circle()
                         .fill(
                             LinearGradient(
                                 gradient: Gradient(colors: [
-                                    onsen.onsenType.color.opacity(0.8),
-                                    onsen.onsenType.color
+                                    typeColor.opacity(0.8),
+                                    typeColor
                                 ]),
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
@@ -69,45 +93,43 @@ struct OnsenCard: View {
                         )
                         .frame(width: 32, height: 32)
 
-                    Image(systemName: onsen.imageSymbol)
+                    Image(systemName: spot.imageSymbol)
                         .font(.system(size: 16))
                         .foregroundColor(.white)
                 }
 
                 Spacer()
 
-                // 人気度スター
                 HStack(spacing: 2) {
                     ForEach(1...5, id: \.self) { star in
-                        Image(systemName: star <= onsen.popularity ? "star.fill" : "star")
+                        Image(systemName: star <= spot.popularity ? "star.fill" : "star")
                             .font(.caption2)
-                            .foregroundColor(star <= onsen.popularity ? .yellow : .gray.opacity(0.3))
+                            .foregroundColor(star <= spot.popularity ? .yellow : .gray.opacity(0.3))
                     }
                 }
             }
 
-            // タイトル＋カテゴリタグ（カード全幅を使える独立行）
+            // タイトル＋カテゴリタグ
             VStack(alignment: .leading, spacing: 6) {
-                Text(onsen.name)
+                Text(spot.name)
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundColor(.primary)
                     .lineLimit(2)
                     .minimumScaleFactor(0.85)
                     .fixedSize(horizontal: false, vertical: true)
 
-                // カテゴリータグ
-                Label(onsen.onsenType.tagName, systemImage: onsen.onsenType.icon)
+                Label(spot.spotType.localizedName, systemImage: spot.spotType.icon)
                     .font(.caption2)
                     .lineLimit(1)
                     .padding(.horizontal, 8)
                     .padding(.vertical, 3)
-                    .background(onsen.onsenType.color.opacity(0.2))
-                    .foregroundColor(onsen.onsenType.color)
+                    .background(typeColor.opacity(0.2))
+                    .foregroundColor(typeColor)
                     .clipShape(Capsule())
             }
 
             // 説明文
-            Text(onsen.description)
+            Text(spot.description)
                 .font(.caption)
                 .foregroundColor(.secondary)
                 .lineLimit(2)
@@ -131,8 +153,8 @@ struct OnsenCard: View {
                         .stroke(
                             LinearGradient(
                                 gradient: Gradient(colors: [
-                                    onsen.onsenType.color.opacity(0.3),
-                                    onsen.onsenType.color.opacity(0.1)
+                                    typeColor.opacity(0.3),
+                                    typeColor.opacity(0.1)
                                 ]),
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
@@ -158,10 +180,7 @@ struct OnsenCard: View {
             }
         }
         .fullScreenCover(isPresented: $showingDetail) {
-            if let fixedOnsen = OnsenDataRepository.shared.getFixedOnsen(name: onsen.name, type: onsen.onsenType) {
-                OnsenDetailView(onsen: fixedOnsen)
-            }
+            NatureSpotDetailView(spot: spot)
         }
     }
 }
-

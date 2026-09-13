@@ -232,6 +232,7 @@
 "tourism_detail_unfavorite" = "즐겨찾기에서 제거";
 "tourism_detail_map" = "관광지 지도";
 "tourism_detail_photos" = "사진";
+"tourism_detail_nature" = "자연";
 "tourism_detail_trend" = "트렌드";
 "tourism_detail_photo" = "관광지 사진";
 "tourism_detail_photo_loading" = "사진을 로딩 중...";
@@ -797,7 +798,11 @@
 "attraction_awaji_island" = "아와지섬";
 "attraction_awaji_island_desc" = "꽃과 초록의 섬";
 "attraction_mount_rokko" = "롯코산";
+"attraction_mount_maya" = "마야산";
+"attraction_inasayama" = "이나사산";
 "attraction_mount_rokko_desc" = "고베의 야경을 한눈에 볼 수 있는 인기 스팟";
+"attraction_mount_maya_desc" = "기쿠세이다이에서 보는 고베 야경, 일본 3대 야경 중 하나";
+"attraction_inasayama_desc" = "나가사키를 내려다보는 일본 3대 야경 중 하나";
 "attraction_takarazuka_grand_theater" = "다카라즈카 대극장";
 "attraction_takarazuka_grand_theater_desc" = "다카라즈카 가극의 성지";
 
@@ -5472,6 +5477,39 @@
 "home.ongoing.empty.action" = "내 플랜으로";
 "home.section.favorite" = "즐겨찾기";
 "home.section.recommended" = "추천";
+
+/* ④ 테마별 도도부현 소개 (PrefectureTheme) */
+"home.section.themes" = "테마로 찾기";
+"home.theme.japanThreeViews.title" = "일본 3경";
+"home.theme.japanThreeViews.subtitle" = "에도 초기에 선정된 명승지";
+"home.theme.threeFamousOnsen.title" = "일본 3대 명천";
+"home.theme.threeFamousOnsen.subtitle" = "예로부터 손꼽히는 세 명탕";
+"home.theme.threeGardens.title" = "일본 3대 정원";
+"home.theme.threeGardens.subtitle" = "일본을 대표하는 세 정원";
+"home.theme.threeNightViews.title" = "일본 3대 야경";
+"home.theme.threeNightViews.subtitle" = "널리 알려진 세 야경 명소";
+"home.theme.popularSouvenirs.title" = "인기 기념품";
+"home.theme.seaAndBeach.title" = "유명한 해변";
+"beach.jodogahama" = "조도가하마";
+"beach.kujukurihama" = "구주쿠리 해변";
+"beach.yuigahama" = "유이가하마";
+"beach.izu_shirahama" = "이즈 시라하마";
+"beach.suishohama" = "스이쇼하마";
+"beach.takeno" = "다케노 해변";
+"beach.shirarahama" = "시라라하마";
+"beach.takahama" = "다카하마 (고토)";
+"beach.emerald" = "에메랄드 비치";
+"beach.nishihama" = "니시하마 (하테루마)";
+"beach.jodogahama_desc" = "흰 바위와 소나무, 맑은 바다가 아름다운 산리쿠 명소";
+"beach.yuigahama_desc" = "가마쿠라를 대표하는 해수욕장";
+"beach.suishohama_desc" = "투명한 물과 흰 모래로 인기 있는 해수욕장";
+"beach.takahama_desc" = "고토 열도의 흰 모래와 에메랄드빛 바다가 펼쳐진 해변";
+"beach.emerald_desc" = "모토부 국영공원에 있는 인공 해변";
+"beach.nishihama_desc" = "하테루마섬의 '하테루마 블루'로 유명한 백사장";
+"beach.kujukurihama_desc" = "태평양을 마주한 약 60km 길이의 웅장한 모래 해안";
+"beach.izu_shirahama_desc" = "이즈반도를 대표하는 백사장과 푸른 바다의 해수욕장";
+"beach.takeno_desc" = "산인 해안의 투명도 높은 완만한 해수욕장";
+"beach.shirarahama_desc" = "새하얀 모래사장이 이어지는 난키시라하마의 명소";
 "home.trend.group.title" = "%1$@의 %2$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "YouTube에서 보기";

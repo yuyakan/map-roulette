@@ -10,9 +10,17 @@ import MapKit
 
 struct TourismDetailView: View {
     let prefecture: Prefecture
+    /// この県を開いた直後に、続けて開く詳細（あれば）。ホームの「テーマで探す」から
+    /// 名所／お土産／ビーチのカードをタップしたときに使う:
+    /// 県詳細 → そのままその項目の詳細まで一気に開く。nil のときは県詳細だけを開く。
+    let autoOpen: TourismAutoOpen?
     @State private var cameraPosition: MapCameraPosition
     @State private var isPressed = false
     @State private var selectedAttraction: LocalizedAttractionLocation? = nil
+    /// 自動で開くお土産詳細（テーマの「人気のおみやげ」カード経由）。
+    @State private var autoSouvenir: SouvenirItem? = nil
+    /// 自動で開く自然スポット詳細（テーマの「ビーチ」カード経由）。
+    @State private var autoNatureSpot: FixedNatureSpotItem? = nil
     /// フォト全画面ビューアを開くための、タップした写真の開始位置。
     @State private var photoViewerStart: PhotoViewerStart? = nil
     /// お気に入り都道府県ストア（ホームの「お気に入りの県」セクションの元データ）。
@@ -23,8 +31,9 @@ struct TourismDetailView: View {
     @State private var shortsFeed: PrefShortsFeed? = nil
     @Environment(\.dismiss) private var dismiss
 
-    init(prefecture: Prefecture) {
+    init(prefecture: Prefecture, autoOpen: TourismAutoOpen? = nil) {
         self.prefecture = prefecture
+        self.autoOpen = autoOpen
         let tourismInfo = prefecture.tourismInfo
         self._cameraPosition = State(initialValue: .region(MKCoordinateRegion(
             center: tourismInfo.region,
@@ -187,6 +196,9 @@ struct TourismDetailView: View {
                     // カフェの Shorts（お土産セクション下の広告の、さらに下に独立セクション）。
                     trendCafeSection
 
+                    // 自然（自然タブと同じスポットを県で絞り込んで表示。カフェの下）。
+                    RichNatureSection(prefecture: prefecture)
+
                     RichFestivalSection(prefecture: prefecture)
 
                     RichOtherFestivalSection(prefecture: prefecture)
@@ -203,6 +215,9 @@ struct TourismDetailView: View {
                 // ホームの「最近見た県」に記録する（この画面を開いた＝その県を見た）。
                 // マップからの遷移・県検索からの遷移の両方がこの画面を通るため、ここ1箇所でカバーできる。
                 RecentPrefectureStore.shared.record(prefecture)
+
+                // テーマのカード経由なら、続けてその項目の詳細まで自動で開く。
+                openAutoTargetIfNeeded()
             }
             .task {
                 // ホームを経由せず直接この画面に来た場合でも動画を出せるよう、トレンドをロード。
@@ -213,6 +228,12 @@ struct TourismDetailView: View {
             }
             .fullScreenCover(item: $selectedAttraction) { attraction in
                 AttractionDetailView(attraction: attraction, prefecture: prefecture)
+            }
+            .fullScreenCover(item: $autoSouvenir) { souvenir in
+                SouvenirDetailView(item: souvenir, prefecture: prefecture)
+            }
+            .fullScreenCover(item: $autoNatureSpot) { spot in
+                NatureSpotDetailView(spot: spot)
             }
             .fullScreenCover(item: $photoViewerStart) { start in
                 PhotoFullScreenViewer(
@@ -268,6 +289,29 @@ struct TourismDetailView: View {
                 
                 Spacer()
             }
+        }
+    }
+
+    // MARK: - テーマカード経由の自動遷移（県詳細 → その項目の詳細）
+
+    /// autoOpen で指定された項目の詳細を、県詳細を開いた直後に自動で開く。
+    /// 既にいずれかを開いている場合は何もしない（多重表示防止・再 onAppear 対策）。
+    /// 対応する実体が見つからないときは県詳細だけを表示したまま（安全側）。
+    private func openAutoTargetIfNeeded() {
+        guard selectedAttraction == nil, autoSouvenir == nil, autoNatureSpot == nil,
+              let autoOpen else { return }
+
+        switch autoOpen {
+        case .attraction(let nameKey):
+            selectedAttraction = prefecture.tourismInfo.attractions
+                .first { $0.nameKey == nameKey }
+        case .souvenir(let stableKey):
+            // UUID は不安定なので stableKey で県内から特定する。
+            autoSouvenir = prefecture.souvenirItems
+                .first { $0.stableKey == stableKey }
+        case .natureSpot(let nameKey):
+            autoNatureSpot = NatureSpotDataRepository.shared.allFixedSpots
+                .first { $0.nameKey == nameKey }
         }
     }
 
@@ -397,6 +441,17 @@ struct TourismDetailView: View {
         .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
     }
 
+}
+
+/// 県詳細を開いた直後に自動で開く詳細の指定（ホームの「テーマで探す」カード用）。
+/// 県詳細は共通の入口なので、どの項目の詳細に進むかだけをここで表す。
+enum TourismAutoOpen {
+    /// 観光名所詳細（LocalizedAttractionLocation の nameKey）。
+    case attraction(nameKey: String)
+    /// お土産詳細（SouvenirItem の stableKey）。
+    case souvenir(stableKey: String)
+    /// 自然スポット詳細（FixedNatureSpotItem の nameKey。ビーチ = 海カテゴリ）。
+    case natureSpot(nameKey: String)
 }
 
 /// フォト全画面ビューアを `fullScreenCover(item:)` で開くための、開始位置ラッパー。

@@ -234,6 +234,7 @@
 "tourism_detail_unfavorite" = "Hapus dari favorit";
 "tourism_detail_map" = "Peta";
 "tourism_detail_photos" = "Foto";
+"tourism_detail_nature" = "Alam";
 "tourism_detail_trend" = "Tren";
 "tourism_detail_photo" = "Foto";
 "tourism_detail_photo_loading" = "memuat…";
@@ -801,7 +802,11 @@
 "attraction_awaji_island" = "Pulau Awaji";
 "attraction_awaji_island_desc" = "Pulau bunga dan hijauan";
 "attraction_mount_rokko" = "Gunung Rokko";
+"attraction_mount_maya" = "Gunung Maya";
+"attraction_inasayama" = "Gunung Inasa";
 "attraction_mount_rokko_desc" = "Spot populer untuk memandang panorama malam Kobe";
+"attraction_mount_maya_desc" = "Pemandangan malam Kobe dari Kikuseidai, salah satu tiga pemandangan malam terbaik Jepang";
+"attraction_inasayama_desc" = "Salah satu tiga pemandangan malam terbaik Jepang, memandang Nagasaki";
 "attraction_takarazuka_grand_theater" = "Teater Agung Takarazuka";
 "attraction_takarazuka_grand_theater_desc" = "Tempat sakral Revue Takarazuka";
 
@@ -5533,6 +5538,39 @@
 "home.ongoing.empty.action" = "Ke Rencana Saya";
 "home.section.favorite" = "Favorit";
 "home.section.recommended" = "Rekomendasi";
+
+/* ④ Pilihan prefektur bertema (PrefectureTheme) */
+"home.section.themes" = "Jelajahi menurut Tema";
+"home.theme.japanThreeViews.title" = "Tiga Pemandangan Jepang";
+"home.theme.japanThreeViews.subtitle" = "Lanskap pilihan dari awal periode Edo";
+"home.theme.threeFamousOnsen.title" = "Tiga Sumber Air Panas Terkenal";
+"home.theme.threeFamousOnsen.subtitle" = "\"Tiga sumber air panas besar\" klasik Jepang";
+"home.theme.threeGardens.title" = "Tiga Taman Besar";
+"home.theme.threeGardens.subtitle" = "Tiga taman lanskap terkenal di Jepang";
+"home.theme.threeNightViews.title" = "Tiga Pemandangan Malam Terbaik";
+"home.theme.threeNightViews.subtitle" = "Tiga pemandangan malam ikonik Jepang";
+"home.theme.popularSouvenirs.title" = "Cocok untuk oleh-oleh";
+"home.theme.seaAndBeach.title" = "Pantai terkenal";
+"beach.jodogahama" = "Jodogahama";
+"beach.kujukurihama" = "Pantai Kujukuri";
+"beach.yuigahama" = "Yuigahama";
+"beach.izu_shirahama" = "Izu Shirahama";
+"beach.suishohama" = "Suishohama";
+"beach.takeno" = "Pantai Takeno";
+"beach.shirarahama" = "Shirarahama";
+"beach.takahama" = "Takahama (Goto)";
+"beach.emerald" = "Pantai Emerald";
+"beach.nishihama" = "Nishihama (Hateruma)";
+"beach.jodogahama_desc" = "Panorama Sanriku dengan batu putih, pinus, dan laut jernih";
+"beach.yuigahama_desc" = "Pantai renang ikonik Kamakura";
+"beach.suishohama_desc" = "Pantai populer dengan air jernih dan pasir putih";
+"beach.takahama_desc" = "Pasir putih dan laut zamrud di Kepulauan Goto";
+"beach.emerald_desc" = "Pantai buatan di taman nasional Motobu";
+"beach.nishihama_desc" = "Pantai pasir putih terkenal dengan \"Hateruma Blue\"";
+"beach.kujukurihama_desc" = "Pantai berpasir megah sepanjang 60 km menghadap Pasifik";
+"beach.izu_shirahama_desc" = "Pantai pasir putih ikonik Semenanjung Izu";
+"beach.takeno_desc" = "Pantai dangkal berair jernih di pesisir San'in";
+"beach.shirarahama_desc" = "Pantai pasir putih terkenal di Nanki-Shirahama";
 "home.trend.group.title" = "%2$@ di %1$@";
 "home.trend.source.youtube" = "YouTube";
 "home.trend.watch.youtube" = "Tonton di YouTube";
