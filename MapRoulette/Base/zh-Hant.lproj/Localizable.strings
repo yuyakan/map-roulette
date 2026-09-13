@@ -6178,7 +6178,6 @@
 "home.theme.threeGardens.subtitle" = "代表日本的三座大名庭園";
 "home.theme.threeNightViews.title" = "日本三大夜景";
 "home.theme.threeNightViews.subtitle" = "廣為人知的三處夜景";
-"home.theme.popularSouvenirs.title" = "熱門伴手禮";
 "home.theme.seaAndBeach.title" = "著名海灘";
 "beach.jodogahama" = "淨土濱";
 "beach.kujukurihama" = "九十九里濱";
@@ -6209,9 +6208,14 @@
 "home.trend.area.kyoto" = "京都";
 "home.trend.area.osaka" = "大阪";
 "home.trend.category.cafe" = "咖啡廳";
-"home.trend.category.spot" = "打卡景點";
+"home.trend.category.spot" = "熱門景點";
 "home.trend.category.gourmet" = "美食";
 "home.trend.empty" = "暫無熱門內容，請稍後再來。";
 "home.trend.error.network" = "請檢查您的網路連線。";
 "home.trend.error.generic" = "無法載入熱門內容。";
 "home.trend.retry" = "重試";
+
+/* ホーム 県カード列の切り替えタブ（短縮ラベル） */
+"home.tab.recent" = "最近";
+"home.tab.favorite" = "收藏";
+"home.tab.recommended" = "推薦";

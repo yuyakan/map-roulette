@@ -5549,7 +5549,6 @@
 "home.theme.threeGardens.subtitle" = "Japan's three celebrated landscape gardens";
 "home.theme.threeNightViews.title" = "Three Great Night Views";
 "home.theme.threeNightViews.subtitle" = "Japan's three iconic nightscapes";
-"home.theme.popularSouvenirs.title" = "Great for Souvenirs";
 "home.theme.seaAndBeach.title" = "Famous Beaches";
 "beach.jodogahama" = "Jodogahama";
 "beach.kujukurihama" = "Kujukuri Beach";
@@ -5580,9 +5579,14 @@
 "home.trend.area.kyoto" = "Kyoto";
 "home.trend.area.osaka" = "Osaka";
 "home.trend.category.cafe" = "Cafés";
-"home.trend.category.spot" = "Photo spots";
+"home.trend.category.spot" = "Popular spots";
 "home.trend.category.gourmet" = "Gourmet";
 "home.trend.empty" = "No trends yet. Please check back later.";
 "home.trend.error.network" = "Please check your internet connection.";
 "home.trend.error.generic" = "Couldn't load trends.";
 "home.trend.retry" = "Retry";
+
+/* ホーム 県カード列の切り替えタブ（短縮ラベル） */
+"home.tab.recent" = "Recent";
+"home.tab.favorite" = "Favorites";
+"home.tab.recommended" = "Popular";

@@ -45,7 +45,7 @@ enum TrendSampleData {
             categoryKey: "cafe",
             updatedAt: Date(),
             videos: [
-                video("aqz-KE-bpKQ", "東京の映えカフェ 5選 ☕️", "Tokyo Cafe Hopping", 38),
+                video("aqz-KE-bpKQ", "東京の人気カフェ 5選 ☕️", "Tokyo Cafe Hopping", 38),
                 video("ScMzIvxBSi4", "隠れ家カフェで優雅な朝を", "Morning Latte", 47),
                 video("V-_O7nl0Ii0", "渋谷の話題スイーツ", "Sweet Tokyo", 52),
                 video("YE7VzlLtp-4", "ネオンなカフェ探訪", "Neon Eats", 29)
@@ -58,7 +58,7 @@ enum TrendSampleData {
             categoryKey: "spot",
             updatedAt: Date(),
             videos: [
-                video("hV8oGvHt9jA", "京都の映えスポット巡り 🍁", "Kyoto Walks", 41),
+                video("hV8oGvHt9jA", "京都の人気スポット巡り 🍁", "Kyoto Walks", 41),
                 video("e-ORhEE9VVg", "嵐山の絶景ショート", "Scenic Japan", 33),
                 video("kXYiU_JCYtU", "夜の祇園さんぽ", "Gion Nights", 55),
                 video("fJ9rUzIMcZQ", "伏見稲荷 千本鳥居", "Torii Trail", 44)

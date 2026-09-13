@@ -33,11 +33,25 @@ struct TrendGroup: Identifiable, Codable, Hashable {
     /// この県に対応する Prefecture（無効な prefKey なら nil）。
     var prefecture: Prefecture? { Prefecture(rawValue: prefKey) }
 
+    /// 画面に出すカテゴリ名。
+    ///
+    /// Firestore の `category`（バッチが書いた文字列）はそのまま使わず、`categoryKey` から
+    /// アプリ側のローカライズ文言を引く。理由は 2 つ:
+    ///  - バッチの文言に表示が引きずられない（文言を変えたいときアプリ側だけで直せる）。
+    ///  - 日本語以外の端末でも各言語の文言が出る（Firestore の値は日本語固定のため）。
+    /// 未知の categoryKey（バッチがカテゴリを増やした場合）は Firestore の値にフォールバックする。
+    var categoryName: String {
+        let key = "home.trend.category.\(categoryKey)"
+        let localized = NSLocalizedString(key, comment: "トレンドのカテゴリ名")
+        // NSLocalizedString は未定義キーだとキー文字列をそのまま返す。
+        return localized == key ? category : localized
+    }
+
     /// セクション見出し用の表示名（例: "東京都のカフェ"）。
     var displayTitle: String {
         String(
             format: NSLocalizedString("home.trend.group.title", comment: "県のカテゴリ"),
-            prefName, category
+            prefName, categoryName
         )
     }
 }

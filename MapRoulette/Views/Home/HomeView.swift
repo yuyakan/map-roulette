@@ -5,13 +5,15 @@
 //  5 タブ目「ホーム」のルート画面。
 //  ユーザーの行動（最近見た県 / お気に入りの県）を軸にパーソナライズした導線だけを置く。
 //
-//  セクションごとに見せ方を分けている:
-//   - 最近見た県 / お気に入りの県 … 県の「ダイジェストカード」（地方・観光地・グルメ）。
-//     カード全体をタップで県詳細（TourismDetailView）へ。動画は出さない。
-//       理由: 動画は県詳細に一本化した。ホームで動画も出すと「どのセクションも動画が
-//       並んでいるだけ」で県詳細と重複し、ホーム独自の価値（＝県への入口）が薄れるため。
-//   - おすすめ … 従来どおり県名＋その県の動画サムネ横スクロール（→ Shorts 再生）。
-//     入口としての即時性を残すため、ここだけ動画を出す。
+//  見せ方の方針（UI で機能を見せる・説明しない）:
+//   - セクションは「大きなアイコン付き見出し」を置かない。小さなオーバーライン 1 行だけを
+//     写真の列に添え、何の列かは写真そのものに語らせる。
+//   - 説明文（テーマの出典など）はカード表面から外す。文字はカードの主役名だけに絞る。
+//   - 階層は文字サイズや枠線ではなく「写真の大きさと余白」で作る。
+//     最近見た県＝大（主役）／お気に入り・おすすめ＝小（一覧）。
+//   - 動画は必ず「県」に紐づけて出す（要件C: 県という独自文脈に紐づける）。ホームでは
+//     県カード列で主役になっている県の動画だけを、その列の直下に出す。
+//     トレンド単独の一覧は作らない。
 //
 //  設計: docs/HomeTab_Renewal_Plan.md §3.4。
 //  要件C: 動画は「アプリ独自の文脈（県＝独自データ）」に紐づけて出す。トレンド単独の
@@ -36,31 +38,41 @@ struct HomeView: View {
     @State private var themeDetailTarget: ThemeDetailTarget? = nil
     /// Shorts フィードを開く（動画配列 + 開始位置）。
     @State private var shortsFeed: PrefShortsFeed? = nil
-    /// テーマ別紹介（④）で展開中のテーマ。タップでその場に県リストを開く（画面遷移しない）。
+    /// テーマ別紹介（②）で展開中のテーマ。タップでその場に県リストを開く（画面遷移しない）。
     @State private var expandedTheme: PrefectureTheme? = nil
+    /// 県カード列の絞り込み（最近見た / お気に入り / おすすめ）。
+    /// 3 つの列を 1 つに統合したので、どれを出すかはこの状態で切り替える。
+    @State private var selectedFilter: PrefectureFilter = .recent
+
+    /// 県カード列で「いま主役になっている県」。この県の動画を列の下に出す。
+    /// 横スクロールに追従して切り替わる。
+    ///
+    /// 可視率そのものは @State に持たない。スクロール中は毎フレーム更新されるため、
+    /// @State に書くと毎フレーム HomeView 全体が再描画されてカクつく。
+    /// 可視率は下の visibilityTracker（ObservableObject ではない素のクラス）に溜め、
+    /// 主役の県が実際に変わったときだけこの @State を更新する。
+    @State private var focusedPrefecture: Prefecture? = nil
+
+    /// 可視率の集計だけを持つ箱。SwiftUI の再描画とは切り離す（毎フレーム書いても再描画しない）。
+    @State private var visibilityTracker = VisibilityTracker()
 
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 28) {
+                VStack(alignment: .leading, spacing: 36) {
                     // ⓪ 進行中の旅（あるときだけ最上部に 1 件）
                     ongoingPlanSection
 
-                    // ① 最近見た県（最優先）
-                    recentSection
+                    // ① 県カード（最近見た／お気に入り／おすすめ を 1 つに統合）
+                    prefectureSection
 
-                    // ② お気に入りの県
-                    favoriteSection
-
-                    // ③ おすすめ（固定県・常に表示）
-                    recommendedSection
-
-                    // ④ テーマ別 都道府県紹介（日本三景・三名泉・人気の◯◯…）
+                    // ② テーマ（ピル選択 → 下に展開）
                     themedSections
 
                     footerNote
                 }
-                .padding(.vertical, 16)
+                .padding(.top, 8)
+                .padding(.bottom, 24)
             }
             .background(Color(.systemBackground))
             .navigationBarTitleDisplayMode(.inline)
@@ -102,10 +114,10 @@ struct HomeView: View {
                 ongoingPlanBanner(plan)
             }
             .buttonStyle(.plain)
-            .padding(.horizontal, 16)
+            .padding(.horizontal, 20)
         } else {
             ongoingPlanEmpty
-                .padding(.horizontal, 16)
+                .padding(.horizontal, 20)
         }
     }
 
@@ -217,147 +229,314 @@ struct HomeView: View {
         .shadow(color: PlanTheme.cardShadow, radius: 6, x: 0, y: 2)
     }
 
-    // MARK: - ① 最近見た県
+    // MARK: - ① 県カード（最近見た／お気に入り／おすすめ の統合）
 
-    @ViewBuilder
-    private var recentSection: some View {
-        // 最近見た県はそのまま（動画の有無に依存しない）。ビジュアルカードを横に流して県詳細へ誘導する。
-        let prefs = recents.recents
-        if !prefs.isEmpty {
-            VStack(alignment: .leading, spacing: 12) {
-                sectionHeader(titleKey: "home.section.recent", icon: "clock.arrow.circlepath")
-                prefectureCardRow(prefs)
+    /// 県カードの出し分け。旧「最近見た県」「お気に入りの県」「おすすめ」は
+    /// どれも *県カードを押す → 県詳細* で機能が同じで、出す県が違うだけだった。
+    /// 3 本の横スクロール列に分けると同じ見た目が 3 回続くので、
+    /// 1 本の列＋切り替えに統合し、画面から列の繰り返しを減らす。
+    private enum PrefectureFilter: CaseIterable {
+        case recent, favorite, recommended
+
+        /// タブに出す短縮ラベル。3 つを横に並べるので、
+        /// 「最近見た県」ではなく「最近見た」のように最短の語にする。
+        var titleKey: String {
+            switch self {
+            case .recent:      return "home.tab.recent"
+            case .favorite:    return "home.tab.favorite"
+            case .recommended: return "home.tab.recommended"
             }
         }
     }
 
-    // MARK: - ② お気に入りの県
-
-    @ViewBuilder
-    private var favoriteSection: some View {
-        // お気に入りの県。順序は Prefecture.allCases 準拠で安定させる（動画の有無に依存しない）。
-        let prefs = Prefecture.allCases.filter { favorites.isFavorite($0) }
-        if !prefs.isEmpty {
-            VStack(alignment: .leading, spacing: 12) {
-                sectionHeader(titleKey: "home.section.favorite", icon: "heart.fill")
-                prefectureCardRow(prefs)
-            }
+    /// 現在の絞り込みで出す県。
+    private func prefectures(for filter: PrefectureFilter) -> [Prefecture] {
+        switch filter {
+        case .recent:
+            return recents.recents
+        case .favorite:
+            // 順序は Prefecture.allCases 準拠で安定させる。
+            return Prefecture.allCases.filter { favorites.isFavorite($0) }
+        case .recommended:
+            return PrefectureTheme.popularPrefectureList
         }
     }
 
-    /// 県ビジュアルカードを横スクロールで並べる（最近見た県 / お気に入り用）。
-    private func prefectureCardRow(_ prefs: [Prefecture]) -> some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 12) {
-                ForEach(prefs) { pref in
-                    prefectureCard(pref)
+    /// 中身が空の絞り込みは出さない（「最近見た県」が無い新規ユーザーに空タブを見せない）。
+    /// おすすめは常に中身があるので、最低 1 つは必ず残る。
+    private var availableFilters: [PrefectureFilter] {
+        PrefectureFilter.allCases.filter { !prefectures(for: $0).isEmpty }
+    }
+
+    /// 実際に選択されている絞り込み。選択中のものが空になったら先頭に落とす。
+    private var activeFilter: PrefectureFilter {
+        let available = availableFilters
+        if available.contains(selectedFilter) { return selectedFilter }
+        return available.first ?? .recommended
+    }
+
+    private var prefectureSection: some View {
+        let filters = availableFilters
+        let active = activeFilter
+        return VStack(alignment: .leading, spacing: 14) {
+            // 絞り込みが 1 つだけ（＝新規ユーザーで「おすすめ」しか無い）なら、
+            // 押しても何も起きないタブを並べても意味がないのでラベル 1 行にする。
+            if filters.count > 1 {
+                HStack(spacing: 18) {
+                    ForEach(filters, id: \.self) { filter in
+                        filterTab(filter, isActive: filter == active)
+                    }
+                    Spacer(minLength: 0)
                 }
+                .padding(.horizontal, 20)
+            } else {
+                overline(active.titleKey)
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 4)   // 角丸・影の上下欠け防止
+
+            prefectureCardRow(prefectures(for: active))
+
+            // 列で主役になっている県の動画（人気スポット／グルメ）。
+            focusedTrendRows
+        }
+        // 列に並ぶ県のサムネを先読みしておく。スクロールで主役が切り替わった時点では
+        // 既に手元にあるので、切り替わりで読み込み待ちが発生しない。
+        .task(id: prefectures(for: active)) {
+            prefetchThumbnails(for: prefectures(for: active))
+        }
+        // トレンドの取得が後から完了した場合にも先読みし直す。
+        .task(id: repository.loadedGroups.count) {
+            prefetchThumbnails(for: prefectures(for: active))
         }
     }
 
-    // MARK: - ③ おすすめ（固定県・常に表示）
-
-    /// おすすめとして常に出す県（固定・表示順）。人気の高い定番エリア。
-    /// 実体は PrefectureTheme.popularPrefectureList（単一の真実の源）を参照する。
-    private static var recommendedPrefectures: [Prefecture] {
-        PrefectureTheme.popularPrefectureList
+    /// 列に並ぶ県ぶんのサムネを先読みする。
+    /// 主役の県 → その次の県… の順に投げるので、すぐ必要なものから埋まる。
+    private func prefetchThumbnails(for prefs: [Prefecture]) {
+        let urls = prefs
+            .flatMap { trendGroups(for: $0) }
+            .flatMap(\.videos)
+            .map(\.thumbnailUrl)
+        ThumbnailLoader.shared.prefetch(urls)
     }
 
-    /// おすすめセクション。最近見た県／お気に入りが空でもホームが成立するよう常に表示する。
-    /// 他セクションと同じ県ビジュアルカードの横スクロールで統一する（動画は県詳細に一本化）。
-    private var recommendedSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            sectionHeader(titleKey: "home.section.recommended", icon: "sparkles")
-            prefectureCardRow(Self.recommendedPrefectures)
+    // MARK: - 主役の県のトレンド動画（人気スポット／グルメ）
+
+    /// 県カード列で主役になっている県の Shorts を、カテゴリごとに 1 行ずつ出す。
+    /// 出すのは spot（人気スポット）と gourmet（グルメ）だけ。カフェは県詳細に残す。
+    /// 動画が 1 本も無い県では何も出さない（空の見出しを作らない）。
+    ///
+    /// 要件C: 動画は「県」という独自データに紐づけて出す（トレンド単独の画面は作らない）。
+    /// 要件D: 出典はフッターの「Developed with YouTube」ロゴで明示している。
+    @ViewBuilder
+    private var focusedTrendRows: some View {
+        if let pref = focusedPrefecture {
+            let groups = trendGroups(for: pref)
+            if !groups.isEmpty {
+                VStack(alignment: .leading, spacing: 18) {
+                    // 行の同一性はカテゴリ（spot / gourmet）で持つ。TrendGroup.id は
+                    // 県を含む（"kyoto_spot"）ので、それで並べると県が変わるたびに
+                    // 行が作り直しになる。カテゴリ固定なら中身の差し替えで済む。
+                    ForEach(groups, id: \.categoryKey) { group in
+                        trendRow(group)
+                    }
+                }
+                .padding(.top, 2)
+                // .id(pref) は付けない。付けるとビューの同一性が県ごとに変わり、
+                // 切り替えのたびに行ごと作り直しになってスクロール中に引っかかる。
+                // 同じビューの中身だけを差し替えれば、サムネがキャッシュ済みなので一瞬で入れ替わる。
+                .animation(.easeInOut(duration: 0.18), value: pref)
+            }
         }
     }
 
-    // MARK: - ④ テーマ別 都道府県紹介（日本三景・三名泉・人気の◯◯…）
+    /// 主役の県で出すトレンドのグループ（人気スポット → グルメ の順）。
+    /// 動画が空のグループは除く。
+    private func trendGroups(for pref: Prefecture) -> [TrendGroup] {
+        let available = repository.groups(for: pref)
+        return Self.homeTrendCategoryKeys.compactMap { key in
+            available.first { $0.categoryKey == key && !$0.videos.isEmpty }
+        }
+    }
 
-    /// 「切り口（テーマ）」を 2 列グリッドで並べる。上のセクション（横スクロール行）とは
-    /// 見せ方を変え、テーマのタイルをタップすると **その行の下にその場で県が展開** する
-    /// （画面遷移しないアコーディオン）。展開中の県カードをタップで県詳細へ。
-    private var themedSections: some View {
-        // 2 列に並べるため 2 個ずつの行に分割する。展開エリアは「展開中テーマを含む行」の直後に差し込む。
-        let rows = PrefectureTheme.displayOrder.chunked(into: 2)
-        return VStack(alignment: .leading, spacing: 12) {
-            sectionHeader(titleKey: "home.section.themes", icon: "square.grid.2x2.fill")
+    /// ホームに出すカテゴリと、その並び順。カフェは県詳細だけに残す。
+    private static let homeTrendCategoryKeys = ["spot", "gourmet"]
 
-            VStack(spacing: 12) {
-                ForEach(Array(rows.enumerated()), id: \.offset) { _, row in
-                    HStack(spacing: 12) {
-                        ForEach(row) { theme in
-                            themeTile(theme)
+    /// トレンド 1 行（「◯◯県の人気スポット」＋サムネ横スクロール）。
+    /// タップでその行の動画を頭から連続再生する（ShortsFeedView）。
+    private func trendRow(_ group: TrendGroup) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(group.displayTitle)
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundColor(.secondary)
+                .padding(.horizontal, 20)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    ForEach(Array(group.videos.enumerated()), id: \.element.id) { index, video in
+                        Button {
+                            shortsFeed = PrefShortsFeed(videos: group.videos, startIndex: index)
+                        } label: {
+                            TrendCard(video: video)
                         }
-                        // 行が 1 個しかないとき（奇数個）は右側を埋めて左寄せの幅を保つ。
-                        if row.count == 1 { Color.clear.frame(maxWidth: .infinity) }
-                    }
-
-                    // この行に展開中テーマが含まれていれば、行の直下に県リストを差し込む。
-                    if let expanded = expandedTheme, row.contains(expanded) {
-                        themeExpansion(expanded)
+                        .buttonStyle(.plain)
                     }
                 }
+                .padding(.horizontal, 20)
+                // 横 ScrollView の上端クリップでカード角丸が欠けるのを防ぐ余白。
+                .padding(.vertical, 8)
             }
-            .padding(.horizontal, 16)
         }
     }
 
-    /// グリッドの 1 タイル（テーマの見出し）。タップで展開/折りたたみをトグル。
-    private func themeTile(_ theme: PrefectureTheme) -> some View {
-        let isExpanded = expandedTheme == theme
-        return Button {
-            withAnimation(.easeInOut(duration: 0.22)) {
-                expandedTheme = isExpanded ? nil : theme
+    /// 切り替えタブ。選択中は文字を濃く＋下線を引き、非選択はグレー。
+    /// 枠や塗りを持たせるとテーマのピルと紛らわしくなるので、下線だけで示す。
+    private func filterTab(_ filter: PrefectureFilter, isActive: Bool) -> some View {
+        Button {
+            withAnimation(.easeInOut(duration: 0.2)) {
+                selectedFilter = filter
             }
         } label: {
-            VStack(alignment: .leading, spacing: 6) {
-                HStack {
-                    Image(systemName: theme.icon)
-                        .font(.system(size: 20, weight: .semibold))
-                        .foregroundColor(PlanTheme.primary)
-                    Spacer()
-                    Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
-                        .font(.system(size: 12, weight: .bold))
-                        .foregroundColor(.secondary)
-                }
-                Text(NSLocalizedString(theme.titleKey, comment: ""))
-                    .font(.system(size: 16, weight: .bold))
-                    .foregroundColor(.primary)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.8)
-                // 固定指標テーマは出典/根拠を添える（恣意的でないことを示す）。
-                if let subtitleKey = theme.subtitleKey {
-                    Text(NSLocalizedString(subtitleKey, comment: ""))
-                        .font(.system(size: 11))
-                        .foregroundColor(.secondary)
-                        .lineLimit(2)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
+            VStack(spacing: 5) {
+                Text(NSLocalizedString(filter.titleKey, comment: ""))
+                    .font(.system(size: 15, weight: isActive ? .bold : .medium))
+                    .foregroundColor(isActive ? .primary : .secondary)
+                Rectangle()
+                    .fill(isActive ? PlanTheme.primary : Color.clear)
+                    .frame(height: 2)
             }
-            .frame(maxWidth: .infinity, minHeight: 78, alignment: .topLeading)
-            .padding(12)
-            .background(
-                RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous)
-                    .fill(Color(.secondarySystemGroupedBackground))
-            )
-            .overlay(
-                RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous)
-                    .stroke(isExpanded ? PlanTheme.primary.opacity(0.6) : Color.clear, lineWidth: 1.5)
-            )
+            .fixedSize()
         }
         .buttonStyle(.plain)
     }
 
-    /// 展開エリア: 選択テーマの中身を横スクロール。タップで県詳細（fullScreenCover）へ。
+    /// 県ビジュアルカードを横スクロールで並べる。
+    /// 各カードは「画面内に見えている横幅の割合」を報告し、その結果で
+    /// 下に出す動画の県（focusedPrefecture）が決まる。
+    private func prefectureCardRow(_ prefs: [Prefecture]) -> some View {
+        // 可視率はこの座標空間（＝スクロールの見えている窓）を基準に測る。
+        // 窓の幅は ScrollView 自身の幅なので、外側の GeometryReader で測って渡す。
+        let space = "prefRow"
+        return GeometryReader { outer in
+            let windowWidth = outer.size.width
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 10) {
+                    ForEach(prefs) { pref in
+                        prefectureCard(pref)
+                            .background(
+                                visibilityReporter(for: pref, in: space, windowWidth: windowWidth)
+                            )
+                    }
+                }
+                .padding(.horizontal, 20)
+                .padding(.vertical, 4)   // 角丸・影の上下欠け防止
+            }
+            .coordinateSpace(name: space)
+        }
+        // GeometryReader は高さを持たないので、カード列ぶんの高さを明示する
+        // （カード高 + .padding(.vertical, 4) の上下ぶん）。
+        .frame(height: Self.prefCardHeight + 8)
+        .onPreferenceChange(CardVisibilityKey.self) { visibility in
+            // 毎フレーム呼ばれる。主役の県が変わったときだけ @State を触る
+            // （そうしないとスクロール中ずっと再描画が走ってカクつく）。
+            visibilityTracker.merge(visibility)
+            if let next = visibilityTracker.focused(among: prefs,
+                                                    threshold: Self.focusVisibilityThreshold),
+               next != focusedPrefecture {
+                focusedPrefecture = next
+            }
+        }
+        // 絞り込みを切り替えたら、新しい列の先頭を主役に付け替える。
+        .onChange(of: prefs) { _, newPrefs in
+            visibilityTracker.reset()
+            focusedPrefecture = newPrefs.first
+        }
+        .onAppear {
+            if focusedPrefecture == nil { focusedPrefecture = prefs.first }
+        }
+    }
+
+    /// カード 1 枚の可視率（0…1）を測って preference に流すだけの透明ビュー。
+    /// カードの背景に敷くので、レイアウトには影響しない。
+    private func visibilityReporter(for pref: Prefecture,
+                                    in space: String,
+                                    windowWidth: CGFloat) -> some View {
+        GeometryReader { geo in
+            // 名前付き座標空間での位置。スクロールの見えている窓は x=0…windowWidth。
+            let card = geo.frame(in: .named(space))
+            Color.clear.preference(
+                key: CardVisibilityKey.self,
+                value: [pref: Self.visibleFraction(of: card, windowWidth: windowWidth)]
+            )
+        }
+    }
+
+    /// カードの可視率（0…1）。スクロール窓からはみ出した分を差し引いた幅の割合。
+    static func visibleFraction(of card: CGRect, windowWidth: CGFloat) -> CGFloat {
+        guard card.width > 0, windowWidth > 0 else { return 0 }
+        let visible = min(card.maxX, windowWidth) - max(card.minX, 0)
+        return max(0, min(1, visible / card.width))
+    }
+
+    /// 主役の県を切り替える可視率の閾値。先頭カードがこれ以下になったら次の県へ。
+    private static let focusVisibilityThreshold: CGFloat = 0.7
+
+    // MARK: - ③ テーマ別 都道府県紹介（日本三景・三名泉・人気の◯◯…）
+
+    /// テーマは「選択中のフィルタ」として横一列のピルで見せ、選んだテーマの中身を
+    /// すぐ下に写真カードで出す。見出し・説明文・chevron は置かず、
+    /// 「選ぶと下が変わる」という UI の動きだけで機能を伝える。
+    /// 常にどれか 1 つが選択されている（＝下に必ず写真が出る）状態にする。
+    private var themedSections: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 8) {
+                    ForEach(PrefectureTheme.displayOrder) { theme in
+                        themePill(theme)
+                    }
+                }
+                .padding(.horizontal, 20)
+                .padding(.vertical, 2)
+            }
+
+            themeExpansion(selectedTheme)
+        }
+    }
+
+    /// 現在選択中のテーマ。未選択なら先頭を既定にして、常に中身が見えている状態にする。
+    private var selectedTheme: PrefectureTheme {
+        expandedTheme ?? PrefectureTheme.displayOrder[0]
+    }
+
+    /// テーマのピル。選択中は塗り、非選択は地の薄いグレー。文字はテーマ名だけ。
+    private func themePill(_ theme: PrefectureTheme) -> some View {
+        let isSelected = selectedTheme == theme
+        return Button {
+            withAnimation(.easeInOut(duration: 0.2)) {
+                expandedTheme = theme
+            }
+        } label: {
+            Text(NSLocalizedString(theme.titleKey, comment: ""))
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundColor(isSelected ? .white : .primary)
+                .lineLimit(1)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 9)
+                .background(
+                    Capsule(style: .continuous)
+                        .fill(isSelected
+                              ? AnyShapeStyle(PlanTheme.primary)
+                              : AnyShapeStyle(Color.primary.opacity(0.06)))
+                )
+        }
+        .buttonStyle(.plain)
+    }
+
+    /// 選択テーマの中身を横スクロール。タップで県詳細（fullScreenCover）へ。
     /// テーマによって中身が「県」か「もの（おみやげ品・海の名所）」かで出し分ける。
     @ViewBuilder
     private func themeExpansion(_ theme: PrefectureTheme) -> some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 12) {
+            HStack(spacing: 10) {
                 switch theme.content {
                 case .prefectures(let prefs):
                     // 固定指標テーマ: 県カード（写真＝テーマの名所）。
@@ -371,12 +550,15 @@ struct HomeView: View {
                     }
                 }
             }
+            .padding(.horizontal, 20)
             .padding(.vertical, 4)
         }
-        .transition(.opacity.combined(with: .move(edge: .top)))
+        // 切り替え時に中身が差し替わったことが分かる程度のフェード。
+        .id(theme)
+        .transition(.opacity)
     }
 
-    /// 「もの」カード（おみやげ品・ビーチ）。タップでそのものがある県詳細へ。
+    /// 「もの」カード（現在はビーチのみ）。タップでそのものがある県詳細へ。
     /// 写真があれば県カードと同じビジュアル（写真＋下部にもの名・県名）、
     /// 無ければアイコン主体のカードにフォールバックする。
     @ViewBuilder
@@ -408,47 +590,35 @@ struct HomeView: View {
                         .frame(width: 150, height: 190)
                         .clipped()
                     LinearGradient(
-                        colors: [.clear, .black.opacity(0.55)],
+                        colors: [.clear, .black.opacity(0.5)],
                         startPoint: .center, endPoint: .bottom
                     )
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(item.name)
-                            .font(.system(size: 16, weight: .bold))
-                            .foregroundColor(.white)
-                            .lineLimit(2)
-                            .fixedSize(horizontal: false, vertical: true)
-                        Text(item.prefecture.prefectureName)
-                            .font(.system(size: 11, weight: .medium))
-                            .foregroundColor(.white.opacity(0.9))
-                    }
-                    .padding(10)
-                    .frame(width: 150, alignment: .leading)
+                    cardCaption(title: item.name,
+                                subtitle: item.prefecture.prefectureName)
+                        .frame(width: 150, alignment: .leading)
                 }
                 .frame(width: 150, height: 190)
-                .clipShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
-                .shadow(color: PlanTheme.cardShadow, radius: 6, x: 0, y: 2)
+                .clipShape(RoundedRectangle(cornerRadius: Self.cardRadius, style: .continuous))
             } else {
-                // 写真なし: アイコン主体のカード（フォールバック）。
-                VStack(alignment: .leading, spacing: 10) {
+                // 写真なし: 写真カードと同じ形のまま、地をブランドグラデにするフォールバック。
+                // （グレーの箱＋アイコンにすると 1 枚だけ質感が落ちて浮くため）
+                ZStack(alignment: .bottomLeading) {
+                    PlanTheme.brandGradient
+                        .frame(width: 150, height: 190)
                     Image(systemName: item.icon)
-                        .font(.system(size: 26, weight: .semibold))
-                        .foregroundColor(PlanTheme.primary)
-                    Spacer(minLength: 0)
-                    Text(item.name)
-                        .font(.system(size: 15, weight: .bold))
-                        .foregroundColor(.primary)
-                        .lineLimit(2)
-                        .fixedSize(horizontal: false, vertical: true)
-                    Text(item.prefecture.prefectureName)
-                        .font(.system(size: 11, weight: .medium))
-                        .foregroundColor(.secondary)
+                        .font(.system(size: 34, weight: .semibold))
+                        .foregroundColor(.white.opacity(0.35))
+                        .frame(width: 150, height: 190, alignment: .center)
+                    LinearGradient(
+                        colors: [.clear, .black.opacity(0.35)],
+                        startPoint: .center, endPoint: .bottom
+                    )
+                    cardCaption(title: item.name,
+                                subtitle: item.prefecture.prefectureName)
+                        .frame(width: 150, alignment: .leading)
                 }
-                .frame(width: 140, height: 130, alignment: .topLeading)
-                .padding(12)
-                .background(
-                    RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous)
-                        .fill(Color(.secondarySystemGroupedBackground))
-                )
+                .frame(width: 150, height: 190)
+                .clipShape(RoundedRectangle(cornerRadius: Self.cardRadius, style: .continuous))
             }
         }
         .buttonStyle(.plain)
@@ -490,36 +660,38 @@ struct HomeView: View {
 
                 // 下部を暗くして文字を読ませる
                 LinearGradient(
-                    colors: [.black.opacity(0.55), .clear, .black.opacity(0.35)],
-                    startPoint: .top,
+                    colors: [.clear, .black.opacity(0.5)],
+                    startPoint: .center,
                     endPoint: .bottom
                 )
 
                 // 名所名（主役・大）＋県名（従・小）。名所名が無い県は県名を主役に。
-                VStack(alignment: .leading, spacing: 2) {
-                    Spacer()
-                    if let spotName {
-                        Text(spotName)
-                            .font(.system(size: 17, weight: .bold))
-                            .foregroundColor(.white)
-                            .lineLimit(1)
-                        Text(pref.prefectureName)
-                            .font(.system(size: 11, weight: .medium))
-                            .foregroundColor(.white.opacity(0.9))
-                    } else {
-                        Text(pref.prefectureName)
-                            .font(.system(size: 17, weight: .bold))
-                            .foregroundColor(.white)
-                    }
-                }
-                .padding(10)
-                .frame(width: 150, height: 190, alignment: .bottomLeading)
+                cardCaption(title: spotName ?? pref.prefectureName,
+                            subtitle: spotName == nil ? nil : pref.prefectureName)
+                    .frame(width: 150, height: 190, alignment: .bottomLeading)
             }
             .frame(width: 150, height: 190)
-            .clipShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
-            .shadow(color: PlanTheme.cardShadow, radius: 6, x: 0, y: 2)
+            .clipShape(RoundedRectangle(cornerRadius: Self.cardRadius, style: .continuous))
         }
         .buttonStyle(.plain)
+    }
+
+    /// 写真カードの上に重ねる文字（主役名＋必要なら県名）。カード間で見え方を揃える。
+    private func cardCaption(title: String, subtitle: String?) -> some View {
+        VStack(alignment: .leading, spacing: 1) {
+            Spacer(minLength: 0)
+            Text(title)
+                .font(.system(size: 17, weight: .bold))
+                .foregroundColor(.white)
+                .lineLimit(2)
+                .fixedSize(horizontal: false, vertical: true)
+            if let subtitle {
+                Text(subtitle)
+                    .font(.system(size: 11, weight: .medium))
+                    .foregroundColor(.white.opacity(0.85))
+            }
+        }
+        .padding(14)
     }
 
     /// 県ビジュアルカード（最近見た県 / お気に入り用）。
@@ -544,90 +716,48 @@ struct HomeView: View {
                         PlanTheme.brandGradient
                     }
                 }
-                .frame(width: 220, height: 150)
+                .frame(width: Self.prefCardWidth, height: Self.prefCardHeight)
                 .clipped()
 
                 // 下部を暗くして白文字を読めるようにするグラデーション
                 LinearGradient(
-                    colors: [.clear, .black.opacity(0.55)],
+                    colors: [.clear, .black.opacity(0.5)],
                     startPoint: .center,
                     endPoint: .bottom
                 )
 
-                // 県名・地方・代表スポット名
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(pref.prefectureName)
-                        .font(.system(size: 20, weight: .bold))
-                        .foregroundColor(.white)
-                    HStack(spacing: 6) {
-                        Text(pref.region)
-                        if let hero {
-                            Text("·")
-                            Text(hero.name).lineLimit(1)
-                        }
-                    }
-                    .font(.system(size: 12, weight: .medium))
-                    .foregroundColor(.white.opacity(0.9))
-                }
-                .padding(12)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                // 県名だけ。地方・スポット名の補足は出さない（説明で埋めない）。
+                Text(pref.prefectureName)
+                    .font(.system(size: 22, weight: .bold))
+                    .foregroundColor(.white)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+                    .padding(14)
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .frame(width: 220, height: 150)
-            .clipShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
-            .shadow(color: PlanTheme.cardShadow, radius: 6, x: 0, y: 2)
+            .frame(width: Self.prefCardWidth, height: Self.prefCardHeight)
+            .clipShape(RoundedRectangle(cornerRadius: Self.cardRadius, style: .continuous))
         }
         .buttonStyle(.plain)
     }
 
-    /// 1 県ぶんの行: 県名（タップで県詳細）＋その県の動画サムネ横スクロール（タップで再生）。
-    private func prefectureRow(_ pref: Prefecture) -> some View {
-        let videos = repository.videos(for: pref)
-        return VStack(alignment: .leading, spacing: 8) {
-            Button {
-                detailPrefecture = pref
-            } label: {
-                HStack(spacing: 4) {
-                    Text(pref.prefectureName)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundColor(.primary)
-                    Image(systemName: "chevron.right")
-                        .font(.system(size: 12, weight: .semibold))
-                        .foregroundColor(.secondary)
-                    Spacer()
-                }
-                .padding(.horizontal, 16)
-            }
-            .buttonStyle(.plain)
+    // MARK: - 共通スタイル
 
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
-                    ForEach(Array(videos.enumerated()), id: \.element.id) { index, video in
-                        Button {
-                            shortsFeed = PrefShortsFeed(videos: videos, startIndex: index)
-                        } label: {
-                            TrendCard(video: video)
-                        }
-                        .buttonStyle(.plain)
-                    }
-                }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 8)   // 角丸の上端欠け防止
-            }
-        }
-    }
+    /// カードの角丸。カード全体で共通（ホーム内で 1 つの値に統一する）。
+    private static let cardRadius: CGFloat = 18
 
-    // MARK: - 共通セクション見出し
+    /// 県カードの大きさ。列を 1 本に統合したので、他の列と大きさを競わせる必要がなくなり
+    /// 写真を大きく見せられる（テーマのカード 150 幅より一回り大きい）。
+    private static let prefCardWidth: CGFloat = 230
+    private static let prefCardHeight: CGFloat = 190
 
-    private func sectionHeader(titleKey: String, icon: String) -> some View {
-        HStack(spacing: 8) {
-            Image(systemName: icon)
-                .font(.system(size: 18, weight: .semibold))
-                .foregroundColor(PlanTheme.primary)
-            Text(NSLocalizedString(titleKey, comment: ""))
-                .font(.system(size: 20, weight: .bold))
-            Spacer()
-        }
-        .padding(.horizontal, 16)
+    /// セクションのラベル。アイコン付きの大きな見出しではなく、写真の列に添える
+    /// 小さな 1 行だけにする（列が何かは写真そのものが示すので、文字は最小限でよい）。
+    private func overline(_ titleKey: String) -> some View {
+        Text(NSLocalizedString(titleKey, comment: ""))
+            .font(.system(size: 13, weight: .semibold))
+            .foregroundColor(.secondary)
+            .padding(.horizontal, 20)
     }
 
     // MARK: - フッター（要件D: 出典の補足）
@@ -643,8 +773,44 @@ struct HomeView: View {
                 .foregroundColor(.secondary)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.horizontal, 16)
-        .padding(.top, 4)
+        .padding(.horizontal, 20)
+        .padding(.top, 8)
+    }
+}
+
+/// 県カードの可視率を溜めておくだけの箱。
+///
+/// あえて ObservableObject にしない（＝ @Published を持たない）。スクロール中は
+/// 毎フレーム可視率が届くので、これを監視対象にすると毎フレーム再描画が走り、
+/// スクロールがカクつく。ここには黙って書き込み、主役の県が実際に変わったときだけ
+/// 呼び出し側が @State を更新する。
+private final class VisibilityTracker {
+    private var visibility: [Prefecture: CGFloat] = [:]
+
+    func merge(_ new: [Prefecture: CGFloat]) {
+        visibility.merge(new) { _, updated in updated }
+    }
+
+    func reset() {
+        visibility.removeAll()
+    }
+
+    /// 主役の県。列の先頭から見て、可視率が閾値（70%）を超えている最初の県を選ぶ。
+    /// 先頭カードが 70% 以下まで流れたら、次の県に切り替わる。
+    /// どれも閾値に届かない（＝全部が見切れている）ときは、最も多く見えている県。
+    func focused(among prefs: [Prefecture], threshold: CGFloat) -> Prefecture? {
+        prefs.first { (visibility[$0] ?? 0) > threshold }
+            ?? prefs.max { (visibility[$0] ?? 0) < (visibility[$1] ?? 0) }
+    }
+}
+
+/// 県カード列の各カードが報告する「画面内に見えている横幅の割合」（0…1）。
+/// 主役の県（＝下に動画を出す県）をスクロールに追従して決めるために使う。
+private struct CardVisibilityKey: PreferenceKey {
+    static let defaultValue: [Prefecture: CGFloat] = [:]
+    static func reduce(value: inout [Prefecture: CGFloat],
+                       nextValue: () -> [Prefecture: CGFloat]) {
+        value.merge(nextValue()) { _, new in new }
     }
 }
 

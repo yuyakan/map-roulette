@@ -30,24 +30,13 @@ struct TrendCard: View {
 
     private var thumbnail: some View {
         ZStack(alignment: .topLeading) {
-            AsyncImage(url: URL(string: video.thumbnailUrl)) { phase in
-                switch phase {
-                case .success(let image):
-                    image
-                        .resizable()
-                        .scaledToFill()
-                case .failure:
-                    placeholder
-                case .empty:
-                    ZStack {
-                        placeholder
-                        ProgressView()
-                    }
-                @unknown default:
-                    placeholder
-                }
+            // キャッシュ対応のサムネ。読み込み済みなら最初のフレームから画像が出るので、
+            // 県の切り替わり時にプレースホルダーを挟まずに済む（スクロールのカクつき対策）。
+            CachedThumbnail(urlString: video.thumbnailUrl) {
+                placeholder
             }
             .frame(width: width, height: width * 16 / 9)
+            .clipped()
             .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
 
             // 要件D: サムネ隅の帰属アイコンは置かない。出典はフッターの

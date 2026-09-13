@@ -29,7 +29,9 @@ enum PrefectureTheme: String, CaseIterable, Identifiable {
     case threeNightViews    // 日本三大夜景
 
     // MARK: 可変（「人気の◯◯」/ キュレーション）
-    case popularSouvenirs   // 人気のおみやげ
+    // 「人気のおみやげ」は廃止した。並ぶ品の大半が特定メーカーのブランド商品で、
+    // パッケージ写真を同梱できない（著作権）ためカードが全てアイコン表示になり、
+    // 写真前提の他テーマと並べると見栄えが揃わなかった。
     case seaAndBeach        // 海・ビーチ
 
     var id: String { rawValue }
@@ -46,7 +48,7 @@ enum PrefectureTheme: String, CaseIterable, Identifiable {
         switch self {
         case .japanThreeViews, .threeFamousOnsen, .threeGardens, .threeNightViews:
             return "home.theme.\(rawValue).subtitle"
-        case .popularSouvenirs, .seaAndBeach:
+        case .seaAndBeach:
             return nil
         }
     }
@@ -58,7 +60,6 @@ enum PrefectureTheme: String, CaseIterable, Identifiable {
         case .threeFamousOnsen:   return "drop.fill"
         case .threeGardens:       return "leaf.fill"
         case .threeNightViews:    return "moon.stars.fill"
-        case .popularSouvenirs:   return "gift.fill"
         case .seaAndBeach:        return "water.waves"
         }
     }
@@ -68,7 +69,7 @@ enum PrefectureTheme: String, CaseIterable, Identifiable {
     /// （例: 日本三景×京都 = 天橋立）。nil のときは呼び出し側が
     /// 「県の写真つきスポットの先頭」にフォールバックする。
     ///
-    /// 可変テーマ（人気の◯◯ / 海）は単一の代表スポットが定まらないので nil。
+    /// 可変テーマ（海）は単一の代表スポットが定まらないので nil。
     /// 固定指標でも同県が複数テーマに出る（兵庫=三名泉[有馬]／三大夜景[摩耶山]）ため、
     /// 県だけでなくテーマも見て決める必要がある。
     func heroNameKey(for prefecture: Prefecture) -> String? {
@@ -101,14 +102,14 @@ enum PrefectureTheme: String, CaseIterable, Identifiable {
             case .nagasaki: return "attraction_inasayama"
             default:        return nil
             }
-        case .popularSouvenirs, .seaAndBeach:
+        case .seaAndBeach:
             return nil
         }
     }
 
-    /// テーマの中身。テーマによって「県そのもの」か「もの（おみやげ品・海の名所）」かが違う。
+    /// テーマの中身。テーマによって「県そのもの」か「もの（海の名所）」かが違う。
     ///  - 固定指標（三景/三名泉/三名園/三大夜景）: その県を紹介する → .prefectures
-    ///  - 人気のおみやげ / 海: 県ではなく「もの」を紹介する → .items
+    ///  - 海: 県ではなく「もの」を紹介する → .items
     enum Content {
         case prefectures([Prefecture])
         case items([ThemeItem])
@@ -131,9 +132,6 @@ enum PrefectureTheme: String, CaseIterable, Identifiable {
             return .prefectures([.hokkaido, .hyogo, .nagasaki])
 
         // ── 可変（もの＝人気のものだけを出す。順位は付けない）──
-        // 人気のおみやげ: 全県 souvenirItems のうち popularity==5（最上位＝全国区の定番）だけ。
-        case .popularSouvenirs:
-            return .items(PrefectureTheme.popularSouvenirItems)
         // 海: 自然名所(NatureSpot)の海カテゴリのうち popularity==5 だけ。
         case .seaAndBeach:
             return .items(PrefectureTheme.popularSeaItems)
@@ -149,24 +147,6 @@ enum PrefectureTheme: String, CaseIterable, Identifiable {
          .hiroshima, .hyogo, .aichi, .miyagi, .kanagawa]
 
     // MARK: - 「もの」テーマのデータ（人気=popularity 最上位だけに絞る）
-
-    /// 人気のおみやげ: 全県の souvenirItems のうち popularity==5（＝最上位）だけ。
-    /// これはアプリ内で人気度として定義済みの値を使うだけで、新たに順位は捏造しない。
-    /// 並びは県の登場順（Prefecture.allCases）そのままで、順位付けはしない。
-    static let popularSouvenirItems: [ThemeItem] = {
-        var result: [ThemeItem] = []
-        for pref in Prefecture.allCases {
-            for souvenir in pref.souvenirItems where souvenir.popularity == 5 {
-                result.append(ThemeItem(id: "souvenir_\(souvenir.id)",
-                                        name: souvenir.name,
-                                        icon: souvenir.imageSymbol,
-                                        prefecture: pref,
-                                        photoAssetName: SouvenirPhoto.assetName(for: souvenir.stableKey),
-                                        detailTarget: .souvenir(stableKey: souvenir.stableKey)))
-            }
-        }
-        return result
-    }()
 
     /// 有名なビーチ（砂浜・海水浴場に限定）。全国の定番を北→南の地理順で。
     /// 既存 NatureSpot（岬・海岸・島など海全般が混在）は使わず、ビーチだけを独立定義した。
@@ -206,8 +186,8 @@ enum PrefectureTheme: String, CaseIterable, Identifiable {
     }()
 }
 
-/// テーマが紹介する「もの」（おみやげ品・海の名所など）。
-/// 県そのものではなく品や名所を出すテーマ（人気のおみやげ・海）で使う。
+/// テーマが紹介する「もの」（海の名所など）。
+/// 県そのものではなく品や名所を出すテーマ（海）で使う。
 /// タップすると、そのものがある県の詳細（prefecture）へ遷移し、続けてその品／名所の
 /// 詳細（detailTarget）まで自動で開く。
 struct ThemeItem: Identifiable {

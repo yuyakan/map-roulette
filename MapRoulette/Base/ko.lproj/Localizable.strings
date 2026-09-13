@@ -5488,7 +5488,6 @@
 "home.theme.threeGardens.subtitle" = "일본을 대표하는 세 정원";
 "home.theme.threeNightViews.title" = "일본 3대 야경";
 "home.theme.threeNightViews.subtitle" = "널리 알려진 세 야경 명소";
-"home.theme.popularSouvenirs.title" = "인기 기념품";
 "home.theme.seaAndBeach.title" = "유명한 해변";
 "beach.jodogahama" = "조도가하마";
 "beach.kujukurihama" = "구주쿠리 해변";
@@ -5519,9 +5518,14 @@
 "home.trend.area.kyoto" = "교토";
 "home.trend.area.osaka" = "오사카";
 "home.trend.category.cafe" = "카페";
-"home.trend.category.spot" = "인생샷 명소";
+"home.trend.category.spot" = "인기 명소";
 "home.trend.category.gourmet" = "맛집";
 "home.trend.empty" = "아직 트렌드가 없습니다. 잠시 후 다시 확인해 주세요.";
 "home.trend.error.network" = "네트워크 연결 상태를 확인해 주세요.";
 "home.trend.error.generic" = "트렌드를 불러오지 못했습니다.";
 "home.trend.retry" = "다시 시도";
+
+/* ホーム 県カード列の切り替えタブ（短縮ラベル） */
+"home.tab.recent" = "최근";
+"home.tab.favorite" = "즐겨찾기";
+"home.tab.recommended" = "추천";

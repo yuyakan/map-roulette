@@ -5549,7 +5549,6 @@
 "home.theme.threeGardens.subtitle" = "Tiga taman lanskap terkenal di Jepang";
 "home.theme.threeNightViews.title" = "Tiga Pemandangan Malam Terbaik";
 "home.theme.threeNightViews.subtitle" = "Tiga pemandangan malam ikonik Jepang";
-"home.theme.popularSouvenirs.title" = "Cocok untuk oleh-oleh";
 "home.theme.seaAndBeach.title" = "Pantai terkenal";
 "beach.jodogahama" = "Jodogahama";
 "beach.kujukurihama" = "Pantai Kujukuri";
@@ -5580,9 +5579,14 @@
 "home.trend.area.kyoto" = "Kyoto";
 "home.trend.area.osaka" = "Osaka";
 "home.trend.category.cafe" = "Kafe";
-"home.trend.category.spot" = "Spot foto";
+"home.trend.category.spot" = "Tempat populer";
 "home.trend.category.gourmet" = "Kuliner";
 "home.trend.empty" = "Belum ada tren. Silakan cek lagi nanti.";
 "home.trend.error.network" = "Periksa koneksi internet Anda.";
 "home.trend.error.generic" = "Tidak dapat memuat tren.";
 "home.trend.retry" = "Coba lagi";
+
+/* ホーム 県カード列の切り替えタブ（短縮ラベル） */
+"home.tab.recent" = "Terbaru";
+"home.tab.favorite" = "Favorit";
+"home.tab.recommended" = "Populer";

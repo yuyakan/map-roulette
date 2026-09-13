@@ -5546,7 +5546,6 @@
 "home.theme.threeGardens.subtitle" = "日本を代表する三つの大名庭園";
 "home.theme.threeNightViews.title" = "日本三大夜景";
 "home.theme.threeNightViews.subtitle" = "定番として知られる三つの夜景";
-"home.theme.popularSouvenirs.title" = "人気のおみやげ";
 "home.theme.seaAndBeach.title" = "有名なビーチ";
 "beach.jodogahama" = "浄土ヶ浜";
 "beach.kujukurihama" = "九十九里浜";
@@ -5577,9 +5576,14 @@
 "home.trend.area.kyoto" = "京都";
 "home.trend.area.osaka" = "大阪";
 "home.trend.category.cafe" = "カフェ";
-"home.trend.category.spot" = "映えスポット";
+"home.trend.category.spot" = "人気スポット";
 "home.trend.category.gourmet" = "グルメ";
 "home.trend.empty" = "トレンドはまだありません。しばらくしてからお試しください。";
 "home.trend.error.network" = "通信状況を確認してください。";
 "home.trend.error.generic" = "トレンドを読み込めませんでした。";
 "home.trend.retry" = "再試行";
+
+/* ホーム 県カード列の切り替えタブ（短縮ラベル） */
+"home.tab.recent" = "最近見た";
+"home.tab.favorite" = "お気に入り";
+"home.tab.recommended" = "おすすめ";

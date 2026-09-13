@@ -5549,7 +5549,6 @@
 "home.theme.threeGardens.subtitle" = "สามสวนภูมิทัศน์อันเลื่องชื่อของญี่ปุ่น";
 "home.theme.threeNightViews.title" = "สามทัศนียภาพยามค่ำคืน";
 "home.theme.threeNightViews.subtitle" = "สามวิวกลางคืนอันเป็นสัญลักษณ์ของญี่ปุ่น";
-"home.theme.popularSouvenirs.title" = "เด่นเรื่องของฝาก";
 "home.theme.seaAndBeach.title" = "ชายหาดชื่อดัง";
 "beach.jodogahama" = "โจโดกาฮามะ";
 "beach.kujukurihama" = "หาดคุจูกุริ";
@@ -5580,9 +5579,14 @@
 "home.trend.area.kyoto" = "เกียวโต";
 "home.trend.area.osaka" = "โอซากะ";
 "home.trend.category.cafe" = "คาเฟ่";
-"home.trend.category.spot" = "จุดถ่ายรูป";
+"home.trend.category.spot" = "สถานที่ยอดนิยม";
 "home.trend.category.gourmet" = "ของอร่อย";
 "home.trend.empty" = "ยังไม่มีเทรนด์ กรุณาลองใหม่ภายหลัง";
 "home.trend.error.network" = "โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต";
 "home.trend.error.generic" = "ไม่สามารถโหลดเทรนด์ได้";
 "home.trend.retry" = "ลองอีกครั้ง";
+
+/* ホーム 県カード列の切り替えタブ（短縮ラベル） */
+"home.tab.recent" = "ล่าสุด";
+"home.tab.favorite" = "รายการโปรด";
+"home.tab.recommended" = "ยอดนิยม";

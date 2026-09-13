@@ -170,7 +170,7 @@ struct TourismDetailView: View {
                             }
                         }
 
-                        // 映えスポットの Shorts（観光地マップセクションの一番下）。
+                        // 人気スポットの Shorts（観光地マップセクションの一番下）。
                         trendCategoryRow(for: "spot")
                     }
                     .padding(.horizontal, 16)
@@ -318,7 +318,7 @@ struct TourismDetailView: View {
     // MARK: - トレンド動画（YouTube Shorts・カテゴリ別に各セクションへ分散配置）
 
     /// 独立した「トレンド」セクションは作らず、カテゴリごとに対応する既存セクションへ配置する:
-    ///   - spot（映えスポット） → 観光地マップセクションの一番下
+    ///   - spot（人気スポット） → 観光地マップセクションの一番下
     ///   - gourmet（グルメ）    → グルメセクションの一番下
     ///   - cafe（カフェ）       → お土産セクション下の広告の、さらに下に独立セクション（trendCafeSection）
 
@@ -329,7 +329,7 @@ struct TourismDetailView: View {
         if let group = trends.groups(for: prefecture)
             .first(where: { $0.categoryKey == categoryKey && !$0.videos.isEmpty }) {
             VStack(alignment: .leading, spacing: 8) {
-                Text(group.category)
+                Text(group.categoryName)
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundColor(.secondary)
 
@@ -347,7 +347,7 @@ struct TourismDetailView: View {
             VStack(alignment: .leading, spacing: 16) {
                 RichSectionHeader(
                     icon: "cup.and.saucer.fill",
-                    title: group.category,
+                    title: group.categoryName,
                     accent: PlanTheme.primary
                 )
                 trendScroll(for: group)
