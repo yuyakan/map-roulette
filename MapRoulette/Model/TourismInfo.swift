@@ -459,7 +459,8 @@ extension Prefecture {
                     LocalizedAttractionLocation(nameKey: "attraction_takeda_castle_ruins", descriptionKey: "attraction_takeda_castle_ruins_desc", coordinate: CLLocationCoordinate2D(latitude: 35.3056, longitude: 134.8167)),
                     LocalizedAttractionLocation(nameKey: "attraction_awaji_island", descriptionKey: "attraction_awaji_island_desc", coordinate: CLLocationCoordinate2D(latitude: 34.3333, longitude: 134.8333)),
                     LocalizedAttractionLocation(nameKey: "attraction_mount_rokko", descriptionKey: "attraction_mount_rokko_desc", coordinate: CLLocationCoordinate2D(latitude: 34.7667, longitude: 135.2333)),
-                    LocalizedAttractionLocation(nameKey: "attraction_takarazuka_grand_theater", descriptionKey: "attraction_takarazuka_grand_theater_desc", coordinate: CLLocationCoordinate2D(latitude: 34.7833, longitude: 135.3500))
+                    LocalizedAttractionLocation(nameKey: "attraction_takarazuka_grand_theater", descriptionKey: "attraction_takarazuka_grand_theater_desc", coordinate: CLLocationCoordinate2D(latitude: 34.7833, longitude: 135.3500)),
+                    LocalizedAttractionLocation(nameKey: "attraction_mount_maya", descriptionKey: "attraction_mount_maya_desc", coordinate: CLLocationCoordinate2D(latitude: 34.7096, longitude: 135.2007))
                 ],
                 foodKeys: ["food_kobe_beef", "food_akashiyaki", "food_ikanago", "food_banshu_ramen", "food_awaji_onion"],
                 searchKeyword: "Hyogo Japan",
@@ -736,7 +737,8 @@ extension Prefecture {
                     LocalizedAttractionLocation(nameKey: "attraction_unzen_onsen", descriptionKey: "attraction_unzen_onsen_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7500, longitude: 130.2833)),
                     LocalizedAttractionLocation(nameKey: "attraction_shimabara_castle", descriptionKey: "attraction_shimabara_castle_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7833, longitude: 130.3667)),
                     LocalizedAttractionLocation(nameKey: "attraction_dejima", descriptionKey: "attraction_dejima_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7436, longitude: 129.8724)),
-                    LocalizedAttractionLocation(nameKey: "attraction_oura_church", descriptionKey: "attraction_oura_church_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7343, longitude: 129.8701))
+                    LocalizedAttractionLocation(nameKey: "attraction_oura_church", descriptionKey: "attraction_oura_church_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7343, longitude: 129.8701)),
+                    LocalizedAttractionLocation(nameKey: "attraction_inasayama", descriptionKey: "attraction_inasayama_desc", coordinate: CLLocationCoordinate2D(latitude: 32.7460, longitude: 129.8580))
                 ],
                 foodKeys: ["food_champon", "food_sara_udon", "food_castella", "food_sasebo_burger", "food_kakuni_manju"],
                 searchKeyword: "Nagasaki Japan",

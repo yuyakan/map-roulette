@@ -1,2 +1,6 @@
 secretConfig.swift
-secretConfig.swift
+
+# Firebase の設定ファイル（API_KEY 等を含む）。本体 repo は public のためコミットしない。
+# 各端末/CI では別途配置する（計画書 §5）。
+GoogleService-Info.plist
+MapRoulette/GoogleService-Info.plist

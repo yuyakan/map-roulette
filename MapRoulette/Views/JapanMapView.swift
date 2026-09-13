@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct JapanMapView: View {
+    /// 統合タブ内で表示されているか。true のとき、上部に重なる切替帯のぶんだけ
+    /// コンテンツを下げる余白を確保する（帯自体は IntegratedMapView が描画する）。
+    /// false（単独利用時）は余白ゼロで既存挙動を一切変えない。
+    var isIntegrated: Bool = false
+
     @State private var selectedPrefecture: Prefecture? = nil
     @State private var isSpinning = false
     @State private var spinTimer: Timer?
@@ -20,6 +25,7 @@ struct JapanMapView: View {
     @StateObject private var weightManager = WeightManager()
     @State private var showTourismInfo = false
     @State private var tappedPrefecture: Prefecture? = nil
+    @State private var showPrefectureSearch = false // 県一覧・検索シート
     @State private var displayMode: DisplayMode = RouletteSettingsStore.loadDisplayMode() // 表示モード追加
     
     let interstitial = InterstitialViewModel()
@@ -44,54 +50,42 @@ struct JapanMapView: View {
             ZStack {
                 if !isSpinning {
                     VStack {
+                        // 統合タブ表示中は、最前面に重なる切替帯のぶんだけ設定ボタン行を下げる
+                        if isIntegrated {
+                            Spacer().frame(height: mapModeBandHeight)
+                        }
                         HStack {
                             Button(action: {
                                 showSettings = true
                             }) {
-                                HStack(spacing: 6) {
-                                    Image(systemName: "gearshape.fill")
-                                        .resizable()
-                                        .frame(width: 18, height: 18)
-                                    Text("roulette_settings".localized)
-                                        .font(.system(size: 16))
-                                        .fontWeight(.medium)
-                                }
-                                .foregroundColor(.black)
-                                .padding(.horizontal, 16)
-                                .padding(.vertical, 8)
-                                .background(.white)
-                                .cornerRadius(20)
-                                .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
+                                Image(systemName: "gearshape.fill")
+                                    .resizable()
+                                    .frame(width: 18, height: 18)
+                                    .foregroundColor(.black)
+                                    .padding(12)
+                                    .background(.white)
+                                    .clipShape(Circle())
+                                    .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                             }
                             .disabled(isSpinning)
-                            
+
                             Spacer()
-                            
-                            VStack(alignment: .trailing, spacing: 4) {
-                                //                            HStack(spacing: 4) {
-                                //                                Image(systemName: displayMode.icon)
-                                //                                    .font(.caption2)
-                                //                                    .foregroundColor(displayMode == .onsen ? .orange : .blue)
-                                //                                Text("\(displayMode.rawValue)")
-                                //                                    .font(.caption2)
-                                //                                    .foregroundColor(.secondary)
-                                //                            }
-                                
-                                Text(String(format: NSLocalizedString("target_prefecture_count", comment: ""),
-                                            activeEnabledPrefectures.count))
-                                    .font(.caption)
-                                    .foregroundColor(.secondary)
-                                
-                                // 重み付けがデフォルトでない場合に表示
-                                if hasCustomWeights {
-                                    Text("重み付け: 有効")
-                                        .font(.caption2)
-                                        .foregroundColor(.blue)
-                                        .padding(.horizontal, 6)
-                                        .padding(.vertical, 1)
-                                        .background(Color.blue.opacity(0.1))
-                                        .cornerRadius(3)
+
+                            // 観光モードのときだけ、地図をタップせずに県詳細へ辿り着ける検索導線を出す
+                            if displayMode == .tourism {
+                                Button(action: {
+                                    showPrefectureSearch = true
+                                }) {
+                                    Image(systemName: "magnifyingglass")
+                                        .resizable()
+                                        .frame(width: 18, height: 18)
+                                        .foregroundColor(.black)
+                                        .padding(12)
+                                        .background(.white)
+                                        .clipShape(Circle())
+                                        .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                                 }
+                                .disabled(isSpinning)
                             }
                         }
                         .padding(.horizontal)
@@ -339,11 +333,16 @@ struct JapanMapView: View {
                 )
                 .largeSheet()
             }
-            .navigationDestination(isPresented: $showTourismInfo) {
+            // 詳細はウインドウ全体を覆う fullScreenCover で表示（下タブ・帯の上に出るので真の全画面）
+            .fullScreenCover(isPresented: $showTourismInfo) {
                     if let prefecture = tappedPrefecture ?? selectedPrefecture {
                         TourismDetailView(prefecture: prefecture)
                     }
                 }
+            // 県一覧・検索を全画面で表示。ここから県を選ぶと内部で TourismDetailView を全画面表示する。
+            .fullScreenCover(isPresented: $showPrefectureSearch) {
+                PrefectureSearchView()
+            }
             .onChange(of: showTourismInfo) { isShowing in
                 if !isShowing {
                     tappedPrefecture = nil

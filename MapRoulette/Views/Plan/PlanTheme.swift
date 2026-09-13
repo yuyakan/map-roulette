@@ -23,7 +23,7 @@ enum PlanTheme {
         endPoint: .bottomTrailing
     )
 
-    /// やわらかい背景グラデーション
+    /// やわらかい背景グラデーション（他タブの詳細画面で使用）
     static let backgroundGradient = LinearGradient(
         colors: [
             primary.opacity(0.06),
@@ -33,6 +33,9 @@ enum PlanTheme {
         startPoint: .top,
         endPoint: .bottom
     )
+
+    /// マイプラン配下の画面の最背面。白基調（カードは影・グレーで区別）。
+    static let pageBackground = Color(.systemBackground)
 
     static let cardCornerRadius: CGFloat = 20
     static let cardShadow = Color.black.opacity(0.06)
@@ -49,6 +52,7 @@ enum PlanTheme {
         case .hotel:      return Color(red: 0.45, green: 0.50, blue: 0.85)
         case .transport:  return Color(red: 0.30, green: 0.65, blue: 0.70)
         case .other:      return Color(red: 0.55, green: 0.55, blue: 0.60)
+        case .expense:    return Color(red: 0.40, green: 0.60, blue: 0.35)
         }
     }
 }

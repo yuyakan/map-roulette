@@ -9,27 +9,57 @@
 
 import SwiftUI
 
+/// マイプランタブ内の上タブ（一覧 / 訪問済み）
+private enum MyPlansSection: Int, CaseIterable {
+    case list       // プラン一覧
+    case visited    // 訪問済みマップ
+
+    var title: String {
+        switch self {
+        case .list:    return NSLocalizedString("plan.section.list", comment: "")
+        case .visited: return NSLocalizedString("plan.section.visited", comment: "")
+        }
+    }
+}
+
 struct MyPlansView: View {
     @ObservedObject private var store = TravelPlanStore.shared
+    @ObservedObject private var router = AppRouter.shared
     @State private var showingNewPlanSheet = false
     @State private var newPlanTitle = ""
     @State private var editMode: EditMode = .inactive
+    @State private var section: MyPlansSection = .list
 
     var body: some View {
         NavigationStack {
-            ZStack {
-                PlanTheme.backgroundGradient.ignoresSafeArea()
+            // 切替帯は NavigationStack の内側最上部に置く。ここに置くことで
+            // 一覧からの詳細プッシュ（NavigationLink）が壊れない。
+            VStack(spacing: 0) {
+                PlanSectionBand(section: $section)
 
-                if store.plans.isEmpty {
-                    emptyState
-                } else {
-                    planList
+                switch section {
+                case .list:
+                    if store.plans.isEmpty {
+                        emptyState
+                    } else {
+                        planList
+                    }
+                case .visited:
+                    VisitedMapView()
                 }
             }
+            // 背景グラデーションは切替帯も含めた画面全体の背後に敷き、
+            // 帯自体は透明にして下の背景と馴染ませる（帯だけ白く浮くのを防ぐ）。
+            // alignment:.top を明示しないと、空状態のように内容が小さいとき VStack 全体が
+            // 中央寄せになり、切替帯まで一緒に下へ落ちてしまう（一覧が空のとき帯が下がる不具合）。
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .background(PlanTheme.pageBackground.ignoresSafeArea())
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                // 並び替え用の編集トグル（2 件以上あるときだけ表示）
-                if store.plans.count > 1 {
+                // 並び替え用の編集トグル（一覧セクションで 2 件以上あるときだけ表示）。
+                // ＋（新規作成）はツールバーに置かず、一覧の最後のカードの下に置く。
+                // こうすることでタブ切替時に右上ボタンの有無で位置がずれるのを防ぐ。
+                if section == .list && store.plans.count > 1 {
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button {
                             withAnimation {
@@ -44,22 +74,24 @@ struct MyPlansView: View {
                         }
                     }
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        newPlanTitle = ""
-                        showingNewPlanSheet = true
-                    } label: {
-                        Image(systemName: "plus")
-                            .font(.headline)
-                            .foregroundColor(PlanTheme.primary)
-                    }
-                }
             }
             .sheet(isPresented: $showingNewPlanSheet) {
                 newPlanSheet
             }
+            // ホーム等から「新規作成シートを開いてほしい」と予約されていたら消化する。
+            // タブ切替でこのビューが現れたとき（onAppear）と、既に表示中に予約が来たとき（onChange）の両方に対応。
+            .onAppear { consumePendingNewPlan() }
+            .onChange(of: router.pendingNewPlan) { _, _ in consumePendingNewPlan() }
         }
         .tint(PlanTheme.primary)
+    }
+
+    /// AppRouter の新規作成予約を消化する。一覧セクションに切り替えてからシートを開き、予約を戻す。
+    private func consumePendingNewPlan() {
+        guard router.pendingNewPlan else { return }
+        router.pendingNewPlan = false
+        section = .list
+        showingNewPlanSheet = true
     }
 
     // MARK: - 空状態
@@ -96,6 +128,9 @@ struct MyPlansView: View {
             .padding(.top, 8)
         }
         .padding()
+        // 帯の下の残り領域いっぱいに広がり、その中で中央寄せする。
+        // （外側 VStack を上詰めにした分、空状態のイラストが上に張り付くのを防ぐ）
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     // MARK: - 一覧
@@ -113,7 +148,7 @@ struct MyPlansView: View {
                         } label: { EmptyView() }
                         .opacity(0)
                     }
-                    PlanCardView(plan: plan)
+                    PlanCardView(plan: plan, store: store)
                         .contentShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
                 }
                 .listRowSeparator(.hidden)
@@ -133,10 +168,37 @@ struct MyPlansView: View {
             .onDelete { offsets in
                 store.deletePlans(at: offsets)
             }
+
+            // 新規プラン追加（最後のカードの下）。編集（並び替え）中は隠す。
+            if !editMode.isEditing {
+                addPlanRow
+                    .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
+                    .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+            }
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
         .environment(\.editMode, $editMode)
+    }
+
+    /// 一覧の末尾に置く「新規プラン追加」行。破線枠のカード風ボタン。
+    private var addPlanRow: some View {
+        Button {
+            newPlanTitle = ""
+            showingNewPlanSheet = true
+        } label: {
+            Label(NSLocalizedString("plan.create", comment: ""), systemImage: "plus")
+                .font(.subheadline.bold())
+                .foregroundColor(PlanTheme.primary)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 16)
+                .background(
+                    RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous)
+                        .strokeBorder(PlanTheme.primary.opacity(0.4), style: StrokeStyle(lineWidth: 1.5, dash: [5]))
+                )
+        }
+        .buttonStyle(.plain)
     }
 
     // MARK: - 新規作成シート
@@ -144,7 +206,7 @@ struct MyPlansView: View {
     private var newPlanSheet: some View {
         NavigationStack {
             ZStack {
-                PlanTheme.backgroundGradient.ignoresSafeArea()
+                PlanTheme.pageBackground.ignoresSafeArea()
                 VStack(spacing: 24) {
                     VStack(alignment: .leading, spacing: 8) {
                         Text(NSLocalizedString("plan.title.label", comment: ""))
@@ -190,16 +252,67 @@ struct MyPlansView: View {
     }
 }
 
+// MARK: - PlanSectionBand
+/// マイプランタブ内の上タブ切替帯（一覧 / 訪問済み）。
+/// 統合マップタブの MapModeBand と同じデザイン言語（文字＋ブランド下線）で統一する。
+private struct PlanSectionBand: View {
+    @Binding var section: MyPlansSection
+
+    // 下線の左右インセット（セル幅からこの分だけ内側に縮める）
+    private let underlineInset: CGFloat = 24
+
+    var body: some View {
+        GeometryReader { geo in
+            let count = CGFloat(MyPlansSection.allCases.count)
+            let cellWidth = geo.size.width / count
+            let selectedIndex = CGFloat(section.rawValue)
+
+            VStack(spacing: 4) {
+                HStack(spacing: 0) {
+                    ForEach(MyPlansSection.allCases, id: \.self) { item in
+                        Button {
+                            withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
+                                section = item
+                            }
+                        } label: {
+                            Text(item.title)
+                                .font(.system(size: 15, weight: section == item ? .semibold : .regular))
+                                .foregroundColor(section == item ? PlanTheme.primary : .gray)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.8)
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                    }
+                }
+
+                // 下線（常に1本。offset で選択セルの位置へ移動）
+                Rectangle()
+                    .fill(PlanTheme.brandGradient)
+                    .frame(width: cellWidth - underlineInset * 2, height: 2)
+                    .offset(x: selectedIndex * cellWidth + underlineInset)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .padding(.top, 8)
+            .padding(.bottom, 4)
+            .frame(maxHeight: .infinity, alignment: .top)
+        }
+        .frame(height: 44)
+        // 背景は敷かず透明にして、画面全体の背景グラデーションを透けさせる。
+    }
+}
+
 // MARK: - PlanCardView
 
 private struct PlanCardView: View {
     let plan: TravelPlan
+    let store: TravelPlanStore
 
-    /// プラン内の代表カテゴリ（最大4種）をアイコン表示
+    /// プラン内の代表カテゴリ（最大4種）をアイコン表示。費用専用アイテムは旅程の見た目に出さない。
     private var categoryIcons: [PlanItemCategory] {
         var seen = Set<PlanItemCategory>()
         var result: [PlanItemCategory] = []
-        for item in plan.items where seen.insert(item.category).inserted {
+        for item in plan.itineraryItems where seen.insert(item.category).inserted {
             result.append(item.category)
         }
         return Array(result.prefix(4))
@@ -210,11 +323,16 @@ private struct PlanCardView: View {
             // 上部：ブランドグラデーションのヘッダー
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(plan.title)
-                        .font(.title3.bold())
-                        .foregroundColor(.white)
-                        .lineLimit(2)
-                    Text(String(format: NSLocalizedString("plan.itemcount.format", comment: ""), plan.items.count))
+                    HStack(spacing: 8) {
+                        Text(plan.title)
+                            .font(.title3.bold())
+                            .foregroundColor(.white)
+                            .lineLimit(2)
+                        // 状態チップ。タップでその場でステータスを切り替えるメニューを開く
+                        // （常に表示。これからも含めて一覧から直接変更できる）。
+                        statusMenu
+                    }
+                    Text(String(format: NSLocalizedString("plan.itemcount.format", comment: ""), plan.itineraryItems.count))
                         .font(.caption.bold())
                         .foregroundColor(.white.opacity(0.9))
                 }
@@ -255,5 +373,36 @@ private struct PlanCardView: View {
         }
         .clipShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
         .shadow(color: PlanTheme.cardShadow, radius: 10, x: 0, y: 4)
+    }
+
+    /// 状態チップ兼メニュー。現在の状態を白カプセルで見せ、タップで 3 択を開く。
+    /// Menu はカードを覆う透明 NavigationLink よりタップが優先されるため、
+    /// ここをタップしたときだけ詳細遷移せずステータス変更できる。
+    private var statusMenu: some View {
+        Menu {
+            Picker(NSLocalizedString("plan.status.label", comment: ""),
+                   selection: Binding(
+                    get: { plan.status },
+                    set: { store.setStatus($0, for: plan.id) }
+                   )) {
+                ForEach(PlanStatus.allCases, id: \.self) { status in
+                    Label(status.localizedName, systemImage: status.icon).tag(status)
+                }
+            }
+        } label: {
+            HStack(spacing: 4) {
+                Image(systemName: plan.status.icon)
+                Text(plan.status.localizedName)
+                Image(systemName: "chevron.down")
+                    .font(.system(size: 9, weight: .bold))
+            }
+            .labelStyle(.titleAndIcon)
+            .font(.caption2.bold())
+            .foregroundColor(PlanTheme.primary)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 3)
+            .background(Capsule().fill(.white))
+        }
+        .buttonStyle(.plain)
     }
 }

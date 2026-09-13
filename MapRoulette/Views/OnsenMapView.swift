@@ -10,6 +10,11 @@ import Combine
 import MapKit
 
 struct OnsenMapView: View {
+    /// 統合タブ内で表示されているか。true のとき、上部に重なる切替帯のぶんだけ
+    /// コンテンツを下げる余白を確保する（帯自体は IntegratedMapView が描画する）。
+    /// false（単独利用時）は余白ゼロで既存挙動を一切変えない。
+    var isIntegrated: Bool = false
+
     @State private var selectedOnsen: FixedOnsenItem? = nil
     @State private var isSpinning = false
     @State private var spinTimer: Timer?
@@ -63,24 +68,22 @@ struct OnsenMapView: View {
                 // 設定ボタンなどのヘッダー要素（最上位zIndex）
                 if !isSpinning {
                     VStack {
+                        // 統合タブ表示中は、最前面に重なる切替帯のぶんだけ設定ボタン行を下げる
+                        if isIntegrated {
+                            Spacer().frame(height: mapModeBandHeight)
+                        }
                         HStack {
                             Button(action: {
                                 showSettings = true
                             }) {
-                                HStack(spacing: 6) {
-                                    Image(systemName: "gearshape.fill")
-                                        .resizable()
-                                        .frame(width: 18, height: 18)
-                                    Text("roulette_settings".localized)
-                                        .font(.system(size: 16))
-                                        .fontWeight(.medium)
-                                }
-                                .foregroundColor(.black)
-                                .padding(.horizontal, 16)
-                                .padding(.vertical, 8)
-                                .background(.white)
-                                .cornerRadius(20)
-                                .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
+                                Image(systemName: "gearshape.fill")
+                                    .resizable()
+                                    .frame(width: 18, height: 18)
+                                    .foregroundColor(.black)
+                                    .padding(12)
+                                    .background(.white)
+                                    .clipShape(Circle())
+                                    .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                             }
                             .disabled(isSpinning)
                             
@@ -332,7 +335,8 @@ struct OnsenMapView: View {
                 )
                 .largeSheet()
             }
-            .navigationDestination(isPresented: $showOnsenInfo) {
+            // 詳細はウインドウ全体を覆う fullScreenCover で表示（下タブ・帯の上に出るので真の全画面）
+            .fullScreenCover(isPresented: $showOnsenInfo) {
                 if let onsen = tappedOnsen {
                     OnsenDetailView(onsen: onsen)
                 }
@@ -466,7 +470,9 @@ struct OnsenMapView: View {
                                     Spacer()
                                 }
                                 .padding(.horizontal, 16)
-                                .padding(.top, region == Region.allCases.first ? 80 : 0)
+                                // 先頭の地方見出しは、設定/切替ボタン行を避けるため上に余白を空ける。
+                                // 統合タブ表示中は最前面の切替帯のぶんもさらに下げる。
+                                .padding(.top, region == Region.allCases.first ? (80 + (isIntegrated ? mapModeBandHeight : 0)) : 0)
                                 
                                 // 地方の温泉地をグリッド表示
                                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: columnCount), spacing: 10) {

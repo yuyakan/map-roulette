@@ -143,24 +143,20 @@ struct OnsenCard: View {
         )
         .scaleEffect(isPressed ? 0.98 : 1.0)
         .animation(.easeInOut(duration: 0.1), value: isPressed)
+        // 押し込みアニメは onTapGesture 内で完結させる。DragGesture は使わない
+        // （minimumDistance:0 の DragGesture は親 ScrollView の縦スクロールを奪うため）。
+        // グルメ／祭りセクション（GourmetItemCard）と同じ方式に揃える。
         .onTapGesture {
-            showingDetail = true
+            withAnimation(.easeInOut(duration: 0.1)) {
+                isPressed = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                withAnimation(.easeInOut(duration: 0.1)) {
+                    isPressed = false
+                }
+                showingDetail = true
+            }
         }
-        .simultaneousGesture(
-            DragGesture(minimumDistance: 0)
-                .onChanged { _ in
-                    if !isPressed {
-                        withAnimation(.easeInOut(duration: 0.1)) {
-                            isPressed = true
-                        }
-                    }
-                }
-                .onEnded { _ in
-                    withAnimation(.easeInOut(duration: 0.1)) {
-                        isPressed = false
-                    }
-                }
-        )
         .fullScreenCover(isPresented: $showingDetail) {
             if let fixedOnsen = OnsenDataRepository.shared.getFixedOnsen(name: onsen.name, type: onsen.onsenType) {
                 OnsenDetailView(onsen: fixedOnsen)

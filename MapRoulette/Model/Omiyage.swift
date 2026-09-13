@@ -6,16 +6,44 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SouvenirItem: Identifiable {
     let id = UUID()
     let name: String
+    /// 写真アセットを引くための安定キー（例: "hokkaido.shiroi_koibito"）。
+    /// 「キー = imageset 名（souvenir_<キーの . を _ に置換>）」の規約で写真を紐づける。
+    /// 空文字なら写真なし（アイコン表示）。全県に写真を広げる際は、この値と
+    /// 対応する imageset を足すだけでよい（既存の 250 件超は空のままで無害）。
+    /// name の直後に置くことで、写真付きの品は `name:` の次に `stableKey:` を書ける。
+    var stableKey: String = ""
     let description: String
     let category: SouvenirCategory
     let imageSymbol: String
     let price: String
     let bestSeason: String
     let popularity: Int // 1-5
+
+    /// 同梱写真。stableKey に対応する imageset があれば返す。無ければ nil。
+    var photo: Image? {
+        SouvenirPhoto.image(for: stableKey)
+    }
+}
+
+/// おみやげ品の同梱写真を解決する。AttractionPhoto と同じ「CC0/CC 表示素材のみ・
+/// キー = imageset 名」の方式。imageset 名は souvenir_<stableKey の "." を "_" に置換>。
+/// 例: stableKey "hokkaido.shiroi_koibito" → asset "souvenir_hokkaido_shiroi_koibito"。
+enum SouvenirPhoto {
+    static func assetName(for stableKey: String) -> String? {
+        guard !stableKey.isEmpty else { return nil }
+        return "souvenir_" + stableKey.replacingOccurrences(of: ".", with: "_")
+    }
+
+    static func image(for stableKey: String) -> Image? {
+        guard let asset = assetName(for: stableKey),
+              UIImage(named: asset) != nil else { return nil }
+        return Image(asset)
+    }
 }
 
 enum SouvenirCategory: String, CaseIterable {
@@ -213,6 +241,7 @@ extension Prefecture {
             return [
                 SouvenirItem(
                     name: NSLocalizedString("hiroshima.momiji_manju.name", comment: ""),
+                    stableKey: "hiroshima.momiji_manju",
                     description: NSLocalizedString("hiroshima.momiji_manju.description", comment: ""),
                     category: .sweets,
                     imageSymbol: "leaf.fill",
@@ -454,6 +483,7 @@ extension Prefecture {
                 ),
                 SouvenirItem(
                     name: NSLocalizedString("ehime.imabari_towel.name", comment: ""),
+                    stableKey: "ehime.imabari_towel",
                     description: NSLocalizedString("ehime.imabari_towel.description", comment: ""),
                     category: .textiles,
                     imageSymbol: "rectangle.fill",
@@ -525,6 +555,7 @@ extension Prefecture {
             return [
                 SouvenirItem(
                     name: NSLocalizedString("fukuoka.hakata_torimon.name", comment: ""),
+                    stableKey: "fukuoka.hakata_torimon",
                     description: NSLocalizedString("fukuoka.hakata_torimon.description", comment: ""),
                     category: .sweets,
                     imageSymbol: "circle.fill",
@@ -561,6 +592,7 @@ extension Prefecture {
                 ),
                 SouvenirItem(
                     name: NSLocalizedString("fukuoka.mentaiko.name", comment: ""),
+                    stableKey: "fukuoka.mentaiko",
                     description: NSLocalizedString("fukuoka.mentaiko.description", comment: ""),
                     category: .food,
                     imageSymbol: "fish.fill",
@@ -650,6 +682,7 @@ extension Prefecture {
             return [
                 SouvenirItem(
                     name: NSLocalizedString("nagasaki.fukusaya_castella.name", comment: ""),
+                    stableKey: "nagasaki.fukusaya_castella",
                     description: NSLocalizedString("nagasaki.fukusaya_castella.description", comment: ""),
                     category: .sweets,
                     imageSymbol: "rectangle.fill",
@@ -765,6 +798,7 @@ extension Prefecture {
             return [
                 SouvenirItem(
                     name: NSLocalizedString("hokkaido.shiroi_koibito.name", comment: ""),
+                    stableKey: "hokkaido.shiroi_koibito",
                     description: NSLocalizedString("hokkaido.shiroi_koibito.description", comment: ""),
                     category: .sweets,
                     imageSymbol: "heart.fill",
@@ -774,6 +808,7 @@ extension Prefecture {
                 ),
                 SouvenirItem(
                     name: NSLocalizedString("hokkaido.marsei_butter_sand.name", comment: ""),
+                    stableKey: "hokkaido.marsei_butter_sand",
                     description: NSLocalizedString("hokkaido.marsei_butter_sand.description", comment: ""),
                     category: .sweets,
                     imageSymbol: "square.fill",
@@ -930,6 +965,7 @@ extension Prefecture {
             return [
                 SouvenirItem(
                     name: NSLocalizedString("miyagi.hagi_no_tsuki.name", comment: ""),
+                    stableKey: "miyagi.hagi_no_tsuki",
                     description: NSLocalizedString("miyagi.hagi_no_tsuki.description", comment: ""),
                     category: .sweets,
                     imageSymbol: "moon.fill",
@@ -1407,6 +1443,7 @@ extension Prefecture {
             return [
                 SouvenirItem(
                     name: NSLocalizedString("tokyo.hiyoko.name", comment: ""),
+                    stableKey: "tokyo.hiyoko",
                     description: NSLocalizedString("tokyo.hiyoko.description", comment: ""),
                     category: .sweets,
                     imageSymbol: "bird.fill",
@@ -1416,6 +1453,7 @@ extension Prefecture {
                 ),
                 SouvenirItem(
                     name: NSLocalizedString("tokyo.tokyo_banana.name", comment: ""),
+                    stableKey: "tokyo.tokyo_banana",
                     description: NSLocalizedString("tokyo.tokyo_banana.description", comment: ""),
                     category: .sweets,
                     imageSymbol: "oval.fill",
@@ -1483,6 +1521,7 @@ extension Prefecture {
             return [
                 SouvenirItem(
                     name: NSLocalizedString("kanagawa.hato_sable.name", comment: ""),
+                    stableKey: "kanagawa.hato_sable",
                     description: NSLocalizedString("kanagawa.hato_sable.description", comment: ""),
                     category: .sweets,
                     imageSymbol: "bird.fill",
@@ -1586,6 +1625,7 @@ extension Prefecture {
                 ),
                 SouvenirItem(
                     name: NSLocalizedString("niigata.nihonshu.name", comment: ""),
+                    stableKey: "niigata.nihonshu",
                     description: NSLocalizedString("niigata.nihonshu.description", comment: ""),
                     category: .drinks,
                     imageSymbol: "wineglass.fill",
@@ -1868,6 +1908,7 @@ extension Prefecture {
                         ),
                         SouvenirItem(
                             name: NSLocalizedString("wakayama.umeboshi.name", comment: ""),
+                    stableKey: "wakayama.umeboshi",
                             description: NSLocalizedString("wakayama.umeboshi.description", comment: ""),
                             category: .food,
                             imageSymbol: "circle.fill",
@@ -2095,6 +2136,7 @@ extension Prefecture {
                     return [
                         SouvenirItem(
                             name: NSLocalizedString("shizuoka.unagi_pie.name", comment: ""),
+                    stableKey: "shizuoka.unagi_pie",
                             description: NSLocalizedString("shizuoka.unagi_pie.description", comment: ""),
                             category: .sweets,
                             imageSymbol: "fish.fill",
@@ -2131,6 +2173,7 @@ extension Prefecture {
                         ),
                         SouvenirItem(
                             name: NSLocalizedString("shizuoka.shizuoka_cha.name", comment: ""),
+                    stableKey: "shizuoka.shizuoka_cha",
                             description: NSLocalizedString("shizuoka.shizuoka_cha.description", comment: ""),
                             category: .drinks,
                             imageSymbol: "leaf.fill",
@@ -2229,6 +2272,7 @@ extension Prefecture {
                     return [
                         SouvenirItem(
                             name: NSLocalizedString("mie.akafuku.name", comment: ""),
+                    stableKey: "mie.akafuku",
                             description: NSLocalizedString("mie.akafuku.description", comment: ""),
                             category: .sweets,
                             imageSymbol: "heart.fill",
@@ -2327,6 +2371,7 @@ extension Prefecture {
                     return [
                         SouvenirItem(
                             name: NSLocalizedString("kyoto.yatsuhashi.name", comment: ""),
+                    stableKey: "kyoto.yatsuhashi",
                             description: NSLocalizedString("kyoto.yatsuhashi.description", comment: ""),
                             category: .sweets,
                             imageSymbol: "triangle.fill",
@@ -2403,6 +2448,7 @@ extension Prefecture {
                     return [
                         SouvenirItem(
                             name: NSLocalizedString("osaka.butaman_551.name", comment: ""),
+                    stableKey: "osaka.butaman_551",
                             description: NSLocalizedString("osaka.butaman_551.description", comment: ""),
                             category: .food,
                             imageSymbol: "circle.hexagonpath.fill",
@@ -2603,6 +2649,7 @@ extension Prefecture {
                         ),
                         SouvenirItem(
                             name: NSLocalizedString("kagoshima.imo_shochu.name", comment: ""),
+                    stableKey: "kagoshima.imo_shochu",
                             description: NSLocalizedString("kagoshima.imo_shochu.description", comment: ""),
                             category: .drinks,
                             imageSymbol: "wineglass.fill",
@@ -2616,6 +2663,7 @@ extension Prefecture {
                     return [
                         SouvenirItem(
                             name: NSLocalizedString("okinawa.chinsuko.name", comment: ""),
+                    stableKey: "okinawa.chinsuko",
                             description: NSLocalizedString("okinawa.chinsuko.description", comment: ""),
                             category: .sweets,
                             imageSymbol: "square.fill",

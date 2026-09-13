@@ -26,6 +26,21 @@ final class TravelPlanStore: ObservableObject {
 
     init() {
         load()
+        migrateCompletedPlansToVisitedIfNeeded()
+    }
+
+    /// 訪問済みを保存ストア（VisitedPrefectureStore）へ移行する以前は、
+    /// 訪問済み＝「旅行済みプランの県」を都度計算していた。移行後もその分が
+    /// 失われないよう、初回だけ既存の完了プランの県を訪問済みへ流し込む。
+    /// 一度きり（フラグで制御）。以降はユーザーが地図で外した県を復活させない（後勝ち維持）。
+    private func migrateCompletedPlansToVisitedIfNeeded() {
+        let flagKey = "visited.migratedFromCompletedPlans"
+        guard !UserDefaults.standard.bool(forKey: flagKey) else { return }
+        let prefsFromCompleted = plans.filter { $0.isCompleted }.flatMap { $0.prefectures }
+        if !prefsFromCompleted.isEmpty {
+            VisitedPrefectureStore.shared.markVisited(prefsFromCompleted)
+        }
+        UserDefaults.standard.set(true, forKey: flagKey)
     }
 
     // MARK: - 読み込み / 保存
@@ -125,6 +140,21 @@ final class TravelPlanStore: ObservableObject {
         persist()
     }
 
+    /// 費用専用項目（.expense）を追加する。タイトル・金額に加えて支払者・分担者も同時に設定する。
+    /// 旅程・地図には出ない。タイトルが空なら何もしない。
+    /// - splitMemberIDs: nil は「全員で均等」（既定・人数変動に追従）、配列は一部で割る。
+    func addExpenseItem(title: String, cost: Int?, payerID: UUID? = nil, splitMemberIDs: [UUID]? = nil, to planID: UUID) {
+        let trimmed = title.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return }
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        var item = PlanItem(expenseTitle: trimmed, cost: cost)
+        item.payerID = payerID
+        item.splitMemberIDs = splitMemberIDs
+        plans[index].items.append(item)
+        plans[index].updatedAt = Date()
+        persist()
+    }
+
     func moveItem(in planID: UUID, from source: IndexSet, to destination: Int) {
         guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
         plans[index].items.move(fromOffsets: source, toOffset: destination)
@@ -132,7 +162,99 @@ final class TravelPlanStore: ObservableObject {
         persist()
     }
 
+    // MARK: - 旅行メンバー
+
+    /// メンバーを追加する（前後の空白を除去。空文字・同名の重複は追加しない）。
+    func addMember(_ name: String, to planID: UUID) {
+        let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return }
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        guard !plans[index].members.contains(where: { $0.name == trimmed }) else { return }
+        plans[index].members.append(PlanMember(name: trimmed))
+        plans[index].updatedAt = Date()
+        persist()
+    }
+
+    /// 指定位置のメンバーを削除する。
+    /// 削除メンバーを支払者に指定していた項目は支払者を未指定へ戻す。
+    /// 分担者（splitMemberIDs）に含まれていた場合は effectiveSplitMemberIDs 側で除外されるため保存値はそのまま。
+    func removeMembers(at offsets: IndexSet, in planID: UUID) {
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        let removedIDs = Set(offsets.map { plans[index].members[$0].id })
+        plans[index].members.remove(atOffsets: offsets)
+        for i in plans[index].items.indices {
+            if let payer = plans[index].items[i].payerID, removedIDs.contains(payer) {
+                plans[index].items[i].payerID = nil
+            }
+        }
+        plans[index].updatedAt = Date()
+        persist()
+    }
+
     // MARK: - 表示モード・日程
+
+    /// プランの進行状態（これから / 進行中 / 旅行済み）を設定する。
+    /// 旅行済み（.completed）にした瞬間、そのプランの都道府県を訪問済みへ上書き（後勝ち）する。
+    /// 旅行済みから外しても訪問済みからは自動で外さない（外したい県は地図タップで各自オフにする）。
+    func setStatus(_ status: PlanStatus, for planID: UUID) {
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        guard plans[index].status != status else { return }
+        plans[index].status = status
+        plans[index].updatedAt = Date()
+        persist()
+        if status == .completed {
+            VisitedPrefectureStore.shared.markVisited(plans[index].prefectures)
+        }
+    }
+
+    /// 旧 API 互換。旅行済みトグル（true=.completed / false=.upcoming）。
+    func setCompleted(_ completed: Bool, for planID: UUID) {
+        setStatus(completed ? .completed : .upcoming, for: planID)
+    }
+
+    // MARK: - 行き先候補の県
+
+    /// プランに「行き先候補」の県を追加する（重複は無視）。
+    func addPrefecture(_ prefecture: Prefecture, to planID: UUID) {
+        addPrefectures([prefecture], to: planID)
+    }
+
+    /// プランに複数の県をまとめて追加する（既にある県は無視・選択順を保つ）。
+    func addPrefectures<S: Sequence>(_ prefectures: S, to planID: UUID) where S.Element == Prefecture {
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        var existing = Set(plans[index].plannedPrefectures)
+        var added = false
+        for prefecture in prefectures where existing.insert(prefecture).inserted {
+            plans[index].plannedPrefectures.append(prefecture)
+            added = true
+        }
+        guard added else { return }
+        plans[index].updatedAt = Date()
+        persist()
+    }
+
+    /// プランから「行き先候補」の県を外す（項目由来の県には影響しない）。
+    func removePrefecture(_ prefecture: Prefecture, from planID: UUID) {
+        guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
+        guard plans[index].plannedPrefectures.contains(prefecture) else { return }
+        plans[index].plannedPrefectures.removeAll { $0 == prefecture }
+        plans[index].updatedAt = Date()
+        persist()
+    }
+
+    /// 指定状態のプランのうち、最も最近更新された 1 件。
+    private func latestPlan(with status: PlanStatus) -> TravelPlan? {
+        plans.filter { $0.status == status }.max(by: { $0.updatedAt < $1.updatedAt })
+    }
+
+    /// 現在「進行中」のプラン（最も最近更新されたもの 1 件）。
+    var ongoingPlan: TravelPlan? { latestPlan(with: .ongoing) }
+
+    /// ホーム最上部の帯カードに出すプラン 1 件。
+    /// 進行中を最優先し、無ければ計画中（どちらも最新更新のもの）。両方無ければ nil。
+    var featuredPlan: TravelPlan? {
+        ongoingPlan ?? latestPlan(with: .upcoming)
+    }
 
     /// 表示の区切り方（都道府県/日程）を切り替える。
     func setGroupingMode(_ mode: PlanGroupingMode, for planID: UUID) {
@@ -295,4 +417,12 @@ final class TravelPlanStore: ObservableObject {
             plan.items.contains { $0.name == name && $0.category == category }
         }
     }
+
+    /// 指定した都道府県を含むプラン（訪問済みマップの県詳細で「紐づくプラン」を出すのに使う）。
+    func plansContaining(prefecture: Prefecture) -> [TravelPlan] {
+        plans.filter { $0.prefectures.contains(prefecture) }
+    }
+
+    // 訪問済み都道府県は VisitedPrefectureStore が唯一の情報源として保持する
+    // （後勝ちで上書きするため、ここでプランから都度計算する派生値は持たない）。
 }

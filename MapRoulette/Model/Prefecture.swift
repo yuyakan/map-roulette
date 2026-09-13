@@ -31,7 +31,9 @@ struct PrefectureShape: Shape {
         return path
     }
 }
-public enum Prefecture: String, CaseIterable {
+public enum Prefecture: String, CaseIterable, Identifiable {
+    public var id: String { rawValue }
+
     case hokkaido, aomori, iwate, akita, miyagi, yamagata, fukushima
     case ibaraki, chiba, tochigi, gunma, saitama, tokyo, kanagawa
     case niigata, nagano, yamanashi, shizuoka, aichi, mie, gifu
@@ -45,33 +47,114 @@ public enum Prefecture: String, CaseIterable {
         return NSLocalizedString("prefecture.\(self.rawValue)", comment: "Prefecture name")
     }
     
-    var region: String {
-        let regionKey: String
+    /// 地方の分類キー（集計・グループ化用。ローカライズ前の安定した識別子）。
+    var regionKey: String {
         switch self {
         case .hokkaido:
-            regionKey = "hokkaido"
+            return "hokkaido"
         case .aomori, .iwate, .akita, .miyagi, .yamagata, .fukushima:
-            regionKey = "tohoku"
+            return "tohoku"
         case .ibaraki, .chiba, .tochigi, .gunma, .saitama, .tokyo, .kanagawa:
-            regionKey = "kanto"
+            return "kanto"
         case .niigata, .nagano, .yamanashi:
-            regionKey = "koshinetsu"
+            return "koshinetsu"
         case .shizuoka, .aichi, .mie, .gifu:
-            regionKey = "tokai"
+            return "tokai"
         case .fukui, .ishikawa, .toyama:
-            regionKey = "hokuriku"
+            return "hokuriku"
         case .shiga, .kyoto, .hyogo, .nara, .wakayama, .osaka:
-            regionKey = "kinki"
+            return "kinki"
         case .tottori, .okayama, .hiroshima, .yamaguchi, .shimane:
-            regionKey = "chugoku"
+            return "chugoku"
         case .kagawa, .tokushima, .kochi, .ehime:
-            regionKey = "shikoku"
+            return "shikoku"
         case .fukuoka, .oita, .miyazaki, .kagoshima, .kumamoto, .saga, .nagasaki:
-            regionKey = "kyushu"
+            return "kyushu"
         case .okinawa:
-            regionKey = "okinawa"
+            return "okinawa"
         }
+    }
+
+    var region: String {
         return NSLocalizedString("region.\(regionKey)", comment: "Region name")
+    }
+
+    /// 検索用の平仮名読み（都道府県の「都・道・府・県」を除いた本体の読み）。
+    /// 例: 東京 → "とうきょう" / 北海道 → "ほっかいどう"。
+    /// 漢字表記だけでなく、平仮名入力でも県を絞り込めるようにするために使う。
+    var hiraganaReading: String {
+        switch self {
+        case .hokkaido:  return "ほっかいどう"
+        case .aomori:    return "あおもり"
+        case .iwate:     return "いわて"
+        case .akita:     return "あきた"
+        case .miyagi:    return "みやぎ"
+        case .yamagata:  return "やまがた"
+        case .fukushima: return "ふくしま"
+        case .ibaraki:   return "いばらき"
+        case .chiba:     return "ちば"
+        case .tochigi:   return "とちぎ"
+        case .gunma:     return "ぐんま"
+        case .saitama:   return "さいたま"
+        case .tokyo:     return "とうきょう"
+        case .kanagawa:  return "かながわ"
+        case .niigata:   return "にいがた"
+        case .nagano:    return "ながの"
+        case .yamanashi: return "やまなし"
+        case .shizuoka:  return "しずおか"
+        case .aichi:     return "あいち"
+        case .mie:       return "みえ"
+        case .gifu:      return "ぎふ"
+        case .fukui:     return "ふくい"
+        case .ishikawa:  return "いしかわ"
+        case .toyama:    return "とやま"
+        case .shiga:     return "しが"
+        case .kyoto:     return "きょうと"
+        case .hyogo:     return "ひょうご"
+        case .nara:      return "なら"
+        case .wakayama:  return "わかやま"
+        case .osaka:     return "おおさか"
+        case .tottori:   return "とっとり"
+        case .okayama:   return "おかやま"
+        case .hiroshima: return "ひろしま"
+        case .yamaguchi: return "やまぐち"
+        case .shimane:   return "しまね"
+        case .kagawa:    return "かがわ"
+        case .tokushima: return "とくしま"
+        case .kochi:     return "こうち"
+        case .ehime:     return "えひめ"
+        case .fukuoka:   return "ふくおか"
+        case .oita:      return "おおいた"
+        case .miyazaki:  return "みやざき"
+        case .kagoshima: return "かごしま"
+        case .kumamoto:  return "くまもと"
+        case .saga:      return "さが"
+        case .nagasaki:  return "ながさき"
+        case .okinawa:   return "おきなわ"
+        }
+    }
+
+    /// 検索でヒット判定に使う文字列群（表示名・平仮名読み・ローマ字）。
+    /// rawValue はもともとローマ字（例: "kanagawa"）なので、そのまま英字入力にも対応する。
+    var searchKeywords: [String] {
+        [prefectureName, hiraganaReading, rawValue]
+    }
+}
+
+/// 地方（都道府県を束ねる単位）。訪問済みマップの地方別集計に使う。
+/// 並び順は北から南（地図・リストの見た目に合わせる）。
+/// ※ OnsenMapView の `Region`（8 分類・粗い）とは粒度が違うため別型にしている。
+enum JapanRegion: String, CaseIterable {
+    case hokkaido, tohoku, kanto, koshinetsu, hokuriku, tokai, kinki, chugoku, shikoku, kyushu, okinawa
+
+    /// ローカライズ済みの地方名（既存の region.* キーを再利用）。
+    var localizedName: String {
+        NSLocalizedString("region.\(rawValue)", comment: "Region name")
+    }
+
+    /// この地方に属する都道府県（Prefecture.allCases の登場順を保つ）。
+    var prefectures: [Prefecture] {
+        Prefecture.allCases.filter { $0.regionKey == rawValue }
     }
 }
 

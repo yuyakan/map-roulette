@@ -211,7 +211,19 @@ class NatureSpotDataRepository {
             ("sea_munakata_name", "sea_munakata_description", .sea, 4, CLLocationCoordinate2D(latitude: 34.2439, longitude: 130.1039)),
             ("sea_iki_tsushima_name", "sea_iki_tsushima_description", .sea, 4, CLLocationCoordinate2D(latitude: 34.1439, longitude: 129.2839)),
             ("sea_amakusa_name", "sea_amakusa_description", .sea, 4, CLLocationCoordinate2D(latitude: 32.4539, longitude: 130.1939)),
-            ("sea_nichinan_name", "sea_nichinan_description", .sea, 4, CLLocationCoordinate2D(latitude: 31.5739, longitude: 131.4239))
+            ("sea_nichinan_name", "sea_nichinan_description", .sea, 4, CLLocationCoordinate2D(latitude: 31.5739, longitude: 131.4239)),
+            // ビーチ（ホームの「有名なビーチ」テーマと揃えるため追加。nameKey はテーマと共通の beach.*）
+            ("beach.jodogahama", "beach.jodogahama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 39.6389, longitude: 141.9700)),
+            ("beach.yuigahama", "beach.yuigahama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 35.3080, longitude: 139.5490)),
+            ("beach.suishohama", "beach.suishohama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 35.6520, longitude: 136.0400)),
+            ("beach.takahama", "beach.takahama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 32.6980, longitude: 128.8390)),
+            ("beach.emerald", "beach.emerald_desc", .sea, 4, CLLocationCoordinate2D(latitude: 26.6940, longitude: 127.8780)),
+            ("beach.nishihama", "beach.nishihama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 24.0560, longitude: 123.7810)),
+            // ホームの「有名なビーチ」テーマ用に追加（自然タブにも同 nameKey で表示・詳細を開く）。
+            ("beach.kujukurihama", "beach.kujukurihama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 35.5300, longitude: 140.4200)),
+            ("beach.izu_shirahama", "beach.izu_shirahama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 34.6820, longitude: 138.9660)),
+            ("beach.takeno", "beach.takeno_desc", .sea, 4, CLLocationCoordinate2D(latitude: 35.6360, longitude: 134.7700)),
+            ("beach.shirarahama", "beach.shirarahama_desc", .sea, 4, CLLocationCoordinate2D(latitude: 33.6840, longitude: 135.3390))
         ]
         
         for (nameKey, descriptionKey, spotType, popularity, coordinate) in natureSpotData {
@@ -266,6 +278,11 @@ class NatureSpotWeightManager: ObservableObject {
 }
 
 struct NatureSpotMapView: View {
+    /// 統合タブ内で表示されているか。true のとき、上部に重なる切替帯のぶんだけ
+    /// コンテンツを下げる余白を確保する（帯自体は IntegratedMapView が描画する）。
+    /// false（単独利用時）は余白ゼロで既存挙動を一切変えない。
+    var isIntegrated: Bool = false
+
     @State private var selectedSpot: FixedNatureSpotItem? = nil
     @State private var isSpinning = false
     @State private var spinTimer: Timer?
@@ -322,24 +339,22 @@ struct NatureSpotMapView: View {
                 // 設定ボタンなどのヘッダー要素（最上位zIndex）
                 if !isSpinning {
                     VStack {
+                        // 統合タブ表示中は、最前面に重なる切替帯のぶんだけ設定ボタン行を下げる
+                        if isIntegrated {
+                            Spacer().frame(height: mapModeBandHeight)
+                        }
                         HStack {
                             Button(action: {
                                 showSettings = true
                             }) {
-                                HStack(spacing: 6) {
-                                    Image(systemName: "gearshape.fill")
-                                        .resizable()
-                                        .frame(width: 18, height: 18)
-                                    Text("nature_settings".localized)
-                                        .font(.system(size: 16))
-                                        .fontWeight(.medium)
-                                }
-                                .foregroundColor(.black)
-                                .padding(.horizontal, 16)
-                                .padding(.vertical, 8)
-                                .background(.white)
-                                .cornerRadius(20)
-                                .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
+                                Image(systemName: "gearshape.fill")
+                                    .resizable()
+                                    .frame(width: 18, height: 18)
+                                    .foregroundColor(.black)
+                                    .padding(12)
+                                    .background(.white)
+                                    .clipShape(Circle())
+                                    .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                             }
                             .disabled(isSpinning)
                             
@@ -616,7 +631,8 @@ struct NatureSpotMapView: View {
                 )
                 .largeSheet()
             }
-            .navigationDestination(isPresented: $showSpotInfo) {
+            // 詳細はウインドウ全体を覆う fullScreenCover で表示（下タブ・帯の上に出るので真の全画面）
+            .fullScreenCover(isPresented: $showSpotInfo) {
                 if let spot = tappedSpot {
                     NatureSpotDetailView(spot: spot)
                 }
@@ -750,7 +766,9 @@ struct NatureSpotMapView: View {
                                 Spacer()
                             }
                             .padding(.horizontal, 16)
-                            .padding(.top, spotType == NatureSpotType.allCases.first ? 80 : 0)
+                            // 先頭のタイプ見出しは、設定/切替ボタン行を避けるため上に余白を空ける。
+                            // 統合タブ表示中は最前面の切替帯のぶんもさらに下げる。
+                            .padding(.top, spotType == NatureSpotType.allCases.first ? (80 + (isIntegrated ? mapModeBandHeight : 0)) : 0)
                             
                             // タイプの観光名所をグリッド表示
                             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: columnCount), spacing: 10) {
@@ -1023,7 +1041,28 @@ struct NatureSpotMapView: View {
                 position = CGPoint(x: 95, y: 425) // 天草 - 熊本県
             case "sea_nichinan_name":
                 position = CGPoint(x: 110, y: 440) // 日南海岸 - 宮崎県
-                
+            // ビーチ（有名なビーチテーマと共通）
+            case "beach.jodogahama":
+                position = CGPoint(x: 382, y: 205) // 浄土ヶ浜 - 岩手県
+            case "beach.yuigahama":
+                position = CGPoint(x: 316, y: 345) // 由比ヶ浜 - 神奈川県
+            case "beach.suishohama":
+                position = CGPoint(x: 238, y: 330) // 水晶浜 - 福井県
+            case "beach.takahama":
+                position = CGPoint(x: 70, y: 405) // 高浜(五島) - 長崎県
+            case "beach.emerald":
+                position = CGPoint(x: 40, y: 478) // エメラルドビーチ - 沖縄県
+            case "beach.nishihama":
+                position = CGPoint(x: 25, y: 490) // ニシ浜(波照間) - 沖縄県
+            case "beach.kujukurihama":
+                position = CGPoint(x: 345, y: 335) // 九十九里浜 - 千葉県
+            case "beach.izu_shirahama":
+                position = CGPoint(x: 305, y: 355) // 伊豆白浜 - 静岡県
+            case "beach.takeno":
+                position = CGPoint(x: 205, y: 340) // 竹野浜 - 兵庫県
+            case "beach.shirarahama":
+                position = CGPoint(x: 235, y: 390) // 白良浜 - 和歌山県
+
         default:
             position = CGPoint(x: 250, y: 250)
         }
