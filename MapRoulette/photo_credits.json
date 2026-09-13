@@ -390,6 +390,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_hiraizumi",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "Sakaori (talk)",
+  "title": "Motsu-ji Temple Ikenaka-Tateishi.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Motsu-ji_Temple_Ikenaka-Tateishi.JPG",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_hirosaki_castle",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -597,6 +607,16 @@
   "author": "pcs34560 from jawp\n\n This photo was taken with Canon EOS 500D‎",
   "title": "Kappabashi bridge Kamikōchi 20110717 0743 photo by Pcs34560.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kappabashi_bridge_Kamik%C5%8Dchi_20110717_0743_photo_by_Pcs34560.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_kamogawa_seaworld",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "F_Photo",
+  "title": "Chiba Kamogawa SeaWorld killer whale xl.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chiba_Kamogawa_SeaWorld_killer_whale_xl.jpg",
   "modified": "resized"
  },
  {
@@ -887,6 +907,26 @@
   "author": "Kentaro Ohno",
   "title": "Naka-jima island, Lake Toya, Hokkaio - Jun 21, 2015.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Naka-jima_island,_Lake_Toya,_Hokkaio_-_Jun_21,_2015.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_lake_yamanaka",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "こけ.",
+  "title": "山中湖から見た富士山.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E4%B8%AD%E6%B9%96%E3%81%8B%E3%82%89%E8%A6%8B%E3%81%9F%E5%AF%8C%E5%A3%AB%E5%B1%B1.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_linear_railway_museum",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Abasaa",
+  "title": "SCMaglev and Railway Park.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:SCMaglev_and_Railway_Park.JPG",
   "modified": "resized"
  },
  {
@@ -1357,6 +1397,16 @@
   "author": "Karl Baron",
   "title": "Kagoshima view from Murasakibaru - Jan 29, 2012.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kagoshima_view_from_Murasakibaru_-_Jan_29,_2012.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_sendai_castle",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Statue: Tōru Komuro (d. 18 June 1953)\nPhoto: foooomio",
+  "title": "Statue-of-Date-Masamune-in-Aobayama-Park-Sendai-2016.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Statue-of-Date-Masamune-in-Aobayama-Park-Sendai-2016.jpg",
   "modified": "resized"
  },
  {
