@@ -300,6 +300,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_hakone",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "T. Hanami",
+  "title": "Hakone Sightseeing Cruise Queen Ashinoko.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hakone_Sightseeing_Cruise_Queen_Ashinoko.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_hakuba",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -807,6 +817,16 @@
   "author": "Marion & Christoph Aistleitner",
   "title": "Fuji Kawaguchi 452.JPG",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fuji_Kawaguchi_452.JPG",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_lake_suwa",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Evelyn-rose",
+  "title": "Suwa-Tateishi-Park-1.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suwa-Tateishi-Park-1.jpg",
   "modified": "resized"
  },
  {
@@ -1340,6 +1360,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_shinjuku_gyoen",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "Carbonium",
+  "title": "Japanese Traditional Garden, Shinjuku Gyoen(Shinjuku Imperial Garden) - 日本庭園, 新宿御苑 - panoramio.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_Traditional_Garden,_Shinjuku_Gyoen(Shinjuku_Imperial_Garden)_-_%E6%97%A5%E6%9C%AC%E5%BA%AD%E5%9C%92,_%E6%96%B0%E5%AE%BF%E5%BE%A1%E8%8B%91_-_panoramio.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_shinsekai",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -1647,6 +1677,16 @@
   "author": "ラハール",
   "title": "Mt. Yashima.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Yashima.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_yokohama_akarenga",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Matthide127",
+  "title": "20250102 Yokohama Red Brick Warehouse 204038.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:20250102_Yokohama_Red_Brick_Warehouse_204038.jpg",
   "modified": "resized"
  },
  {
