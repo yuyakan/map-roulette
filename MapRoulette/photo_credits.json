@@ -640,6 +640,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_kurokawa_onsen",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "MaedaAkihiko",
+  "title": "Kurokawa-Onsen Light-up.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kurokawa-Onsen_Light-up.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_kusatsu_onsen",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -1030,6 +1040,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_saito_ancient_burial_mounds",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Saigen Jiro",
+  "title": "Saitobaru-kofungun 3rd kofungun.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saitobaru-kofungun_3rd_kofungun.JPG",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_sakurajima",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -1227,6 +1247,36 @@
   "author": "Ocdp",
   "title": "Tsurugaoka Hachimangu 001.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsurugaoka_Hachimangu_001.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_udo_shrine",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "JKT-c",
+  "title": "Udo-jingu Shrine.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Udo-jingu_Shrine.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_unzen_onsen",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Barry  Silver",
+  "title": "Unzen Jigoku 清七地獄 Dec 13, 2009.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unzen_Jigoku_%E6%B8%85%E4%B8%83%E5%9C%B0%E7%8D%84_Dec_13,_2009.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_usuki_stone_buddhas",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Maarten Heerlien",
+  "title": "The superb Magaibutsu, or stone Buddhas of Usuki 2009-09-13.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_superb_Magaibutsu,_or_stone_Buddhas_of_Usuki_2009-09-13.jpg",
   "modified": "resized"
  },
  {
