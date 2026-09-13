@@ -39,8 +39,18 @@ def license_class(short):
         return "CC BY"
     return None
 
+def known_name_keys():
+    """TourismInfo.swift に実在する nameKey の集合。"""
+    src = open(f"{REPO}/Model/TourismInfo.swift", encoding="utf-8").read()
+    return set(re.findall(r'nameKey:\s*"(\w+)"', src))
+
 def main():
     name_key, title = sys.argv[1], sys.argv[2]
+    # nameKey のタイポは「imageset は出来るが画面には一生出ない」無言の失敗に
+    # なるため、取り込み前に実在を検査する（beach_* は別データ源なので除外）。
+    if not name_key.startswith("beach_") and name_key not in known_name_keys():
+        print(f"REJECT [{name_key}] TourismInfo.swift に該当 nameKey が無い → 取り込まない")
+        sys.exit(3)
     if not title.lower().startswith("file:"):
         title = "File:" + title
     full_title, ii = api_imageinfo(title)

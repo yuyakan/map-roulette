@@ -1,5 +1,15 @@
 [
  {
+  "nameKey": "attraction_adachi_museum",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "author": "663highland",
+  "title": "Adachi Museum of Art08s4592.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adachi_Museum_of_Art08s4592.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_aizu_wakamatsu_castle",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -90,6 +100,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_chusonji",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Daderot",
+  "title": "Konjikido shelter hall - Chusonji, Hiraizumi, Iwate - DSC04951.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Konjikido_shelter_hall_-_Chusonji,_Hiraizumi,_Iwate_-_DSC04951.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_dinosaur_museum",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -117,6 +137,16 @@
   "author": "Kristoffer Trolle from Copenhagen, Denmark",
   "title": "Dōtonbori at night, Osaka (19551420339).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:D%C5%8Dtonbori_at_night,_Osaka_(19551420339).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_eiheiji",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Brakeet",
+  "title": "Eiheiji 2010 06.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eiheiji_2010_06.jpg",
   "modified": "resized"
  },
  {
@@ -180,6 +210,26 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_goryokaku",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "lumoplank",
+  "title": "Hakodate - Hakodate944.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hakodate_-_Hakodate944.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_goshikinuma",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "lumoplank",
+  "title": "Aizuwakamatsu and Goshikinuma - Goshikinuma7492.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aizuwakamatsu_and_Goshikinuma_-_Goshikinuma7492.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_gunkanjima",
   "licenseClass": "CC BY",
   "license": "CC BY 4.0",
@@ -187,6 +237,16 @@
   "author": "Jakub Hałun",
   "title": "Hashima, Nagasaki, Japan, 20240814 1421 3377.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hashima,_Nagasaki,_Japan,_20240814_1421_3377.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_hakkoda_mountains",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "lumoplank",
+  "title": "Hakkoda Mountains, Part II- Foothills - Hakkoda6929.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hakkoda_Mountains,_Part_II-_Foothills_-_Hakkoda6929.jpg",
   "modified": "resized"
  },
  {
@@ -257,6 +317,26 @@
   "author": "Σ64",
   "title": "Miharashino Oka (Hitachi Seaside Park) 45.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miharashino_Oka_(Hitachi_Seaside_Park)_45.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_horyuji",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Saigen Jiro",
+  "title": "Horyu-ji, kondou and tou.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Horyu-ji,_kondou_and_tou.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_imabari_castle",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Syced",
+  "title": "今治城.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BB%8A%E6%B2%BB%E5%9F%8E.jpg",
   "modified": "resized"
  },
  {
@@ -740,6 +820,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_muroto_cape",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Nobunaga24 at English Wikipedia",
+  "title": "Muroto Cape.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muroto_Cape.JPG",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_nabana_no_sato",
   "licenseClass": "CC BY",
   "license": "CC BY 3.0",
@@ -767,6 +857,16 @@
   "author": "Syced",
   "title": "Nagoya castle (53895).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nagoya_castle_(53895).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_nakatsu_castle",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Luck-one",
+  "title": "NakatsuCastle.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:NakatsuCastle.JPG",
   "modified": "resized"
  },
  {
@@ -847,6 +947,16 @@
   "author": "Daderot",
   "title": "Oirase Mountain Stream - Towada, Aomori - DSC00907.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oirase_Mountain_Stream_-_Towada,_Aomori_-_DSC00907.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_okuhida_onsen",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Raita Futo from Tokyo, Japan",
+  "title": "Gifu snowy onsen (53617473787).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gifu_snowy_onsen_(53617473787).jpg",
   "modified": "resized"
  },
  {
@@ -937,6 +1047,16 @@
   "author": "Akonnchiroll",
   "title": "Sensoji 2023.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sensoji_2023.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_shimanto_river",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Saigen Jiro",
+  "title": "Shimanto-gawa bashi zenkei-2.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shimanto-gawa_bashi_zenkei-2.jpg",
   "modified": "resized"
  },
  {
@@ -1107,6 +1227,16 @@
   "author": "Ocdp",
   "title": "Tsurugaoka Hachimangu 001.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsurugaoka_Hachimangu_001.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_wakayama_castle",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Saigen Jiro",
+  "title": "Wakayama Castle, tenshu-1.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wakayama_Castle,_tenshu-1.jpg",
   "modified": "resized"
  },
  {

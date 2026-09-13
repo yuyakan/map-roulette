@@ -4,9 +4,12 @@
 長辺600pxに縮小した JPEG を出力する。curl を使わず urllib で取得（権限回避）。
 使い方: preview.py <fileurl> <out_name_without_ext>
 """
-import subprocess, sys, urllib.request
+import os, subprocess, sys, tempfile, urllib.request
 
-SCRATCH = "/private/tmp/claude-501/-Users-uebetsunawayuuya-MapRoulette/d5b5d77a-851a-4261-a905-234f60ff1024/scratchpad"
+# 出力先はセッションごとに変わるため固定パスにしない。
+# 環境変数 PREVIEW_DIR があればそれを使い、無ければ一時ディレクトリ。
+SCRATCH = os.environ.get("PREVIEW_DIR") or tempfile.gettempdir()
+os.makedirs(SCRATCH, exist_ok=True)
 UA = "MapRoulette/1.0 (image preview; kanbe1365@icloud.com)"
 
 def main():
