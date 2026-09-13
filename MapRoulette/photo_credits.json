@@ -260,6 +260,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_gokayama",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "minque",
+  "title": "Ainokura in Gokayama area.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ainokura_in_Gokayama_area.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_goryokaku",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -1787,6 +1797,16 @@
   "author": "JKT-c",
   "title": "Udo-jingu Shrine.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Udo-jingu_Shrine.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_unazuki_onsen",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Saigen Jiro",
+  "title": "ED11 at Unazuki Station.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:ED11_at_Unazuki_Station.jpg",
   "modified": "resized"
  },
  {
