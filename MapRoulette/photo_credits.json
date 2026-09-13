@@ -440,6 +440,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_hokokuji",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Reginald Pentinio",
+  "title": "Peeking Sun (21907530901).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peeking_Sun_(21907530901).jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_horyuji",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -1187,6 +1197,16 @@
   "author": "Douglas Perkins",
   "title": "Kumano Nachi Taisha 02.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kumano_Nachi_Taisha_02.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_nagatoro",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Guilhem Vellut from Annecy, France",
+  "title": "Autumn colors @ Nagatoro Iwadatami Rocks @ Chichibu (11043272625).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Autumn_colors_@_Nagatoro_Iwadatami_Rocks_@_Chichibu_(11043272625).jpg",
   "modified": "resized"
  },
  {
