@@ -1360,6 +1360,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_oki_islands",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "Navian",
+  "title": "Rousoku Iwa.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rousoku_Iwa.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_okuhida_onsen",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -1687,6 +1697,16 @@
   "author": "Max Smith",
   "title": "Takachiho Gorge by boat.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Takachiho_Gorge_by_boat.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_takarazuka_grand_theater",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "author": "663highland",
+  "title": "Takarazuka grand theater01s3200.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Takarazuka_grand_theater01s3200.jpg",
   "modified": "resized"
  },
  {
