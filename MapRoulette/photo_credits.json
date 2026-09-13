@@ -1210,6 +1210,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_naruko_onsen",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "T-KIMURA",
+  "title": "Miyagi Naruko-kyo in autumn xl.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miyagi_Naruko-kyo_in_autumn_xl.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_naruto_whirlpools",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -1357,6 +1367,16 @@
   "author": "Ka23 13",
   "title": "Hakone 20221104 100950.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hakone_20221104_100950.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_philosophers_path",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "shankar s.",
+  "title": "The Philosophers Walk is about 2km long and runs along a canal.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Philosophers_Walk_is_about_2km_long_and_runs_along_a_canal.jpg",
   "modified": "resized"
  },
  {
@@ -1877,6 +1897,36 @@
   "author": "Bobo12345 at English Wikipedia",
   "title": "Yufuin, Ōita Prefecture (4 November 2006).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yufuin,_%C5%8Cita_Prefecture_(4_November_2006).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_zao",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "Ka23 13",
+  "title": "Mount Zao 20161007 114748.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Zao_20161007_114748.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_zao_fox_village",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "CloudVisual cloudvisual",
+  "title": "Zao Fox Village, Shiroishi-shi, Japan (Unsplash).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zao_Fox_Village,_Shiroishi-shi,_Japan_(Unsplash).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_zao_onsen",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "ZAO Ropeway",
+  "title": "Snow Monsters, Zao Onsen Ski Resort.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snow_Monsters,_Zao_Onsen_Ski_Resort.jpg",
   "modified": "resized"
  },
  {
