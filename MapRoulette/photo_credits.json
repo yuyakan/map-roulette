@@ -1260,6 +1260,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_shimabara_castle",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "author": "663highland",
+  "title": "140321 Shimabara Castle Shimabara Nagasaki pref Japan01bs5.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:140321_Shimabara_Castle_Shimabara_Nagasaki_pref_Japan01bs5.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_shimanto_river",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -1377,6 +1387,16 @@
   "author": "Brakeet",
   "title": "Takeda Castle 2011 03.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Takeda_Castle_2011_03.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_takeo_onsen",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "User: (WT-shared) Tanuki at  wts wikivoyage",
+  "title": "Takeo Spa.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Takeo_Spa.JPG",
   "modified": "resized"
  },
  {
