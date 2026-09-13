@@ -20,6 +20,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_amakusa",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "shikabane taro",
+  "title": "崎津天主堂 - panoramio.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%B4%8E%E6%B4%A5%E5%A4%A9%E4%B8%BB%E5%A0%82_-_panoramio.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_aoshima",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -610,6 +620,26 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_kibitsu_shrine",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "次田和宏",
+  "title": "吉備津神社回廊 - panoramio.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%90%89%E5%82%99%E6%B4%A5%E7%A5%9E%E7%A4%BE%E5%9B%9E%E5%BB%8A_-_panoramio.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_kikuchi_valley",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "690 Noda",
+  "title": "菊池渓谷 20130815 - panoramio.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%8F%8A%E6%B1%A0%E6%B8%93%E8%B0%B7_20130815_-_panoramio.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_kinkakuji",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -910,6 +940,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_mount_ishizuchi",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "yanase1179",
+  "title": "Mount Ishizuchi from Mount Kamegamori 2007-04-29.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Ishizuchi_from_Mount_Kamegamori_2007-04-29.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_mount_tanigawa",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -1060,6 +1100,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_okayama_castle",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Balon Greyjoy",
+  "title": "20190120 Canon 5DMkIII Okayama Castle 4768.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190120_Canon_5DMkIII_Okayama_Castle_4768.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_okuhida_onsen",
   "licenseClass": "CC BY",
   "license": "CC BY 2.0",
@@ -1200,6 +1250,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_seto_ohashi_memorial_park",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "author": "663highland",
+  "title": "Great Seto Bridge Memorial Park01s3872.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Seto_Bridge_Memorial_Park01s3872.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_shimanto_river",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -1257,6 +1317,16 @@
   "author": "Hyppolyte de Saint-Rambert",
   "title": "Shitennoji Osaka Tennoji-ku) hdsr S5 06.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shitennoji_Osaka_Tennoji-ku)_hdsr_S5_06.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_shodoshima",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "author": "663highland",
+  "title": "201211Kankakei Shodoshima Kagawa pref Japan03s3.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:201211Kankakei_Shodoshima_Kagawa_pref_Japan03s3.jpg",
   "modified": "resized"
  },
  {
@@ -1397,6 +1467,16 @@
   "author": "Ocdp",
   "title": "Tsurugaoka Hachimangu 001.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsurugaoka_Hachimangu_001.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_uchiko_town",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "At by At",
+  "title": "Yokaichi Gokoku201102.JPG",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yokaichi_Gokoku201102.JPG",
   "modified": "resized"
  },
  {
