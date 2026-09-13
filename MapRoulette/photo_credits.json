@@ -1,5 +1,15 @@
 [
  {
+  "nameKey": "attraction_abukuma_cave",
+  "licenseClass": "CC BY",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "author": "Σ64",
+  "title": "Abukuma Cave 01.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abukuma_Cave_01.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_adachi_museum",
   "licenseClass": "CC BY",
   "license": "CC BY 2.5",
@@ -107,6 +117,16 @@
   "author": "雷太",
   "title": "Chichibu's shibazakura, Saitama Prefecture; April 2017 (04).jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chichibu%27s_shibazakura,_Saitama_Prefecture;_April_2017_(04).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_choshi",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "Aspere",
+  "title": "250821 Inubosaki Lighthouse 01.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:250821_Inubosaki_Lighthouse_01.jpg",
   "modified": "resized"
  },
  {
@@ -940,6 +960,26 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_mount_gassan",
+  "licenseClass": "CC BY",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "author": "Raita Futo from Tokyo, Japan",
+  "title": "Mt. Gassan green hills (51843961465).jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Gassan_green_hills_(51843961465).jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_mount_haguro",
+  "licenseClass": "CC BY",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "author": "Crown of Lenten rose",
+  "title": "Hagurosan Gojunto 2006-A.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hagurosan_Gojunto_2006-A.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_mount_ishizuchi",
   "licenseClass": "CC0",
   "license": "Public domain",
@@ -1020,6 +1060,16 @@
   "modified": "resized"
  },
  {
+  "nameKey": "attraction_namahage_museum",
+  "licenseClass": "CC0",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "author": "ウィキ太郎 Wiki Taro",
+  "title": "Namahage the Japanese demonlike being 01.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Namahage_the_Japanese_demonlike_being_01.jpg",
+  "modified": "resized"
+ },
+ {
   "nameKey": "attraction_nara_park",
   "licenseClass": "CC0",
   "license": "CC0",
@@ -1077,6 +1127,16 @@
   "author": "Kentaro Ohno",
   "title": "Hell Valley (Jigokudani) - 22567574857.jpg",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hell_Valley_(Jigokudani)_-_22567574857.jpg",
+  "modified": "resized"
+ },
+ {
+  "nameKey": "attraction_nyuto_onsen",
+  "licenseClass": "CC0",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "author": "lumoplank",
+  "title": "Nyuto Onsen - NyutoOnsen7043.jpg",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nyuto_Onsen_-_NyutoOnsen7043.jpg",
   "modified": "resized"
  },
  {
