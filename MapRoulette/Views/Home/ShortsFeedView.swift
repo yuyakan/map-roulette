@@ -33,6 +33,16 @@ struct ShortsFeedView: View {
     /// 2 = 前後2本ずつ（同時最大5本のプレイヤーを保持）。途切れにくいがメモリ負荷は上がる。
     private let preloadRadius = 2
 
+    /// プレイヤーを破棄するまでの距離。preloadRadius より広く取る。
+    /// 生成と破棄の閾値を同じにすると、境界をまたぐ小さなスワイプのたびに
+    /// WebView の生成→破棄→生成が起きて、戻ったときに毎回ロードし直しになる。
+    /// ここにヒステリシスを持たせ、少し離れたくらいでは生かしたままにする。
+    private let evictRadius = 4
+
+    /// 一度でもプレイヤーを生成したページ（動画 ID）。
+    /// evictRadius の外に出るまでは生かし続け、戻ってきたときに即再生できるようにする。
+    @State private var materialized: Set<String> = []
+
     var body: some View {
         GeometryReader { geo in
             TabView(selection: $currentIndex) {
@@ -40,13 +50,20 @@ struct ShortsFeedView: View {
                     ShortsPage(
                         video: video,
                         isActive: index == currentIndex,
-                        // 近傍ページはプレイヤーを先に生成（プリロード）。遠いページはサムネのみ。
-                        isPreloaded: abs(index - currentIndex) <= preloadRadius
+                        // 近傍ページはプレイヤーを先に生成（プリロード）。
+                        // 一度生成したページは evictRadius の外に出るまで生かし続ける。
+                        isPreloaded: shouldMaterialize(index: index, video: video)
                     )
                     .frame(width: geo.size.width, height: geo.size.height)
                     .rotationEffect(.degrees(-90))          // TabView を縦ページ化する定番手法
                     .tag(index)
                 }
+            }
+            .onChange(of: currentIndex) { _, index in
+                updateMaterialized(around: index)
+            }
+            .onAppear {
+                updateMaterialized(around: currentIndex)
             }
             .frame(width: geo.size.height, height: geo.size.width)
             .rotationEffect(.degrees(90), anchor: .topLeading)
@@ -56,6 +73,34 @@ struct ShortsFeedView: View {
         .background(Color.black)
         .ignoresSafeArea()
         .overlay(alignment: .topLeading) { closeButton }
+    }
+
+    /// このページでプレイヤーを実体化するか。
+    /// 近傍（preloadRadius 以内）か、すでに生成済みで破棄されていないページ。
+    private func shouldMaterialize(index: Int, video: TrendVideo) -> Bool {
+        if materialized.contains(video.videoId) { return true }
+        return abs(index - currentIndex) <= preloadRadius
+    }
+
+    /// 現在位置を中心に、生かしておくプレイヤーの集合を更新する。
+    /// - preloadRadius 以内: 生成する（まだなら追加）
+    /// - evictRadius より外: 破棄する（WebView を解放してメモリを戻す）
+    /// - その間: 現状維持（ヒステリシス。往復スワイプでの作り直しを防ぐ）
+    private func updateMaterialized(around index: Int) {
+        var next = materialized
+
+        for (i, video) in videos.enumerated() {
+            let distance = abs(i - index)
+            if distance <= preloadRadius {
+                next.insert(video.videoId)
+            } else if distance > evictRadius {
+                next.remove(video.videoId)
+            }
+        }
+
+        if next != materialized {
+            materialized = next
+        }
     }
 
     private var closeButton: some View {
@@ -85,6 +130,13 @@ private struct ShortsPage: View {
         ZStack {
             Color.black
 
+            // 遠いページはサムネのみ（メモリ節約）。近づいたらプレイヤーを載せる。
+            //
+            // 【重要】if/else でプレイヤーごと差し替えないこと。
+            // 分岐を切り替えると SwiftUI がビュー ID を変えるため、せっかく先に
+            // 作った WebView が破棄され、前面に来たときゼロからロードし直しになる
+            // （＝スワイプ後に黒いまま待たされる原因）。プレイヤーは一度作ったら
+            // 生かしたまま、サムネを上に重ねる/外すだけにする。
             if isPreloaded {
                 // 要件B/E: 公式埋め込みを 9:16 で。表示中ページのみ再生。
                 // ロード中はサムネでつなぎ、黒画面待ちを避ける。
@@ -94,9 +146,11 @@ private struct ShortsPage: View {
                     thumbnailUrl: video.thumbnailUrl
                 )
                 .aspectRatio(9.0 / 16.0, contentMode: .fit)
+                // 動画ごとに固定 ID を与え、TabView の再構築でプレイヤーが
+                // 作り直されないようにする。
+                .id(video.videoId)
             } else {
-                // 遠いページはプレイヤーを持たず、サムネのみ（メモリ節約）。
-                // スワイプで近づいた時点でプレイヤーに差し替わる。
+                // プレイヤー未生成のページ。サムネだけ出しておく。
                 thumbnailOnly
             }
 

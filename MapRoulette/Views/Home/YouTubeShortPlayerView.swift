@@ -16,6 +16,13 @@
 //  単純な Referer 付与では直らないことが一次情報で確認済み。YouTubePlayerKit は
 //  この Origin 問題を内部で正しく処理しており、公式埋め込みプレイヤーで安定再生できる。
 //
+//  【スワイプで真っ黒になる問題への対処（重要）】
+//  プレイヤーの ready は「iframe の準備ができた」だけで、その時点では play() を投げても
+//  取りこぼされることがある。isActive を State に控えておき、ready になった/再生状態が
+//  変わったタイミングで「本当に再生されているか」を照合して play を打ち直す。
+//  また、実際に映像が出た（playing/buffering を観測した）までサムネを剥がさないことで、
+//  「音だけ鳴って黒」「何も映らない黒」を防ぐ。
+//
 
 import SwiftUI
 import YouTubePlayerKit
@@ -28,6 +35,10 @@ struct YouTubeShortPlayerView: View {
     let thumbnailUrl: String?
 
     @State private var player: YouTubePlayer
+    /// プレイヤーが ready になったか。ready 前の play() は無視されるので、ここで待ち合わせる。
+    @State private var isReady = false
+    /// 実際に映像が動き出したか（playing を一度でも観測した）。サムネを剥がす判断に使う。
+    @State private var hasStartedPlayback = false
 
     init(videoId: String, isActive: Bool, thumbnailUrl: String? = nil) {
         self.videoId = videoId
@@ -52,28 +63,65 @@ struct YouTubeShortPlayerView: View {
     }
 
     var body: some View {
-        YouTubePlayerView(player) { state in
-            // ロード中/失敗時のプレースホルダ。
-            switch state {
-            case .idle:
-                // ロード中は黒ではなくサムネを見せる（体感ラグ低減）。
-                // タップ直後、映像が出るまでカードと同じ絵で埋める。
-                thumbnailPlaceholder
-            case .ready:
-                // 再生準備完了後は映像を覆わない（覆うと音だけ聞こえて映像が見えなくなる）。
+        YouTubePlayerView(player) { _ in
+            // プレースホルダは state ではなく「実際に再生が始まったか」で外す。
+            // ready でも最初のフレームが出るまでは黒なので、ready を剥がす条件にしない。
+            if hasStartedPlayback {
                 Color.clear
-            case .error:
-                Color.black
+            } else {
+                thumbnailPlaceholder
+            }
+        }
+        // ready になったら、そのとき前面なら再生を開始する。
+        // （onChange(of: isActive) だけだと、ready 前に来た play が捨てられて黒のままになる）
+        .onReceive(player.statePublisher) { state in
+            let ready = state.isReady
+            isReady = ready
+            if ready && isActive {
+                Task { await play() }
+            }
+            if state.isError {
+                // 失敗したページを黙って黒のままにしない。サムネに戻して再試行できる状態にする。
+                hasStartedPlayback = false
+            }
+        }
+        // 再生状態を監視し、前面なのに止まっていたら play を打ち直す。
+        // YouTube 側の自動再生ブロックや、スワイプ直後の取りこぼしをここで吸収する。
+        .onReceive(player.playbackStatePublisher) { playbackState in
+            switch playbackState {
+            case .playing, .buffering:
+                // 映像が動き出した。ここで初めてサムネを剥がす。
+                if !hasStartedPlayback { hasStartedPlayback = true }
+            case .unstarted, .cued, .paused, .ended:
+                // 前面なのに再生されていないなら、もう一度 play する。
+                if isActive && isReady {
+                    Task { await play() }
+                }
+            default:
+                break
             }
         }
         .onChange(of: isActive) { _, active in
-            Task { await applyActive(active) }
+            Task { await apply(active: active) }
         }
         .onAppear {
-            Task { await applyActive(isActive) }
+            // 生成直後に ready 済みのことがある（再利用時）。その場合ここで再生を掛ける。
+            if isActive && player.state.isReady {
+                Task { await play() }
+            }
+        }
+        .onDisappear {
+            // ページがフィードから外れたら必ず止める。音が残るのを防ぐ。
+            Task { try? await player.pause() }
         }
         .onChange(of: videoId) { _, newId in
-            Task { try? await player.load(source: .video(id: newId)) }
+            // 動画が差し替わったら、待ち合わせフラグも巻き戻す。
+            // （これを忘れると前の動画の hasStartedPlayback が残り、次の動画で黒画面になる）
+            isReady = false
+            hasStartedPlayback = false
+            Task {
+                try? await player.load(source: .video(id: newId))
+            }
         }
     }
 
@@ -99,11 +147,17 @@ struct YouTubeShortPlayerView: View {
     }
 
     /// 表示中なら再生、外れたら一時停止（音声が残らないように）。
-    private func applyActive(_ active: Bool) async {
+    private func apply(active: Bool) async {
         if active {
-            try? await player.play()
+            await play()
         } else {
             try? await player.pause()
         }
+    }
+
+    /// 再生を要求する。ready 前なら statePublisher 側の待ち合わせに任せる。
+    private func play() async {
+        guard player.state.isReady else { return }
+        try? await player.play()
     }
 }
