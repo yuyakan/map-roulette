@@ -23,9 +23,13 @@ struct RichNatureSection: View {
 
     /// この県に属する自然スポット（自然タブと同じデータを prefecture で絞り込む）。
     /// 並びは自然タブのデータ定義順（夜景→星空→海→キャンプ）をそのまま踏襲する。
-    private var spots: [FixedNatureSpotItem] {
+    static func spots(in prefecture: Prefecture) -> [FixedNatureSpotItem] {
         NatureSpotDataRepository.shared.allFixedSpots
             .filter { $0.prefecture == prefecture }
+    }
+
+    private var spots: [FixedNatureSpotItem] {
+        Self.spots(in: prefecture)
     }
 
     /// 実際に表示する件数（他セクションと同じ「最初4件」ルール）。

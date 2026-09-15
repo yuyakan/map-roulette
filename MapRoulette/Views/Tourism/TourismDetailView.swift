@@ -59,7 +59,11 @@ struct TourismDetailView: View {
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.top, 34)
-                    
+
+                    // 人気スポットの Shorts（県名の直下・この画面の先頭）。
+                    trendCategoryRow(for: "spot")
+                        .padding(.horizontal, 16)
+
                     // 観光地マップ
                     VStack(alignment: .leading, spacing: 16) {
                         RichSectionHeader(
@@ -169,13 +173,11 @@ struct TourismDetailView: View {
                                 }
                             }
                         }
-
-                        // 人気スポットの Shorts（観光地マップセクションの一番下）。
-                        trendCategoryRow(for: "spot")
                     }
                     .padding(.horizontal, 16)
 
-                    AdaptiveBannerAdView()
+                    // 観光地マップの下だけレクタングル(300x250)。eCPMが高い傾向のため試験的に採用。
+                    MediumRectangleAdView()
 
                     RichGourmetSection(prefecture: prefecture)
 
@@ -183,25 +185,28 @@ struct TourismDetailView: View {
                     trendCategoryRow(for: "gourmet")
                         .padding(.horizontal, 16)
 
-                    // グルメの下だけレクタングル(300x250)。eCPMが高い傾向のため試験的に採用。
-                    MediumRectangleAdView()
+                    RichSouvenirSection(prefecture: prefecture)
+
+                    // 温泉・自然はデータが無い県では丸ごと消える。両方消えると、この広告が
+                    // 直下のカフェ Shorts と隣り合ってしまう（愛知・広島・茨城・香川・新潟・埼玉）。
+                    // 広告と動画を隣接させないため、その6県ではこの1枚を出さない。
+                    if hasSectionBelowAd {
+                        AdaptiveBannerAdView()
+                    }
 
                     RichOnsenSection(prefecture: prefecture)
 
-                    RichSouvenirSection(prefecture: prefecture)
-                        .padding(.top, prefecture.onsenItems.isEmpty ? 0 : 4)
-
-                    AdaptiveBannerAdView()
-
-                    // カフェの Shorts（お土産セクション下の広告の、さらに下に独立セクション）。
-                    trendCafeSection
-
-                    // 自然（自然タブと同じスポットを県で絞り込んで表示。カフェの下）。
+                    // 自然（自然タブと同じスポットを県で絞り込んで表示。温泉の下）。
                     RichNatureSection(prefecture: prefecture)
+
+                    // カフェの Shorts（自然セクションの下に独立セクション）。
+                    trendCafeSection
 
                     RichFestivalSection(prefecture: prefecture)
 
                     RichOtherFestivalSection(prefecture: prefecture)
+
+                    AdaptiveBannerAdView()
 
                     // 実写フォトカルーセル（写真があるスポットのみ・CC0で帰属不要）
                     photoCarousel
@@ -315,15 +320,23 @@ struct TourismDetailView: View {
         }
     }
 
+    /// お土産下の広告と、その下のカフェ Shorts の間に実セクションが残るか。
+    /// 温泉・自然はどちらもデータが無い県では丸ごと非表示になるため、両方空だと
+    /// 広告と動画が直接隣り合う。AdMob の「広告を紛らわしい位置に置かない」方針に
+    /// 反するので、その場合は広告自体を出さない。
+    private var hasSectionBelowAd: Bool {
+        !prefecture.onsenItems.isEmpty || !RichNatureSection.spots(in: prefecture).isEmpty
+    }
+
     // MARK: - トレンド動画（YouTube Shorts・カテゴリ別に各セクションへ分散配置）
 
     /// 独立した「トレンド」セクションは作らず、カテゴリごとに対応する既存セクションへ配置する:
-    ///   - spot（人気スポット） → 観光地マップセクションの一番下
+    ///   - spot（人気スポット） → 県名の直下（この画面の先頭）
     ///   - gourmet（グルメ）    → グルメセクションの一番下
-    ///   - cafe（カフェ）       → お土産セクション下の広告の、さらに下に独立セクション（trendCafeSection）
+    ///   - cafe（カフェ）       → 自然セクションの下に独立セクション（trendCafeSection）
 
     /// 指定 categoryKey の Shorts 行（見出し + 横スクロール）。動画が無ければ何も出さない。
-    /// 観光地マップ／グルメセクションの末尾に差し込む用（見出しはカテゴリ名）。
+    /// 画面先頭／グルメセクションの末尾に差し込む用（見出しはカテゴリ名）。
     @ViewBuilder
     private func trendCategoryRow(for categoryKey: String) -> some View {
         if let group = trends.groups(for: prefecture)
