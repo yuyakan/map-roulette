@@ -46,7 +46,8 @@ final class TrendRepository: ObservableObject {
     @Published private(set) var state: LoadState = .idle
 
     /// 要件A: これより古い updatedAt のグループは表示しない（保守的に 30 日）。
-    private let maxAge: TimeInterval = 30 * 24 * 60 * 60
+    /// 閾値は TrendCache と共有する（あちらは同じ期限でキャッシュ実体を削除する）。
+    private let maxAge: TimeInterval = TrendCache.maxAge
 
     private var db: Firestore {
         // バッチと同じ名前付き DB を指定（既定の (default) ではない）。

@@ -15,6 +15,12 @@
 import Foundation
 
 enum TrendCache {
+    /// 要件A（30日ルール）: YouTube から取得したデータを保持してよい上限。
+    /// 「表示しない」だけでは要件を満たさない（規約は *更新または削除* を求める）ため、
+    /// この期限を超えたキャッシュは読み出し時にファイルごと削除する。
+    /// TrendRepository の表示ガードも同じ値を参照し、閾値を 2 箇所に散らかさない。
+    static let maxAge: TimeInterval = 30 * 24 * 60 * 60
+
     /// バッチ更新後にアプリが再取得してよくなる「1 日 1 回の更新境界」時刻（JST の時）。
     /// バッチ(GitHub Actions)は 04:00 JST 目標で走るが、スケジュール遅延で書き込み完了が
     /// 数時間ずれ込むことがある（公式仕様・保証なし）。この境界を書き込み完了より前に置くと、
@@ -42,9 +48,35 @@ enum TrendCache {
     // MARK: - 読み書き
 
     /// 保存済みのトレンドを読み込む（無ければ nil）。
-    static func load() -> [TrendGroup]? {
+    ///
+    /// 要件A: 30 日を超えたキャッシュはここで **削除** してから nil を返す。
+    /// 表示側（TrendRepository.applyGuards）でも updatedAt で弾いているが、それは
+    /// 「出さない」だけでディスクには残る。30 日ルールは保存データ自体に掛かるので、
+    /// 読み出しの入口で実体を消す。
+    static func load(now: Date = Date()) -> [TrendGroup]? {
         guard let url = cacheURL, let data = try? Data(contentsOf: url) else { return nil }
-        return try? JSONDecoder().decode([TrendGroup].self, from: data)
+
+        // 期限判定は「最後に取得した時刻」で行う。updatedAt はグループごとに異なり、
+        // 1 つでも新しいものがあるとファイルを消せなくなるため、ファイル単位の基準に揃える。
+        if let last = lastFetchAt, now.timeIntervalSince(last) > maxAge {
+            purge()
+            return nil
+        }
+
+        guard let groups = try? JSONDecoder().decode([TrendGroup].self, from: data) else {
+            // 壊れた/古い形式のキャッシュは残しておく意味がないので消す。
+            purge()
+            return nil
+        }
+        return groups
+    }
+
+    /// キャッシュ実体と取得時刻を破棄する（要件A の削除・デコード失敗時の後始末）。
+    static func purge() {
+        if let url = cacheURL {
+            try? FileManager.default.removeItem(at: url)
+        }
+        UserDefaults.standard.removeObject(forKey: lastFetchKey)
     }
 
     /// トレンドを保存し、取得時刻を記録する。
