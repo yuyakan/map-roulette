@@ -13,13 +13,34 @@ JA = f"{REPO}/Base/ja.lproj/Localizable.strings"
 OUT = f"{REPO}/Settings.bundle/PhotoCredits.plist"
 
 def load_ja_names():
+    """ja.lproj の全キー→日本語名。観光・グルメ・自然・祭りのどのキーも引ける。"""
     names = {}
     import re
     for line in open(JA, encoding="utf-8"):
-        m = re.match(r'"(attraction_\w+)"\s*=\s*"(.+?)";', line.strip())
+        m = re.match(r'"([^"]+)"\s*=\s*"(.+?)";', line.strip())
         if m:
             names[m.group(1)] = m.group(2)
     return names
+
+# 台帳の category → クレジット画面に出す見出し。
+# category を持たない既存レコードは観光スポット。
+CATEGORY_LABEL = {
+    "attraction": "観光スポット",
+    "gourmet": "グルメ",
+    "nature": "自然スポット",
+    "festival": "祭り・行事",
+}
+
+def display_name(rec, names):
+    """台帳1件の表示名（日本語）。祭りは "<キー>_name" 側に名前がある。"""
+    key = rec["nameKey"]
+    for candidate in (key, key + "_name"):
+        if candidate in names:
+            return names[candidate]
+    return key
+
+def category_of(rec):
+    return rec.get("category", "attraction")
 
 def main():
     ledger = json.load(open(LEDGER))
@@ -30,16 +51,17 @@ def main():
     cc0  = [x for x in ledger if x["licenseClass"] == "CC0"]
 
     lines = []
-    lines.append("本アプリの観光スポット写真の一部は、Wikimedia Commons 上の")
-    lines.append("クリエイティブ・コモンズ表示（CC BY）ライセンスで提供されている")
-    lines.append("作品を、アプリ内表示に合わせてリサイズして使用しています。")
+    lines.append("本アプリの写真（観光スポット・グルメ・自然スポット・祭り）の一部は、")
+    lines.append("Wikimedia Commons 上のクリエイティブ・コモンズ表示（CC BY）")
+    lines.append("ライセンスで提供されている作品を、アプリ内表示に合わせて")
+    lines.append("リサイズして使用しています。")
     lines.append("各作品の帰属情報は以下の通りです。")
     lines.append("")
     lines.append("──────────────")
     lines.append("CC BY（表示ライセンス）")
     lines.append("──────────────")
     for x in ccby:
-        spot = names.get(x["nameKey"], x["nameKey"])
+        spot = f"{display_name(x, names)}（{CATEGORY_LABEL[category_of(x)]}）"
         lines.append(f"● {spot}")
         lines.append(f'  「{x["title"]}」')
         lines.append(f'  Author: {x["author"]}')
@@ -53,7 +75,7 @@ def main():
         lines.append("パブリックドメイン / CC0（帰属義務なし・参考出典）")
         lines.append("──────────────")
         for x in cc0:
-            spot = names.get(x["nameKey"], x["nameKey"])
+            spot = f"{display_name(x, names)}（{CATEGORY_LABEL[category_of(x)]}）"
             lines.append(f"● {spot} — {x['author'] or 'Unknown'}")
             lines.append(f'  {x["sourceUrl"]}')
         lines.append("")

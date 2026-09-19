@@ -21,6 +21,11 @@ struct GourmetDetailView<PlaceMap: View>: View {
         self.placeMap = placeMap
     }
 
+    /// この品の同梱写真（CC0 / CC BY・無ければ nil）。
+    /// ある場合はヘッダー全面に敷き、無い場合は従来通りカラーヘッダーのまま
+    /// （観光スポット詳細 AttractionDetailView と同じ扱い）。
+    private var photo: Image? { GourmetPhoto.image(for: item.nameKey) }
+
     /// 一覧カードと色を揃えるためのカテゴリ色グラデーション。
     private var categoryGradient: LinearGradient {
         LinearGradient(
@@ -113,17 +118,54 @@ struct GourmetDetailView<PlaceMap: View>: View {
     // MARK: - ヒーローヘッダー（ブランドグラデーション）
 
     private var header: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            // 上部の余白（セーフエリア分）＋カテゴリアイコン
-            ZStack {
-                Circle()
-                    .fill(.white.opacity(0.22))
-                    .frame(width: 76, height: 76)
-                Image(systemName: item.imageSymbol)
-                    .font(.system(size: 34, weight: .semibold))
-                    .foregroundColor(.white)
+        titleBlock
+            .padding(.horizontal, 22)
+            .padding(.bottom, 24)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background {
+                if let photo {
+                    // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
+                    // 外側で clipped() してヘッダー矩形に収める（左右へのはみ出し防止）。
+                    photo
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .overlay(headerScrim)
+                }
+                // 写真が無い場合は背景を持たず、最背面の category.color をそのまま
+                // 透かす（従来どおり。段差を出さない）。
             }
-            .padding(.top, 60)
+            .clipped()
+    }
+
+    /// 写真の上でもタイトルが読めるようにする暗幕（下へ向かって濃くなる）。
+    private var headerScrim: some View {
+        LinearGradient(
+            colors: [.black.opacity(0.1), .black.opacity(0.35), .black.opacity(0.65)],
+            startPoint: .top,
+            endPoint: .bottom
+        )
+    }
+
+    /// 品名・県名・カテゴリ・人気度（写真あり／なしで共通）。
+    /// 写真があるときはカテゴリアイコンの丸を出さない（写真自体が主役になるため。
+    /// 観光スポット詳細と同じ判断）。
+    private var titleBlock: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            if photo == nil {
+                // 上部の余白（セーフエリア分）＋カテゴリアイコン
+                ZStack {
+                    Circle()
+                        .fill(.white.opacity(0.22))
+                        .frame(width: 76, height: 76)
+                    Image(systemName: item.imageSymbol)
+                        .font(.system(size: 34, weight: .semibold))
+                        .foregroundColor(.white)
+                }
+                .padding(.top, 60)
+            } else {
+                // 写真ヘッダーでは、アイコンの代わりに写真を見せる高さを確保する。
+                Spacer().frame(height: 150)
+            }
 
             VStack(alignment: .leading, spacing: 6) {
                 Text(item.name)
@@ -155,10 +197,8 @@ struct GourmetDetailView<PlaceMap: View>: View {
                 Spacer(minLength: 0)
             }
         }
-        .padding(.horizontal, 22)
-        .padding(.bottom, 24)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        // ヘッダー自身は背景を持たず、最背面の category.color をそのまま透かす（段差を出さない）。
+        // 写真の上に白文字を載せるときだけ、影で可読性を補強する。
+        .shadow(color: .black.opacity(photo == nil ? 0 : 0.35), radius: 6, y: 1)
     }
 
     // MARK: - 説明
