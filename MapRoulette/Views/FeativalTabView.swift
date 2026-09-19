@@ -651,7 +651,7 @@ struct IntegratedFestivalDetailView: View {
                 }
                 .padding(.bottom, 32)
             }
-            .background(PlanTheme.backgroundGradient.ignoresSafeArea())
+            .detailBackground(hasPhoto: photo != nil)
             .ignoresSafeArea(edges: .top)
 
             closeButton
@@ -684,6 +684,8 @@ struct IntegratedFestivalDetailView: View {
     private var header: some View {
         titleBlock
             .padding(.horizontal, 22)
+            // 写真ありのときは観光スポット詳細と同じ上余白でタイトルを下寄せにする。
+            .padding(.top, photo == nil ? 0 : PhotoHeaderStyle.topPadding)
             .padding(.bottom, 24)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background {
@@ -693,21 +695,13 @@ struct IntegratedFestivalDetailView: View {
                     photo
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .overlay(headerScrim)
+                        .overlay(PhotoHeaderStyle.scrim)
                 }
                 // 写真が無い場合は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
             }
             .clipped()
     }
 
-    /// 写真の上でもタイトルが読めるようにする暗幕（下へ向かって濃くなる）。
-    private var headerScrim: some View {
-        LinearGradient(
-            colors: [.black.opacity(0.1), .black.opacity(0.35), .black.opacity(0.65)],
-            startPoint: .top,
-            endPoint: .bottom
-        )
-    }
 
     /// 祭り名・県名・カテゴリ・規模（写真あり／なしで共通）。
     /// 写真があるときはカテゴリアイコンの丸を出さない（写真自体が主役になるため。
@@ -724,10 +718,9 @@ struct IntegratedFestivalDetailView: View {
                         .foregroundColor(.white)
                 }
                 .padding(.top, 60)
-            } else {
-                // 写真ヘッダーでは、アイコンの代わりに写真を見せる高さを確保する。
-                Spacer().frame(height: 150)
             }
+            // 写真ありのときは上の if を通らないので、ヘッダー全体の上余白
+            // （PhotoHeaderStyle.topPadding）で高さを確保する。
 
             VStack(alignment: .leading, spacing: 6) {
                 Text(item.name)
@@ -784,6 +777,7 @@ struct IntegratedFestivalDetailView: View {
             SocialSearchButtons(query: item.name)
         }
         .planCard()
+        .photoStyleCardBorder(photo != nil)
     }
 
     // MARK: - 説明
@@ -798,6 +792,7 @@ struct IntegratedFestivalDetailView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .planCard()
+        .photoStyleCardBorder(photo != nil)
     }
 
     // MARK: - 基本情報（開催情報）
@@ -816,6 +811,7 @@ struct IntegratedFestivalDetailView: View {
             FestivalInfoRow(icon: "trophy.fill", title: NSLocalizedString("festival.scale", comment: "規模"), value: getScaleText(item.scale), color: accent)
         }
         .planCard()
+        .photoStyleCardBorder(photo != nil)
     }
 
     // MARK: - 見どころ
@@ -840,6 +836,7 @@ struct IntegratedFestivalDetailView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .planCard()
+        .photoStyleCardBorder(photo != nil)
     }
 
     // MARK: - 地図カード（座標がある祭りのみ）

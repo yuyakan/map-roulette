@@ -21,6 +21,62 @@
 import SwiftUI
 import UIKit
 
+// MARK: - 写真ありヘッダーの共通スタイル
+
+/// 写真ヘッダーを持つ詳細画面で共通に使う見た目。
+///
+/// 観光スポット詳細（AttractionDetailView）が先に確立したデザインを、グルメ・自然・
+/// 祭りでも「写真があるときだけ」そのまま使えるようにまとめたもの。
+/// 写真が無いときは各画面の従来デザイン（カラーヘッダー＋グラデーション背景）のまま。
+///
+/// 写真ありのときの決まりごと:
+///  - 本文背景は不透明な systemBackground（写真の色と喧嘩させない）
+///  - 白いカードが白背景に埋もれるので、カードに枠線を重ねて境界を出す
+///  - ヘッダーはタイトル部を下寄せにするため上に 150pt の余白を取る
+enum PhotoHeaderStyle {
+    /// ヘッダー上部の余白（セーフエリア＋写真を見せる高さ）。
+    static let topPadding: CGFloat = 150
+
+    /// 写真の上でもタイトルが読めるようにする暗幕（下へ向かって濃くなる）。
+    static var scrim: LinearGradient {
+        LinearGradient(
+            colors: [.black.opacity(0.1), .black.opacity(0.35), .black.opacity(0.65)],
+            startPoint: .top,
+            endPoint: .bottom
+        )
+    }
+
+    /// 白背景で白いカードが同化するのを防ぐ枠線。
+    /// planCard() の形状に合わせ、色は primary（ライト=黒／ダーク=白）。
+    static var cardBorder: some View {
+        RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous)
+            .stroke(Color.primary, lineWidth: 1)
+    }
+}
+
+extension View {
+    /// 写真があるときだけ、観光スポット詳細と同じカード枠線を重ねる。
+    @ViewBuilder
+    func photoStyleCardBorder(_ hasPhoto: Bool) -> some View {
+        if hasPhoto {
+            overlay(PhotoHeaderStyle.cardBorder)
+        } else {
+            self
+        }
+    }
+
+    /// 詳細画面の本文背景。写真があるときは観光スポット詳細と同じ不透明な
+    /// systemBackground、無いときは従来のブランドグラデーション。
+    @ViewBuilder
+    func detailBackground(hasPhoto: Bool) -> some View {
+        if hasPhoto {
+            background(Color(.systemBackground).ignoresSafeArea())
+        } else {
+            background(PlanTheme.backgroundGradient.ignoresSafeArea())
+        }
+    }
+}
+
 // MARK: - グルメ
 
 /// グルメ品の同梱写真。キーは GourmetItem.nameKey（例: "gourmet_genghis_khan"）で、
