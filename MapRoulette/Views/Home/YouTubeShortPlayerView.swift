@@ -39,6 +39,18 @@ struct YouTubeShortPlayerView: View {
     @State private var isReady = false
     /// 実際に映像が動き出したか（playing を一度でも観測した）。サムネを剥がす判断に使う。
     @State private var hasStartedPlayback = false
+    /// 再生が失敗と確定したか。
+    ///
+    /// 立っている間は play() の打ち直しを止める。失敗しているページに play を
+    /// 投げ続けても成功しないので、空振りを無限に繰り返すだけになる。
+    ///
+    /// 【エラーをユーザーに見せない理由】
+    /// プレイヤーの上に自前のエラー表示を重ねるのは、要件B
+    /// （"must not modify, build upon, or block any portion or functionality of
+    /// a YouTube player"）に抵触する。失敗したページはサムネ止まりにして、
+    /// プレイヤー自身の表示に委ねる。通信断の案内はフィードを開く前に出す
+    /// （ShortsFeedView 側。プレイヤー画面の外なので要件Bと無関係）。
+    @State private var hasFailed = false
 
     init(videoId: String, isActive: Bool, thumbnailUrl: String? = nil) {
         self.videoId = videoId
@@ -77,12 +89,15 @@ struct YouTubeShortPlayerView: View {
         .onReceive(player.statePublisher) { state in
             let ready = state.isReady
             isReady = ready
-            if ready && isActive {
-                Task { await play() }
+            if ready {
+                // 復帰した（ライブラリは stateChange で error から ready に戻すことがある）。
+                hasFailed = false
+                if isActive { Task { await play() } }
             }
             if state.isError {
-                // 失敗したページを黙って黒のままにしない。サムネに戻して再試行できる状態にする。
+                // 失敗したページを黙って黒のままにしない。サムネに戻す。
                 hasStartedPlayback = false
+                hasFailed = true
             }
         }
         // 再生状態を監視し、前面なのに止まっていたら play を打ち直す。
@@ -94,7 +109,9 @@ struct YouTubeShortPlayerView: View {
                 if !hasStartedPlayback { hasStartedPlayback = true }
             case .unstarted, .cued, .paused, .ended:
                 // 前面なのに再生されていないなら、もう一度 play する。
-                if isActive && isReady {
+                // ただし失敗が確定しているページでは打ち直さない
+                // （失敗し続けるだけで、空振りの play を無限に投げることになる）。
+                if isActive && isReady && !hasFailed {
                     Task { await play() }
                 }
             default:
@@ -119,6 +136,7 @@ struct YouTubeShortPlayerView: View {
             // （これを忘れると前の動画の hasStartedPlayback が残り、次の動画で黒画面になる）
             isReady = false
             hasStartedPlayback = false
+            hasFailed = false
             Task {
                 try? await player.load(source: .video(id: newId))
             }
@@ -126,16 +144,16 @@ struct YouTubeShortPlayerView: View {
     }
 
     /// ロード完了までのつなぎ表示。サムネがあればそれを、無ければ黒地。
+    ///
+    /// AsyncImage ではなく CachedThumbnail を使う。カード一覧で既に読み込み済みの
+    /// 絵をそのまま使えるので、オフラインでも黒一色にならずに済む
+    /// （AsyncImage は独自にキャッシュを持たず、通信できなければ黒のまま）。
     @ViewBuilder
     private var thumbnailPlaceholder: some View {
-        if let urlString = thumbnailUrl, let url = URL(string: urlString) {
+        if let urlString = thumbnailUrl {
             ZStack {
                 Color.black
-                AsyncImage(url: url) { image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                } placeholder: {
+                CachedThumbnail(urlString: urlString, contentMode: .fit) {
                     Color.black
                 }
                 // プレイヤー本体がタップを受けられるよう、絵はタップを透過させる。

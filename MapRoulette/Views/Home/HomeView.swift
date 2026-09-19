@@ -307,6 +307,14 @@ struct HomeView: View {
         .task(id: repository.loadedGroups.count) {
             prefetchThumbnails(for: prefectures(for: active))
         }
+        // 主役の県が変わったら、その県ぶんを最優先で読む。
+        // 列全体の先読み（上の 2 つ）は列の顔ぶれが変わらないと再発火しないので、
+        // 同じ列の中でスクロールして主役だけが変わった場合をここで拾う。
+        .task(id: focusedPrefecture) {
+            if let pref = focusedPrefecture {
+                prefetchThumbnails(for: [pref])
+            }
+        }
     }
 
     /// 列に並ぶ県ぶんのサムネを先読みする。

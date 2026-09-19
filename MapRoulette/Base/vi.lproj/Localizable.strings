@@ -5586,6 +5586,11 @@
 "home.trend.error.generic" = "Không thể tải xu hướng.";
 "home.trend.retry" = "Thử lại";
 
+/* Shorts: オフライン時の案内（プレイヤー外の標準アラート） */
+"shorts.offline.title" = "Bạn đang ngoại tuyến";
+"shorts.offline.message" = "Cần có kết nối internet để phát video. Vui lòng kiểm tra kết nối của bạn.";
+"common.ok" = "OK";
+
 /* ホーム 県カード列の切り替えタブ（短縮ラベル） */
 "home.tab.recent" = "Gần đây";
 "home.tab.favorite" = "Yêu thích";

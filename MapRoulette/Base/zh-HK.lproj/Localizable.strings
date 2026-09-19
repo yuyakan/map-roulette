@@ -6215,6 +6215,11 @@
 "home.trend.error.generic" = "無法載入熱門內容。";
 "home.trend.retry" = "重試";
 
+/* Shorts: オフライン時の案内（プレイヤー外の標準アラート） */
+"shorts.offline.title" = "您已離線";
+"shorts.offline.message" = "播放影片需要互聯網連線。請檢查您的網絡連線。";
+"common.ok" = "好";
+
 /* ホーム 県カード列の切り替えタブ（短縮ラベル） */
 "home.tab.recent" = "最近";
 "home.tab.favorite" = "收藏";

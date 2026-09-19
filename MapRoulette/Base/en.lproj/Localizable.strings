@@ -5586,6 +5586,11 @@
 "home.trend.error.generic" = "Couldn't load trends.";
 "home.trend.retry" = "Retry";
 
+/* Shorts: オフライン時の案内（プレイヤー外の標準アラート） */
+"shorts.offline.title" = "You're offline";
+"shorts.offline.message" = "An internet connection is required to play videos. Please check your connection.";
+"common.ok" = "OK";
+
 /* ホーム 県カード列の切り替えタブ（短縮ラベル） */
 "home.tab.recent" = "Recent";
 "home.tab.favorite" = "Favorites";

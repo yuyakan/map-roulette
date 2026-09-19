@@ -5586,6 +5586,11 @@
 "home.trend.error.generic" = "Tidak dapat memuat tren.";
 "home.trend.retry" = "Coba lagi";
 
+/* Shorts: オフライン時の案内（プレイヤー外の標準アラート） */
+"shorts.offline.title" = "Anda sedang offline";
+"shorts.offline.message" = "Koneksi internet diperlukan untuk memutar video. Periksa koneksi Anda.";
+"common.ok" = "OK";
+
 /* ホーム 県カード列の切り替えタブ（短縮ラベル） */
 "home.tab.recent" = "Terbaru";
 "home.tab.favorite" = "Favorit";

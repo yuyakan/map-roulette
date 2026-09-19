@@ -5586,6 +5586,11 @@
 "home.trend.error.generic" = "Impossible de charger les tendances.";
 "home.trend.retry" = "Réessayer";
 
+/* Shorts: オフライン時の案内（プレイヤー外の標準アラート） */
+"shorts.offline.title" = "Vous êtes hors ligne";
+"shorts.offline.message" = "Une connexion internet est nécessaire pour lire les vidéos. Vérifiez votre connexion.";
+"common.ok" = "OK";
+
 /* ホーム 県カード列の切り替えタブ（短縮ラベル） */
 "home.tab.recent" = "Récents";
 "home.tab.favorite" = "Favoris";

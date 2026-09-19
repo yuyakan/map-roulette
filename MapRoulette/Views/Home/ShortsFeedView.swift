@@ -21,6 +21,11 @@ struct ShortsFeedView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var currentIndex: Int
 
+    /// 端末の通信状態。オフラインで開いたときに案内を出すために見る。
+    @ObservedObject private var network = NetworkMonitor.shared
+    /// オフライン案内を出しているか。
+    @State private var showOfflineAlert = false
+
     init(videos: [TrendVideo], startIndex: Int = 0) {
         self.videos = videos
         self.startIndex = startIndex
@@ -73,6 +78,28 @@ struct ShortsFeedView: View {
         .background(Color.black)
         .ignoresSafeArea()
         .overlay(alignment: .topLeading) { closeButton }
+        // オフラインなら、埋め込みプレイヤーが黙って黒のままになる前に案内する。
+        //
+        // 埋め込みプレイヤーはローカルの HTML を読み込む方式のため、通信が無くても
+        // 「ページの読み込みは成功」してしまい、再生できないことを検知できない。
+        // かといってプレイヤーの上にエラー表示を重ねるのは要件B（プレイヤーの
+        // 一部・機能を覆わない）に触れるので、案内はプレイヤーの外側＝この画面の
+        // 標準アラートで出し、閉じてフィードごと戻す。
+        .alert(
+            NSLocalizedString("shorts.offline.title", comment: ""),
+            isPresented: $showOfflineAlert
+        ) {
+            Button(NSLocalizedString("common.ok", comment: "")) { dismiss() }
+        } message: {
+            Text(NSLocalizedString("shorts.offline.message", comment: ""))
+        }
+        .onAppear {
+            if !network.isConnected { showOfflineAlert = true }
+        }
+        // 開いている最中に切れた場合も拾う。
+        .onChange(of: network.isConnected) { _, connected in
+            if !connected { showOfflineAlert = true }
+        }
     }
 
     /// このページでプレイヤーを実体化するか。
@@ -191,12 +218,11 @@ private struct ShortsPage: View {
     }
 
     /// 非プリロードページのサムネ表示（9:16）。プレイヤー未生成のプレースホルダ。
+    ///
+    /// AsyncImage ではなく CachedThumbnail を使う。カード一覧で読み込み済みの絵を
+    /// 再利用できるので、オフラインでも黒一色にならない。
     private var thumbnailOnly: some View {
-        AsyncImage(url: URL(string: video.thumbnailUrl)) { image in
-            image
-                .resizable()
-                .scaledToFit()
-        } placeholder: {
+        CachedThumbnail(urlString: video.thumbnailUrl, contentMode: .fit) {
             Color.black
         }
         .aspectRatio(9.0 / 16.0, contentMode: .fit)
