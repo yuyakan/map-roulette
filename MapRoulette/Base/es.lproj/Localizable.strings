@@ -5598,3 +5598,10 @@
 
 /* ホームのルーレット導線カード */
 "home.roulette.title" = "Gira la ruleta y elige tu destino";
+
+
+/* 規約・プライバシー（設定画面） */
+"legal" = "Legal";
+"legal.privacy_policy" = "Política de privacidad";
+"legal.youtube_terms" = "Términos de servicio de YouTube";
+"legal.google_privacy" = "Política de privacidad de Google";

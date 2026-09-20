@@ -5595,3 +5595,10 @@
 
 /* ホームのルーレット導線カード */
 "home.roulette.title" = "ルーレットで行き先を決める";
+
+
+/* 規約・プライバシー（設定画面） */
+"legal" = "規約・プライバシー";
+"legal.privacy_policy" = "プライバシーポリシー";
+"legal.youtube_terms" = "YouTube 利用規約";
+"legal.google_privacy" = "Google プライバシーポリシー";

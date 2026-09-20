@@ -118,6 +118,9 @@ struct SettingsView: View {
                 weightManager: weightManager,
                 displayMode: displayMode
             )
+
+            // 規約・プライバシー（YouTube API Services の要件でアプリ内からの導線が必要）
+            LegalLinksSection()
         }
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
@@ -237,6 +240,70 @@ struct WeightSettingsButtonView: View {
             .padding(.vertical, 4)
         }
         .buttonStyle(PlainButtonStyle())
+    }
+}
+
+// MARK: - Legal Links Section
+/// 規約・プライバシーへの導線。
+///
+/// YouTube API Services の開発者ポリシーは、API クライアント（本アプリ）に
+/// 「自前のプライバシーポリシーの掲示」と「YouTube 利用規約へのリンク」を求めている。
+/// AdMob を使っている以上プライバシーポリシーは App Store 側でも必須なので、
+/// アプリ内からも必ず辿れるようにここに置く。
+///
+/// リンク先は Android 版とは別の iOS 専用ページ（Android 版は位置情報を使わない等、
+/// 記載内容が実際に異なるため使い回さない）。
+struct LegalLinksSection: View {
+    private static let privacyPolicyURL = URL(string: "https://yuyakan.github.io/privacyPolicy/japantripmap/ios/")!
+    private static let youTubeTermsURL = URL(string: "https://www.youtube.com/t/terms")!
+    private static let googlePrivacyURL = URL(string: "https://policies.google.com/privacy")!
+
+    var body: some View {
+        Section(header: Text(NSLocalizedString("legal", comment: "Legal"))) {
+            LegalLinkRow(
+                titleKey: "legal.privacy_policy",
+                systemImage: "hand.raised.fill",
+                url: Self.privacyPolicyURL
+            )
+            LegalLinkRow(
+                titleKey: "legal.youtube_terms",
+                systemImage: "play.rectangle.fill",
+                url: Self.youTubeTermsURL
+            )
+            LegalLinkRow(
+                titleKey: "legal.google_privacy",
+                systemImage: "shield.lefthalf.filled",
+                url: Self.googlePrivacyURL
+            )
+        }
+    }
+}
+
+private struct LegalLinkRow: View {
+    let titleKey: String
+    let systemImage: String
+    let url: URL
+
+    var body: some View {
+        Link(destination: url) {
+            HStack(spacing: 12) {
+                Image(systemName: systemImage)
+                    .foregroundColor(.blue)
+                    .frame(width: 24)
+
+                Text(NSLocalizedString(titleKey, comment: "Legal link"))
+                    .foregroundColor(.primary)
+                    .font(.system(size: 16, weight: .medium))
+
+                Spacer()
+
+                // 外部ブラウザで開くことを示す（chevron だとアプリ内遷移に見える）
+                Image(systemName: "arrow.up.right.square")
+                    .foregroundColor(.gray)
+                    .font(.caption)
+            }
+            .padding(.vertical, 4)
+        }
     }
 }
 

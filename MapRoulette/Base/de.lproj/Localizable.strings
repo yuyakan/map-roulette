@@ -5598,3 +5598,10 @@
 
 /* ホームのルーレット導線カード */
 "home.roulette.title" = "Dreh das Roulette und finde dein Reiseziel";
+
+
+/* 規約・プライバシー（設定画面） */
+"legal" = "Rechtliches";
+"legal.privacy_policy" = "Datenschutzerklärung";
+"legal.youtube_terms" = "YouTube-Nutzungsbedingungen";
+"legal.google_privacy" = "Google-Datenschutzerklärung";

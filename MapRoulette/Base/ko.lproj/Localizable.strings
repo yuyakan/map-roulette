@@ -5537,3 +5537,10 @@
 
 /* ホームのルーレット導線カード */
 "home.roulette.title" = "룰렛을 돌려 여행지를 정하기";
+
+
+/* 規約・プライバシー（設定画面） */
+"legal" = "약관 및 개인정보";
+"legal.privacy_policy" = "개인정보 처리방침";
+"legal.youtube_terms" = "YouTube 서비스 약관";
+"legal.google_privacy" = "Google 개인정보처리방침";

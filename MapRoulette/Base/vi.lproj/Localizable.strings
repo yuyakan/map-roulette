@@ -5598,3 +5598,10 @@
 
 /* ホームのルーレット導線カード */
 "home.roulette.title" = "Quay vòng quay để chọn điểm đến";
+
+
+/* 規約・プライバシー（設定画面） */
+"legal" = "Pháp lý";
+"legal.privacy_policy" = "Chính sách quyền riêng tư";
+"legal.youtube_terms" = "Điều khoản dịch vụ của YouTube";
+"legal.google_privacy" = "Chính sách quyền riêng tư của Google";

@@ -6229,3 +6229,10 @@
 
 /* ホームのルーレット導線カード */
 "home.roulette.title" = "转动轮盘决定目的地";
+
+
+/* 規約・プライバシー（設定画面） */
+"legal" = "条款与隐私";
+"legal.privacy_policy" = "隐私政策";
+"legal.youtube_terms" = "YouTube 服务条款";
+"legal.google_privacy" = "Google 隐私权政策";

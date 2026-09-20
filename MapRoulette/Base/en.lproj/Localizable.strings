@@ -5598,3 +5598,10 @@
 
 /* ホームのルーレット導線カード */
 "home.roulette.title" = "Spin the roulette to pick your destination";
+
+
+/* 規約・プライバシー（設定画面） */
+"legal" = "Legal";
+"legal.privacy_policy" = "Privacy Policy";
+"legal.youtube_terms" = "YouTube Terms of Service";
+"legal.google_privacy" = "Google Privacy Policy";
