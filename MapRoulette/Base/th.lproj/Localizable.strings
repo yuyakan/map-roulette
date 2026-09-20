@@ -5595,3 +5595,6 @@
 "home.tab.recent" = "ล่าสุด";
 "home.tab.favorite" = "รายการโปรด";
 "home.tab.recommended" = "ยอดนิยม";
+
+/* ホームのルーレット導線カード */
+"home.roulette.title" = "หมุนรูเล็ตเพื่อเลือกจุดหมาย";

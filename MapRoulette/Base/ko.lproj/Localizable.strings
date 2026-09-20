@@ -5534,3 +5534,6 @@
 "home.tab.recent" = "최근";
 "home.tab.favorite" = "즐겨찾기";
 "home.tab.recommended" = "추천";
+
+/* ホームのルーレット導線カード */
+"home.roulette.title" = "룰렛을 돌려 여행지를 정하기";

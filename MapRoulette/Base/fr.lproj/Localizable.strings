@@ -5595,3 +5595,6 @@
 "home.tab.recent" = "Récents";
 "home.tab.favorite" = "Favoris";
 "home.tab.recommended" = "Populaires";
+
+/* ホームのルーレット導線カード */
+"home.roulette.title" = "Tournez la roulette pour choisir votre destination";

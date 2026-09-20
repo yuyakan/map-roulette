@@ -6224,3 +6224,6 @@
 "home.tab.recent" = "最近";
 "home.tab.favorite" = "收藏";
 "home.tab.recommended" = "推薦";
+
+/* ホームのルーレット導線カード */
+"home.roulette.title" = "轉動輪盤決定目的地";

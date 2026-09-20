@@ -5592,3 +5592,6 @@
 "home.tab.recent" = "最近見た";
 "home.tab.favorite" = "お気に入り";
 "home.tab.recommended" = "おすすめ";
+
+/* ホームのルーレット導線カード */
+"home.roulette.title" = "ルーレットで行き先を決める";

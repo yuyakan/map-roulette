@@ -59,14 +59,19 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 36) {
+                // セクション間の余白。広すぎると 1 画面に入る情報が減るので、
+                // 「別のかたまりだと分かる」最小限まで詰める。
+                VStack(alignment: .leading, spacing: 22) {
                     // ⓪ 進行中の旅（あるときだけ最上部に 1 件）
                     ongoingPlanSection
 
-                    // ① 県カード（最近見た／お気に入り／おすすめ を 1 つに統合）
+                    // ① ルーレット導線（プラン導線のすぐ下）
+                    rouletteSection
+
+                    // ② 県カード（最近見た／お気に入り／おすすめ を 1 つに統合）
                     prefectureSection
 
-                    // ② テーマ（ピル選択 → 下に展開）
+                    // ③ テーマ（ピル選択 → 下に展開）
                     themedSections
 
                     footerNote
@@ -96,6 +101,19 @@ struct HomeView: View {
                 ShortsFeedView(videos: feed.videos, startIndex: feed.startIndex)
             }
         }
+    }
+
+    // MARK: - ① ルーレット導線
+
+    /// 「ルーレットで行き先を決める」導線。プラン導線のすぐ下に 1 行で置く。
+    /// アプリの主機能（マップタブの県ルーレット）はホームからは見えないので導線を出すが、
+    /// これ自体は常設のリンクなので、カードにはせずテキスト行に留める
+    /// （塗り・影を持たせるとプラン帯＝ユーザー自身の旅より目立ってしまう）。
+    private var rouletteSection: some View {
+        RouletteEntryRow {
+            AppRouter.shared.openRouletteMap()
+        }
+        .padding(.horizontal, 20)
     }
 
     // MARK: - ⓪ 進行中・計画中の旅（帯カード）

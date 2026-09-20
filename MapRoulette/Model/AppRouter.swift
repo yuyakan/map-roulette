@@ -35,4 +35,11 @@ final class AppRouter: ObservableObject {
         pendingNewPlan = newPlan
         selectedTab = 4
     }
+
+    /// マップ（ルーレット）タブへ切り替える。
+    /// ホームのルーレットカードから呼ぶ。統合マップの既定モードが県ルーレットなので、
+    /// タブを切り替えるだけでルーレット画面に着く。
+    func openRouletteMap() {
+        selectedTab = 0
+    }
 }
