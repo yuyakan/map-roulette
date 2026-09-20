@@ -166,7 +166,15 @@ struct CachedThumbnail<Placeholder: View>: View {
 
     var body: some View {
         Group {
-            if let image {
+            if ScreenshotMode.isEnabled {
+                // App Store スクショ撮影モード: 他社コンテンツを写さないよう、
+                // サムネを自前のモック画像に差し替える（Release では無効）。
+                // ここ一箇所で差し替えれば、ホームも県詳細も Shorts のプレースホルダも
+                // まとめて置き換わる（すべてこのビューを経由している）。
+                Image(ScreenshotMode.mockAssetName(for: urlString))
+                    .resizable()
+                    .aspectRatio(contentMode: contentMode)
+            } else if let image {
                 Image(uiImage: image)
                     .resizable()
                     .aspectRatio(contentMode: contentMode)

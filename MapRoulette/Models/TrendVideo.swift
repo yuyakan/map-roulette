@@ -43,4 +43,20 @@ struct TrendVideo: Identifiable, Codable, Hashable {
     var watchURL: URL? {
         URL(string: "https://www.youtube.com/watch?v=\(videoId)")
     }
+
+    // MARK: - 表示用（App Store スクショ撮影モード対応）
+    //
+    // 画面に出す文字列は必ずこちらを使う。撮影モードのときだけダミーに差し替わる。
+    // 実データの title / channelTitle は Firestore から来た他人の投稿情報なので、
+    // 販促素材には写さない（ScreenshotMode のコメント参照）。Release では素通し。
+
+    /// 画面表示用のタイトル。
+    var displayTitle: String {
+        ScreenshotMode.isEnabled ? ScreenshotMode.mockTitle(for: videoId) : title
+    }
+
+    /// 画面表示用のチャンネル名（要件D の出典表記に使う）。
+    var displayChannelTitle: String {
+        ScreenshotMode.isEnabled ? ScreenshotMode.mockChannel(for: videoId) : channelTitle
+    }
 }

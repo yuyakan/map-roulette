@@ -75,7 +75,7 @@ struct TrendCard: View {
     // MARK: - タイトル / チャンネル
 
     private var title: some View {
-        Text(video.title)
+        Text(video.displayTitle)
             .font(.system(size: 12, weight: .semibold))
             .foregroundColor(.primary)
             .lineLimit(2)
@@ -84,7 +84,7 @@ struct TrendCard: View {
     }
 
     private var channel: some View {
-        Text(video.channelTitle)
+        Text(video.displayChannelTitle)
             .font(.system(size: 10))
             .foregroundColor(.secondary)
             .lineLimit(1)

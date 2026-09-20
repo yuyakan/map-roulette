@@ -186,14 +186,14 @@ private struct ShortsPage: View {
                 Spacer()
                 HStack(alignment: .bottom) {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(video.title)
+                        Text(video.displayTitle)
                             .font(.system(size: 15, weight: .semibold))
                             .foregroundColor(.white)
                             .lineLimit(2)
                         HStack(spacing: 6) {
                             Image(systemName: "person.circle.fill")
                                 .foregroundColor(.white.opacity(0.9))
-                            Text(video.channelTitle)
+                            Text(video.displayChannelTitle)
                                 .font(.system(size: 13))
                                 .foregroundColor(.white.opacity(0.9))
                         }
