@@ -143,3 +143,33 @@ CC BY を1枚でも使う版をリリースするなら、`PhotoCredits.plist` �
 （= 写真追加後に `gen_credits.py` を実行済み）が**必須**。これで CC BY の帰属義務を
 iOS設定アプリの一括表記で満たす（CC BY 4.0 legalcode 3(a)(2) の "reasonable manner" /
 別リソースでの表示が認められることを一次確認済み）。CC0 のみなら表記自体は任意。
+
+### リリース前チェック: 台帳と同梱画像の突き合わせ（必須）
+`add_photo.py` を通さずに手で置いた imageset は**台帳に載らない**＝出所不明のまま
+配布されることになる。実際に 2026-09-13 のコミット `9843ade` で14枚が素通りし、
+その中に CC BY-SA が3枚混入していた（パイプラインなら弾かれていたもの）。
+**リリース前に必ず下記を実行し、両方向とも (none) であることを確認する。**
+
+```
+cd /Users/uebetsunawayuuya/MapRoulette/MapRoulette && python3 -c "
+import json,os
+led=json.load(open('photo_credits.json'))
+exp=set()
+for x in led:
+    k=x['nameKey']; c=x.get('category','attraction')
+    if c=='attraction': exp.add(('Attractions', k.replace('.','_')))
+    elif c=='gourmet': exp.add(('Gourmet',k))
+    elif c=='nature': exp.add(('Nature','nature_'+k.replace('_name','')))
+    elif c=='festival': exp.add(('Festivals','festival_'+k))
+disk={(d,n[:-9]) for d in ['Attractions','Gourmet','Nature','Festivals']
+      for n in os.listdir('Assets.xcassets/'+d) if n.endswith('.imageset')}
+print('on disk, NOT in ledger:', sorted(disk-exp) or '(none)')
+print('in ledger, NOT on disk:', sorted(exp-disk) or '(none)')
+"
+```
+
+### 出所不明の画像を後から特定する方法
+EXIF の **カメラ機種 + DateTime** は Commons 側にもそのまま残っているので、
+これを照合すれば元ファイルを一意に特定できる（リサイズしても EXIF は保持される）。
+`beach.*` のようにドット区切りのキーは、`nameKey` に**ドット形のまま**記録する
+（`gen_credits.py` は ja.lproj をこのキーで引くため。アセット名は別系統で解決される）。

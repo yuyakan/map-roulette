@@ -208,7 +208,10 @@ struct TourismDetailView: View {
 
                     AdaptiveBannerAdView()
 
-                    // 実写フォトカルーセル（写真があるスポットのみ・CC0で帰属不要）
+                    // 実写フォトカルーセル（写真があるスポットのみ）。
+                    // 素材は CC0 だけではなく CC BY も含む（帰属義務あり）。
+                    // 帰属は設定アプリの写真クレジット画面（PhotoCredits.plist）で
+                    // 一括表記しているので、写真を足したら gen_credits.py を必ず実行する。
                     photoCarousel
 
                     // 最下部に余白を入れてスクロールに余裕を持たせる
