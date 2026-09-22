@@ -387,7 +387,7 @@ struct TourismDetailView: View {
                     Button {
                         shortsFeed = PrefShortsFeed(videos: group.videos, startIndex: index)
                     } label: {
-                        TrendCard(video: video)
+                        TrendCard(video: video, shelf: group.categoryKey, position: index)
                     }
                     .buttonStyle(.plain)
                 }

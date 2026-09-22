@@ -13,6 +13,11 @@ import SwiftUI
 
 struct TrendCard: View {
     let video: TrendVideo
+    /// このカードが並ぶ棚の種別（spot / gourmet / cafe）。
+    /// スクショ撮影モードで棚に合ったモック画像を選ぶためだけに使う。
+    var shelf: String? = nil
+    /// 棚のなかでの並び順。スクショ撮影モードで同じ絵が隣り合わないようにする。
+    var position: Int? = nil
 
     /// カード幅（9:16 の縦型。高さは幅 × 16/9 で算出）。
     private let width: CGFloat = 132
@@ -32,7 +37,9 @@ struct TrendCard: View {
         ZStack(alignment: .topLeading) {
             // キャッシュ対応のサムネ。読み込み済みなら最初のフレームから画像が出るので、
             // 県の切り替わり時にプレースホルダーを挟まずに済む（スクロールのカクつき対策）。
-            CachedThumbnail(urlString: video.thumbnailUrl) {
+            CachedThumbnail(urlString: video.thumbnailUrl,
+                            screenshotShelf: shelf,
+                            screenshotPosition: position) {
                 placeholder
             }
             .frame(width: width, height: width * 16 / 9)

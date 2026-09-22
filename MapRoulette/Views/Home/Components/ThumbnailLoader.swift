@@ -157,6 +157,12 @@ struct CachedThumbnail<Placeholder: View>: View {
     /// 絵の収め方。カード（枠いっぱいに敷く）は fill、
     /// Shorts のページ（絵の全体を見せる）は fit。
     var contentMode: ContentMode = .fill
+    /// スクショ撮影モードで使う棚の種別（spot / gourmet / cafe）。
+    /// 棚に合った絵を選ぶためだけに使い、通常表示では参照されない。
+    var screenshotShelf: String? = nil
+    /// スクショ撮影モードで使う棚のなかでの並び順。
+    /// 先頭から順に絵を配って、同じ絵が隣り合わないようにする。
+    var screenshotPosition: Int? = nil
     @ViewBuilder let placeholder: () -> Placeholder
 
     /// 表示中の画像。購読が届いた時点でここに入る。
@@ -171,7 +177,9 @@ struct CachedThumbnail<Placeholder: View>: View {
                 // サムネを自前のモック画像に差し替える（Release では無効）。
                 // ここ一箇所で差し替えれば、ホームも県詳細も Shorts のプレースホルダも
                 // まとめて置き換わる（すべてこのビューを経由している）。
-                Image(ScreenshotMode.mockAssetName(for: urlString))
+                Image(ScreenshotMode.mockAssetName(for: urlString,
+                                                   shelf: screenshotShelf,
+                                                   position: screenshotPosition))
                     .resizable()
                     .aspectRatio(contentMode: contentMode)
             } else if let image {

@@ -44,27 +44,56 @@ enum ScreenshotMode {
         #endif
     }
 
-    /// 差し替え用のモックサムネ Asset 名。
+    /// 差し替え用のモックサムネ Asset 名。棚（カテゴリ）ごとに母集団を分けてある。
     /// Assets.xcassets/MockThumbnails/ に対応する imageset がある。
-    private static let mockAssets = [
-        "mock_trend_cafe",
-        "mock_trend_gourmet",
-        "mock_trend_mountain",
-        "mock_trend_sea",
-        "mock_trend_night",
-        "mock_trend_festival",
-        "mock_trend_onsen",
-        "mock_trend_torii",
-        "mock_trend_sakura",
+    ///
+    /// 【なぜ棚ごとに分けるか】
+    /// 以前は全棚で 9 枚を共有していたため、「沖縄県のグルメ」に花火や鳥居が
+    /// 並ぶことがあった。横に 8 枚前後見える iPad では中身と絵の不一致が露骨に出る。
+    ///
+    /// 【画像の出所】
+    /// アプリ同梱写真のうち **CC0 / Public domain のものだけ**を切り出している
+    /// （`tools/mock_thumbnails/build_from_bundled.py`）。App Store のスクショは
+    /// アプリとは別の配布物で、アプリ内のクレジット画面はストアページの閲覧者に
+    /// 届かないため、帰属表記が要る CC BY は使わない。
+    private static let mockAssetsByShelf: [String: [String]] = [
+        "gourmet": ["mock_gourmet_1", "mock_gourmet_2", "mock_gourmet_3", "mock_gourmet_4",
+                    "mock_gourmet_5", "mock_gourmet_6", "mock_gourmet_7", "mock_gourmet_8"],
+        "spot":    ["mock_spot_1", "mock_spot_2", "mock_spot_3", "mock_spot_4",
+                    "mock_spot_5", "mock_spot_6", "mock_spot_7", "mock_spot_8"],
+        "cafe":    ["mock_cafe_1", "mock_cafe_2", "mock_cafe_3",
+                    "mock_cafe_4", "mock_cafe_5", "mock_cafe_6"],
     ]
 
-    /// 元のサムネ URL に対応するモック Asset 名を返す。
+    /// 棚が特定できないとき（Shorts 全画面など）に使う全体の母集団。
+    private static let allMockAssets: [String] =
+        mockAssetsByShelf.keys.sorted().flatMap { mockAssetsByShelf[$0] ?? [] }
+
+    /// 棚のなかでの並び順に対応するモック Asset 名を返す。
     ///
-    /// URL の安定ハッシュで選ぶので、**同じ動画には常に同じ絵**が割り当たる。
-    /// 撮影し直しても並びが変わらず、スクロールしても絵が入れ替わらない。
-    /// （`hashValue` は実行ごとに変わるので使えない。）
-    static func mockAssetName(for urlString: String) -> String {
-        mockAssets[stableIndex(of: urlString, count: mockAssets.count)]
+    /// `position`（棚のなかで何番目のカードか）をそのまま使って先頭から順に配るので、
+    /// **母集団を使い切るまで同じ絵が隣り合わない**。撮影のたびに並びが変わることも
+    /// ないので、撮り直しても同じ絵柄になる。
+    ///
+    /// 【なぜハッシュをやめたか】
+    /// 以前は URL の安定ハッシュで選んでいた。「同じ動画には常に同じ絵」にはなるが、
+    /// 隣り合うカードが同じ絵を引く確率が素通しで、8 枚の母集団に対して iPad のように
+    /// 8 枚前後が同時に見える画面では、同じ絵が並ぶのが普通に起きていた。
+    /// スクショ用途では「並びが重複しない」ほうが優先なので、位置で配る方式にした。
+    ///
+    /// `shelf` に棚の categoryKey（spot / gourmet / cafe）を渡すと、その棚に
+    /// ふさわしい絵だけから選ぶ。未知の棚・棚なしのときは全体から選ぶ。
+    /// `position` を省いたとき（棚の外＝Shorts 全画面など）は URL のハッシュで選ぶ。
+    static func mockAssetName(for urlString: String,
+                              shelf: String? = nil,
+                              position: Int? = nil) -> String {
+        let pool = shelf.flatMap { mockAssetsByShelf[$0] } ?? allMockAssets
+        guard let position else {
+            return pool[stableIndex(of: urlString, count: pool.count)]
+        }
+        // 負値が来ても落ちないように正の剰余へ寄せる。
+        let index = ((position % pool.count) + pool.count) % pool.count
+        return pool[index]
     }
 
     // MARK: - タイトル / チャンネル名の差し替え
