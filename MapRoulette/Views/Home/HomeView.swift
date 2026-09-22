@@ -56,6 +56,19 @@ struct HomeView: View {
     /// 可視率の集計だけを持つ箱。SwiftUI の再描画とは切り離す（毎フレーム書いても再描画しない）。
     @State private var visibilityTracker = VisibilityTracker()
 
+    /// 横に余裕のある画面（iPad・分割表示なし）かどうか。
+    ///
+    /// 【なぜ挙動を分けるか】
+    /// 主役の県をスクロール位置から決める方式は「窓にカードが 1 枚ぶんしか入らない」
+    /// ことを前提にしている。iPad は 1 画面に 5〜6 枚入るので、全部が 100% 見えたまま
+    /// になり、先頭の県が主役に固定されて動かない（＝下の動画棚が切り替わらない）。
+    /// 中央に近いカードを選ぶ方式も、ScrollView が端で止まる以上、先頭と末尾の県は
+    /// 中央に来られないので選べない。スクロール位置に意図が乗らない以上、
+    /// regular 幅ではタップで明示的に主役を決める。
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    private var usesTapToFocus: Bool { horizontalSizeClass == .regular }
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -462,6 +475,8 @@ struct HomeView: View {
         // （カード高 + .padding(.vertical, 4) の上下ぶん）。
         .frame(height: Self.prefCardHeight + 8)
         .onPreferenceChange(CardVisibilityKey.self) { visibility in
+            // タップで決める画面（iPad）では、スクロールで主役を動かさない。
+            guard !usesTapToFocus else { return }
             // 毎フレーム呼ばれる。主役の県が変わったときだけ @State を触る
             // （そうしないとスクロール中ずっと再描画が走ってカクつく）。
             visibilityTracker.merge(visibility)
@@ -504,7 +519,7 @@ struct HomeView: View {
     }
 
     /// 主役の県を切り替える可視率の閾値。先頭カードがこれ以下になったら次の県へ。
-    private static let focusVisibilityThreshold: CGFloat = 0.7
+    private static let focusVisibilityThreshold: CGFloat = 0.9
 
     // MARK: - ③ テーマ別 都道府県紹介（日本三景・三名泉・人気の◯◯…）
 
@@ -729,7 +744,13 @@ struct HomeView: View {
         let hero = AttractionPhoto.photographedAttractions(in: pref).first
 
         return Button {
-            detailPrefecture = pref
+            if usesTapToFocus && focusedPrefecture != pref {
+                // iPad: 1 タップ目は主役の切り替え。もう一度押すと詳細へ進む。
+                // （スクロール位置からは主役を決められないので、ここが唯一の指定手段）
+                focusedPrefecture = pref
+            } else {
+                detailPrefecture = pref
+            }
         } label: {
             ZStack(alignment: .bottomLeading) {
                 // 背景ビジュアル
@@ -763,8 +784,19 @@ struct HomeView: View {
             }
             .frame(width: Self.prefCardWidth, height: Self.prefCardHeight)
             .clipShape(RoundedRectangle(cornerRadius: Self.cardRadius, style: .continuous))
+            // タップで決める画面では、どれが主役かを枠線で示す。
+            // 5〜6 枚が同時に見えるので、印が無いと下の動画棚との対応が分からない。
+            .overlay {
+                if usesTapToFocus && focusedPrefecture == pref {
+                    RoundedRectangle(cornerRadius: Self.cardRadius, style: .continuous)
+                        .strokeBorder(PlanTheme.primary, lineWidth: 3)
+                }
+            }
         }
         .buttonStyle(.plain)
+        .accessibilityHint(usesTapToFocus && focusedPrefecture != pref
+                           ? Text(NSLocalizedString("home.pref.focus.hint", comment: ""))
+                           : Text(""))
     }
 
     // MARK: - 共通スタイル

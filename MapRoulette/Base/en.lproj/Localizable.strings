@@ -5606,3 +5606,4 @@
 "legal.privacy_policy" = "Privacy Policy";
 "legal.youtube_terms" = "YouTube Terms of Service";
 "legal.google_privacy" = "Google Privacy Policy";
+"home.pref.focus.hint" = "Tap to show videos for this prefecture";

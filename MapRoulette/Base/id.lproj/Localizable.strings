@@ -5606,3 +5606,4 @@
 "legal.privacy_policy" = "Kebijakan Privasi";
 "legal.youtube_terms" = "Persyaratan Layanan YouTube";
 "legal.google_privacy" = "Kebijakan Privasi Google";
+"home.pref.focus.hint" = "Ketuk untuk menampilkan video prefektur ini";

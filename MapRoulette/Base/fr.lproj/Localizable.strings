@@ -5606,3 +5606,4 @@
 "legal.privacy_policy" = "Politique de confidentialité";
 "legal.youtube_terms" = "Conditions d'utilisation de YouTube";
 "legal.google_privacy" = "Règles de confidentialité de Google";
+"home.pref.focus.hint" = "Touchez pour afficher les vidéos de cette préfecture";

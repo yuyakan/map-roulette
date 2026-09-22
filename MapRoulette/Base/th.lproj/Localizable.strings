@@ -5606,3 +5606,4 @@
 "legal.privacy_policy" = "นโยบายความเป็นส่วนตัว";
 "legal.youtube_terms" = "ข้อกำหนดในการให้บริการของ YouTube";
 "legal.google_privacy" = "นโยบายความเป็นส่วนตัวของ Google";
+"home.pref.focus.hint" = "แตะเพื่อแสดงวิดีโอของจังหวัดนี้";

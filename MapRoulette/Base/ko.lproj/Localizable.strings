@@ -5545,3 +5545,4 @@
 "legal.privacy_policy" = "개인정보 처리방침";
 "legal.youtube_terms" = "YouTube 서비스 약관";
 "legal.google_privacy" = "Google 개인정보처리방침";
+"home.pref.focus.hint" = "탭하면 이 지역의 영상을 표시합니다";

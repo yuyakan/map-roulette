@@ -5606,3 +5606,4 @@
 "legal.privacy_policy" = "Chính sách quyền riêng tư";
 "legal.youtube_terms" = "Điều khoản dịch vụ của YouTube";
 "legal.google_privacy" = "Chính sách quyền riêng tư của Google";
+"home.pref.focus.hint" = "Chạm để xem video của tỉnh này";

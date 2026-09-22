@@ -5603,3 +5603,4 @@
 "legal.privacy_policy" = "プライバシーポリシー";
 "legal.youtube_terms" = "YouTube 利用規約";
 "legal.google_privacy" = "Google プライバシーポリシー";
+"home.pref.focus.hint" = "タップするとこの県の動画を表示します";

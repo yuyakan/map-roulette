@@ -6236,3 +6236,4 @@
 "legal.privacy_policy" = "隐私政策";
 "legal.youtube_terms" = "YouTube 服务条款";
 "legal.google_privacy" = "Google 隐私权政策";
+"home.pref.focus.hint" = "点按以显示该地区的视频";

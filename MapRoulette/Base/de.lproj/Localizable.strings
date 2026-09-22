@@ -5606,3 +5606,4 @@
 "legal.privacy_policy" = "Datenschutzerklärung";
 "legal.youtube_terms" = "YouTube-Nutzungsbedingungen";
 "legal.google_privacy" = "Google-Datenschutzerklärung";
+"home.pref.focus.hint" = "Tippen, um Videos für diese Präfektur zu zeigen";
