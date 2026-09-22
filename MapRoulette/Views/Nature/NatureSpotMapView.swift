@@ -282,6 +282,9 @@ struct NatureSpotMapView: View {
     /// コンテンツを下げる余白を確保する（帯自体は IntegratedMapView が描画する）。
     /// false（単独利用時）は余白ゼロで既存挙動を一切変えない。
     var isIntegrated: Bool = false
+    /// 帯の上にさらに空ける余白。iPad は上に浮くタブバーを避けるため帯自体が
+    /// 下がるので、その分だけマップ側の上部余白も増やす（iPhone は 0）。
+    var extraTopInset: CGFloat = 0
 
     @State private var selectedSpot: FixedNatureSpotItem? = nil
     @State private var isSpinning = false
@@ -341,7 +344,7 @@ struct NatureSpotMapView: View {
                     VStack {
                         // 統合タブ表示中は、最前面に重なる切替帯のぶんだけ設定ボタン行を下げる
                         if isIntegrated {
-                            Spacer().frame(height: mapModeBandHeight)
+                            Spacer().frame(height: mapModeBandHeight + extraTopInset)
                         }
                         HStack {
                             Button(action: {
@@ -768,7 +771,7 @@ struct NatureSpotMapView: View {
                             .padding(.horizontal, 16)
                             // 先頭のタイプ見出しは、設定/切替ボタン行を避けるため上に余白を空ける。
                             // 統合タブ表示中は最前面の切替帯のぶんもさらに下げる。
-                            .padding(.top, spotType == NatureSpotType.allCases.first ? (80 + (isIntegrated ? mapModeBandHeight : 0)) : 0)
+                            .padding(.top, spotType == NatureSpotType.allCases.first ? (80 + (isIntegrated ? mapModeBandHeight + extraTopInset : 0)) : 0)
                             
                             // タイプの観光名所をグリッド表示
                             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: columnCount), spacing: 10) {

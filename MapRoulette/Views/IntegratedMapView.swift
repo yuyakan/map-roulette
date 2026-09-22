@@ -35,6 +35,9 @@ enum MapMode: Int, CaseIterable {
 let mapModeBandHeight: CGFloat = 44
 
 struct IntegratedMapView: View {
+    /// iPad かどうか（タブバーが上に浮くのは regular 幅のとき）。
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
     // どのマップを実際にマウントするか（重い再構築を伴う）
     @State private var mapMode: MapMode = .prefecture
     // 下線の表示位置だけを司る状態（軽い）。タップ時に即アニメーションさせる。
@@ -48,19 +51,37 @@ struct IntegratedMapView: View {
         ZStack(alignment: .top) {
             // 選択中のマップ（各自 NavigationStack を持つ。isIntegrated=true で
             // 帯ぶんの上部余白を確保するが、帯自体は描画しない）
+            // 各マップは帯ぶんの上部余白を自分で空ける（帯自体は描画しない）。
+            // iPad では帯をタブバーぶん下げているので、余白もその分だけ増やす。
             switch mapMode {
             case .prefecture:
-                JapanMapView(isIntegrated: true)
+                JapanMapView(isIntegrated: true, extraTopInset: bandTopInset)
             case .onsen:
-                OnsenMapView(isIntegrated: true)
+                OnsenMapView(isIntegrated: true, extraTopInset: bandTopInset)
             case .nature:
-                NatureSpotMapView(isIntegrated: true)
+                NatureSpotMapView(isIntegrated: true, extraTopInset: bandTopInset)
             }
 
             // 帯（1つだけ。マップ切替では作り直されない）
+            //
+            // iPad（regular 幅）では TabView のタブバーがコンテンツの上に浮くので、
+            // 帯を素の最上部に置くとタブバーと重なって両方とも押せなくなる。
+            // タブバーぶんだけ下げて避ける。iPhone はタブバーが下にあるので 0。
             MapModeBand(underlineMode: $underlineMode, onSelect: select(_:))
+                .padding(.top, bandTopInset)
         }
     }
+
+    /// 帯を下げる量。iPad の上部に浮くタブバーを避けるためだけに使う。
+    ///
+    /// タブバーはコンテンツの上に重なって描かれ safe area には現れないので、
+    /// インセットからは測れない。実測に基づく固定値で逃がしている。
+    private var bandTopInset: CGFloat {
+        horizontalSizeClass == .regular ? Self.padTabBarHeight : 0
+    }
+
+    /// iPad の浮動タブバーが専有する高さ（実測値）。
+    private static let padTabBarHeight: CGFloat = 60
 
     /// 帯タップ時の処理。下線はアニメーション付きで即移動し、
     /// マップ本体の差し替え（重い）は次のランループへ遅延＆アニメーション無しで行う。
