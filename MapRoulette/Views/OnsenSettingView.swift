@@ -183,6 +183,7 @@ struct OnsenSettingsView: View {
                 enabledOnsens: $enabledOnsens,
                 allOnsens: allOnsens
             )
+            .largeSheet()
         }
     }
     

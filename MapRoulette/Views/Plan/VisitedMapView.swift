@@ -148,6 +148,7 @@ struct VisitedMapView: View {
         }
         .tint(PlanTheme.primary)
         .presentationDetents([.medium, .large])
+        .largeSheet()
     }
 
     // MARK: - 案内（訪問済み 0 件のとき）
@@ -344,6 +345,7 @@ private struct PrefectureDetailSheet: View {
         }
         .tint(PlanTheme.primary)
         .presentationDetents([.medium, .large])
+        .largeSheet()
         // プランは全画面（fullScreenCover）で表示する。
         .fullScreenCover(item: $selectedPlan) { plan in
             NavigationStack {

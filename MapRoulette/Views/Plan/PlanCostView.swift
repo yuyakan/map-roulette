@@ -64,11 +64,11 @@ struct PlanCostView: View {
             }
         }
         .sheet(isPresented: $showingMembers) {
-            MemberEditorSheet(planID: planID)
+            MemberEditorSheet(planID: planID).largeSheet()
         }
         .sheet(isPresented: $showingExpenseEditor) {
             if let plan {
-                ExpenseItemEditor(planID: planID, plan: plan)
+                ExpenseItemEditor(planID: planID, plan: plan).largeSheet()
             }
         }
     }
@@ -245,7 +245,7 @@ private struct CostRow: View {
         .contentShape(Rectangle())
         .onTapGesture { showingEditor = true }
         .sheet(isPresented: $showingEditor) {
-            ExpenseItemEditor(planID: planID, plan: plan, editing: item)
+            ExpenseItemEditor(planID: planID, plan: plan, editing: item).largeSheet()
         }
     }
 }

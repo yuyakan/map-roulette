@@ -90,7 +90,7 @@ struct PlanMapView: View {
                 }
             }
             .sheet(item: $detailItem) { item in
-                PlanItemDetailRouter(item: item)
+                PlanItemDetailRouter(item: item).largeSheet()
             }
         }
     }

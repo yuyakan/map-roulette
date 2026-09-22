@@ -241,6 +241,8 @@ struct MyPlansView: View {
             }
         }
         .presentationDetents([.height(280)])
+        // iPad は presentationDetents をほぼ無視するので、形の指定を別に与える。
+        .formSheet()
     }
 
     private func createPlan() {

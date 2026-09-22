@@ -46,6 +46,7 @@ struct NatureSpotSettingsView: View {
                 enabledSpots: $enabledSpots,
                 allSpots: allSpots
             )
+            .largeSheet()
         }
         .onAppear {
             // 初期設定: 有効になっているスポットのタイプを選択状態にする

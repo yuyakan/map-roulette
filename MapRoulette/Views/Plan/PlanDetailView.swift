@@ -145,10 +145,10 @@ struct PlanDetailView: View {
             }
         }
         .sheet(isPresented: $showingMapSheet) {
-            if let plan { PlanMapView(plan: plan) }
+            if let plan { PlanMapView(plan: plan).largeSheet() }
         }
         .sheet(isPresented: $showingMemoEditor) {
-            if let plan { memoEditor(for: plan) }
+            if let plan { memoEditor(for: plan).formSheet() }
         }
         // タイトル編集（1 行なので alert のテキストフィールドで完結）。
         .alert(NSLocalizedString("plan.title.label", comment: ""), isPresented: $showingTitleEditor) {
@@ -157,7 +157,7 @@ struct PlanDetailView: View {
             Button(NSLocalizedString("common.save", comment: "")) { saveTitle() }
         }
         .sheet(isPresented: $showingCustomEditor) {
-            CustomPlanItemEditor(planID: planID)
+            CustomPlanItemEditor(planID: planID).largeSheet()
         }
         // 県チップから県詳細（観光・グルメ・温泉などの全部入り）を全画面表示。
         // その画面内の「＋プランに追加」でスポットを直接このプランへ足せるので、
@@ -172,11 +172,13 @@ struct PlanDetailView: View {
             ) { selected in
                 store.addPrefectures(selected, to: planID)
             }
+            .largeSheet()
         }
         // 県→スポットカード一覧から詳細を開かずに直接追加するシート。
         // 起点は plan.prefectures（登録済みの県）を優先候補として提示する。
         .sheet(isPresented: $showingSpotQuickAdd) {
             SpotQuickAddSheet(planID: planID, suggestedPrefectures: plan?.prefectures ?? [])
+                .largeSheet()
         }
         // 費用タブへ移ったら編集モードは抜ける（編集は旅程タブ専用）。
         .onChange(of: section) { _, newValue in
@@ -894,14 +896,15 @@ private struct DayDropSection: View {
             withAnimation(.easeOut(duration: 0.15)) { isTargeted = targeted }
         }
         .sheet(isPresented: $showingCustomEditor) {
-            CustomPlanItemEditor(planID: planID, initialDay: day)
+            CustomPlanItemEditor(planID: planID, initialDay: day).largeSheet()
         }
         // この Day 起点のスポット追加。追加された項目は initialDay でこの日に割り当てられる。
         .sheet(isPresented: $showingSpotQuickAdd) {
             SpotQuickAddSheet(planID: planID, suggestedPrefectures: plan.prefectures, initialDay: day)
+                .largeSheet()
         }
         .sheet(item: $editingBlock) { block in
-            TimeBlockEditor(block: block, store: store, planID: planID)
+            TimeBlockEditor(block: block, store: store, planID: planID).formSheet()
         }
     }
 }
@@ -1260,7 +1263,7 @@ private struct PlanItemCard: View {
             onDrop?(droppedID)
         })
         .sheet(isPresented: $showingDetail) {
-            PlanItemDetailRouter(item: item)
+            PlanItemDetailRouter(item: item).largeSheet()
         }
     }
 }

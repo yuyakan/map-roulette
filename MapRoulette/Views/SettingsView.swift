@@ -96,6 +96,7 @@ struct SettingsView: View {
                 enabledPrefectures: $enabledPrefectures,
                 availablePrefectures: availablePrefectures
             )
+            .largeSheet()
         }
     }
     

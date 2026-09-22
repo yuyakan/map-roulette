@@ -45,6 +45,8 @@ struct AddToPlanSheet: View {
         }
         .tint(PlanTheme.primary)
         .presentationDetents([.medium, .large])
+        // iPad は presentationDetents をほぼ無視するので、大きさを別に指定する。
+        .largeSheet()
         .presentationDragIndicator(.visible)
     }
 

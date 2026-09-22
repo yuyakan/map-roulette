@@ -196,8 +196,9 @@ private struct PlanLocatableDetailView<Content: View>: View {
                     initialCoordinate: session.coordinate
                 )
                 .onDisappear { saveLocation() }
+                .largeSheet()
             }
-            .sheet(isPresented: $showingMemoEditor) { memoEditor }
+            .sheet(isPresented: $showingMemoEditor) { memoEditor.formSheet() }
     }
 
     /// 位置追加ボタンを出すか。元データに座標を持たないグルメ・お土産のみ。

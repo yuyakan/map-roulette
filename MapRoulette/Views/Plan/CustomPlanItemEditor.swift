@@ -77,6 +77,7 @@ struct CustomPlanItemEditor: View {
             }
             .sheet(isPresented: $showingLocationPicker) {
                 LocationPickerView(coordinate: $coordinate, placeName: $placeName, address: $address)
+                    .largeSheet()
             }
         }
         .tint(PlanTheme.primary)
@@ -513,7 +514,7 @@ struct CustomPlanItemView: View {
             .navigationBarHidden(true)
             .sheet(isPresented: $showingEditor) {
                 if let planID {
-                    CustomPlanItemEditor(planID: planID, editing: item)
+                    CustomPlanItemEditor(planID: planID, editing: item).largeSheet()
                 }
             }
         }
