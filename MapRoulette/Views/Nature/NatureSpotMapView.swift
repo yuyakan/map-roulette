@@ -350,9 +350,9 @@ struct NatureSpotMapView: View {
                                 Image(systemName: "gearshape.fill")
                                     .resizable()
                                     .frame(width: 18, height: 18)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.primary)
                                     .padding(12)
-                                    .background(.white)
+                                    .background(.regularMaterial)
                                     .clipShape(Circle())
                                     .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                             }
@@ -371,10 +371,10 @@ struct NatureSpotMapView: View {
                                         .resizable()
                                         .frame(width: 16, height: 16)
                                 }
-                                .foregroundColor(.black)
+                                .foregroundColor(.primary)
                                 .padding(.horizontal, 16)
                                 .padding(.vertical, 8)
-                                .background(.white)
+                                .background(.regularMaterial)
                                 .cornerRadius(20)
                                 .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                             }
@@ -490,10 +490,10 @@ struct NatureSpotMapView: View {
                                     HStack(spacing: 10) {
                                         Image(systemName: getButtonIcon())
                                             .font(.title3)
-                                            .foregroundColor(.black)
+                                            .foregroundColor(isStopping ? .white : .primary)
                                     }
                                     .frame(width: 55, height: 55)
-                                    .background(getButtonGradient())
+                                    .background(buttonBackground())
                                     .cornerRadius(27.5)
                                     .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                                     .opacity(availableSpots.count < 2 ? 0.5 : 1.0)
@@ -523,10 +523,10 @@ struct NatureSpotMapView: View {
                                     HStack(spacing: 10) {
                                         Image(systemName: getButtonIcon())
                                             .font(.title3)
-                                            .foregroundColor(.black)
+                                            .foregroundColor(isStopping ? .white : .primary)
                                     }
                                     .frame(width: 55, height: 55)
-                                    .background(getButtonGradient())
+                                    .background(buttonBackground())
                                     .cornerRadius(27.5)
                                     .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                                     .opacity(availableSpots.count < 2 ? 0.5 : 1.0)
@@ -1136,19 +1136,18 @@ struct NatureSpotMapView: View {
     }
     
     // ボタンのグラデーションを取得
-    private func getButtonGradient() -> LinearGradient {
+    // 停止処理中だけグレーのグラデーションで、それ以外は
+    // ダークモードに追従するマテリアル（旧実装の白ベタを置き換え）。
+    @ViewBuilder
+    private func buttonBackground() -> some View {
         if isStopping {
-            return LinearGradient(
+            LinearGradient(
                 gradient: Gradient(colors: [Color.gray, Color.gray.opacity(0.8)]),
                 startPoint: .leading,
                 endPoint: .trailing
             )
         } else {
-            return LinearGradient(
-                gradient: Gradient(colors: [.white]),
-                startPoint: .leading,
-                endPoint: .trailing
-            )
+            Rectangle().fill(.regularMaterial)
         }
     }
     

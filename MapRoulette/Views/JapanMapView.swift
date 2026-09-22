@@ -61,9 +61,9 @@ struct JapanMapView: View {
                                 Image(systemName: "gearshape.fill")
                                     .resizable()
                                     .frame(width: 18, height: 18)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.primary)
                                     .padding(12)
-                                    .background(.white)
+                                    .background(.regularMaterial)
                                     .clipShape(Circle())
                                     .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                             }
@@ -79,9 +79,9 @@ struct JapanMapView: View {
                                     Image(systemName: "magnifyingglass")
                                         .resizable()
                                         .frame(width: 18, height: 18)
-                                        .foregroundColor(.black)
+                                        .foregroundColor(.primary)
                                         .padding(12)
-                                        .background(.white)
+                                        .background(.regularMaterial)
                                         .clipShape(Circle())
                                         .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                                 }
@@ -202,10 +202,10 @@ struct JapanMapView: View {
                                 HStack(spacing: 10) {
                                     Image(systemName: getButtonIcon())
                                         .font(.title3)
-                                        .foregroundColor(.black)
+                                        .foregroundColor(isStopping ? .white : .primary)
                                 }
                                 .frame(width: 55, height: 55)
-                                .background(getButtonGradient())
+                                .background(buttonBackground())
                                 .cornerRadius(27.5)
                                 .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
                                 .opacity(activeEnabledPrefectures.count < 2 ? 0.5 : 1.0)
@@ -322,7 +322,8 @@ struct JapanMapView: View {
                         .padding(.bottom, 40)
                     }
                     .padding(.top, 140)
-                    .background(Color.white.opacity(0.7))
+                    // ダークモードで白マスクが浮かないよう、配色に追従するマテリアルで覆う
+                    .background(.regularMaterial)
                 }
             }
             .sheet(isPresented: $showSettings) {
@@ -434,25 +435,6 @@ struct JapanMapView: View {
         isStopping = false
     }
     
-    // ボタンのテキストを取得
-    private func getButtonText() -> some View {
-        if isStopping {
-            return Text("")
-                .font(.title3)
-                .fontWeight(.semibold)
-        } else if isSpinning {
-            return Text("Stop")
-                .font(.title3)
-                .foregroundColor(.black)
-                .fontWeight(.semibold)
-        } else {
-            return Text("Start")
-                .font(.title3)
-                .foregroundColor(.black)
-                .fontWeight(.semibold)
-        }
-    }
-    
     // ボタンのアイコンを取得
     private func getButtonIcon() -> String {
         if isStopping {
@@ -464,26 +446,18 @@ struct JapanMapView: View {
         }
     }
       
-    // ボタンのグラデーションを取得
-    private func getButtonGradient() -> LinearGradient {
+    // ボタンの背景を取得。停止処理中だけグレーのグラデーションで、
+    // それ以外はダークモードに追従するマテリアル（旧実装の白ベタを置き換え）。
+    @ViewBuilder
+    private func buttonBackground() -> some View {
         if isStopping {
-            return LinearGradient(
+            LinearGradient(
                 gradient: Gradient(colors: [Color.gray, Color.gray.opacity(0.8)]),
                 startPoint: .leading,
                 endPoint: .trailing
             )
-        } else if isSpinning {
-            return LinearGradient(
-                gradient: Gradient(colors: [.white]),
-                startPoint: .leading,
-                endPoint: .trailing
-            )
         } else {
-            return LinearGradient(
-                gradient: Gradient(colors: [.white]),
-                startPoint: .leading,
-                endPoint: .trailing
-            )
+            Rectangle().fill(.regularMaterial)
         }
     }
     
