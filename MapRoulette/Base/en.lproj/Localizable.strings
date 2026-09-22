@@ -5097,6 +5097,7 @@
 "plan.notfound" = "Plan not found";
 "plan.detail.empty" = "No items yet";
 "plan.prefectures.add" = "Add prefecture";
+"plan.prefectures.derived" = "Added from a spot in your itinerary";
 "plan.prefectures.add.count" = "Add %d";
 "plan.spot.add" = "Add spots";
 "plan.spot.suggested" = "Your prefectures";

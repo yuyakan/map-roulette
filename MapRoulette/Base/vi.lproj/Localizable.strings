@@ -5097,6 +5097,7 @@
 "plan.notfound" = "Không tìm thấy kế hoạch";
 "plan.detail.empty" = "Chưa có mục";
 "plan.prefectures.add" = "Thêm tỉnh";
+"plan.prefectures.derived" = "Được thêm từ một địa điểm trong hành trình của bạn";
 "plan.prefectures.add.count" = "Thêm %d";
 "plan.spot.add" = "Thêm địa điểm";
 "plan.spot.suggested" = "Các tỉnh của bạn";

@@ -5097,6 +5097,7 @@
 "plan.notfound" = "Plan nicht gefunden";
 "plan.detail.empty" = "Keine Einträge";
 "plan.prefectures.add" = "Präfektur hinzufügen";
+"plan.prefectures.derived" = "Aus einem Ziel in deiner Reiseroute hinzugefügt";
 "plan.prefectures.add.count" = "%d hinzufügen";
 "plan.spot.add" = "Orte hinzufügen";
 "plan.spot.suggested" = "Deine Präfekturen";

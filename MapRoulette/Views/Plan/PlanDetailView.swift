@@ -394,16 +394,19 @@ struct PlanDetailView: View {
             .shadow(color: PlanTheme.cardShadow, radius: 5, x: 0, y: 2)
         }
         .buttonStyle(.plain)
-        .contextMenu {
-            // 長押し削除は編集モードのときだけ。通常モードではタップで県詳細を開くだけ。
-            if isEditing, isRemovable {
-                Button(role: .destructive) {
-                    store.removePrefecture(prefecture, from: planID)
-                } label: {
-                    Label(NSLocalizedString("common.delete", comment: ""), systemImage: "trash")
-                }
-            }
-        }
+        // 長押しメニューは編集モードのときだけ付ける。
+        //
+        // 【なぜ if で丸ごと外すか】
+        // 中身が空の contextMenu を付けると、長押しでプレビューの拡大アニメーションだけ
+        // 起きてメニューが出ない。ユーザーからは「反応しない・壊れている」ようにしか
+        // 見えないので、出すものが無いときはモディファイア自体を付けない。
+        .modifier(
+            PrefectureChipMenu(
+                isEnabled: isEditing,
+                isRemovable: isRemovable,
+                onDelete: { store.removePrefecture(prefecture, from: planID) }
+            )
+        )
     }
 
     // MARK: - コントロールカード（日程トグル・日数）
@@ -1797,6 +1800,53 @@ private enum QuickAddCategory: CaseIterable {
         }
         return pairs.enumerated().map { index, pair in
             QuickAddSpot(id: "\(index)|\(pair.name)", name: pair.name, subtitle: pair.subtitle)
+        }
+    }
+}
+
+// MARK: - 県タイルの長押しメニュー
+
+/// 県タイルに付ける長押しメニュー。
+///
+/// 【解決した不具合】
+/// 「＋の左隣の県だけ長押しで削除が出ない」ように見える症状があった。
+/// 実際は位置ではなく**県の出どころ**が原因。`TravelPlan.prefectures` は
+/// `plannedPrefectures`（手動追加）＋ `itemPrefectures`（旅程スポット由来）の順で並ぶため、
+/// スポット由来の県は必ず末尾＝「＋」の隣に来る。そしてそれらは
+/// `removePrefecture` の対象外なので、メニューの中身が空になっていた。
+///
+/// 中身が空の `contextMenu` は「長押しでプレビューだけ拡大して何も出ない」という
+/// 壊れて見える挙動になる。そこで、
+/// - 削除できる県 … 削除ボタンを出す
+/// - スポット由来の県 … なぜ消せないかを説明する無効化項目を出す
+/// - 編集モードでない … メニュー自体を付けない（タップで県詳細を開くだけ）
+/// とし、長押しに対して必ず何らかの反応が返るようにした。
+private struct PrefectureChipMenu: ViewModifier {
+    let isEnabled: Bool
+    let isRemovable: Bool
+    let onDelete: () -> Void
+
+    func body(content: Content) -> some View {
+        if isEnabled {
+            content.contextMenu {
+                if isRemovable {
+                    Button(role: .destructive, action: onDelete) {
+                        Label(NSLocalizedString("common.delete", comment: ""), systemImage: "trash")
+                    }
+                } else {
+                    // スポット由来の県。スポットを消せば自動的に消えることを伝える。
+                    // 押せてしまうと「押したのに消えない」になるので無効化しておく。
+                    Button {} label: {
+                        Label(
+                            NSLocalizedString("plan.prefectures.derived", comment: ""),
+                            systemImage: "info.circle"
+                        )
+                    }
+                    .disabled(true)
+                }
+            }
+        } else {
+            content
         }
     }
 }

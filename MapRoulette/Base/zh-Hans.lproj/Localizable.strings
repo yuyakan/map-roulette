@@ -6023,6 +6023,7 @@
 "plan.notfound" = "找不到该计划";
 "plan.detail.empty" = "暂无项目";
 "plan.prefectures.add" = "添加县";
+"plan.prefectures.derived" = "来自行程中的景点";
 "plan.prefectures.add.count" = "添加 %d 个";
 "plan.spot.add" = "添加景点";
 "plan.spot.suggested" = "已添加的县";

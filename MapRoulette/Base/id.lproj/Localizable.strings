@@ -5097,6 +5097,7 @@
 "plan.notfound" = "Rencana tidak ditemukan";
 "plan.detail.empty" = "Belum ada item";
 "plan.prefectures.add" = "Tambah prefektur";
+"plan.prefectures.derived" = "Ditambahkan dari tempat di itinerari Anda";
 "plan.prefectures.add.count" = "Tambah %d";
 "plan.spot.add" = "Tambah tempat";
 "plan.spot.suggested" = "Prefektur Anda";

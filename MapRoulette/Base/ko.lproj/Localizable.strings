@@ -5331,6 +5331,7 @@
 "plan.notfound" = "플랜을 찾을 수 없습니다";
 "plan.detail.empty" = "항목 없음";
 "plan.prefectures.add" = "현 추가";
+"plan.prefectures.derived" = "일정의 장소에서 추가된 지역입니다";
 "plan.prefectures.add.count" = "%d개 추가";
 "plan.spot.add" = "스팟 추가";
 "plan.spot.suggested" = "등록한 현";

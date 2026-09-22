@@ -5094,6 +5094,7 @@
 "plan.notfound" = "プランが見つかりません";
 "plan.detail.empty" = "項目がありません";
 "plan.prefectures.add" = "県を追加";
+"plan.prefectures.derived" = "旅程のスポットから追加された県です";
 "plan.prefectures.add.count" = "%d件を追加";
 "plan.spot.add" = "スポットを追加";
 "plan.spot.suggested" = "登録済みの県";

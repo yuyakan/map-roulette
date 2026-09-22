@@ -5097,6 +5097,7 @@
 "plan.notfound" = "ไม่พบแผน";
 "plan.detail.empty" = "ยังไม่มีรายการ";
 "plan.prefectures.add" = "เพิ่มจังหวัด";
+"plan.prefectures.derived" = "เพิ่มจากสถานที่ในแผนการเดินทางของคุณ";
 "plan.prefectures.add.count" = "เพิ่ม %d รายการ";
 "plan.spot.add" = "เพิ่มสถานที่";
 "plan.spot.suggested" = "จังหวัดของคุณ";

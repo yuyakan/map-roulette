@@ -5097,6 +5097,7 @@
 "plan.notfound" = "Plan introuvable";
 "plan.detail.empty" = "Aucun élément";
 "plan.prefectures.add" = "Ajouter une préfecture";
+"plan.prefectures.derived" = "Ajouté depuis un lieu de votre itinéraire";
 "plan.prefectures.add.count" = "Ajouter %d";
 "plan.spot.add" = "Ajouter des lieux";
 "plan.spot.suggested" = "Vos préfectures";
