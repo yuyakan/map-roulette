@@ -1,7 +1,8 @@
-/* 
+/*
   InfoPlist.strings
   MapRoulette
 */
 
 "CFBundleDisplayName" = "Mapa de Viaje por Japón";
+"NSLocationWhenInUseUsageDescription" = "Se utiliza para mostrar lugares turísticos, aguas termales y espacios naturales cerca de tu ubicación actual.";
 "NSUserTrackingUsageDescription" = "Se utiliza para mostrarte anuncios relevantes para tus intereses. Los anuncios seguirán apareciendo aunque no permitas el seguimiento, pero podrían ser menos relevantes.";

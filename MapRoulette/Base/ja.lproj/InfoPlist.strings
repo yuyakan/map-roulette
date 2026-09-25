@@ -1,10 +1,11 @@
-/* 
+/*
   InfoPlist.strings
   MapRoulette
 
   Created by 上別縄祐也 on 2025/08/16.
-  
+
 */
 
-"CFBundleDisplayName" = "旅さきChoice";
+"CFBundleDisplayName" = "旅さきChoice";
+"NSLocationWhenInUseUsageDescription" = "現在地の近くにある観光地・温泉・自然スポットを表示するために使用します。";
 "NSUserTrackingUsageDescription" = "あなたの興味・関心に合った広告を表示するために使用します。トラッキングを許可しない場合も広告は表示されますが、関連性が低くなることがあります。";

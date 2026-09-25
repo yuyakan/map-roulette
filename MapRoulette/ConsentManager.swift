@@ -7,6 +7,7 @@
 
 import AppTrackingTransparency
 import GoogleMobileAds
+import UIKit
 import UserMessagingPlatform
 
 /// UMP（Google User Messaging Platform）の同意取得と ATT（App Tracking Transparency）を
@@ -78,18 +79,56 @@ final class ConsentManager {
 
     /// ATT のトラッキング許可ダイアログを表示し、その後 AdMob を初期化する。
     /// ATT の結果に関わらず、`canRequestAds` が立っていれば広告リクエストは可能。
+    ///
+    /// `requestTrackingAuthorization` はアプリが foreground active でないと
+    /// ダイアログを出さずに即 `.notDetermined` を返して終わってしまう。
+    /// UMP フォームの表示直後やスプラッシュからの画面差し替えと重なるとこれを踏むため、
+    /// 必ず foreground active になるのを待ってから要求する。
     private func requestATTThenStartAds(onReady: @escaping () -> Void) {
-        ATTrackingManager.requestTrackingAuthorization { [weak self] _ in
-            Task { @MainActor in
-                self?.startMobileAdsIfNeeded(onReady: onReady)
+        waitUntilForegroundActive { [weak self] in
+            ATTrackingManager.requestTrackingAuthorization { _ in
+                Task { @MainActor in
+                    self?.startMobileAdsIfNeeded(onReady: onReady)
+                }
             }
         }
+    }
+
+    /// アプリが foreground active になるまで待って `body` を実行する。
+    /// すでに active なら次のループで即実行する。
+    private func waitUntilForegroundActive(_ body: @escaping () -> Void) {
+        guard !Self.isForegroundActive else {
+            // すでに前面。ビュー遷移と重ならないよう次のループに回す。
+            DispatchQueue.main.async(execute: body)
+            return
+        }
+
+        // まだ前面でない（起動直後・UMP フォーム閉じ直後など）。
+        // didBecomeActive を一度だけ拾って実行する。
+        var observer: NSObjectProtocol?
+        observer = NotificationCenter.default.addObserver(
+            forName: UIApplication.didBecomeActiveNotification,
+            object: nil,
+            queue: .main
+        ) { _ in
+            if let observer {
+                NotificationCenter.default.removeObserver(observer)
+            }
+            body()
+        }
+    }
+
+    /// いずれかのシーンが foreground active かどうか。
+    private static var isForegroundActive: Bool {
+        UIApplication.shared.connectedScenes.contains { $0.activationState == .foregroundActive }
     }
 
     /// `canRequestAds` が立っていれば AdMob を一度だけ初期化する。
     private func startMobileAdsIfNeeded(onReady: @escaping () -> Void) {
         guard ConsentInformation.shared.canRequestAds else {
-            // 同意が得られていない（広告リクエスト不可）。何もしない。
+            // 同意が得られていない（広告リクエスト不可）。広告は出さないが、
+            // 呼び出し側の後続処理は止めないため onReady は呼ぶ。
+            onReady()
             return
         }
         guard !didStartMobileAds else {

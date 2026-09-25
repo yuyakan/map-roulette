@@ -1,7 +1,8 @@
-/* 
+/*
   InfoPlist.strings
   MapRoulette
 */
 
 "CFBundleDisplayName" = "Japan-Reisekarte";
+"NSLocationWhenInUseUsageDescription" = "Wird verwendet, um Sehenswürdigkeiten, heiße Quellen und Naturziele in der Nähe Ihres Standorts anzuzeigen.";
 "NSUserTrackingUsageDescription" = "Wird verwendet, um Ihnen Werbung anzuzeigen, die zu Ihren Interessen passt. Auch ohne Tracking wird Werbung angezeigt, sie ist dann jedoch möglicherweise weniger relevant.";
