@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- 以下 3 キーは基準言語（en）の値。各言語の文言は */InfoPlist.strings で上書きされる。
+	     多言語対応アプリでは Info.plist 側にも値が必要（App Store Connect の検証要件）。 -->
+	<key>CFBundleDisplayName</key>
+	<string>Japan Trip Map</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Used to show sightseeing spots, hot springs, and nature spots near your current location.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Used to show ads relevant to your interests. Ads will still appear if you don't allow tracking, but they may be less relevant.</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3155724310732667~8192172945</string>
 	<key>LSApplicationQueriesSchemes</key>
