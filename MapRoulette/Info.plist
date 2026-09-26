@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleDisplayName</key>
-	<string>Japan Trip Map</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Used to show sightseeing spots, hot springs, and nature spots near your current location.</string>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>Used to show ads relevant to your interests. Ads will still appear if you don't allow tracking, but they may be less relevant.</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3155724310732667~8192172945</string>
 	<key>LSApplicationQueriesSchemes</key>
