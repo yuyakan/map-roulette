@@ -20,6 +20,10 @@ struct ShortsFeedView: View {
 
     @Environment(\.dismiss) private var dismiss
     @State private var currentIndex: Int
+    /// ScrollView が返す現在ページ。スクロール途中は nil になるため Optional。
+    /// 初期値を startIndex にしておくことで、開いた直後にそのページへ着地する
+    /// （TabView の selection と違い、ここに入れないと必ず先頭から始まる）。
+    @State private var scrollPosition: Int?
 
     /// 端末の通信状態。オフラインで開いたときに案内を出すために見る。
     @ObservedObject private var network = NetworkMonitor.shared
@@ -30,6 +34,7 @@ struct ShortsFeedView: View {
         self.videos = videos
         self.startIndex = startIndex
         _currentIndex = State(initialValue: startIndex)
+        _scrollPosition = State(initialValue: startIndex)
     }
 
     /// プレイヤー(WebView)を実体化しておく前後ページ数。
@@ -49,31 +54,30 @@ struct ShortsFeedView: View {
     @State private var materialized: Set<String> = []
 
     var body: some View {
-        GeometryReader { geo in
-            TabView(selection: $currentIndex) {
-                ForEach(Array(videos.enumerated()), id: \.element.id) { index, video in
-                    ShortsPage(
-                        video: video,
-                        isActive: index == currentIndex,
-                        // 近傍ページはプレイヤーを先に生成（プリロード）。
-                        // 一度生成したページは evictRadius の外に出るまで生かし続ける。
-                        isPreloaded: shouldMaterialize(index: index, video: video)
-                    )
-                    .frame(width: geo.size.width, height: geo.size.height)
-                    .rotationEffect(.degrees(-90))          // TabView を縦ページ化する定番手法
-                    .tag(index)
-                }
-            }
-            .onChange(of: currentIndex) { _, index in
-                updateMaterialized(around: index)
-            }
-            .onAppear {
-                updateMaterialized(around: currentIndex)
-            }
-            .frame(width: geo.size.height, height: geo.size.width)
-            .rotationEffect(.degrees(90), anchor: .topLeading)
-            .offset(x: geo.size.width)                        // 回転後の位置補正
-            .tabViewStyle(.page(indexDisplayMode: .never))
+        // 【縦ページ送りに TabView + rotationEffect を使わない理由（重要）】
+        // TabView を 90° 回して縦ページ化する定番トリックは、ページ側と外側で
+        // 二重に回転変換をかける。その変換行列の下に WKWebView（YouTube の
+        // 埋め込みプレイヤー本体）が入ると、WebView が自前のスケールで描いた
+        // レイヤーを親の回転・スケールで再サンプリングすることになり、映像が
+        // 恒常的にぼやける。回転の軸（anchor: .topLeading）から遠い画面右側ほど
+        // 誤差が積もって滲みが強く出る。
+        // ScrollView の paging なら回転変換が一切かからないので、WebView が素の
+        // スケールのまま描かれ、映像がシャープになる。
+        pager
+        .scrollTargetBehavior(.paging)
+        .scrollIndicators(.hidden)
+        // ページが確定するたびに currentIndex を更新する。
+        // Binding が Int? なのは、スクロール中の不定状態を nil で表すため。
+        .scrollPosition(id: $scrollPosition, anchor: .center)
+        .onChange(of: scrollPosition) { _, position in
+            guard let position, position != currentIndex else { return }
+            currentIndex = position
+        }
+        .onChange(of: currentIndex) { _, index in
+            updateMaterialized(around: index)
+        }
+        .onAppear {
+            updateMaterialized(around: currentIndex)
         }
         .background(Color.black)
         .ignoresSafeArea()
@@ -100,6 +104,33 @@ struct ShortsFeedView: View {
         .onChange(of: network.isConnected) { _, connected in
             if !connected { showOfflineAlert = true }
         }
+    }
+
+    /// 縦ページ送りの本体。
+    /// body に直接書くと修飾子が長くなって型推論が音を上げるので、ここに切り出す。
+    private var pager: some View {
+        ScrollView(.vertical) {
+            LazyVStack(spacing: 0) {
+                ForEach(Array(videos.enumerated()), id: \.element.id) { pair in
+                    page(for: pair.element, at: pair.offset)
+                }
+            }
+            .scrollTargetLayout()
+        }
+    }
+
+    /// 1 ページ分。画面ぴったりのサイズを与え、これをページ送りの単位にする。
+    private func page(for video: TrendVideo, at index: Int) -> some View {
+        ShortsPage(
+            video: video,
+            isActive: index == currentIndex,
+            // 近傍ページはプレイヤーを先に生成（プリロード）。
+            // 一度生成したページは evictRadius の外に出るまで生かし続ける。
+            isPreloaded: shouldMaterialize(index: index, video: video)
+        )
+        .containerRelativeFrame([.horizontal, .vertical])
+        // scrollPosition(id:) が現在ページを返せるようにするための ID。
+        .id(index)
     }
 
     /// このページでプレイヤーを実体化するか。
@@ -173,7 +204,7 @@ private struct ShortsPage: View {
                     thumbnailUrl: video.thumbnailUrl
                 )
                 .aspectRatio(9.0 / 16.0, contentMode: .fit)
-                // 動画ごとに固定 ID を与え、TabView の再構築でプレイヤーが
+                // 動画ごとに固定 ID を与え、フィードの再構築でプレイヤーが
                 // 作り直されないようにする。
                 .id(video.videoId)
             } else {
