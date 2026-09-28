@@ -111,7 +111,16 @@ struct ShortsFeedView: View {
     private var pager: some View {
         ScrollView(.vertical) {
             LazyVStack(spacing: 0) {
-                ForEach(Array(videos.enumerated()), id: \.element.id) { pair in
+                // ID は「位置」。scrollPosition(id:) が Int? を扱うので、
+                // ForEach の同一性もページ位置に揃える。
+                //
+                // 【なぜ videoId ではだめか】
+                // ForEach の ID を videoId(String) にしたまま各ページに .id(index)(Int) を
+                // 重ねると、同一性の基準が 2 つある状態になる。LazyVStack はまだ実体化して
+                // いないページの .id を持たないため、startIndex が先頭付近以外のときに
+                // 初期スクロールが解決できず、ページ 0 を表示したまま currentIndex だけが
+                // startIndex になる（＝1つ目の絵のまま 2つ目の音声が鳴る）。
+                ForEach(Array(videos.enumerated()), id: \.offset) { pair in
                     page(for: pair.element, at: pair.offset)
                 }
             }
@@ -129,8 +138,6 @@ struct ShortsFeedView: View {
             isPreloaded: shouldMaterialize(index: index, video: video)
         )
         .containerRelativeFrame([.horizontal, .vertical])
-        // scrollPosition(id:) が現在ページを返せるようにするための ID。
-        .id(index)
     }
 
     /// このページでプレイヤーを実体化するか。

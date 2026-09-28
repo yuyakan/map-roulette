@@ -29,6 +29,10 @@ struct TrendCard: View {
             channel
         }
         .frame(width: width)
+        // カードの矩形全体をタップ領域にする。
+        // これが無いと VStack は中身（絵・文字）の乗っている場所しかヒットせず、
+        // 行間や短いタイトルの右側の余白を押しても反応しない。
+        .contentShape(Rectangle())
     }
 
     // MARK: - サムネイル（9:16）
@@ -50,6 +54,14 @@ struct TrendCard: View {
             // 「Developed with YouTube」ロゴ＋各カードのチャンネル名表示で担保する。
 
             // 尺表示（右下）
+            //
+            // 【重要】.padding は .frame の「前」に置くこと。
+            // .frame(サムネと同じ高さ) の後に .padding(6) を付けると、パディングは
+            // 外側に足されるのでこのオーバーレイだけが上下 6pt ずつ大きくなる。
+            // SwiftUI の .frame はクリップしないため、はみ出した透明領域が
+            // 下に重なったまま残り、カードの Button のヒットテストを奪う。
+            // その結果「サムネの上側を押すと反応せず、下側だと開く」という
+            // タップ位置依存の壊れ方をする。
             VStack {
                 Spacer()
                 HStack {
@@ -63,8 +75,10 @@ struct TrendCard: View {
                         .clipShape(Capsule())
                 }
             }
-            .frame(width: width, height: width * 16 / 9)
             .padding(6)
+            .frame(width: width, height: width * 16 / 9)
+            // 絵の上に乗るだけの装飾。タップはカード全体の Button に通す。
+            .allowsHitTesting(false)
         }
         .frame(width: width, height: width * 16 / 9)
     }
