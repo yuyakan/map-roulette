@@ -125,6 +125,21 @@ final class TravelPlanStore: ObservableObject {
     }
 
     /// 既存の項目を内容ごと更新する（カスタム項目の編集に使う）。
+    /// ユーザーカードの改名に合わせて、全プランの該当項目の名前を更新する。
+    func renameItems(category: PlanItemCategory, prefecture: Prefecture, from oldName: String, to newName: String) {
+        var didChange = false
+        for planIndex in plans.indices {
+            for itemIndex in plans[planIndex].items.indices {
+                let item = plans[planIndex].items[itemIndex]
+                if item.category == category, item.prefecture == prefecture, item.name == oldName {
+                    plans[planIndex].items[itemIndex].name = newName
+                    didChange = true
+                }
+            }
+        }
+        if didChange { persist() }
+    }
+
     func updateItem(_ item: PlanItem, in planID: UUID) {
         guard let index = plans.firstIndex(where: { $0.id == planID }) else { return }
         guard let itemIndex = plans[index].items.firstIndex(where: { $0.id == item.id }) else { return }

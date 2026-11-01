@@ -17,6 +17,9 @@ struct RichNatureSection: View {
     let prefecture: Prefecture
     /// お土産セクションと同じく、初期は先頭4件だけ表示し「もっと見る」で全件展開する。
     @State private var showAllItems = false
+    @ObservedObject private var userCards = UserCardStore.shared
+    @State private var isAddingCard = false
+    @State private var selectedUserCard: UserCard? = nil
 
     /// 自然セクションの基調色（自然タブのキャンプ＝緑に寄せた、落ち着いた緑）。
     private let accent = Color(red: 0.20, green: 0.55, blue: 0.36)
@@ -38,33 +41,39 @@ struct RichNatureSection: View {
     }
 
     var body: some View {
-        if !spots.isEmpty {
-            VStack(alignment: .leading, spacing: 16) {
-                RichSectionHeader(
-                    icon: "leaf.fill",
-                    title: "tourism_detail_nature".localized,
-                    accent: accent
-                )
+        VStack(alignment: .leading, spacing: 16) {
+            RichSectionHeader(
+                icon: "leaf.fill",
+                title: "tourism_detail_nature".localized,
+                accent: accent,
+                trailing: AnyView(AddUserCardButton(accent: accent) { isAddingCard = true })
+            )
 
-                LazyVGrid(columns: [
-                    GridItem(.flexible()),
-                    GridItem(.flexible())
-                ], spacing: 16) {
-                    ForEach(displayedSpots) { spot in
-                        NatureSectionCard(spot: spot)
-                            .padding(.horizontal, 2)
+            LazyVGrid(columns: [
+                GridItem(.flexible()),
+                GridItem(.flexible())
+            ], spacing: 16) {
+                ForEach(userCards.cards(in: prefecture, kind: .nature)) { card in
+                    UserCardTile(card: card, height: 180) {
+                        selectedUserCard = card
                     }
+                    .padding(.horizontal, 2)
                 }
-
-                // 5件以上ある県だけ「もっと見る」を出す（お土産セクションと同じ挙動）。
-                if !showAllItems && spots.count > 4 {
-                    LoadMoreButton(title: "load_more_groumet".localized, accent: accent) {
-                        withAnimation(.easeInOut(duration: 0.3)) { showAllItems = true }
-                    }
+                ForEach(displayedSpots) { spot in
+                    NatureSectionCard(spot: spot)
+                        .padding(.horizontal, 2)
                 }
             }
-            .padding(.horizontal)
+
+            // 5件以上ある県だけ「もっと見る」を出す（お土産セクションと同じ挙動）。
+            if !showAllItems && spots.count > 4 {
+                LoadMoreButton(title: "load_more_groumet".localized, accent: accent) {
+                    withAnimation(.easeInOut(duration: 0.3)) { showAllItems = true }
+                }
+            }
         }
+        .padding(.horizontal)
+        .userCardPresentation(prefecture: prefecture, kind: .nature, isAdding: $isAddingCard, selected: $selectedUserCard)
     }
 }
 

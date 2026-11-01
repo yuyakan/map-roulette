@@ -2616,6 +2616,9 @@ struct RichFestivalSection: View {
     let prefecture: Prefecture
     @State private var showAllItems = false
     @State private var selectedItem: FestivalItem? = nil
+    @ObservedObject private var userCards = UserCardStore.shared
+    @State private var isAddingCard = false
+    @State private var selectedUserCard: UserCard? = nil
 
     var filteredItems: [FestivalItem] {
         let items = prefecture.festivalItems
@@ -2631,7 +2634,8 @@ struct RichFestivalSection: View {
                 icon: "party.popper.fill",
                 title: NSLocalizedString("festival.summer_fireworks", comment: "夏祭り・花火大会"),
                 subtitle: String(format: "festival.experience".localized, prefecture.prefectureName),
-                accent: accent
+                accent: accent,
+                trailing: AnyView(AddUserCardButton(accent: accent) { isAddingCard = true })
             )
 
             // お祭りアイテムのグリッド
@@ -2639,6 +2643,11 @@ struct RichFestivalSection: View {
                 GridItem(.flexible(), spacing: 12),
                 GridItem(.flexible(), spacing: 12)
             ], spacing: 16) {
+                ForEach(userCards.cards(in: prefecture, kind: .festival)) { card in
+                    UserCardTile(card: card, height: 200) {
+                        selectedUserCard = card
+                    }
+                }
                 ForEach(filteredItems) { item in
                     FestivalItemCard(item: item) {
                         selectedItem = item
@@ -2657,6 +2666,7 @@ struct RichFestivalSection: View {
         .fullScreenCover(item: $selectedItem) { item in
             FestivalDetailView(item: item, prefecture: prefecture)
         }
+        .userCardPresentation(prefecture: prefecture, kind: .festival, isAdding: $isAddingCard, selected: $selectedUserCard)
     }
 }
 

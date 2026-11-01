@@ -8,12 +8,95 @@
 import Testing
 import Foundation
 import CoreLocation
+import UIKit
 @testable import MapRoulette
 
 struct MapRouletteTests {
 
     @Test func example() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    }
+
+    /// カードの追加・更新・削除が保存され、県・セクションごとに新しい順で読み戻せることを確認する。
+    @MainActor
+    @Test func userCardStorePersistsPerSection() throws {
+        let fileName = "user_cards_test_\(UUID().uuidString).json"
+        defer {
+            let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            try? FileManager.default.removeItem(at: docs.appendingPathComponent(fileName))
+        }
+
+        let store = UserCardStore(fileName: fileName)
+        let older = UserCard(prefecture: .tokyo, kind: .cafe, name: "古い店", createdAt: Date(timeIntervalSince1970: 100))
+        let newer = UserCard(prefecture: .tokyo, kind: .cafe, name: "新しい店", createdAt: Date(timeIntervalSince1970: 200))
+        let otherKind = UserCard(prefecture: .tokyo, kind: .souvenir, name: "別のセクション")
+        let otherPref = UserCard(prefecture: .ishikawa, kind: .cafe, name: "別の県")
+        store.add(older)
+        store.add(newer)
+        store.add(otherKind)
+        store.add(otherPref)
+
+        var renamed = older
+        renamed.name = "改名した店"
+        store.update(renamed)
+        store.delete(otherPref)
+
+        let reloaded = UserCardStore(fileName: fileName)
+        #expect(reloaded.cards(in: .tokyo, kind: .cafe).map(\.name) == ["新しい店", "改名した店"])
+        #expect(reloaded.cards(in: .tokyo, kind: .souvenir).map(\.name) == ["別のセクション"])
+        #expect(reloaded.cards(in: .ishikawa, kind: .cafe).isEmpty)
+    }
+
+    /// URL はスキームを補い、Web 以外や形式の不正なものは開かせない。
+    @Test func userCardURLIsNormalized() {
+        #expect(UserCard.normalizedURL(from: "example.com/menu")?.absoluteString == "https://example.com/menu")
+        #expect(UserCard.normalizedURL(from: " http://example.com ")?.absoluteString == "http://example.com")
+        #expect(UserCard.normalizedURL(from: "javascript://example.com") == nil)
+        #expect(UserCard.normalizedURL(from: "not a url") == nil)
+        #expect(UserCard.normalizedURL(from: "example") == nil)
+        #expect(UserCard.normalizedURL(from: "") == nil)
+    }
+
+    /// 表紙写真は縮小して保存され、カードの削除・差し替えでファイルも消える。
+    @MainActor
+    @Test func userCardPhotoFollowsCardLifecycle() throws {
+        let fileName = "user_cards_test_\(UUID().uuidString).json"
+        defer {
+            let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            try? FileManager.default.removeItem(at: docs.appendingPathComponent(fileName))
+        }
+        let store = UserCardStore(fileName: fileName)
+        let format = UIGraphicsImageRendererFormat.default()
+        format.scale = 1
+        let large = UIGraphicsImageRenderer(size: CGSize(width: 3200, height: 1600), format: format).image { context in
+            UIColor.red.setFill()
+            context.fill(CGRect(x: 0, y: 0, width: 3200, height: 1600))
+        }
+
+        let first = try #require(store.savePhoto(large))
+        #expect(store.photo(named: first)?.size.width == 1600)
+
+        var card = UserCard(prefecture: .tokyo, kind: .souvenir, name: "写真付き", photoFileName: first)
+        store.add(card)
+
+        let second = try #require(store.savePhoto(large))
+        card.photoFileName = second
+        store.update(card)
+        #expect(store.photo(named: first) == nil)
+        #expect(store.photo(named: second) != nil)
+
+        store.delete(card)
+        #expect(store.photo(named: second) == nil)
+    }
+
+    /// 位置の無い観光地カードも、リスト用に県の座標で変換できる。
+    @Test func attractionCardFallsBackToPrefectureCoordinate() {
+        let region = CLLocationCoordinate2D(latitude: 35.0, longitude: 135.0)
+        let card = UserCard(prefecture: .kyoto, kind: .attraction, name: "展望台", description: "夕日がきれい")
+        let item = card.attractionItem(fallback: region)
+        #expect(item.name == "展望台")
+        #expect(item.description == "夕日がきれい")
+        #expect(item.coordinate.latitude == 35.0)
     }
 
     /// 時間ブロック機能を追加する前のフォーマット（timeBlocks / timeBlockID 無し）の

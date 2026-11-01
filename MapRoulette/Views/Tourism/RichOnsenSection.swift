@@ -10,33 +10,40 @@ import MapKit
 
 struct RichOnsenSection: View {
     let prefecture: Prefecture
+    @ObservedObject private var userCards = UserCardStore.shared
+    @State private var isAddingCard = false
+    @State private var selectedUserCard: UserCard? = nil
 
     /// 温泉セクションの基調色。
     private let accent = Color(red: 0.13, green: 0.58, blue: 0.66)
 
     var body: some View {
-        let onsens = prefecture.onsenItems
+        VStack(alignment: .leading, spacing: 16) {
+            RichSectionHeader(
+                icon: "thermometer.sun.fill",
+                title: "hot_spring_info".localized,
+                accent: accent,
+                trailing: AnyView(AddUserCardButton(accent: accent) { isAddingCard = true })
+            )
 
-        if !onsens.isEmpty {
-            VStack(alignment: .leading, spacing: 16) {
-                RichSectionHeader(
-                    icon: "thermometer.sun.fill",
-                    title: "hot_spring_info".localized,
-                    accent: accent
-                )
-
-                LazyVGrid(columns: [
-                    GridItem(.flexible()),
-                    GridItem(.flexible())
-                ], spacing: 16) {
-                    ForEach(onsens) { onsen in
-                        OnsenCard(onsen: onsen, prefecture: prefecture)
-                            .padding(.horizontal, 2)
+            LazyVGrid(columns: [
+                GridItem(.flexible()),
+                GridItem(.flexible())
+            ], spacing: 16) {
+                ForEach(userCards.cards(in: prefecture, kind: .onsen)) { card in
+                    UserCardTile(card: card, height: 180) {
+                        selectedUserCard = card
                     }
+                    .padding(.horizontal, 2)
+                }
+                ForEach(prefecture.onsenItems) { onsen in
+                    OnsenCard(onsen: onsen, prefecture: prefecture)
+                        .padding(.horizontal, 2)
                 }
             }
-            .padding(.horizontal)
         }
+        .padding(.horizontal)
+        .userCardPresentation(prefecture: prefecture, kind: .onsen, isAdding: $isAddingCard, selected: $selectedUserCard)
     }
 }
 
