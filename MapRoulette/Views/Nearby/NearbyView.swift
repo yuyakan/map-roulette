@@ -10,6 +10,7 @@
 //
 
 import SwiftUI
+import Combine
 import MapKit
 import CoreLocation
 
@@ -116,6 +117,11 @@ struct NearbyView: View {
             .padding(.bottom, 12)
         }
         .onAppear(perform: setup)
+        // Siri などから「近くの温泉」などと頼まれたら絞り込む（AppRouter.openNearby）。
+        .onReceive(AppRouter.shared.$pendingNearby.compactMap { $0 }) { request in
+            filter = request.kind.map { .kind($0) } ?? .all
+            AppRouter.shared.pendingNearby = nil
+        }
         .onChange(of: locationManager.currentLocation?.latitude) { _ in adoptCurrentLocationIfNeeded() }
         .detailCover(item: $selectedSpot) { spot in
             detailView(for: spot)

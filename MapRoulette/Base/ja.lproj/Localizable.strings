@@ -5620,3 +5620,24 @@
 "usercard.url.invalid" = "URLの形式が正しくありません";
 "usercard.url.open" = "Webサイトを開く";
 "usercard.add.short" = "追加";
+
+/* Siri・ショートカット（AppIntents/TripIntents.swift） */
+"Prefecture" = "都道府県";
+"Spot Type" = "スポットの種類";
+"Sightseeing" = "観光地";
+"Hot Springs" = "温泉";
+"Nature" = "自然";
+"Spin the Roulette" = "ルーレットを回す";
+"Picks a random prefecture for your next trip." = "次の旅の行き先をルーレットで決めます。";
+"Couldn't pick a destination. Please check the roulette settings." = "行き先を決められませんでした。ルーレットの設定を確認してください。";
+"Your next destination is %@!" = "今回の行き先は%@です！";
+"Open Prefecture" = "都道府県を開く";
+"Opens the travel guide for a prefecture." = "都道府県の観光情報を開きます。";
+"Find Nearby Spots" = "近くのスポットを探す";
+"Shows sightseeing spots, hot springs and nature near you." = "現在地の近くの観光地・温泉・自然スポットを表示します。";
+"Show Next Trip" = "次の旅を見る";
+"Opens your ongoing or upcoming travel plan." = "進行中・計画中の旅のプランを開きます。";
+"Opening %@." = "%@を開きます。";
+"You have no upcoming trips yet." = "予定している旅はまだありません。";
+"Plan a Trip" = "旅行を計画";
+"Opens your travel plans." = "旅のプラン一覧を開きます。";

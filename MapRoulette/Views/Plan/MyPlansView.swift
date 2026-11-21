@@ -29,6 +29,8 @@ struct MyPlansView: View {
     @State private var newPlanTitle = ""
     @State private var editMode: EditMode = .inactive
     @State private var section: MyPlansSection = .list
+    /// Siri などから開くよう頼まれたプラン（プッシュ遷移用）。
+    @State private var openedPlanID: UUID?
     /// 見開きの窓口（SpreadContainer が配る）。
     @Environment(\.spreadPresenter) private var spread
 
@@ -86,8 +88,26 @@ struct MyPlansView: View {
             // タブ切替でこのビューが現れたとき（onAppear）と、既に表示中に予約が来たとき（onChange）の両方に対応。
             .onAppear { consumePendingNewPlan() }
             .onChange(of: router.pendingNewPlan) { _, _ in consumePendingNewPlan() }
+            // Siri などから「次の旅」を頼まれたら、そのプランを開く（AppRouter.openPlan）。
+            .onAppear { consumePendingPlan() }
+            .onChange(of: router.pendingPlanID) { _, _ in consumePendingPlan() }
+            .navigationDestination(item: $openedPlanID) { planID in
+                PlanDetailView(planID: planID)
+            }
         }
         .tint(PlanTheme.primary)
+    }
+
+    /// AppRouter のプラン表示予約を消化する。見開きでは右ページに、それ以外はプッシュで開く。
+    private func consumePendingPlan() {
+        guard let planID = router.pendingPlanID else { return }
+        router.pendingPlanID = nil
+        section = .list
+        if spread.isAvailable {
+            spread.present(.view(id: "plan-\(planID)", AnyView(PlanDetailView(planID: planID))))
+        } else {
+            openedPlanID = planID
+        }
     }
 
     /// AppRouter の新規作成予約を消化する。一覧セクションに切り替えてからシートを開き、予約を戻す。

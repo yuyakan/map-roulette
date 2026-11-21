@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AppIntents
 import GoogleMobileAds
 
 @main
@@ -17,6 +18,8 @@ struct MapRouletteApp: App {
     init() {
         // 起動時に 1 回だけ Firebase を初期化（ホームタブのトレンド機能で Firestore を使う）。
         FirebaseBootstrap.configureIfNeeded()
+        // Siri の「〇〇県を開いて」が県名を聞き取れるよう、候補の県を登録し直す（AppIntents/TripIntents.swift）。
+        TripShortcuts.updateAppShortcutParameters()
     }
 
     var body: some Scene {

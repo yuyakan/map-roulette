@@ -21,6 +21,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct HomeView: View {
     /// Firestore トレンドの読み取り（アプリ共有インスタンス。県詳細と結果を共有）。
@@ -101,6 +102,11 @@ struct HomeView: View {
                 if case .idle = repository.state {
                     await repository.load()
                 }
+            }
+            // Siri などから「この県を開いて」と頼まれたら開く（AppRouter.openPrefecture）。
+            .onReceive(AppRouter.shared.$pendingPrefecture.compactMap { $0 }) { prefecture in
+                detailPrefecture = prefecture
+                AppRouter.shared.pendingPrefecture = nil
             }
             .detailCover(item: $detailPrefecture) { pref in
                 TourismDetailView(prefecture: pref)
