@@ -82,7 +82,7 @@ struct AttractionDetailView: View {
                 .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
                 .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
         }
-        .padding(.top, 56)
+        .closeButtonTopPadding()
         .padding(.trailing, 18)
     }
 
@@ -113,7 +113,7 @@ struct AttractionDetailView: View {
                         accent
                     }
                 }
-                .ignoresSafeArea(edges: .horizontal)
+                .ignoresSafeArea(edges: [.top, .horizontal])
             }
             .photoHeaderClip()
     }

@@ -15,6 +15,8 @@ struct ContentView: View {
     // tag は従来のタブ番号（0:マップ 1:近く 2:ホーム 3:祭 4:マイプラン）と一致させ、
     // AppRouter 側のロジックには手を入れない。
     @ObservedObject private var router = AppRouter.shared
+    /// 見開きの右ページを iPad の上に浮くタブバーの下から始めるために使う。
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
 
     // 下タブアイコンの表示サイズ（pt）。標準（約 25pt）より小さくして軽い印象にする。
     // tabItem は SF Symbol へ .font 等でのサイズ指定が効かず、pointSize 指定の
@@ -39,28 +41,32 @@ struct ContentView: View {
                 .tag(0)
 
             // 近くのスポットタブ
-            NearbyView()
+            // 見開き（Duo の内側画面・iPad 横向き）ではカードの詳細を右ページに出す。
+            SpreadContainer(paneTopInset: iPadFloatingTabBarInset(horizontalSizeClass)) { NearbyView() }
                 .tabItem {
                     tabLabel(NSLocalizedString("tab.nearby", comment: ""), systemImage: "location.circle")
                 }
                 .tag(1)
 
             // ホームタブ（トレンド / YouTube Shorts）＝真ん中
-            HomeView()
+            // 見開き（Duo の内側画面・iPad 横向き）ではカードの詳細を右ページに出す。
+            SpreadContainer(paneTopInset: iPadFloatingTabBarInset(horizontalSizeClass)) { HomeView() }
                 .tabItem {
                     tabLabel(NSLocalizedString("tab.home", comment: ""), systemImage: "house")
                 }
                 .tag(2)
 
             // 祭・イベントタブ
-            AllFestivalsComparisonView()
+            // 見開き（Duo の内側画面・iPad 横向き）ではカードの詳細を右ページに出す。
+            SpreadContainer(paneTopInset: iPadFloatingTabBarInset(horizontalSizeClass)) { AllFestivalsComparisonView() }
                 .tabItem {
                     tabLabel(NSLocalizedString("tab.festival", comment: ""), systemImage: "sparkles")
                 }
                 .tag(3)
 
             // マイプランタブ
-            MyPlansView()
+            // 見開き（Duo の内側画面・iPad 横向き）ではカードの詳細を右ページに出す。
+            SpreadContainer(paneTopInset: iPadFloatingTabBarInset(horizontalSizeClass)) { MyPlansView() }
                 .tabItem {
                     tabLabel(NSLocalizedString("tab.plan", comment: ""), systemImage: "suitcase.rolling")
                 }

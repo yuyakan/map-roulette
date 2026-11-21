@@ -896,8 +896,6 @@ struct OnsenDetailView: View {
     let onsen: FixedOnsenItem
     @State private var region: MKCoordinateRegion
     @Environment(\.dismiss) private var dismiss
-    /// 見開きの右ページで表示中なら入る「閉じる」（MapSpreadLayout.swift）。
-    @Environment(\.spreadPaneClose) private var spreadPaneClose
     
     init(onsen: FixedOnsenItem) {
         self.onsen = onsen
@@ -942,7 +940,7 @@ struct OnsenDetailView: View {
     private var closeButton: some View {
         Button {
             InterstitialViewModel.count += 2
-            closeDetail(paneClose: spreadPaneClose, dismiss: dismiss)
+            dismiss()
         } label: {
             Image(systemName: "xmark")
                 .font(.system(size: 15, weight: .bold))
@@ -952,7 +950,7 @@ struct OnsenDetailView: View {
                 .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
                 .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
         }
-        .padding(.top, 56)
+        .closeButtonTopPadding()
         .padding(.trailing, 18)
     }
 
@@ -968,7 +966,7 @@ struct OnsenDetailView: View {
                     .font(.system(size: 32, weight: .semibold))
                     .foregroundColor(.white)
             }
-            .padding(.top, 60)
+            .headerIconTopPadding()
 
             VStack(alignment: .leading, spacing: 6) {
                 Text(onsen.name)

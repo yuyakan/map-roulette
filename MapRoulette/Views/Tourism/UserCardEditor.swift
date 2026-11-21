@@ -194,7 +194,7 @@ struct UserCardEditor: View {
                     accent
                 }
             }
-            .ignoresSafeArea(edges: .horizontal)
+            .ignoresSafeArea(edges: [.top, .horizontal])
         }
         .photoHeaderClip()
     }

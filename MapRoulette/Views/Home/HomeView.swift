@@ -102,17 +102,17 @@ struct HomeView: View {
                     await repository.load()
                 }
             }
-            .fullScreenCover(item: $detailPrefecture) { pref in
+            .detailCover(item: $detailPrefecture) { pref in
                 TourismDetailView(prefecture: pref)
             }
-            .fullScreenCover(item: $themeDetailTarget) { target in
+            .detailCover(item: $themeDetailTarget) { target in
                 // 県詳細を開き、そのままその項目の詳細まで自動で開く（テーマのカード用）。
                 TourismDetailView(
                     prefecture: target.prefecture,
                     autoOpen: target.autoOpen
                 )
             }
-            .fullScreenCover(item: $shortsFeed) { feed in
+            .detailCover(item: $shortsFeed) { feed in
                 ShortsFeedView(videos: feed.videos, startIndex: feed.startIndex)
             }
         }
@@ -141,7 +141,7 @@ struct HomeView: View {
     @ViewBuilder
     private var ongoingPlanSection: some View {
         if let plan = plans.featuredPlan {
-            NavigationLink {
+            SpreadAwareLink(id: "plan-\(plan.id)") {
                 PlanDetailView(planID: plan.id)
             } label: {
                 ongoingPlanBanner(plan)

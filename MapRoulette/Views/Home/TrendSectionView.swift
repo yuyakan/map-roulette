@@ -25,7 +25,7 @@ struct TrendSectionView: View {
                 groupRow(group)
             }
         }
-        .fullScreenCover(item: $feed) { ctx in
+        .detailCover(item: $feed) { ctx in
             ShortsFeedView(videos: ctx.videos, startIndex: ctx.startIndex)
         }
     }

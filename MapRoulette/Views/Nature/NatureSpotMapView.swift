@@ -1309,8 +1309,6 @@ struct NatureSpotDetailView: View {
     let spot: FixedNatureSpotItem
     @State private var region: MKCoordinateRegion
     @Environment(\.dismiss) private var dismiss
-    /// 見開きの右ページで表示中なら入る「閉じる」（MapSpreadLayout.swift）。
-    @Environment(\.spreadPaneClose) private var spreadPaneClose
     
     init(spot: FixedNatureSpotItem) {
         self.spot = spot
@@ -1359,7 +1357,7 @@ struct NatureSpotDetailView: View {
     private var closeButton: some View {
         Button {
             InterstitialViewModel.count += 2
-            closeDetail(paneClose: spreadPaneClose, dismiss: dismiss)
+            dismiss()
         } label: {
             Image(systemName: "xmark")
                 .font(.system(size: 15, weight: .bold))
@@ -1369,7 +1367,7 @@ struct NatureSpotDetailView: View {
                 .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
                 .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
         }
-        .padding(.top, 56)
+        .closeButtonTopPadding()
         .padding(.trailing, 18)
     }
 
@@ -1396,7 +1394,7 @@ struct NatureSpotDetailView: View {
                     }
                     // 写真が無い場合は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
                 }
-                .ignoresSafeArea(edges: .horizontal)
+                .ignoresSafeArea(edges: [.top, .horizontal])
             }
             .photoHeaderClip()
     }
@@ -1413,7 +1411,7 @@ struct NatureSpotDetailView: View {
                         .font(.system(size: 32, weight: .semibold))
                         .foregroundColor(.white)
                 }
-                .padding(.top, 60)
+                .headerIconTopPadding()
             }
             // 写真ありのときは上の if を通らないので、ヘッダー全体の上余白
             // （PhotoHeaderStyle.topPadding）で高さを確保する。

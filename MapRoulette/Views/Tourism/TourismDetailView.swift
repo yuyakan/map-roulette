@@ -35,8 +35,8 @@ struct TourismDetailView: View {
     @State private var isAddingCafe = false
     @State private var selectedUserCard: UserCard? = nil
     @Environment(\.dismiss) private var dismiss
-    /// 見開きの右ページで表示中なら入る「閉じる」（MapSpreadLayout.swift）。
-    @Environment(\.spreadPaneClose) private var spreadPaneClose
+    /// 見開きの右ページの最初の画面か（「戻る」の代わりに ✕ を出す。押すと右ページが閉じる）。
+    @Environment(\.isSpreadPaneRoot) private var isSpreadPaneRoot
 
     init(prefecture: Prefecture, autoOpen: TourismAutoOpen? = nil) {
         self.prefecture = prefecture
@@ -267,7 +267,7 @@ struct TourismDetailView: View {
                     startIndex: start.index
                 )
             }
-            .fullScreenCover(item: $shortsFeed) { feed in
+            .detailCover(item: $shortsFeed) { feed in
                 ShortsFeedView(videos: feed.videos, startIndex: feed.startIndex)
             }
             .userCardPresentation(prefecture: prefecture, kind: .attraction, isAdding: $isAddingAttraction, selected: $selectedUserCard)
@@ -277,9 +277,9 @@ struct TourismDetailView: View {
                     HStack {
                         Button(action: {
                           InterstitialViewModel.count += 2
-                            closeDetail(paneClose: spreadPaneClose, dismiss: dismiss)
+                            dismiss()
                        }) {
-                           if spreadPaneClose != nil {
+                           if isSpreadPaneRoot {
                                // 見開きの右ページでは「戻る」先が無いので、閉じる（✕）にする。
                                Image(systemName: "xmark")
                                    .font(.system(size: 14, weight: .bold))

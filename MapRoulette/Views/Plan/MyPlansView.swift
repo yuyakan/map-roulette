@@ -29,6 +29,8 @@ struct MyPlansView: View {
     @State private var newPlanTitle = ""
     @State private var editMode: EditMode = .inactive
     @State private var section: MyPlansSection = .list
+    /// 見開きの窓口（SpreadContainer が配る）。
+    @Environment(\.spreadPresenter) private var spread
 
     var body: some View {
         NavigationStack {
@@ -137,21 +139,37 @@ struct MyPlansView: View {
 
     // MARK: - 一覧
 
+    /// プランのカード。見開きのときはタップで右ページにプラン詳細を出す。
+    /// （透明な NavigationLink を重ねる方式は、ボタンに置き換えるとタップを受け取れないため、
+    /// 見開きのときだけカード自体にタップを付ける。見開きでないときに付けると NavigationLink の遷移を奪う。）
+    @ViewBuilder
+    private func planCard(_ plan: TravelPlan) -> some View {
+        let card = PlanCardView(plan: plan, store: store)
+            .contentShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
+        if spread.isAvailable && !editMode.isEditing {
+            card.onTapGesture {
+                spread.present(.view(id: "plan-\(plan.id)", AnyView(PlanDetailView(planID: plan.id))))
+            }
+        } else {
+            card
+        }
+    }
+
     private var planList: some View {
         // 並び替え（.onMove）対応のため List を使い、見た目はカード UI を維持する
         // （区切り線・行背景・標準余白を消し、各行をカードとして描画）。
         List {
             ForEach(store.plans) { plan in
                 ZStack {
-                    // 編集モード中は遷移を無効化（並び替え操作に集中させる）
-                    if !editMode.isEditing {
+                    // 編集モード中は遷移を無効化（並び替え操作に集中させる）。
+                    // 見開き（Duo の内側画面・iPad 横向き）では右ページに出すので、下の planCard 側で開く。
+                    if !editMode.isEditing && !spread.isAvailable {
                         NavigationLink {
                             PlanDetailView(planID: plan.id)
                         } label: { EmptyView() }
                         .opacity(0)
                     }
-                    PlanCardView(plan: plan, store: store)
-                        .contentShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
+                    planCard(plan)
                 }
                 .listRowSeparator(.hidden)
                 .listRowBackground(Color.clear)

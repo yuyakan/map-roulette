@@ -45,6 +45,12 @@ enum PhotoHeaderStyle {
     /// 写真の見えている比率を iPhone に近づける。
     static let regularTopPadding: CGFloat = 280
 
+    /// 写真の無いヘッダーで、カテゴリアイコンの丸の上に空ける余白（ステータスバーを避ける）。
+    static let iconTopPadding: CGFloat = 60
+
+    /// 詳細画面の右上の閉じるボタンの上余白。
+    static let closeButtonTopPadding: CGFloat = 56
+
     /// 写真の上でもタイトルが読めるようにする暗幕（下へ向かって濃くなる）。
     static var scrim: LinearGradient {
         LinearGradient(
@@ -76,7 +82,45 @@ private struct PhotoHeaderTopPadding: ViewModifier {
     }
 }
 
+/// 写真の無いヘッダーで、カテゴリアイコンの丸を置く上余白。
+private struct HeaderIconTopPadding: ViewModifier {
+    @Environment(\.headerExtraTopInset) private var extraTop
+
+    func body(content: Content) -> some View {
+        content.padding(.top, PhotoHeaderStyle.iconTopPadding + extraTop)
+    }
+}
+
+/// 詳細画面の右上の閉じるボタンの上余白。
+///
+/// 見開きの右ページ（iPad）では浮いたタブバーを避けるため上に 60pt のセーフエリアを足しているが、
+/// 右上の閉じるボタンはタブバーと横位置が重ならないので、そのぶん差し引いて元の高さに置く。
+private struct CloseButtonTopPadding: ViewModifier {
+    @Environment(\.headerExtraTopInset) private var extraTop
+
+    func body(content: Content) -> some View {
+        content.padding(.top, PhotoHeaderStyle.closeButtonTopPadding - extraTop)
+    }
+}
+
+extension EnvironmentValues {
+    /// 詳細画面のヘッダーを余分に下げる量。見開きの右ページで iPad の浮いたタブバーが
+    /// 上に重なるときに入る（MapSpreadLayout.swift）。ヘッダーの写真・色は上端まで敷いたまま、
+    /// アイコンやタイトルだけをタブバーの下へずらすために使う。
+    @Entry var headerExtraTopInset: CGFloat = 0
+}
+
 extension View {
+    /// 詳細画面の右上の閉じるボタンの上余白（右ページでも元の高さに置く）。
+    func closeButtonTopPadding() -> some View {
+        modifier(CloseButtonTopPadding())
+    }
+
+    /// 写真の無いヘッダーのアイコンの上余白（右ページでは浮いたタブバーのぶん下げる）。
+    func headerIconTopPadding() -> some View {
+        modifier(HeaderIconTopPadding())
+    }
+
     /// 写真ヘッダーの切り抜き。上下だけ切り、左右ははみ出しを許す。
     ///
     /// .fill の写真はヘッダーより大きく描かれるので上下は切る必要がある。左右まで切ると、

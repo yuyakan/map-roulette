@@ -293,7 +293,7 @@ struct SouvenirDetailView<PlaceMap: View>: View {
                 .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
                 .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
         }
-        .padding(.top, 56)
+        .closeButtonTopPadding()
         .padding(.trailing, 18)
     }
 
@@ -305,7 +305,7 @@ struct SouvenirDetailView<PlaceMap: View>: View {
                     .font(.system(size: 32, weight: .semibold))
                     .foregroundColor(.white)
             }
-            .padding(.top, 60)
+            .headerIconTopPadding()
 
             VStack(alignment: .leading, spacing: 6) {
                 Text(item.name)

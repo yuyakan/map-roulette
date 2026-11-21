@@ -43,9 +43,6 @@ struct IntegratedMapView: View {
     // 下線の表示位置だけを司る状態（軽い）。タップ時に即アニメーションさせる。
     @State private var underlineMode: MapMode = .prefecture
 
-    /// 見開きの右ページに出している詳細（nil なら地図が全幅）。MapSpreadLayout.swift 参照。
-    @State private var spreadDetail: SpreadDetail? = nil
-
     /// このタブが受け取っている上のセーフエリア。iPhone Duo では 0 になる（minimumTopSafeArea と同じ理由で補う）。
     @State private var safeTop: CGFloat = 0
 
@@ -58,43 +55,13 @@ struct IntegratedMapView: View {
     }
 
     private var content: some View {
-        GeometryReader { geo in
-            // 見開きは「regular 幅かつ横長」のときだけ（Duo の内側画面・iPad 横向き）。
-            // iPhone・Duo の外側画面・縦長では従来どおり各マップが全画面で詳細を開く。
-            let canSpread = horizontalSizeClass == .regular && geo.size.width > geo.size.height
-            let isSpread = canSpread && spreadDetail != nil
-            let splitX = SpreadFold.splitX(in: geo)
-
-            HStack(spacing: 0) {
-                mapPage
-                    .frame(width: isSpread ? splitX : geo.size.width)
-
-                if isSpread, let detail = spreadDetail {
-                    SpreadDetailPane(detail: detail, onClose: closeSpread)
-                        // iPad では上に浮くタブバーと重ならないよう、帯と同じだけ下げる。
-                        .padding(.top, bandTopInset)
-                        .frame(width: geo.size.width - splitX)
-                        .transition(.move(edge: .trailing))
-                }
-            }
-            .environment(\.spreadPresenter, SpreadPresenter(
-                isAvailable: canSpread,
-                current: canSpread ? spreadDetail : nil,
-                present: { detail in
-                    withAnimation(.spring(response: 0.45, dampingFraction: 0.88)) {
-                        spreadDetail = detail
-                    }
-                },
-                close: closeSpread
-            ))
-            // 開閉などで見開きが使えなくなったら、右ページの状態も捨てる
-            // （残しておくと、次に開いたとき勝手に右ページが出てしまう）。
-            .onChange(of: canSpread) { _, available in
-                if !available { spreadDetail = nil }
-            }
+        // 見開き（Duo の内側画面・iPad 横向き）では、県や温泉地の詳細を右ページに出す。
+        // iPad では右ページを上に浮くタブバーの下から始める。
+        SpreadContainer(paneTopInset: bandTopInset) {
+            mapPage
+                // マップを切り替えたら右ページは閉じる（温泉マップで県詳細が残るのを防ぐ）。
+                .modifier(CloseSpreadOnChange(value: mapMode))
         }
-        // マップを切り替えたら右ページは閉じる（温泉マップで県詳細が残るのを防ぐ）。
-        .onChange(of: mapMode) { _, _ in spreadDetail = nil }
     }
 
     /// 左ページ（見開きでないときは全幅）。マップと切替帯。
@@ -126,32 +93,15 @@ struct IntegratedMapView: View {
         }
     }
 
-    /// 右ページを閉じて地図を全幅に戻す。
-    private func closeSpread() {
-        withAnimation(.spring(response: 0.45, dampingFraction: 0.88)) {
-            spreadDetail = nil
-        }
-    }
-
-    /// 帯を下げる量。iPad の上部に浮くタブバーを避けるためだけに使う。
-    ///
-    /// タブバーはコンテンツの上に重なって描かれ safe area には現れないので、
-    /// インセットからは測れない。実測に基づく固定値で逃がしている。
-    ///
-    /// 上に浮くタブバーは iPadOS だけの表示なので、iPad かどうかで判定する。
-    /// regular 幅かどうかでは判定できない：iPhone Duo の内側画面も regular 幅だが、
-    /// タブバーは横長の向きでは右端に縦向き、縦長の向きでは下に出て、上には来ない。
+    /// 帯を下げる量。iPad の上部に浮くタブバーを避けるためだけに使う（iPadFloatingTabBarInset 参照）。
     private var bandTopInset: CGFloat {
-        UIDevice.current.userInterfaceIdiom == .pad && horizontalSizeClass == .regular ? Self.padTabBarHeight : 0
+        iPadFloatingTabBarInset(horizontalSizeClass)
     }
 
     /// 上のセーフエリアが足りないとき（iPhone Duo）に帯とマップを下げる量。最低 20pt 空ける。
     /// 各マップは自前の NavigationStack を持ち、外から足した余白が中まで伝わらないので、
     /// minimumTopSafeArea は使わず、帯とマップの両方に同じ量を直接足す。
     private var minimumTopExtra: CGFloat { max(0, 20 - safeTop) }
-
-    /// iPad の浮動タブバーが専有する高さ（実測値）。
-    private static let padTabBarHeight: CGFloat = 60
 
     /// 帯タップ時の処理。下線はアニメーション付きで即移動し、
     /// マップ本体の差し替え（重い）は次のランループへ遅延＆アニメーション無しで行う。
@@ -170,6 +120,16 @@ struct IntegratedMapView: View {
                 mapMode = mode
             }
         }
+    }
+}
+
+/// 値が変わったら見開きの右ページを閉じる（SpreadContainer の内側で使う）。
+private struct CloseSpreadOnChange<Value: Equatable>: ViewModifier {
+    let value: Value
+    @Environment(\.spreadPresenter) private var spread
+
+    func body(content: Content) -> some View {
+        content.onChange(of: value) { _, _ in spread.close() }
     }
 }
 

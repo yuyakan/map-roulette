@@ -117,7 +117,7 @@ struct NearbyView: View {
         }
         .onAppear(perform: setup)
         .onChange(of: locationManager.currentLocation?.latitude) { _ in adoptCurrentLocationIfNeeded() }
-        .fullScreenCover(item: $selectedSpot) { spot in
+        .detailCover(item: $selectedSpot) { spot in
             detailView(for: spot)
         }
     }

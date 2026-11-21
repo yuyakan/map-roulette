@@ -180,6 +180,9 @@ struct UserCardDetailView: View {
 
             topButtons
         }
+        // 見開きの右ページでは NavigationStack に積まれるので、自前の閉じるボタンと
+        // 二重にならないようナビゲーションバーを隠す。
+        .toolbar(.hidden, for: .navigationBar)
         .fullScreenCover(isPresented: $showingEditor) {
             UserCardEditor(prefecture: prefecture, kind: current.kind, editing: current)
         }
@@ -224,7 +227,7 @@ struct UserCardDetailView: View {
             }
             .accessibilityLabel("tourism_detail_back".localized)
         }
-        .padding(.top, 56)
+        .closeButtonTopPadding()
         .padding(.trailing, 18)
     }
 
@@ -271,7 +274,7 @@ struct UserCardDetailView: View {
                     accent
                 }
             }
-            .ignoresSafeArea(edges: .horizontal)
+            .ignoresSafeArea(edges: [.top, .horizontal])
         }
         .photoHeaderClip()
     }

@@ -462,7 +462,7 @@ struct AllFestivalsComparisonView: View {
                 }
             }
             .navigationBarHidden(true)
-            .fullScreenCover(item: $selectedFestival) { selected in
+            .detailCover(item: $selectedFestival) { selected in
                 IntegratedFestivalDetailView(item: selected.festival, prefecture: selected.prefecture, interstitial: interstitial) {
                     modalDismissed = true
                 }
@@ -673,7 +673,7 @@ struct IntegratedFestivalDetailView: View {
                 .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
                 .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
         }
-        .padding(.top, 56)
+        .closeButtonTopPadding()
         .padding(.trailing, 18)
     }
 
@@ -700,7 +700,7 @@ struct IntegratedFestivalDetailView: View {
                     }
                     // 写真が無い場合は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
                 }
-                .ignoresSafeArea(edges: .horizontal)
+                .ignoresSafeArea(edges: [.top, .horizontal])
             }
             .photoHeaderClip()
     }
@@ -720,7 +720,7 @@ struct IntegratedFestivalDetailView: View {
                         .font(.system(size: 32, weight: .semibold))
                         .foregroundColor(.white)
                 }
-                .padding(.top, 60)
+                .headerIconTopPadding()
             }
             // 写真ありのときは上の if を通らないので、ヘッダー全体の上余白
             // （PhotoHeaderStyle.topPadding）で高さを確保する。
