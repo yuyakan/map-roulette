@@ -45,12 +45,14 @@ struct PrefectureEntity: AppEntity {
 }
 
 struct PrefectureQuery: EntityStringQuery {
+    @MainActor
     func entities(for identifiers: [String]) async throws -> [PrefectureEntity] {
         identifiers.compactMap(Prefecture.init(rawValue:)).map(PrefectureEntity.init)
     }
 
     /// 話した県名から探す。「京都府」「京都」「きょうと」「kyoto」のどれでも当たるよう、
     /// 都・道・府・県を外した形でも比べる。
+    @MainActor
     func entities(matching string: String) async throws -> [PrefectureEntity] {
         let query = Self.normalize(string)
         guard !query.isEmpty else { return [] }
@@ -61,6 +63,7 @@ struct PrefectureQuery: EntityStringQuery {
             .map(PrefectureEntity.init)
     }
 
+    @MainActor
     func suggestedEntities() async throws -> [PrefectureEntity] {
         Prefecture.allCases.map(PrefectureEntity.init)
     }

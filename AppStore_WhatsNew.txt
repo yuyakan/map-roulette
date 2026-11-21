@@ -1,77 +1,79 @@
 ============================================================
 Japan Trip Map — このバージョンの新機能（What's New / 全12言語）
-主な更新：県詳細に自分のカードを追加
+バージョン 3.1.0
+主な更新：iPad・iPhone Duo の大画面対応（見開き表示）／Siri・ショートカット対応
 ※ App Store Connect の「このバージョンの新機能」欄にコピペしてください。
+※ Siri の話しかけフレーズは日本語・英語のみ対応。その他の言語は「ショートカット」App から使える旨で書いています。
 ============================================================
 
 
 【日本語 / Japanese (ja)】
-・県の詳細画面に、自分だけのカードを追加できるようになりました。観光地、グルメ、カフェ、お土産、温泉、自然、祭りの各セクションに追加できます。
-・カードには表紙の写真、説明、URL、位置を登録できます。
-・作ったカードは旅行プランにも追加できます。
+・iPad と iPhone Duo の大きな画面に最適化しました。カードの列数や写真の大きさが画面に合わせて変わります。
+・横長の大きな画面では、地図や一覧の横に詳細を並べて表示できるようになりました（見開き表示）。ルーレットの結果もそのまま横に表示されます。
+・Siri とショートカットに対応しました。「旅さきChoiceでルーレットを回して」で行き先を決めたり、県の詳細、近くのスポット、次の旅をすぐに開けます。
 
 
 【英語 / English (en)】
-- You can now add your own cards to prefecture pages: sights, food, cafes, souvenirs, hot springs, nature, and festivals.
-- Each card can have a cover photo, description, URL, and location.
-- Add the cards you create to your travel plans.
+- Optimized for the larger screens of iPad and iPhone Duo. Card layouts and photo sizes now adapt to your screen.
+- On large landscape screens, details now open right next to the map or list in a two-page view. Roulette results appear alongside the map, too.
+- Now works with Siri and Shortcuts. Say "Spin the roulette in Japan Trip Map" to pick a destination, or quickly open a prefecture, nearby spots, or your next trip.
 
 
 【中国語・簡体字 / Chinese Simplified (zh-Hans)】
-・现在可以在都道府县详情页添加自己的卡片，支持景点、美食、咖啡馆、伴手礼、温泉、自然和祭典等版块。
-・卡片可设置封面照片、说明、URL 和位置。
-・创建的卡片也可以加入旅行计划。
+・针对 iPad 和 iPhone Duo 的大屏幕进行了优化，卡片排列和照片大小会根据屏幕自动调整。
+・在横向大屏幕上，详情会显示在地图或列表旁边（双页显示）。轮盘结果也会直接显示在旁边。
+・支持“快捷指令”App，可快速转动轮盘决定目的地，或打开都道府县详情、附近景点和下一次旅行。
 
 
 【中国語・繁体字 / Chinese Traditional (zh-Hant)】
-・現在可以在都道府縣詳細頁面新增自己的卡片，支援景點、美食、咖啡廳、伴手禮、溫泉、自然和祭典等區塊。
-・卡片可設定封面照片、說明、URL 和位置。
-・建立的卡片也可以加入旅行計畫。
+・針對 iPad 和 iPhone Duo 的大螢幕進行最佳化，卡片排列和照片大小會依螢幕自動調整。
+・在橫向大螢幕上，詳細資訊會顯示在地圖或列表旁邊（雙頁顯示）。輪盤結果也會直接顯示在旁邊。
+・支援「捷徑」App，可快速轉動輪盤決定目的地，或開啟都道府縣詳細資訊、附近景點和下一趟旅程。
 
 
 【中国語・香港 / Chinese Hong Kong (zh-HK)】
-・依家可以喺都道府縣詳細頁面加入自己嘅卡片，支援景點、美食、咖啡店、手信、溫泉、自然同祭典等部分。
-・卡片可以設定封面相片、說明、URL 同位置。
-・建立嘅卡片亦可以加入旅行計劃。
+・為 iPad 和 iPhone Duo 的大螢幕作出優化，卡片排列和相片大小會按螢幕自動調整。
+・在橫向大螢幕上，詳細資料會顯示在地圖或列表旁邊（雙頁顯示）。輪盤結果亦會直接顯示在旁邊。
+・支援「捷徑」App，可快速轉動輪盤決定目的地，或開啟都道府縣詳情、附近景點和下一趟旅程。
 
 
 【韓国語 / Korean (ko)】
-・지역 상세 화면에 나만의 카드를 추가할 수 있습니다. 관광지, 맛집, 카페, 기념품, 온천, 자연, 축제 섹션에 추가할 수 있습니다.
-・카드에 표지 사진, 설명, URL, 위치를 등록할 수 있습니다.
-・만든 카드는 여행 플랜에도 추가할 수 있습니다.
+- iPad와 iPhone Duo의 큰 화면에 최적화했습니다. 카드 배열과 사진 크기가 화면에 맞게 바뀝니다.
+- 가로 방향의 큰 화면에서는 지도나 목록 옆에 상세 정보를 나란히 표시합니다(양면 보기). 룰렛 결과도 바로 옆에 표시됩니다.
+- '단축어' 앱을 지원합니다. 룰렛을 돌려 여행지를 정하거나 현 상세 정보, 주변 명소, 다음 여행을 바로 열 수 있습니다.
 
 
 【タイ語 / Thai (th)】
-- ตอนนี้เพิ่มการ์ดของคุณเองในหน้ารายละเอียดจังหวัดได้แล้ว ทั้งสถานที่ท่องเที่ยว อาหาร คาเฟ่ ของฝาก ออนเซ็น ธรรมชาติ และเทศกาล
-- การ์ดแต่ละใบใส่รูปปก คำอธิบาย URL และตำแหน่งได้
-- เพิ่มการ์ดที่สร้างไว้ลงในแผนการเดินทางได้
+- ปรับให้เหมาะกับหน้าจอขนาดใหญ่ของ iPad และ iPhone Duo การจัดเรียงการ์ดและขนาดรูปภาพจะปรับตามหน้าจอ
+- บนหน้าจอขนาดใหญ่แนวนอน รายละเอียดจะแสดงข้างแผนที่หรือรายการ (มุมมองสองหน้า) ผลรูเล็ตก็จะแสดงอยู่ข้าง ๆ ด้วย
+- รองรับแอปคำสั่งลัด หมุนรูเล็ตเพื่อเลือกจุดหมาย หรือเปิดรายละเอียดจังหวัด สถานที่ใกล้เคียง และทริปถัดไปได้ทันที
 
 
 【ベトナム語 / Vietnamese (vi)】
-- Giờ đây bạn có thể thêm thẻ của riêng mình vào trang chi tiết tỉnh: điểm tham quan, ẩm thực, quán cà phê, quà lưu niệm, suối nước nóng, thiên nhiên và lễ hội.
-- Mỗi thẻ có thể có ảnh bìa, mô tả, URL và vị trí.
-- Thêm các thẻ bạn tạo vào kế hoạch du lịch.
+- Tối ưu cho màn hình lớn của iPad và iPhone Duo. Bố cục thẻ và kích thước ảnh tự điều chỉnh theo màn hình.
+- Trên màn hình lớn nằm ngang, thông tin chi tiết hiển thị ngay bên cạnh bản đồ hoặc danh sách (chế độ hai trang). Kết quả vòng quay cũng hiển thị ngay bên cạnh.
+- Hỗ trợ ứng dụng Phím tắt: quay vòng quay để chọn điểm đến, hoặc mở nhanh thông tin tỉnh, địa điểm gần đây và chuyến đi tiếp theo.
 
 
 【フランス語 / French (fr)】
-- Vous pouvez désormais ajouter vos propres cartes aux pages des préfectures : sites, cuisine, cafés, souvenirs, sources chaudes, nature et festivals.
-- Chaque carte peut contenir une photo de couverture, une description, une URL et un emplacement.
-- Ajoutez les cartes que vous créez à vos plans de voyage.
+- Optimisé pour les grands écrans de l'iPad et de l'iPhone Duo. La disposition des cartes et la taille des photos s'adaptent à votre écran.
+- Sur les grands écrans en paysage, les détails s'ouvrent à côté de la carte ou de la liste, en vue double page. Les résultats de la roulette s'affichent aussi à côté.
+- Compatible avec l'app Raccourcis : faites tourner la roulette pour choisir une destination, ou ouvrez rapidement une préfecture, les lieux à proximité ou votre prochain voyage.
 
 
 【スペイン語 / Spanish (es)】
-- Ahora puedes añadir tus propias tarjetas a las páginas de las prefecturas: lugares, comida, cafeterías, recuerdos, aguas termales, naturaleza y festivales.
-- Cada tarjeta puede incluir foto de portada, descripción, URL y ubicación.
-- Añade las tarjetas que crees a tus planes de viaje.
+- Optimizado para las pantallas grandes del iPad y el iPhone Duo. La distribución de las tarjetas y el tamaño de las fotos se adaptan a tu pantalla.
+- En pantallas grandes en horizontal, los detalles se abren junto al mapa o la lista en una vista de doble página. Los resultados de la ruleta también aparecen al lado.
+- Compatible con la app Atajos: gira la ruleta para elegir destino o abre al instante una prefectura, lugares cercanos o tu próximo viaje.
 
 
 【ドイツ語 / German (de)】
-- Du kannst jetzt eigene Karten zu den Präfekturseiten hinzufügen: Sehenswürdigkeiten, Essen, Cafés, Souvenirs, heiße Quellen, Natur und Feste.
-- Jede Karte kann ein Titelfoto, eine Beschreibung, eine URL und einen Standort enthalten.
-- Füge deine Karten zu deinen Reiseplänen hinzu.
+- Optimiert für die großen Bildschirme von iPad und iPhone Duo. Kartenlayout und Fotogröße passen sich deinem Bildschirm an.
+- Auf großen Bildschirmen im Querformat öffnen sich Details direkt neben der Karte oder Liste in einer Doppelseitenansicht. Auch Roulette-Ergebnisse erscheinen daneben.
+- Unterstützt die Kurzbefehle-App: Dreh das Roulette, um ein Reiseziel zu wählen, oder öffne schnell eine Präfektur, Orte in der Nähe oder deine nächste Reise.
 
 
 【インドネシア語 / Indonesian (id)】
-- Kini Anda dapat menambahkan kartu sendiri ke halaman prefektur: tempat wisata, kuliner, kafe, oleh-oleh, onsen, alam, dan festival.
-- Setiap kartu dapat memiliki foto sampul, deskripsi, URL, dan lokasi.
-- Tambahkan kartu yang Anda buat ke rencana perjalanan.
+- Dioptimalkan untuk layar besar iPad dan iPhone Duo. Tata letak kartu dan ukuran foto menyesuaikan layar Anda.
+- Di layar besar mode lanskap, detail kini terbuka tepat di samping peta atau daftar dalam tampilan dua halaman. Hasil roulette juga tampil di sampingnya.
+- Mendukung app Pintasan: putar roulette untuk memilih tujuan, atau buka prefektur, tempat terdekat, dan perjalanan berikutnya dengan cepat.
