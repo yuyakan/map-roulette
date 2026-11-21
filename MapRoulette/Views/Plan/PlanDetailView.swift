@@ -245,6 +245,8 @@ struct PlanDetailView: View {
             }
             .padding(.horizontal)
             .padding(.top, 12)
+            // iPad・iPhone Duo の内側画面ではカードが横に伸びすぎないよう中央に寄せる。
+            .readableContentWidth()
             // 末尾は右下 FAB 群（スポット追加＋地図＝56pt×2＋間隔14＋下20pt）と
             // 被らないよう広めに空ける。
             .padding(.bottom, 160)

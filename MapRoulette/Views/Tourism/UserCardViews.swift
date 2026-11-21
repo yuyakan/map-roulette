@@ -117,7 +117,7 @@ extension View {
             .fullScreenCover(isPresented: isAdding) {
                 UserCardEditor(prefecture: prefecture, kind: kind)
             }
-            .fullScreenCover(item: selected) { card in
+            .detailCover(item: selected) { card in
                 UserCardDetailView(card: card, prefecture: prefecture)
             }
     }
@@ -171,6 +171,7 @@ struct UserCardDetailView: View {
                         }
                     }
                     .padding(.horizontal, 18)
+                    .readableContentWidth()
                 }
                 .padding(.bottom, 32)
             }
@@ -252,22 +253,27 @@ struct UserCardDetailView: View {
         }
         .shadow(color: .black.opacity(photo == nil ? 0 : 0.35), radius: 6, y: 1)
         .padding(.horizontal, 22)
-        .padding(.top, PhotoHeaderStyle.topPadding)
+        .photoHeaderTopPadding()
         .padding(.bottom, 24)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background {
-            if let photo {
-                // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
-                // 外側で clipped() してヘッダー矩形に収める（左右へのはみ出し防止）。
-                Image(uiImage: photo)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .overlay(PhotoHeaderStyle.scrim)
-            } else {
-                accent
+            // 背景（写真・色）は左右のセーフエリアまで敷く。見開きの右ページでは、右端の
+            // ステータスバー・縦向きタブバーの列の下まで写真が続く（文字やボタンはセーフエリア内のまま）。
+            Group {
+                if let photo {
+                    // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
+                    // 外側の photoHeaderClip() で上下を切る（左右はセーフエリアまで敷く）。
+                    Image(uiImage: photo)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .overlay(PhotoHeaderStyle.scrim)
+                } else {
+                    accent
+                }
             }
+            .ignoresSafeArea(edges: .horizontal)
         }
-        .clipped()
+        .photoHeaderClip()
     }
 
     // MARK: - カード
@@ -356,10 +362,7 @@ struct UserCafeCards: View {
     @State private var selectedCard: UserCard? = nil
 
     var body: some View {
-        LazyVGrid(columns: [
-            GridItem(.flexible(), spacing: 12),
-            GridItem(.flexible(), spacing: 12)
-        ], spacing: 16) {
+        LazyVGrid(columns: AdaptiveGrid.cardColumns(spacing: 12), spacing: 16) {
             ForEach(store.cards(in: prefecture, kind: .cafe)) { card in
                 UserCardTile(card: card, height: 200) {
                     selectedCard = card

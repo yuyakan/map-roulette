@@ -28,7 +28,17 @@ final class AppRouter: ObservableObject {
     /// MyPlansView が消化したら false に戻す（多重起動を防ぐ）。
     @Published var pendingNewPlan: Bool = false
 
-    private init() {}
+    private init() {
+        #if DEBUG
+        // 開発・検証用: 起動引数 `-MRInitialTab <0-4>` で最初に開くタブを指定できる。
+        // シミュレータ（iPhone Duo の開閉確認など）でタブを手で切り替えずに画面を確認するため。
+        // Release ビルドでは常にホームから始まる。
+        if UserDefaults.standard.object(forKey: "MRInitialTab") != nil {
+            let tab = UserDefaults.standard.integer(forKey: "MRInitialTab")
+            if (0...4).contains(tab) { selectedTab = tab }
+        }
+        #endif
+    }
 
     /// マイプランタブへ切り替える。newPlan=true なら新規作成シートも予約する。
     func openMyPlans(newPlan: Bool = false) {

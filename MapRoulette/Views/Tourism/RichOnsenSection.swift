@@ -26,10 +26,7 @@ struct RichOnsenSection: View {
                 trailing: AnyView(AddUserCardButton(accent: accent) { isAddingCard = true })
             )
 
-            LazyVGrid(columns: [
-                GridItem(.flexible()),
-                GridItem(.flexible())
-            ], spacing: 16) {
+            LazyVGrid(columns: AdaptiveGrid.cardColumns(spacing: 8), spacing: 16) {
                 ForEach(userCards.cards(in: prefecture, kind: .onsen)) { card in
                     UserCardTile(card: card, height: 180) {
                         selectedUserCard = card
@@ -164,7 +161,7 @@ struct OnsenCard: View {
                 showingDetail = true
             }
         }
-        .fullScreenCover(isPresented: $showingDetail) {
+        .detailCover(isPresented: $showingDetail) {
             if let fixedOnsen = OnsenDataRepository.shared.getFixedOnsen(name: onsen.name, type: onsen.onsenType) {
                 OnsenDetailView(onsen: fixedOnsen)
             }

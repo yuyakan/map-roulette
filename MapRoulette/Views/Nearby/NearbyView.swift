@@ -94,7 +94,9 @@ struct NearbyView: View {
             map
 
             // 上部オーバーレイ: 種類切替フィルター（背景は地図が透ける）。
-            filterBar
+            // iPhone Duo では上のセーフエリアが 0 になり、画面の上端に張り付くので最低限空ける。
+            VStack { filterBar }
+                .minimumTopSafeArea()
 
             // 検索基準の 100km 以内にスポットが無かったときの一時トースト（上部・数秒）。
             if showNoResultsToast {

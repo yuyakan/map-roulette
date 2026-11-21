@@ -330,6 +330,12 @@ struct NatureSpotMapView: View {
     }
 
     let interstitial = InterstitialViewModel()
+
+    /// 見開き表示（Duo の内側画面・iPad 横向き）の窓口。MapSpreadLayout.swift 参照。
+    @Environment(\.spreadPresenter) private var spread
+    /// 見開きでルーレット結果を右ページに出したあと、まだスピン回数を記録していないか。
+    /// 通常は結果の膜の「リセット」で記録するが、見開きでは膜を出さないので次のスピン開始時に記録する。
+    @State private var pendingSpinRegistration = false
     
     // 有効な自然観光名所の取得
     private var availableSpots: [FixedNatureSpotItem] {
@@ -592,8 +598,7 @@ struct NatureSpotMapView: View {
                                 
                                 // 詳細情報ボタン
                                 Button(action: {
-                                    tappedSpot = selected
-                                    showSpotInfo = true
+                                    openDetail(selected)
                                 }) {
                                     HStack(spacing: 10) {
                                         Image(systemName: selected.spotType.icon)
@@ -691,13 +696,12 @@ struct NatureSpotMapView: View {
                     
                     Button(action: {
                         if !isSpinning && !isStopping {
-                            tappedSpot = spot
-                            showSpotInfo = true
+                            openDetail(spot)
                         }
                     }) {
                         ZStack {
                             // 選択された観光名所の背景効果
-                            if selectedSpot?.id == spot.id {
+                            if highlightedSpot?.id == spot.id {
                                 Circle()
                                     .fill(spot.spotType.color.opacity(0.3))
                                     .frame(width: 50, height: 50)
@@ -708,7 +712,7 @@ struct NatureSpotMapView: View {
                             // アイコンの背景円
                             Circle()
                                 .fill(
-                                    selectedSpot?.id == spot.id
+                                    highlightedSpot?.id == spot.id
                                     ? LinearGradient(
                                         gradient: Gradient(colors: [spot.spotType.color, spot.spotType.color.opacity(0.7)]),
                                         startPoint: .topLeading,
@@ -720,26 +724,31 @@ struct NatureSpotMapView: View {
                                         endPoint: .bottomTrailing
                                     )
                                 )
-                                .frame(width: selectedSpot?.id == spot.id ? 32 : 20, height: selectedSpot?.id == spot.id ? 32 : 20)
+                                .frame(width: highlightedSpot?.id == spot.id ? 32 : 20, height: highlightedSpot?.id == spot.id ? 32 : 20)
                                 .shadow(
-                                    color: selectedSpot?.id == spot.id ? spot.spotType.color.opacity(0.5) : .black.opacity(0.2),
-                                    radius: selectedSpot?.id == spot.id ? 4 : 2,
+                                    color: highlightedSpot?.id == spot.id ? spot.spotType.color.opacity(0.5) : .black.opacity(0.2),
+                                    radius: highlightedSpot?.id == spot.id ? 4 : 2,
                                     x: 0,
-                                    y: selectedSpot?.id == spot.id ? 2 : 1
+                                    y: highlightedSpot?.id == spot.id ? 2 : 1
                                 )
-                                .opacity(selectedSpot?.id == spot.id ? 1 : 0.8)
+                                .opacity(highlightedSpot?.id == spot.id ? 1 : 0.8)
 
                             
                             // 自然観光名所アイコン
                             Image(systemName: spot.spotType.icon)
-                                .font(.system(size: selectedSpot?.id == spot.id ? 16 : 10, weight: .semibold))
+                                .font(.system(size: highlightedSpot?.id == spot.id ? 16 : 10, weight: .semibold))
                                 .foregroundColor(.white)
                         }
                     }
                     .position(position)
-                    .zIndex(selectedSpot?.id == spot.id ? 10 : 5)
+                    .zIndex(highlightedSpot?.id == spot.id ? 10 : 5)
                 }
             }
+        }
+        // 見開き中は、地図の何もない所をタップすると右ページを閉じる（アイコンのボタンが優先される）。
+        .contentShape(Rectangle())
+        .onTapGesture {
+            if spread.current != nil { spread.close() }
         }
         .aspectRatio(1, contentMode: .fit)
         .padding(.top, 100)
@@ -778,11 +787,10 @@ struct NatureSpotMapView: View {
                                 ForEach(typeSpots, id: \.id) { spot in
                                     Button(action: {
                                         if !isSpinning && !isStopping {
-                                            tappedSpot = spot
-                                            showSpotInfo = true
+                                            openDetail(spot)
                                         }
                                     }) {
-                                        NatureSpotCardView(spot: spot, selectedSpot: selectedSpot)
+                                        NatureSpotCardView(spot: spot, selectedSpot: highlightedSpot)
                                     }
                                     .disabled(isSpinning)
                                 }
@@ -1120,6 +1128,23 @@ struct NatureSpotMapView: View {
         )
     }
     
+    /// 自然スポットの詳細を開く。見開きが使えれば右ページに、使えなければ従来どおり全画面で。
+    private func openDetail(_ item: FixedNatureSpotItem) {
+        if spread.isAvailable {
+            spread.present(.nature(item))
+        } else {
+            tappedSpot = item
+            showSpotInfo = true
+        }
+    }
+
+    /// 地図・リストで強調する自然スポット。ルーレットで選ばれているもの、なければ見開きの右ページに出ているもの。
+    private var highlightedSpot: FixedNatureSpotItem? {
+        if let selectedSpot { return selectedSpot }
+        guard !isSpinning, case .nature(let item)? = spread.current else { return nil }
+        return item
+    }
+
     // ゲームをリセット
     private func resetGame() {
         showResultModal = false
@@ -1157,6 +1182,16 @@ struct NatureSpotMapView: View {
     // スピン開始
     private func startSpin() {
         guard !isSpinning && !availableSpots.isEmpty else { return }
+
+        // 見開き中にスピンしたら右ページを閉じ、地図を全幅に戻してルーレットを主役にする。
+        if spread.current != nil {
+            spread.close()
+        }
+        // 前回の結果を見開きで出していたら、そのぶんのスピン回数をここで記録する。
+        if pendingSpinRegistration {
+            pendingSpinRegistration = false
+            interstitial.registerRouletteSpin()
+        }
         
         isSpinning = true
         isStopping = false
@@ -1234,10 +1269,18 @@ struct NatureSpotMapView: View {
                     // 最終選択をアニメーション付きで実行
                     selectedSpot = selectRandomSpot()
                     
-                    // 0.5秒後にモーダル表示
+                    // 0.5秒後に結果を表示
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
-                            showResultModal = true
+                        if spread.isAvailable, let result = selectedSpot {
+                            // 見開きでは結果の膜を出さず、右ページに結果の詳細を滑り込ませる。
+                            // 強調は右ページの項目に引き継がれるので、ルーレットの選択状態は戻しておく。
+                            spread.present(.nature(result))
+                            resetGame()
+                            pendingSpinRegistration = true
+                        } else {
+                            withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                                showResultModal = true
+                            }
                         }
                     }
                 }
@@ -1266,6 +1309,8 @@ struct NatureSpotDetailView: View {
     let spot: FixedNatureSpotItem
     @State private var region: MKCoordinateRegion
     @Environment(\.dismiss) private var dismiss
+    /// 見開きの右ページで表示中なら入る「閉じる」（MapSpreadLayout.swift）。
+    @Environment(\.spreadPaneClose) private var spreadPaneClose
     
     init(spot: FixedNatureSpotItem) {
         self.spot = spot
@@ -1297,6 +1342,7 @@ struct NatureSpotDetailView: View {
                         mapCard
                     }
                     .padding(.horizontal, 18)
+                    .readableContentWidth()
                 }
                 .padding(.bottom, 32)
             }
@@ -1313,7 +1359,7 @@ struct NatureSpotDetailView: View {
     private var closeButton: some View {
         Button {
             InterstitialViewModel.count += 2
-            dismiss()
+            closeDetail(paneClose: spreadPaneClose, dismiss: dismiss)
         } label: {
             Image(systemName: "xmark")
                 .font(.system(size: 15, weight: .bold))
@@ -1333,21 +1379,26 @@ struct NatureSpotDetailView: View {
         titleBlock
             .padding(.horizontal, 22)
             // 写真ありのときは観光スポット詳細と同じ上余白でタイトルを下寄せにする。
-            .padding(.top, photo == nil ? 0 : PhotoHeaderStyle.topPadding)
+            .photoHeaderTopPadding(hasPhoto: photo != nil)
             .padding(.bottom, 24)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background {
-                if let photo {
-                    // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
-                    // 外側で clipped() してヘッダー矩形に収める（左右へのはみ出し防止）。
-                    photo
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .overlay(PhotoHeaderStyle.scrim)
+                // 背景（写真・色）は左右のセーフエリアまで敷く。見開きの右ページでは、右端の
+                // ステータスバー・縦向きタブバーの列の下まで写真が続く（文字やボタンはセーフエリア内のまま）。
+                Group {
+                    if let photo {
+                        // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
+                        // 外側の photoHeaderClip() で上下を切る（左右はセーフエリアまで敷く）。
+                        photo
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .overlay(PhotoHeaderStyle.scrim)
+                    }
+                    // 写真が無い場合は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
                 }
-                // 写真が無い場合は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
+                .ignoresSafeArea(edges: .horizontal)
             }
-            .clipped()
+            .photoHeaderClip()
     }
 
 

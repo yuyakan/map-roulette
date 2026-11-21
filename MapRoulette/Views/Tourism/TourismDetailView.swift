@@ -35,6 +35,8 @@ struct TourismDetailView: View {
     @State private var isAddingCafe = false
     @State private var selectedUserCard: UserCard? = nil
     @Environment(\.dismiss) private var dismiss
+    /// 見開きの右ページで表示中なら入る「閉じる」（MapSpreadLayout.swift）。
+    @Environment(\.spreadPaneClose) private var spreadPaneClose
 
     init(prefecture: Prefecture, autoOpen: TourismAutoOpen? = nil) {
         self.prefecture = prefecture
@@ -250,13 +252,13 @@ struct TourismDetailView: View {
                     await trends.load()
                 }
             }
-            .fullScreenCover(item: $selectedAttraction) { attraction in
+            .detailCover(item: $selectedAttraction) { attraction in
                 AttractionDetailView(attraction: attraction, prefecture: prefecture)
             }
-            .fullScreenCover(item: $autoSouvenir) { souvenir in
+            .detailCover(item: $autoSouvenir) { souvenir in
                 SouvenirDetailView(item: souvenir, prefecture: prefecture)
             }
-            .fullScreenCover(item: $autoNatureSpot) { spot in
+            .detailCover(item: $autoNatureSpot) { spot in
                 NatureSpotDetailView(spot: spot)
             }
             .fullScreenCover(item: $photoViewerStart) { start in
@@ -275,15 +277,22 @@ struct TourismDetailView: View {
                     HStack {
                         Button(action: {
                           InterstitialViewModel.count += 2
-                            dismiss()
+                            closeDetail(paneClose: spreadPaneClose, dismiss: dismiss)
                        }) {
-                           HStack(spacing: 8) {
-                               Image(systemName: "chevron.left")
-                                   .resizable()
-                                   .frame(width: 10, height: 14)
-                               Text("tourism_detail_back".localized)
-                                   .font(.system(size: 16))
-                                   .fontWeight(.medium)
+                           if spreadPaneClose != nil {
+                               // 見開きの右ページでは「戻る」先が無いので、閉じる（✕）にする。
+                               Image(systemName: "xmark")
+                                   .font(.system(size: 14, weight: .bold))
+                                   .padding(.vertical, 3)
+                           } else {
+                               HStack(spacing: 8) {
+                                   Image(systemName: "chevron.left")
+                                       .resizable()
+                                       .frame(width: 10, height: 14)
+                                   Text("tourism_detail_back".localized)
+                                       .font(.system(size: 16))
+                                       .fontWeight(.medium)
+                               }
                            }
                        }
                     }

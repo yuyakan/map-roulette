@@ -92,6 +92,8 @@ struct HomeView: View {
                 .padding(.top, 8)
                 .padding(.bottom, 24)
             }
+            // iPhone Duo では上のセーフエリアが 0 になり、先頭のカードが画面の上端に張り付くので最低限空ける。
+            .minimumTopSafeArea()
             .background(Color(.systemBackground))
             .navigationBarTitleDisplayMode(.inline)
             .task {

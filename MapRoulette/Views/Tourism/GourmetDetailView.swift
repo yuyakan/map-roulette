@@ -36,7 +36,8 @@ struct GourmetDetailView<PlaceMap: View>: View {
     }
 
     var body: some View {
-        NavigationView {
+        // 見開きの右ページ内では右ページのスタックに積まれるので、自前のスタックは持たない。
+        DetailNavigationContainer {
             ZStack(alignment: .topTrailing) {
                 // 上方向にバウンスしてもヘッダー背後に白が出ないよう、
                 // 画面全体の最背面にヘッダーと同じカテゴリ色を敷く（同色なので境目が出ない）。
@@ -85,6 +86,7 @@ struct GourmetDetailView<PlaceMap: View>: View {
                             recommendationsCard
                         }
                         .padding(.horizontal, 18)
+                        .readableContentWidth()
                     }
                     .padding(.bottom, 32)
                 }
@@ -122,22 +124,27 @@ struct GourmetDetailView<PlaceMap: View>: View {
         titleBlock
             .padding(.horizontal, 22)
             // 写真ありのときは観光スポット詳細と同じ上余白でタイトルを下寄せにする。
-            .padding(.top, photo == nil ? 0 : PhotoHeaderStyle.topPadding)
+            .photoHeaderTopPadding(hasPhoto: photo != nil)
             .padding(.bottom, 24)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background {
-                if let photo {
-                    // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
-                    // 外側で clipped() してヘッダー矩形に収める（左右へのはみ出し防止）。
-                    photo
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .overlay(PhotoHeaderStyle.scrim)
+                // 背景（写真・色）は左右のセーフエリアまで敷く。見開きの右ページでは、右端の
+                // ステータスバー・縦向きタブバーの列の下まで写真が続く（文字やボタンはセーフエリア内のまま）。
+                Group {
+                    if let photo {
+                        // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
+                        // 外側の photoHeaderClip() で上下を切る（左右はセーフエリアまで敷く）。
+                        photo
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .overlay(PhotoHeaderStyle.scrim)
+                    }
+                    // 写真が無い場合は背景を持たず、最背面の category.color をそのまま
+                    // 透かす（従来どおり。段差を出さない）。
                 }
-                // 写真が無い場合は背景を持たず、最背面の category.color をそのまま
-                // 透かす（従来どおり。段差を出さない）。
+                .ignoresSafeArea(edges: .horizontal)
             }
-            .clipped()
+            .photoHeaderClip()
     }
 
     /// 品名・県名・カテゴリ・人気度（写真あり／なしで共通）。

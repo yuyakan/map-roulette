@@ -53,6 +53,8 @@ struct MyPlansView: View {
             // alignment:.top を明示しないと、空状態のように内容が小さいとき VStack 全体が
             // 中央寄せになり、切替帯まで一緒に下へ落ちてしまう（一覧が空のとき帯が下がる不具合）。
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            // iPhone Duo では上のセーフエリアが 0 になり、切替帯が画面の上端に張り付くので最低限空ける。
+            .minimumTopSafeArea()
             .background(PlanTheme.pageBackground.ignoresSafeArea())
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

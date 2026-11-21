@@ -61,6 +61,7 @@ struct PlanCostView: View {
                 }
                 .padding(.horizontal)
                 .padding(.vertical, 12)
+                .readableContentWidth()
             }
         }
         .sheet(isPresented: $showingMembers) {

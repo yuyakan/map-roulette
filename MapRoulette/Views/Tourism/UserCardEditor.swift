@@ -176,22 +176,27 @@ struct UserCardEditor: View {
             .shadow(color: .black.opacity(coverImage == nil ? 0 : 0.35), radius: 6, y: 1)
         }
         .padding(.horizontal, 22)
-        .padding(.top, PhotoHeaderStyle.topPadding)
+        .photoHeaderTopPadding()
         .padding(.bottom, 24)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background {
-            if let coverImage {
-                // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
-                // 外側で clipped() してヘッダー矩形に収める。
-                Image(uiImage: coverImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .overlay(PhotoHeaderStyle.scrim)
-            } else {
-                accent
+            // 背景（写真・色）は左右のセーフエリアまで敷く。見開きの右ページでは、右端の
+            // ステータスバー・縦向きタブバーの列の下まで写真が続く（文字やボタンはセーフエリア内のまま）。
+            Group {
+                if let coverImage {
+                    // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
+                    // 外側で clipped() してヘッダー矩形に収める。
+                    Image(uiImage: coverImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .overlay(PhotoHeaderStyle.scrim)
+                } else {
+                    accent
+                }
             }
+            .ignoresSafeArea(edges: .horizontal)
         }
-        .clipped()
+        .photoHeaderClip()
     }
 
     private var photoButtons: some View {

@@ -34,8 +34,16 @@ import UIKit
 ///  - 白いカードが白背景に埋もれるので、カードに枠線を重ねて境界を出す
 ///  - ヘッダーはタイトル部を下寄せにするため上に 150pt の余白を取る
 enum PhotoHeaderStyle {
-    /// ヘッダー上部の余白（セーフエリア＋写真を見せる高さ）。
+    /// ヘッダー上部の余白（セーフエリア＋写真を見せる高さ）。iPhone（compact 幅）用。
     static let topPadding: CGFloat = 150
+
+    /// regular 幅（iPad・iPhone Duo の内側画面）でのヘッダー上部の余白。
+    ///
+    /// 【なぜ幅で変えるか】
+    /// 写真は横幅いっぱいに .fill で敷くので、ヘッダーの高さが同じまま横幅だけ広がると
+    /// 写真の上下が大きく切り落とされ、細い帯のようになる。広い画面では高さも増やして、
+    /// 写真の見えている比率を iPhone に近づける。
+    static let regularTopPadding: CGFloat = 280
 
     /// 写真の上でもタイトルが読めるようにする暗幕（下へ向かって濃くなる）。
     static var scrim: LinearGradient {
@@ -54,7 +62,35 @@ enum PhotoHeaderStyle {
     }
 }
 
+/// 写真ヘッダーの上余白を、横幅の size class に合わせて付ける。
+private struct PhotoHeaderTopPadding: ViewModifier {
+    let hasPhoto: Bool
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    func body(content: Content) -> some View {
+        content.padding(.top, hasPhoto ? amount : 0)
+    }
+
+    private var amount: CGFloat {
+        horizontalSizeClass == .regular ? PhotoHeaderStyle.regularTopPadding : PhotoHeaderStyle.topPadding
+    }
+}
+
 extension View {
+    /// 写真ヘッダーの切り抜き。上下だけ切り、左右ははみ出しを許す。
+    ///
+    /// .fill の写真はヘッダーより大きく描かれるので上下は切る必要がある。左右まで切ると、
+    /// セーフエリアまで敷いた写真（見開きの右ページで右端の列の下まで続く部分）も切れてしまう。
+    /// 左右に画面外へはみ出した部分は見えないので問題ない（見開きでは右ページ側で左端を切る）。
+    func photoHeaderClip() -> some View {
+        mask(Rectangle().padding(.horizontal, -1000))
+    }
+
+    /// 写真ヘッダーの上余白（写真が無いときは 0）。幅が広い画面では写真を高めに見せる。
+    func photoHeaderTopPadding(hasPhoto: Bool = true) -> some View {
+        modifier(PhotoHeaderTopPadding(hasPhoto: hasPhoto))
+    }
+
     /// 写真があるときだけ、観光スポット詳細と同じカード枠線を重ねる。
     @ViewBuilder
     func photoStyleCardBorder(_ hasPhoto: Bool) -> some View {

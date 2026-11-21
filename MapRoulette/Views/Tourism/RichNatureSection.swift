@@ -49,10 +49,7 @@ struct RichNatureSection: View {
                 trailing: AnyView(AddUserCardButton(accent: accent) { isAddingCard = true })
             )
 
-            LazyVGrid(columns: [
-                GridItem(.flexible()),
-                GridItem(.flexible())
-            ], spacing: 16) {
+            LazyVGrid(columns: AdaptiveGrid.cardColumns(spacing: 8), spacing: 16) {
                 ForEach(userCards.cards(in: prefecture, kind: .nature)) { card in
                     UserCardTile(card: card, height: 180) {
                         selectedUserCard = card
@@ -192,7 +189,7 @@ private struct NatureSectionCard: View {
                 showingDetail = true
             }
         }
-        .fullScreenCover(isPresented: $showingDetail) {
+        .detailCover(isPresented: $showingDetail) {
             NatureSpotDetailView(spot: spot)
         }
     }

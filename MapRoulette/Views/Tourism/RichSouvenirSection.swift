@@ -80,10 +80,7 @@ struct RichSouvenirSection: View {
             }
             
             // お土産アイテムのグリッド
-            LazyVGrid(columns: [
-                GridItem(.flexible(), spacing: 12),
-                GridItem(.flexible(), spacing: 12)
-            ], spacing: 16) {
+            LazyVGrid(columns: AdaptiveGrid.cardColumns(spacing: 12), spacing: 16) {
                 ForEach(myCards) { card in
                     UserCardTile(card: card, height: 200) {
                         selectedUserCard = card
@@ -104,7 +101,7 @@ struct RichSouvenirSection: View {
             }
         }
         .padding(.horizontal)
-        .fullScreenCover(item: $selectedItem) { item in
+        .detailCover(item: $selectedItem) { item in
             SouvenirDetailView(item: item, prefecture: prefecture)
         }
         .userCardPresentation(prefecture: prefecture, kind: .souvenir, isAdding: $isAddingCard, selected: $selectedUserCard)

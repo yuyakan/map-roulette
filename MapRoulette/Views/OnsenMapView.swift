@@ -32,33 +32,21 @@ struct OnsenMapView: View {
     @State private var tappedOnsen: FixedOnsenItem? = nil
     @State private var isListView = false // 地図表示とリスト表示の切り替え
     
-    @State private var screenWidth: CGFloat = UIScreen.main.bounds.width
-
-    class OrientationObserver: ObservableObject {
-        @Published var orientation = UIDevice.current.orientation
-        
-        init() {
-            NotificationCenter.default.addObserver(
-                forName: UIDevice.orientationDidChangeNotification,
-                object: nil,
-                queue: .main
-            ) { _ in
-                self.orientation = UIDevice.current.orientation
-            }
-        }
-    }
-    // Viewで使用
-    @StateObject private var orientationObserver = OrientationObserver()
-
-    private var columnCount: Int {
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            return screenWidth > 1200 ? 8 : (screenWidth > 1000 ? 7 : 5)
-        } else {
-            return 3
-        }
-    }
+    /// 温泉リストのグリッド列。
+    ///
+    /// 列数は「置かれた幅に何枚入るか」で自動で決める（iPhone 3 列 / iPad・iPhone Duo の
+    /// 内側画面ではそれ以上）。以前は画面幅・端末の向き・iPad 判定から列数を計算していたが、
+    /// iPhone Duo は開閉でアプリ幅がその場で変わり、内側画面は向きの設定にも従わないため、
+    /// 端末単位の判定では正しい列数にならない。
+    private let onsenGridColumns = [GridItem(.adaptive(minimum: 110), spacing: 8)]
 
     let interstitial = InterstitialViewModel()
+
+    /// 見開き表示（Duo の内側画面・iPad 横向き）の窓口。MapSpreadLayout.swift 参照。
+    @Environment(\.spreadPresenter) private var spread
+    /// 見開きでルーレット結果を右ページに出したあと、まだスピン回数を記録していないか。
+    /// 通常は結果の膜の「リセット」で記録するが、見開きでは膜を出さないので次のスピン開始時に記録する。
+    @State private var pendingSpinRegistration = false
     
     // 有効な温泉地の取得
     private var availableOnsens: [FixedOnsenItem] {
@@ -297,8 +285,7 @@ struct OnsenMapView: View {
                                 
                                 // 詳細情報ボタン
                                 Button(action: {
-                                    tappedOnsen = selected
-                                    showOnsenInfo = true
+                                    openDetail(selected)
                                 }) {
                                     HStack(spacing: 10) {
                                         Image(systemName: "thermometer.sun.fill")
@@ -396,13 +383,12 @@ struct OnsenMapView: View {
                     
                     Button(action: {
                         if !isSpinning && !isStopping {
-                            tappedOnsen = onsen
-                            showOnsenInfo = true
+                            openDetail(onsen)
                         }
                     }) {
                         ZStack {
                             // 選択された温泉地の背景効果
-                            if selectedOnsen?.id == onsen.id {
+                            if highlightedOnsen?.id == onsen.id {
                                 Circle()
                                     .fill(Color.orange.opacity(0.3))
                                     .frame(width: 50, height: 50)
@@ -413,7 +399,7 @@ struct OnsenMapView: View {
                             // アイコンの背景円
                             Circle()
                                 .fill(
-                                    selectedOnsen?.id == onsen.id
+                                    highlightedOnsen?.id == onsen.id
                                     ? LinearGradient(
                                         gradient: Gradient(colors: [Color.orange, Color.red]),
                                         startPoint: .topLeading,
@@ -425,26 +411,31 @@ struct OnsenMapView: View {
                                         endPoint: .bottomTrailing
                                     )
                                 )
-                                .frame(width: selectedOnsen?.id == onsen.id ? 32 : 20, height: selectedOnsen?.id == onsen.id ? 32 : 20)
+                                .frame(width: highlightedOnsen?.id == onsen.id ? 32 : 20, height: highlightedOnsen?.id == onsen.id ? 32 : 20)
                                 .shadow(
-                                    color: selectedOnsen?.id == onsen.id ? .orange.opacity(0.5) : .black.opacity(0.2),
-                                    radius: selectedOnsen?.id == onsen.id ? 4 : 2,
+                                    color: highlightedOnsen?.id == onsen.id ? .orange.opacity(0.5) : .black.opacity(0.2),
+                                    radius: highlightedOnsen?.id == onsen.id ? 4 : 2,
                                     x: 0,
-                                    y: selectedOnsen?.id == onsen.id ? 2 : 1
+                                    y: highlightedOnsen?.id == onsen.id ? 2 : 1
                                 )
-                                .opacity(selectedOnsen?.id == onsen.id ? 1 : 0.8)
+                                .opacity(highlightedOnsen?.id == onsen.id ? 1 : 0.8)
 
                             
                             // 温泉アイコン
                             Image(systemName: "thermometer.sun.fill")
-                                .font(.system(size: selectedOnsen?.id == onsen.id ? 16 : 10, weight: .semibold))
+                                .font(.system(size: highlightedOnsen?.id == onsen.id ? 16 : 10, weight: .semibold))
                                 .foregroundColor(.white)
                         }
                     }
                     .position(position)
-                    .zIndex(selectedOnsen?.id == onsen.id ? 10 : 5)
+                    .zIndex(highlightedOnsen?.id == onsen.id ? 10 : 5)
                 }
             }
+        }
+        // 見開き中は、地図の何もない所をタップすると右ページを閉じる（アイコンのボタンが優先される）。
+        .contentShape(Rectangle())
+        .onTapGesture {
+            if spread.current != nil { spread.close() }
         }
         .aspectRatio(1, contentMode: .fit)
         .padding(.top, 100)
@@ -479,15 +470,14 @@ struct OnsenMapView: View {
                                 .padding(.top, region == Region.allCases.first ? (80 + (isIntegrated ? mapModeBandHeight + extraTopInset : 0)) : 0)
                                 
                                 // 地方の温泉地をグリッド表示
-                                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: columnCount), spacing: 10) {
+                                LazyVGrid(columns: onsenGridColumns, spacing: 10) {
                                     ForEach(regionOnsens, id: \.id) { onsen in
                                         Button(action: {
                                             if !isSpinning && !isStopping {
-                                                tappedOnsen = onsen
-                                                showOnsenInfo = true
+                                                openDetail(onsen)
                                             }
                                         }) {
-                                            OnsenCardView(onsen: onsen, selectedOnsen: selectedOnsen)
+                                            OnsenCardView(onsen: onsen, selectedOnsen: highlightedOnsen)
                                         }
                                         .disabled(isSpinning)
                                     }
@@ -498,9 +488,6 @@ struct OnsenMapView: View {
                     }
                 }
                 .padding(.bottom, 100)
-            }
-            .onChange(of: orientationObserver.orientation) {
-                screenWidth = UIScreen.main.bounds.width
             }
             .zIndex(1) // メインコンテンツは中間レベル
         }
@@ -728,6 +715,23 @@ struct OnsenMapView: View {
         }
     }
     
+    /// 温泉地の詳細を開く。見開きが使えれば右ページに、使えなければ従来どおり全画面で。
+    private func openDetail(_ item: FixedOnsenItem) {
+        if spread.isAvailable {
+            spread.present(.onsen(item))
+        } else {
+            tappedOnsen = item
+            showOnsenInfo = true
+        }
+    }
+
+    /// 地図・リストで強調する温泉地。ルーレットで選ばれているもの、なければ見開きの右ページに出ているもの。
+    private var highlightedOnsen: FixedOnsenItem? {
+        if let selectedOnsen { return selectedOnsen }
+        guard !isSpinning, case .onsen(let item)? = spread.current else { return nil }
+        return item
+    }
+
     // ゲームをリセット
     private func resetGame() {
         showResultModal = false
@@ -765,6 +769,16 @@ struct OnsenMapView: View {
     // スピン開始
     private func startSpin() {
         guard !isSpinning && !availableOnsens.isEmpty else { return }
+
+        // 見開き中にスピンしたら右ページを閉じ、地図を全幅に戻してルーレットを主役にする。
+        if spread.current != nil {
+            spread.close()
+        }
+        // 前回の結果を見開きで出していたら、そのぶんのスピン回数をここで記録する。
+        if pendingSpinRegistration {
+            pendingSpinRegistration = false
+            interstitial.registerRouletteSpin()
+        }
         
         isSpinning = true
         isStopping = false
@@ -842,10 +856,18 @@ struct OnsenMapView: View {
                     // 最終選択をアニメーション付きで実行
                     selectedOnsen = selectRandomOnsen()
                     
-                    // 0.5秒後にモーダル表示
+                    // 0.5秒後に結果を表示
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
-                            showResultModal = true
+                        if spread.isAvailable, let result = selectedOnsen {
+                            // 見開きでは結果の膜を出さず、右ページに結果の詳細を滑り込ませる。
+                            // 強調は右ページの項目に引き継がれるので、ルーレットの選択状態は戻しておく。
+                            spread.present(.onsen(result))
+                            resetGame()
+                            pendingSpinRegistration = true
+                        } else {
+                            withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                                showResultModal = true
+                            }
                         }
                     }
                 }
@@ -874,6 +896,8 @@ struct OnsenDetailView: View {
     let onsen: FixedOnsenItem
     @State private var region: MKCoordinateRegion
     @Environment(\.dismiss) private var dismiss
+    /// 見開きの右ページで表示中なら入る「閉じる」（MapSpreadLayout.swift）。
+    @Environment(\.spreadPaneClose) private var spreadPaneClose
     
     init(onsen: FixedOnsenItem) {
         self.onsen = onsen
@@ -918,7 +942,7 @@ struct OnsenDetailView: View {
     private var closeButton: some View {
         Button {
             InterstitialViewModel.count += 2
-            dismiss()
+            closeDetail(paneClose: spreadPaneClose, dismiss: dismiss)
         } label: {
             Image(systemName: "xmark")
                 .font(.system(size: 15, weight: .bold))

@@ -429,10 +429,7 @@ struct AllFestivalsComparisonView: View {
                 
                 // 祭りグリッド
                 ScrollView {
-                    LazyVGrid(columns: [
-                        GridItem(.flexible(), spacing: 8),
-                        GridItem(.flexible(), spacing: 8)
-                    ], spacing: 12) {
+                    LazyVGrid(columns: AdaptiveGrid.cardColumns(spacing: 8), spacing: 12) {
                         ForEach(filteredFestivals, id: \.festival.id) { festivalWithPrefecture in
                             IntegratedFestivalCard(
                                 festivalWithPrefecture: festivalWithPrefecture,
@@ -648,6 +645,7 @@ struct IntegratedFestivalDetailView: View {
                         if item.coordinate != nil { mapCard }
                     }
                     .padding(.horizontal, 18)
+                    .readableContentWidth()
                 }
                 .padding(.bottom, 32)
             }
@@ -685,21 +683,26 @@ struct IntegratedFestivalDetailView: View {
         titleBlock
             .padding(.horizontal, 22)
             // 写真ありのときは観光スポット詳細と同じ上余白でタイトルを下寄せにする。
-            .padding(.top, photo == nil ? 0 : PhotoHeaderStyle.topPadding)
+            .photoHeaderTopPadding(hasPhoto: photo != nil)
             .padding(.bottom, 24)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background {
-                if let photo {
-                    // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
-                    // 外側で clipped() してヘッダー矩形に収める（左右へのはみ出し防止）。
-                    photo
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .overlay(PhotoHeaderStyle.scrim)
+                // 背景（写真・色）は左右のセーフエリアまで敷く。見開きの右ページでは、右端の
+                // ステータスバー・縦向きタブバーの列の下まで写真が続く（文字やボタンはセーフエリア内のまま）。
+                Group {
+                    if let photo {
+                        // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
+                        // 外側の photoHeaderClip() で上下を切る（左右はセーフエリアまで敷く）。
+                        photo
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .overlay(PhotoHeaderStyle.scrim)
+                    }
+                    // 写真が無い場合は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
                 }
-                // 写真が無い場合は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
+                .ignoresSafeArea(edges: .horizontal)
             }
-            .clipped()
+            .photoHeaderClip()
     }
 
 

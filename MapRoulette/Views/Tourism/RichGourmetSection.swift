@@ -105,7 +105,7 @@ struct RichGourmetSection: View {
             }
         }
         .padding(.horizontal)
-        .fullScreenCover(item: $selectedItem) { item in
+        .detailCover(item: $selectedItem) { item in
             GourmetDetailView(item: item, prefecture: prefecture)
         }
         .userCardPresentation(prefecture: prefecture, kind: .gourmet, isAdding: $isAddingCard, selected: $selectedUserCard)
