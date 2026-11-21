@@ -1132,6 +1132,9 @@ struct RichOtherFestivalSection: View {
     let prefecture: Prefecture
     @State private var showAllItems = false
     @State private var selectedItem: OtherFestivalItem? = nil
+    @ObservedObject private var userCards = UserCardStore.shared
+    @State private var isAddingCard = false
+    @State private var selectedUserCard: UserCard? = nil
 
     var filteredItems: [OtherFestivalItem] {
         let items = prefecture.otherFestivalItems
@@ -1147,14 +1150,17 @@ struct RichOtherFestivalSection: View {
                 icon: "snowflake",
                 title: NSLocalizedString("festival.seasons", comment: "春・秋・冬の祭り"),
                 subtitle: String(format: NSLocalizedString("festival.experience_seasons", comment: "%@の四季を体験"), prefecture.prefectureName),
-                accent: accent
+                accent: accent,
+                trailing: AnyView(AddUserCardButton(accent: accent) { isAddingCard = true })
             )
 
             // その他祭りアイテムのグリッド
-            LazyVGrid(columns: [
-                GridItem(.flexible(), spacing: 12),
-                GridItem(.flexible(), spacing: 12)
-            ], spacing: 16) {
+            LazyVGrid(columns: AdaptiveGrid.cardColumns(spacing: 12), spacing: 16) {
+                ForEach(userCards.cards(in: prefecture, kind: .otherFestival)) { card in
+                    UserCardTile(card: card, height: 200) {
+                        selectedUserCard = card
+                    }
+                }
                 ForEach(filteredItems) { item in
                     OtherFestivalItemCard(item: item) {
                         selectedItem = item
@@ -1170,9 +1176,10 @@ struct RichOtherFestivalSection: View {
             }
         }
         .padding(.horizontal)
-        .fullScreenCover(item: $selectedItem) { item in
+        .detailCover(item: $selectedItem) { item in
             OtherFestivalDetailView(item: item, prefecture: prefecture)
         }
+        .userCardPresentation(prefecture: prefecture, kind: .otherFestival, isAdding: $isAddingCard, selected: $selectedUserCard)
     }
 }
 
@@ -1349,6 +1356,7 @@ struct OtherFestivalDetailView: View {
                         if item.coordinate != nil { mapCard }
                     }
                     .padding(.horizontal, 18)
+                    .readableContentWidth()
                 }
                 .padding(.bottom, 32)
             }
@@ -1373,7 +1381,7 @@ struct OtherFestivalDetailView: View {
                 .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
                 .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
         }
-        .padding(.top, 56)
+        .closeButtonTopPadding()
         .padding(.trailing, 18)
     }
 
@@ -1381,21 +1389,26 @@ struct OtherFestivalDetailView: View {
         titleBlock
             .padding(.horizontal, 22)
             // 写真ありのときは観光スポット詳細と同じ上余白でタイトルを下寄せにする。
-            .padding(.top, photo == nil ? 0 : PhotoHeaderStyle.topPadding)
+            .photoHeaderTopPadding(hasPhoto: photo != nil)
             .padding(.bottom, 24)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background {
-                if let photo {
-                    // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
-                    // 外側で clipped() してヘッダー矩形に収める（左右へのはみ出し防止）。
-                    photo
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .overlay(PhotoHeaderStyle.scrim)
+                // 背景（写真・色）は左右のセーフエリアまで敷く。見開きの右ページでは、右端の
+                // ステータスバー・縦向きタブバーの列の下まで写真が続く（文字やボタンはセーフエリア内のまま）。
+                Group {
+                    if let photo {
+                        // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
+                        // 外側の photoHeaderClip() で上下を切る（左右はセーフエリアまで敷く）。
+                        photo
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .overlay(PhotoHeaderStyle.scrim)
+                    }
+                    // 写真が無い場合は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
                 }
-                // 写真が無い場合は背景を持たず、最背面の accent をそのまま透かす（段差を出さない）。
+                .ignoresSafeArea(edges: [.top, .horizontal])
             }
-            .clipped()
+            .photoHeaderClip()
     }
 
 
@@ -1411,7 +1424,7 @@ struct OtherFestivalDetailView: View {
                         .font(.system(size: 32, weight: .semibold))
                         .foregroundColor(.white)
                 }
-                .padding(.top, 60)
+                .headerIconTopPadding()
             }
             // 写真ありのときは上の if を通らないので、ヘッダー全体の上余白
             // （PhotoHeaderStyle.topPadding）で高さを確保する。

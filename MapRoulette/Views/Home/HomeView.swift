@@ -21,6 +21,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct HomeView: View {
     /// Firestore トレンドの読み取り（アプリ共有インスタンス。県詳細と結果を共有）。
@@ -92,6 +93,8 @@ struct HomeView: View {
                 .padding(.top, 8)
                 .padding(.bottom, 24)
             }
+            // iPhone Duo では上のセーフエリアが 0 になり、先頭のカードが画面の上端に張り付くので最低限空ける。
+            .minimumTopSafeArea()
             .background(Color(.systemBackground))
             .navigationBarTitleDisplayMode(.inline)
             .task {
@@ -100,17 +103,22 @@ struct HomeView: View {
                     await repository.load()
                 }
             }
-            .fullScreenCover(item: $detailPrefecture) { pref in
+            // Siri などから「この県を開いて」と頼まれたら開く（AppRouter.openPrefecture）。
+            .onReceive(AppRouter.shared.$pendingPrefecture.compactMap { $0 }) { prefecture in
+                detailPrefecture = prefecture
+                AppRouter.shared.pendingPrefecture = nil
+            }
+            .detailCover(item: $detailPrefecture) { pref in
                 TourismDetailView(prefecture: pref)
             }
-            .fullScreenCover(item: $themeDetailTarget) { target in
+            .detailCover(item: $themeDetailTarget) { target in
                 // 県詳細を開き、そのままその項目の詳細まで自動で開く（テーマのカード用）。
                 TourismDetailView(
                     prefecture: target.prefecture,
                     autoOpen: target.autoOpen
                 )
             }
-            .fullScreenCover(item: $shortsFeed) { feed in
+            .detailCover(item: $shortsFeed) { feed in
                 ShortsFeedView(videos: feed.videos, startIndex: feed.startIndex)
             }
         }
@@ -139,7 +147,7 @@ struct HomeView: View {
     @ViewBuilder
     private var ongoingPlanSection: some View {
         if let plan = plans.featuredPlan {
-            NavigationLink {
+            SpreadAwareLink(id: "plan-\(plan.id)") {
                 PlanDetailView(planID: plan.id)
             } label: {
                 ongoingPlanBanner(plan)

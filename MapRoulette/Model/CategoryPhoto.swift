@@ -34,8 +34,22 @@ import UIKit
 ///  - 白いカードが白背景に埋もれるので、カードに枠線を重ねて境界を出す
 ///  - ヘッダーはタイトル部を下寄せにするため上に 150pt の余白を取る
 enum PhotoHeaderStyle {
-    /// ヘッダー上部の余白（セーフエリア＋写真を見せる高さ）。
+    /// ヘッダー上部の余白（セーフエリア＋写真を見せる高さ）。iPhone（compact 幅）用。
     static let topPadding: CGFloat = 150
+
+    /// regular 幅（iPad・iPhone Duo の内側画面）でのヘッダー上部の余白。
+    ///
+    /// 【なぜ幅で変えるか】
+    /// 写真は横幅いっぱいに .fill で敷くので、ヘッダーの高さが同じまま横幅だけ広がると
+    /// 写真の上下が大きく切り落とされ、細い帯のようになる。広い画面では高さも増やして、
+    /// 写真の見えている比率を iPhone に近づける。
+    static let regularTopPadding: CGFloat = 280
+
+    /// 写真の無いヘッダーで、カテゴリアイコンの丸の上に空ける余白（ステータスバーを避ける）。
+    static let iconTopPadding: CGFloat = 60
+
+    /// 詳細画面の右上の閉じるボタンの上余白。
+    static let closeButtonTopPadding: CGFloat = 56
 
     /// 写真の上でもタイトルが読めるようにする暗幕（下へ向かって濃くなる）。
     static var scrim: LinearGradient {
@@ -54,7 +68,73 @@ enum PhotoHeaderStyle {
     }
 }
 
+/// 写真ヘッダーの上余白を、横幅の size class に合わせて付ける。
+private struct PhotoHeaderTopPadding: ViewModifier {
+    let hasPhoto: Bool
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    func body(content: Content) -> some View {
+        content.padding(.top, hasPhoto ? amount : 0)
+    }
+
+    private var amount: CGFloat {
+        horizontalSizeClass == .regular ? PhotoHeaderStyle.regularTopPadding : PhotoHeaderStyle.topPadding
+    }
+}
+
+/// 写真の無いヘッダーで、カテゴリアイコンの丸を置く上余白。
+private struct HeaderIconTopPadding: ViewModifier {
+    @Environment(\.headerExtraTopInset) private var extraTop
+
+    func body(content: Content) -> some View {
+        content.padding(.top, PhotoHeaderStyle.iconTopPadding + extraTop)
+    }
+}
+
+/// 詳細画面の右上の閉じるボタンの上余白。
+///
+/// 見開きの右ページ（iPad）では浮いたタブバーを避けるため上に 60pt のセーフエリアを足しているが、
+/// 右上の閉じるボタンはタブバーと横位置が重ならないので、そのぶん差し引いて元の高さに置く。
+private struct CloseButtonTopPadding: ViewModifier {
+    @Environment(\.headerExtraTopInset) private var extraTop
+
+    func body(content: Content) -> some View {
+        content.padding(.top, PhotoHeaderStyle.closeButtonTopPadding - extraTop)
+    }
+}
+
+extension EnvironmentValues {
+    /// 詳細画面のヘッダーを余分に下げる量。見開きの右ページで iPad の浮いたタブバーが
+    /// 上に重なるときに入る（MapSpreadLayout.swift）。ヘッダーの写真・色は上端まで敷いたまま、
+    /// アイコンやタイトルだけをタブバーの下へずらすために使う。
+    @Entry var headerExtraTopInset: CGFloat = 0
+}
+
 extension View {
+    /// 詳細画面の右上の閉じるボタンの上余白（右ページでも元の高さに置く）。
+    func closeButtonTopPadding() -> some View {
+        modifier(CloseButtonTopPadding())
+    }
+
+    /// 写真の無いヘッダーのアイコンの上余白（右ページでは浮いたタブバーのぶん下げる）。
+    func headerIconTopPadding() -> some View {
+        modifier(HeaderIconTopPadding())
+    }
+
+    /// 写真ヘッダーの切り抜き。上下だけ切り、左右ははみ出しを許す。
+    ///
+    /// .fill の写真はヘッダーより大きく描かれるので上下は切る必要がある。左右まで切ると、
+    /// セーフエリアまで敷いた写真（見開きの右ページで右端の列の下まで続く部分）も切れてしまう。
+    /// 左右に画面外へはみ出した部分は見えないので問題ない（見開きでは右ページ側で左端を切る）。
+    func photoHeaderClip() -> some View {
+        mask(Rectangle().padding(.horizontal, -1000))
+    }
+
+    /// 写真ヘッダーの上余白（写真が無いときは 0）。幅が広い画面では写真を高めに見せる。
+    func photoHeaderTopPadding(hasPhoto: Bool = true) -> some View {
+        modifier(PhotoHeaderTopPadding(hasPhoto: hasPhoto))
+    }
+
     /// 写真があるときだけ、観光スポット詳細と同じカード枠線を重ねる。
     @ViewBuilder
     func photoStyleCardBorder(_ hasPhoto: Bool) -> some View {

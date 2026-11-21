@@ -1,77 +1,77 @@
 ============================================================
 Japan Trip Map — このバージョンの新機能（What's New / 全12言語）
-主な更新：画像追加・共有機能・多言語対応
+主な更新：県詳細に自分のカードを追加
 ※ App Store Connect の「このバージョンの新機能」欄にコピペしてください。
 ============================================================
 
 
 【日本語 / Japanese (ja)】
-・各スポットに写真を追加し、旅先のイメージがより伝わるようになりました。
-・作成した旅行プランを共有できるようになりました。
-・12言語に対応し、より多くの方にお使いいただけます。
+・県の詳細画面に、自分だけのカードを追加できるようになりました。観光地、グルメ、カフェ、お土産、温泉、自然、祭りの各セクションに追加できます。
+・カードには表紙の写真、説明、URL、位置を登録できます。
+・作ったカードは旅行プランにも追加できます。
 
 
 【英語 / English (en)】
-- Added photos to each spot so you can picture your destination better.
-- You can now share the travel plans you create.
-- Added support for 12 languages for more travelers around the world.
+- You can now add your own cards to prefecture pages: sights, food, cafes, souvenirs, hot springs, nature, and festivals.
+- Each card can have a cover photo, description, URL, and location.
+- Add the cards you create to your travel plans.
 
 
 【中国語・簡体字 / Chinese Simplified (zh-Hans)】
-・为各景点新增照片，让你更直观地想象旅行目的地。
-・现在可以分享你创建的旅行计划。
-・新增12种语言支持，让更多人都能使用。
+・现在可以在都道府县详情页添加自己的卡片，支持景点、美食、咖啡馆、伴手礼、温泉、自然和祭典等版块。
+・卡片可设置封面照片、说明、URL 和位置。
+・创建的卡片也可以加入旅行计划。
 
 
 【中国語・繁体字 / Chinese Traditional (zh-Hant)】
-・為各景點新增照片，讓您更直觀地想像旅行目的地。
-・現在可以分享您建立的旅行計畫。
-・新增12種語言支援，讓更多人都能使用。
+・現在可以在都道府縣詳細頁面新增自己的卡片，支援景點、美食、咖啡廳、伴手禮、溫泉、自然和祭典等區塊。
+・卡片可設定封面照片、說明、URL 和位置。
+・建立的卡片也可以加入旅行計畫。
 
 
 【中国語・香港 / Chinese Hong Kong (zh-HK)】
-・為各景點加入相片，令你更直觀咁想像旅行目的地。
-・依家可以分享你建立嘅旅行計劃。
-・新增12種語言支援，令更多人都用得到。
+・依家可以喺都道府縣詳細頁面加入自己嘅卡片，支援景點、美食、咖啡店、手信、溫泉、自然同祭典等部分。
+・卡片可以設定封面相片、說明、URL 同位置。
+・建立嘅卡片亦可以加入旅行計劃。
 
 
 【韓国語 / Korean (ko)】
-・각 스폿에 사진을 추가해 여행지의 모습을 더 생생하게 전달합니다.
-・만든 여행 플랜을 공유할 수 있게 되었습니다.
-・12개 언어를 지원하여 더 많은 분들이 사용할 수 있습니다.
+・지역 상세 화면에 나만의 카드를 추가할 수 있습니다. 관광지, 맛집, 카페, 기념품, 온천, 자연, 축제 섹션에 추가할 수 있습니다.
+・카드에 표지 사진, 설명, URL, 위치를 등록할 수 있습니다.
+・만든 카드는 여행 플랜에도 추가할 수 있습니다.
 
 
 【タイ語 / Thai (th)】
-- เพิ่มรูปภาพในแต่ละจุด เพื่อให้คุณนึกภาพจุดหมายได้ชัดเจนยิ่งขึ้น
-- ตอนนี้คุณสามารถแชร์แผนการเดินทางที่สร้างไว้ได้แล้ว
-- รองรับ 12 ภาษา เพื่อให้ผู้คนมากขึ้นได้ใช้งาน
+- ตอนนี้เพิ่มการ์ดของคุณเองในหน้ารายละเอียดจังหวัดได้แล้ว ทั้งสถานที่ท่องเที่ยว อาหาร คาเฟ่ ของฝาก ออนเซ็น ธรรมชาติ และเทศกาล
+- การ์ดแต่ละใบใส่รูปปก คำอธิบาย URL และตำแหน่งได้
+- เพิ่มการ์ดที่สร้างไว้ลงในแผนการเดินทางได้
 
 
 【ベトナム語 / Vietnamese (vi)】
-- Thêm hình ảnh cho mỗi địa điểm để bạn hình dung điểm đến rõ hơn.
-- Giờ đây bạn có thể chia sẻ kế hoạch du lịch mình tạo.
-- Hỗ trợ 12 ngôn ngữ để nhiều người dùng hơn.
+- Giờ đây bạn có thể thêm thẻ của riêng mình vào trang chi tiết tỉnh: điểm tham quan, ẩm thực, quán cà phê, quà lưu niệm, suối nước nóng, thiên nhiên và lễ hội.
+- Mỗi thẻ có thể có ảnh bìa, mô tả, URL và vị trí.
+- Thêm các thẻ bạn tạo vào kế hoạch du lịch.
 
 
 【フランス語 / French (fr)】
-- Ajout de photos pour chaque lieu afin de mieux imaginer votre destination.
-- Vous pouvez désormais partager les plans de voyage que vous créez.
-- Prise en charge de 12 langues pour encore plus de voyageurs.
+- Vous pouvez désormais ajouter vos propres cartes aux pages des préfectures : sites, cuisine, cafés, souvenirs, sources chaudes, nature et festivals.
+- Chaque carte peut contenir une photo de couverture, une description, une URL et un emplacement.
+- Ajoutez les cartes que vous créez à vos plans de voyage.
 
 
 【スペイン語 / Spanish (es)】
-- Se añadieron fotos a cada lugar para imaginar mejor tu destino.
-- Ahora puedes compartir los planes de viaje que creas.
-- Compatibilidad con 12 idiomas para llegar a más viajeros.
+- Ahora puedes añadir tus propias tarjetas a las páginas de las prefecturas: lugares, comida, cafeterías, recuerdos, aguas termales, naturaleza y festivales.
+- Cada tarjeta puede incluir foto de portada, descripción, URL y ubicación.
+- Añade las tarjetas que crees a tus planes de viaje.
 
 
 【ドイツ語 / German (de)】
-- Fotos zu jedem Ort hinzugefügt, damit du dein Ziel besser vor Augen hast.
-- Du kannst jetzt die von dir erstellten Reisepläne teilen.
-- Unterstützung für 12 Sprachen für noch mehr Reisende.
+- Du kannst jetzt eigene Karten zu den Präfekturseiten hinzufügen: Sehenswürdigkeiten, Essen, Cafés, Souvenirs, heiße Quellen, Natur und Feste.
+- Jede Karte kann ein Titelfoto, eine Beschreibung, eine URL und einen Standort enthalten.
+- Füge deine Karten zu deinen Reiseplänen hinzu.
 
 
 【インドネシア語 / Indonesian (id)】
-- Menambahkan foto di setiap tempat agar Anda lebih mudah membayangkan destinasi.
-- Kini Anda dapat membagikan rencana perjalanan yang Anda buat.
-- Mendukung 12 bahasa untuk menjangkau lebih banyak pengguna.
+- Kini Anda dapat menambahkan kartu sendiri ke halaman prefektur: tempat wisata, kuliner, kafe, oleh-oleh, onsen, alam, dan festival.
+- Setiap kartu dapat memiliki foto sampul, deskripsi, URL, dan lokasi.
+- Tambahkan kartu yang Anda buat ke rencana perjalanan.

@@ -82,6 +82,9 @@ struct ShortsFeedView: View {
         .background(Color.black)
         .ignoresSafeArea()
         .overlay(alignment: .topLeading) { closeButton }
+        // 見開きの右ページでは NavigationStack に積まれて表示されるので、自前の ✕ と
+        // 二重にならないようナビゲーションバー（戻るボタン）を隠す。
+        .toolbar(.hidden, for: .navigationBar)
         // オフラインなら、埋め込みプレイヤーが黙って黒のままになる前に案内する。
         //
         // 埋め込みプレイヤーはローカルの HTML を読み込む方式のため、通信が無くても

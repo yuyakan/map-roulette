@@ -10,6 +10,7 @@
 //
 
 import SwiftUI
+import Combine
 import MapKit
 import CoreLocation
 
@@ -94,7 +95,9 @@ struct NearbyView: View {
             map
 
             // 上部オーバーレイ: 種類切替フィルター（背景は地図が透ける）。
-            filterBar
+            // iPhone Duo では上のセーフエリアが 0 になり、画面の上端に張り付くので最低限空ける。
+            VStack { filterBar }
+                .minimumTopSafeArea()
 
             // 検索基準の 100km 以内にスポットが無かったときの一時トースト（上部・数秒）。
             if showNoResultsToast {
@@ -114,8 +117,13 @@ struct NearbyView: View {
             .padding(.bottom, 12)
         }
         .onAppear(perform: setup)
+        // Siri などから「近くの温泉」などと頼まれたら絞り込む（AppRouter.openNearby）。
+        .onReceive(AppRouter.shared.$pendingNearby.compactMap { $0 }) { request in
+            filter = request.kind.map { .kind($0) } ?? .all
+            AppRouter.shared.pendingNearby = nil
+        }
         .onChange(of: locationManager.currentLocation?.latitude) { _ in adoptCurrentLocationIfNeeded() }
-        .fullScreenCover(item: $selectedSpot) { spot in
+        .detailCover(item: $selectedSpot) { spot in
             detailView(for: spot)
         }
     }

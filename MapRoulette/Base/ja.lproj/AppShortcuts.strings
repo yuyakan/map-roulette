@@ -1,0 +1,14 @@
+/*
+  AppShortcuts.strings (ja)
+  Siri・ショートカットで呼び出すフレーズの日本語訳（TripIntents.swift の TripShortcuts）。
+  ${applicationName} はアプリ名（旅さきChoice）、${prefecture} / ${category} はパラメータ。
+*/
+
+"Spin the roulette in ${applicationName}" = "${applicationName}でルーレットを回して";
+"Pick a destination in ${applicationName}" = "${applicationName}で行き先を決めて";
+"Open ${prefecture} in ${applicationName}" = "${applicationName}で${prefecture}を開いて";
+"Show ${prefecture} in ${applicationName}" = "${applicationName}で${prefecture}を見せて";
+"Find nearby ${category} in ${applicationName}" = "${applicationName}で近くの${category}";
+"Find nearby spots in ${applicationName}" = "${applicationName}で近くのスポット";
+"Show my next trip in ${applicationName}" = "${applicationName}の次の旅";
+"Plan a trip in ${applicationName}" = "${applicationName}で旅行を計画";

@@ -15,6 +15,9 @@ enum PlanItemResolver {
     // MARK: - 座標解決
 
     static func coordinate(category: PlanItemCategory, prefecture: Prefecture, name: String) -> CLLocationCoordinate2D? {
+        if let card = UserCardStore.shared.card(category: category, prefecture: prefecture, name: name) {
+            return card.coordinate
+        }
         switch category {
         case .attraction:
             return prefecture.tourismInfo.attractions.first { matches(name, $0.name) }?.coordinate
@@ -40,6 +43,9 @@ enum PlanItemResolver {
     // MARK: - 説明文（一覧カードの補足表示などに使う）
 
     static func detail(category: PlanItemCategory, prefecture: Prefecture, name: String) -> String? {
+        if let card = UserCardStore.shared.card(category: category, prefecture: prefecture, name: name) {
+            return card.description
+        }
         switch category {
         case .attraction:
             return prefecture.tourismInfo.attractions.first { matches(name, $0.name) }?.description
@@ -76,6 +82,12 @@ struct PlanItemDetailRouter: View {
         if item.category.isCustom {
             // カスタム項目は元データを持たないため、保存値を表示する専用画面へ
             CustomPlanItemView(item: item)
+        } else if let prefecture = item.prefecture,
+                  let card = UserCardStore.shared.card(category: item.category, prefecture: prefecture, name: item.name) {
+            // ユーザーが作成したカードは、カードの詳細画面を開く。
+            PlanLocatableDetailView(item: item) {
+                UserCardDetailView(card: card, prefecture: prefecture, planItemID: item.id)
+            }
         } else if let prefecture = item.prefecture {
             // アプリ項目は元の詳細画面を PlanLocatableDetailView でラップし、
             // メモ・位置の追加バーを共通で付与する。

@@ -26,11 +26,18 @@ struct AdaptiveBannerAdView: View {
     /// バナー上下に確保する余白。前後のセクションと詰まらないようにする。
     var verticalPadding: CGFloat = 8
 
-    /// ロード完了後に確定するバナー高さ。初期は幅から算出した推定値。
-    @State private var height: CGFloat
+    /// ロード完了後に確定するバナー高さ。幅が分かるまでは標準バナーの 50pt で枠を確保する。
+    @State private var height: CGFloat = 50
     /// 取得に失敗したか。失敗したら枠ごと畳んで空白を残さない。
     /// 取得できるまでは推定高さで枠を確保しておく（BannerView を正しいサイズで生成するため）。
     @State private var didFail = false
+    /// 実際に配置された枠の幅（余白を除く）。
+    ///
+    /// 【なぜ画面幅ではなく枠の幅を測るか】
+    /// iPhone Duo は開閉でアプリの幅がその場で変わり、iPad の Split View でも
+    /// 画面幅とアプリ幅は一致しない。`UIScreen.main` の幅で広告を作ると、
+    /// 開閉後に広告がはみ出したり細すぎたりするので、置かれた場所の幅を使う。
+    @State private var containerWidth: CGFloat = 0
 
     init(
         adUnitID: String = adUnitIdBanner,
@@ -40,14 +47,10 @@ struct AdaptiveBannerAdView: View {
         self.adUnitID = adUnitID
         self.horizontalPadding = horizontalPadding
         self.verticalPadding = verticalPadding
-        let width = UIScreen.main.bounds.width - horizontalPadding * 2
-        let estimated = currentOrientationInlineAdaptiveBanner(width: width).size.height
-        _height = State(initialValue: estimated > 0 ? estimated : 50)
     }
 
-    private var adWidth: CGFloat {
-        UIScreen.main.bounds.width - horizontalPadding * 2
-    }
+    /// 広告リクエストに使う幅。小数の揺れで作り直さないよう整数に丸める。
+    private var adWidth: CGFloat { containerWidth.rounded(.down) }
 
     var body: some View {
         // スクショ撮影用に広告を枠ごと非表示にする（余白も出さない）。
@@ -59,22 +62,37 @@ struct AdaptiveBannerAdView: View {
         } else {
             // 取得できるまでは推定高さで枠を確保する（BannerView を正しいサイズで
             // 生成するため）。成功したら実サイズに合わせ、失敗したら枠ごと畳む。
-            InlineBannerContainer(
-                width: adWidth,
-                adUnitID: adUnitID,
-                onHeightChange: { newHeight in
-                    if newHeight > 0, abs(newHeight - height) > 1 {
-                        height = newHeight
+            Color.clear
+                .frame(maxWidth: .infinity)
+                .frame(height: height)
+                .overlay {
+                    if adWidth > 0 {
+                        InlineBannerContainer(
+                            width: adWidth,
+                            adUnitID: adUnitID,
+                            onHeightChange: { newHeight in
+                                if newHeight > 0, abs(newHeight - height) > 1 {
+                                    height = newHeight
+                                }
+                                didFail = false
+                            },
+                            onFailure: {
+                                didFail = true
+                            }
+                        )
+                        // 幅が変わったら（開閉・Split View のリサイズ）新しい幅で
+                        // 広告を作り直す。BannerView は生成時のサイズに固定されるため。
+                        .id(adWidth)
                     }
-                    didFail = false
-                },
-                onFailure: {
-                    didFail = true
                 }
-            )
-            .frame(height: height)
-            .padding(.horizontal, horizontalPadding)
-            .padding(.vertical, verticalPadding)
+                .onGeometryChange(for: CGFloat.self, of: { $0.size.width }) { newWidth in
+                    guard abs(newWidth - containerWidth) >= 1 else { return }
+                    containerWidth = newWidth
+                    let estimated = currentOrientationInlineAdaptiveBanner(width: newWidth.rounded(.down)).size.height
+                    if estimated > 0 { height = estimated }
+                }
+                .padding(.horizontal, horizontalPadding)
+                .padding(.vertical, verticalPadding)
         }
     }
 }

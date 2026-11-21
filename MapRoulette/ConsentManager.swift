@@ -85,6 +85,15 @@ final class ConsentManager {
     /// UMP フォームの表示直後やスプラッシュからの画面差し替えと重なるとこれを踏むため、
     /// 必ず foreground active になるのを待ってから要求する。
     private func requestATTThenStartAds(onReady: @escaping () -> Void) {
+        #if DEBUG
+        // 開発・検証用: 起動引数 `-MRSkipATT YES` で ATT ダイアログを出さずに広告初期化へ進む。
+        // シミュレータで画面を撮って確認するとき、ダイアログがレイアウトを隠すのを避けるため。
+        // Release ビルドでは常にダイアログを出す。
+        if UserDefaults.standard.bool(forKey: "MRSkipATT") {
+            startMobileAdsIfNeeded(onReady: onReady)
+            return
+        }
+        #endif
         waitUntilForegroundActive { [weak self] in
             ATTrackingManager.requestTrackingAuthorization { _ in
                 Task { @MainActor in

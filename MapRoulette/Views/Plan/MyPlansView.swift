@@ -29,6 +29,10 @@ struct MyPlansView: View {
     @State private var newPlanTitle = ""
     @State private var editMode: EditMode = .inactive
     @State private var section: MyPlansSection = .list
+    /// Siri などから開くよう頼まれたプラン（プッシュ遷移用）。
+    @State private var openedPlanID: UUID?
+    /// 見開きの窓口（SpreadContainer が配る）。
+    @Environment(\.spreadPresenter) private var spread
 
     var body: some View {
         NavigationStack {
@@ -53,6 +57,8 @@ struct MyPlansView: View {
             // alignment:.top を明示しないと、空状態のように内容が小さいとき VStack 全体が
             // 中央寄せになり、切替帯まで一緒に下へ落ちてしまう（一覧が空のとき帯が下がる不具合）。
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            // iPhone Duo では上のセーフエリアが 0 になり、切替帯が画面の上端に張り付くので最低限空ける。
+            .minimumTopSafeArea()
             .background(PlanTheme.pageBackground.ignoresSafeArea())
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -82,8 +88,26 @@ struct MyPlansView: View {
             // タブ切替でこのビューが現れたとき（onAppear）と、既に表示中に予約が来たとき（onChange）の両方に対応。
             .onAppear { consumePendingNewPlan() }
             .onChange(of: router.pendingNewPlan) { _, _ in consumePendingNewPlan() }
+            // Siri などから「次の旅」を頼まれたら、そのプランを開く（AppRouter.openPlan）。
+            .onAppear { consumePendingPlan() }
+            .onChange(of: router.pendingPlanID) { _, _ in consumePendingPlan() }
+            .navigationDestination(item: $openedPlanID) { planID in
+                PlanDetailView(planID: planID)
+            }
         }
         .tint(PlanTheme.primary)
+    }
+
+    /// AppRouter のプラン表示予約を消化する。見開きでは右ページに、それ以外はプッシュで開く。
+    private func consumePendingPlan() {
+        guard let planID = router.pendingPlanID else { return }
+        router.pendingPlanID = nil
+        section = .list
+        if spread.isAvailable {
+            spread.present(.view(id: "plan-\(planID)", AnyView(PlanDetailView(planID: planID))))
+        } else {
+            openedPlanID = planID
+        }
     }
 
     /// AppRouter の新規作成予約を消化する。一覧セクションに切り替えてからシートを開き、予約を戻す。
@@ -135,21 +159,37 @@ struct MyPlansView: View {
 
     // MARK: - 一覧
 
+    /// プランのカード。見開きのときはタップで右ページにプラン詳細を出す。
+    /// （透明な NavigationLink を重ねる方式は、ボタンに置き換えるとタップを受け取れないため、
+    /// 見開きのときだけカード自体にタップを付ける。見開きでないときに付けると NavigationLink の遷移を奪う。）
+    @ViewBuilder
+    private func planCard(_ plan: TravelPlan) -> some View {
+        let card = PlanCardView(plan: plan, store: store)
+            .contentShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
+        if spread.isAvailable && !editMode.isEditing {
+            card.onTapGesture {
+                spread.present(.view(id: "plan-\(plan.id)", AnyView(PlanDetailView(planID: plan.id))))
+            }
+        } else {
+            card
+        }
+    }
+
     private var planList: some View {
         // 並び替え（.onMove）対応のため List を使い、見た目はカード UI を維持する
         // （区切り線・行背景・標準余白を消し、各行をカードとして描画）。
         List {
             ForEach(store.plans) { plan in
                 ZStack {
-                    // 編集モード中は遷移を無効化（並び替え操作に集中させる）
-                    if !editMode.isEditing {
+                    // 編集モード中は遷移を無効化（並び替え操作に集中させる）。
+                    // 見開き（Duo の内側画面・iPad 横向き）では右ページに出すので、下の planCard 側で開く。
+                    if !editMode.isEditing && !spread.isAvailable {
                         NavigationLink {
                             PlanDetailView(planID: plan.id)
                         } label: { EmptyView() }
                         .opacity(0)
                     }
-                    PlanCardView(plan: plan, store: store)
-                        .contentShape(RoundedRectangle(cornerRadius: PlanTheme.cardCornerRadius, style: .continuous))
+                    planCard(plan)
                 }
                 .listRowSeparator(.hidden)
                 .listRowBackground(Color.clear)

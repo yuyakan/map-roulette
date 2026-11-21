@@ -32,6 +32,13 @@ struct JapanMapView: View {
     @State private var displayMode: DisplayMode = RouletteSettingsStore.loadDisplayMode() // 表示モード追加
     
     let interstitial = InterstitialViewModel()
+
+    /// 見開き表示（Duo の内側画面・iPad 横向き）の窓口。MapSpreadLayout.swift 参照。
+    @Environment(\.spreadPresenter) private var spread
+    /// 見開きでルーレット結果を右ページに出したあと、まだスピン回数を記録していないか。
+    /// 結果の膜を出す通常フローでは「リセット」ボタンで記録するが、見開きでは膜を出さないので
+    /// 次のスピン開始時に記録する（インタースティシャル広告・レビュー依頼の頻度を変えないため）。
+    @State private var pendingSpinRegistration = false
     
     // 表示モードに応じた利用可能な都道府県
     private var availablePrefectures: [Prefecture] {
@@ -101,9 +108,16 @@ struct JapanMapView: View {
                 VStack {
                     GeometryReader { geometry in
                         ZStack {
+                            // 見開き中は、地図の何もない所（海）をタップすると右ページを閉じる。
+                            // 県の形は自前の onTapGesture を持つので、県のタップはこちらに来ない。
+                            if spread.current != nil {
+                                Color.clear
+                                    .contentShape(Rectangle())
+                                    .onTapGesture { spread.close() }
+                            }
                             ForEach(Prefecture.allCases, id: \.self) { prefecture in
                                 Group {
-                                    if selectedPrefecture == prefecture {
+                                    if isHighlighted(prefecture) {
                                         PrefectureShape(points: normalizePoints(prefecture.points, to: geometry.size))
                                             .fill(Color("selectedColor2").opacity(0.9))
                                             .background(
@@ -115,8 +129,7 @@ struct JapanMapView: View {
                                             .zIndex(1)
                                             .onTapGesture {
                                                 if !isSpinning && !isStopping {
-                                                    tappedPrefecture = prefecture
-                                                    showTourismInfo = true
+                                                    openDetail(prefecture)
                                                 }
                                             }
                                     } else {
@@ -127,8 +140,7 @@ struct JapanMapView: View {
                                             .zIndex(0)
                                             .onTapGesture {
                                                 if !isSpinning && !isStopping {
-                                                    tappedPrefecture = prefecture
-                                                    showTourismInfo = true
+                                                    openDetail(prefecture)
                                                 }
                                             }
                                     }
@@ -268,8 +280,7 @@ struct JapanMapView: View {
                                 
                                 // 観光情報ボタン
                                 Button(action: {
-                                    tappedPrefecture = selected
-                                    showTourismInfo = true
+                                    openDetail(selected)
                                 }) {
                                     HStack(spacing: 10) {
                                         Image(systemName: displayMode == .onsen ? "thermometer.sun.fill" : "map.fill")
@@ -431,6 +442,22 @@ struct JapanMapView: View {
         }
     }
 
+    /// 県の詳細を開く。見開きが使えれば右ページに、使えなければ従来どおり全画面で。
+    private func openDetail(_ prefecture: Prefecture) {
+        if spread.isAvailable {
+            spread.present(.prefecture(prefecture))
+        } else {
+            tappedPrefecture = prefecture
+            showTourismInfo = true
+        }
+    }
+
+    /// 地図上で強調する県か。ルーレットで選ばれている県と、見開きの右ページに出ている県。
+    private func isHighlighted(_ prefecture: Prefecture) -> Bool {
+        if selectedPrefecture == prefecture { return true }
+        return !isSpinning && selectedPrefecture == nil && spread.current?.prefecture == prefecture
+    }
+
     // ゲームをリセット
     private func resetGame() {
         showResultModal = false
@@ -467,6 +494,16 @@ struct JapanMapView: View {
     // スピン開始
     private func startSpin() {
         guard !isSpinning && !activeEnabledPrefectures.isEmpty else { return }
+
+        // 見開き中にスピンしたら右ページを閉じ、地図を全幅に戻してルーレットを主役にする。
+        if spread.current != nil {
+            spread.close()
+        }
+        // 前回の結果を見開きで出していたら、そのぶんのスピン回数をここで記録する。
+        if pendingSpinRegistration {
+            pendingSpinRegistration = false
+            interstitial.registerRouletteSpin()
+        }
         
         isSpinning = true
         isStopping = false
@@ -535,10 +572,18 @@ struct JapanMapView: View {
                     // 最終選択をアニメーション付きで実行
                     selectedPrefecture = weightManager.selectRandomPrefecture(from: activeEnabledPrefectures)
                     
-                    // 0.5秒後にモーダル表示
+                    // 0.5秒後に結果を表示
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
-                            showResultModal = true
+                        if spread.isAvailable, let result = selectedPrefecture {
+                            // 見開きでは結果の膜を出さず、右ページに結果の県の詳細を滑り込ませる。
+                            // 強調は右ページの県に引き継がれるので、ルーレットの選択状態は戻しておく。
+                            spread.present(.prefecture(result))
+                            resetGame()
+                            pendingSpinRegistration = true
+                        } else {
+                            withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                                showResultModal = true
+                            }
                         }
                     }
                 }

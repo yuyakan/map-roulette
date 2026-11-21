@@ -29,7 +29,14 @@ struct TourismDetailView: View {
     @ObservedObject private var trends = TrendRepository.shared
     /// この県の Shorts フィードを開く（動画配列 + 開始位置）。
     @State private var shortsFeed: PrefShortsFeed? = nil
+    /// ユーザーが作成した観光地カード（地図ピンと観光地リストに混ぜて表示する）。
+    @ObservedObject private var userCards = UserCardStore.shared
+    @State private var isAddingAttraction = false
+    @State private var isAddingCafe = false
+    @State private var selectedUserCard: UserCard? = nil
     @Environment(\.dismiss) private var dismiss
+    /// 見開きの右ページの最初の画面か（「戻る」の代わりに ✕ を出す。押すと右ページが閉じる）。
+    @Environment(\.isSpreadPaneRoot) private var isSpreadPaneRoot
 
     init(prefecture: Prefecture, autoOpen: TourismAutoOpen? = nil) {
         self.prefecture = prefecture
@@ -69,11 +76,13 @@ struct TourismDetailView: View {
                         RichSectionHeader(
                             icon: "map.fill",
                             title: "tourism_detail_map".localized,
-                            accent: PlanTheme.primary
+                            accent: PlanTheme.primary,
+                            trailing: AnyView(AddUserCardButton(accent: PlanTheme.primary) { isAddingAttraction = true })
                         )
 
                         Map(position: $cameraPosition) {
-                            ForEach(prefecture.tourismInfo.attractions) { attraction in
+                            ForEach(attractionEntries.filter(\.hasPin)) { entry in
+                                let attraction = entry.attraction
                                 Annotation(attraction.name, coordinate: attraction.coordinate) {
                                     VStack(spacing: 4) {
                                         Image(systemName: "mappin.circle.fill")
@@ -91,7 +100,7 @@ struct TourismDetailView: View {
                                             .shadow(radius: 2)
                                     }
                                     .onTapGesture {
-                                        selectedAttraction = attraction
+                                        open(entry)
                                     }
                                 }
                             }
@@ -102,7 +111,8 @@ struct TourismDetailView: View {
                         // 観光地リスト
                         ScrollView(.horizontal, showsIndicators: false) {
                             LazyHStack(spacing: 8) {
-                                ForEach(prefecture.tourismInfo.attractions) { attraction in
+                                ForEach(attractionEntries) { entry in
+                                    let attraction = entry.attraction
                                     VStack(alignment: .leading, spacing: 6) {
                                         // アイコンとタイトル
                                         HStack(alignment: .top, spacing: 6) {
@@ -117,9 +127,17 @@ struct TourismDetailView: View {
                                                     )
                                                     .frame(width: 24, height: 24)
                                                 
-                                                Image(systemName: "location.circle.fill")
-                                                    .font(.system(size: 12))
-                                                    .foregroundColor(.white)
+                                                if let photo = userCards.photo(named: entry.userCard?.photoFileName) {
+                                                    Image(uiImage: photo)
+                                                        .resizable()
+                                                        .aspectRatio(contentMode: .fill)
+                                                        .frame(width: 24, height: 24)
+                                                        .clipShape(Circle())
+                                                } else {
+                                                    Image(systemName: "location.circle.fill")
+                                                        .font(.system(size: 12))
+                                                        .foregroundColor(.white)
+                                                }
                                             }
                                             
                                             Text(attraction.name)
@@ -168,7 +186,7 @@ struct TourismDetailView: View {
                                     .padding(.vertical, 8)
                                     .padding(.horizontal, 6)
                                     .onTapGesture {
-                                        selectedAttraction = attraction
+                                        open(entry)
                                     }
                                 }
                             }
@@ -187,9 +205,9 @@ struct TourismDetailView: View {
 
                     RichSouvenirSection(prefecture: prefecture)
 
-                    // 温泉・自然はデータが無い県では丸ごと消える。両方消えると、この広告が
-                    // 直下のカフェ Shorts と隣り合ってしまう（愛知・広島・茨城・香川・新潟・埼玉）。
-                    // 広告と動画を隣接させないため、その6県ではこの1枚を出さない。
+                    // 温泉・自然にカードが無い県（愛知・広島・茨城・香川・新潟・埼玉）は、見出しだけの
+                    // セクションを挟んでこの広告が直下のカフェ Shorts と並んでしまう。
+                    // 広告と動画を実質隣接させないため、その場合はこの1枚を出さない。
                     if hasSectionBelowAd {
                         AdaptiveBannerAdView()
                     }
@@ -200,7 +218,7 @@ struct TourismDetailView: View {
                     RichNatureSection(prefecture: prefecture)
 
                     // カフェの Shorts（自然セクションの下に独立セクション）。
-                    trendCafeSection
+                    cafeSection
 
                     RichFestivalSection(prefecture: prefecture)
 
@@ -234,13 +252,13 @@ struct TourismDetailView: View {
                     await trends.load()
                 }
             }
-            .fullScreenCover(item: $selectedAttraction) { attraction in
+            .detailCover(item: $selectedAttraction) { attraction in
                 AttractionDetailView(attraction: attraction, prefecture: prefecture)
             }
-            .fullScreenCover(item: $autoSouvenir) { souvenir in
+            .detailCover(item: $autoSouvenir) { souvenir in
                 SouvenirDetailView(item: souvenir, prefecture: prefecture)
             }
-            .fullScreenCover(item: $autoNatureSpot) { spot in
+            .detailCover(item: $autoNatureSpot) { spot in
                 NatureSpotDetailView(spot: spot)
             }
             .fullScreenCover(item: $photoViewerStart) { start in
@@ -249,9 +267,10 @@ struct TourismDetailView: View {
                     startIndex: start.index
                 )
             }
-            .fullScreenCover(item: $shortsFeed) { feed in
+            .detailCover(item: $shortsFeed) { feed in
                 ShortsFeedView(videos: feed.videos, startIndex: feed.startIndex)
             }
+            .userCardPresentation(prefecture: prefecture, kind: .attraction, isAdding: $isAddingAttraction, selected: $selectedUserCard)
 
             VStack() {
                 HStack {
@@ -260,13 +279,20 @@ struct TourismDetailView: View {
                           InterstitialViewModel.count += 2
                             dismiss()
                        }) {
-                           HStack(spacing: 8) {
-                               Image(systemName: "chevron.left")
-                                   .resizable()
-                                   .frame(width: 10, height: 14)
-                               Text("tourism_detail_back".localized)
-                                   .font(.system(size: 16))
-                                   .fontWeight(.medium)
+                           if isSpreadPaneRoot {
+                               // 見開きの右ページでは「戻る」先が無いので、閉じる（✕）にする。
+                               Image(systemName: "xmark")
+                                   .font(.system(size: 14, weight: .bold))
+                                   .padding(.vertical, 3)
+                           } else {
+                               HStack(spacing: 8) {
+                                   Image(systemName: "chevron.left")
+                                       .resizable()
+                                       .frame(width: 10, height: 14)
+                                   Text("tourism_detail_back".localized)
+                                       .font(.system(size: 16))
+                                       .fontWeight(.medium)
+                               }
                            }
                        }
                     }
@@ -324,11 +350,33 @@ struct TourismDetailView: View {
     }
 
     /// お土産下の広告と、その下のカフェ Shorts の間に実セクションが残るか。
-    /// 温泉・自然はどちらもデータが無い県では丸ごと非表示になるため、両方空だと
-    /// 広告と動画が直接隣り合う。AdMob の「広告を紛らわしい位置に置かない」方針に
+    /// 温泉・自然は見出しだけでも表示されるが、カードが 1 枚も無いと実質的に
+    /// 広告と動画が隣り合う。AdMob の「広告を紛らわしい位置に置かない」方針に
     /// 反するので、その場合は広告自体を出さない。
     private var hasSectionBelowAd: Bool {
-        !prefecture.onsenItems.isEmpty || !RichNatureSection.spots(in: prefecture).isEmpty
+        !prefecture.onsenItems.isEmpty
+            || !RichNatureSection.spots(in: prefecture).isEmpty
+            || !userCards.cards(in: prefecture, kind: .onsen).isEmpty
+            || !userCards.cards(in: prefecture, kind: .nature).isEmpty
+    }
+
+    // MARK: - 観光地カード（同梱データ＋ユーザー作成）
+
+    /// 地図と観光地リストに並べる項目。ユーザー作成のカードを先頭に置く。
+    private var attractionEntries: [AttractionEntry] {
+        let region = prefecture.tourismInfo.region
+        let created = userCards.cards(in: prefecture, kind: .attraction).map { card in
+            AttractionEntry(attraction: card.attractionItem(fallback: region), userCard: card)
+        }
+        return created + prefecture.tourismInfo.attractions.map { AttractionEntry(attraction: $0, userCard: nil) }
+    }
+
+    private func open(_ entry: AttractionEntry) {
+        if let card = entry.userCard {
+            selectedUserCard = card
+        } else {
+            selectedAttraction = entry.attraction
+        }
     }
 
     // MARK: - トレンド動画（YouTube Shorts・カテゴリ別に各セクションへ分散配置）
@@ -336,7 +384,7 @@ struct TourismDetailView: View {
     /// 独立した「トレンド」セクションは作らず、カテゴリごとに対応する既存セクションへ配置する:
     ///   - spot（人気スポット） → 県名の直下（この画面の先頭）
     ///   - gourmet（グルメ）    → グルメセクションの一番下
-    ///   - cafe（カフェ）       → 自然セクションの下に独立セクション（trendCafeSection）
+    ///   - cafe（カフェ）       → 自然セクションの下に独立セクション（cafeSection）
 
     /// 指定 categoryKey の Shorts 行（見出し + 横スクロール）。動画が無ければ何も出さない。
     /// 画面先頭／グルメセクションの末尾に差し込む用（見出しはカテゴリ名）。
@@ -355,21 +403,24 @@ struct TourismDetailView: View {
         }
     }
 
-    /// カフェの独立セクション（お土産下の広告の下）。見出し（アイコン付き）＋横スクロール。
-    @ViewBuilder
-    private var trendCafeSection: some View {
-        if let group = trends.groups(for: prefecture)
-            .first(where: { $0.categoryKey == "cafe" && !$0.videos.isEmpty }) {
-            VStack(alignment: .leading, spacing: 16) {
-                RichSectionHeader(
-                    icon: "cup.and.saucer.fill",
-                    title: group.categoryName,
-                    accent: PlanTheme.primary
-                )
+    /// カフェの独立セクション（お土産下の広告の下）。見出し（アイコン付き）＋横スクロール＋
+    /// ユーザーが作成したカード。カードを追加できるよう、動画が無い県でも表示する。
+    private var cafeSection: some View {
+        let group = trends.groups(for: prefecture)
+            .first(where: { $0.categoryKey == "cafe" && !$0.videos.isEmpty })
+        return VStack(alignment: .leading, spacing: 16) {
+            RichSectionHeader(
+                icon: "cup.and.saucer.fill",
+                title: group?.categoryName ?? "usercard.section.cafe".localized,
+                accent: PlanTheme.primary,
+                trailing: AnyView(AddUserCardButton(accent: PlanTheme.primary) { isAddingCafe = true })
+            )
+            if let group {
                 trendScroll(for: group)
             }
-            .padding(.horizontal, 16)
+            UserCafeCards(prefecture: prefecture, isAdding: $isAddingCafe)
         }
+        .padding(.horizontal, 16)
     }
 
     /// グループの動画サムネ横スクロール（タップで同カテゴリ内を連続再生）。共通部品。
@@ -468,6 +519,17 @@ enum TourismAutoOpen {
     case souvenir(stableKey: String)
     /// 自然スポット詳細（FixedNatureSpotItem の nameKey。ビーチ = 海カテゴリ）。
     case natureSpot(nameKey: String)
+}
+
+/// 県詳細の地図・観光地リストの 1 項目。ユーザー作成なら元のカードを持つ。
+private struct AttractionEntry: Identifiable {
+    let attraction: LocalizedAttractionLocation
+    let userCard: UserCard?
+
+    var id: UUID { attraction.id }
+
+    /// 地図にピンを立てるか。位置を設定していないカードはリストにだけ出す。
+    var hasPin: Bool { userCard == nil || userCard?.coordinate != nil }
 }
 
 /// フォト全画面ビューアを `fullScreenCover(item:)` で開くための、開始位置ラッパー。

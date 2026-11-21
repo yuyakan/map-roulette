@@ -12,7 +12,15 @@ struct RichSouvenirSection: View {
     @State private var selectedCategory: SouvenirCategory? = nil
     @State private var showAllItems = false
     @State private var selectedItem: SouvenirItem? = nil
-    
+    @ObservedObject private var userCards = UserCardStore.shared
+    @State private var isAddingCard = false
+    @State private var selectedUserCard: UserCard? = nil
+
+    /// ユーザーが作成したカード。カテゴリを持たないので、絞り込み中は出さない。
+    private var myCards: [UserCard] {
+        selectedCategory == nil ? userCards.cards(in: prefecture, kind: .souvenir) : []
+    }
+
     var filteredItems: [SouvenirItem] {
         let items = prefecture.souvenirItems
         if let category = selectedCategory {
@@ -32,7 +40,9 @@ struct RichSouvenirSection: View {
                 title: String(localized: "souvenir.title"),
                 subtitle: String(format: String(localized: "souvenir.memory"), prefecture.prefectureName),
                 accent: accent,
-                trailing: AnyView(
+                trailing: AnyView(HStack(spacing: 12) {
+                    AddUserCardButton(accent: accent) { isAddingCard = true }
+
                     Menu {
                         Button("food_category_all".localized) { selectedCategory = nil }
                         ForEach(SouvenirCategory.allCases, id: \.self) { category in
@@ -45,7 +55,7 @@ struct RichSouvenirSection: View {
                             .font(.title3)
                             .foregroundColor(accent)
                     }
-                )
+                })
             )
             
             // カテゴリタグ（選択中の場合）
@@ -70,10 +80,12 @@ struct RichSouvenirSection: View {
             }
             
             // お土産アイテムのグリッド
-            LazyVGrid(columns: [
-                GridItem(.flexible(), spacing: 12),
-                GridItem(.flexible(), spacing: 12)
-            ], spacing: 16) {
+            LazyVGrid(columns: AdaptiveGrid.cardColumns(spacing: 12), spacing: 16) {
+                ForEach(myCards) { card in
+                    UserCardTile(card: card, height: 200) {
+                        selectedUserCard = card
+                    }
+                }
                 ForEach(filteredItems) { item in
                     SouvenirItemCard(item: item) {
                         selectedItem = item
@@ -89,9 +101,10 @@ struct RichSouvenirSection: View {
             }
         }
         .padding(.horizontal)
-        .fullScreenCover(item: $selectedItem) { item in
+        .detailCover(item: $selectedItem) { item in
             SouvenirDetailView(item: item, prefecture: prefecture)
         }
+        .userCardPresentation(prefecture: prefecture, kind: .souvenir, isAdding: $isAddingCard, selected: $selectedUserCard)
     }
 }
 
@@ -280,7 +293,7 @@ struct SouvenirDetailView<PlaceMap: View>: View {
                 .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
                 .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
         }
-        .padding(.top, 56)
+        .closeButtonTopPadding()
         .padding(.trailing, 18)
     }
 
@@ -292,7 +305,7 @@ struct SouvenirDetailView<PlaceMap: View>: View {
                     .font(.system(size: 32, weight: .semibold))
                     .foregroundColor(.white)
             }
-            .padding(.top, 60)
+            .headerIconTopPadding()
 
             VStack(alignment: .leading, spacing: 6) {
                 Text(item.name)

@@ -13,7 +13,15 @@ struct RichGourmetSection: View {
     @State private var selectedCategory: FoodCategory? = nil
     @State private var showAllItems = false
     @State private var selectedItem: GourmetItem? = nil
-    
+    @ObservedObject private var userCards = UserCardStore.shared
+    @State private var isAddingCard = false
+    @State private var selectedUserCard: UserCard? = nil
+
+    /// ユーザーが作成したカード。カテゴリを持たないので、絞り込み中は出さない。
+    private var myCards: [UserCard] {
+        selectedCategory == nil ? userCards.cards(in: prefecture, kind: .gourmet) : []
+    }
+
     var filteredItems: [GourmetItem] {
         let items = prefecture.gourmetItems
         if let category = selectedCategory {
@@ -33,7 +41,9 @@ struct RichGourmetSection: View {
                 title: "famous_gourmet_title".localized,
                 subtitle: String(format: NSLocalizedString("taste_prefecture_format", comment: "Prefecture taste format"), prefecture.prefectureName),
                 accent: accent,
-                trailing: AnyView(
+                trailing: AnyView(HStack(spacing: 12) {
+                    AddUserCardButton(accent: accent) { isAddingCard = true }
+
                     Menu {
                         Button("food_category_all".localized) { selectedCategory = nil }
                         ForEach(FoodCategory.allCases, id: \.self) { category in
@@ -46,7 +56,7 @@ struct RichGourmetSection: View {
                             .font(.title3)
                             .foregroundColor(accent)
                     }
-                )
+                })
             )
             
             // カテゴリタグ（選択中の場合）
@@ -75,6 +85,11 @@ struct RichGourmetSection: View {
                 GridItem(.flexible(), spacing: 12),
                 GridItem(.flexible(), spacing: 12)
             ], spacing: 16) {
+                ForEach(myCards) { card in
+                    UserCardTile(card: card, height: 224) {
+                        selectedUserCard = card
+                    }
+                }
                 ForEach(filteredItems) { item in
                     GourmetItemCard(item: item) {
                         selectedItem = item
@@ -90,9 +105,10 @@ struct RichGourmetSection: View {
             }
         }
         .padding(.horizontal)
-        .fullScreenCover(item: $selectedItem) { item in
+        .detailCover(item: $selectedItem) { item in
             GourmetDetailView(item: item, prefecture: prefecture)
         }
+        .userCardPresentation(prefecture: prefecture, kind: .gourmet, isAdding: $isAddingCard, selected: $selectedUserCard)
     }
 }
 

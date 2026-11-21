@@ -34,7 +34,8 @@ struct AttractionDetailView: View {
     }
 
     var body: some View {
-        NavigationStack {
+        // 見開きの右ページ内では右ページのスタックに積まれるので、自前のスタックは持たない。
+        DetailNavigationContainer {
             ZStack(alignment: .topTrailing) {
                 // 上方向バウンス時にヘッダー背後へ白が出ないよう最背面に基調色を敷く。
                 accent.ignoresSafeArea()
@@ -51,6 +52,7 @@ struct AttractionDetailView: View {
                             mapCard
                         }
                         .padding(.horizontal, 18)
+                        .readableContentWidth()
                     }
                     .padding(.bottom, 32)
                 }
@@ -80,7 +82,7 @@ struct AttractionDetailView: View {
                 .overlay(Circle().stroke(.white.opacity(0.6), lineWidth: 1))
                 .shadow(color: .black.opacity(0.15), radius: 6, y: 2)
         }
-        .padding(.top, 56)
+        .closeButtonTopPadding()
         .padding(.trailing, 18)
     }
 
@@ -91,24 +93,29 @@ struct AttractionDetailView: View {
         // 白文字の可読性を確保する。写真が無い場合は最背面の accent をそのまま透かす。
         titleBlock
             .padding(.horizontal, 22)
-            .padding(.top, 150)
+            .photoHeaderTopPadding()
             .padding(.bottom, 24)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background {
-                if let photo {
-                    // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
-                    // 外側で clipped() してヘッダー矩形に収める（左右へのはみ出し防止）。
-                    photo
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .overlay(headerScrim)
-                } else {
-                    // 写真が無い場合は従来のカラーヘッダー。本文背景が不透明色に
-                    // なったため最背面の accent は透けない。ここで自前に敷く。
-                    accent
+                // 背景（写真・色）は左右のセーフエリアまで敷く。見開きの右ページでは、右端の
+                // ステータスバー・縦向きタブバーの列の下まで写真が続く（文字やボタンはセーフエリア内のまま）。
+                Group {
+                    if let photo {
+                        // .fill は容器より大きく描画されるため、背景側ではサイズを決めず
+                        // 外側の photoHeaderClip() で上下を切る（左右はセーフエリアまで敷く）。
+                        photo
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .overlay(headerScrim)
+                    } else {
+                        // 写真が無い場合は従来のカラーヘッダー。本文背景が不透明色に
+                        // なったため最背面の accent は透けない。ここで自前に敷く。
+                        accent
+                    }
                 }
+                .ignoresSafeArea(edges: [.top, .horizontal])
             }
-            .clipped()
+            .photoHeaderClip()
     }
 
     /// 写真の上でもタイトルが読めるようにする暗幕（下へ向かって濃くなる）。
